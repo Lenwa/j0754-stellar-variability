@@ -1,8 +1,8 @@
 [
   {
     "path": ".gitattributes",
-    "bytes": 203,
-    "sha256": "8a1e22d680096a90590ac5b9f55d4f9a0d0c808382b565da29efe13736e48e15"
+    "bytes": 210,
+    "sha256": "b6008a80d903ffe16b3c4ad88bcb8a47277a05a995b8f2c241653a15a9356a06"
   },
   {
     "path": ".github/workflows/tests.yml",
