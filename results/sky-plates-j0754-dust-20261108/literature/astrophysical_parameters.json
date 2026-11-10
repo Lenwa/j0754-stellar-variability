@@ -1,0 +1,1773 @@
+{
+  "retrieval_url": "https://gaia.ari.uni-heidelberg.de/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+%2A+FROM+gaiadr3.astrophysical_parameters+WHERE+source_id%3D667401913089980544",
+  "response": {
+    "metadata": [
+      {
+        "name": "source_id",
+        "description": "Source Identifier",
+        "datatype": "LONG",
+        "ucd": "meta.id;meta.main"
+      },
+      {
+        "name": "abp_gspphot",
+        "description": "Extinction in G_(BP) band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt.B"
+      },
+      {
+        "name": "abp_gspphot_lower",
+        "description": "Lower confidence level (16%) of extinction in G_(BP) band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt.B"
+      },
+      {
+        "name": "abp_gspphot_upper",
+        "description": "Upper confidence level (84%) of extinction in G_(BP) band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt.B"
+      },
+      {
+        "name": "activityindex_espcs",
+        "description": "Chromospheric activity index from ESP-CS, measured on the calcium triplet using RVS spectra",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "spect.index"
+      },
+      {
+        "name": "activityindex_espcs_input",
+        "description": "Source of input stellar parameters for the computation of the activity index by ESP-CS",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code"
+      },
+      {
+        "name": "activityindex_espcs_uncertainty",
+        "description": "Uncertainty in the chromospheric activity index from ESP-CS",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "stat.error;spect.index"
+      },
+      {
+        "name": "age_flame",
+        "description": "Age of the star from FLAME using stellar models, see massFlame for details",
+        "datatype": "FLOAT",
+        "unit": "Gyr",
+        "ucd": "time.age"
+      },
+      {
+        "name": "age_flame_lower",
+        "description": "Lower confidence level (16%) of ageFlame",
+        "datatype": "FLOAT",
+        "unit": "Gyr",
+        "ucd": "stat.value;time.age"
+      },
+      {
+        "name": "age_flame_upper",
+        "description": "Upper confidence level (84%) of ageFlame",
+        "datatype": "FLOAT",
+        "unit": "Gyr",
+        "ucd": "stat.value;time.age"
+      },
+      {
+        "name": "ag_esphs",
+        "description": "Intersterstellar extinction in G band from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "ag_esphs_uncertainty",
+        "description": "Uncertainty on A_(G) from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.error;phys.absorption;em.opt"
+      },
+      {
+        "name": "ag_gspphot",
+        "description": "Extinction in G band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "ag_gspphot_lower",
+        "description": "Lower confidence level (16%) of extinction in G band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt"
+      },
+      {
+        "name": "ag_gspphot_upper",
+        "description": "Upper confidence level (84%) of extinction in G band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt"
+      },
+      {
+        "name": "ag_msc",
+        "description": "Extinction in G band of the source treated as a binary system from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "ag_msc_lower",
+        "description": "Lower confidence level (16%) of extinction in G band from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption"
+      },
+      {
+        "name": "ag_msc_upper",
+        "description": "Upper confidence level (84%) of extinction in G band from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption"
+      },
+      {
+        "name": "alphafe_gspspec",
+        "description": "Abundance of alpha-elements [alpha/Fe] with respect to iron from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund;stat.median"
+      },
+      {
+        "name": "alphafe_gspspec_lower",
+        "description": "16th percentile of the abundance of alpha-elements [alpha/Fe] with respect to iron from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund"
+      },
+      {
+        "name": "alphafe_gspspec_upper",
+        "description": "84th percentile of the abundance of alpha-elements [alpha/Fe] with respect to iron from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund"
+      },
+      {
+        "name": "arp_gspphot",
+        "description": "Extinction in G_(RP) band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt.R"
+      },
+      {
+        "name": "arp_gspphot_lower",
+        "description": "Lower confidence level (16%) of extinction in G_(RP) band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt.R"
+      },
+      {
+        "name": "arp_gspphot_upper",
+        "description": "Upper confidence level (84%) of extinction in G_(RP) band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt.R"
+      },
+      {
+        "name": "azero_esphs",
+        "description": "Monochromatic interstellar extinction, A\u2080, from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt.V"
+      },
+      {
+        "name": "azero_esphs_uncertainty",
+        "description": "Uncertainty at a 68% confidence level on A\u2080 from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.error;phys.absorption;em.opt.V"
+      },
+      {
+        "name": "azero_gspphot",
+        "description": "Monochromatic extinction A\u2080 at 547.7nm from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt.V"
+      },
+      {
+        "name": "azero_gspphot_lower",
+        "description": "Lower confidence level (16%) of monochromatic extinction A\u2080 at 547.7nm from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt.V"
+      },
+      {
+        "name": "azero_gspphot_upper",
+        "description": "Upper confidence level (84%) of monochromatic extinction A\u2080 at 547.7nm from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt.V"
+      },
+      {
+        "name": "azero_msc",
+        "description": "Monochromatic extinction A\u2080 at 547.7nm of the source treated as a binary system from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt.V"
+      },
+      {
+        "name": "azero_msc_lower",
+        "description": "Lower confidence level (16%) of monochromatic extinction A\u2080 at 547.7nm from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt.V"
+      },
+      {
+        "name": "azero_msc_upper",
+        "description": "Upper confidence level (84%) of monochromatic extinction A\u2080 at 547.7nm from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.absorption;em.opt.V"
+      },
+      {
+        "name": "bc_flame",
+        "description": "Bolometric correction used to derive lumFlame",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.mag.bc"
+      },
+      {
+        "name": "cafe_gspspec",
+        "description": "Abundance of Calcium [Ca/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in cafe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "cafe_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Ca/Fe] abundance using N lines of the element, given in cafe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "cafe_gspspec_lower",
+        "description": "16th percentile of the abundance of Calcium [Ca/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "cafe_gspspec_nlines",
+        "description": "Number of lines used for [Ca/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "cafe_gspspec_upper",
+        "description": "84th percentile of the abundance of Calcium [Ca/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "cefe_gspspec",
+        "description": "Abundance of Cerium [Ce/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in cefe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "cefe_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Ce/Fe] abundance using N lines of the element, given in cefe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "cefe_gspspec_lower",
+        "description": "16th percentile of the abundance of Cerium [Ce/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "cefe_gspspec_nlines",
+        "description": "Number of lines used for [Ce/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "cefe_gspspec_upper",
+        "description": "84th percentile of the abundance of Cerium [Ce/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "classlabel_espels",
+        "description": "Adopted ELS class label from ESP-ELS",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.class"
+      },
+      {
+        "name": "classlabel_espels_flag",
+        "description": "Quality flag of the adopted ELS class label from ESP-ELS",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.class"
+      },
+      {
+        "name": "classprob_dsc_allosmod_galaxy",
+        "description": "Probability from DSC-Allosmod of being a galaxy (data used: photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_allosmod_quasar",
+        "description": "Probability from DSC-Allosmod of being a quasar (data used: photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_allosmod_star",
+        "description": "Probability from DSC-Allosmod of being a star (data used: photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_combmod_binarystar",
+        "description": "Probability from DSC-Combmod of being a binary star (data used: BP/RP spectrum, photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_combmod_galaxy",
+        "description": "Probability from DSC-Combmod of being a galaxy (data used: BP/RP spectrum, photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_combmod_quasar",
+        "description": "Probability from DSC-Combmod of being a quasar (data used: BP/RP spectrum, photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_combmod_star",
+        "description": "Probability from DSC-Combmod of being a single star (but not a white dwarf) (data used: BP/RP spectrum, photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_combmod_whitedwarf",
+        "description": "Probability from DSC-Combmod of being a white dwarf (data used: BP/RP spectrum, photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_specmod_binarystar",
+        "description": "Probability from DSC-Specmod of being a binary star (data used: BP/RP spectrum)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_specmod_galaxy",
+        "description": "Probability from DSC-Specmod of being a galaxy (data used: BP/RP spectrum)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_specmod_quasar",
+        "description": "Probability from DSC-Specmod of being a quasar (data used: BP/RP spectrum)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_specmod_star",
+        "description": "Probability from DSC-Specmod of being a single star (but not a white dwarf) (data used: BP/RP spectrum)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_specmod_whitedwarf",
+        "description": "Probability from DSC-Specmod of being a white dwarf (data used: BP/RP spectrum)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_espels_bestar",
+        "description": "Probability from ESP-ELS of being a Be Star",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_espels_dmestar",
+        "description": "Probability from ESP-ELS of being an active M dwarf Star",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_espels_herbigstar",
+        "description": "Probability from ESP-ELS of being a Herbig Ae/Be Star",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_espels_pne",
+        "description": "Probability from ESP-ELS of being a planetary nebula",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_espels_ttauristar",
+        "description": "Probability from ESP-ELS of being a T Tauri Star",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_espels_wcstar",
+        "description": "Probability from ESP-ELS of being a Wolf-Rayet star of type WC",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_espels_wnstar",
+        "description": "Probability from ESP-ELS of being a Wolf-Rayet star of type WN",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "cn0ew_gspspec",
+        "description": "Equivalent witdh of cyanogen absorption line, derived from RVS spectra",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "spect.line.eqWidth"
+      },
+      {
+        "name": "cn0ew_gspspec_uncertainty",
+        "description": "Uncertainty of equivalent witdh of cyanogen absorption line, derived from RVS spectra",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "stat.error;spect.line.eqWidth"
+      },
+      {
+        "name": "cn0_gspspec_centralline",
+        "description": "Central wavelength of cyanogen line, derived from RVS spectra using DIB algorithm",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "spect.line.eqWidth"
+      },
+      {
+        "name": "cn0_gspspec_width",
+        "description": "Width of cyoanogen line, derived from RVS spectra using DIB algorithm",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "stat.error;spect.line.eqWidth"
+      },
+      {
+        "name": "crfe_gspspec",
+        "description": "Abundance of Chromium [Cr/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in crfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "crfe_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Cr/Fe] abundance using N lines of the element, given in crfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "crfe_gspspec_lower",
+        "description": "16th percentile of the abundance of Chromium [Cr/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "crfe_gspspec_nlines",
+        "description": "Number of lines used for [Cr/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.record"
+      },
+      {
+        "name": "crfe_gspspec_upper",
+        "description": "84th percentile of the abundance of Chromium [Cr/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "dibew_gspspec",
+        "description": "Equivalent width of the DIB from GSP-Spec MatisseGauguin using RVS spectra",
+        "datatype": "FLOAT",
+        "unit": "angstrom",
+        "ucd": "spect.line.eqWidth"
+      },
+      {
+        "name": "dibew_gspspec_uncertainty",
+        "description": "Global uncertainty on DIB equivalent width value using DIB algorithm",
+        "datatype": "FLOAT",
+        "unit": "angstrom",
+        "ucd": "stat.value;spect.line.eqWidth"
+      },
+      {
+        "name": "dibewnoise_gspspec_uncertainty",
+        "description": "Uncertainty on DIB equivalent width value occuring from noise part",
+        "datatype": "FLOAT",
+        "unit": "angstrom",
+        "ucd": "stat.value;spect.line.eqWidth"
+      },
+      {
+        "name": "dib_gspspec_lambda",
+        "description": "DIB central wavelength from GSP-Spec MatisseGauguin using RVS spectra",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "em.wl.central"
+      },
+      {
+        "name": "dib_gspspec_lambda_uncertainty",
+        "description": "Uncertainty on DIB central wavelength from GSP-Spec MatisseGauguin using RVS spectra",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "stat.error;em.wl.central"
+      },
+      {
+        "name": "dibp0_gspspec",
+        "description": "Depth (p\u2080 parameter) of the DIB derived from a Gaussian model fit",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "dibp2_gspspec",
+        "description": "Width (p\u2082 parameter) of the DIB derived from a Gaussian model fit",
+        "datatype": "FLOAT",
+        "unit": "angstrom",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "dibp2_gspspec_uncertainty",
+        "description": "Uncertainty on the dibp2Gspspec parameter",
+        "datatype": "FLOAT",
+        "unit": "angstrom",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "dibqf_gspspec",
+        "description": "Quality flag of the DIB computation",
+        "datatype": "INT",
+        "ucd": "meta.code.qual"
+      },
+      {
+        "name": "distance_gspphot",
+        "description": "Distance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "pos.distance"
+      },
+      {
+        "name": "distance_gspphot_lower",
+        "description": "Lower confidence level (16%) of distance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "stat.value;pos.distance"
+      },
+      {
+        "name": "distance_gspphot_upper",
+        "description": "Upper confidence level (84%) of distance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "stat.value;pos.distance"
+      },
+      {
+        "name": "distance_msc",
+        "description": "Distance from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "pos.distance"
+      },
+      {
+        "name": "distance_msc_lower",
+        "description": "Lower confidence level (16%) of distance from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "stat.value;pos.distance"
+      },
+      {
+        "name": "distance_msc_upper",
+        "description": "Upper confidence level (84%) of distance from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "stat.value;pos.distance"
+      },
+      {
+        "name": "ebpminrp_esphs",
+        "description": "Reddening E(G_(BP)\u2212G_(RP)) from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.color.excess;em.opt"
+      },
+      {
+        "name": "ebpminrp_esphs_uncertainty",
+        "description": "Uncertainty on E(G_(BP)\u2212G_(RP)) from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.error;phot.color.excess;em.opt"
+      },
+      {
+        "name": "ebpminrp_gspphot",
+        "description": "Reddening E(G_(BP)\u2212G_(RP)) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.color.excess;em.opt"
+      },
+      {
+        "name": "ebpminrp_gspphot_lower",
+        "description": "Lower confidence level (16%) of reddening E(G_(BP)\u2212G_(RP)) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phot.color.excess;em.opt"
+      },
+      {
+        "name": "ebpminrp_gspphot_upper",
+        "description": "Upper confidence level (84%) of reddening E(G_(BP)\u2212G_(RP)) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phot.color.excess;em.opt"
+      },
+      {
+        "name": "evolstage_flame",
+        "description": "Evolutionary stage of the star from FLAME using stellar models, see massFlame for details",
+        "datatype": "INT",
+        "ucd": "src.class"
+      },
+      {
+        "name": "ew_espels_halpha",
+        "description": "Halpha pseudo-equivalent width from ESP-ELS",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "spect.line.eqWidth"
+      },
+      {
+        "name": "ew_espels_halpha_flag",
+        "description": "Quality flag of the Halpha pseudo-equivalent width from ESP-ELS",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.qual"
+      },
+      {
+        "name": "ew_espels_halpha_model",
+        "description": "Halpha pseudo-equivalent width from ESP-ELS measured on the synthetic spectrum",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "spect.line.eqWidth"
+      },
+      {
+        "name": "ew_espels_halpha_uncertainty",
+        "description": "Uncertainty of the Halpha pseudo-equivalent width from ESP-ELS",
+        "datatype": "FLOAT",
+        "unit": "nm",
+        "ucd": "stat.error;spect.line.eqWidth"
+      },
+      {
+        "name": "feiim_gspspec",
+        "description": "Abundance of ionised iron [FeII/M] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in feiim_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Fe;stat.median"
+      },
+      {
+        "name": "feiim_gspspec_linescatter",
+        "description": "Uncertainty estimation of [FeII/M] abundance using N lines of the element, given in feiim_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "feiim_gspspec_lower",
+        "description": "16th percentile of the abundance of ionised iron [FeII/M] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Fe"
+      },
+      {
+        "name": "feiim_gspspec_nlines",
+        "description": "Number of lines used for [FeII/M] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "feiim_gspspec_upper",
+        "description": "84th percentile of the abundance of ionised iron [FeII/M] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Fe"
+      },
+      {
+        "name": "fem_gspspec",
+        "description": "Abundance of neutral iron [Fe/M] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in fem_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Fe;stat.median"
+      },
+      {
+        "name": "fem_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Fe/M] abundance using N lines of the element, given in fem_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "fem_gspspec_lower",
+        "description": "16th percentile of the abundance of neutral iron [Fe/M] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Fe"
+      },
+      {
+        "name": "fem_gspspec_nlines",
+        "description": "Number of lines used for [Fe/M] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "fem_gspspec_upper",
+        "description": "84th percentile of the abundance of neutral iron [Fe/M] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Fe"
+      },
+      {
+        "name": "flags_esphs",
+        "description": "Quality flag of the ESP-HS parametrisation",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.qual"
+      },
+      {
+        "name": "flags_espucd",
+        "description": "Quality flags of the ESP-UCD parameter estimates",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "flags_flame",
+        "description": "Flags indicating quality and processing information from FLAME",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.qual"
+      },
+      {
+        "name": "flags_gspspec",
+        "description": "Catalogue flags for GSP-Spec MatisseGauguin",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "flags_msc",
+        "description": "Flag indicating quality information from MSC",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.qual"
+      },
+      {
+        "name": "flags_oa",
+        "description": "Flags indicating quality and processing information from OA",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code.qual"
+      },
+      {
+        "name": "gravredshift_flame",
+        "description": "Gravitational redshift from FLAME using radiusFlame and loggGspphot",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "src.redshift"
+      },
+      {
+        "name": "gravredshift_flame_lower",
+        "description": "Lower confidence level (16%) of gravredshiftFlame",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "stat.value;src.redshift"
+      },
+      {
+        "name": "gravredshift_flame_upper",
+        "description": "Upper confidence level (84%) of gravredshiftFlame",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "stat.value;src.redshift"
+      },
+      {
+        "name": "libname_gspphot",
+        "description": "Name of library that achieves the highest mean log-posterior in MCMC samples and was used to derive GSP-Phot parameters in this table",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.record"
+      },
+      {
+        "name": "logchisq_gspspec",
+        "description": "Logarithm of the goodness-of-fit for the GSP-Spec MatisseGauguin parameters",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.chi2"
+      },
+      {
+        "name": "logg_esphs",
+        "description": "Surface gravity from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "phys.gravity"
+      },
+      {
+        "name": "logg_esphs_uncertainty",
+        "description": "Uncertainty at a 68% confidence level on the surface gravity from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.error;phys.gravity"
+      },
+      {
+        "name": "logg_gspphot",
+        "description": "Surface gravity from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "phys.gravity"
+      },
+      {
+        "name": "logg_gspphot_lower",
+        "description": "Lower confidence level (16%) of surface gravity from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.value;phys.gravity"
+      },
+      {
+        "name": "logg_gspphot_upper",
+        "description": "Upper confidence level (84%) of surface gravity from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.value;phys.gravity"
+      },
+      {
+        "name": "logg_gspspec",
+        "description": "Logarithm of the stellar surface gravity from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "phys.gravity;stat.median"
+      },
+      {
+        "name": "logg_gspspec_lower",
+        "description": "16th percentile of the logarithm of the stellar surface gravity from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.value;phys.gravity"
+      },
+      {
+        "name": "logg_gspspec_upper",
+        "description": "84th percentile of the logarithm of the stellar surface gravity from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.value;phys.gravity"
+      },
+      {
+        "name": "logg_msc1",
+        "description": "Surface gravity of the primary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "phys.gravity"
+      },
+      {
+        "name": "logg_msc1_lower",
+        "description": "Lower confidence level (16%) of surface gravity of the primary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.value;phys.gravity"
+      },
+      {
+        "name": "logg_msc1_upper",
+        "description": "Upper confidence level (84%) of surface gravity of the primary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.value;phys.gravity"
+      },
+      {
+        "name": "logg_msc2",
+        "description": "Surface gravity of the secondary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "phys.gravity"
+      },
+      {
+        "name": "logg_msc2_lower",
+        "description": "Lower confidence level (16%) of surface gravity of the secondary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.value;phys.gravity"
+      },
+      {
+        "name": "logg_msc2_upper",
+        "description": "Upper confidence level (84%) of surface gravity of the secondary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.value;phys.gravity"
+      },
+      {
+        "name": "logposterior_gspphot",
+        "description": "Goodness-of-fit score (mean log-posterior of MCMC) of GSP-Phot Aeneas MCMC best library",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.goodness"
+      },
+      {
+        "name": "logposterior_msc",
+        "description": "Goodness-of-fit score (normalised log-posterior) of MSC MCMC",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.goodness"
+      },
+      {
+        "name": "lum_flame",
+        "description": "Luminosity of the star from FLAME using G band magnitude, extinction (agGspphot), parallax or distance, and a bolometric correction bcFlame",
+        "datatype": "FLOAT",
+        "unit": "solLum",
+        "ucd": "phys.luminosity"
+      },
+      {
+        "name": "lum_flame_lower",
+        "description": "Lower confidence level (16%) of lumFlame",
+        "datatype": "FLOAT",
+        "unit": "solLum",
+        "ucd": "stat.value;phys.luminosity"
+      },
+      {
+        "name": "lum_flame_upper",
+        "description": "Upper confidence level (84%) of lumFlame",
+        "datatype": "FLOAT",
+        "unit": "solLum",
+        "ucd": "stat.value;phys.luminosity"
+      },
+      {
+        "name": "mass_flame",
+        "description": "Mass of the star from FLAME using stellar models, lumFlame, and teffGspphot",
+        "datatype": "FLOAT",
+        "unit": "solMass",
+        "ucd": "phys.mass"
+      },
+      {
+        "name": "mass_flame_lower",
+        "description": "Lower confidence level (16%) of massFlame",
+        "datatype": "FLOAT",
+        "unit": "solMass",
+        "ucd": "stat.value;phys.mass"
+      },
+      {
+        "name": "mass_flame_upper",
+        "description": "Upper confidence level (84%) of massFlame",
+        "datatype": "FLOAT",
+        "unit": "solMass",
+        "ucd": "stat.value;phys.mass"
+      },
+      {
+        "name": "mcmcaccept_gspphot",
+        "description": "MCMC acceptance rate of GSP-Phot Aeneas MCMC best library",
+        "datatype": "FLOAT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "mcmcaccept_msc",
+        "description": "Mean MCMC acceptance rate of MSC MCMC",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "mcmcdrift_msc",
+        "description": "Mean drift of the MSC MCMC chain in units of parameter standard deviation",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "mgfe_gspspec",
+        "description": "Abundance of Magnesium [Mg/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in mgfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "mgfe_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Mg/Fe] abundance using N lines of the element, given in mgfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "mgfe_gspspec_lower",
+        "description": "16th percentile of the abundance of Magnesium [Mg/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "mgfe_gspspec_nlines",
+        "description": "Number of lines used for [Mg/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "mgfe_gspspec_upper",
+        "description": "84th percentile of the abundance of Magnesium [Mg/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "mg_gspphot",
+        "description": "Absolute magnitude M_(G) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.magAbs;em.opt"
+      },
+      {
+        "name": "mg_gspphot_lower",
+        "description": "Lower confidence level (16%) of absolute magnitude M_(G) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.magAbs;em.opt"
+      },
+      {
+        "name": "mg_gspphot_upper",
+        "description": "Upper confidence level (84%) of absolute magnitude M_(G) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.value;phys.magAbs;em.opt"
+      },
+      {
+        "name": "mh_gspphot",
+        "description": "Iron abundance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Fe"
+      },
+      {
+        "name": "mh_gspphot_lower",
+        "description": "Lower confidence level (16%) of iron abundance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Fe"
+      },
+      {
+        "name": "mh_gspphot_upper",
+        "description": "Upper confidence level (84%) of iron abundance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Fe"
+      },
+      {
+        "name": "mh_gspspec",
+        "description": "Global metallicity [M/H] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Fe;stat.median"
+      },
+      {
+        "name": "mh_gspspec_lower",
+        "description": "16th percentile of global metallicity [M/H] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Fe"
+      },
+      {
+        "name": "mh_gspspec_upper",
+        "description": "84th percentile of global metallicity [M/H] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Fe"
+      },
+      {
+        "name": "mh_msc",
+        "description": "Metallicity of the source treated as a binary system from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund"
+      },
+      {
+        "name": "mh_msc_lower",
+        "description": "Lower confidence level (16%) of the metallicity from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund"
+      },
+      {
+        "name": "mh_msc_upper",
+        "description": "Upper confidence level (84%) of the metallicity from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund"
+      },
+      {
+        "name": "ndfe_gspspec",
+        "description": "Abundance of neodymium [Nd/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in ndfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "ndfe_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Nd/Fe] abundance using N lines of the element, given in ndfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "ndfe_gspspec_lower",
+        "description": "16th percentile of the abundance of neodymium [Nd/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "ndfe_gspspec_nlines",
+        "description": "Number of lines used for [Nd/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "ndfe_gspspec_upper",
+        "description": "84th percentile of the abundance of neodymium [Nd/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "neuron_oa_dist",
+        "description": "Distance between the source XP spectra and the OA neuron XP prototype that represents the source",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "neuron_oa_dist_percentile_rank",
+        "description": "Percentile rank according to the distance distribution of the OA neuron that represents the source",
+        "datatype": "INT",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "neuron_oa_id",
+        "description": "Identifier of the OA SOM map neuron that represents the source",
+        "datatype": "LONG",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "nfe_gspspec",
+        "description": "Abundance of Nitrogen [N/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in nfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "nfe_gspspec_linescatter",
+        "description": "Uncertainty estimation of [N/Fe] abundance using N lines of the element, given in nfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "nfe_gspspec_lower",
+        "description": "16th percentile of the abundance of Nitrogen [N/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "nfe_gspspec_nlines",
+        "description": "Number of lines used for [N/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "nfe_gspspec_upper",
+        "description": "84th percentile of the abundance of Nitrogen [N/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "nife_gspspec",
+        "description": "Abundance of Nickel [Ni/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in nife_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "nife_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Ni/Fe] abundance using N lines of the element, given in nife_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "nife_gspspec_lower",
+        "description": "16th percentile of the abundance of Nickel [Ni/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "nife_gspspec_nlines",
+        "description": "Number of lines used for [Ni/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "nife_gspspec_upper",
+        "description": "84th percentile of the abundance of Nickel [Ni/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "radius_flame",
+        "description": "Radius of the star from FLAME using teffGspphot and lumFlame",
+        "datatype": "FLOAT",
+        "unit": "solRad",
+        "ucd": "phys.size.radius"
+      },
+      {
+        "name": "radius_flame_lower",
+        "description": "Lower confidence level (16%) of radiusFlame",
+        "datatype": "FLOAT",
+        "unit": "solRad",
+        "ucd": "stat.value;phys.size.radius"
+      },
+      {
+        "name": "radius_flame_upper",
+        "description": "Upper confidence level (84%) of radiusFlame",
+        "datatype": "FLOAT",
+        "unit": "solRad",
+        "ucd": "stat.value;phys.size.radius"
+      },
+      {
+        "name": "radius_gspphot",
+        "description": "Radius from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "solRad",
+        "ucd": "phys.size.radius"
+      },
+      {
+        "name": "radius_gspphot_lower",
+        "description": "Lower confidence level (16%) of radius from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "solRad",
+        "ucd": "stat.value;phys.size.radius"
+      },
+      {
+        "name": "radius_gspphot_upper",
+        "description": "Upper confidence level (84%) of radius from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "solRad",
+        "ucd": "stat.value;phys.size.radius"
+      },
+      {
+        "name": "sfe_gspspec",
+        "description": "Abundance of Sulphur [S/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in sfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "sfe_gspspec_linescatter",
+        "description": "Uncertainty estimation of [S/Fe] abundance using N lines of the element, given in sfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "sfe_gspspec_lower",
+        "description": "16th percentile of the abundance of Sulphur [S/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "sfe_gspspec_nlines",
+        "description": "Number of lines used for [S/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "sfe_gspspec_upper",
+        "description": "84th percentile of the abundance of Sulphur [S/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "sife_gspspec",
+        "description": "Abundance of Silicon [Si/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in sife_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "sife_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Si/Fe] abundance using N lines of the element, given in sife_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "sife_gspspec_lower",
+        "description": "16th percentile of the abundance of silicon [Si/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "sife_gspspec_nlines",
+        "description": "Number of lines used for [Si/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "sife_gspspec_upper",
+        "description": "84th percentile of the abundance of silicon [Si/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "solution_id",
+        "description": "Solution Identifier",
+        "datatype": "LONG",
+        "ucd": "meta.version"
+      },
+      {
+        "name": "spectraltype_esphs",
+        "description": "Spectral type from ESP-ELS",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "src.spType"
+      },
+      {
+        "name": "teff_esphs",
+        "description": "Effective temperature from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective"
+      },
+      {
+        "name": "teff_esphs_uncertainty",
+        "description": "Uncertainty at a 68% confidence level on the effective temperature from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.error;phys.temperature.effective"
+      },
+      {
+        "name": "teff_espucd",
+        "description": "Effective temperature estimate from ESP-UCD based on the RP spectrum",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective"
+      },
+      {
+        "name": "teff_espucd_uncertainty",
+        "description": "Uncertainty of the effective temperature estimate produced by ESP-UCD",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.error;phys.temperature.effective"
+      },
+      {
+        "name": "teff_gspphot",
+        "description": "Effective temperature from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective"
+      },
+      {
+        "name": "teff_gspphot_lower",
+        "description": "Lower confidence level (16%) of effective temperature from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.value;phys.temperature.effective"
+      },
+      {
+        "name": "teff_gspphot_upper",
+        "description": "Upper confidence level (84%) of effective temperature from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.value;phys.temperature.effective"
+      },
+      {
+        "name": "teff_gspspec",
+        "description": "Effective temperature from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective;stat.median"
+      },
+      {
+        "name": "teff_gspspec_lower",
+        "description": "16th percentile of effective temperature from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.value;phys.temperature.effective"
+      },
+      {
+        "name": "teff_gspspec_upper",
+        "description": "84th percentile of effective temperature from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.value;phys.temperature.effective"
+      },
+      {
+        "name": "teff_msc1",
+        "description": "Effective temperature of the primary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective"
+      },
+      {
+        "name": "teff_msc1_lower",
+        "description": "Lower confidence level (16%) of effective temperature of the primary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.value;phys.temperature.effective"
+      },
+      {
+        "name": "teff_msc1_upper",
+        "description": "Upper confidence level (84%) of effective temperature of the primary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.value;phys.temperature.effective"
+      },
+      {
+        "name": "teff_msc2",
+        "description": "Effective temperature of the secondary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective"
+      },
+      {
+        "name": "teff_msc2_lower",
+        "description": "Lower confidence level (16%) of effective temperature of the secondary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.value;phys.temperature.effective"
+      },
+      {
+        "name": "teff_msc2_upper",
+        "description": "Upper confidence level (84%) of effective temperature of the secondary from MSC using BP/RP spectra and parallax",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.value;phys.temperature.effective"
+      },
+      {
+        "name": "tife_gspspec",
+        "description": "Abundance of Titanium [Ti/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in tife_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "tife_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Ti/Fe] abundance using N lines of the element, given in tife_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "tife_gspspec_lower",
+        "description": "16th percentile of the abundance of Titanium [Ti/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "tife_gspspec_nlines",
+        "description": "Number of lines used for [Ti/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "tife_gspspec_upper",
+        "description": "84th percentile of the abundance of Titanium [Ti/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "vsini_esphs",
+        "description": "Projected rotational velocity from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "phys.veloc.rotat"
+      },
+      {
+        "name": "vsini_esphs_uncertainty",
+        "description": "Uncertainty on the projected rotational velocity from ESP-HS",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "stat.error;phys.veloc.rotat"
+      },
+      {
+        "name": "zrfe_gspspec",
+        "description": "Abundance of Zirconium [Zr/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations, applied to the individual N lines of the element, given in zrfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.median"
+      },
+      {
+        "name": "zrfe_gspspec_linescatter",
+        "description": "Uncertainty estimation of [Zr/Fe] abundance using N lines of the element, given in zrfe_gspspec_nlines",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.error;phys.abund.Z"
+      },
+      {
+        "name": "zrfe_gspspec_lower",
+        "description": "16th percentile of the abundance of Zirconium [Zr/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      },
+      {
+        "name": "zrfe_gspspec_nlines",
+        "description": "Number of lines used for [Zr/Fe] abundance estimation",
+        "datatype": "INT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "zrfe_gspspec_upper",
+        "description": "84th percentile of the abundance of Zirconium [Zr/Fe] from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.value;phys.abund.Z"
+      }
+    ],
+    "data": [
+      {
+        "source_id": 667401913089980544,
+        "abp_gspphot": 0.7089,
+        "abp_gspphot_lower": 0.6896,
+        "abp_gspphot_upper": 0.7235,
+        "activityindex_espcs": 0.059147615,
+        "activityindex_espcs_input": "M1",
+        "activityindex_espcs_uncertainty": 0.0009910978,
+        "age_flame": 0.5574728,
+        "age_flame_lower": 0.47825718,
+        "age_flame_upper": 0.61443955,
+        "ag_esphs": null,
+        "ag_esphs_uncertainty": null,
+        "ag_gspphot": 0.5538,
+        "ag_gspphot_lower": 0.5386,
+        "ag_gspphot_upper": 0.5652,
+        "ag_msc": 0.12535767,
+        "ag_msc_lower": 0,
+        "ag_msc_upper": 0.4330294,
+        "alphafe_gspspec": -0.02,
+        "alphafe_gspspec_lower": -0.05,
+        "alphafe_gspspec_upper": 0.01,
+        "arp_gspphot": 0.4141,
+        "arp_gspphot_lower": 0.403,
+        "arp_gspphot_upper": 0.4225,
+        "azero_esphs": null,
+        "azero_esphs_uncertainty": null,
+        "azero_gspphot": 0.6984,
+        "azero_gspphot_lower": 0.6798,
+        "azero_gspphot_upper": 0.7125,
+        "azero_msc": 0.1593019,
+        "azero_msc_lower": 0,
+        "azero_msc_upper": 0.5341892,
+        "bc_flame": 0.023796774,
+        "cafe_gspspec": null,
+        "cafe_gspspec_linescatter": null,
+        "cafe_gspspec_lower": null,
+        "cafe_gspspec_nlines": null,
+        "cafe_gspspec_upper": null,
+        "cefe_gspspec": null,
+        "cefe_gspspec_linescatter": null,
+        "cefe_gspspec_lower": null,
+        "cefe_gspspec_nlines": null,
+        "cefe_gspspec_upper": null,
+        "classlabel_espels": null,
+        "classlabel_espels_flag": null,
+        "classprob_dsc_allosmod_galaxy": 0,
+        "classprob_dsc_allosmod_quasar": 0,
+        "classprob_dsc_allosmod_star": 1,
+        "classprob_dsc_combmod_binarystar": 3.4548826e-05,
+        "classprob_dsc_combmod_galaxy": 5.113397e-13,
+        "classprob_dsc_combmod_quasar": 1.0237135e-13,
+        "classprob_dsc_combmod_star": 0.9999654,
+        "classprob_dsc_combmod_whitedwarf": 1.0827374e-10,
+        "classprob_dsc_specmod_binarystar": 0.0034431913,
+        "classprob_dsc_specmod_galaxy": 0,
+        "classprob_dsc_specmod_quasar": 0,
+        "classprob_dsc_specmod_star": 0.9965562,
+        "classprob_dsc_specmod_whitedwarf": 5.2882973e-07,
+        "classprob_espels_bestar": null,
+        "classprob_espels_dmestar": null,
+        "classprob_espels_herbigstar": null,
+        "classprob_espels_pne": null,
+        "classprob_espels_ttauristar": null,
+        "classprob_espels_wcstar": null,
+        "classprob_espels_wnstar": null,
+        "cn0ew_gspspec": null,
+        "cn0ew_gspspec_uncertainty": null,
+        "cn0_gspspec_centralline": null,
+        "cn0_gspspec_width": null,
+        "crfe_gspspec": null,
+        "crfe_gspspec_linescatter": null,
+        "crfe_gspspec_lower": null,
+        "crfe_gspspec_nlines": null,
+        "crfe_gspspec_upper": null,
+        "dibew_gspspec": null,
+        "dibew_gspspec_uncertainty": null,
+        "dibewnoise_gspspec_uncertainty": null,
+        "dib_gspspec_lambda": null,
+        "dib_gspspec_lambda_uncertainty": null,
+        "dibp0_gspspec": null,
+        "dibp2_gspspec": null,
+        "dibp2_gspspec_uncertainty": null,
+        "dibqf_gspspec": null,
+        "distance_gspphot": 1626.0538,
+        "distance_gspphot_lower": 1607.7507,
+        "distance_gspphot_upper": 1645.8344,
+        "distance_msc": 336.9311,
+        "distance_msc_lower": 195.66827,
+        "distance_msc_upper": 495.4745,
+        "ebpminrp_esphs": null,
+        "ebpminrp_esphs_uncertainty": null,
+        "ebpminrp_gspphot": 0.2948,
+        "ebpminrp_gspphot_lower": 0.2866,
+        "ebpminrp_gspphot_upper": 0.301,
+        "evolstage_flame": 514,
+        "ew_espels_halpha": 0.0023794787,
+        "ew_espels_halpha_flag": "0",
+        "ew_espels_halpha_model": 0.057763,
+        "ew_espels_halpha_uncertainty": 0.035997167,
+        "feiim_gspspec": null,
+        "feiim_gspspec_linescatter": null,
+        "feiim_gspspec_lower": null,
+        "feiim_gspspec_nlines": null,
+        "feiim_gspspec_upper": null,
+        "fem_gspspec": null,
+        "fem_gspspec_linescatter": null,
+        "fem_gspspec_lower": null,
+        "fem_gspspec_nlines": null,
+        "fem_gspspec_upper": null,
+        "flags_esphs": "94",
+        "flags_espucd": null,
+        "flags_flame": "10",
+        "flags_gspspec": "00000001000009999999999999999999999999999",
+        "flags_msc": "1",
+        "flags_oa": null,
+        "gravredshift_flame": 0.16625258,
+        "gravredshift_flame_lower": 0.16404997,
+        "gravredshift_flame_upper": 0.16831397,
+        "libname_gspphot": "MARCS",
+        "logchisq_gspspec": -2.8892274,
+        "logg_esphs": null,
+        "logg_esphs_uncertainty": null,
+        "logg_gspphot": 2.8876,
+        "logg_gspphot_lower": 2.8751,
+        "logg_gspphot_upper": 2.8989,
+        "logg_gspspec": 4.84,
+        "logg_gspspec_lower": 4.69,
+        "logg_gspspec_upper": 4.97,
+        "logg_msc1": 4.5069036,
+        "logg_msc1_lower": 3.9809523,
+        "logg_msc1_upper": 4.917365,
+        "logg_msc2": 4.5100813,
+        "logg_msc2_lower": 4.15438,
+        "logg_msc2_upper": 4.60028,
+        "logposterior_gspphot": -1080.3743,
+        "logposterior_msc": -6764.7153,
+        "lum_flame": 54.640694,
+        "lum_flame_lower": 51.660503,
+        "lum_flame_upper": 57.924145,
+        "mass_flame": 2.5989375,
+        "mass_flame_lower": 2.5586014,
+        "mass_flame_upper": 2.7083135,
+        "mcmcaccept_gspphot": 0.25664577,
+        "mcmcaccept_msc": 0.24245824,
+        "mcmcdrift_msc": 0.25060374,
+        "mgfe_gspspec": null,
+        "mgfe_gspspec_linescatter": null,
+        "mgfe_gspspec_lower": null,
+        "mgfe_gspspec_nlines": null,
+        "mgfe_gspspec_upper": null,
+        "mg_gspphot": 0.3438,
+        "mg_gspphot_lower": 0.3255,
+        "mg_gspphot_upper": 0.3581,
+        "mh_gspphot": -0.1307,
+        "mh_gspphot_lower": -0.1322,
+        "mh_gspphot_upper": -0.1295,
+        "mh_gspspec": 0.16,
+        "mh_gspspec_lower": 0.11,
+        "mh_gspspec_upper": 0.24,
+        "mh_msc": 0.46793157,
+        "mh_msc_lower": 0.30942583,
+        "mh_msc_upper": 0.5,
+        "ndfe_gspspec": null,
+        "ndfe_gspspec_linescatter": null,
+        "ndfe_gspspec_lower": null,
+        "ndfe_gspspec_nlines": null,
+        "ndfe_gspspec_upper": null,
+        "neuron_oa_dist": null,
+        "neuron_oa_dist_percentile_rank": null,
+        "neuron_oa_id": null,
+        "nfe_gspspec": null,
+        "nfe_gspspec_linescatter": null,
+        "nfe_gspspec_lower": null,
+        "nfe_gspspec_nlines": null,
+        "nfe_gspspec_upper": null,
+        "nife_gspspec": null,
+        "nife_gspspec_linescatter": null,
+        "nife_gspspec_lower": null,
+        "nife_gspspec_nlines": null,
+        "nife_gspspec_upper": null,
+        "radius_flame": 9.098883,
+        "radius_flame_lower": 8.791171,
+        "radius_flame_upper": 9.427295,
+        "radius_gspphot": 9.2474,
+        "radius_gspphot_lower": 9.1268,
+        "radius_gspphot_upper": 9.3798,
+        "sfe_gspspec": null,
+        "sfe_gspspec_linescatter": null,
+        "sfe_gspspec_lower": null,
+        "sfe_gspspec_nlines": null,
+        "sfe_gspspec_upper": null,
+        "sife_gspspec": null,
+        "sife_gspspec_linescatter": null,
+        "sife_gspspec_lower": null,
+        "sife_gspspec_nlines": null,
+        "sife_gspspec_upper": null,
+        "solution_id": 1636148068921376768,
+        "spectraltype_esphs": "K",
+        "teff_esphs": null,
+        "teff_esphs_uncertainty": null,
+        "teff_espucd": null,
+        "teff_espucd_uncertainty": null,
+        "teff_gspphot": 5205.7764,
+        "teff_gspphot_lower": 5183.3394,
+        "teff_gspphot_upper": 5220.2515,
+        "teff_gspspec": 5210,
+        "teff_gspspec_lower": 5050,
+        "teff_gspspec_upper": 5247,
+        "teff_msc1": 5301.817,
+        "teff_msc1_lower": 4873.936,
+        "teff_msc1_upper": 5793.482,
+        "teff_msc2": 4215.2373,
+        "teff_msc2_lower": 4122,
+        "teff_msc2_upper": 4320.8574,
+        "tife_gspspec": null,
+        "tife_gspspec_linescatter": null,
+        "tife_gspspec_lower": null,
+        "tife_gspspec_nlines": null,
+        "tife_gspspec_upper": null,
+        "vsini_esphs": null,
+        "vsini_esphs_uncertainty": null,
+        "zrfe_gspspec": null,
+        "zrfe_gspspec_linescatter": null,
+        "zrfe_gspspec_lower": null,
+        "zrfe_gspspec_nlines": null,
+        "zrfe_gspspec_upper": null
+      }
+    ]
+  },
+  "retrieved_utc": "2026-11-08T22:19:06.721953+00:00"
+}

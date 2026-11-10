@@ -1,0 +1,68 @@
+[
+  {
+    "detector": 1,
+    "file": "2026W16_1A_0124_2D1.fits",
+    "fixed_reduced_chi2": 26.87903914958972,
+    "best_shift_xy": [
+      0.04000000000000001,
+      0.01999999999999999
+    ],
+    "best_flux_ratio": 1.004457806942041,
+    "best_chi2_ratio": 0.5148463693084298
+  },
+  {
+    "detector": 2,
+    "file": "2025W43_1A_0130_2D2.fits",
+    "fixed_reduced_chi2": 43.075717202201794,
+    "best_shift_xy": [
+      -0.04000000000000001,
+      -0.04000000000000001
+    ],
+    "best_flux_ratio": 1.0198686981007254,
+    "best_chi2_ratio": 0.10067438132554414
+  },
+  {
+    "detector": 3,
+    "file": "2026W15_1A_0271_4D3.fits",
+    "fixed_reduced_chi2": 32.23984415347024,
+    "best_shift_xy": [
+      -0.04000000000000001,
+      -0.020000000000000004
+    ],
+    "best_flux_ratio": 1.0080215328204705,
+    "best_chi2_ratio": 0.22825873235830862
+  },
+  {
+    "detector": 4,
+    "file": "2025W42_2A_0303_4D4.fits",
+    "fixed_reduced_chi2": 23.491885100078836,
+    "best_shift_xy": [
+      0.0,
+      -0.020000000000000004
+    ],
+    "best_flux_ratio": 1.00187710758332,
+    "best_chi2_ratio": 0.9043434415417037
+  },
+  {
+    "detector": 5,
+    "file": "2026W15_1A_0224_2D5.fits",
+    "fixed_reduced_chi2": 5.407387943616234,
+    "best_shift_xy": [
+      0.04000000000000001,
+      0.04000000000000001
+    ],
+    "best_flux_ratio": 1.0122226115449888,
+    "best_chi2_ratio": 0.4361371397461126
+  },
+  {
+    "detector": 6,
+    "file": "2025W42_2A_0615_1D6.fits",
+    "fixed_reduced_chi2": 3.2306237568476193,
+    "best_shift_xy": [
+      -0.060000000000000005,
+      0.0
+    ],
+    "best_flux_ratio": 1.0069154652626735,
+    "best_chi2_ratio": 0.6260004392308343
+  }
+]

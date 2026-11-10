@@ -1,0 +1,59 @@
+{
+  "target": "DASCH J075445.9+164141",
+  "question": "Does the 1930s dimming persist relative to comparison stars and independent APPLAUSE plates?",
+  "created_at_utc": "2026-11-08T03:15:19.2266709Z",
+  "source_recon": "results/sky-plates-recon-20261107/recon_manifest.json",
+  "prediction": "Target dims relative to geometrically selected colour/magnitude-matched controls in independent plate series and APPLAUSE material.",
+  "weakening_outcomes": [
+    "Controls share the same temporal feature.",
+    "Event is confined to one plate series or colour response.",
+    "Signal disappears under justified pre-specified quality selection.",
+    "Image defects, blending, mismatching or inadequate depth explain the apparent feature."
+  ],
+  "event_years": [
+    1930,
+    1940
+  ],
+  "baseline_years": [
+    [
+      1910,
+      1930
+    ],
+    [
+      1950,
+      1970
+    ]
+  ],
+  "interval_convention": "Lower bound included, upper bound excluded.",
+  "dasch_controls": {
+    "fallback_radius_arcmin": 30,
+    "maximum_controls": 12,
+    "catalog_color_tolerance": 0.3,
+    "selection": "Nearest qualifying catalog stars selected without viewing their light curves. If fewer than eight within 20 arcmin, expand to 30 arcmin with the same constraints.",
+    "minimum_catalog_matches": 300,
+    "radius_arcmin": 20,
+    "catalog_magnitude_tolerance": 1.0,
+    "minimum_controls_per_plate": 5,
+    "isolation_arcsec": 20
+  },
+  "dasch_quality": {
+    "separate_narrow_series_sensitivity": true,
+    "no_sigma_clipping_on_target_brightness": true,
+    "maximum_mag_error": 0.3,
+    "standard_rejections": "Reproduce current documented daschlab mask after inspecting maintained source.",
+    "emulsion_metadata_sensitivity": true,
+    "minimum_depth_margin_mag": 0.5,
+    "maximum_position_error_arcsec": 10
+  },
+  "differential": "Subtract each control median over baseline years, subtract same-exposure ensemble median from target, and compare target/control event contrasts using yearly medians. Require at least five same-exposure controls.",
+  "uncertainty": "Bootstrap yearly-median blocks, 2000 replicates, fixed seed 20261107; descriptive intervals, not a calibrated discovery significance.",
+  "applause_quality": {
+    "model_prediction_minimum": 0.9,
+    "passbands": "Use natural magnitudes and supplied colour terms/catalog synthetic magnitudes; BP and RP values derived from one image are not independent two-band observations.",
+    "do_not_drop_calibration_outliers_by_flag_alone": true,
+    "maximum_mag_error": 0.3,
+    "phot_range_flags": 0,
+    "maximum_annular_bin": 8
+  },
+  "scope": "Bounded pilot; report insufficient coverage or sensitivity to filtering. No mechanism claim or new-discovery claim."
+}

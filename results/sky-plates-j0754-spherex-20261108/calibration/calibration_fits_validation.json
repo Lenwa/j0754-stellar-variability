@@ -1,0 +1,476 @@
+[
+  {
+    "file": "epsf_D1_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "hdu": [
+      {
+        "name": "EPSF",
+        "shape": [
+          441
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      },
+      {
+        "name": "EPSF_MOSAIC",
+        "shape": [
+          713,
+          713
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      }
+    ],
+    "oversampling": [
+      5,
+      5
+    ],
+    "sums_minmax": [
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "finite_all": true
+  },
+  {
+    "file": "epsf_D2_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "hdu": [
+      {
+        "name": "EPSF",
+        "shape": [
+          441
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      },
+      {
+        "name": "EPSF_MOSAIC",
+        "shape": [
+          713,
+          713
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      }
+    ],
+    "oversampling": [
+      5,
+      5
+    ],
+    "sums_minmax": [
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "finite_all": true
+  },
+  {
+    "file": "epsf_D3_spx_cal-epsf-v2-2026-191.fits",
+    "bytes": 8118720,
+    "hdu": [
+      {
+        "name": "EPSF",
+        "shape": [
+          451
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      },
+      {
+        "name": "EPSF_MOSAIC",
+        "shape": [
+          1393,
+          373
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      }
+    ],
+    "oversampling": [
+      5,
+      5
+    ],
+    "sums_minmax": [
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "finite_all": true
+  },
+  {
+    "file": "epsf_D4_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "hdu": [
+      {
+        "name": "EPSF",
+        "shape": [
+          441
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      },
+      {
+        "name": "EPSF_MOSAIC",
+        "shape": [
+          713,
+          713
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      }
+    ],
+    "oversampling": [
+      5,
+      5
+    ],
+    "sums_minmax": [
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "finite_all": true
+  },
+  {
+    "file": "epsf_D5_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "hdu": [
+      {
+        "name": "EPSF",
+        "shape": [
+          441
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      },
+      {
+        "name": "EPSF_MOSAIC",
+        "shape": [
+          713,
+          713
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      }
+    ],
+    "oversampling": [
+      5,
+      5
+    ],
+    "sums_minmax": [
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "finite_all": true
+  },
+  {
+    "file": "epsf_D6_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "hdu": [
+      {
+        "name": "EPSF",
+        "shape": [
+          441
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      },
+      {
+        "name": "EPSF_MOSAIC",
+        "shape": [
+          713,
+          713
+        ],
+        "unit": null,
+        "detcoord": "sky"
+      }
+    ],
+    "oversampling": [
+      5,
+      5
+    ],
+    "sums_minmax": [
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "finite_all": true
+  },
+  {
+    "file": "solid_angle_pixel_map_D1_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "hdu": [
+      {
+        "name": "IMAGE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "arcsec2",
+        "detcoord": "sky"
+      }
+    ]
+  },
+  {
+    "file": "solid_angle_pixel_map_D2_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "hdu": [
+      {
+        "name": "IMAGE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "arcsec2",
+        "detcoord": "sky"
+      }
+    ]
+  },
+  {
+    "file": "solid_angle_pixel_map_D3_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "hdu": [
+      {
+        "name": "IMAGE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "arcsec2",
+        "detcoord": "sky"
+      }
+    ]
+  },
+  {
+    "file": "solid_angle_pixel_map_D4_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "hdu": [
+      {
+        "name": "IMAGE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "arcsec2",
+        "detcoord": "sky"
+      }
+    ]
+  },
+  {
+    "file": "solid_angle_pixel_map_D5_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "hdu": [
+      {
+        "name": "IMAGE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "arcsec2",
+        "detcoord": "sky"
+      }
+    ]
+  },
+  {
+    "file": "solid_angle_pixel_map_D6_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "hdu": [
+      {
+        "name": "IMAGE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "arcsec2",
+        "detcoord": "sky"
+      }
+    ]
+  },
+  {
+    "file": "spectral_wcs_D1_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "hdu": [
+      {
+        "name": "CWAVE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "CBAND",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "WCS-WAVE",
+        "shape": [
+          1
+        ],
+        "unit": null,
+        "detcoord": null
+      }
+    ]
+  },
+  {
+    "file": "spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "hdu": [
+      {
+        "name": "CWAVE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "CBAND",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "WCS-WAVE",
+        "shape": [
+          1
+        ],
+        "unit": null,
+        "detcoord": null
+      }
+    ]
+  },
+  {
+    "file": "spectral_wcs_D3_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "hdu": [
+      {
+        "name": "CWAVE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "CBAND",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "WCS-WAVE",
+        "shape": [
+          1
+        ],
+        "unit": null,
+        "detcoord": null
+      }
+    ]
+  },
+  {
+    "file": "spectral_wcs_D4_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "hdu": [
+      {
+        "name": "CWAVE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "CBAND",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "WCS-WAVE",
+        "shape": [
+          1
+        ],
+        "unit": null,
+        "detcoord": null
+      }
+    ]
+  },
+  {
+    "file": "spectral_wcs_D5_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "hdu": [
+      {
+        "name": "CWAVE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "CBAND",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "WCS-WAVE",
+        "shape": [
+          1
+        ],
+        "unit": null,
+        "detcoord": null
+      }
+    ]
+  },
+  {
+    "file": "spectral_wcs_D6_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "hdu": [
+      {
+        "name": "CWAVE",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "CBAND",
+        "shape": [
+          2040,
+          2040
+        ],
+        "unit": "um",
+        "detcoord": "sky"
+      },
+      {
+        "name": "WCS-WAVE",
+        "shape": [
+          1
+        ],
+        "unit": null,
+        "detcoord": null
+      }
+    ]
+  }
+]

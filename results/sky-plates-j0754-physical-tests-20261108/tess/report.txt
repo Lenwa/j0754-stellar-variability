@@ -1,0 +1,93 @@
+J0754 TESS extracted-lightcurve physical tests
+
+OUTCOME: The archive products show strong reduction dependence and contain an unvetted
+flare-like positive excursion in Sector 46. They do not validate a universal 0.002 mag
+transit limit or a bolometric flare-energy threshold. The screen below resamples its
+own candidates: its threshold often equals the largest observed excursion. No events
+above that self-including descriptive screen is NOT evidence of flare absence.
+
+These eight FITS files are extracted light curves, not raw telescope pixel data.
+QUALITY=0 and finite positive flux/error screens were used without brightness clipping.
+Each sector/product was normalized separately; no multi-year DC level is inferred.
+
+Primary corrected products; empirical fractional-flux scatter, not a precision limit:
+Product | native accepted | 20min bins | robust scatter | 1day highpass scatter | lag1 correlation
+QLP_S44_KSPSAP_FLUX | 2821 | 1425 | 0.0009376 | 0.00095041 | 0.054
+QLP_S45_KSPSAP_FLUX | 2811 | 1547 | 0.00095236 | 0.00094529 | 0.110
+QLP_S46_KSPSAP_FLUX | 2891 | 1616 | 0.0009537 | 0.00097037 | 0.526
+QLP_S71_DET_FLUX | 8121 | 1368 | 0.0010639 | 0.0010392 | 0.061
+QLP_S72_DET_FLUX | 9001 | 1513 | 0.00093022 | 0.00094809 | 0.192
+TESS-SPOC_S71_PDCSAP_FLUX | 8772 | 1470 | 0.0017192 | 0.00088624 | 0.602
+TESS-SPOC_S72_PDCSAP_FLUX | 8435 | 1410 | 0.0052167 | 0.0010312 | 0.483
+TESS-SPOC_S1751_PDCSAP_FLUX | 1502 | 251 | 0.00071526 | 0.00072142 | 0.325
+
+Background and centroid Pearson correlations, two-day baseline sensitivity, native errors,
+quality counts and constant/linear fixed-template fits are retained in results.json.
+Correlations do not by themselves prove contamination or astrophysical variability.
+
+Flux excursions: top three of each sign per product are retained regardless of screening.
+Their white-scaled scores are not Gaussian detection significances. The screening threshold
+is the larger 95th percentile of maximum statistics from 6 h/24 h observed-residual block
+resampling. Nonstationarity, candidate signals in the resampling pool and residual systematics
+prevent treating this as a calibrated null false alarm probability.
+
+QLP_S44_KSPSAP_FLUX: 0 of 6 retained excursions above descriptive screen; threshold=6.68.
+QLP_S45_KSPSAP_FLUX: 0 of 6 retained excursions above descriptive screen; threshold=9.87.
+QLP_S46_KSPSAP_FLUX: 0 of 6 retained excursions above descriptive screen; threshold=39.
+QLP_S71_DET_FLUX: 0 of 6 retained excursions above descriptive screen; threshold=4.9.
+QLP_S72_DET_FLUX: 0 of 6 retained excursions above descriptive screen; threshold=8.6.
+TESS-SPOC_S71_PDCSAP_FLUX: 0 of 6 retained excursions above descriptive screen; threshold=29.5.
+TESS-SPOC_S72_PDCSAP_FLUX: 0 of 6 retained excursions above descriptive screen; threshold=23.
+TESS-SPOC_S1751_PDCSAP_FLUX: 0 of 6 retained excursions above descriptive screen; threshold=6.26.
+
+The injection grid uses actual quality-retained native timestamps, injects before 20 minute
+binning, and repeats the 1 day local median. Box deficits 1/3/6 h and flare-like decay 0.5/1/2 h
+at fractional amplitudes 0.001/0.003/0.01/0.03 are tested at 24 times per product, including
+gaps. Threshold-crossing fractions, baseline crossings and visible integral fractions are
+recorded separately. These are bounded sampling/pipeline sensitivities, not universal
+upper limits or a correction for upstream pipeline attenuation.
+
+The 1/3/6 hour grid concerns brief events. Multi-day giant-binary transits can last
+about 2.7–5.7 days in the separate conditional models. The 1 day highpass suppresses such
+broad events, so this grid supplies NO transit-depth/radius bound for those geometries.
+
+A fixed 35.9204566 day fundamental and 17.9602283 day harmonic are jointly fitted with
+constant or linear sector nuisances using the existing orbit_photometry basis. Short
+baselines and small retained signal energy can make amplitudes poorly identified. Fits
+and reduction comparisons do not establish a stable waveform, rotation or a new orbit
+exclusion. The existing independent ASAS-SN/ZTF period result remains separate.
+
+Equivalent durations integrate signed observed residuals in seconds and never bridge
+large gaps. They are window-dependent extracted-aperture quantities. Bolometric flare
+energies require an unknown flare/passband correction, quiescent band luminosity and
+dilution model. No 150 Lsun, 0.002 mag limit, 100 ppm precision or universal 3 sigma bound was
+assumed. Transit radius limits require validated completeness and geometry; none is claimed.
+
+Files: results.json; per-product 20 min CSV; within_sector_variability.png;
+event_injection_response.png; top_flux_excursions.png. Input/source/protocol hashes are
+retained. No complete FFI files, telescope actions, accounts or publication occurred.
+
+OVERLAPPING CORRECTED REDUCTIONS (SAME PHOTONS)
+Sector 71: highpass correlation 0.158; robust difference scatter 0.0012023.
+Sector 72: highpass correlation 0.340; robust difference scatter 0.0010253.
+
+FIXED-TEMPLATE FRACTIONAL SEMI-AMPLITUDES; DESCRIPTIVE, NOT UPPER LIMITS
+SAP_FLUX_2021 constant: P=0.0030499, P/2=0.0013083; condition=1.29.
+SAP_FLUX_2021 linear: P=0.0064226, P/2=0.0012489; condition=2.51.
+SAP_FLUX_2023 constant: P=0.0045408, P/2=0.0074875; condition=1.62.
+SAP_FLUX_2023 linear: P=0.016469, P/2=0.0074539; condition=3.21.
+corrected_2021 constant: P=6.7576e-05, P/2=1.5858e-05; condition=1.29.
+corrected_2021 linear: P=8.3707e-05, P/2=1.1413e-05; condition=2.51.
+corrected_2023 constant: P=4.2415e-05, P/2=2.8322e-05; condition=1.62.
+corrected_2023 linear: P=4.1999e-05, P/2=2.6718e-05; condition=3.21.
+
+BOUNDED SECTOR 46 PIXEL FOLLOW-UP (SEPARATE PROTOCOL AMENDMENT)
+A 3.91 MB official TESSCut 7x7 calibrated FFI cutout was subsequently recovered.
+Quality-zero frames before/event/after: {'before': 43, 'event': 16, 'after': 40}; event date 2021-12-23T13:56:21.268.
+Positive difference centroid offset from Gaia WCS: 0.177pixel; no calibrated positional confidence interval.
+Stationary-source-shape scale: 0.02020; with derivative motion terms: 0.02016.
+The excursion spans many native frames and is spatially compact near the target.
+This improves its status to a target-associated flare-like candidate, but does not
+exclude unresolved blends, a near-aligned moving source, PRF/background effects or
+calibration artifacts. See pixel maps, per-frame table and sideband sensitivities.
+It is not a confirmed stellar flare or a measurement of bolometric flare energy.

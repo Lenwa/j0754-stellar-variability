@@ -1,0 +1,317 @@
+{
+  "quality_rows": 182,
+  "joint_clean_rows": 160,
+  "detector_comparison": {
+    "1": {
+      "n": 37,
+      "native_local_flux_ratio_quantiles": [
+        0.8679818726447251,
+        0.9245758785893741,
+        0.9660523881586606,
+        0.9863471303715473,
+        1.0149981500879819
+      ],
+      "native_minus_local_wavelength_um": [
+        -9.705493316647384e-05,
+        -1.6334143981944216e-05,
+        8.815796737671189e-05
+      ],
+      "median_reduced_chi2": 11.894267175415873
+    },
+    "2": {
+      "n": 21,
+      "native_local_flux_ratio_quantiles": [
+        0.9603168533097425,
+        0.9630646553283395,
+        0.9775382759915209,
+        0.9905538154691975,
+        1.0011583417846435
+      ],
+      "native_minus_local_wavelength_um": [
+        -0.00016770271301269624,
+        -5.175548706048971e-05,
+        0.00015652297973622886
+      ],
+      "median_reduced_chi2": 23.003021507921645
+    },
+    "3": {
+      "n": 20,
+      "native_local_flux_ratio_quantiles": [
+        0.9079568816495024,
+        0.9653121311985116,
+        0.9822693423924652,
+        1.0212002421099597,
+        1.0356973438488306
+      ],
+      "native_minus_local_wavelength_um": [
+        -0.00022867513122548644,
+        3.121025543229017e-05,
+        0.000370732177734201
+      ],
+      "median_reduced_chi2": 12.219492433152714
+    },
+    "4": {
+      "n": 32,
+      "native_local_flux_ratio_quantiles": [
+        0.9219962341722823,
+        0.9898538025547687,
+        1.027889797504133,
+        1.0486531791317728,
+        1.0779254341065017
+      ],
+      "native_minus_local_wavelength_um": [
+        -0.00051378120422374,
+        -4.566315917964303e-05,
+        0.0003483743499756997
+      ],
+      "median_reduced_chi2": 8.786957355304953
+    },
+    "5": {
+      "n": 36,
+      "native_local_flux_ratio_quantiles": [
+        0.7439152893657937,
+        0.9616122303651495,
+        1.0160917087159975,
+        1.056693217384883,
+        1.0574559922664934
+      ],
+      "native_minus_local_wavelength_um": [
+        0.006264662304687363,
+        0.006433749194335814,
+        0.006575486297607291
+      ],
+      "median_reduced_chi2": 1.9682039841995218
+    },
+    "6": {
+      "n": 36,
+      "native_local_flux_ratio_quantiles": [
+        0.9464729017738612,
+        0.9566372934991301,
+        1.0078207960619272,
+        1.0634124290202278,
+        1.084958747618188
+      ],
+      "native_minus_local_wavelength_um": [
+        0.006061600292968983,
+        0.006406567623901793,
+        0.0066347616821289535
+      ],
+      "median_reduced_chi2": 1.7396086480385018
+    }
+  },
+  "photosphere_cases": [
+    {
+      "reduction": "local",
+      "season": "2025",
+      "n": 35,
+      "model": "ckm10_4750.fits",
+      "gravity": "g30",
+      "rv": "rv31",
+      "av": 0.25,
+      "scale": 1995138858.1535282,
+      "log_rms": 0.033884272435740326,
+      "five_percent_log_rms_sensitivity": {
+        "sampled_cases": 734,
+        "MIR_median_ratio_bounds": [
+          [
+            0.9142611629451376,
+            1.0394499904185677
+          ],
+          [
+            0.9239640376482561,
+            1.073592636696148
+          ],
+          [
+            0.8890634410634236,
+            1.142926161276533
+          ]
+        ],
+        "qualification": "Post-hoc loose shape tolerance, not confidence bounds; includes temperature/gravity/metallicity/extinction degeneracy in sampled grid."
+      },
+      "ratio_2.45_3.75": {
+        "n": 14,
+        "median": 0.9710138320449113,
+        "range": [
+          0.9476716748105998,
+          0.9933864987240575
+        ]
+      },
+      "ratio_3.8_4.4": {
+        "n": 15,
+        "median": 0.9951508607215775,
+        "range": [
+          0.9570772129297462,
+          1.0264281266133521
+        ]
+      },
+      "ratio_4.4_5.0": {
+        "n": 14,
+        "median": 1.0083198887032538,
+        "range": [
+          0.9778863186451505,
+          1.071867714989053
+        ]
+      }
+    },
+    {
+      "reduction": "local",
+      "season": "2026",
+      "n": 33,
+      "model": "ckp00_4750.fits",
+      "gravity": "g30",
+      "rv": "rv31",
+      "av": 0.2,
+      "scale": 1972704047.8274455,
+      "log_rms": 0.034692428956890814,
+      "five_percent_log_rms_sensitivity": {
+        "sampled_cases": 631,
+        "MIR_median_ratio_bounds": [
+          [
+            0.9235334213985575,
+            1.0418808072036319
+          ],
+          [
+            0.9490146485853916,
+            1.088712532046365
+          ],
+          [
+            0.9196299014931711,
+            1.1673299000463753
+          ]
+        ],
+        "qualification": "Post-hoc loose shape tolerance, not confidence bounds; includes temperature/gravity/metallicity/extinction degeneracy in sampled grid."
+      },
+      "ratio_2.45_3.75": {
+        "n": 13,
+        "median": 0.9901981937211685,
+        "range": [
+          0.9536791204376384,
+          1.0187925033811527
+        ]
+      },
+      "ratio_3.8_4.4": {
+        "n": 16,
+        "median": 1.0305857808847736,
+        "range": [
+          0.9855375721598849,
+          1.0727044722325394
+        ]
+      },
+      "ratio_4.4_5.0": {
+        "n": 14,
+        "median": 1.0930406375010397,
+        "range": [
+          1.0246074732726158,
+          1.1332122804491775
+        ]
+      }
+    },
+    {
+      "reduction": "native",
+      "season": "2025",
+      "n": 35,
+      "model": "ckm10_4750.fits",
+      "gravity": "g30",
+      "rv": "rv31",
+      "av": 0.30000000000000004,
+      "scale": 1980136720.8075,
+      "log_rms": 0.036070292313003925,
+      "five_percent_log_rms_sensitivity": {
+        "sampled_cases": 705,
+        "MIR_median_ratio_bounds": [
+          [
+            0.9432361886811198,
+            1.0738417506586029
+          ],
+          [
+            0.9651894386130088,
+            1.111971605448316
+          ],
+          [
+            0.9106118656103044,
+            1.151962924793533
+          ]
+        ],
+        "qualification": "Post-hoc loose shape tolerance, not confidence bounds; includes temperature/gravity/metallicity/extinction degeneracy in sampled grid."
+      },
+      "ratio_2.45_3.75": {
+        "n": 14,
+        "median": 1.0007162780993706,
+        "range": [
+          0.981705164249921,
+          1.0264072221051026
+        ]
+      },
+      "ratio_3.8_4.4": {
+        "n": 15,
+        "median": 1.0312496931808388,
+        "range": [
+          1.0106174149153022,
+          1.0741054397262462
+        ]
+      },
+      "ratio_4.4_5.0": {
+        "n": 14,
+        "median": 1.0300947442892654,
+        "range": [
+          0.9656871757367798,
+          1.0692918395337343
+        ]
+      }
+    },
+    {
+      "reduction": "native",
+      "season": "2026",
+      "n": 33,
+      "model": "ckm05_4750.fits",
+      "gravity": "g25",
+      "rv": "rv31",
+      "av": 0.25,
+      "scale": 1974117708.0995054,
+      "log_rms": 0.035358711675133006,
+      "five_percent_log_rms_sensitivity": {
+        "sampled_cases": 607,
+        "MIR_median_ratio_bounds": [
+          [
+            0.9645539049826473,
+            1.0820339290287726
+          ],
+          [
+            0.9645825752329853,
+            1.1029500793626905
+          ],
+          [
+            0.938395541615224,
+            1.1918870310374126
+          ]
+        ],
+        "qualification": "Post-hoc loose shape tolerance, not confidence bounds; includes temperature/gravity/metallicity/extinction degeneracy in sampled grid."
+      },
+      "ratio_2.45_3.75": {
+        "n": 13,
+        "median": 1.0239429313742996,
+        "range": [
+          0.9901868282932386,
+          1.0616250843996982
+        ]
+      },
+      "ratio_3.8_4.4": {
+        "n": 16,
+        "median": 1.0422418901135257,
+        "range": [
+          0.999467175386134,
+          1.075309570047887
+        ]
+      },
+      "ratio_4.4_5.0": {
+        "n": 14,
+        "median": 1.0934219930475635,
+        "range": [
+          1.031012492688794,
+          1.137707039340394
+        ]
+      }
+    }
+  ],
+  "qualification": "Post-hoc exploratory shape check. Fits only .75\u20132.4um in each recovery-era season; MIR already seen before model calculation, so retrospective prediction check. Rectangular CWAVE/CBAND responses, coarse CK04 grid (3500\u20136500K/logg2\u20133/metal\u22121\u20130), Draine static foreground attenuation and free normalization. Equal log-flux weights; grid score is not likelihood. Parameter degeneracy, correlated calibration, missing actual response curves and atmosphere errors prevent precision temperatures or excess limits. Local and native methods share science pixels; their agreement is methodological, not independent astrophysical replication."
+}

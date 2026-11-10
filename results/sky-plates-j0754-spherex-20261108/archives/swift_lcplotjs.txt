@@ -1,0 +1,807 @@
+// This should be loaded BEFORE sourceIndex.js.
+// because some of the functions in here should be called by the document.ready() function in that.
+
+var loadedLCStem = Array();
+var activeLCStem = Array();
+var activeBand = Array();
+var xaxis=Array();
+var showingDownLoad=0;
+var bands = ["total", "soft", "medium", "hard", "HR1", "HR2"];
+var xaxes = ["TDB", "MJD", "Swift MET"];
+var xaxisIndices = ["tdb", "mjd", "met"];
+var yaxes = ["Count Rate (0.3-10 keV)", "Count Rate (0.3-1 keV)", "Count Rate (1-2 keV)", "Count Rate (2-10 keV)", "(Medium-Soft) / (Medium+Soft)", "(Hard-Medium) / (Hard+Medium)"];
+
+// The dataset types, labels to use
+// Dets refers to detections
+// noBlindRates means the rate for things that ARE detected, but not blind
+// noBlindULs means the ULs for things that ARE detected, but not blind
+// noDetRates means the rates for things never detected
+// noDetULs means the ULs for things never detected
+var datasetTypes = ["dets", "noBlindRates", "noBlindULs", "noDetRates", "noDetULs"];
+var HRDatasetTypes = ["dets", "nonBlindDet"]; //, "all"];
+
+// So each dataset will have a name "$band_$xaxis_$type"
+// The bands and xaxes are also used in the controls
+// with the same entries as above.
+
+// For the dataset types it more complex because I have 3 types for which I need to find
+// labels. These are controlled by the form box with ID jspeID+"_nondets", and
+// dsActive, below, then decides which of the datasetTypes should be active
+// for each seeting of that box.
+
+
+// dsActive is an array of arrays. The outer element is the value of the "nondets" select box
+// which is:
+// 0 = show "best", i.e. based on non-blind det
+// 1 = UL for all non-blind
+// 2 = Rate for all non-blind
+// The inner element is the datasetType (as above).
+// The value is whether the ds is shown or not.
+// so dsActive[1][3] means "When we're showing ULs for all non-blind, does noDetRates get shown?"
+var dsActive = [[1, 1, 0, 0, 1], [1, 0, 1, 0, 1], [1, 1, 0, 1, 0]];
+var HRDSActive = [[1, 0, 0], [1, 1, 0] ]; //, [1, 1, 1]];
+// dsColour is the colour of each dataset, index matches datasetTypes
+var dsColour = ["#000000", "#000000'", "#FF0000", "#000000", "#FF0000"];
+var HRDSColour = ["#000000", "#000000"] //, "'FF0000'"];
+// dsUL ius whether the dataset is an upper limit, index matches datasetTypes
+var dsUL = [0, 0, 1, 0, 1];
+
+var oldYlo=Array();
+var oldYhi=Array();
+var oldYlog=Array();
+
+
+/* *****************
+** INITIALISATION **
+******************** */
+var jsph;
+function setupLC() // Call this on page load
+{
+  // Need to find each jsplot element, and get its stem and put it into currentLCStem and activeLCStem
+  // In both cases we will create the default LCStem, and then set it, and reset the controls on the web page
+  $('.jsplot_element').each(function(index) {
+    var jspeID = $(this).attr("id"); // Will be either 'sslc_canvasHolder' or 'obslc_canvasHolder'
+    jspeID = jspeID.replace("_canvasHolder", ""); // i.e. sslc or obslc, the prefix used for everything hereafter
+    loadedLCStem[jspeID] = Array(); // This notes which datasets have been loaded in this jsplot element
+    loadedLCStem[jspeID]["total_TDB"] = 1;
+    activeLCStem[jspeID] = "total_TDB"; // Which one is currently shown, ready for if it's changed later.
+    activeBand[jspeID] = 0; // Default to total band
+    xaxis[jspeID]=0;
+    // I am not going to faff with keeping track of historical states: when the page loads force it to load the
+    // defaults and set the boxes to reflect this.
+    // Not sure if "val" actually forces the relevant <option> to be selected... If not, give them all IDs ending with the value
+    $('#' + jspeID + '_band').val(0);
+    $('#' + jspeID + '_xaxis').val(0);
+    // Reset the datasetTypes as well
+    // Default is to show "best"
+    $('#' + jspeID + '_nondets').val(0);
+    $('#' + jspeID + '_consolidate').prop('checked', false);
+    $('[id^='+jspeID + '_consolAlias').prop('checked', false);
+    $('#' + jspeID + '_showBad').prop('checked', false);
+    $('.hideMe').css('display','none');
+  });
+  
+
+  jsph=new jsPlotHandler(1);
+  jsph.loadJSPdata('2SXPS'); // This is a call to populateJSPlot.js
+  $(document).keydown(function(e){ handleKey(e)});
+}
+
+/* ***************************************
+** CHANGE SCRIPTS CALLED BY USER ACTION **
+****************************************** */
+
+// :changeLCStem
+// This is called when the selected band or x-axis changes, and will change the plot
+function changeLCStem(jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+
+  // Check band:
+  var selBand=$('#' + jspeID + '_band').val();
+  if (selBand>3)
+  {
+    $('#'+jspeID+'_isHR').css('display','inline');
+    $('#'+jspeID+'_notHR').css('display','none');
+  }  
+  else
+  {
+    $('#'+jspeID+'_isHR').css('display','none');
+    $('#'+jspeID+'_notHR').css('display','inline');
+  }  
+  
+  
+  var jsIx = jsph.jspIndices[jspeID]; // jsph.jspIndices is populated by populatejsplot - should be created before this as a global?
+  var LCStem = getLCStem(jspeID); // This gets what the stem ($band_$xaxis) should be, based on the current form settings
+  // First just check it really is a change.
+  if(LCStem === activeLCStem[jspeID]) // Nothing to do
+  {
+    console.log ("Already active: "+LCStem);
+    return;
+  }
+  
+  $('#'+jspeID+'_pslink').slideUp(200);
+
+  jsph.jsp.setY1Title(jsIx, yaxes[selBand]);
+
+
+  // Need to deactive all datasets
+  for(var i = 0; i < datasetTypes.length; i++)
+  {
+    var name = activeLCStem[jspeID] + "_" + datasetTypes[i];
+    jsph.jsp.deactivateDS(jsIx, name);
+  }
+  for(var i = 0; i < HRDatasetTypes.length; i++)
+  {
+    var hname = activeLCStem[jspeID] + "_" + HRDatasetTypes[i];
+    jsph.jsp.deactivateDS(jsIx, hname);
+  }
+
+  activeLCStem[jspeID] = LCStem;
+  if(LCStem in loadedLCStem[jspeID]) // It's already been loaded
+  {
+    updatePlot(jspeID);
+  }
+  else
+  {
+    loadAndPlot(jspeID, LCStem, 0);
+  }
+}
+
+// :changeLC
+// This is called when the band to display changes.
+function changeLC(b, jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  if (b==activeBand[jspeID]) // Nothing to do
+    return;
+  var setDet;
+  var currLo;
+  var currHi;
+  var currLog;
+  var jsIx = jsph.jspIndices[jspeID];
+  // May need to change the y axis limits and defaults if moving from HR to ds or back.
+  if (b>3 && activeBand[jspeID]<=3)  // HR selected, used to be rate
+  {
+    
+    // Update the default y range. For HR it's -1.1 to 1.1
+    setDef={"ylo":-1.1, "yhi":1.1, "ylog":0};
+    jsph.jsp.setYDefaults(jsIx, setDef, 0, undefined);
+    // Need to update the active y ranges too, first note the outgoing values
+    currLo=parseFloat($('#'+jspeID+'_ylo0').val());
+    currHi=parseFloat($('#'+jspeID+'_yhi0').val());
+    currLog=0;
+    if ($('#'+jspeID+'_ylog0').is(":checked"))
+      currLog=1;
+
+    // If this is the first time we've changed to an HR, then set y range to defaults
+    if (oldYlo[jspeID] == undefined) // First time we've gone to HR
+    {
+      $('#'+jspeID+'_ylo0').val(-1.1);
+      $('#'+jspeID+'_yhi0').val(1.1);
+      $('#'+jspeID+'_ylog0').prop("checked", false);
+    }
+    else // Set the y range to whatever we left last time we switched FROM HR
+    {
+      $('#'+jspeID+'_ylo0').val(oldYlo[jspeID]);
+      $('#'+jspeID+'_yhi0').val(oldYhi[jspeID]);
+      
+      if (oldYlog[jspeID])
+        $('#'+jspeID+'_ylog0').prop("checked", true);
+      else
+        $('#'+jspeID+'_ylog0').prop("checked", false);
+
+    }
+    // And note the current setting ready for when we change back
+    oldYlo[jspeID]=currLo;
+    oldYhi[jspeID]=currHi;
+    oldYlog[jspeID]=currLog;
+  }
+  else if (b<=3 && activeBand[jspeID]>3)  // Rate selected, used to be HR
+  {
+    jsIx = jsph.jspIndices[jspeID]; 
+    // Update the default y range. Get them from the original data:
+    var oldDef=$('#'+jspeID+'_canvasHolder').data('defaults');
+    setDef={"ylo":oldDef[0].oylo0, "yhi":oldDef[0].oyhi0, "ylog":oldDef[0].oylog0};
+    jsph.jsp.setYDefaults(jsIx, setDef, 0, undefined);
+
+    // Need to update the active y ranges too, first note the outgoing values
+    currLo=parseFloat($('#'+jspeID+'_ylo0').val());
+    currHi=parseFloat($('#'+jspeID+'_yhi0').val());
+    currLog=0;
+    if ($('#'+jspeID+'_ylog0').is(":checked"))
+      currLog=1;
+
+    // Since rate is default, if we're changing BACK to rate, we MUST have stored old values
+    // so we don't need the forking as above.
+    $('#'+jspeID+'_ylo0').val(oldYlo[jspeID]);
+    $('#'+jspeID+'_yhi0').val(oldYhi[jspeID]);
+    if (oldYlog[jspeID])
+      $('#'+jspeID+'_ylog0').prop("checked", true);
+    else
+      $('#'+jspeID+'_ylog0').prop("checked", false);
+
+    // And note the current setting ready for when we change back
+    oldYlo[jspeID]=currLo;
+    oldYhi[jspeID]=currHi;
+    oldYlog[jspeID]=currLog;
+  }
+
+  activeBand[jspeID]=b;
+  // First, update the value in the hidden input box:
+  $('#' + jspeID + '_band').val(b);
+  $('[id^=' + jspeID + '_bandLink_]').removeClass('selected');
+  $('#' + jspeID + '_bandLink_'+b).addClass('selected');
+  //updatePlot(jspeID);
+  changeLCStem(jspeID);
+   
+}
+
+function changeXaxis(jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  var jsIx = jsph.jspIndices[jspeID]; // jsph.jspIndices is populated by populatejsplot - should be created before this as a global?
+
+  // First, check it has changed.
+  var newVal=parseInt($('#'+jspeID+'_xaxis').val());
+  if (newVal == xaxis[jspeID]) // Not changed
+    return;
+
+
+  // Get the labels of the systems:
+  var oldSys= xaxisIndices[xaxis[jspeID]];
+  var newSys= xaxisIndices[newVal];
+  // And then we can read the defaults from the data- attributes
+  var oldDef=$('#'+jspeID+'_canvasHolder').data(oldSys+'range');
+  var newDef=$('#'+jspeID+'_canvasHolder').data(newSys+'range');
+
+
+  // Calculate the range in each system
+  var oldRange=oldDef[0].hi - oldDef[0].lo;
+  var newRange=newDef[0].hi - newDef[0].lo;
+  // The current x range shown 
+  var currLo=parseFloat($('#'+jspeID+'_xlo').val());
+  var currHi=parseFloat($('#'+jspeID+'_xhi').val());
+  // Calculate the equivalent in the new system and set it
+  var newLo = newDef[0].lo + newRange*(currLo-oldDef[0].lo)/oldRange;
+  var newHi = newDef[0].lo + newRange*(currHi-oldDef[0].lo)/oldRange;
+  
+  jsph.jsp.setXDefaults(jsIx, {"xlo":newDef[0].lo, "xhi":newDef[0].hi, "xlog":0}, false);
+  // Now if we update the x range values in the rescale form this this jsPlotElement
+  // then when we call changeLCStem -- which will either load or activate the data -- 
+  // it will also replot.
+  $('#'+jspeID+'_xlo').val(newLo);
+  $('#'+jspeID+'_xhi').val(newHi);
+  xaxis[jspeID]=newVal;
+  jsph.jsp.setX1Title(jsIx, xaxes[xaxis[jspeID]]);
+  
+  changeLCStem(jspeID);
+}
+
+// Called when the consolidate box changes. Toggle the visibility of the consol box
+function changeConsolidate(jspeID)
+{
+  if ($('#' + jspeID + '_consolidate').is(':checked'))
+    $('#' + jspeID + '_consol_box').show(200);
+  else
+  {
+    $('#' + jspeID + '_consol_box').hide(200);
+    changeLCStem(jspeID);
+  }
+}
+
+function toggleDP(jspeID, calledByUp=0)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  var jsIx = jsph.jspIndices[jspeID]; // jsph.jspIndices is populated by populatejsplot - should be created before this as a global?
+
+  if ($('#'+jspeID+'_showDP').prop('checked'))
+  {
+    // Need to deactive all datasets
+    for(var i = 0; i < datasetTypes.length; i++)
+    {
+      var name = activeLCStem[jspeID] + "_" + datasetTypes[i];
+      jsph.jsp.forceDPOnDS(jsIx, name);
+    }
+  }
+  else
+  {
+    // Need to deactive all datasets
+    for(var i = 0; i < datasetTypes.length; i++)
+    {
+      var name = activeLCStem[jspeID] + "_" + datasetTypes[i];
+      jsph.jsp.forceDPOffDS(jsIx, name);
+    }
+  }
+  if (calledByUp==0)
+    updatePlot(jspeID);
+}
+
+
+
+/* ***************************************
+** HELPER SCRIPTS CALLED BY THE ABOVE   **
+****************************************** */
+
+
+// :getLCStem
+// This receives the ID of a jsPlot element, and then work out
+// the LCStem requested from the current status of the controls, returning it.
+function getLCStem(jspeID)
+{
+  // Get the selected band and xaxis
+  var bix = $('#' + jspeID + '_band').val();
+  var xix = $('#' + jspeID + '_xaxis').val();
+  // Check that they are valid, if not return null
+  if(bix < 0 || bix >= bands.length)
+  {
+    console.log("An invalid band is selected");
+    return null;
+  }
+  if(xix < 0 || xix >= xaxes.length)
+  {
+    console.log("An invalid axis is selected");
+    return null;
+  }
+  var stem="";
+  if ($('#' + jspeID + '_showBad').is(':checked'))
+    stem=stem+"BAD_";
+  stem = stem + bands[bix] + "_" + xaxes[xix];
+  if ($('#' + jspeID + '_consolidate').is(':checked'))
+  {
+    var conStem=[];
+    var ct=parseInt($('#' + jspeID + '_consol_count').val());
+    for (var i=0; i<ct; i++)
+    {
+      if ($('#' + jspeID + '_consolAlias_'+i).is(':checked'))
+      {
+        conStem.push($('#' + jspeID + '_consolAlias_'+i).val());
+        console.log ("Element "+i+" is checked, so pushing "+$('#' + jspeID + '_consolAlias_'+i).val());
+      }
+    }
+    if (conStem.length>0)
+    {
+      var t=conStem.join(":");
+      stem=stem+"_consolidate:"+t;
+    }
+    console.log ("Stem is "+stem);
+  }
+  
+  return stem;
+}
+
+// :loadAndPlot
+// This loads in a new dataset,and then plots it, so I'm going to have to call myself
+// on callbacks.
+// So this receives the plotElementID, the LC Stem, and the index of the datasetType
+// If that index is beyond the end of datasetType array then the it calls updatePlot,
+// otherwise it loads the new dataset with itself with the callback.
+function loadAndPlot(jspeID, LCStem, whichDS)
+{
+  if(whichDS >= datasetTypes.length || (activeBand[jspeID]>3 && whichDS>=HRDatasetTypes.length) )
+  {
+    loadedLCStem[jspeID][LCStem] = 1;
+    activeLCStem[jspeID] = LCStem; // Which one is currently shown, ready for if it's changed later.
+    updatePlot(jspeID);
+  }
+  else
+  {
+    var url = topurl + '/getLCData.php?sid=' + sourceID + '&type=' + jspeID + '&LCStem=' + LCStem + '&dataset=' + whichDS;
+    var jsIx = jsph.jspIndices[jspeID];
+    var name = LCStem + "_" + datasetTypes[whichDS];
+    var colour = dsColour[whichDS];
+    var isUL=dsUL[whichDS];
+    if (activeBand[jspeID]>3) // HR
+    {
+      name= LCStem + "_" + HRDatasetTypes[whichDS];
+      colour = HRDSColour[whichDS];
+      isUL=0;
+    }
+    // Create the dataset object:
+    //console.log ("Loading data from "+url);
+    var theDS = {'file': url, 'name': name, 'active': 0, 'window': 0, 'colour': colour, 'isUL': isUL};
+    jsph.jsp.loadData(jsIx, theDS, 0, function() { loadAndPlot(jspeID, LCStem, whichDS + 1); });
+  }
+}
+
+// :updatePlot
+// This will go through each dataset and decide what to plot
+// This can be called  by changeLCStem() or loadAndPlot(), or just by the details of which
+// dataTypes to show being changed.
+// The data to plot should already have been loaded or this won't work.
+function updatePlot(jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  var jsIx = jsph.jspIndices[jspeID];
+  $('#'+jspeID+'_pslink').slideUp(200);
+  toggleDP(jspeID, 1);
+  // First find the stem of what we're dealing with
+  var LCStem = getLCStem(jspeID);
+  // Better check we haven't some how got into an impossible situation
+  if(!(LCStem in loadedLCStem[jspeID]))
+  {
+    console.log("The LCStem (" + LCStem + ") has not been loaded yet!");
+    return;
+  }
+
+  // Fork here on HR vs data values:
+  if (activeBand[jspeID]>3) // HR
+  {
+    // Which HRs to show
+    var showWhich = parseInt($('#' + jspeID + '_showHR').val());
+    if(showWhich < 0 || showWhich >= HRDSActive.length) 
+    {
+      return;
+    }
+    
+    for(var i = 0; i < HRDatasetTypes.length; i++)
+    {
+      var hname = activeLCStem[jspeID] + "_" + HRDatasetTypes[i];
+      var hactivate = HRDSActive[showWhich][i];
+      if(hactivate == 1)
+        jsph.jsp.activateDS(jsIx, hname);
+      else
+        jsph.jsp.deactivateDS(jsIx, hname);
+    }
+  }
+  else
+  {
+    // How to handle non-dets:
+    var handleND = parseInt($('#' + jspeID + '_nondets').val());
+    if(handleND < 0 || handleND >= dsActive.length)
+    {
+      //console.log(jspeID + '_nondets has an invalid value: ' + handleND);
+      return;
+    }
+    
+    //console.log(jspeID + '_nondets='+handleND,$('#' + jspeID + '_nondets').val());
+    
+    for(var i = 0; i < datasetTypes.length; i++)
+    {
+      var name = activeLCStem[jspeID] + "_" + datasetTypes[i];
+      var activate = dsActive[handleND][i];
+      if(activate == 1)
+        jsph.jsp.activateDS(jsIx, name);
+      else
+        jsph.jsp.deactivateDS(jsIx, name);
+    }
+  }
+  jsph.jsp.plot(jsIx);
+}
+
+
+/* ***********************
+** THE RESIZE SCRIPTS   **
+************************** */
+
+function expand(jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  var jsIx = jsph.jspIndices[jspeID];
+  $('#enlargeLink_'+jspeID).html("Shrink").attr("href", "javascript:shrink('"+jspeID+"');");
+  $('#'+jspeID).css({"width":"910px","height":"870px"});
+  setTimeout(function()
+  {
+    $('#'+jspeID+'_canvasHolder').css({"width":"800px","height":"620px"});
+    $('#'+jspeID+'_plotOverlay').attr({"width":"800","height":"620"}).css({"width":"800px","height":"620px"});
+    $('#'+jspeID+'_plot').attr({"width":"800","height":"620"}).css({"width":"800px","height":"620px"});
+    jsph.jsp.setAxisLW(jsIx, 2);
+    jsph.jsp.setDataLW(jsIx, 2);
+    jsph.jsp.setAxisFS(jsIx, 16);
+    jsph.jsp.setLabelFS(jsIx, 20);
+    jsph.jsp.resizeCanvas(jsIx);
+    $('html,body').scrollTo('#'+jspeID, '#'+jspeID);
+  }, 700);
+}
+
+function shrink(jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  var jsIx = jsph.jspIndices[jspeID];
+  $('#enlargeLink_'+jspeID).html("Enlarge").attr("href", "javascript:expand('"+jspeID+"');");
+  
+  $('#'+jspeID).css({"width":"455px","height":"610px"});
+  $('#'+jspeID+'_canvasHolder').css({"width":"400px","height":"310px"});
+  $('#'+jspeID+'_plotOverlay').attr({"width":"400","height":"310"}).css({"width":"400px","height":"310px"});
+  $('#'+jspeID+'_plot').attr({"width":"400","height":"310"}).css({"width":"400px","height":"310px"});
+  jsph.jsp.setAxisLW(jsIx, 1);
+  jsph.jsp.setDataLW(jsIx, 1);
+  jsph.jsp.setAxisFS(jsIx, 12);
+  jsph.jsp.setLabelFS(jsIx, 14);
+  jsph.jsp.resizeCanvas(jsIx);
+  setTimeout(function()
+  {
+    $('html,body').scrollTo('#'+jspeID, '#'+jspeID);
+   } ,1010);
+  
+}
+
+
+function shrinkConsol(jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  $('#'+jspeID+'_consol_hideable').hide(200);
+  $('#'+jspeID+'_consol_shrink').attr('href', 'javascript:growConsol("'+jspeID+'");').html("Expand");
+}
+function growConsol(jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  $('#'+jspeID+'_consol_hideable').show(200);
+  $('#'+jspeID+'_consol_shrink').attr('href', 'javascript:shrinkConsol("'+jspeID+'");').html("Shrink");
+}
+
+
+/* ********************
+** JSPLOT  SCRIPTS   **
+*********************** */
+
+function showRescale(stem)
+{
+  $('.'+stem+'_rescale').fadeIn(200);
+  $('#rescaleLink_'+stem).attr('href','javascript:hideRescale("'+stem+'");').html ("Hide plot axis controls");
+}
+
+function hideRescale(stem)
+{
+  $('.'+stem+'_rescale').fadeOut(200);
+  $('#rescaleLink_'+stem).attr('href','javascript:showRescale("'+stem+'");').html ("Show plot axis controls");
+}
+
+function toggleLog(stem)
+{
+  if ( $('#'+stem+'_xlo').is(':visible')) // Wait for plot
+    return;
+  
+  // Do some log checking:
+  if ($('#'+stem+'_xlog').is(':checked'))
+  {
+    var lo=parseFloat($('#'+stem+'_xlo').val());
+    var hi=parseFloat($('#'+stem+'_xhi').val());
+    if (lo<=0 || hi<=0)
+    {
+      alert("Can't set x-axis to logarithmic with ranges<=0");
+      return;
+    }
+  }
+  if ($('#'+stem+'_ylog0').is(':checked'))
+  {
+    var lo=parseFloat($('#'+stem+'_ylo0').val());
+    var hi=parseFloat($('#'+stem+'_yhi0').val());
+    if (lo<=0 || hi<=0)
+    {
+      alert("Can't set y-axis to logarithmic with ranges<=0");
+      return;
+    }
+  }
+  var i=jsph.jspIndices[stem];
+  jsph.jsp.plot(i);
+  
+}
+
+
+
+/* ********************
+** DATA  SCRIPTS   **
+*********************** */
+
+
+function makeDownload (jspeID)
+{
+  showingDownLoad=1;
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+
+  var jsIx = jsph.jspIndices[jspeID]; // jsph.jspIndices is populated by populatejsplot - should be created before this as a global?
+  
+  var allData="READ TERR 1 2\n";
+  allData=allData+jsph.jsp.plotElements[jsIx].axis.writeData();
+
+  var band=bands[activeBand[jspeID]];
+  if (activeBand[jspeID]<=3)
+    band+="-band";
+    $('#lcDataBand').html(band);
+
+  if (jspeID=="obslc")
+    $('#lcDataType').html("observation");
+  else
+    $('#lcDataType').html("snapshot");
+  
+  var h=0.97*$(window).height();
+  var w=0.97*$('#holder').width();
+  
+
+  $('#lc').css({"max-height":h+"px", "width":w+"px"});
+  
+
+  
+  $('#holder').css('background-color', "#222");
+  $('#holder p').css('opacity', "0.2");
+  $('#holder dl').css('opacity', "0.2");
+  $('#holder h1').css('opacity', "0.2");
+  $('#holder h2').css('opacity', "0.2");
+  $("img").css('opacity', '0.2');
+  $("a").css('opacity', '0.2');
+  $("table").css('opacity', '0.2');
+
+  $('#lc').css('opacity', 1.0);
+  $('#lc p').css('opacity', 1.0);
+  $('#lc p a').css('opacity', 1.0);
+  $('#lc h2').css('opacity', 1.0);
+  
+
+  $('#lcData').html("<pre>\n"+allData+"\n</pre>\n");
+  $('#lc').show("fold", {}, 'medium');
+}
+
+function hideDownload()
+{
+  if (showingDownLoad==0)
+    return;
+  showingDownLoad=0;
+  $('#holder').css('background-color', "white");
+  $("img").css('opacity', '1');
+  $("a").css('opacity', '1');
+  $("table").css('opacity', '1');
+  $('#holder p').css('opacity',  "1");
+  $('#holder dl').css('opacity', "1");
+  $('#holder h1').css('opacity', "1");
+  $('#holder h2').css('opacity', "1");
+  $('#lc').hide("fold", {}, 'fast');
+}
+
+function handleKey(e)
+{
+  if ((typeof e.key) === 'undefined') // Be nice to Safari
+  {
+    if (e.keyCode==27) 
+      hideDownload();
+  }
+  else
+  {
+    if (e.key==='Escape') 
+      hideDownload();
+  }
+}
+
+function makePS (jspeID)
+{
+  if(!(jspeID in jsph.jspIndices))
+  {
+    console.log("ERROR - the jsPlot element " + jspeID + " is not known.");
+    return;
+  }
+  var fd={};
+  fd.sid=sourceID;
+  fd.LCStem = getLCStem(jspeID);
+  fd.jspeID=jspeID;
+  
+  var b = activeBand[jspeID];
+  // Now I want to identify how many active datasets there are, and then set a series of values:
+  // DS${n}_dstype
+  // DS${n}_colour
+  // DS${n}_UL
+  // For $n in 0..numActive-1
+  // This can follow the approach of updatePlots:
+  // Fork here on HR vs data values:
+
+  var currDS=0;
+  if (activeBand[jspeID]>3) // HR
+  {
+    // Which HRs to show
+    var showWhich = parseInt($('#' + jspeID + '_showHR').val());
+    if(showWhich < 0 || showWhich >= HRDSActive.length) 
+      return;
+    for(var i = 0; i < HRDatasetTypes.length; i++)
+    {
+      var hactivate = HRDSActive[showWhich][i];
+      if(hactivate == 1)
+      {
+        fd["DS"+currDS+"_dsType"]=i;
+        fd["DS"+currDS+"_dsColour"]=HRDSColour[i];
+        fd["DS"+currDS+"_dsUL"]=0;
+        currDS++;
+      }
+      
+      
+    }
+  }
+  else
+  {
+    // How to handle non-dets:
+    var handleND = parseInt($('#' + jspeID + '_nondets').val());
+    if(handleND < 0 || handleND >= dsActive.length)
+      return;
+    for(var i = 0; i < datasetTypes.length; i++)
+    {
+      var activate = dsActive[handleND][i];
+      if(activate == 1)
+      {
+        fd["DS"+currDS+"_dsType"]=i;
+        fd["DS"+currDS+"_dsColour"]=dsColour[i];
+        fd["DS"+currDS+"_dsUL"]=dsUL[i];
+        currDS++;
+      }
+      
+    }
+  }
+  fd.numDS=currDS-1;
+
+  fd.xlo=parseFloat($('#'+jspeID+'_xlo').val());
+  fd.xhi=parseFloat($('#'+jspeID+'_xhi').val());
+  fd.xlog=$('#'+jspeID+'_xlog').is(":checked");
+  fd.ylo=parseFloat($('#'+jspeID+'_ylo0').val());
+  fd.yhi=parseFloat($('#'+jspeID+'_yhi0').val());
+  fd.ylog=$('#'+jspeID+'_ylog0').is(":checked");
+  
+  var xchoice=parseInt($('#'+jspeID+'_xaxis').val());
+  fd.xlabel=xaxes[xchoice];
+  var selBand=parseInt($('#' + jspeID + '_band').val());
+  fd.ylabel=yaxes[selBand];
+  fd.sourceName=$('#sname').html();
+  if ($('#'+jspeID+'_showDP').prop('checked'))
+    fd.showDP=1;
+  else
+    fd.showDP=0;
+
+  
+  $('#'+jspeID+'_pslink').html("Working&hellip;").slideDown(200, function()
+  {
+  
+    $.ajax(
+    {
+      type: "GET",
+      url: topurl+"/genPS.php",
+      dataType: "text",
+      data: fd,
+      success: function(data)
+      {
+        var turl="http://www.swift.ac.uk"+topurl+"/tprods/"+data;
+        $('#'+jspeID+'_pslink').html("Done, downloads: <a href='"+turl+".ps'>PS file</a> | <a href='"+turl+".qdp'>text file with qdp commands</a>.");
+      },
+      error: function(jqXHR, status, err)
+      {
+        $('#'+jspeID+'_pslink').html("An error occured, the file could not be created.");
+      }
+    });
+  });
+  
+}

@@ -1,0 +1,333 @@
+J0754 and the evidence for an active giant binary
+
+Archival observations and physical tests10 November 2026
+
+Prepared with Kyle Hicks using AI-assisted analysis by Ari and contributions from Gemini Argon. Public observations retain their original survey attribution. This paper has not been peer reviewed or submitted.
+
+The result in brief
+
+We followed J0754 through more than a century of archival observations and tested what could explain its repeated fading. The strongest overall explanation is an active giant, possibly in a near-synchronized binary, with changing surface activity as the leading explanation for the long brightness changes. That interpretation brings several independent findings together: a reproducible optical and infrared fade, a localized flare-like event, established chromospheric emission, a recurring roughly 36-day photometric signal, and a Gaia candidate orbit at almost the same period.
+
+The modern fade is about 0.31 mag in optical g, with smaller declines of about 0.12 and 0.09 mag in W1 and W2. A two-temperature spot model reproduces those changes. Ordinary uniform dust screens do not. More flexible dust geometries and mixed models still fit, so the activity evidence, rather than a decisive probability calculation, is why we favor the active-giant interpretation. Confirming the orbit and measuring temperature-sensitive changes through the fade are the clearest next tests.
+
+The useful outcome is a set of measurements that can be checked, competing explanations that have been tested, and specific observations that can separate what remains. The full failed tests and unresolved branches are retained later in the paper. Figure numbers follow the accompanying observation panels.
+
+1 The fading is real and it repeats
+
+The star and the earlier work
+
+J0754 is catalogued as Gaia DR3 667401913089980544, TIC 18878735, 2MASS J07544588+1641407, ASAS J075446+1641.7 and ASASSN-V J075445.83+164141.1. The working ICRS position is RA 118.6911741 degrees, Dec +16.6946212 degrees. Tang et al. (2010) identified its unusual historical fading and a K2III-like spectrum with chromospheric Ca II H and K emission [1]. A 2011 poster gives an atmosphere fit near 4500 K; Gaia supplies a hotter solution near 5206 K. Model-dependent quantities below state which baseline was adopted.
+
+Independent surveys recover the modern fade
+
+ZTF differential g photometry gives +0.3089 mag fading from 2018 to 2022 and -0.1393 mag recovery from 2022 to 2025. Independent ASAS-SN g cameras give +0.285 to +0.313 mag fading; five camera streams support recovery, continuing into 2026. The ASAS-SN file contains 5,249 rows, of which 5,180 V and g observations pass the retained quality rule. Filters and cameras are analyzed separately. ZTF contributes 470 quality-passing target observations and 364 same-exposure differential measurements. The same fade appears in independent surveys and cameras. That agreement makes a single-survey artifact much less likely (Figure 1). Comparison-corrected NEOWISE annual visit medians fade by +0.1163 mag in W1 (3.4 microns) and +0.0894 mag in W2 (4.6 microns), then partly recover through the last target visit in March 2024.
+
+The March matched-state contrasts used for modeling are g +0.312, W1 +0.1175 and W2 +0.08875 mag: approximately 25.0%, 10.3% and 7.8% flux loss. Matching optical observations within 30 days of infrared visits gives g-W1 reddening of approximately 0.19-0.22 mag. This is an optical-to-infrared color change; no validated contemporaneous g-r curve was recovered (Figure 2).
+
+The record extends back to the nineteenth century
+
+The retained DASCH series contains 552 differential detections from 1892 to 1989. The 1930s event survives the comparison-star and quality tests, with an event-to-baseline contrast near +0.68 mag in the photographic system. Only three retained points in 1892-1893 describe the proposed earlier dip. Legacy ASAS observations fill part of the later gap: exact-frame ensemble correction gives +0.147 mag fading from 2004 to 2007 and -0.114 mag recovery by 2009. Leaving out individual controls retains the fading. APPLAUSE plate and pixel tests remain inconclusive. Different passbands and sparse historical coverage prevent treating the episodes as identical eclipses or measuring a long recurrence period (Figure 3). Gaia reports G approximately 11.94; this is not a Johnson V magnitude.
+
+The analysis retains survey passbands, cameras, observing epochs and independent reductions. Optical comparisons use matched observations and comparison stars where available. The supporting data package contains quality selections, numerical results, source code, input hashes and selected native products.
+
+Repeated episodes with different depths
+
+The archival record shows repeated multiyear fading and recovery rather than a demonstrated fixed cycle (Figure 14). We summarized annual medians within the photographic plate series and modern camera/passband streams, retaining sample counts and gaps. The selected historical windows and recurrence test are retrospective: they quantify visible features without assigning a period-search significance. A secondary 1945-1948 depression is approximately 0.24 mag fainter than a locally interpolated baseline in the ac plate series and 0.19 mag in rh. The ac result persists at approximately 0.246 mag when years with fewer than three detections are excluded; rh then lacks sufficient coverage. Nine matched comparison-star contrasts range from -0.115 to +0.125 mag, all smaller than the ac target contrast.
+
+This supports a target-specific 1940s event. A 1980s local excess of 0.079 mag in dnb is comparable with behavior in the controls and is not a secure independent cycle. The modern record includes the 2006-2007 ASAS trough, a smaller 2016 trough within the well-sampled ba V camera and the 2022 g-band minimum seen by all five qualifying cameras. The event depths and recovery shapes vary. 
+
+2 The star shows strong activity
+
+The December 2021 flare
+
+TESS sector 46 records a roughly 2.5% brightening with a rapid rise and slower decay, a measured full width at half maximum of 4.61 hours, and a tail extending roughly ten hours. We examined extracted light curves and the native calibrated 7 by 7 pixel TESSCut cube, containing 3,707 cadences at approximately ten-minute sampling. The compact positive difference-image excess lies 0.177 pixel, or about 3.7 arcseconds, from the Gaia position projected into the image. A spatial-derivative sensitivity fit does not explain the excursion as pointing motion alone. The light curve and pixels together support a stellar flare associated with J0754 (Figure 4).
+
+The energy implied by the observed event
+
+Integrating the fractional excess gives an equivalent duration of 601 seconds. Nine baseline and integration-window combinations span 518-780 seconds; trapezoidal integration bridges one approximately 50-minute gap. Using the actual TESS response, a 9000 K flare blackbody, stellar temperature 5206 K and luminosity 54.6 solar luminosities gives 5.3 × 10³⁷ erg under a face-on, optically thick surface-patch convention. The corresponding isotropic-equivalent energy is 2.1 × 10³⁸ erg. E_iso = 4 E_patch applies only to an ideal face-on Lambertian surface patch; for a visible patch at angle theta, the corresponding geometric factor is 4 cos(theta). Varying stellar luminosity from 30 to 60 solar luminosities, stellar temperature from 4500 to 5250 K, flare temperature from 8000 to 12000 K and the baseline/window choices gives a surface-patch energy envelope of 2.1 × 10³⁷ to 1.25 × 10³⁸ erg.
+
+This is a model-sensitivity range, not a confidence interval. Under the adopted host association the event lies comfortably in the superflare regime. The localization has no formal PRF-calibrated astrometric error model, so an unresolved neighboring host remains a material alternative. This host and spectral assumption is the principal qualification on the energy.
+
+The Gaia neighborhood check
+
+A separate Gaia DR3 cone search centered on RA 118.6911741 degrees and Dec +16.6946212 degrees returned one catalogued source within 10 arcseconds: J0754 itself, source 667401913089980544, with mean G = 11.937244 mag. The exported row gives RA 118.69117410685017 degrees, Dec +16.694621231895034 degrees and reference epoch 2016.0. The original 152-column CSV and query provenance were retained [15].
+
+This removes an additional catalogued Gaia source within that radius from the obvious alternatives for the TESS event. It is a catalogue neighborhood check, not an image taken at the flare epoch or a calibrated detection limit. It does not exclude an unresolved companion, an uncatalogued faint source, or contamination outside the searched radius. The 3.7-arcsecond TESS difference-image offset and the cone result are complementary measurements, not interchangeable localization limits.
+
+The flare shape
+
+Peak- and width-normalized overlays compare the event with the empirical Davenport et al. (2014) optical stellar-flare template and a published solar white-light profile [2,3]. J0754 has the expected broad fast-rise, slow-decay morphology, with differences in its rise and tail. The solar curve was approximately digitized from a published figure; the stellar curve uses the published template equations. This is a shape comparison, not a statistical template fit or evidence that the Sun and this giant release the same energy (Figure 5).
+
+X rays and optical activity diagnostics
+
+The public 2SXPS source J075445.6+164139 (catalogue ID 161839) lies 3.88 arcseconds from J0754, within its 5.6-arcsecond 90% positional radius. The catalogue reports 18 counts and 4,183 seconds effective exposure. A 1 keV thermal-plasma conversion with NH = 4.34 × 10²⁰ cm⁻² and distance 1668 pc gives unabsorbed Lx approximately 4.2 × 10³¹ erg/s. The two useful 2009 December 2 snapshot bins do not resolve a flare; their constancy test has p = 0.141. The Swift observation and the 2021 TESS flare are separate events, twelve years apart [4]. Ten FAST extracted spectra cover eight nights in 2008-2012. H-alpha absorption pseudo-equivalent width falls from approximately 1.32 Angstrom in October 2008 to 0.84 Angstrom on 2009 November 12, a 0.480 ± 0.085 Angstrom formal-noise contrast.
+
+It survives the tested resolution and continuum variants, but a 1.675% differential continuum bias could reproduce its size. Registered native line profiles show no convincing detached blueshifted absorption identifying erupting gas. Broad Mg and Na indices supply no precise temperature change. Together with Tang's established Ca H/K emission, the new observations support an active-star interpretation without identifying a single flare precursor (Figure 6).
+
+3 The rotation clock and the companion candidate
+
+Two surveys recover a roughly 36 day signal
+
+We searched periods from 10 to 100 days in the retained daily optical measurements. Each July-June observing season has independent sine and cosine coefficients, allowing its phase and amplitude to change. Camera offsets and within-camera linear trends are fitted jointly with the oscillation. Seasons require at least 30 daily camera groups and 120 days span. ASAS-SN provides nine qualifying seasons; independent ZTF differential photometry provides six. The equal-season mean fractional residual-variance improvement peaks at 35.78 days in ASAS-SN and 36.30 days in ZTF (Figure 7). Eight of nine ASAS-SN seasonal maxima fall between 34.1 and 37.3 days; five of six ZTF maxima fall between 35.4 and 37.3 days.
+
+Both surveys show a weak exact-period component in 2024/25. Shared-camera block-sign diagnostics with 3, 7 and 14 day blocks produce no combined peak as large as observed in 256 draws for either survey. These are correlated-noise sensitivity checks, not calibrated false-alarm probabilities. Two independent surveys recover the same general clock, as expected for a rotating spotted star. The seasonal peak differences do not by themselves measure differential rotation.
+
+The annual aliases fit less well
+
+Using the same seasonal nuisance models, we compared 35.92046 days with annual frequency aliases at 32.70417 and 39.83835 days. Equal-season fractional reductions in residual sum of squares are 0.309, 0.150 and 0.106 in ASAS-SN, and 0.559, 0.155 and 0.287 in ZTF, respectively. The candidate period beats both aliases in 7 of 9 ASAS-SN seasons and 5 of 6 ZTF seasons; removing any one season preserves a positive mean advantage in each survey. Noiseless signals injected at the actual observing times recover all signal at the true period but approximately 20-24% at its aliases. This supports the 36-day clock rather than simple yearly aliasing. Rotation near 71.84 days with two similar active longitudes remains possible.
+
+Gaia reports a matching candidate orbit
+
+Gaia DR3 publishes an SB1 solution with period 35.9205 ± 0.0306 days, radial-velocity semi-amplitude 10.72 ± 0.81 km/s and 21 good velocities. Eccentricity 0.023 ± 0.056 is consistent with zero. Its efficiency 0.189 and significance 13.31 fall below the processing team's recommended gold-sample thresholds [5]. Individual Gaia epoch velocities are unavailable for an independent refit. This is a concrete close-companion candidate, although the catalogue solution still needs confirmation. Agreement with the photometric rotation timescale makes tidal maintenance of activity plausible, while orbital confirmation and synchronization remain open.
+
+What that orbit would imply
+
+From P = 35.9204566 days, K1 = 10.7245 km/s and e = 0.023, the mass function f(M) = P K1^3 (1-e^2)^(3/2)/(2 pi G) is 0.0045872 solar masses, and a1 sin i is 0.0354007 AU. For an assumed 1.5-solar-mass primary, companion masses are 0.2404, 0.2820 and 0.5334 solar masses at inclinations of 90, 60 and 30 degrees. The edge-on example has a separation of 55.11 solar radii. Combining the model-dependent Gaia luminosity of 54.64 solar luminosities with temperatures of 4500-5206 K gives radii of 12.16-9.09 solar radii and synchronous equatorial speeds of 17.13-12.80 km/s. The poster gravity log g = 1.7 implies substantially larger radii at ordinary assumed giant masses, near the corresponding Roche lobes.
+
+These atmosphere and stellar-structure estimates therefore require a consistent spectroscopic solution. The convective-tide prescription of Hurley, Tout and Pols [7], equations 25-33, gives local near-synchronous spin e-folding times of 0.057-0.268 Myr for these radii with M1 = 1.5 solar masses, envelope mass = 0.7 M1, envelope depth = R1, and I/(M1 R1^2) = 0.1. Corresponding circularization scales are approximately 0.46-3.9 Myr. Farther from synchronization, effective convective dissipation weakens: 100-day and 300-day spin examples give local spin timescales of approximately 1.09-3.48 Myr and 2.05-6.58 Myr. At fixed primary structure the synchronization timescale scales as a^6/q^2, where q = M2/M1. Including both the companion mass and separation changes, inclinations of 60 and 30 degrees give 0.7619 and 0.2773 times the edge-on timescale.
+
+These fixed-structure estimates establish feasibility, not an evolutionary age; red-giant circularization also tests the limitations of simple prescriptions [10]. Enhanced activity in tidally resonant red-giant binaries has observational support [8]. Active single giants and prior merger or engulfment histories also occur [9]. Near-circular periastron degeneracy contributes to the low Gaia solution efficiency. RVS profiles are also unavailable for this source. Independent Doppler and line-shape measurements are needed to distinguish synchronized orbital motion from rotation-linked spectroscopic variability [5,12].
+
+Rotational amplitude and the long fade
+
+The rotational swing does not increase monotonically as the star fades. In bright 2019/20, fixed-period peak-to-peak amplitudes are 0.050 mag (ASAS-SN) and 0.056 mag (ZTF). Near the faint state in 2022/23 they are 0.046 and 0.056 mag. During recovery in 2024/25 they fall to 0.010 and 0.0048 mag; ASAS-SN rises again to 0.038 mag in 2025/26. Allowing the previously selected nearby seasonal periods gives descriptive brightness-amplitude rank correlations near zero in both surveys. Rotational amplitude measures the asymmetry of surface brightness around the star, not total spotted area (Figure 8).
+
+The weak season contains stronger short intervals
+
+At the fixed 35.92046-day period, early 120-day fits recover peak-to-peak amplitudes of 0.036 mag in ASAS-SN and 0.032 mag in ZTF, substantially above the whole-season values. Two calendar halves split on 2025 January 15 give early amplitudes of 0.033 and 0.025 mag. Later ASAS-SN modulation weakens; sparse ZTF data suggest phase changes with weaker correlated-noise support. Ninety-day sensitivity windows show the same broad change. The season-long fit therefore hides some within-season modulation. Amplitude evolution, phase evolution and a slightly different period remain confounded; no particular spot lifetime is measured.
+
+4 Models that explain the measured changes
+
+Cool spots reproduce the wavelength dependence
+
+CK04 stellar atmospheres integrated through public filter responses reproduce the main three-band changes with a two-temperature, fixed-area spot model [6]. An illustrative 5000 K photosphere with approximately 3650 K spots increases projected spot coverage from 30% to 49.6%. Fitting g and W1 gives changes of +0.312 and +0.1167 mag; the unused W2 prediction is +0.0995 mag versus +0.08875 observed. The 0.011-mag residual is inside the adopted 0.02-mag model tolerance. The coverage and temperature are an example solution, not measured surface properties. Other starting coverages also fit. The spot model passes this color test. The remaining question is whether the other successful models can be separated with the available data (Figure 9).
+
+A giant photosphere explains most of the infrared spectrum
+
+We recovered 223 SPHEREx spectral-image overlaps in October 2025 and April 2026; 182 local measurements pass the extraction rule. The official IRSA tool independently reduced the same pixels, with detector median native/local flux ratios 0.966-1.028. Fitting the 0.75-2.4 micron spectrum accounts for most of the observed 2.45-5 micron continuum. An approximately 9% April long-wave residual remains sensitive to atmosphere and calibration choices. A dominant warm infrared emitter is not needed to explain these measurements. A small excess or cold obscuring material remains possible. These are recovery-era spectra, not observations at the 2022 minimum (Figure 10).
+
+What the evidence currently favors
+
+Our working explanation is an RS CVn-like active binary: a giant whose rapid rotation and magnetic activity may be maintained by a close companion. The surface-activity case is supported by more than a color fit. It connects the flare, chromospheric emission, changing rotational waveform and the recurring timescale. The candidate orbit supplies a plausible mechanism for maintaining that activity. We have not yet confirmed the binary classification or measured the spot coverage directly.
+
+Dust remains a comparison worth testing. The simple uniform-screen model fails, and a tested changing-column history has trouble with the trajectory and absolute color. Variable covering and flatter extinction survive. We therefore favor surface activity as the more coherent interpretation of the combined evidence, without assigning numerical odds that these tests do not provide.
+
+5 The observations that would settle the main questions
+
+Measure the orbit and activity together
+
+The first priority is a sequence of 20-30 high-resolution spectra over 100-150 days, sampling the full 35.92-day phase range for roughly three to four cycles. Resolving power R = 40,000-60,000, signal-to-noise ratio at least 50 per resolution element in the diagnostic region, and calibrated RV precision of 0.5-1.0 km/s or better are design targets. Exposure times and achievable precision require an instrument-specific calculation using the target spectrum and passband, not the Gaia G magnitude alone. TRES is one example of a suitable high-resolution spectrograph class [11]. Obtain same-night repeats early to verify the zero point and repeatability. Measure RVs alongside bisectors or equivalent line-asymmetry diagnostics, cross-correlation width, H-alpha, Ca II H/K where signal permits, and temperature-sensitive line ratios.
+
+A repeatable approximately 10.7 km/s semi-amplitude with coherent phase and little corresponding line-shape change would support orbital motion. RV changes tied to profile asymmetry and activity, or strongly wavelength-dependent amplitudes, would favor an activity contribution. Both effects can coexist; joint orbital and activity modeling is preferable to a single correlation test. Optical and near-infrared RV comparison offers an additional discrimination route [12].
+
+Measure rotation and color at the same time
+
+Acquire concurrent nightly g/r/i or B/V/I differential photometry, targeting 5-10 millimagnitude repeatability with stable comparison stars. This tests whether brightness, color and activity evolve with the 36-day signal and whether the waveform changes while Doppler phase remains stable. Spectroscopic v sin i should be compared with the predicted synchronous equatorial range of 12.8-17.1 km/s, allowing for inclination, macroturbulence and the uncertain stellar radius. Agreement would strengthen synchronization; a smaller v sin i alone would not refute it.
+
+Follow the slow brightness changes
+
+Continue calibrated multicolor photometry across recovery and any renewed fade, pairing spectra at different brightness states. TiO bands near 7055 and 8860 Angstrom and temperature-sensitive line ratios can test for an increasing cool component [13]. Increasing cool-band absorption as the optical flux falls would favor changing spot coverage; reddening without corresponding cool molecular structure would favor attenuation or geometry, subject to the expected stellar temperature and dilution. Absence of TiO would not exclude spots warmer than approximately 4000 K or low filling factors. Fitting the whole color trajectory and spectra together is more discriminating than matching two endpoint amplitudes.
+
+Locate future flares
+
+One- to two-minute imaging during future brightening events could localize the flare host and measure color evolution. With angular resolution or centroid precision sufficient to separate the alternatives, this could identify the host and refine the energy of the newly observed event. It is secondary to establishing the velocity and temperature behavior.
+
+6 What did not work and what remains unresolved
+
+These tests are part of the result. Some rejected specific explanations; others exposed the limits of the archive products. Keeping them makes clear what the successful measurements do and do not establish.
+
+A single fixed waveform does not carry across years
+
+A fixed-waveform test held the exact 35.92046-day waveform fixed across years. Freezing the pre-2022 waveform worsens later ASAS-SN squared prediction error by 26%; ZTF worsens by about 63%. That excludes this stable waveform as a description of the later photometry. It does not exclude the recurring timescale recovered when each season can change phase. Separately, the 912.3-day ASAS-SN catalogue period fails modern waveform-replay and blocked/forward tests. Fits spanning less than a full long cycle do not establish a replacement multi-year period.
+
+The historical events do not establish a long clock
+
+An exploratory approximately 15-year schedule can be constructed by dividing the separation of the sampled 1933.53 and 2022.33 minima into six intervals: 14.7997 years. It places intermediate dates near 1948.33, 1963.13, 1977.93, 1992.73 and 2007.53. The broad 1940s depression and 2006-2007 trough lie nearby, but this agreement is selected after viewing the data. The 1963 window has only two retained points, the 1993 window has only one 1989 edge point and no meaningful coverage of the predicted event, and the ±3-year window around 1977.93 has 68 points without a comparable deep 1930s-like event. The extra 2016 trough and unequal event depths further prevent interpreting the schedule as an established clock.
+
+Sampled annual minima are not precise physical minimum times. The longest gap between retained historical detections is 1956.175-1964.131, approximately 7.96 years; no brightness state is assigned through it. A specific recurrence test shifts the observed 1932-1943 recovery by 44.5 years, half the approximate 1933-to-2022 interval. At the actual later plate dates, with separate series offsets, the fitted template amplitude is negative (-0.205), whereas an equal-depth repeat requires +1. The equal-depth-repeat RMS is 0.372 mag versus 0.158 mag without a repeat. Allowing a linear drift weakens the numerical discrimination to 0.159 versus 0.148 mag, with fitted amplitude still negative (-0.614) and strongly entangled with the drift. Shifts of 43 and 46 years give the same qualitative result.
+
+The data disfavor this timing and recovery shape; they do not exclude every possible long cycle.
+
+Ordinary dust screens fail but some dust models survive
+
+Standard uniform screens with Draine Rv = 3.1, 4.0 and 5.5 cannot reproduce the observed g and W1 fading together: none of 108 atmosphere-law nuisance cases is compatible with the adopted 0.02 mag tolerance, and the smallest maximum training residual is approximately 0.1005 mag. This failure does not extend to all dust. Fixed-opacity partial-covering fits predict W2 changes of 0.0703-0.0750 mag, compared with 0.08875 mag observed; their residuals of -0.0185 to -0.0137 mag survive the same descriptive allowance. The spot prediction of 0.0995 mag is a little closer, but a few millimagnitudes do not give us a reliable ranking from this test alone.
+
+The broader test integrates attenuation through saved filter responses and CK04 spectra. The March 2018-to-2022 changes, g = 0.312 and W1 = 0.1175 mag, are the training anchors; W2 = 0.08875 mag is inspected afterward. Standard-law cases use 4500, 5000 and 5500 K at log g = 2.5 and metallicity -0.5; the smooth power-law extension uses 5000 K. For partial covering, observed flux in band j is proportional to 1 - c(t) D_j[tau(t)], where D_j is the band-integrated blocked fraction. Both bright and faint baseline attenuation are included. No thermal or scattered dust emission is added. We vary coverage at fixed optical depth, column at fixed coverage, a gray term plus selective extinction, power-law extinction proportional to wavelength^(-alpha), and spots combined with a uniform standard screen.
+
+Grid families anchor g exactly and accept W1 within 0.02 mag; their ranges are sampled conditional envelopes. The gray-plus-selective and uniform power-law rows are exact two-anchor fits, not identically sampled envelopes.
+
+Model family | Predicted W2 fade in mag | Fit convention
+
+Observed | 0.08875 | Not optimized
+
+Uniform flat power law | 0.09998 | Exact g and W1 anchors
+
+Gray plus standard screen | 0.11287–0.11324 | Exact g and W1 anchors
+
+Fixed column changing coverage | 0.05049–0.08798 | Exact g and W1 tolerance
+
+Fixed coverage changing column | 0.05374–0.08798 | Exact g and W1 tolerance
+
+Partial power law covering | 0.04651–0.12002 | Exact g and W1 tolerance
+
+Spots plus standard screen | 0.06863–0.12983 | Exact g and W1 tolerance
+
+The uniform power-law fit has alpha = 0.50575 and tau at 0.48 micron = 0.28692, much flatter than the tested ordinary interstellar laws. For the same fading it predicts V = 0.29022, r = 0.27419, I = 0.24296, J = 0.19306 and Ks = 0.14581 mag. A physical grain population realizing that slope has not been established. An illustrative mixed model with a 5000 K photosphere, 3500 K spots, coverage increasing from 0.3000 to 0.46464 and added tau = 0.03938 predicts W2 = 0.09261 mag. Its small residual demonstrates compatibility, not evidence that both components are required. October anchors give the same qualitative ordering.
+
+Changing column fails a further consistency test
+
+Each cloud model is fixed by the two g/W1 anchor states. At every other matched visit, g alone determines the cloud column and predicts W1. No evaluation W1 point selects its own column. The best-sampled bq camera has 10 evaluation visits: an initially transparent fixed-coverage cloud gives W1 RMS residuals of 0.0406-0.0428 mag for the three standard laws, compared with 0.0206 mag for the affine-flux trajectory of fixed-temperature spots or fixed-opacity changing coverage, and 0.0191 mag for a magnitude-linear relation. Other camera streams show the same direction. They share infrared measurements and are not independent replicates. An initial tau of 3 improves the bq trajectory RMS to 0.0165-0.0186 mag, but transmits only 15.5-15.9% of intrinsic g flux in the bright state.
+
+That geometry would require an intrinsic g luminosity approximately 6.3-6.5 times the observed baseline. A direct consistency check uses the matched 2018 absolute color, g-W1 = 12.621 - 9.50675 = 3.11425 mag. At 5000 K these heavily obscured models predict 4.4768-4.4857 mag, too red by 1.3626-1.3714 mag. Holding geometry fixed and changing temperature to 4500 or 5500 K leaves discrepancies of approximately 2.05 and 0.81 mag, respectively. This color check uses AB g = 3631 Jy and the saved W1 Vega flux-density zero point of 309.54 Jy, with SDSS g as a proxy response for ASAS-SN/APASS calibration [14]. It is a large-discrepancy diagnostic rather than precision calibrated synthetic photometry.
+
+Switching to the saved g Vega zero point would increase the mismatch by 0.1114 mag, and ordinary foreground reddening moves it in the same direction. Thus the tested heavy-baseline single-giant variant fails absolute color even though it fits the relative trajectory. Other intrinsic spectra, scattered/additive light and geometries require separate tests. Fixed-opacity changing coverage and a fixed two-temperature surface both produce affine flux trajectories. The present optical/W1 track does not separate those two mechanisms. The trajectory and absolute-color tests specifically constrain the initially transparent changing-column history and its tested heavy-baseline variant, while flatter extinction, variable covering and mixed models remain viable.
+
+The available colors do not separate every model
+
+The stored ZTF observations contain g only, so they cannot supply a contemporaneous g-r curve. The ASAS-SN V/g overlap in 2017-2018 gives semi-amplitudes of 0.0338 mag in V and 0.0315 mag in g at the candidate period, using 37 V and 165 g camera-days with separate camera offsets and trends. The harmonic coefficient differences include zero under 7- and 14-day block-sign sensitivities. Only 30 V dates have g within half a day, and V does not cover the 2022 minimum. For the slow variation, a fixed two-spectrum mixture predicts an affine flux relation, whereas an extinction-like model is linear in magnitude. Anchoring both to the 2018 and 2022 states gives predictions differing by only 0.002-0.003 mag at the other matched visits.
+
+The 10 evaluation visits for the bq camera with a 30-day matching window have approximately 0.0206 mag RMS residuals, reaching 0.039 mag. Tightening to 15 days leaves only the bi camera with both anchors and three evaluation visits. These data cannot distinguish the two curve families. A 0.0305 mag W1 difference at nearly equal matched g brightness in October 2020 and October 2023 is a useful follow-up target, but the weeks-wide sampling does not establish hysteresis.
+
+The spectra do not determine the companion light
+
+We compared giant-only and giant-plus-secondary CK04 atmospheres with the saved Gaia XP mean spectrum and the 2025 and 2026 SPHEREx epochs (Figure 11). Gaia was sampled in 20 nonoverlapping 30 nm bins over 400-1000 nm. SPHEREx used 35 and 33 quality-selected points over 0.75-2.4 microns; native and local reductions were fitted separately because they share photons. Each epoch had an independent normalization, primary temperature and extinction nuisance value. This avoids treating noncontemporaneous spectra as one fixed luminosity state. The expanded primary grid spans 3500-6500 K, log g = 1.5-3.0 and metallicities -1.0, -0.5 and 0.0. Secondary templates span 3500-6500 K at log g = 4.5; both components share metallicity and attenuation.
+
+We mixed spectra at fractions from 0.00 to 0.90 in 0.05 steps, defined at 1 micron. The score is unweighted log RMS residual after normalization. Approximate SPHEREx passbands and the absence of native XP covariance make this a broad-shape comparison rather than a calibrated likelihood fit.
+
+Dataset | Giant only RMS percent | Initial mixture RMS percent
+
+Gaia XP mean | 1.74 | 1.09
+
+SPHEREx native 2025 | 3.61 | 3.18
+
+SPHEREx native 2026 | 3.56 | 2.60
+
+SPHEREx local 2025 | 3.43 | 2.87
+
+SPHEREx local 2026 | 3.47 | 2.74
+
+A giant alone fits each dataset within an exploratory 5% shape tolerance. Adding a second spectrum improves the residuals, but the giant already fits within the adopted tolerance. These fits do not require a luminous companion. For a 3500 K secondary, sampled compatible fractions at 1 micron extend to 0.40-0.50 at that tolerance; at 10% they reach 0.70-0.90. Similar-color templates reach the 0.90 grid edge even at 5%. These broad conditional ranges show that the data provide no useful general upper bound on companion light. Identical spectral components are exactly degenerate with normalization, and a two-temperature surface can also produce a composite broad spectrum. Expanding the initial 4000-5500 K primary grid leaves the giant-only fits and principal conclusion unchanged.
+
+Extending selected models to 2.4-5 microns without refitting improves the composite comparison in 2026 but overpredicts parts of the 2025 spectrum. Atmosphere, CO and calibration differences are of comparable importance. FAST was excluded from broad spectral-shape fitting because its continuum calibration is not established.
+
+No stable deep eclipse was recovered
+
+We searched the eight TESS light-curve files, keeping SAP and corrected flux separate, for 1-, 2-, 4- and 6-day trapezoids at 35.92046 days over 288 phases. The profiles have 20% ingress and egress. Hourly bins were fitted with independent sector offsets and linear baselines, with quadratic baselines as a sensitivity test. Unlike an hour-scale event search, this treatment retains multiday variation. Injections were added to the already-extracted normalized flux, not raw pixels. Aperture depths of 0.1%, 0.3%, 1%, 3% and 10% were tested at 24 phases by repeating the blind phase-duration search. Recovery required phase agreement within half the injected width, duration within a factor of two, depth within 0.5-2 times the injected value and score exceeding the strongest observed score, a structured-variation benchmark rather than a calibrated false-alarm threshold.
+
+Three-percent events were recovered at all tested phases and durations in QLP SAP under both baselines and at P plus or minus 0.030613 days. At 1% depth the linear baseline recovered 1, 8, 18 and 18 of 24 trials; the quadratic baseline recovered 19, 24, 24 and 24, respectively. Shallower depths were not robustly recovered. The strongest pooled QLP trough is 6 days wide and only 0.48-0.73% deep. At its phase, sector 44 gives 1.28-1.45%, sector 45 gives 0.074-0.163%, and sector 72 gives -0.119% to +0.347%, depending on baseline. Other reductions select different phases. No stable repeating eclipse is identified (Figure 12). Persistent deep eclipses of the tested shapes are disfavored; dilution, grazing geometry and upstream extraction or detrending attenuation limit extension of that result to all companions.
+
+FAST cannot yet provide the required radial velocities
+
+The ten FAST spectra cover eight nights in 2008-2012, with seven 300-line spectra and three 600-line spectra. We fitted relative shifts in disjoint photospheric windows, treating grating groups separately and varying continuum smoothing from 40 to 100 Angstrom. Artificial 10 km/s shifts are recovered numerically, demonstrating that the fitting implementation responds to Doppler information. Three spectra obtained within 15.3 minutes on 12 November 2009 show apparent relative-shift differences of approximately 20-24 km/s, whereas the candidate orbit permits only about 0.020 km/s of motion in that interval. Most 300-line spectra disagree by 29-92 km/s between photospheric windows. The sky 5577 Angstrom line shows a 6.6 km/s repeat drift, and telluric-blend subtraction still leaves approximately 20 km/s scatter.
+
+One January 2010 pair is cleaner, with a 5.38 km/s apparent shift, or 7.08 km/s after a conditional differential barycentric correction, and a 3.22 km/s window spread. These extracted spectra cannot give us calibrated RVs on the required scale. Before using a new reduction to test the orbit, we need to see same-night stability.
+
+No usable seismic mass or radius
+
+For the assumed 1.5-solar-mass primary and radius-temperature range above, the usual solar scaling predicts nu_max of approximately 35.5-59.1 microHz. The alternative poster gravity log g = 1.7 would instead imply a radius near 28.65 solar radii and nu_max near 6 microHz. Separate sector and flux-product Lomb-Scargle spectra were examined over 10-200 microHz at 0.05 microHz spacing, with 5 microHz smoothing. No localized oscillation envelope repeats consistently (Figure 13). Retaining the known sector 46 flare increases integrated 30-100 microHz power by factors of 1.88 in SAP and 3.04 in corrected flux. A deterministic 24-96 microHz mode-comb test shows that final linear detrending preserves those frequencies, but does not measure stochastic-mode completeness.
+
+The search therefore does not cover the approximately 6 microHz lower-gravity prediction and yields no seismic mass, radius or nonoscillating-star classification.
+
+Other archive limits and the expanding cloud example
+
+Independent APPLAUSE confirmation of the historical event remains inconclusive. Saturation limits PS1, UHS and most PTF points; synthetic PS1 mean values were not accepted as observed colors. LAMOST spectra have zero or invalid continua. Gaia XP supplies broad mean-spectrum context, not an epoch temperature/RV series. GALEX adds one secure near-UV measurement, insufficient to diagnose a hot component. Catalina has image coverage without recovered target photometry; NSVS catalogue coverage did not yield its time series. Other bounded archive searches added no usable constraint. Empty catalogue searches were not converted into upper limits. An illustrative centered, opaque cloud covering 25% of the stellar disk has initial radius 0.5 Rstar.
+
+For Rstar = 9.0866 solar radii and unconstrained lateral expansion at 1 km/s over eight years, the radius grows by 362.887 solar radii. Its area would increase by approximately 6541 relative to its own initial area, or reach approximately 1635 times the stellar-disk area. A cloud starting at radius Rstar instead increases its own area by approximately 1676. These are geometric examples, not a general rejection of dust: confinement, replenishment and line-of-sight geometry are unspecified. The 2021 flare occurs after the modern decline began and cannot initiate the 2018 fading; no detached H-alpha outflow was identified.
+
+7 Data and reproducibility
+
+The accompanying review bundle contains source scripts, protocols, numerical outputs, input hashes and selected native FAST, TESS, optical, Gaia XP and SPHEREx products. The archive inventory identifies additional image data not included in the bundle. The calculations preserve survey epochs and calibration distinctions; model-grid tolerances and injection sensitivities are reported as such rather than as confidence limits. All observations in this study come from existing archives.
+
+The added Gaia neighborhood measurement is supplied as its original CSV with this revision. The earlier analysis bundle remains the source for the numerical tests, scripts and native products. The tables and figures retain the measured passbands, model conventions and sensitivity definitions so the work can be reproduced and extended.
+
+References
+
+[1] Tang et al. 2010, ApJL 710, L77. https://arxiv.org/abs/1001.1395. Related 2011 poster: https://hea-www.harvard.edu/DASCH/papers/DASCH_Tang_STScI_June2011_02.pdf
+
+[2] Davenport et al. 2014, empirical optical flare template. https://arxiv.org/abs/1411.3723
+
+[3] Hao et al. 2017, solar white-light flare profile. https://pmc.ncbi.nlm.nih.gov/articles/PMC5736556/
+
+[4] Swift 2SXPS catalogue, source J075445.6+164139 (161839). https://www.swift.ac.uk/2SXPS/
+
+[5] Gaia DR3 SB1 processing and validation. https://arxiv.org/abs/2410.14372. Gaia source 667401913089980544; public NSS and astrophysical-parameter rows retained in the bundle.
+
+[6] Castelli and Kurucz CK04 atmosphere grids, STScI. https://www.stsci.edu/hst/instrumentation/reference-data-for-calibration-and-tools/astronomical-catalogs/castelli-and-kurucz-atlas. Filter curves: https://svo2.cab.inta-csic.es/theory/fps/. Draine dust models: https://www.astro.princeton.edu/~draine/dust/dust.html
+
+[7] Hurley, Tout and Pols 2002, binary evolution and tidal prescriptions, equations 25-33. https://arxiv.org/abs/astro-ph/0201220
+
+[8] Gehan, Gaulme and Yu 2022, activity in tidally resonant red giants. https://arxiv.org/abs/2211.01026
+
+[9] Gaulme et al. 2020, active red giants. https://arxiv.org/abs/2004.13792
+
+[10] Dewberry and Wu 2025, giant-binary tidal circularization. https://arxiv.org/abs/2501.13929
+
+[11] Center for Astrophysics, Tillinghast Reflector Echelle Spectrograph. https://lweb.cfa.harvard.edu/instrument/tillinghast-reflector-echelle-spectrograph-tres
+
+[12] Trifonov et al. 2015, A&A 582, A54, optical and near-infrared RV comparison for giants. https://arxiv.org/abs/1508.04769
+
+[13] O'Neal, Neff and Saar 1998, ApJ 507, 919-937, TiO starspot spectroscopy. https://jneff.space/Pubs/oneal_tio5_apjl.pdf
+
+[14] ASAS-SN public photometry documentation and calibration. https://www.astronomy.ohio-state.edu/asassn/public/examples.shtml. Saved SVO passband and zero-point metadata are included in the analysis records.
+
+[15] Gaia DR3, source 667401913089980544. Ten-arcsecond cone query and original CSV retrieved 9 November 2026. Catalogue reference epoch 2016.0. Gaia Archive https://gea.esac.esa.int/archive/. Original export gaia_dr3_10arcsec_original.csv accompanies this paper.
+
+Figure 1
+
+Modern fading and recovery. Independent ASAS-SN camera measurements reproduce the ZTF fading and recovery. Camera and filter identities are retained and analyzed separately.
+
+Figure 2
+
+Optical and infrared behavior. NEOWISE W1 and W2 fade less than optical g and partly recover through March 2024. Control corrections and near-contemporaneous matching support an optical-to-infrared color change.
+
+Figure 3
+
+Historical and modern episodes. DASCH photographic measurements, legacy ASAS V and modern optical data retain their own passbands. The 1930s event and smaller 2000s trough are visible without waveform stretching or cross-survey event alignment.
+
+Figure 4
+
+TESS event and image localization. Sector 46 calibrated pixels show a compact excess near the target during the 2021 December 23 excursion. Offset is 0.177 pixel (3.7 arcsec). This moment-based localization has no formal PRF astrometric uncertainty; an unresolved alternative host is not excluded.
+
+Figure 5
+
+Optical flare shape comparison. Peak- and FWHM-normalized profiles compare J0754 with the Davenport empirical optical flare template and an approximate digitization of a published solar white-light kernel (Hao et al. 2017). Shapes, not absolute energies or durations, are compared. No statistical template fit was performed.
+
+Figure 6a
+
+FAST H alpha equivalent widths. Night-averaged pseudo-equivalent widths use absorption-positive convention. November 2009 shows reduced absorption relative to October 2008. Plotted formal errors omit continuum/extraction systematics; a 1.675% differential continuum bias can account for the primary contrast.
+
+Figure 6b
+
+FAST registered line profiles. Nearby metal-line registration and same-grating comparisons do not reveal a convincing detached blueshifted absorption component. The limited resolution and sparse epochs do not provide a stringent general limit on outflow.
+
+Figure 7
+
+Rotation with changing seasonal phase. Gray curves show individual seasons and blue curves their equally weighted mean fit improvement. Both surveys favor approximately 36 days; orange marks the Gaia candidate orbital period. Phase and amplitude are independent between seasons. Peak widths are not formal period confidence intervals.
+
+Figure 8
+
+Rotational strength and the long dip. The broad fade does not track rotational amplitude monotonically. Nearby-peak amplitudes are subject to period-selection bias. The weak whole-season 2024/25 component partly masks stronger early modulation recovered in shorter windows; see the shorter-window measurements in the text.
+
+Figure 9
+
+Competing color predictions. Atmosphere-based model families fit g and W1 and predict additional colors. Curves and envelopes depend on the stated atmosphere/geometry grids and tolerance. W2 was not used to select the illustrative spot example. Overlap precludes a unique cause from these bands alone.
+
+Figure 10
+
+Recovery era infrared spectrum. Local and official-tool SPHEREx reductions use the same observations. A photosphere fitted at shorter wavelengths accounts for most 2.45-5 micron flux. Residuals are sensitive to atmosphere and calibration choices; the plot does not establish a dust-free system.
+
+Figure 11
+
+Giant-only and composite spectral shapes with the expanded primary grid. Gaia uses normalized F_lambda and SPHEREx normalized F_nu. Each panel has its own scale; native and local SPHEREx reductions share observations.
+
+Figure 12
+
+Six-day eclipse-like profiles under linear and quadratic sector baselines. The selected pooled trough does not repeat with a stable depth across sectors.
+
+Figure 13
+
+Sector-separated TESS power shapes. No stable oscillation envelope is recovered; the sector 46 flare affects the broad power excess. Sector 1751 is the archive label for a special January 2026 product, not a concatenation of ordinary sector numbers.
+
+Figure 14
+
+Annual historical and modern measurements with coverage retained. Survey passbands and camera streams are kept separate. Sparse years and gaps limit event timing; the observed minima are sampled annual minima, not fitted physical epochs.

@@ -1,0 +1,84 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:46:30 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:46:30	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=II%2F156A&-c=118.69117410685+%2B16.694621231895&-c.rs=120&-out=%2A%2A&-out.max=100	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=120.	
+#Constraint -out.max=100
+
+#RESOURCE=yCat_2156
+#Name: II/156A
+#Title: IRAS Faint Source Catalog, |b| > 10, Version 2.0 (Moshir+ 1989)
+#INFO	ivoid=ivo://cds.vizier/ii/156a	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/156a	    IVOID of underlying data collection
+#INFO	creator=Moshir	    First author or institution
+#INFO	cites=1990IRASF.C......0M	    Article or Data origin sources
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/156A	    Dataset landing page
+#INFO	publication_date=2017-06-22	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	B1950_1983.500:	eq_FK4 B1950
+#Table	II_156A_main:
+#Name: II/156A/main
+#Title: IRAS Faint Sources
+#Column	_r	(F5.1)	Distance from center (07 51 54.4+16 49 36)[FK4/B1950], at Epoch=J1983.5	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	IRAS	(a12)	IRAS faint source name (starts by F)	[ucd=meta.id;meta.main]
+#Column	RA1950	(A10)	Hours RA, equinox 1950.0, epoch 1983.5	[ucd=pos.eq.ra;meta.main]
+#Column	DE1950	(A9)	Degrees Dec, equinox 1950.0, epoch 1983.5	[ucd=pos.eq.dec;meta.main]
+#Column	Major	(I3)	Uncertainty ellipse major axis	[ucd=stat.error]
+#Column	Minor	(I3)	Uncertainty ellipse minor axis	[ucd=stat.error]
+#Column	PosAng	(I3)	Uncertainty ellipse position angle	[ucd=stat.error;pos.posAng]
+#Column	o_Fnu12	(I3)	? Number of times observed at 12um	[ucd=meta.number]
+#Column	Fnu12	(E9.2)	Non-color corrected flux density at 12um \ifnum\Vphase>3({\fg{red3}in red for upper limits})\fi	[ucd=phot.flux.density;em.IR.8-15um]
+#Column	e_Fnu12	(I3)	Relative flux density uncertainty at 12um	[ucd=stat.error]
+#Column	q_Fnu12	(I1)	Flux density quality at 12um	[ucd=meta.code.qual]
+#Column	o_Fnu25	(I3)	? Number of times observed at 25um	[ucd=meta.number]
+#Column	Fnu25	(E9.2)	Non-color corrected flux density at 25um \ifnum\Vphase>3({\fg{red3}in red for upper limits})\fi	[ucd=phot.flux.density;em.IR.15-30um]
+#Column	e_Fnu25	(I3)	Relative flux density uncertainty at 25um	[ucd=stat.error]
+#Column	q_Fnu25	(I1)	Flux density quality at 25um	[ucd=meta.code.qual]
+#Column	o_Fnu60	(I3)	? Number of times observed at 60um	[ucd=meta.number]
+#Column	Fnu60	(E9.2)	Non-color corrected flux density at 60um \ifnum\Vphase>3({\fg{red3}in red for upper limits})\fi	[ucd=phot.flux.density;em.IR.30-60um]
+#Column	e_Fnu60	(I3)	Relative flux density uncertainty at 60um	[ucd=stat.error]
+#Column	q_Fnu60	(I1)	Flux density quality at 60um	[ucd=meta.code.qual]
+#Column	o_Fnu100	(I3)	? Number of times observed at 100um	[ucd=meta.number]
+#Column	Fnu100	(E9.2)	Non-color corrected flux density at 100um \ifnum\Vphase>3({\fg{red3}in red for upper limits})\fi	[ucd=phot.flux.density;em.IR.60-100um]
+#Column	e_Fnu100	(I3)	Relative flux density uncertainty at 100um	[ucd=stat.error]
+#Column	q_Fnu100	(I1)	Flux density quality at 100um	[ucd=meta.code.qual]
+#Column	Rel	(I2)	Percent minimum source reliability	[ucd=meta.code.error]
+#Column	SNR12	(F7)	? Signal/Noise ratio at 12um	[ucd=stat.snr]
+#Column	SNR25	(F7)	? Signal/Noise ratio at 25um	[ucd=stat.snr]
+#Column	SNR60	(F7)	? Signal/Noise ratio at 60um	[ucd=stat.snr]
+#Column	SNR100	(F7)	? Signal/Noise ratio at 100um	[ucd=stat.snr]
+#Column	locSNR12	(F7)	? Local Signal/Noise ratio at 12um	[ucd=stat.snr]
+#Column	locSNR25	(F7)	? Local Signal/Noise ratio at 25um	[ucd=stat.snr]
+#Column	locSNR60	(F7)	? Local Signal/Noise ratio at 60um	[ucd=stat.snr]
+#Column	locSNR100	(F7)	? Local Signal/Noise ratio at 100um	[ucd=stat.snr]
+#Column	A12	(I3)	? Number of pixels above threshold at 12um	[ucd=phys.angSize]
+#Column	A25	(I3)	? Number of pixels above threshold at 25um	[ucd=phys.angSize]
+#Column	A60	(I3)	? Number of pixels above threshold at 60um	[ucd=phys.angSize]
+#Column	A100	(I3)	? Number of pixels above threshold at 100um	[ucd=phys.angSize]
+#Column	Ncat	(I2)	Number of nearby catalog sources (6')	[ucd=meta.number]
+#Column	Nx12	(I2)	Number of nearby extractions at 12 um	[ucd=meta.number]
+#Column	Nx25	(I2)	Number of nearby extractions at 25 um	[ucd=meta.number]
+#Column	Nx60	(I2)	Number of nearby extractions at 60 um	[ucd=meta.number]
+#Column	Nx100	(I2)	Number of nearby extractions at 100 um	[ucd=meta.number]
+#Column	Cir1	(I2)	Number of nearby 100 um-only extractions	[ucd=meta.number]
+#Column	Conf	(I2)	Confusion flag, 1 per band, bit-encoded (1)	[ucd=meta.code]
+#Column	NoisC12	(F5.2)	? Noise correction factor at 12um	[ucd=instr.det.noise]
+#Column	NoisC25	(F5.2)	? Noise correction factor at 25um	[ucd=instr.det.noise]
+#Column	NoisC60	(F5.2)	? Noise correction factor at 60um	[ucd=instr.det.noise]
+#Column	NoisC100	(F5.2)	? Noise correction factor at 100um	[ucd=instr.det.noise]
+#Column	nID	(I2)	? Number of positional associations	[ucd=meta.number]
+#Column	Type	(I2)	? Type of associated object (G1)	[ucd=src.class]
+#Column	NoisR12	(F6.3)	? Ratio of 85% to 68% quantiles of flux distribution at 12um	[ucd=phot.flux;arith.ratio]
+#Column	NoisR25	(F6.3)	? Ratio of 85% to 68% quantiles of flux distribution at 25um	[ucd=phot.flux;arith.ratio]
+#Column	NoisR60	(F6.3)	? Ratio of 85% to 68% quantiles of flux distribution at 60um	[ucd=phot.flux;arith.ratio]
+#Column	NoisR100	(F6.3)	? Ratio of 85% to 68% quantiles of flux distribution at 100um	[ucd=phot.flux;arith.ratio]

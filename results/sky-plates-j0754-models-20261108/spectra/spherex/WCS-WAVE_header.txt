@@ -1,0 +1,19 @@
+XTENSION= 'BINTABLE'           / binary table extension                         
+BITPIX  =                    8 / array data type                                
+NAXIS   =                    2 / number of array dimensions                     
+NAXIS1  =                  720 / length of dimension 1                          
+NAXIS2  =                    1 / length of dimension 2                          
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+TFIELDS =                    3 / number of table fields                         
+EXTNAME = 'WCS-WAVE'                                                            
+TTYPE1  = 'X       '                                                            
+TFORM1  = '9J      '                                                            
+TDIM1   = '(9)     '                                                            
+TTYPE2  = 'Y       '                                                            
+TFORM2  = '9J      '                                                            
+TDIM2   = '(9)     '                                                            
+TTYPE3  = 'VALUES  '                                                            
+TFORM3  = '162E    '                                                            
+TDIM3   = '(2,9,9) '                                                            
+END                                                                             

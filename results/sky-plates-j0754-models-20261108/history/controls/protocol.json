@@ -1,0 +1,12 @@
+{
+  "saved_utc": "2026-11-08T23:22:20Z",
+  "target_prior_result": "ASAS main dataset 2, MAG_0 grade A/B annual medians: 2004=12.161; 2007=12.296; delta=+0.135 mag. The target result is already known.",
+  "controls": "The original sixteen Gaia IDs selected for the 1937 isotonic plate experiment, as stored in followup/isotonic_pixel_results.json results[-1].selected_controls. No control selection by ASAS outcome.",
+  "prediction": "The target's 2004-to-2007 fading exceeds nearby controls' common change.",
+  "weakening_outcome": "A common 2006–2007 trough among nearby controls, or a much smaller target change after same-exposure correction, weakens an astrophysical interpretation.",
+  "fetch_bound": "Only the documented legacy ASAS data endpoint, rounded coordinate designations, sixteen controls, public GETs; stop after approximately five minutes.",
+  "selection": "Grade A/B measured MAG_0; preserve all five apertures and raw rows, grades, duplicate HJD/frame groups, catalogue positions and datasets. MER values are frame statistics, not individual uncertainties.",
+  "primary_diagnostic": "Use target main field F0800+16_438. Build each control dataset's 2004 MAG_0 median only with >=3 A/B rows. For each exact target HJD/frame pair, use the median residual per control star then a median across >=3 distinct controls. Keep field/dataset baseline offsets separate. Repeated catalogue entries of one star on one exposure are one vote.",
+  "fallback_diagnostic": "If exact-frame matching is insufficient, report per-control per-field 2007-minus-2004 annual medians with >=3 rows per year, without claiming identical-frame correction.",
+  "interpretation_limit": "A small selected comparison sample tests common instrumental changes but cannot establish astrophysical variability or exclude all spatial/colour effects. No cross-survey zero-point alignment."
+}

@@ -1,0 +1,69 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:47:52 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:47:52	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=II%2F339%2Fsummary&ObsID=00031554001&-out=%2A%2A	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	MaxTuples=50000	
+
+#RESOURCE=yCat_2339
+#Name: II/339
+#Title: Swift/UVOT Serendipitous Source Catalog (Yershov, 2015)
+#INFO	ivoid=ivo://cds.vizier/ii/339	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/339	    IVOID of underlying data collection
+#INFO	creator=Yershov V.N.	    First author or institution
+#INFO	cites=bibcode:2014Ap&SS.354...97Y	    Article or Data origin sources
+#INFO	journal=Ap&S	    Journal name
+#INFO	original_date=2014	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/339	    Dataset landing page
+#INFO	publication_date=2021-09-09	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H:	ICRS
+#Table	II_339_summary:
+#Name: II/339/summary
+#Title: Summary information and per image upper limits
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Oseq	(I5)	[1/23059] Reference number (N_SUMMARY)	[ucd=meta.id;meta.main]
+#Column	ObsID	(A11)	Unique Swift observation ID (OBSID) (5)	[ucd=meta.id;obs]
+#Column	Target	(A18)	Swift original target identifier (TARGET_ID)	[ucd=meta.id]
+#Column	Filters	(A20)	List of filters used this OBSID (FILTERS)	[ucd=instr.bandpass]
+#Column	StartDate	(A19)	Earliest observation date and time, UT format (DATE_MIN)	[ucd=time.epoch;obs]
+#Column	ptRA	(F10.6)	Pointing RA (ICRS) of image centre (RA_PNT)	[ucd=pos.eq.ra;meta.main]
+#Column	ptDE	(F10.6)	Pointing Dec (ICRS) of image centre (DEC_PNT)	[ucd=pos.eq.dec;meta.main]
+#Column	ptPA	(F5.1)	[0/360] Position angle image centre (PA_PNT)	[ucd=pos.posAng]
+#Column	exp.UVW2	(F7.1)	?Total exposure time in UVW2 (EXP_UVW2)	[ucd=time.duration;obs.exposure]
+#Column	exp.UVM2	(F7.1)	?Total exposure time in UVM2 (EXP_UVM2)	[ucd=time.duration;obs.exposure]
+#Column	exp.UVW1	(F7.1)	?Total exposure time in UVW1(EXP_UVW1)	[ucd=time.duration;obs.exposure]
+#Column	exp.U	(F7.1)	?Total exposure time in U (EXP_U)	[ucd=time.duration;obs.exposure]
+#Column	exp.B	(F7.1)	?Total exposure time in B(EXP_B)	[ucd=time.duration;obs.exposure]
+#Column	exp.V	(F7.1)	?Total exposure time in V (EXP_V)	[ucd=time.duration;obs.exposure]
+#Column	n.UVW2	(I4)	?Number of UVW2 sources (NSOURCES_UVW2)	[ucd=meta.number]
+#Column	n.UVM2	(I4)	?Number of UVM2 sources (NSOURCES_UVM2)	[ucd=meta.number]
+#Column	n.UVW1	(I4)	?Number of UVW1 sources (NSOURCES_UVW1)	[ucd=meta.number]
+#Column	n.U	(I4)	?Number of U sources (NSOURCES_U)	[ucd=meta.number]
+#Column	n.B	(I4)	?Number of B sources (NSOURCES_B)	[ucd=meta.number]
+#Column	n.V	(I5)	?Number of V sources (NSOURCES_V)	[ucd=meta.number]
+#Column	ul.UVW2	(F6.3)	?Limiting mag UVW2 (VEGAMAG_LIM_UVW2) (6)	[ucd=phot.mag]
+#Column	ul.UVM2	(F6.3)	?Limiting mag UVM2 (VEGAMAG_LIM_UVM2) (6)	[ucd=phot.mag]
+#Column	ul.UVW1	(F6.3)	?Limiting mag UVW1 (VEGAMAG_LIM_UVW1) (6)	[ucd=phot.mag]
+#Column	ul.U	(F6.3)	?Limiting mag U (VEGAMAG_LIM_U) (6)	[ucd=phot.mag]
+#Column	ul.B	(F6.3)	?Limiting mag B (VEGAMAG_LIM_B) (6)	[ucd=phot.mag]
+#Column	ul.V	(F6.3)	?Limiting mag V (VEGAMAG_LIM_V) (6)	[ucd=phot.mag]
+#Column	ul.UVW2-AB	(F6.3)	?Limiting AB-mag UVW2 (ABMAG_LIM_UVW2) (6)	[ucd=phot.mag]
+#Column	ul.UVM2-AB	(F6.3)	?Limiting AB-mag UVM2 (ABMAG_LIM_UVM2) (6)	[ucd=phot.mag]
+#Column	ul.UVW1-AB	(F6.3)	?Limiting AB-mag UVW1 (ABMAG_LIM_UVW1) (6)	[ucd=phot.mag]
+#Column	ul.U-AB	(F6.3)	?Limiting AB-mag U (ABMAG_LIM_U) (6)	[ucd=phot.mag]
+#Column	ul.B-AB	(F6.3)	?Limiting AB-mag B (ABMAG_LIM_B) (6)	[ucd=phot.mag]
+#Column	ul.V-AB	(F6.3)	?Limiting AB-mag V (ABMAG_LIM_V) (6)	[ucd=phot.mag]
+recno	Oseq	ObsID	Target	Filters	StartDate	ptRA	ptDE	ptPA	exp.UVW2	exp.UVM2	exp.UVW1	exp.U	exp.B	exp.V	n.UVW2	n.UVM2	n.UVW1	n.U	n.B	n.V	ul.UVW2	ul.UVM2	ul.UVW1	ul.U	ul.B	ul.V	ul.UVW2-AB	ul.UVM2-AB	ul.UVW1-AB	ul.U-AB	ul.B-AB	ul.V-AB
+ 	 	 	 	 	s	deg	deg	deg	s	s	s	s	s	s	 	 	 	 	 	 	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag
+--------	-----	-----------	------------------	--------------------	-------------------	----------	----------	-----	-------	-------	-------	-------	-------	-------	----	----	----	----	----	-----	------	------	------	------	------	------	------	------	------	------	------	------
+    7074	 7074	00031554001	 Non-GRB (118.614,	                UVW1	2009-12-02T15:33:12	118.613520	+16.573574	 92.5	       	       	 4909.5	       	       	       	    	    	 550	    	    	     	      	      	21.948	      	      	      	      	      	23.468	      	      	
+

@@ -1,0 +1,66 @@
+J0754: competing explanations and archive extension
+Ari with Kyle — 8 November 2026
+
+Outcome: several distinct spectral-change models remain compatible with the measured modern optical/infrared fading. The simplest uniform foreground screen and a purely wavelength-independent single-component fade do not fit both training bands within the declared tolerance. The stronger result is a set of testable color predictions, new historical photometry, a recovered mean spectrum, and confirmed post-2024 infrared image coverage. No unique cause or long recurrence period has been established.
+
+MODEL COMPARISON
+The pre-fit protocol is protocol.json. Inputs were already known: March2018→2022 matched-season g=+.312,W1=+.1175mag; W2=+.08875mag excluded from optimization. October=.3225/.115/.09 is a sensitivity. These are retrospective checks, not blind discoveries.
+
+This stage replaces the previous monochromatic/blackbody illustrations with public CK04 atmosphere spectra integrated through SVO response curves. All39 native atmosphere tables and13 actual response curves are retained with exact receipts; the primary grid spans brightT4000/4500/5000/5500K,logg2/2.5/3,metallicity−1/−.5/0. Native atmosphereTsteps250K; interpolation does not supply2K or10K physical precision. SVOenergy/photon weighting, filteridentity andFLAM/Angstrom units were checked. SDSSg approximates ASAS-SNg, with ZTFg response sensitivity.
+
+At fixed baseline assumptions, uniform dust, fixed-area cooling and gray references fit one quantity; temperature+achromatic scale, spots, partial covering and two-component dilution effectively fit two quantities to two training bands. Exact two-band reproduction is therefore not model selection. Counts of fitted grid cases are not physical probabilities.
+
+Uniform foreground-screen and gray-single-component models miss g/W1 by about0.10mag in the best compromise. Fixed-area cooling now has compatible atmosphere-grid cases at the lowest tested brightT4000K boundary. It is not valid to exclude that entire class from the earlier blackbody toy. Temperature+scale, varying cool spots, optically thick partial covering and a gray occultation diluted by a cooler constant component all have viable sampled cases. The W2 checks overlap once model/systematic ranges are retained.
+
+ADDITIONAL-COLOR PREDICTIONS
+These are faint-minus-bright state changes corresponding to the2018→2022 fit, not predictions of present2026 colors. The table below uses sampled full g/W1-compatible regions within±.02mag in each training band. It retains non-optimal compatible parameters, analytic covering/gray-offset intervals and broad nuisance grids; no W2 filtering is applied. Ranges are not confidence intervals, not exhaustive unmodeled physics and not stellar-model probabilities.
+
+Model | W2 change | V-I change | H-Ks change | g-Ks change (mag)
+temperature_plus_scale | -0.0136..+0.1517 | +0.0399..+0.1676 | -0.0132..+0.0101 | +0.1514..+0.2902
+fixed_area_cooling | +0.0639..+0.0804 | +0.0900..+0.1264 | -0.0061..-0.0005 | +0.1952..+0.2385
+cool_spots | +0.0555..+0.1404 | +0.0288..+0.1568 | -0.0068..+0.0189 | +0.1607..+0.2592
+partial_dust_covering | +0.0566..+0.0899 | +0.0001..+0.0051 | +0.0400..+0.0576 | +0.0692..+0.1662
+two_component_occultation | +0.0768..+0.1446 | +0.0437..+0.1803 | -0.0013..+0.0084 | +0.1527..+0.2423
+
+Partial-covering cases predict V-I roughly0.000–0.005mag and H-Ks0.040–0.058. Cool spots predict V-I0.029–0.157 and H-Ks−0.007–0.019. Temperature+scale and two-component dilution produce broadly similar optical-reddening alternatives. g-Ks ranges overlap after including compatible non-optimal parameters. The smallest V-I/H-K family gaps are only~.02mag, comparable to an assumed per-band/model systematic scale: matched-state observations in several filters with well-controlled~.01mag precision are a useful test, not a guaranteed one-color diagnosis.
+
+Boundary/physical limits: some spot solutions reach the3500K cool-grid floor; colder spot spectra could change results. The fitted companion area ratios and covering fractions are spectral geometries, not a validated coeval binary or dynamically viable multi-year eclipse. A fitted geometric scale is not a radius measurement. No calibrated static GaiaXP fit was used to weight/prune these baseline assumptions. Model families with different grains/emission, atmospheric grids or mixtures remain open.
+
+HISTORICAL COVERAGE ACTUALLY RECOVERED
+Legacy ASAS supplies422rows in four field/dataset groups,2002-12-14–2009-12-03.390 A/B MAG_0 rows represent381 distinct HJD/frame combinations. Five apertures, grades, sentinels, duplicate groups and independent field zero points remain preserved. MER values are frame dispersions, not individual stellar uncertainties. Mainfield2has338A/B rows. Its annual medians rise from12.161 in2004 to12.296 in2007, then return to12.175 in2009: a descriptive~.135mag trough. A later pre-control-download protocol tested the known target trough with the original16controls, adding6751rawcontrolrows. ExactHJD/frame correction coversall338main-field targetexposures with7–16eligiblegroups: corrected2007−2004=+.147mag and2009−2007=−.114mag. Leaveonecontroloutfading=.1410–.1585mag; MAG1/MAG2sensitivitiesretainfading/recovery. Thematchedcommoncontrolchangeis−.006125mag. Twoindividualcontrols showsimilar-sized changes, so thisiscomparison-supportedcandidatevariation, nottargetuniqueness, independentreplication orcauseproof. NativeASASapertureidentitydeduplicationandpositionmatchesarechecked; closeaperturesmaystillcorrelate. Root independently reproduces+.147/−.114; restricting controls to the target main field gives+.143125/−.114. Details:history/controls/control_audit.txt.
+
+The ASAS data genuinely reduce the1989–2012 gap, while1989–2002 and2009–2012 remain unfilled. No arbitrary cross-survey offset was applied to align episodes. The updated historical_modern_pattern.png gives ASAS its own V panel and shows both raw and exact-frame comparison-corrected annual medians. The2006–2007trough is about15–16years before2022; that spacing is descriptive, not a measured cycle.
+
+APPLAUSE refreshed source cone:41nearby rows/22plates; exactGaia target26natural-mag rows/17plates. Unchanged screening keeps9scan rows/6physical plates in1919,1952,1971. The1952/1971 data were already in reconnaissance and are not newly observed epochs; they were outside the five earlier plates examined in pixels. A broader footprint inventory now contains295covering physical plates,314exposure rows and1087calibration rows from a bounded25-degree-center search. Most lack usable target detections; many are too shallow. Footprint coverage is not flux, nor a validated upper limit. No new pixels were measured. The historical1930s APPLAUSE corroboration remains inconclusive.
+
+DASCH unchanged cuts reproduce583quality/552differential rows. Before1900 there are33exposure rows,9detections,7retained measurements; only3 in1892–93. Two rejected detections and24non-detections retain their explicit flags/limits. No quality gate was loosened to fill a gap.
+
+Catalina:510covering frames2004–2014,0targetPhotcat rows; Orphancat query failed. NSVS: exactcatalogue match9996805 reports145goodpoints, but actual time-series download failed. Those145are not recovered photometry. Sonneberg resource pages establish a relevant plate collection but no usable public coordinate-to-photometry/FITS retrieval was found in this bounded search. Details, original URLs and failed queries are in history/history_audit.txt.
+
+SPECTRA AND SHORT-PERIOD TEST
+Gaia meanXP sampled spectrum and continuous coefficients were recovered after replacing a deprecated DATA_STRUCTURE=RAW request with DATAMODEL_GAIA. This corrects the earlier retrieval-failure interpretation; the spectrum exists.343samples,336–1020nm/2nm, finitepositive flux/error inW m^-2 nm^-1, nominal median sampleSNR48.6. Strong blue ringing and correlated low-resolution samples prevent narrow-line or independent343-pixel statistics. It is useful broad staticSED context from the GaiaDR3 observing window, not a bright/faint comparison or RV series.
+
+LAMOST native MRS FITS were recovered: two coadds are allzero; four single-exposure spectra have negative median continua and69–94%negative pixels. They supply no reliable Teff/activity/lithium/RV constraints. Failed extraction is not evidence that the star vanished.
+
+The independent fixed35.9204566-day photometric check uses1396daily ASAS-SNg camera groups. Joint low-frequency nuisance fitting gives training semi-amplitude0.02566mag through2021, validation0.00068mag in2022–26; freezing the training waveform worsens validationSSE26%. All six nuisance/harmonic/weight variants worsen it. ZTF differential validationSSE is63–65%worse. Cadence injection retains99.0–99.4%signalenergy under the declared model. TESS is strongly reduction/sector dependent. Thus no stable photometric counterpart at the exact Gaia candidate period is established. This does not exclude companions, evolving rotation/activity, intermittent/non-sinusoidal variability or nearby periods; white-noise intervals and circular-shift diagnostics are not calibrated discovery significance. See short_period/report.md.
+
+POST-2024 INFRARED DATA OPPORTUNITY
+SPHEREx SIA2returns223uniqueQR2spectral-image overlaps:111 inOctober16–23,2025 and112 inApril2–16,2026, acrossallsixdetectors. OneApril8D6cutout has a compact signal at targetWCS, PassL1/L2quality, processingversionl2b-v24-2026-105/pipeline6.5.6. This is real image coverage afterNEOWISE, not a measured point-sourceSED. No ready point-source spectrum catalogue was found among currentAPIproducts. Calibrated ePSF/background/variance/mask extraction and per-pixelCWAVE/CBANDassignment are required; WCS-WAVE is visualizationonly. We did not infer a2025–26IRbrightening from image availability. Audits/nativecutout/metadata are under spectra/spherex/.
+
+WHAT THIS CHANGES
+The investigation now has competing quantitative predictions rather than a dust assumption, real2002–2009photometry, usable mean optical spectral context, and a public2025–26IRspectral-image route. It has not identified a cause. The most useful immediate archive analysis is to extract calibrated SPHEREx source spectra with comparison/calibration checks and match them to actual contemporary optical brightness states. This can constrain near-IR structure and later recovery; it cannot recreate a missing2022spectrum. A new multiepoch optical spectrum is still needed for activity/temperature/line-shape/velocity diagnosis. No telescope booking, equipment purchase, account or contact was made.
+
+ARTIFACTS AND VERIFICATION
+model_comparison.json retains1074per-nuisance bestfitrecords and separate full sampled compatibility envelopes. color_predictions.csv preservesall sixpredeclaredcolorchangesforprimary/sensitivitysets. model_predictions.png and historical_modern_pattern.png were visually inspected. protocol.json and implementation_notes.json preserve chronology and the independent-review correction from overly narrow profiled-bestfit ranges. The review independently checked quadrature, physicalintervals, representativefits, W2mutation invariance and the fixedperiod reduction. Allsource/data/runtime separation is maintained; exactfinaltests/commitstateareinverification_receipt.json andcommit_receipt.json.
+
+PRIMARY REFERENCES
+Atmosphere grid: https://www.stsci.edu/hst/instrumentation/reference-data-for-calibration-and-tools/astronomical-catalogs/castelli-and-kurucz-atlas
+Filter service: https://svo2.cab.inta-csic.es/svo/theory/fps3/index.php?mode=voservice
+Dust models: https://www.astro.princeton.edu/~draine/dust/dustmix.html
+ASAS data: https://www.astrouw.edu.pl/cgi-asas/asas_cgi_get_data?075446+1641.7,asas3
+Gaia sampled spectrum format: https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_spectroscopic_tables/ssec_dm_xp_sampled_mean_spectrum.html
+SPHEREx access: https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-access/
+Historicalsourceandqualityreferences: history/history_audit.txt; spectralqualityreferences:spectra/spectra_audit.txt.
+
+FINAL PRESERVATION STATE
+Maintainedsourcecommit 414333a2ec39ef96dbf8b34d660b6b6a47b20997;17scopedfiles,65numericaltests pass. Existingexactcheckoutregistration inGitHubDesktopreused. Source-scope clean and committedbytes verified.436unrelatedstatusentriespreserved. Noremote,pushorpublication. Nativeobservations/downloads/generatedresultsareseparatelocalsaves,notpartofsourcecommit or onlinebackup.

@@ -1,0 +1,142 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:50:05 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:50:05	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=VIII%2F106&-c=118.69117410685+%2B16.694621231895&-c.rs=30&-out=%2A%2A&-out.max=100	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=30.	
+#Constraint -out.max=100
+
+#RESOURCE=yCat_8106
+#Name: VIII/106
+#Title: Herschel/PACS Point Source Catalogs (Herschel team, 2017)
+#INFO	ivoid=ivo://cds.vizier/viii/106	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/viii/106	    IVOID of underlying data collection
+#INFO	creator=Herschel Point Source Catalogue Working Group	    First author or institution
+#INFO	cites=bibcode:2020yCat.8106....0H	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2020	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/VIII/106	    Dataset landing page
+#INFO	publication_date=2020-12-07	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	VIII_106_hppsc070:
+#Name: VIII/106/hppsc070
+#Title: Herschel/PACS Point Source catalog at 70um
+#Column	_r	(F6.3)	Distance from center (118.69117410685 16.69462123189)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Name	(A26)	Source name (name) (G1)	[ucd=meta.id;meta.main]
+#Column	Band	(A5)	Band (blue=70um, green=100um, red=160um) (band)	[ucd=instr.bandpass]
+#Column	RAJ2000	(F15.11)	Right ascension (J2000) (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F15.11)	Declination (J2000) (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	e_RAJ2000	(D24.17)	Positional uncertainty on Right ascension (raerr)	[ucd=stat.error;pos.eq.ra]
+#Column	e_DEJ2000	(D24.17)	Positional uncertainty on Declination (decerr)	[ucd=stat.error;pos.eq.dec]
+#Column	Flux	(F15.6)	Non-color corrected flux density in Band (flux)	[ucd=phot.flux.density;em.IR]
+#Column	snr	(F15.6)	Structure noise based signal-to-noise ratio (snr)	[ucd=stat.snr;instr.det.noise]
+#Column	snrnoise	(F26.17)	Noise derived from S/NS (snrnoise)	[ucd=stat.snr;instr.det.noise]
+#Column	stn	(F11.6)	? Background RMS based signal-to-noise (stn)	[ucd=instr.background]
+#Column	n_stn	(A2)	[-I] -I for -Infinity	[ucd=meta.note]
+#Column	rms	(F14.6)	? Background RMS (rms)	[ucd=stat.stdev;instr.background]
+#Column	strn	(F14.6)	? Structure noise (strn)	[ucd=instr.det.noise]
+#Column	Fratio	(F18.15)	Flux ratio measured in apertures 6 and 1 (fratio)	[ucd=phot.flux;arith.ratio]
+#Column	FWHMXfit	(F17.14)	FWHM of the fitted Gaussian along the major axis (fwhmxfit)	[ucd=phys.angSize;meta.modelled]
+#Column	FWHMYfit	(F18.14)	? FWHM of the fitted Gaussian along the minor axis (fwhmyfit)	[ucd=phys.angSize;meta.modelled]
+#Column	Elong	(F9.6)	Ratio of the FWHMY and FWHMX (flag_elong)	[ucd=phys.size;arith.ratio]
+#Column	Edge	(A1)	[ft] t = at least one contributing source shows >=10% of map pixels as NaN within the outer background annulus (edgeflag)	[ucd=meta.code]
+#Column	Blend	(I4)	Sources with the same numbers are blended (flag_blend)	[ucd=meta.code]
+#Column	Warmat	(A1)	[ft] t = the observation was affected by the "warm" attitude (warmat)	[ucd=meta.code]
+#Column	ObsId	(I10)	Observation identifier (obsid)	[ucd=meta.id;obs.param;obs]
+#Column	SSOmap	(A1)	[ft] t = SSO map reprocessed in the rest sky frame (ssomapflag)	[ucd=meta.code]
+#Table	VIII_106_hppsc100:
+#Name: VIII/106/hppsc100
+#Title: Herschel/PACS Point Source catalog at 100um
+#Column	_r	(F6.3)	Distance from center (118.69117410685 16.69462123189)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Name	(A26)	Source name (name) (G1)	[ucd=meta.id;meta.main]
+#Column	Band	(A5)	Band (blue=70um, green=100um, red=160um) (band)	[ucd=instr.bandpass]
+#Column	RAJ2000	(F15.11)	Right ascension (J2000) (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F15.11)	Declination (J2000) (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	e_RAJ2000	(D24.17)	Positional uncertainty on Right ascension (raerr)	[ucd=stat.error;pos.eq.ra]
+#Column	e_DEJ2000	(D24.17)	Positional uncertainty on Declination (decerr)	[ucd=stat.error;pos.eq.dec]
+#Column	Flux	(F15.6)	Non-color corrected flux density in Band (flux)	[ucd=phot.flux.density;em.IR]
+#Column	snr	(F15.6)	Structure noise based signal-to-noise ratio (snr)	[ucd=stat.snr;instr.det.noise]
+#Column	snrnoise	(F26.17)	Noise derived from S/NS (snrnoise)	[ucd=stat.snr;instr.det.noise]
+#Column	stn	(F11.6)	? Background RMS based signal-to-noise (stn)	[ucd=instr.background]
+#Column	n_stn	(A2)	[-I] -I for -Infinity	[ucd=meta.note]
+#Column	rms	(F14.6)	? Background RMS (rms)	[ucd=stat.stdev;instr.background]
+#Column	strn	(F14.6)	? Structure noise (strn)	[ucd=instr.det.noise]
+#Column	Fratio	(F18.15)	Flux ratio measured in apertures 6 and 1 (fratio)	[ucd=phot.flux;arith.ratio]
+#Column	FWHMXfit	(F17.14)	FWHM of the fitted Gaussian along the major axis (fwhmxfit)	[ucd=phys.angSize;meta.modelled]
+#Column	FWHMYfit	(F18.14)	? FWHM of the fitted Gaussian along the minor axis (fwhmyfit)	[ucd=phys.angSize;meta.modelled]
+#Column	Elong	(F9.6)	Ratio of the FWHMY and FWHMX (flag_elong)	[ucd=phys.size;arith.ratio]
+#Column	Edge	(A1)	[ft] t = at least one contributing source shows >=10% of map pixels as NaN within the outer background annulus (edgeflag)	[ucd=meta.code]
+#Column	Blend	(I4)	Sources with the same numbers are blended (flag_blend)	[ucd=meta.code]
+#Column	Warmat	(A1)	[ft] t = the observation was affected by the "warm" attitude (warmat)	[ucd=meta.code]
+#Column	ObsId	(I10)	Observation identifier (obsid)	[ucd=meta.id;obs.param;obs]
+#Column	SSOmap	(A1)	[ft] t = SSO map reprocessed in the rest sky frame (ssomapflag)	[ucd=meta.code]
+#Table	VIII_106_hppsc160:
+#Name: VIII/106/hppsc160
+#Title: Herschel/PACS Point Source catalog at 160um
+#Column	_r	(F6.3)	Distance from center (118.69117410685 16.69462123189)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Name	(A26)	Source name (name) (G1)	[ucd=meta.id;meta.main]
+#Column	Band	(A5)	Band (blue=70um, green=100um, red=160um) (band)	[ucd=instr.bandpass]
+#Column	RAJ2000	(F15.11)	Right ascension (J2000) (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F15.11)	Declination (J2000) (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	e_RAJ2000	(D24.17)	Positional uncertainty on Right ascension (raerr)	[ucd=stat.error;pos.eq.ra]
+#Column	e_DEJ2000	(D24.17)	Positional uncertainty on Declination (decerr)	[ucd=stat.error;pos.eq.dec]
+#Column	Flux	(F15.6)	Non-color corrected flux density in Band (flux)	[ucd=phot.flux.density;em.IR]
+#Column	snr	(F15.6)	Structure noise based signal-to-noise ratio (snr)	[ucd=stat.snr;instr.det.noise]
+#Column	snrnoise	(F26.17)	Noise derived from S/NS (snrnoise)	[ucd=stat.snr;instr.det.noise]
+#Column	stn	(F11.6)	? Background RMS based signal-to-noise (stn)	[ucd=instr.background]
+#Column	n_stn	(A2)	[-I] -I for -Infinity	[ucd=meta.note]
+#Column	rms	(F14.6)	? Background RMS (rms)	[ucd=stat.stdev;instr.background]
+#Column	strn	(F14.6)	? Structure noise (strn)	[ucd=instr.det.noise]
+#Column	Fratio	(F18.15)	Flux ratio measured in apertures 6 and 1 (fratio)	[ucd=phot.flux;arith.ratio]
+#Column	FWHMXfit	(F17.14)	FWHM of the fitted Gaussian along the major axis (fwhmxfit)	[ucd=phys.angSize;meta.modelled]
+#Column	FWHMYfit	(F18.14)	? FWHM of the fitted Gaussian along the minor axis (fwhmyfit)	[ucd=phys.angSize;meta.modelled]
+#Column	Elong	(F9.6)	Ratio of the FWHMY and FWHMX (flag_elong)	[ucd=phys.size;arith.ratio]
+#Column	Edge	(A1)	[ft] t = at least one contributing source shows >=10% of map pixels as NaN within the outer background annulus (edgeflag)	[ucd=meta.code]
+#Column	Blend	(I4)	Sources with the same numbers are blended (flag_blend)	[ucd=meta.code]
+#Column	Warmat	(A1)	[ft] t = the observation was affected by the "warm" attitude (warmat)	[ucd=meta.code]
+#Column	ObsId	(I10)	Observation identifier (obsid)	[ucd=meta.id;obs.param;obs]
+#Column	SSOmap	(A1)	[ft] t = SSO map reprocessed in the rest sky frame (ssomapflag)	[ucd=meta.code]
+#Table	VIII_106_hpesl:
+#Name: VIII/106/hpesl
+#Title: Herschel/PACS slightly extended sources list
+#Column	_r	(F6.3)	Distance from center (118.69117410685 16.69462123189)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Name	(A26)	Source name (name) (G1)	[ucd=meta.id;meta.main]
+#Column	Band	(A5)	Band (blue=70um, green=100um, red=160um) (band)	[ucd=instr.bandpass]
+#Column	RAJ2000	(F15.11)	Right ascension (J2000) (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F15.11)	Declination (J2000) (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	e_RAJ2000	(D24.17)	Positional uncertainty on Right ascension (raerr)	[ucd=stat.error;pos.eq.ra]
+#Column	e_DEJ2000	(D24.17)	Positional uncertainty on Declination (decerr)	[ucd=stat.error;pos.eq.dec]
+#Column	Flux	(F27.17)	Non-color corrected flux density in Band (flux)	[ucd=phot.flux.density;em.IR]
+#Column	snr	(F15.6)	Structure noise based signal-to-noise ratio (snr)	[ucd=stat.snr;instr.det.noise]
+#Column	stn	(F11.6)	? Background RMS based signal-to-noise (stn)	[ucd=instr.background]
+#Column	n_stn	(A1)	[I] I for Infinity	[ucd=meta.note]
+#Column	strn	(F13.6)	? Structure noise (strn)	[ucd=instr.det.noise]
+#Column	FWHMXfit	(F16.13)	FWHM of the fitted Gaussian along the major axis (fwhmxfit)	[ucd=phys.angSize;meta.modelled]
+#Column	FWHMYfit	(F18.14)	? FWHM of the fitted Gaussian along the minor axis (fwhmyfit)	[ucd=phys.angSize;meta.modelled]
+#Column	Elong	(F18.15)	Ratio of the FWHMY and FWHMX (flag_elong)	[ucd=phys.size;arith.ratio]
+#Column	Edge	(A1)	[ft] t = at least one contributing source shows >=10% of map pixels as NaN within the outer background annulus (edgeflag)	[ucd=meta.code]
+#Column	ObsId	(I10)	Observation identifier (obsid)	[ucd=meta.id;obs.param;obs]
+#Table	VIII_106_hprsl:
+#Name: VIII/106/hprsl
+#Title: Herschel/PACS rejected source list
+#Column	_r	(F6.3)	Distance from center (118.69117410685 16.69462123189)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	SourceId	(I7)	[1/8254064] Source Id (sourceid)	[ucd=meta.id;meta.main]
+#Column	RAJ2000	(F15.11)	Right ascension (J2000) (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F15.11)	Declination (J2000) (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	e_RAJ2000	(D14.7)	Positional uncertainty on Right ascension (raerr)	[ucd=stat.error;pos.eq.ra]
+#Column	e_DEJ2000	(E11.4)	Positional uncertainty on Declination (decerr)	[ucd=stat.error;pos.eq.dec]
+#Column	ObsId	(I10)	Observation identifier (obsid)	[ucd=meta.id;obs.param;obs]
+#Column	Band	(A5)	Band (blue=70um, green=100um, red=160um) (band)	[ucd=instr.bandpass]

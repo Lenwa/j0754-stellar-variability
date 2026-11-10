@@ -1,0 +1,201 @@
+{
+  "primary": {
+    "FILENAME": "med-58203-HIP368380101_sp11-063.fits",
+    "OBSID": 659111063,
+    "DATA_V": "LAMOST DR12",
+    "DATE-OBS": "2018-03-25T13:28:00",
+    "DATE-BEG": "2018-03-25T21:12:31.0",
+    "DATE-END": "2018-03-25T21:45:51.0",
+    "RA": 118.691183,
+    "DEC": 16.694624,
+    "DESIG": "LAMOST J075445.88+164140.6",
+    "FIB_MASK": 0,
+    "NEXP_B": 2,
+    "NEXP_R": 2,
+    "COMBIN_B": true,
+    "COMBIN_R": true,
+    "HELIO": true,
+    "HELIO_RV": 27.47019,
+    "VACUUM": true
+  },
+  "extensions": [
+    {
+      "hdu": 1,
+      "name": "COADD_B",
+      "points": 4096,
+      "wavelength_vacuum_A": [
+        4903.8798828125,
+        5388.77294921875
+      ],
+      "header": {
+        "SNR": 0.0,
+        "NORM": 0,
+        "DATE-OBS": "2018-03-25T13:28:00",
+        "DATE-BEG": "2018-03-25T21:12:31.0",
+        "DATE-END": "2018-03-25T21:45:51.0",
+        "LMJM": null,
+        "EXPTIME": null
+      },
+      "finite_flux_count": 4096,
+      "nonzero_flux_count": 0,
+      "positive_ivar_count": 0,
+      "median_flux": 0.0,
+      "negative_flux_fraction": 0.0,
+      "flux_units": "Not specified by TUNIT in native FITS; unscaled pipeline flux, no absolute calibration assumed",
+      "ANDMASK_counts": {
+        "0": 4096
+      },
+      "ORMASK_counts": {
+        "0": 4096
+      }
+    },
+    {
+      "hdu": 2,
+      "name": "COADD_R",
+      "points": 3766,
+      "wavelength_vacuum_A": [
+        6303.90869140625,
+        6874.798828125
+      ],
+      "header": {
+        "SNR": 0.0,
+        "NORM": 0,
+        "DATE-OBS": "2018-03-25T13:28:00",
+        "DATE-BEG": "2018-03-25T21:12:31.0",
+        "DATE-END": "2018-03-25T21:45:51.0",
+        "LMJM": null,
+        "EXPTIME": null
+      },
+      "finite_flux_count": 3766,
+      "nonzero_flux_count": 0,
+      "positive_ivar_count": 0,
+      "median_flux": 0.0,
+      "negative_flux_fraction": 0.0,
+      "flux_units": "Not specified by TUNIT in native FITS; unscaled pipeline flux, no absolute calibration assumed",
+      "ANDMASK_counts": {
+        "0": 3766
+      },
+      "ORMASK_counts": {
+        "0": 3766
+      }
+    },
+    {
+      "hdu": 3,
+      "name": "B-83812152",
+      "points": 4136,
+      "wavelength_vacuum_A": [
+        4903.7802734375,
+        5387.607421875
+      ],
+      "header": {
+        "SNR": 0.0,
+        "NORM": 0,
+        "DATE-OBS": "2018-03-25T13:22:00",
+        "DATE-BEG": "2018-03-25T21:12:31.0",
+        "DATE-END": "2018-03-25T21:32:31.0",
+        "LMJM": "83812152",
+        "EXPTIME": 1200
+      },
+      "finite_flux_count": 4136,
+      "nonzero_flux_count": 4136,
+      "positive_ivar_count": 4136,
+      "median_flux": -67.37359237670898,
+      "negative_flux_fraction": 0.9349613152804642,
+      "flux_units": "Not specified by TUNIT in native FITS; unscaled pipeline flux, no absolute calibration assumed",
+      "PIXMASK_counts": {
+        "0": 4136
+      },
+      "median_sigma": 62.919017917931676,
+      "median_pixel_flux_over_sigma": -1.0860830398579766
+    },
+    {
+      "hdu": 4,
+      "name": "B-83812175",
+      "points": 4136,
+      "wavelength_vacuum_A": [
+        4903.7802734375,
+        5387.607421875
+      ],
+      "header": {
+        "SNR": 0.0,
+        "NORM": 0,
+        "DATE-OBS": "2018-03-25T13:40:00",
+        "DATE-BEG": "2018-03-25T21:35:51.0",
+        "DATE-END": "2018-03-25T21:45:51.0",
+        "LMJM": "83812175",
+        "EXPTIME": 600
+      },
+      "finite_flux_count": 4136,
+      "nonzero_flux_count": 4136,
+      "positive_ivar_count": 4136,
+      "median_flux": -42.31224060058594,
+      "negative_flux_fraction": 0.886605415860735,
+      "flux_units": "Not specified by TUNIT in native FITS; unscaled pipeline flux, no absolute calibration assumed",
+      "PIXMASK_counts": {
+        "0": 4136
+      },
+      "median_sigma": 42.20745597780228,
+      "median_pixel_flux_over_sigma": -1.001549522176266
+    },
+    {
+      "hdu": 5,
+      "name": "R-83812152",
+      "points": 4136,
+      "wavelength_vacuum_A": [
+        6303.818359375,
+        6873.67431640625
+      ],
+      "header": {
+        "SNR": 0.0,
+        "NORM": 0,
+        "DATE-OBS": "2018-03-25T13:22:00",
+        "DATE-BEG": "2018-03-25T21:12:31.0",
+        "DATE-END": "2018-03-25T21:32:31.0",
+        "LMJM": "83812152",
+        "EXPTIME": 1200
+      },
+      "finite_flux_count": 4136,
+      "nonzero_flux_count": 4136,
+      "positive_ivar_count": 4136,
+      "median_flux": -79.95807266235352,
+      "negative_flux_fraction": 0.9233558994197292,
+      "flux_units": "Not specified by TUNIT in native FITS; unscaled pipeline flux, no absolute calibration assumed",
+      "PIXMASK_counts": {
+        "0": 4134,
+        "1": 2
+      },
+      "median_sigma": 88.62616224069532,
+      "median_pixel_flux_over_sigma": -0.8905626787989303
+    },
+    {
+      "hdu": 6,
+      "name": "R-83812175",
+      "points": 4136,
+      "wavelength_vacuum_A": [
+        6303.818359375,
+        6873.67431640625
+      ],
+      "header": {
+        "SNR": 0.0,
+        "NORM": 0,
+        "DATE-OBS": "2018-03-25T13:40:00",
+        "DATE-BEG": "2018-03-25T21:35:51.0",
+        "DATE-END": "2018-03-25T21:45:51.0",
+        "LMJM": "83812175",
+        "EXPTIME": 600
+      },
+      "finite_flux_count": 4136,
+      "nonzero_flux_count": 4136,
+      "positive_ivar_count": 4136,
+      "median_flux": -21.124805450439453,
+      "negative_flux_fraction": 0.6902804642166345,
+      "flux_units": "Not specified by TUNIT in native FITS; unscaled pipeline flux, no absolute calibration assumed",
+      "PIXMASK_counts": {
+        "0": 4134,
+        "1": 2
+      },
+      "median_sigma": 59.22080316465705,
+      "median_pixel_flux_over_sigma": -0.353229692810778
+    }
+  ]
+}

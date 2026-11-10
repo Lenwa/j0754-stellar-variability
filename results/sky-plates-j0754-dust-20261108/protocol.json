@@ -1,0 +1,19 @@
+{
+  "written_utc": "2026-11-08T22:12:37.466486+00:00",
+  "question": "Can contemporaneous optical colors and infrared variability discriminate ordinary dust extinction from photospheric changes in J0754?",
+  "authorship": "Ari proposed the dust test; Kyle authorized gathering relevant astronomy data and prior results. Telescope remark was an idea, not an equipment/booking request.",
+  "known": "Optical g fading2018\u21922022~0.30mag and recovery replicated; dominant stable912-day clock fails. No causal diagnosis. Catalogue W1~9.50,W2~9.53 already known; no infrared time series inspected yet.",
+  "predictions": [
+    "Ordinary foreground dust reddens contemporaneous optical colors and gives much less attenuation at3\u20135microns than g. Compare a documented extinction curve, not a universal fixed ratio.",
+    "A fixed-area cooling photosphere can also redden, with a different optical/IR amplitude ratio; blackbody calculations are illustrative, not a stellar atmosphere diagnosis.",
+    "Warm circumstellar dust may add IR flux, but lack of warm excess does not exclude cool/line-of-sight dust.",
+    "A wavelength-independent fade, scan-direction offsets, blends or common comparison-star changes weaken a simple standard-dust interpretation."
+  ],
+  "data": "Native NEOWISE single-exposure PSF photometry2013\u20132024, plus AllWISE static/epoch data if available, original fixed16Gaia comparisons and target. Audit simultaneous optical color coverage before claiming a color test. KeepAllWISE/NEOWISE mission phases separate.",
+  "identity": "GaiaDR3 667401913089980544,RA118.69117410685,Dec16.694621231895. Proper motion~2mas/yr makes<0.1arcsec change across this dataset. Preserve a10arcsec target cone for confusion check; use3arcsec matching for photometry.",
+  "quality": "Preserve all raw rows/limits. Band-specific profile-fit errors finite positive, SNR>=10, quality flags clean; frame quality/qi_fact/SAA/moon masks, saturation/deblend and chi-square checks using documented fields. No brightness clipping; stricter/looser flag sensitivities explicit.",
+  "comparison": "Original16catalogue-selected stars retained independent of infrared outcome. Exclude target from ensemble. Prefer exact scan/frame common-mode correction with >=3controls and per-source centering; report failures. Different scan directions/seasons assessed separately; no arbitrary offsets forced across gaps.",
+  "timing": "Group visits by gaps>30days, with >=5accepted detections per visit. Compare2018vs2022 within matched observing seasons, retain controls/flags and sample sizes. Bootstrap visits/day blocks conditional on actual coverage; do not count every consecutive exposure as independent long-term evidence.",
+  "optical_matching": "ASAS-SN cameras stay separate, compare within\u00b130days of IRvisits requiring3UTCdates; \u00b115days sensitivity. ZTFtargetg-only and ASAS-SNVending2018 do not supply g-r during2022. Epoch-mismatched staticcolors are not a fading colorcurve.",
+  "interpretation": "Compare standard foreground-screen and simple photospheric expectations with measured sensitivity/systematics. If onlyweakIRconstraints ornoopticalcolor overlap, returninconclusive for dust; a real fading event is not exotic-physics evidence. No warm IR excess alone proves artificial structures or dust."
+}

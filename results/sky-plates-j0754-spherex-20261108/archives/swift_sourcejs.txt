@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>UKSSDC | 404 page not found</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" lang="en" content="UKSSDC | 404 page not found"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv='Content-Style-Type' content='text/css'/>
+    <meta http-equiv='Content-Script-Type' content='text/javascript'/>
+    <link href="/style/swift_base.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="/scripts/dropdown.js"></script>
+    <link rel="icon" href="/icons/swift.ico" type="image/x-icon"/>
+<meta name='robots' content='noindex, nofollow' />  </head>
+
+  <body>
+    <div id="holder">
+    <p style='visibility: hidden; display: none;'><a href='#mainContentPostBanner'>Skip banner and navigation tools</a>.</p>
+  <div id="swiftbanner">
+    <div id="uolbanner">
+      <a href="http://www.le.ac.uk">
+      <img class="uollogo" src="/images/uol_logo.png"
+         alt="University of Leicester logo"/></a>
+      <a href="https://le.ac.uk/physics/">School of Physics &amp; Astronomy</a>
+     
+    </div>
+
+    <a href="https://swift.gsfc.nasa.gov" id="us"><span class="hidden">US Site | </span></a>
+    <a href="https://swift.ssdc.asi.it" id="it"><span class="hidden">Italian Site | </span></a>
+    <a href="https://www.swift.ac.uk" id="uk" ><span class="hidden">UK site</span></a>
+  </div>
+
+  <div id="addressBar">
+      <form class="right search" action="/search/search.php" method="get">
+      <p>
+          <label for="searchBox">Search:</label> 
+          <input id="searchBox" type="text" name="terms"  
+	         value=""/>
+          <input type="submit" name="submit" value="?"/>
+      </p>
+      </form>
+      <span class="right">&nbsp;|&nbsp;</span>
+      <a class="right" href="/sitemap.php">site map</a>
+  <ul>
+    <li>
+      <a href="https://www.swift.ac.uk/index.php">Home</a>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/about/index.php" 
+        onmouseover="menu_open('mabout')" 
+        onmouseout="menu_closetime()">About</a>
+        <div id="mabout" 
+            onmouseover="menu_cancelclosetime()" 
+            onmouseout="menu_closetime()">
+        <a href="https://www.swift.ac.uk/about/index.php">The Swift Mission</a>
+        <a href="https://www.swift.ac.uk/about/uk.php">UK involvement</a>
+        <a href="https://www.swift.ac.uk/about/instruments.php">Instruments</a>
+        <hr/>
+        <a href="https://www.swift.ac.uk/about/grb.php">GRBs before Swift </a>
+        <a href="https://www.swift.ac.uk/about/swiftera.php">GRBs in the Swift era</a>
+        <a href="https://www.swift.ac.uk/about/swifteranongrb.php">Non-GRB science with Swift</a>
+        <a href="https://www.swift.ac.uk/about/research.php">GRB research at Leicester</a>
+        
+        <hr/>
+        <a href="https://www.swift.ac.uk/about/status.php">Spacecraft status</a>
+        <a href="https://www.swift.ac.uk/about/press.php">Swift in the press</a>
+        <a href="https://www.swift.ac.uk/about/videos.php">Swift Videos</a>
+        </div>
+    </li>
+
+   
+    <li>
+      <a href="https://www.swift.ac.uk/support/index.php"
+        onmouseover="menu_open('msupport')"
+        onmouseout="menu_closetime()">Support</a>
+
+      <div id="msupport"
+          onmouseover="menu_cancelclosetime()"
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/support/index.php">Helpdesk</a>
+      <a href="https://www.swift.ac.uk/support/too.php">TOO requests</a>
+      <a href="https://www.swift.ac.uk/support/gi.php">Guest Investigator program</a>
+      <a href="https://www.swift.ac.uk/sunpos.php">Target visibility checker</a>
+      <a href="https://www.swift.ac.uk/support/transientSearch">Search transient database</a>
+      </div>
+    </li>
+
+ 
+    <li>
+      <a href="https://www.swift.ac.uk/archive/index.php" 
+        onmouseover="menu_open('marchive')" 
+        onmouseout="menu_closetime()">Data Access</a>
+
+      <div id="marchive" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/archive/index.php">Overview</a>
+      <a href="https://www.swift.ac.uk/archive/ql.php">Quick Look</a>
+      <a href="https://www.swift.ac.uk/gcn/index.php">GCN Notices</a>
+      <a href="https://www.swift.ac.uk/swift_portal">Download obs data</a>
+      <a href="https://www.swift.ac.uk/swift_live">Search obs catalogue</a>
+       <a href="https://www.swift.ac.uk/2SXPS">The 2SXPS catalogue</a>
+      <a href="https://www.swift.ac.uk/LSXPS">The LSXPS catalogue</a>
+      </div>
+    </li>
+    
+    
+    <li>
+      <a href="https://www.swift.ac.uk/analysis/index.php" 
+        onmouseover="menu_open('manal')" 
+        onmouseout="menu_closetime()">Data Analysis</a>
+
+      <div id="manal" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/analysis/index.php">Data analysis overview</a>
+      <a href="https://www.swift.ac.uk/analysis/software.php">Swift software</a>
+      <hr/>
+      <a href="https://www.swift.ac.uk/user_objects/">Build XRT products</a>
+      <hr/>
+      <a href="https://www.swift.ac.uk/analysis/bat/index.php">BAT data analysis guide</a>
+      <a href="https://www.swift.ac.uk/analysis/xrt/index.php">XRT data analysis guide</a>
+      <a href="https://www.swift.ac.uk/analysis/xrt/digest_sci.php">XRT digest</a>
+      <a href="https://www.swift.ac.uk/analysis/uvot/index.php">UVOT data analysis guide</a>
+      </div>
+    </li>
+    
+    
+
+    <li>
+      <a href="https://www.swift.ac.uk/xrt_products/index.php" 
+        onmouseover="menu_open('mproducts')" 
+        onmouseout="menu_closetime()">Data Products</a>
+
+      <div id="mproducts" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+
+        <span class='menutitle'>GRBs</span>
+        <span class='menusubtitle'>Full dataset</span>
+        <a href="https://www.swift.ac.uk/xrt_products/index.php">Swift XRT products for GRBs</a>
+        <a href="https://www.swift.ac.uk/xrt_positions/">XRT positions</a>
+        <a href="https://www.swift.ac.uk/xrt_curves/">XRT light curves</a>
+        <a href="https://www.swift.ac.uk/xrt_spectra/">XRT spectra</a>
+        <a href="https://www.swift.ac.uk/xrt_live_cat/">XRT GRB catalogue</a>
+        <a href="https://www.swift.ac.uk/xrt_images/">XRT GRB images</a>
+        <a href="https://www.swift.ac.uk/burst_analyser/">Burst analyser</a>
+        <span class='menusubtitle'>Prompt data</span>
+        <a href="https://www.swift.ac.uk/grb_region/">GRB field info</a>
+        <a title="X-ray Prompt data index page" href="https://www.swift.ac.uk/sper/">XRT prompt analysis</a>
+
+        <span class='menutitle'>External triggers</span>
+        <a href="https://www.swift.ac.uk/EP/">Einstein Probe follow up</a>
+        <a href="https://www.swift.ac.uk/SVOM/">SVOM follow up</a>
+        <a href="https://www.swift.ac.uk/neutrino/">Neutrino follow up</a>
+        <a href="https://www.swift.ac.uk/LVC/">Gravitational Wave follow up</a>
+      </div>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/results/index.php" 
+        onmouseover="menu_open('mresults')" 
+        onmouseout="menu_closetime()">Publications</a>
+
+       <div id="mresults" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+        <a href="https://www.swift.ac.uk/results/index.php">Publication index</a>
+        <a href="https://www.swift.ac.uk/results/pub.php">Published papers</a>
+        <a href="https://www.swift.ac.uk/results/sub.php">Submitted papers</a>
+        <a href="https://www.swift.ac.uk/results/spie.php">XRT instrument papers</a>
+        <a href="https://www.swift.ac.uk/results/atels.php">ATels</a>
+        <a href="https://www.swift.ac.uk/results/grbs.php">GCNs</a>
+        <a href="https://www.swift.ac.uk/results/conferences.php">Conferences</a>
+      </div>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/links.php" 
+        onmouseover="menu_open('mlinks')" 
+        onmouseout="menu_closetime()">Links</a>
+
+      <div id="mlinks" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      
+            Databases
+	    <a href="http://ned.ipac.caltech.edu/">NED</a>
+	    <a href="http://simbad.u-strasbg.fr/Simbad">Simbad</a>
+            <a href="http://gcn.gsfc.nasa.gov/gcn3_archive.html">GCN circulars archive</a>
+            <a href="https://swift.gsfc.nasa.gov/docs/swift/archive/grb_table/">GRB data table</a>
+	    Software &amp; Tools
+	    <a href="https://heasarc.nasa.gov/lheasoft/">Swift Software (HEASoft)</a>
+            <a href="https://heasarc.gsfc.nasa.gov/xanadu/xanadu.html">Xanadu</a>
+            <a href="https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3pimms/w3pimms.pl">WebPIMMS</a>
+	    Institutional Swift Sites
+	    <a href="https://swift.gsfc.nasa.gov">GSFC</a>
+	    <a href="http://www.swift.psu.edu">PSU</a>
+	    <a href="http://www.brera.inaf.it/~swift/SWIFT/">OAB</a>
+	    <a href="https://swift.ssdc.asi.it/">SSDC</a>
+	    <a href="http://www.mssl.ucl.ac.uk/general/projects/swift/SWIFT6.html">MSSL</a>
+	    <a href="http://www.swift.ac.uk">University of Leicester</a>
+                  </div>
+    </li>
+  </ul>  <br id='mainContentPostBanner' style='visibility: hidden; display: none;'/>
+  </div>
+      <h1>Error 404: Document not found</h1>
+    <p>The requested URL was not found, if you entered the URL manually please check your spelling and try again</p>
+      <div id="footer">        <p>
+          UK Swift Science Data Centre<br/>
+          Last updated <span id='PageFootDate'>2026-11-08</span><br/>  
+          Web page maintained by Phil Evans<br/>
+          E-mail: <a href="mailto:swifthelp@le.ac.uk">swift help</a><br/>
+          Please read our <a href='/GDPR.php'>privacy notice</a>.
+        </p>
+
+      </div>    </div>
+  </body></html>
+

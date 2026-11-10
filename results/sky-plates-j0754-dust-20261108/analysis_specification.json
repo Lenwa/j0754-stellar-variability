@@ -1,0 +1,14 @@
+{
+  "written_utc": "2026-11-08T22:20:28.673146+00:00",
+  "status": "Before target infrared lightcurve inspection; documentation/schema inspected and at least one control download returned.",
+  "primary_screen": "Separation<=3arcsec; qual_frame>0,qi_fact>0,saa_sep>0; band-specific moon_masked=0,cc_flags=0,ph_qual=A,w?snr>=10,finitepositivew?sigmpro,w?sat=0,w?rchi2<3,nb=1,moderate transient flag starts00. No brightness clipping.",
+  "sensitivities": "rchi2<5 withouttransient requirement; strict rchi2<2, preservingotherqualityrequirements. Alloriginal16controls retained subject to permeasurementflags, never outcome-pruned.",
+  "models": "Illustrative monochromatic foreground extinction: DrainepublishedRv3.1,4.0,5.5cross-sections atg=.48um,W1=3.4um,W2=4.6um,normalize toAg=.30mag. Not bandpassintegrated or universalcircumstellardust. Comparefixed-area Planckcooling atT0=4000,4500,5000,5500K matched toAg; not a stellar atmosphere fit.",
+  "primary_contrast": "2018\u21922022 annual median of eligible visitmedians; per-calendar-half-year contrasts also required to inspect opposite observingseasons. Visits>=5goodframes; corrected frames>=3otherstars. Record insufficientstreams. Seasonal range and conditionaldatebootstrap intervals are descriptive; do not overstate2visits/year as a robustsystematicerror.",
+  "calibration_caveat": "OfficialNEOWISEdocs showW2seasonaloffsets up to.03mag for mostmission and.06mag at2024end; W1generally<.005mag. Useexactframecontrols; rawsmallcolorshiftsalonearenotdust evidence.",
+  "references": [
+    "https://irsa.ipac.caltech.edu/data/WISE/docs/release/NEOWISE/expsup/sec4_2d.html",
+    "https://irsa.ipac.caltech.edu/data/WISE/docs/release/NEOWISE/expsup/sec2_3.html",
+    "https://www.astro.princeton.edu/~draine/dust/dustmix.html"
+  ]
+}

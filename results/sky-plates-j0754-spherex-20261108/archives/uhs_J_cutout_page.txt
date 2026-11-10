@@ -1,0 +1,6 @@
+<script language="JavaScript" type="text/javascript">
+<!-- 
+window.focus(); 
+//--> 
+</script>
+<h3>GetImage cut-out</h3><b>J filter</b><br><br>The supplied coordinates, RA=118.6911741 &amp; Dec=16.694621(J2000) lie at x=75.6 y=76 on the image below.<br>The dimensions of the image are 151 by 151 pixels.<table><tr><td bgcolor="#FFFFFF"><img height="73"  width="73" alt="N-E" src="http://wsa.roe.ac.uk/images/arrows/ne_90_1.gif"></td></table><img height="151" width="151" border="1" alt="thumbnail" src="http://wsa.roe.ac.uk/cgi-bin/getJImage.cgi?file=%2Fdisk39%2Fwsa%2Fingest%2Ffits%2F20130108_v5%2Fw20130108_01391_st.fit;mfid=6124750;extNo=3;lx=353;hx=503;ly=1578;hy=1728;rf=90;flip=1;uniq=4931_719_39_28483_1;xpos=75.6;ypos=76;band=J;ra=118.6911741;dec=16.694621"><p><a href="http://wsa.roe.ac.uk/cgi-bin/getFImage.cgi?file=%2Fdisk39%2Fwsa%2Fingest%2Ffits%2F20130108_v5%2Fw20130108_01391_st.fit;mfid=6124750;extNo=3;lx=353;hx=503;ly=1578;hy=1728;rf=90;flip=1;uniq=4931_719_39_28483_1;xpos=75.6;ypos=76;band=J;ra=118.6911741;dec=16.694621">download FITS file</a><p>

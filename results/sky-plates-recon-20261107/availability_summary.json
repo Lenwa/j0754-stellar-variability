@@ -1,0 +1,87 @@
+[
+  {
+    "target": "J0830",
+    "dasch_detections": 2056,
+    "dasch_nondetections": 1513,
+    "dasch_first_date": "1888-01-20",
+    "dasch_last_date": "1989-12-01",
+    "dasch_distinct_plates": 2056,
+    "applause_cone_rows": 57,
+    "applause_photometric_rows": 0,
+    "applause_photometric_plates": 0,
+    "applause_first_year": null,
+    "applause_last_year": null,
+    "applause_phot_calib_flags": [],
+    "applause_phot_range_flags": []
+  },
+  {
+    "target": "J0754",
+    "dasch_detections": 854,
+    "dasch_nondetections": 2434,
+    "dasch_first_date": "1892-02-17",
+    "dasch_last_date": "1989-12-01",
+    "dasch_distinct_plates": 854,
+    "applause_cone_rows": 30,
+    "applause_photometric_rows": 25,
+    "applause_photometric_plates": 16,
+    "applause_first_year": 1919.01299528,
+    "applause_last_year": 1991.86213495,
+    "applause_phot_calib_flags": [
+      {
+        "Name": "1",
+        "Count": 22
+      },
+      {
+        "Name": "2",
+        "Count": 3
+      }
+    ],
+    "applause_phot_range_flags": [
+      {
+        "Name": "0",
+        "Count": 20
+      },
+      {
+        "Name": "2",
+        "Count": 5
+      }
+    ]
+  },
+  {
+    "target": "J0736",
+    "dasch_detections": 1301,
+    "dasch_nondetections": 1716,
+    "dasch_first_date": "1890-03-28",
+    "dasch_last_date": "1989-12-01",
+    "dasch_distinct_plates": 1301,
+    "applause_cone_rows": 52,
+    "applause_photometric_rows": 43,
+    "applause_photometric_plates": 31,
+    "applause_first_year": 1919.01299528,
+    "applause_last_year": 1966.21587953,
+    "applause_phot_calib_flags": [
+      {
+        "Name": "0",
+        "Count": 1
+      },
+      {
+        "Name": "1",
+        "Count": 34
+      },
+      {
+        "Name": "2",
+        "Count": 8
+      }
+    ],
+    "applause_phot_range_flags": [
+      {
+        "Name": "0",
+        "Count": 41
+      },
+      {
+        "Name": "2",
+        "Count": 2
+      }
+    ]
+  }
+]

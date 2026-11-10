@@ -1,0 +1,41 @@
+J0754 literature and catalogue audit — 8 November 2026
+
+Evidence table
+
+Source | Verified finding | What it establishes
+Tang et al. 2010, sections 2.3–2.4, Table 1, 3.2 | K2III (class uncertainty II–IV); [Fe/H] ≈ −0.9 ± 0.4. B=13.30, B−R=1.61, V=12.24; J/H/K=10.42/9.83/9.70 (typical errors ≈0.02 mag). RV=22 ± 8 km/s; changes undetected at ≈8 km/s precision. Ca H/K active; log F′(K)=6.13. Rotation ≈25 km/s is an indirect proxy with ≈0.5 dex uncertainty. Distance 2.1 kpc assumes standard K2III luminosity. No detected color change, but no red/yellow plates during the 1930–1940 major fading. | J0754 lacks a measured color test during its historical dip. H−K=0.13 by subtraction is a single-epoch color, not established dust excess. J0830 owns the 7σ reddening/H−K=0.27 discussion; J0736 owns the 3σ reddening and detected RV variability.
+Tang et al. 2010, discussion | Irregularly expelled obscuring layers proposed for J0754. Shared alternatives include lithium flash and early-AGB helium-shell ignition. Hydrogen absorption and absent strong carbon bands reject ordinary RCB classification; no symbiotic signatures. | No mechanism established.
+https://hea-www.harvard.edu/DASCH/papers/apjl_710_1_77.pdf
+
+Gaia NSS solution | P=35.9204566 ± 0.0306131 d; e=0.022975 ± 0.055548; K=10.7245 ± 0.8057 km/s; systemic RV=20.4119 ± 0.5620 km/s. 21/21 RVs over 967.23 d. F2=0.25653; χ²=15.75058; significance=13.3113; efficiency=0.188878; period confidence=1; flags=0; RUWE=1.1585. | Useful RV variability/binary candidate, requiring independent validation. Near-circular periastron quantities are poorly constrained: correlation(ω,T0)=0.999922.
+Gaia NSS schema and Gosset et al. 2025, section 11.2 and Appendix J | Gold sample cuts: efficiency ≥0.2, N_good ≥20, significance ≥40, 2≤P≤800 d; optionally RUWE<1.4. Target fails efficiency and significance, including the relaxed significance 25–30 alternative. Period confidence tests Gaussian white noise; intrinsic line-profile variability can mimic orbital Doppler motion. | Failure of gold cuts does not prove a false orbit. Confidence=1 is not a validated-orbit probability. A companion alone does not establish the cause of slow fading.
+https://arxiv.org/html/2410.14372v1
+https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_non--single_stars_tables/ssec_dm_nss_two_body_orbit.html
+
+Physical parameter conflict
+
+Gaia parallax=0.599389 ± 0.019797 mas; proper motion=(−1.966, −1.719) mas/yr differs from old Tycho-2 (−3, −10.2). Recompute kinematics before retaining the original thick-disk argument.
+GSP-Phot: Teff=5206 K, log g=2.888, [M/H]=−0.131, AG=0.554 mag, R=9.25 Rsun, distance=1626 pc.
+GSP-Spec: Teff=5210 K, log g=4.84, [M/H]=+0.16. Flag character 8 is extrapol=1; log g lies above the 4.75 grid-edge threshold in Recio-Blanco et al. 2023, Table C.5. This is not independent proof of a dwarf.
+FLAME: M=2.60 Msun, age=0.56 Gyr, L=54.64 Lsun, flag='10'. Official documentation says this flag means giant mass/age caution and parallax-based luminosity; giant masses/ages should only be used in the 1–2 Msun, age>1 Gyr range. This result lies outside that recommendation.
+GSP-Phot assumes a single nonvariable star and has temperature–extinction degeneracy plus underestimated errors. Mean AG is not evidence of variable circumstellar dust. Reconcile the atmosphere estimates before adopting an evolutionary mechanism.
+https://gea.esac.esa.int/archive/documentation/GDR3/Data_analysis/chap_cu8par/sec_cu8par_apsis/ssec_cu8par_apsis_gspphot.html
+https://gea.esac.esa.int/archive/documentation/GDR3/Data_analysis/chap_cu8par/sec_cu8par_apsis/ssec_cu8par_apsis_flame.html
+https://personales.unican.es/carballor/inves/2023GaiaDR3RecioBlanco.pdf
+
+Spectral availability and literature search
+
+Gaia mean continuous and sampled XP availability flags are true; published mean RVS and epoch RV flags are false. Direct XP retrieval failed with HTTP 500; no XP spectral analysis was performed.
+LAMOST DR12 v2.0 LRS, 5 arcsec cone: zero rows. MRS: six rows at 0.03283 arcsec, exact Gaia ID; one 2018-03-25 MRS_TEST visit, obsid 659111063 (two exposures in B/R plus coadds). All S/N values are zero; all RV values are missing (−9999). FITS spectra were not inspected, so archive presence supplies no usable catalogue RV or atmosphere constraint.
+SDSS DR18 SpecObjAll and APOGEE DR17 apogeeStar, approximately 5 arcsec box/2MASS alias queries: zero rows. These checks do not cover every future release.
+https://www.lamost.org/dr12/v2.0/
+
+Refreshed SIMBAD bibliography contains Tang 2010 and broad Gaia 2023 multiplicity (307,214 catalogue objects). Alias/Gaia-ID web searches located Tang's 2012 dissertation chapter reuse but no subsequent dedicated mechanism study. This is a bounded search, not an exhaustive absence claim. General catalogue inclusion is not mechanism confirmation.
+https://doi.org/10.1051/0004-6361/202243782
+https://dasch.cfa.harvard.edu/publications/thesis_bound_20120510.pdf
+
+Discriminants — our inference, without observing logistics
+
+Near-simultaneous optical and NIR/MIR measurements across bright/faint states test reddening versus temperature/spot changes and thermal dust excess; isolated archival SED points cannot prove variable dust. Multiepoch high-resolution spectra can test 35.92-day RV coherence and line bisectors, refine atmospheric parameters, and measure Li 6708, activity and wind/circumstellar absorption. Polarimetry during fading tests scattering. No warm-IR excess would not exclude cold dust, grey grains or a small covering clump. Photometric coherence at 35.92 d or P/2 would motivate a binary/rotation connection without alone explaining the multiyear behavior.
+
+Only experiment evidence was saved in this literature folder. No maintained source changed. Raw query responses include URLs; the original paper's color, spectral, table and mechanism pages were visually checked.

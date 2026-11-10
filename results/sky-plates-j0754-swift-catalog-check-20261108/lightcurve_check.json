@@ -1,0 +1,18 @@
+{
+  "result": "No resolved X-ray flare profile. Sparse two-snapshot data are compatible with constant rate; cannot establish steady emission either. Catalogue reports between-observation variability separately.",
+  "snapshot_count": 2,
+  "snapshot_separation_hours": 1.586379240034148,
+  "rates_count_per_s": [
+    0.00316794,
+    0.006963
+  ],
+  "snapshot_constancy_test_p": 0.141,
+  "between_observation_constancy_test_p": 0.00377,
+  "count_total": 18,
+  "live_products": [
+    "live_sslc.txt",
+    "live_obslc.txt"
+  ],
+  "catalogue_documentation": "https://www.swift.ac.uk/2SXPS/docs.php#variability",
+  "note": "Two snapshot bins and combined observation bin share photons; not three independent measurements. No unbinned event timing analysis performed."
+}

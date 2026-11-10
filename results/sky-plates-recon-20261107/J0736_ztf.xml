@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VOTABLE version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:stc="http://www.ivoa.net/xml/STC/v1.30" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/STC/v1.30 http://www.ivoa.net/xml/STC/v1.30">
+  <RESOURCE>
+    <TABLE>
+      <FIELD name="oid" datatype="long" ucd="meta.id">
+        <DESCRIPTION>Object ID</DESCRIPTION>
+      </FIELD>
+      <FIELD name="expid" datatype="int" ucd="meta.id;obs.exposure">
+        <DESCRIPTION>Exposure ID</DESCRIPTION>
+      </FIELD>
+      <FIELD name="hjd" datatype="double" ucd="time.epoch" unit="d">
+        <DESCRIPTION>Heliocentric Julian Date of the midpoint of the exposure (using the mean ra and dec of the input catalog)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mjd" datatype="double" ucd="time.epoch;obs.exposure" unit="d">
+        <DESCRIPTION>Modified Julian Date of the start of the exposure</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag" datatype="float" ucd="phot.mag;em.opt" unit="mag">
+        <DESCRIPTION>Magnitude</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr" datatype="float" ucd="stat.error;phot.mag;em.opt" unit="mag">
+        <DESCRIPTION>Uncertainty in mag measurement. Includes correction to conform to photometric repeatability RMS derived from &quot;non-variable&quot; population.</DESCRIPTION>
+      </FIELD>
+      <FIELD name="catflags" datatype="int" ucd="meta.code">
+        <DESCRIPTION>Catalog flags for source from PSF-fitting catalog</DESCRIPTION>
+      </FIELD>
+      <FIELD name="filtercode" datatype="char" arraysize="2" ucd="instr.bandpass">
+        <DESCRIPTION>Filter code (abbreviated name)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ra" datatype="double" ucd="pos.eq.ra" unit="deg">
+        <DESCRIPTION>Right Ascension of source</DESCRIPTION>
+      </FIELD>
+      <FIELD name="dec" datatype="double" ucd="pos.eq.dec" unit="deg">
+        <DESCRIPTION>Declination of source</DESCRIPTION>
+      </FIELD>
+      <FIELD name="chi" datatype="float" ucd="stat.parameter">
+        <DESCRIPTION>Chi-squared of source</DESCRIPTION>
+      </FIELD>
+      <FIELD name="sharp" datatype="float" ucd="stat.parameter">
+        <DESCRIPTION>Sharpness of source</DESCRIPTION>
+      </FIELD>
+      <FIELD name="filefracday" datatype="long" ucd="time.epoch;obs.exposure">
+        <DESCRIPTION>Exposure file timestamp, with decimal representation YYYYMMDDdddddd: year, month, day, and fractional day</DESCRIPTION>
+      </FIELD>
+      <FIELD name="field" datatype="int" ucd="meta.id;obs.field">
+        <DESCRIPTION>Field ID</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ccdid" datatype="unsignedByte" ucd="meta.id;instr.det">
+        <DESCRIPTION>CCD number (1..16)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="qid" datatype="unsignedByte" ucd="meta.id">
+        <DESCRIPTION>Quadrant ID (1..4)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="limitmag" datatype="float" ucd="phot.mag;em.opt;stat.max;instr.sensitivity;obs.exposure" unit="mag">
+        <DESCRIPTION>Approximate 5-sigma limiting magnitude corresponding to epoch-based PSF-fit catalog</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magzp" datatype="float" ucd="phot.mag;em.opt;phot.calib;arith.zp;obs.exposure" unit="mag">
+        <DESCRIPTION>Magnitude zeropoint from photometric calibration</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magzprms" datatype="float" ucd="stat.rms;phot.mag;em.opt;phot.calib;arith.zp;obs.exposure" unit="mag">
+        <DESCRIPTION>RMS deviation in magnitude zeropoint</DESCRIPTION>
+      </FIELD>
+      <FIELD name="clrcoeff" datatype="float" ucd="stat.fit.param;phot.calib;obs.exposure">
+        <DESCRIPTION>Color coefficient from linear fit</DESCRIPTION>
+      </FIELD>
+      <FIELD name="clrcounc" datatype="float" ucd="stat.error;stat.fit.param;phot.calib;obs.exposure">
+        <DESCRIPTION>Color coefficient uncertainty from linear fit</DESCRIPTION>
+      </FIELD>
+      <FIELD name="exptime" datatype="float" ucd="time.duration;obs.exposure" unit="s">
+        <DESCRIPTION>Exposure time from scheduler</DESCRIPTION>
+      </FIELD>
+      <FIELD name="airmass" datatype="float" ucd="obs.airMass">
+        <DESCRIPTION>Airmass at approximately the center of the focal plane at time of exposure</DESCRIPTION>
+      </FIELD>
+      <FIELD name="programid" datatype="int" ucd="meta.code.member;obs.exposure">
+        <DESCRIPTION>Program ID</DESCRIPTION>
+      </FIELD>
+      <DATA>
+        <TABLEDATA>
+        </TABLEDATA>
+      </DATA>
+    </TABLE>
+  </RESOURCE>
+</VOTABLE>

@@ -1,0 +1,14 @@
+title = "J0754 reviewed scientific identifiers"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Scientific TESS product keys, not API credentials"
+regexTarget = "line"
+regexes = ['''"key": "(?:QLP|TESS-SPOC)_S[0-9]+_(?:DET|SAP|PDCSAP)_FLUX"''']
+
+[[allowlists]]
+description = "SHA256 of public API documentation, not API keys"
+regexTarget = "line"
+regexes = ['''"(?:ps1|tesscut)_api_docs\.html": "[a-f0-9]{64}"''']

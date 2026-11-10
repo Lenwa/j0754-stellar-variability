@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Information on Service 'Public Data Archive of Processed Hectochelle Spectra'</title>
+		<meta name="robots" content="nofollow" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><link rel="stylesheet" href="/static/css/formal.css" type="text/css" /><link rel="stylesheet" href="/static/css/gavo_dc.css" type="text/css" /><script src="/static/js/jquery-gavo.js" type="text/javascript"></script><script src="/static/js/gavo.js" type="text/javascript"></script>
+  </head>
+	<body class="container"><!-- a template for a DaCHS sidebar.
+Use renderers from grend.GavoRenderMixin here -->
+<div id="sidebar">
+	<div class="sidebaritem">
+<!--		<a href="/" n:render="rootlink"&gt;  -->
+		<a>
+			<img src="/static/img/logo_medium.png" class="silentlink" alt="[Operator logo]" /></a>
+		<a href="#body" class="invisible">Skip Header</a></div>
+	<div class="sidebaritem">
+<!--
+		<div class="navimainitem" onclick="followEmbeddedLink(this)"&gt;
+			<a href="/static/help.shtml"&gt;Help</a&gt;</div&gt;
+		<div class="navimainitem" onclick="followEmbeddedLink(this)"&gt;
+			<a&gt;<n:attr name="href" n:data="serviceURL info" n:render="string"/&gt;
+				Service Info</a&gt;</div&gt;
+-->
+	<div class="sidebaritem">
+<!--
+		<h3&gt;Related</h3&gt;
+		<n:invisible n:render="metahtml"&gt;_related</n:invisible&gt;
+-->
+	</div>
+	<div class="sidebaritem">
+		<h3>Metadata</h3>
+		<div class="explodable"><h4 class="exploHead">Identifier</h4><div class="exploBody"><span class="plainmeta">ivo://cfa.tdc/hectochelle/hectochelle_public.ssap.q/web</span></div></div>
+		
+		<div class="explodable"><h4 class="exploHead">Description</h4><div class="exploBody"><span class="plainmeta"> Optical spectra collected with the multi-fiber Hectochelle
+Spectrograph at the MMT 6.5m telescope</span></div></div>
+		<div class="explodable"><h4 class="exploHead">Keywords</h4><div class="exploBody"><ul class="metaEnum"><li class="metaItem">Optical Spectroscopy</li><li class="metaItem">Stars, Galaxies</li></ul></div></div>
+		<div class="explodable"><h4 class="exploHead">Creator</h4><div class="exploBody"><span class="plainmeta">Moran, S.; Chilingarian, I.; Rhee, J.; Brown, W.</span></div></div>
+		<div class="explodable"><h4 class="exploHead">Created</h4><div class="exploBody"><span class="plainmeta">2015-08-28T03:00:00Z</span></div></div>
+		
+		<div class="explodable"><h4 class="exploHead">Copyright</h4><div class="exploBody"><p>We encourage you to cite (1)
+<a class="reference external" href="http://adsabs.harvard.edu/abs/2011PASP..123.1188S/abstract">Szentgyorgyi, A., Furesz, G, Cheimets, P. et al. 2011, PASP, 123, 1188</a> and (2) observing program(s) from which data was obtained.</p>
+</div></div>
+<!--
+		<n:invisible n:render="explodableMeta"&gt;source</n:invisible&gt;
+		<n:invisible title="Reference URL" n:render="explodableMeta"&gt;referenceURL</n:invisible&gt;
+-->
+	</div>
+
+	<!--
+	<div class="sidebarnote"&gt;
+		<a href="/adql"&gt;Try ADQL</a&gt; to query our data.</div&gt;
+	-->
+
+	<div class="sidebarmicro">
+		<!--
+		<p class="breakable"&gt;Please report errors and problems to the
+			<a&gt;<n:attr name="href"&gt;mailto:<n:invisible n:render="meta"&gt;tdchelp@cfa.harvard.edu</n:invisible&gt;</n:attr&gt;site operators</a&gt;.
+			Thanks.</p&gt;
+		<p&gt;<a href="/static/doc/privpol.shtml" n:render="rootlink"&gt;Privacy</a&gt; | 
+		   <a href="/static/doc/disclaimer.shtml" n:render="rootlink"&gt;Disclaimer</a&gt;</p&gt;
+		<p n:render="authinfo"/&gt;
+		-->
+	</div>
+
+	</div>
+</div>
+<div id="body"><a name="body"></a>
+
+		<h1>Information on Service 'Public Data Archive of Processed Hectochelle Spectra'</h1>
+
+		<div class="wrapuseservice">
+			<div class="useservice">
+				<a href="http://oirsa.cfa.harvard.edu:8080/hectochelle/hectochelle_public.ssap.q/web/form">
+					
+					<img src="/static/img/usesvcbutton.png" class="silentlink" alt="[Use this service from your browser]" />
+				</a>
+				<p>Further access options are discussed <a href="#overview">below</a></p>
+			</div>
+		</div>
+
+		<div class="metadescription">
+			<span class="plainmeta"> Optical spectra collected with the multi-fiber Hectochelle
+Spectrograph at the MMT 6.5m telescope</span>
+		</div>
+
+		<p>For a list of all services and tables belonging to this service's 
+			resource, see <a href="/browse/hectochelle/hectochelle_public.ssap.q">Information on resource 'CfA Hectochelle Spectra'</a></p>
+
+		
+			<h2 class="section" id="svcdoc">Service Documentation</h2>
+
+			<p>Longer service description and documentation can go there</p>
+
+		
+
+		<h2 class="section" id="overview">Overview</h2>
+
+		<p><strong>You can access</strong> this service using:</p>
+		<ul><li>
+				<em>form</em> --
+					an interface for web browsers through an <a href="http://oirsa.cfa.harvard.edu:8080/hectochelle/hectochelle_public.ssap.q/web/form">HTML form</a></li></ul>
+
+		<div id="publications">
+			
+			
+				<p>This service is <strong>published</strong> as follows:</p>
+				<ul><li>Within the
+						set(s) <em>local</em> with the renderer
+						<em class="renderer">form</em></li></ul>
+				<p><em>local</em> means it is listed on our front page, 
+				<em>ivo_managed</em> means
+				it has a record in the VO registry.</p>
+	
+			
+
+		</div>
+
+		<div id="siblings">
+			<p><strong>Other services</strong> provided on the underlying data
+				include:</p>
+			<ul><li>
+					<a class="servicelink" href="http://oirsa.cfa.harvard.edu:8080/hectochelle/hectochelle_public.ssap.q/biblanding/info">
+						Hectochelle Per Publication</a>
+				</li><li>
+					<a class="servicelink" href="http://oirsa.cfa.harvard.edu:8080/hectochelle/hectochelle_public.ssap.q/sdl/info">
+						Hectochelle Datalink Service</a>
+				</li><li>
+					<a class="servicelink" href="http://oirsa.cfa.harvard.edu:8080/hectochelle/hectochelle_public.ssap.q/ssa/info">
+						CfA Hectochelle Spectra</a>
+				</li></ul>
+		</div>
+
+		
+
+
+		<div id="inputs">
+			<h2 id="svci-inputs" class="section">Input Fields</h2>
+			<p>The following fields are available to provide input to the service
+			(with some renderers, some of these fields may be unavailable):</p>
+			<table class="shorttable"><tr><th>Name</th><th>Table Head</th>
+					<th>Description</th><th>Unit</th><th>UCD</th></tr><tr class="notIndexed">
+					
+					<td>mime</td>
+					<td>Type</td>
+					<td>MIME type of the file served</td>
+					<td>N/A</td>
+					<td>meta.code.mime</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_dateObs</td>
+					<td>Date Obs.</td>
+					<td>Midpoint of exposure (MJD)</td>
+					<td>d</td>
+					<td>time.epoch</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_location</td>
+					<td>Location</td>
+					<td>ICRS location of aperture center</td>
+					<td>deg</td>
+					<td>pos.eq</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_redshift</td>
+					<td>z</td>
+					<td>Redshift of target object</td>
+					<td>N/A</td>
+					<td>src.redshift</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_snr</td>
+					<td>SNR</td>
+					<td>Signal-to-noise ratio estimated for this dataset</td>
+					<td>N/A</td>
+					<td>stat.snr</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specend</td>
+					<td>Band end</td>
+					<td>Upper value of spectral coordinate</td>
+					<td>m</td>
+					<td>em.wl;stat.max</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specmid</td>
+					<td>Mid. Band</td>
+					<td>Midpoint of region covered in this dataset</td>
+					<td>m</td>
+					<td>em.wl;instr.bandpass</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specstart</td>
+					<td>Band start</td>
+					<td>Lower value of spectral coordinate</td>
+					<td>m</td>
+					<td>em.wl;stat.min</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_targname</td>
+					<td>Object</td>
+					<td>Somewhat cleaned name of the target object as given in the file. The names should either be SIMBAD-resolvable or give a reference for the source. Some names we could not make sense of are marked with a tilda (~); any help figuring out what they are is appreciated.</td>
+					<td>N/A</td>
+					<td>meta.id;src</td>
+				</tr><tr class="notIndexed">
+					
+					<td>upload</td>
+					<td>Upload</td>
+					<td>Upload a list of target positions; this expects a text file with three floats per line (ICRS RA, Dec, radius, coordinates in degrees, radii in arcsec).</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr></table>
+		</div>
+
+		<div id="htmloutputs">
+			<h2 id="svci-outputs" class="section">Default Output Fields</h2>
+			<p>The following fields are contained in the output by default.  More
+				fields may be available for selection; these would be given below
+				in the VOTable output fields.</p>
+			<table class="shorttable"><tr><th>Name</th><th>Table Head</th>
+					<th>Description</th><th>Unit</th><th>UCD</th></tr><tr class="indexed">
+					
+					<td>accref</td>
+					<td>Product key</td>
+					<td>Access key for the data
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.ref.url;meta.dataset</td>
+				</tr><tr class="notIndexed">
+					
+					<td>accsize</td>
+					<td>File size</td>
+					<td>Size of the data in bytes
+						
+							
+						
+					</td>
+					<td>byte</td>
+					<td>VOX:Image_FileSize</td>
+				</tr><tr class="notIndexed">
+					
+					<td>journal_ref</td>
+					<td>Bibliography</td>
+					<td>Bibliographic reference where the dataset is presented
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.bib;meta.ref.url</td>
+				</tr><tr class="notIndexed">
+					
+					<td>location_dec</td>
+					<td>Dec</td>
+					<td>N/A
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>pos.eq.dec;meta.main</td>
+				</tr><tr class="notIndexed">
+					
+					<td>location_ra</td>
+					<td>RA</td>
+					<td>N/A
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>pos.eq.ra;meta.main</td>
+				</tr><tr class="notIndexed">
+					
+					<td>mime</td>
+					<td>Type</td>
+					<td>MIME type of the file served
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.code.mime</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_aperture</td>
+					<td>Aperture</td>
+					<td>Angular diameter of aperture
+						
+							
+						
+					</td>
+					<td>arcsec</td>
+					<td>instr.fov</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_bandpass</td>
+					<td>Bandpass</td>
+					<td>Bandpass (i.e., rough spectral location) of this dataset; use something generic like 'Optical' here.
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>instr.bandpass</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_creatorDID</td>
+					<td>Creator DataID</td>
+					<td>Dataset identifier assigned by the creator
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.id</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_dateObs</td>
+					<td>Date Obs.</td>
+					<td>Midpoint of exposure
+						
+							
+						
+					</td>
+					<td>d</td>
+					<td>time.epoch</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_location</td>
+					<td>Location</td>
+					<td>ICRS location of aperture center
+						
+							
+						
+					</td>
+					<td>deg</td>
+					<td>pos.eq</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specend</td>
+					<td>Band end</td>
+					<td>Upper value of spectral coordinate
+						
+							
+						
+					</td>
+					<td>Angstrom</td>
+					<td>em.wl;stat.max</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specext</td>
+					<td>Bandwidth</td>
+					<td>Width of the spectrum
+						
+							
+						
+					</td>
+					<td>Angstrom</td>
+					<td>em.wl;instr.bandwidth</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specmid</td>
+					<td>Mid. Band</td>
+					<td>Midpoint of region covered in this dataset
+						
+							
+						
+					</td>
+					<td>Angstrom</td>
+					<td>em.wl;instr.bandpass</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specstart</td>
+					<td>Band start</td>
+					<td>Lower value of spectral coordinate
+						
+							
+						
+					</td>
+					<td>Angstrom</td>
+					<td>em.wl;stat.min</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_targname</td>
+					<td>Hecto Config</td>
+					<td>Common name of object observed.
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.id;src</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_timeExt</td>
+					<td>Exp. Time</td>
+					<td>Exposure duration
+						
+							
+						
+					</td>
+					<td>N/A</td>
+					<td>time.duration</td>
+				</tr></table>
+		</div>
+
+		<div id="VOToutputs">
+			<h2 id="svci-votoutputs" class="section">VOTable Output Fields</h2>
+			<p>The following fields are available in VOTable output.  The verbosity
+				level is a number intended to represent the relative importance 
+				of the field on a scale of 1 to 30.  The services take a VERB argument.
+				A field is included in the output if their verbosity level is
+				less or equal VERB*10.</p>
+			<table class="shorttable"><tr><th>Name</th><th>Table Head</th>
+					<th>Description</th><th>Unit</th><th>UCD</th>
+					<th>Verb. Level</th></tr><tr class="notIndexed">
+					
+					<td>accref</td>
+					<td>Product key</td>
+					<td>Access key for the data
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.ref.url;meta.dataset</td>
+					<td>1</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_location</td>
+					<td>Location</td>
+					<td>ICRS location of aperture center
+						
+					</td>
+					<td>deg</td>
+					<td>pos.eq</td>
+					<td>5</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_dateObs</td>
+					<td>Date Obs.</td>
+					<td>Midpoint of exposure (MJD)
+						
+					</td>
+					<td>d</td>
+					<td>time.epoch</td>
+					<td>5</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_timeExt</td>
+					<td>Exp. Time</td>
+					<td>Exposure duration
+						
+					</td>
+					<td>s</td>
+					<td>time.duration</td>
+					<td>5</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_length</td>
+					<td>Length</td>
+					<td>Number of points in the spectrum
+						
+					</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>5</td>
+				</tr><tr class="notIndexed">
+					
+					<td>accsize</td>
+					<td>File size</td>
+					<td>Size of the data in bytes
+						
+					</td>
+					<td>byte</td>
+					<td>N/A</td>
+					<td>11</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_dstitle</td>
+					<td>Title</td>
+					<td>A compact and descriptive designation of the dataset.
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.title;meta.dataset</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_creatorDID</td>
+					<td>C. DID</td>
+					<td>Dataset identifier assigned by the creator
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.id</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_pubDID</td>
+					<td>P. DID</td>
+					<td>Dataset identifier assigned by the publisher
+						
+					</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_cdate</td>
+					<td>Proc. Date</td>
+					<td>Processing/Creation date
+						
+					</td>
+					<td>N/A</td>
+					<td>time;meta.dataset</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_pdate</td>
+					<td>Pub. Date</td>
+					<td>Date last published.
+						
+					</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_bandpass</td>
+					<td>Bandpass</td>
+					<td>Bandpass (i.e., rough spectral location) of this dataset; this should be the most appropriate term from the vocabulary http://www.ivoa.net/rdf/messenger.
+						
+					</td>
+					<td>N/A</td>
+					<td>instr.bandpass</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_cversion</td>
+					<td>C. Version</td>
+					<td>Creator assigned version for this dataset (will be incremented when this particular item is changed).
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.version;meta.dataset</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_targname</td>
+					<td>Object</td>
+					<td>Common name of object observed.
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.id;src</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_targclass</td>
+					<td>Ob. cls</td>
+					<td>Object class (star, QSO,...; use Simbad object classification http://simbad.u-strasbg.fr/simbad/sim-display?data=otypes if at all possible)
+						
+					</td>
+					<td>N/A</td>
+					<td>src.class</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_redshift</td>
+					<td>z</td>
+					<td>Redshift of target object
+						
+					</td>
+					<td>N/A</td>
+					<td>src.redshift</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_targetpos</td>
+					<td>Obj. pos</td>
+					<td>Equatorial (ICRS) position of the target object.
+						
+					</td>
+					<td>N/A</td>
+					<td>pos.eq;src</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_snr</td>
+					<td>SNR</td>
+					<td>Signal-to-noise ratio estimated for this dataset
+						
+					</td>
+					<td>N/A</td>
+					<td>stat.snr</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_aperture</td>
+					<td>Aperture</td>
+					<td>Angular diameter of aperture
+						
+					</td>
+					<td>deg</td>
+					<td>phys.angSize;instr.fov</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specmid</td>
+					<td>Mid. Band</td>
+					<td>Midpoint of region covered in this dataset
+						
+					</td>
+					<td>m</td>
+					<td>em.wl;instr.bandpass</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specext</td>
+					<td>Bandwidth</td>
+					<td>Width of the spectrum
+						
+					</td>
+					<td>m</td>
+					<td>em.wl;instr.bandwidth</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specstart</td>
+					<td>Band start</td>
+					<td>Lower value of spectral coordinate
+						
+					</td>
+					<td>m</td>
+					<td>em.wl;stat.min</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>ssa_specend</td>
+					<td>Band end</td>
+					<td>Upper value of spectral coordinate
+						
+					</td>
+					<td>m</td>
+					<td>em.wl;stat.max</td>
+					<td>15</td>
+				</tr><tr class="notIndexed">
+					
+					<td>mime</td>
+					<td>Type</td>
+					<td>MIME type of the file served
+						
+					</td>
+					<td>N/A</td>
+					<td>meta.code.mime</td>
+					<td>20</td>
+				</tr><tr class="notIndexed">
+					
+					<td>owner</td>
+					<td>Owner</td>
+					<td>Owner of the data
+						
+					</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>25</td>
+				</tr><tr class="notIndexed">
+					
+					<td>embargo</td>
+					<td>Embargo ends</td>
+					<td>Date the data will become/became public
+						
+					</td>
+					<td>a</td>
+					<td>N/A</td>
+					<td>25</td>
+				</tr></table>
+
+		</div>
+
+		
+		<h2 id="svci-copyright">Copyright, License, Acknowledgements</h2>
+		<p><p>We encourage you to cite (1)
+<a class="reference external" href="http://adsabs.harvard.edu/abs/2011PASP..123.1188S/abstract">Szentgyorgyi, A., Furesz, G, Cheimets, P. et al. 2011, PASP, 123, 1188</a> and (2) observing program(s) from which data was obtained.</p>
+</p>
+		
+
+
+		<p>
+			<a href="/getRR/hectochelle/hectochelle_public.ssap.q/web
+				">
+				VOResource XML</a> (that's something exclusively for VO nerds)
+		</p>
+
+		<dl class="footnotes"></dl>
+	<footer style="clear:both" xmlns="http://www.w3.org/1999/xhtml">
+<p>Please report errors and problems to the
+			<a href="mailto:tdchelp@cfa.harvard.edu">site operators</a>.
+			Thanks.</p>
+</footer></div></body>
+</html>

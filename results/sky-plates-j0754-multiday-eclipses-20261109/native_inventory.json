@@ -1,0 +1,710 @@
+[
+  {
+    "file": "hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+    "sha256": "a42aa17a746c4f0326cd875803525510ab869fff2969930d349ac56fc61245da",
+    "sector": 44,
+    "provider": "QLP",
+    "columns": [
+      {
+        "name": "TIME",
+        "unit": "BJD-2457000, days"
+      },
+      {
+        "name": "CADENCENO",
+        "unit": null
+      },
+      {
+        "name": "SAP_FLUX",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_ERR",
+        "unit": null
+      },
+      {
+        "name": "QUALITY",
+        "unit": null
+      },
+      {
+        "name": "ORBITID",
+        "unit": null
+      },
+      {
+        "name": "SAP_X",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_Y",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_BKG",
+        "unit": null
+      },
+      {
+        "name": "SAP_BKG_ERR",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_SML",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_LAG",
+        "unit": null
+      }
+    ],
+    "rows": 3278,
+    "quality_counts": {
+      "4096": 440,
+      "0": 2821,
+      "32": 12,
+      "164": 3,
+      "128": 1,
+      "4260": 1
+    },
+    "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+    "pipeline_version": null,
+    "bjdref": 2457000
+  },
+  {
+    "file": "hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+    "sha256": "5e1a239cfb1779f7c7265abf0c2be04f4712be0c9c3c4eba5429a62a3f37a83e",
+    "sector": 45,
+    "provider": "QLP",
+    "columns": [
+      {
+        "name": "TIME",
+        "unit": "BJD-2457000, days"
+      },
+      {
+        "name": "CADENCENO",
+        "unit": null
+      },
+      {
+        "name": "SAP_FLUX",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_ERR",
+        "unit": null
+      },
+      {
+        "name": "QUALITY",
+        "unit": null
+      },
+      {
+        "name": "ORBITID",
+        "unit": null
+      },
+      {
+        "name": "SAP_X",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_Y",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_BKG",
+        "unit": null
+      },
+      {
+        "name": "SAP_BKG_ERR",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_SML",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_LAG",
+        "unit": null
+      }
+    ],
+    "rows": 3450,
+    "quality_counts": {
+      "4096": 310,
+      "6144": 26,
+      "4224": 2,
+      "22656": 2,
+      "0": 2811,
+      "2048": 244,
+      "164": 2,
+      "18560": 20,
+      "128": 12,
+      "2176": 8,
+      "18432": 6,
+      "2080": 1,
+      "32": 6
+    },
+    "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+    "pipeline_version": null,
+    "bjdref": 2457000
+  },
+  {
+    "file": "hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+    "sha256": "e37fe3dfdbffaffdff4450e28c0accd8b11cd2bee1decb37904e8b11d7a04f78",
+    "sector": 46,
+    "provider": "QLP",
+    "columns": [
+      {
+        "name": "TIME",
+        "unit": "BJD-2457000, days"
+      },
+      {
+        "name": "CADENCENO",
+        "unit": null
+      },
+      {
+        "name": "SAP_FLUX",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_ERR",
+        "unit": null
+      },
+      {
+        "name": "QUALITY",
+        "unit": null
+      },
+      {
+        "name": "ORBITID",
+        "unit": null
+      },
+      {
+        "name": "SAP_X",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_Y",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_BKG",
+        "unit": null
+      },
+      {
+        "name": "SAP_BKG_ERR",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_SML",
+        "unit": null
+      },
+      {
+        "name": "KSPSAP_FLUX_LAG",
+        "unit": null
+      }
+    ],
+    "rows": 3707,
+    "quality_counts": {
+      "4096": 429,
+      "6144": 24,
+      "22656": 7,
+      "4224": 3,
+      "22528": 2,
+      "0": 2891,
+      "2048": 236,
+      "128": 43,
+      "164": 2,
+      "18560": 39,
+      "18432": 11,
+      "2176": 10,
+      "32": 6,
+      "18592": 1,
+      "4128": 1,
+      "129": 2
+    },
+    "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+    "pipeline_version": null,
+    "bjdref": 2457000
+  },
+  {
+    "file": "hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+    "sha256": "c07c3343d8156b2cd48c97ade930a8fad0d167e6f4ab6e59474bb141c824b3a2",
+    "sector": 71,
+    "provider": "QLP",
+    "columns": [
+      {
+        "name": "TIME",
+        "unit": "BJD-2457000, days"
+      },
+      {
+        "name": "CADENCENO",
+        "unit": null
+      },
+      {
+        "name": "SAP_FLUX",
+        "unit": null
+      },
+      {
+        "name": "DET_FLUX",
+        "unit": null
+      },
+      {
+        "name": "DET_FLUX_ERR",
+        "unit": null
+      },
+      {
+        "name": "QUALITY",
+        "unit": null
+      },
+      {
+        "name": "ORBITID",
+        "unit": null
+      },
+      {
+        "name": "SAP_X",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_Y",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_BKG",
+        "unit": null
+      },
+      {
+        "name": "SAP_BKG_ERR",
+        "unit": null
+      },
+      {
+        "name": "DET_FLUX_SML",
+        "unit": null
+      },
+      {
+        "name": "DET_FLUX_LAG",
+        "unit": null
+      },
+      {
+        "name": "SYS_RM_FLUX",
+        "unit": null
+      }
+    ],
+    "rows": 10932,
+    "quality_counts": {
+      "1073741996": 1,
+      "1073741988": 1,
+      "1073741984": 2,
+      "1073741952": 40,
+      "1073741824": 840,
+      "1073743872": 730,
+      "1073760256": 652,
+      "2048": 538,
+      "0": 8121,
+      "1073741864": 1,
+      "32": 3,
+      "1073741992": 2,
+      "1073741856": 1
+    },
+    "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+    "pipeline_version": null,
+    "bjdref": 2457000
+  },
+  {
+    "file": "hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+    "sha256": "ac8ae83aabd8a7bd3f60de3fbad7cd73a7a7df3d7b6b01d44deb7c7b5b186fed",
+    "sector": 72,
+    "provider": "QLP",
+    "columns": [
+      {
+        "name": "TIME",
+        "unit": "BJD-2457000, days"
+      },
+      {
+        "name": "CADENCENO",
+        "unit": null
+      },
+      {
+        "name": "SAP_FLUX",
+        "unit": null
+      },
+      {
+        "name": "DET_FLUX",
+        "unit": null
+      },
+      {
+        "name": "DET_FLUX_ERR",
+        "unit": null
+      },
+      {
+        "name": "QUALITY",
+        "unit": null
+      },
+      {
+        "name": "ORBITID",
+        "unit": null
+      },
+      {
+        "name": "SAP_X",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_Y",
+        "unit": "pixel"
+      },
+      {
+        "name": "SAP_BKG",
+        "unit": null
+      },
+      {
+        "name": "SAP_BKG_ERR",
+        "unit": null
+      },
+      {
+        "name": "DET_FLUX_SML",
+        "unit": null
+      },
+      {
+        "name": "DET_FLUX_LAG",
+        "unit": null
+      },
+      {
+        "name": "SYS_RM_FLUX",
+        "unit": null
+      }
+    ],
+    "rows": 10701,
+    "quality_counts": {
+      "1073741992": 2,
+      "1073741856": 3,
+      "1073741824": 576,
+      "1073744000": 1,
+      "1073743872": 471,
+      "1073760256": 640,
+      "0": 9001,
+      "1073741864": 1,
+      "32": 2,
+      "1073741952": 1,
+      "40": 1,
+      "128": 2
+    },
+    "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+    "pipeline_version": null,
+    "bjdref": 2457000
+  },
+  {
+    "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+    "sha256": "d4a7a5510b2918430fc8ce9cbbb7f44b075af39cc28bc5d1a6b86cf40e54ab08",
+    "sector": 71,
+    "provider": "TESS-SPOC",
+    "columns": [
+      {
+        "name": "TIME",
+        "unit": "BJD - 2457000, days"
+      },
+      {
+        "name": "TIMECORR",
+        "unit": "d"
+      },
+      {
+        "name": "CADENCENO",
+        "unit": null
+      },
+      {
+        "name": "SAP_FLUX",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_FLUX_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_BKG",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_BKG_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "PDCSAP_FLUX",
+        "unit": "e-/s"
+      },
+      {
+        "name": "PDCSAP_FLUX_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "QUALITY",
+        "unit": null
+      },
+      {
+        "name": "PSF_CENTR1",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR1_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR2",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR2_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR1",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR1_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR2",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR2_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "POS_CORR1",
+        "unit": "pixels"
+      },
+      {
+        "name": "POS_CORR2",
+        "unit": "pixels"
+      }
+    ],
+    "rows": 11205,
+    "quality_counts": {
+      "172": 1,
+      "164": 1,
+      "160": 5,
+      "128": 40,
+      "4096": 1450,
+      "16384": 644,
+      "0": 8772,
+      "8": 273,
+      "32": 4,
+      "32768": 14,
+      "512": 1
+    },
+    "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+    "pipeline_version": "spoc-5.0.103-20231116",
+    "bjdref": 2457000
+  },
+  {
+    "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+    "sha256": "71faa71d960e2b17745ee914d896bbfb19296641af94e94e3f4ffbba024f2f45",
+    "sector": 72,
+    "provider": "TESS-SPOC",
+    "columns": [
+      {
+        "name": "TIME",
+        "unit": "BJD - 2457000, days"
+      },
+      {
+        "name": "TIMECORR",
+        "unit": "d"
+      },
+      {
+        "name": "CADENCENO",
+        "unit": null
+      },
+      {
+        "name": "SAP_FLUX",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_FLUX_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_BKG",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_BKG_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "PDCSAP_FLUX",
+        "unit": "e-/s"
+      },
+      {
+        "name": "PDCSAP_FLUX_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "QUALITY",
+        "unit": null
+      },
+      {
+        "name": "PSF_CENTR1",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR1_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR2",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR2_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR1",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR1_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR2",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR2_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "POS_CORR1",
+        "unit": "pixels"
+      },
+      {
+        "name": "POS_CORR2",
+        "unit": "pixels"
+      }
+    ],
+    "rows": 10975,
+    "quality_counts": {
+      "168": 1,
+      "32": 5,
+      "4096": 1406,
+      "128": 4,
+      "16384": 630,
+      "0": 8436,
+      "32768": 217,
+      "8": 273,
+      "160": 3
+    },
+    "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+    "pipeline_version": "spoc-5.0.104-20240131",
+    "bjdref": 2457000
+  },
+  {
+    "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+    "sha256": "d8f3cdcc8a206f2413a8a220ccd1e577a0b3079b67534c0c9bab778f387e637d",
+    "sector": 1751,
+    "provider": "TESS-SPOC",
+    "columns": [
+      {
+        "name": "TIME",
+        "unit": "BJD - 2457000, days"
+      },
+      {
+        "name": "TIMECORR",
+        "unit": "d"
+      },
+      {
+        "name": "CADENCENO",
+        "unit": null
+      },
+      {
+        "name": "SAP_FLUX",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_FLUX_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_BKG",
+        "unit": "e-/s"
+      },
+      {
+        "name": "SAP_BKG_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "PDCSAP_FLUX",
+        "unit": "e-/s"
+      },
+      {
+        "name": "PDCSAP_FLUX_ERR",
+        "unit": "e-/s"
+      },
+      {
+        "name": "QUALITY",
+        "unit": null
+      },
+      {
+        "name": "PSF_CENTR1",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR1_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR2",
+        "unit": "pixel"
+      },
+      {
+        "name": "PSF_CENTR2_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR1",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR1_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR2",
+        "unit": "pixel"
+      },
+      {
+        "name": "MOM_CENTR2_ERR",
+        "unit": "pixel"
+      },
+      {
+        "name": "POS_CORR1",
+        "unit": "pixels"
+      },
+      {
+        "name": "POS_CORR2",
+        "unit": "pixels"
+      }
+    ],
+    "rows": 3131,
+    "quality_counts": {
+      "8": 92,
+      "4096": 220,
+      "32768": 101,
+      "2": 1205,
+      "128": 1,
+      "0": 1502,
+      "160": 1,
+      "32": 9
+    },
+    "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+    "pipeline_version": "spoc-5.0.125-20250926",
+    "bjdref": 2457000
+  }
+]

@@ -1,0 +1,12 @@
+test_broadband_offset_and_continuum_bias_differ (test_fast_line_tests.NumericalTests.test_broadband_offset_and_continuum_bias_differ) ... ok
+test_common_resolution_recovers_equal_injected_lines (test_fast_line_tests.NumericalTests.test_common_resolution_recovers_equal_injected_lines) ... ok
+test_covariance_matches_native_pixel_monte_carlo (test_fast_line_tests.NumericalTests.test_covariance_matches_native_pixel_monte_carlo) ... ok
+test_gradient_includes_fitted_continuum (test_fast_line_tests.NumericalTests.test_gradient_includes_fitted_continuum) ... ok
+test_independent_night_sensitivity_preserves_repeat_grouping (test_fast_line_tests.NumericalTests.test_independent_night_sensitivity_preserves_repeat_grouping) ... ok
+test_local_emission_subtracts_its_equivalent_area (test_fast_line_tests.NumericalTests.test_local_emission_subtracts_its_equivalent_area) ... ok
+test_repeat_exposures_are_one_night (test_fast_line_tests.NumericalTests.test_repeat_exposures_are_one_night) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.912s
+
+OK

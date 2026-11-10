@@ -1,0 +1,74 @@
+{
+  "metadata": [
+    {
+      "name": "oid",
+      "description": "Object internal identifier",
+      "datatype": "LONG",
+      "ucd": "meta.record"
+    },
+    {
+      "name": "main_id",
+      "description": "Main identifier for an object",
+      "datatype": "CHAR",
+      "arraysize": "*",
+      "ucd": "meta.id;meta.main",
+      "utype": "mango:MangoObject.identifier"
+    },
+    {
+      "name": "ra",
+      "description": "Right ascension",
+      "datatype": "DOUBLE",
+      "unit": "deg",
+      "ucd": "pos.eq.ra;meta.main",
+      "utype": "mango:EpochPosition.longitude[CS.spaceSys=ICRS CT.epoch=J2000]"
+    },
+    {
+      "name": "dec",
+      "description": "Declination",
+      "datatype": "DOUBLE",
+      "unit": "deg",
+      "ucd": "pos.eq.dec;meta.main",
+      "utype": "mango:EpochPosition.latitude[CS.spaceSys=ICRS CT.epoch=J2000]"
+    },
+    {
+      "name": "nbref",
+      "description": "number of references",
+      "datatype": "INT",
+      "ucd": "meta.bib;arith.sum"
+    },
+    {
+      "name": "otype",
+      "description": "Object type",
+      "datatype": "CHAR",
+      "arraysize": "*",
+      "ucd": "src.class",
+      "utype": "mango:Label.text[CT.vocabulary=https://www.ivoa.net/rdf/uat#classification]"
+    }
+  ],
+  "data": [
+    [
+      5472061,
+      "ASAS J083038+1407.3",
+      127.66033651549,
+      14.120308553540001,
+      3,
+      "SB*"
+    ],
+    [
+      5472059,
+      "2MASS J07544588+1641407",
+      118.69118322928,
+      16.69462887248,
+      2,
+      "SB*"
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      114.02711824252002,
+      21.23634538304,
+      10,
+      "RG*"
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "saved_utc": "2026-11-08T19:54:30.135739+00:00",
+  "scope": "Secondary analysis designed after inspecting the failed primary calibration. Target pixel outcomes have been seen; this is exploratory.",
+  "observation_prompting_change": "Global quadratic magnitude(log density) curves on event plates fail the monotonicity requirement, or leave-one-out fits fail, even though the target itself is detected. This is a calibration-model failure, not proof of dimming.",
+  "secondary_model": "Non-increasing isotonic least-squares calibration of catalogue magnitude against log aperture density, with linear interpolation between distinct control signal levels and no extrapolation. All selected controls retained; no target in fit.",
+  "unchanged_gates": "Same >=12 calibration stars, >=1mag span, >=12 valid held-out control predictions, median absolute residual<=0.25, astrometry/blank/noise gates, target screening dimming>max(0.2,3*heldout RMS), two physical event plates and same-sign aperture4/8.",
+  "primary_preserved": "pixel_results.json remains the quadratic primary. isotonic_pixel_results.json is separately labelled secondary and does not replace the initial verdict.",
+  "interpretation": "A secondary result may motivate stronger independent analysis. It is not a preregistered confirmation or complete systematic-error budget."
+}

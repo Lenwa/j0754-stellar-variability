@@ -1,0 +1,23 @@
+{
+  "rows": 182,
+  "success_counts": {
+    "True": 174,
+    "False": 8
+  },
+  "boundary_count": 0,
+  "max_abs_primary_flux_change": 0.0,
+  "amplitude_fractional_change_quantiles": [
+    -0.02678481210074868,
+    -0.00041697515424752294,
+    0.0019748374469883423,
+    0.009240205091590318,
+    0.01994666163772174
+  ],
+  "offset_radius_quantiles_px": [
+    0.0009658942820319115,
+    0.02509330648174158,
+    0.05448954692078324,
+    0.0772581398474921
+  ],
+  "qualification": "Diagnostic free-centroid bounded fit; fixed-position primary unchanged. Success/convergence doesnot establish total calibration or PSF validity."
+}

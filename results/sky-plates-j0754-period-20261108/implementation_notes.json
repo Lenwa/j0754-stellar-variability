@@ -1,0 +1,8 @@
+{
+  "notes": [
+    "The CLI is named analyze_j0754_period.py rather than the planned test_j0754_period.py to distinguish analysis from unit-test discovery.",
+    "The slow reference is evaluated only descriptively and by blocked interpolation because future knot values are not identified by the forecast training data; no artificial forecast was produced.",
+    "Either H1 or H2 can satisfy the stated support criteria; this favorable clarification does not change the failed result.",
+    "Five/ten-day replay tolerance checks were added after seeing the primary15-day result and are labelled post-result."
+  ]
+}

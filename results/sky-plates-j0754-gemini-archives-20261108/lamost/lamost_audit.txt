@@ -1,0 +1,41 @@
+Bounded LAMOST DR7–DR10 follow-up for J0754
+Task date 8 November 2026 (America/New_York); retrievals 9 November 2026 around00:27UTC.
+ICRS center RA118.69117410685deg, Dec16.694621231895deg; search radius10arcsec.
+
+Result
+No additional LAMOST observation epoch or usable stellar spectrum was recovered. Native DR10v2.0 public cone searches succeeded: low resolution returned zero rows; medium resolution returned six rows, all belonging to the previously inspected ObsID659111063 on2018-03-25. The six rows are not six visits: they describe two exposures in blue/red arms plus blue/red coadds from the same visit. Every native catalogue SNR is0.0. VizieR DR7 independently returns the same six MRS rows and no LRS or LRS multiple-epoch match. No new spectrum was downloaded because there is no new matched observation to retrieve. This is catalogue coverage evidence, not a new nondetection or flux limit.
+
+Correction to proposed catalogue identities
+V/156 is "LAMOST DR7 catalogs" and includes both LRS and MRS tables. Its relevant tables are V/156/dr7lrs, V/156/dr7mrs and V/156/dr7melrs.
+V/164 is "LAMOST DR5 catalogs", not DR8, DR9 or DR10. Querying it cannot establish newer-release coverage. V/164/dr5 returned zero matches in this bounded query.
+Primary catalogue identities are visible in the returned VizieR TSV metadata and in the saved VizieR DR7 catalogue page. The separate CDS FTP ReadMe requests timed out and are recorded as failures; they were not needed to establish the identities.
+References:
+https://cdsarc.cds.unistra.fr/viz-bin/cat/V/156
+https://cdsarc.cds.unistra.fr/viz-bin/cat/V/164
+https://vizier.cfa.harvard.edu/viz-bin/VizieR-3?-source=V/156
+
+Successful native route and exact requests
+The official DR10v2.0 VO documentation, saved as dr10_vo.html, explicitly lists the following public standard cone endpoints:
+https://www.lamost.org/dr10/v2.0/voservice/conesearch
+https://www.lamost.org/dr10/v2.0/medvoservice/conesearch
+For both, GET parameters were RA=118.69117410685, DEC=16.694621231895, SR=0.002777777777777778deg, VERB=3.
+The responses are retained as dr10_lrs_cone.xml and dr10_mrs_cone.xml. Both returned HTTP200 and parsed as VOTables. Their named-column CSV exports and concise JSON summaries are retained. The zero-row LRS response contains valid catalogue schema, not an HTTP error page.
+
+MRS deduplication
+All six DR10 rows have obsid659111063, designation J075445.88+164140.6, planid HIP368380101, obsdate2018-03-25, LMJD58203, MJD58202, spectrograph11, fiber63. The single-exposure IDs are65911106383812152B/R and65911106383812175B/R; the coadd IDs are659111063B/R. These exactly identify the already recovered med-58203-HIP368380101_sp11-063.fits.gz, not additional observing dates.
+The earlier native file remains at results/sky-plates-j0754-models-20261108/spectra/lamost_native.fits.gz with its original retrieval receipt, SHA256, headers and array audit. It had zero coadd FLUX/IVAR, predominantly negative single-exposure fluxes, missing normalization and no detected reliable stellar continuum. Its existing unusable status was not changed by this catalogue check. The old file was not counted or downloaded again.
+
+Successful VizieR route
+GET https://vizier.cfa.harvard.edu/viz-bin/asu-tsv with:
+-source=V/156/dr7lrs,V/156/dr7mrs,V/156/dr7melrs,V/164/dr5
+-c=118.69117410685 16.694621231895
+-c.rs=10
+-out.all=
+-out.max=1000
+Saved response vizier_dr7_dr5.tsv: four catalogues examined, DR7MRS six known rows, other three tables zero rows. The six DR7MRS identifiers agree with native DR10; their SNRs are also0.00. Thus the mirror does not provide a missing second epoch or good replacement spectrum.
+
+DR7/DR8/DR9 native access limitation
+Bounded requests to their v2.0 VO documentation pages returned redirects to the LAMOST user-login page. Exact final URLs, status and bodies are preserved in dr7_vo.html_request.json, dr8_vo.html_request.json and dr9_vo.html_request.json. Although the final HTTP status is200, these are login pages rather than successful public catalogue responses. They are classified as access-restricted, not zero-row science results. No account was created and no sign-in attempted. DR7 catalogue coverage was checked through VizieR; DR10 provides the successful newer public native catalogue query. This audit does not claim separate successful DR8/DR9 native cone-query executions or exhaustive proof that no unreleased/private observation exists.
+
+Evidence and limits
+Every request has an adjacent *_request.json receipt recording URL, parameters, UTC retrieval time, final URL/status or exception, byte count and SHA256 where a response was received. Raw VOTables and TSV are retained alongside parsed exports. No source code, dependencies, accounts, credentials, contacts, commits or online publications were changed. Failed/restricted routes are distinguished from valid empty searches. These data still do not support LAMOST atmospheric-parameter, radial-velocity, activity or lithium tests for this target.

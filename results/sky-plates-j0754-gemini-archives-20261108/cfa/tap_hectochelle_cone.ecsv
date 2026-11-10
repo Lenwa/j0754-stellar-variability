@@ -1,0 +1,57 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: accref
+#   datatype: string
+#   description: Access key for the data
+#   meta: !!omap
+#   - {ucd: meta.ref.url;meta.dataset}
+#   - {utype: 'ssa:Access.Reference'}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: owner
+#   datatype: string
+#   description: Owner of the data
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ssa_targname
+#   datatype: string
+#   description: Common name of object observed.
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {utype: 'ssa:Target.Name'}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ssa_location
+#   unit: deg
+#   datatype: string
+#   description: ICRS location of aperture center
+#   meta: !!omap
+#   - {ucd: pos.eq}
+#   - {utype: 'ssa:Char.SpatialAxis.Coverage.Location.Value'}
+#   - {xtype: point}
+#   subtype: float64[2]
+# - name: ssa_dateObs
+#   unit: d
+#   datatype: float64
+#   description: Midpoint of exposure (MJD)
+#   meta: !!omap
+#   - {ucd: time.epoch}
+#   - {utype: 'ssa:Char.TimeAxis.Coverage.Location.Value'}
+#   - {xtype: mjd}
+# - name: ssa_timeExt
+#   unit: s
+#   datatype: float32
+#   description: Exposure duration
+#   meta: !!omap
+#   - {ucd: time.duration}
+#   - {utype: 'ssa:Char.TimeAxis.Coverage.Bounds.Extent'}
+# meta: !!omap
+# - {ID: data_public}
+# - {name: data_public}
+# schema: astropy-2.0
+accref owner ssa_targname ssa_location ssa_dateObs ssa_timeExt

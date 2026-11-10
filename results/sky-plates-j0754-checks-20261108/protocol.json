@@ -1,0 +1,21 @@
+{
+  "saved_utc": "2026-11-08T20:07:48.227501+00:00",
+  "authorisation": "Kyle: Do that. Do we have modern observations of those stars as well?",
+  "questions": [
+    "Are failed comparison measurements reproducible in orthogonal scans of the same physical plate?",
+    "Does a larger fixed calibration field improve withheld-star recovery without target-dependent star removal?",
+    "What modern time series exist for J0754 and all sixteen original1937comparison stars; do the troublesome controls show present-day variability?"
+  ],
+  "predictions": [
+    "A scanner-specific problem should change between X/Y scans at the same sky position.",
+    "A physical plate defect or real1937variation can persist in both scans; modern stability cannot discriminate those alone.",
+    "A larger catalogue-selected sample should yield more stable held-out calibration if small-sample response fitting was responsible."
+  ],
+  "weakening_outcomes": [
+    "The target deficit disappears with validated larger-field calibration",
+    "Target and controls fail similarly in independent scan orientations",
+    "Modern light curves expose substantial comparison variability or saturation/field-dependent offsets rather than stable references"
+  ],
+  "design": "Retain previous snapshot untouched. Use2200px crops, bothX/Y scans, same five physical plates. HTTP row-band transfer cap150MB; output~20MB per crop. Larger Gaia field radius0.65deg, down toG18.5 for neighbor checks. Same colour, magnitude, isolation and held-out gates; additional catalogue sources selected without target aperture outcomes. Quadratic primary, isotonic secondary. Different scans of one plate are sensitivity checks, not independent epochs.",
+  "modern_lightcurves": "Query3arcsec ZTF cone for target and every original1937comparison star. Report individual object/filter data sets before combination; catflags0 and0<magerr<=0.1 primary quality screen. Use per-object/filter median-centred scatter; do not infer a shared zero point across detectors. Do not call no returned data no observations. Saturation and temporal limitations retained. Retrieve selected public target TESS products if metadata permit."
+}

@@ -1,0 +1,28 @@
+{
+  "written_utc": "2026-11-08T23:04:40.030489+00:00",
+  "question": "Which stellar-temperature/spot, extinction/partial-covering and two-component occultation models can reproduce the existing optical-infrared change and predict new color changes?",
+  "known": "All current g/W1/W2 amplitudes are already known; these are retrospective model checks, not blind discoveries. Full historical raw and GaiaXP availability known; additional recovered archive measurements not yet inspected by root.",
+  "primary_data": "2018\u21922022 March matched-season median ASASg change median(bi=.304,bm=.312,bq=.3405)=.312mag; correctedW1=.1175mag; fitg+W1 only. W2=.08875mag is excluded from optimization. October g=.3225,W1=.115,W2=.09 is sensitivity.",
+  "models": [
+    "Uniform foreground DraineRv3.1/4/5.5attenuation screen, one amplitude.",
+    "CK04 stellar cooling at fixed area, one temperature change.",
+    "CK04 temperature change plus wavelength-independent geometric scale, two fitted quantities.",
+    "CK04 two-temperature surface: varying cool-spot covering fraction with fixed broad initialT/gravity/metallicity grids.",
+    "Partial covering by finite-optical-depth Draine screen, coveringfraction+opticaldepth.",
+    "Gray eclipse of one of two different-temperature stellar spectra with constant uneclipsed component: scale ratio+coveredfraction. This spectral geometry does not validate a companion/orbit.",
+    "Pure gray single-component dimming as a simple reference."
+  ],
+  "atmosphere_grid": "Public STScI Castelli-Kurucz2004 spectra, Teff3500\u20136500K/250K, logg2.0,2.5,3.0 and[M/H]\u22121,\u2212.5,0 sensitivities; no catalogue output assumed exact. Interpolate flux linearly inT inside grid only. Reject zero/nonpositive modelbands. Coldspots below3500K are outside this limited model family.",
+  "bandpasses": "SVO published transmissions including SDSSg (proxyforASASg),WISEW1/W2,JohnsonBV,SDSSgriz,2MASSJHKs; inspectdetectorresponseandunitmetadata. Integrate spectra overpassbands withcorrect photon/energyweighting. ZTFg sensitivity iffilteravailable. g-cameraresponse/atmosphereuncertainty separate from samplingerror.",
+  "fitting": "Use bounded grid/profile search or deterministic optimization. Fitonlyg/W1 for primaryflexiblemodels, recordingnumberoffreeparameters, boundarysolutions andnuisanceparameter dependence. Do notpickmodelusingW2thenclaimindependentprediction. ReportW2residuals anddistinctnewcolorpredictions. One-parameter models neednotexactlyfitbothtrainingbands.",
+  "forecast_colors": "Savepredictedfaint-minus-bright B\u2212V,g\u2212r,V\u2212I,J\u2212H,H\u2212Ks,g\u2212Ks for matched\u2206g states, includingnuisance/modelranges. These colors are unmeasuredeventpredictions, not evidence of mechanism.",
+  "weakening_outcomes": [
+    "Modelcannotreproduceg/W1withphysicalparameterbounds.",
+    "WithheldW2pointstronglymismatchesacrossseasons/qualityvariants.",
+    "Additionalmodelcolorpredictionsoverlapsystematicsorothermodels, makingdiscriminationinconclusive.",
+    "Fitrequiresboundary/extremeparametersorfine-tuning, whichmustremainvisible."
+  ],
+  "uncertainty": "Broad systematic floors .02mag optical andW1,.03magW2 for descriptive residualscale sensitivities; notcalibratedlikelihood/modelprobability orcauseconfidence. Preserveactualsampling/controlrangesfrompreviousresults.",
+  "spectra": "MeanGaiaXPcanconstrainstaticSEDwithbroadextinction/normalizationdegeneracy; notepochfading/RV. LAMOSTqualitymustbeinspectedbeforeclaimusable.",
+  "history": "Recoverpublicmeasurementswithrawdates/passbands/flags/exactrequests;retainnon-detections/duplicates;noarbitrarycrosssurveyoffsetstoforcecycles. Sparse1892andinterveningepochsimportant;failuretofinddataisexplicit."
+}

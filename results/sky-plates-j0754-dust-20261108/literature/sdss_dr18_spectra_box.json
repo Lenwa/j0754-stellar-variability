@@ -1,0 +1,19 @@
+{
+  "url": "https://skyserver.sdss.org/dr18/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+TOP+20+specObjID%2Cra%2Cdec%2Cclass%2Csubclass%2Cz%2CzErr%2Cplate%2Cmjd%2CfiberID+FROM+SpecObjAll+WHERE+ra+BETWEEN+118.6897+AND+118.6927+AND+dec+BETWEEN+16.6932+AND+16.6961&format=json",
+  "status": 200,
+  "response": [
+    {
+      "TableName": "Table1",
+      "Rows": []
+    },
+    {
+      "TableName": "SqlQuery",
+      "Rows": [
+        {
+          "query": "SELECT TOP 20 specObjID,ra,dec,class,subclass,z,zErr,plate,mjd,fiberID FROM SpecObjAll WHERE ra BETWEEN 118.6897 AND 118.6927 AND dec BETWEEN 16.6932 AND 16.6961"
+        }
+      ]
+    }
+  ],
+  "retrieved_utc": "2026-11-08T22:19:06.721953+00:00"
+}

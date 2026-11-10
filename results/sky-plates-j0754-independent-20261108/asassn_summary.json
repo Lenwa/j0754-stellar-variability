@@ -1,0 +1,5858 @@
+{
+  "question": "Direct Sky Patrol V2 coverage audit for J0754 (separate from completed V1 replication)",
+  "verdict": "INCONCLUSIVE_INSUFFICIENT_TARGET_COVERAGE",
+  "bulk_audit": {
+    "matched_catalogue_sources": 17,
+    "sources_with_measurements": 14,
+    "target_rows": 0,
+    "target_status": "NO_RETURNED_MEASUREMENTS",
+    "sources": [
+      {
+        "gaia_id": "667380506973089536",
+        "asas_sn_id": "223338703528",
+        "raw_rows": 0,
+        "cameras": []
+      },
+      {
+        "gaia_id": "667382255023480576",
+        "asas_sn_id": "223338704510",
+        "raw_rows": 1314,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 183,
+            "good": 170,
+            "quality_counts": {
+              "G": 170,
+              "B": 13
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.726095742630315,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 35,
+                "median": 13.703195508868117,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 19,
+                "median": 13.70739889568888,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 21,
+                "median": 13.70535949861309,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 34,
+                "median": 13.70276416527446,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 35,
+                "median": 13.684503955534371,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.70094344042835,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.703516012115806,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 121,
+            "good": 105,
+            "quality_counts": {
+              "G": 105,
+              "B": 16
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460454.4627294,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.704228295360455,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 13.678473608329407,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 13.685041112452655,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 13.682076362569157,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 13.682369211881118,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 17,
+                "median": 13.681868163430961,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 23,
+                "median": 13.683985793309628,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 314,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 32
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 13.298405299454485,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 13.321812002573548,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 13.316100135310593,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 13.318912058231172,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 13.31936950439122,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 13.31538146119896,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 13.325818214589557,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 35,
+            "good": 30,
+            "quality_counts": {
+              "G": 30,
+              "B": 5
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 13.318264856377866,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 18,
+                "median": 13.327162723638002,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 13.319873405048641,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 253,
+            "good": 233,
+            "quality_counts": {
+              "G": 233,
+              "B": 20
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 13.68569070983888,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 13.68269603178781,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 13.6865474029746,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.68215497432225,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 17,
+                "median": 13.684689315939988,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 13.686904419908162,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.687817153441772,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 13.674458218695442,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 177,
+            "good": 155,
+            "quality_counts": {
+              "G": 155,
+              "B": 22
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 13.687032540832778,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 13.678375101656904,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 13.674943298981221,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 13.67160534778562,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 13.687886717852304,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 13.673372246001719,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 13.676144056303777,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 13.688319999268481,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 13.67087161830445,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 231,
+            "good": 188,
+            "quality_counts": {
+              "G": 188,
+              "B": 43
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 13.699871132662684,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 13.69996493742035,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 13.695784310819798,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 13.697404067874825,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.70100437251859,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 13.697854817920781,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 13.69188165470528,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 13.698184713788816,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.694918945129073,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667380575692566656",
+        "asas_sn_id": "223338700944",
+        "raw_rows": 1318,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 187,
+            "good": 176,
+            "quality_counts": {
+              "G": 176,
+              "B": 11
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.923342302070154,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 38,
+                "median": 13.920461025474303,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.907764205294875,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 23,
+                "median": 13.913199276176494,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 34,
+                "median": 13.912064279686023,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 35,
+                "median": 13.87972469056528,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.897647485762178,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.90615574409958,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 120,
+            "good": 104,
+            "quality_counts": {
+              "G": 104,
+              "B": 16
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460454.4627294,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.871988728139705,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 13.902827191880728,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 13.893210382731683,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 13.898109229001845,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 13.903759786938974,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 17,
+                "median": 13.901537135862265,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 22,
+                "median": 13.904862563332886,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 313,
+            "good": 281,
+            "quality_counts": {
+              "G": 281,
+              "B": 32
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 7,
+                "median": 13.449242129237106,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 13.454945292299213,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 13.459858187027898,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 13.458477200354546,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 13.45875106229303,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 13.457707854841775,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 13.459629981704786,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 34,
+            "good": 29,
+            "quality_counts": {
+              "G": 29,
+              "B": 5
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 13.503202396484092,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 17,
+                "median": 13.490221641399039,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 13.496437217059675,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 253,
+            "good": 233,
+            "quality_counts": {
+              "G": 233,
+              "B": 20
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 13.896399147654149,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 13.895549098167027,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 13.890430584593656,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.8884314450446,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 17,
+                "median": 13.889344140834496,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 13.88781229751478,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.891144416127412,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 13.886040328688686,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 180,
+            "good": 156,
+            "quality_counts": {
+              "G": 156,
+              "B": 24
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 13.891184032260375,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 13.893293419533537,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 34,
+                "median": 13.888960663220217,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 13.889840978429193,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 13.887815435969364,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 13.887245915154729,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 13.893932689364807,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 13.902673870414638,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 13.890344239869796,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 231,
+            "good": 189,
+            "quality_counts": {
+              "G": 189,
+              "B": 42
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 13.927879732203177,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 13.922790143364004,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 22,
+                "median": 13.920576855518458,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 13.928800389598603,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.933153208433026,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 13.908610187648465,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 13.91471508618211,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 13.924449243882679,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.925226478935603,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667380816210736128",
+        "asas_sn_id": "223338704511",
+        "raw_rows": 1309,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 182,
+            "good": 170,
+            "quality_counts": {
+              "G": 170,
+              "B": 12
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.800194648472875,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 35,
+                "median": 13.873043929229791,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 19,
+                "median": 13.872819821604752,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 21,
+                "median": 13.85609340679564,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 34,
+                "median": 13.862274066785305,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 35,
+                "median": 13.828275559382632,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.831024402443553,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.8663608507811,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 120,
+            "good": 104,
+            "quality_counts": {
+              "G": 104,
+              "B": 16
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460454.4627294,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.925358548951204,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 13.933531198797816,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 13.947231885423816,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 13.927711337662563,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 13.925222493344616,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 17,
+                "median": 13.92952016676988,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 22,
+                "median": 13.918189117445834,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 314,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 32
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 13.402926682596048,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 13.449696766042146,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 13.459181760601446,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 13.446923241178641,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 13.43290272587982,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 13.412540103896283,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 13.407900684894603,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 34,
+            "good": 29,
+            "quality_counts": {
+              "B": 5,
+              "G": 29
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 13.509670647792015,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 17,
+                "median": 13.520560628993803,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 13.52898473111882,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 253,
+            "good": 232,
+            "quality_counts": {
+              "G": 233,
+              "B": 20
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 13.941128214698363,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 13.926009454065527,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 13.917661592000348,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.900961401522677,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 17,
+                "median": 13.876652391350351,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 13.852374613330872,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.818876720020363,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.933520427211949,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 177,
+            "good": 155,
+            "quality_counts": {
+              "G": 155,
+              "B": 22
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 13.946529144411283,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 13.934164849857996,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 13.91347789631059,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 13.890837265836971,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 13.874793208731006,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 13.879473154361818,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 13.908336253446963,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 13.893040894784573,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 13.896496747861642,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 229,
+            "good": 187,
+            "quality_counts": {
+              "G": 187,
+              "B": 42
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 13.986203571800344,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 13.9816678734758,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 20,
+                "median": 13.969628963638108,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 13.962261676766666,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.977976829027105,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 13.920146834402773,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 13.943525402894583,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 13.977159350961728,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.960546959746548,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667023509291889792",
+        "asas_sn_id": "257698211498",
+        "raw_rows": 1305,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 173,
+            "good": 163,
+            "quality_counts": {
+              "G": 163,
+              "B": 10
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.682696551574022,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 36,
+                "median": 13.677618618972952,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 17,
+                "median": 13.661252295228456,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 20,
+                "median": 13.664657259302441,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 33,
+                "median": 13.66395266445302,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 32,
+                "median": 13.67468653103769,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 23,
+                "median": 13.67112363804284,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.70066529764796,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 124,
+            "good": 107,
+            "quality_counts": {
+              "G": 107,
+              "B": 17
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.715139423729884,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 13.66638227648577,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 13.679572459104193,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 13.668006088548266,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 13.67086411624014,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 18,
+                "median": 13.666121476236682,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.667200942862587,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 312,
+            "good": 281,
+            "quality_counts": {
+              "G": 281,
+              "B": 31
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 13.38660554802744,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 25,
+                "median": 13.384323787644956,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 13.389907623739816,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 13.388720243031038,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 13.387682485569247,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 13.386119542115186,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 13.39827005397959,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 34,
+            "good": 29,
+            "quality_counts": {
+              "B": 5,
+              "G": 29
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 13.380592842006894,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 17,
+                "median": 13.379757303994253,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 13.344202934439286,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 253,
+            "good": 233,
+            "quality_counts": {
+              "G": 233,
+              "B": 20
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 13.682148241794982,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 13.683715484420244,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 13.681009027380838,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.677057750063614,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.676984244216904,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 13.674482311586992,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 13.665208806126186,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 13.679906122777183,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 178,
+            "good": 155,
+            "quality_counts": {
+              "G": 155,
+              "B": 23
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 13.668594678086684,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 13.667316282311251,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 13.674312931798056,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 13.658209038486014,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 13.622369203514486,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 13.661471319975771,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 13.661850277102577,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 13.668825787048087,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 13.665593432141673,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 231,
+            "good": 189,
+            "quality_counts": {
+              "G": 189,
+              "B": 42
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 13.685159842631059,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 13.687980279454953,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 13.686866469265357,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 13.680931931339728,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.688908475779698,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 13.694227669026692,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.671641120601448,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 13.67700582756094,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.668140212215398,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667391399010134400",
+        "asas_sn_id": "214748736639",
+        "raw_rows": 1315,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 180,
+            "good": 170,
+            "quality_counts": {
+              "G": 170,
+              "B": 10
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 12.05742149619438,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 37,
+                "median": 12.030990342914688,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 18,
+                "median": 12.038820847490442,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 21,
+                "median": 12.033809557765576,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 34,
+                "median": 12.03265667357294,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 35,
+                "median": 12.009777774549628,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 23,
+                "median": 12.027884892787139,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 12.021463663629731,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 121,
+            "good": 105,
+            "quality_counts": {
+              "G": 105,
+              "B": 16
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 11.9908922967285,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 11.999427925315105,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 11.99511276627428,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 12.003268380223467,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 11.995165222385396,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 18,
+                "median": 11.995084022034554,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 22,
+                "median": 11.999088570192502,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 316,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 34
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 11.524574230579436,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 11.532603226709163,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 11.529341282999962,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 11.526293611908882,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 11.528648210584194,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 11.529942784215354,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 11.529903347642412,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 35,
+            "good": 30,
+            "quality_counts": {
+              "B": 5,
+              "G": 30
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 11.536525615065585,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 18,
+                "median": 11.534797267395735,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 11.541648939377167,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 254,
+            "good": 232,
+            "quality_counts": {
+              "G": 232,
+              "B": 22
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 11.987946666201402,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 11.983325754234802,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 11.982733305286054,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 11.986399722137413,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 17,
+                "median": 11.985481251855346,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 11.992297072073242,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 11.995666868892947,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 11.997604449495292,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 177,
+            "good": 154,
+            "quality_counts": {
+              "G": 154,
+              "B": 23
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 11.996438984587341,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 11.9895178936355,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 11.99515594897493,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 11.986081431150648,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 6,
+                "median": 11.982337581931045,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 11.992393206008106,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 11.990122452575568,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 11.99563549436438,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 11.993882267197582,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 232,
+            "good": 190,
+            "quality_counts": {
+              "G": 190,
+              "B": 42
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 12.018632371417795,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 12.01846817161879,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 23,
+                "median": 12.01381198578475,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 12.031176965032644,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 12.021998055262454,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 12.00330964041801,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 12.007938123652202,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 12.013186809995382,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 12.012374046144211,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667403768515830272",
+        "asas_sn_id": "214748736755",
+        "raw_rows": 1313,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 178,
+            "good": 167,
+            "quality_counts": {
+              "G": 167,
+              "B": 11
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 12.528484611016653,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 40,
+                "median": 12.512124304903253,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 16,
+                "median": 12.512754432063304,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 22,
+                "median": 12.508830262440664,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 12.513574120377038,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 34,
+                "median": 12.474648115334084,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 12.512380226177712,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 12.522448006193855,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 121,
+            "good": 105,
+            "quality_counts": {
+              "G": 105,
+              "B": 16
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 12.455215180271269,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 12.462351445080175,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 12.465882002294968,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 12.459083165840655,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 12.460132014553789,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 18,
+                "median": 12.46580114698179,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 22,
+                "median": 12.460363887767484,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 315,
+            "good": 281,
+            "quality_counts": {
+              "G": 281,
+              "B": 34
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 7,
+                "median": 12.059355846685087,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 12.045347403199099,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 12.05173855102789,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 12.05324112299775,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 12.056176739939989,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 12.058683861421686,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 12.055218565944969,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 34,
+            "good": 29,
+            "quality_counts": {
+              "G": 29,
+              "B": 5
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 12.048734917204818,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 17,
+                "median": 12.038458891835688,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 12.036649216049437,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 256,
+            "good": 233,
+            "quality_counts": {
+              "G": 233,
+              "B": 23
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 12.448385119921761,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 12.444662958760988,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 12.436807815681277,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 12.442458247357253,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 12.445515357896593,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 12.453476100597534,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 12.44956130067649,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 12.452674574346684,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 179,
+            "good": 155,
+            "quality_counts": {
+              "G": 155,
+              "B": 24
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 12.460178132425046,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 12.462338132255827,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 34,
+                "median": 12.45865064577586,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 12.459689155655045,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 6,
+                "median": 12.465469117942318,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 12.46209681135996,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 12.458905940680783,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 12.46284350469994,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 12.453534052696387,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 230,
+            "good": 188,
+            "quality_counts": {
+              "G": 188,
+              "B": 42
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 12.484695450884526,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 12.480518667974234,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 12.481971965916212,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 12.495510461656796,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 12.48742044215876,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 12.480797133390855,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 12.483040588760701,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 12.479891460300596,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 12.475424633548677,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667401913089980544",
+        "asas_sn_id": "214748736751",
+        "raw_rows": 0,
+        "cameras": []
+      },
+      {
+        "gaia_id": "667402462845806080",
+        "asas_sn_id": "214748733539",
+        "raw_rows": 1321,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 183,
+            "good": 170,
+            "quality_counts": {
+              "G": 170,
+              "B": 13
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 12.780444950458625,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 37,
+                "median": 12.793607588525408,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 18,
+                "median": 12.789659199581536,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 21,
+                "median": 12.788625379754187,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 34,
+                "median": 12.787957082833849,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 34,
+                "median": 12.780302363400743,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 12.76467347322794,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 12.781494796418134,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 123,
+            "good": 107,
+            "quality_counts": {
+              "G": 107,
+              "B": 16
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 12.748277542479201,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 12.751202544762048,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 12.74882422227696,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 12.747596721281395,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 12.74950701627625,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 18,
+                "median": 12.745973831314505,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 12.746398739084105,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 316,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 34
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 12.290232320139351,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 12.312398880868956,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 12.305982115747081,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 12.305893161117204,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 12.308836194263408,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 12.305508607849617,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 12.310797720709736,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 35,
+            "good": 30,
+            "quality_counts": {
+              "G": 30,
+              "B": 5
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 12.29561298475623,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 18,
+                "median": 12.299411978285043,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 12.283628689329845,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 255,
+            "good": 233,
+            "quality_counts": {
+              "G": 233,
+              "B": 22
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 12.73844619533219,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 12.73746674211716,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 12.72751056301277,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 12.734734108968334,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 17,
+                "median": 12.728718040911588,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 12.732126251785491,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 12.731722738617586,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 12.74245607366376,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 177,
+            "good": 154,
+            "quality_counts": {
+              "G": 154,
+              "B": 23
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 12.736347905852114,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 12.72913948546055,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 12.733659591523082,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 12.737129215950574,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 6,
+                "median": 12.75305439043663,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 12.730517597167108,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 12.743252264872787,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 12.734185914354297,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 12.74423552851073,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 232,
+            "good": 189,
+            "quality_counts": {
+              "G": 189,
+              "B": 43
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 12.778387257720878,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 29,
+                "median": 12.777918128356518,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 22,
+                "median": 12.779364192462543,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 12.78511008764805,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 12.788675540695323,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 12.787595105756527,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 12.776449523528111,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 12.775327655273802,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 12.78089779016749,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667024467067954560",
+        "asas_sn_id": "257698216500",
+        "raw_rows": 1311,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 174,
+            "good": 164,
+            "quality_counts": {
+              "G": 164,
+              "B": 10
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 12.411534692738822,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 40,
+                "median": 12.433454585994898,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 16,
+                "median": 12.425377982046108,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 22,
+                "median": 12.424650272933807,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 12.429498638248175,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 32,
+                "median": 12.434279678129712,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 23,
+                "median": 12.425016193865604,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 12.441149541147551,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 124,
+            "good": 107,
+            "quality_counts": {
+              "G": 107,
+              "B": 17
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 12.39682908924709,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 12.398758832620796,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 12.409931090859544,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 12.4029101814697,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 12.405708380347814,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 18,
+                "median": 12.406600374986603,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 12.407937099003869,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 314,
+            "good": 281,
+            "quality_counts": {
+              "G": 281,
+              "B": 33
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 11.996320237324317,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 25,
+                "median": 12.007108265714901,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 12.008758759564795,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 12.00796177380882,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 12.009477138696909,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 12.009121054987475,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 12.011858676555526,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 34,
+            "good": 29,
+            "quality_counts": {
+              "G": 29,
+              "B": 5
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 12.012322702661717,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 17,
+                "median": 12.016448429502393,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 11.987715610861851,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 255,
+            "good": 233,
+            "quality_counts": {
+              "G": 233,
+              "B": 22
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 12.41218753441726,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 12.409370627697276,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 12.407854527855342,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 12.406027146702147,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 12.3975562489465,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 12.408571001843594,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 12.399083113672397,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 12.408891866884266,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 179,
+            "good": 155,
+            "quality_counts": {
+              "G": 155,
+              "B": 24
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 12.411945860753708,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 12.404197089496314,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 34,
+                "median": 12.404330395690998,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 12.412248564100022,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 6,
+                "median": 12.410938089954856,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 12.405598131795024,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 12.408162102701752,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 12.395597384064166,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 12.403449899973111,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 231,
+            "good": 189,
+            "quality_counts": {
+              "G": 189,
+              "B": 42
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 12.434490706848734,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 12.431650028206239,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 12.427586456140036,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 12.425454239149586,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 12.441194906576895,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 12.440601849380224,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 12.433785098625808,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 12.425898825434018,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 12.414316027889038,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667397618122678528",
+        "asas_sn_id": "214748733805",
+        "raw_rows": 1314,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 175,
+            "good": 166,
+            "quality_counts": {
+              "G": 166,
+              "B": 9
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 11.497805995533422,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 36,
+                "median": 11.51965360899515,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 16,
+                "median": 11.518344351098255,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 20,
+                "median": 11.557332332224885,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 33,
+                "median": 11.547002369802385,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 35,
+                "median": 11.550267010941354,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 11.54176111216875,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 11.624118487643484,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 124,
+            "good": 108,
+            "quality_counts": {
+              "G": 108,
+              "B": 16
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 11.468480114733378,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 11.462107963129453,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 11.473461689060906,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 11.459731690234975,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 11.459607312320655,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 19,
+                "median": 11.46377075398847,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 11.46658913535489,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 315,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 33
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 10.889287534761028,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 10.97456885500806,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 11.020725852850163,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 11.039614251268091,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 11.060443310200219,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 11.086520271567897,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 11.09596712363129,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 35,
+            "good": 30,
+            "quality_counts": {
+              "B": 5,
+              "G": 30
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 11.02744472229045,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 18,
+                "median": 11.020843610486537,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 11.032142946943662,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 256,
+            "good": 234,
+            "quality_counts": {
+              "G": 234,
+              "B": 22
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 11.418007907165958,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 11.506003120548467,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 11.682922952414454,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 11.840581533679716,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 11.967332907840692,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 11.640417814114157,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 11.728174611551726,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 11.60777956687002,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 179,
+            "good": 155,
+            "quality_counts": {
+              "G": 155,
+              "B": 24
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 11.461993763717778,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 11.450554603650243,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 11.45401216231053,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 11.454102030135761,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 11.461523834773669,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 11.46003884067113,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 11.458680638946097,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 11.449256121165266,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 11.451816444082546,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 230,
+            "good": 187,
+            "quality_counts": {
+              "G": 187,
+              "B": 43
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 11.465746773718344,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 29,
+                "median": 11.517248367558192,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 11.587425017174537,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 11.578665588159547,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 11.618504787986689,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 11.564967939079569,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 11.571767794088437,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 11.480137067883557,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 11.498067113742529,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667454586568716288",
+        "asas_sn_id": "171799350478",
+        "raw_rows": 1317,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 181,
+            "good": 149,
+            "quality_counts": {
+              "G": 170,
+              "B": 11
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.392286675790189,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 37,
+                "median": 13.386948868595338,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 18,
+                "median": 13.377658172324544,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 20,
+                "median": 13.377570261533869,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 22,
+                "median": 13.387894135404315,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 27,
+                "median": 13.388184917937922,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 23,
+                "median": 13.37104278721701,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.365316498894945,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 123,
+            "good": 106,
+            "quality_counts": {
+              "G": 106,
+              "B": 17
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.333413914564243,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 13.348684012024389,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 13.34398312437325,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 13.340238411725252,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 13.344131739349312,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 17,
+                "median": 13.340775707712158,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.342763751485123,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 315,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 33
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 12.895024975975334,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 12.901978687472562,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 12.905988665785273,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 12.906531195214669,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 12.902609296783716,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 12.907333652331605,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 12.909022060565613,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 33,
+            "good": 29,
+            "quality_counts": {
+              "G": 29,
+              "B": 4
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 12.912212858494541,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 17,
+                "median": 12.899515487502773,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 12.90822387292825,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 254,
+            "good": 232,
+            "quality_counts": {
+              "G": 232,
+              "B": 22
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 13.351561625849948,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 13.342810761683879,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 13.342814345412805,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.343823388616352,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 17,
+                "median": 13.325532289226647,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 13.333450740044533,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 13.339806947156525,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 13.345359595046236,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 178,
+            "good": 155,
+            "quality_counts": {
+              "G": 155,
+              "B": 23
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 13.346238408549059,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 13.340875806201211,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 13.345372645672917,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 13.34639699570986,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 13.365041240777396,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 13.34312268115273,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 13.353207728435688,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 13.342843954761488,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 13.347154407720936,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 233,
+            "good": 190,
+            "quality_counts": {
+              "G": 190,
+              "B": 43
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 13.379694506452937,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 13.376144051918013,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 22,
+                "median": 13.378323266979848,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 13.38983458021421,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.37817224047626,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 13.385393418471917,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.377122255712322,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 13.367567347618738,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.377064313614188,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667411636895893504",
+        "asas_sn_id": "266288682593",
+        "raw_rows": 1317,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 179,
+            "good": 152,
+            "quality_counts": {
+              "G": 169,
+              "B": 10
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.879145890492827,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 40,
+                "median": 13.897141854531307,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 16,
+                "median": 13.893875633690396,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 21,
+                "median": 13.891455084072476,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 15,
+                "median": 13.887773178584107,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 34,
+                "median": 15.312066461763411,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.869019949936227,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.931416809406429,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 123,
+            "good": 106,
+            "quality_counts": {
+              "G": 106,
+              "B": 17
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.807988287637428,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 13.82432482523285,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 13.838522076966317,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 13.82805231325056,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 13.833203680695066,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 17,
+                "median": 13.825236645736352,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.829425435233812,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 314,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 32
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 13.305462309764664,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 13.314046771495514,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 13.311768679951353,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 13.310319934950329,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 13.312534767847048,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 13.317795810274028,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 13.316539695793413,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 34,
+            "good": 30,
+            "quality_counts": {
+              "G": 30,
+              "B": 4
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 13.292878282285347,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 18,
+                "median": 13.291120059619637,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 13.295427001707438,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 256,
+            "good": 233,
+            "quality_counts": {
+              "G": 233,
+              "B": 23
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 13.841524225489032,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 13.83082671348104,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 13.827378723114343,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.830708602858893,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.821700412546365,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 13.842357950273882,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.841880886838663,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.849462307810754,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 180,
+            "good": 156,
+            "quality_counts": {
+              "G": 156,
+              "B": 24
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 13.822377682280997,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 13.824791724606344,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 34,
+                "median": 13.830916398474715,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 13.821131597415143,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 13.82173996782764,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 13.821739068787956,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 13.83027692504059,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 13.832669962156492,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 13.824329683811118,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 231,
+            "good": 188,
+            "quality_counts": {
+              "G": 188,
+              "B": 43
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 13.876692873600271,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 29,
+                "median": 13.873379016710746,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 13.875037999057945,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 13.891154945777373,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.8870183521299,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 13.873327885999364,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.87035714876748,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 13.866630594446633,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.865341042260859,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667456064037465216",
+        "asas_sn_id": "266288678721",
+        "raw_rows": 1306,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 171,
+            "good": 145,
+            "quality_counts": {
+              "G": 162,
+              "B": 9
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 11.821215617423942,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 35,
+                "median": 11.81598235607408,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 17,
+                "median": 11.80408829935222,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 11.806317681443625,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 26,
+                "median": 11.835413963734576,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 23,
+                "median": 11.817626867700312,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 23,
+                "median": 11.805177731162546,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 11.801060453444606,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 123,
+            "good": 106,
+            "quality_counts": {
+              "G": 106,
+              "B": 17
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 11.795773131695507,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 11.778064958709747,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 11.782195720598342,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 11.776247525728316,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 11.778856796664668,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 17,
+                "median": 11.772025610104704,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 11.77310954769569,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 314,
+            "good": 281,
+            "quality_counts": {
+              "G": 281,
+              "B": 33
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 11.361338546501702,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 25,
+                "median": 11.381898302699998,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 11.376182010127398,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 11.37707719299682,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 11.37724555649937,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 11.381498358195808,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 11.379963812400353,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 33,
+            "good": 29,
+            "quality_counts": {
+              "G": 29,
+              "B": 4
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 11.369875010795262,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 17,
+                "median": 11.366209488553352,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 11.397837440082474,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 255,
+            "good": 232,
+            "quality_counts": {
+              "G": 232,
+              "B": 23
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 11.788591165442572,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 11.783601125694439,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 11.783038975622258,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 11.78404641835456,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 11.772074066013532,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 11.773978372746841,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 11.76685277870366,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 11.784756418052881,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 179,
+            "good": 155,
+            "quality_counts": {
+              "G": 155,
+              "B": 24
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 11.781530921578668,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 11.77997408839692,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 11.78273896302894,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 11.785046154998241,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 11.789404573664775,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 11.78977559356527,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 11.794571925748668,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 11.795580366859902,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 11.79368935095905,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 231,
+            "good": 189,
+            "quality_counts": {
+              "G": 189,
+              "B": 42
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 11.807736881813316,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 30,
+                "median": 11.807097402363295,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 11.8142091369325,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 11.8166759548367,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 11.815667839158381,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 11.810554312412247,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 11.802602424526823,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 11.798692654987267,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 11.797812601765354,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667409918908989568",
+        "asas_sn_id": "335008479134",
+        "raw_rows": 1315,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 181,
+            "good": 170,
+            "quality_counts": {
+              "G": 170,
+              "B": 11
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.6052250749246,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 37,
+                "median": 13.623008081474097,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 19,
+                "median": 13.624885625387012,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 21,
+                "median": 13.619800620527421,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 34,
+                "median": 13.662263665737441,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 34,
+                "median": 13.62540413372201,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.614836042783462,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 123,
+            "good": 106,
+            "quality_counts": {
+              "G": 106,
+              "B": 17
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.585486802461821,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 13.60198988903177,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 13.607113430476794,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 13.592110237052017,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 13.599760744424202,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 17,
+                "median": 13.594232843222505,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.588752130250494,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 316,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 34
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 13.202045108269068,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 13.201170134109224,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 13.201630443463209,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 13.20291761284806,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 13.203635343609504,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 13.209135769197054,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 13.201932848261233,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 34,
+            "good": 30,
+            "quality_counts": {
+              "G": 30,
+              "B": 4
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 13.191593806817107,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 18,
+                "median": 13.1988229559534,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 13.200943083604194,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 255,
+            "good": 233,
+            "quality_counts": {
+              "G": 233,
+              "B": 22
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 13.601079256518839,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 13.598507854411716,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 13.597675966595798,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.589789656639283,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 17,
+                "median": 13.585254768607836,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 13.59587726162972,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.59314536819304,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 13.600482176961897,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 176,
+            "good": 153,
+            "quality_counts": {
+              "G": 153,
+              "B": 23
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 13.595069735023145,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 13.599795169510323,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 33,
+                "median": 13.60564158434305,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 13.58771712955439,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 6,
+                "median": 13.610266441772206,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 13.60248925044182,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 13.604131592809974,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 13.6135239935087,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 13.61212210959094,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 230,
+            "good": 186,
+            "quality_counts": {
+              "G": 186,
+              "B": 44
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 13.625765631655895,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 29,
+                "median": 13.62397279300794,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 13.623755154684375,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 13.633274710613211,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.623136140133457,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 28,
+                "median": 13.609725815076974,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 13.615649272434215,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 13.617234305255405,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.623282386562696,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667459156414046976",
+        "asas_sn_id": "377957714681",
+        "raw_rows": 1316,
+        "cameras": [
+          {
+            "camera": "bA",
+            "phot_filter": "g",
+            "raw": 178,
+            "good": 146,
+            "quality_counts": {
+              "G": 168,
+              "B": 10
+            },
+            "first_jd": 2458454.0877556,
+            "last_jd": 2460692.8636316,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.925319353744403,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 39,
+                "median": 13.93780404155521,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 16,
+                "median": 13.93270783100983,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 21,
+                "median": 13.932316274070944,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 14,
+                "median": 13.932054174005014,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 30,
+                "median": 13.925378706453635,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.924306914257315,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.957717278407912,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bE",
+            "phot_filter": "g",
+            "raw": 123,
+            "good": 106,
+            "quality_counts": {
+              "G": 106,
+              "B": 17
+            },
+            "first_jd": 2458413.8628799,
+            "last_jd": 2460456.4552025,
+            "annual": [
+              {
+                "year": 2018,
+                "n": 1,
+                "median": 13.90877540245742,
+                "adequate_count": false
+              },
+              {
+                "year": 2019,
+                "n": 17,
+                "median": 13.913055069282027,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 5,
+                "median": 13.911197443877272,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 19,
+                "median": 13.902226474406223,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 23,
+                "median": 13.908889897937417,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 17,
+                "median": 13.905509913345693,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 24,
+                "median": 13.901122207701029,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "ba",
+            "phot_filter": "V",
+            "raw": 314,
+            "good": 282,
+            "quality_counts": {
+              "G": 282,
+              "B": 32
+            },
+            "first_jd": 2455973.8789776,
+            "last_jd": 2458452.1101156,
+            "annual": [
+              {
+                "year": 2012,
+                "n": 8,
+                "median": 13.562747721650094,
+                "adequate_count": false
+              },
+              {
+                "year": 2013,
+                "n": 26,
+                "median": 13.553237785123212,
+                "adequate_count": true
+              },
+              {
+                "year": 2014,
+                "n": 33,
+                "median": 13.557154094824549,
+                "adequate_count": true
+              },
+              {
+                "year": 2015,
+                "n": 73,
+                "median": 13.555123733474792,
+                "adequate_count": true
+              },
+              {
+                "year": 2016,
+                "n": 67,
+                "median": 13.554580027827608,
+                "adequate_count": true
+              },
+              {
+                "year": 2017,
+                "n": 47,
+                "median": 13.556807238088659,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 28,
+                "median": 13.549202975528772,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "be",
+            "phot_filter": "V",
+            "raw": 34,
+            "good": 30,
+            "quality_counts": {
+              "G": 30,
+              "B": 4
+            },
+            "first_jd": 2457667.8860643,
+            "last_jd": 2458243.4746811,
+            "annual": [
+              {
+                "year": 2016,
+                "n": 9,
+                "median": 13.542125088043274,
+                "adequate_count": false
+              },
+              {
+                "year": 2017,
+                "n": 18,
+                "median": 13.54058328971051,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 3,
+                "median": 13.515077632726458,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bi",
+            "phot_filter": "g",
+            "raw": 257,
+            "good": 234,
+            "quality_counts": {
+              "G": 234,
+              "B": 23
+            },
+            "first_jd": 2458088.7968388,
+            "last_jd": 2460602.8370686,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 14,
+                "median": 13.904559498703673,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 69,
+                "median": 13.90845534704394,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 32,
+                "median": 13.911164371239954,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 20,
+                "median": 13.906929910279736,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.907050773469507,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 35,
+                "median": 13.910552638800631,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 21,
+                "median": 13.919010220507175,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 25,
+                "median": 13.924241244880612,
+                "adequate_count": true
+              }
+            ]
+          },
+          {
+            "camera": "bm",
+            "phot_filter": "g",
+            "raw": 180,
+            "good": 156,
+            "quality_counts": {
+              "G": 156,
+              "B": 24
+            },
+            "first_jd": 2458089.4986231,
+            "last_jd": 2460705.4226004,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 2,
+                "median": 13.909857621316485,
+                "adequate_count": false
+              },
+              {
+                "year": 2018,
+                "n": 35,
+                "median": 13.911711262734233,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 34,
+                "median": 13.914563585736003,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 8,
+                "median": 13.915406561436404,
+                "adequate_count": false
+              },
+              {
+                "year": 2021,
+                "n": 7,
+                "median": 13.932190644420617,
+                "adequate_count": false
+              },
+              {
+                "year": 2022,
+                "n": 30,
+                "median": 13.911823028913016,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 28,
+                "median": 13.91525679424256,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 5,
+                "median": 13.902289358691647,
+                "adequate_count": false
+              },
+              {
+                "year": 2025,
+                "n": 7,
+                "median": 13.926092862225122,
+                "adequate_count": false
+              }
+            ]
+          },
+          {
+            "camera": "bq",
+            "phot_filter": "g",
+            "raw": 230,
+            "good": 187,
+            "quality_counts": {
+              "G": 187,
+              "B": 43
+            },
+            "first_jd": 2458033.9508781,
+            "last_jd": 2460693.8048256,
+            "annual": [
+              {
+                "year": 2017,
+                "n": 27,
+                "median": 13.928318931842792,
+                "adequate_count": true
+              },
+              {
+                "year": 2018,
+                "n": 29,
+                "median": 13.928204391875854,
+                "adequate_count": true
+              },
+              {
+                "year": 2019,
+                "n": 21,
+                "median": 13.931173925582502,
+                "adequate_count": true
+              },
+              {
+                "year": 2020,
+                "n": 32,
+                "median": 13.936579658582922,
+                "adequate_count": true
+              },
+              {
+                "year": 2021,
+                "n": 18,
+                "median": 13.915051054040056,
+                "adequate_count": true
+              },
+              {
+                "year": 2022,
+                "n": 29,
+                "median": 13.90835564530445,
+                "adequate_count": true
+              },
+              {
+                "year": 2023,
+                "n": 20,
+                "median": 13.923231184486216,
+                "adequate_count": true
+              },
+              {
+                "year": 2024,
+                "n": 10,
+                "median": 13.923375291281317,
+                "adequate_count": true
+              },
+              {
+                "year": 2025,
+                "n": 1,
+                "median": 13.941989490866831,
+                "adequate_count": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gaia_id": "667434486121884288",
+        "asas_sn_id": "266288678814",
+        "raw_rows": 0,
+        "cameras": []
+      }
+    ]
+  },
+  "independent_query_attempts": [
+    {
+      "file": "asassn_target_lightcurve.parquet",
+      "rows": 0,
+      "target_rows": 0
+    },
+    {
+      "file": "asassn_master_cone_lightcurves.parquet",
+      "rows": 0,
+      "target_rows": 0
+    }
+  ],
+  "older_variable_catalogue": {
+    "url": "https://asas-sn.osu.edu/variables/05a882b3-3477-5b94-b81b-17a186f6b4c1",
+    "published_rows": 222,
+    "csv_export_rows": 0,
+    "export_note": "Native CSV export is header-only in this snapshot; JSON supplies the 222 rows, also embedded on the HTML page.",
+    "screening": "Finite samples; 0<mag_err<99, positive flux and flux_err. No quality flags supplied.",
+    "cameras": [
+      {
+        "camera": "ba",
+        "phot_filter": "V",
+        "raw": 222,
+        "good": 222,
+        "annual": [
+          {
+            "year": 2013,
+            "n": 4,
+            "median": 12.1955,
+            "adequate_count": false
+          },
+          {
+            "year": 2014,
+            "n": 24,
+            "median": 12.2095,
+            "adequate_count": true
+          },
+          {
+            "year": 2015,
+            "n": 70,
+            "median": 12.2395,
+            "adequate_count": true
+          },
+          {
+            "year": 2016,
+            "n": 61,
+            "median": 12.257,
+            "adequate_count": true
+          },
+          {
+            "year": 2017,
+            "n": 40,
+            "median": 12.2085,
+            "adequate_count": true
+          },
+          {
+            "year": 2018,
+            "n": 23,
+            "median": 12.145,
+            "adequate_count": true
+          }
+        ],
+        "first_date": "2013-01-18 10:46:01.632",
+        "last_date": "2018-11-24 14:25:16.032",
+        "median": 12.2275,
+        "robust_scatter": 0.04373670000000078
+      }
+    ],
+    "catalogue_claims": {
+      "Mean VMag": "12.22",
+      "Amplitude": "0.17",
+      "Period": "912.3158778",
+      "Type": "ROT:",
+      "Classification Probability": "0.874",
+      "Reference": "The ASAS-SN Catalog of Variable Stars: II"
+    },
+    "interpretation": "ROT: and 912-day period are catalogue claims, not a mechanism or a period verified here."
+  },
+  "interpretation": "Zero returned rows are not a flat light curve. Older V data cannot test the 2022 minimum or 2025 recovery.",
+  "next_step": "Completed V1 photometry is available. See asassn_replication.json for the independent modern test; this summary only audits direct V2 and older published data."
+}

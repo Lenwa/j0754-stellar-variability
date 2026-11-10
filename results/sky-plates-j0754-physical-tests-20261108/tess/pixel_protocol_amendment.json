@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-09T02:40:45.824840+00:00",
+  "chronology": "Before requesting or inspecting any target pixel arrays. Trigger is the already-observed QLP Sector46positiveexcursion nearBTJD2572.03.",
+  "request": "Official MAST TESSCut7x7pixels at118.69117410685,16.694621231895,sector46; streamed download cap50MB. No complete FFI downloads.",
+  "event_window_btjd": [
+    2572.0260444438954,
+    2572.1371604654987
+  ],
+  "comparison": "Use QUALITY==0 finite frames; inspect event mean/median minus two adjacent0.3day sidebands separated from event by0.15day, and compare local linear interpolation of sideband means to control broad trends. Preserve before/after images and event pixel lightcurves.",
+  "tests": "Difference-source localization relative to GaiaWCS, centroid displacement, spatial concentration and background/common-mode changes. Statistical and instrumental uncertainty remain; positivephotons alone do not identify a stellar flare or movingcontaminant.",
+  "limitations": "Tiny7x7patch may not contain adequate uncontaminatedbackground or moving-source track. If boundedretrieval/quality fails, candidate remainsunvetted."
+}

@@ -1,0 +1,183 @@
+{
+  "primary": {
+    "delta_2008minus2009_A": 0.48046555555830583,
+    "sigma_formal_A": 0.08453190094045518,
+    "formal_ratio_not_discovery_sigma": 5.683837110166834,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3298977573057602,
+        "sigma_formal": 0.12607016399104104,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3174615068442224,
+        "sigma_formal": 0.05593334317501194,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8432140765166855,
+        "sigma_formal": 0.0488885057527996,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.017808917850010073
+      },
+      "2009-11-19": {
+        "ew": 0.4183627932739016,
+        "sigma_formal": 0.08515724397507636,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 1.0253986391570211,
+        "sigma_formal": 0.12623661271267064,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3396442748653142,
+        "sigma_formal": 0.05500396568942877,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.180060834861707,
+        "sigma_formal": 0.05810933597133951,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.208248910693942,
+        "sigma_formal": 0.05865884327589847,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  "continuum_only_beta_to_raise_2009_to_2008": 0.016754784065521718,
+  "broadband_alpha_to_dilute_2008_to_2009": 0.5698025791304475,
+  "source_files": [
+    {
+      "file": "0123.N2211330177.ms.fits",
+      "sha256": "7c2e16566f07b8a073f01c3fc67891dfa3ade9c2f051c1df1cc742cebb3a29db",
+      "date": "2008-10-22T11:56:29.011",
+      "night": "2008-10-22",
+      "grating": "300",
+      "slit_arcsec": 3.0,
+      "exptime": 100.0,
+      "airmass": "1.08"
+    },
+    {
+      "file": "0135.N2211330177.ms.fits",
+      "sha256": "c94b4f410c8e72b3451f8633dc4e136860b2d74c0f37fa482866a748692cdccd",
+      "date": "2008-10-24T12:29:22.042",
+      "night": "2008-10-24",
+      "grating": "300",
+      "slit_arcsec": 3.0,
+      "exptime": 300.0,
+      "airmass": "1.04"
+    },
+    {
+      "file": "0146.N2211330177.ms.fits",
+      "sha256": "0edf149cb9eee30ab1ec827deeee2269e7c44e0544e5a5e4670367d347cfdbfe",
+      "date": "2009-11-12T11:04:03.965",
+      "night": "2009-11-12",
+      "grating": "300",
+      "slit_arcsec": 3.0,
+      "exptime": 360.0,
+      "airmass": "1.05"
+    },
+    {
+      "file": "0147.N2211330177.ms.fits",
+      "sha256": "4a6752530d9ee50dbe4bf930aabda6cedee53a995c96cc1b1220d3067ad27505",
+      "date": "2009-11-12T11:10:16.003",
+      "night": "2009-11-12",
+      "grating": "300",
+      "slit_arcsec": 3.0,
+      "exptime": 360.0,
+      "airmass": "1.05"
+    },
+    {
+      "file": "0148.N2211330177.ms.fits",
+      "sha256": "5efb1a38a41f7a98319d43699dd15bfcce24809ec73368d2b882e7f9ce255f76",
+      "date": "2009-11-12T11:19:23.002",
+      "night": "2009-11-12",
+      "grating": "300",
+      "slit_arcsec": 3.0,
+      "exptime": 360.0,
+      "airmass": "1.04"
+    },
+    {
+      "file": "0187.N2211330177.ms.fits",
+      "sha256": "e3a3dd9ce284428343db6548c8e4c9f655bd1923992734b2890d3a8768bbef0b",
+      "date": "2009-11-19T12:08:54.989",
+      "night": "2009-11-19",
+      "grating": "600",
+      "slit_arcsec": 2.0,
+      "exptime": 120.0,
+      "airmass": "1.05"
+    },
+    {
+      "file": "0159.N2211330177.ms.fits",
+      "sha256": "c5fdf0b270b449e4e0c34bb219ba266eb7562be3d36b669bfb54097900dd8d6e",
+      "date": "2010-01-13T09:19:49.037",
+      "night": "2010-01-13",
+      "grating": "600",
+      "slit_arcsec": 2.0,
+      "exptime": 600.0,
+      "airmass": "1.12"
+    },
+    {
+      "file": "0089.N2211330177.ms.fits",
+      "sha256": "5303afb9659ba2301e611ec22e992d90c1df4e7b617d75aba38a69c35b825296",
+      "date": "2010-01-17T05:36:48.010",
+      "night": "2010-01-17",
+      "grating": "600",
+      "slit_arcsec": 2.0,
+      "exptime": 360.0,
+      "airmass": "1.15"
+    },
+    {
+      "file": "0036.N221133017.ms.fits",
+      "sha256": "9451cc3f126bc3d65672a84492a9cd92bda741a3d75942f6305ca6df9be3e5f1",
+      "date": "2012-03-26T02:51:31.968",
+      "night": "2012-03-26",
+      "grating": "300",
+      "slit_arcsec": 3.0,
+      "exptime": 720.0,
+      "airmass": "1.03"
+    },
+    {
+      "file": "0062.N221133017.ms.fits",
+      "sha256": "db54e51a76d858e9485a3c01bfb6e0c8436e338d24bb45b549db4092d47f4969",
+      "date": "2012-05-17T03:06:19.037",
+      "night": "2012-05-17",
+      "grating": "300",
+      "slit_arcsec": 3.0,
+      "exptime": 300.0,
+      "airmass": "1.55"
+    }
+  ],
+  "real_noise_MC": [
+    {
+      "file": "0123.N2211330177.ms.fits",
+      "draws": 800,
+      "predicted_sigma_A": 0.12607016399104104,
+      "empirical_sigma_A": 0.12597416675166453,
+      "mean_minus_measured_A": -0.000636859854047156
+    },
+    {
+      "file": "0146.N2211330177.ms.fits",
+      "draws": 800,
+      "predicted_sigma_A": 0.0794498547860735,
+      "empirical_sigma_A": 0.08095209661800444,
+      "mean_minus_measured_A": -0.005452724738014059
+    }
+  ],
+  "limitations": [
+    "Formal errors assume independent original sigma pixels; unknown native resampling covariance remains.",
+    "Per-exposure LSFs are assumptions and diagnostic sensitivity envelopes are not confidence intervals.",
+    "Exported background-band amplitude/normalization is not certified residual contamination.",
+    "No calibrated continuum temperatures, resolved LDRs or causal/activity determination."
+  ]
+}

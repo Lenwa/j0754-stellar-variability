@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "file": "literature\\fast\\0036.N221133017.ms.fits",
+      "sha256": "9451cc3f126bc3d65672a84492a9cd92bda741a3d75942f6305ca6df9be3e5f1",
+      "object": "N221133017",
+      "MJD": 56012.11912,
+      "UTC": "2012-03-26T02:51:31.968",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        3472.30419921875,
+        7414.824650764457
+      ],
+      "dispersion_angstrom_pixel": 1.47108972072601,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 13190.4140625
+    },
+    {
+      "file": "literature\\fast\\0062.N221133017.ms.fits",
+      "sha256": "db54e51a76d858e9485a3c01bfb6e0c8436e338d24bb45b549db4092d47f4969",
+      "object": "N221133017",
+      "MJD": 56064.129387,
+      "UTC": "2012-05-17T03:06:19.037",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        3473.68212890625,
+        7416.653367996218
+      ],
+      "dispersion_angstrom_pixel": 1.47125792503357,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 14044.6494140625
+    },
+    {
+      "file": "literature\\fast\\0089.N2211330177.ms.fits",
+      "sha256": "5303afb9659ba2301e611ec22e992d90c1df4e7b617d75aba38a69c35b825296",
+      "object": "N2211330177",
+      "MJD": 55213.233889,
+      "UTC": "2010-01-17T05:36:48.010",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        4749.923828125,
+        6740.594275474548
+      ],
+      "dispersion_angstrom_pixel": 0.742787480354309,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 7803.400390625
+    },
+    {
+      "file": "literature\\fast\\0123.N2211330177.ms.fits",
+      "sha256": "7c2e16566f07b8a073f01c3fc67891dfa3ade9c2f051c1df1cc742cebb3a29db",
+      "object": "N2211330177",
+      "MJD": 54761.497558,
+      "UTC": "2008-10-22T11:56:29.011",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        3476.89453125,
+        7418.28849315644
+      ],
+      "dispersion_angstrom_pixel": 1.47066938877106,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 2978.46484375
+    },
+    {
+      "file": "literature\\fast\\0135.N2211330177.ms.fits",
+      "sha256": "c94b4f410c8e72b3451f8633dc4e136860b2d74c0f37fa482866a748692cdccd",
+      "object": "N2211330177",
+      "MJD": 54763.520394,
+      "UTC": "2008-10-24T12:29:22.042",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        3477.34448242187,
+        7418.716719627381
+      ],
+      "dispersion_angstrom_pixel": 1.47066128253937,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 13354.6572265625
+    },
+    {
+      "file": "literature\\fast\\0146.N2211330177.ms.fits",
+      "sha256": "0edf149cb9eee30ab1ec827deeee2269e7c44e0544e5a5e4670367d347cfdbfe",
+      "object": "N2211330177",
+      "MJD": 55147.461157,
+      "UTC": "2009-11-12T11:04:03.965",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        3466.587890625,
+        7417.126993179326
+      ],
+      "dispersion_angstrom_pixel": 1.47408175468445,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 6896.052734375
+    },
+    {
+      "file": "literature\\fast\\0147.N2211330177.ms.fits",
+      "sha256": "4a6752530d9ee50dbe4bf930aabda6cedee53a995c96cc1b1220d3067ad27505",
+      "object": "N2211330177",
+      "MJD": 55147.465463,
+      "UTC": "2009-11-12T11:10:16.003",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        3466.587890625,
+        7417.126993179326
+      ],
+      "dispersion_angstrom_pixel": 1.47408175468445,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 5399.1904296875
+    },
+    {
+      "file": "literature\\fast\\0148.N2211330177.ms.fits",
+      "sha256": "5efb1a38a41f7a98319d43699dd15bfcce24809ec73368d2b882e7f9ce255f76",
+      "object": "N2211330177",
+      "MJD": 55147.471794,
+      "UTC": "2009-11-12T11:19:23.002",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        3466.587890625,
+        7417.126993179326
+      ],
+      "dispersion_angstrom_pixel": 1.47408175468445,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 6108.220703125
+    },
+    {
+      "file": "literature\\fast\\0159.N2211330177.ms.fits",
+      "sha256": "c5fdf0b270b449e4e0c34bb219ba266eb7562be3d36b669bfb54097900dd8d6e",
+      "object": "N2211330177",
+      "MJD": 55209.388762,
+      "UTC": "2010-01-13T09:19:49.037",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        4743.04736328125,
+        6733.851992607116
+      ],
+      "dispersion_angstrom_pixel": 0.74283754825592,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 1717.57666015625
+    },
+    {
+      "file": "literature\\fast\\0187.N2211330177.ms.fits",
+      "sha256": "e3a3dd9ce284428343db6548c8e4c9f655bd1923992734b2890d3a8768bbef0b",
+      "object": "N2211330177",
+      "MJD": 55154.506192,
+      "UTC": "2009-11-19T12:08:54.989",
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "wave_angstrom": [
+        4789.42041015625,
+        6781.023422241212
+      ],
+      "dispersion_angstrom_pixel": 0.743135452270508,
+      "physical_BUNIT": null,
+      "finite_fraction": 1.0,
+      "positive_sigma_fraction": 1.0,
+      "flux_median": 3461.943115234375
+    }
+  ],
+  "distinct_utc_dates": 8,
+  "qualification": "Native finite nonzero extracted spectra and linear wavelength arrays independently checked. No absolute flux calibration or RV precision inferred."
+}

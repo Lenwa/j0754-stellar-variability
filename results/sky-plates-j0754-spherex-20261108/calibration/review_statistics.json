@@ -1,0 +1,242 @@
+{
+  "rows": 220,
+  "primary": 182,
+  "failures": [
+    {
+      "file": "2025W42_2A_0454_1D4.fits",
+      "error": "Insufficient valid source/background pixels"
+    },
+    {
+      "file": "2025W43_1A_0087_3D5.fits",
+      "error": "Outside calibration image"
+    },
+    {
+      "file": "2025W43_2A_0017_2D3.fits",
+      "error": "Insufficient valid source/background pixels"
+    }
+  ],
+  "source_files": {
+    "spherex_photometry.py": "95139a620575a91ae5701ec27646035f0d21cc87c6d17d7f9659a6ee5286a09e",
+    "extract_spherex.py": "add84558e45e1300dd0a88f522f15d1dadd572c3b5af7ddc0046e236485b4d2f",
+    "test_spherex_photometry.py": "1bd71ba014b47f62077711e48913bc5bcb054e7738bd524d3d5f3588d408645b"
+  },
+  "primary_core_artifact_rows": 20,
+  "primary_covariance_snr_range": [
+    51.386727422430994,
+    370.7143662177331
+  ],
+  "primary_reduced_chi2_percentiles": [
+    0.8193922361358982,
+    1.3063802640070754,
+    6.985619405064986,
+    25.080905151808064,
+    43.075717202201815
+  ],
+  "by_detector": [
+    {
+      "detector": 1,
+      "n_primary": 37,
+      "median_reduced_chi2": 11.894267175415873,
+      "median_formal_fractional_error": 0.0034773555150738496
+    },
+    {
+      "detector": 2,
+      "n_primary": 21,
+      "median_reduced_chi2": 23.003021507921645,
+      "median_formal_fractional_error": 0.003145191439431283
+    },
+    {
+      "detector": 3,
+      "n_primary": 20,
+      "median_reduced_chi2": 12.219492433152714,
+      "median_formal_fractional_error": 0.0032851229669345417
+    },
+    {
+      "detector": 4,
+      "n_primary": 32,
+      "median_reduced_chi2": 8.786957355304953,
+      "median_formal_fractional_error": 0.0042295612278464316
+    },
+    {
+      "detector": 5,
+      "n_primary": 36,
+      "median_reduced_chi2": 1.9682039841995218,
+      "median_formal_fractional_error": 0.010677984959765154
+    },
+    {
+      "detector": 6,
+      "n_primary": 36,
+      "median_reduced_chi2": 1.7396086480385018,
+      "median_formal_fractional_error": 0.015644271704745017
+    }
+  ],
+  "diagnostic_ratios": {
+    "flux_constant_background_ujy": {
+      "min": 0.9982062693400702,
+      "p5": 0.9992078933715289,
+      "p16": 0.9995126794486823,
+      "median": 0.9999643873665484,
+      "p84": 1.0004055873296493,
+      "p95": 1.0010990347990816,
+      "max": 1.0030177619236742
+    },
+    "flux_zodi_subtracted_plus_plane_ujy": {
+      "min": 0.9999966053476416,
+      "p5": 0.9999988946771003,
+      "p16": 0.9999996748357219,
+      "median": 1.0000000503612045,
+      "p84": 1.0000005303594468,
+      "p95": 1.0000016167272916,
+      "max": 1.0000025246536748
+    },
+    "flux_native_mask_ujy": {
+      "min": 0.9986339960800484,
+      "p5": 1.0,
+      "p16": 1.0,
+      "median": 1.0,
+      "p84": 1.0,
+      "p95": 1.0,
+      "max": 1.0000734695736673
+    },
+    "aperture_2_ujy": {
+      "min": 0.9884300753208495,
+      "p5": 0.9984886751128808,
+      "p16": 1.0013267304508102,
+      "median": 1.0040423914032006,
+      "p84": 1.0089077809186475,
+      "p95": 1.0161160372769125,
+      "max": 1.0261548393239721
+    },
+    "aperture_3_ujy": {
+      "min": 0.9939266000611909,
+      "p5": 1.0005397090996548,
+      "p16": 1.0016928406086623,
+      "median": 1.0050772963110028,
+      "p84": 1.0107516438108108,
+      "p95": 1.0172898794448801,
+      "max": 1.0226472144432026
+    }
+  },
+  "exploratory_season_scales": [
+    {
+      "detector": 1,
+      "fits": [
+        {
+          "order": 1,
+          "scale_2026_over_2025": 1.0381907018373608,
+          "log_residual_rms": 0.018184332007277745
+        },
+        {
+          "order": 2,
+          "scale_2026_over_2025": 1.038253886087632,
+          "log_residual_rms": 0.01798126109644935
+        },
+        {
+          "order": 3,
+          "scale_2026_over_2025": 1.0382462860948425,
+          "log_residual_rms": 0.016034049080161407
+        }
+      ]
+    },
+    {
+      "detector": 2,
+      "fits": [
+        {
+          "order": 1,
+          "scale_2026_over_2025": 1.0178889182193316,
+          "log_residual_rms": 0.03298240520998976
+        },
+        {
+          "order": 2,
+          "scale_2026_over_2025": 1.0174266328249695,
+          "log_residual_rms": 0.032918477363235624
+        },
+        {
+          "order": 3,
+          "scale_2026_over_2025": 1.017908604704247,
+          "log_residual_rms": 0.032607762574634484
+        }
+      ]
+    },
+    {
+      "detector": 3,
+      "fits": [
+        {
+          "order": 1,
+          "scale_2026_over_2025": 1.019242013975787,
+          "log_residual_rms": 0.04776110614813744
+        },
+        {
+          "order": 2,
+          "scale_2026_over_2025": 1.027952668608403,
+          "log_residual_rms": 0.04159191699098374
+        },
+        {
+          "order": 3,
+          "scale_2026_over_2025": 1.0204394565600727,
+          "log_residual_rms": 0.03663269595666152
+        }
+      ]
+    },
+    {
+      "detector": 4,
+      "fits": [
+        {
+          "order": 1,
+          "scale_2026_over_2025": 1.0196810613495328,
+          "log_residual_rms": 0.024142955753325188
+        },
+        {
+          "order": 2,
+          "scale_2026_over_2025": 1.019330392935105,
+          "log_residual_rms": 0.02250032663291488
+        },
+        {
+          "order": 3,
+          "scale_2026_over_2025": 1.0199010212429351,
+          "log_residual_rms": 0.022536719905664394
+        }
+      ]
+    },
+    {
+      "detector": 5,
+      "fits": [
+        {
+          "order": 1,
+          "scale_2026_over_2025": 1.0243181990952077,
+          "log_residual_rms": 0.029724904213871528
+        },
+        {
+          "order": 2,
+          "scale_2026_over_2025": 1.0249418813501021,
+          "log_residual_rms": 0.02096642964686391
+        },
+        {
+          "order": 3,
+          "scale_2026_over_2025": 1.0235749719237872,
+          "log_residual_rms": 0.02016226456844763
+        }
+      ]
+    },
+    {
+      "detector": 6,
+      "fits": [
+        {
+          "order": 1,
+          "scale_2026_over_2025": 1.0201197762273186,
+          "log_residual_rms": 0.04205222086470625
+        },
+        {
+          "order": 2,
+          "scale_2026_over_2025": 1.0188214744518869,
+          "log_residual_rms": 0.03891404960228729
+        },
+        {
+          "order": 3,
+          "scale_2026_over_2025": 1.0179934964701902,
+          "log_residual_rms": 0.038340053080648646
+        }
+      ]
+    }
+  ]
+}

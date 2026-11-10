@@ -1,0 +1,16 @@
+{
+  "written_utc": "2026-11-08T23:22:45.460659+00:00",
+  "protocol": "protocol.json before model fits",
+  "choices": [
+    "BrightT0 evaluated4000/4500/5000/5500K;CK04native3500\u20136500K/250K;logg2/2.5/3;metallicity\u22121/\u2212.5/0. Spotstartfractions0/.1/.3;Tc3500..T0\u2212250 sampled10K;cooling2K interpolation.",
+    "Uniform/fixed-area/grayreferencefitgandW1only;flexiblefitsg/W1andwithheldW2neverusedforoptimization. OctoberandZTF-responsechecksseparate.",
+    "SVOcase-insensitiveI/i filenamecollisioncaughtbeforefitting;distinctCousinsI/sdss_i filenamesandfilterIDtestguardused. Originalunusedresponsekeptasrawartifact.",
+    "Independentreviewfoundbest-fitnuisanceenvelopesnarrowerthanfulltraining-compatibleparameters. Added analyticfractionintervalsat800tauand240companionareas(.001\u2013100),allspotTcs,andgrayoffsetintervalsacross2Ktemperaturegrid. Newregressiontestkeepsnon-optimalsolutionsandchecksW2independence.",
+    "Originalper-nuisancebestfitrecordsremainseparate;compatibility_envelopesareusedforforecastfigures. Rangesaresampledgrid/toleranceenvelopes,notconfidenceintervals or allunmodeledphysics.",
+    "Thecolorfigurewaschangedfromg\u2212Ks(whichoverlapsbetweenfamilies)toV\u2212I asanexperimental-designcomparison. AllsixpredeclaredcolorforecastsremaininJSON/CSV;noadditionalobservedcolorselectedorusedtochoosemodels.",
+    "No static GaiaXPSEDfit orcoevalbinaryconstraintwasusedtoweightorprunenuisancecases. MeanspectrumqualityandfailedLAMOSTreductionwereaudited.",
+    "SPHEREx223spectralimageoverlapsandonesmallcutoutproveusablecoverageopportunityonly. No point-sourceIRflux/SEDextracted orrecoverymeasured.",
+    "HistoricalmainASASfieldannualshapeisdescriptiveuntilcomparison-starchecks;otherfieldsandduplicateskept. Existingplatequalitygateswerenotrelaxed.",
+    "Afterseeingtarget2006\u201307shape, savedaseparatecontrolpredictionbefore16ASASdownloads. ExactHJD/frameensemble, dataset2004baselinesandnativeaperture-identitydedupretaincandidate+.147fade/\u2212.114recovery. MAG1/2andjackknivesarepost-protocolsensitivities;twoindividualcontrolsalsovary. NoUTCtimestampsorperiodinferred."
+  ]
+}

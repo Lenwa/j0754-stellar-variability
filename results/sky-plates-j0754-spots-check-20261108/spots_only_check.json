@@ -1,0 +1,95 @@
+{
+  "test": "Fixed-area two-temperature spots only; no dust, companion or geometric scaling",
+  "primary_example": {
+    "spot_temperature": 3650.0,
+    "spot_fraction_bright": 0.3,
+    "spot_fraction_faint": 0.496365616924253,
+    "score": 5.642000583566909e-07,
+    "photosphere_temperature_K": 5000,
+    "logg": 2,
+    "metallicity_dex": -1,
+    "prediction_mag": {
+      "g": 0.31200000000000006,
+      "W1": 0.11674886748282563,
+      "W2": 0.09952076701187278,
+      "V": 0.2914680325535239,
+      "I": 0.23453404238070463,
+      "Ks": 0.10407685598714128
+    }
+  },
+  "comparison": [
+    {
+      "band": "g",
+      "observed_fade_mag": 0.312,
+      "predicted_fade_mag": 0.31200000000000006,
+      "observed_flux_loss_percent": 24.976037209253633,
+      "predicted_flux_loss_percent": 24.976037209253633
+    },
+    {
+      "band": "W1",
+      "observed_fade_mag": 0.1175,
+      "predicted_fade_mag": 0.11674886748282563,
+      "observed_flux_loss_percent": 10.257120549925158,
+      "predicted_flux_loss_percent": 10.195013274371556
+    },
+    {
+      "band": "W2",
+      "observed_fade_mag": 0.08875,
+      "predicted_fade_mag": 0.09952076701187278,
+      "observed_flux_loss_percent": 7.849011126504246,
+      "predicted_flux_loss_percent": 8.758651942220453
+    }
+  ],
+  "starting_coverage_sensitivity": [
+    {
+      "spot_temperature": 3790.0,
+      "spot_fraction_bright": 0,
+      "spot_fraction_faint": 0.28008182684635236,
+      "score": 3.301666384835762e-07,
+      "predicted_fade_mag": {
+        "g": 0.31200000000000006,
+        "W1": 0.11807460128653142,
+        "W2": 0.10988087058182863,
+        "V": 0.2933288296067452,
+        "I": 0.24585662537188965,
+        "Ks": 0.1070246687329735
+      }
+    },
+    {
+      "spot_temperature": 3750.0,
+      "spot_fraction_bright": 0.1,
+      "spot_fraction_faint": 0.3513034164828901,
+      "score": 4.114204939322655e-08,
+      "predicted_fade_mag": {
+        "g": 0.31200000000000006,
+        "W1": 0.11729716497000461,
+        "W2": 0.10626806750789505,
+        "V": 0.2926317360274899,
+        "I": 0.242579886885079,
+        "Ks": 0.10442095387815883
+      }
+    },
+    {
+      "spot_temperature": 3650.0,
+      "spot_fraction_bright": 0.3,
+      "spot_fraction_faint": 0.496365616924253,
+      "score": 5.642000583566909e-07,
+      "predicted_fade_mag": {
+        "g": 0.31200000000000006,
+        "W1": 0.11674886748282563,
+        "W2": 0.09952076701187278,
+        "V": 0.2914680325535239,
+        "I": 0.23453404238070463,
+        "Ks": 0.10407685598714128
+      }
+    }
+  ],
+  "method": "Fit spot temperature and final projected coverage to g and W1 using CK04 spectra integrated through preserved SVO filters. W2 not fitted; already known, so retrospective check. Initial spot coverage0.3 is illustrative, not measured. Interpolation finer than250K nativegrid does not create that temperature precision.",
+  "conclusion": "Spots alone reproduce optical/IR amplitude pattern; example W2 residual0.0108mag. Viable under earlier illustrative0.02mag model tolerance, not statistical proof.",
+  "limitations": [
+    "Quiescent baseline need not be unspotted; coverage refers to projected visible disk.",
+    "Stellar parameters, atmosphere grid, bandpass and epochs introduce uncalibrated systematics; no formal likelihood/model probability.",
+    "Amplitude and color compatibility does not explain historical or modern time evolution by itself."
+  ],
+  "existing_broad_grid": "results/sky-plates-j0754-models-20261108/model_comparison.json"
+}

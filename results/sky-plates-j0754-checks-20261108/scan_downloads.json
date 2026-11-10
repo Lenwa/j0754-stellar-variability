@@ -1,0 +1,177 @@
+[
+  {
+    "plate_id": 413,
+    "scan_id": 412,
+    "url": "https://www.plate-archive.org/files/DR4/scans/HAM-LA/LA00585_x.fits",
+    "first_byte": 435137280,
+    "last_byte": 534049279,
+    "transferred_bytes": 98969600,
+    "original_header_bytes": 14400,
+    "original_shape": [
+      22481,
+      22480
+    ],
+    "original_target_pixel": [
+      20469.300359403514,
+      10777.504187792989
+    ],
+    "crop": [
+      19369,
+      9678,
+      2200,
+      2200
+    ],
+    "prefix_metadata": {
+      "Content-Length": "57600",
+      "Content-Range": "bytes 0-57599/1010761920",
+      "Etag": "\"61b8e0a5-3c3f00c0\"",
+      "Last-Modified": "Tue, 14 Dec 2021 18:21:25 GMT"
+    },
+    "band_metadata": {
+      "Content-Length": "98912000",
+      "Content-Range": "bytes 435137280-534049279/1010761920",
+      "Etag": "\"61b8e0a5-3c3f00c0\"",
+      "Last-Modified": "Tue, 14 Dec 2021 18:21:25 GMT"
+    }
+  },
+  {
+    "plate_id": 446,
+    "scan_id": 473,
+    "url": "https://www.plate-archive.org/files/DR4/scans/HAM-LA/LA00626_x.fits",
+    "first_byte": 985285872,
+    "last_byte": 1110140271,
+    "transferred_bytes": 124912000,
+    "original_header_bytes": 14400,
+    "original_shape": [
+      28376,
+      28376
+    ],
+    "original_target_pixel": [
+      10987.432259236968,
+      18461.387179493686
+    ],
+    "crop": [
+      9887,
+      17361,
+      2200,
+      2200
+    ],
+    "prefix_metadata": {
+      "Content-Length": "57600",
+      "Content-Range": "bytes 0-57599/1610409600",
+      "Etag": "\"61b8e67a-5ffce680\"",
+      "Last-Modified": "Tue, 14 Dec 2021 18:46:18 GMT"
+    },
+    "band_metadata": {
+      "Content-Length": "124854400",
+      "Content-Range": "bytes 985285872-1110140271/1610409600",
+      "Etag": "\"61b8e67a-5ffce680\"",
+      "Last-Modified": "Tue, 14 Dec 2021 18:46:18 GMT"
+    }
+  },
+  {
+    "plate_id": 4191,
+    "scan_id": 4927,
+    "url": "https://www.plate-archive.org/files/DR4/scans/HAM-LA/LA04467_x.fits",
+    "first_byte": 111216176,
+    "last_byte": 237126575,
+    "transferred_bytes": 125968000,
+    "original_header_bytes": 14400,
+    "original_shape": [
+      22930,
+      28616
+    ],
+    "original_target_pixel": [
+      12097.313369005109,
+      3042.9285059973427
+    ],
+    "crop": [
+      10997,
+      1943,
+      2200,
+      2200
+    ],
+    "prefix_metadata": {
+      "Content-Length": "57600",
+      "Content-Range": "bytes 0-57599/1312346880",
+      "Etag": "\"61ba5413-4e38d300\"",
+      "Last-Modified": "Wed, 15 Dec 2021 20:46:11 GMT"
+    },
+    "band_metadata": {
+      "Content-Length": "125910400",
+      "Content-Range": "bytes 111216176-237126575/1312346880",
+      "Etag": "\"61ba5413-4e38d300\"",
+      "Last-Modified": "Wed, 15 Dec 2021 20:46:11 GMT"
+    }
+  },
+  {
+    "plate_id": 4413,
+    "scan_id": 5193,
+    "url": "https://www.plate-archive.org/files/DR4/scans/HAM-LA/LA04710_x.fits",
+    "first_byte": 10749952,
+    "last_byte": 136378751,
+    "transferred_bytes": 125686400,
+    "original_header_bytes": 14400,
+    "original_shape": [
+      22809,
+      28552
+    ],
+    "original_target_pixel": [
+      14295.57707124573,
+      1288.163977316799
+    ],
+    "crop": [
+      13196,
+      188,
+      2200,
+      2200
+    ],
+    "prefix_metadata": {
+      "Content-Length": "57600",
+      "Content-Range": "bytes 0-57599/1302500160",
+      "Etag": "\"61ba6877-4da29340\"",
+      "Last-Modified": "Wed, 15 Dec 2021 22:13:11 GMT"
+    },
+    "band_metadata": {
+      "Content-Length": "125628800",
+      "Content-Range": "bytes 10749952-136378751/1302500160",
+      "Etag": "\"61ba6877-4da29340\"",
+      "Last-Modified": "Wed, 15 Dec 2021 22:13:11 GMT"
+    }
+  },
+  {
+    "plate_id": 4599,
+    "scan_id": 5501,
+    "url": "https://www.plate-archive.org/files/DR4/scans/HAM-LA/LA04900_x.fits",
+    "first_byte": 14951952,
+    "last_byte": 140862351,
+    "transferred_bytes": 125968000,
+    "original_header_bytes": 14400,
+    "original_shape": [
+      22930,
+      28616
+    ],
+    "original_target_pixel": [
+      1079.2103744145138,
+      1360.7053714864305
+    ],
+    "crop": [
+      0,
+      261,
+      2200,
+      2200
+    ],
+    "prefix_metadata": {
+      "Content-Length": "57600",
+      "Content-Range": "bytes 0-57599/1312346880",
+      "Etag": "\"61ba8546-4e38d300\"",
+      "Last-Modified": "Thu, 16 Dec 2021 00:16:06 GMT"
+    },
+    "band_metadata": {
+      "Content-Length": "125910400",
+      "Content-Range": "bytes 14951952-140862351/1312346880",
+      "Etag": "\"61ba8546-4e38d300\"",
+      "Last-Modified": "Thu, 16 Dec 2021 00:16:06 GMT"
+    }
+  }
+]

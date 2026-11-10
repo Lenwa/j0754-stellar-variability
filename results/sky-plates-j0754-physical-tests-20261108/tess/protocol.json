@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-11-09T02:31:57.195990+00:00",
+  "question": "Measure within-sector variability, ancillary correlations, reduction dependence, fixed35.9204566/17.9602283day template sensitivity, and observed-sampling event recovery. Assess the Argon thresholds rather than assume them.",
+  "inputs": "Eight already-saved extracted lightcurve FITS for TIC18878735, not raw telescope pixels. No new archive downloads.",
+  "quality": "QUALITY==0, finite times, finite positive flux; finite positive native error where the chosen flux product supplies one. Preserve flags/row counts. No amplitude clipping.",
+  "products": "SAP plus corrected QLP KSPSAP(44\u201346)/DET(71\u201372), and TESS-SPOC PDCSAP(71,72,1751). All normalized separately by their own medians; no DC stitching. Missing SAP errors remain missing.",
+  "binning": "Unweighted means in20minute bins using actual retained timestamps. Preserve counts, gaps and native-to-bin mapping; no interpolation.",
+  "variability": "Raw normalized percentile ranges/scatter;20min means; one-day local time-window median baseline, two-day sensitivity; adjacent-difference noise and robust scatter; background/centroid correlations descriptive only.",
+  "periods": "Use existing orbit_photometry signal/nuisance definitions. Joint equal-weight constant/linear sector nuisances and both fixed harmonics; condition, waveform response and baseline sensitivity. No period search or new orbit-rejection claim.",
+  "events": "Two-sided box-window screen at1,3,6hours, at least3occupied bins and no large within-window gap. Save top3nonoverlapping candidates of each sign regardless screening threshold. Inspect background/centroid covariates and overlapping reduction agreement; no astrophysical designation from flux alone.",
+  "screen_threshold": "95th percentile of maximum absolute box score from100observed-residual moving-block bootstrap replicates at6h and24h block lengths; use the larger threshold. Descriptive conservative screen, not a calibrated null FAP, since residuals contain possible signals and nonstationary systematics. Also preserve nominal white-noise scores without calling them sigmas.",
+  "event_injections": "Primary corrected products only, actual quality-screened native timestamps, injectbefore20minmean binning. Box deficits1/3/6h; flare-like linear rise0.1tau and exponential decay truncated6tau withtau0.5/1/2h. Fractional flux amplitudes0.001/0.003/0.01/0.03;24uniform times overeachactualsector span including gaps. Recompute local median processing; preserve visibility fraction, baseline crossings, threshold crossings and paired response. This is a bounded sampling/pipeline sensitivity grid, not a universal completeness limit.",
+  "energy": "Only observed-sampling signed equivalent durations with no integration over gaps; no bolometric energy or radius limits without luminosity/passband/dilution/geometry assumptions.",
+  "implementation_plan": [
+    "Write numerical tests for quality/no clipping, binning gaps, signed gap-safe integration, joint trend+harmonic recovery, event coverage and injected native-cadence bin response; see tests fail.",
+    "Implement onlyanalyze_tess_variability.py andtest_tess_variability.py. Run numericaltests andexistingcomponentchecks.",
+    "Analyze nativeproducts once; renderfigures; inspect plots; summarize limitations and candidates. Preserve protocol, source/input hashes and verification."
+  ],
+  "preanalysis_note": "Only FITS headers/columnnames and earlier published coverage/reductions inspected before this protocol; no new flux outcomes used to select the analysis grid."
+}

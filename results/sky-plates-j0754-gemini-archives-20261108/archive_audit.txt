@@ -1,0 +1,90 @@
+Gemini archive leads: bounded PS1 DR2 and TESS check — 8 November 2026
+
+PS1: ACTUAL ROWS RECOVERED; NO VALIDATED NEW OBSERVED COLOURS
+
+Official API and flag documentation were consulted before the native 3 arcsec
+cone searches. PS1 DR2 returns 8 mean catalogue objects and 75 individual
+detections. The closest mean object is 128031186911494135, 0.00679 arcsec from
+the target, with 64 detections from 2010-01-06 through 2014-11-23. Other nearby
+catalogue objects are not promoted to extra target measurements or companions.
+
+The main object has nominal mean grizy magnitudes 13.071,12.220,11.859,11.652,
+11.529. However, all five MeanPSFMagNpt counts are 0, all five errors are -999,
+all five band flags include SECF_USE_SYNTH(value 4), andnone includes SECF_HAS_PS1
+(value 16). The documented flags mean synthetic photometry was used in these
+mean values. They must not be called five observed PS1 colours.
+
+The actual 64 main-object detections include 52 with SATSTAR(value 128: model peak
+above saturation), 39 with PEAK_ON_SPIKE, and 51 with ON_BURNTOOL. Removing only the
+SATSTAR flag does not establish reliability. Four least-flagged diagnostics
+have no selected major fit/peak/mask warning and psfQfPerfect>=0.85: three y
+detections on 2010-03-09(two exposures) and 2011-12-09, andone g on 2012-01-21.
+They remain unvalidated diagnostics: the star is brighter than the official
+conservative PS1 limits, the mean pipeline includes zero measurements, and
+the lone g fit has elevated chi-square. No pixel-level saturation reconstruction
+or new photometric calibration was attempted. No reliable multiband colour or
+light curve was accepted from these rows.
+
+The official conservative bright limits are g14.5, r 15, i 15, z 14, y 13; individual
+fields may perform somewhat brighter. Gemini’s broad assertion of unsaturated
+12–13 mag PS1 photometry is not supported for this target. Native full CSVs,
+metadata, flag definitions and per-row decoded flags remain saved.
+
+TESS: SIX AVAILABLE SECTOR IDENTIFIERS; ALL EIGHT LIGHT CURVES ALREADY SAVED
+
+Current TESSCut metadata at the exact target position returns 44,45,46,71,72,
+and 1751. It does not return 7 or 34. These absences mean no available calibrated
+TESSCut coverage in those claimed sectors at this position, not astrophysical
+nondetections. Sectors 44–46 in late 2021 and 71–72 in late 2023 are real coverage.
+
+All eight local native FITS identify TIC 18878735: QLP 44/45/46/71/72 and
+TESS-SPOC 71/72/1751. The corrected MAST timeseries query returns exactly the
+same eight download URIs as the saved reconnaissance metadata. Therefore these
+are confirmations of existing data, not new photometry. QLP and TESS-SPOC in
+the same sector share photons and are alternative reductions.
+
+Sector 1751 is a real special pointing, documented by NASA as dedicated
+3I/ATLAS observations 15–22 January 2026, interrupting Sector 99. Its local FITS
+dates agree. It is neither a virtual sector nor a stitched multi-sector token.
+NASA reports about 4.25 science days within the seven-day interval, with safe-mode
+gaps and special processing; it is not a normal 27 day sector. Official NASA
+documentation is retained. The MIT page was found through web search, but its
+direct-download TLS certificate chain failed; verification was not disabled.
+
+One initial MAST query filtered obs_collection=TESS and returned no rows. The
+target products actually belon g to HLSP. Correcting that filter recovers all 8.
+The initial query null must not be used to claim absent TESS images. Existing
+period/reduction limitations remain: this check supplies no new flare, rotation,
+eclipse or 100 ppm precision result. No FFIs or new light curves were downloaded.
+
+EXISTING NATIVE TESS INVENTORY (DATES CONVERTED FROM BJD_TDB TO UTC)
+QLP sector 44: 3278 rows; 2021-10-12T16:32:52.388 to 2021-11-05T22:26:18.435; file hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits
+QLP sector 45: 3450 rows; 2021-11-07T00:16:27.198 to 2021-12-02T02:59:32.890; file hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits
+QLP sector 46: 3707 rows; 2021-12-03T01:39:36.770 to 2021-12-30T04:51:41.614; file hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits
+QLP sector 71: 10932 rows; 2023-10-16T12:42:49.295 to 2023-11-11T11:13:07.134; file hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits
+QLP sector 72: 10701 rows; 2023-11-11T16:19:49.227 to 2023-12-07T02:02:48.186; file hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits
+TESS-SPOC sector 71: 11205 rows; 2023-10-16T12:54:27.437 to 2023-11-11T11:14:45.198; file hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits
+TESS-SPOC sector 72: 10975 rows; 2023-11-11T16:28:07.366 to 2023-12-07T02:04:26.263; file hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits
+TESS-SPOC sector 1751: 3131 rows; 2026-01-15T06:10:43.576 to 2026-01-22T11:40:42.702; file hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits
+
+PROVENANCE AND VERIFICATION
+
+query_receipts.jsonl retains native request URLs, parameters, retrieval UTC,
+status, lengths and SHA256 values.13 successful native-response hashes verify
+with zero failures. All 8 prior FITS were inspected andhashed; every TICID matches.
+Native PS1 target detection count 64 matches its mean NDetections 64. Raw CSVs
+remain unchanged. Decoded exports and JSON assessments are separate.
+
+A local Windows console encoding failure interrupted one metadata batch’s
+receipt writing after successful files were saved. That bounded batch was
+repeated to record complete receipts; retrieval_note.txt preserves the event.
+This was not an archive failure. No accounts, jobs, maintained code changes,
+commits, pushes or publication occurred.
+
+PRIMARY REFERENCES
+https://catalogs.mast.stsci.edu/docs/panstarrs.html
+https://outerspace.stsci.edu/spaces/PANSTARRS/pages/298812464/PS1+Object+Flags
+https://outerspace.stsci.edu/spaces/PANSTARRS/pages/298812465/PS1+Detection+Flags
+https://outerspace.stsci.edu/pages/viewpage.action?pageId=442401391
+https://mast.stsci.edu/tesscut/docs/getting_started.html
+https://heasarc.gsfc.nasa.gov/docs/tess/sector1751_summary.html

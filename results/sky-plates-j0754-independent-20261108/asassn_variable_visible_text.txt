@@ -1,0 +1,171 @@
+ASAS-SN Variable Stars Database 
+ASASSN-V J075445.83+164141.1
+Sky Patrol
+*new* Sky Patrol V2
+Variable Stars Database
+Variable Stars Atlas
+Photometry Database
+Citizen ASAS-SN
+Binary Stars Database
+ASASSN-V J075445.83+164141.1 / DASCH J075445.9+164141
+(118.69096, 16.69475)
+Mean VMag
+12.22
+Amplitude
+0.17
+Period
+912.3158778
+Type
+ROT:
+Classification Probability
+0.874
+LKSL Statistic
+0.35
+RFR Score
+0.81
+Epoch (HJD)
+2458115.99394
+Phase
+Mag
+Flux
+Adjust Period
+Submit
+1/2 Period
+2x Period
+Reset
+Export V-band Data
+CSV
+Excel
+JSON
+Recompute Light Curve
+View on Vizier
+View Photometry
+APASS DR10
+Bayestar19 Reddening
+Back to Index
+Position/Proper Motion/Parallax
+RAJ2000 (deg):
+118.69096
+DEJ2000 (deg):
+16.69475
+I (deg):
+204.50523
+b (deg):
+21.31864
+Parallax (mas):
+0.5994
+Parallax Error (mas):
+0.0198
+Parallax Over Error:
+30.2765
+RUWE:
+1.158
+PMRA (mas/yr):
+-1.966
+e_PMRA (mas/yr):
+0.02
+PMDEC (mas/yr):
+-1.719
+e_PMDEC (mas/yr):
+0.013
+Vt (km/s):
+7.8
+Distance (pc):
+1596
+Photometry
+Gmag:
+11.937
+e_Gmag:
+0.003
+BPmag:
+12.484
+e_BPmag:
+0.007
+RPmag:
+11.231
+e_RPmag:
+0.006
+FUVmag:
+-
+e_FUVmag:
+-
+Jmag:
+10.424
+e_Jmag:
+0.021
+Hmag:
+9.833
+e_Hmag:
+0.02
+Kmag:
+9.696
+e_Kmag:
+0.017
+NUVmag:
+18.614
+e_NUVmag:
+0.053
+W1mag:
+9.497
+e_W1mag:
+0.023
+W2mag:
+9.53
+e_W2mag:
+0.02
+W3mag:
+9.38
+e_W3mag:
+0.041
+W4mag:
+8.464
+e_W4mag:
+0.293
+APASS_Vmag:
+12.118
+e_APASS_Vmag:
+0.032
+APASS_Bmag:
+13.128
+e_APASS_Bmag:
+0.071
+APASS_gpmag:
+12.596
+e_APASS_gpmag:
+0.053
+APASS_rpmag:
+11.785
+e_APASS_rpmag:
+0.021
+APASS_ipmag:
+11.464
+e_APASS_ipmag:
+0.025
+Color/Reddening Information
+BP-RP:
+1.253
+J-K:
+0.728
+W1-W2:
+-0.033
+W3-W4:
+0.916
+B-V:
+1.01
+E(B-V):
+0.035
+Cross Matches
+APASS_DR9ID:
+5431331
+EDR3_ID:
+667401913089980544
+ALLWISE_ID:
+J075445.88+164140.6
+Other Names:
+DASCH J075445.9+164141
+GALEX_ID:
+J075445.8+164140
+TIC_ID:
+18878735
+Reference
+The ASAS-SN Catalog of Variable Stars: II

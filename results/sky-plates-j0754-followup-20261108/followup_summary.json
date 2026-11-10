@@ -1,0 +1,73 @@
+{
+  "target": "DASCH J075445.9+164141 / Gaia DR3 667401913089980544",
+  "question": "Independent pixel remeasurement of the reported 1930s dimming",
+  "primary_verdict": "INCONCLUSIVE under specified screening gates",
+  "secondary_verdict": "INCONCLUSIVE under specified screening gates",
+  "observations": "The target is detected at its propagated/registered position on five independent Hamburg plates. Secondary photometry has the expected dimming/recovery direction, but no event plate passes the complete corroboration gate.",
+  "secondary_results": [
+    {
+      "plate_id": 413,
+      "year": 1919.01299589,
+      "natural_mag_minus_modern_expectation": -0.21650273112270035,
+      "held_out_control_rms": 0.259994648248543,
+      "selected_scored_controls": [
+        15,
+        13
+      ],
+      "corroboration_gate": false
+    },
+    {
+      "plate_id": 446,
+      "year": 1919.21514155,
+      "natural_mag_minus_modern_expectation": -0.2616397370129917,
+      "held_out_control_rms": 0.0654592725452857,
+      "selected_scored_controls": [
+        16,
+        14
+      ],
+      "corroboration_gate": false
+    },
+    {
+      "plate_id": 4191,
+      "year": 1935.10021938,
+      "natural_mag_minus_modern_expectation": 0.9656313245194816,
+      "held_out_control_rms": 0.3712220858488904,
+      "selected_scored_controls": [
+        15,
+        13
+      ],
+      "corroboration_gate": false
+    },
+    {
+      "plate_id": 4413,
+      "year": 1936.03946941,
+      "natural_mag_minus_modern_expectation": 0.5006362090760579,
+      "held_out_control_rms": 0.22941969412519508,
+      "selected_scored_controls": [
+        15,
+        13
+      ],
+      "corroboration_gate": false
+    },
+    {
+      "plate_id": 4599,
+      "year": 1937.04715045,
+      "natural_mag_minus_modern_expectation": 0.25592557731772203,
+      "held_out_control_rms": 0.2346918563464214,
+      "selected_scored_controls": [
+        16,
+        13
+      ],
+      "corroboration_gate": false
+    }
+  ],
+  "material_limits": [
+    "Primary quadratic response cannot be reliably calibrated on event plates.",
+    "Secondary isotonic response was chosen after seeing primary failure and is exploratory.",
+    "At least one near-normal control is absent in1937; its physical or instrumental cause has not been established. Conditional held-out RMS omits unscored stars.",
+    "Magnitude results use static catalogue colour in each plate natural system; no event colour history or cause is established.",
+    "Blank-noise-only bounds are not validated stellar confidence limits."
+  ],
+  "next_useful_work": "Diagnose comparison-star failures with orthogonal scans and larger local calibration fields before promoting a historical magnitude estimate or a physical explanation.",
+  "source_commit": "7e22ef91e5c50fe0a23590d442cb0fa4ea524b32"
+}

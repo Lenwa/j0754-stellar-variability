@@ -1,0 +1,43 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:44:48 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:44:48	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=II%2F298%2Ffis&-c=118.69117410685+%2B16.694621231895&-c.rs=120&-out.all=&-out.max=500	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=120.	
+#Constraint -out.max=500
+
+#RESOURCE=yCat_2298
+#Name: II/298
+#Title: AKARI/FIS All-Sky Survey Point Source Catalogues (ISAS/JAXA, 2010)
+#INFO	ivoid=ivo://cds.vizier/ii/298	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/298	    IVOID of underlying data collection
+#INFO	creator=Yamamura I.	    First author or institution
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/298	    Dataset landing page
+#INFO	publication_date=2017-06-30	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	II_298_fis:
+#Name: II/298/fis
+#Title: AKARI/FIS All-Sky Survey Bright Source Catalogue (Version 1.0)
+#Column	objName	(a14)	AKARI source name (HHMMSSs+DDMMSS) (2)	[ucd=meta.id;meta.main]
+#Column	S65	(E10.3)	? Flux density in N60 (1)	[ucd=phot.flux.density;em.IR.30-60um]
+#Column	e_S65	(E9.2)	? uncertainty in N60	[ucd=stat.error]
+#Column	q_S65	(I1)	[0,3] quality flag for N60 (3)	[ucd=meta.code.qual]
+#Column	S90	(E10.3)	? Flux density in WIDE-S (1)	[ucd=phot.flux.density;em.IR.60-100um]
+#Column	e_S90	(E9.2)	? uncertainty in WIDE-S	[ucd=stat.error]
+#Column	q_S90	(I1)	[0,3] quality flag for WIDE-S (3)	[ucd=meta.code.qual]
+#Column	S140	(E10.3)	? Flux density in WIDE-L (1)	[ucd=phot.flux.density;em.mm.1500-3000GHz]
+#Column	e_S140	(E9.2)	? uncertainty in WIDE-L	[ucd=stat.error]
+#Column	q_S140	(I1)	[0,3] quality flag for WIDE-L (3)	[ucd=meta.code.qual]
+#Column	S160	(E10.3)	? Flux density in N160 (1)	[ucd=phot.flux.density;em.mm.1500-3000GHz]
+#Column	e_S160	(E9.2)	? uncertainty in N160	[ucd=stat.error]
+#Column	q_S160	(I1)	[0,3] quality flag for N160 (3)	[ucd=meta.code.qual]
+#Column	RAJ2000	(F8.4)	Right Ascension (J2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F8.4)	Declination (J2000)	[ucd=pos.eq.dec;meta.main]

@@ -1,0 +1,30 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: n_spectra
+#   datatype: int32
+#   meta: !!omap
+#   - {ucd: meta.number}
+#   - values: {'null': -2147483648}
+# - name: first_mjd
+#   unit: d
+#   datatype: float64
+#   description: Midpoint of exposure (MJD)
+#   meta: !!omap
+#   - {ucd: stat.min;time.epoch}
+#   - {utype: 'ssa:Char.TimeAxis.Coverage.Location.Value'}
+#   - {xtype: mjd}
+# - name: last_mjd
+#   unit: d
+#   datatype: float64
+#   description: Midpoint of exposure (MJD)
+#   meta: !!omap
+#   - {ucd: stat.max;time.epoch}
+#   - {utype: 'ssa:Char.TimeAxis.Coverage.Location.Value'}
+#   - {xtype: mjd}
+# meta: !!omap
+# - {ID: data_public}
+# - {name: data_public}
+# schema: astropy-2.0
+n_spectra first_mjd last_mjd
+393267 54984.39852430556 60664.32531828704

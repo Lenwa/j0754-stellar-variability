@@ -1,0 +1,124 @@
+{
+  "status": "Approximate isotropic-equivalent bolometric radiated energy; conditional on event belonging to J0754 and assumed blackbody spectra.",
+  "isotropic_equivalent_energy_erg": 2.1186694521072216e+38,
+  "isotropic_equivalent_energy_joules": 2.1186694521072213e+31,
+  "projected_surface_patch_energy_erg": 5.296673630268054e+37,
+  "geometry": "Isotropic equivalent uses 4pi d^2. Standard face-on optically thick flare-patch convention uses projected area pi Rstar^2 and A sigma Tflare^4, giving one quarter of this. Unknown surface orientation changes inferred emitted energy.",
+  "equivalent_duration_seconds": 600.7110820602787,
+  "central_assumptions": {
+    "stellar_luminosity_Lsun": 54.640694,
+    "stellar_temperature_K": 5205.7764,
+    "flare_temperature_K": 9000,
+    "stellar_provenance": "Preserved Gaia DR3 astrophysical_parameters FLAME luminosity and GSP-Phot temperature; systematic uncertainty exceeds formal catalogue intervals."
+  },
+  "correction_factor": 1.6862013200081916,
+  "isotropic_sensitivity_envelope_erg": [
+    8.44662763969876e+37,
+    5.010836598980362e+38
+  ],
+  "surface_patch_sensitivity_envelope_erg": [
+    2.11165690992469e+37,
+    1.2527091497450905e+38
+  ],
+  "sensitivity_grid": "L=30..60 Lsun; Tstar=4500..5250 K; Tflare=8000..12000 K; nine baseline/window combinations. Illustrative systematic envelope, not confidence interval.",
+  "integrations": [
+    {
+      "baseline": "preserved_reference",
+      "window_hours": [
+        -3,
+        12
+      ],
+      "equivalent_duration_seconds": 517.5026490561365,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    },
+    {
+      "baseline": "preserved_reference",
+      "window_hours": [
+        -3,
+        14
+      ],
+      "equivalent_duration_seconds": 521.6722017522916,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    },
+    {
+      "baseline": "preserved_reference",
+      "window_hours": [
+        -3,
+        16
+      ],
+      "equivalent_duration_seconds": 524.6535088047107,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    },
+    {
+      "baseline": "local_pre_constant",
+      "window_hours": [
+        -3,
+        12
+      ],
+      "equivalent_duration_seconds": 718.4403965065702,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    },
+    {
+      "baseline": "local_pre_constant",
+      "window_hours": [
+        -3,
+        14
+      ],
+      "equivalent_duration_seconds": 749.7603004577901,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    },
+    {
+      "baseline": "local_pre_constant",
+      "window_hours": [
+        -3,
+        16
+      ],
+      "equivalent_duration_seconds": 779.8874754799627,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    },
+    {
+      "baseline": "local_pre_post_linear",
+      "window_hours": [
+        -3,
+        12
+      ],
+      "equivalent_duration_seconds": 596.8490832013463,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    },
+    {
+      "baseline": "local_pre_post_linear",
+      "window_hours": [
+        -3,
+        14
+      ],
+      "equivalent_duration_seconds": 600.7110820602787,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    },
+    {
+      "baseline": "local_pre_post_linear",
+      "window_hours": [
+        -3,
+        16
+      ],
+      "equivalent_duration_seconds": 600.7493161954319,
+      "maximum_gap_hours": 0.8333641289136722,
+      "gap_handling": "Trapezoid linearly bridges retained-sample gaps, including one ~50-minute gap."
+    }
+  ],
+  "formula": "E_iso = ED * Lstar_bol * (Tflare/Tstar)^4 * integral(R Bstar)/integral(R Bflare); E_face_on_patch=E_iso/4",
+  "source_input": "results\\sky-plates-j0754-physical-tests-20261108\\tess\\sector46_pixel_event_timeseries.csv",
+  "input_sha256": "69a081a543534546e00faa21585dc3dda51f9f402a1230a77c43f6d4694fcd62",
+  "response_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=TESS/TESS.Red",
+  "method_reference": "https://doi.org/10.1051/0004-6361/202142088",
+  "geometry_reference": "https://doi.org/10.1051/0004-6361/202243869",
+  "response_detector_type": 0,
+  "limits": "No new image reduction, extinction correction, aperture/PRF throughput correction, neighbour exclusion, or statistical flare-template fit. Assumes relative aperture variation represents whole-star fraction; different flare/stellar aperture throughput and unknown spectral evolution add systematic error. This estimates radiation, not kinetic or total magnetic energy."
+}

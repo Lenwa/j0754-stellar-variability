@@ -1,0 +1,172 @@
+{
+  "period_days": 35.9204566,
+  "input": "results\\sky-plates-j0754-models-20261108\\short_period\\asassn_g_daily.csv",
+  "method": "Exploratory follow-up: fixed35.9204566d, separate July-June observing seasons. Fit camera offsets and within-camera linear trends jointly with sine/cosine using existing fit(); errors floored0.02mag. At least30 daily groups and90day span. No period selection or photometric clipping. Annual bq-camera medians show slow trend separately. White-noise-only errors do not establish seasonal detections or physical temperature. Earlier frozen-waveform held-out test controls persistent-clock claim. No claim of long activity-cycle period from one modern dip.",
+  "seasonal": [
+    {
+      "season": "2017/18",
+      "n": 187,
+      "start": "2017-10-07",
+      "stop": "2018-05-23",
+      "bq_camera_median_mag": 12.623,
+      "bq_groups": 59,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.03239347909288654,
+      "amplitude_white_sigma": 0.0012241641509603402,
+      "cosine_phase_cycles": 0.6133644859772027,
+      "retention": [
+        0.9223316389727897,
+        0.962538102172376
+      ],
+      "residual_rms_mag": 0.01132014398060734
+    },
+    {
+      "season": "2018/19",
+      "n": 155,
+      "start": "2018-09-10",
+      "stop": "2019-05-26",
+      "bq_camera_median_mag": 12.67,
+      "bq_groups": 42,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.038072354538477536,
+      "amplitude_white_sigma": 0.006293205930546797,
+      "cosine_phase_cycles": 0.5070786456369774,
+      "retention": [
+        0.9327876414937267,
+        0.9709072489569986
+      ],
+      "residual_rms_mag": 0.05036050115999417
+    },
+    {
+      "season": "2019/20",
+      "n": 131,
+      "start": "2019-09-14",
+      "stop": "2020-05-24",
+      "bq_camera_median_mag": 12.659,
+      "bq_groups": 41,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.024851821529690832,
+      "amplitude_white_sigma": 0.0024941280591704766,
+      "cosine_phase_cycles": 0.5029725600401396,
+      "retention": [
+        0.8985039634727962,
+        0.9598555462106424
+      ],
+      "residual_rms_mag": 0.021961238453427945
+    },
+    {
+      "season": "2020/21",
+      "n": 106,
+      "start": "2020-09-04",
+      "stop": "2021-05-28",
+      "bq_camera_median_mag": 12.8565,
+      "bq_groups": 28,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.031934140452166186,
+      "amplitude_white_sigma": 0.004912019950873467,
+      "cosine_phase_cycles": 0.37277237368112265,
+      "retention": [
+        0.9210315352426884,
+        0.9506214770323956
+      ],
+      "residual_rms_mag": 0.0730170167904688
+    },
+    {
+      "season": "2021/22",
+      "n": 141,
+      "start": "2021-09-08",
+      "stop": "2022-05-29",
+      "bq_camera_median_mag": 12.91975,
+      "bq_groups": 30,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.02377613386191916,
+      "amplitude_white_sigma": 0.005642697029433187,
+      "cosine_phase_cycles": 0.0762697518787705,
+      "retention": [
+        0.7376351158654296,
+        0.9532724352791015
+      ],
+      "residual_rms_mag": 0.057494884565920994
+    },
+    {
+      "season": "2022/23",
+      "n": 128,
+      "start": "2022-09-01",
+      "stop": "2023-05-20",
+      "bq_camera_median_mag": 12.929,
+      "bq_groups": 31,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.022920337992672405,
+      "amplitude_white_sigma": 0.004938786712518608,
+      "cosine_phase_cycles": 0.15876324959158558,
+      "retention": [
+        0.8879869256656332,
+        0.9725357003048397
+      ],
+      "residual_rms_mag": 0.10003617624708695
+    },
+    {
+      "season": "2023/24",
+      "n": 159,
+      "start": "2023-09-04",
+      "stop": "2024-05-28",
+      "bq_camera_median_mag": 12.855,
+      "bq_groups": 21,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.027869800338417773,
+      "amplitude_white_sigma": 0.0023796024442563827,
+      "cosine_phase_cycles": 0.42019192743429945,
+      "retention": [
+        0.8612764824308629,
+        0.9491402151401741
+      ],
+      "residual_rms_mag": 0.04281894897416332
+    },
+    {
+      "season": "2024/25",
+      "n": 154,
+      "start": "2024-09-01",
+      "stop": "2025-05-28",
+      "bq_camera_median_mag": 12.836,
+      "bq_groups": 10,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.005066155572293344,
+      "amplitude_white_sigma": 0.0029100360623983182,
+      "cosine_phase_cycles": 0.6577085745556146,
+      "retention": [
+        0.9029531007026641,
+        0.9466837762905034
+      ],
+      "residual_rms_mag": 0.025132217716734552
+    },
+    {
+      "season": "2025/26",
+      "n": 207,
+      "start": "2025-09-02",
+      "stop": "2026-05-30",
+      "bq_camera_median_mag": 12.774999999999999,
+      "bq_groups": 58,
+      "harmonic": 1,
+      "semi_amplitude_mag": 0.01882077714940754,
+      "amplitude_white_sigma": 0.0024659222833409073,
+      "cosine_phase_cycles": 0.7821638724851417,
+      "retention": [
+        0.9417956805770925,
+        0.9889538568073325
+      ],
+      "residual_rms_mag": 0.02434549998073686
+    }
+  ],
+  "earlier_heldout": {
+    "n": 778,
+    "fraction_sse_improvement": -0.2601784104244802,
+    "weighted_sse_null": 2462.2735125123727,
+    "weighted_sse_frozen": 3102.903921028143,
+    "white_noise_scaled_delta_chi2": -199.55684079557625,
+    "frozen_coefficients": [
+      -0.025649406744999964,
+      -0.0005566365443971932
+    ]
+  },
+  "limits": "No independent temperature measurements or companion confirmation. Seasonal amplitude is a fit at an imposed period, not a searched/detected rotation period. Phase is poorly defined when amplitude is small. Long dip and evolving spot model are compatible but not causally identified."
+}

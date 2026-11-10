@@ -1,0 +1,174 @@
+[
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_3500.fits",
+    "sha256": "905b3fd8fb4e931ab79348c89da043b3a9dd2f9365a1b189c6302fa44de22f50"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_3750.fits",
+    "sha256": "d50f8447bcb3b91a62302fe072118a365b2bf135d350b37588e5ba6275f46f59"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_4000.fits",
+    "sha256": "4eb178ca5c4552d65e9d783edf7b6d79e65aa2802fce3e796f72d79549297e93"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_4250.fits",
+    "sha256": "15def608ae05aa6edcb10ea929aee98450303b8f013c481743fc83a6a17ec04b"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_4500.fits",
+    "sha256": "7042e4ea07951af74b92bd8eb170afbd4344bda7dcb6fca0a2ae7e3d9cf0bd1b"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_4750.fits",
+    "sha256": "47d55c4576d90a7d033ccf1d2428c998c88c0aee4452f290c158e66d169903c8"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_5000.fits",
+    "sha256": "27d749870ab90fc4fb5f591aa9c8167768ff7ab81620a44291fe690f6ed28d12"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_5250.fits",
+    "sha256": "2619c93e4a780ed39bd83aa0f301b192824003201d33a00f0198a9970b731375"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_5500.fits",
+    "sha256": "5741bc88403f66e6c735c8b54b8e377e8a20b84055c69c44eda56f26627d94d9"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_5750.fits",
+    "sha256": "4af6465676627c2c5dbeae565f60e8505db939e8388dcb005ab3579affb1efd1"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_6000.fits",
+    "sha256": "bdcc1110e9036f976221e169bda5a51dbd5f95070ef597df7aab9b0fcdce2e3b"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_6250.fits",
+    "sha256": "b717534b0f41bc8942cb77abb14e02e85b669523c33b5370e6e65b3b59bd109b"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm05_6500.fits",
+    "sha256": "245ec0ea508e1b2aa5181003cec439be83198683b0025c082465050b49d984dc"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_3500.fits",
+    "sha256": "d7e97746933a38faa8152c245c8546fd6fd1f0186cb254b2d496621933763ffd"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_3750.fits",
+    "sha256": "d1535c6335d55742ffb147f9ab98d2ae4a717b33e1ad96a013be3104b64f53f6"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_4000.fits",
+    "sha256": "0480fe7bb718df1e10063dfad06e428e5af30440d54c7323061c37939a47908b"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_4250.fits",
+    "sha256": "51cf10a63ddad7ca6123d872aed33290e0cfc222460d83b25883de83ac8bedab"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_4500.fits",
+    "sha256": "50b64021aa61ce443a22e234175f16019770af7e6f4ba60f47d8127a35ccee9a"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_4750.fits",
+    "sha256": "dd423cd4cf7f93206b522d54a8745c4f9cd22b7023718b75577facd4d8f92869"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_5000.fits",
+    "sha256": "2fcfb4181873faae6838f33fef66be4e95e9d8c0716b8a351b3057b5ff411025"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_5250.fits",
+    "sha256": "92dde27529def2ccd11a7e80e1c40caf006798f127dcba2a2add45189617d8e7"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_5500.fits",
+    "sha256": "025b8e4aed1439319be171b241b0b27621ccdf1c44218fcaf0d9c949fb528287"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_5750.fits",
+    "sha256": "165b5a27ba6b63cf7dcbb05aca6bf55a7eb9941dfd2a26d0b027a9d76752ad73"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_6000.fits",
+    "sha256": "deb5b70004d7a6708d4da73dbcf6cbd6b8748c01926490c24e9b112e7cd38997"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_6250.fits",
+    "sha256": "d20aa3fb86d6115b0e86fd39cc951bf11c0392853f7d67d7f442462e46c1d79b"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckm10_6500.fits",
+    "sha256": "23f0379a4931b03d59e8b0ea99243108a3315abed709023c5f270602e0073c5d"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_3500.fits",
+    "sha256": "21947bfde2cc8bdbda4a92f4ba9b8654b76b048f1140a400264415998a63290d"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_3750.fits",
+    "sha256": "3d8798501620b8e07715ec3e04aa590cbd052d77265a90e5988b0912705a749b"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_4000.fits",
+    "sha256": "9015ecd2129b7467db5e46ed4909b8b990f650328635855fd4bc4a2bbff1f948"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_4250.fits",
+    "sha256": "1ba4619b038d78268d9196fab5a7a571688a2c2c0cb491415f94c0d98772d789"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_4500.fits",
+    "sha256": "a1b405f4ddbbfaa76bce9d72262df75a1d39a25dc48c2769f46f4fe0b4c725af"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_4750.fits",
+    "sha256": "bad44ba513e6f957d70c6b114fbf7460e2e075274c3fae02eadf69793b7a06e0"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_5000.fits",
+    "sha256": "c89b206bb254360ff10cabfd0f6bab333e630129feafae6ad34f7300a93c5da5"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_5250.fits",
+    "sha256": "a64cb9e01d34527cbe6722157420f162773c53f929a2812e410abb204c4b51ef"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_5500.fits",
+    "sha256": "41dfc5930fd13336ab0b41bd9505baf3c78e0aa57a92af3d34b9eab724da96bf"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_5750.fits",
+    "sha256": "ebee9553c6e35d6cb529ebf783cc0501169861af3493f947141bc6c925ff3b94"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_6000.fits",
+    "sha256": "d8465b2ee70276f64ab32e8797dea8734f0d0c91b1f9cd8d643d66c5bd652a19"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_6250.fits",
+    "sha256": "9240b010a43fc05a30b15fce70b9e44dc70061ea6e290ecf4fa985508f45e571"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\models\\ckp00_6500.fits",
+    "sha256": "40898a828d1752938684f7907c741ecd641562e7196ef7a26b42309c988d44bb"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-models-20261108\\spectra\\gaia_xp_sampled_calibrated.csv",
+    "sha256": "6b7faf5a7d3717abf6b0d3bf1bc364ea874ee1d5e31b980ae5d4d13b1ddb40b6"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-spherex-20261108\\local\\local_extraction.json",
+    "sha256": "69b5bc3c636afe587e6c920de735b702e7a6f6cb3d0ffcb17832e45f4781a4cc"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-spherex-20261108\\native_IRSA_photometry.tbl",
+    "sha256": "9772e8426df2e0764c958d369e3ef1c912cbd4148e80631483387040c9f3a509"
+  },
+  {
+    "path": ".\\results\\sky-plates-j0754-dust-20261108\\draine_rv31_extinction.txt",
+    "sha256": "b56680cc38b85f051f20c4405303e8c480cc9bec714fd5ba722a257a40ae840c"
+  }
+]

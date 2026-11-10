@@ -1,0 +1,443 @@
+{
+  "infoFlag": [
+    {
+      "name": "DEFAULT",
+      "value": 0,
+      "description": "Initial value; resets all bits."
+    },
+    {
+      "name": "PSFMODEL",
+      "value": 1,
+      "description": "Source fitted with a psf model (linear or non-linear)."
+    },
+    {
+      "name": "EXTMODEL",
+      "value": 2,
+      "description": "Source fitted with an extended-source model."
+    },
+    {
+      "name": "FITTED",
+      "value": 4,
+      "description": "Source fitted with non-linear model (PSF or EXT; good or bad)."
+    },
+    {
+      "name": "FAIL",
+      "value": 8,
+      "description": "Fit (non-linear) failed (non-converge\\; off-edge\\; run to zero)."
+    },
+    {
+      "name": "POOR",
+      "value": 16,
+      "description": "Fit succeeds\\; but low-S/N\\; high-Chisq\\; or large (for PSF -- drop?)."
+    },
+    {
+      "name": "PAIR",
+      "value": 32,
+      "description": "Source fitted with a double PSF."
+    },
+    {
+      "name": "PSFSTAR",
+      "value": 64,
+      "description": "Source used to define PSF model."
+    },
+    {
+      "name": "SATSTAR",
+      "value": 128,
+      "description": "Source model peak is above saturation."
+    },
+    {
+      "name": "BLEND",
+      "value": 256,
+      "description": "Source is a blend with other sources."
+    },
+    {
+      "name": "EXTERNAL",
+      "value": 512,
+      "description": "Source based on supplied input position."
+    },
+    {
+      "name": "BADPSF",
+      "value": 1024,
+      "description": "Failed to get good estimate of object's PSF."
+    },
+    {
+      "name": "DEFECT",
+      "value": 2048,
+      "description": "Source is thought to be a defect."
+    },
+    {
+      "name": "SATURATED",
+      "value": 4096,
+      "description": "Source is thought to be saturated pixels (bleed trail)."
+    },
+    {
+      "name": "CR_LIMIT",
+      "value": 8192,
+      "description": "Source has crNsigma above limit."
+    },
+    {
+      "name": "EXT_LIMIT",
+      "value": 16384,
+      "description": "Source has extNsigma above limit."
+    },
+    {
+      "name": "MOMENTS_FAILURE",
+      "value": 32768,
+      "description": "Could not measure the moments."
+    },
+    {
+      "name": "SKY_FAILURE",
+      "value": 65536,
+      "description": "Could not measure the local sky."
+    },
+    {
+      "name": "SKYVAR_FAILURE",
+      "value": 131072,
+      "description": "Could not measure the local sky variance."
+    },
+    {
+      "name": "BELOW_MOMENTS_SN",
+      "value": 262144,
+      "description": "Moments not measured due to low S/N."
+    },
+    {
+      "name": "UNDEF_1",
+      "value": 524288,
+      "description": "Unused bit value."
+    },
+    {
+      "name": "BIG_RADIUS",
+      "value": 1048576,
+      "description": "Poor moments for small radius\\; try large radius."
+    },
+    {
+      "name": "AP_MAGS",
+      "value": 2097152,
+      "description": "Source has an aperture magnitude."
+    },
+    {
+      "name": "BLEND_FIT",
+      "value": 4194304,
+      "description": "Source was fitted as a blend."
+    },
+    {
+      "name": "EXTENDED_FIT",
+      "value": 8388608,
+      "description": "Full extended fit was used."
+    },
+    {
+      "name": "EXTENDED_STATS",
+      "value": 16777216,
+      "description": "Extended aperture stats calculated."
+    },
+    {
+      "name": "LINEAR_FIT",
+      "value": 33554432,
+      "description": "Source fitted with the linear fit."
+    },
+    {
+      "name": "NONLINEAR_FIT",
+      "value": 67108864,
+      "description": "Source fitted with the non-linear fit."
+    },
+    {
+      "name": "RADIAL_FLUX",
+      "value": 134217728,
+      "description": "Radial flux measurements calculated."
+    },
+    {
+      "name": "SIZE_SKIPPED",
+      "value": 268435456,
+      "description": "Size could not be determined."
+    },
+    {
+      "name": "PEAK_ON_SPIKE",
+      "value": 536870912,
+      "description": "Peak lands on diffraction spike."
+    },
+    {
+      "name": "PEAK_ON_GHOST",
+      "value": 1073741824,
+      "description": "Peak lands on ghost or glint."
+    },
+    {
+      "name": "PEAK_OFF_CHIP",
+      "value": 2147483648,
+      "description": "Peak lands off edge of chip."
+    }
+  ],
+  "infoFlag2": [
+    {
+      "name": "DEFAULT",
+      "value": 0,
+      "description": "Initial value; resets all bits."
+    },
+    {
+      "name": "DIFF_WITH_SINGLE",
+      "value": 1,
+      "description": "Difference source matched to a single positive detection."
+    },
+    {
+      "name": "DIFF_WITH_DOUBLE",
+      "value": 2,
+      "description": "Difference source matched to positive detections in both images."
+    },
+    {
+      "name": "MATCHED",
+      "value": 4,
+      "description": "Source generated based on another image (forced photometry at source location)."
+    },
+    {
+      "name": "ON_SPIKE",
+      "value": 8,
+      "description": "More than 25% of (PSF-weighted) pixels land on diffraction spike."
+    },
+    {
+      "name": "ON_STARCORE",
+      "value": 16,
+      "description": "More than 25% of (PSF-weighted) pixels land on starcore."
+    },
+    {
+      "name": "ON_BURNTOOL",
+      "value": 32,
+      "description": "More than 25% of (PSF-weighted) pixels land on burntool."
+    },
+    {
+      "name": "ON_CONVPOOR",
+      "value": 64,
+      "description": "More than 25% of (PSF-weighted) pixels land on convpoor."
+    },
+    {
+      "name": "PASS1_SRC",
+      "value": 128,
+      "description": "Source detected in first pass analysis"
+    },
+    {
+      "name": "HAS_BRIGHTER_NEIGHBOR",
+      "value": 256,
+      "description": "Peak is not the brightest in its footprint"
+    },
+    {
+      "name": "BRIGHT_NEIGHBOR_1",
+      "value": 512,
+      "description": "Flux_negative / (r^2 flux_positive) > 1."
+    },
+    {
+      "name": "BRIGHT_NEIGHBOR_10",
+      "value": 1024,
+      "description": "Flux_negative / (r^2 flux_positive) > 10."
+    },
+    {
+      "name": "DIFF_SELF_MATCH",
+      "value": 2048,
+      "description": "Positive detection match is probably this source."
+    },
+    {
+      "name": "SATSTAR_PROFILE",
+      "value": 4096,
+      "description": "Saturated source is modeled with a radial profile."
+    },
+    {
+      "name": "ECONTOUR_FEW_PTS",
+      "value": 8192,
+      "description": "Too few points to measure the elliptical contour."
+    },
+    {
+      "name": "RADBIN_NAN_CENTER",
+      "value": 16384,
+      "description": "Radial bins failed with too many NaN center bin."
+    },
+    {
+      "name": "PETRO_NAN_CENTER",
+      "value": 32768,
+      "description": "Petrosian (1976)  radial bins failed with too many NaN center bin."
+    },
+    {
+      "name": "PETRO_NO_PROFILE",
+      "value": 65536,
+      "description": "Petrosian (1976)  not built becaues radial bins missing."
+    },
+    {
+      "name": "PETRO_INSIG_RATIO",
+      "value": 131072,
+      "description": "Insignificant measurement of  Petrosian (1976)  ratio."
+    },
+    {
+      "name": "PETRO_RATIO_ZEROBIN",
+      "value": 262144,
+      "description": "Petrosian (1976)  ratio in the 0th bin (likely bad)."
+    },
+    {
+      "name": "EXT_FITS_RUN",
+      "value": 524288,
+      "description": "Attempted to run extended fits on this source."
+    },
+    {
+      "name": "EXT_FITS_FAIL",
+      "value": 1048576,
+      "description": "At least one of the model fits failed."
+    },
+    {
+      "name": "EXT_FITS_RETRY",
+      "value": 2097152,
+      "description": "One of the model fits was retried with new window."
+    },
+    {
+      "name": "EXT_FITS_NONE",
+      "value": 4194304,
+      "description": "All of the model fits failed."
+    }
+  ],
+  "infoFlag3": [
+    {
+      "name": "DEFAULT",
+      "value": 0,
+      "description": "Initial value; resets all bits."
+    },
+    {
+      "name": "NOCAL",
+      "value": 1,
+      "description": "Detection ignored for this analysis (photcode\\; time range) -- internal only."
+    },
+    {
+      "name": "POOR_PHOTOM",
+      "value": 2,
+      "description": "Detection is photometry outlier."
+    },
+    {
+      "name": "SKIP_PHOTOM",
+      "value": 4,
+      "description": "Detection was ignored for photometry measurement."
+    },
+    {
+      "name": "AREA",
+      "value": 8,
+      "description": "Detection near image edge."
+    },
+    {
+      "name": "POOR_ASTROM",
+      "value": 16,
+      "description": "Detection is astrometry outlier."
+    },
+    {
+      "name": "SKIP_ASTROM",
+      "value": 32,
+      "description": "Detection was ignored for astrometry measurement."
+    },
+    {
+      "name": "USED_OBJ",
+      "value": 64,
+      "description": "Detection was used during update objects"
+    },
+    {
+      "name": "USED_CHIP",
+      "value": 128,
+      "description": "Detection was used during update chips."
+    },
+    {
+      "name": "BLEND_MEAS",
+      "value": 256,
+      "description": "Detection is within radius of multiple objects."
+    },
+    {
+      "name": "BLEND_OBJ",
+      "value": 512,
+      "description": "Multiple detections within radius of object."
+    },
+    {
+      "name": "WARP_USED",
+      "value": 1024,
+      "description": "Measurement used to find mean warp photometry."
+    },
+    {
+      "name": "UNDEF_4",
+      "value": 2048,
+      "description": "Unused bit value."
+    },
+    {
+      "name": "BLEND_MEAS_X",
+      "value": 4096,
+      "description": "Detection is within radius of multiple objects across catalogs."
+    },
+    {
+      "name": "ARTIFACT",
+      "value": 8192,
+      "description": "Detection is thought to be non-astronomical."
+    },
+    {
+      "name": "SYNTH_MAG",
+      "value": 16384,
+      "description": "Magnitude is synthetic."
+    },
+    {
+      "name": "PHOTOM_UBERCAL",
+      "value": 32768,
+      "description": "Externally-supplied zero point from ubercal analysis."
+    },
+    {
+      "name": "STACK_PRIMARY",
+      "value": 65536,
+      "description": "This stack measurement is in the primary skycell."
+    },
+    {
+      "name": "STACK_PHOT_SRC",
+      "value": 131072,
+      "description": "This measurement supplied the stack photometry."
+    },
+    {
+      "name": "ICRF_QSO",
+      "value": 262144,
+      "description": "This measurement is an ICRF reference position."
+    },
+    {
+      "name": "IMAGE_EPOCH",
+      "value": 524288,
+      "description": "This measurement is registered to the image epoch (not tied to the reference catalog epoch)."
+    },
+    {
+      "name": "PHOTOM_PSF",
+      "value": 1048576,
+      "description": "This measurement is used for the mean PSF magnitude."
+    },
+    {
+      "name": "PHOTOM_APER",
+      "value": 2097152,
+      "description": "This measurement is used for the mean aperture magnitude."
+    },
+    {
+      "name": "PHOTOM_KRON",
+      "value": 4194304,
+      "description": "This measurement is used for the mean  Kron (1980)  magnitude."
+    },
+    {
+      "name": "MASKED_PSF",
+      "value": 16777216,
+      "description": "This measurement is masked based on IRLS weights for the mean PSF magnitude."
+    },
+    {
+      "name": "MASKED_APER",
+      "value": 33554432,
+      "description": "This measurement is masked based on IRLS weights for the mean aperture magnitude."
+    },
+    {
+      "name": "MASKED_KRON",
+      "value": 67108864,
+      "description": "This measurement is masked based on IRLS weights for the mean  Kron (1980)  magnitude."
+    },
+    {
+      "name": "OBJECT_HAS_2MASS",
+      "value": 268435456,
+      "description": "This measurement comes from an object with 2MASS data."
+    },
+    {
+      "name": "OBJECT_HAS_GAIA",
+      "value": 536870912,
+      "description": "This measurement comes from an object with Gaia data."
+    },
+    {
+      "name": "OBJECT_HAS_TYCHO",
+      "value": 1073741824,
+      "description": "This measurement comes from an object with Tycho data."
+    }
+  ]
+}

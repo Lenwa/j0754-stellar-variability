@@ -1,0 +1,99 @@
+J0754: bounded UV/X-ray mechanism update
+8 November 2026 local date; calculated 9 November 2026 UTC
+This supplements mechanism_assessment.txt and uses the independently recovered native archive records in ../archives/. No new source code or photometric extraction is introduced here.
+
+MAIN RESULT
+
+If the Swift source is physically associated with J0754, its luminosity is compatible with an active giant corona, including an elevated or flaring state. It strengthens the activity branch already motivated by Ca H/K emission; it does not establish that activity causes the years-long fading. It does not require a hot companion. No X-ray spectral fit, flare identification, X-ray/optical correlation or unique emitting component is available from these sparse counts.
+
+The GALEX detection supplies genuine near-UV context. The Swift UVW1 point is a different, flagged band with an optical red tail, and cannot be used as a clean monochromatic ultraviolet excess or compared directly with GALEX as variability.
+
+NATIVE ASSOCIATION AND OBSERVATION AUDIT
+
+The parent archive audit identifies 2SXPS 161839 = 2SXPS J075445.6+164139, 3.882 arcsec from the Gaia target, inside the reported 90% positional-error radius of 5.6 arcsec. Detection and field flags are Good. The native cross-correlation lists the exact 2MASS/AllWISE star; their checks find only the target in Gaia/AllWISE within 20 arcsec of the X-ray centroid. This is a plausible counterpart, not a measured probability of physical association. An unresolved/background or otherwise uncatalogued contaminant is not excluded.
+
+The native record has 18 total counts and rate 0.00506 +/- 0.00134 count/s in 0.3–10 keV. HasSpec=0. One per-observation retrospective rate is actually recovered on 2009-12-02; two snapshots share its photons. Catalogue NObs=2 and a 2010 stop date do not provide a second measured X-ray epoch. No 2010 independent rate or source-specific current upper limit is present. The snapshot differences do not by themselves establish a flare.
+
+WhichAPEC=0 means the APEC count-to-flux conversion assumes kT=1 keV and Galactic NH=4.34e20 cm^-2. This is not a measured plasma temperature. The power-law conversion uses a hardness-ratio interpolation and is not an independently fitted spectrum. The catalogue flux errors omit spectral-model uncertainty. HR1=-0.242 and HR2=-0.527, with large errors, are too weak to select corona versus accretion or a background source.
+
+Files read directly:
+../archives/swift_source_complete.json
+../archives/swift_native_total_rates.csv
+../archives/swift_uvot_target.json
+../archives/galex_target.json
+../archives/archive_audit.txt
+../archives/uvot_readme.txt
+Primary catalogue documentation: https://www.swift.ac.uk/2SXPS/docs.php
+Native public source route: https://www.swift.ac.uk/2SXPS/2SXPSJ075445.6+164139
+The web tool could not open the source route, but the independently retrieved native files above are preserved.
+
+CONDITIONAL X-RAY LUMINOSITIES
+
+Assume that the association is correct, d=1000/0.599389=1668.37 pc, and Lbol=54.64 Lsun=2.09162e35 erg/s. Naive inverse-parallax propagation gives sigma_d=55.10 pc from sigma_parallax=0.019797 mas. No parallax zero-point or distance prior was applied. The luminosity is illustrative; conflicting atmosphere/evolution results and lack of simultaneous bolometric measurement remain.
+
+Model/absorption treatment | Flux, erg/cm^2/s | Lx, erg/s | Lx/Lbol
+APEC observed | 1.118e-13 | 3.723e31 | 1.780e-4
+APEC unabsorbed | 1.265e-13 | 4.213e31 | 2.014e-4
+Power law observed | 1.545e-13 | 5.145e31 | 2.460e-4
+Power law unabsorbed | 2.056e-13 | 6.847e31 | 3.274e-4
+
+Combining count-rate and parallax formal errors only gives approximately 27.3% errors: APEC unabsorbed Lx=(4.21 +/- 1.15)e31 erg/s; power-law unabsorbed=(6.85 +/- 1.87)e31. The spectral-model difference, absorption uncertainty, possible confusion and unknown Lbol are additional. The alternative models are not a confidence interval or two independent measurements. The corresponding log10(Lx/Lbol) values are -3.696 and -3.485. Any adopted Lbol rescales the quoted ratios by (54.64 Lsun/Lbol). If Lbol is derived consistently from an observed bolometric flux at the same distance, the common distance factor cancels in Lx/Lbol.
+
+All constants, inputs, formulae and individual errors are retained in uv_xray_conditional_scales.json.
+
+CORONAL ACTIVITY VERSUS A HOT COMPANION
+
+Pandey & Singh (2012), "A study of X-ray flares – II. RS CVn-type binaries", MNRAS 419, 1219–1237, DOI 10.1111/j.1365-2966.2011.19776.x, is a useful same-band comparison. Their five systems have 0.3–10 keV quiescent luminosities around 10^30.7–30.9 erg/s and flare peaks 10^30.8–31.8 erg/s. J0754's conditional value lies near the upper part of that flare range, rather than beyond established stellar coronal output. This supports plausibility, not an actual flare identification, a universal luminosity ceiling, or an RS CVn classification.
+Primary source: https://arxiv.org/abs/1110.2008
+
+Mao et al. (2026) independently study the K1 giant RS CVn system sigma Gem with Einstein Probe; 0.5–4 keV flare peaks reach 3.7e31–7.0e32 erg/s. Its band and selection differ. It shows that still larger active-giant outputs are observed; no bandpass correction or direct luminosity distribution comparison was made.
+Primary source: https://arxiv.org/html/2608.14009v1
+
+A 4500–5200 K photosphere is not the origin of keV photons. An ordinary UV-bright hot companion's photosphere also does not automatically explain Swift X-rays: for illustration, a 30000 K blackbody has kT=2.585 eV and 0.3 keV is 116 kT, deep in its Wien tail. A corona, shocks or accretion are separate physical processes. An accreting white dwarf or another active component cannot be excluded from 18 counts, but the X-ray detection alone does not call for one, especially given the giant's independent chromospheric activity.
+
+The most economical current activity explanation is emission from an active stellar corona somewhere in the unresolved system. Which star emits, whether a binary maintains the rotation, and whether the slow dimming is magnetic or obscurational remain different questions. A confirmed companion plus X-rays would not prove a disk or identify the fading mechanism.
+
+GALEX AND UVW1: DIFFERENT EVIDENCE
+
+GALEX J075445.8+164140 is only 0.1423 arcsec from the target, NUV_AB=18.61384 +/- 0.05286, flux=130.155 +/- 6.335 microJy, artifact flag 0, in the 176 s AIS observation on 2006-02-02. GALEX's detectors have excellent red rejection, so the Swift optical-red-tail caveat should not be applied wholesale to this NUV measurement.
+Primary calibration: Morrissey et al. (2007), "The Calibration and Data Products of the Galaxy Evolution Explorer":
+https://arxiv.org/abs/0706.0755
+
+At illustrative 2316 Angstrom and the distance above, nu Lnu is 5.61e32 erg/s, or 0.00268 of the illustrative Lbol. This is NOT integrated ultraviolet luminosity, chromospheric excess or a measured companion luminosity. A proper photospheric baseline requires an atmosphere with metallicity and extinction, integrated through the actual GALEX response. A blackbody UV extrapolation is particularly vulnerable to line blanketing and should not decide whether an excess exists.
+
+The corresponding FUV catalogue quantities are missing-value sentinels. A 176 s exposure is not a numerical local upper limit. Without a recovered FUV limit or additional UV spectrum, no hot-companion temperature constraint was derived here.
+
+Swift UVOT SSC1 source 1672504 matches within 0.104 arcsec on 2009-12-02. UVW1_AB=16.730, with quality flag 128 (multiple exposure values within aperture). Its catalogue flux uses a GRB-based count conversion. UVW1's extended optical transmission tail can contribute substantially for cool sources. The formal 0.0058 mag error does not bound these calibration/model effects.
+Primary official red-tail documentation:
+https://swift.gsfc.nasa.gov/analysis/uvot_digest/redleak.html
+Catalogue documentation:
+https://cdsarc.cds.unistra.fr/viz-bin/ReadMe/II/339?format=html&tex=true
+
+GALEX NUV 2006 and UVW1 2009 differ in epoch and transmission. Their approximately 1.88 mag AB difference is not a measured UV brightening. A valid test would forward-model the cool photosphere through both full responses at the corresponding brightness states, propagate flag/calibration uncertainty, and examine any residual. Even an established UV residual could be chromospheric/transition-region activity or a second component; a color/spectrum is needed to separate them. Neither UV epoch is contemporaneous with the 2018–22 modern fade or the 2025–26 SPHEREx visits.
+
+WAS THIS ALREADY REPORTED FOR J0754?
+
+Tang et al. (2010), ApJL 710 L77–L81, has no occurrence of X-ray, ROSAT or Swift in the full parsed paper and does not report a J0754 X-ray counterpart. Its activity evidence is the optical Ca H/K cores. This does not prove no later researcher has discussed the association.
+Primary source: https://hea-www.harvard.edu/DASCH/papers/apjl_710_1_77.pdf
+
+The 2012 Tang thesis was downloaded and all 178 pages parsed. The complete K-giant chapter, physical pages 39–54 (PDF pages 51–66), has no X-ray/ROSAT/Swift/Chandra terms. The J0754 discussion and spectroscopy are the original account; no target X-ray detection was verified there. Relevant pages 44 and 52 were rendered and visually checked.
+Primary source: https://dasch.cfa.harvard.edu/publications/thesis_bound_20120510.pdf
+
+A public 2011 STScI poster by Tang, Grindlay, Los, Servillat & Kurucz DOES contain a newer direct J0754 spectrum/model label: [Fe/H]=-0.8, T=4500 K, log g=1.7. It sits beneath an atmosphere-fitting section describing high-resolution echelle spectra (MMT Hectochelle and Magellan MIKE). This is a conference-poster result without parameter errors, observing date, detailed reduction or a refereed fit analysis in the material inspected. It warrants preserving a cooler/lower-gravity baseline in the SED investigation, not overriding all other parameters as exact.
+Primary source: https://hea-www.harvard.edu/DASCH/papers/DASCH_Tang_STScI_June2011_02.pdf
+Native PDF and full-page PNG are saved here and visually checked.
+
+Crucial layout correction: the poster's line about future Chandra X-rays/TRES orbit observations belongs to a SEPARATE BE-STAR PANEL, not J0754/K giants. Plain text extraction interleaves those panels. It must not be quoted as a J0754 observing request or detection. This correction was relayed to the parent immediately after visual inspection.
+
+The native 2SXPS record already cross-links 1SXPS and 1SWXRT. Thus the X-ray detection is already a public catalogue source. In this work it is a newly recovered lead, not a new or unpublished X-ray discovery. Exact coordinate-name web searches did not find a dedicated causal analysis; ADS citation completeness and unpublished/uncatalogued work remain unassessed.
+
+WHAT THIS CHANGES
+
+The UV/X-ray evidence makes magnetic activity a more concrete mechanism to test and gives it a plausible energy scale. It does not turn a two-band spot/temperature fit into a causal proof. A small obscuring cloud could coexist with a corona; old sparse X-rays cannot test modern optical state dependence. An APEC catalogue flux cannot be used as a measured coronal temperature or an accretion discriminator.
+
+Most discriminating next data remain simultaneous multi-epoch optical spectroscopy/activity/line-shape and photometry, an independently validated RV orbit, and (if feasible) repeated X-ray/UV measurements with enough counts/colors to separate emission components. The current SPHEREx extraction constrains the cool SED in 2025/26; it does not substitute for those missing contemporaneous high-energy diagnostics.
+
+VERIFICATION AND PRESERVATION
+
+uv_xray_conditional_scales.json parses and retains the calculation. Poster/thesis PDF headers, checksums, rendered-page paths, native-input hashes and targeted search boundaries are in uv_xray_update_receipt.json. No maintained source changed, no account/contact/paid request was made, and nothing was committed, pushed or published.
+

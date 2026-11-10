@@ -1,0 +1,78 @@
+{
+  "calculated_utc": "2026-11-08T23:46:07.521Z",
+  "status": "Conditional scale estimates, not validated physical parameters or an orbital confirmation",
+  "inputs": {
+    "P_days": 35.9204566,
+    "K_kms": 10.7245,
+    "e": 0.022975,
+    "R_Rsun": 9.25,
+    "L_Lsun": 54.64,
+    "primary_mass_grid_Msun": [
+      1,
+      1.5,
+      2.6
+    ],
+    "provenance": "Gaia candidate NSS and cautioned Gaia AP values from prior local audit; mass grid illustrative only"
+  },
+  "spectroscopic_mass_function_Msun": 0.004587099512049055,
+  "a1_sin_i_AU": 0.03540077033830291,
+  "synchronous_equatorial_rotation_kms": 13.028307890515986,
+  "orbit": [
+    {
+      "assumed_primary_mass_Msun": 1,
+      "edge_on_companion_mass_Msun": 0.18618642847173694,
+      "relative_semimajor_axis_AU": 0.22553691843932705,
+      "relative_circular_velocity_kms": 68.30733341738207,
+      "star_diameter_crossing_days": 2.180784027337834,
+      "equilibrium_blackbody_dust_T_at_a_K": 1593.4143711534
+    },
+    {
+      "assumed_primary_mass_Msun": 1.5,
+      "edge_on_companion_mass_Msun": 0.2404066905853376,
+      "relative_semimajor_axis_AU": 0.25628129316470466,
+      "relative_circular_velocity_kms": 77.61874136605567,
+      "star_diameter_crossing_days": 1.9191697655099,
+      "equilibrium_blackbody_dust_T_at_a_K": 1494.78626132015
+    },
+    {
+      "assumed_primary_mass_Msun": 2.6,
+      "edge_on_companion_mass_Msun": 0.34107519787773843,
+      "relative_semimajor_axis_AU": 0.3052591577329234,
+      "relative_circular_velocity_kms": 92.45244286505309,
+      "star_diameter_crossing_days": 1.6112450580034885,
+      "equilibrium_blackbody_dust_T_at_a_K": 1369.6298108731196
+    }
+  ],
+  "blackbody_dust_sublimation_radius_AU": [
+    {
+      "assumed_T_K": 1200,
+      "r_AU": 0.39766064240270466
+    },
+    {
+      "assumed_T_K": 1500,
+      "r_AU": 0.254502811137731
+    },
+    {
+      "assumed_T_K": 1800,
+      "r_AU": 0.17673806329009095
+    }
+  ],
+  "flux_faint_over_bright": {
+    "g_0_312mag": 0.7502396279074637,
+    "W1_0_1175mag": 0.8974287945007484,
+    "W2_0_08875mag": 0.9215098887349575,
+    "historical_1mag": 0.3981071705534972
+  },
+  "external_1AU_clump_absorbed_luminosity_fraction": {
+    "definition": "Opaque circular clump with area 25% of stellar projected disk; all incident light absorbed; r=1AU. Covering in observer direction is not global shell covering.",
+    "value": 0.00011565293681753716
+  },
+  "unocculted_whole_surface_radius_ratio_at_fixed_T_for_g_0_312": 0.8661637419723038,
+  "formulas": {
+    "f": "P K^3 (1-e^2)^(3/2)/(2 pi G)",
+    "a": "[G(M1+M2)P^2/(4pi^2)]^(1/3)",
+    "dust": "T=[L/(16pi sigma r^2)]^(1/4), isolated blackbody grain, zero albedo; real grain Qabs, shielding and geometry alter result",
+    "eclipse": "2Rstar/vrel, central crossing by small edge/occulting feature; no inclination or disk-width modeling",
+    "clump": "Labs/Lstar=A/(4pi r^2); A=0.25pi Rstar^2"
+  }
+}

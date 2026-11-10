@@ -1,0 +1,296 @@
+plate_id,archive_id,ut_mid,exposure_seconds,telescope,emulsion,filter,catalogue_target_rows,primary_quality_target_rows,calibration_rows,calibration_faint_limit_min,calibration_faint_limit_max,color_term_min,color_term_max,evidence_type
+412,101,1919-01-05 23:55:00,3600.0,Lippert-Astrograph,,,1,0,11,13.561478,17.030289,1.67495,1.8954297,target_catalogue_measurement
+413,101,1919-01-05 23:55:19,3660.0,Lippert-Astrograph,,,2,1,8,13.622229,14.746349,1.9715177,2.013218,target_catalogue_measurement
+415,101,1919-01-08 22:05:22,4260.0,Lippert-Astrograph,,,1,0,10,13.555944,16.291935,1.6597961,1.8814793,target_catalogue_measurement
+416,101,1919-01-08 22:05:03,4260.0,Lippert-Astrograph,,,0,0,10,12.8632555,14.757797,1.8072412,1.9531466,geometric_coverage_without_exact_target_catalogue_measurement
+422,101,1919-01-09 01:29:54,3600.0,Lippert-Astrograph,,,2,0,10,13.109138,14.919516,1.8893011,1.983995,target_catalogue_measurement
+425,101,1919-01-20 22:28:49,1800.0,Lippert-Astrograph,,,2,0,10,13.263323,15.464056,1.6623344,1.8127737,target_catalogue_measurement
+426,101,1919-01-20 22:28:50,1860.0,Lippert-Astrograph,,,2,0,8,13.222594,14.419675,1.8542892,1.9086753,target_catalogue_measurement
+446,101,1919-03-20 19:55:51,2820.0,Lippert-Astrograph,,,1,1,10,13.500844,16.628254,1.8115171,1.9584966,target_catalogue_measurement
+836,101,1922-01-25 00:00:44,7200.0,Lippert-Astrograph,Agfa isorapid,,0,0,10,12.37027,16.934172,1.7548813,1.8831332,geometric_coverage_without_exact_target_catalogue_measurement
+3696,101,1933-01-21 20:26:41,660.0,Lippert-Astrograph,Agfa Astro Z,,0,0,6,12.364039,12.795843,1.4994144,1.7112083,geometric_coverage_without_exact_target_catalogue_measurement
+4191,101,1935-02-06 20:31:23,3600.0,Lippert-Astrograph,Agfa Astro Z,,2,0,10,12.841193,15.338926,1.5041245,1.6886108,target_catalogue_measurement
+4413,101,1936-01-15 21:59:20,3600.0,Lippert-Astrograph,Agfa Astro Z,,2,0,10,13.160666,15.855766,1.5215998,1.5601345,target_catalogue_measurement
+4599,101,1937-01-17 23:19:15,3600.0,Lippert-Astrograph,Agfa Astro Z,,1,0,10,13.078548,16.422293,1.4632471,1.4870585,target_catalogue_measurement
+12895,102,1971-03-22 20:42:50,900.0,Grosser Schmidt-Spiegel,Kodak 103a-O,GG13(=385),2,2,10,13.508958,18.124939,1.8054632,1.8472563,target_catalogue_measurement
+12899,102,1971-03-26 20:56:56,900.0,Grosser Schmidt-Spiegel,Kodak 103a-O,GG13(=385),2,2,12,13.4423685,18.050652,1.716655,1.7792491,target_catalogue_measurement
+12901,102,1971-03-27 19:47:37,900.0,Grosser Schmidt-Spiegel,Kodak 103a-O,GG13(=385),2,2,12,13.505894,18.527645,1.7335873,1.7789044,target_catalogue_measurement
+15989,103,1921-02-08 23:05:03,1200.0,1m-Spiegelteleskop,Agfa isorapid,,0,0,4,13.420032,15.049073,1.7919306,2.1599433,geometric_coverage_without_exact_target_catalogue_measurement
+15991,103,1921-02-09 00:01:53,1200.0,1m-Spiegelteleskop,Agfa isorapid,,0,0,6,13.623278,18.929691,1.7911315,2.1103241,geometric_coverage_without_exact_target_catalogue_measurement
+26491,104,1991-11-12 03:28:30,2700.0,Hamburger Schmidt-Spiegel,Kodak IIIa-F (hyp.-sens.),,1,0,6,11.677139,18.524626,0.5388025,0.9562651,target_catalogue_measurement
+49517,301,1953-02-02 19:18:30;1953-02-02 19:50:00,1860.0;1920.0,Petzval,Agfa,,0,0,3,13.325171,13.7578945,1.9133141,2.2771082,geometric_coverage_without_exact_target_catalogue_measurement
+49671,301,1953-01-21 21:15:00;1953-01-21 22:01:00,1800.0;1800.0,Petzval,Agfa,,0,0,4,13.86733,14.55058,2.1660802,2.2201216,geometric_coverage_without_exact_target_catalogue_measurement
+49676,301,1954-02-08 23:30:00;1954-02-09 00:30:00,3600.0;3600.0,Petzval,,,0,0,4,13.840824,15.159044,2.0677292,2.2320936,geometric_coverage_without_exact_target_catalogue_measurement
+50172,301,1953-01-19 19:37:00,1920.0,,,,0,0,3,12.277431,12.354627,1.4469686,1.530262,geometric_coverage_without_exact_target_catalogue_measurement
+50271,301,1954-01-25 20:37:30,1500.0,,,,0,0,3,12.283335,12.330011,1.4844869,1.5326715,geometric_coverage_without_exact_target_catalogue_measurement
+50272,301,1954-02-02 22:47:30,1500.0,,,,1,0,3,12.434938,12.4595,1.4245431,1.4994652,target_catalogue_measurement
+50273,301,1954-01-25 19:35:00,1200.0,,,,0,0,3,12.308477,12.321816,1.4348571,1.4747351,geometric_coverage_without_exact_target_catalogue_measurement
+50275,301,1954-02-19 19:05:00,1200.0,,,,0,0,2,13.990127,14.015762,1.2584646,1.3297541,geometric_coverage_without_exact_target_catalogue_measurement
+50276,301,1954-02-20 18:10:00,1200.0,,,,0,0,3,11.628321,11.708026,1.2688023,1.347386,geometric_coverage_without_exact_target_catalogue_measurement
+50630,301,1956-03-29 20:00:00,1800.0,,,,0,0,3,12.788883,12.882285,1.6342962,1.7101067,geometric_coverage_without_exact_target_catalogue_measurement
+50631,301,1956-03-30 20:05:00,1800.0,,,,0,0,3,12.69425,12.794176,1.6560242,1.6634157,geometric_coverage_without_exact_target_catalogue_measurement
+50632,301,1956-03-17 20:55:00,1200.0,,,,0,0,3,11.201446,11.207228,1.3771065,1.3822644,geometric_coverage_without_exact_target_catalogue_measurement
+50633,301,1956-01-30 19:20:00,1200.0,,,,0,0,3,11.682353,11.701911,1.6081339,1.6275982,geometric_coverage_without_exact_target_catalogue_measurement
+50635,301,1956-03-12 19:45:00,1800.0,,Agfa Astro Pan,,0,0,3,11.638381,11.671416,1.403681,1.4371214,geometric_coverage_without_exact_target_catalogue_measurement
+50636,301,1956-03-13 18:50:00,1800.0,,Agfa Astro Pan,,0,0,3,11.708868,11.778753,1.4736464,1.5253164,geometric_coverage_without_exact_target_catalogue_measurement
+50637,301,1956-03-08 18:15:00,1800.0,,,,0,0,3,12.506391,12.572594,1.6307763,1.7104689,geometric_coverage_without_exact_target_catalogue_measurement
+50638,301,1956-03-09 19:00:00,1800.0,,,,0,0,3,12.041036,12.105898,1.4951266,1.5662088,geometric_coverage_without_exact_target_catalogue_measurement
+50643,301,1956-03-12 19:05:00,1200.0,,,,0,0,3,11.258241,11.304692,1.4409889,1.4900602,geometric_coverage_without_exact_target_catalogue_measurement
+50644,301,1956-03-17 20:35:00,1200.0,,,,0,0,3,11.200568,11.225329,1.4244933,1.4449466,geometric_coverage_without_exact_target_catalogue_measurement
+50647,301,1956-01-07 23:15:00,1200.0,,,,0,0,3,11.944384,12.004581,1.5284257,1.5881903,geometric_coverage_without_exact_target_catalogue_measurement
+50648,301,1956-01-11 22:20:00,1200.0,,,,0,0,3,11.978073,12.013556,1.5867516,1.6223798,geometric_coverage_without_exact_target_catalogue_measurement
+57840,105,1928-11-21 03:31:09;1928-11-21 03:42:22,840.0;270.0,AG-Astrograph,,,0,0,12,11.627001,12.684433,1.6522176,1.7758805,geometric_coverage_without_exact_target_catalogue_measurement
+57864,105,1929-01-10 00:17:35;1929-01-10 00:38:01,1800.0;540.0,AG-Astrograph,,,0,0,12,12.232465,13.382214,1.7643905,1.8622308,geometric_coverage_without_exact_target_catalogue_measurement
+57970,105,1929-03-09 19:50:41;1929-03-09 20:04:39,1200.0;360.0,AG-Astrograph,,,0,0,6,12.39904,12.468947,1.7478187,1.7769221,geometric_coverage_without_exact_target_catalogue_measurement
+57971,105,1929-03-09 20:24:35;1929-03-09 20:38:33,1200.0;360.0,AG-Astrograph,,,0,0,6,12.863138,13.11623,1.7380228,1.8034668,geometric_coverage_without_exact_target_catalogue_measurement
+57992,105,1929-03-18 19:32:15;1929-03-18 19:45:28,1080.0;330.0,AG-Astrograph,,,0,0,12,12.291027,14.15972,1.7979833,1.8611244,geometric_coverage_without_exact_target_catalogue_measurement
+61284,106,1959-01-28 22:39:02,480.0,AG-Astrograph,Kodak Oa-O,,0,0,6,13.121808,13.305515,1.8079704,1.8429366,geometric_coverage_without_exact_target_catalogue_measurement
+61285,106,1959-01-28 22:54:55,480.0,AG-Astrograph,Kodak Oa-O,,0,0,6,13.154792,13.400657,1.7826861,1.8311478,geometric_coverage_without_exact_target_catalogue_measurement
+61357,106,1959-03-08 20:17:25,360.0,AG-Astrograph,Kodak Oa-O,,0,0,6,12.775325,12.863185,1.8067943,1.8256242,geometric_coverage_without_exact_target_catalogue_measurement
+61377,106,1959-03-09 19:53:41,360.0,AG-Astrograph,Kodak Oa-O,,0,0,6,12.976546,13.123458,1.7754799,1.8075782,geometric_coverage_without_exact_target_catalogue_measurement
+61378,106,1959-03-09 20:11:08,360.0,AG-Astrograph,Kodak Oa-O,,0,0,6,13.015168,13.154097,1.7864228,1.7955766,geometric_coverage_without_exact_target_catalogue_measurement
+67652,109,1930-03-21 22:26:13,1200.0,Grosser Refraktor,Agfa Astro,,0,0,3,12.014946,12.739078,1.314364,1.655789,geometric_coverage_without_exact_target_catalogue_measurement
+67863,109,1932-01-14 00:05:30;;;;;,660.0;600.0;600.0;600.0;600.0;600.0,Grosser Refraktor,Agfa Chromo Isorapid,,0,0,6,9.834185,13.026409,-0.793812,0.58946085,geometric_coverage_without_exact_target_catalogue_measurement
+67864,109,1932-01-14 00:06:00;;;;;;,720.0;0.0;0.0;0.0;0.0;0.0;0.0,Grosser Refraktor,Agfa Chromo Isorapid,,0,0,4,5.8034253,11.387937,-1.9091833,0.30249745,geometric_coverage_without_exact_target_catalogue_measurement
+68313,109,1933-01-24 00:10:00,1200.0,Grosser Refraktor,Agfa Chromo Isorapid,,0,0,3,9.998167,11.394765,0.21129796,0.40562674,geometric_coverage_without_exact_target_catalogue_measurement
+78178,208,1929-03-07 22:30:00,1800.0,Astrograph,Matter,,0,0,3,12.082108,12.343281,1.1512876,1.4965142,geometric_coverage_without_exact_target_catalogue_measurement
+78236,208,1929-03-18 00:20:00,1800.0,Astrograph,Matter,,0,0,3,9.127982,13.234504,0.12146439,1.8430139,geometric_coverage_without_exact_target_catalogue_measurement
+78248,208,1929-03-28 20:09:00,1800.0,Astrograph,Matter,,0,0,3,12.313053,12.828751,1.4805479,1.7176669,geometric_coverage_without_exact_target_catalogue_measurement
+78992,208,1930-02-16 19:22:00,1800.0,Astrograph,Matter,,0,0,6,12.434747,15.616351,1.7895905,1.9328501,geometric_coverage_without_exact_target_catalogue_measurement
+79068,208,1930-03-31 19:29:00,1800.0,Astrograph,Matter,,0,0,3,9.706257,12.360431,-1.0754802,1.7021548,geometric_coverage_without_exact_target_catalogue_measurement
+79123,208,1930-04-25 20:35:00,1800.0,Astrograph,Matter,,0,0,3,12.4671955,12.635735,1.090626,1.8928717,geometric_coverage_without_exact_target_catalogue_measurement
+79347,208,1930-11-28 01:11:00,1800.0,Astrograph,Matter,,0,0,3,12.504825,13.493045,1.360939,2.6252403,geometric_coverage_without_exact_target_catalogue_measurement
+79374,208,1930-12-23 21:36:00,1800.0,Astrograph,Matter,,0,0,3,12.408756,12.495074,1.6976312,1.7706329,geometric_coverage_without_exact_target_catalogue_measurement
+79377,208,1930-12-23 23:11:00,1800.0,Astrograph,Matter,,0,0,3,12.747747,12.908761,1.8486559,1.9394823,geometric_coverage_without_exact_target_catalogue_measurement
+79402,208,1931-01-10 21:17:00,1800.0,Astrograph,Matter,,0,0,4,12.506918,14.609228,1.751923,3.6144798,geometric_coverage_without_exact_target_catalogue_measurement
+79454,208,1931-02-09 23:50:00,1800.0,Astrograph,Matter,,0,0,4,12.739196,13.51236,1.6914438,1.8442472,geometric_coverage_without_exact_target_catalogue_measurement
+79482,208,1931-02-18 22:54:00,1800.0,Astrograph,Matter,,0,0,3,12.410404,12.477985,1.7429498,1.797381,geometric_coverage_without_exact_target_catalogue_measurement
+79497,208,1931-02-23 20:19:30,900.0,Astrograph,Matter,,0,0,1,12.597028,12.597028,1.7266766,1.7266766,geometric_coverage_without_exact_target_catalogue_measurement
+79523,208,1931-03-10 22:03:00,1800.0,Astrograph,Matter,,0,0,3,11.77265,11.820098,1.4632094,1.6014918,geometric_coverage_without_exact_target_catalogue_measurement
+79549,208,1931-03-12 22:16:30,900.0,Astrograph,Matter,,0,0,4,7.629828,13.289109,-2.7562273,1.8639498,geometric_coverage_without_exact_target_catalogue_measurement
+79574,208,1931-03-13 22:09:30,900.0,Astrograph,Matter,,0,0,3,12.123487,12.286199,1.7104292,1.7266153,geometric_coverage_without_exact_target_catalogue_measurement
+79578,208,1931-03-13 23:50:00,1800.0,Astrograph,Matter,,0,0,3,12.724209,12.918919,1.8234005,1.8823206,geometric_coverage_without_exact_target_catalogue_measurement
+79633,208,1931-03-15 20:29:30,3540.0,Astrograph,Matter,,0,0,3,12.879934,13.005922,1.7876989,1.8992952,geometric_coverage_without_exact_target_catalogue_measurement
+79644,208,1931-03-16 19:13:00,1800.0,Astrograph,Matter,,0,0,3,11.168874,11.254059,1.5241477,1.6228341,geometric_coverage_without_exact_target_catalogue_measurement
+79649,208,1931-03-16 21:48:00,1800.0,Astrograph,Matter,,0,0,3,11.232574,11.271682,1.5455397,1.6002457,geometric_coverage_without_exact_target_catalogue_measurement
+79665,208,1931-03-17 19:26:00,1800.0,Astrograph,Matter,,0,0,3,12.45503,12.493238,1.7683215,1.8169991,geometric_coverage_without_exact_target_catalogue_measurement
+79709,208,1931-03-18 19:49:00,1800.0,Astrograph,Matter,,0,0,3,11.929636,11.9791,1.662132,1.7458655,geometric_coverage_without_exact_target_catalogue_measurement
+79734,208,1931-03-19 20:07:00,3600.0,Astrograph,Matter,,0,0,3,11.969214,12.061741,1.6051189,1.7247372,geometric_coverage_without_exact_target_catalogue_measurement
+79745,208,1931-03-20 19:00:30,900.0,Astrograph,Matter,,0,0,3,11.976587,11.987457,1.7412014,1.7651376,geometric_coverage_without_exact_target_catalogue_measurement
+79773,208,1931-03-23 20:28:00,1800.0,Astrograph,Matter,,0,0,3,11.983635,12.054649,1.6448894,1.7139167,geometric_coverage_without_exact_target_catalogue_measurement
+79818,208,1931-04-06 20:43:00,1800.0,Astrograph,Matter,,0,0,4,12.110164,12.810318,1.1079227,1.8263941,geometric_coverage_without_exact_target_catalogue_measurement
+79883,208,1931-04-12 21:05:30,1020.0,Astrograph,Matter,,0,0,3,10.047693,10.421572,-1.3055044,-0.6777576,geometric_coverage_without_exact_target_catalogue_measurement
+80340,208,1931-09-24 03:33:30,900.0,Astrograph,Matter,,0,0,3,11.524987,11.908132,1.0382279,1.3983827,geometric_coverage_without_exact_target_catalogue_measurement
+80809,208,1932-02-05 19:55:30,4020.0,Astrograph,Matter,,0,0,3,12.181052,12.253294,1.8595005,1.9406457,geometric_coverage_without_exact_target_catalogue_measurement
+80841,208,1932-02-06 21:05:00,3840.0,Astrograph,Matter,,0,0,3,12.609702,12.711673,1.657539,1.8115922,geometric_coverage_without_exact_target_catalogue_measurement
+80880,208,1932-02-09 22:26:00,1800.0,Astrograph,Matter,,0,0,3,13.31123,13.883506,1.475686,1.9367262,geometric_coverage_without_exact_target_catalogue_measurement
+80919,208,1932-02-25 20:29:00,1800.0,Astrograph,Matter,,0,0,3,12.614647,12.92489,1.7314873,1.794905,geometric_coverage_without_exact_target_catalogue_measurement
+80937,208,1932-02-29 20:48:00,1800.0,Astrograph,Matter,,0,0,2,13.763255,13.768237,1.9874948,2.0352635,geometric_coverage_without_exact_target_catalogue_measurement
+80956,208,1932-03-01 20:48:00,1800.0,Astrograph,Matter,,0,0,3,11.939358,11.970042,1.8439741,1.8835322,geometric_coverage_without_exact_target_catalogue_measurement
+80958,208,1932-02-29 19:09:00,1800.0,Astrograph,Matter,,0,0,5,11.556573,12.489689,-0.27316743,1.0644251,geometric_coverage_without_exact_target_catalogue_measurement
+80962,208,1932-02-29 21:18:00,1680.0,Astrograph,Matter,,0,0,3,12.685134,13.004711,1.6892968,1.8081111,geometric_coverage_without_exact_target_catalogue_measurement
+81041,208,1932-03-03 20:24:00,1800.0,Astrograph,Matter,,0,0,4,12.737884,13.273756,1.7600088,1.8197287,geometric_coverage_without_exact_target_catalogue_measurement
+81060,208,1932-03-05 21:11:30,1980.0,Astrograph,Matter,,0,0,4,10.234263,13.360472,0.23293146,1.831986,geometric_coverage_without_exact_target_catalogue_measurement
+81086,208,1932-03-26 21:21:00,1800.0,Astrograph,Matter,,0,0,3,10.953571,12.439842,-0.4930219,1.6048,geometric_coverage_without_exact_target_catalogue_measurement
+81112,208,1932-03-29 19:56:00,1800.0,Astrograph,Matter,,0,0,3,11.355704,11.411142,1.8137357,1.8806822,geometric_coverage_without_exact_target_catalogue_measurement
+81156,208,1932-04-04 21:42:00,1680.0,Astrograph,Matter,,0,0,3,10.828703,10.850459,1.7786728,1.8441492,geometric_coverage_without_exact_target_catalogue_measurement
+81258,208,1932-04-22 19:59:00,840.0,Astrograph,Matter,,0,0,3,10.582077,10.615856,1.826879,1.8814998,geometric_coverage_without_exact_target_catalogue_measurement
+81259,208,1932-04-22 20:20:30,1620.0,Astrograph,Matter,,0,0,3,11.148649,11.198757,1.782222,1.8478723,geometric_coverage_without_exact_target_catalogue_measurement
+81294,208,1932-04-27 20:26:00,1800.0,Astrograph,Matter,,0,0,3,10.929412,11.024803,1.7598518,1.8633369,geometric_coverage_without_exact_target_catalogue_measurement
+81340,208,1932-04-29 20:27:00,840.0,Astrograph,Matter,,0,0,4,12.386248,13.743517,-2.491277,1.6948241,geometric_coverage_without_exact_target_catalogue_measurement
+81354,208,1932-04-30 20:42:00,840.0,Astrograph,Matter,,0,0,4,12.373939,14.699175,1.4451482,1.7047385,geometric_coverage_without_exact_target_catalogue_measurement
+82379,208,1932-12-09 03:03:00,960.0,Astrograph,Matter,,0,0,3,11.709526,12.347462,1.5081388,1.5317252,geometric_coverage_without_exact_target_catalogue_measurement
+82483,208,1933-01-28 21:47:00,1560.0,Astrograph,Matter,,0,0,3,9.321435,12.723087,-1.7681037,1.6887956,geometric_coverage_without_exact_target_catalogue_measurement
+82501,208,1933-01-29 21:51:30,1740.0,Astrograph,Matter,,0,0,3,11.773794,11.893119,1.9045328,2.0371068,geometric_coverage_without_exact_target_catalogue_measurement
+82502,208,1933-01-29 22:22:00,1800.0,Astrograph,Matter,,0,0,3,11.5698,11.670108,1.9139336,2.0332723,geometric_coverage_without_exact_target_catalogue_measurement
+82503,208,1933-01-29 22:53:00,1800.0,Astrograph,Matter,,0,0,3,12.107756,12.1693535,1.9499781,2.0303187,geometric_coverage_without_exact_target_catalogue_measurement
+82512,208,1933-01-29 21:20:00,1800.0,Astrograph,Matter,,0,0,3,12.643002,12.786345,1.6880609,1.7949437,geometric_coverage_without_exact_target_catalogue_measurement
+82515,208,1933-01-29 22:53:00,1800.0,Astrograph,Matter,,0,0,3,12.453507,12.570216,1.224331,1.7715828,geometric_coverage_without_exact_target_catalogue_measurement
+82528,208,1933-02-15 21:25:30,1140.0,Astrograph,Matter,,0,0,4,11.917794,13.333573,0.51375586,1.8739073,geometric_coverage_without_exact_target_catalogue_measurement
+82549,208,1933-02-20 21:03:00,1800.0,Astrograph,Matter,,0,0,3,12.463378,12.690192,1.7455976,1.8356096,geometric_coverage_without_exact_target_catalogue_measurement
+82550,208,1933-02-20 21:35:00,1800.0,Astrograph,Matter,,0,0,3,12.355847,12.558506,1.6841295,1.7800294,geometric_coverage_without_exact_target_catalogue_measurement
+82554,208,1933-02-21 19:35:00,1800.0,Astrograph,Matter,,0,0,3,12.434999,12.471626,1.7266978,1.8381145,geometric_coverage_without_exact_target_catalogue_measurement
+82580,208,1933-02-24 19:48:00,1800.0,Astrograph,Matter,,0,0,3,11.656499,11.709226,1.6803722,1.7483541,geometric_coverage_without_exact_target_catalogue_measurement
+82582,208,1933-02-26 19:59:00,1800.0,Astrograph,Matter,,0,0,3,12.541872,12.587259,1.6663213,1.808357,geometric_coverage_without_exact_target_catalogue_measurement
+82583,208,1933-02-26 20:30:00,1800.0,Astrograph,Matter,,0,0,3,12.7547865,13.0463085,1.8166316,1.866372,geometric_coverage_without_exact_target_catalogue_measurement
+82587,208,1933-02-26 22:32:00,1800.0,Astrograph,Matter,,0,0,6,12.428156,15.148889,-0.17069001,1.7993611,geometric_coverage_without_exact_target_catalogue_measurement
+82604,208,1933-02-27 19:52:00,1800.0,Astrograph,Matter,,0,0,3,12.849757,13.088405,1.6598529,1.8495402,geometric_coverage_without_exact_target_catalogue_measurement
+82606,208,1933-02-27 20:54:00,1800.0,Astrograph,Matter,,0,0,1,12.447617,12.447617,1.888449,1.888449,geometric_coverage_without_exact_target_catalogue_measurement
+82623,208,1933-02-28 19:36:00,1800.0,Astrograph,Matter,,0,0,3,12.444913,12.553908,1.5791826,1.7884825,geometric_coverage_without_exact_target_catalogue_measurement
+82632,208,1933-03-01 18:49:00,1200.0,Astrograph,Matter,,0,0,3,12.409264,12.851806,0.972581,1.8349296,geometric_coverage_without_exact_target_catalogue_measurement
+82634,208,1933-03-01 19:33:00,1440.0,Astrograph,Matter,,0,0,3,12.849908,13.183273,1.8785717,1.90752,geometric_coverage_without_exact_target_catalogue_measurement
+82657,208,1933-02-24 19:17:00,1800.0,Astrograph,Matter,,0,0,3,11.545749,11.593896,-1.1795762,1.9813013,geometric_coverage_without_exact_target_catalogue_measurement
+82660,208,1933-02-26 19:59:00,1800.0,Astrograph,Matter,,0,0,3,10.718266,12.250224,-1.1935021,1.5847174,geometric_coverage_without_exact_target_catalogue_measurement
+82661,208,1933-02-26 20:30:00,1800.0,Astrograph,Matter,,0,0,3,11.685513,11.802458,1.7408775,1.876444,geometric_coverage_without_exact_target_catalogue_measurement
+82662,208,1933-02-26 21:02:30,1860.0,Astrograph,Matter,,0,0,3,5.6246586,12.983059,-1.1367619,1.8147161,geometric_coverage_without_exact_target_catalogue_measurement
+82728,208,1933-03-14 20:16:00,1800.0,Astrograph,Matter,,0,0,3,12.099461,12.338911,1.7267001,1.7580307,geometric_coverage_without_exact_target_catalogue_measurement
+82734,208,1933-03-15 21:25:00,1800.0,Astrograph,Matter,,0,0,3,12.505172,12.849707,1.8020804,1.8517723,geometric_coverage_without_exact_target_catalogue_measurement
+82740,208,1933-03-15 21:25:00,1800.0,Astrograph,Matter,,0,0,3,11.394887,11.452912,1.8502494,1.9179386,geometric_coverage_without_exact_target_catalogue_measurement
+82776,208,1933-03-24 21:07:00,1800.0,Astrograph,Matter,,0,0,4,12.606747,13.188509,1.7305843,1.8342773,geometric_coverage_without_exact_target_catalogue_measurement
+82880,208,1933-03-27 20:28:00,3480.0,Astrograph,Matter,,0,0,3,12.32904,12.340147,1.882964,1.9248843,geometric_coverage_without_exact_target_catalogue_measurement
+82986,208,1933-04-22 20:54:00,1800.0,Astrograph,Matter,,0,0,4,12.451876,13.350513,1.5165572,1.7551457,geometric_coverage_without_exact_target_catalogue_measurement
+83826,208,1933-11-20 03:21:00,1800.0,Astrograph,Matter,,0,0,3,12.263368,12.948312,1.0705085,1.93306,geometric_coverage_without_exact_target_catalogue_measurement
+83828,208,1933-11-20 04:21:00,1800.0,Astrograph,Matter,,0,0,3,12.780537,13.249617,1.7123427,1.9196078,geometric_coverage_without_exact_target_catalogue_measurement
+83846,208,1933-11-20 02:19:00,1800.0,Astrograph,Matter,,0,0,3,11.409446,11.9989605,0.39209816,1.8931775,geometric_coverage_without_exact_target_catalogue_measurement
+83847,208,1933-11-20 02:50:00,1800.0,Astrograph,Matter,,0,0,3,4.1842313,11.746356,0.1248823,2.0432618,geometric_coverage_without_exact_target_catalogue_measurement
+83867,208,1933-11-21 01:46:00,1800.0,Astrograph,Matter,,0,0,3,11.313552,11.685929,0.91538125,1.9597876,geometric_coverage_without_exact_target_catalogue_measurement
+83902,208,1933-11-22 02:59:00,1800.0,Astrograph,Matter,,0,0,3,12.91695,13.072061,1.6711375,1.8330991,geometric_coverage_without_exact_target_catalogue_measurement
+84002,208,1933-12-15 01:35:00,1800.0,Astrograph,Matter,,0,0,3,12.669183,13.086487,1.6950594,1.8083911,geometric_coverage_without_exact_target_catalogue_measurement
+84005,208,1933-12-15 03:08:00,1800.0,Astrograph,Matter,,0,0,4,13.03916,13.846559,1.8466303,1.9255986,geometric_coverage_without_exact_target_catalogue_measurement
+84061,208,1934-01-07 23:05:30,1740.0,Astrograph,Matter,,0,0,3,11.370406,15.255294,0.13871805,2.3049347,geometric_coverage_without_exact_target_catalogue_measurement
+84072,208,1934-01-07 22:35:00,1800.0,Astrograph,Matter,,0,0,3,12.409055,12.760304,1.5421866,1.6852154,geometric_coverage_without_exact_target_catalogue_measurement
+84081,208,1934-01-11 23:40:00,1800.0,Astrograph,Matter,,0,0,4,10.71426,13.208668,-1.5068978,1.8353684,geometric_coverage_without_exact_target_catalogue_measurement
+84116,208,1934-01-21 22:15:00,1800.0,Astrograph,Matter,,0,0,3,12.347212,12.4506,1.4818538,1.7641778,geometric_coverage_without_exact_target_catalogue_measurement
+84117,208,1934-01-21 22:46:00,1800.0,Astrograph,Matter,,0,0,3,12.558961,12.878397,1.657931,1.8386153,geometric_coverage_without_exact_target_catalogue_measurement
+84178,208,1934-02-05 21:37:00,1680.0,Astrograph,Matter,,0,0,3,10.861146,12.149045,0.24014667,2.0613835,geometric_coverage_without_exact_target_catalogue_measurement
+84179,208,1934-02-05 22:07:00,1800.0,Astrograph,Matter,,0,0,3,12.176579,12.221329,1.9447695,2.012259,geometric_coverage_without_exact_target_catalogue_measurement
+84180,208,1934-02-05 22:38:00,1800.0,Astrograph,Matter,,0,0,3,12.08253,12.107555,1.985553,2.0160303,geometric_coverage_without_exact_target_catalogue_measurement
+84190,208,1934-02-05 22:07:00,1800.0,Astrograph,Matter,,0,0,3,13.138776,13.530334,1.8626273,1.9055144,geometric_coverage_without_exact_target_catalogue_measurement
+84208,208,1934-02-10 20:57:00,1800.0,Astrograph,Matter,,0,0,3,12.053908,12.17797,1.2626868,2.0373871,geometric_coverage_without_exact_target_catalogue_measurement
+84209,208,1934-02-10 21:28:00,1800.0,Astrograph,Matter,,0,0,3,12.073615,12.091279,1.9841785,2.0066104,geometric_coverage_without_exact_target_catalogue_measurement
+84210,208,1934-02-10 21:59:00,1800.0,Astrograph,Matter,,0,0,3,9.657999,12.439312,-1.1185617,2.041916,geometric_coverage_without_exact_target_catalogue_measurement
+84228,208,1934-02-10 21:28:00,1800.0,Astrograph,Matter,,0,0,3,12.600446,12.893702,1.7220705,1.9256897,geometric_coverage_without_exact_target_catalogue_measurement
+84279,208,1934-02-12 22:12:30,1860.0,Astrograph,Matter,,0,0,4,12.919817,13.64808,1.8012664,1.9570808,geometric_coverage_without_exact_target_catalogue_measurement
+84299,208,1934-02-14 21:43:00,1680.0,Astrograph,Matter,,0,0,3,12.56039,12.770755,1.6117126,1.7773902,geometric_coverage_without_exact_target_catalogue_measurement
+84301,208,1934-02-14 22:43:30,1740.0,Astrograph,Matter,,0,0,3,12.732437,13.089381,1.6790382,1.8937728,geometric_coverage_without_exact_target_catalogue_measurement
+84318,208,1934-02-14 21:13:00,1800.0,Astrograph,Matter,,0,0,3,12.30445,12.382967,1.8998739,2.070815,geometric_coverage_without_exact_target_catalogue_measurement
+84320,208,1934-02-14 22:13:00,1800.0,Astrograph,Matter,,0,0,3,9.440605,12.167696,-1.3655207,2.0247958,geometric_coverage_without_exact_target_catalogue_measurement
+84371,208,1934-03-14 22:17:00,1800.0,Astrograph,Matter,,0,0,3,12.640412,12.663395,1.7580125,1.9754407,geometric_coverage_without_exact_target_catalogue_measurement
+84405,208,1934-04-03 20:14:00,1800.0,Astrograph,Matter,,0,0,3,10.990656,11.017618,1.6346031,1.8206569,geometric_coverage_without_exact_target_catalogue_measurement
+84508,208,1934-04-10 19:50:00,1200.0,Astrograph,Matter,,0,0,3,10.463695,10.540556,1.750294,1.9388686,geometric_coverage_without_exact_target_catalogue_measurement
+84509,208,1934-04-10 20:15:00,1680.0,Astrograph,Matter,,0,0,3,11.853843,16.34118,0.63042736,2.0716586,geometric_coverage_without_exact_target_catalogue_measurement
+84519,208,1934-04-11 20:15:30,1740.0,Astrograph,Matter,,0,0,4,12.229562,12.722256,1.6837769,1.7621603,geometric_coverage_without_exact_target_catalogue_measurement
+84520,208,1934-04-11 20:45:30,1740.0,Astrograph,Matter,,0,0,4,12.7983,13.773881,1.8508265,1.9175036,geometric_coverage_without_exact_target_catalogue_measurement
+84999,208,1935-02-08 20:05:00,1200.0,Astrograph,Matter,,0,0,3,10.637251,10.732179,1.8596971,1.9929446,geometric_coverage_without_exact_target_catalogue_measurement
+85000,208,1935-02-08 20:26:00,1200.0,Astrograph,Matter,,0,0,3,12.428409,12.865323,0.7607679,1.8805363,geometric_coverage_without_exact_target_catalogue_measurement
+85002,208,1935-02-08 21:08:00,1200.0,Astrograph,Matter,,0,0,3,10.798149,10.832799,1.9474256,1.9916426,geometric_coverage_without_exact_target_catalogue_measurement
+85082,208,1935-03-23 20:34:00,1800.0,Astrograph,Matter,,0,0,4,12.726506,13.807455,1.8619955,1.9087299,geometric_coverage_without_exact_target_catalogue_measurement
+85097,208,1935-03-27 20:46:00,1800.0,Astrograph,Matter,,0,0,3,12.785862,13.22604,1.7455534,1.8211113,geometric_coverage_without_exact_target_catalogue_measurement
+85110,208,1935-03-28 20:00:00,1680.0,Astrograph,Matter,,0,0,3,12.804463,13.248323,1.7943221,1.8827809,geometric_coverage_without_exact_target_catalogue_measurement
+85111,208,1935-03-28 20:30:00,1800.0,Astrograph,Matter,,0,0,3,12.065962,12.457566,1.7505367,1.8427019,geometric_coverage_without_exact_target_catalogue_measurement
+85115,208,1935-03-28 20:00:00,1680.0,Astrograph,Matter,,0,0,3,10.173469,11.2042885,-1.1540908,1.971664,geometric_coverage_without_exact_target_catalogue_measurement
+85122,208,1935-04-03 20:01:00,1800.0,Astrograph,Matter,,0,0,4,12.901256,13.574059,1.7974839,1.8934772,geometric_coverage_without_exact_target_catalogue_measurement
+85128,208,1935-04-05 20:07:00,1800.0,Astrograph,Matter,,0,0,7,11.40913,16.121992,0.31133935,1.9215584,geometric_coverage_without_exact_target_catalogue_measurement
+85129,208,1935-04-05 20:32:00,1080.0,Astrograph,Matter,,0,0,3,12.86334,13.387498,1.8782599,1.9025972,geometric_coverage_without_exact_target_catalogue_measurement
+85134,208,1935-04-08 20:24:00,1800.0,Astrograph,Matter,,0,0,3,11.3371105,11.466122,1.7690887,1.8857763,geometric_coverage_without_exact_target_catalogue_measurement
+85687,208,1936-02-12 21:58:00,1800.0,Astrograph,Matter,,0,0,3,12.986655,13.301965,1.7767798,1.86799,geometric_coverage_without_exact_target_catalogue_measurement
+85692,208,1936-02-12 20:50:00,1800.0,Astrograph,Matter,,0,0,3,12.305308,12.343953,1.9673759,1.9896572,geometric_coverage_without_exact_target_catalogue_measurement
+85747,208,1936-03-12 21:42:00,1800.0,Astrograph,Matter,,0,0,3,10.959047,11.001402,1.8414285,1.9040046,geometric_coverage_without_exact_target_catalogue_measurement
+85760,208,1936-03-17 19:48:00,1800.0,Astrograph,Matter,,0,0,3,11.973052,12.037703,1.84129,1.9265064,geometric_coverage_without_exact_target_catalogue_measurement
+85767,208,1936-03-18 19:15:00,1800.0,Astrograph,Matter,,0,0,3,12.980159,13.414511,1.8922563,1.9289993,geometric_coverage_without_exact_target_catalogue_measurement
+85784,208,1936-03-18 20:20:00,1800.0,Astrograph,Matter,,0,0,3,11.722031,11.763656,1.840569,1.9011865,geometric_coverage_without_exact_target_catalogue_measurement
+85794,208,1936-03-19 20:25:00,1800.0,Astrograph,Matter,,0,0,3,12.921581,13.325161,1.7026187,1.8750386,geometric_coverage_without_exact_target_catalogue_measurement
+85843,208,1936-03-22 20:18:00,1800.0,Astrograph,Matter,,0,0,3,13.177063,13.595059,1.7054344,1.9428346,geometric_coverage_without_exact_target_catalogue_measurement
+86186,208,1936-09-14 02:46:00,1800.0,Astrograph,Matter,,0,0,3,12.210234,12.28635,1.5377398,1.6879604,geometric_coverage_without_exact_target_catalogue_measurement
+86342,208,1937-05-01 20:47:00,2040.0,Astrograph,Matter,,0,0,3,11.672273,11.826675,1.6232988,1.7438703,geometric_coverage_without_exact_target_catalogue_measurement
+86769,208,1937-12-12 02:27:00,1800.0,Astrograph,Matter,,0,0,3,12.449538,12.554579,1.6656476,1.8382096,geometric_coverage_without_exact_target_catalogue_measurement
+86783,208,1938-02-01 21:58:00,1560.0,Astrograph,Matter,,0,0,3,12.014784,12.526196,1.6027846,1.8858026,geometric_coverage_without_exact_target_catalogue_measurement
+86810,208,1938-02-17 20:38:00,1800.0,Astrograph,Matter,,0,0,3,6.5270505,11.548807,-1.1419252,0.6409518,geometric_coverage_without_exact_target_catalogue_measurement
+86824,208,1938-02-19 22:05:00,1800.0,Astrograph,Matter,,0,0,3,12.341011,12.359907,1.8427354,1.8960624,geometric_coverage_without_exact_target_catalogue_measurement
+86830,208,1938-02-20 20:55:00,1800.0,Astrograph,Matter,,0,0,4,12.69258,13.331305,1.7274704,1.817301,geometric_coverage_without_exact_target_catalogue_measurement
+86858,208,1938-02-21 21:01:00,1800.0,Astrograph,Matter,,0,0,3,11.97889,12.19135,1.6459448,1.9338576,geometric_coverage_without_exact_target_catalogue_measurement
+86867,208,1938-02-23 21:00:00,1800.0,Astrograph,Matter,,0,0,3,10.19265,10.854394,-1.4278426,-0.069831796,geometric_coverage_without_exact_target_catalogue_measurement
+87035,208,1938-03-25 20:25:00,1800.0,Astrograph,Matter,,0,0,3,12.678868,13.041635,1.6770062,1.8200027,geometric_coverage_without_exact_target_catalogue_measurement
+87082,208,1938-04-04 19:52:00,1800.0,Astrograph,Matter,,0,0,3,11.940003,12.01608,1.5974841,1.7446935,geometric_coverage_without_exact_target_catalogue_measurement
+87087,208,1938-04-04 19:52:00,1800.0,Astrograph,Matter,,0,0,3,8.959801,11.591792,0.045032162,1.9519835,geometric_coverage_without_exact_target_catalogue_measurement
+87633,208,1938-10-24 03:13:00,1800.0,Astrograph,Matter,,0,0,3,12.517733,12.5296335,1.6675209,1.8082439,geometric_coverage_without_exact_target_catalogue_measurement
+87727,208,1938-12-17 01:53:00,2760.0,Astrograph,Matter,,0,0,3,12.295512,12.459075,1.6819564,1.9447836,geometric_coverage_without_exact_target_catalogue_measurement
+87757,208,1939-02-08 21:56:00,1800.0,Astrograph,Matter,,0,0,3,12.386246,12.570654,1.7192491,1.837375,geometric_coverage_without_exact_target_catalogue_measurement
+87771,208,1939-02-18 19:53:00,1200.0,Astrograph,Matter,,0,0,4,12.718278,13.62205,1.6536207,1.8348573,geometric_coverage_without_exact_target_catalogue_measurement
+87841,208,1939-04-10 19:52:00,1800.0,Astrograph,Matter,,0,0,3,7.699433,8.490351,0.059028797,0.5331719,geometric_coverage_without_exact_target_catalogue_measurement
+88084,208,1939-10-19 23:59:00,1800.0,Astrograph,Matter,,0,0,3,11.30028,12.537816,0.1050677,1.6256661,geometric_coverage_without_exact_target_catalogue_measurement
+88519,208,1950-10-14 01:15:00,3600.0,Astrograph,Agfa Astro-Pan,,0,0,3,12.27299,12.315895,1.027856,1.1650943,geometric_coverage_without_exact_target_catalogue_measurement
+88825,208,1952-03-14 20:07:30,3300.0,Astrograph,Perutz Perseuso,,1,1,4,13.358884,14.796597,1.6037374,1.6907847,target_catalogue_measurement
+88826,208,1952-03-14 20:07:30,3300.0,Astrograph,Perutz Perseuso,,0,0,3,11.912024,11.934971,1.433404,1.4836329,geometric_coverage_without_exact_target_catalogue_measurement
+88847,208,1952-04-17 20:42:00,7080.0,Astrograph,Perutz Perseuso,,0,0,3,9.57599,10.235812,-0.3824871,0.11482552,geometric_coverage_without_exact_target_catalogue_measurement
+88879,208,1952-04-22 21:05:00,3000.0,Astrograph,Perutz Perseuso,,0,0,3,11.520847,11.574273,1.4410659,1.4848137,geometric_coverage_without_exact_target_catalogue_measurement
+89056,208,1952-10-19 03:21:30,3420.0,Astrograph,Perutz Perseuso,,0,0,3,11.86775,11.947816,1.4960567,1.5857869,geometric_coverage_without_exact_target_catalogue_measurement
+89178,208,1953-03-16 22:21:00,3360.0,Astrograph,Perutz Perseuso,,0,0,3,11.962002,11.98552,1.4502933,1.4771892,geometric_coverage_without_exact_target_catalogue_measurement
+89212,208,1953-03-18 19:26:30,3780.0,Astrograph,Perutz Perseuso,,0,0,3,11.874992,11.9355955,1.3777822,1.4533805,geometric_coverage_without_exact_target_catalogue_measurement
+89644,208,1954-01-09 02:03:00,3600.0,Astrograph,Perutz Superomnia,,0,0,3,11.217395,12.003502,0.6520896,1.5516715,geometric_coverage_without_exact_target_catalogue_measurement
+90208,208,1958-12-04 02:17:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,11.662721,14.233963,0.8294961,1.569906,geometric_coverage_without_exact_target_catalogue_measurement
+90236,208,1958-12-18 23:46:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,4.9457817,8.906342,-1.5743574,1.2901757,geometric_coverage_without_exact_target_catalogue_measurement
+90285,208,1959-01-29 23:31:00,3600.0,Astrograph,Perutz Perseuso,,0,0,2,10.318161,10.793639,-1.8928779,-0.47693697,geometric_coverage_without_exact_target_catalogue_measurement
+90309,208,1959-01-30 23:24:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,9.894513,10.241849,-0.7497219,0.79207283,geometric_coverage_without_exact_target_catalogue_measurement
+90325,208,1959-02-02 21:52:30,1140.0,Astrograph,Perutz Perseuso,,0,0,4,8.526463,11.018118,-1.2587574,0.14165066,geometric_coverage_without_exact_target_catalogue_measurement
+90340,208,1959-02-03 21:16:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,5.0709763,11.522709,0.4355548,0.7871976,geometric_coverage_without_exact_target_catalogue_measurement
+90344,208,1959-02-03 22:22:00,3600.0,Astrograph,Perutz Perseuso,,0,0,5,8.376103,11.178549,-0.6907962,0.7202999,geometric_coverage_without_exact_target_catalogue_measurement
+90348,208,1959-02-03 23:30:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,2.1678066,2.3495328,0.36152083,0.52705103,geometric_coverage_without_exact_target_catalogue_measurement
+90380,208,1959-02-04 21:28:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,8.457406,10.643814,-1.3021324,1.1705575,geometric_coverage_without_exact_target_catalogue_measurement
+90423,208,1959-02-05 21:25:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,5.543603,10.934287,-2.1113696,1.3750705,geometric_coverage_without_exact_target_catalogue_measurement
+90427,208,1959-02-05 22:31:00,3600.0,Astrograph,Perutz Perseuso,,0,0,4,6.2586336,13.479386,-1.111179,0.46870422,geometric_coverage_without_exact_target_catalogue_measurement
+90467,208,1959-02-07 21:33:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,5.465572,10.983203,-1.5082985,0.020262947,geometric_coverage_without_exact_target_catalogue_measurement
+90471,208,1959-02-07 22:39:00,3600.0,Astrograph,Perutz Perseuso,,0,0,4,7.571301,11.689147,-2.298369,0.5523744,geometric_coverage_without_exact_target_catalogue_measurement
+90511,208,1959-02-08 22:44:00,3600.0,Astrograph,Perutz Perseuso,,0,0,4,7.4456387,13.727461,-0.21904099,1.4822581,geometric_coverage_without_exact_target_catalogue_measurement
+90543,208,1959-02-11 20:28:30,3540.0,Astrograph,Perutz Perseuso,,0,0,3,4.060921,10.838385,-1.2659665,1.2151773,geometric_coverage_without_exact_target_catalogue_measurement
+90547,208,1959-02-11 21:36:00,3600.0,Astrograph,Perutz Perseuso,,0,0,2,10.639501,10.934524,-0.7026567,0.05815234,geometric_coverage_without_exact_target_catalogue_measurement
+90551,208,1959-02-11 22:43:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,5.9160337,12.0492325,-0.0019471752,1.7269678,geometric_coverage_without_exact_target_catalogue_measurement
+90583,208,1959-02-12 20:33:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,3.9504771,9.413305,-1.347234,0.31104928,geometric_coverage_without_exact_target_catalogue_measurement
+90587,208,1959-02-12 21:38:00,3600.0,Astrograph,Perutz Perseuso,,0,0,2,9.670377,10.947472,-1.7184045,0.6755771,geometric_coverage_without_exact_target_catalogue_measurement
+90591,208,1959-02-12 22:43:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,7.721901,12.568403,-0.14829169,1.7494321,geometric_coverage_without_exact_target_catalogue_measurement
+90623,208,1959-02-13 20:35:00,3600.0,Astrograph,Perutz Perseuso,,0,0,4,10.427434,11.401579,-0.6709214,1.3803891,geometric_coverage_without_exact_target_catalogue_measurement
+90631,208,1959-02-13 22:47:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,11.23311,12.053639,1.4749534,2.2555463,geometric_coverage_without_exact_target_catalogue_measurement
+90697,208,1959-02-28 19:47:00,3600.0,Astrograph,Perutz Perseuso,,0,0,4,6.8603964,10.328248,-2.1705205,0.8971483,geometric_coverage_without_exact_target_catalogue_measurement
+90705,208,1959-02-28 21:58:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,6.476812,10.965616,-1.8988824,-0.1769756,geometric_coverage_without_exact_target_catalogue_measurement
+90716,208,1959-03-02 20:00:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,6.1263685,11.0569315,-1.1283973,1.4038103,geometric_coverage_without_exact_target_catalogue_measurement
+90720,208,1959-03-02 21:06:00,3600.0,Astrograph,Perutz Perseuso,,0,0,2,10.779998,11.576782,-1.9901756,0.72322434,geometric_coverage_without_exact_target_catalogue_measurement
+90748,208,1959-03-09 19:11:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,10.545705,10.697166,-1.1898581,1.4276114,geometric_coverage_without_exact_target_catalogue_measurement
+90756,208,1959-03-09 21:22:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,2.8259263,9.01289,-1.3837475,2.2394416,geometric_coverage_without_exact_target_catalogue_measurement
+90783,208,1959-03-28 20:10:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,5.495277,6.3180785,-0.121095605,0.42308536,geometric_coverage_without_exact_target_catalogue_measurement
+90787,208,1959-03-29 19:55:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,9.563382,11.922919,-2.1059182,1.1141614,geometric_coverage_without_exact_target_catalogue_measurement
+90855,208,1959-04-01 19:45:00,3600.0,Astrograph,Perutz Perseuso,,0,0,3,5.4328504,7.6760488,-0.17061949,0.9578367,geometric_coverage_without_exact_target_catalogue_measurement
+90935,208,1959-04-04 19:50:00,3600.0,Astrograph,Perutz Perseuso,,0,0,2,10.077052,12.130754,-0.55245376,1.4818788,geometric_coverage_without_exact_target_catalogue_measurement
+92331,208,1960-02-16 21:06:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.1972,12.5342655,0.19631325,2.6927454,geometric_coverage_without_exact_target_catalogue_measurement
+92332,208,1960-02-16 21:06:00,3600.0,Astrograph,Perutz Astro,,0,0,3,4.9997196,11.144562,0.12936667,0.70844424,geometric_coverage_without_exact_target_catalogue_measurement
+92336,208,1960-02-16 22:11:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.669783,13.436921,1.467596,2.5643039,geometric_coverage_without_exact_target_catalogue_measurement
+92352,208,1960-02-17 22:18:00,3600.0,Astrograph,Perutz Astro,,0,0,3,9.668192,12.204011,-0.312899,1.3611207,geometric_coverage_without_exact_target_catalogue_measurement
+92392,208,1960-02-21 22:03:00,3600.0,Astrograph,Perutz Astro,,0,0,5,7.6956763,10.313021,-0.4890012,1.2624785,geometric_coverage_without_exact_target_catalogue_measurement
+92397,208,1960-02-27 21:40:00,3600.0,Astrograph,Perutz Astro,,0,0,4,9.916485,13.123032,-0.5305307,1.9221319,geometric_coverage_without_exact_target_catalogue_measurement
+92442,208,1960-03-22 20:17:00,3600.0,Astrograph,Perutz Astro,,0,0,3,9.964044,10.199375,-1.2978215,-0.39870906,geometric_coverage_without_exact_target_catalogue_measurement
+92477,208,1960-03-23 19:20:00,3600.0,Astrograph,Perutz Astro,,0,0,3,6.283291,7.6794395,-0.7035572,-0.19271664,geometric_coverage_without_exact_target_catalogue_measurement
+92482,208,1960-03-23 20:26:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.07628,12.579051,-0.07577127,1.0386772,geometric_coverage_without_exact_target_catalogue_measurement
+92557,208,1960-03-28 20:10:00,3600.0,Astrograph,Perutz Astro,,0,0,3,10.976265,12.340859,-0.85289174,1.1421726,geometric_coverage_without_exact_target_catalogue_measurement
+92572,208,1960-03-29 19:36:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.256942,11.30713,0.32655093,0.6746942,geometric_coverage_without_exact_target_catalogue_measurement
+93328,208,1961-01-12 22:37:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.930111,12.072321,1.3824493,1.605886,geometric_coverage_without_exact_target_catalogue_measurement
+93333,208,1961-01-12 23:44:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.387327,12.5117,1.5972679,1.6391839,geometric_coverage_without_exact_target_catalogue_measurement
+93338,208,1961-01-13 00:51:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.6072645,12.844455,1.6879067,1.7565144,geometric_coverage_without_exact_target_catalogue_measurement
+93378,208,1961-01-15 22:47:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.230138,12.275283,1.5280057,1.5952257,geometric_coverage_without_exact_target_catalogue_measurement
+93383,208,1961-01-15 23:53:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.529836,12.61008,1.532814,1.6991185,geometric_coverage_without_exact_target_catalogue_measurement
+93388,208,1961-01-16 01:01:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.636421,12.771078,1.4715662,1.5622755,geometric_coverage_without_exact_target_catalogue_measurement
+93433,208,1961-01-16 23:26:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.179569,12.232557,1.624962,1.6474615,geometric_coverage_without_exact_target_catalogue_measurement
+93438,208,1961-01-17 00:32:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.665112,12.992361,1.5701429,1.7187569,geometric_coverage_without_exact_target_catalogue_measurement
+93483,208,1961-01-17 23:24:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.541148,12.6423855,1.5758133,1.6449549,geometric_coverage_without_exact_target_catalogue_measurement
+93488,208,1961-01-18 00:31:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.545719,12.708634,1.3363112,1.7028357,geometric_coverage_without_exact_target_catalogue_measurement
+93528,208,1961-01-18 22:11:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.201022,12.245579,1.511417,1.623068,geometric_coverage_without_exact_target_catalogue_measurement
+93533,208,1961-01-18 23:17:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.4683695,12.591965,1.6254387,1.6395749,geometric_coverage_without_exact_target_catalogue_measurement
+93538,208,1961-01-19 00:23:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.687545,12.847688,1.6924345,1.7332292,geometric_coverage_without_exact_target_catalogue_measurement
+93578,208,1961-01-19 22:30:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.109216,12.157501,1.558598,1.5842569,geometric_coverage_without_exact_target_catalogue_measurement
+93583,208,1961-01-19 23:37:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.293989,12.356865,1.5738459,1.6071432,geometric_coverage_without_exact_target_catalogue_measurement
+93588,208,1961-01-20 00:43:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.476351,12.521572,1.4734211,1.5648056,geometric_coverage_without_exact_target_catalogue_measurement
+93618,208,1961-02-14 21:04:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.822398,11.96835,1.3711376,1.5442007,geometric_coverage_without_exact_target_catalogue_measurement
+93623,208,1961-02-14 22:10:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.323903,12.410941,1.6459327,1.7108954,geometric_coverage_without_exact_target_catalogue_measurement
+93648,208,1961-02-20 20:52:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.33497,11.362929,1.5578313,1.5987418,geometric_coverage_without_exact_target_catalogue_measurement
+93653,208,1961-02-20 21:59:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.203003,12.249905,1.5803432,1.6571541,geometric_coverage_without_exact_target_catalogue_measurement
+93683,208,1961-02-21 21:27:00,3600.0,Astrograph,Perutz Astro,,0,0,3,10.672348,10.794367,1.415012,1.5395286,geometric_coverage_without_exact_target_catalogue_measurement
+93688,208,1961-03-08 21:08:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.719506,12.914287,1.657622,1.6678691,geometric_coverage_without_exact_target_catalogue_measurement
+93713,208,1961-03-09 20:11:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.622737,12.740029,1.5169004,1.6090709,geometric_coverage_without_exact_target_catalogue_measurement
+93718,208,1961-03-09 21:20:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.877285,13.2411785,1.661719,1.7000052,geometric_coverage_without_exact_target_catalogue_measurement
+93747,208,1961-03-16 19:15:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.429726,12.534682,1.599904,1.6732295,geometric_coverage_without_exact_target_catalogue_measurement
+93752,208,1961-03-16 20:41:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.558257,12.754575,1.6495714,1.693656,geometric_coverage_without_exact_target_catalogue_measurement
+93759,208,1961-03-17 20:02:00,3600.0,Astrograph,Perutz Astro,,1,0,3,13.3229685,13.578459,1.8881356,1.9561216,target_catalogue_measurement
+93763,208,1961-03-17 20:02:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.652774,12.809322,1.6448123,1.6475066,geometric_coverage_without_exact_target_catalogue_measurement
+94472,208,1962-01-04 00:55:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.160375,12.189245,1.61461,1.6482882,geometric_coverage_without_exact_target_catalogue_measurement
+94528,208,1962-01-05 00:40:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.119627,12.165146,1.4019592,1.5697049,geometric_coverage_without_exact_target_catalogue_measurement
+94600,208,1962-02-09 21:22:00,3600.0,Astrograph,Perutz Astro,,0,0,3,7.6118817,8.783738,-1.0663942,-0.2697162,geometric_coverage_without_exact_target_catalogue_measurement
+94624,208,1962-03-07 20:17:00,3600.0,Astrograph,Perutz Astro,,0,0,4,10.254927,11.129411,-2.9519851,-0.99493,geometric_coverage_without_exact_target_catalogue_measurement
+94632,208,1962-03-07 20:58:00,7200.0,Astrograph,Perutz Astro,,0,0,3,12.091618,12.251455,1.3923146,1.4563634,geometric_coverage_without_exact_target_catalogue_measurement
+95421,208,1962-12-03 02:21:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.3842945,11.637072,1.2320291,1.5406286,geometric_coverage_without_exact_target_catalogue_measurement
+95469,208,1962-12-04 02:38:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.839299,12.064203,1.306557,1.5287911,geometric_coverage_without_exact_target_catalogue_measurement
+95737,208,1964-01-17 22:39:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.452706,11.466808,1.7650514,1.7713459,geometric_coverage_without_exact_target_catalogue_measurement
+95738,208,1964-01-17 23:44:00,3600.0,Astrograph,Perutz Astro,,0,0,3,10.609812,10.919713,1.2380949,1.5733498,geometric_coverage_without_exact_target_catalogue_measurement
+95744,208,1964-01-20 23:14:00,3600.0,Astrograph,Perutz Astro,,0,0,1,9.651898,9.651898,1.4566964,1.4566964,geometric_coverage_without_exact_target_catalogue_measurement
+95746,208,1964-01-21 21:10:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.06348,11.141196,1.5040654,1.6008083,geometric_coverage_without_exact_target_catalogue_measurement
+95748,208,1964-01-21 22:17:00,3600.0,Astrograph,Perutz Astro,,0,0,3,9.9231825,10.082831,1.47133,1.6544423,geometric_coverage_without_exact_target_catalogue_measurement
+95758,208,1964-02-13 21:54:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.59014,11.733,1.2650876,1.4797466,geometric_coverage_without_exact_target_catalogue_measurement
+95760,208,1964-02-13 22:59:00,3600.0,Astrograph,Perutz Astro,,0,0,3,11.780797,12.071946,1.2747998,1.6139494,geometric_coverage_without_exact_target_catalogue_measurement
+95770,208,1964-02-14 23:38:00,3600.0,Astrograph,Perutz Astro,,0,0,3,12.124809,12.169729,1.5541996,1.5770979,geometric_coverage_without_exact_target_catalogue_measurement

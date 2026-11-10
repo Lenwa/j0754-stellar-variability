@@ -1,0 +1,90 @@
+{
+  "metadata": [
+    {
+      "name": "source_id",
+      "datatype": "long",
+      "xtype": null,
+      "arraysize": null,
+      "description": "Source Identifier",
+      "unit": null,
+      "ucd": "meta.id;meta.main",
+      "utype": null
+    },
+    {
+      "name": "nss_solution_type",
+      "datatype": "char",
+      "xtype": null,
+      "arraysize": "*",
+      "description": "NSS model adopted",
+      "unit": null,
+      "ucd": "meta.record",
+      "utype": null
+    },
+    {
+      "name": "period",
+      "datatype": "double",
+      "xtype": null,
+      "arraysize": null,
+      "description": "Orbital Period",
+      "unit": "d",
+      "ucd": "time.period",
+      "utype": null
+    },
+    {
+      "name": "period_error",
+      "datatype": "float",
+      "xtype": null,
+      "arraysize": null,
+      "description": "Standard error of Orbital Period",
+      "unit": "d",
+      "ucd": "stat.error;time.period",
+      "utype": null
+    },
+    {
+      "name": "eccentricity",
+      "datatype": "double",
+      "xtype": null,
+      "arraysize": null,
+      "description": "eccentricity",
+      "unit": null,
+      "ucd": "src.orbital.eccentricity",
+      "utype": null
+    },
+    {
+      "name": "eccentricity_error",
+      "datatype": "float",
+      "xtype": null,
+      "arraysize": null,
+      "description": "Standard error of eccentricity",
+      "unit": null,
+      "ucd": "stat.error;src.orbital.eccentricity",
+      "utype": null
+    }
+  ],
+  "data": [
+    [
+      667401913089980544,
+      "SB1",
+      35.92045663260072,
+      0.030613065,
+      0.022974981578527707,
+      0.05554752
+    ],
+    [
+      865283696503303936,
+      "SB1",
+      39.42091782293346,
+      0.022500465,
+      0.014846355375993953,
+      0.028657867
+    ],
+    [
+      651437519650162304,
+      "SB1",
+      38.38919173490344,
+      0.050756417,
+      0.12338474204640558,
+      0.080836274
+    ]
+  ]
+}

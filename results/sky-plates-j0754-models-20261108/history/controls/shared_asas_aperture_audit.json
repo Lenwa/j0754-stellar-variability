@@ -1,0 +1,32 @@
+[
+  {
+    "aperture_identity": "F0728+16_437|7.925040000|16.475086000",
+    "requests": [
+      {
+        "star": "667380506973089536",
+        "dataset": "1",
+        "separation_arcsec": 7.58125615455288
+      },
+      {
+        "star": "667380575692566656",
+        "dataset": "1",
+        "separation_arcsec": 22.516409517062147
+      }
+    ]
+  },
+  {
+    "aperture_identity": "F0728+24_482|7.925075000|16.474804000",
+    "requests": [
+      {
+        "star": "667380506973089536",
+        "dataset": "3",
+        "separation_arcsec": 5.509307945858394
+      },
+      {
+        "star": "667380575692566656",
+        "dataset": "3",
+        "separation_arcsec": 24.292802796116607
+      }
+    ]
+  }
+]

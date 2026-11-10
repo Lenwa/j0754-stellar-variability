@@ -1,0 +1,15 @@
+{
+  "primary_all_eligible_datasets": {
+    "rows": 338,
+    "minimum_controls": 7,
+    "delta2007_minus2004": 0.14700000000000024,
+    "delta2009_minus2007": -0.11399999999999899
+  },
+  "main_field_only_sensitivity": {
+    "rows": 338,
+    "minimum_controls": 7,
+    "delta2007_minus2004": 0.14312500000000128,
+    "delta2009_minus2007": -0.11399999999999899
+  },
+  "method": "Root independent standard-library reconstruction; exactHJD/frame; percontrol/dataset2004centering; >=3stars. Sharednativeaperturealiasesalreadyexcludedbypositiongate."
+}

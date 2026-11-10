@@ -1,0 +1,3 @@
+column_name,datatype,description
+inputid,char,calibration input plane identifier (plane.planeid)
+outputid,char,science output plane identifier (plane.planeid)

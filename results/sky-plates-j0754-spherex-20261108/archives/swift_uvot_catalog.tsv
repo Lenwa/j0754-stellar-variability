@@ -1,0 +1,158 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:46:30 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:46:30	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=II%2F339&-c=118.69117410685+%2B16.694621231895&-c.rs=10&-out=%2A%2A&-out.max=100	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=10.	
+#Constraint -out.max=100
+
+#RESOURCE=yCat_2339
+#Name: II/339
+#Title: Swift/UVOT Serendipitous Source Catalog (Yershov, 2015)
+#INFO	ivoid=ivo://cds.vizier/ii/339	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/339	    IVOID of underlying data collection
+#INFO	creator=Yershov V.N.	    First author or institution
+#INFO	cites=bibcode:2014Ap&SS.354...97Y	    Article or Data origin sources
+#INFO	journal=Ap&S	    Journal name
+#INFO	original_date=2014	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/339	    Dataset landing page
+#INFO	publication_date=2021-09-09	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H:	ICRS
+#Table	II_339_uvotssc1:
+#Name: II/339/uvotssc1
+#Title: The Catalogue (6200016 individual sources)
+#Column	_r	(F6.3)	Distance from center (118.691174+16.694621)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Name	(A17)	UVOTSSC1 name (JHHMMSS.s+DDMMSSa) (IAUNAME)	[ucd=meta.id;meta.main]
+#Column	Oseq	(I5)	[1/23059] Reference number in the observation table (N_SUMMARY)	[ucd=meta.id;obs]
+#Column	ObsID	(A11)	Unique Swift observation ID (OBSID)	[ucd=meta.id;obs]
+#Column	Nf	(I1)	[1/6] Number of filters included in this observation (NFILT)	[ucd=meta.number]
+#Column	SrcID	(I7)	[1/6200016] Unique source number (SRCNUM)	[ucd=meta.id]
+#Column	RAJ2000	(F10.6)	Right ascension (J2000) (RA) (1)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	Declination (J2000) (DEC) (1)	[ucd=pos.eq.dec;meta.main]
+#Column	e_RAJ2000	(F7.3)	[0.001/15] Right ascension error (RA_ERR) (1)	[ucd=stat.error;pos.eq.ra]
+#Column	e_DEJ2000	(F7.3)	[0.001/21] Declination error (DEC_ERR) (1)	[ucd=stat.error;pos.eq.dec]
+#Column	rUVW2	(F6.3)	[0/30]? Distance to closest UVW2 source (UVW2_SRCDIST)	[ucd=pos.angDistance]
+#Column	rUVM2	(F6.3)	[0/30]? Distance to closest UVM2 source (UVM2_SRCDIST)	[ucd=pos.angDistance]
+#Column	rUVW1	(F6.3)	[0/30]? Distance to closest UVW1 source (UVW1_SRCDIST)	[ucd=pos.angDistance]
+#Column	rU	(F6.3)	[0/30]? Distance to closest U source (U_SRCDIST)	[ucd=pos.angDistance]
+#Column	rB	(F6.3)	[0/30]? Distance to closest B source (B_SRCDIST)	[ucd=pos.angDistance]
+#Column	rV	(F6.3)	[0/30]? Distance to closest V source (V_SRCDIST)	[ucd=pos.angDistance]
+#Column	Nd	(I3)	[1/208] Number of individual observations (N_OBSID) (2)	[ucd=meta.number]
+#Column	sUVW2	(F6.1)	[3/5813]? Significance (S/N) in UVW2 (UVW2_SIGNIF)	[ucd=stat.fit.goodness]
+#Column	sUVM2	(F6.1)	[3/5000]? Significance (S/N) in UVM2 (UVM2_SIGNIF)	[ucd=stat.fit.goodness]
+#Column	sUVW1	(F6.1)	[3/5000]? Significance (S/N) in UVW1 (UVW1_SIGNIF)	[ucd=stat.fit.goodness]
+#Column	sU	(F6.1)	[3/5000]? Significance (S/N) in U (U_SIGNIF)	[ucd=stat.fit.goodness]
+#Column	sB	(F6.1)	[3/5000]? Significance (S/N) in B (B_SIGNIF)	[ucd=stat.fit.goodness]
+#Column	sV	(F6.1)	[3/5000]? Significance (S/N) in V (V_SIGNIF)	[ucd=stat.fit.goodness]
+#Column	UVW2	(F7.4)	? UVOT/UVW2 Vega magnitude (UVW2_VEGAMAG) (3)	[ucd=phot.mag;em.UV.100-200nm]
+#Column	UVM2	(F7.4)	? UVOT/UVM2 Vega magnitude (UVM2_VEGAMAG) (3)	[ucd=phot.mag;em.UV.200-300nm]
+#Column	UVW1	(F7.4)	? UVOT/UVW1 Vega magnitude (UVW1_VEGAMAG) (3)	[ucd=phot.mag;em.UV.200-300nm]
+#Column	Umag	(F6.3)	? UVOT/U Vega magnitude (U_VEGAMAG) (3)	[ucd=phot.mag;em.opt.U]
+#Column	Bmag	(F6.3)	? UVOT/B Vega magnitude (B_VEGAMAG) (3)	[ucd=phot.mag;em.opt.B]
+#Column	Vmag	(F6.3)	? UVOT/V Vega magnitude (V_VEGAMAG) (3)	[ucd=phot.mag;em.opt.V]
+#Column	UVW2-AB	(F6.3)	? UVOT/UVW2 AB magnitude (UVW2_ABMAG) (3)	[ucd=phot.mag;em.UV.100-200nm]
+#Column	UVM2-AB	(F6.3)	? UVOT/UVM2 AB magnitude (UVM2_ABMAG) (3)	[ucd=phot.mag;em.UV.200-300nm]
+#Column	UVW1-AB	(F6.3)	? UVOT/UVW1 AB magnitude (UVW1_ABMAG) (3)	[ucd=phot.mag;em.UV.200-300nm]
+#Column	U-AB	(F6.3)	? UVOT/U AB magnitude (U_ABMAG) (3)	[ucd=phot.mag;em.opt.U]
+#Column	B-AB	(F6.3)	? UVOT/B AB magnitude (B_ABMAG) (3)	[ucd=phot.mag;em.opt.B]
+#Column	V-AB	(F6.3)	? UVOT/V AB magnitude (V_ABMAG) (3)	[ucd=phot.mag;em.opt.V]
+#Column	e_UVW2	(F7.4)	? Error on UVW2 magnitude (UVW2_MAG_ERR)	[ucd=stat.error]
+#Column	e_UVM2	(F7.4)	? Error on UVM2 magnitude (UVM2_MAG_ERR)	[ucd=stat.error]
+#Column	e_UVW1	(F7.4)	? Error on UVW1 magnitude (UVW1_MAG_ERR)	[ucd=stat.error]
+#Column	e_Umag	(F6.3)	? Error on U magnitude (U_MAG_ERR)	[ucd=stat.error;phot.mag]
+#Column	e_Bmag	(F6.3)	? Error on B magnitude (B_MAG_ERR)	[ucd=stat.error;phot.mag]
+#Column	e_Vmag	(F6.3)	? Error on V magnitude (V_MAG_ERR)	[ucd=stat.error;phot.mag]
+#Column	F.UVW2	(D12.5)	? UVOT/UVW2 Flux (UVW2_FLUX) (3)	[ucd=phot.flux]
+#Column	F.UVM2	(D12.5)	? UVOT/UVM2 Flux (UVM2_FLUX) (3)	[ucd=phot.flux]
+#Column	F.UVW1	(D12.5)	? UVOT/UVW1 Flux (UVW1_FLUX) (3)	[ucd=phot.flux]
+#Column	F.U	(D12.5)	? UVOT/U Flux (U_FLUX) (3)	[ucd=phot.flux]
+#Column	F.B	(D12.5)	? UVOT/B Flux (B_FLUX) (3)	[ucd=phot.flux]
+#Column	F.V	(D12.5)	? UVOT/V Flux (V_FLUX) (3)	[ucd=phot.flux]
+#Column	e_F.UVW2	(E10.3)	? Error on F.UVW2 (UVW2_FLUX_ERR)	[ucd=stat.error]
+#Column	e_F.UVM2	(E10.3)	? Error on F.UVM2 (UVM2_FLUX_ERR)	[ucd=stat.error]
+#Column	e_F.UVW1	(E10.3)	? Error on F.UVW1 (UVW1_FLUX_ERR)	[ucd=stat.error]
+#Column	e_F.U	(E10.3)	? Error on F.U (U_FLUX_ERR)	[ucd=stat.error]
+#Column	e_F.B	(E10.3)	? Error on F.B (B_FLUX_ERR)	[ucd=stat.error]
+#Column	e_F.V	(E10.3)	? Error on F.V (V_FLUX_ERR)	[ucd=stat.error]
+#Column	aUVW2	(F6.3)	? Major axis in UVW2 (UVW2_MAJOR)	[ucd=phys.angSize.smajAxis]
+#Column	aUVM2	(F6.3)	? Major axis in UVM2 (UVM2_MAJOR)	[ucd=phys.angSize.smajAxis]
+#Column	aUVW1	(F6.3)	? Major axis in UVW1 (UVW1_MAJOR)	[ucd=phys.angSize.smajAxis]
+#Column	aU	(F6.3)	? Major axis in U (U_MAJOR)	[ucd=phys.angSize.smajAxis]
+#Column	aB	(F6.3)	? Major axis in B (B_MAJOR)	[ucd=phys.angSize.smajAxis]
+#Column	aV	(F6.3)	? Major axis in V (V_MAJOR)	[ucd=phys.angSize.smajAxis]
+#Column	bUVW2	(F6.3)	? Minor axis in UVW2 (UVW2_MINOR)	[ucd=phys.angSize;src]
+#Column	bUVM2	(F6.3)	? Minor axis in UVM2 (UVM2_MINOR)	[ucd=phys.angSize;src]
+#Column	bUVW1	(F6.3)	? Minor axis in UVW1 (UVW1_MINOR)	[ucd=phys.angSize;src]
+#Column	bU	(F6.3)	? Minor axis in U (U_MINOR)	[ucd=phys.angSize;src]
+#Column	bB	(F6.3)	? Minor axis in B (B_MINOR)	[ucd=phys.angSize;src]
+#Column	bV	(F6.3)	? Minor axis in V (V_MINOR)	[ucd=phys.angSize;src]
+#Column	paUVW2	(F5.2)	[0/90]? Position angle of major axis in UVW2 (UVW2_POSANG)	[ucd=pos.posAng]
+#Column	paUVM2	(F5.2)	[0/90]? Position angle of major axis in UVM2 (UVM2_POSANG)	[ucd=pos.posAng]
+#Column	paUVW1	(F5.2)	[0/90]? Position angle of major axis in UVW1 (UVW1_POSANG)	[ucd=pos.posAng]
+#Column	paU	(F5.2)	[0/90]? Position angle of major axis in U (U_POSANG)	[ucd=pos.posAng]
+#Column	paB	(F5.2)	[0/90]? Position angle of major axis in B (B_POSANG)	[ucd=pos.posAng]
+#Column	paV	(F5.2)	[0/90]? Position angle of major axis in V (V_POSANG)	[ucd=pos.posAng]
+#Column	xUVW2	(I1)	[0/1] Extended flag in UVW2 (UVW2_EXTENDED)	[ucd=meta.code]
+#Column	xUVM2	(I1)	[0/1] Extended flag in UVM2 (UVM2_EXTENDED)	[ucd=meta.code]
+#Column	xUVW1	(I1)	[0/1] Extended flag in UVW1 (UVW1_EXTENDED)	[ucd=meta.code]
+#Column	xU	(I1)	[0/1] Extended flag in U (U_EXTENDED)	[ucd=meta.code]
+#Column	xB	(I1)	[0/1] Extended flag in B (B_EXTENDED)	[ucd=meta.code]
+#Column	xV	(I1)	[0/1] Extended flag in V (V_EXTENDED)	[ucd=meta.code]
+#Column	fUVW2	(I3)	[0/511]? Quality flags in UVW2 (UVW2_QUALITY_FLAG) (4)	[ucd=meta.code.qual]
+#Column	fUVM2	(I3)	[0/511]? Quality flags in UVM2 (UVM2_QUALITY_FLAG) (4)	[ucd=meta.code.qual]
+#Column	fUVW1	(I3)	[0/511]? Quality flags in UVW1 (UVW1_QUALITY_FLAG) (4)	[ucd=meta.code.qual]
+#Column	fU	(I3)	[0/511]? Quality flags in U (U_QUALITY_FLAG)	[ucd=meta.code.qual;pos.cartesian.x]
+#Column	fB	(I3)	[0/511]? Quality flags in B (B_QUALITY_FLAG)	[ucd=meta.code.qual]
+#Column	fV	(I3)	[0/511]? Quality flags in V (V_QUALITY_FLAG)	[ucd=meta.code.qual;pos.cartesian.y]
+_r	recno	Name	Oseq	ObsID	Nf	SrcID	RAJ2000	DEJ2000	e_RAJ2000	e_DEJ2000	rUVW2	rUVM2	rUVW1	rU	rB	rV	Nd	sUVW2	sUVM2	sUVW1	sU	sB	sV	UVW2	UVM2	UVW1	Umag	Bmag	Vmag	UVW2-AB	UVM2-AB	UVW1-AB	U-AB	B-AB	V-AB	e_UVW2	e_UVM2	e_UVW1	e_Umag	e_Bmag	e_Vmag	F.UVW2	F.UVM2	F.UVW1	F.U	F.B	F.V	e_F.UVW2	e_F.UVM2	e_F.UVW1	e_F.U	e_F.B	e_F.V	aUVW2	aUVM2	aUVW1	aU	aB	aV	bUVW2	bUVM2	bUVW1	bU	bB	bV	paUVW2	paUVM2	paUVW1	paU	paB	paV	xUVW2	xUVM2	xUVW1	xU	xB	xV	fUVW2	fUVM2	fUVW1	fU	fB	fV
+arcsec	 	 	 	 	 	 	deg	deg	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	 	 	 	 	 	 	 	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	cW/m2/nm	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	arcsec	deg	deg	deg	deg	deg	deg	 	 	 	 	 	 	 	 	 	 	 	
+------	--------	-----------------	-----	-----------	-	-------	----------	----------	-------	-------	------	------	------	------	------	------	---	------	------	------	------	------	------	-------	-------	-------	------	------	------	------	------	------	------	------	------	-------	-------	-------	------	------	------	------------	------------	------------	------------	------------	------------	----------	----------	----------	----------	----------	----------	------	------	------	------	------	------	------	------	------	------	------	------	-----	-----	-----	-----	-----	-----	-	-	-	-	-	-	---	---	---	---	---	---
+ 0.104	 3541835	J075445.8+164140 	 7074	00031554001	1	1672504	118.691176	+16.694650	  0.320	  0.320	      	      	16.844	      	      	      	  1	      	      	 188.4	      	      	      	       	       	15.2100	      	      	      	      	      	16.730	      	      	      	       	       	 0.0058	      	      	      	            	            	 3.28235e-15	            	            	            	          	          	 1.748e-17	          	          	          	      	      	 1.123	      	      	      	      	      	 0.964	      	      	      	     	     	     	     	     	     	0	0	0	0	0	0	   	   	128	   	   	
+
+#Table	II_339_summary:
+#Name: II/339/summary
+#Title: Summary information and per image upper limits
+#Column	_r	(F6.3)	Distance from center (118.691174+16.694621)[ICRS]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Oseq	(I5)	[1/23059] Reference number (N_SUMMARY)	[ucd=meta.id;meta.main]
+#Column	ObsID	(A11)	Unique Swift observation ID (OBSID) (5)	[ucd=meta.id;obs]
+#Column	Target	(A18)	Swift original target identifier (TARGET_ID)	[ucd=meta.id]
+#Column	Filters	(A20)	List of filters used this OBSID (FILTERS)	[ucd=instr.bandpass]
+#Column	StartDate	(A19)	Earliest observation date and time, UT format (DATE_MIN)	[ucd=time.epoch;obs]
+#Column	ptRA	(F10.6)	Pointing RA (ICRS) of image centre (RA_PNT)	[ucd=pos.eq.ra;meta.main]
+#Column	ptDE	(F10.6)	Pointing Dec (ICRS) of image centre (DEC_PNT)	[ucd=pos.eq.dec;meta.main]
+#Column	ptPA	(F5.1)	[0/360] Position angle image centre (PA_PNT)	[ucd=pos.posAng]
+#Column	exp.UVW2	(F7.1)	?Total exposure time in UVW2 (EXP_UVW2)	[ucd=time.duration;obs.exposure]
+#Column	exp.UVM2	(F7.1)	?Total exposure time in UVM2 (EXP_UVM2)	[ucd=time.duration;obs.exposure]
+#Column	exp.UVW1	(F7.1)	?Total exposure time in UVW1(EXP_UVW1)	[ucd=time.duration;obs.exposure]
+#Column	exp.U	(F7.1)	?Total exposure time in U (EXP_U)	[ucd=time.duration;obs.exposure]
+#Column	exp.B	(F7.1)	?Total exposure time in B(EXP_B)	[ucd=time.duration;obs.exposure]
+#Column	exp.V	(F7.1)	?Total exposure time in V (EXP_V)	[ucd=time.duration;obs.exposure]
+#Column	n.UVW2	(I4)	?Number of UVW2 sources (NSOURCES_UVW2)	[ucd=meta.number]
+#Column	n.UVM2	(I4)	?Number of UVM2 sources (NSOURCES_UVM2)	[ucd=meta.number]
+#Column	n.UVW1	(I4)	?Number of UVW1 sources (NSOURCES_UVW1)	[ucd=meta.number]
+#Column	n.U	(I4)	?Number of U sources (NSOURCES_U)	[ucd=meta.number]
+#Column	n.B	(I4)	?Number of B sources (NSOURCES_B)	[ucd=meta.number]
+#Column	n.V	(I5)	?Number of V sources (NSOURCES_V)	[ucd=meta.number]
+#Column	ul.UVW2	(F6.3)	?Limiting mag UVW2 (VEGAMAG_LIM_UVW2) (6)	[ucd=phot.mag]
+#Column	ul.UVM2	(F6.3)	?Limiting mag UVM2 (VEGAMAG_LIM_UVM2) (6)	[ucd=phot.mag]
+#Column	ul.UVW1	(F6.3)	?Limiting mag UVW1 (VEGAMAG_LIM_UVW1) (6)	[ucd=phot.mag]
+#Column	ul.U	(F6.3)	?Limiting mag U (VEGAMAG_LIM_U) (6)	[ucd=phot.mag]
+#Column	ul.B	(F6.3)	?Limiting mag B (VEGAMAG_LIM_B) (6)	[ucd=phot.mag]
+#Column	ul.V	(F6.3)	?Limiting mag V (VEGAMAG_LIM_V) (6)	[ucd=phot.mag]
+#Column	ul.UVW2-AB	(F6.3)	?Limiting AB-mag UVW2 (ABMAG_LIM_UVW2) (6)	[ucd=phot.mag]
+#Column	ul.UVM2-AB	(F6.3)	?Limiting AB-mag UVM2 (ABMAG_LIM_UVM2) (6)	[ucd=phot.mag]
+#Column	ul.UVW1-AB	(F6.3)	?Limiting AB-mag UVW1 (ABMAG_LIM_UVW1) (6)	[ucd=phot.mag]
+#Column	ul.U-AB	(F6.3)	?Limiting AB-mag U (ABMAG_LIM_U) (6)	[ucd=phot.mag]
+#Column	ul.B-AB	(F6.3)	?Limiting AB-mag B (ABMAG_LIM_B) (6)	[ucd=phot.mag]
+#Column	ul.V-AB	(F6.3)	?Limiting AB-mag V (ABMAG_LIM_V) (6)	[ucd=phot.mag]

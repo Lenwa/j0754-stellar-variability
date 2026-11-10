@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://nadc.china-vo.org/sr/images/favicon.ico">
+    
+    <title>Medium Resolution Spectrum Online Viewer | LAMOST DR12 v2.0</title>
+    
+    
+
+    <link rel="stylesheet" href="https://nadc.china-vo.org/sr/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://nadc.china-vo.org/sr/open-iconic/font/css/open-iconic-bootstrap.css">
+    <link rel="stylesheet" href="/lmusers/static/lamost/css/style.css?v=3">
+    <link rel="stylesheet" href="https://nadc.china-vo.org/sr/css/bootstrap-treeview.min.css">
+    <link href="https://nadc.china-vo.org/sr/css/select2.min.css" rel="stylesheet"/>
+    <link href="https://nadc.china-vo.org/sr/css/select2-bootstrap.css" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="https://nadc.china-vo.org/sr/jquery-easyui-1.10.1/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="https://nadc.china-vo.org/sr/jquery-easyui-1.10.1/themes/icon.css">
+<style type="text/css">
+    .panel-body-noheader {border-top-width: 0px;}
+    #spectrum { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; }
+    .thumbnail{position: relative;min-height: 1px;padding: 10px;width: 16.666666666666664%;float: left;text-align:center;}
+    .thumbnail:hover{background-color:gray;cursor:hand;}
+    #info-tabs .tabs li a.tabs-inner{padding:0 8px;}
+</style>
+
+    
+
+    
+    <script src="https://nadc.china-vo.org/sr/js/jquery.min.js"></script>
+    <script src="https://nadc.china-vo.org/sr/js/popper.min.js"></script>
+    <script src="https://nadc.china-vo.org/sr/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="https://nadc.china-vo.org/sr/js/bootstrap.min.js"></script>
+    <script src="/lmusers/static/lamost/js/script.js?v=2"></script>
+    <script src="https://nadc.china-vo.org/sr/js/select2.min.js"></script>
+    <script src="/lmusers/static/lamost/js/lamost.js"></script>
+    <script src="https://nadc.china-vo.org/sr/js/bootstrap-treeview.min.js"></script>
+    <script type="text/javascript">
+        var prx = '/lmusers';
+        var csrf_token = "ImUxZDQ4NDVhNTEwYjVmM2E0NWIxNTE5MTZkZjhjN2UwMWFiMDQ1YzAi.avD-IQ.JbUc1C61xQQkILtoQfWmt3o6wio";
+        
+        var is_authenticated = false;
+        
+        $(function(){
+            $('#assistant_logo').on("mouseover", function() {
+                $('#assistant_logo').width(200);
+                $('#assistant_logo').height(200);
+            });
+            $('#assistant_logo').on("mouseout", function() {
+                $('#assistant_logo').width(48);
+                $('#assistant_logo').height(48);
+            });
+            $('#wechat_group').on("mouseover", function() {
+                $('#wechat_group').width(200);
+                $('#wechat_group').height(200);
+            });
+            $('#wechat_group').on("mouseout", function() {
+                $('#wechat_group').width(52);
+                $('#wechat_group').height(52);
+            });
+        });
+    </script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//analytics.escience.org.cn/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '23']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
+    
+<script src="https://nadc.china-vo.org/sr/jquery-easyui-1.10.1/jquery.easyui.min.js"></script>
+<script src="https://nadc.china-vo.org/sr/Highcharts-4.1.9/js/highcharts.js"></script>
+<script src="https://nadc.china-vo.org/sr/Highcharts-4.1.9/js/highcharts-more.js"></script>
+<script src="https://nadc.china-vo.org/sr/Highcharts-4.1.9/js/modules/exporting.js"></script>
+<script src="/lmusers/static/lamost/js/mrs_spectrum.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand navbar-dark topNav-bg index-topNav">
+    <div class="container-fluid index-navbar-container">
+        <div class="row" style="margin: 0px;width: 100%;">
+            <a class="navbar-brand" href="https://www.lamost.org/data">
+                <img src="https://nadc.china-vo.org/sr/images/lamost_logo.png" style="margin-left: 20px;">
+            </a>
+        <div class="collapse navbar-collapse" id="chinavo-navbar">
+            <ul class="navbar-nav mr-auto chinavoNavbar-ul">
+                <li class="nav-item">
+                    <a class="nav-link" href="/dr12/v2.0/">LAMOST DR12 v2.0</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        DATA ACCESS
+                    </a>
+                    <div class="dropdown-menu chinavoDropdownMenu" aria-labelledby="navbarDropdown0">
+                        <a class="dropdown-item" href="/dr12/v2.0/search">Low Resolution Catalogue Query</a>
+                        <a class="dropdown-item" href="/dr12/v2.0/plan">Low Resolution Observing Plan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/dr12/v2.0/medcas/search">Medium Resolution Catalogue Query</a>
+                        <a class="dropdown-item" href="/dr12/v2.0/medcas/plan">Medium Resolution Observing Plan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/dr12/v2.0/sql">SQL Query</a>
+                        <a class="dropdown-item" href="/dr12/v2.0/vo">VO Services</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/dr12/v2.0/catalogue">All Catalogues</a>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/user/">File FTP Download</a>
+                        
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="/dr12/v2.0/tar/">File Package Download</a>
+
+                    </div>
+                </li>
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        DOCUMENTS
+                    </a>
+                    <div class="dropdown-menu chinavoDropdownMenu" aria-labelledby="navbarDropdown0">
+                        
+        <a class="dropdown-item" href="/dr12/v2.0/doc/lr-data-production-description">Low Resolution Data Description</a>
+        <a class="dropdown-item" href="/dr12/v2.0/doc/lr-data-production-description_cn">低分辨率数据说明</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/dr12/v2.0/doc/mr-data-production-description">Medium Resolution Data Description</a>
+        <a class="dropdown-item" href="/dr12/v2.0/doc/mr-data-production-description_cn">中分辨率数据说明</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/dr12/v2.0/doc/release_note">Release Note</a>
+        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=1">Data Policy</a>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=2">Publication Policy</a>
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        HELP
+                    </a>
+                    <div class="dropdown-menu chinavoDropdownMenu" aria-labelledby="navbarDropdown0">
+                        <a class="dropdown-item" href="/dr12/v2.0/doc/query-introduction">Query Introduction</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/dr12/v2.0/doc/faq">FAQ</a>
+                        <a class="dropdown-item" href="/dr12/v2.0/doc/faq_chinese">常见问题</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/user/contactus">Contact Us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/user/odr">Data Disk Request</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=6">Programming Packages	</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=7">LAMOST Data Product Introduction Video</a>                        
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=8">LAMOST Data Publish System Introduction Video</a>						
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto chinavoNavbar-ul">
+                    
+                    <li class="nav-item"><a class="nav-link" href="/lmusers/user/login">Login</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    
+<div id="main-layout" class="easyui-layout">
+	<div data-options="region:'west',split:true,title:'Information'" style="width:250px;">
+		<div id="info-tabs" class="easyui-tabs" data-options="fit:true,border:false,onSelect:onInfoTabSelect">
+			<div title="Object" style="overflow:hidden;">
+				<div id="obj_info" class="easyui-propertygrid" data-options="fit:true,scrollbarSize:0,showGroup:true"></div>
+			</div>
+			<div title="Nearby" style="overflow:hidden;">
+				<div id="nearby_objs" class="easyui-propertygrid" data-options="fit:true,scrollbarSize:0,columns:[[{field:'designation',title:'Designation',width:100},{field:'obsid',title:'OBSID',width:100}]]"></div>
+			</div>
+			<div title="BEST" style="overflow:hidden;">
+				<div id="best_toolbar">
+					<div id="best_match" style="padding:4px 6px 2px;line-height:18px;border-bottom:1px solid #ddd;background:#fafafa;">
+						<div>gaia_dr3 source_id:</div>
+						<div id="best_source_id" style="word-break:break-all;">-</div>
+						<div>distance: <span id="best_sep">-</span></div>
+					</div>
+					<div id="best_msg" style="display:none;padding:4px 6px;color:#666;"></div>
+					<div id="best_filters" style="padding:2px 4px;">
+						<input id="best_filter_group" placeholder="Group" style="width:52px;">
+						<input id="best_filter_band" placeholder="Band" style="width:46px;">
+						<input id="best_filter_mag" placeholder="Mag" style="width:52px;">
+						<input id="best_filter_err" placeholder="Err" style="width:46px;">
+					</div>
+				</div>
+				<div id="best_objs" class="easyui-datagrid" data-options="fit:true,toolbar:'#best_toolbar',remoteSort:false,singleSelect:true,nowrap:true,columns:[[{field:'group',title:'Group',width:62,sortable:true},{field:'band',title:'Band',width:48,sortable:true},{field:'mag',title:'Mag',width:68,sortable:true,sorter:bestNumSorter,formatter:bestNumFormatter},{field:'err',title:'Err',width:58,sortable:true,sorter:bestNumSorter,formatter:bestNumFormatter}]]"></div>
+			</div>
+		</div>
+	</div>
+	<div data-options="region:'east',split:true,title:'Operation'" style="width:200px;">
+		<div class="easyui-accordion" data-options="multiple:true" style="width: 100%;">
+			<div title="Download" data-options="collapsed:false,collapsible:true">
+				&nbsp;<a target="_blank" class="easyui-linkbutton" href="#" id="downloadfits">Download FITS</a>
+			</div>
+			<div title="Emission Lines" data-options="collapsed:false,collapsible:true">
+				<label class="btn-group">&nbsp;<input type="checkbox" id="emissLines" onchange="plotLines();" checked="checked" /><span class="add-on" style="color:rgb(0, 38, 220);">Show Emission Lines</span></label><br />
+				<textarea id='elines' rows="8" cols="22"></textarea>
+			&nbsp;<input type="button" id="elinesbtn" class="easyui-linkbutton" value="Change Emission Lines" onclick="changeELines(this);">
+				</div>
+			<div title="Absorption Lines" data-options="collapsed:false,collapsible:true">
+				<label class="btn-group">&nbsp;<input type="checkbox" id="absorpLines" onchange="plotLines();" class="btn btn-primary" /><span class="add-on" style="color:rgb(0, 200, 50);">Show Absorption Lines</span></label><br />
+				<textarea id='alines' rows="8" cols="22"></textarea>
+				&nbsp;<input type="button" id="elinesbtn" class="easyui-linkbutton" value="Change Absorption Lines" onclick="changeALines(this);">
+				</div>
+		</div>
+	</div>
+	<div data-options="region:'center'">
+		<div id="spectrum-layout" data-options="fit:true" class="easyui-layout">
+			<div data-options="region:'center'">
+				<div id="spectrum_b" style="width:100%;height:100%"></div>
+			</div>
+			<div data-options="region:'south',split:true," style="height:300px;">
+				<div id="spectrum_r" style="width:100%;height:100%"></div>
+			</div>
+		</div>
+	</div>
+	<div data-options="region:'south',split:true,title:'Spectrum List'" style="height:400px;">
+        
+		<div class="thumbnail" onclick='drawspectrum("659111063",0,"20180325/HIP368380101/med-58203-HIP368380101_sp11-063.fits.gz");$("#zoomxbtn").click();'>
+			<a href="#" style="width:90%;" title="20180325/HIP368380101/med-58203-HIP368380101_sp11-063.fits.gz">
+			<span class="filename">659111063<br />med-58203-HIP368380101_sp11-063.fits.gz</span><br />
+			</a>
+		</div>
+        
+	</div>
+</div>
+
+</div>
+<div id="icon-container" style="text-align: center;">
+    <div><a href="https://chat.china-vo.org/lamost"><img src="https://nadc.china-vo.org/sr/images/aiAssistantLogo.png" id="assistant_logo" border="0" width="48" height="48" style="margin-right: 20px; margin-bottom: 5px;"></a></div>
+    <div><img src="https://nadc.china-vo.org/sr/images/wechat_lm_group.png" id="wechat_group" width="52" height="52" style="margin-right: 20px;"></div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+{
+  "target": "DASCH J075445.9+164141 = Gaia DR3 667401913089980544",
+  "created_utc": "2026-11-08T22:19:06.721953+00:00",
+  "scope": "Read-only literature/catalogue audit; no maintained source changed, no contact/booking/equipment task.",
+  "primary_sources": {
+    "Tang2010": "https://hea-www.harvard.edu/DASCH/papers/apjl_710_1_77.pdf",
+    "Tang2012_thesis": "https://dasch.cfa.harvard.edu/publications/thesis_bound_20120510.pdf",
+    "Gaia_NSS_schema": "https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_non--single_stars_tables/ssec_dm_nss_two_body_orbit.html",
+    "Gosset2025_SB1_processing": "https://arxiv.org/html/2410.14372v1",
+    "Gosset2025_DOI": "https://doi.org/10.1051/0004-6361/202450600",
+    "Gaia2023_multiplicity": "https://doi.org/10.1051/0004-6361/202243782",
+    "Gaia_GSPphot": "https://gea.esac.esa.int/archive/documentation/GDR3/Data_analysis/chap_cu8par/sec_cu8par_apsis/ssec_cu8par_apsis_gspphot.html",
+    "Gaia_FLAME": "https://gea.esac.esa.int/archive/documentation/GDR3/Data_analysis/chap_cu8par/sec_cu8par_apsis/ssec_cu8par_apsis_flame.html",
+    "RecioBlanco2023_GSPspec": "https://personales.unican.es/carballor/inves/2023GaiaDR3RecioBlanco.pdf",
+    "LAMOST_DR12": "https://www.lamost.org/dr12/v2.0/",
+    "LAMOST_DR12_catalogues": "https://lamost.org/dr12/catalogue"
+  },
+  "Tang2010_constraints": {
+    "spectral_class": "K2III; luminosity-class uncertainty II-IV; I and V excluded",
+    "FeH_dex": [
+      -0.9,
+      0.4
+    ],
+    "B_GSC": 13.3,
+    "B_minus_R_GSC": 1.61,
+    "V_ASAS_median": 12.24,
+    "J_2MASS": 10.42,
+    "H_2MASS": 9.83,
+    "K_2MASS": 9.7,
+    "JHK_typical_error_mag": 0.02,
+    "RV_km_s": [
+      22,
+      8
+    ],
+    "RV_variation": "Not detected at ~8 km/s precision; not proof of singleness",
+    "distance_kpc": 2.1,
+    "distance_assumption": "M_B=1.66 for K2III, not parallax",
+    "CaHK_logFprimeK": 6.13,
+    "rotation_proxy_km_s": 25,
+    "rotation_proxy_uncertainty_dex": 0.5,
+    "color_constraint": "No color change detected, but no red/yellow plates during1930-1940 major dip",
+    "object_confusions": "7sigma reddening and H-K=0.27 discussion are J0830;3sigma reddening and detected RV variability are J0736",
+    "mechanisms": "J0754-specific irregular expelled layers obscuring star proposed, not established. Shared alternatives: lithium flash/RGB bump and helium-shell ignition/early AGB. Hydrogen absorption and absent strong carbon bands reject ordinary RCB classification; no symbiotic composite/nebular signatures.",
+    "derived_H_minus_K": 0.13,
+    "derived_IR_color_caution": "Single-epoch color by subtraction; not an established circumstellar dust excess."
+  },
+  "nss_quality": {
+    "nss_solution_type": "SB1",
+    "period": 35.92045663260072,
+    "period_error": 0.030613065,
+    "eccentricity": 0.022974981578527707,
+    "eccentricity_error": 0.05554752,
+    "center_of_mass_velocity": 20.41192158424057,
+    "center_of_mass_velocity_error": 0.56202465,
+    "semi_amplitude_primary": 10.724471639893267,
+    "semi_amplitude_primary_error": 0.80566895,
+    "rv_n_obs_primary": 21,
+    "rv_n_good_obs_primary": 21,
+    "significance": 13.311264,
+    "goodness_of_fit": 0.25652844,
+    "obj_func": 15.75058,
+    "efficiency": 0.18887827,
+    "conf_spectro_period": 1,
+    "flags": 0,
+    "bit_index": 127,
+    "arg_periastron": 332.89707040775215,
+    "arg_periastron_error": 183.69257,
+    "t_periastron": 3.079030784164362,
+    "t_periastron_error": 18.327263
+  },
+  "nss_interpretation": {
+    "gold_criteria_Gosset2025_AppendixJ": {
+      "efficiency_min": 0.2,
+      "N_good_min": 20,
+      "significance_min": 40,
+      "period_days": [
+        2,
+        800
+      ],
+      "optional_RUWE_max": 1.4
+    },
+    "passes": [
+      "N_good",
+      "period",
+      "optional RUWE"
+    ],
+    "fails": [
+      "efficiency",
+      "significance; also below relaxed25-30 recommendation"
+    ],
+    "omega_T0_correlation": 0.999922,
+    "caveat": "High period confidence rejects Gaussian white-noise null; it is not probability the orbit/alias is physically correct. Intrinsic line-profile changes and blended spectra can mimic Doppler orbital motion. Not in gold selection does not establish a false orbit.",
+    "causal_limit": "Even a validated35.92d companion would not itself establish the cause of multiyear fading."
+  },
+  "Gaia_source_context": {
+    "parallax": 0.5993890213825405,
+    "parallax_error": 0.019797163,
+    "pmra": -1.9660302266046077,
+    "pmdec": -1.719131419551588,
+    "ruwe": 1.158499,
+    "rv_time_duration": 967.2294,
+    "rv_nb_transits": 21,
+    "rv_visibility_periods_used": 15,
+    "rv_renormalised_gof": 11.822123,
+    "rv_chisq_pvalue": 0,
+    "rv_amplitude_robust": 17.685854,
+    "has_xp_continuous": 1,
+    "has_xp_sampled": 1,
+    "has_rvs": 0,
+    "has_epoch_rv": 0,
+    "has_epoch_photometry": 0,
+    "phot_g_mean_mag": 11.937244,
+    "bp_rp": 1.2529097
+  },
+  "atmosphere_catalogue": {
+    "teff_gspphot": 5205.7764,
+    "logg_gspphot": 2.8876,
+    "mh_gspphot": -0.1307,
+    "ag_gspphot": 0.5538,
+    "radius_gspphot": 9.2474,
+    "distance_gspphot": 1626.0538,
+    "teff_gspspec": 5210,
+    "logg_gspspec": 4.84,
+    "mh_gspspec": 0.16,
+    "flags_gspspec": "00000001000009999999999999999999999999999",
+    "mass_flame": 2.5989375,
+    "age_flame": 0.5574728,
+    "radius_flame": 9.098883,
+    "lum_flame": 54.640694,
+    "flags_flame": "10",
+    "activityindex_espcs": 0.059147615,
+    "activityindex_espcs_uncertainty": 0.0009910978
+  },
+  "atmosphere_caveats": [
+    "GSPphot assumes single nonvariable star; temperature-extinction degeneracy and underestimated errors. Its mean AG is not a detection of variable circumstellar dust.",
+    "GSPspec flags character8=1 is extrapol flag; its logg4.84 lies above4.75 boundary in Recio-Blanco2023 TableC.5. This flags a grid-edge solution, not independent proof of a dwarf.",
+    "FLAME flag10 means giant mass/age caution and parallax-based luminosity. Official documentation recommends giant masses/ages only in1-2Msun and age>1Gyr; this target2.60Msun/.56Gyr lies outside recommendation.",
+    "Gaia proper motion differs markedly from Tang2010 Tycho-2(-3,-10.2mas/yr); rederive kinematics before retaining old thick-disk/old-low-mass argument.",
+    "The2010 spectral classification and Gaia atmosphere outputs need reconciliation; neither catalogue fit confirms shell-flash evolutionary state."
+  ],
+  "spectral_audit": {
+    "LAMOST_DR12v2_LRS_5arcsec": "0 rows",
+    "LAMOST_DR12v2_MRS_5arcsec": "6 rows; exactGaiaID, separation0.03283arcsec; one2018-03-25 MRS_TEST visit, obsid659111063,2exposures B/R plus coadds; allSNR0 and RV fields-9999. Presence does not supply usable catalogue RVs; FITS not inspected.",
+    "SDSS_DR18_SpecObjAll": "0rows in~5arcsec RA/Dec box; bounded catalogue search, not all future SDSS releases",
+    "APOGEE_DR17_apogeeStar": "0rows by2MASS alias or same box",
+    "Gaia": "Mean continuous+sampledXP availability flags true; published RVSmean and epochRV flags false. XP direct retrieval failedHTTP500; availability not spectral analysis.",
+    "Tang2010": "FAST~7Angstrom resolution and GMOS~1.2Angstrom(R3744) spectra shown in paper; raw external spectra not obtained."
+  },
+  "literature_search": {
+    "SIMBAD_refreshed": "2026-11-08 Harvard mirror returns onlyTang2010 andGaia2023 multiplicity(307214catalogue objects). See raw bibliography file.",
+    "web_queries": [
+      "667401913089980544",
+      "J07544588+1641407",
+      "J075445.9+164141",
+      "ASAS J075446+1641.7",
+      "J075445.83+164141.1"
+    ],
+    "bounded_result": "No subsequent dedicated mechanism study located in these searches. Tang2012 dissertation chapter3 repeats discovery material. This is not an exhaustive absence claim."
+  },
+  "inferred_discriminating_observations": [
+    "Near-simultaneous multiband optical plus NIR/MIR photometry across bright/faint states: test reddening slope against photospheric temperature/spot models and look for excess thermal emission. Noncontemporaneous broad-band SED alone cannot identify time-variable dust.",
+    "High-resolution multiepoch spectra across35.92d and over slow fading: independent RV orbit, line-bisector changes, Teff/logg/metallicity, CaHK/Halpha activity,Li6708 and wind/circumstellar absorption; separate orbital motion from intrinsic line profiles and constrain shell-flash proposal.",
+    "Optical polarimetry during fading can test scattered-light geometry; absence of measured reddening or warm-IR growth would not exclude grey grains, cold dust or a small covering clump.",
+    "Photometric coherence at35.92d or17.96d would support an orbital/rotation connection but does not alone assign the multiyear fading mechanism."
+  ]
+}

@@ -1,0 +1,27 @@
+column_name,datatype,description
+accref,char,Access key for the data
+owner,char,Owner of the data
+embargo,char,Date the data will become/became public
+mime,char,MIME type of the file served
+accsize,long,Size of the data in bytes
+ssa_dstitle,char,A compact and descriptive designation of the dataset.
+ssa_creatordid,char,Dataset identifier assigned by the creator
+ssa_pubdid,char,Dataset identifier assigned by the publisher
+ssa_cdate,char,Processing/Creation date
+ssa_pdate,char,Date last published.
+ssa_bandpass,char,"Bandpass (i.e., rough spectral location) of this dataset; this should be the most appropriate term from the vocabulary http://www.ivoa.net/rdf/messenger."
+ssa_cversion,char,Creator assigned version for this dataset (will be incremented when this particular item is changed).
+ssa_targname,char,Common name of object observed.
+ssa_targclass,char,"Object class (star, QSO,...; use Simbad object classification http://simbad.u-strasbg.fr/simbad/sim-display?data=otypes if at all possible)"
+ssa_redshift,float,Redshift of target object
+ssa_targetpos,double,Equatorial (ICRS) position of the target object.
+ssa_snr,float,Signal-to-noise ratio estimated for this dataset
+ssa_location,double,ICRS location of aperture center
+ssa_aperture,float,Angular diameter of aperture
+ssa_dateobs,double,Midpoint of exposure (MJD)
+ssa_timeext,float,Exposure duration
+ssa_specmid,float,Midpoint of region covered in this dataset
+ssa_specext,float,Width of the spectrum
+ssa_specstart,float,Lower value of spectral coordinate
+ssa_specend,float,Upper value of spectral coordinate
+ssa_length,int,Number of points in the spectrum

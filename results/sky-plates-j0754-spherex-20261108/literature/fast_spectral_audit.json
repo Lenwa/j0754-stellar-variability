@@ -1,0 +1,896 @@
+{
+  "created_utc": "2026-11-09T00:12:43.559Z",
+  "target_ra_deg": 118.69117410685,
+  "target_dec_deg": 16.694621231895,
+  "metadata_count": 10,
+  "unique_mjd_count": 10,
+  "unique_sha256_count": 10,
+  "records": [
+    {
+      "file": "0123.N2211330177.ms.fits",
+      "sha256": "7c2e16566f07b8a073f01c3fc67891dfa3ade9c2f051c1df1cc742cebb3a29db",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N2211330177",
+      "ra_header": "07:54:45.95",
+      "dec_header": "+16:41:43.4",
+      "header_position_separation_arcsec": 2.9322103823719514,
+      "catalogue_position_separation_arcsec": 2.932210382535359,
+      "MJD_midpoint": 54761.497557870374,
+      "midpoint_utc": "2008-10-22T11:56:29.000Z",
+      "date_obs_header": "2008-10-22",
+      "ut_start_header": "11:55:39",
+      "local_night_directory": "/data/fast/2008.1021",
+      "exptime_seconds": 100.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "300",
+      "slit_arcsec": "3.0",
+      "pixel_step_A": 1.47066938877106,
+      "wavelength_min_A": 3476.89453125,
+      "wavelength_max_A": 7418.28849315644,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0014919806042521448,
+      "signal_median": 2978.46484375,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 54.575314,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 68,
+          "median": 218.17315673828125,
+          "median_signal_sigma": 8.880449498638015
+        },
+        "green_5350_5500": {
+          "n": 102,
+          "median": 3006.1529541015625,
+          "median_signal_sigma": 53.655130075609605
+        },
+        "Halpha_6500_6600": {
+          "n": 68,
+          "median": 3725.65771484375,
+          "median_signal_sigma": 61.22203312342435
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.9874254762873381,
+          "mean_line_over_local_continuum": 0.9040839610834371,
+          "line_pixels": 7,
+          "continuum_pixels": 27,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.06038289421711471
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.7847498984622834,
+          "mean_line_over_local_continuum": 0.9053237281021633,
+          "line_pixels": 20,
+          "continuum_pixels": 27,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.13216048103303796
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.9369218560782802,
+          "mean_line_over_local_continuum": 0.922527401032995,
+          "line_pixels": 17,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.09796464609211193
+        },
+        "Ca_K_blend": {
+          "pseudoEW_A": 3.501401971731492,
+          "mean_line_over_local_continuum": 0.6031963405614705,
+          "line_pixels": 6,
+          "continuum_pixels": 24,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.3400860180196565
+        }
+      }
+    },
+    {
+      "file": "0135.N2211330177.ms.fits",
+      "sha256": "c94b4f410c8e72b3451f8633dc4e136860b2d74c0f37fa482866a748692cdccd",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N2211330177",
+      "ra_header": "07:54:45.95",
+      "dec_header": "+16:41:43.4",
+      "header_position_separation_arcsec": 2.9322103823719514,
+      "catalogue_position_separation_arcsec": 2.932210382535359,
+      "MJD_midpoint": 54763.52039351852,
+      "midpoint_utc": "2008-10-24T12:29:22.000Z",
+      "date_obs_header": "2008-10-24",
+      "ut_start_header": "12:26:52",
+      "local_night_directory": "/data/fast/2008.1023",
+      "exptime_seconds": 300.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "300",
+      "slit_arcsec": "3.0",
+      "pixel_step_A": 1.47066128253937,
+      "wavelength_min_A": 3477.34448242187,
+      "wavelength_max_A": 7418.716719627381,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0,
+      "signal_median": 13354.6572265625,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 115.56235,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 68,
+          "median": 979.6185607910156,
+          "median_signal_sigma": 28.884044787123877
+        },
+        "green_5350_5500": {
+          "n": 102,
+          "median": 13565.07421875,
+          "median_signal_sigma": 124.85796126028521
+        },
+        "Halpha_6500_6600": {
+          "n": 68,
+          "median": 16562.1171875,
+          "median_signal_sigma": 138.3706448682746
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.8371776407248807,
+          "mean_line_over_local_continuum": 0.9186782114700581,
+          "line_pixels": 7,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.026970339976628954
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.4557966333446344,
+          "mean_line_over_local_continuum": 0.9165070617380966,
+          "line_pixels": 20,
+          "continuum_pixels": 27,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.056634440173674014
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.7306344320448488,
+          "mean_line_over_local_continuum": 0.934623724390289,
+          "line_pixels": 18,
+          "continuum_pixels": 26,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.043836603051010184
+        },
+        "Ca_K_blend": {
+          "pseudoEW_A": 3.92610559247144,
+          "mean_line_over_local_continuum": 0.5550634671304361,
+          "line_pixels": 6,
+          "continuum_pixels": 24,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.09700480517315505
+        }
+      }
+    },
+    {
+      "file": "0146.N2211330177.ms.fits",
+      "sha256": "0edf149cb9eee30ab1ec827deeee2269e7c44e0544e5a5e4670367d347cfdbfe",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N2211330177",
+      "ra_header": "07:54:45.88",
+      "dec_header": "16:41:40.62",
+      "header_position_separation_arcsec": 0.030468293559312416,
+      "catalogue_position_separation_arcsec": 0.03046829294655157,
+      "MJD_midpoint": 55147.46115740741,
+      "midpoint_utc": "2009-11-12T11:04:04.000Z",
+      "date_obs_header": "2009-11-12",
+      "ut_start_header": "11:01:04",
+      "local_night_directory": "/data/fast/2009.1111",
+      "exptime_seconds": 360.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "300",
+      "slit_arcsec": "3.0",
+      "pixel_step_A": 1.47408175468445,
+      "wavelength_min_A": 3466.587890625,
+      "wavelength_max_A": 7417.126993179326,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0,
+      "signal_median": 6896.052734375,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 83.04248,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 67,
+          "median": 470.78997802734375,
+          "median_signal_sigma": 18.179949533056465
+        },
+        "green_5350_5500": {
+          "n": 102,
+          "median": 7123.546630859375,
+          "median_signal_sigma": 89.21951071011003
+        },
+        "Halpha_6500_6600": {
+          "n": 68,
+          "median": 8575.26513671875,
+          "median_signal_sigma": 98.32851366224762
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.458647455266834,
+          "mean_line_over_local_continuum": 0.9481431458590737,
+          "line_pixels": 6,
+          "continuum_pixels": 26,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.035650830269063544
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.5502323871201074,
+          "mean_line_over_local_continuum": 0.9176167555863237,
+          "line_pixels": 21,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.08159518108774617
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.9454075881181205,
+          "mean_line_over_local_continuum": 0.9223681182445452,
+          "line_pixels": 17,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.06080815342303225
+        },
+        "Ca_K_blend": {
+          "pseudoEW_A": 3.5580044358530083,
+          "mean_line_over_local_continuum": 0.5172581948665861,
+          "line_pixels": 5,
+          "continuum_pixels": 23,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.14063653201978182
+        }
+      }
+    },
+    {
+      "file": "0147.N2211330177.ms.fits",
+      "sha256": "4a6752530d9ee50dbe4bf930aabda6cedee53a995c96cc1b1220d3067ad27505",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N2211330177",
+      "ra_header": "07:54:45.88",
+      "dec_header": "16:41:40.62",
+      "header_position_separation_arcsec": 0.030468293559312416,
+      "catalogue_position_separation_arcsec": 0.03046829294655157,
+      "MJD_midpoint": 55147.465462962966,
+      "midpoint_utc": "2009-11-12T11:10:16.000Z",
+      "date_obs_header": "2009-11-12",
+      "ut_start_header": "11:07:16",
+      "local_night_directory": "/data/fast/2009.1111",
+      "exptime_seconds": 360.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "300",
+      "slit_arcsec": "3.0",
+      "pixel_step_A": 1.47408175468445,
+      "wavelength_min_A": 3466.587890625,
+      "wavelength_max_A": 7417.126993179326,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0,
+      "signal_median": 5399.1904296875,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 73.47918,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 67,
+          "median": 359.6474304199219,
+          "median_signal_sigma": 15.551986523727606
+        },
+        "green_5350_5500": {
+          "n": 102,
+          "median": 5565.326904296875,
+          "median_signal_sigma": 78.40251375622074
+        },
+        "Halpha_6500_6600": {
+          "n": 68,
+          "median": 6804.83984375,
+          "median_signal_sigma": 87.29709985949273
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.47325542434452117,
+          "mean_line_over_local_continuum": 0.9464914996697013,
+          "line_pixels": 6,
+          "continuum_pixels": 26,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.04011117628073621
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.6200487905520657,
+          "mean_line_over_local_continuum": 0.915361391778277,
+          "line_pixels": 21,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.09320485448487825
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.9177811531600213,
+          "mean_line_over_local_continuum": 0.9234705566975927,
+          "line_pixels": 17,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.06934574146853136
+        },
+        "Ca_K_blend": {
+          "pseudoEW_A": 3.9696932202056665,
+          "mean_line_over_local_continuum": 0.46140121365854087,
+          "line_pixels": 5,
+          "continuum_pixels": 23,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.16757892212830272
+        }
+      }
+    },
+    {
+      "file": "0148.N2211330177.ms.fits",
+      "sha256": "5efb1a38a41f7a98319d43699dd15bfcce24809ec73368d2b882e7f9ce255f76",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N2211330177",
+      "ra_header": "07:54:45.88",
+      "dec_header": "16:41:40.62",
+      "header_position_separation_arcsec": 0.030468293559312416,
+      "catalogue_position_separation_arcsec": 0.03046829294655157,
+      "MJD_midpoint": 55147.47179398148,
+      "midpoint_utc": "2009-11-12T11:19:23.000Z",
+      "date_obs_header": "2009-11-12",
+      "ut_start_header": "11:16:23",
+      "local_night_directory": "/data/fast/2009.1111",
+      "exptime_seconds": 360.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "300",
+      "slit_arcsec": "3.0",
+      "pixel_step_A": 1.47408175468445,
+      "wavelength_min_A": 3466.587890625,
+      "wavelength_max_A": 7417.126993179326,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0,
+      "signal_median": 6108.220703125,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 78.155106,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 67,
+          "median": 431.1068420410156,
+          "median_signal_sigma": 17.02829549816575
+        },
+        "green_5350_5500": {
+          "n": 102,
+          "median": 6367.8603515625,
+          "median_signal_sigma": 83.65826995287762
+        },
+        "Halpha_6500_6600": {
+          "n": 68,
+          "median": 7663.941650390625,
+          "median_signal_sigma": 92.5925241975821
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.4570909923675851,
+          "mean_line_over_local_continuum": 0.9483191269282264,
+          "line_pixels": 6,
+          "continuum_pixels": 26,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.037993279941480496
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.3871956712430387,
+          "mean_line_over_local_continuum": 0.9228835280108052,
+          "line_pixels": 21,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.08711930597388276
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.9166934672877272,
+          "mean_line_over_local_continuum": 0.9235139610214685,
+          "line_pixels": 17,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.06483650847743734
+        },
+        "Ca_K_blend": {
+          "pseudoEW_A": 3.6238819645021354,
+          "mean_line_over_local_continuum": 0.5083200842848933,
+          "line_pixels": 5,
+          "continuum_pixels": 23,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.14983744051345432
+        }
+      }
+    },
+    {
+      "file": "0187.N2211330177.ms.fits",
+      "sha256": "e3a3dd9ce284428343db6548c8e4c9f655bd1923992734b2890d3a8768bbef0b",
+      "bytes": 57600,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N2211330177",
+      "ra_header": "07:54:45.88",
+      "dec_header": "16:41:40.62",
+      "header_position_separation_arcsec": 0.030468293559312416,
+      "catalogue_position_separation_arcsec": 0.03046829294655157,
+      "MJD_midpoint": 55154.50619212963,
+      "midpoint_utc": "2009-11-19T12:08:55.000Z",
+      "date_obs_header": "2009-11-19",
+      "ut_start_header": "12:07:55",
+      "local_night_directory": "/data/fast/2009.1118",
+      "exptime_seconds": 120.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "600",
+      "slit_arcsec": "2.0",
+      "pixel_step_A": 0.743135452270508,
+      "wavelength_min_A": 4789.42041015625,
+      "wavelength_max_A": 6781.023422241212,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0,
+      "signal_median": 3461.943115234375,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 58.83828,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 0,
+          "median": null,
+          "median_signal_sigma": null
+        },
+        "green_5350_5500": {
+          "n": 202,
+          "median": 3006.2808837890625,
+          "median_signal_sigma": 56.80252513408608
+        },
+        "Halpha_6500_6600": {
+          "n": 135,
+          "median": 3680.41455078125,
+          "median_signal_sigma": 63.61201032065698
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.1722232652531249,
+          "mean_line_over_local_continuum": 0.9834462724578551,
+          "line_pixels": 14,
+          "continuum_pixels": 54,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.04353682609782993
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.258598976552827,
+          "mean_line_over_local_continuum": 0.9258711453643982,
+          "line_pixels": 41,
+          "continuum_pixels": 54,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.09118040976802794
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.5588766566818708,
+          "mean_line_over_local_continuum": 0.9400656597502218,
+          "line_pixels": 35,
+          "continuum_pixels": 54,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.06782688391806856
+        }
+      }
+    },
+    {
+      "file": "0159.N2211330177.ms.fits",
+      "sha256": "c5fdf0b270b449e4e0c34bb219ba266eb7562be3d36b669bfb54097900dd8d6e",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N2211330177",
+      "ra_header": "07:54:45.88",
+      "dec_header": "16:41:40.62",
+      "header_position_separation_arcsec": 0.030468293559312416,
+      "catalogue_position_separation_arcsec": 0.03046829294655157,
+      "MJD_midpoint": 55209.388761574075,
+      "midpoint_utc": "2010-01-13T09:19:49.000Z",
+      "date_obs_header": "2010-01-13",
+      "ut_start_header": "09:14:49",
+      "local_night_directory": "/data/fast/2010.0112",
+      "exptime_seconds": 600.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "600",
+      "slit_arcsec": "2.0",
+      "pixel_step_A": 0.74283754825592,
+      "wavelength_min_A": 4743.04736328125,
+      "wavelength_max_A": 6733.851992607116,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0,
+      "signal_median": 1717.57666015625,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 41.443657,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 0,
+          "median": null,
+          "median_signal_sigma": null
+        },
+        "green_5350_5500": {
+          "n": 202,
+          "median": 1493.248046875,
+          "median_signal_sigma": 37.5536076162092
+        },
+        "Halpha_6500_6600": {
+          "n": 134,
+          "median": 1837.4954223632812,
+          "median_signal_sigma": 42.459783824456004
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.6116241227061636,
+          "mean_line_over_local_continuum": 0.9366644705166051,
+          "line_pixels": 13,
+          "continuum_pixels": 54,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.0606203018194312
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.8357885225165105,
+          "mean_line_over_local_continuum": 0.904562291944768,
+          "line_pixels": 40,
+          "continuum_pixels": 54,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.13705851831017518
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.9049847874396575,
+          "mean_line_over_local_continuum": 0.9267294216457151,
+          "line_pixels": 35,
+          "continuum_pixels": 54,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.10520635522075986
+        }
+      }
+    },
+    {
+      "file": "0089.N2211330177.ms.fits",
+      "sha256": "5303afb9659ba2301e611ec22e992d90c1df4e7b617d75aba38a69c35b825296",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N2211330177",
+      "ra_header": "07:54:45.88",
+      "dec_header": "16:41:40.62",
+      "header_position_separation_arcsec": 0.030468293559312416,
+      "catalogue_position_separation_arcsec": 0.03046829294655157,
+      "MJD_midpoint": 55213.23388888889,
+      "midpoint_utc": "2010-01-17T05:36:48.000Z",
+      "date_obs_header": "2010-01-17",
+      "ut_start_header": "05:33:48",
+      "local_night_directory": "/data/fast/2010.0116",
+      "exptime_seconds": 360.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "600",
+      "slit_arcsec": "2.0",
+      "pixel_step_A": 0.742787480354309,
+      "wavelength_min_A": 4749.923828125,
+      "wavelength_max_A": 6740.594275474548,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0,
+      "signal_median": 7803.400390625,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 88.33685,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 0,
+          "median": null,
+          "median_signal_sigma": null
+        },
+        "green_5350_5500": {
+          "n": 202,
+          "median": 6725.83984375,
+          "median_signal_sigma": 88.03849945101663
+        },
+        "Halpha_6500_6600": {
+          "n": 134,
+          "median": 8457.67333984375,
+          "median_signal_sigma": 98.92633308534265
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.14070087353254823,
+          "mean_line_over_local_continuum": 0.9864698010386656,
+          "line_pixels": 14,
+          "continuum_pixels": 53,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.028060017136625977
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.434957524182306,
+          "mean_line_over_local_continuum": 0.9180466287941191,
+          "line_pixels": 40,
+          "continuum_pixels": 54,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.058233355062402896
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.7734150177435357,
+          "mean_line_over_local_continuum": 0.9317853331577572,
+          "line_pixels": 35,
+          "continuum_pixels": 53,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.04315999485892091
+        }
+      }
+    },
+    {
+      "file": "0036.N221133017.ms.fits",
+      "sha256": "9451cc3f126bc3d65672a84492a9cd92bda741a3d75942f6305ca6df9be3e5f1",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N221133017",
+      "ra_header": "07:54:45.9",
+      "dec_header": "+16:41:41",
+      "header_position_separation_arcsec": 0.4479576507597397,
+      "catalogue_position_separation_arcsec": 0.4479576508084511,
+      "MJD_midpoint": 56012.11912037037,
+      "midpoint_utc": "2012-03-26T02:51:32.000Z",
+      "date_obs_header": "2012-03-26",
+      "ut_start_header": "02:45:32",
+      "local_night_directory": "/data/fast/2012.0325",
+      "exptime_seconds": 720.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "300",
+      "slit_arcsec": "3.0",
+      "pixel_step_A": 1.47108972072601,
+      "wavelength_min_A": 3472.30419921875,
+      "wavelength_max_A": 7414.824650764457,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0,
+      "signal_median": 13190.4140625,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 114.84953,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 68,
+          "median": 1367.850830078125,
+          "median_signal_sigma": 35.888204184078035
+        },
+        "green_5350_5500": {
+          "n": 102,
+          "median": 15842.22119140625,
+          "median_signal_sigma": 133.94256814028478
+        },
+        "Halpha_6500_6600": {
+          "n": 68,
+          "median": 15762.6572265625,
+          "median_signal_sigma": 133.65178656303507
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.8544541729635068,
+          "mean_line_over_local_continuum": 0.9170241759342262,
+          "line_pixels": 7,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.02794913639559915
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.5854281232166145,
+          "mean_line_over_local_continuum": 0.9121254099328265,
+          "line_pixels": 20,
+          "continuum_pixels": 28,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.05236709231822314
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 1.6833629541893513,
+          "mean_line_over_local_continuum": 0.9364279671021856,
+          "line_pixels": 18,
+          "continuum_pixels": 26,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.042821208759113896
+        },
+        "Ca_K_blend": {
+          "pseudoEW_A": 4.487139617006832,
+          "mean_line_over_local_continuum": 0.4916308690775224,
+          "line_pixels": 6,
+          "continuum_pixels": 24,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.0706315039284164
+        }
+      }
+    },
+    {
+      "file": "0062.N221133017.ms.fits",
+      "sha256": "db54e51a76d858e9485a3c01bfb6e0c8436e338d24bb45b549db4092d47f4969",
+      "bytes": 54720,
+      "shape": [
+        4,
+        1,
+        2681
+      ],
+      "object": "N221133017",
+      "ra_header": "07:54:45.9",
+      "dec_header": "+16:41:41",
+      "header_position_separation_arcsec": 0.4479576507597397,
+      "catalogue_position_separation_arcsec": 0.4479576508084511,
+      "MJD_midpoint": 56064.12938657407,
+      "midpoint_utc": "2012-05-17T03:06:19.000Z",
+      "date_obs_header": "2012-05-17",
+      "ut_start_header": "03:03:49",
+      "local_night_directory": "/data/fast/2012.0516",
+      "exptime_seconds": 300.0,
+      "instrument": "FAST",
+      "telescope": "TILLINGHAST",
+      "grating_lines_mm": "300",
+      "slit_arcsec": "3.0",
+      "pixel_step_A": 1.47125792503357,
+      "wavelength_min_A": 3473.68212890625,
+      "wavelength_max_A": 7416.653367996218,
+      "WAT1": "wtype=linear label=Wavelength units=angstroms",
+      "DC_FLAG": 0,
+      "BUNIT": null,
+      "finite_fraction": 1.0,
+      "signal_zero_fraction": 0.0,
+      "signal_negative_fraction": 0.0029839612085042896,
+      "signal_median": 14044.6494140625,
+      "sigma_positive_fraction": 1.0,
+      "archive_SNR": 118.510124,
+      "bands": [
+        "spectrum - background fit, weights variance, clean yes",
+        "raw - background fit, weights none, clean no",
+        "background - background fit",
+        "sigma - background fit, weights variance, clean yes"
+      ],
+      "regions": {
+        "blue_3900_4000": {
+          "n": 68,
+          "median": 463.19020080566406,
+          "median_signal_sigma": 10.80550630582612
+        },
+        "green_5350_5500": {
+          "n": 102,
+          "median": 15416.6962890625,
+          "median_signal_sigma": 122.88708170361707
+        },
+        "Halpha_6500_6600": {
+          "n": 68,
+          "median": 17448.1279296875,
+          "median_signal_sigma": 131.95721264193867
+        }
+      },
+      "diagnostic_indices": {
+        "Halpha": {
+          "pseudoEW_A": 0.7647370931162185,
+          "mean_line_over_local_continuum": 0.9257450686921758,
+          "line_pixels": 7,
+          "continuum_pixels": 27,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.028179533800778624
+        },
+        "Mg_b_blend": {
+          "pseudoEW_A": 2.438333786317854,
+          "mean_line_over_local_continuum": 0.9171343873555612,
+          "line_pixels": 20,
+          "continuum_pixels": 27,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.06208739623713447
+        },
+        "Na_D_blend": {
+          "pseudoEW_A": 2.011464477726161,
+          "mean_line_over_local_continuum": 0.92404593060201,
+          "line_pixels": 18,
+          "continuum_pixels": 27,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.043103753080984804
+        },
+        "Ca_K_blend": {
+          "pseudoEW_A": 4.072445215734382,
+          "mean_line_over_local_continuum": 0.5386662951884683,
+          "line_pixels": 6,
+          "continuum_pixels": 24,
+          "formal_sigma_EW_A_ignores_continuum_and_correlations": 0.2367926222189074
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "These are extracted counts with sigma bands; no physical flux calibration is certified by these headers.",
+    "Wavelength WAT units angstroms, linear DC-FLAG=0. Air/vacuum convention not separately verified.",
+    "Pseudo-equivalent-width indices are local-continuum diagnostics, not atmosphere fits or net chromospheric flux. Formal errors omit continuum placement, resampling covariance, resolution/slit and calibration systematics.",
+    "No RVs are interpreted; automated catalogue galaxy class and cross-correlation velocities are not trusted physical stellar classifications.",
+    "Filename/directory dates are observing-night labels; UTC dates come from MJD via astropy.Time and agree with DATE-OBS."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "Exploratory diagnostic. It does not override the pre-specified photometric-depth cuts.",
+  "field_rows": 8397,
+  "selected_controls": [],
+  "controls": {},
+  "target_rows_with_controls": 0,
+  "target_physical_plates": 0,
+  "all_rows_diagnostic": {
+    "event_years": 0,
+    "baseline_years": 0,
+    "event_points": 0,
+    "baseline_points": 0,
+    "delta_mag": null,
+    "bootstrap_95_percent": null
+  },
+  "valid_rows_only": {
+    "event_years": 0,
+    "baseline_years": 0,
+    "event_points": 0,
+    "baseline_points": 0,
+    "delta_mag": null,
+    "bootstrap_95_percent": null
+  },
+  "points": [],
+  "plate_collapsed_points": [],
+  "verdict": "INCONCLUSIVE under pre-specified depth gate. Event-epoch catalog values can only be shown as quality-limited diagnostics."
+}

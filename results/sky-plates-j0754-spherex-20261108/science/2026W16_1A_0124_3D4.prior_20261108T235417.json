@@ -1,0 +1,13 @@
+{
+  "obs_id": "2026W16_1A_0124_3",
+  "detector": 4,
+  "parent_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W16_1A/l2b-v24-2026-110/4/level2_2026W16_1A_0124_3D4_spx_l2b-v24-2026-110.fits",
+  "t_min": "61143.592801",
+  "t_max": "61143.594133",
+  "file": "2026W16_1A_0124_3D4.fits",
+  "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W16_1A/l2b-v24-2026-110/4/level2_2026W16_1A_0124_3D4_spx_l2b-v24-2026-110.fits?center=118.69117410685%2C16.694621231895&size=0.06",
+  "http_status": 503,
+  "retrieved_utc": "2026-11-08T23:51:02.280423+00:00",
+  "status": "FAILED",
+  "error": "503 Server Error: Service Unavailable for url: https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W16_1A/l2b-v24-2026-110/4/level2_2026W16_1A_0124_3D4_spx_l2b-v24-2026-110.fits?center=118.69117410685%2C16.694621231895&size=0.06"
+}

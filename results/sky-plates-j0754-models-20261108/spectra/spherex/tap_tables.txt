@@ -1,0 +1,6 @@
+table_name,description
+spherex.obscore,IRSA ObsCore table of SPHEREx products
+spherex.observation,SPHEREx CAOM Observation Table
+spherex.plane,SPHEREx CAOM Plane Table
+spherex.artifact,SPHEREx CAOM Artifact Table
+spherex.provenance_input,Join tables for SPHEREx calibration files

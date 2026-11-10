@@ -1,0 +1,14 @@
+[
+  {
+    "file": "fast_line_tests.py",
+    "before_sha256": "5b586378b250c87fb864218d24874c6c85bbe81333368d90714ac4262fac8bb2",
+    "after_sha256": "e5fa1e7d1b6e9cdb1d4a9e77752d9e8f55902f66c997ceaf00388937d74fdf7d",
+    "change": "Remove extra EOF blank line and normalize actual line endings only; scientific code unchanged."
+  },
+  {
+    "file": "test_fast_line_tests.py",
+    "before_sha256": "573526f3d9b42dd0e2c4c11074f77efaf42fb682551098a0bd67a6531b9da90f",
+    "after_sha256": "c7528517e06c31d9c221a618e200468c0b9f2d8784b0d7b2d99f8d8dd5ef8fd6",
+    "change": "Remove extra EOF blank line and normalize actual line endings only; scientific code unchanged."
+  }
+]

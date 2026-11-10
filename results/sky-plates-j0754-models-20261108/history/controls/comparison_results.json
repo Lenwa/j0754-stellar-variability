@@ -1,0 +1,894 @@
+{
+  "protocol": "results/sky-plates-j0754-models-20261108/history/controls/protocol.json",
+  "controls_requested": 16,
+  "controls_returning_photometry": 16,
+  "raw_control_rows": 6751,
+  "accepted_control_rows_before_collapse": 5716,
+  "accepted_control_rows_after_dataset_exposure_collapse": 5714,
+  "distinct_control_star_exposures": 5577,
+  "distinct_accepted_asas_aperture_exposures": 5714,
+  "target_main_field_rows": 338,
+  "corrected_target_rows": 338,
+  "target_raw_contrast": {
+    "n2004": 44,
+    "n2007": 43,
+    "delta_2007_minus_2004": 0.134999999999998
+  },
+  "matched_target_raw_contrast": {
+    "n2004": 44,
+    "n2007": 43,
+    "delta_2007_minus_2004": 0.134999999999998
+  },
+  "target_corrected_contrast": {
+    "n2004": 44,
+    "n2007": 43,
+    "delta_2007_minus_2004": 0.14700000000000024
+  },
+  "matched_common_control_contrast": {
+    "n2004": 44,
+    "n2007": 43,
+    "delta_2007_minus_2004": -0.00612500000000038
+  },
+  "controls_per_frame": {
+    "14": 101,
+    "15": 119,
+    "16": 82,
+    "12": 2,
+    "10": 2,
+    "13": 21,
+    "7": 3,
+    "9": 3,
+    "11": 5
+  },
+  "annual": [
+    {
+      "year": 2002,
+      "rows": 7,
+      "target_raw_median": 12.151,
+      "control_common_offset": -0.015500000000000291,
+      "target_corrected_median": 12.159500000000001,
+      "minimum_controls": 14
+    },
+    {
+      "year": 2003,
+      "rows": 59,
+      "target_raw_median": 12.185,
+      "control_common_offset": -0.006999999999999673,
+      "target_corrected_median": 12.190499999999998,
+      "minimum_controls": 7
+    },
+    {
+      "year": 2004,
+      "rows": 44,
+      "target_raw_median": 12.161000000000001,
+      "control_common_offset": 0.0021250000000008207,
+      "target_corrected_median": 12.153,
+      "minimum_controls": 7
+    },
+    {
+      "year": 2005,
+      "rows": 52,
+      "target_raw_median": 12.2355,
+      "control_common_offset": -0.0003750000000000142,
+      "target_corrected_median": 12.235125,
+      "minimum_controls": 9
+    },
+    {
+      "year": 2006,
+      "rows": 41,
+      "target_raw_median": 12.288,
+      "control_common_offset": 0.002000000000000668,
+      "target_corrected_median": 12.307999999999998,
+      "minimum_controls": 13
+    },
+    {
+      "year": 2007,
+      "rows": 43,
+      "target_raw_median": 12.296,
+      "control_common_offset": -0.0039999999999995595,
+      "target_corrected_median": 12.3,
+      "minimum_controls": 11
+    },
+    {
+      "year": 2008,
+      "rows": 61,
+      "target_raw_median": 12.229,
+      "control_common_offset": -0.009500000000000064,
+      "target_corrected_median": 12.228000000000002,
+      "minimum_controls": 9
+    },
+    {
+      "year": 2009,
+      "rows": 31,
+      "target_raw_median": 12.175,
+      "control_common_offset": -0.0035000000000007248,
+      "target_corrected_median": 12.186000000000002,
+      "minimum_controls": 13
+    }
+  ],
+  "corrected_frames_with_shared_aperture_aliases": 0,
+  "shared_asas_aperture_alias_groups": 2,
+  "per_dataset_placebos": [
+    {
+      "star": "667380506973089536",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667380506973089536",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 23,
+      "n2007": 34,
+      "delta_2007_minus_2004": 0.06149999999999878
+    },
+    {
+      "star": "667380506973089536",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667380506973089536",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 39,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667391399010134400",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667391399010134400",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 44,
+      "n2007": 43,
+      "delta_2007_minus_2004": -0.015499999999999403
+    },
+    {
+      "star": "667391399010134400",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667391399010134400",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 46,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667024467067954560",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667024467067954560",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 44,
+      "n2007": 43,
+      "delta_2007_minus_2004": -0.022999999999999687
+    },
+    {
+      "star": "667024467067954560",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667024467067954560",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 45,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667382255023480576",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667382255023480576",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 41,
+      "n2007": 42,
+      "delta_2007_minus_2004": 0.054499999999999105
+    },
+    {
+      "star": "667382255023480576",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667382255023480576",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 45,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667409918908989568",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667409918908989568",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 42,
+      "n2007": 41,
+      "delta_2007_minus_2004": -0.02149999999999963
+    },
+    {
+      "star": "667409918908989568",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667409918908989568",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 45,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667434486121884288",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667434486121884288",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 38,
+      "n2007": 42,
+      "delta_2007_minus_2004": -0.006499999999999062
+    },
+    {
+      "star": "667434486121884288",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667434486121884288",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 44,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667380816210736128",
+      "field": "F0800+16_438",
+      "dataset": "1",
+      "n2004": 4,
+      "n2007": 17,
+      "delta_2007_minus_2004": 0.1205000000000016
+    },
+    {
+      "star": "667380816210736128",
+      "field": "F0800+24_483",
+      "dataset": "2",
+      "n2004": 25,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667397618122678528",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667397618122678528",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 44,
+      "n2007": 43,
+      "delta_2007_minus_2004": -0.0014999999999982805
+    },
+    {
+      "star": "667397618122678528",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667397618122678528",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 45,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667403768515830272",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667403768515830272",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 44,
+      "n2007": 43,
+      "delta_2007_minus_2004": -0.006000000000002004
+    },
+    {
+      "star": "667403768515830272",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667403768515830272",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 45,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667454586568716288",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667454586568716288",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 42,
+      "n2007": 43,
+      "delta_2007_minus_2004": -0.011000000000001009
+    },
+    {
+      "star": "667454586568716288",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667454586568716288",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 45,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667411636895893504",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667411636895893504",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 41,
+      "n2007": 43,
+      "delta_2007_minus_2004": -0.021000000000000796
+    },
+    {
+      "star": "667411636895893504",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667411636895893504",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 43,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667459156414046976",
+      "field": "F0800+16_438",
+      "dataset": "1",
+      "n2004": 38,
+      "n2007": 40,
+      "delta_2007_minus_2004": -0.023000000000001464
+    },
+    {
+      "star": "667459156414046976",
+      "field": "F0800+24_483",
+      "dataset": "2",
+      "n2004": 42,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667456064037465216",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667456064037465216",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 44,
+      "n2007": 43,
+      "delta_2007_minus_2004": -0.0039999999999995595
+    },
+    {
+      "star": "667456064037465216",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667456064037465216",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 46,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667023509291889792",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667023509291889792",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 41,
+      "n2007": 42,
+      "delta_2007_minus_2004": 0.0
+    },
+    {
+      "star": "667023509291889792",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667023509291889792",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 45,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667402462845806080",
+      "field": "F0728+16_437",
+      "dataset": "1",
+      "n2004": 0,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667402462845806080",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 44,
+      "n2007": 42,
+      "delta_2007_minus_2004": 0.006499999999999062
+    },
+    {
+      "star": "667402462845806080",
+      "field": "F0728+24_482",
+      "dataset": "3",
+      "n2004": 1,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667402462845806080",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 45,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    },
+    {
+      "star": "667380575692566656",
+      "field": "F0800+16_438",
+      "dataset": "2",
+      "n2004": 29,
+      "n2007": 36,
+      "delta_2007_minus_2004": 0.12650000000000006
+    },
+    {
+      "star": "667380575692566656",
+      "field": "F0800+24_483",
+      "dataset": "4",
+      "n2004": 40,
+      "n2007": 0,
+      "delta_2007_minus_2004": null
+    }
+  ],
+  "limitation": "Fixed selected controls, MAG_0, field/dataset 2004 offsets, exact HJD/frame and >=3 stars; no causal inference or individual-star uncertainty from MER.",
+  "target_corrected_recovery_2009_minus_2007": {
+    "n2007": 43,
+    "n2009": 31,
+    "delta_2009_minus_2007": -0.11399999999999899
+  },
+  "target_raw_recovery_2009_minus_2007": {
+    "n2007": 43,
+    "n2009": 31,
+    "delta_2009_minus_2007": -0.12099999999999866
+  },
+  "time_identity": {
+    "distinct_hjd": 338,
+    "distinct_hjd_frame": 338,
+    "distinct_hjd_calendar_dates": 334,
+    "note": "HJD is preserved; HJD calendar-date labels are not UTC nights. Archive UTC timestamps are unavailable."
+  },
+  "leave_one_control_out": [
+    {
+      "omitted_star": "667380506973089536",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1553749999999976
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.12249999999999872
+      }
+    },
+    {
+      "omitted_star": "667391399010134400",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.14600000000000257
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11450000000000315
+      }
+    },
+    {
+      "omitted_star": "667024467067954560",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1437500000000007
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11425000000000196
+      }
+    },
+    {
+      "omitted_star": "667382255023480576",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1568750000000012
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.1277500000000007
+      }
+    },
+    {
+      "omitted_star": "667409918908989568",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.15850000000000009
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.1280000000000001
+      }
+    },
+    {
+      "omitted_star": "667434486121884288",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1410000000000018
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11250000000000249
+      }
+    },
+    {
+      "omitted_star": "667380816210736128",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.14462499999999778
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11324999999999541
+      }
+    },
+    {
+      "omitted_star": "667397618122678528",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.14749999999999908
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.12049999999999805
+      }
+    },
+    {
+      "omitted_star": "667403768515830272",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1559999999999988
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.12824999999999775
+      }
+    },
+    {
+      "omitted_star": "667454586568716288",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1462500000000002
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11599999999999966
+      }
+    },
+    {
+      "omitted_star": "667411636895893504",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.15099999999999802
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11674999999999791
+      }
+    },
+    {
+      "omitted_star": "667459156414046976",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.15800000000000125
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.1277500000000007
+      }
+    },
+    {
+      "omitted_star": "667456064037465216",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.14700000000000202
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11225000000000307
+      }
+    },
+    {
+      "omitted_star": "667023509291889792",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.15525000000000055
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.13049999999999962
+      }
+    },
+    {
+      "omitted_star": "667402462845806080",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.14787499999999731
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11824999999999797
+      }
+    },
+    {
+      "omitted_star": "667380575692566656",
+      "rows": 338,
+      "trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1553749999999976
+      },
+      "recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.1212499999999963
+      }
+    }
+  ],
+  "aperture_sensitivity": [
+    {
+      "aperture": 0,
+      "rows": 338,
+      "raw_trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.134999999999998
+      },
+      "corrected_trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.14700000000000024
+      },
+      "raw_recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.12099999999999866
+      },
+      "corrected_recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.11399999999999899
+      }
+    },
+    {
+      "aperture": 1,
+      "rows": 338,
+      "raw_trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1460000000000008
+      },
+      "corrected_trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.14349999999999952
+      },
+      "raw_recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.12400000000000055
+      },
+      "corrected_recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.12450000000000117
+      }
+    },
+    {
+      "aperture": 2,
+      "rows": 338,
+      "raw_trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1615000000000002
+      },
+      "corrected_trough": {
+        "n2004": 44,
+        "n2007": 43,
+        "delta_2007_minus_2004": 0.1583749999999995
+      },
+      "raw_recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.129999999999999
+      },
+      "corrected_recovery": {
+        "n2007": 43,
+        "n2009": 31,
+        "delta_2009_minus_2007": -0.12374999999999936
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Before",
+    "path": ".\\results\\sky-plates-j0754-20261107\\scan_before.fits.gz",
+    "payload": {
+      "plate_id": "rh00211",
+      "solution_number": 0,
+      "center_ra_deg": 118.69125,
+      "center_dec_deg": 16.694722222
+    },
+    "year": 1928.292595653006,
+    "B": 13.321666
+  },
+  {
+    "name": "Faded",
+    "path": ".\\results\\sky-plates-j0754-20261107\\scan_faded.fits.gz",
+    "payload": {
+      "plate_id": "rh04753",
+      "solution_number": 0,
+      "center_ra_deg": 118.69125,
+      "center_dec_deg": 16.694722222
+    },
+    "year": 1932.918970136612,
+    "B": 14.114942
+  },
+  {
+    "name": "Recovery",
+    "path": ".\\results\\sky-plates-j0754-20261107\\scan_recovery.fits.gz",
+    "payload": {
+      "plate_id": "rh10876",
+      "solution_number": 0,
+      "center_ra_deg": 118.69125,
+      "center_dec_deg": 16.694722222
+    },
+    "year": 1942.036195309589,
+    "B": 13.206652
+  }
+]

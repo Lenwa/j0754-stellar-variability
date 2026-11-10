@@ -1,0 +1,2117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>UKSSDC | 2SXPS Catalogue | Documentation</title>
+    <meta name="keywords" content="Swift, GRB, XRT, light curve, documentation, 2SXPS"/>
+    <meta name="description" lang="en" content="UKSSDC | 2SXPS Catalogue | Documentation"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv='Content-Style-Type' content='text/css'/>
+    <meta http-equiv='Content-Script-Type' content='text/javascript'/>
+    <link href="/style/2SXPS_docs.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="/scripts/dropdown.js"></script>
+    <script type="text/javascript" src="/scripts/centre.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery_scrollto.js"></script>
+    <script type="text/javascript" src="/scripts/autoproc_base.js"></script>
+    <script type="text/javascript" src="/scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="docs.js"></script>
+    <script type="text/javascript" src="help.js.php"></script>
+    <link rel="icon" href="/icons/swift.ico" type="image/x-icon"/>
+  </head>
+
+  <body  onload="centreClass('centreMe'); setupHelp();" >
+    <div id="holder">
+    <p style='visibility: hidden; display: none;'><a href='#mainContentPostBanner'>Skip banner and navigation tools</a>.</p>
+  <div id="swiftbanner">
+    <div id="uolbanner">
+      <a href="http://www.le.ac.uk">
+      <img class="uollogo" src="/images/uol_logo.png"
+         alt="University of Leicester logo"/></a>
+      <a href="https://le.ac.uk/physics/">School of Physics &amp; Astronomy</a>
+     
+    </div>
+
+    <a href="https://swift.gsfc.nasa.gov" id="us"><span class="hidden">US Site | </span></a>
+    <a href="https://swift.ssdc.asi.it" id="it"><span class="hidden">Italian Site | </span></a>
+    <a href="https://www.swift.ac.uk" id="uk" ><span class="hidden">UK site</span></a>
+  </div>
+
+  <div id="addressBar">
+      <form class="right search" action="/search/search.php" method="get">
+      <p>
+          <label for="searchBox">Search:</label> 
+          <input id="searchBox" type="text" name="terms"  
+	         value=""/>
+          <input type="submit" name="submit" value="?"/>
+      </p>
+      </form>
+      <span class="right">&nbsp;|&nbsp;</span>
+      <a class="right" href="/sitemap.php">site map</a>
+  <ul>
+    <li>
+      <a href="https://www.swift.ac.uk/index.php">Home</a>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/about/index.php" 
+        onmouseover="menu_open('mabout')" 
+        onmouseout="menu_closetime()">About</a>
+        <div id="mabout" 
+            onmouseover="menu_cancelclosetime()" 
+            onmouseout="menu_closetime()">
+        <a href="https://www.swift.ac.uk/about/index.php">The Swift Mission</a>
+        <a href="https://www.swift.ac.uk/about/uk.php">UK involvement</a>
+        <a href="https://www.swift.ac.uk/about/instruments.php">Instruments</a>
+        <hr/>
+        <a href="https://www.swift.ac.uk/about/grb.php">GRBs before Swift </a>
+        <a href="https://www.swift.ac.uk/about/swiftera.php">GRBs in the Swift era</a>
+        <a href="https://www.swift.ac.uk/about/swifteranongrb.php">Non-GRB science with Swift</a>
+        <a href="https://www.swift.ac.uk/about/research.php">GRB research at Leicester</a>
+        
+        <hr/>
+        <a href="https://www.swift.ac.uk/about/status.php">Spacecraft status</a>
+        <a href="https://www.swift.ac.uk/about/press.php">Swift in the press</a>
+        <a href="https://www.swift.ac.uk/about/videos.php">Swift Videos</a>
+        </div>
+    </li>
+
+   
+    <li>
+      <a href="https://www.swift.ac.uk/support/index.php"
+        onmouseover="menu_open('msupport')"
+        onmouseout="menu_closetime()">Support</a>
+
+      <div id="msupport"
+          onmouseover="menu_cancelclosetime()"
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/support/index.php">Helpdesk</a>
+      <a href="https://www.swift.ac.uk/support/too.php">TOO requests</a>
+      <a href="https://www.swift.ac.uk/support/gi.php">Guest Investigator program</a>
+      <a href="https://www.swift.ac.uk/sunpos.php">Target visibility checker</a>
+      <a href="https://www.swift.ac.uk/support/transientSearch">Search transient database</a>
+      </div>
+    </li>
+
+ 
+    <li>
+      <a href="https://www.swift.ac.uk/archive/index.php" 
+        onmouseover="menu_open('marchive')" 
+        onmouseout="menu_closetime()">Data Access</a>
+
+      <div id="marchive" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/archive/index.php">Overview</a>
+      <a href="https://www.swift.ac.uk/archive/ql.php">Quick Look</a>
+      <a href="https://www.swift.ac.uk/gcn/index.php">GCN Notices</a>
+      <a href="https://www.swift.ac.uk/swift_portal">Download obs data</a>
+      <a href="https://www.swift.ac.uk/swift_live">Search obs catalogue</a>
+       <a href="https://www.swift.ac.uk/2SXPS">The 2SXPS catalogue</a>
+      <a href="https://www.swift.ac.uk/LSXPS">The LSXPS catalogue</a>
+      </div>
+    </li>
+    
+    
+    <li>
+      <a href="https://www.swift.ac.uk/analysis/index.php" 
+        onmouseover="menu_open('manal')" 
+        onmouseout="menu_closetime()">Data Analysis</a>
+
+      <div id="manal" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/analysis/index.php">Data analysis overview</a>
+      <a href="https://www.swift.ac.uk/analysis/software.php">Swift software</a>
+      <hr/>
+      <a href="https://www.swift.ac.uk/user_objects/">Build XRT products</a>
+      <hr/>
+      <a href="https://www.swift.ac.uk/analysis/bat/index.php">BAT data analysis guide</a>
+      <a href="https://www.swift.ac.uk/analysis/xrt/index.php">XRT data analysis guide</a>
+      <a href="https://www.swift.ac.uk/analysis/xrt/digest_sci.php">XRT digest</a>
+      <a href="https://www.swift.ac.uk/analysis/uvot/index.php">UVOT data analysis guide</a>
+      </div>
+    </li>
+    
+    
+
+    <li>
+      <a href="https://www.swift.ac.uk/xrt_products/index.php" 
+        onmouseover="menu_open('mproducts')" 
+        onmouseout="menu_closetime()">Data Products</a>
+
+      <div id="mproducts" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+
+        <span class='menutitle'>GRBs</span>
+        <span class='menusubtitle'>Full dataset</span>
+        <a href="https://www.swift.ac.uk/xrt_products/index.php">Swift XRT products for GRBs</a>
+        <a href="https://www.swift.ac.uk/xrt_positions/">XRT positions</a>
+        <a href="https://www.swift.ac.uk/xrt_curves/">XRT light curves</a>
+        <a href="https://www.swift.ac.uk/xrt_spectra/">XRT spectra</a>
+        <a href="https://www.swift.ac.uk/xrt_live_cat/">XRT GRB catalogue</a>
+        <a href="https://www.swift.ac.uk/xrt_images/">XRT GRB images</a>
+        <a href="https://www.swift.ac.uk/burst_analyser/">Burst analyser</a>
+        <span class='menusubtitle'>Prompt data</span>
+        <a href="https://www.swift.ac.uk/grb_region/">GRB field info</a>
+        <a title="X-ray Prompt data index page" href="https://www.swift.ac.uk/sper/">XRT prompt analysis</a>
+
+        <span class='menutitle'>External triggers</span>
+        <a href="https://www.swift.ac.uk/EP/">Einstein Probe follow up</a>
+        <a href="https://www.swift.ac.uk/SVOM/">SVOM follow up</a>
+        <a href="https://www.swift.ac.uk/neutrino/">Neutrino follow up</a>
+        <a href="https://www.swift.ac.uk/LVC/">Gravitational Wave follow up</a>
+      </div>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/results/index.php" 
+        onmouseover="menu_open('mresults')" 
+        onmouseout="menu_closetime()">Publications</a>
+
+       <div id="mresults" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+        <a href="https://www.swift.ac.uk/results/index.php">Publication index</a>
+        <a href="https://www.swift.ac.uk/results/pub.php">Published papers</a>
+        <a href="https://www.swift.ac.uk/results/sub.php">Submitted papers</a>
+        <a href="https://www.swift.ac.uk/results/spie.php">XRT instrument papers</a>
+        <a href="https://www.swift.ac.uk/results/atels.php">ATels</a>
+        <a href="https://www.swift.ac.uk/results/grbs.php">GCNs</a>
+        <a href="https://www.swift.ac.uk/results/conferences.php">Conferences</a>
+      </div>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/links.php" 
+        onmouseover="menu_open('mlinks')" 
+        onmouseout="menu_closetime()">Links</a>
+
+      <div id="mlinks" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      
+            Databases
+	    <a href="http://ned.ipac.caltech.edu/">NED</a>
+	    <a href="http://simbad.u-strasbg.fr/Simbad">Simbad</a>
+            <a href="http://gcn.gsfc.nasa.gov/gcn3_archive.html">GCN circulars archive</a>
+            <a href="https://swift.gsfc.nasa.gov/docs/swift/archive/grb_table/">GRB data table</a>
+	    Software &amp; Tools
+	    <a href="https://heasarc.nasa.gov/lheasoft/">Swift Software (HEASoft)</a>
+            <a href="https://heasarc.gsfc.nasa.gov/xanadu/xanadu.html">Xanadu</a>
+            <a href="https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3pimms/w3pimms.pl">WebPIMMS</a>
+	    Institutional Swift Sites
+	    <a href="https://swift.gsfc.nasa.gov">GSFC</a>
+	    <a href="http://www.swift.psu.edu">PSU</a>
+	    <a href="http://www.brera.inaf.it/~swift/SWIFT/">OAB</a>
+	    <a href="https://swift.ssdc.asi.it/">SSDC</a>
+	    <a href="http://www.mssl.ucl.ac.uk/general/projects/swift/SWIFT6.html">MSSL</a>
+	    <a href="http://www.swift.ac.uk">University of Leicester</a>
+                  </div>
+    </li>
+  </ul>  <br id='mainContentPostBanner' style='visibility: hidden; display: none;'/>
+  </div>
+  <p id='breadcrumb'><a href='' title='UKSSDC home'>Home</a> &gt; <a href='/archive/'>Data Access</a> &gt; <a href='/2SXPS'>2SXPS Catalogue</a> &gt; Documentation</p>
+  <h1 id='top'>2SXPS Catalogue: On-line Documentation</h1>
+
+<div id='glossary'>
+  </div>
+
+  
+
+  <p class='sxpsnav'><a href='index.php'>Search catalogue</a> | <a href='paper.php'>Catalogue paper</a> | <a class='int' href='#content'>Table descriptions</a> | 
+  <a id='dlLink' href='download.php'> Download catalogue files</a> | <a href='ulserv.php'>Upper limit server</a>.</p>
+    
+  <div id='thisContent'>
+  <h2 id='contents'>On this page:</h2>
+  <ol title='Main contents' id='contentlist'>
+    <li><a class='int' href='#summary'>Summary / Quick-start information</a>.</li>
+    <li><a class='int' href='#access'>Access &amp; Usage</a>.</li>
+    <li><a class='int' href='#complete'>Catalogue completeness and purity</a>.</li>
+    <li><a class='int' href='#terminology'>Notes on terminology</a>.</li>
+    <li><a class='int' href='#content'>Catalogue contents</a>.
+      <ul title='Tables' id='tabList'>
+        <li><a class='int' href='#sourceTab'>Sources</a> (main catalogue table).</li>
+        <li><a class='int' href='#fieldTab'>Datasets</a>.</li>
+        <li><a class='int' href='#detTab'>Detections</a>.</li>
+        <li><a class='int' href='#xcorrTab'>Cross Correlations</a>.</li>
+      </ul>
+    </li>
+    <li><a class='int' href='#issues'>Known issues / warnings</a>.</li>
+
+  </ol>
+	</div>
+	
+	
+	<div id='otherContent'>
+		<h2>Other documentation:</h2>
+		<ul style='list-style-position: outside;' title='Other contents' id='othercontentlist'>
+			<li><a href='webdocs.php'>About the web pages</a>.</li>
+			<li><a href='uldocs.php'>Upper limit server documentation</a>.</li>
+		</ul>
+	</div>
+	
+  <hr/>
+
+  
+  <!--  SUMMARY -->
+ 
+  <h2 id='summary'>Summary / Quick-start information</h2>
+  
+  <div id='table1' class='table rFloat' style='max-width: 500px;'>
+    <table class='chTable' summary='Summary details of the 2SXPS catalogue' cellspacing='2' cellpadding='2' border='1'>
+      <tr><th id='Sum_times'>Data included</th><td colspan='2' headers='Sum_times'>2005 Jan 01 &#8212; 2018 August 01</td></tr>    
+      <tr><th id='Sum_area'>Sky coverage</th><td colspan='2' headers='Sum_area'>3,790 square degrees</td></tr>    
+      <tr><th id='Median'>Typical Sensitivity<br/>(0.3&#8212;10 keV)</th>
+            <td colspan='2' headers='Median'>2&times;10<sup>-13</sup> erg cm<sup>-2</sup> s<sup>-1</sup> (observations)
+            <br/>4&times;10<sup>-14</sup> erg cm<sup>-2</sup> s<sup>-1</sup> (stacked images)</td></tr>
+      <tr><th id='Sum_err'>Typical position error</th><td colspan='2' headers='Sum_err'>5.6&prime;&prime; (90% confidence radius, including systematics)</td></tr>
+      <tr><th id='Sum_ndet'>Detections</th><td colspan='2' headers='Sum_ndet'>1,091,058</td></tr>
+      <tr><th id='Sum_nsrc'>Unique sources</th><td colspan='2' headers='Sum_nsrc'>206,335</td></tr>
+      <tr><th id='Sum_nvar'>Variable sources</th><td colspan='2' headers='Sum_nvar'>82,324</td></tr>
+      <tr><th id='Sum_nnew'>Uncatalogued sources<sup><a class='highlight int' href='#fn1'>1</a></sup></th><td colspan='2' headers='Sum_nnew'>78,100</td></tr>
+      <tr><th id='Sum_flag' rowspan='3'>False positive rate</th><th id='Sum_good' headers='Sum_flag'>Flag=Good</th><td headers='Sum_good'>0.3%</td></tr>
+      <tr><th id='Sum_reas' headers='Sum_flag'>Flag=Good/Reasonable</th><td headers='Sum_reas'>1%</td></tr>
+      <tr><th id='Sum_poor' headers='Sum_flag'>Flag=Good/Reasonable/Poor</th><td headers='Sum_poor'>&lt;10%</td></tr>
+    </table>
+    
+    <p class='caption' style='width: 80%; margin: 2px auto;'><strong>Table 1.</strong> Summary details of the 2SXPS catalogue.<br/>
+    <span id='fn1'><sup>1</sup>Sources counted as &lsquo;Uncatalogued&rsquo; here may have matches USNO-B1, 2MASS or ALLWISE,
+    as the rate of spurious matches to those catalogues is very high.</span>
+    
+    </p>
+   </div>
+  
+  <p>The <acronym title='Second Swift XRT Point Source 
+  Catalogue'>2SXPS</acronym> catalogue covers 3,790 square degrees on the sky and contains position, fluxes, spectral 
+  details and variability information for 206,335 X-ray point sources
+  detected in observations with the Swift X-ray Telescope between 2005 Jan 01 and 2018 August 01.
+  Each source has a detection flag which indicates how likely 
+  it is to be a real astrophysical object. <a class='int' href='#Table1'>Table 1</a> shows the false positive rate as a function of 
+  flag and other summary information.</p>
+  
+  <p>Full details of how the catalogue was constructed are given in 
+  <a href='paper.php'>Evans et al (2020)</a>. The underlying process
+  was similar to <a href='/1SXPS'>1SXPS</a>, however with several key improvements.
+  Most noteworthy of these were better modelling of pile up, improved background
+  modelling, especially in the presence of stray light, and a refined
+  <acronym title='point spread function'>PSF</acronym>. Additionally, larger stacked images
+  were permitted than was possible in 1SXPS.</p>
+  
+
+  <p>On this web page we give some summary details of the catalogue; how to access, use and 
+  cite it; a demonstration of its quality and performance; and finally details of 
+  the catalogue contents. Other pages provide <a href='webdocs.php'>details about the 2SXPS website</a>
+  and the <a href='uldocs.php'>upper-limit tool</a>.</p>
+  
+  <p>When <a href='webdocs.php#search'>Searching the catalogue</a> you can select a pre-defined subset
+  of the full catalogue to search, for greater purity (but reduced completeness). There are two such samples, as defined in 
+  <a class='int' href='#Table2'>Table 2</a>.</p>
+  
+  <div id='table2' class='table lFloat' style='max-width: 800px;'>
+    <table class='chTable' summary='Description of samples'>
+      <thead>
+        <tr><th id='sampletab_name'>Sample</th><th id='sampletab_src'>Sources</th><th id='sampletab_ds'>Datasets</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td headers='sampletab_name'>All</td>
+          <td headers='sampletab_src'>All sources.</td>
+          <td headers='sampletab_ds'>All datasets.</td>
+        </tr>
+        <tr>
+          <td headers='sampletab_name'>Clean</td>
+          <td headers='sampletab_src' style='max-width:500px;'>Sources with a <a href='#dl_flag' class='int' onclick='showDL_flag();'>detection flag</a> of 0 or 1, a field flag of 0 or 1, and none of the 
+            &lsquo;OpticalLoadingWarning,&rsquo; &lsquo;StrayLightWarning&rsquo; and &lsquo;NearBrightSourceWarning&rsquo; 
+            warnings set.</td>
+          <td headers='sampletab_ds'>Datasets with a <a href='#dl_flag' class='int' onclick='showDL_flag();'>field flag</a> of 0 or 1.</td>
+        </tr>
+         <tr>
+          <td headers='sampletab_name'>Ultra-clean</td>
+          <td headers='sampletab_src'>A subset of clean sources with <a href='#dl_flag' class='int' onclick='showDL_flag();'>detection and field flags</a> of 0.</td>
+          <td headers='sampletab_ds'>Datasets with detection flag of 0.</td>
+        </tr>
+   
+      </tbody>
+    </table>
+    <p class='caption' style='width: 80%; margin: 2px auto;'><strong>Table 2.</strong> Definitions of the pre-defined subsets 
+    that can be selected.   
+    </p>
+  </div>
+
+  
+  <p class='back'>[<a href='#top' class='int'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr/>
+  
+  
+  <!-- ACCESS -->
+  
+  
+
+  <h2 id='access'>Data Access and Usage</h2>
+  
+  <p>The catalogue can be queried <a href='index.php'>through the search interface</a>,
+  or <a href='download.php'>downloaded as a FITS file, CSV file or SQL dump</a>.</p>
+  
+  <p>Not all columns contain values for each entry in the tables,
+  for example, in the <a href='#sourceTab' class='int'><em>Sources</em> table</a>, only sources for which a spectral fit exists have entries in the
+  <code>Fitted*</code> fields. In the CSV files, such empty entries are literally empty; in the FITS and SQL
+  files these entries are <code>NULL</code>.</p>
+  
+  <p>  If you use data from this catalogue
+  in your work, please cite <a href='paper.php'>Evans et al. (2020)</a> and in the
+  acknowledgements section of your publication, please state:</p>
+  <p style='margin: 10px; text-align:center; font-style:italic; font-weight: bold;'>This work made use of data supplied
+  by the UK Swift Science Data Centre at the University of Leicester.</p>
+
+
+  <p class='back'>[<a href='#top' class='int'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr/>
+  
+  
+  <!-- COMPLETENESS -->
+  
+  <h2 id='complete'>Completeness and purity</h2>
+  
+  <p>
+    In order to evaluate the performance of the 2SXPS source detection system we made use
+    of an extensive set of simulations. This is described in detail in Section 7 of 
+    <a href='paper.php'>Evans et al. (2020)</a>. We simulated fields for a range of
+    exposure times and background levels, chosen to reflect the range of such values
+    in 2SXPS. Simulations did not include artifacts such as stray light,
+    hot pixels, bright Earth or diffuse sources; however, our screening process
+    is designed to identify and flag 2SXPS sources affected by such phenomena.
+    We ran the 2SXPS source detection algorithm on the simulated images, and so
+    by comparing the set of detected sources with the input list of simulated sources,
+    we can measure both the completeness of our detection system and its purity.
+  </p>
+    
+  <p>Each detection is assigned a flag based on various statistical tests.
+  These flags were calibrated (via the simulations) such that the fraction of spurious
+  sources was 0.3% (i.e. equivalent to a Gaussian 3-&sigma; significance) for <em>Good</em>,
+  1% when <em>Good</em> and <em>Reasonable</em> sources are considered, and up to 10% when
+  the <em>Poor</em> sources are also included. <a class='int' href='#figFAR'>Fig. 1</a>
+  shows the false positive rate obtained from the simulations as a function of exposure
+  time, validating the purity claims made here.</p>
+  
+  <div id='figFAR' class='figure' style='width: 400px; margin-top: 40px; float: left; margin-left: 80px'>
+    <img  alt='False alarm rate as a function of exposure time and flag' src='figs/FAR.png' style='width: 100%;' />
+    <p class='caption'><strong>Fig. 1</strong> False positive rate as a function of exposure
+    time and flag.  The green points refer to <em>Good</em> sources, blue points are
+    <em>Good</em> and <em>Reasonable</em> and red shows all sources.
+    </p>
+  </div>
+  
+  <div id='figComplete' class='figure' style='width: 400px; margin-top: 40px; float: right; margin-right: 80px'>
+    <img  alt='False alarm rate as a function of exposure time and flag' src='figs/complete.png' style='width: 100%;' />
+    <p class='caption'><strong>Fig. 2</strong> The completeness of 2SXPS. The dotted, solid and dash-dot lines show the
+    flux at which 10%, 50% and 90% of the simulated sources were recovered, respectively. Colours are as in Fig. 1.
+    </p>
+  </div>
+  
+
+  <p class='back' style='clear:left;'>[<a href='#top' class='int'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr/>
+  
+  
+  <!-- TERMINOLOGY -->
+  
+  <h2 id='terminology'>Notes on terminology</h2>
+  
+  <p>
+    There are various phrases and labels used within the 2SXPS catalogue which it is important
+    users properly understand, especially since the meanings of these labels may differ
+    from those used in other catalogues. Several key pairs of labels are described here.</p>
+  
+  <h3>Datasets: observations and stacked images (and snapshots)</h3>
+  
+  <p>
+    <em>Swift</em> data are organised into <em>observations</em>, each of which has a unique
+    11-digit obsID. An observation generally contains all observations of a given location
+    within a UT day, and may consist of multiple <em>snapshots</em>, taken on different spacecraft orbits, as described
+    <a href='https://www.swift.ac.uk/support/obsidnew.php' title='Page describing how Swift observes'>on this page</a>.
+    The basic datasets from which 2SXPS was created are the observations.
+  </p>
+  
+  <p>
+    Many locations on the sky are observed repeatedly by
+    <em>Swift</em>, for example, to monitor the evolution of a specific
+    source, and so we also  combined overlapping observations to give a
+    single dataset of greater exposure, allowing fainter sources to be
+    detected. We call these datasets <em>stacked images</em>. Some
+    observations have only partial overlap, and one can make long
+    &lsquo;chains&rsquo; of overlapping observations covering large
+    spatial areas. We defined a maximum stacked image size of 2,300
+    pixels (~90&prime;) to a side and then created stacked images such
+    that every overlap of observations is in at least one stack. Thus,
+    multiple stacked images can overlap, and an observation can
+    contribute to multiple stacked images; but the maximum exposure at
+    any given sky is reached for every location <em>Swift</em> has
+    observed.
+ </p>
+ 
+ <p>Within each dataset (observation or stacked image), source detection
+ and PSF fitting is carried out on each of the four
+ bands <em>independently</em> of each other. Note that this is
+ not the same approach as the XMM catalogues, in which the energy bands are handled
+ simultaneously.</p>
+
+  <p>
+    There is a third natural timescale to consider for <em>Swift</em> data. The satellite is in a 
+    low-Earth orbit and due to its Earth-limb avoidance constraints, the longest window of continuous visibility for
+    any point on the sky is around 2.7 ks. Thus if an observation is required which is longer than this
+    (or in which multiple exposures are desired within a UT day, for science reasons) the observation will comprise
+    a number of separate exposures, known as &lsquo;snapshots&rsquo;. Each snapshot is a continuous exposure in a single pointing direction.
+    We do not carry out source datection on individual 
+    snapshots, however light curves are built with per-snapshot binning (as well as per-observation binning) and 
+    variability calculations are also carried out on this timescale.    
+  </p>
+  
+  <h3>Detections and sources; and aliases</h3>
+  
+  <p>
+    In the creation of 2SXPS source detection was carried out on every dataset, and every energy band 
+    independently (as noted above, this differs from the XMM approach). Thus for many sources there are multiple
+    detections, in the different energy bands and in different datasets covering the source location. Details of these
+    are all listed in the &lsquo;Detections&rsquo; table available for download, and are given in the relevant parts
+    of the different web pages.
+  </p>
+
+  <p>
+    These separate detections were then rationalised into a single list of unique source in two steps.
+    First, detections across different bands but within the same dataset were combined. For this stage, only the 
+    statistical errors on the source positions, as deduced from the PSF fit, were used to determine
+    whether two detections corresponded to the same underlying source.  This is because, since all detections at this point are from the same
+    dataset, the astrometric system is the same for all sources and so its uncertainty is irrelevant.
+    Then the lists of unique soures per dataset were combined to create the final source list; at this stage the astrometric
+    uncertainty associated with the datasets was taken into account.</p>
+
+  <p>
+    The process of merging detections was not perfect. Occasionally the statistical uncertainties were underestimated
+    and also the astrometric uncertainty appears to have a broad tail. As a result of this a small number of sources
+    exist for which multiple detections were not correctly merged, and instead the catalogue contains two distinct sources which really 
+    are the same object. Based on an inspection of the distribution of source separations in the catalogue,
+    we therefore identified any sources which lie within 20&Prime; of each other and are not detected in the same
+    dataset, and labelled these as <em>possible</em> aliases of each other. It is vital to note that not everything so labelled
+    is really an alias; in some cases they are genuinely distinct sources which are close together. In other cases, particularly where 
+    one of the sources is very bright; the nearby sources are spurious detections in the PSF wings; this is not the same as an alias.
+    In the case of genuine aliases, the available light curves of the sources will be incomplete and incorrect. That is, if a source is incorrectly identified as being two
+    sources, called source A and source B, then the light curve of source A will not contain values
+    derived from the blind detections that were assigned to source B, and furthermore the bins from those datasets where
+    the source was called source B will have been deduced (for source A) based on the background map with the PSF model
+    of source B present! Therefore, in the light curve section of the source pages, an option is given to consolidate
+    across aliases of the source. Using this you can select which sources are genuine aliases, and the correct light curve will
+    then be produced.</p>
+  
+  
+  
+  <h3 id='blindOrNot'>Blind and non-blind (retrospective) detections</h3>
+
+  <p>
+    The sources present in 2SXPS were detected via a blind search. That is, no a-priori knowledge
+    of the possible existence of sources was used to deduce whether or not a given set of photons corresponded
+    to the detection of a point source. However, once the list of sources had been produced, a retrospective
+    check was carried out on those datasets in which the source was located, but had not been detected
+    by the blind search. In this case the existence of a source at the specific location was assumed a-priori,
+    and the count-rate of the source inferred based on the number of source and background events at the 
+    source's location. If this count-rate was above zero, with 99.7% confidence (i.e 3-&sigma;), the source
+    was deemed to have been present and thus detected in that dataset. <em>The detections database table only lists
+    the blind detections</em>; sources identified as detected in this non-blind, retrospective analysis
+    were not added to the table, however in the light curve analysis they are marked as being detected
+    in those datasets. When viewing the light curves you have the option of whether non-detections
+    should be shown as 3-&sigma; upper limits, or datapoints with 1-&sigma; error-bars, and you can specify this separately
+    for bins in which the source was not detected in any way, and those in which there was no blind detetion, but
+    in which the targeted analysis yields a non-zero count rate.
+ </p>
+
+  
+
+
+  
+  <p class='back'>[<a href='#top' class='int'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr/>
+
+
+
+
+
+
+  <!-- CATALOGUE CONTENTS -->
+
+
+  <h2 id='content'>Catalogue Contents</h2>
+  <p>There are four tables available for download:</p>
+  
+  <dl id='tableList' title='2SXPS tables'>
+    <dt><a class='int' href='#sourceTab'>Sources</a></dt>
+      <dd>This is the main catalogue table. This contains the details of the unique sources
+      in the catalogue.</dd>
+      
+    <dt><a class='int' href='#fieldTab'>Datasets</a></dt>
+      <dd>This contains details of the individual datasets (observations and stacked images) of which the catalogue is composed.</dd>
+
+    <dt><a class='int' href='#detTab'>Detections</a></dt>
+      <dd>This contains details of the individual detections in each dataset and energy band, of the sources.</dd>
+    
+    <dt><a class='int' href='#xcorrTab'>Cross correlations</a></dt>
+      <dd>This contains details of sources from external catalogues which are positionally coincident with 2SXPS sources.</dd>
+    
+  </dl>
+  
+  <p class='back'>[<a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr/>
+  
+  
+  <!-- SOURCES -->
+  
+  <h3 id='sourceTab'>Sources Table</h3>
+  
+  <p>The <em>Sources</em> table is the main catalogue table, and gives details of each unique source identified in the catalogue.
+  There are 230 columns in this table in total, so for ease of consideration we have grouped them into the following categories:</p>
+  
+  <ul title='List of categories'>
+    <li><a class='int' href='#sources_name' onclick='showList("name");'>Identifiers</a> (2 column)</li>
+    <li><a class='int' href='#sources_pos' onclick='showList("pos");'>Position information</a> (10 columns)</li>
+    <li><a class='int' href='#sources_exp' onclick='showList("exp");'>Exposure information</a> (21 columns)</li>
+    <li><a class='int' href='#sources_flag' onclick='showList("flag");'>Flag information</a> (11 columns)</li>
+    <li><a class='int' href='#sources_rate' onclick='showList("rate");'>Count-rate information</a> (46 columns)</li>
+    <li><a class='int' href='#sources_var' onclick='showList("var");'>Variability information</a> (12 columns)</li>
+    <li><a class='int' href='#sources_flux' onclick='showList("flux");'>Spectral/Flux information</a> (112 columns)</li>
+    <li><a class='int' href='#sources_xcorr' onclick='showList("xcorr");'>Cross-correlation information</a> (16 columns)</li>
+  </ul>
+  
+  
+  <!-- IDENTIFIER INFORMATION -->
+  
+  <h4 id='sources_name'>Identifiers</h4>
+  <p id='show_name' class='hidden'>There are 2 columns in this group. <a title='Show identifier columns' href='javascript:showList("name");'>Show</a>.</p>
+  <p id='hide_name' class='hidden'><a title='Hide identifier columns' href='javascript:hideList("name");'>Hide column list</a>.</p>
+  <div id='dl_name'>
+    <dl class='columns' title='Identifier columns'>
+      <dt>2SXPS ID</dt>
+        <dd>A unique numerical identifier for this source.</dd>
+      <dt>Name</dt>
+        <dd>The unique IAU format unique source name, of the form: <code>2SXPS JHHMMSS.S+ddmmss</code></dd>
+    </dl>
+    <p class='back'>[<a class='uint' href='javascript:hideList("name");'>Hide identifier columns</a> | <a class='int' href='#sourceTab'>Back to Sources table</a> | <a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+    <hr/>
+  </div>
+    
+
+    
+  <!-- POSITION INFORMATION -->
+  
+  
+  <h4 id='sources_pos'>Position information</h4>
+  <p id='show_pos' class='hidden'>There are 9 columns in this group. <a title='Show position columns' href='javascript:showList("pos");'>Show</a>.</p>
+  <p id='hide_pos' class='hidden'><a title='Hide position columns' href='javascript:hideList("pos");'>Hide column list</a>.</p>
+
+  <div id='dl_pos'>
+    <dl class='columns' title='Position columns'>
+      <dt>RA</dt>
+        <dd>The Right Ascension (J2000) of the source, taken from the individual detection with the highest S/N and best detection flag.</dd>
+      <dt>Decl</dt>
+        <dd>The declination (J2000) of the source, taken from the individual detection with the highest S/N and best detection flag.</dd>
+      <dt>Err90</dt>
+        <dd>The 90% confidence radial position error on the source position, taken from the same individual detection as the position. This includes the astrometric systematic error.</dd>
+      <dt>AstromType</dt>
+        <dd>This relates the provenance of the astrometry used to derive the source position. <ul title='Astrom Type definitions'><li><strong>0</strong>: Astrometry from the Swift star trackers.</li><li><strong>1</strong>: Astrometry from rectification with 2MASS.</li></ul></dd>
+      <dt>l</dt>
+        <dd>The Galactic longitude in degrees of the best position of the source.</dd>
+      <dt>b</dt>
+        <dd>The Galactic latitude in degrees of the best position of the source.</dd>
+      <dt>MeanOffAxisAngle</dt>
+        <dd>The mean distance angle (in arc minutes) of the source from the centre of the XRT detector averaged over all observations in which the source was
+        detected and inside the XRT field of view. There is a handful of sources for which this value is -1. This indicates that the source centre was never in
+        the field of view, that is, the detection and centroid was based on the wings of the PSF that extended into the field of view while the source itself was outside.</dd>
+      <dt>OrigErr90</dt>
+        <dd>In the initial release of 2SXPS the statsitical component of the error was a factor of 1.5 too large, due to an error in
+        the conversion from 1-&sigma; to 90% confidence. This has now been corrected, however the value originally released
+        (and used in cross correlation) is given in this field.</dd>
+      <dt>NearestNeighbour</dt>
+        <dd>The distance to the nearest 2SXPS source to this one, in arcsec.</dd>
+      <dt>NearestOKNeighbour</dt>
+        <dd>The distance to the nearest 2SXPS source to this one, with a flag of 0 or 1, i.e. <em>Good</em> or <em>Reasonable</em> with
+        no other warning bit set; in arcsec.</dd>
+    
+    </dl>
+    <p class='back'>[<a class='uint' href='javascript:hideList("pos");'>Hide position columns</a> | <a class='int' href='#sourceTab'>Back to Sources table</a> | <a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+    <hr/>
+  </div>
+    
+  
+  
+  
+  <!-- EXPOSURE INFORMATION -->
+  
+  <h4 id='sources_exp'>Exposure information</h4>  
+  <p id='show_exp' class='hidden'>There are 21 columns in this group. <a title='Show exposure columns' href='javascript:showList("exp");'>Show</a>.</p>
+  <p id='hide_exp' class='hidden'><a title='Hide exposure columns' href='javascript:hideList("exp");'>Hide column list</a>.</p>
+  <div  id='dl_exp'>
+    <dl class='columns' title='Exposure columns'>
+      <dt>Exposure</dt>
+        <dd>The total exposure at the location of the source in seconds, including datasets in which the source was not detected.</dd>
+      
+      <dt>FirstObsDate</dt>
+        <dd>The UTC date and time of the start of the first observation in 2SXPS which covered the location of the source.</dd>
+      <dt>LastObsDate</dt>
+        <dd>The UTC date and time of the end of the last observation in 2SXPS which covered the location of the source.</dd>
+      
+      <dt>FirstObsMET</dt>
+        <dd>The time of the start of the first observation in 2SXPS which covered the location of the source, in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>.</dd>
+      <dt>LastObsMET</dt>
+        <dd>The time of the end of the last observation in 2SXPS which covered the location of the source, in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>.</dd>
+        
+      <dt>FirstDetDate</dt>
+        <dd>The UTC date and time of the start of the first observation in 2SXPS in which the source count-rate in any band is inconsistent with 0 at the 3-&sigma; level; i.e. the
+        first observation in which the source was detected by the blind search or retrospective count-rate determination.</dd>
+      <dt>LastDetDate</dt>
+        <dd>The UTC date and time of the end of the last observation in 2SXPS in which the source count-rate in any band is inconsistent with 0 at the 3-&sigma; level; i.e. the
+        first observation in which the source was detected by the blind search or retrospective count-rate determination.</dd>
+        
+      <dt>FirstDetMET</dt>
+        <dd>The time, in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>, of the start of the first observation in 2SXPS in which the source count-rate in any band is inconsistent with 0 at the 3-&sigma; level; i.e. the
+        first observation in which the source was detected by the blind search or retrospective count-rate determination.</dd>
+      <dt>LastDetMET</dt>
+        <dd>The time, in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>, of the end of the last observation in 2SXPS in which the source count-rate in any band is inconsistent with 0 at the 3-&sigma; level; i.e. the
+        first observation in which the source was detected by the blind search or retrospective count-rate determination.</dd>
+
+      <dt>FirstBlindDetDate</dt>
+        <dd>The UTC date and time of the start of the first observation in 2SXPS in which the source was detected in the blind search.</dd>
+      <dt>LastBlindDetDate</dt>
+        <dd>The UTC date and time of the end of the last observation in 2SXPS in in which the source was detected in the blind search.</dd>
+
+        
+      <dt>FirstBlindDetMET</dt>
+        <dd>The time, in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>, of the start of the first observation in 2SXPS in which the source was detected in the blind search.</dd>
+      <dt>LastBlindDetMET</dt>
+        <dd>The time, in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>, of the end of the last observation in 2SXPS in which the source was detected in the blind search.</dd>
+        
+      <dt>NumObs</dt>
+        <dd>The total number of datasets (observations+stacked images) which cover the location of the source, including those in which the source was not detected.</dd>
+      <dt>NumBlindDetObs</dt>
+        <dd>The number of datasets (observations+stacked images) in which the source was detected in the blind search.</dd>
+      <dt>NumDetObs</dt>
+        <dd>The number of datasets (observations+stacked images) in which the source was detected with the retrospective analysis.</dd>
+        
+      <dt>BestDetectionID</dt>
+        <dd>The ID value from the <a href='#detTab' class='int'>detections table</a> corresponding to the detection of this source for which the 
+        position and error have been taken.</dd>
+      
+      <dt>NonBlindDet_band0</dt>
+        <dd>Whether the mean count-rate in the total (0.3&#8212;10 keV) is non-zero with 3-&sigma; significance.</dd>
+      <dt>NonBlindDet_band1</dt>
+        <dd>Whether the mean count-rate in the soft (0.3&#8212;1 keV) is non-zero with 3-&sigma; significance.</dd>
+      <dt>NonBlindDet_band2</dt>
+        <dd>Whether the mean count-rate in the medium (1&#8212;2 keV) is non-zero with 3-&sigma; significance.</dd>
+      <dt>NonBlindDet_band3</dt>
+        <dd>Whether the mean count-rate in the hard (3&#8212;10 keV) is non-zero with 3-&sigma; significance.</dd>
+        
+        
+    </dl>
+    <p class='back'>[<a class='uint' href='javascript:hideList("exp");'>Hide exposure columns</a> | <a class='int' href='#sourceTab' >Back to Sources table</a> | <a class='int' href='#top' >Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+    <hr/>
+  </div>
+  
+   
+  <!-- FLAG INFORMATION -->
+  
+ 
+  <h4 id='sources_flag'>Flag information</h4>  
+  <p id='show_flag' class='hidden'>There are 11 columns in this group. <a title='Show flag columns' href='javascript:showList("flag");'>Show</a>.</p>
+  <p id='hide_flag' class='hidden'><a title='Hide flag columns' href='javascript:hideList("flag");'>Hide column list</a>.</p>
+
+  <div id='dl_flag'>
+    <dl class='columns' title='Flag columns'>
+    
+      <dt>DetFlag</dt>
+        <dd>The best detection flag from all detections of the source. 
+        The basic values are 0, 1, or 2, meaning <em>Good</em>, <em>Reasonable</em> or <em>Poor</em> respectively.
+          Higher values mean that an extra warning is associated with the source.
+          This warning is bitwise, defined as follows:         
+          <table class='chTable' summary='Description of field flags'>
+            <thead>
+              <tr><th id='dftab_bit'>Bit</th><th id='dftab_val'>Value</th><th id='dftab_desc'>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td headers='dftab_bit'>2</td>
+                <td headers='dftab_val'>4</td>
+                <td headers='dftab_desc'>The source position is consistent with that of a known extended source.</td>
+              </tr>
+              <tr>
+                <td headers='dftab_bit'>3</td>
+                <td headers='dftab_val'>8</td>
+                <td headers='dftab_desc'>The source is likely an alias of a badly-fitted piled up source.</td>
+              </tr>
+              <tr>
+                <td headers='dftab_bit'>4</td>
+                <td headers='dftab_val'>16</td>
+                <td headers='dftab_desc'>The source lies in a region marked as contaminated during the visual screening.</td>
+              </tr>
+            </tbody>
+          </table>
+        </dd>
+        
+      <dt id='sieldFlagDef'>Fieldflag</dt>
+        <dd>The best field flag from all detections of the source. This is a bitwise flag with the following values:
+          <table class='chTable' summary='Description of field flags'>
+            <thead>
+              <tr><th id='fftab_bit'>Bit</th><th id='fftab_val'>Value</th><th id='fftab_desc'>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td headers='fftab_bit'>0</td>
+                <td headers='fftab_val'>1</td>
+                <td headers='fftab_desc'>Field contains stray light.</td>
+              </tr>
+              <tr>
+                <td headers='fftab_bit'>1</td>
+                <td headers='fftab_val'>2</td>
+                <td headers='fftab_desc'>Field contains diffuse emission or artifacts.</td>
+              </tr>
+              <tr>
+                <td headers='fftab_bit'>2</td>
+                <td headers='fftab_val'>4</td>
+                <td headers='fftab_desc'>Field contains stray light that could not be adequately modelled.</td>
+              </tr>
+              <tr>
+                <td headers='fftab_bit'>3</td>
+                <td headers='fftab_val'>8</td>
+                <td headers='fftab_desc'>Field contains a bright, piled up source which was not properly fitted in some bands.</td>
+              </tr>
+              <tr>
+                <td headers='fftab_bit'>5</td>
+                <td headers='fftab_val'>32</td>
+                <td headers='fftab_desc'>Screening of artifacts may contain an error. <a href='#ellipseError' class='int'>See explanation</a>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </dd>
+     
+      <dt>DetFlag_band0</dt>
+        <dd>The best total-band (0.3&#8212;10 keV) detection flag from all detections of the source.</dd>
+      <dt>DetFlag_band1</dt>
+        <dd>The best soft-band (0.3&#8212;1 keV) detection flag from all detections of the source.</dd>
+      <dt>DetFlag_band2</dt>
+        <dd>The best medium-band (1&#8212;2 keV) detection flag from all detections of the source.</dd>
+      <dt>DetFlag_band3</dt>
+        <dd>The best hard-band (2&#8212;10 keV) detection flag from all detections of the source.</dd>
+        
+      <dt>OpticalLoadingWarning</dt>
+        <dd>This is the <em>worst</em> optical loading warning from any detection of the source. If an optical source
+        exists near the 2SXPS source, and is <a href='/analysis/xrt/optical_loading.php'>bright enough to cause optical loading</a>
+        then this field indicates how many magnitudes brighter than the optical loading limit that source is, otherwise it is zero.
+        </dd>
+      
+      <dt>StrayLightWarning</dt>
+        <dd>This is set to one if any detections of the source occurred in a region affected by stray light, otherwise zero.</dd>
+      
+      <dt>NearBrightSourceWarning</dt>
+        <dd>Whether any detection of this source occurred where the background level exceeded 10<sup>-3</sup> ct s<sup>-1</sup> pixel<sup>-1</sup>, i.e.
+        was likely in the wings of a bright source. A value of zero indicates this did not occur. A value of one indicates that it did. A value of two
+        means that the source was detected in a stacked image in which the background was not high (averaged over the whole stacked exposure),
+        but where there was at least one observation in which the source was undetected, and the background at the source position was in
+        excess of 10<sup>-3</sup> ct s<sup>-1</sup> pixel<sup>-1</sup>.        
+        </dd>
+        
+      
+        
+    </dl>
+    <p class='back'>[<a class='uint' href='javascript:hideList("flag");'>Hide flag columns</a> | <a class='int' href='#sourceTab' >Back to Sources table</a> | <a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+    <hr/>
+  </div>
+   
+  
+  
+  <!-- COUNT RATE INFORMATION -->
+      
+  <h4 id='sources_rate'>Count-rate information</h4>
+  <p id='show_rate' class='hidden'>There are 46 columns in this group. <a title='Show count ratecolumns' href='javascript:showList("rate");'>Show</a>.</p>
+  <p id='hide_rate' class='hidden'><a title='Hide count ratecolumns' href='javascript:hideList("rate");'>Hide column list</a>.</p>
+
+  <div id='dl_rate'>
+    <dl class='columns' title='Rate columns'>
+    
+      <dt>Rate_band0</dt>
+        <dd>The time-averaged total-band (0.3&#8212;10 keV) count-rate of the source, in counts per second.</dd>
+      <dt>Rate_band0_pos</dt>
+        <dd>The 1-&sigma; positive error on the time-averaged total-band (0.3&#8212;10 keV) count-rate of the source.
+        If more than 100 net counts (i.e. after background subtraction) were detected, or the number of counts in the source
+        or background exceeded 1000, this is the Poisson error, otherwise it is calculated from the Bayesian method of
+        <a href='http://adsabs.harvard.edu/abs/1991ApJ...374..344K'>Kraft, Burrows &amp; Nousek (1991)</a>.</dd>
+      <dt>Rate_band0_neg</dt>
+        <dd>The 1-&sigma; negative  error on the time-averaged total-band (0.3&#8212;10 keV) count-rate of the source. 
+       If more than 100 net counts (i.e. after background subtraction) were detected, or the number of counts in the source
+        or background exceeded 1000, this is the Poisson error, otherwise it is calculated from the Bayesian method of
+        <a href='http://adsabs.harvard.edu/abs/1991ApJ...374..344K'>Kraft, Burrows &amp; Nousek (1991)</a>.</dd>
+      
+      <dt>HR1</dt>
+        <dd>The HR1 hardness ratio = (M-S)/(M+S) where M and S are the medium (1&#8212;2 keV) and soft (0.3&#8212;1 keV) band count-rates. 
+        If both bands had more than 100 photons and an S/N ratio of at least 2 this was calculated simply from this equation, 
+        otherwise the Bayesian approach of <a href='http://adsabs.harvard.edu/abs/2006ApJ...652..610P'>Park et al. (2006)</a> was employed.</dd>
+      <dt>HR1_pos</dt>
+        <dd>The 1-&sigma; positive error on HR1. In a small number of cases where the Bayesian approach of <a href='http://adsabs.harvard.edu/abs/2006ApJ...652..610P'>Park et al. (2006)</a> 
+        was used to derive HR1, the mean HR value lay outside the 1-&sigma; confidence interval. In these cases the HR1_pos error may be negative.</dd>
+      <dt>HR1_neg</dt>
+        <dd>The 1-&sigma; negative error on HR1. In a small number of cases where the Bayesian approach of <a href='http://adsabs.harvard.edu/abs/2006ApJ...652..610P'>Park et al. (2006)</a> 
+        was used to derive HR1, the mean HR value lay outside the 1-&sigma; confidence interval.
+        In these cases the HR1_neg error may be positive.</dd>
+      <dt>HR2</dt>
+        <dd>The HR2 hardness ratio = (H-M)/(H+M) where H and M are the hard (2&#8212;10 keV) and medium (1&#8212;2 keV) band count-rates.
+        If both bands had more than 100 photons and an SNR of at least 2 this was calculated simply from this equation,
+        otherwise the Bayesian approach of <a href='http://adsabs.harvard.edu/abs/2006ApJ...652..610P'>Park et al. (2006)</a> was employed.</dd>
+      <dt>HR2_pos</dt>
+        <dd>The 1-&sigma; positive error on HR2. In a small number of cases where the Bayesian approach of <a href='http://adsabs.harvard.edu/abs/2006ApJ...652..610P'>Park et al. (2006)</a>
+        was used to derive HR2, the mean HR value lay outside the 1-&sigma; confidence interval. In these cases the HR2_pos error may be negative.</dd>
+      <dt>HR2_neg</dt>
+        <dd>The 1-&sigma; negative error on HR2. In a small number of cases where the Bayesian approach of <a href='http://adsabs.harvard.edu/abs/2006ApJ...652..610P'>Park et al. (2006)</a>
+        was used to derive HR2, the mean HR value lay outside the 1-&sigma; confidence interval. In these cases the HR2_neg error may be positive.</dd>      
+        
+      <dt>Rate_band1</dt>
+        <dd>The time-averaged soft-band (0.3&#8212;1 keV) count-rate of the source, in counts per second.</dd>
+      <dt>Rate_band1_pos</dt>
+        <dd>The 1-&sigma; positive error on the time-averaged soft-band (0.3&#8212;1 keV) count-rate of the source. </dd>
+      <dt>Rate_band1_neg</dt>
+        <dd>The 1-&sigma; negative  error on the time-averaged soft-band (0.3&#8212;1 keV) count-rate of the source. </dd>
+      
+      <dt>Rate_band2</dt>
+        <dd>The time-averaged medium-band (1&#8212;2 keV) count-rate of the source, in counts per second.</dd>
+      <dt>Rate_band2_pos</dt>
+        <dd>The 1-&sigma; positive error on the time-averaged medium-band (1&#8212;2 keV) count-rate of the source. </dd>
+      <dt>Rate_band2_neg</dt>
+        <dd>The 1-&sigma; negative  error on the time-averaged medium-band (1&#8212;2 keV) count-rate of the source. </dd>
+      
+      <dt>Rate_band3</dt>
+        <dd>The time-averaged hard-band (2&#8212;10 keV) count-rate of the source, in counts per second.</dd>
+      <dt>Rate_band3_pos</dt>
+        <dd>The 1-&sigma; positive error on the time-averaged hard-band (2&#8212;10 keV) count-rate of the source. </dd>
+      <dt>Rate_band3_neg</dt>
+        <dd>The 1-&sigma; negative  error on the time-averaged hard-band (2&#8212;10 keV) count-rate of the source. </dd>
+        
+      <dt>Counts_band0</dt>
+        <dd>The total number of events (not background subtracted or exposure corrected) in the total-band (0.3&#8212;10 keV) image, in the source extraction region for this source. This is found by summing the counts in the individual observations of the location, not from the stacked image.</dd>
+      <dt>Counts_band1</dt>
+        <dd>The total number of events (not background subtracted or exposure corrected) in the soft-band (0.3&#8212;1 keV) image, in the source extraction region for this source.</dd>
+      <dt>Counts_band2</dt>
+        <dd>The total number of events (not background subtracted or exposure corrected) in the medium-band (1&#8212;2 keV) image, in the source extraction region for this source.</dd>
+      <dt>Counts_band3</dt>
+        <dd>The total number of events (not background subtracted or exposure corrected) in the hard-band (2&#8212;10 keV) image, in the source extraction region for this source.</dd>
+        
+      <dt>BGCounts_band0</dt>
+        <dd>The sum of the background map in the  total-band (0.3&#8212;10 keV)   source extraction region for this source. This is found by summing the maps in the individual observations of the location, not from the stacked image.</dd>
+      <dt>BGCounts_band1</dt>
+        <dd>The sum of the background map in the  soft-band (0.3&#8212;1 keV) image, in the  source extraction region for this source.</dd>
+      <dt>BGCounts_band2</dt>
+        <dd>The sum of the background map in the  medium-band (1&#8212;2 keV) image, in the  source extraction region for this source.</dd>
+      <dt>BGCounts_band3</dt>
+        <dd>The sum of the background map in the  hard-band (2&#8212;10 keV) image, in the  source extraction region for this source.</dd>
+        
+      <dt>RateCF_band0</dt>
+        <dd>The count-rate correction factor in the total band (0.3&#8212;10 keV). This corrects for vignetting, bad columns, pile-up and the finite radius within which counts were extracted.</dd>
+      <dt>RateCF_band1</dt>
+        <dd>The count-rate correction factor in the soft band (0.3&#8212;1 keV). </dd>
+      <dt>RateCF_band2</dt>
+        <dd>The count-rate correction factor in the medium band (1&#8212;2 keV). </dd>
+      <dt>RateCF_band3</dt>
+        <dd>The count-rate correction factor in the hard band (2&#8212;10 keV). </dd>
+        
+      <dt>UL_band0</dt>
+        <dd>The overall 3-&sigma; upper limit on the total-band (0.3&#8212;10 keV) count-rate from the source, derived from the 
+        <code>Counts_band0,</code> <code>BGCounts_band0</code>, <code>RateCF_band0</code> and <code>Exposure</code>
+        columns. If more than 100 net counts (i.e. after background subtraction) were detected, or the number of counts in the source
+        or background exceeded 1000, this was determined using Poisson errors, otherwise it is calculated from the Bayesian method of
+        <a href='http://adsabs.harvard.edu/abs/1991ApJ...374..344K'>Kraft, Burrows &amp; Nousek (1991)</a>. Note that this upper limit value
+        is supplied for all sources, regardless of the strength of the detection.</dd>
+      
+      
+      <dt>UL_band1</dt>
+        <dd>The overall 3-&sigma; upper limit on the soft-band (0.3&#8212;1 keV) count-rate from the source.</dd>
+      <dt>UL_band2</dt>
+        <dd>The overall 3-&sigma; upper limit on the medium-band (1&#8212;2 keV) count-rate from the source.</dd>
+      <dt>UL_band3</dt>
+        <dd>The overall 3-&sigma; upper limit on the hard-band (2&#8212;10 keV) count-rate from the source.</dd>
+      
+      <dt>PeakRate_band0</dt>
+        <dd>The peak count-rate of the source in the total band (0.3&#8212;10 keV). The peak rate is defined as the count-rate
+        in the light curve bin (from per-snapshot or per-obsid binning) with the highest 1-&sigma; lower limit.</dd>
+      <dt>PeakRate_band0_pos</dt>
+        <dd>The 1-&sigma; positive error on the peak total-band (0.3&#8212;10 keV) count-rate of the source.</dd>
+      <dt>PeakRate_band0_neg</dt>
+        <dd>The 1-&sigma; negative error on the peak total-band (0.3&#8212;10 keV) count-rate of the source.</dd>
+        
+      <dt>PeakRate_band1</dt>
+        <dd>The peak count-rate of the source in the soft band (0.3&#8212;1 keV).</dd>
+      <dt>PeakRate_band1_pos</dt>
+        <dd>The 1-&sigma; positive error on the peak total-band (0.3&#8212;1 keV) count-rate of the source.</dd>
+      <dt>PeakRate_band1_neg</dt>
+        <dd>The 1-&sigma; negative error on the peak total-band (0.3&#8212;1 keV) count-rate of the source.</dd>
+      
+      <dt>PeakRate_band2</dt>
+        <dd>The peak count-rate of the source in the soft band (1&#8212;2 keV).</dd>
+      <dt>PeakRate_band2_pos</dt>
+        <dd>The 1-&sigma; positive error on the peak total-band (1&#8212;2 keV) count-rate of the source.</dd>
+      <dt>PeakRate_band2_neg</dt>
+        <dd>The 1-&sigma; negative error on the peak total-band (1&#8212;3 keV) count-rate of the source.</dd>
+      
+      <dt>PeakRate_band3</dt>
+        <dd>The peak count-rate of the source in the soft band (2&#8212;10 keV).</dd>
+      <dt>PeakRate_band3_pos</dt>
+        <dd>The 1-&sigma; positive error on the peak total-band (2&#8212;10 keV) count-rate of the source.</dd>
+      <dt>PeakRate_band3_neg</dt>
+        <dd>The 1-&sigma; negative error on the peak total-band (2&#8212;10 keV) count-rate of the source.</dd>
+      
+        
+    </dl>
+  
+  <p class='back'>[<a class='uint' href='javascript:hideList("rate");'>Hide count-rate columns</a> | <a class='int' href='#sourceTab' >Back to Sources table</a> | <a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr/>
+  </div>
+  
+
+  <!-- VARIABILITY INFORMATION -->
+  
+  <h4 id='sources_var'>Variability information</h4>  
+  <p id='show_var' class='hidden'>There are 12 columns in this group. <a title='Show variability columns' href='javascript:showList("var");'>Show</a>.</p>
+  <p id='hide_var' class='hidden'><a title='Hide variability columns' href='javascript:hideList("var");'>Hide column list</a>.</p>
+  <div id='dl_var'>
+    <dl class='columns' title='Variability columns'>
+      <dt>PvarPchiSnapshot_band0</dt>
+        <dd>The probability that the source is constant between snapshots in the total band (0.3&#8212;10 keV), as derived from the Pearson's &chi;<sup>2</sup> test. The minimum recordable value for this is 1.1&times;10<sup>-16</sup> so values of 0 mean &lt;1.1&times;10<sup>-16</sup>.</dd>
+      <dt>PvarPchiSnapshot_band1</dt>
+        <dd>The probability that the source is constant between snapshots in the soft band (0.3&#8212;1 keV), as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiSnapshot_band2</dt>
+        <dd>The probability that the source is constant between snapshots in the medium band (1&#8212;2 keV), as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiSnapshot_band3</dt>
+        <dd>The probability that the source is constant between snapshots in the hard band (2&#8212;10 keV), as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiSnapshot_HR1</dt>
+        <dd>The probability that the source HR1 hardness ratio is constant between snapshots, as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiSnapshot_HR2</dt>
+        <dd>The probability that the source HR2 hardness ratio is constant between snapshots, as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+        
+        
+      <dt>PvarPchiObsID_band0</dt>
+        <dd>The probability that the source is constant between observations in the total band (0.3&#8212;10 keV), as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiObsID_band1</dt>
+        <dd>The probability that the source is constant between observations in the soft band (0.3&#8212;1 keV), as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiObsID_band2</dt>
+        <dd>The probability that the source is constant between observations in the medium band (1&#8212;2 keV), as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiObsID_band3</dt>
+        <dd>The probability that the source is constant between observations in the hard band (2&#8212;10 keV), as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiObsID_HR1</dt>
+        <dd>The probability that the source HR1 hardness ratio is constant between observations, as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      <dt>PvarPchiObsID_HR2</dt>
+        <dd>The probability that the source HR2 hardness ratio is constant between observations, as derived from the Pearson's &chi;<sup>2</sup> test.</dd>
+      
+        
+        
+    </dl>
+    <p class='back'>[<a class='uint' href='javascript:hideList("var");'>Hide variability columns</a> | <a class='int' href='#sourceTab'>Back to Sources table</a> | <a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+    <hr/>
+  </div>
+  
+  
+  
+  <!-- SPECTRAL INFORMATION -->
+  
+  <h4 id='sources_flux'>Spectral/Flux information</h4>  
+  <p id='show_flux' class='hidden'>There are 112 columns in this group. <a title='Show spectral and flux columns' href='javascript:showList("flux");'>Show</a>.</p>
+  <p id='hide_flux' class='hidden'><a title='Hide spectral and flux columns' href='javascript:hideList("flux");'>Hide column list</a>.</p>
+
+  <div id='dl_flux'>
+    <dl class='columns' title='Spectral columns'>
+    
+      <!-- Summary fields -->
+    
+      <dt>GalacticNH</dt>
+        <dd>The Galactic absorption column density (in cm<sup>-2</sup>) in the direction of the source, determined from <a href='http://adsabs.harvard.edu/abs/2013MNRAS.431..394W'>Willingale et al. (2013)</a>.</dd>
+      
+      <dt>WhichPow</dt>
+        <dd>Which of the available estimates of the power-law spectral ECF and fluxes is given in the summary fields:
+          <table class='chTable' summary='Description of whichPow'>
+            <thead>
+              <tr><th id='whichPow_val'>Value</th><th id='whichPow_meaning'>Source of spectral information</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td headers='whichPow_val'>0</td>
+                <td headers='whichPow_meaning'>Fixed spectrum: power-law with &Gamma;=1.7 and N<sub>H</sub> is <code>GalacticNH</code>.</td>
+              </tr>
+              <tr>
+                <td headers='whichPow_val'>1</td>
+                <td headers='whichPow_meaning'>Power-law spectral values derived from the hardness ratios.</td>
+              </tr>
+              <tr>
+                <td headers='whichPow_val'>2</td>
+                <td headers='whichPow_meaning'>Power-law spectral values taken from a fit to a custom-built spectrum.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </dd>
+
+      <dt>WhichAPEC</dt>
+        <dd>Which of the available estimates of the APEC spectral ECF and fluxes is given in the summary fields:
+          <table class='chTable' summary='Description of whichAPEC'>
+            <thead>
+              <tr><th id='whichAPEC_val'>Value</th><th id='whichAPEC_meaning'>Source of spectral information</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td headers='whichAPEC_val'>0</td>
+                <td headers='whichAPEC_meaning'>Fixed spectrum: APEC with kT=1 keV and N<sub>H</sub> is <code>GalacticNH</code>.</td>
+              </tr>
+              <tr>
+                <td headers='whichAPEC_val'>1</td>
+                <td headers='whichAPEC_meaning'>APEC spectral values derived from the hardness ratios.</td>
+              </tr>
+              <tr>
+                <td headers='whichAPEC_val'>2</td>
+                <td headers='whichAPEC_meaning'>APEC spectral values taken from a fit to a custom-built spectrum.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </dd>
+      
+      <dt>PowECFO</dt>
+        <dd>The counts-to-observed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>)
+        derived from the power-law spectrum indicated by the <code>WhichPow</code> field.</dd>
+      
+      <dt>PowECFU</dt>
+        <dd>The counts-to-unabsorbed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) 
+        derived from the power-law spectrum indicated by the <code>WhichPow</code> field.</dd>
+      
+      <dt>PowFlux</dt>
+        <dd>The observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>Rate_band0</code>*<code>PowECFO</code>.</dd>
+      
+      <dt>PowFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the observed 0.3&#8212;10 keV flux for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>Rate_band0_pos</code>*<code>PowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+      
+      <dt>PowFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the observed 0.3&#8212;10 keV flux for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>Rate_band0_neg</code>*<code>PowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+      
+      <dt>PowUnabsFlux</dt>
+        <dd>The unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>), derived from the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>Rate_band0</code>*<code>PowECFU</code>.</dd>
+      
+      <dt>PowUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the unabsorbed 0.3&#8212;10 keV flux for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>Rate_band0_pos</code>*<code>PowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>PowUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the unabsorbed 0.3&#8212;10 keV flux for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>Rate_band0_neg</code>*<code>PowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+        
+        
+      <dt>APECECFO</dt>
+        <dd>The counts-to-observed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>)
+        derived the APEC spectrum indicated by the <code>WhichAPEC</code> field.</dd>
+
+      <dt>APECECFU</dt>
+        <dd>The counts-to-unabsorbed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>)
+        derived from the APEC spectrum indicated by the <code>WhichAPEC</code> field.</dd>
+
+      <dt>APECFlux</dt>
+        <dd>The observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>Rate_band0</code>*<code>APECECFO</code>.</dd>
+      
+      <dt>APECFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the observed 0.3&#8212;10 keV flux for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>Rate_band0_pos</code>*<code>APECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+      
+      <dt>APECFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the observed 0.3&#8212;10 keV flux for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>Rate_band0_neg</code>*<code>APECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+      
+      <dt>APECUnabsFlux</dt>
+        <dd>The unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>), derived from the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>Rate_band0</code>*<code>APECECFU</code>.</dd>
+      
+      <dt>APECUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the unabsorbed 0.3&#8212;10 keV flux for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>Rate_band0_pos</code>*<code>APECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>APECUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the unabsorbed 0.3&#8212;10 keV flux for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>Rate_band0_neg</code>*<code>APECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+                
+        
+        
+      <dt>PowPeakFlux</dt>
+        <dd>The peak observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>PeakRate_band0</code>*<code>PowECFO</code>.</dd>
+      
+      <dt>PowPeakFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the peak observed 0.3&#8212;10 keV flux for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>PeakRate_band0_pos</code>*<code>PowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+      
+      <dt>PowPeakFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the peak observed 0.3&#8212;10 keV flux for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>PeakRate_band0_neg</code>*<code>PowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      
+      <dt>PowPeakUnabsFlux</dt>
+        <dd>The peak unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>PeakRate_band0</code>*<code>PowECFU</code>.</dd>
+      
+      <dt>PowPeakUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the peak unabsorbed 0.3&#8212;10 keV flux for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>PeakRate_band0_pos</code>*<code>PowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>PowPeakUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the peak unabsorbed 0.3&#8212;10 keV flux for the power-law spectrum indicated by the <code>WhichPow</code> field.
+        This is given by <code>PeakRate_band0_neg</code>*<code>PowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+        
+               
+        
+        
+      <dt>APECPeakFlux</dt>
+        <dd>The peak observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>PeakRate_band0</code>*<code>APECECFO</code>.</dd>
+      
+      <dt>APECPeakFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the peak observed 0.3&#8212;10 keV flux for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>PeakRate_band0_pos</code>*<code>APECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+      
+      <dt>APECPeakFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the peak observed 0.3&#8212;10 keV flux for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>PeakRate_band0_neg</code>*<code>APECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      
+      <dt>APECPeakUnabsFlux</dt>
+        <dd>The peak unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>PeakRate_band0</code>*<code>APECECFU</code>.</dd>
+      
+      <dt>APECPeakUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the peak unabsorbed 0.3&#8212;10 keV flux for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>PeakRate_band0_pos</code>*<code>APECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>APECPeakUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the peak unabsorbed 0.3&#8212;10 keV flux for the APEC spectrum indicated by the <code>WhichAPEC</code> field.
+        This is given by <code>PeakRate_band0_neg</code>*<code>APECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+        
+      <!-- Fixed spectra fields -->
+        
+               
+        
+      <dt>FixedPowECFO</dt>
+        <dd>The counts-to-observed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from a power-law spectrum with a photon index of 1.7
+        absorbed by the Galactic column (from the <code>GalacticNH</code> field).</dd>
+
+      <dt>FixedPowECFU</dt>
+        <dd>The counts-to-unabsorbed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from a power-law spectrum with a photon index of 1.7
+        absorbed by the Galactic column (from the <code>GalacticNH</code> field).</dd>
+
+      <dt>FixedPowFlux</dt>
+        <dd>The observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from a power-law spectrum with a photon index of 1.7 absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0</code>*<code>FixedPowECFO</code>.</dd>
+
+      <dt>FixedPowFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the observed 0.3&#8212;10 keV flux for a power-law spectrum with a photon index of 1.7 absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0_pos</code>*<code>FixedPowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FixedPowFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the observed 0.3&#8212;10 keV flux for a power-law spectrum with a photon index of 1.7 absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0_neg</code>*<code>FixedPowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FixedPowUnabsFlux</dt>
+        <dd>The unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from a power-law spectrum with a photon index of 1.7 absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0</code>*<code>FixedPowECFU</code>.</dd>
+
+      <dt>FixedPowUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the unabsorbed 0.3&#8212;10 keV flux for a power-law spectrum with a photon index of 1.7 absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0_pos</code>*<code>FixedPowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FixedPowUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the unabsorbed 0.3&#8212;10 keV flux for a power-law spectrum with a photon index of 1.7 absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0_neg</code>*<code>FixedPowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+        
+        
+      <dt>FixedAPECECFO</dt>
+        <dd>The counts-to-observed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from an APEC spectrum with a temperature of 1 keV
+        absorbed by the Galactic column (from the <code>GalacticNH</code> field).</dd>
+
+      <dt>FixedAPECECFU</dt>
+        <dd>The counts-to-unabsorbed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from an APEC spectrum with a temperature of 1 keV
+        absorbed by the Galactic column (from the <code>GalacticNH</code> field).</dd>
+
+      <dt>FixedAPECFlux</dt>
+        <dd>The observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from an APEC spectrum with a temperature of 1 keV absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0</code>*<code>FixedAPEECECFO</code>.</dd>
+
+      <dt>FixedAPECFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the observed 0.3&#8212;10 keV flux for an APEC spectrum with a temperature of 1 keV absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0_pos</code>*<code>FixedAPECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FixedAPECFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the observed 0.3&#8212;10 keV flux for an APEC spectrum with a temperature of 1 keV absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0_neg</code>*<code>FixedAPECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FixedAPECUnabsFlux</dt>
+        <dd>The unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from an APEC spectrum with a temperature of 1 keV absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0</code>*<code>FixedAPECECFU</code>.</dd>
+
+      <dt>FixedAPECUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the unabsorbed 0.3&#8212;10 keV flux for an APEC spectrum with a temperature of 1 keV absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0_pos</code>*<code>FixedAPECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FixedAPECUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the unabsorbed 0.3&#8212;10 keV flux for an APEC spectrum with a temperature of 1 keV absorbed by the Galactic column (from the <code>GalacticNH</code> field).
+        This is given by <code>Rate_band0_neg</code>*<code>FixedAPECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+        
+        
+        
+      <!-- Interp spectra fields -->
+        
+        
+      <dt>InterpPowECFO</dt>
+        <dd>The counts-to-observed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from the hardness ratios of the source interpolated on a look-up table of power-law spectra.</dd>
+
+      <dt>InterpPowECFU</dt>
+        <dd>The counts-to-unabsorbed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from the hardness ratios of the source interpolated on a look-up table of power-law spectra.</dd>
+
+      <dt>InterpPowNH</dt>
+        <dd>The absorption column (in cm<sup>-2</sup>) of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of power-law spectra.</dd>
+
+      <dt>InterpPowNH_pos</dt>
+        <dd>The 1-&sigma; positive error absorption column of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of power-law spectra. A value of -1 indicates that this error could not be constrained.</dd>
+
+      <dt>InterpPowNH_neg</dt>
+        <dd>The 1-&sigma; negative error absorption column of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of power-law spectra. A value of +1 indicates that this error could not be constrained.</dd>
+
+      <dt>InterpPowGamma</dt>
+        <dd>The power-law photon index of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of power-law spectra.</dd>
+
+      <dt>InterpPowGamma_pos</dt>
+        <dd>The 1-&sigma; positive error on the power-law photon index of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of power-law spectra. A value of -1 indicates that this error could not be constrained.</dd>
+
+      <dt>InterpPowGamma_neg</dt>
+        <dd>The 1-&sigma; negative error on the power-law photon index of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of power-law spectra. A value of +1 indicates that this error could not be constrained.</dd>
+
+      
+      <dt>InterpPowFlux</dt>
+        <dd>The observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) based on the HR-interpolated power-law spectrum.
+        This is given by <code>Rate_band0</code>*<code>InterpPowECFO</code>.</dd>
+
+      <dt>InterpPowFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the observed 0.3&#8212;10 keV flux derived based on the HR-interpolated power-law spectrum.
+        This is given by <code>Rate_band0_pos</code>*<code>InterpPowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>InterpPowFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the observed 0.3&#8212;10 keV flux derived based on the HR-interpolated power-law spectrum.
+        This is given by <code>Rate_band0_neg</code>*<code>InterpPowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+      
+      <dt>InterpPowUnabsFlux</dt>
+        <dd>The unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) based on the HR-interpolated power-law spectrum.
+        This is given by <code>Rate_band0</code>*<code>InterpPowECFU</code>.</dd>
+        
+
+      <dt>InterpPowUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the unabsorbed 0.3&#8212;10 keV flux derived based on the HR-interpolated power-law spectrum.
+        This is given by <code>Rate_band0_pos</code>*<code>InterpPowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>InterpPowUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the unabsorbed 0.3&#8212;10 keV flux derived based on the HR-interpolated power-law spectrum.
+        This is given by <code>Rate_band0_neg</code>*<code>InterpPowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+        
+
+        
+      <dt>InterpAPECECFO</dt>
+        <dd>The counts-to-observed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from the hardness ratios of the source interpolated on a look-up table of APEC spectra.</dd>
+
+      <dt>InterpAPECECFU</dt>
+        <dd>The counts-to-unabsorbed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from the hardness ratios of the source interpolated on a look-up table of APEC spectra.</dd>
+       
+      <dt>InterpAPECNH</dt>
+        <dd>The absorption column (in cm<sup>-2</sup>) of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of APEC spectra.</dd>
+
+      <dt>InterpAPECNH_pos</dt>
+        <dd>The 1-&sigma; positive error absorption column of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of APEC spectra. A value of -1 indicates that this error could not be constrained.</dd>
+
+      <dt>InterpAPECNH_neg</dt>
+        <dd>The 1-&sigma; negative error absorption column of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of APEC spectra. A value of +1 indicates that this error could not be constrained.</dd>
+
+      <dt>InterpAPECkT</dt>
+        <dd>The APEC plasma temperature (in keV) of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of APEC spectra.</dd>
+
+      <dt>InterpAPECkT_pos</dt>
+        <dd>The 1-&sigma; positive error on the APEC plasma temperature of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of APEC spectra. A value of -1 indicates that this error could not be constrained.</dd>
+
+      <dt>InterpAPECkT_neg</dt>
+        <dd>The 1-&sigma; negative error on the APEC plasma temperature of the spectrum of the source derived from the hardness ratios of the source interpolated on a look-up table of APEC spectra. A value of +1 indicates that this error could not be constrained.</dd>
+
+      <dt>InterpAPECFlux</dt>
+        <dd>The observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) based on the HR-interpolated APEC spectrum.
+        This is given by <code>Rate_band0</code>*<code>InterpAPECECFO</code>.</dd>
+        
+
+      <dt>InterpAPECFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the observed 0.3&#8212;10 keV flux derived based on the HR-interpolated APEC spectrum.
+        This is given by <code>Rate_band0_pos</code>*<code>InterpAPECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>InterpAPECFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the observed 0.3&#8212;10 keV flux derived based on the HR-interpolated APEC spectrum.
+        This is given by <code>Rate_band0_neg</code>*<code>InterpAPECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+      
+      <dt>InterpAPECUnabsFlux</dt>
+        <dd>The unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) based on the HR-interpolated APEC spectrum.
+        This is given by <code>Rate_band0</code>*<code>InterpAPECECFU</code>.</dd>
+        
+      <dt>InterpAPECUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the unabsorbed 0.3&#8212;10 keV flux derived based on the HR-interpolated APEC spectrum.
+        This is given by <code>Rate_band0_pos</code>*<code>InterpAPECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>InterpAPECUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the unabsorbed 0.3&#8212;10 keV flux derived based on the HR-interpolated APEC spectrum.
+        This is given by <code>Rate_band0_neg</code>*<code>InterpAPECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+        
+
+      <dt>P_pow</dt>
+        <dd>If the (HR1,HR2) values of the source lie inside the range allowed by the simple power-law spectrum, this field is 1.
+        Otherwise it is the probability of obtaining the measured hardness ratios and errors if the true spectrum is that which gives (HR1,HR2) closest to the source's values.</dd>
+
+      <dt>P_APEC</dt>
+        <dd>If the (HR1,HR2) values of the source lie inside the range allowed by the simple APEC spectrum, this field is 1.
+        Otherwise it is the probability of obtaining the measured hardness ratios and errors if the true spectrum is that which gives (HR1,HR2) closest to the source's values.</dd>
+
+        
+      <!-- Fitted spectral fields -->
+        
+        
+      <dt>FittedPowECFO</dt>
+        <dd>The counts-to-observed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from an automated power-law spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedPowECFU</dt>
+        <dd>The counts-to-unabsorbed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived from an automated power-law spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedPowNH</dt>
+        <dd>The absorption column (in cm<sup>-2</sup>) of the spectrum of the source from an automated power-law spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedPowNH_pos</dt>
+        <dd>The 1-&sigma; positive error absorption column of the spectrum of the source from an automated power-law spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedPowNH_neg</dt>
+        <dd>The 1-&sigma; negative error absorption column of the spectrum of the source from an automated power-law spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedPowGamma</dt>
+        <dd>The power-law photon index of the spectrum of the source from an automated power-law spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedPowGamma_pos</dt>
+        <dd>The 1-&sigma; positive error on the power-law photon index of the spectrum of the source from an automated power-law spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedPowGamma_neg</dt>
+        <dd>The 1-&sigma; negative error on the power-law photon index of the spectrum of the source from an automated power-law spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+        
+      <dt>FittedPowFlux</dt>
+        <dd>The observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from an automated power-law spectral fit to an automatically-extracted spectrum of the source.
+        This is given by <code>Rate_band0</code>*<code>FittedPowECFO</code>.</dd>
+
+      <dt>FittedPowFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the observed 0.3&#8212;10 keV flux derived from an automated power-law spectral fit to an automatically-extracted spectrum of the source. 
+        This is given by <code>Rate_band0_pos</code>*<code>FittedPowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FittedPowFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the observed 0.3&#8212;10 keV flux derived from an automated power-law spectral fit to an automatically-extracted spectrum of the source. 
+        This is given by <code>Rate_band0_ne</code>*<code>FittedPowECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FittedPowUnabsFlux</dt>
+        <dd>The unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from an automated power-law spectral fit to an automatically-extracted spectrum of the source.
+        This is given by <code>Rate_band0</code>*<code>FittedPowECFO</code>.</dd>
+
+      <dt>FittedPowUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the unabsorbed 0.3&#8212;10 keV flux derived from an automated power-law spectral fit to an automatically-extracted spectrum of the source.
+        This is given by <code>Rate_band0_pos</code>*<code>FittedPowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FittedPowUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the unabsorbed 0.3&#8212;10 keV flux derived from an automated power-law spectral fit to an automatically-extracted spectrum of the source.
+        This is given by <code>Rate_band0_neg</code>*<code>FittedPowECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      
+      <dt>FittedPowCstat</dt>
+        <dd>The Cstatistic from the power-law spectral fit.</dd>
+
+      <dt>FittedPowDOF</dt>
+        <dd>The number of degrees of freedom in the power-law spectral fit.</dd>
+
+      <dt>FittedPowRedChi</dt>
+        <dd>The <a href='http://adsabs.harvard.edu/abs/1996ApJ...471..673C'>Churazov-weighted</a> &chi;<sub>&nu;</sub><sup>2</sup> value of the best fitting power-law spectral model.</dd>
+
+        
+     
+      <dt>FittedAPECECFO</dt>
+        <dd>The counts-to-observed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>) derived  from an automated APEC spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedAPECECFU</dt> 
+        <dd>The counts-to-unabsorbed-flux (0.3&#8212;10 keV) conversion factor (in erg cm<sup>-2</sup> ct<sup>-1</sup>), derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedAPECNH</dt>
+        <dd>The absorption column (in cm<sup>-2</sup>) of the spectrum of the source derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedAPECNH_pos</dt>
+        <dd>The 1-&sigma; positive error absorption column of the spectrum of the source derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedAPECNH_neg</dt>
+        <dd>The 1-&sigma; negative error absorption column of the spectrum of the source derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedAPECkT</dt>
+        <dd>The APEC plasma temperature (in keV) of the spectrum of the source derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedAPECkT_pos</dt>
+        <dd>The 1-&sigma; positive error on the APEC plasma temperature of the spectrum of the source derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedAPECkT_neg</dt>
+        <dd>The 1-&sigma; negative error on the APEC plasma temperature of the spectrum of the source derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.</dd>
+
+      <dt>FittedAPECFlux</dt>
+        <dd>The observed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.
+        This is given by <code>Rate_band0</code>*<code>FittedAPECECFO</code>.</dd>
+
+      <dt>FittedAPECFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the observed 0.3&#8212;10 keV flux derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source. 
+        This is given by <code>Rate_band0_pos</code>*<code>FittedAPECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FittedAPECFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the observed 0.3&#8212;10 keV flux derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source. 
+        This is given by <code>Rate_band0_ne</code>*<code>FittedAPECECFO</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FittedAPECUnabsFlux</dt>
+        <dd>The unabsorbed 0.3&#8212;10 keV flux (in erg cm<sup>-2</sup> s<sup>-1</sup>) derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.
+        This is given by <code>Rate_band0</code>*<code>FittedAPECECFO</code>.</dd>
+
+      <dt>FittedAPECUnabsFlux_pos</dt>
+        <dd>The 1-&sigma; positive error on the unabsorbed 0.3&#8212;10 keV flux derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.
+        This is given by <code>Rate_band0_pos</code>*<code>FittedAPECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      <dt>FittedAPECUnabsFlux_neg</dt>
+        <dd>The 1-&sigma; negative error on the unabsorbed 0.3&#8212;10 keV flux derived from an automated APEC spectral fit to an automatically-extracted spectrum of the source.
+        This is given by <code>Rate_band0_neg</code>*<code>FittedAPECECFU</code>, so does not include uncertainties in the spectral modelling.</dd>
+
+      
+      <dt>FittedAPECCstat</dt>
+        <dd>The Cstatistic from the APEC spectral fit.</dd>
+
+      <dt>FittedAPECDOF</dt>
+        <dd>The number of degrees of freedom in the APEC spectral fit.</dd>
+
+      <dt>FittedAPECRedChi</dt>
+        <dd>The <a href='http://adsabs.harvard.edu/abs/1996ApJ...471..673C'>Churazov-weighted</a> &chi;<sub>&nu;</sub><sup>2</sup> value of the best fitting APEC spectral model.</dd>
+
+      <dt>HasSpec</dt>
+        <dd>Whether there is (1) or is not (0) an automatically-built spectrum for this source.</dd>
+        
+      
+    </dl>
+    <p class='back'>[<a class='uint' href='javascript:hideList("flux");'>Hide spectral/flux columns</a> | <a class='int' href='#sourceTab'>Back to Sources table</a> | <a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+    <hr/>
+  </div>
+  
+  
+  
+  
+   <!-- CROSS CORRELATION INFORMATION -->
+
+  
+  <h4 id='sources_xcorr'>Cross-correlation information</h4>  
+  <p id='show_xcorr' class='hidden'>There are 16 columns in this group. <a title='Show cross correlation columns' href='javascript:showList("xcorr");'>Show</a>.</p>
+  <p id='hide_xcorr' class='hidden'><a title='Hide cross correlation columns' href='javascript:hideList("xcorr");'>Hide column list</a>.</p>
+
+  <div id='dl_xcorr'>
+    <dl class='columns' title='Cross-correlations columns'>
+      
+      <dt>Numxcorr</dt>
+        <dd>The number of sources in the external catalogues against which we performed cross-correlation, 
+        which agree spatially at the 3-&sigma; level.</dd>
+
+      <dt>Numxcorr_slim</dt>
+        <dd>The number of sources in the external catalogues against which we performed cross-correlation, 
+        which agree spatially at the 3-&sigma; level, excluding the 2MASS, USNO-B1 and ALLWISE caltalogues.</dd>
+
+      <dt>MatchInROSHRI</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the Rosat HRI catalogue.</dd>
+
+      <dt>MatchIn2RXS</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the 2RXS catalogue.</dd>
+
+      <dt>MatchIn3XMMDR8</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the 3XMM-DR8 catalogue.</dd>
+
+      <dt>MatchIn3XMMDR8_Stack</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the 3XMM-DR7 catalogue.</dd>
+        
+      <dt>MatchInXMMSL2</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the XMMSL2 catalogue.</dd>
+
+      <dt>MatchInSwiftFT</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the SwiftFT catalogue.</dd>
+
+      <dt>MatchIn1SWXRT</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the 1SWXRT catalogue.</dd>
+
+      <dt>MatchInXRTGRB</dt>
+        <dd>Whether the object does (1) or does not (0) match a <a href='http://www.swift.ac.uk/xrt_positions'>catalogued XRT position of a Gamma Ray Burst</a>.</dd>
+
+      <dt>MatchInSDSSQSO</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the SDSS QSO DR14 catalogue.</dd>
+
+      <dt>MatchIn2MASS</dt>
+        <dd>Whether the object does (1) or does not (0) match a 2MASS source.</dd>
+
+      <dt>MatchInUSNOB1</dt>
+        <dd>Whether the object does (1) or does not (0) match a USNO-B1 source.</dd>
+
+      <dt>MatchIn2CSC</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the 2CSC (Chandra) catalogue.</dd>
+        
+      <dt>MatchIn1SXPS</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the 1SXPS catalogue.</dd>
+        
+      <dt>MatchInALLWISE</dt>
+        <dd>Whether the object does (1) or does not (0) match an object in the ALLWISE catalogue.</dd>
+
+
+
+    </dl>
+    <p class='back'>[<a class='uint' href='javascript:hideList("xcorr");'>Hide cross-correlation columns</a> | <a class='int' href='#sourceTab'>Back to Sources table</a> | <a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  </div>
+  
+  <hr class='heavy'/>
+  
+  
+  <!-- #### GOT HERE #### -->
+
+  
+  <!-- DATASETS -->
+  
+  <h3 id='fieldTab'>Datasets Table</h3>
+  
+  <p>The <em>Datasets</em> table contains information about individual datasets &#8212; observations and stacked images &#8212; which make up 
+  the 2SXPS catalogue.</p>
+
+  <dl class='columns'  title='Datasets table columns'>
+
+    <dt>ObsID</dt>
+      <dd>The Swift obsID of this dataset. Values &gt;10<sup>10</sup> are stacked images.</dd>
+
+    <dt>FieldFlag</dt>
+      <dd>The warning flag associated with this dataset. This is a bitwise flag with the following values:
+        <table class='chTable' summary='Description of field flags'>
+          <thead>
+            <tr><th id='dsfftab_bit'>Bit</th><th id='dsfftab_val'>Value</th><th id='dsfftab_desc'>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers='dsfftab_bit'>0</td>
+              <td headers='dsfftab_val'>1</td>
+              <td headers='dsfftab_desc'>Field contains stray light.</td>
+            </tr>
+            <tr>
+              <td headers='dsfftab_bit'>1</td>
+              <td headers='dsfftab_val'>2</td>
+              <td headers='dsfftab_desc'>Field contains diffuse emission or artifacts.</td>
+            </tr>
+            <tr>
+              <td headers='dsfftab_bit'>2</td>
+              <td headers='dsfftab_val'>4</td>
+              <td headers='dsfftab_desc'>Field contains stray light that could not be adequately modelled.</td>
+            </tr>
+            <tr>
+              <td headers='dsfftab_bit'>3</td>
+              <td headers='dsfftab_val'>8</td>
+              <td headers='dsfftab_desc'>Field contains a bright, piled up source which was not properly fitted in some bands.</td>
+            </tr>
+              <tr>
+                <td headers='fftab_bit'>5</td>
+                <td headers='fftab_val'>32</td>
+                <td headers='fftab_desc'>Screening of artifacts may contain an error. <a href='#ellipseError' class='int'>See explanation</a>.</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </dd>
+      
+    <dt>RA</dt>
+      <dd>The Right Ascension (J2000.0) of the image centre in degrees.</dd>
+
+    <dt>Decl</dt>
+      <dd>The Right Ascension (J2000.0) of the image centre in degrees.</dd>
+
+    <dt>l</dt>
+      <dd>The Galactic longitude of the image centre in degrees.</dd>
+    
+    <dt>b</dt>
+      <dd>The Galactic latitude of the image centre in degrees.</dd>
+
+    <dt>ImageSize</dt>
+      <dd>The side length of the dataset image, in XRT pixels (1 pixel = 2.357&Prime;).</dd>
+      
+    <dt>ExposureUsed</dt>
+      <dd>The total exposure time of the dataset, after filtering, in seconds.</dd>
+    
+    <dt>OriginalExposure</dt>
+      <dd>The total exposure time of the dataset, before filtering, in seconds.</dd>
+    
+    <dt>StartTime_MET</dt>
+      <dd>The start time of the dataset in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>.</dd>
+
+    <dt>StopTime_MET</dt>
+      <dd>The end time of the dataset in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>.</dd>
+     
+    <dt>MidTime_MET</dt>
+      <dd>The mid-time of the dataset in Swift <acronym class='2SXPS_help_MET' title='Mission Elapsed Time'>MET</acronym>.</dd>
+
+    <dt>MidTime_TDB</dt>
+      <dd>The mid-time of the dataset in <acronym class='2SXPS_help_timeHelp' title='Barycentric Dynamical Time'>TDB</acronym>.</dd>
+      
+    <dt>MidTime_MJD</dt>
+      <dd>The mid-time of the dataset in <acronym class='2SXPS_help_timeHelp' title='Modified Julian Date'>MJD</acronym>.</dd>
+
+    <dt>StartTime_UTC</dt>
+      <dd>The start time of the dataset as a UTC calendar date/time.</dd>
+
+    <dt>StopTime_UTC</dt>
+      <dd>The end time of the dataset as a UTC calendar date/time.</dd>
+    
+      
+    <dt>FieldBG_band0</dt>
+      <dd>The mean background value in the total (0.3&#8212;10 keV) band in ct s<sup>-1</sup> pix<sup>-1</sup>. This is measured from the background map before the detected sources have been added to it.</dd>
+
+    <dt>Field BG_band1</dt>
+      <dd>The mean background value in the soft (0.3&#8212;1 keV) band in ct s<sup>-1</sup> pix<sup>-1</sup>. This is measured from the background map before the detected sources have been added to it.</dd>
+
+    <dt>Field BG_band2</dt>
+      <dd>The mean background value in the medium (1&#8212;2 keV) band in ct s<sup>-1</sup> pix<sup>-1</sup>. This is measured from the background map before the detected sources have been added to it.</dd>
+
+    <dt>Field BG_band3</dt>
+      <dd>The mean background value in the hard (2&#8212;10 keV) band in ct s<sup>-1</sup> pix<sup>-1</sup>. This is measured from the background map before the detected sources have been added to it.</dd>
+
+    <dt>Numsrc_band0</dt>
+      <dd>The number of sources detected in the total (0.3&#8212;10 keV) band image of this dataset.</dd>
+
+    <dt>NumOK_band0</dt>
+      <dd>The number of <em>Good</em> and <em>Reasonable</em> sources detected in the total (0.3&#8212;10 keV) band image of this dataset.</dd>
+
+    <dt>MedianNNDist_band0</dt>
+      <dd>The median distance between sources detected in the total (0.3&#8212;10 keV) band image of this dataset, in arc seconds.</dd>
+
+    <dt>Numsrc_band1</dt>
+      <dd>The number of sources detected in the soft (0.3&#8212;1 keV) band image of this dataset.</dd>
+
+    <dt>NumOK_band1</dt>
+      <dd>The number of <em>Good</em> and <em>Reasonable</em> sources detected in the soft (0.3&#8212;1 keV) band image of this dataset.</dd>
+
+    <dt>MedianNNDist_band1</dt>
+      <dd>The median distance between sources detected in the soft (0.3&#8212;1 keV) band image of this dataset, in arc seconds.</dd>
+
+    <dt>Numsrc_band2</dt>
+      <dd>The number of sources detected in the medium (1&#8212;2 keV) band image of this dataset.</dd>
+
+    <dt>NumOK_band2</dt>
+      <dd>The number of <em>Good</em> and <em>Reasonable</em> sources detected in the medium (1&#8212;2 keV) band image of this dataset.</dd>
+
+    <dt>MedianNNDist_band2</dt>
+      <dd>The median distance between sources detected in the medium (1&#8212;2 keV) band image of this dataset, in arc seconds.</dd>
+  
+    <dt>Numsrc_band3</dt>
+      <dd>The number of sources detected in the hard (1&#8212;10 keV) band image of this dataset.</dd>
+
+    <dt>NumOK_band3</dt>
+      <dd>The number of <em>Good</em> and <em>Reasonable</em> sources detected in the hard (1&#8212;10 keV) band image of this dataset.</dd>
+
+    <dt>MedianNNDist_band3</dt>
+      <dd>The median distance between sources detected in the hard (2&#8212;10 keV) band image of this dataset, in arc seconds.</dd>
+
+    
+    <dt>NumberOfSnapshots</dt>
+      <dd>The number of snapshots in the dataset.</dd>
+
+    <dt>AstromErr</dt>
+      <dd>If the astrometry of this image could be determined by matching the XRT sources with the 2MASS catalogue,
+		  this gives the 90% confidence radial error associated with that astrometry.</dd>
+
+		<dt>CRVAL1_corr</dt>
+		  <dd>The <code>CRVAL1</code> WCS reference value for the dataset derived from the XRT-2MASS astrometric solution.</dd>
+		
+    <dt>CRVAL2_corr</dt>
+		  <dd>The <code>CRVAL2</code> WCS reference value for the dataset derived from the XRT-2MASS astrometric solution.</dd>
+		
+    <dt>CROTA_2_corr</dt>
+		  <dd>The <code>CROTA_2</code> WCS reference value for the dataset derived from the XRT-2MASS astrometric solution.</dd>
+  
+  </dl>
+  
+  <p class='back'>[<a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr class='heavy'/>     
+   
+  
+  
+  <!-- DETECTIONS -->
+  
+  
+  
+  <h3 id='detTab'>Detections Table</h3>
+  
+  <p>The <em>Detections</em> table contains details of the specific detections that comprise the catalogue. Each 
+  source in the <a class='int' href='#sourceTab'>Sources</a> table has at least one entry in this detections table; most sources have 
+  multiple entries as they were detected in more than one band or dataset. The information in the detections table relates
+  to the specific detection, not to the unique source as a whole. The fields in this table, and their definitions are given below.</p>
+  
+  <dl class='columns' title='Detections table columns'>
+    <dt>DetectionID</dt>
+      <dd>The unique identifier of this detection.</dd>
+    
+    <dt>2SXPS_ID</dt>
+      <dd>The <code>2SXPS_ID</code> value in the sources table of the unique source to which this detection relates.</dd>
+      
+    <dt>SourceNo</dt>
+      <dd>The identifier of this detection within the specific dataset and energy band in which it occurred.</dd>
+
+    <dt>Band</dt>
+      <dd>The band in which this detection occurred, as an integer:
+        <table class='chTable' summary='Description of bands'>
+            <thead>
+              <tr><th id='bandTab_val'>Value</th><th id='bandTab_name'>Band name</th><th id='bandTab_en'>Energy range</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td headers='bandTab_val'>0</td>
+                <td headers='bandTab_name'>Total</td>
+                <td headers='bandTab_en'>0.3&#8212; 10 keV</td>
+              </tr>
+              <tr>
+                <td headers='bandTab_val'>1</td>
+                <td headers='bandTab_name'>Soft</td>
+                <td headers='bandTab_en'>0.3&#8212; 1 keV</td>
+              </tr>
+              <tr>
+                <td headers='bandTab_val'>2</td>
+                <td headers='bandTab_name'>Medium</td>
+                <td headers='bandTab_en'>1&#8212; 2 keV</td>
+              </tr>
+              <tr>
+                <td headers='bandTab_val'>3</td>
+                <td headers='bandTab_name'>Hard</td>
+                <td headers='bandTab_en'>2&#8212; 10 keV</td>
+              </tr>
+            </tbody>
+          </table>
+      
+      </dd>
+    
+    <dt>ObsID</dt>
+      <dd>The Swift obsID of this dataset. Values &gt;10<sup>10</sup> are stacked images. This corresponds to an entry in the &lsquo;Datasets&rsquo; table.</dd>
+
+    <dt>CorrectedExposure</dt>
+      <dd>The actual exposure in this dataset at the position of this detection.</dd>
+      
+    <dt>ExposureFraction</dt>
+      <dd>The fractional exposure at the position of this detection; that is, the <code>CorrectedExposure</code> value divided by the
+      nominal exposure of the dataset.</dd>
+    
+    <dt>OffAxisAngle</dt>
+      <dd>The mean angular distance of the detection from the XRT boresight, in arc minutes, in this specific dataset and energy band. This is calculated only from the snapshots
+          during which source is inside the field of view. A value of -1 indicates that the source centre is never in the field of view (i.e. it was detected
+          and localised via the PSF wings).</dd>
+          
+    <dt>RA</dt>
+      <dd>The Right Ascension (J2000) of this detection, using the astrometry from the on-board star trackers, in decmial degrees.</dd>
+
+    <dt>RA_pos</dt>
+      <dd>The 1-&sigma; positive uncertainty on the RA, in decimal degrees.</dd>
+
+    <dt>RA_neg</dt>
+      <dd>The 1-&sigma; negative uncertainty on the RA, in decimal degrees.</dd>
+          
+    <dt>Decl</dt>
+      <dd>The declination (J2000) of this detection, using the astrometry from the on-board star trackers, in decmial degrees.</dd>
+
+    <dt>Decl_pos</dt>
+      <dd>The 1-&sigma; positive uncertainty on the declination, in decimal degrees.</dd>
+
+    <dt>Decl_neg</dt>
+      <dd>The 1-&sigma; negative uncertainty on the declination, in decimal degrees.</dd>
+      
+    <dt>Err90</dt>
+      <dd>The 90% confidence radial position error, including systematic error, using the astrometry from the on-board star trackers.
+          This is derived from the RA and Decl errors above and has been converted to 90% confidence using Rayleigh statistics, with the 3.5&prime;&prime;
+          astrometric systematic error from the star trackers added in quadrature. For the sources where one of the individual RA/Dec pos/neg
+          errors was unavailable, the statistical radial 90% confidence error was set to be 11.301&prime;&prime;/&radic;N (where N is the number
+          of events used in the PSF fit) and the systematic error was combined with this.</dd>
+
+    <dt>RA_corrected</dt>
+      <dd>The Right Ascension (J2000) of this detection, using the XRT-2MASS astrometry, in decimal degrees.</dd>
+
+    
+    <dt>Decl_corrected</dt>
+      <dd>The declination (J2000) of this detection, using the XRT-2MASS astrometry, in decimal degrees.</dd>
+
+    <dt>Err90_corrected</dt>
+      <dd>The 90% confidence radial position error, derived as for the <code>Err90</code> field above, but where the systematic error
+        is taken from the X-ray/2MASS rectification process and not the on-board star trackers.</dd>
+        
+    <dt>l</dt>
+      <dd>Galactic longitude of the detection, based on the star tracker astrometry, in decimal degrees.</dd>
+      
+    <dt>b</dt>
+      <dd>Galactic latitude of the detection, based on the star tracker astrometry, in decimal degrees.</dd>
+        
+    <dt>l_corrected</dt>
+      <dd>Galactic longitude of the detection, based on the XRT-2MASS astrometry, in decimal degrees.</dd>
+      
+    <dt>b_corrected</dt>
+      <dd>Galactic latitude of the detection, based on the XRT-2MASS astrometry, in decimal degrees.</dd>
+        
+
+    <dt>IMG_X</dt>
+      <dd>The <code>sky</code> x position of the source in the specific dataset and energy band shown.</dd>
+
+    <dt>IMG_Y</dt>
+      <dd>The <code>sky</code> y position of the source in the specific dataset and energy band shown.</dd>
+     
+    <dt>NearestNeighbour</dt>
+      <dd>The distance in arc seconds to the nearest source also detected in this dataset and energy band. If no other sources are detected this is -1.</dd>
+
+    <dt>NearestOKNeighbour</dt>
+      <dd>The distance in arc seconds to the nearest source flagged as <em>Good</em> or <em>Reasonable</em> also detected in this dataset and energy band. If no such sources are detected this is -1.</dd>
+
+          
+    <dt id='detFlagDef'>DetFlag</dt>
+      <dd>The detection flag from this specific detections. 
+        The basic values are 0, 1, or 2, meaning <em>Good</em>, <em>Reasonable</em> or <em>Poor</em> respectively.
+        Higher values mean that an extra warning is associated with the source.
+        This warning is bitwise, defined as follows:         
+        <table class='chTable' summary='Description of field flags'>
+          <thead>
+            <tr><th id='detdftab_bit'>Bit</th><th id='detdftab_val'>Value</th><th id='detdftab_desc'>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers='detdftab_bit'>2</td>
+              <td headers='detdftab_val'>4</td>
+              <td headers='detdftab_desc'>The source position is consistent with that of a known extended source.</td>
+            </tr>
+            <tr>
+              <td headers='detdftab_bit'>3</td>
+              <td headers='detdftab_val'>8</td>
+              <td headers='detdftab_desc'>The source is likely an alias of a badly-fitted piled up source.</td>
+            </tr>
+            <tr>
+              <td headers='detdftab_bit'>4</td>
+              <td headers='detdftab_val'>16</td>
+              <td headers='detdftab_desc'>The source lies in a region marked as contaminated during the visual screening.</td>
+            </tr>
+          </tbody>
+        </table>  
+      </dd>
+      
+    <dt>OpticalLoadingWarning</dt>
+      <dd>If an optical source
+      exists near the detection, and is <a href='/analysis/xrt/optical_loading.php'>bright enough to cause optical loading</a>
+      then this field indicates how many magnitudes brighter than the optical loading limit that source is, otherwise it is zero.
+      </dd>
+    
+    <dt>StrayLightWarning</dt>
+      <dd>This is set to one if the detections occured within 30 pixels of fitted stray light emission, otherwise zero.</dd>
+    
+    <dt>NearBrightSourceWarning</dt>
+      <dd>This is set to one if the background level at the detection location exceeded 10<sup>-3</sup> ct s<sup>-1</sup> pixel<sup>-1</sup>, i.e.
+      was likely in the wings of a bright source, otherwise zero.</dd>
+        
+    <dt>MatchesKnownExtended</dt>
+      <dd>Whether the position of this detection matches that of a known extended source.</dd>
+    
+    <dt>PileupFitted</dt>
+      <dd>Whether pile up was deemed necessary, and therefore the parameters reported come from the piled up fit.</dd>
+      
+    <dt>SNR</dt>
+      <dd>The signal-to-noise ratio of the detection (from the cell-detect pass).</dd>
+    
+    <dt>CtsInPSFFit</dt>
+      <dd>The number of counts in the image in the region over which the final PSF fit was performed. This will include
+      counts from the source and background.</dd>
+    
+    <dt>BGRateInPSFFit</dt>
+      <dd>The mean count-rate in the background map in the region over which the final PSF fit was performed.</dd>
+
+    <dt>Cstat</dt>
+      <dd>The Cstat from the final PSF, from which the detection parameters were taken.</dd>
+
+    <dt>Cstat_nosrc</dt>
+      <dd>The Cstat calculated assuming no source was present.</dd>
+
+    <dt>L_src</dt>
+      <dd>The likelihood value that this is a real source, not a background fluctuation.</dd>
+
+    <dt>Cstat_flat</dt>
+      <dd>The Cstat calculated assuming a spatially uniform increase above the background.</dd>
+
+    <dt>Lflag</dt>
+      <dd>The likelihood value associated with Cstat_flat</dd>
+
+    <dt>FracPix</dt>
+      <dd>The fraction of the pixels within the PSF fit region which were exposed.</dd>
+
+    <dt>Pileup_S</dt>
+      <dd>The best-fitting <em>S</em> value of the pile up model. This is reported even if the pile up fit
+      was not deemed to be an improvement and was not used.</dd>
+
+    <dt>Pileup_l</dt>
+      <dd>The best-fitting <em>l</em> value of the pile up model. This is reported even if the pile up fit
+      was not deemed to be an improvement and was not used.</dd>
+
+    <dt>Pileup_c</dt>
+      <dd>The best-fitting <em>c</em> value of the pile up model. This is reported even if the pile up fit
+      was not deemed to be an improvement and was not used.</dd>
+
+    <dt>Pileup_tau</dt>
+      <dd>The best-fitting <em>&tau;</em> value of the pile up model. This is reported even if the pile up fit
+      was not deemed to be an improvement and was not used.</dd>
+
+    <dt>Cstat_altPileup</dt>
+      <dd>The Cstat from the PSF fit which was not used. That is, if <code>PileupFitted</code> is 1 (the pile up fit was used)
+      this column contains the Cstat obtained from the non-piled-up fit, and vice versa. 
+      </dd>
+
+    <dt>PSF_Fit_Radius</dt>
+      <dd>The radius of the circular region over which PSF fitting was carried out, in XRT pixels (1 pixel = 2.357&Prime;)</dd>
+
+    <dt>CellDetect_BoxWidth</dt>
+      <dd>The full width of the cell-detect box in which this object was detected, and for which the <code>SNR</code> value was
+      computed, in XRT pixels.</dd>
+
+    <dt>Rate</dt>
+      <dd>The mean count rate of this detection (i.e. in this dataset and band), corrected for pile up, vignetting, bad columns etc.</dd>
+
+    <dt>Rate_pos</dt>
+      <dd>The 1-&sigma; positive uncertainty on the count-rate.</dd>
+
+    <dt>Rate_neg</dt>
+      <dd>The 1-&sigma; negative uncertainty on the count-rate.</dd>
+
+    <dt>CtsInRate</dt>
+      <dd>The total number of counts in the image in the region used to determine the count-rate.</dd>
+
+    <dt>BgCtsInRate</dt>
+      <dd>The total number of counts in the background map in the region used to determine the count-rate.</dd>
+
+    <dt>Rate_CF</dt>
+      <dd>The PSF correction factor used to correct the count rate for pile up, vignetting, bad columns etc.</dd>
+
+    <dt>BGRateinRate</dt>
+      <dd>The mean background count-rate at the position of the detection.</dd>
+    
+    <dt>OrigErr90</dt>
+        <dd>In the initial release of 2SXPS the statsitical component of the error was a factor of 1.5 too large, due to an error in
+        the conversion from 1-&sigma; to 90% confidence. This has now been corrected, however the value originally released
+        (and used in cross correlation) is given in this field.</dd>
+  
+    <dt>OrigErr90_corrected</dt>
+        <dd>As OrigErr90, but the astrometrically corrected (using XRT and 2MASS) version.</dd>
+    
+  </dl>
+  
+  <p class='back'>[<a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr class='heavy'/>  
+  
+   
+  <!-- XCORR -->
+   
+  <h3 id='xcorrTab'>Cross Correlations Table</h3>
+  
+  <p>The <em>Cross correlations</em> table contains details of the cross correlation between the 1SXPS sources and other catalogues.</p>
+
+  <dl class='columns'  title='Cross correlation table columns'>
+   
+    <dt>2SXPS_ID</dt>
+      <dd>The ID of the 2SXPS source.</dd>
+    
+    <dt>ExtCat_ID</dt>
+      <dd>The name of the matched source in the external catalogue.</dd>
+    
+    <dt>Catalogue</dt>
+      <dd>The name of the catalogue in which the match occurs.</dd>
+    
+    <dt>Distance</dt>
+      <dd>The distance, in arc seconds, between the 2SXPS source and the external catalogue source.</dd>
+    
+    <dt>RA</dt>
+      <dd>The Right Ascension (J2000), in decimal degrees, of the source in the external catalogue.</dd>
+    
+    <dt>Decl</dt>
+      <dd>The declination (J2000), in decimal degrees, of the source in the external catalogue.</dd>
+    
+    <dt>Err90</dt>
+      <dd>The 90% confidence radial error in the external catalogue position (if available). Where necessary, this has been converted from
+          a 1-&sigma; error using Rayleigh statistics, and has had any relevant systematic error added.</dd>
+	</dl>
+
+  
+  <p class='back'>[<a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+  <hr class='heavy'/>  
+  
+  <!-- ISSUES -->
+  
+  <h2 id='issues'>Known issues and problems</h2>  
+  
+  <p>While every attempt was made to guarantee the accuracy of all of the data in this catalogue,
+  some issues have since been identified, and where possible, mitigated. These are detailed below.</p>
+  
+  <dl title='bugs' id='bugList' class='columns'>
+  
+    <dt id='badArtFlag'>Incorrect flagging of some sources affected by diffuse emission.</dt>
+      <dd>For fields in which areas of diffuse emission or artifacts were identified by human inspection and
+      described by an elliptical region, the flagging of sources was incorrect. The elliptical region
+      applied to identify affected sources was rotated by 90&deg; compared to the correct orientation.
+      Thus, some detections in those fields have a <a class='int' href='#detFlagDef'>DetFlag</a> value
+      with bit 4 incorrectly (un)set. <strong>Affected fields have bit
+      5 (value 32) set in their <a class='int' href='#fieldFlagDef'>FieldFlag</a>. This issue has been fixed for future catalogues.</strong></dd>
+    
+    <dt>Poor pile-up correction in some light-curve bins.</dt>
+     
+     <dd>In a small number of cases, the pile up fitting to the soft, medium or hard energy bands is unreliable, to a
+      degree that the count-rate in a specific observation and band is unreliable. This is simply a result of the stochastic
+      nature of fitting pile up and determining whether the piled-up or non-piled up fit is better. There are 
+      two problematic cases: when an object is found to be piled up in a sub-band but not the total band; or the pile-up correction
+      factors in the total band and the sub-band differ by more than 50%. In these cases the light curve bin
+      is flagged, and by default is excluded from the light curve displayed / downloaded; you have to specifically 
+      request to include these bins.</dd>
+    
+    <dt>Source blending in crowded fields</dt>
+      <dd>The process of identifying unique sources is a two-step process. The first step merges detections across the different
+      bands <em>within the same dataset</em> into a list of unique objects in that dataset. In the second step, these &ldquo;obsSources&rdquo;
+      are merged across all datasets into a unique source list. An error has been identified in the first step, whereby distinct by nearby
+      detections in the same band can associated with the same object: being distinct detections in the same band they must, in fact,
+      be distinct objects. This means that the number of sources in the catalogue is slightly underestimated.
+      This issue has been fixed for future catalogues.</dd>
+    
+  </dl>
+  
+  <hr/>
+  
+    <p class='back'>[<a class='int' href='#top'>Back to top</a> | <a href='index.php'>2SXPS index</a>]</p>
+
+  
+  
+      <div id="footer">        <div class="validator">
+          <a href="https://validator.w3.org/check?uri=referer"><img
+            src="https://www.w3.org/Icons/valid-xhtml10"
+            alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+        </div>        <p>
+          UK Swift Science Data Centre<br/>
+          Last updated <span id='PageFootDate'>2019 November 12</span><br/>  
+          Web page maintained by Phil Evans<br/>
+          E-mail: <a href="mailto:swifthelp@le.ac.uk">swift help</a><br/>
+          Please read our <a href='/GDPR.php'>privacy notice</a>.
+        </p>
+
+      </div>    </div>
+  </body></html>

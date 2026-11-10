@@ -1,0 +1,128 @@
+[
+  {
+    "file": "epsf_D1_spx_cal-epsf-v1-2026-191.fits",
+    "uuid": "019f4f97-41f1-7f7c-a94b-cfc0f1d4c9c8",
+    "official_md5": "md5:6c6bbc7f03c062bbdc0f781fd58598a7",
+    "local_md5": "6c6bbc7f03c062bbdc0f781fd58598a7",
+    "match": true
+  },
+  {
+    "file": "epsf_D2_spx_cal-epsf-v1-2026-191.fits",
+    "uuid": "019f4f97-58e6-7f5d-a26f-24be8ba2ae7d",
+    "official_md5": "md5:4271972259cb7f0c352e8140af073be8",
+    "local_md5": "4271972259cb7f0c352e8140af073be8",
+    "match": true
+  },
+  {
+    "file": "epsf_D4_spx_cal-epsf-v1-2026-191.fits",
+    "uuid": "019f4f97-864d-7bee-8722-a634bea7288f",
+    "official_md5": "md5:4f9486e02e22d26abff5f3f084de4a89",
+    "local_md5": "4f9486e02e22d26abff5f3f084de4a89",
+    "match": true
+  },
+  {
+    "file": "epsf_D5_spx_cal-epsf-v1-2026-191.fits",
+    "uuid": "019f4f97-9ccf-74f0-878e-c4043f47c958",
+    "official_md5": "md5:d9dae7946639a301cdf0723adcc6e93f",
+    "local_md5": "d9dae7946639a301cdf0723adcc6e93f",
+    "match": true
+  },
+  {
+    "file": "epsf_D6_spx_cal-epsf-v1-2026-191.fits",
+    "uuid": "019f4f97-b309-70c9-ac48-c9f75b692223",
+    "official_md5": "md5:4c15b66f86af4197fc855c94201e266c",
+    "local_md5": "4c15b66f86af4197fc855c94201e266c",
+    "match": true
+  },
+  {
+    "file": "solid_angle_pixel_map_D1_spx_cal-sapm-v2-2025-164.fits",
+    "uuid": "085ce85e-426e-45c7-93c5-93873d4023c6",
+    "official_md5": "md5:df405f0cf68d42987bff5cf09d592ca8",
+    "local_md5": "df405f0cf68d42987bff5cf09d592ca8",
+    "match": true
+  },
+  {
+    "file": "solid_angle_pixel_map_D2_spx_cal-sapm-v2-2025-164.fits",
+    "uuid": "1b0fa11f-1fda-4a07-9933-f7a2ce1bf4a9",
+    "official_md5": "md5:591c52fd85e266d80ec57be929387482",
+    "local_md5": "591c52fd85e266d80ec57be929387482",
+    "match": true
+  },
+  {
+    "file": "solid_angle_pixel_map_D3_spx_cal-sapm-v2-2025-164.fits",
+    "uuid": "4aca4d19-a18a-4071-af7e-0a5820c936a2",
+    "official_md5": "md5:8f1134dba90a544f3124e034e930f37c",
+    "local_md5": "8f1134dba90a544f3124e034e930f37c",
+    "match": true
+  },
+  {
+    "file": "solid_angle_pixel_map_D4_spx_cal-sapm-v2-2025-164.fits",
+    "uuid": "9e24d106-a1f7-4fa8-9f23-473fc0d55c50",
+    "official_md5": "md5:9a5afbbb5a5cbbcef7c188d673598383",
+    "local_md5": "9a5afbbb5a5cbbcef7c188d673598383",
+    "match": true
+  },
+  {
+    "file": "solid_angle_pixel_map_D5_spx_cal-sapm-v2-2025-164.fits",
+    "uuid": "aa2a51c0-ef6e-45aa-924c-70e4aba3f7ad",
+    "official_md5": "md5:f6076f2270212e18d61c24442237c926",
+    "local_md5": "f6076f2270212e18d61c24442237c926",
+    "match": true
+  },
+  {
+    "file": "solid_angle_pixel_map_D6_spx_cal-sapm-v2-2025-164.fits",
+    "uuid": "6276e267-816d-4ee3-bbfa-911e910677bb",
+    "official_md5": "md5:c49498f326f9b10bf48cb884f312e12c",
+    "local_md5": "c49498f326f9b10bf48cb884f312e12c",
+    "match": true
+  },
+  {
+    "file": "spectral_wcs_D1_spx_cal-wcs-v4-2025-254.fits",
+    "uuid": "cd042489-a2c5-49ca-97f5-4bbf880d9900",
+    "official_md5": "md5:d42200e941c2b6aae763c577ef2b2772",
+    "local_md5": "d42200e941c2b6aae763c577ef2b2772",
+    "match": true
+  },
+  {
+    "file": "spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+    "uuid": "a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+    "official_md5": "md5:21add77837d658e3dfe4bcbd73b4af3d",
+    "local_md5": "21add77837d658e3dfe4bcbd73b4af3d",
+    "match": true
+  },
+  {
+    "file": "spectral_wcs_D3_spx_cal-wcs-v4-2025-254.fits",
+    "uuid": "0d47d467-abe7-4583-b55d-3e9357b06aae",
+    "official_md5": "md5:48bc4b6f7f242bdd6dad6af9254655c5",
+    "local_md5": "48bc4b6f7f242bdd6dad6af9254655c5",
+    "match": true
+  },
+  {
+    "file": "spectral_wcs_D4_spx_cal-wcs-v4-2025-254.fits",
+    "uuid": "4cf935ad-6e0a-4075-a642-198bc6a728e6",
+    "official_md5": "md5:ec330de1bf93afe4e8fcfbd9f99d60b0",
+    "local_md5": "ec330de1bf93afe4e8fcfbd9f99d60b0",
+    "match": true
+  },
+  {
+    "file": "spectral_wcs_D5_spx_cal-wcs-v4-2025-254.fits",
+    "uuid": "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b",
+    "official_md5": "md5:56e59e580a56a626660c1fca72f3602d",
+    "local_md5": "56e59e580a56a626660c1fca72f3602d",
+    "match": true
+  },
+  {
+    "file": "spectral_wcs_D6_spx_cal-wcs-v4-2025-254.fits",
+    "uuid": "2dc965d6-bad3-4916-83ca-54e9e9cfcbd3",
+    "official_md5": "md5:3bedd7252720b543f60db42bbf653e17",
+    "local_md5": "3bedd7252720b543f60db42bbf653e17",
+    "match": true
+  },
+  {
+    "file": "epsf_D3_spx_cal-epsf-v2-2026-191.fits",
+    "uuid": "019f4f97-fd05-77b6-939a-bbce423218bb",
+    "official_md5": "md5:0acf3f094d70f1bca51a71aa8452c491",
+    "local_md5": "0acf3f094d70f1bca51a71aa8452c491",
+    "match": true
+  }
+]

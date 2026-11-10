@@ -1,0 +1,49 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:44:49 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:44:49	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=II%2F319%2Flas9&-c=118.69117410685+%2B16.694621231895&-c.rs=10&-out.all=&-out.max=500	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=10.	
+#Constraint -out.max=500
+
+#RESOURCE=yCat_2319
+#Name: II/319
+#Title: UKIDSS-DR9 LAS, GCS and DXS Surveys (Lawrence+ 2012)
+#INFO	ivoid=ivo://cds.vizier/ii/319	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/319	    IVOID of underlying data collection
+#INFO	creator=Lawrence A.	    First author or institution
+#INFO	cites=bibcode:2007MNRAS.379.1599L	    Article or Data origin sources
+#INFO	journal=MNRA	    Journal name
+#INFO	original_date=2007	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/319	    Dataset landing page
+#INFO	publication_date=2025-01-04	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	II_319_las9:
+#Name: II/319/las9
+#Title: the UKIDSS-DR9 Large Area Survey (on a total of 82,655,526 sources)
+#Column	ULAS	(a19)	Name of source in survey (G5)	[ucd=meta.id;meta.main]
+#Column	m	(I1)	[1/2] "2" indicates a duplicated source (G6)	[ucd=meta.code.multip]
+#Column	RAJ2000	(F10.6)	Right ascension (J2000), at Epoch	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	Declination (J2000), at Epoch	[ucd=pos.eq.dec;meta.main]
+#Column	Ymag	(F6.3)	? UKIDSS Y default magnitude (yAperMag3) (G1)	[ucd=phot.mag;em.IR.J]
+#Column	e_Ymag	(F6.3)	? Mean error on Ymag (yAperMag3Err)	[ucd=stat.error;phot.mag]
+#Column	Jmag1	(F7.3)	? UKIDSS J magnitude in the first epoch (j_1AperMag3) (G1)	[ucd=phot.mag;em.IR.J]
+#Column	e_Jmag1	(F6.3)	? Mean error on Jmag1 (j_1AperMag3Err)	[ucd=stat.error;phot.mag]
+#Column	Jmag2	(F6.3)	? UKIDSS J magnitude in the second epoch (j_2AperMag3) (G1)	[ucd=phot.mag;em.IR.J]
+#Column	e_Jmag2	(F6.3)	? Mean error on Jmag2 (j_2AperMag3Err)	[ucd=stat.error;phot.mag]
+#Column	Hmag	(F6.3)	? UKIDSS H default magnitude (hAperMag3) (G1)	[ucd=phot.mag;em.IR.H]
+#Column	e_Hmag	(F6.3)	? Mean error on Hmag (hAperMag3Err)	[ucd=stat.error;phot.mag]
+#Column	Kmag	(F6.3)	? UKIDSS K default magnitude (kAperMag3) (G1)	[ucd=phot.mag;em.IR.K]
+#Column	e_Kmag	(F6.3)	? Mean error on Kmag (kAperMag3Err)	[ucd=stat.error;phot.mag]
+#Column	Epoch	(F9.4)	Epoch of position measurement (epoch)	[ucd=time.epoch]
+#Column	pmRA	(F7.1)	? Proper motion in RA direction (muRa)	[ucd=pos.pm;pos.eq.ra]
+#Column	pmDE	(F7.1)	? Proper motion in Dec direction (muDec)	[ucd=pos.pm;pos.eq.dec]
+#Column	cl	(I2)	[-3,1] Merged source class (mergedClass) (G2)	[ucd=meta.code.class;src.class.starGalaxy]

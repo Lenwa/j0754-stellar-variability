@@ -1,0 +1,7 @@
+numpy==2.5.4
+matplotlib==3.11.2
+astropy==8.0.2
+requests==2.34.2
+pyarrow==26.0.1
+photutils==3.1.1
+scipy==1.18.1

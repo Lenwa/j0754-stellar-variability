@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "reduction": "local",
+      "season": "2025",
+      "n": 81,
+      "n_ref": 5,
+      "n_co": 7,
+      "best": {
+        "reduction": "local",
+        "season": "2025",
+        "model": "ckm10_4750.fits",
+        "gravity": "g30",
+        "av": 0.25,
+        "scale": 1995138858.1535282,
+        "nearIR_log_rms": 0.033884272435740326,
+        "CO_reference_residual_index": 0.9993219444283735,
+        "reference_median_obs_model": 0.9951508607215775,
+        "CO_median_obs_model": 0.9944760931358564
+      },
+      "compatible_cases": 450,
+      "compatible_CO_index_range": [
+        0.9248623211720655,
+        1.1509422150893298
+      ]
+    },
+    {
+      "reduction": "local",
+      "season": "2026",
+      "n": 79,
+      "n_ref": 6,
+      "n_co": 9,
+      "best": {
+        "reduction": "local",
+        "season": "2026",
+        "model": "ckp00_4750.fits",
+        "gravity": "g30",
+        "av": 0.2,
+        "scale": 1972704047.8274455,
+        "nearIR_log_rms": 0.034692428956890814,
+        "CO_reference_residual_index": 1.0547329905117673,
+        "reference_median_obs_model": 1.0330060747911043,
+        "CO_median_obs_model": 1.0895455864812438
+      },
+      "compatible_cases": 392,
+      "compatible_CO_index_range": [
+        0.9273048788676219,
+        1.1532698838852768
+      ]
+    },
+    {
+      "reduction": "native",
+      "season": "2025",
+      "n": 81,
+      "n_ref": 5,
+      "n_co": 8,
+      "best": {
+        "reduction": "native",
+        "season": "2025",
+        "model": "ckm10_4750.fits",
+        "gravity": "g30",
+        "av": 0.30000000000000004,
+        "scale": 1980136720.8075,
+        "nearIR_log_rms": 0.036070292313003925,
+        "CO_reference_residual_index": 0.9764324220939176,
+        "reference_median_obs_model": 1.0620329473772785,
+        "CO_median_obs_model": 1.0370034031511381
+      },
+      "compatible_cases": 443,
+      "compatible_CO_index_range": [
+        0.8959449647624648,
+        1.1220670571333415
+      ]
+    },
+    {
+      "reduction": "native",
+      "season": "2026",
+      "n": 79,
+      "n_ref": 5,
+      "n_co": 9,
+      "best": {
+        "reduction": "native",
+        "season": "2026",
+        "model": "ckm05_4750.fits",
+        "gravity": "g25",
+        "av": 0.25,
+        "scale": 1974117708.0995054,
+        "nearIR_log_rms": 0.035358711675133006,
+        "CO_reference_residual_index": 1.0613292280124746,
+        "reference_median_obs_model": 1.0412784331250986,
+        "CO_median_obs_model": 1.1051392355747
+      },
+      "compatible_cases": 372,
+      "compatible_CO_index_range": [
+        0.9622715018359109,
+        1.1792229613376497
+      ]
+    }
+  ],
+  "qualification": "Post-hoc approximate rectangular responses; Rv3.1 only, coarse LTE plane-parallel CK04 logg1\u20133 grid. NearIR fit selects model; CO/reference is a broad window residual, not equivalent width or CO emission detection. 5% shape tolerance is nuisance sensitivity, not confidence interval. Native/local share pixels; detector/season correlated calibration and atmosphere error prevent assigning formal significance. No current spectral feature proves the cause of the 2018\u20132022 fading."
+}

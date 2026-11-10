@@ -1,0 +1,69 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:44:49 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:44:49	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=II%2F367&-c=118.69117410685+%2B16.694621231895&-c.rs=10&-out.all=&-out.max=500	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=10.	
+#Constraint -out.max=500
+
+#RESOURCE=yCat_2367
+#Name: II/367
+#Title: The VISTA Hemisphere Survey (VHS) catalog DR5 (McMahon+, 2020)
+#INFO	ivoid=ivo://cds.vizier/ii/367	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/367	    IVOID of underlying data collection
+#INFO	creator=McMahon	    First author or institution
+#INFO	cites=bibcode:2013Msngr.154...35M	    Article or Data origin sources
+#INFO	journal=Msng	    Journal name
+#INFO	original_date=2013	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/367	    Dataset landing page
+#INFO	publication_date=2024-01-12	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	II_367_vhs_dr5:
+#Name: II/367/vhs_dr5
+#Title: VISTA Hemisphere Survey band-merged multi-waveband catalogues (VHS) DR5 (version 3); output (on a total of 1,374,207,485 sources)
+#Column	SrcID	(I12)	Unique ID of this merged detection as assigned by merge algorithm unless PrioOrSec!=0 (SOURCEID)	[ucd=meta.id;meta.main]
+#Column	RAJ2000	(F10.6)	Celestial Right Ascension (J2000) (RA2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	[-90/1.5] Celestial Declination (J2000) (DEC2000)	[ucd=pos.eq.dec;meta.main]
+#Column	Name	(a23)	Source name in IAU convention (VHS JHHMMSS.ss+DDMMSS.s) (SOURCENAME)	[ucd=meta.id]
+#Column	PriOrSec	(I12)	Seam code for a unique (=0) or duplicated (!=0) source (5)	[ucd=meta.code]
+#Column	Y-Jpnt	(F8.4)	[-12.1/10.3]? Point source color Y-J (using aperMag3) (YMJPNT)	[ucd=phot.color;em.IR;em.IR]
+#Column	J-Hpnt	(F8.4)	[-11.3/9.7]? Point source color J-H (using aperMag3) (JMHPNT)	[ucd=phot.color;em.IR;em.IR]
+#Column	H-Kspnt	(F8.4)	[-10.7/11.3]? Point source color H-Ks (using aperMag3) (HMKSPNT)	[ucd=phot.color;em.IR;em.IR]
+#Column	J-Kspnt	(F8.4)	[-12/21.4]? Point source color J-Ks (using aperMag3) (JMKSPNT)	[ucd=phot.color;em.IR;em.IR]
+#Column	Y-Jext	(F8.4)	[-12/10.3]? Extended source color Y-J (using aperMagNoAperCorr3) (YMJEXT)	[ucd=phot.color;em.IR;em.IR]
+#Column	J-Hext	(F8.4)	[-11.2/9.8]? Extended source color J-H (using aperMagNoAperCorr3) (JMHEXT)	[ucd=phot.color;em.IR;em.IR]
+#Column	H-Ksext	(F8.4)	[-10.6/11.2]? Extended source color H-Ks (using aperMagNoAperCorr3) (HMKSEXT)	[ucd=phot.color;em.IR;em.IR]
+#Column	J-Ksext	(F8.4)	[-11.8/22.1]? Extended source color J-Ks (using aperMagNoAperCorr3) (JMKSEXT)	[ucd=phot.color;em.IR;em.IR]
+#Column	Mclass	(I2)	[-3/1] Class flag (MERGEDCLASS) (2)	[ucd=meta.code.class]
+#Column	AY	(F7.4)	[5E-4/53] The galactic extinction correction in the Y band	[ucd=phys.absorption.gal]
+#Column	AJ	(F7.4)	[4E-4/38] The galactic extinction correction in the J band	[ucd=phys.absorption.gal]
+#Column	AH	(F7.4)	[2E-4/24] The galactic extinction correction in the H band	[ucd=phys.absorption.gal]
+#Column	AKs	(F7.4)	[1E-4/16] The galactic extinction correction in the Ks band	[ucd=phys.absorption.gal]
+#Column	Ypmag	(F7.4)	[3.6/37]? Extended source Y (Vega) mag (Petrosian) (YPETROMAG) (3)	[ucd=phot.mag;em.IR.NIR]
+#Column	Yap3	(F7.4)	[4.2/34]? Default point source Y aperture corrected Vega mag (2.0" diam) (YAPERMAG3) (3)	[ucd=phot.mag;em.IR.NIR]
+#Column	Yapc3	(F7.4)	[4.6/35]? Default extended source Y aperture Vega mag (2.0 arcsec diam) (YAPERMAGNOAPERCORR3)	[ucd=phot.mag;em.IR.NIR]
+#Column	Yavgap3	(F7.3)	[0/112]? Average confidence in 2 arcsec diam default aperture 3 Y (YAVERAGECONF)	[ucd=stat.likelihood]
+#Column	Yperrbits	(I8)	[0/12587216] Additional WFAU post-processing error bits in Y (4)	[ucd=meta.code]
+#Column	Jpmag	(F8.4)	[-24/38]? Extended source J (Vega) mag (Petrosian) (JPETROMAG) (3)	[ucd=phot.mag;em.IR.J]
+#Column	Jap3	(F8.4)	[-21.1/34.1]? Default point source J aperture corrected Vega mag (2.0" diam) (JAPERMAG3) (3)	[ucd=phot.mag;em.IR.J]
+#Column	Japc3	(F8.4)	[-20.5/35]? Default extended source J aperture Vega mag (2.0 arcsec diam) (JAPERMAGNOAPERCORR3)	[ucd=phot.mag;em.IR.J]
+#Column	Javgap3	(F7.3)	[0/112]? Average confidence in 2 arcsec diam default aperture 3 J (JAVERAGECONF)	[ucd=stat.likelihood]
+#Column	Jperrbits	(I8)	[0/12587216]? Additional WFAU post-processing error bits in J (4)	[ucd=meta.code]
+#Column	Hpmag	(F8.4)	[-24/36]? Extended source H (Vega) mag (Petrosian) (HPETROMAG) (3)	[ucd=phot.mag;em.IR.H]
+#Column	Hap3	(F8.4)	[-21.5/29]? Default point source H aperture corrected Vega mag (2.0" diam) (HAPERMAG3) (3)	[ucd=phot.mag;em.IR.H]
+#Column	Hapc3	(F8.4)	[-21/29.1]? Default extended source H aperture Vega mag (2.0 arcsec diam) (HAPERMAGNOAPERCORR3)	[ucd=phot.mag;em.IR.H]
+#Column	Havgap3	(F7.3)	[0/112]? Average confidence in 2 arcsec diam default aperture 3 H (HAVERAGECONF)	[ucd=stat.likelihood]
+#Column	Hperrbits	(I8)	[0/12587216]? Additional WFAU post-processing error bits in H (4)	[ucd=meta.code]
+#Column	Kspmag	(F8.4)	[-20.3/34]? Extended source Ks (Vega) mag (Petrosian) (KSPETROMAG) (3)	[ucd=phot.mag;em.IR.K]
+#Column	Ksap3	(F8.4)	[-33.5/31]? Default point source Ks aperture corrected Vega mag (2.0" diam) (KSAPERMAG3) (3)	[ucd=phot.mag;em.IR.K]
+#Column	Ksapc3	(F8.4)	[-33.4/32]? Default extended source Ks aperture Vega mag (2.0 arcsec diam) (KSAPERMAGNOAPERCORR3)	[ucd=phot.mag;em.IR.K]
+#Column	Ksavgap3	(F7.3)	[0/112]? Average confidence in 2 arcsec diam default aperture 3 Ks (KSAVERAGECONF)	[ucd=stat.likelihood]
+#Column	Ksperrbits	(I8)	[0/12587216]? Additional WFAU post-processing error bits in Ks (4)	[ucd=meta.code]

@@ -1,0 +1,17 @@
+{
+  "saved_utc": "2026-11-08T20:35:20.207934+00:00",
+  "authorisation": "Kyle: Ok let's do it, referring to independent modern-survey replication of the2018\u20132022fading and partial recovery.",
+  "primary_question": "Does independent ASAS-SN photometry reproduce the timing and direction of the ZTF2018\u20132022fading and subsequent partial recovery?",
+  "prediction": "Within the same ASAS-SN filter and cameras covering the comparison epochs, J0754 is fainter in2022than2018and subsequently brighter by2025, relative to comparison stars, without relying on cross-survey absolute zero points.",
+  "weakening_outcomes": [
+    "No same-filter independent coverage spans the epochs",
+    "Trend depends on camera/quality transitions or shared comparison-star offsets",
+    "Sufficient independent data show no fading or opposite direction",
+    "Blends, censoring, saturation or a few bad measurements account for the signal"
+  ],
+  "baseline": "ZTFsame-exposure corrected annual medians previously saved:2018\u22120.1896075875,2022+0.1192555875,2025\u22120.020037475; differences+0.308863175and\u22120.1392930625mag. These set the question, not an independent fit.",
+  "design": "Inspect and retain native target catalogue and lightcurve products. Do not mix V and g zero points. Retain camera identifiers; estimate camera offsets from actual overlapping times or comparisons, not arbitrary alignments across gaps. Use documented quality flags, finite positive flux/error, and detection/limit distinction; avoid brightness sigma-clipping. Select comparison stars from previous Gaia matched set without choosing by target outcome.",
+  "descriptive_contrast": "Same-filter annual medians with at least10measurements in each comparison year, preferably matched-calendar-season/night bins and per-camera estimates. Preserve failed cameras and sparse years. For independence, no ZTFphotometry is used in ASAS-SNcalibration.",
+  "decision": "Claim corroboration of directional fading only if >=2camera streams or a comparison-corrected common-camera stream spans2018/2022, has adequate sampling, and exhibits a contrast whose robust year/night resampling interval excludes zero, with quality/camera sensitivity agreeing. Recovery assessed separately when2025coverage adequate; do not force a combined PASS.",
+  "boundaries": "Fluxes are linear only where the survey calibrated photometry supports that. Limits remain limits; no nondetection becomes a magnitude. Different passbands may show different amplitudes. A reproduced modern trend does not identify a cause or link it to the1930s event."
+}

@@ -1,0 +1,98 @@
+{
+  "metadata": [
+    {
+      "name": "table_name",
+      "description": "table name from TAP_SCHEMA.tables",
+      "datatype": "CHAR",
+      "arraysize": "*"
+    },
+    {
+      "name": "column_name",
+      "description": "column name",
+      "datatype": "CHAR",
+      "arraysize": "*"
+    }
+  ],
+  "data": [
+    [
+      "ids",
+      "oidref"
+    ],
+    [
+      "ids",
+      "ids"
+    ],
+    [
+      "ident",
+      "id"
+    ],
+    [
+      "has_ref",
+      "oidbibref"
+    ],
+    [
+      "ref",
+      "oidbib"
+    ],
+    [
+      "ref",
+      "bibcode"
+    ],
+    [
+      "ident",
+      "oidref"
+    ],
+    [
+      "ref",
+      "nbobject"
+    ],
+    [
+      "ref",
+      "title"
+    ],
+    [
+      "ref",
+      "doi"
+    ],
+    [
+      "has_ref",
+      "ref_raw_id"
+    ],
+    [
+      "has_ref",
+      "ref_flag"
+    ],
+    [
+      "ref",
+      "\"year\""
+    ],
+    [
+      "ref",
+      "journal"
+    ],
+    [
+      "ref",
+      "page"
+    ],
+    [
+      "ref",
+      "last_page"
+    ],
+    [
+      "ref",
+      "volume"
+    ],
+    [
+      "has_ref",
+      "oidref"
+    ],
+    [
+      "has_ref",
+      "obj_freq"
+    ],
+    [
+      "ref",
+      "abstract"
+    ]
+  ]
+}

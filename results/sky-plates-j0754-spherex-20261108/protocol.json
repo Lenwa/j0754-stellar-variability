@@ -1,0 +1,19 @@
+{
+  "written_utc": "2026-11-08T23:44:48.792856+00:00",
+  "question": "Can calibrated SPHEREx optical/near-IR spectral images during2025\u201326recovery, additionalpublicarchives andexistingreports distinguish intrinsicstellarvariability fromobscuration/companion scenarios?",
+  "known": "All priorg/W1/W2changes and2006\u20137ASAScandidateepisode known. SPHEREx223QR2overlaps andoneD6sourceimageexist; no pointsourceflux/spectrum extracted. Modelcolorforecasts known; newarchives/literature stillbeingsearched.",
+  "predictions": [
+    "A reddened stellar atmosphere should reproduce broad recovered SED without requiring warm dust if photospheric emission dominates. This does not by itself prove photospheric cause of fading.",
+    "A strong coherent IR excess or wavelength-dependent recovery inconsistent with stellar models motivates dust/emission or mixtures, subject to calibration/blending tests.",
+    "Matched-state colorchanges should be compared to prior modelpredictions;2025/26arepartialrecoveryepochs,not2018bright/2022faintstates. Do notconflate staticSEDwithfadingcolor.",
+    "If wavelength coverage/state changes orcalibrationaccuracyareinsufficient, mechanism result remainsinconclusive."
+  ],
+  "extraction": "Use current officialePSFrecipe forQR2, WCSsubpixelposition, nativepixel solidangle/correctnormalization andweightedsourcepluslocalbackground fit. ScientificwavelengthassignmentfrommatchedCWAVE/CBANDcalibration,notvisualWCS-WAVE. Preservebadflags,failedframes,negativefluxanduncertainties. No clipping onfaint/brightflux toforceatrend.",
+  "quality": "DocumentDQA,astrometric, saturation/nonlinearity/artifactmask andsourcecontamination;SOURCEbitisnotanartifact. FitlocalbackgroundandcompareZODIsubtraction;qualityfiltersmustnotselectfluxoutcomes. Keepheaders/nativecalibrationversions.",
+  "validation": "Numericaltests forpixelconvolvedPSFsampling/subpixelshift,normalization/pixelarea,weightedbackground/fluxrecovery,maskingandnegativeflux,calibrationcoordinatecutoutoffset,wavelengthassignment. Syntheticinjection plusindependentaperture-withaperturecorrection andmultipleapertures/background/PSFchoices. ComparisonstarsandknownSEDswhereavailable;noassumingpublishedasynchronousfluxprovescalibration.",
+  "comparison": "Keep2025and2026seasons separate, preserveactualnarrowbandwavelengthcoverageandweights. Compareonlyoverlappingwavelengthsorforward-convolvedmodels;do notdivideunmatchedspectralpointsor treatall223sameband. Usecamera-separatedASASwithinactualepochswith>=3datesasavailable.",
+  "inference": "Testbroadatmosphere/spot/temperature-scale,thickpartialcovering andtwocomponent/emittingdustscenarios. Countfreeparametersandidentifiability. Conditional model fitsnotunique physicaldiagnoses;validateexistingreports/targetIDs beforeadopting.",
+  "archive_scope": "Searchadditionalpassbands/activity/nearIR/historic/reprocesseddata withboundedrequests;saveempty/accessfailed/coverage/realmeasurementsseparately. Noaccounts/contacts/purchases/publication.",
+  "resources": "Initialsciencecutoutcap15MBperfile,concurrency3,all223ifvalidated;avoidfull70MBimageswhenpubliccutoutsavailable. Cachednativefilesreused.",
+  "authorship": "Ari-proposedSPHERExtest;Kyleexplicitlyauthorizedextraction,broaderarchiveandreportsearch,anddata-ledmechanismassessment."
+}

@@ -1,0 +1,194 @@
+{
+  "neowise": [
+    {
+      "file": "neowise_667023509291889792.csv",
+      "native": "neowise_667023509291889792.tbl",
+      "rows": 263,
+      "bytes": 139078,
+      "gaia_id": "667023509291889792",
+      "ra": 118.4509211627032,
+      "dec": 16.535277177029567,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667024467067954560.csv",
+      "native": "neowise_667024467067954560.tbl",
+      "rows": 266,
+      "bytes": 140602,
+      "gaia_id": "667024467067954560",
+      "ra": 118.45439512598213,
+      "dec": 16.57004763020371,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667380506973089536.csv",
+      "native": "neowise_667380506973089536.tbl",
+      "rows": 260,
+      "bytes": 137554,
+      "gaia_id": "667380506973089536",
+      "ra": 118.8774463201083,
+      "dec": 16.473945785841124,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667380575692566656.csv",
+      "native": "neowise_667380575692566656.tbl",
+      "rows": 263,
+      "bytes": 139078,
+      "gaia_id": "667380575692566656",
+      "ra": 118.86908859119971,
+      "dec": 16.474724053839626,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667380816210736128.csv",
+      "native": "neowise_667380816210736128.tbl",
+      "rows": 263,
+      "bytes": 139078,
+      "gaia_id": "667380816210736128",
+      "ra": 118.84533487427133,
+      "dec": 16.489099673325484,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667382255023480576.csv",
+      "native": "neowise_667382255023480576.tbl",
+      "rows": 259,
+      "bytes": 137046,
+      "gaia_id": "667382255023480576",
+      "ra": 118.81018362204178,
+      "dec": 16.48337710486429,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667391399010134400.csv",
+      "native": "neowise_667391399010134400.tbl",
+      "rows": 260,
+      "bytes": 137554,
+      "gaia_id": "667391399010134400",
+      "ra": 118.94433663730354,
+      "dec": 16.6699760345248,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667397618122678528.csv",
+      "native": "neowise_667397618122678528.tbl",
+      "rows": 257,
+      "bytes": 136030,
+      "gaia_id": "667397618122678528",
+      "ra": 118.7903798062244,
+      "dec": 16.6347098274953,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667401913089980544.csv",
+      "native": "neowise_667401913089980544.tbl",
+      "rows": 256,
+      "bytes": 135523,
+      "gaia_id": "667401913089980544",
+      "ra": 118.69117410685017,
+      "dec": 16.694621231895034,
+      "radius_arcsec": 10
+    },
+    {
+      "file": "neowise_667402462845806080.csv",
+      "native": "neowise_667402462845806080.tbl",
+      "rows": 257,
+      "bytes": 136030,
+      "gaia_id": "667402462845806080",
+      "ra": 118.60602479185786,
+      "dec": 16.68764001818488,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667403768515830272.csv",
+      "native": "neowise_667403768515830272.tbl",
+      "rows": 257,
+      "bytes": 136030,
+      "gaia_id": "667403768515830272",
+      "ra": 118.83716673115275,
+      "dec": 16.692420044233895,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667409918908989568.csv",
+      "native": "neowise_667409918908989568.tbl",
+      "rows": 261,
+      "bytes": 138062,
+      "gaia_id": "667409918908989568",
+      "ra": 118.72815702515194,
+      "dec": 16.83737287270805,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667411636895893504.csv",
+      "native": "neowise_667411636895893504.tbl",
+      "rows": 264,
+      "bytes": 139586,
+      "gaia_id": "667411636895893504",
+      "ra": 118.76310259188398,
+      "dec": 16.888235954735975,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667434486121884288.csv",
+      "native": "neowise_667434486121884288.tbl",
+      "rows": 254,
+      "bytes": 134506,
+      "gaia_id": "667434486121884288",
+      "ra": 118.93751958793864,
+      "dec": 16.90741720767971,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667454586568716288.csv",
+      "native": "neowise_667454586568716288.tbl",
+      "rows": 262,
+      "bytes": 138570,
+      "gaia_id": "667454586568716288",
+      "ra": 118.48465784663216,
+      "dec": 16.862590893691277,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667456064037465216.csv",
+      "native": "neowise_667456064037465216.tbl",
+      "rows": 264,
+      "bytes": 139586,
+      "gaia_id": "667456064037465216",
+      "ra": 118.45287312133307,
+      "dec": 16.900838281329833,
+      "radius_arcsec": 3
+    },
+    {
+      "file": "neowise_667459156414046976.csv",
+      "native": "neowise_667459156414046976.tbl",
+      "rows": 257,
+      "bytes": 136030,
+      "gaia_id": "667459156414046976",
+      "ra": 118.77056437012342,
+      "dec": 16.943509553100434,
+      "radius_arcsec": 3
+    }
+  ],
+  "other": [
+    {
+      "file": "allwise_target.csv",
+      "native": "allwise_target.tbl",
+      "rows": 1,
+      "bytes": 6524
+    },
+    {
+      "file": "allwise_epochs_target.csv",
+      "native": "allwise_epochs_target.tbl",
+      "rows": 48,
+      "bytes": 20460
+    },
+    {
+      "file": "twomass_target.csv",
+      "native": "twomass_target.tbl",
+      "rows": 1,
+      "bytes": 5684
+    }
+  ]
+}

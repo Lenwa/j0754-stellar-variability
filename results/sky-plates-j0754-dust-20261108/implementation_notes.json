@@ -1,0 +1,18 @@
+{
+  "written_utc": "2026-11-08T22:35:19.182961+00:00",
+  "chronology": [
+    "protocol.json saved before infrared lightcurve inspection.",
+    "analysis_specification.json saved after documentation/schema/control inspection but before target lightcurve inspection.",
+    "The raw Gator target probe was retrieved before the full batch; it was parsed for column names and time coverage, not fading values.",
+    "Quality cuts and foreground-screen/cooling predictions were implemented as declared.",
+    "Reviewer noted the initially omitted conditional bootstrap; 2000 fixed-visit UTC-date-group resamples were added, with an invariance test against duplicated exposures.",
+    "Optical matches now retain infrared magnitudes and matched-half-year g-W1 changes; unmatched annual numbers stay descriptive.",
+    "Historical/modern shape comparison is post-hoc inspection of already analyzed records after Kyle asked that the observed pattern and alternative mechanisms remain central.",
+    "Gemini geometries are attributed hypotheses; Kepler/temperature calculations are conditional checks, not orbit measurements."
+  ],
+  "deviations": [
+    "No complete physical-model likelihood or calibrated rejection significance was calculated; sparse visits, atmosphere and calibration systematics prevent that interpretation.",
+    "No contemporary g-r curve was available in the retrieved photometry. The actual color diagnostic is matched optical-minus-W1 plus paired W1-W2.",
+    "TAP cone timeouts were bypassed using the same catalogue through the official IRSA Gator API; native typed IPAC tables and request receipts are retained."
+  ]
+}

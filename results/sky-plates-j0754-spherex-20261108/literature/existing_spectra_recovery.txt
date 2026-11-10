@@ -1,0 +1,111 @@
+J0754: existing-spectrum recovery route and FAST quality audit
+8 November 2026 local / 9 November UTC
+
+OUTCOME
+
+Ten public processed FAST spectra were actually downloaded from the official CfA OIRSA archive, not merely located in catalogue metadata. All ten contain finite, nonzero extracted spectra with usable wavelength calibration and an explicitly identified sigma band. They span eight UTC nights in 2008–2012. They are useful pre-modern-fade spectroscopy and a possible activity/temperature follow-up baseline.
+
+The high-resolution spectrum shown on Tang's 2011 poster remains unrecovered: the poster names the MMT/Hectochelle and Magellan/MIKE programs collectively but supplies no per-spectrum instrument or observing date. The inspected 2010 paper and 2012 target chapter do not identify that plotted echelle observation. A public Hectochelle archive exists, but its target search failed with a server SQL error. This is not a target nondetection.
+
+LITERATURE DATE/INSTRUMENT BOUNDARY
+
+Tang 2010 section 2.4 and the thesis section 3.2.4 describe FAST on FLWO's Tillinghast 1.5m and Gemini-North GMOS long-slit spectra. Their figures identify FAST 300-line/mm and Gemini B1200 configurations, approximately 7 and 1.2 Angstrom resolution respectively. They do not provide precise J0754 exposure dates or a high-resolution spectrum's instrument/date. The February/April 2009 RV dates specifically belong to J0736 and must not be assigned to J0754.
+
+The 2011 poster provides a direct J0754 atmosphere-fit label and an actual spectrum/model plot under the high-resolution echelle work heading. It does not link a FITS file or give an observation identifier. The thesis introduction says Tang obtained Hectochelle and MIKE follow-up generally, without a per-target echelle observation log. This bounded check does not establish which one produced the plotted J0754 spectrum.
+
+Official public routes checked:
+- https://oirsa.cfa.harvard.edu/ : public processed Hectochelle, FAST and older Echelle holdings.
+- https://oirsa.cfa.harvard.edu/search/ and /guide/ : coordinate search and downloadable products.
+- https://www.mmto.org/before-your-run/ says MMT itself does not maintain a general data archive. That does not negate the separate CfA public archive.
+- https://www.lco.cl/instruments/ and https://www.lco.cl/astronomer-information/ identify MIKE/Magellan at Las Campanas but yielded no verified public coordinate-to-MIKE download route in this bounded search.
+- Results for lco.global / Las Cumbres are a different observatory network and were rejected as a Magellan archive route.
+
+Only two focused web searches were issued for this follow-up, followed by the resulting official pages/forms and direct target/archive requests. No new broad literature search, contact, account, scheduling, or paid request occurred. Author-hosted material recovered here contains plotted spectra, not a linked reduced/raw echelle FITS product. No claim that all Magellan data are private or unavailable is made.
+
+EXACT PUBLIC TARGET QUERY AND FAILURE
+
+Form endpoint for FAST:
+https://oirsa.cfa.harvard.edu/fast/fast_public.ssap.q/web/form
+POST application/x-www-form-urlencoded fields:
+__nevow_form__=genForm
+pos_ssa_location=118.69117410685 16.694621231895
+sr_ssa_location=1.0  (arcmin; official form/guide)
+_FORMAT=JSON
+MAXREC=100
+mime=image/fits
+submit=Search
+
+The native JSON returns queryStatus=OK and ten rows, so the 100-row cap does not truncate this cone. Response and metadata are preserved in oirsa_fast_target_response.txt and oirsa_fast_target_parsed.json. The latter is a derived export; the native response remains unchanged.
+
+The same target request to:
+https://oirsa.cfa.harvard.edu/hectochelle/hectochelle_public.ssap.q/web/form
+returned HTTP 200 containing a form error, not valid target results:
+"Field query: column \"ssa_redshift\" does not exist"
+The exact full response is oirsa_hectochelle_target_response.txt. No catalogue null is inferred. A future archive-service repair or another documented public interface would be required; no credentials were requested.
+
+DOWNLOADED EXPOSURES
+
+UTC midpoint from native MJD | FAST grating / slit | Exposure s | Archive S/N
+2008-10-22 11:56:29 | 300 lines/mm / 3 arcsec | 100 | 54.6
+2008-10-24 12:29:22 | 300 / 3 | 300 | 115.6
+2009-11-12 11:04:04 | 300 / 3 | 360 | 83.0
+2009-11-12 11:10:16 | 300 / 3 | 360 | 73.5
+2009-11-12 11:19:23 | 300 / 3 | 360 | 78.2
+2009-11-19 12:08:55 | 600 / 2 | 120 | 58.8
+2010-01-13 09:19:49 | 600 / 2 | 600 | 41.4
+2010-01-17 05:36:48 | 600 / 2 | 360 | 88.3
+2012-03-26 02:51:32 | 300 / 3 | 720 | 114.8
+2012-05-17 03:06:19 | 300 / 3 | 300 | 118.5
+
+These dates distinguish eight nights and ten exposures, not ten independently separated epochs. All ten hashes and MJDs are different. The three November 12 exposures are same-night repeats, useful for checking extraction scatter but not independent long-term replications. Native directory/filename dates are observing-night labels (usually the previous local date), while the table uses actual UTC midpoint MJD converted with astropy.Time. DATE-OBS/UT agree. The initial PowerShell date conversion in the intermediate parsed export was replaced with this unambiguous UTC conversion.
+
+Headers identify INSTRUME=FAST, TELESCOP=TILLINGHAST and PI Tang/DASCH Long-Term Variables. Eight files use the exact GSC N2211330177 name; the two 2012 files omit the final digit in OBJECT but match the target within 0.45 arcsec. Other header coordinates lie 0.03 arcsec or, for the two 2008 spectra, 2.93 arcsec from the Gaia position. Exact old alias, program provenance and close coordinates support association. Header pointing precision is not a new calibrated astrometric measurement.
+
+The archive's generic class='galaxy', redshifts and automated cross-correlation velocities are not physical classifications/RVs adopted here. No orbit or precision velocity analysis was attempted.
+
+ARRAYS, WAVELENGTHS AND BAND IDENTITY
+
+Each primary array has shape (4,1,2681), BITPIX=-32. This is one aperture with four IRAF extracted bands, not four wavelength orders. Headers explicitly identify:
+BANDID1 = spectrum - background fit, weights variance, clean yes
+BANDID2 = raw - background fit, weights none, clean no
+BANDID3 = background - background fit
+BANDID4 = sigma - background fit, weights variance, clean yes
+
+Analysis uses numpy cube[0,0,:] for signal and cube[3,0,:] for sigma, checked against every header. Band 2 is an unweighted extracted spectrum, NOT a raw two-dimensional CCD exposure.
+
+All ten have WAT0_001='system=equispec', WAT1_001='wtype=linear label=Wavelength units=angstroms', WAT2_001='wtype=linear', DC-FLAG=0, CTYPE1=LINEAR and CRPIX1=1. Wavelength for zero-based pixel j is:
+lambda_j = CRVAL1 + [(j+1)-CRPIX1] * CD1_1, in Angstrom.
+There is no nonlinear WAT2 multispec polynomial to decode in these files, and no logarithmic exponentiation is applied. Values agree with archive spectral endpoints after converting the archive's SI-length metadata.
+
+Seven 300-line/mm spectra cover approximately 3466–7419 Angstrom at 1.47 Angstrom/pixel. Three 600-line/mm spectra cover approximately 4743–6781 Angstrom at 0.743 Angstrom/pixel. Exact per-file values are in fast_spectral_audit.json. Sampling is not resolution. Approximately 7 Angstrom for the 300 setup is supported by Tang's FAST figure; a precise per-exposure line-spread function and the 600/2 resolution were not measured. Air versus vacuum convention is not separately certified.
+
+All arrays are finite; sigma values are positive. Extracted signal has at most 0.30% negative pixels, primarily low-signal edges, unlike the failed LAMOST spectra. Typical green signal/sigma is 38–134; the blue Ca region is much weaker (approximately 9–36 for the seven spectra that cover it). Catalogue S/N is retained as catalogue metadata rather than a universal per-wavelength uncertainty.
+
+Actual downloaded FITS are 54720 bytes (nine) or 57600 bytes (one), while catalogue accsize says 89280. FITS dimensions/data blocks parse completely; the reason for the metadata size difference is unverified. All original bytes are preserved and hashed. Astropy warns about NUL bytes after END in an original header; only derived text headers are sanitized by the header writer. Original FITS were opened read-only and never rewritten.
+
+FLUX CALIBRATION AND BOUNDED NORMALIZED COMPARISON
+
+No physical BUNIT or explicit physical flux-calibration certification is present in these files. They are extracted counts. Exposure, slit losses, seeing, airmass, throughput and response can alter the continuum. Therefore blue/red continuum differences cannot be interpreted here as stellar temperature, reddening or secular luminosity changes. Official FAST instrument/reduction linked pages failed timeout/SSL access; these failures are retained, not treated as calibration confirmation.
+
+A post-hoc diagnostic compared locally normalized line regions, keeping the 300/3 spectra together and the 600/2 spectra separate. The plots fast_normalized_lines.png and fast_normalized_overview.png were inspected. Mg b and Na D blends are broadly similar; no calibrated temperature difference is inferred. Ca H/K absorption is present, but FAST cannot isolate the narrow chromospheric emission cores at this sampling/resolution. No net Ca K activity flux is measured.
+
+H-alpha supplies a tentative follow-up lead. With a straight continuum fitted in 6520–6540 and 6580–6600 Angstrom and a +/-15 Angstrom line window around 6562.8, positive pseudo-equivalent width (absorption) is:
+- 2008 October, 300/3: 1.360–1.363 Angstrom.
+- Three 2009 November 12 exposures, 300/3: 0.866–0.887 Angstrom.
+- 2012 March/May, 300/3: 1.222–1.258 Angstrom.
+
+The shallower 2009 feature is present in the three repeats. Alternate +/-5,10,15 windows and a second local-continuum interval are preserved in fast_Halpha_sensitivities.json. These are local blended-line indices, not a stellar-atmosphere subtraction, chromospheric emission flux, calibrated variability detection or causal test. Resolution/seeing, wavelength zero point, sky subtraction and continuum placement remain possible explanations. The 600/2 spectra also vary in this index, but are not merged with the lower-resolution sample. Formal sigma-derived errors omit these systematics and resampling covariance. No multiple-trial detection significance is claimed.
+
+These pre-2018 observations do not sample the modern 2018–22 fading states or historical 1930s fade. A tentative H-alpha change could motivate future prospectively specified activity comparisons, but does not establish activity as the dimming cause. No lithium abundance, v sin i, radial-velocity orbit, spot coverage or new temperature was fitted.
+
+PRESERVED RESULTS AND VERIFICATION
+
+fast/ contains the ten unchanged processed FITS and derived complete text headers.
+fast_spectral_audit.json contains arrays/coordinates/wavelengths/SNR/indices.
+fast_wavelength_and_band_headers.json verifies all ten WAT/linear-WCS and BANDID labels.
+fast_Halpha_sensitivities.json preserves diagnostic windows/continuum sensitivity.
+oirsa_fast_target_response.txt preserves native metadata; oirsa_fast_target_parsed.json adds download hashes and correct UTC.
+spectrum_recovery_receipt.json preserves exact form requests, response statuses/hashes, FITS GET URLs and hashes, failed documentation requests and result checks.
+
+This is existing-spectrum recovery, not a new observing program. No high-resolution J0754 FITS or raw CCD frames were recovered, and the Hectochelle service error remains a concrete return route. No maintained source changed, contacts/accounts were used, or result was committed, pushed or published.
+

@@ -1,0 +1,1136 @@
+{
+  "target_gaia_dr3": "667401913089980544",
+  "created_utc": "2026-11-09T00:07:41.714851+00:00",
+  "source": {
+    "path": "results\\sky-plates-j0754-independent-20261108\\asassn_v1_lightcurve.csv",
+    "sha256": "58f6f77947f2deaabede6e84407cf1fc00ea14355d440b1f61a5cbb6bc5d7be2",
+    "rows": 5249,
+    "accepted_v_plus_g": 5180
+  },
+  "spherex_local_input": {
+    "path": "results\\sky-plates-j0754-spherex-20261108\\local\\local_extraction.json",
+    "sha256": "3299f01834e0d719a90b3a0732aed8b176533f249685b861df2a6caf2b4bd43c",
+    "records": 220,
+    "primary_quality_records": 182,
+    "window_definition": "For each saved season, min/max MJD among primary_quality=true SPHEREx records; expand each endpoint by15days inclusive."
+  },
+  "quality_rule": {
+    "maintained_source": "tools/sky-plates/asassn_replication.py:parse_row",
+    "source_sha256": "7eef2ed47da2f86e3631531e9c4aee94618b292b3e575778936d6534511ee74e",
+    "rule": "Reject upper-limit magnitude strings; require finite HJD/mag/mag_err/flux/flux_err,0<mag_err<99,mag<90,flux>0,flux_err>0,and camera/filter agreement; keep g only. No brightness clipping.",
+    "native_limitations": "V1 export has no explicit image quality flag. Original seeing/error sensitivities are not silently turned into the primary screen.",
+    "filter_map_source": "tools/sky-plates/summarize_asassn.py",
+    "filter_map_source_sha256": "6768778701f30ab0c1bdf5824edf653e8b2f3513843b78972809c42a8a0c2329"
+  },
+  "time_convention": "Use native UT Date (calendar date plus fractional UTC day) for window matching; retain HJD in native rows. HJD-2400000.5 is heliocentric and is not silently treated as UTC MJD.",
+  "summary_convention": "Camera-separated exposure medians and median of per-UTC-day medians; empirical scatter is not an uncertainty of the median.",
+  "windows": [
+    {
+      "season": "2025",
+      "spherex_primary_quality_records": 89,
+      "spherex_mjd_min": 60964.98918184,
+      "spherex_mjd_max": 60971.577238738,
+      "spherex_date_min_utc": "2025-10-16T23:44:25.311",
+      "spherex_date_max_utc": "2025-10-23T13:51:13.427",
+      "expanded_by_days": 15,
+      "optical_selection_mjd_utc_min": 60949.98918184,
+      "optical_selection_mjd_utc_max": 60986.577238738,
+      "optical_selection_date_min_utc": "2025-10-01T23:44:25.311",
+      "optical_selection_date_max_utc": "2025-11-07T13:51:13.427",
+      "raw_g_rows_in_window": 108,
+      "accepted_g_rows": 104,
+      "rejected_g_rows": 4,
+      "rejection_reasons": {
+        "sentinel_or_invalid_error_flux": 4
+      },
+      "cameras": [
+        {
+          "camera": "bA",
+          "filter": "g",
+          "observations": 18,
+          "utc_days": 6,
+          "first_native_ut": "2025-10-02.5830944",
+          "last_native_ut": "2025-11-01.5918769",
+          "mjd_utc_min": 60950.5830944,
+          "mjd_utc_max": 60980.5918769,
+          "median_native_mag_err": 0.008,
+          "exposure_statistics": {
+            "median_mag": 12.806999999999999,
+            "mad_mag": 0.0129999999999999,
+            "robust_scatter_1p4826mad_mag": 0.01927379999999985,
+            "sample_std_mag": 0.01555844977743987,
+            "min_mag": 12.775,
+            "max_mag": 12.825
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.806999999999999,
+            "mad_mag": 0.0024999999999995026,
+            "robust_scatter_1p4826mad_mag": 0.0037064999999992625,
+            "sample_std_mag": 0.006645800679125634,
+            "min_mag": 12.792,
+            "max_mag": 12.81
+          },
+          "daily_values": [
+            {
+              "date": "2025-10-02",
+              "mjd_utc_median": 60950.5840022,
+              "mag": 12.809,
+              "exposures": 3,
+              "median_native_mag_err": 0.008
+            },
+            {
+              "date": "2025-10-09",
+              "mjd_utc_median": 60957.5316283,
+              "mag": 12.81,
+              "exposures": 3,
+              "median_native_mag_err": 0.015
+            },
+            {
+              "date": "2025-10-17",
+              "mjd_utc_median": 60965.5616049,
+              "mag": 12.792,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2025-10-21",
+              "mjd_utc_median": 60969.5872943,
+              "mag": 12.806,
+              "exposures": 3,
+              "median_native_mag_err": 0.008
+            },
+            {
+              "date": "2025-10-23",
+              "mjd_utc_median": 60971.5459712,
+              "mag": 12.804,
+              "exposures": 3,
+              "median_native_mag_err": 0.008
+            },
+            {
+              "date": "2025-11-01",
+              "mjd_utc_median": 60980.5909716,
+              "mag": 12.808,
+              "exposures": 3,
+              "median_native_mag_err": 0.007
+            }
+          ],
+          "raw_row_numbers_1based": [
+            4592,
+            4593,
+            4594,
+            4612,
+            4613,
+            4614,
+            4624,
+            4625,
+            4626,
+            4642,
+            4643,
+            4644,
+            4648,
+            4649,
+            4650,
+            4679,
+            4680,
+            4681
+          ]
+        },
+        {
+          "camera": "bE",
+          "filter": "g",
+          "observations": 3,
+          "utc_days": 1,
+          "first_native_ut": "2025-10-24.3170379",
+          "last_native_ut": "2025-10-24.3188465",
+          "mjd_utc_min": 60972.3170379,
+          "mjd_utc_max": 60972.3188465,
+          "median_native_mag_err": 0.01,
+          "exposure_statistics": {
+            "median_mag": 12.743,
+            "mad_mag": 0.0009999999999994458,
+            "robust_scatter_1p4826mad_mag": 0.0014825999999991783,
+            "sample_std_mag": 0.00838649708360553,
+            "min_mag": 12.742,
+            "max_mag": 12.757
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.743,
+            "mad_mag": 0.0,
+            "robust_scatter_1p4826mad_mag": 0.0,
+            "sample_std_mag": null,
+            "min_mag": 12.743,
+            "max_mag": 12.743
+          },
+          "daily_values": [
+            {
+              "date": "2025-10-24",
+              "mjd_utc_median": 60972.3179496,
+              "mag": 12.743,
+              "exposures": 3,
+              "median_native_mag_err": 0.01
+            }
+          ],
+          "raw_row_numbers_1based": [
+            4651,
+            4652,
+            4653
+          ]
+        },
+        {
+          "camera": "bi",
+          "filter": "g",
+          "observations": 6,
+          "utc_days": 2,
+          "first_native_ut": "2025-10-18.3378090",
+          "last_native_ut": "2025-10-25.3105928",
+          "mjd_utc_min": 60966.337809,
+          "mjd_utc_max": 60973.3105928,
+          "median_native_mag_err": 0.011,
+          "exposure_statistics": {
+            "median_mag": 12.782499999999999,
+            "mad_mag": 0.050499999999999545,
+            "robust_scatter_1p4826mad_mag": 0.07487129999999932,
+            "sample_std_mag": 0.04949107663677018,
+            "min_mag": 12.726,
+            "max_mag": 12.835
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.7805,
+            "mad_mag": 0.050499999999999545,
+            "robust_scatter_1p4826mad_mag": 0.07487129999999932,
+            "sample_std_mag": 0.07141778489984066,
+            "min_mag": 12.73,
+            "max_mag": 12.831
+          },
+          "daily_values": [
+            {
+              "date": "2025-10-18",
+              "mjd_utc_median": 60966.3387051,
+              "mag": 12.73,
+              "exposures": 3,
+              "median_native_mag_err": 0.01
+            },
+            {
+              "date": "2025-10-25",
+              "mjd_utc_median": 60973.3097038,
+              "mag": 12.831,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            }
+          ],
+          "raw_row_numbers_1based": [
+            4627,
+            4628,
+            4629,
+            4654,
+            4655,
+            4656
+          ]
+        },
+        {
+          "camera": "bm",
+          "filter": "g",
+          "observations": 14,
+          "utc_days": 5,
+          "first_native_ut": "2025-10-08.1345975",
+          "last_native_ut": "2025-10-31.1078024",
+          "mjd_utc_min": 60956.1345975,
+          "mjd_utc_max": 60979.1078024,
+          "median_native_mag_err": 0.013,
+          "exposure_statistics": {
+            "median_mag": 12.766,
+            "mad_mag": 0.016499999999999737,
+            "robust_scatter_1p4826mad_mag": 0.024462899999999607,
+            "sample_std_mag": 0.03689783936019209,
+            "min_mag": 12.687,
+            "max_mag": 12.809
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.766,
+            "mad_mag": 0.038000000000000256,
+            "robust_scatter_1p4826mad_mag": 0.056338800000000376,
+            "sample_std_mag": 0.03809855640309729,
+            "min_mag": 12.728,
+            "max_mag": 12.809
+          },
+          "daily_values": [
+            {
+              "date": "2025-10-08",
+              "mjd_utc_median": 60956.135215999995,
+              "mag": 12.728,
+              "exposures": 2,
+              "median_native_mag_err": 0.027999999999999997
+            },
+            {
+              "date": "2025-10-19",
+              "mjd_utc_median": 60967.08534605,
+              "mag": 12.804,
+              "exposures": 2,
+              "median_native_mag_err": 0.0135
+            },
+            {
+              "date": "2025-10-21",
+              "mjd_utc_median": 60969.1203384,
+              "mag": 12.809,
+              "exposures": 1,
+              "median_native_mag_err": 0.016
+            },
+            {
+              "date": "2025-10-29",
+              "mjd_utc_median": 60977.089546,
+              "mag": 12.766,
+              "exposures": 6,
+              "median_native_mag_err": 0.012
+            },
+            {
+              "date": "2025-10-31",
+              "mjd_utc_median": 60979.0471167,
+              "mag": 12.733,
+              "exposures": 3,
+              "median_native_mag_err": 0.013
+            }
+          ],
+          "raw_row_numbers_1based": [
+            4610,
+            4611,
+            4631,
+            4632,
+            4640,
+            4663,
+            4664,
+            4665,
+            4666,
+            4667,
+            4668,
+            4672,
+            4673,
+            4675
+          ]
+        },
+        {
+          "camera": "bq",
+          "filter": "g",
+          "observations": 63,
+          "utc_days": 21,
+          "first_native_ut": "2025-10-02.4232175",
+          "last_native_ut": "2025-11-07.3140129",
+          "mjd_utc_min": 60950.4232175,
+          "mjd_utc_max": 60986.3140129,
+          "median_native_mag_err": 0.013,
+          "exposure_statistics": {
+            "median_mag": 12.774,
+            "mad_mag": 0.017999999999998906,
+            "robust_scatter_1p4826mad_mag": 0.026686799999998376,
+            "sample_std_mag": 0.03778065484059708,
+            "min_mag": 12.714,
+            "max_mag": 12.988
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.767,
+            "mad_mag": 0.010999999999999233,
+            "robust_scatter_1p4826mad_mag": 0.01630859999999886,
+            "sample_std_mag": 0.017746763621788147,
+            "min_mag": 12.74,
+            "max_mag": 12.81
+          },
+          "daily_values": [
+            {
+              "date": "2025-10-02",
+              "mjd_utc_median": 60950.4240939,
+              "mag": 12.767,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2025-10-03",
+              "mjd_utc_median": 60951.4264922,
+              "mag": 12.761,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2025-10-04",
+              "mjd_utc_median": 60952.4086252,
+              "mag": 12.75,
+              "exposures": 3,
+              "median_native_mag_err": 0.012
+            },
+            {
+              "date": "2025-10-05",
+              "mjd_utc_median": 60953.4075688,
+              "mag": 12.754,
+              "exposures": 3,
+              "median_native_mag_err": 0.016
+            },
+            {
+              "date": "2025-10-06",
+              "mjd_utc_median": 60954.401169,
+              "mag": 12.74,
+              "exposures": 3,
+              "median_native_mag_err": 0.02
+            },
+            {
+              "date": "2025-10-07",
+              "mjd_utc_median": 60955.4038591,
+              "mag": 12.756,
+              "exposures": 3,
+              "median_native_mag_err": 0.021
+            },
+            {
+              "date": "2025-10-10",
+              "mjd_utc_median": 60958.4057349,
+              "mag": 12.787,
+              "exposures": 3,
+              "median_native_mag_err": 0.016
+            },
+            {
+              "date": "2025-10-11",
+              "mjd_utc_median": 60959.3955398,
+              "mag": 12.774,
+              "exposures": 3,
+              "median_native_mag_err": 0.014
+            },
+            {
+              "date": "2025-10-16",
+              "mjd_utc_median": 60964.3786373,
+              "mag": 12.759,
+              "exposures": 3,
+              "median_native_mag_err": 0.016
+            },
+            {
+              "date": "2025-10-19",
+              "mjd_utc_median": 60967.3900076,
+              "mag": 12.776,
+              "exposures": 3,
+              "median_native_mag_err": 0.01
+            },
+            {
+              "date": "2025-10-20",
+              "mjd_utc_median": 60968.3613295,
+              "mag": 12.759,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2025-10-22",
+              "mjd_utc_median": 60970.3669539,
+              "mag": 12.777,
+              "exposures": 3,
+              "median_native_mag_err": 0.01
+            },
+            {
+              "date": "2025-10-26",
+              "mjd_utc_median": 60974.3408317,
+              "mag": 12.776,
+              "exposures": 3,
+              "median_native_mag_err": 0.015
+            },
+            {
+              "date": "2025-10-27",
+              "mjd_utc_median": 60975.3420722,
+              "mag": 12.753,
+              "exposures": 3,
+              "median_native_mag_err": 0.01
+            },
+            {
+              "date": "2025-10-30",
+              "mjd_utc_median": 60978.3318929,
+              "mag": 12.761,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2025-10-31",
+              "mjd_utc_median": 60979.337723,
+              "mag": 12.781,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2025-11-02",
+              "mjd_utc_median": 60981.3391924,
+              "mag": 12.764,
+              "exposures": 3,
+              "median_native_mag_err": 0.013
+            },
+            {
+              "date": "2025-11-03",
+              "mjd_utc_median": 60982.3322078,
+              "mag": 12.801,
+              "exposures": 3,
+              "median_native_mag_err": 0.014
+            },
+            {
+              "date": "2025-11-05",
+              "mjd_utc_median": 60984.3156288,
+              "mag": 12.785,
+              "exposures": 3,
+              "median_native_mag_err": 0.02
+            },
+            {
+              "date": "2025-11-06",
+              "mjd_utc_median": 60985.3189377,
+              "mag": 12.81,
+              "exposures": 3,
+              "median_native_mag_err": 0.018
+            },
+            {
+              "date": "2025-11-07",
+              "mjd_utc_median": 60986.313146,
+              "mag": 12.792,
+              "exposures": 3,
+              "median_native_mag_err": 0.016
+            }
+          ],
+          "raw_row_numbers_1based": [
+            4589,
+            4590,
+            4591,
+            4595,
+            4596,
+            4597,
+            4598,
+            4599,
+            4600,
+            4601,
+            4602,
+            4603,
+            4604,
+            4605,
+            4606,
+            4607,
+            4608,
+            4609,
+            4615,
+            4616,
+            4617,
+            4618,
+            4619,
+            4620,
+            4621,
+            4622,
+            4623,
+            4633,
+            4634,
+            4635,
+            4636,
+            4637,
+            4638,
+            4645,
+            4646,
+            4647,
+            4657,
+            4658,
+            4659,
+            4660,
+            4661,
+            4662,
+            4669,
+            4670,
+            4671,
+            4676,
+            4677,
+            4678,
+            4682,
+            4683,
+            4684,
+            4685,
+            4686,
+            4687,
+            4688,
+            4689,
+            4690,
+            4691,
+            4692,
+            4693,
+            4694,
+            4695,
+            4696
+          ]
+        }
+      ]
+    },
+    {
+      "season": "2026",
+      "spherex_primary_quality_records": 93,
+      "spherex_mjd_min": 61132.797672222,
+      "spherex_mjd_max": 61146.033773576,
+      "spherex_date_min_utc": "2026-04-02T19:08:38.880",
+      "spherex_date_max_utc": "2026-04-16T00:48:38.037",
+      "expanded_by_days": 15,
+      "optical_selection_mjd_utc_min": 61117.797672222,
+      "optical_selection_mjd_utc_max": 61161.033773576,
+      "optical_selection_date_min_utc": "2026-03-18T19:08:38.880",
+      "optical_selection_date_max_utc": "2026-05-01T00:48:38.037",
+      "raw_g_rows_in_window": 95,
+      "accepted_g_rows": 95,
+      "rejected_g_rows": 0,
+      "rejection_reasons": {},
+      "cameras": [
+        {
+          "camera": "bA",
+          "filter": "g",
+          "observations": 24,
+          "utc_days": 8,
+          "first_native_ut": "2026-03-25.3517571",
+          "last_native_ut": "2026-04-26.2368901",
+          "mjd_utc_min": 61124.3517571,
+          "mjd_utc_max": 61156.2368901,
+          "median_native_mag_err": 0.008,
+          "exposure_statistics": {
+            "median_mag": 12.7575,
+            "mad_mag": 0.02800000000000047,
+            "robust_scatter_1p4826mad_mag": 0.041512800000000696,
+            "sample_std_mag": 0.03838846067561799,
+            "min_mag": 12.674,
+            "max_mag": 12.825
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.7575,
+            "mad_mag": 0.014000000000000234,
+            "robust_scatter_1p4826mad_mag": 0.020756400000000348,
+            "sample_std_mag": 0.027748873851023072,
+            "min_mag": 12.725,
+            "max_mag": 12.812
+          },
+          "daily_values": [
+            {
+              "date": "2026-03-25",
+              "mjd_utc_median": 61124.3526766,
+              "mag": 12.812,
+              "exposures": 3,
+              "median_native_mag_err": 0.008
+            },
+            {
+              "date": "2026-04-02",
+              "mjd_utc_median": 61132.3355055,
+              "mag": 12.725,
+              "exposures": 3,
+              "median_native_mag_err": 0.015
+            },
+            {
+              "date": "2026-04-04",
+              "mjd_utc_median": 61134.313281,
+              "mag": 12.743,
+              "exposures": 3,
+              "median_native_mag_err": 0.008
+            },
+            {
+              "date": "2026-04-05",
+              "mjd_utc_median": 61135.3166181,
+              "mag": 12.771,
+              "exposures": 3,
+              "median_native_mag_err": 0.008
+            },
+            {
+              "date": "2026-04-06",
+              "mjd_utc_median": 61136.3222492,
+              "mag": 12.76,
+              "exposures": 3,
+              "median_native_mag_err": 0.007
+            },
+            {
+              "date": "2026-04-07",
+              "mjd_utc_median": 61137.318213,
+              "mag": 12.75,
+              "exposures": 3,
+              "median_native_mag_err": 0.009
+            },
+            {
+              "date": "2026-04-20",
+              "mjd_utc_median": 61150.2676804,
+              "mag": 12.755,
+              "exposures": 3,
+              "median_native_mag_err": 0.007
+            },
+            {
+              "date": "2026-04-26",
+              "mjd_utc_median": 61156.2359786,
+              "mag": 12.792,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            }
+          ],
+          "raw_row_numbers_1based": [
+            5025,
+            5026,
+            5027,
+            5045,
+            5046,
+            5047,
+            5057,
+            5058,
+            5059,
+            5063,
+            5064,
+            5065,
+            5069,
+            5070,
+            5071,
+            5072,
+            5073,
+            5074,
+            5096,
+            5097,
+            5098,
+            5105,
+            5106,
+            5107
+          ]
+        },
+        {
+          "camera": "bE",
+          "filter": "g",
+          "observations": 24,
+          "utc_days": 7,
+          "first_native_ut": "2026-03-21.1369064",
+          "last_native_ut": "2026-04-29.0244816",
+          "mjd_utc_min": 61120.1369064,
+          "mjd_utc_max": 61159.0244816,
+          "median_native_mag_err": 0.010499999999999999,
+          "exposure_statistics": {
+            "median_mag": 12.7295,
+            "mad_mag": 0.03249999999999975,
+            "robust_scatter_1p4826mad_mag": 0.04818449999999963,
+            "sample_std_mag": 0.031190740915223305,
+            "min_mag": 12.692,
+            "max_mag": 12.781
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.729,
+            "mad_mag": 0.0259999999999998,
+            "robust_scatter_1p4826mad_mag": 0.0385475999999997,
+            "sample_std_mag": 0.03056375070476266,
+            "min_mag": 12.696,
+            "max_mag": 12.775
+          },
+          "daily_values": [
+            {
+              "date": "2026-03-21",
+              "mjd_utc_median": 61120.1378032,
+              "mag": 12.768,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2026-03-24",
+              "mjd_utc_median": 61123.1204984,
+              "mag": 12.775,
+              "exposures": 3,
+              "median_native_mag_err": 0.01
+            },
+            {
+              "date": "2026-04-04",
+              "mjd_utc_median": 61134.102588,
+              "mag": 12.729,
+              "exposures": 3,
+              "median_native_mag_err": 0.012
+            },
+            {
+              "date": "2026-04-05",
+              "mjd_utc_median": 61135.5414842,
+              "mag": 12.721,
+              "exposures": 6,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2026-04-09",
+              "mjd_utc_median": 61139.0060689,
+              "mag": 12.703,
+              "exposures": 3,
+              "median_native_mag_err": 0.009
+            },
+            {
+              "date": "2026-04-10",
+              "mjd_utc_median": 61140.0860452,
+              "mag": 12.696,
+              "exposures": 3,
+              "median_native_mag_err": 0.01
+            },
+            {
+              "date": "2026-04-29",
+              "mjd_utc_median": 61159.0235815,
+              "mag": 12.747,
+              "exposures": 3,
+              "median_native_mag_err": 0.012
+            }
+          ],
+          "raw_row_numbers_1based": [
+            5019,
+            5020,
+            5021,
+            5022,
+            5023,
+            5024,
+            5054,
+            5055,
+            5056,
+            5060,
+            5061,
+            5062,
+            5066,
+            5067,
+            5068,
+            5078,
+            5079,
+            5080,
+            5084,
+            5085,
+            5086,
+            5111,
+            5112,
+            5113
+          ]
+        },
+        {
+          "camera": "bi",
+          "filter": "g",
+          "observations": 21,
+          "utc_days": 7,
+          "first_native_ut": "2026-03-30.0306540",
+          "last_native_ut": "2026-04-26.0345240",
+          "mjd_utc_min": 61129.030654,
+          "mjd_utc_max": 61156.034524,
+          "median_native_mag_err": 0.014,
+          "exposure_statistics": {
+            "median_mag": 12.741,
+            "mad_mag": 0.0259999999999998,
+            "robust_scatter_1p4826mad_mag": 0.0385475999999997,
+            "sample_std_mag": 0.036689884424015294,
+            "min_mag": 12.686,
+            "max_mag": 12.828
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.741,
+            "mad_mag": 0.022499999999999076,
+            "robust_scatter_1p4826mad_mag": 0.033358499999998625,
+            "sample_std_mag": 0.03365847377916644,
+            "min_mag": 12.702,
+            "max_mag": 12.802
+          },
+          "daily_values": [
+            {
+              "date": "2026-03-30",
+              "mjd_utc_median": 61129.0315127,
+              "mag": 12.743,
+              "exposures": 3,
+              "median_native_mag_err": 0.014
+            },
+            {
+              "date": "2026-03-31",
+              "mjd_utc_median": 61130.0359387,
+              "mag": 12.702,
+              "exposures": 3,
+              "median_native_mag_err": 0.015
+            },
+            {
+              "date": "2026-04-01",
+              "mjd_utc_median": 61131.0932827,
+              "mag": 12.773,
+              "exposures": 3,
+              "median_native_mag_err": 0.02
+            },
+            {
+              "date": "2026-04-02",
+              "mjd_utc_median": 61132.02405885,
+              "mag": 12.731000000000002,
+              "exposures": 4,
+              "median_native_mag_err": 0.0155
+            },
+            {
+              "date": "2026-04-03",
+              "mjd_utc_median": 61133.11242595,
+              "mag": 12.7185,
+              "exposures": 2,
+              "median_native_mag_err": 0.013
+            },
+            {
+              "date": "2026-04-17",
+              "mjd_utc_median": 61147.0524066,
+              "mag": 12.741,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2026-04-26",
+              "mjd_utc_median": 61156.0335373,
+              "mag": 12.802,
+              "exposures": 3,
+              "median_native_mag_err": 0.014
+            }
+          ],
+          "raw_row_numbers_1based": [
+            5033,
+            5034,
+            5035,
+            5036,
+            5037,
+            5038,
+            5039,
+            5040,
+            5041,
+            5042,
+            5043,
+            5044,
+            5048,
+            5049,
+            5050,
+            5093,
+            5094,
+            5095,
+            5102,
+            5103,
+            5104
+          ]
+        },
+        {
+          "camera": "bm",
+          "filter": "g",
+          "observations": 20,
+          "utc_days": 6,
+          "first_native_ut": "2026-03-25.7434469",
+          "last_native_ut": "2026-04-25.7155778",
+          "mjd_utc_min": 61124.7434469,
+          "mjd_utc_max": 61155.7155778,
+          "median_native_mag_err": 0.012,
+          "exposure_statistics": {
+            "median_mag": 12.7375,
+            "mad_mag": 0.02149999999999963,
+            "robust_scatter_1p4826mad_mag": 0.03187589999999945,
+            "sample_std_mag": 0.02806660311698423,
+            "min_mag": 12.676,
+            "max_mag": 12.789
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.722999999999999,
+            "mad_mag": 0.009999999999998899,
+            "robust_scatter_1p4826mad_mag": 0.014825999999998367,
+            "sample_std_mag": 0.020591260281974114,
+            "min_mag": 12.712,
+            "max_mag": 12.766
+          },
+          "daily_values": [
+            {
+              "date": "2026-03-25",
+              "mjd_utc_median": 61124.8833452,
+              "mag": 12.766,
+              "exposures": 5,
+              "median_native_mag_err": 0.013
+            },
+            {
+              "date": "2026-04-07",
+              "mjd_utc_median": 61137.8075557,
+              "mag": 12.722,
+              "exposures": 3,
+              "median_native_mag_err": 0.012
+            },
+            {
+              "date": "2026-04-09",
+              "mjd_utc_median": 61139.7374793,
+              "mag": 12.714,
+              "exposures": 3,
+              "median_native_mag_err": 0.011
+            },
+            {
+              "date": "2026-04-13",
+              "mjd_utc_median": 61143.8270203,
+              "mag": 12.712,
+              "exposures": 3,
+              "median_native_mag_err": 0.012
+            },
+            {
+              "date": "2026-04-14",
+              "mjd_utc_median": 61144.8194036,
+              "mag": 12.724,
+              "exposures": 3,
+              "median_native_mag_err": 0.013
+            },
+            {
+              "date": "2026-04-25",
+              "mjd_utc_median": 61155.7143456,
+              "mag": 12.742,
+              "exposures": 3,
+              "median_native_mag_err": 0.014
+            }
+          ],
+          "raw_row_numbers_1based": [
+            5028,
+            5029,
+            5030,
+            5031,
+            5032,
+            5075,
+            5076,
+            5077,
+            5081,
+            5082,
+            5083,
+            5087,
+            5088,
+            5089,
+            5090,
+            5091,
+            5092,
+            5099,
+            5100,
+            5101
+          ]
+        },
+        {
+          "camera": "bq",
+          "filter": "g",
+          "observations": 6,
+          "utc_days": 2,
+          "first_native_ut": "2026-04-03.2287318",
+          "last_native_ut": "2026-04-27.1524147",
+          "mjd_utc_min": 61133.2287318,
+          "mjd_utc_max": 61157.1524147,
+          "median_native_mag_err": 0.023,
+          "exposure_statistics": {
+            "median_mag": 12.7725,
+            "mad_mag": 0.005000000000000782,
+            "robust_scatter_1p4826mad_mag": 0.007413000000001158,
+            "sample_std_mag": 0.037263476309473124,
+            "min_mag": 12.766,
+            "max_mag": 12.859
+          },
+          "daily_median_statistics": {
+            "median_mag": 12.7725,
+            "mad_mag": 0.0014999999999991687,
+            "robust_scatter_1p4826mad_mag": 0.0022238999999987675,
+            "sample_std_mag": 0.0021213203435584667,
+            "min_mag": 12.771,
+            "max_mag": 12.774
+          },
+          "daily_values": [
+            {
+              "date": "2026-04-03",
+              "mjd_utc_median": 61133.2296152,
+              "mag": 12.774,
+              "exposures": 3,
+              "median_native_mag_err": 0.022
+            },
+            {
+              "date": "2026-04-27",
+              "mjd_utc_median": 61157.1515476,
+              "mag": 12.771,
+              "exposures": 3,
+              "median_native_mag_err": 0.033
+            }
+          ],
+          "raw_row_numbers_1based": [
+            5051,
+            5052,
+            5053,
+            5108,
+            5109,
+            5110
+          ]
+        }
+      ]
+    }
+  ],
+  "same_camera_differences": [
+    {
+      "camera": "bA",
+      "filter": "g",
+      "later_minus_earlier_daily_median_mag": -0.04949999999999832,
+      "later_minus_earlier_exposure_median_mag": -0.04949999999999832,
+      "relative_g_flux_later_over_earlier_from_daily_medians": 1.0466464385521945,
+      "day_counts": [
+        6,
+        8
+      ],
+      "exposure_counts": [
+        18,
+        24
+      ],
+      "formal_uncertainty": null,
+      "uncertainty_note": "Empirical window scatter is reported; no independent-day/calibration precision inferred for the median difference."
+    },
+    {
+      "camera": "bE",
+      "filter": "g",
+      "later_minus_earlier_daily_median_mag": -0.014000000000001123,
+      "later_minus_earlier_exposure_median_mag": -0.013500000000000512,
+      "relative_g_flux_later_over_earlier_from_daily_medians": 1.012977968760103,
+      "day_counts": [
+        1,
+        7
+      ],
+      "exposure_counts": [
+        3,
+        24
+      ],
+      "formal_uncertainty": null,
+      "uncertainty_note": "Empirical window scatter is reported; no independent-day/calibration precision inferred for the median difference."
+    },
+    {
+      "camera": "bi",
+      "filter": "g",
+      "later_minus_earlier_daily_median_mag": -0.03950000000000031,
+      "later_minus_earlier_exposure_median_mag": -0.041499999999999204,
+      "relative_g_flux_later_over_earlier_from_daily_medians": 1.0370507263257616,
+      "day_counts": [
+        2,
+        7
+      ],
+      "exposure_counts": [
+        6,
+        21
+      ],
+      "formal_uncertainty": null,
+      "uncertainty_note": "Empirical window scatter is reported; no independent-day/calibration precision inferred for the median difference."
+    },
+    {
+      "camera": "bm",
+      "filter": "g",
+      "later_minus_earlier_daily_median_mag": -0.04300000000000104,
+      "later_minus_earlier_exposure_median_mag": -0.028499999999999304,
+      "relative_g_flux_later_over_earlier_from_daily_medians": 1.040399177051353,
+      "day_counts": [
+        5,
+        6
+      ],
+      "exposure_counts": [
+        14,
+        20
+      ],
+      "formal_uncertainty": null,
+      "uncertainty_note": "Empirical window scatter is reported; no independent-day/calibration precision inferred for the median difference."
+    },
+    {
+      "camera": "bq",
+      "filter": "g",
+      "later_minus_earlier_daily_median_mag": 0.005500000000001393,
+      "later_minus_earlier_exposure_median_mag": -0.0014999999999982805,
+      "relative_g_flux_later_over_earlier_from_daily_medians": 0.9949471217509911,
+      "day_counts": [
+        21,
+        2
+      ],
+      "exposure_counts": [
+        63,
+        6
+      ],
+      "formal_uncertainty": null,
+      "uncertainty_note": "Empirical window scatter is reported; no independent-day/calibration precision inferred for the median difference."
+    }
+  ],
+  "limitations": [
+    "Same-camera comparisons reduce fixed camera offsets but retain seasonal calibration, blending and systematic errors.",
+    "No absolute optical\u2013SPHEREx zero point or common passband is inferred. g flux ratios are descriptive within-camera optical changes, not direct ratios of infrared spectral fluxes.",
+    "Each expanded optical window is not strictly simultaneous with every SPHEREx wavelength/date; preserve actual dates and scatter.",
+    "No new archives or jobs queried; no maintained code changed.",
+    "For a single daily group, MAD=0 is a descriptive identity and does not measure zero scatter or high precision."
+  ],
+  "verification": {
+    "native_rows": 5249,
+    "native_quality_accepted_v_plus_g": 5180,
+    "window_selected_exposure_rows": 199,
+    "daily_camera_groups_compared_to_existing_orbit_reduction": 65,
+    "daily_medians_match_existing_saved_reduction": true,
+    "native_csv_unchanged_sha256": "58f6f77947f2deaabede6e84407cf1fc00ea14355d440b1f61a5cbb6bc5d7be2",
+    "spherex_input_still_matches_captured_hash": true
+  }
+}

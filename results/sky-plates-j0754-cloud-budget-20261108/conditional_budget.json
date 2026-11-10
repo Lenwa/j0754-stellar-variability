@@ -1,0 +1,66 @@
+{
+  "status": "Illustrative conditional scaling calculation, not fit or detected cloud. Working stellar radius9.1Rsun,mass1.5Msun;25percent dimming approximated monochromatic.",
+  "equations": {
+    "opacity": "kappa=3 Qext fdust/(4 rho_grain a_grain)",
+    "screen_mass": "Mcloud=tau*pi*max(Rstar,Rcloud)^2/kappa; tau=-ln(0.75)",
+    "launch_energy": "Mcloud*(G Mstar/Rstar+v_infinity^2/2)",
+    "expansion": "Rcloud=Rstar+u*t; uniform foreground disk, tau fixed by adding mass"
+  },
+  "assumptions": {
+    "radius_Rsun": 9.1,
+    "mass_Msun": 1.5,
+    "flare_radiated_energy_erg": 5.3e+37,
+    "dust_mass_fraction": 0.01,
+    "grain_radius_microns": 0.1,
+    "grain_density_g_cm3": 3,
+    "assumed_Qext_g": 1,
+    "opacity_per_total_g_cm2_g": 249.99999999999994,
+    "v_infinity_km_s": 300,
+    "duration_years": 8
+  },
+  "initial_screen": {
+    "tau": 0.2876820724517809,
+    "total_gas_plus_dust_mass_g": 1.4489368378379047e+21,
+    "total_mass_kg": 1.4489368378379046e+18,
+    "launch_energy_erg": 1.1076408474665693e+36,
+    "launch_over_flare_radiated": 0.02089888391446357
+  },
+  "electron_scattering_only": {
+    "opacity_cm2_g": 0.34,
+    "mass_g": 1.0653947337043414e+24,
+    "launch_energy_erg": 8.144417996077713e+38,
+    "note": "Fully ionized Thomson scattering illustration; not a complete cool neutral-gas opacity model."
+  },
+  "expansion": [
+    {
+      "lateral_expansion_km_s": 0.1,
+      "radius_after8yr_AU": 0.2110788733305146,
+      "required_mass_g_for_same_depth": 3.604649328574917e+22,
+      "launch_energy_over_observed_flare_radiated": 0.519920164240202
+    },
+    {
+      "lateral_expansion_km_s": 1,
+      "radius_after8yr_AU": 1.7299154646323451,
+      "required_mass_g_for_same_depth": 2.421158654585683e+24,
+      "launch_energy_over_observed_flare_radiated": 34.92182153101256
+    },
+    {
+      "lateral_expansion_km_s": 10,
+      "radius_after8yr_AU": 16.91828137765065,
+      "required_mass_g_for_same_depth": 2.3157196144118958e+26,
+      "launch_energy_over_observed_flare_radiated": 3340.1011097389674
+    }
+  ],
+  "compact_cloud_crossing": {
+    "v_transverse_for_one_stellar_diameter_in8yr_km_s": 0.05015329112480036,
+    "note": "Transverse velocity only; radial outflow can remain in foreground. Expanded clouds can exceed one stellar diameter."
+  },
+  "dust_equilibrium_radius_at1500K_AU": 0.2544481161766403,
+  "timeline": "Observed TESS2021 flare cannot initiate fading already underway2018. Earlier outbursts/replenishment untested.",
+  "limitations": "Dust fraction, grain size and Q are stipulated, not measurements. Partialcovering, multiple-scattering/reemission, limb darkening, variable grains, radiation pressure, expansion cooling, magnetic confinement and dust formation kinetics not solved. Flare radiation is not total available kinetic/magnetic energy; energy ratios are comparisons, not hard upper bounds. Dustscreen alone previously did not fit full optical/IR changes.",
+  "Betelgeuse_sources": [
+    "https://www.eso.org/public/news/eso2109/",
+    "https://ntrs.nasa.gov/citations/20230001244",
+    "https://www.nature.com/articles/s41550-022-01680-5"
+  ]
+}

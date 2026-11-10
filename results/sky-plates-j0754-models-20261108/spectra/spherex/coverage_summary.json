@@ -1,0 +1,364 @@
+{
+  "target_ra_deg": 118.69117410685,
+  "target_dec_deg": 16.694621231895,
+  "search_radius_arcsec": 0.36,
+  "counts": {
+    "spherex_qr2": 223,
+    "spherex_qr3": 0,
+    "spherex_qr2_deep": 0,
+    "spherex_qr3_deep": 0
+  },
+  "metadata_rows": 223,
+  "unique_access_urls": 223,
+  "bands": [
+    {
+      "band": "SPHEREx-D1",
+      "images": 38,
+      "image_metadata_wavelength_min_um": 0.7455,
+      "image_metadata_wavelength_max_um": 1.1167,
+      "start_utc": "2025-10-16T23:44:25.325",
+      "end_utc": "2026-04-16T00:50:33.158"
+    },
+    {
+      "band": "SPHEREx-D2",
+      "images": 37,
+      "image_metadata_wavelength_min_um": 1.1033000000000002,
+      "image_metadata_wavelength_max_um": 1.6499000000000001,
+      "start_utc": "2025-10-17T17:39:33.725",
+      "end_utc": "2026-04-13T01:12:48.557"
+    },
+    {
+      "band": "SPHEREx-D3",
+      "images": 38,
+      "image_metadata_wavelength_min_um": 1.6301,
+      "image_metadata_wavelength_max_um": 2.4346,
+      "start_utc": "2025-10-19T10:24:32.458",
+      "end_utc": "2026-04-08T23:25:56.813"
+    },
+    {
+      "band": "SPHEREx-D4",
+      "images": 37,
+      "image_metadata_wavelength_min_um": 2.4027,
+      "image_metadata_wavelength_max_um": 3.8473000000000006,
+      "start_utc": "2025-10-16T23:44:25.325",
+      "end_utc": "2026-04-16T00:50:33.158"
+    },
+    {
+      "band": "SPHEREx-D5",
+      "images": 37,
+      "image_metadata_wavelength_min_um": 3.8112999999999997,
+      "image_metadata_wavelength_max_um": 4.43,
+      "start_utc": "2025-10-17T17:39:33.725",
+      "end_utc": "2026-04-13T01:12:48.557"
+    },
+    {
+      "band": "SPHEREx-D6",
+      "images": 36,
+      "image_metadata_wavelength_min_um": 4.4115,
+      "image_metadata_wavelength_max_um": 5.009600000000001,
+      "start_utc": "2025-10-19T10:24:32.458",
+      "end_utc": "2026-04-08T23:25:56.813"
+    }
+  ],
+  "processing_directories": {
+    "l2b-v24-2026-098": 35,
+    "l2b-v24-2026-104": 34,
+    "l2b-v24-2026-105": 31,
+    "l2b-v24-2026-110": 12,
+    "l2b-v20-2025-299": 47,
+    "l2b-v20-2025-293": 61,
+    "l2b-v20-2025-300": 3
+  },
+  "epochs": {
+    "2025-10": {
+      "images": 111,
+      "start_utc": "2025-10-16T23:44:25.325",
+      "end_utc": "2025-10-23T13:55:17.443"
+    },
+    "2026-04": {
+      "images": 112,
+      "start_utc": "2026-04-02T19:08:38.861",
+      "end_utc": "2026-04-16T00:50:33.158"
+    }
+  },
+  "cutout": {
+    "path": "coverage_sample_D6.fits",
+    "image_shape": [
+      15,
+      15
+    ],
+    "target_xy_0based": [
+      7.464454161823167,
+      7.347760397090613
+    ],
+    "target_inside_cutout": true,
+    "ssdc_pipeline_version": "6.5.6",
+    "header": {
+      "OBSID": "2026W15_1A_0560_2",
+      "DETECTOR": 6,
+      "DATE-OBS": "2026-04-08T23:24:01.661",
+      "DATE-AVG": "2026-04-08T23:24:59.220",
+      "DATE-END": "2026-04-08T23:25:56.779",
+      "XPOSURE": 113.5826,
+      "BUNIT": "MJy / sr",
+      "PSF_FWHM": 6.6145992119973425,
+      "FINAST": 0,
+      "L1DQAFLG": "Pass",
+      "L2DQAFLG": "Pass",
+      "CRPIX1A": -1127.0,
+      "CRPIX2A": -412.0
+    },
+    "target_pixel_diagnostic": {
+      "flags": 2097152,
+      "set_bit_indices": [
+        21
+      ],
+      "SOURCE_flag_definition_bit": 21,
+      "image_MJy_sr": 7.364491939544678,
+      "variance_MJy_sr_squared": 0.03753316029906273,
+      "zodi_MJy_sr": 0.6485626697540283,
+      "warning": "Single pixel diagnostics for coverage only; not an extracted point-source flux or spectrum"
+    },
+    "psf_metadata": {
+      "XCTR_1": 93.227273,
+      "YCTR_1": 93.227273,
+      "CDELT1": 0.615,
+      "CDELT2": 0.615
+    }
+  },
+  "ready_point_source_SED_found": false,
+  "what_is_measured": "No point-source flux extraction was performed; all counts are spatially overlapping spectral images. Wavelength limits are full detector image metadata, not proof that target has all wavelengths.",
+  "required_followup": [
+    "Extract consistent per-exposure PSF/ePSF point-source fluxes with local background, zodiacal model and masks",
+    "Obtain science wavelength/bandwidth from matched CWAVE/CBAND calibration products at the target detector pixel",
+    "Use processing-specific calibration provenance and QR2 corrected PSF coordinate mapping; current docs recommend QR3 ePSFs even for QR2",
+    "Combine by actual wavelength and observing epoch with uncertainties; compare post-2024 SED to prior 2MASS/WISE/Gaia cautiously"
+  ],
+  "provenance": [
+    {
+      "url": "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-access/",
+      "method": "GET",
+      "retrieved_utc": "2026-11-08T23:15:37.289105+00:00",
+      "status": 200,
+      "bytes": 111848,
+      "sha256": "521ff97ae7812634430db96209f24328e33f166e6f0d37e6ce7725ffa526a91f",
+      "headers": {
+        "Connection": "keep-alive",
+        "Content-Length": "22552",
+        "Server": "GitHub.com",
+        "Content-Type": "text/html; charset=utf-8",
+        "x-origin-cache": "HIT",
+        "Last-Modified": "Tue, 29 Sep 2026 01:06:34 GMT",
+        "Access-Control-Allow-Origin": "*",
+        "ETag": "W/\"6abb0f1a-1b4e8\"",
+        "expires": "Sun, 08 Nov 2026 23:25:42 GMT",
+        "Cache-Control": "max-age=600",
+        "Content-Encoding": "gzip",
+        "x-proxy-cache": "MISS",
+        "X-GitHub-Request-Id": "B01E:156FDE:34524F1:3A0B48F:6AF1029C",
+        "x-github-edge-region": "iad",
+        "Accept-Ranges": "bytes",
+        "Date": "Sun, 08 Nov 2026 23:15:42 GMT",
+        "Via": "1.1 varnish",
+        "Age": "0",
+        "X-Served-By": "cache-jax2030038-JAX",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "X-Timer": "S1794179742.453739,VS0,VE101",
+        "Vary": "Accept-Encoding",
+        "X-Fastly-Request-ID": "4a4d9598897ac76919bf9fb84d7d4bf70c125834"
+      },
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\archive_access_docs.html"
+    },
+    {
+      "url": "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-products/",
+      "method": "GET",
+      "retrieved_utc": "2026-11-08T23:15:37.289443+00:00",
+      "status": 200,
+      "bytes": 162716,
+      "sha256": "6cdbe80911d97ec9aa7d78f73c40789b80dd52b1fbd1e1c9f685efd542932689",
+      "headers": {
+        "Connection": "keep-alive",
+        "Content-Length": "33249",
+        "Server": "GitHub.com",
+        "Content-Type": "text/html; charset=utf-8",
+        "Last-Modified": "Tue, 29 Sep 2026 01:06:34 GMT",
+        "Access-Control-Allow-Origin": "*",
+        "ETag": "W/\"6abb0f1a-27b9c\"",
+        "expires": "Sun, 08 Nov 2026 23:25:42 GMT",
+        "Cache-Control": "max-age=600",
+        "Content-Encoding": "gzip",
+        "x-proxy-cache": "MISS",
+        "X-GitHub-Request-Id": "D2D0:919A3:347BC5A:3A35483:6AF1029C",
+        "x-github-edge-region": "iad",
+        "Accept-Ranges": "bytes",
+        "Age": "0",
+        "Date": "Sun, 08 Nov 2026 23:15:42 GMT",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-jax2030025-JAX",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "X-Timer": "S1794179742.449116,VS0,VE74",
+        "Vary": "Accept-Encoding",
+        "X-Fastly-Request-ID": "d0fb78e48f29cdb7e471ae9deb0ad997339d5fed"
+      },
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\archive_products_docs.html"
+    },
+    {
+      "method": "GET",
+      "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W15_1A/l2b-v24-2026-104/6/level2_2026W15_1A_0560_2D6_spx_l2b-v24-2026-104.fits?center=118.69117410685%2C16.694621231895&size=0.025",
+      "params": {
+        "center": "118.69117410685,16.694621231895",
+        "size": "0.025"
+      },
+      "parent_obs_id": "2026W15_1A_0560_2",
+      "parent_t_min_mjd": 61138.975019,
+      "parent_t_max_mjd": 61138.976352,
+      "retrieved_utc": "2026-11-08T23:14:50.587166+00:00",
+      "max_download_bytes": 12000000,
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 08 Nov 2026 23:14:57 GMT",
+        "Content-Type": "application/fits",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "content-disposition": "attachment; filename=level2_2026W15_1A_0560_2D6_spx_l2b-v24-2026-104.fits"
+      },
+      "bytes": 5063040,
+      "sha256": "9f5a79abe479272d903964e6f1da3301be0aba68dac3f72326506b8eaebabff2",
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\coverage_sample_D6.fits"
+    },
+    {
+      "name": "release_overview",
+      "method": "GET",
+      "params": {},
+      "retrieved_utc": "2026-11-08T23:13:54.440838+00:00",
+      "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_dr1.html",
+      "status": 404,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 08 Nov 2026 23:13:59 GMT",
+        "Content-Type": "text/html; charset=iso-8859-1",
+        "Content-Length": "196",
+        "Connection": "keep-alive"
+      },
+      "bytes": 196,
+      "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\release_overview.txt"
+    },
+    {
+      "name": "spherex_qr2_deep",
+      "method": "GET",
+      "params": {
+        "COLLECTION": "spherex_qr2_deep",
+        "POS": "CIRCLE 118.69117410685 16.694621231895 0.0001"
+      },
+      "retrieved_utc": "2026-11-08T23:13:53.724716+00:00",
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2_deep&POS=CIRCLE+118.69117410685+16.694621231895+0.0001",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 08 Nov 2026 23:13:59 GMT",
+        "Content-Type": "application/x-votable+xml",
+        "Content-Length": "27193",
+        "Connection": "keep-alive",
+        "Server-Timing": "main;dur=367.823, prepare_internal;dur=235.446, generate_adql;dur=0.113, query_delegate;dur=127.946, query_execute;dur=127.797, database_query;dur=127.750, get_postgres_connection;dur=6.684, run_postgres;dur=118.856"
+      },
+      "bytes": 27193,
+      "sha256": "d2cce5b4542afdde6fa4e4d770e6352b3b9e65476a6f8c2ba7387beb88301414",
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\spherex_qr2_deep.xml"
+    },
+    {
+      "name": "spherex_qr2",
+      "method": "GET",
+      "params": {
+        "COLLECTION": "spherex_qr2",
+        "POS": "CIRCLE 118.69117410685 16.694621231895 0.0001"
+      },
+      "retrieved_utc": "2026-11-08T23:13:53.724440+00:00",
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&POS=CIRCLE+118.69117410685+16.694621231895+0.0001",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 08 Nov 2026 23:13:59 GMT",
+        "Content-Type": "application/x-votable+xml",
+        "Content-Length": "491731",
+        "Connection": "keep-alive",
+        "Server-Timing": "main;dur=601.529, prepare_internal;dur=233.363, generate_adql;dur=0.067, query_delegate;dur=351.807, query_execute;dur=351.676, database_query;dur=351.652, get_postgres_connection;dur=5.009, run_postgres;dur=335.719"
+      },
+      "bytes": 491731,
+      "sha256": "40ff6679b7543b7eb1181ed64598d1fdb4d6cc46b6c19ad8851df0f7ba5da88b",
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\spherex_qr2.xml"
+    },
+    {
+      "name": "spherex_qr3_deep",
+      "method": "GET",
+      "params": {
+        "COLLECTION": "spherex_qr3_deep",
+        "POS": "CIRCLE 118.69117410685 16.694621231895 0.0001"
+      },
+      "retrieved_utc": "2026-11-08T23:13:53.724052+00:00",
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3_deep&POS=CIRCLE+118.69117410685+16.694621231895+0.0001",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 08 Nov 2026 23:13:59 GMT",
+        "Content-Type": "application/x-votable+xml",
+        "Content-Length": "27193",
+        "Connection": "keep-alive",
+        "Server-Timing": "main;dur=342.032, prepare_internal;dur=264.105, generate_adql;dur=0.106, query_delegate;dur=72.939, query_execute;dur=72.781, database_query;dur=72.738, get_postgres_connection;dur=4.921, run_postgres;dur=65.614"
+      },
+      "bytes": 27193,
+      "sha256": "d2cce5b4542afdde6fa4e4d770e6352b3b9e65476a6f8c2ba7387beb88301414",
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\spherex_qr3_deep.xml"
+    },
+    {
+      "name": "spherex_qr3",
+      "method": "GET",
+      "params": {
+        "COLLECTION": "spherex_qr3",
+        "POS": "CIRCLE 118.69117410685 16.694621231895 0.0001"
+      },
+      "retrieved_utc": "2026-11-08T23:13:53.723500+00:00",
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+118.69117410685+16.694621231895+0.0001",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 08 Nov 2026 23:13:59 GMT",
+        "Content-Type": "application/x-votable+xml",
+        "Content-Length": "27193",
+        "Connection": "keep-alive",
+        "Server-Timing": "main;dur=428.056, prepare_internal;dur=352.234, generate_adql;dur=0.071, query_delegate;dur=71.211, query_execute;dur=70.972, database_query;dur=70.928, get_postgres_connection;dur=4.682, run_postgres;dur=63.770"
+      },
+      "bytes": 27193,
+      "sha256": "d2cce5b4542afdde6fa4e4d770e6352b3b9e65476a6f8c2ba7387beb88301414",
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\spherex_qr3.xml"
+    },
+    {
+      "name": "tap_tables",
+      "method": "GET",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT table_name,description FROM TAP_SCHEMA.tables WHERE table_name LIKE '%spherex%'"
+      },
+      "retrieved_utc": "2026-11-08T23:13:54.426587+00:00",
+      "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+table_name%2Cdescription+FROM+TAP_SCHEMA.tables+WHERE+table_name+LIKE+%27%25spherex%25%27",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 08 Nov 2026 23:13:59 GMT",
+        "Content-Type": "text/csv",
+        "Content-Length": "280",
+        "Connection": "keep-alive",
+        "Server-Timing": "main;dur=12.347, prepare_internal;dur=1.666, generate_adql;dur=0.008, query_delegate;dur=6.187, query_execute;dur=6.181, database_query;dur=6.160, get_oracle_connection;dur=0.791, run_oracle;dur=5.290"
+      },
+      "bytes": 280,
+      "sha256": "c10b055b7d5ad64ec21156f96b11c34e3c5ee3ab9d02ba046e3c3171038dbe53",
+      "path": "results\\sky-plates-j0754-models-20261108\\spectra\\spherex\\tap_tables.txt"
+    }
+  ],
+  "generated_utc": "2026-11-08T23:16:46.413382+00:00"
+}

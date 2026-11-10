@@ -1,0 +1,94 @@
+{
+  "created_utc": "2026-11-08T20:39:07.471895+00:00",
+  "payload": {
+    "tar_ids": [
+      667380506973089536,
+      667391399010134400,
+      667024467067954560,
+      667382255023480576,
+      667409918908989568,
+      667434486121884288,
+      667380816210736128,
+      667397618122678528,
+      667403768515830272,
+      667454586568716288,
+      667411636895893504,
+      667459156414046976,
+      667456064037465216,
+      667023509291889792,
+      667402462845806080,
+      667380575692566656,
+      667401913089980544
+    ],
+    "catalog": "stellar_main",
+    "id_col": "gaia_id",
+    "cols": [
+      "asas_sn_id",
+      "ra_deg",
+      "dec_deg",
+      "gaia_id",
+      "tic_id"
+    ],
+    "format": "arrow",
+    "download": true
+  },
+  "client_reference": "https://github.com/asas-sn/skypatrol/blob/master/pyasassn/client.py",
+  "requests": [
+    {
+      "method": "POST",
+      "url": "http://asassn-lb01.ifa.hawaii.edu:9006/lookup_targets/catalog_list",
+      "status": 200,
+      "file": "asassn_index.parquet",
+      "bytes": 5605
+    },
+    {
+      "method": "GET",
+      "url": "http://asassn-lb01.ifa.hawaii.edu:9006/get_block_servers",
+      "status": 200,
+      "file": "asassn_block_servers.json",
+      "bytes": 192
+    },
+    {
+      "method": "GET",
+      "url": "http://asassn-data01.ifa.hawaii.edu:9006/get_block/query_hash-bGlzdGxlbi0xN19saXN0Zmlyc3QtNjY3MzgwNTA2OTczMDg5NTM2X2xpc3RlbmQtNjY3NDAxOTEz%0AMDg5OTgwNTQ0fGNhdGFsb2ctc3RlbGxhcl9tYWlufGlkX2NvbC1nYWlhX2lkfGNvbHMtYXNhc19z%0Abl9pZC9yYV9kZWcvZGVjX2RlZy9nYWlhX2lkL3RpY19pZA==%0A-block_idx-0-catalog-stellar_main",
+      "status": 200,
+      "file": "asassn_lightcurves.parquet",
+      "bytes": 1117297
+    }
+  ],
+  "block_failures": [],
+  "catalogue_rows": 17,
+  "lightcurve_rows": 18391,
+  "supplementary_query_definitions": {
+    "single": {
+      "tar_ids": [
+        667401913089980544
+      ],
+      "catalog": "stellar_main",
+      "id_col": "gaia_id",
+      "cols": [
+        "asas_sn_id",
+        "ra_deg",
+        "dec_deg",
+        "gaia_id",
+        "tic_id"
+      ],
+      "format": "arrow",
+      "download": true
+    },
+    "cone": {
+      "catalog": "master_list",
+      "cols": [
+        "asas_sn_id",
+        "ra_deg",
+        "dec_deg",
+        "catalog_sources"
+      ],
+      "format": "arrow",
+      "download": true
+    },
+    "radius": 0.01,
+    "ra": 118.69117410685,
+    "dec": 16.694621231895
+  }
+}

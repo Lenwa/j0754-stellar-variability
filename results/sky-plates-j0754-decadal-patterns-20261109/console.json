@@ -1,0 +1,784 @@
+{
+  "features": {
+    "1940s": {
+      "windows": [
+        [
+          1941,
+          1945
+        ],
+        [
+          1945,
+          1949
+        ],
+        [
+          1949,
+          1957
+        ]
+      ],
+      "pooled": {
+        "status": "MEASURED",
+        "annual_equal_weight_mags": [
+          13.2622029375,
+          13.408807531249998,
+          13.157311875000001
+        ],
+        "times": [
+          1942.6242660677785,
+          1946.7369527192714,
+          1952.5077690384678
+        ],
+        "years": [
+          4,
+          4,
+          7
+        ],
+        "points": [
+          47,
+          32,
+          71
+        ],
+        "rise": 0.14660459374999846,
+        "recovery": -0.2514956562499968,
+        "peak_minus_linear_baseline": 0.19025147420159172
+      },
+      "by_series": {
+        "a": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "ac": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.308675000000001,
+            13.476699843749998,
+            13.163828166666669
+          ],
+          "times": [
+            1942.9604663371456,
+            1946.8384012931526,
+            1950.3535032817351
+          ],
+          "years": [
+            4,
+            4,
+            3
+          ],
+          "points": [
+            17,
+            18,
+            10
+          ],
+          "rise": 0.16802484374999693,
+          "recovery": -0.3128716770833293,
+          "peak_minus_linear_baseline": 0.24400263237194153
+        },
+        "ax": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "bm": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "dnb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dnr": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dny": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dsb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dsy": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "i": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "ir": {
+          "status": "INSUFFICIENT",
+          "years": [
+            2,
+            1,
+            0
+          ]
+        },
+        "j": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            1
+          ]
+        },
+        "ma": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "mb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mc": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            2,
+            1
+          ]
+        },
+        "md": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mf": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            3
+          ]
+        },
+        "rh": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.2575405,
+            13.4186821875,
+            13.198716833333334
+          ],
+          "times": [
+            1942.546201810502,
+            1946.7382649542496,
+            1950.5738659086753
+          ],
+          "years": [
+            3,
+            4,
+            3
+          ],
+          "points": [
+            7,
+            8,
+            4
+          ],
+          "rise": 0.16114168750000069,
+          "recovery": -0.21996535416666596,
+          "peak_minus_linear_baseline": 0.19185953044880222
+        },
+        "rl": {
+          "status": "INSUFFICIENT",
+          "years": [
+            4,
+            1,
+            1
+          ]
+        }
+      },
+      "minimum3_sensitivity": {
+        "ac": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.322449333333333,
+            13.476699843749998,
+            13.167178750000001
+          ],
+          "times": [
+            1942.296713526941,
+            1946.8384012931526,
+            1949.975345910274
+          ],
+          "years": [
+            3,
+            4,
+            2
+          ],
+          "points": [
+            16,
+            18,
+            9
+          ],
+          "rise": 0.1542505104166647,
+          "recovery": -0.30952109374999637,
+          "peak_minus_linear_baseline": 0.24608854531311408
+        },
+        "rh": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            1,
+            0
+          ]
+        },
+        "dnb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "1980s": {
+      "windows": [
+        [
+          1969,
+          1976
+        ],
+        [
+          1982,
+          1987
+        ],
+        [
+          1987,
+          1990
+        ]
+      ],
+      "pooled": {
+        "status": "MEASURED",
+        "annual_equal_weight_mags": [
+          13.30751494642857,
+          13.482362225,
+          13.423995916666668
+        ],
+        "times": [
+          1972.4952336523802,
+          1984.3034931340705,
+          1988.2198369454227
+        ],
+        "years": [
+          7,
+          5,
+          3
+        ],
+        "points": [
+          68,
+          65,
+          27
+        ],
+        "rise": 0.1748472785714288,
+        "recovery": -0.05836630833333167,
+        "peak_minus_linear_baseline": 0.08737686703748082
+      },
+      "by_series": {
+        "a": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ac": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ax": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "bm": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dnb": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.326392410714288,
+            13.489835349999998,
+            13.438072
+          ],
+          "times": [
+            1972.5688282337267,
+            1984.479246691495,
+            1988.2320488888017
+          ],
+          "years": [
+            7,
+            5,
+            3
+          ],
+          "points": [
+            41,
+            57,
+            22
+          ],
+          "rise": 0.1634429392857104,
+          "recovery": -0.0517633499999981,
+          "peak_minus_linear_baseline": 0.07852102757443369
+        },
+        "dnr": {
+          "status": "INSUFFICIENT",
+          "years": [
+            4,
+            0,
+            0
+          ]
+        },
+        "dny": {
+          "status": "INSUFFICIENT",
+          "years": [
+            4,
+            1,
+            0
+          ]
+        },
+        "dsb": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.353581,
+            13.549848874999999,
+            13.400897041666667
+          ],
+          "times": [
+            1971.6185147241374,
+            1984.049329475494,
+            1988.1817137572423
+          ],
+          "years": [
+            2,
+            4,
+            3
+          ],
+          "points": [
+            2,
+            6,
+            5
+          ],
+          "rise": 0.19626787499999843,
+          "recovery": -0.1489518333333315,
+          "peak_minus_linear_baseline": 0.16075680328310327
+        },
+        "dsy": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "i": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ir": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "j": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ma": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mc": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "md": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mf": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rh": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rl": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "minimum3_sensitivity": {
+        "ac": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rh": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dnb": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.324254849999999,
+            13.489835349999998,
+            13.438072
+          ],
+          "times": [
+            1973.086239120094,
+            1984.479246691495,
+            1988.2320488888017
+          ],
+          "years": [
+            5,
+            5,
+            3
+          ],
+          "points": [
+            38,
+            57,
+            22
+          ],
+          "rise": 0.16558049999999902,
+          "recovery": -0.0517633499999981,
+          "peak_minus_linear_baseline": 0.07996476393124041
+        }
+      }
+    }
+  },
+  "template": {
+    "43.0": {
+      "False": {
+        "n": 127,
+        "time_range": [
+          1975.1235486739724,
+          1986.0170129561643
+        ],
+        "series": [
+          "dnb",
+          "dny",
+          "dsb",
+          "mc"
+        ],
+        "amplitude": -0.1904363515163947,
+        "rms_free": 0.1479825367834492,
+        "rms_no_repeat": 0.15832346271549777,
+        "rms_equal_depth_repeat": 0.38167041641247085,
+        "rank": 5,
+        "columns": 5,
+        "condition": 11.812176258187751,
+        "excluded_outside_template": 98
+      },
+      "True": {
+        "n": 127,
+        "time_range": [
+          1975.1235486739724,
+          1986.0170129561643
+        ],
+        "series": [
+          "dnb",
+          "dny",
+          "dsb",
+          "mc"
+        ],
+        "amplitude": -0.520549725688138,
+        "rms_free": 0.1473386543383453,
+        "rms_no_repeat": 0.14890346443495311,
+        "rms_equal_depth_repeat": 0.16019997541502373,
+        "rank": 6,
+        "columns": 6,
+        "condition": 102.47683454350158,
+        "excluded_outside_template": 98
+      }
+    },
+    "44.5": {
+      "False": {
+        "n": 127,
+        "time_range": [
+          1976.8207143142074,
+          1987.3207164273967
+        ],
+        "series": [
+          "dnb",
+          "dny",
+          "dsb",
+          "mc"
+        ],
+        "amplitude": -0.20498438269525288,
+        "rms_free": 0.14717205900477287,
+        "rms_no_repeat": 0.15823027273512613,
+        "rms_equal_depth_repeat": 0.37197002584779887,
+        "rank": 5,
+        "columns": 5,
+        "condition": 11.91066940710351,
+        "excluded_outside_template": 98
+      },
+      "True": {
+        "n": 127,
+        "time_range": [
+          1976.8207143142074,
+          1987.3207164273967
+        ],
+        "series": [
+          "dnb",
+          "dny",
+          "dsb",
+          "mc"
+        ],
+        "amplitude": -0.614339732514269,
+        "rms_free": 0.14632763184235395,
+        "rms_no_repeat": 0.1481886804994639,
+        "rms_equal_depth_repeat": 0.15873420564109147,
+        "rank": 6,
+        "columns": 6,
+        "condition": 108.07386472554013,
+        "excluded_outside_template": 98
+      }
+    },
+    "46.0": {
+      "False": {
+        "n": 126,
+        "time_range": [
+          1978.112793619178,
+          1988.9272671721308
+        ],
+        "series": [
+          "dnb",
+          "dny",
+          "dsb",
+          "mc"
+        ],
+        "amplitude": -0.18420130311061023,
+        "rms_free": 0.15072668982666715,
+        "rms_no_repeat": 0.15884600460318396,
+        "rms_equal_depth_repeat": 0.3558121755320162,
+        "rank": 5,
+        "columns": 5,
+        "condition": 11.863217955416882,
+        "excluded_outside_template": 99
+      },
+      "True": {
+        "n": 126,
+        "time_range": [
+          1978.112793619178,
+          1988.9272671721308
+        ],
+        "series": [
+          "dnb",
+          "dny",
+          "dsb",
+          "mc"
+        ],
+        "amplitude": -0.4001335152621248,
+        "rms_free": 0.15051622709356496,
+        "rms_no_repeat": 0.15122471670335025,
+        "rms_equal_depth_repeat": 0.15897388274079605,
+        "rank": 6,
+        "columns": 6,
+        "condition": 105.48246004767059,
+        "excluded_outside_template": 99
+      }
+    }
+  },
+  "gaps": [
+    {
+      "start": 1956.1750467978138,
+      "end": 1964.131454538251,
+      "years": 7.956407740437271
+    },
+    {
+      "start": 1922.8887167315063,
+      "end": 1928.292595653006,
+      "years": 5.403878921499654
+    },
+    {
+      "start": 1893.1510377205475,
+      "end": 1897.241310863013,
+      "years": 4.0902731424655485
+    },
+    {
+      "start": 1910.0282207452053,
+      "end": 1913.9406186630133,
+      "years": 3.9123979178079935
+    }
+  ],
+  "modern": {
+    "bA g": {
+      "year": 2022,
+      "time": 2022.2282803123294,
+      "n": 113,
+      "days": 36,
+      "mag": 12.954,
+      "series": [
+        "bA g"
+      ]
+    },
+    "bE g": {
+      "year": 2022,
+      "time": 2022.3916942980816,
+      "n": 87,
+      "days": 27,
+      "mag": 12.927,
+      "series": [
+        "bE g"
+      ]
+    },
+    "ba V": {
+      "year": 2016,
+      "time": 2016.23864957541,
+      "n": 221,
+      "days": 76,
+      "mag": 12.312,
+      "series": [
+        "ba V"
+      ]
+    },
+    "be V": {
+      "year": 2017,
+      "time": 2017.3698024154794,
+      "n": 70,
+      "days": 26,
+      "mag": 12.209,
+      "series": [
+        "be V"
+      ]
+    },
+    "bi g": {
+      "year": 2022,
+      "time": 2022.3124449268494,
+      "n": 102,
+      "days": 35,
+      "mag": 12.916,
+      "series": [
+        "bi g"
+      ]
+    },
+    "bm g": {
+      "year": 2022,
+      "time": 2022.2352568704114,
+      "n": 116,
+      "days": 31,
+      "mag": 12.906,
+      "series": [
+        "bm g"
+      ]
+    },
+    "bq g": {
+      "year": 2022,
+      "time": 2022.3291213887674,
+      "n": 96,
+      "days": 32,
+      "mag": 12.9465,
+      "series": [
+        "bq g"
+      ]
+    }
+  }
+}

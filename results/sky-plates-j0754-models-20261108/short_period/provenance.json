@@ -1,0 +1,72 @@
+{
+  "python": "3.14.7",
+  "numpy": "2.5.4",
+  "astropy": "8.0.2",
+  "files": [
+    {
+      "path": "tools/sky-plates\\orbit_photometry.py",
+      "sha256": "4343a0d0035893d6b1cd9d4f164b8b5d3e52f55aadbbcd2cc575f160f06f32c6",
+      "bytes": 23252
+    },
+    {
+      "path": "tools/sky-plates\\test_orbit_photometry.py",
+      "sha256": "42c7f0edd45262172f93ee37e6a480d12df8b6dc9a1b5bb83fb1eff0c907a800",
+      "bytes": 2130
+    },
+    {
+      "path": "tools/sky-plates\\asassn_replication.py",
+      "sha256": "7eef2ed47da2f86e3631531e9c4aee94618b292b3e575778936d6534511ee74e",
+      "bytes": 12065
+    },
+    {
+      "path": "results\\sky-plates-j0754-independent-20261108\\asassn_v1_lightcurve.csv",
+      "sha256": "58f6f77947f2deaabede6e84407cf1fc00ea14355d440b1f61a5cbb6bc5d7be2",
+      "bytes": 409428
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\modern_differential.json",
+      "sha256": "f38fa7a04b083fd80b210fc10eea14db6a6400090f20318f78e27eed9aad4b2c",
+      "bytes": 100869
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+      "sha256": "a42aa17a746c4f0326cd875803525510ab869fff2969930d349ac56fc61245da",
+      "bytes": 192960
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+      "sha256": "5e1a239cfb1779f7c7265abf0c2be04f4712be0c9c3c4eba5429a62a3f37a83e",
+      "bytes": 204480
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+      "sha256": "e37fe3dfdbffaffdff4450e28c0accd8b11cd2bee1decb37904e8b11d7a04f78",
+      "bytes": 218880
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+      "sha256": "c07c3343d8156b2cd48c97ade930a8fad0d167e6f4ab6e59474bb141c824b3a2",
+      "bytes": 665280
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+      "sha256": "ac8ae83aabd8a7bd3f60de3fbad7cd73a7a7df3d7b6b01d44deb7c7b5b186fed",
+      "bytes": 650880
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+      "sha256": "d4a7a5510b2918430fc8ce9cbbb7f44b075af39cc28bc5d1a6b86cf40e54ab08",
+      "bytes": 1152000
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+      "sha256": "71faa71d960e2b17745ee914d896bbfb19296641af94e94e3f4ffbba024f2f45",
+      "bytes": 1128960
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+      "sha256": "d8f3cdcc8a206f2413a8a220ccd1e577a0b3079b67534c0c9bab778f387e637d",
+      "bytes": 342720
+    }
+  ]
+}

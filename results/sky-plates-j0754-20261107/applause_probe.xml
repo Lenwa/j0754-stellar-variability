@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:stc="http://www.ivoa.net/xml/STC/v1.30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><RESOURCE type="results"><INFO name="QUERY_STATUS" value="ERROR">TAP executing error: canceling statement due to statement timeout</INFO></RESOURCE></VOTABLE>

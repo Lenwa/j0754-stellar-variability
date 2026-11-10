@@ -1,0 +1,39 @@
+{
+  "status": "Post-result check of finite phase-matching tolerance; primary15-day tolerance unchanged.",
+  "results": {
+    "ASAS_SN_g": {
+      "5": {
+        "pairs": 37,
+        "rms": 0.14553122052895942,
+        "median_absolute": 0.1460000000000008
+      },
+      "10": {
+        "pairs": 66,
+        "rms": 0.15018446675016114,
+        "median_absolute": 0.14724999999999966
+      },
+      "15": {
+        "pairs": 75,
+        "rms": 0.1512400161994172,
+        "median_absolute": 0.14849999999999852
+      }
+    },
+    "ZTF_g": {
+      "5": {
+        "pairs": 7,
+        "rms": 0.15655114129528339,
+        "median_absolute": 0.1580836062499995
+      },
+      "10": {
+        "pairs": 11,
+        "rms": 0.15179151882978506,
+        "median_absolute": 0.1580836062499995
+      },
+      "15": {
+        "pairs": 14,
+        "rms": 0.16382524481655614,
+        "median_absolute": 0.1744561
+      }
+    }
+  }
+}

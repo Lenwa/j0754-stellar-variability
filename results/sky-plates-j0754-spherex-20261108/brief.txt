@@ -1,0 +1,61 @@
+J0754 optical state near SPHEREx — saved ASAS-SN data only
+
+Retained the existing ASAS-SN V1 parse_row quality rule: finite HJD, magnitude,
+magnitude error, flux and flux error; 0<mag_err<99, mag<90, positive flux and
+flux error, camera/filter agreement, and no upper-limit magnitude strings.
+No brightness clipping, new image-quality flag or precision estimate was added.
+The 5249 native rows reproduce the earlier 5180 accepted V+g rows.
+Only g is used below. Native fractional UT dates, rather than heliocentric HJD,
+set the UTC window membership.
+
+SPHEREx 2025: 2025-10-16T23:44:25.311 through 2025-10-23T13:51:13.427
+Optical window (each endpoint expanded by 15 days): 2025-10-01T23:44:25.311 through 2025-11-07T13:51:13.427
+Accepted g exposures 104/108; rejected 4 under the unchanged rule.
+Camera   Exposures/days   Daily median g   Daily scatter*   Median native error   Actual UTC dates
+bA        18/6            12.807            0.004            0.008                2025-10-02.5830944 to 2025-11-01.5918769
+bE         3/1            12.743            n/a              0.010                2025-10-24.3170379 to 2025-10-24.3188465
+bi         6/2            12.780            0.075            0.011                2025-10-18.3378090 to 2025-10-25.3105928
+bm        14/5            12.766            0.056            0.013                2025-10-08.1345975 to 2025-10-31.1078024
+bq        63/21           12.767            0.016            0.013                2025-10-02.4232175 to 2025-11-07.3140129
+
+SPHEREx 2026: 2026-04-02T19:08:38.880 through 2026-04-16T00:48:38.037
+Optical window (each endpoint expanded by 15 days): 2026-03-18T19:08:38.880 through 2026-05-01T00:48:38.037
+Accepted g exposures 95/95; rejected 0 under the unchanged rule.
+Camera   Exposures/days   Daily median g   Daily scatter*   Median native error   Actual UTC dates
+bA        24/8            12.758            0.021            0.008                2026-03-25.3517571 to 2026-04-26.2368901
+bE        24/7            12.729            0.039            0.010                2026-03-21.1369064 to 2026-04-29.0244816
+bi        21/7            12.741            0.033            0.014                2026-03-30.0306540 to 2026-04-26.0345240
+bm        20/6            12.723            0.015            0.012                2026-03-25.7434469 to 2026-04-25.7155778
+bq         6/2            12.773            0.002            0.023                2026-04-03.2287318 to 2026-04-27.1524147
+
+*Daily scatter is 1.4826 times the median absolute deviation of daily medians,
+not an uncertainty of the window median. A one-day sample has no measured
+between-day scatter. JSON also preserves raw-exposure medians, standard
+deviations, ranges, actual daily values and original native row numbers.
+
+Same-camera difference, Apr2026 minus Oct2025 (negative means brighter):
+Camera   Daily-median delta   Exposure-median delta   Daily counts Oct/Apr
+bA       -0.0495 mag          -0.0495 mag              6/8
+bE       -0.0140 mag          -0.0135 mag              1/7
+bi       -0.0395 mag          -0.0415 mag              2/7
+bm       -0.0430 mag          -0.0285 mag              5/6
+bq       +0.0055 mag          -0.0015 mag              21/2
+
+bA and bm have at least five daily groups in each window and show April
+about 0.04–0.05mag brighter (roughly 4–5% more g flux). bi and bE have sparse
+October sampling; bq has only two April days and gives essentially no change.
+This supports only a modest, camera-dependent optical state difference; it does
+not establish a precise or uniform brightness change. No pooled absolute g
+zero point or cross-camera shift was fitted.
+
+Same-camera differences retain seasonal calibration, blending and systematic
+uncertainties. The broad optical windows are not simultaneous with every
+SPHEREx wavelength. Optical g flux ratios are not infrared spectral flux ratios.
+ASAS-SN V1 supplies no explicit image quality flags. Statistical errors do not
+include all calibration or astrophysical variation; no significance or new
+formal error of the median difference is claimed.
+
+Verification: all 65 selected daily camera medians exactly reproduce the existing
+saved short-period reduction; original native CSV hash unchanged. No downloads,
+new archive jobs or maintained source edits occurred. Source/input hashes and
+all dates/counts/scatters are in optical_state_match.json.

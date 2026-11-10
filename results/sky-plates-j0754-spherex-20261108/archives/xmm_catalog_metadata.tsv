@@ -1,0 +1,110 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:45:41 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:45:41	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=IX%2F65&-c=118.69117410685+%2B16.694621231895&-c.rs=60&-out=%2A%2A&-out.max=100	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=60.	
+#Constraint -out.max=100
+
+#RESOURCE=yCat_9065
+#Name: IX/65
+#Title: XMM-Newton Serendipitous Source Catalogue 4XMM-DR11 (Webb+, 2022)
+#INFO	ivoid=ivo://cds.vizier/ix/65	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ix/65	    IVOID of underlying data collection
+#INFO	creator=Webb N.A.	    First author or institution
+#INFO	cites=bibcode:2020A&A...641A.136W	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2020	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/IX/65	    Dataset landing page
+#INFO	publication_date=2022-05-18	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H:	ICRS
+#Table	IX_65_xmm4d11s:
+#Name: IX/65/xmm4d11s
+#Title: The 4XMM-DR11 Catalog, "slim" version
+#Column	_r	(F6.3)	Distance from center (118.691174+16.694621)[ICRS]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Source	(I15)	[200001101010001/208711912010092] Unique source index (SRCID)	[ucd=meta.id]
+#Column	4XMM	(A16)	Unique source name (JHHMMSS.s+DDMMSS) (IAUNAME)	[ucd=meta.id;meta.main]
+#Column	RA_ICRS	(F10.6)	Mean source right ascension (ICRS) (SC_RA)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F10.6)	Mean source declination (ICRS) (SC_DEC)	[ucd=pos.eq.dec;meta.main]
+#Column	ePos	(F9.6)	[0.03/20] Mean error on position (SC_POSERR)	[ucd=stat.error]
+#Column	srcML	(D12.5)	Source detection likelihood (SC_DET_ML) (2)	[ucd=stat.likelihood;instr.saturation]
+#Column	Flux1	(D12.5)	Mean flux in 0.2-0.5keV band (SC_EP_1_FLUX)	[ucd=phot.flux;em.X-ray]
+#Column	e_Flux1	(D12.5)	Mean error on Flux1 (SC_EP_1_FLUX_ERR)	[ucd=stat.error]
+#Column	Flux2	(D12.5)	Mean flux in 0.5-1.0keV band (SC_EP_2_FLUX)	[ucd=phot.flux;em.X-ray]
+#Column	e_Flux2	(D12.5)	Mean error on Flux2 (SC_EP_2_FLUX_ERR)	[ucd=stat.error]
+#Column	Flux3	(D12.5)	Mean flux in 1.0-2.0keV band (SC_EP_3_FLUX)	[ucd=phot.flux;em.X-ray]
+#Column	e_Flux3	(D12.5)	Mean error on Flux3 (SC_EP_3_FLUX_ERR)	[ucd=stat.error]
+#Column	Flux4	(D12.5)	Mean flux in 2.0-4.5keV band (SC_EP_4_FLUX)	[ucd=phot.flux;em.X-ray]
+#Column	e_Flux4	(D12.5)	Mean error on Flux4 (SC_EP_4_FLUX_ERR)	[ucd=stat.error]
+#Column	Flux5	(D12.5)	Mean flux in 4.5-12keV band (SC_EP_5_FLUX)	[ucd=phot.flux;em.X-ray]
+#Column	e_Flux5	(D12.5)	Mean error on Flux5 (SC_EP_5_FLUX_ERR)	[ucd=stat.error]
+#Column	Flux8	(D12.5)	Mean flux in 0.2-12keV band (SC_EP_8_FLUX)	[ucd=phot.flux;em.X-ray]
+#Column	e_Flux8	(D12.5)	Mean error on Flux8 (SC_EP_8_FLUX_ERR)	[ucd=stat.error]
+#Column	Flux9	(D12.5)	? Mean flux in 0.5-4.5keV band (SC_EP_9_FLUX)	[ucd=phot.flux;em.X-ray]
+#Column	e_Flux9	(D12.5)	? Mean error on Flux9 (SC_EP_9_FLUX_ERR)	[ucd=stat.error]
+#Column	HR1	(F9.6)	[-1/1]? Hardness ratio, bands 1,2 (SC_HR1) (1)	[ucd=phot.flux;arith.ratio]
+#Column	e_HR1	(D12.5)	? Mean error on HR1 (SC_HR1_ERR)	[ucd=stat.error]
+#Column	HR2	(F9.6)	[-1/1]? Hardness ratio, bands 2,3 (SC_HR2) (1)	[ucd=phot.flux;arith.ratio]
+#Column	e_HR2	(D12.5)	? Mean error on HR2 (SC_HR2_ERR)	[ucd=stat.error]
+#Column	HR3	(F9.6)	[-1/1]? Hardness ratio, bands 3,4 (SC_HR3) (1)	[ucd=phot.flux;arith.ratio]
+#Column	e_HR3	(D12.5)	? Mean error on HR3 (SC_HR3_ERR)	[ucd=stat.error]
+#Column	HR4	(F9.6)	[-1/1]? Hardness ratio, bands 4,5 (SC_HR4) (1)	[ucd=phot.flux;arith.ratio]
+#Column	e_HR4	(D12.5)	? Mean error on HR4 (SC_HR4_ERR)	[ucd=stat.error]
+#Column	ext	(F9.6)	Total band extent (SC_EXTENT)	[ucd=phys.angSize]
+#Column	e_ext	(F10.6)	? Mean error on ext (SC_EXT_ERR)	[ucd=stat.error]
+#Column	extML	(D12.5)	Detection likelihood of the extended source (SC_EXT_ML) (3)	[ucd=stat.likelihood;instr.saturation]
+#Column	Cst	(F9.6)	[0/1]? Constant probability (SC_CHI2PROB) (4)	[ucd=stat.fit.goodness]
+#Column	Fvar	(F12.6)	? fractional excess variance of the unique source (SC_FVAR) (6)	[ucd=src.var.index]
+#Column	e_Fvar	(F12.6)	? Mean error on Fvar (SC_FVARERR)	[ucd=stat.error]
+#Column	V	(I1)	[0/1] Variability flag (V=1) (SC_VAR_FLAG)	[ucd=meta.code;src.var]
+#Column	S	(I1)	[0/4] summary flag, 0=best (SC_SUM_FLAG) (5)	[ucd=meta.code.qual]
+#Column	F8min	(D12.5)	Minimum flux in 0.5-4.5keV band (SC_EP_8_FMIN)	[ucd=phot.flux;em.X-ray.medium;stat.min]
+#Column	e_F8min	(D12.5)	Mean error on F8min (SC_EP_8_FMIN_ERR)	[ucd=stat.error]
+#Column	F8max	(D12.5)	Maximum flux in 0.5-4.5keV band (SC_EP_8_FMAX)	[ucd=phot.flux;em.X-ray.medium;stat.max]
+#Column	e_F8max	(D12.5)	Mean error on F8max (SC_EP_8_FMAX_ERR)	[ucd=stat.error]
+#Column	MJD0	(F10.4)	[51575/59200] Date of first observation (MJD) (MJD_FIRST)	[ucd=time.epoch]
+#Column	MJD1	(F10.4)	[51575/59201] Date of last observation (MJD) (MJD_LAST)	[ucd=time.epoch]
+#Column	Nd	(I2)	[1/80]? Number of detections (N_DETECTIONS)	[ucd=meta.number]
+#Column	c	(I1)	[0/1] (CONFUSED) Confusion flag (CONFUSED) (7)	[ucd=meta.code]
+#Column	uIRAP	(A54)	URL for details at IRAP (WEBPAGE_URL)	[ucd=meta.ref.url]
+#Column	xcatDB	(a6)	Show details from the Xcat-DB about that source	[ucd=meta.ref.url]
+#Column	IRAP	(A4)	Show details from IRAP site about that source	[ucd=meta.ref.url]
+#Table	IX_65_summary:
+#Name: IX/65/summary
+#Title: List of observations
+#Column	_r	(F6.3)	Distance from center (118.691174+16.694621)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Rev	(A4)	[27/3850] Satellite revolution number (REVOLUT)	[ucd=meta.id]
+#Column	ObsID	(A10)	XMM Observation number (Cat. B/xmm) (OBS_ID)	[ucd=meta.id;meta.main]
+#Column	iODF	(A3)	[1/10] Data File (ODF) number (ODF_VERS)	[ucd=meta.software]
+#Column	RAJ2000	(F10.6)	field Right Ascension (J2000) (RA)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	field Declination (J2000) (DEC)	[ucd=pos.eq.dec;meta.main]
+#Column	PApnt	(F10.6)	Actual pointed position of the optical axis (PA_PNT)	[ucd=instr.offset]
+#Column	Target	(a19)	Target name (TARGET)	[ucd=meta.id]
+#Column	MJD0	(F10.4)	Start observation date (MJD_START)	[ucd=time.epoch]
+#Column	MJD1	(F10.4)	End observation date (MJD_STOP)	[ucd=time.epoch]
+#Column	Q	(I1)	[0/5] Observations quality (OBS_CLASS) (1)	[ucd=meta.code.qual;obs]
+#Column	Nd	(I3)	[1/738] Number of detections in field (NDET)	[ucd=meta.number]
+#Column	Ng	(I3)	[0/419] Number of good detections in field (NDETGOOD)	[ucd=meta.number]
+#Column	Np	(I1)	[1/5]? Number of PN exposures merged (PN_NEXP)	[ucd=meta.number]
+#Column	f.PN	(A3)	Filter of the PN exposure(s) (PN_FILT) (2)	[ucd=instr.bandpass]
+#Column	m.PN	(A4)	Mode of the PN exposure(s) (PN_MODE) (3)	[ucd=instr.setup]
+#Column	t.PN	(I6)	? Total PN exposure time (PN_TEXP)	[ucd=time.duration;obs.exposure]
+#Column	N1	(I1)	[1/5]? Number of M1 exposures merged (M1_NEXP)	[ucd=meta.number]
+#Column	f.M1	(A3)	Filter of the M1 exposure(s) (M1_FILT) (2)	[ucd=instr.bandpass]
+#Column	m.M1	(A5)	Mode of the M1 exposures (M1_MODE) (3)	[ucd=instr.setup]
+#Column	t.M1	(I6)	? Total M1 exposure time (M1_TEXP)	[ucd=time.duration;obs.exposure]
+#Column	N2	(I1)	[1/5]? Number of M2 exposures merged (M2_NEXP)	[ucd=meta.number]
+#Column	f.M2	(A3)	Filter of the M2 exposure(s) (M2_FILT) (2)	[ucd=instr.bandpass]
+#Column	m.M2	(A5)	Mode of the M2 exposures (M2_MODE) (3)	[ucd=instr.setup]
+#Column	t.M2	(I6)	? Total M2 exposure time (M2_TEXP)	[ucd=time.duration;obs.exposure]

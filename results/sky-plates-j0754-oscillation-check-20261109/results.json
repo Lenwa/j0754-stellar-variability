@@ -1,0 +1,628 @@
+[
+  {
+    "source": "QLP",
+    "sector": 44,
+    "column": "SAP_FLUX",
+    "n": 2821,
+    "span_days": 23.488422580767292,
+    "median_cadence_minutes": 10.000992080604192,
+    "residual_rms_ppm": 5805.134299476758,
+    "difference_scatter_ppm": 1276.1434281394033,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 30323.911083982923,
+      "40-60": 14096.115199298723,
+      "60-80": 8017.934356051818,
+      "80-100": 5793.123623864209,
+      "100-120": 4966.31713776281,
+      "120-140": 4474.519005481703,
+      "140-160": 3441.247494753103,
+      "160-180": 4035.9382668904,
+      "180-200": 3778.8408899259953
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999571898554248,
+        "injected_only_to_observed_30_100_power": 0.014820289758170306
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999571898554248,
+        "injected_only_to_observed_30_100_power": 0.13338260782353273
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999571898554247,
+        "injected_only_to_observed_30_100_power": 1.4820289758170304
+      }
+    ]
+  },
+  {
+    "source": "QLP",
+    "sector": 44,
+    "column": "KSPSAP_FLUX",
+    "n": 2821,
+    "span_days": 23.488422580767292,
+    "median_cadence_minutes": 10.000992080604192,
+    "residual_rms_ppm": 1342.7803029510067,
+    "difference_scatter_ppm": 1283.5048807385679,
+    "smoothed_peak_25_110_uHz": 25.45000000000022,
+    "bands": {
+      "20-40": 5032.08497836899,
+      "40-60": 2542.149134725027,
+      "60-80": 2441.1861479062545,
+      "80-100": 2425.451922713466,
+      "100-120": 2695.688749632514,
+      "120-140": 3489.962647546758,
+      "140-160": 2553.0699385676085,
+      "160-180": 2391.5651702730065,
+      "180-200": 2787.5108728890687
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999571898554248,
+        "injected_only_to_observed_30_100_power": 0.06116721088598195
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999571898554248,
+        "injected_only_to_observed_30_100_power": 0.5505048979738374
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999571898554247,
+        "injected_only_to_observed_30_100_power": 6.116721088598195
+      }
+    ]
+  },
+  {
+    "source": "QLP",
+    "sector": 45,
+    "column": "SAP_FLUX",
+    "n": 2811,
+    "span_days": 24.543762721325947,
+    "median_cadence_minutes": 10.000864606918185,
+    "residual_rms_ppm": 2817.219383920335,
+    "difference_scatter_ppm": 1221.131768658076,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 7016.026500456067,
+      "40-60": 4490.277523599757,
+      "60-80": 3887.4151569136384,
+      "80-100": 4315.658322734015,
+      "100-120": 3780.2497116267045,
+      "120-140": 3573.9489594234747,
+      "140-160": 3595.952782680958,
+      "160-180": 3305.743274378385,
+      "180-200": 3757.8092318575295
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999909233414868,
+        "injected_only_to_observed_30_100_power": 0.03779575424807437
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999909233414869,
+        "injected_only_to_observed_30_100_power": 0.34016178823266924
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999909233414866,
+        "injected_only_to_observed_30_100_power": 3.779575424807437
+      }
+    ]
+  },
+  {
+    "source": "QLP",
+    "sector": 45,
+    "column": "KSPSAP_FLUX",
+    "n": 2811,
+    "span_days": 24.543762721325947,
+    "median_cadence_minutes": 10.000864606918185,
+    "residual_rms_ppm": 1289.2458173722769,
+    "difference_scatter_ppm": 1226.48620068894,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 4426.958634421939,
+      "40-60": 4017.796058324138,
+      "60-80": 2354.0498288877484,
+      "80-100": 3582.613301987094,
+      "100-120": 2822.402380261069,
+      "120-140": 2088.6938054428047,
+      "140-160": 2729.1141154983384,
+      "160-180": 2372.803983206976,
+      "180-200": 2557.0468855999097
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999909233414868,
+        "injected_only_to_observed_30_100_power": 0.048787034434319934
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999909233414869,
+        "injected_only_to_observed_30_100_power": 0.4390833099088793
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999909233414866,
+        "injected_only_to_observed_30_100_power": 4.878703443431993
+      }
+    ]
+  },
+  {
+    "source": "QLP",
+    "sector": 46,
+    "column": "SAP_FLUX",
+    "n": 2702,
+    "span_days": 25.786071476144116,
+    "median_cadence_minutes": 10.00056062672229,
+    "residual_rms_ppm": 4376.156965145287,
+    "difference_scatter_ppm": 1238.2600937214072,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 23396.130551788756,
+      "40-60": 9206.096971137442,
+      "60-80": 6384.071771416882,
+      "80-100": 6946.34072931708,
+      "100-120": 5572.789342544694,
+      "120-140": 6807.370915279943,
+      "140-160": 8870.021518175437,
+      "160-180": 7017.818111597458,
+      "180-200": 5666.066173898662
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999952971925976,
+        "injected_only_to_observed_30_100_power": 0.019161468359017563
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999952971925976,
+        "injected_only_to_observed_30_100_power": 0.17245321523115803
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999952971925976,
+        "injected_only_to_observed_30_100_power": 1.9161468359017566
+      }
+    ],
+    "flare_retained_to_masked_band_power": 1.8797127265067965
+  },
+  {
+    "source": "QLP",
+    "sector": 46,
+    "column": "KSPSAP_FLUX",
+    "n": 2702,
+    "span_days": 25.786071476144116,
+    "median_cadence_minutes": 10.00056062672229,
+    "residual_rms_ppm": 1304.362133203101,
+    "difference_scatter_ppm": 1244.3595814641749,
+    "smoothed_peak_25_110_uHz": 51.30000000000059,
+    "bands": {
+      "20-40": 3549.287019726377,
+      "40-60": 3830.8497572378005,
+      "60-80": 3239.946841483994,
+      "80-100": 2523.5286874008398,
+      "100-120": 3216.66986903479,
+      "120-140": 3105.622347398852,
+      "140-160": 2909.7531227280588,
+      "160-180": 2828.1549156966603,
+      "180-200": 2779.0731781841314
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999952971925976,
+        "injected_only_to_observed_30_100_power": 0.053402337579883226
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999952971925976,
+        "injected_only_to_observed_30_100_power": 0.4806210382189489
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999952971925976,
+        "injected_only_to_observed_30_100_power": 5.340233757988324
+      }
+    ],
+    "flare_retained_to_masked_band_power": 3.036510093126478
+  },
+  {
+    "source": "QLP",
+    "sector": 71,
+    "column": "SAP_FLUX",
+    "n": 8121,
+    "span_days": 23.930574272195827,
+    "median_cadence_minutes": 3.3336630920894095,
+    "residual_rms_ppm": 10623.883958103464,
+    "difference_scatter_ppm": 2320.3624034276518,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 57880.41789539889,
+      "40-60": 19808.386074651862,
+      "60-80": 11085.406846329812,
+      "80-100": 8408.793005821397,
+      "100-120": 8595.546418061696,
+      "120-140": 6033.103998198148,
+      "140-160": 3195.8549453972187,
+      "160-180": 4432.066056475933,
+      "180-200": 4078.3156793875464
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999980716500392,
+        "injected_only_to_observed_30_100_power": 0.011450563938347164
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.999998071650039,
+        "injected_only_to_observed_30_100_power": 0.10305507544512445
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999980716500387,
+        "injected_only_to_observed_30_100_power": 1.1450563938347162
+      }
+    ]
+  },
+  {
+    "source": "QLP",
+    "sector": 71,
+    "column": "DET_FLUX",
+    "n": 8121,
+    "span_days": 23.930574272195827,
+    "median_cadence_minutes": 3.3336630920894095,
+    "residual_rms_ppm": 2509.5795479904705,
+    "difference_scatter_ppm": 2445.519883687034,
+    "smoothed_peak_25_110_uHz": 67.05000000000081,
+    "bands": {
+      "20-40": 3475.7338316709943,
+      "40-60": 3796.737563936527,
+      "60-80": 3673.6823731875415,
+      "80-100": 2374.719852004651,
+      "100-120": 4138.303682896184,
+      "120-140": 2882.587416246933,
+      "140-160": 2609.543925135529,
+      "160-180": 4425.890994512519,
+      "180-200": 2955.67789307046
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999980716500392,
+        "injected_only_to_observed_30_100_power": 0.05315393695200712
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.999998071650039,
+        "injected_only_to_observed_30_100_power": 0.478385432568064
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999980716500387,
+        "injected_only_to_observed_30_100_power": 5.3153936952007115
+      }
+    ]
+  },
+  {
+    "source": "QLP",
+    "sector": 72,
+    "column": "SAP_FLUX",
+    "n": 9001,
+    "span_days": 23.673211872477623,
+    "median_cadence_minutes": 3.333602137317939,
+    "residual_rms_ppm": 5313.8746662987605,
+    "difference_scatter_ppm": 2288.6736662294097,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 33084.52213557856,
+      "40-60": 9075.655815636255,
+      "60-80": 8045.603584970068,
+      "80-100": 6871.891445264842,
+      "100-120": 4548.322579742862,
+      "120-140": 3309.5492478841766,
+      "140-160": 2327.7712918675466,
+      "160-180": 2619.7986694757933,
+      "180-200": 2085.4699173541103
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999999528983239,
+        "injected_only_to_observed_30_100_power": 0.015432328957349632
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999999528983238,
+        "injected_only_to_observed_30_100_power": 0.13889096061614664
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999999528983237,
+        "injected_only_to_observed_30_100_power": 1.5432328957349635
+      }
+    ]
+  },
+  {
+    "source": "QLP",
+    "sector": 72,
+    "column": "DET_FLUX",
+    "n": 9001,
+    "span_days": 23.673211872477623,
+    "median_cadence_minutes": 3.333602137317939,
+    "residual_rms_ppm": 2436.4566233008636,
+    "difference_scatter_ppm": 2352.0785573335725,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 7444.20118214868,
+      "40-60": 3665.7556728555505,
+      "60-80": 2348.73643591889,
+      "80-100": 2656.03147789969,
+      "100-120": 2372.243451650987,
+      "120-140": 2678.27256542339,
+      "140-160": 2089.312225850611,
+      "160-180": 2457.344182748743,
+      "180-200": 2135.748087791924
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999999528983239,
+        "injected_only_to_observed_30_100_power": 0.04894085503787586
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999999528983238,
+        "injected_only_to_observed_30_100_power": 0.44046769534088265
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999999528983237,
+        "injected_only_to_observed_30_100_power": 4.894085503787586
+      }
+    ]
+  },
+  {
+    "source": "SPOC",
+    "sector": 71,
+    "column": "SAP_FLUX",
+    "n": 8772,
+    "span_days": 23.648139649433233,
+    "median_cadence_minutes": 3.3336634519218933,
+    "residual_rms_ppm": 10351.712313123531,
+    "difference_scatter_ppm": 1737.0022860985787,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 45962.704965503675,
+      "40-60": 15958.033279482599,
+      "60-80": 8131.416517573538,
+      "80-100": 5162.605598645185,
+      "100-120": 5167.029249110175,
+      "120-140": 3023.3132407771864,
+      "140-160": 2834.043762004409,
+      "160-180": 2650.795210380978,
+      "180-200": 2411.45341062618
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999704072371248,
+        "injected_only_to_observed_30_100_power": 0.012529394699392031
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999704072371248,
+        "injected_only_to_observed_30_100_power": 0.11276455229452824
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999704072371248,
+        "injected_only_to_observed_30_100_power": 1.2529394699392031
+      }
+    ]
+  },
+  {
+    "source": "SPOC",
+    "sector": 71,
+    "column": "PDCSAP_FLUX",
+    "n": 8772,
+    "span_days": 23.648139649433233,
+    "median_cadence_minutes": 3.3336634519218933,
+    "residual_rms_ppm": 3336.819729716676,
+    "difference_scatter_ppm": 1739.5695317002114,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 25559.121255471608,
+      "40-60": 5228.581339400841,
+      "60-80": 2981.4279175563015,
+      "80-100": 2730.1284461056944,
+      "100-120": 2620.9354355742876,
+      "120-140": 1891.6604780465527,
+      "140-160": 1560.3102545121446,
+      "160-180": 2085.6813103371437,
+      "180-200": 1597.928641016757
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999704072371248,
+        "injected_only_to_observed_30_100_power": 0.027737011150657912
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999704072371248,
+        "injected_only_to_observed_30_100_power": 0.24963310035592112
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999704072371248,
+        "injected_only_to_observed_30_100_power": 2.7737011150657906
+      }
+    ]
+  },
+  {
+    "source": "SPOC",
+    "sector": 72,
+    "column": "SAP_FLUX",
+    "n": 8435,
+    "span_days": 23.001852194457115,
+    "median_cadence_minutes": 3.3336003708973294,
+    "residual_rms_ppm": 3988.0873540901016,
+    "difference_scatter_ppm": 1687.007699659071,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 11071.984715407803,
+      "40-60": 3735.520561737957,
+      "60-80": 2231.992599790699,
+      "80-100": 1648.3911409904133,
+      "100-120": 1786.196523710292,
+      "120-140": 2090.369641265138,
+      "140-160": 2074.790065287328,
+      "160-180": 1343.1833256699806,
+      "180-200": 1500.3514385842177
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999985181616395,
+        "injected_only_to_observed_30_100_power": 0.05440307960778835
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999985181616394,
+        "injected_only_to_observed_30_100_power": 0.489627716470095
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999985181616394,
+        "injected_only_to_observed_30_100_power": 5.440307960778835
+      }
+    ]
+  },
+  {
+    "source": "SPOC",
+    "sector": 72,
+    "column": "PDCSAP_FLUX",
+    "n": 8435,
+    "span_days": 23.001852194457115,
+    "median_cadence_minutes": 3.3336003708973294,
+    "residual_rms_ppm": 4729.63432594848,
+    "difference_scatter_ppm": 2093.7651618198624,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 24086.730963580223,
+      "40-60": 10390.304426980065,
+      "60-80": 4949.951433719421,
+      "80-100": 3169.2860321279322,
+      "100-120": 3612.8615103802003,
+      "120-140": 3231.9999770257773,
+      "140-160": 3165.0635619181494,
+      "160-180": 2149.8619380364,
+      "180-200": 2111.162138766669
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9999985181616395,
+        "injected_only_to_observed_30_100_power": 0.02113004762142823
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9999985181616394,
+        "injected_only_to_observed_30_100_power": 0.19017042859285405
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9999985181616394,
+        "injected_only_to_observed_30_100_power": 2.113004762142823
+      }
+    ]
+  },
+  {
+    "source": "SPOC",
+    "sector": 1751,
+    "column": "SAP_FLUX",
+    "n": 1502,
+    "span_days": 3.689788587361363,
+    "median_cadence_minutes": 3.3333043037418975,
+    "residual_rms_ppm": 7970.100923788822,
+    "difference_scatter_ppm": 1699.4683764747456,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 460776.53284109297,
+      "40-60": 136068.77592599828,
+      "60-80": 53037.046171583206,
+      "80-100": 31053.03703586486,
+      "100-120": 23207.67649670605,
+      "120-140": 19158.474463876748,
+      "140-160": 10586.042756912799,
+      "160-180": 8164.534650894052,
+      "180-200": 7912.486663110156
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9998549783996565,
+        "injected_only_to_observed_30_100_power": 0.0016698777597274998
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9998549783996566,
+        "injected_only_to_observed_30_100_power": 0.015028899837547493
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9998549783996565,
+        "injected_only_to_observed_30_100_power": 0.16698777597274997
+      }
+    ]
+  },
+  {
+    "source": "SPOC",
+    "sector": 1751,
+    "column": "PDCSAP_FLUX",
+    "n": 1502,
+    "span_days": 3.689788587361363,
+    "median_cadence_minutes": 3.3333043037418975,
+    "residual_rms_ppm": 1775.6624687124436,
+    "difference_scatter_ppm": 1795.4263867795482,
+    "smoothed_peak_25_110_uHz": 25.000000000000213,
+    "bands": {
+      "20-40": 4111.745920056543,
+      "40-60": 4125.650140060204,
+      "60-80": 1283.82568263284,
+      "80-100": 3165.3225258045145,
+      "100-120": 1010.1159315730905,
+      "120-140": 2138.4718879847233,
+      "140-160": 921.4237603181314,
+      "160-180": 1115.6513963498442,
+      "180-200": 588.4140456217053
+    },
+    "injections": [
+      {
+        "rms_ppm": 100.0,
+        "linear_detrend_rms_retention": 0.9998549783996565,
+        "injected_only_to_observed_30_100_power": 0.049022035177830194
+      },
+      {
+        "rms_ppm": 300.0,
+        "linear_detrend_rms_retention": 0.9998549783996566,
+        "injected_only_to_observed_30_100_power": 0.4411983166004716
+      },
+      {
+        "rms_ppm": 1000.0,
+        "linear_detrend_rms_retention": 0.9998549783996565,
+        "injected_only_to_observed_30_100_power": 4.902203517783019
+      }
+    ]
+  }
+]

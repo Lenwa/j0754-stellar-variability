@@ -1,0 +1,132 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-09T00:27:07 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-09T00:27:07	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=V%2F156%2Fdr7lrs%2CV%2F156%2Fdr7mrs%2CV%2F156%2Fdr7melrs%2CV%2F164%2Fdr5&-c=118.69117410685+16.694621231895&-c.rs=10&-out.all=&-out.max=1000	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	CatalogsExamined=4	
+#  4 catalogues with potential matches were examined.
+#
+#INFO	-c=118.691174+16.694621,rs=10.	
+#Constraint -out.max=1000
+
+#RESOURCE=yCat_5156
+#Name: V/156
+#Title: LAMOST DR7 catalogs (Luo+, 2019)
+#INFO	ivoid=ivo://cds.vizier/v/156	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/v/156	    IVOID of underlying data collection
+#INFO	creator=Luo A.-L.	    First author or institution
+#INFO	cites=2019RAA..in.prep..L	    Article or Data origin sources
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/V/156	    Dataset landing page
+#INFO	publication_date=2024-09-09	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	V_156_dr7lrs:
+#Name: V/156/dr7lrs
+#Title: LAMOST LRS General Catalog
+#Column	sp	(A2)	Display the LaMOST spectrum	[ucd=meta.ref.url]
+#Column	ObsID	(I9)	Unique Spectra ID (obsid)	[ucd=meta.id]
+#Column	Target	(A19)	Target Designation, JHHMMSS.ss+DDMMSS.s (designation)	[ucd=meta.id;meta.main]
+#Column	PlanId	(a20)	Plan Name (planid)	[ucd=obs.field]
+#Column	RAJ2000	(F14.10)	Fiber Pointing Right Ascension (J2000) (ra_obs)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F14.10)	Fiber Pointing Declination (J2000) (dec_obs)	[ucd=pos.eq.dec;meta.main]
+#Column	snru	(F8.2)	? S/N of u filter (snru)	[ucd=stat.snr]
+#Column	snrg	(F8.2)	? S/N of g filter (snrg)	[ucd=stat.snr]
+#Column	snrr	(F8.2)	? S/N of r filter (snrr)	[ucd=stat.snr]
+#Column	snri	(F8.2)	? S/N of i filter (snri)	[ucd=stat.snr]
+#Column	snrz	(F8.2)	? S/N of z filter (snrz)	[ucd=stat.snr]
+#Column	magType	(a10)	Target Magnitude Type (magtype)	[ucd=meta.note]
+#Column	mag1	(F5.2)	? Magnitude in Band 1 of magType (mag1)	[ucd=phot.mag]
+#Column	mag2	(F5.2)	? Magnitude in Band 2 of magType (mag2)	[ucd=phot.mag]
+#Column	mag3	(F5.2)	? Magnitude in Band 3 of magType (mag3)	[ucd=phot.mag]
+#Column	mag4	(F5.2)	? Magnitude in Band 4 of magType (mag4)	[ucd=phot.mag]
+#Column	mag5	(F5.2)	? Magnitude in Band 5 of magType (mag5)	[ucd=phot.mag]
+#Column	mag6	(F5.2)	? Magnitude in Band 6 of magType (mag6)	[ucd=phot.mag]
+#Column	mag7	(F5.2)	? Magnitude in Band 7 of magType (mag7)	[ucd=phot.mag]
+#Table	V_156_dr7mrs:
+#Name: V/156/dr7mrs
+#Title: LAMOST MRS General Catalog
+#Column	MObsID	(A18)	Unique ID for each medium-resolution spectrum (mobsid)	[ucd=meta.id]
+#Column	sp	(A2)	Display the LaMOST spectrum	[ucd=meta.ref.url]
+#Column	ObsID	(I9)	Unique ID for each observation of each target (obsid)	[ucd=meta.id]
+#Column	Target	(A19)	Target designation, JHHMMSS.ss+DDMMSS.s (designation)	[ucd=meta.id;meta.main]
+#Column	PlanId	(a18)	Plan Name (planid)	[ucd=obs.field]
+#Column	RAJ2000	(F14.10)	Fiber Pointing Right Ascension (J2000) (ra_obs)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F14.10)	Fiber Pointing Declination (J2000) (dec_obs)	[ucd=pos.eq.dec;meta.main]
+#Column	snr	(F6.2)	? The median value of all pixel S/Ns in B band spectrum or R band (snr)	[ucd=stat.snr]
+#Column	magType	(a10)	Target Magnitude Type (magtype)	[ucd=meta.note]
+#Column	mag1	(F5.2)	? Magnitude in Band 1 of magType (mag1)	[ucd=phot.mag]
+#Column	mag2	(F5.2)	? Magnitude in Band 2 of magType (mag2)	[ucd=phot.mag]
+#Column	mag3	(F5.2)	? Magnitude in Band 3 of magType (mag3)	[ucd=phot.mag]
+#Column	mag4	(F5.2)	? Magnitude in Band 4 of magType (mag4)	[ucd=phot.mag]
+#Column	mag5	(F5.2)	? Magnitude in Band 5 of magType (mag5)	[ucd=phot.mag]
+#Column	mag6	(F5.2)	? Magnitude in Band 6 of magType (mag6)	[ucd=phot.mag]
+#Column	mag7	(F5.2)	? Magnitude in Band 7 of magType (mag7)	[ucd=phot.mag]
+#Column	RVb0	(F8.2)	? Radial velocity of B band spectra measured with 483 selected KURUCZ synthetic templates (rv_b0)	[ucd=phys.veloc;pos.heliocentric]
+#Column	RVb1	(F8.2)	? Radial velocity after zero-point correction of rv_b0 (rv_b1)	[ucd=phys.veloc;pos.heliocentric]
+#Column	RVr0	(F8.2)	? Radial velocity of R band spectra measured with 483 selected KURUCZ synthetic templates (rv_r0)	[ucd=phys.veloc;pos.heliocentric]
+#Column	RVr1	(F8.2)	? Radial velocity after zero-point correction of rv_r0 (rv_r1)	[ucd=phys.veloc;pos.heliocentric]
+#Column	RVbr0	(F8.2)	? Radial velocity of B and R band spectra measured with 483 selected KURUCZ synthetic templates (rv_br0)	[ucd=phys.veloc;pos.heliocentric]
+#Column	RVbr1	(F8.2)	? Radial velocity after zero-point correction of rv_br0 (rv_br1)	[ucd=phys.veloc;pos.heliocentric]
+#Column	RVlasp0	(F8.2)	? Radial velocity measured by the LASP (rv_lasp0)	[ucd=phys.veloc;pos.heliocentric]
+#Column	RVlasp1	(F8.2)	? Radial velocity after zero-point correction of rv_lasp0 (rv_lasp1)	[ucd=phys.veloc;pos.heliocentric]
+MObsID	sp	ObsID	Target	PlanId	RAJ2000	DEJ2000	snr	magType	mag1	mag2	mag3	mag4	mag5	mag6	mag7	RVb0	RVb1	RVr0	RVr1	RVbr0	RVbr1	RVlasp0	RVlasp1
+ 	 	 	 	 	deg	deg	 	 	mag	mag	mag	mag	mag	mag	mag	km/s	km/s	km/s	km/s	km/s	km/s	km/s	km/s
+------------------	--	---------	-------------------	------------------	--------------	--------------	------	----------	-----	-----	-----	-----	-----	-----	-----	--------	--------	--------	--------	--------	--------	--------	--------
+65911106383812175B	sp	659111063	J075445.88+164140.6	HIP368380101      	118.6911800000	+16.6946240000	  0.00	gri       	12.60	11.78	11.46	     	     	     	     	        	        	        	        	        	        	        	
+65911106383812152B	sp	659111063	J075445.88+164140.6	HIP368380101      	118.6911800000	+16.6946240000	  0.00	gri       	12.60	11.78	11.46	     	     	     	     	        	        	        	        	        	        	        	
+65911106383812152R	sp	659111063	J075445.88+164140.6	HIP368380101      	118.6911800000	+16.6946240000	  0.00	gri       	12.60	11.78	11.46	     	     	     	     	        	        	        	        	        	        	        	
+65911106383812175R	sp	659111063	J075445.88+164140.6	HIP368380101      	118.6911800000	+16.6946240000	  0.00	gri       	12.60	11.78	11.46	     	     	     	     	        	        	        	        	        	        	        	
+659111063B        	sp	659111063	J075445.88+164140.6	HIP368380101      	118.6911800000	+16.6946240000	  0.00	gri       	12.60	11.78	11.46	     	     	     	     	        	        	        	        	        	        	        	
+659111063R        	sp	659111063	J075445.88+164140.6	HIP368380101      	118.6911800000	+16.6946240000	  0.00	gri       	12.60	11.78	11.46	     	     	     	     	        	        	        	        	        	        	        	
+
+#Table	V_156_dr7melrs:
+#Name: V/156/dr7melrs
+#Title: LAMOST LRS Multiple Epoch Catalog
+#Column	LAMOST	(I14)	Unique LAMOST source ID (source_id)	[ucd=meta.id;meta.main]
+#Column	RAJ2000	(F14.10)	Right Ascension (J2000) (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F14.10)	Declination (J2000) (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	GaiaDR2	(I19)	? The "source_id" field of Gaia DR2 catalog (gaia_source_id)	[ucd=meta.id]
+#Column	Gmag	(F14.8)	? The "phot_g_mean_magnitude" field of Gaia DR2 catalog (gaia_g_mean_mag)	[ucd=phot.mag;em.opt]
+#Column	Nobs	(I2)	Observation plan numbers for each target with multiple epoch observations (obs_number)	[ucd=meta.number;obs.param;obs]
+#Column	obsIDlist	(a339)	Spectrum ID List (obsid_list)	[ucd=meta.note]
+#Column	midmjmst	(a352)	Modified Julian Minute List of the middle time of multiple exposure (midmjm_list)	[ucd=meta.note]
+#Column	zlist	(a477)	Red Shift List (z_list)	[ucd=meta.note]
+#Column	Tefflist	(a305)	Effective Temperature List (teff_list)	[ucd=meta.note]
+#Column	logglist	(a339)	Surface Gravity List (logg_list)	[ucd=meta.note]
+#Column	[Fe/H]list	(a339)	Metallicity List (feh_list)	[ucd=meta.note]
+#Column	RVlist	(a305)	Radial Velocity List (rv_list)	[ucd=meta.note]
+
+#RESOURCE=yCat_5164
+#Name: V/164
+#Title: LAMOST DR5 catalogs (Luo+, 2019)
+#INFO	ivoid=ivo://cds.vizier/v/164	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/v/164	    IVOID of underlying data collection
+#INFO	creator=Luo A.-L.	    First author or institution
+#INFO	cites=bibcode:2019yCat.5164....0L	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2019	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/V/164	    Dataset landing page
+#INFO	publication_date=2020-04-22	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	V_164_dr5:
+#Name: V/164/dr5
+#Title: LAMOST DR5 catalog (04/07/2019 version)
+#Column	ObsID	(I9)	[101001/585216248] Observation ID	[ucd=meta.id]
+#Column	Target	(A19)	Target Designation (JHHMMSS.ss+DDMMSS.s)	[ucd=meta.id;meta.main]
+#Column	PlanId	(a20)	Plan Name	[ucd=obs.field]
+#Column	RAJ2000	(F14.10)	Fiber pointing right ascension (J2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F14.10)	Fiber pointing declination (J2000)	[ucd=pos.eq.dec;meta.main]
+#Column	snru	(F8.2)	? Signal Noise Ratio of u filter	[ucd=stat.snr]
+#Column	snrg	(F8.2)	? Signal Noise Ratio of g filter	[ucd=stat.snr]
+#Column	snrr	(F8.2)	? Signal Noise Ratio of r filter	[ucd=stat.snr]
+#Column	snri	(F8.2)	? Signal Noise Ratio of i filter	[ucd=stat.snr]
+#Column	snrz	(F8.2)	? Signal Noise Ratio of z filter	[ucd=stat.snr]
+#Column	z	(F16.10)	? Redshift	[ucd=src.redshift]
+#Column	magType	(a10)	Target Magnitude Type	[ucd=meta.note]

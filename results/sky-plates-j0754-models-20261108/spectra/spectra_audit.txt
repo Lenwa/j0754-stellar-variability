@@ -1,0 +1,23 @@
+J0754 public-spectra recovery audit - 8 November 2026
+
+Outcome: recovered Gaia DR3 sampled mean XP spectrum plus continuous coefficients/covariances. Recovered and inspected native LAMOST MRS FITS; it supplies no usable stellar spectrum.
+
+Gaia: the prior HTTP 500 was an obsolete DATA_STRUCTURE=RAW request, not evidence that the spectrum was unavailable. Replacing RAW by DATAMODEL_GAIA returns HTTP 200 for XP_SAMPLED and XP_CONTINUOUS. Native responses and exact GET request receipts are preserved. Source ID, position and solution ID agree across products. The calibrated export gaia_xp_sampled_calibrated.csv has 343 rows: 336 to 1020 nm in 2 nm increments, with flux and flux_error in W m^-2 nm^-1. All fluxes and errors are finite and positive. Median nominal sample flux/error=48.61, ranging 0.91 to 110.96. This sampling is finer than the instrument resolution and is NOT 343 independent measurements.
+
+Quality: contributing BP/RP transits=17/38, with zero reported blended or contaminated transits. Relevant bases=46/4; solution standard_deviation=1.6937785/2.9988523. The plot shows strong blue oscillations and edge noise. Do not interpret those ripples as resolved lines, a companion, or a temperature feature without forward modeling the XP response and coefficient covariance. The raw coefficient correlation vectors are retained for covariance-aware follow-up. Our assessment: useful for broad static optical SED context with calibration/model/temperature-extinction caution, not a precision standalone atmosphere determination. Narrow-line/RV/Li/activity diagnostics are not supported here.
+
+Date coverage: this is a mean spectrum over Gaia DR3's overall 2014-07-25 to 2017-05-28 observation window; individual source transit dates were not recovered. It is not a bright/faint comparison and cannot measure the 1930s event's changing temperature, spot coverage, reddening, grey covering, or any 35.92-day RV orbit. Static SED fitting can test whether a proposed baseline is grossly inconsistent but cannot identify the fading cause.
+
+LAMOST: /medspectrum/fits/659111063 returns a 207046-byte gzip FITS file, med-58203-HIP368380101_sp11-063.fits. One 2018-03-25 visit: two exposures (1200 and 600 s) at UTC midpoints 13:22 and 13:40; blue/red arms plus two coadds. FITS primary position is consistent with the target. Vacuum/heliocentric wavelength convention is recorded in the header; blue singles span 4903.78-5387.61 A and red singles 6303.82-6873.67 A. Both coadds contain exactly zero FLUX and IVAR. Every single exposure has 4136 finite, nonzero fluxes and positive inverse variances, but 69-94% of pixels are negative; median flux/sigma is -1.09, -1.00, -0.89 and -0.35. Large isolated positive spikes do not provide a detected stellar continuum. All header/catalog SNRs are 0. NORM=0 and every normalization value is -9999. Blue PIXMASKs all 0; red arms each flag only two pixels, showing that zero masks alone do not establish usable data. The flux unit is not specified by native TUNIT metadata; no absolute calibration is assumed.
+
+LAMOST assessment: unusable for atmospheric parameters, RVs, activity, lithium or a flux limit. A negative failed extraction is not evidence that the star faded away. The native FITS, per-extension exports, exact request, header/array statistics and diagnostic plot are retained. No additional epoch or new archive was inferred from the six catalog rows.
+
+Primary format/context references:
+https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_spectroscopic_tables/ssec_dm_xp_sampled_mean_spectrum.html
+https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_spectroscopic_tables/ssec_dm_xp_continuous_mean_spectrum.html
+https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_spectroscopic_tables/ssec_dm_xp_summary.html
+https://gea.esac.esa.int/archive/documentation/GDR3/index.html
+https://www.lamost.org/dr12/v2.0/doc/mr-data-production-description
+https://dc.zah.uni-heidelberg.de/gaia/s3/ssa/info (explains correlated sampled XP errors)
+
+Verification: parsed CSV arrays and native FITS with numpy/astropy, checked all extensions, independently exported data, visually inspected both plots, and checked the recorded native-response hashes. Failed endpoint attempts and the Gaia main TAP 503 overload response are preserved; the Heidelberg quality query succeeded. No sign-in, contacts, accounts or credentials were used. Only experiment results in this spectra folder were changed; no maintained source, commit, push or publication was performed.

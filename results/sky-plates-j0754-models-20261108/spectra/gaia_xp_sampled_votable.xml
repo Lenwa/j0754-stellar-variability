@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3" xmlns:spec="http://www.ivoa.net/xml/SpectrumModel/v1.01">
+<RESOURCE type="results" utype="spec:Spectrum">
+<TIMESYS ID="time_frame" refposition="BARYCENTER" timeorigin="2455197.5" timescale="TCB"/>
+<TABLE>
+<PARAM arraysize="49" datatype="char" name="citation" ucd="meta.bib" value="https://www.cosmos.esa.int/web/gaia-users/credits">
+<DESCRIPTION>How to cite and acknowledge Gaia:</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="8" datatype="char" name="release" ucd="meta.version" value="Gaia DR3">
+<DESCRIPTION>Gaia Data Release</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="49" datatype="char" name="help" ucd="meta.ref.url" value="https://www.cosmos.esa.int/web/gaia-users/archive">
+<DESCRIPTION>Tutorials, documentation, and help:</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="54" datatype="char" name="issues" ucd="meta.ref.url" value="https://www.cosmos.esa.int/web/gaia-users/known-issues">
+<DESCRIPTION>Known issues in the data:</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="47" datatype="char" name="data" ucd="meta.ref.url" value="https://www.cosmos.esa.int/web/gaia/data-access">
+<DESCRIPTION>Gaia data:</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="56" datatype="char" name="terms" ucd="meta.ref.url" value="https://www.cosmos.esa.int/web/esdc/terms-and-conditions">
+<DESCRIPTION>Terms and conditions for use of Gaia data:</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="home" ucd="meta.ref.url" value="https://www.cosmos.esa.int/web/gaia">
+<DESCRIPTION>Gaia mission home:</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="13" datatype="char" name="publisher" ucd="meta.id;meta.curation" value="ESA/Gaia/DPAC">
+<DESCRIPTION>Dataset publisher</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="18" datatype="char" name="creator" ucd="meta.ref" value="Gaia Collaboration">
+<DESCRIPTION>Dataset creator</DESCRIPTION>
+</PARAM>
+<FIELD datatype="long" name="source_id" ucd="meta.id;meta.main">
+<DESCRIPTION>Unique source identifier (unique within a particular Data Release)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="long" name="solution_id" ucd="meta.version">
+<DESCRIPTION>Solution Identifier</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ra" ucd="pos.eq.ra" unit="deg" utype="Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C1">
+<DESCRIPTION>Right Ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="dec" ucd="pos.eq.dec" unit="deg" utype="Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C2">
+<DESCRIPTION>Declination</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="float" name="flux" ucd="spect" unit="W.m**-2.nm**-1">
+<DESCRIPTION>mean BP + RP combined spectrum flux</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="float" name="flux_error" ucd="stat.error;spect" unit="W.m**-2.nm**-1">
+<DESCRIPTION>mean BP + RP combined spectrum flux error</DESCRIPTION>
+</FIELD>
+<DATA>
+<BINARY2>
+<STREAM encoding='base64'>
+AAlDFoEAJPiAPxTAAAAAAAFAXaw8MlIw3UAwsdKychiuAAABVyUxvaglPrO0JSDe
+ViUQYswlHziYJSKWwSUKWV0lAysuJS1H6iVMcIQlIpDNJO+DsSUGleglI3I1JR+W
+YCUP1oQlIpMAJUgzxyVBiqIlCflUJNmaiyUaFuklTLgkJSQjaCSFKJskEgJZJNso
+NyVCT5UlTdLtJRtH3iTqzbolEYNUJWGvlCWWCZoln/iRJZBEqiV5S/IldIO+JYxd
+TSWkVmslrjHVJaJzpCWKkkglcWscJXOFPSWMkTUlo05gJa9C3yWp/6slmT0/JYq0
+WCWKc3olm0uiJbbLdyXRBmsl37hEJd9JRiXT40olxtKsJcElkSXHPwUl19+OJexI
+HCX8/SsmAioeJgA/nyX1YFUl57v4Jd3LeSXbTX4l4J3oJetEEyX3lyomAE/uJgIu
+VyYAmygl+UF5Je9D7yXmdKkl4No+Jd/BVSXjPvkl6cAOJfA8CiX1txgl+ARNJfba
+ayXy0U4l7M7wJeacYiXhwhcl30z4Jd9ccCXilo4l6CLLJe6yJyX1hx0l+7BoJf/k
+niYBK1QmAck8JgG6BSYBMFEmAMGKJgC5syYA1JgmAYH4JgK6gCYEcNAmBf6BJgfT
+OyYJelomCrmpJgub7SYMKpUmDH2+JgyGoSYMs9EmDQFkJgzbfyYMiAImC74yJgrs
+5CYJzwAmCFr9JgdihyYGlismBkFEJgazzCYG6yQmB0tnJgg6RiYJSE0mCk/IJgrq
+aiYLQhAmCzBdJgrqXCYKjB8mChQIJgmMEyYJOykmCItfJghWwiYJFDkmCdyNJgro
+ASYMH8gmDRg9Jg4rtCYOvaYmDrCfJg4xUSYONnkmC1F9Jgg8fyYHTUkmCE6RJgmU
+YSYKI14mCelOJgmsNSYKLekmC02zJgw/6SYMJosmCy8KJgne9iYIqJsmCAlvJgiK
+rCYJMqsmCaYYJgmtJyYJILYmCGWOJgfqHSYHqpgmB1GTJgdEAyYG6WwmBn3yJgYY
++yYGUbImBlGxJgYrXCYFtlkmBFGZJgJ4qSYAyAMl/+cdJgAk2SYA7cMmAm5SJgM0
+wyYDKdkmAplAJgFTJiX/1Z0l/mF8Jf81NSYAjG8mAbwxJgLPzyYDGxMmAq5aJgGW
+tCYAmHgl/vtdJf36syX9DP4l/PMMJf07uiX88W4l/LZAJfzMNyX9DBcl/gVZJf5P
+fiX9/vQl/UL7Jfu6EyX5hIMl9pN4JfTZiSXztsUl83bPJfQmVyX1ByUl9eRPJfYC
+iSX0mQwl8n7nJe92niXsRYMl6jcsJejeSyXoj7wl6VfmJenlViXrpzMl7EjTJeyK
+VCXrUool6Ww7JeedbyXllTol45+tJeJJOCXhDNEl4It0JeEclyXhACQl4SsRJd/5
+MCXgK1El3/TJJd+VYCXeP6ol3VGmJdxY+CXbzcQl2tL4JdnA4iXZTa4l2RX8Jdpv
+uyXZhlMl2r5LJdsQ+SXb4Wol3KaRJd5p+iXegREl3iP4Jd0e6iXcNKgl25csJdqR
+siXZiI0l2bdkJdkj/CXZPJ0l2VNOJdh51CXXI3Ml1pslJdQ1RCXRya8lz6rHJc3B
+NiXKlnElyO88JclCHiXILOclx79kJck1KyXJd58lyXHzJcnkOCXJz7wlyY49JcfV
+0yXF3vslxijhJcOTgSXCDO0lwwgmJcGhkiXBwYYlw50UJcQTRCXE99UlxZn1JcZV
+CyXEcPElw4DgJcK5ryW+znklvethJbvaVSW4ZkwluWs/JbcYZCW4CcAluQ4MJbjA
+uyW8pE8lvLOnJb9QPSXBDMolwBqnJcAuwSW+gy4luw8KJbnH1SW1THkls5BcJbOu
+YiWyDsolty/yJbioOyXBRGkAAAFXJGCdciQqIp0kCpGAI/D7aCPgfiYj2+UWI+Ds
+CyPwJvckAlEVJAzbMiQDjeEj8y+7I9u/7yPgtZIj2louI++rXSP2i6gkBWSpJArx
+/CQTn9skHYysJCT+aCQxYBMkK9Q2JC8mASQgIsIkEi1jJAr5YSPososj4IqOI9Xp
+ZSO2v00jvVmmI7kzdSOgKDQjqrv/I62sMiOWzSwjne6II6pb7SOXTrojkvr1I6WR
+ziOcjzgjiT5+I5hX0SOjB5kjjre8I4QAVSOX+tMjnHprI4bNkyN9V2EjkQqGI5V0
+QiOBeGQjagtkI4QgnyOPvlojhTazI2gXbyNsUwYjgt/PI4N2oiNtGskjWyvRI2ge
+iiN4zTojcverI1sJhyNLb2gjU5yNI2Kl3SNjZ/IjVVkZI0ZxRSNFm+0jT3M6I1X8
+USNRZt0jRaS0Izz8aCM9kFwjQyo/I0cCVCNEqnwjPlenIzlNsyM41fEjO/LxIz6S
+0yM9gXsjOExAIzI1dSMudpwjLoz/IzGkGCM1AaIjNeAaIzPj4iMwTh0jLJdyIypE
+MiMqK7AjK4eFIyxR3iMr39ojKdrsIybZOSMjSmcjIP5EIyAgsCMgYWUjIR/NIyGB
+4iMg7NsjHwEUIxxcFSMZZsEjFgjoIxLzqiMP7k4jDTCvIwoWFCMGTcAjApS6Iv2G
+4CL24hci8nnxIu8CIiLtYZEi7gndIu+dsiLxFMoi8P5CIu8dWCLrAnIi5TlMIt5s
+eiLXPWUi0FtQIsqewCLFUCciwY3pIr+pdyK9/vUivJSXIrsjKyK5HFEitx4IIqSp
+ZyKvbEMi6pp0IyxwwCNSaTwjTqe+I0mWmyNOcXAjTyRkI0jjdiNICwYjSmQjI0Za
+OiNBRlUjQPAEIz6dRyM5TBsjNwTLIzVF/yMwF/4jLQ/tIyyQEyMoUvgjIsPdIyLr
+nCMiz4kjG3WIIxYECSMZIY4jGQliIw97IiMLCx4jEOI7IxEFjCMGi5gjAyhoIwsm
+tCMLd8IjAG9xIvmgtCMGalojCcnZIwAkMSL1mbsjAoAJIweRTSMAkdIi8R9AIvij
+ViMDA70jAQkxIvQ/MSLzF5oi/RwWIv/DPyL5NLYi9abNIvoDySL8h9ki+hhMIvbE
+byL27Mki97VXIvcqsyL37gAi+I/2IvSNyyLu0dMi7wPuIvYbuiL4okAi7tosIuKy
+cCLk1Vci81BuIvgK0yLpMrYi1ZCCItXT4CLoRFci8kwMIuXOISLP8F0iyqz0ItrC
+aSLokBgi4i0sIs4s/yLD6vAizp7aIt9IKyLhEEci09B/IsZqqCLJHJEi1v+tIt6N
+QiLYhDgizPVSIslaWCLR+Zsi3N6MIt54TCLX7KUi0CylItFFJSLX7OIi3VH3It0L
+uiLbAeUi2yz4It6sBCLhTEQi4PbiIuAaQSLh/YUi6Kw8IuwoBiLs+fQi6FYEIuVM
+4SLozisi8wkzIvo9VSL5uWYi8bnAIupl/yLsUmwi9zonIwF1dyMD0ckjADjOIvUu
+eiLwagci+AAwIwOeAiMKGNsjCdC2IwRKriL8lnMi+1tpIwM/YSMMI+EjEpNiIxDe
+qiMKAk0jBHW1IwR7RSML6yQjFi6LIxxErSMbR6kjE8A6IwxvRyMN1J4jFdkZIyG5
+NyMrf+YjKrPnIyOAhiMbxFAjGVoGIyI8WCMxzPMjQAu9I0PmsiM/Q0IjNVyhIyxF
+8SMytPwjRPJZI1j5pyNrHrAja6yRI2MEeCNUXN4jTBjaI1yu1iN7ZtojkZD/I6Ek
+ySOmhtIjpBZ6I5t9FCOXD2sjprZfI8gV+iP2ZVQkEfH/JB9XVSQnA84kH8HCJBn/
+7w==
+</STREAM>
+</BINARY2>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

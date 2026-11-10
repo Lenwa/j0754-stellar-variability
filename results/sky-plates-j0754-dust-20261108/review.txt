@@ -1,0 +1,21 @@
+Independent read-only dust/IR review - 8 November 2026
+
+Assessment: No load-bearing implementation defect found in the reviewed reduction after the sampling-only interval and seasonal-support additions. The measurements do not establish dust as the cause. Interpretation remains inconclusive beyond comparison with the explicitly limited illustrative models.
+
+Independently verified evidence
+- All 17 native IPAC tables and derived CSVs agree on row counts and character flags: 4,423 rows, including 256 target rows. Leading zeros in cc_flags, moon_masked and transient strings survive; masked native values correctly become empty CSV cells. There are no duplicate source/scan/frame keys.
+- Band-specific quality selection, exact scan/frame matching, per-star comparison centering and target exclusion reproduce the primary result. W1 has 199 accepted target frames and 197 corrected frames; W2 has 197/197. Comparison placebos exclude the astronomical target as well as the placebo itself.
+- The independently reconstructed corrected 2018-to-2022 annual visit-median changes are W1 +0.116250 mag and W2 +0.089375 mag. Matched-half changes are +0.117500/+0.115000 (W1) and +0.088750/+0.090000 (W2). Raw changes are +0.116500/+0.092500 mag. Thus the IR fading is not created by the ensemble correction.
+- Same-exposure paired corrected W1-W2 changes by +0.028875 mag; matched halves give +0.034500 and +0.023250 mag. This is a small color change with materially weaker physical interpretation than the band fading.
+- Leave-one-control-out primary fading ranges are W1 +0.11225 to +0.11700 and W2 +0.08825 to +0.09125 mag. Stricter/looser quality cuts retain similar band amplitudes and signs.
+- The new fixed-visit UTC-date bootstrap reproduces [0.10836875, 0.12775000] for W1 and [0.08087500, 0.10187500] for W2. Each of the four compared visits contains only 2-3 accepted UTC dates. These are sampling-only intervals with the comparison correction held fixed, not total-error or physical-model confidence intervals.
+- Draine parsing uses wavelength in microns and the correct C_ext/H column; logarithmic interpolation and normalization are consistent. Independent analytic Planck inversion reproduces all four cooling temperatures and wavelength amplitudes. All eight dust-model tests pass.
+
+Material interpretation limits and counterevidence
+- For Ag=0.30 mag, the chosen ordinary foreground-screen curves predict only about 0.013-0.015 mag in W1 and 0.007-0.009 mag in W2, far below the measured IR changes. The observed point estimates therefore do not affirm that simple attenuation-only model. The fixed-area cooling illustrations predict about 0.064-0.077 and 0.057-0.071 mag, respectively; these also underpredict the measured point estimates and do not establish a photospheric explanation.
+- These are monochromatic illustrations, not bandpass-integrated atmosphere or circumstellar radiative-transfer fits. Failure of the chosen foreground-screen models does not exclude different grain populations, geometries, changing emission or a mixture of processes. No unique disk temperature, location or mechanism follows.
+- Comparison stars test common changes; they cannot prove absence of target-specific PSF, color-dependent or calibration errors. Ensemble membership varies with quality. Jackknives test removal of one control, not every coherent ensemble error. Two seasonal visits/year cannot estimate total systematic uncertainty.
+- Use the actual matched-half optical/IR color contrasts. Some annual values compare unequal seasonal coverage: the +/-15-day optical stream has no common half-year, and strict paired IR color loses one 2018 season. Their annual numbers must remain unmatched diagnostics. Sparse 2018 bA/bE optical plot references likewise do not supply independent fading/color contrasts.
+- There is no retrieved contemporaneous g-r light curve, and NEOWISE ends in 2024. The data cannot test 2025-2026 IR recovery or uniquely distinguish ordinary/circumstellar dust from photospheric or mixed explanations. No significance, period, 1930s connection or cause is established by this reduction.
+
+Scope: Reviewed the four requested source files, native tables, specifications, generated analysis and figure. No source edits or network/browser actions were performed. This review.txt is the only review artifact written.

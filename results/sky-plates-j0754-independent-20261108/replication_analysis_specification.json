@@ -1,0 +1,16 @@
+{
+  "written_utc": "2026-11-08T21:09:37.270938+00:00",
+  "status": "Analysis specification after inspecting CSV schema and preliminary raw camera/year medians, before formal bootstrap/control/quality comparisons.",
+  "primary": "All finite positive-flux detections with0<mag_err<99, excluding explicit limits/sentinel magnitudes. Annual medians within a single native camera/filter. At least10observations and10UTC dates per compared year. No brightness clipping.",
+  "uncertainty": "Resample whole UTC-date groups within each year, recompute all-image median, difference later-minus-earlier,3000bootstrap draws with fixed seed. Conditional sampling intervals exclude calibration systematics.",
+  "cameras": "All5g cameras retained. A camera lacking adequate2018counts stays present but cannot test2018\u21922022. No selecting by outcome; V stays separate.",
+  "sensitivities": [
+    "mag_err<=0.1",
+    "mag_err<=0.1 and0<FWHM<=2.5",
+    "shared calendar months between compared years",
+    "January\u2013April and October\u2013December separately when adequate"
+  ],
+  "controls": "All14original comparison stars withV2photometry. Document G flags and positive finite detections. Compare their annual changes per camera with target; different pipeline/coadded sampling so do not pretend exact-frame correction.",
+  "prediction": "At least2adequately sampled camera streams should show positive2018\u21922022contrast and negative2022\u21922025contrast, intervals excluding0; quality/month sensitivities should agree. Assess fading and recovery separately.",
+  "limits": "Replicated photometry does not establish rotation, dust, a companion, a period or relation to1930s event."
+}

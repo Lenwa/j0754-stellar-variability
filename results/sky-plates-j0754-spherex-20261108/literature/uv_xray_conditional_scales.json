@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-11-09T00:03:36.581Z",
+  "assumptions": {
+    "distance": "Naive inverse parallax, no zero-point correction or distance prior",
+    "parallax_mas": 0.599389,
+    "parallax_error_mas": 0.019797,
+    "distance_pc": 1668.3656189886703,
+    "distance_error_linearized_pc": 55.10383767322841,
+    "Lbol_Lsun": 54.64,
+    "Lbol_erg_s": 2.0916192e+35,
+    "caution": "FLAME L illustrative and could include model/evolution/spectral-component problems; not a simultaneous bolometric measurement. No uncertainty assigned to Lbol. X-ray association assumed."
+  },
+  "band": "0.3–10 keV",
+  "rows": [
+    {
+      "model": "APEC_observed",
+      "flux_erg_cm2_s": 1.118e-13,
+      "flux_count_error_only": 2.963e-14,
+      "Lx_erg_s": 3.7233616477567823e+31,
+      "Lx_count_error_only_erg_s": 9.867907479698879e+30,
+      "Lx_count_plus_parallax_error_erg_s": 1.0169807722890303e+31,
+      "Lx_over_Lbol": 0.00017801336150274306,
+      "log10_Lx_over_Lbol": -3.749547398763417
+    },
+    {
+      "model": "APEC_unabsorbed",
+      "flux_erg_cm2_s": 1.265e-13,
+      "flux_count_error_only": 3.3503e-14,
+      "Lx_erg_s": 4.212927088025339e+31,
+      "Lx_count_error_only_erg_s": 1.1157762547835014e+31,
+      "Lx_count_plus_parallax_error_erg_s": 1.1499584577084534e+31,
+      "Lx_over_Lbol": 0.00020141941171821997,
+      "log10_Lx_over_Lbol": -3.695898676801985
+    },
+    {
+      "model": "powerlaw_observed",
+      "flux_erg_cm2_s": 1.545e-13,
+      "flux_count_error_only": 4.0937e-14,
+      "Lx_erg_s": 5.145432688536877e+31,
+      "Lx_count_error_only_erg_s": 1.3633564917193147e+31,
+      "Lx_count_plus_parallax_error_erg_s": 1.4050865915534147e+31,
+      "Lx_over_Lbol": 0.0002460023645096047,
+      "log10_Lx_over_Lbol": -3.609060718552968
+    },
+    {
+      "model": "powerlaw_unabsorbed",
+      "flux_erg_cm2_s": 2.056e-13,
+      "flux_count_error_only": 5.446e-14,
+      "Lx_erg_s": 6.847255409470433e+31,
+      "Lx_count_error_only_erg_s": 1.8137233929949407e+31,
+      "Lx_count_plus_parallax_error_erg_s": 1.8692719909114397e+31,
+      "Lx_over_Lbol": 0.00032736625335388165,
+      "log10_Lx_over_Lbol": -3.4849660919905836
+    }
+  ],
+  "nuLnu_NUV": {
+    "wavelength_illustrative_A": 2316,
+    "flux_microJy": 130.155258,
+    "nuLnu_erg_s": 5.61096142186946e+32,
+    "nuLnu_over_Lbol": 0.002682592233743819,
+    "note": "Broad-band context only; not integrated UV luminosity, photospheric excess, chromospheric luminosity or hot-companion luminosity."
+  },
+  "hot_photosphere_example": {
+    "T_K": 30000,
+    "kT_eV": 2.5851999786,
+    "E_over_kT_at_0_3keV": 116.04518121745586,
+    "note": "Ordinary hot-star photospheric radiation alone is strongly suppressed at Swift XRT energies. Accretion/shocks/corona are different hypotheses."
+  },
+  "formula": "Lx=4 pi d^2 Fx; sigma_relative_formal = sqrt[(sigma_F/F)^2+(2 sigma_parallax/parallax)^2]; ignores spectral and association uncertainty."
+}

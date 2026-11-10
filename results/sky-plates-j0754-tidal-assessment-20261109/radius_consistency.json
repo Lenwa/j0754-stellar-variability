@@ -1,0 +1,66 @@
+{
+  "qualification": "Conditional consistency check, not independent stellar measurement. Circular synchronous Roche approximation; mass grid assumed; luminosity cautioned Gaia FLAME. Poster logg has no verified uncertainty. Do not infer overflow or exclude companion from inconsistent model inputs.",
+  "equations": [
+    "R/Rsun=sqrt(L/Lsun)*(5772/T)^2",
+    "g/g_sun=M/R^2, g_sun27400cm/s2",
+    "RL/a=.49q^(2/3)/(.6q^(2/3)+ln(1+q^(1/3))), q=M1/M2",
+    "mass_function=M2^3/(M1+M2)^2 edge-on"
+  ],
+  "radiative_radius": [
+    {
+      "T_K": 4500,
+      "L_Lsun": 54.64,
+      "R_Rsun": 12.161382906095707,
+      "v_sync_kms": 17.128890889867435,
+      "M_implied_by_logg1p7_Msun": 0.2705299563453103
+    },
+    {
+      "T_K": 5000,
+      "L_Lsun": 54.64,
+      "R_Rsun": 9.850720153937523,
+      "v_sync_kms": 13.874401620792625,
+      "M_implied_by_logg1p7_Msun": 0.17749470435815812
+    },
+    {
+      "T_K": 5205.7764,
+      "L_Lsun": 54.64,
+      "R_Rsun": 9.087344025110871,
+      "v_sync_kms": 12.799212514457764,
+      "M_implied_by_logg1p7_Msun": 0.15105092064341538
+    }
+  ],
+  "gravity_and_roche": [
+    {
+      "M1": 1,
+      "M2_edge_on": 0.18618797033527346,
+      "separation_Rsun": 48.49779747752209,
+      "Roche_Rsun": 25.55276517619201,
+      "radius_from_logg1p7_Rsun": 23.381656791200083,
+      "poster_radius_Roche_ratio": 0.9150343076367019
+    },
+    {
+      "M1": 1.5,
+      "M2_edge_on": 0.2404086539356423,
+      "separation_Rsun": 55.108838178776004,
+      "Roche_Rsun": 29.736646513433453,
+      "radius_from_logg1p7_Rsun": 28.636564239660625,
+      "poster_radius_Roche_ratio": 0.9630058395025859
+    },
+    {
+      "M1": 2,
+      "M2_edge_on": 0.28855130494171466,
+      "separation_Rsun": 60.375081239434344,
+      "Roche_Rsun": 33.10956425940326,
+      "radius_from_logg1p7_Rsun": 33.06665614486814,
+      "poster_radius_Roche_ratio": 0.9987040568036794
+    },
+    {
+      "M1": 2.6,
+      "M2_edge_on": 0.3410779387610745,
+      "separation_Rsun": 65.64067247500097,
+      "Roche_Rsun": 36.51360178122296,
+      "radius_from_logg1p7_Rsun": 37.70178872658206,
+      "poster_radius_Roche_ratio": 1.0325409405645138
+    }
+  ]
+}

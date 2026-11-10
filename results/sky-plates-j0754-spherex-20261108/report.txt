@@ -1,0 +1,245 @@
+J0754: recovered spectrum, expanded archives and mechanism assessment
+8–9 November 2026 UTC — Ari with Kyle
+
+QUESTION AND OUTCOME
+
+What can existing data say about intrinsic stellar changes, obscuration and
+companion-related explanations for J0754's recurrent long fading/recovery?
+The missing SPHEREx extraction is recovered. Wider archives add ultraviolet
+measurements and a plausible X-ray counterpart. A direct 2011 atmosphere-fit
+poster and active-K-giant literature provide useful prior work. The cause is
+still unresolved. Magnetic/atmospheric variability, potentially in a binary,
+deserves priority alongside nonuniform obscuration; no dust-only commitment.
+
+Target: DASCH J075445.9+164141 = 2MASS J07544588+1641407 =
+ASASSN-V J075445.83+164141.1 = ASAS J075446+1641.7 =
+Gaia DR3 667401913089980544 = TIC 18878735.
+ICRS RA118.69117410685deg, Dec16.694621231895deg.
+
+NEW SPHEREx MEASUREMENT
+
+223 native QR2 cutouts downloaded, including nine initial503 responses that
+succeeded on bounded retry. All failures/attempt receipts remain preserved.
+18 official calibration files verified against archive MD5 and FITS structure.
+Local ePSF extraction:220 fitted measurements,182 under predeclared quality,
+three explicit failures. Accepted wavelengths0.735–4.988microns; observations
+2025-10-16–23 and2026-04-02–16. These are recovery-era spectra, not2022 spectra.
+
+The official public IRSA Spectrophotometry Tool independently reduced the same
+223 image overlaps. The original typed table and result screenshot are saved.
+This checks the method, not independent astronomical observations: both use
+the same sky pixels. Median native/local flux ratios vary by detector from
+0.966 to1.028, with larger individual outliers. Local conditional flux errors
+omit PSF, astrometry and correlated calibration/model error. Native flux errors
+numerically include a3% quadrature term; its full covariance is unestablished.
+Local short-wave fit residual chi-squares are high. Percent-level seasonal
+changes cannot be assigned formal significance from those errors.
+
+The native D5/D6 wavelengths differ by6.4nm from the QR2 map used locally.
+An independent check of complete official QR3 maps explains this difference
+exactly: newer CWAVE=QR2CWAVE+0.0064microns, unchanged CBAND. Both labels and
+provenance are retained. This is material to feature interpretation, not an
+unresolved detector-coordinate error.
+
+The post-hoc exploratory atmosphere test fits only0.75–2.4microns, using coarse
+CK04 atmospheres, static Draine foreground attenuation and free normalization.
+Approximate rectangular CWAVE/CBAND responses replace actual response curves.
+The longer wavelengths had already been inspected, so this is a retrospective
+prediction check. Best grid parameters are not measured Teff/logg/extinction.
+
+Across local/native and both seasons, selected photosphere models predict most
+of the2.45–5micron continuum: median measured/model ratios0.971–1.024 at
+2.45–3.75microns,0.995–1.042 at3.8–4.4,1.008–1.093 at4.4–5. April2026 has a
+coherent roughly9% long-wave residual for the selected fits. It remains an
+unresolved residual, not an established dust detection. A post-hoc5% near-IR
+log-RMS grid tolerance gives MIR median-ratio ranges spanning unity in every
+case; these are parameter sensitivity ranges, not confidence intervals.
+
+Supported: a reddened photosphere fitted below2.4microns already accounts for
+most observed2.45–5micron light; no dominant warm infrared emitter is required
+by this exploratory check. Unsupported: no dust exists, no small warm excess,
+a formal dust-luminosity limit, or proof of intrinsic fading. Cold material,
+a small line-of-sight cloud and mixed photosphere/obscuration remain possible.
+
+ASAS-SN optical state matching retains the existing quality rules and camera
+identities. Expanded±15day-endpoint windows contain104October and95April
+acceptedg exposures. Same-camera daily-median changes,April−October:
+bA−0.0495mag(6/8days), bm−0.0430(5/6), bi−0.0395(2/7),
+bE−0.0140(1/7), bq+0.0055(21/2). Better-sampled bA/bm suggest modest4–5%
+optical brightening. Sparse/conflicting coverage and seasonal systematics
+prevent a precise common change. These are not the2018/2022 extrema.
+
+WIDER ARCHIVES
+
+GALEX: secure near-position NUV detection on2006-02-02,AB18.61384±0.05286,
+130.155±6.335microJy,0.142arcsec offset,artifact0. It falls in the earlier
+ASAS trough era. No numerical FUV upper limit was supplied despite exposure.
+One NUV measurement cannot establish a hot component or UV variability.
+
+Swift XRT:2SXPSJ075445.6+164139(source161839),3.882arcsec from target,
+inside5.6arcsec90% radius. Good detection/field flags,18counts,4183s catalogue
+exposure; catalogue covers2009-12-02–2010-10-09 but actual recovered rate bins
+are from2009-12-02 only. Gaia/AllWISE neighborhood queries find only J0754
+within20arcsec; association is plausible, not certain. No fitted X-ray spectrum.
+Fixed1keV APEC conversion gives observed flux1.118e-13erg/cm2/s. At inverse
+parallax distance1668pc, unabsorbed Lx~4.21e31erg/s; model and association
+uncertainty exceed count/parallax errors. This is compatible with active-giant
+coronal emission and does not require an accreting or hot companion.
+It is previously public catalogue evidence, not an unpublished discovery.
+
+Swift UVOT:UVW1 at0.104arcsec on2009-12-02,AB16.730,quality128. Optical red
+leak and mixed aperture exposure values prevent treating it as clean260nm
+flux. Its difference from GALEX, across different filters/epochs, is not a
+measured UV brightening.
+
+UHS: nativeJ2013,K2019,H2023 images recovered, but all cores saturated;
+catalogue saturation/deblend flags and H-stack issues prevent reliable new
+colors. PTF84rows2009–2015:82saturated and only two sparse unsaturated
+candidates on different dates/filters. These do not supply a useful color curve.
+
+Bounded catalogue/coverage queries added no useful target light curve from
+SuperWASP DR1,KELT,UKIDSS LAS; no secure match from ROSAT,eRASS1,XMM4XMMDR11,
+AKARI,IRAS,Herschel or Spitzer SEIP. The28.74arcsec eRASS supplementary source
+is rejected as a match. Empty catalogues are not measured upper limits or proof
+that every possible image archive is empty. ATLAS requires authentication;
+no account or job was created. Individual boundaries/errors are retained in
+archives/archive_inventory.json and archive_audit.txt.
+
+PRIOR REPORTS THAT SAVE WORK
+
+Tang2010 remains direct refereed target evidence: K2III-like spectrum,
+chromospheric CaH/K emission and historical long fading. J0830's reported
+historical reddening must not be assigned to J0754, which lacks suitable red
+plates for that test.
+https://arxiv.org/abs/1001.1395
+
+A2011STScI conference poster explicitly labels J0754:T4500K,logg1.7,
+[Fe/H]−0.8, beside a high-resolution atmosphere fit. No verified parameter
+errors or exact J0754 instrument/date are supplied there. This broadens the
+credible atmosphere range; it does not overrule other catalogues as exact.
+The poster's Chandra/TRES request belongs to its separate Be-star panel.
+https://hea-www.harvard.edu/DASCH/papers/DASCH_Tang_STScI_June2011_02.pdf
+
+Oláh2013/2014 explicitly discuss Tang's stars by analogy with active K giants.
+Their studied giants have0.65–1.05mag changes across decades. Temperature
+changes alone did not explain all the analogs' variation; magnetic/structural
+changes, including radius changes, were proposed. These are other stars,
+not a measured J0754 radius or an established RS CVn classification.
+https://arxiv.org/abs/1301.3435
+https://arxiv.org/abs/1409.6515
+
+No verified dedicated recent J0754 causal solution was found. This bounded
+search is not a complete ADS citation audit; inaccessible ADS/VSX searches
+remain explicit. Population studies and catalogue labels are not diagnoses.
+
+WHAT WE HAD ALREADY TESTED
+
+Historical1930s dimming survives same-exposure DASCH control tests; independent
+APPLAUSE confirmation remains inconclusive. ASAS2002–2009 adds a smaller
+2006–2007 fading/recovery episode, with ensemble-controlled2004→2007+0.147mag
+and2007→2009−0.114mag. It weakens an inference based only on an85–90yr gap;
+it does not establish a15yr clock. Expanded plate footprints are not new fluxes.
+
+ZTF and separate ASAS-SN cameras replicate2018→2022~0.30mag fading and later
+recovery. Matched/control-tested NEOWISE fades~0.116W1,0.089W2mag, much less
+than optical but appreciably more than the simple ordinary uniform dust screen
+predicts. That screen as the entire explanation fails; dust as a family does not.
+Fixed stable912.3day photometric waveform fails held-out/forward tests. The
+exact35.92day Gaia candidate also lacks a stable photometric waveform. That
+does not disprove an RV orbit, evolving rotation modulation or a companion.
+Gaia SB1 quality is below recommended gold-sample cuts; independent RVs needed.
+Existing passband atmosphere, spots, temperature+scale, partial-covering and
+two-component models remain degenerate; fits to two bands do not identify cause.
+
+CURRENT MECHANISM PRIORITIES — QUALITATIVE, NO NUMERICAL POSTERIOR
+
+1. Active photosphere/magnetic structure, possibly binary-driven: direct
+chromospheric evidence, plausible X-ray association, viable spectral-change
+models and specific active-giant analogs make this concrete. Evolving spots,
+faculae or structural changes need temperature-sensitive spectral evidence;
+activity itself does not demonstrate that it drives the fading.
+
+2. Nonuniform obscuration/ejected material: remains viable. Partial covering
+can reproduce colors that a simple screen cannot. A small cloud can block a
+large fraction of our line of sight while intercepting little total luminosity,
+so lack of a dominant warm excess cannot veto it. Look for state-linked
+extinction, circumstellar absorption or polarization alongside the photosphere.
+
+3. Companion-related processes: candidate35.92day orbit and active-giant binary
+analogs motivate independent line-shape-controlled RV checks. A compact eclipse
+on that orbit crosses the star in days under illustrative parameters, not years;
+additional activity or extended/precessing material would be another hypothesis.
+A wide disk companion remains possible but lacks measured recurrence/geometry.
+
+Ordinary pulsation needs a coherent temperature/radius/velocity relation.
+Lithium/nuclear/evolutionary triggers need reliable abundance and evolutionary
+state; conflicting Gaia atmosphere/evolution outputs do not provide those.
+No exotic explanation is demanded by the current evidence.
+
+NEXT DISCRIMINATING TEST
+
+Analyze actual optical spectra with consistent normalization/resolution,
+temperature-sensitive features and activity indices, tied to brightness state.
+The decisive modern extension would be simultaneous multicolor photometry plus
+multi-epoch optical spectra: does the visible atmosphere change, or is largely
+the same spectrum being attenuated? Separate coherent Doppler motion from line
+asymmetry/activity to validate Gaia's possible orbit. Small optical/NIR color
+differences alone may not separate the surviving models. No observing booking,
+contact, account creation, paid request or publication was made.
+
+REPRODUCTION AND REVIEW
+
+Maintained source: tools/sky-plates.
+Results/raw data: this directory, separate from source Git.
+77 component tests passed; numerical units, WCS, PSF phase/normalization,
+masked source fitting, negative flux, edge cropping, subpixel centroid recovery
+and approximate Fnu integration covered. Independent scientific/code review is
+saved in review.txt. The final fine-centroid diagnostic converged for174/182
+primary rows;8failures explicitly flagged. Primary fluxes/wavelengths/quality
+unchanged exactly from fixed-position extraction. Calibration/model sensitivity
+is not removed by passing algebra tests. Commit/saved-state receipts accompany
+the completed checkpoint; see source guide for commands and limitations.
+
+ADDITIONAL RECOVERED OPTICAL SPECTRA — DIRECT ARCHIVE FOLLOW-UP
+
+The CfA OIRSA coordinate query recovered ten processed FAST/Tillinghast spectra
+of the exact GSC alias at J0754's position. All ten downloaded native files have
+real finite nonzero extracted arrays, raw/background/sigma bands, distinct hashes
+and unique exposure MJDs. Root independently verified the FITS structure, band
+identities, linear wavelength solutions and finite extracted arrays. Eight UTC
+observing dates:2008-10-22,2008-10-24,2009-11-12(three exposures),2009-11-19,
+2010-01-13,2010-01-17,2012-03-26,2012-05-17. Archive directory dates are the
+preceding local observing-night labels; do not substitute them for UTC dates.
+MJD values are exposure midpoints; native DATE-OBS/UT start times are retained.
+
+Seven spectra cover approximately347–742nm with300line/mm grating and3arcsec
+slit; three cover approximately474–678nm with600line/mm and2arcsec. Catalogue
+S/N estimates are about41–119, not a measured S/N for every line or CaH/K core.
+Headers identify PI Tang and the DASCH Long-Term Variables program. These may
+include observations underlying the earlier work; recovery is new to this
+investigation, not a claim that the spectra were previously unknown.
+
+The files do not certify physical absolute flux calibration. Comparisons must
+match instrumental resolution, local continua, background and brightness state;
+raw continuum slopes cannot supply a reliable temperature/reddening change.
+These modest-resolution spectra cannot by themselves validate Gaia's35.92day
+RV orbit. Hectochelle's native coordinate query failed with a server SQL error;
+that is an unavailable query, not evidence that no echelle spectrum exists.
+
+The first local-normalization inspection finds broadly similar Mg/Na absorption
+and a tentative H-alpha-profile difference, repeated in three2009 exposures.
+This is a post-hoc lead requiring resolution/sky/continuum checks, not an
+activity measurement or explanation of the modern fading. The spectra do not
+cover the2022 minimum. Their existence materially improves the next test:
+we can begin with actual earlier spectra before seeking new observations.
+Primary archive:https://oirsa.cfa.harvard.edu/
+See literature/ spectrum-route report/native receipts and fast_root_validation.json.
+
+SOURCE CHECKPOINT
+
+Commit4946a5cadb334bfc9fa6507cea899bb4f98abf7b contains12 scoped source/guide
+files. The sky-plates component is clean after commit; unrelated existing
+workspace changes remain preserved. Existing GitHub Desktop registration was
+reused. No Git remote is configured, and no push/publication occurred. Raw
+science downloads, literature and this report are saved locally outside source
+Git; the source commit does not constitute an online backup of those datasets.

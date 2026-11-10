@@ -1,0 +1,13 @@
+{
+  ".\\results\\sky-plates-j0754-models-20261108\\history\\asas_raw.txt": "fbe6fd034d0e9a559c8b89bf62738f4aa2b809f6f800357558601a5afac9f278",
+  ".\\results\\sky-plates-recon-20261107\\J0754_apass_lightcurve.csv": "9a96ba54c0ae57ccee9e10b56409d5d08237e04aa4c4e4c1d42b41cd977537ff",
+  ".\\results\\sky-plates-recon-20261107\\J0754_applause_cone.csv": "be1694df63c9586f850b555ca6591a900bcafe0babb8dd77bf30361ee616b08c",
+  ".\\results\\sky-plates-recon-20261107\\applause_exposure_dates.csv": "7a29179393fe998d3cdd2f695b0d2c84adf38279d165f3ae95ed5be1a2efd79c",
+  ".\\results\\sky-plates-j0754-20261107\\dasch_differential.csv": "7868f5d8f733714e303bb5592157e20c2bae5c28679b813ee7fb631e945bffdc",
+  ".\\results\\sky-plates-j0754-models-20261108\\history\\applause_fresh_source_rows.csv": "b5afa13917eec6951230cf4b69454844eed1cc4309d5d2be333d270209ca185f",
+  ".\\results\\sky-plates-j0754-models-20261108\\history\\applause_fresh_exposures.xml": "dc58d5fb09553428f470fbd0f8b75a2c3c5fa3b4a2b74c31529890211dd44313",
+  ".\\results\\sky-plates-j0754-models-20261108\\history\\applause_solution_candidates.xml": "62d3274024afd3bd8eaa2f06368fc59c836f3b4bb88f2004a85afca205c393cc",
+  ".\\results\\sky-plates-j0754-models-20261108\\history\\applause_covering_plates.xml": "4778d8166337c467c41bf847f8e8cbc38d044d5d5dc9b4bc2aaf932b84437f71",
+  ".\\results\\sky-plates-j0754-models-20261108\\history\\applause_covering_exposures.xml": "0805ae2d37598cfdffea7f70b1a7e74357101fce80df98f0ea1612f75ddc070f",
+  ".\\results\\sky-plates-j0754-models-20261108\\history\\applause_covering_calibration.xml": "6f765b163f543650f587a424c1f3f4bc1f5f5923c8f56f94464b099ef3a3ce64"
+}

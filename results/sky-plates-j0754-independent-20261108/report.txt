@@ -1,0 +1,39 @@
+J0754: independent ASAS-SN replication, completed 8 November 2026
+
+ASAS-SN independently corroborates the modern fading and partial recovery seen by ZTF. The cause, period and any connection to the 1930s event remain unresolved.
+
+The full-history coordinate recomputation supplies 5,249 native observations: 965 in V and 4,284 in g, spanning 16 February 2012 to 8 November 2026. Of these, 5,180 pass the finite-value, positive-flux/error and detection screens. Explicit limits and 99.990 sentinel rows remain in the preserved CSV. No brightness clipping is used. V1 supplies no explicit image-quality flag. Filters and cameras stay separate.
+
+Kyle completed the CAPTCHA and clicked Compute. Ari inspected the query-check page and its offered older curves, then submitted the necessary recomputation. The job completed at 21:04 UTC. Job ID:21eb35a3-8487-4560-a40d-be000fae5f7d. Result ID:d2c2ad05-c9a6-4362-93ac-523c2584d094.
+
+The directional prediction and weakening outcomes were saved before ASAS-SN light-curve inspection in protocol.json. The detailed CSV-specific screening, date-block bootstrap and sensitivity choices were specified after viewing preliminary raw camera/year medians; that timing is explicit in replication_analysis_specification.json. This is a targeted replication, not a blind new-discovery search.
+
+Annual all-image medians are compared within one camera/filter, requiring at least ten measurements on ten UTC dates in each year. The 95% conditional sampling intervals resample complete UTC-date groups, with 3,000 draws. They omit calibration systematics and inter-day correlation; camera streams can share systematics.
+
+Camera results (positive magnitude change means fading):
+  bA: 2018 to 2022 INSUFFICIENT; observations [3, 113]; UTC dates [1, 36].
+  bA: 2022 to 2025, -0.1400 mag; 95% sampling interval [-0.1555, -0.1180]; observations [113, 190]; UTC dates [36, 61].
+  bE: 2018 to 2022 INSUFFICIENT; observations [5, 87]; UTC dates [2, 27].
+  bE: 2022 to 2025, -0.1495 mag; 95% sampling interval [-0.1670, -0.1355]; observations [87, 84]; UTC dates [27, 28].
+  bi: 2018 to 2022, +0.3130 mag; 95% sampling interval [+0.2910, +0.3440]; observations [235, 102]; UTC dates [83, 35].
+  bi: 2022 to 2025, -0.1120 mag; 95% sampling interval [-0.1450, -0.0910]; observations [102, 70]; UTC dates [35, 26].
+  bm: 2018 to 2022, +0.2850 mag; 95% sampling interval [+0.2690, +0.3055]; observations [109, 116]; UTC dates [38, 31].
+  bm: 2022 to 2025, -0.0970 mag; 95% sampling interval [-0.1120, -0.0790]; observations [116, 86]; UTC dates [31, 29].
+  bq: 2018 to 2022, +0.3035 mag; 95% sampling interval [+0.2860, +0.3250]; observations [115, 96]; UTC dates [40, 32].
+  bq: 2022 to 2025, -0.1610 mag; 95% sampling interval [-0.1780, -0.1460]; observations [96, 136]; UTC dates [32, 46].
+
+The three primary fading streams meet the two-stream directional gate. Their 0.285–0.313 mag fading corresponds to about 23–25% less g-band flux. All five adequately sampled g streams recover by 2025. Stricter magnitude-error and seeing screens, common-month comparisons, and separate seasonal summaries retain the expected sign where adequately sampled. Insufficient subsets remain explicit. No combined formal significance is claimed.
+
+All fourteen original comparison stars with V2 data are retained. Median 2018–2022 changes are -0.001715 (bi), +0.000745 (bm) and +0.000114 (bq) mag. Individual control changes span wider ranges, including variable/outlying stars; none was pruned by outcome. These are V2 coadded/differently reduced annual diagnostics, not identical-frame V1 corrections. V2 controls lack adequate 2025 coverage, so recovery has no equivalent control test.
+
+Prior ZTF same-exposure differential changes are +0.308863175 mag from 2018 to 2022 and -0.1392930625 mag from 2022 to 2025. ASAS-SN's same three primary cameras recover by 0.097–0.161 mag. The figure subtracts each stream's own 2022 median solely for display; it fits neither amplitudes nor absolute cross-survey zero points. The 2026 point is a partial year through 8 November.
+
+The direct V2 lookup initially matched all seventeen identities but returned 18,391 rows for fourteen controls and none for J0754. Single-target and master-cone queries were also empty. That was insufficient returned data, not a flat-star result. Older public records supply 222 V epochs ending in 2018; they cannot test the later event. The initial audit/figure/report are preserved with precomputation suffixes. The new V1 measurements overcome the coverage gap for the replication.
+
+The ASAS-SN variable catalogue lists J0754 as ROT: (uncertain rotational variable), amplitude 0.17 mag, period 912.3158778 days and classification probability 0.874, with Paper II (2019) as its reference. These remain external tentative catalogue claims. The entry demonstrates attention after 2010; recent dedicated follow-up is unestablished. A useful next inquiry is whether this longer record supports that proposed cycle or requires slower/nonperiodic behavior.
+
+Verification: all 26 tests pass. An independent AI reviewer reproduced native counts, every camera/year median and date count, all eight primary bootstrap intervals and the directional gates. The final figure was visually inspected. The four earlier snapshot manifests (40, 58, 50 and 101 files) were hash-verified unchanged.
+
+Maintained source: tools/sky-plates. Raw/results are kept in this directory, with an isolated runtime under runtime/sky-plates/venv. Existing GitHub Desktop registration was reused, previously visibly verified in this chat. Source scope is clean and the index is empty. Scoped local commits only; no push or publication. Exact commit and hashes are in source_state.json and file_manifest.json.
+
+Public result: https://asas-sn.osu.edu/sky-patrol/coordinate/d2c2ad05-c9a6-4362-93ac-523c2584d094

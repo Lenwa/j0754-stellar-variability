@@ -1,0 +1,144 @@
+column_name,datatype,description
+ra,double,right ascension (J2000)
+dec,double,declination (J2000)
+sigra,double,uncertainty in RA
+sigdec,double,uncertainty in DEC
+sigradec,double,uncertainty cross-term
+glon,double,galactic longitude
+glat,double,galactic latitude
+elon,double,ecliptic longitude
+elat,double,ecliptic latitude
+w1x,double,"x-pixel coordinate, band 1"
+w1y,double,"y-pixel coordinate, band 1"
+w2x,double,"x-pixel coordinate, band 2"
+w2y,double,"y-pixel coordinate, band 2"
+cntr,long,unique entry counter (key) number
+source_id,char,"unique source ID (scan ID, frame num, and source number)"
+frame_num,short,frame number
+scan_id,char,scan ID
+src,int,source number in frame
+w1mpro,float,"instrumental profile-fit photometry magnitude, band 1"
+w1sigmpro,float,"instrumental profile-fit photometry flux uncertainty in mag units, band 1"
+w1snr,float,"instrumental profile-fit photometry S/N ratio, band 1"
+w1rchi2,float,"instrumental profile-fit photometry reduced chi^2, band 1"
+w2mpro,float,"instrumental profile-fit photometry magnitude, band 2"
+w2sigmpro,float,"instrumental profile-fit photometry flux uncertainty in mag units, band 2"
+w2snr,float,"instrumental profile-fit photometry S/N ratio, band 2"
+w2rchi2,float,"instrumental profile-fit photometry reduced chi^2, band 2"
+rchi2,float,"instrumental profile-fit photometry reduced chi squared, total"
+nb,short,number of blend components used in each fit
+na,short,active deblend flag (=1 if actively deblended)
+w1sat,double,"fraction of pixels saturated, band 1"
+w2sat,double,"fraction of pixels saturated, band 2"
+satnum,char,"minimum sample at which saturation occurs, 1 char per band"
+cc_flags,char,prioritized artifacts affecting the source in each band
+det_bit,short,bit-encoded number(10) indicating detection for each band
+ph_qual,char,"photometric quality of each band (A=highest, U=upper limit)"
+sso_flg,long,"known solar system object association flag (0=no association, 1=association)"
+qual_frame,short,quality score value for frame
+qi_fact,float,quality factor qi value for frame: image quality
+saa_sep,float,distance from frame center to SAA boundary
+moon_masked,char,flag (0/1) indicating whether frame is within the moon-mask area in each band
+w1frtr,char,"Transient pixel indicator string, band 1"
+w2frtr,char,"Transient pixel indicator string, band 2"
+mjd,double,modified Julian date of the mid-point of the observation of the frame
+w1cc_map,int,contamination and confusion bit array for the source in band 1
+w1cc_map_str,char,contamination and confusion varchar2 array for the source in band 1
+w2cc_map,int,contamination and confusion bit array for the source in band 2
+w2cc_map_str,char,contamination and confusion varchar2 array for the source in band 2
+w1sky,double,"sky background value, band 1"
+w1sigsk,float,"sky background value uncertainty, band 1"
+w1conf,double,"sky confusion based on the uncertainty images, band 1"
+w2sky,double,"sky background value, band 2"
+w2sigsk,float,"sky background value uncertainty, band 2"
+w2conf,double,"sky confusion based on the uncertainty images, band 2"
+w1flux,float,"profile-fit photometry raw flux, band 1"
+w1sigflux,float,"profile-fit photometry raw flux uncertainty, band 1"
+w2flux,float,"profile-fit photometry raw flux, band 2"
+w2sigflux,float,"profile-fit photometry raw flux uncertainty, band 2"
+w1fitr,float,"fitting radius, band-1 (clipped at 999.99)"
+w2fitr,float,"fitting radius, band-2 (clipped at 999.99)"
+w1mag,float,"instrumental standard aperture mag w/ aperture correction applied, band 1"
+w1sigm,float,"instrumental standard aperture mag uncertainty, band 1"
+w1flg,short,"instrumental standard aperture flag, band 1"
+w1mcor,float,"instrumental aperture correction, band 1, std ap"
+w2mag,float,"instrumental standard aperture mag w/ aperture correction applied, band 2"
+w2sigm,float,"instrumental standard aperture mag uncertainty, band 2"
+w2flg,short,"instrumental standard aperture flag, band 2"
+w2mcor,float,"instrumental aperture correction, band 2, std ap"
+w1mag_1,float,"aperture 1 instrumental aperture mag, band 1"
+w1sigm_1,float,"aperture 1 instrumental aperture mag uncertainty, band 1"
+w1flg_1,short,"aperture 1 instrumental aperture flag, band 1"
+w2mag_1,float,"aperture 1 instrumental aperture mag, band 2"
+w2sigm_1,float,"aperture 1 instrumental aperture mag uncertainty, band 2"
+w2flg_1,short,"aperture 1 instrumental aperture flag, band 2"
+w1mag_2,float,"aperture 2 instrumental aperture mag, band 1"
+w1sigm_2,float,"aperture 2 instrumental aperture mag uncertainty, band 1"
+w1flg_2,short,"aperture 2 instrumental aperture flag, band 1"
+w2mag_2,float,"aperture 2 instrumental aperture mag, band 2"
+w2sigm_2,float,"aperture 2 instrumental aperture mag uncertainty, band 2"
+w2flg_2,short,"aperture 2 instrumental aperture flag, band 2"
+w1mag_3,float,"aperture 3 instrumental aperture mag, band 1"
+w1sigm_3,float,"aperture 3 instrumental aperture mag uncertainty, band 1"
+w1flg_3,short,"aperture 3 instrumental aperture flag, band 1"
+w2mag_3,float,"aperture 3 instrumental aperture mag, band 2"
+w2sigm_3,float,"aperture 3 instrumental aperture mag uncertainty, band 2"
+w2flg_3,short,"aperture 3 instrumental aperture flag, band 2"
+w1mag_4,float,"aperture 4 instrumental aperture mag, band 1"
+w1sigm_4,float,"aperture 4 instrumental aperture mag uncertainty, band 1"
+w1flg_4,short,"aperture 4 instrumental aperture flag, band 1"
+w2mag_4,float,"aperture 4 instrumental aperture mag, band 2"
+w2sigm_4,float,"aperture 4 instrumental aperture mag uncertainty, band 2"
+w2flg_4,short,"aperture 4 instrumental aperture flag, band 2"
+w1mag_5,float,"aperture 5 instrumental aperture mag, band 1"
+w1sigm_5,float,"aperture 5 instrumental aperture mag uncertainty, band 1"
+w1flg_5,short,"aperture 5 instrumental aperture flag, band 1"
+w2mag_5,float,"aperture 5 instrumental aperture mag, band 2"
+w2sigm_5,float,"aperture 5 instrumental aperture mag uncertainty, band 2"
+w2flg_5,short,"aperture 5 instrumental aperture flag, band 2"
+w1mag_6,float,"aperture 6 instrumental aperture mag, band 1"
+w1sigm_6,float,"aperture 6 instrumental aperture mag uncertainty, band 1"
+w1flg_6,short,"aperture 6 instrumental aperture flag, band 1"
+w2mag_6,float,"aperture 6 instrumental aperture mag, band 2"
+w2sigm_6,float,"aperture 6 instrumental aperture mag uncertainty, band 2"
+w2flg_6,short,"aperture 6 instrumental aperture flag, band 2"
+w1mag_7,float,"aperture 7 instrumental aperture mag, band 1"
+w1sigm_7,float,"aperture 7 instrumental aperture mag uncertainty, band 1"
+w1flg_7,short,"aperture 7 instrumental aperture flag, band 1"
+w2mag_7,float,"aperture 7 instrumental aperture mag, band 2"
+w2sigm_7,float,"aperture 7 instrumental aperture mag uncertainty, band 2"
+w2flg_7,short,"aperture 7 instrumental aperture flag, band 2"
+w1mag_8,float,"aperture 8 instrumental aperture mag, band 1"
+w1sigm_8,float,"aperture 8 instrumental aperture mag uncertainty, band 1"
+w1flg_8,short,"aperture 8 instrumental aperture flag, band 1"
+w2mag_8,float,"aperture 8 instrumental aperture mag, band 2"
+w2sigm_8,float,"aperture 8 instrumental aperture mag uncertainty, band 2"
+w2flg_8,short,"aperture 8 instrumental aperture flag, band 2"
+allwise_cntr,long,closest associated ALLWISE Catalog source cntr
+r_allwise,double,radial offset between NEOWISER src and associated ALLWISE src
+pa_allwise,float,position angle (E of N) of vector from NEOWISER src to associated ALLWISE src
+n_allwise,short,number of ALLWISE src  entries found within search radius of NEOWISER src
+w1mpro_allwise,float,W1mpro magnitude  of the associated ALLWISE source
+w1sigmpro_allwise,float,W1 photometric uncertainty of the associated ALLWISE  source
+w2mpro_allwise,float,W2mpro magnitude  of the associated ALLWISE  source
+w2sigmpro_allwise,float,W2 photometric uncertainty of the associated ALLWISE  source
+w3mpro_allwise,float,W3mpro magnitude  of the associated ALLWISE  source
+w3sigmpro_allwise,float,W3 photometric uncertainty of the associated ALLWISE source
+w4mpro_allwise,float,W4mpro magnitude  of the associated ALLWISE  source
+w4sigmpro_allwise,float,W4 photometric uncertainty of the associated ALLWISE  source
+tmass_key,long,closest associated 2MASS All-Sky Release PSC key
+r_2mass,double,radial offset between NEOWISE src and associated 2MASS src
+pa_2mass,float,position angle (E of N) of vector from NEOWISE src to associated 2MASS src
+n_2mass,short,number of 2MASS All-Sky PSC entries found within search radius of NEOWISE src
+xscprox,double,distance between source center and XSC galaxy
+j_m_2mass,float,J magnitude entry of the associated 2MASS All-Sky PSC source
+j_msig_2mass,float,J photometric uncertainty of the associated 2MASS All-Sky PSC source
+h_m_2mass,float,H magnitude entry of the associated 2MASS All-Sky PSC source
+h_msig_2mass,float,H photometric uncertainty of the associated 2MASS All-Sky PSC source
+k_m_2mass,float,Ks magnitude entry of the associated 2MASS All-Sky PSC source
+k_msig_2mass,float,Ks photometric uncertainty of the associated 2MASS All-Sky PSC source
+x,double,"unit sphere (x,y,z) position x value"
+y,double,"unit sphere (x,y,z) position y value"
+z,double,"unit sphere (x,y,z) position z value"
+spt_ind,int,Level 7 HTM spatial index key
+htm20,long,Level 20 HTM  spatial index key

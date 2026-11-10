@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Documents\\Codex\\Lumen\\tools/sky-plates\\companion_light_sensitivity.py",
+    "sha256": "b641565645b4f747d338f6cea6f6f22ffa9cbcd4b5302b089a0b4e2e9e5edc5d"
+  },
+  {
+    "path": "Documents\\Codex\\Lumen\\tools/sky-plates\\test_companion_light_sensitivity.py",
+    "sha256": "f9a2d3aa2ffe3cea24f60d9480baff61baa848804571b2c1ac920e28e080182b"
+  },
+  {
+    "path": "Documents\\Codex\\Lumen\\tools/sky-plates\\companion_light_README.md",
+    "sha256": "73d22f617c67f0d455734c6f92ba4c868275de88dd765aaf72950241e1c225be"
+  }
+]

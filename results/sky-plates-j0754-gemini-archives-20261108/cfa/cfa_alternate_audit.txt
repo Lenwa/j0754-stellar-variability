@@ -1,0 +1,97 @@
+J0754: bounded CfA/OIRSA alternate-interface audit
+9 November 2026 UTC / 8 November local date
+
+RESULT
+
+The published OIRSA Hectochelle HTML search form is broken by a missing-column projection, but the archive's documented TAP interface works when valid columns are selected. This stage obtained genuine successful target nulls through TAP: no public Hectochelle row within 1 or 5 arcmin of J0754. A target-name substring/owner search also returned zero rows. The documented old-Echelle form gives a successful 1 arcmin target null.
+
+No J0754 high-resolution FITS was recovered in this audit. These bounded public-table nulls do not disprove the poster observation or establish that its spectrum was never archived, remains private, or is unavailable through another archive. No contacts, accounts or source changes occurred.
+
+TARGET AND DOCUMENTED DISCOVERY
+
+Target ICRS RA=118.69117410685 deg, Dec=16.694621231895 deg.
+Names sought: GSC N2211330177 / N221133017, coordinate-name substring 075445; Tang in the available owner field.
+
+The public homepage https://oirsa.cfa.harvard.edu/ advertises Hectochelle, Hectospec, FAST and old Echelle holdings. Its search form explicitly supplies Hectochelle and Echelle form endpoints. The already-returned public FAST product links establish the archive's http://oirsa.cfa.harvard.edu:8080/ backend.
+
+That backend's own homepage links /tap and the service-information page:
+http://oirsa.cfa.harvard.edu:8080/__system__/tap/run/info
+The service documentation explicitly lists hectochelle.data_public and echelle.data_public, identifies its TAP base URL as http://oirsa.cfa.harvard.edu:8080/__system__/tap/run, and advertises sync access. No table name was guessed.
+
+The TAP_SCHEMA.columns queries then declared each table's columns. The native column metadata is saved in tap_hectochelle_columns.vot and tap_echelle_columns.vot, with derived CSVs. The documented owner field is only "Owner of the data"; no dedicated PI field is declared. Consequently a Tang-owner null is not an exhaustive search for observations whose actual PI was Tang.
+
+Hectochelle form options use configuration-style names such as CHELLE:...; no N221133017, 075445 or Tang value occurs in the current returned target dropdown. One M44 configuration exists, but J0754 is not assumed to be in that field.
+
+KNOWN FORM ERROR RETESTED
+
+POST to https://oirsa.cfa.harvard.edu/hectochelle/hectochelle_public.ssap.q/web/form
+with the 1 arcmin target cone and the form's minimal _ADDITEM=owner output option still returns HTTP 200 HTML containing:
+Field query: column "ssa_redshift" does not exist
+
+This is a server query/projection failure. It supplies no astronomical target result. TAP_SCHEMA still advertises ssa_redshift, revealing an inconsistency between declared metadata and the queryable physical service. Removing this unavailable column from the requested TAP output bypasses the failing form. That is different from claiming the whole table cannot be retrieved.
+
+WORKING ALTERNATE TAP REQUESTS
+
+Endpoint:
+http://oirsa.cfa.harvard.edu:8080/__system__/tap/run/sync
+POST form fields:
+REQUEST=doQuery
+LANG=ADQL
+RESPONSEFORMAT=votable
+QUERY=(one of the saved exact queries)
+MAXREC=(saved per request)
+
+1. Generic retrieval:
+SELECT TOP 1 accref FROM hectochelle.data_public
+Result: QUERY_STATUS=OK, 1 row with an actual public product URL. This establishes that the table itself is queryable.
+
+2. Target-name / owner search:
+SELECT TOP 1000 accref, owner, ssa_targname, ssa_location, ssa_dateobs, ssa_timeext
+FROM hectochelle.data_public
+WHERE ssa_targname LIKE '%N221133017%'
+OR ssa_targname LIKE '%075445%'
+OR owner LIKE '%Tang%' OR owner LIKE '%tang%'
+Result: QUERY_STATUS=OK, 0 rows, no overflow. This covers the supplied GSC prefix, including the shortened 2012 spelling, and the coordinate-name substring, not every conceivable free-form object label or PI spelling.
+
+3. J0754 coordinate cone:
+SELECT TOP 100 accref, owner, ssa_targname, ssa_location, ssa_dateobs, ssa_timeext
+FROM hectochelle.data_public
+WHERE 1=CONTAINS(ssa_location,
+ CIRCLE('ICRS',118.69117410685,16.694621231895,0.016666666667))
+Result: QUERY_STATUS=OK, 0 rows. Radius is degrees: 0.0166667 deg = 1 arcmin.
+A second query at 0.083333333333 deg (5 arcmin) also returns OK, 0 rows.
+
+4. Geometry positive control:
+The generic table retrieval supplied a spectrum at RA=85.92340000000024 deg,
+Dec=26.971319166666692 deg. A 1 arcsec cone around that saved returned position gives QUERY_STATUS=OK, 2 rows and includes the original sample product. Thus the coordinate-query syntax and point units demonstrably retrieve a known source; the target null is not merely an untested geometry expression.
+No non-target spectrum was downloaded.
+
+PUBLIC COVERAGE BOUNDARY
+
+A direct aggregate of the same public table returns:
+393267 public spectrum rows;
+earliest midpoint MJD=54984.39852430556 = 2009-06-02 09:33:52.500 UTC;
+latest midpoint MJD=60664.32531828704 = 2024-12-20 07:48:27.500 UTC.
+
+The homepage's general description of Hectochelle observations since 2004 is broader than this currently queried public table's actual minimum date. This matters: a pre-June-2009 spectrum would not be covered by this successful null. The poster is dated 2011 but provides no observing date, so that gap cannot be dismissed. Date extrema do not establish continuous temporal, sky or program completeness within the interval.
+
+OLD ECHELLE AND TRES BOUNDARIES
+
+The official form provides:
+https://oirsa.cfa.harvard.edu/echelle/echelle_public.ssap.q/web/form
+The 1 arcmin target cone returns application/json, queryStatus=OK and an empty data array. This is a valid bounded old-Echelle target null. It does not concern the ten FAST spectra already recovered in the previous stage.
+
+OIRSA describes its Echelle holdings as older high-dispersion observations through 2009. No separate public TRES route or TRES collection was documented in the inspected homepage, backend services or table list. Therefore no guessed TRES endpoint or guessed table was queried. This is not a statement that no public TRES spectrum exists anywhere.
+
+WHAT REMAINS UNKNOWN
+
+The 2011 poster still does not identify whether its actual plotted J0754 echelle spectrum came from Hectochelle or Magellan/MIKE, or when it was observed. The valid current CfA null cannot resolve that provenance. Author/coauthor material not indexed here, a pre-2009 Hectochelle observation, MIKE data or another public release remain possible routes.
+
+The useful technical advance is a verified working OIRSA TAP path and a more precise public-subset null, replacing the earlier form-failure-only uncertainty. The saved valid-column query can be reused if the public archive changes.
+
+PRESERVATION AND VERIFICATION
+
+Native responses, exact request bodies, request UTC times, HTTP/content-type details and SHA256 values are retained under this cfa directory. TAP VOTable QUERY_STATUS values and row counts were parsed independently of HTTP status; HTTP 200 alone was not treated as success. Empty multidimensional tables are exported as ECSV where ordinary CSV cannot represent their point column. The HTML form's full server error remains preserved.
+
+cfa_alternate_audit_receipt.json records the request inventory, table counts/date limits, positive control and all file hashes. No source repository file, account, credential, paid request, contact, observing request, commit, push or publication was involved.
+

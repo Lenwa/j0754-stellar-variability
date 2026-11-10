@@ -1,0 +1,67 @@
+table_name,column_name,datatype,description
+spherex.artifact,planeid,char,foreign key: caom.plane.planeid
+spherex.artifact,artifactid,char,unique artifact identifier: 32-bit UUID
+spherex.artifact,uri,char,artifact access url
+spherex.artifact,producttype,char,"product type (e.g. science, calibration, auxiliary, preview, info)"
+spherex.artifact,releasetype,char,"release type (data, meta)"
+spherex.artifact,contenttype,char,artifact file type
+spherex.artifact,contentlength,long,artifact size in bytes
+spherex.artifact,contentchecksum,char,checksum of the content (URI of the form {algorithm}:{hex value})
+spherex.artifact,ipac_gid,int,IRSA access control identifier: group ID
+spherex.artifact,mission_id,int,IRSA access control identifier: mission ID
+spherex.artifact,ipac_pub_date,char,public release date (UTC)
+spherex.artifact,lastmodified,char,timestamp of last modification of this row
+spherex.plane,obsid,char,foreign key: caom.observation.obsid
+spherex.plane,planeid,char,unique plane identifier: 32-bit UUID
+spherex.plane,productid,char,name of this product
+spherex.plane,creatorid,char,unique creator identifier for this product
+spherex.plane,metarelease,char,date the metadata for a plane is public (UTC)
+spherex.plane,datarelease,char,public release date
+spherex.plane,calibrationlevel,short,"IVOA ObsCore calibration level   (-1,0,1,2,3,4)"
+spherex.plane,dataproducttype,char,IVOA ObsCore data product type + extensions
+spherex.plane,quality_flag,char,flag describing the data quality
+spherex.plane,metrics_sourcenumberdensity,double,number density of sources
+spherex.plane,metrics_background,double,background intensity
+spherex.plane,metrics_backgroundstddev,double,standard deviation in background
+spherex.plane,metrics_fluxdensitylimit,double,flux density limit where S:N=5 for point source
+spherex.plane,metrics_maglimit,double,AB magnitude limit where S:N=5 for point source
+spherex.plane,position_dimension_naxis1,long,dimensions (number of pixels) along one spatial axis
+spherex.plane,position_dimension_naxis2,long,dimensions (number of pixels) along other spatial axis
+spherex.plane,position_resolution,double,median spatial resolution (FWHM)
+spherex.plane,position_samplesize,double,median sample (pixel) size on spatial axes
+spherex.plane,position_timedependent,boolean,"flag indicating that the position is time-dependent (0=false, 1=true)"
+spherex.plane,energy_bounds_lower,double,lower bound on energy axis (barycentric wavelength)
+spherex.plane,energy_bounds_upper,double,upper bound on energy axis (barycentric wavelength)
+spherex.plane,energy_bounds_samples,double,detailed energy coverage (barycentric wavelength)
+spherex.plane,energy_emband,char,"comma-separated energy band names (e.g. Infrared, Optical)"
+spherex.plane,energy_dimension,long,dimension (number of pixels) along energy axis
+spherex.plane,energy_resolvingpower,double,median spectral resolving power (R)
+spherex.plane,energy_samplesize,double,median sample (pixel) size on energy axis
+spherex.plane,energy_bandpassname,char,collection-specific name for energy band (e.g. filter name)
+spherex.plane,energy_transition_species,char,atom or molecule
+spherex.plane,energy_transition_transition,char,specific energy transition of species
+spherex.plane,energy_restwav,double,rest wavelength of target spectral feature (barycentric)
+spherex.plane,time_bounds_lower,double,lower bound on time axis (Modified Julian Day)
+spherex.plane,time_bounds_upper,double,upper bound on time axis (Modified Julian Day)
+spherex.plane,time_bounds_samples,double,detailed time coverage (Modified Julian Day)
+spherex.plane,time_dimension,long,dimension (number of pixels) along time axis
+spherex.plane,time_resolution,double,median resolution on the time axis
+spherex.plane,time_samplesize,double,median sample (pixel) size on time axis
+spherex.plane,time_exposure,double,median exposure time per pixel
+spherex.plane,polarization_states,char,polarization letter codes - not populated at IRSA
+spherex.plane,polarization_dimension,long,number of samples (pixels) along polarization axis
+spherex.plane,provenance_name,char,name of the process that created this plane
+spherex.plane,provenance_reference,char,external reference (URL)
+spherex.plane,provenance_version,char,version of the process/software
+spherex.plane,provenance_project,char,responsible entity (e.g. person)
+spherex.plane,provenance_producer,char,responsible entity (e.g. person)
+spherex.plane,provenance_runid,char,responsible entity (e.g. person)
+spherex.plane,provenance_lastexecuted,char,date this process was last executed
+spherex.plane,provenance_keywords,char,provenance keywords (JSON of key/value pairs)
+spherex.plane,ipac_gid,int,IRSA access control identifier: group ID
+spherex.plane,mission_id,int,IRSA access control identifier: mission ID
+spherex.plane,poly,char,IRSA internal spatial index descriptor
+spherex.plane,pt,char,IRSA internal spatial index descriptor
+spherex.plane,ipac_pub_date,char,public release date (UTC)
+spherex.plane,lastmodified,char,timestamp of last modification of this row
+spherex.plane,obs_publisher_did,char,"IVOA ID for the dataset, assigned by the publisher (IRSA)"

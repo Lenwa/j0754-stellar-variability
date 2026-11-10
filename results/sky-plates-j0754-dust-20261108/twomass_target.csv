@@ -1,0 +1,2 @@
+ra,dec,clon,clat,err_maj,err_min,err_ang,designation,j_m,j_cmsig,j_msigcom,j_snr,h_m,h_cmsig,h_msigcom,h_snr,k_m,k_cmsig,k_msigcom,k_snr,ph_qual,rd_flg,bl_flg,cc_flg,ndet,gal_contam,mp_flg,hemis,xdate,scan,glon,glat,a,dist_opt,phi_opt,b_m_opt,vr_m_opt,nopt_mchs,ext_key,dist,angle,j_h,h_k,j_k
+118.691195,16.694649,07h54m45.89s,16d41m40.74s,0.12,0.07,90,07544588+1641407,10.424,0.018,0.021,2202.1,9.833,0.018,0.02,1681.5,9.696,0.015,0.017,1007.0,AAA,222,111,000,666666,0,0,n,1997-11-01,129,204.506,21.319,U,0.5,228,13.0,11.2,1,,0.135377,39.547582,0.591,0.137,0.728

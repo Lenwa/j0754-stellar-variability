@@ -1,0 +1,74 @@
+[
+  {
+    "obs_collection": "HLSP",
+    "obs_id": "hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc",
+    "target_name": "18878735",
+    "t_min": 59499.69029594911,
+    "t_max": 59523.93573631672,
+    "dataRights": "PUBLIC",
+    "dataURL": "mast:HLSP/qlp/s0044/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits"
+  },
+  {
+    "obs_collection": "HLSP",
+    "obs_id": "hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc",
+    "target_name": "18878735",
+    "t_min": 59525.01222662954,
+    "t_max": 59550.12548696063,
+    "dataRights": "PUBLIC",
+    "dataURL": "mast:HLSP/qlp/s0045/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits"
+  },
+  {
+    "obs_collection": "HLSP",
+    "obs_id": "hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc",
+    "target_name": "18878735",
+    "t_min": 59551.06997631257,
+    "t_max": 59578.20336571382,
+    "dataRights": "PUBLIC",
+    "dataURL": "mast:HLSP/qlp/s0046/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits"
+  },
+  {
+    "obs_collection": "HLSP",
+    "obs_id": "hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc",
+    "target_name": "18878735",
+    "t_min": 60233.53053793823,
+    "t_max": 60259.46824440919,
+    "dataRights": "PUBLIC",
+    "dataURL": "mast:HLSP/qlp/s0071/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits"
+  },
+  {
+    "obs_collection": "HLSP",
+    "obs_id": "hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc",
+    "target_name": "18878735",
+    "t_min": 60259.68123158906,
+    "t_max": 60285.08608066104,
+    "dataRights": "PUBLIC",
+    "dataURL": "mast:HLSP/qlp/s0072/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits"
+  },
+  {
+    "obs_collection": "HLSP",
+    "obs_id": "hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_tp",
+    "target_name": "18878735",
+    "t_min": 60233.53781753472,
+    "t_max": 60259.468578657405,
+    "dataRights": "PUBLIC",
+    "dataURL": "mast:HLSP/tess-spoc/s0071/target/0000/0000/1887/8735/hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits"
+  },
+  {
+    "obs_collection": "HLSP",
+    "obs_id": "hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_tp",
+    "target_name": "18878735",
+    "t_min": 60259.68619634259,
+    "t_max": 60285.08641506945,
+    "dataRights": "PUBLIC",
+    "dataURL": "mast:HLSP/tess-spoc/s0072/target/0000/0000/1887/8735/hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits"
+  },
+  {
+    "obs_collection": "HLSP",
+    "obs_id": "hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc",
+    "target_name": "18878735",
+    "t_min": 61055.2574487963,
+    "t_max": 61062.4866053588,
+    "dataRights": "PUBLIC",
+    "dataURL": "mast:HLSP/tess-spoc/s1751/target/0000/0000/1887/8735/hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits"
+  }
+]

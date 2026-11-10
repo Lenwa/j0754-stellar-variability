@@ -1,0 +1,40 @@
+FAST physical tests protocol — written before new comparisons
+This is a retrospective robustness analysis: the 2009 H-alpha lead was already seen.
+Attachment illustrative EW/SNR/LDR/temperature tables are NOT measurements or inputs.
+Native headers decide configurations: Nov12 2009=300 lines/mm; Jan2010=600.
+Inputs: ten unchanged native FITS in results/sky-plates-j0754-spherex-20261108/literature/fast.
+Maintained source ownership: fast_line_tests.py and test_fast_line_tests.py only, in existing tools/sky-plates.
+Outputs: results/sky-plates-j0754-physical-tests-20261108/fast.
+
+Primary: Halpha6547.8–6577.8A, continuum6520–6540 and6580–6600A, linear WLS continuum.
+Common FWHM10A, assumed native FWHM300=7A,600=3A. These are assumptions, not measured per-exposure LSFs.
+Sensitivities: common FWHM8/10/12A; native300=5/6/7/8A,600=2/2.3/3/4A.
+Halpha half-windows10/15/20A; degree0/1/2; continua A=6520–6540,6580–6600;
+B=6510–6540,6580–6610; C=6525–6545,6590–6610.
+Only combinations with line and continuum windows disjoint are scored.
+Wavelength offsets−2/0/+2A tested without claiming a calibrated velocity correction.
+Broadband additive fractions±.015,±.03; continuum-only bias±.015,±.03.
+Exported background-band scales−1,−.25,−.1,−.05,+.05,+.1,+.25,+1.
+Localized emission injections .1/.3/.5A equivalent area, centered6562.8A.
+Mg b blend5160–5190A; continuum5130–5150 and5200–5220A.
+Na D blend5880–5906A; continuum5850–5870 and5910–5930A.
+No resolved Ti/Fe LDR or temperature conversion, no flux-calibrated continuum comparison.
+
+Gaussian smoothing/resampling is a linear operator; retain full propagated covariance.
+WLS continuum influence coefficients and EW total gradient include continuum-fit covariance and line/continuum covariance.
+Seeded native-pixel noise MC validates propagated formal EW error; correlated noise/unknown systematics remain limitations.
+Synthetic analytic profiles test EW invariance, common-resolution recovery, broadband offset dilution,
+continuum-only bias and localized line emission signs/areas.
+
+Repeated exposures averaged inside UTC night; November12 is ONE night.
+Primary contrast mean(two2008nights)−2009Nov12 night; 2012 nights reported separately.
+Formal noise errors may shrink for repeats; shared night/systematic errors do not.
+Sensitivity envelopes are not probabilities/confidence intervals and formal Z is not calibrated discovery significance.
+Background rescaling assumes exported bands have compatible count normalization and cannot prove intrinsic variability.
+
+Implementation plan (writing-plans skill; parent supplies bounded approved design):
+1. Create meaningful failing tests for analytic systematics, EW continuum covariance, smoothing covariance, common-resolution injection, night grouping.
+2. Implement minimal numerical routines in owned files; record red and green test outputs.
+3. Run real data under protocol; save per-exposure/per-night and sensitivity results, input hashes, MC and plots.
+4. Inspect plots and scoped Git status; deliver uncommitted source and results to parent. No README edits, commits, new archives, accounts or contacts.
+

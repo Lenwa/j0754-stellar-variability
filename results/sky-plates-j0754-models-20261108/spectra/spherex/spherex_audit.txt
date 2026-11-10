@@ -1,0 +1,15 @@
+SPHEREx bounded coverage audit - 8 November 2026
+
+J0754 has public post-2024 spectral-image coverage. The documented SIA2 position search (0.36 arcsec radius around RA 118.69117410685, Dec 16.694621231895) returned 223 unique QR2 Level 2 image MEFs, across two seasons: 111 images from 2025-10-16 to 2025-10-23, and 112 from 2026-04-02 to 2026-04-16. Counts D1-D6=38,37,38,37,37,36. QR3 and both deep collections returned zero matching rows at retrieval; this is current archive-query coverage, not proof those sky observations never occurred. Every returned product is an image, not a point-source spectrum. IRSA TAP_SCHEMA lists five SPHEREx metadata tables (obscore, observation, plane, artifact, provenance_input), no ready source-spectrum catalogue was found. The supplied overview_dr1.html URL returned HTTP 404.
+
+These products materially improve the available future IR test: multiple post-2024 measurements could be extracted in all six detectors, which collectively cover nominally 0.75-5 microns. The current metadata alone does not establish target wavelength sampling, source fluxes, IR excess, or recovery amplitude. Individual LVF pixels observe narrow wavelength intervals; the tabulated em_min/em_max describe the detector images, not full target SEDs.
+
+Saved one public 0.025-degree cutout (5,063,040 bytes) from the latest matching D6 image, obsid 2026W15_1A_0560_2, l2b-v24-2026-105, observation 2026-04-08T23:24:01.661 to 23:25:56.779 UTC. IMAGE/FLAGS/VARIANCE/ZODI arrays are 15 x 15; the PSF cube is untrimmed. The WCS target position is inside the cutout at (7.464, 7.348), 0-based. Native primary VERSION = 6.5.6; L1/L2 DQA=Pass; FINAST = 0 means good fine astrometry by its header. The target-nearest pixel has SOURCE bit 21 set and no other flags. A compact central signal is visible, but this is coverage evidence; no PSF/aperture point-source extraction, calibrated flux, spectrum, or thermal-excess claim is made.
+
+Processing cautions: retain the exact per-file l2b version/date and matched calibration provenance. QR products before 2026-03-31 had PSF header description errors; current docs recommend ePSFs even for QR2. This retrieved cutout includes PSF XCTR_i/YCTR_i and 0.615 arcsec PSF sampling. Cutout PSF planes are from the original image: transform cutout pixels back with CRPIX1A/CRPIX2A, then choose the correct plane with the documented 0/1-based convention. IMAGE is MJy/sr and zodiacal light has not been subtracted; FLAGS and VARIANCE must be used. For scientific wavelength assignment use matched CWAVE/CBAND calibration images; WCS-WAVE is intended for visualization. These are concrete remaining extraction steps, not absent archive data.
+
+Saved raw SIA responses, all 223-row metadata, exact public GET requests/statuses, cutout, native headers, preview, summary and SHA256 manifest. No full-size image was downloaded. No maintained source, dependency, account, credential, contact, commit or publication changed.
+
+Primary documentation:
+https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-access/
+https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-products/

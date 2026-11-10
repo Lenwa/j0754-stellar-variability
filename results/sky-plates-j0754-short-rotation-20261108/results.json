@@ -1,0 +1,634 @@
+{
+  "protocol": "Exploratory follow-up: fixed35.9204566days, no period optimization. Whole2024Sep1\u00e2\u20ac\u201c2025Jun1 and two halves split2025Jan15; additionally90/120day windows startingSep1 every30days. Joint camera offsets/slopes, errors floor.02mag, >=12groups,>=10nights,>=50days,>=8residualdof,minimum phase energy retention.3. Compare amplitudes/phases; strong short-window amplitudes with offset phases would support cancellation of a changing signal. Weak/unconstrained shorter fits do not establish rapid spot evolution. Shared7day block-sign512draw nulls are diagnostic only, not calibrated FAP; overlapping windows are not independent and pointwise tails are not trial-corrected. White errors omit correlated noise. No model of arbitrary faster-than-window evolution or upper limit on all variability.",
+  "ASASSN": [
+    {
+      "window": "whole",
+      "start": "2024-09-01",
+      "stop": "2025-06-01",
+      "n": 154,
+      "status": "fit",
+      "peak_to_peak_mag": 0.010132311144586688,
+      "peak_to_peak_white_sigma": 0.0058200721247966365,
+      "phase_cycles": 0.6577085745556146,
+      "beta": [
+        -0.002775883478922214,
+        -0.004237971589584527
+      ],
+      "null_peak_to_peak_p95": 0.01924651448272648,
+      "null_fraction_ge_observed": 0.52734375,
+      "phase_energy_retained": [
+        0.9029531007026641,
+        0.9466837762905034
+      ]
+    },
+    {
+      "window": "first_half",
+      "start": "2024-09-01",
+      "stop": "2025-01-15",
+      "n": 74,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03318947424692178,
+      "peak_to_peak_white_sigma": 0.008944729452016844,
+      "phase_cycles": 0.6160755818805584,
+      "beta": [
+        -0.012373447144513744,
+        -0.011058169195608092
+      ],
+      "null_peak_to_peak_p95": 0.030123801259722544,
+      "null_fraction_ge_observed": 0.013671875,
+      "phase_energy_retained": [
+        0.7765006558380199,
+        0.8584366856266008
+      ]
+    },
+    {
+      "window": "second_half",
+      "start": "2025-01-15",
+      "stop": "2025-06-01",
+      "n": 80,
+      "status": "fit",
+      "peak_to_peak_mag": 0.009801477668294896,
+      "peak_to_peak_white_sigma": 0.007023887638849284,
+      "phase_cycles": 0.2195218647776772,
+      "beta": [
+        0.0009327647965350627,
+        0.004811152767774662
+      ],
+      "null_peak_to_peak_p95": 0.01848929496222592,
+      "null_fraction_ge_observed": 0.41796875,
+      "phase_energy_retained": [
+        0.7710418467977413,
+        0.9433445109239064
+      ]
+    },
+    {
+      "window": "rolling120_0",
+      "start": "2024-09-01",
+      "stop": "2024-12-30",
+      "n": 61,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03587012023834296,
+      "peak_to_peak_white_sigma": 0.010348854616750867,
+      "phase_cycles": 0.6215617928907796,
+      "beta": [
+        -0.01295299012559458,
+        -0.012405096867197157
+      ],
+      "null_peak_to_peak_p95": 0.031588643879523856,
+      "null_fraction_ge_observed": 0.009765625,
+      "phase_energy_retained": [
+        0.8523872166716766,
+        0.8774038632475663
+      ]
+    },
+    {
+      "window": "rolling120_30",
+      "start": "2024-10-01",
+      "stop": "2025-01-29",
+      "n": 77,
+      "status": "fit",
+      "peak_to_peak_mag": 0.0327976219546088,
+      "peak_to_peak_white_sigma": 0.008960313423079824,
+      "phase_cycles": 0.6631404945106291,
+      "beta": [
+        -0.008512016418836225,
+        -0.014016653593308991
+      ],
+      "null_peak_to_peak_p95": 0.0270291218307348,
+      "null_fraction_ge_observed": 0.0078125,
+      "phase_energy_retained": [
+        0.8307552706003348,
+        0.8896155068354367
+      ]
+    },
+    {
+      "window": "rolling120_60",
+      "start": "2024-10-31",
+      "stop": "2025-02-28",
+      "n": 87,
+      "status": "fit",
+      "peak_to_peak_mag": 0.026658281469721358,
+      "peak_to_peak_white_sigma": 0.008410459040225426,
+      "phase_cycles": 0.6478920534479857,
+      "beta": [
+        -0.007976804370342205,
+        -0.01067879135328581
+      ],
+      "null_peak_to_peak_p95": 0.025917303029197203,
+      "null_fraction_ge_observed": 0.0390625,
+      "phase_energy_retained": [
+        0.8168826440331468,
+        0.8549763337493121
+      ]
+    },
+    {
+      "window": "rolling120_90",
+      "start": "2024-11-30",
+      "stop": "2025-03-30",
+      "n": 91,
+      "status": "fit",
+      "peak_to_peak_mag": 0.01863255636298352,
+      "peak_to_peak_white_sigma": 0.007101958974365142,
+      "phase_cycles": 0.6629651245410099,
+      "beta": [
+        -0.004844506829856779,
+        -0.007957624817143016
+      ],
+      "null_peak_to_peak_p95": 0.02205146858529432,
+      "null_fraction_ge_observed": 0.14453125,
+      "phase_energy_retained": [
+        0.860419952451906,
+        0.9147908943563822
+      ]
+    },
+    {
+      "window": "rolling120_120",
+      "start": "2024-12-30",
+      "stop": "2025-04-29",
+      "n": 80,
+      "status": "fit",
+      "peak_to_peak_mag": 0.008539115285411038,
+      "peak_to_peak_white_sigma": 0.0064650664291336585,
+      "phase_cycles": 0.2691939438382767,
+      "beta": [
+        -0.0005136575999853399,
+        0.004238546724333991
+      ],
+      "null_peak_to_peak_p95": 0.018042821856416216,
+      "null_fraction_ge_observed": 0.513671875,
+      "phase_energy_retained": [
+        0.8067429378575468,
+        0.9194619495295809
+      ]
+    },
+    {
+      "window": "rolling120_150",
+      "start": "2025-01-29",
+      "stop": "2025-05-29",
+      "n": 69,
+      "status": "fit",
+      "peak_to_peak_mag": 0.013574672011811291,
+      "peak_to_peak_white_sigma": 0.006943938103585282,
+      "phase_cycles": 0.1976688173835955,
+      "beta": [
+        0.002191723871785068,
+        0.006423727619296343
+      ],
+      "null_peak_to_peak_p95": 0.017565168777631278,
+      "null_fraction_ge_observed": 0.23046875,
+      "phase_energy_retained": [
+        0.8092169993123653,
+        0.8626366284871988
+      ]
+    },
+    {
+      "window": "rolling90_0",
+      "start": "2024-09-01",
+      "stop": "2024-11-30",
+      "n": 36,
+      "status": "fit",
+      "peak_to_peak_mag": 0.029076527433808244,
+      "peak_to_peak_white_sigma": 0.015183201917051007,
+      "phase_cycles": 0.603626442465447,
+      "beta": [
+        -0.011563954523957198,
+        -0.0088111331660633
+      ],
+      "null_peak_to_peak_p95": 0.03395154982484652,
+      "null_fraction_ge_observed": 0.12890625,
+      "phase_energy_retained": [
+        0.7066746428516952,
+        0.798649738294822
+      ]
+    },
+    {
+      "window": "rolling90_30",
+      "start": "2024-10-01",
+      "stop": "2024-12-30",
+      "n": 53,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03461734860936796,
+      "peak_to_peak_white_sigma": 0.01151012213427187,
+      "phase_cycles": 0.6293549959160115,
+      "beta": [
+        -0.011899640074275257,
+        -0.012569358467651792
+      ],
+      "null_peak_to_peak_p95": 0.03138422444569552,
+      "null_fraction_ge_observed": 0.013671875,
+      "phase_energy_retained": [
+        0.83651928384237,
+        0.8552697887638512
+      ]
+    },
+    {
+      "window": "rolling90_60",
+      "start": "2024-10-31",
+      "stop": "2025-01-29",
+      "n": 63,
+      "status": "fit",
+      "peak_to_peak_mag": 0.036289383933448674,
+      "peak_to_peak_white_sigma": 0.010485509805523567,
+      "phase_cycles": 0.6865982538000853,
+      "beta": [
+        -0.0070385403784890554,
+        -0.01672389894455506
+      ],
+      "null_peak_to_peak_p95": 0.0300319753967754,
+      "null_fraction_ge_observed": 0.001953125,
+      "phase_energy_retained": [
+        0.7663313443499934,
+        0.9236955588974662
+      ]
+    },
+    {
+      "window": "rolling90_90",
+      "start": "2024-11-30",
+      "stop": "2025-02-28",
+      "n": 73,
+      "status": "fit",
+      "peak_to_peak_mag": 0.026260939189347084,
+      "peak_to_peak_white_sigma": 0.008291241651363475,
+      "phase_cycles": 0.6460377411902958,
+      "beta": [
+        -0.007979937823201387,
+        -0.010427359402767618
+      ],
+      "null_peak_to_peak_p95": 0.025850138787429353,
+      "null_fraction_ge_observed": 0.044921875,
+      "phase_energy_retained": [
+        0.7854959304699157,
+        0.8648822104335283
+      ]
+    },
+    {
+      "window": "rolling90_120",
+      "start": "2024-12-30",
+      "stop": "2025-03-30",
+      "n": 66,
+      "status": "fit",
+      "peak_to_peak_mag": 0.0026039429712946286,
+      "peak_to_peak_white_sigma": 0.0077198914808894814,
+      "phase_cycles": 0.4370712145584962,
+      "beta": [
+        -0.0012015181083352977,
+        0.0005014817890821588
+      ],
+      "null_peak_to_peak_p95": 0.019085957339940285,
+      "null_fraction_ge_observed": 0.962890625,
+      "phase_energy_retained": [
+        0.809874814528078,
+        0.8738711767557276
+      ]
+    },
+    {
+      "window": "rolling90_150",
+      "start": "2025-01-29",
+      "stop": "2025-04-29",
+      "n": 56,
+      "status": "fit",
+      "peak_to_peak_mag": 0.01638762965631442,
+      "peak_to_peak_white_sigma": 0.007479463520339849,
+      "phase_cycles": 0.3162643797043538,
+      "beta": [
+        -0.003313793631687767,
+        0.00749382233607887
+      ],
+      "null_peak_to_peak_p95": 0.018575986026135884,
+      "null_fraction_ge_observed": 0.125,
+      "phase_energy_retained": [
+        0.7605520436993235,
+        0.8697809229418556
+      ]
+    },
+    {
+      "window": "rolling90_180",
+      "start": "2025-02-28",
+      "stop": "2025-05-29",
+      "n": 45,
+      "status": "fit",
+      "peak_to_peak_mag": 0.02812159853311952,
+      "peak_to_peak_white_sigma": 0.008935025781458205,
+      "phase_cycles": 0.1732891422640007,
+      "beta": [
+        0.00651777215456828,
+        0.01245892138813075
+      ],
+      "null_peak_to_peak_p95": 0.029062867742593954,
+      "null_fraction_ge_observed": 0.068359375,
+      "phase_energy_retained": [
+        0.6530909459483378,
+        0.7915270232174046
+      ]
+    }
+  ],
+  "ZTF": [
+    {
+      "window": "whole",
+      "start": "2024-09-01",
+      "stop": "2025-06-01",
+      "n": 35,
+      "status": "fit",
+      "peak_to_peak_mag": 0.004817690181014407,
+      "peak_to_peak_white_sigma": 0.007723381860074121,
+      "phase_cycles": 0.6832807749970294,
+      "beta": [
+        -0.0009804922213213266,
+        -0.002200265818938482
+      ],
+      "null_peak_to_peak_p95": 0.020136397908323608,
+      "null_fraction_ge_observed": 0.833984375,
+      "phase_energy_retained": [
+        0.9065395157367941,
+        0.9746559739570313
+      ]
+    },
+    {
+      "window": "first_half",
+      "start": "2024-09-01",
+      "stop": "2025-01-15",
+      "n": 17,
+      "status": "fit",
+      "peak_to_peak_mag": 0.025201281213007954,
+      "peak_to_peak_white_sigma": 0.008380219911749602,
+      "phase_cycles": 0.6961564707693882,
+      "beta": [
+        -0.004182055554304533,
+        -0.011886402106398197
+      ],
+      "null_peak_to_peak_p95": 0.02676437057465216,
+      "null_fraction_ge_observed": 0.080078125,
+      "phase_energy_retained": [
+        0.7196318805940177,
+        0.8482523195484138
+      ]
+    },
+    {
+      "window": "second_half",
+      "start": "2025-01-15",
+      "stop": "2025-06-01",
+      "n": 18,
+      "status": "fit",
+      "peak_to_peak_mag": 0.02982152862786863,
+      "peak_to_peak_white_sigma": 0.008616815186037451,
+      "phase_cycles": 0.012907027142017049,
+      "beta": [
+        0.014861758900294956,
+        0.0012078968561929078
+      ],
+      "null_peak_to_peak_p95": 0.032539647262763566,
+      "null_fraction_ge_observed": 0.146484375,
+      "phase_energy_retained": [
+        0.4907009622810683,
+        0.9789429949925387
+      ]
+    },
+    {
+      "window": "rolling120_0",
+      "start": "2024-09-01",
+      "stop": "2024-12-30",
+      "n": 16,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03226476111345773,
+      "peak_to_peak_white_sigma": 0.00831761212307242,
+      "phase_cycles": 0.7584877978317353,
+      "beta": [
+        0.0008599386497705891,
+        -0.016109444681482794
+      ],
+      "null_peak_to_peak_p95": 0.027791768275414276,
+      "null_fraction_ge_observed": 0.01171875,
+      "phase_energy_retained": [
+        0.6171038544059378,
+        0.7750921549089892
+      ]
+    },
+    {
+      "window": "rolling120_30",
+      "start": "2024-10-01",
+      "stop": "2025-01-29",
+      "n": 19,
+      "status": "fit",
+      "peak_to_peak_mag": 0.02783808030569476,
+      "peak_to_peak_white_sigma": 0.008070888833787501,
+      "phase_cycles": 0.7096181989357213,
+      "beta": [
+        -0.0034938562606402885,
+        -0.013473405182304964
+      ],
+      "null_peak_to_peak_p95": 0.027838080305694752,
+      "null_fraction_ge_observed": 0.048828125,
+      "phase_energy_retained": [
+        0.6489586933963648,
+        0.793734087220688
+      ]
+    },
+    {
+      "window": "rolling120_60",
+      "start": "2024-10-31",
+      "stop": "2025-02-28",
+      "n": 18,
+      "status": "fit",
+      "peak_to_peak_mag": 0.028909957554934924,
+      "peak_to_peak_white_sigma": 0.007908759696878733,
+      "phase_cycles": 0.5901863612935652,
+      "beta": [
+        -0.012195664502108287,
+        -0.007759650688597427
+      ],
+      "null_peak_to_peak_p95": 0.028521179600589763,
+      "null_fraction_ge_observed": 0.01953125,
+      "phase_energy_retained": [
+        0.48489725186648486,
+        0.9117068813405219
+      ]
+    },
+    {
+      "window": "rolling120_90",
+      "start": "2024-11-30",
+      "stop": "2025-03-30",
+      "n": 19,
+      "status": "fit",
+      "peak_to_peak_mag": 0.019198131274097734,
+      "peak_to_peak_white_sigma": 0.01007379804384353,
+      "phase_cycles": 0.7679963985305687,
+      "beta": [
+        0.0010831000190236455,
+        -0.009537764698982846
+      ],
+      "null_peak_to_peak_p95": 0.026566539513500142,
+      "null_fraction_ge_observed": 0.294921875,
+      "phase_energy_retained": [
+        0.6887491907179837,
+        0.7840512334184065
+      ]
+    },
+    {
+      "window": "rolling120_120",
+      "start": "2024-12-30",
+      "stop": "2025-04-29",
+      "n": 19,
+      "status": "fit",
+      "peak_to_peak_mag": 0.025204811261270856,
+      "peak_to_peak_white_sigma": 0.007724562413374429,
+      "phase_cycles": 0.054807295835206556,
+      "beta": [
+        0.011862521189848842,
+        0.004254552702630295
+      ],
+      "null_peak_to_peak_p95": 0.029015756224433392,
+      "null_fraction_ge_observed": 0.1796875,
+      "phase_energy_retained": [
+        0.7841158614408411,
+        0.9783507642981054
+      ]
+    },
+    {
+      "window": "rolling120_150",
+      "start": "2025-01-29",
+      "stop": "2025-05-29",
+      "n": 14,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03204716490491873,
+      "peak_to_peak_white_sigma": 0.009685422338223068,
+      "phase_cycles": 0.021698614527170066,
+      "beta": [
+        0.015874892864712248,
+        0.002177836344786239
+      ],
+      "null_peak_to_peak_p95": 0.035253621888191006,
+      "null_fraction_ge_observed": 0.169921875,
+      "phase_energy_retained": [
+        0.7333226898509236,
+        0.9762619717188291
+      ]
+    },
+    {
+      "window": "rolling90_0",
+      "start": "2024-09-01",
+      "stop": "2024-11-30",
+      "n": 12,
+      "status": "fit",
+      "peak_to_peak_mag": 0.02034700765040285,
+      "peak_to_peak_white_sigma": 0.008630319221435484,
+      "phase_cycles": 0.7717432329202029,
+      "beta": [
+        0.0013855517215890867,
+        -0.010078711550004274
+      ],
+      "null_peak_to_peak_p95": 0.021855088595143065,
+      "null_fraction_ge_observed": 0.078125,
+      "phase_energy_retained": [
+        0.5454065807914662,
+        0.830850268296378
+      ]
+    },
+    {
+      "window": "rolling90_30",
+      "start": "2024-10-01",
+      "stop": "2024-12-30",
+      "n": 14,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03305001560508134,
+      "peak_to_peak_white_sigma": 0.008822477165527993,
+      "phase_cycles": 0.7496022696466953,
+      "beta": [
+        -4.129617480322205e-05,
+        -0.0165249562026644
+      ],
+      "null_peak_to_peak_p95": 0.03346886604830232,
+      "null_fraction_ge_observed": 0.072265625,
+      "phase_energy_retained": [
+        0.6826443674431331,
+        0.7797835536639414
+      ]
+    },
+    {
+      "window": "rolling90_60",
+      "start": "2024-10-31",
+      "stop": "2025-01-29",
+      "n": 13,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03173103954749296,
+      "peak_to_peak_white_sigma": 0.008046257718081744,
+      "phase_cycles": 0.6278445793153915,
+      "beta": [
+        -0.011016324929995134,
+        -0.01141732467471729
+      ],
+      "null_peak_to_peak_p95": 0.03140154920228907,
+      "null_fraction_ge_observed": 0.046875,
+      "phase_energy_retained": [
+        0.5614381124318961,
+        0.9452547179367972
+      ]
+    },
+    {
+      "window": "rolling90_90",
+      "start": "2024-11-30",
+      "stop": "2025-02-28",
+      "n": 14,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03177816080768827,
+      "peak_to_peak_white_sigma": 0.010422974987809345,
+      "phase_cycles": 0.5886888727893025,
+      "beta": [
+        -0.01348527539002901,
+        -0.00840298897624539
+      ],
+      "null_peak_to_peak_p95": 0.03152776537633768,
+      "null_fraction_ge_observed": 0.03515625,
+      "phase_energy_retained": [
+        0.4243023301525541,
+        0.9095352426252363
+      ]
+    },
+    {
+      "window": "rolling90_120",
+      "start": "2024-12-30",
+      "stop": "2025-03-30",
+      "n": 15,
+      "status": "fit",
+      "peak_to_peak_mag": 0.015435925723430693,
+      "peak_to_peak_white_sigma": 0.008133687095924854,
+      "phase_cycles": 0.9593564162138725,
+      "beta": [
+        0.007467666265869928,
+        -0.0019495925924165867
+      ],
+      "null_peak_to_peak_p95": 0.01767408578138231,
+      "null_fraction_ge_observed": 0.185546875,
+      "phase_energy_retained": [
+        0.7036743293042929,
+        0.8115459105649242
+      ]
+    },
+    {
+      "window": "rolling90_150",
+      "start": "2025-01-29",
+      "stop": "2025-04-29",
+      "n": 14,
+      "status": "fit",
+      "peak_to_peak_mag": 0.03204716490491873,
+      "peak_to_peak_white_sigma": 0.009685422338223068,
+      "phase_cycles": 0.021698614527170066,
+      "beta": [
+        0.015874892864712248,
+        0.002177836344786239
+      ],
+      "null_peak_to_peak_p95": 0.03467417303311412,
+      "null_fraction_ge_observed": 0.1484375,
+      "phase_energy_retained": [
+        0.7333226898509236,
+        0.9762619717188291
+      ]
+    },
+    {
+      "window": "rolling90_180",
+      "start": "2025-02-28",
+      "stop": "2025-05-29",
+      "n": 9,
+      "status": "insufficient_cadence"
+    }
+  ]
+}

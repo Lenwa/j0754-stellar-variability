@@ -1,0 +1,211 @@
+{
+  "target": {
+    "ra": 118.69117410685,
+    "dec": 16.694621231895,
+    "gaia_dr3": "667401913089980544"
+  },
+  "archives": [
+    {
+      "archive": "GALEX GR6/7 MAST",
+      "state": "target_detection",
+      "native": "galex_mast.json",
+      "rows": 2,
+      "target_rows": 1,
+      "radius_arcsec": 30,
+      "match_arcsec": 0.14228689364451774,
+      "epoch": "2006-02-02",
+      "nuv_ab_mag": 18.6138439,
+      "nuv_ab_mag_error": 0.0528618544,
+      "nuv_artifact": 0,
+      "exposure_s": 176,
+      "limit": "FUV exposed but native sentinel -999 supplies no flux or numerical upper limit."
+    },
+    {
+      "archive": "Swift 2SXPS",
+      "state": "close_xray_association_candidate",
+      "native": "swift_full_catalog.tsv",
+      "target_rows": 1,
+      "radius_arcsec": 60,
+      "match_arcsec": 3.8824469660876875,
+      "error90_arcsec": 5.6,
+      "detflag": 0,
+      "fieldflag": 0,
+      "counts": 18,
+      "exposure_s": 4183,
+      "catalogue_date_range": "2009-12-02 to 2010-10-09",
+      "rate_epoch": "Actual retrieved total rates only 2009-12-02; no 2010 rate recovered.",
+      "spectral_fit": false,
+      "flux_observed_powerlaw_erg_cm2_s": 1.545e-13,
+      "flux_observed_fixed_apec_erg_cm2_s": 1.118e-13,
+      "limit": "Low counts. Power-law model hardness-ratio-derived; APEC fixed kT=1keV. Flux errors exclude spectral-model uncertainty; counterpart association not causal proof."
+    },
+    {
+      "archive": "Swift UVOT SSC1",
+      "state": "flagged_target_detection",
+      "native": "swift_uvot_catalog.tsv",
+      "target_rows": 1,
+      "radius_arcsec": 10,
+      "match_arcsec": 0.104,
+      "epoch": "2009-12-02",
+      "filter": "UVW1",
+      "vega_mag": 15.21,
+      "ab_mag": 16.73,
+      "mag_error": 0.0058,
+      "flag": 128,
+      "limit": "Multiple exposure values within aperture; flux conversion assumes GRB spectrum, UVW1 has red leak. Do not treat as clean monochromatic UV or direct GALEX variability."
+    },
+    {
+      "archive": "UHS DR3 WSA",
+      "state": "saturated_target_detections_and_image_coverage",
+      "native": [
+        "uhsSource_native.csv",
+        "uhsDetection_native.csv",
+        "uhs_Multiframe_native.csv"
+      ],
+      "catalogue_rows": 2,
+      "image_rows": 15,
+      "physical_band_epoch_groups": 3,
+      "J_date": "2013-01-08",
+      "K_date": "2019-01-05",
+      "H_date": "2023-01-09",
+      "J_ppErrBits": 65552,
+      "K_ppErrBits": 65536,
+      "H_stack_deprecated": 69,
+      "limit": "Bit16 close-to-saturation; J also bit4 deblended. H absent curated catalogue; deprecated69 not decoded. All three image cores exceed40000ADU. No reliable new near-IR photometry/colors."
+    },
+    {
+      "archive": "UKIDSS DR9 LAS",
+      "state": "catalogue_cone_empty",
+      "native": "ukidss_las_mirror_native.tsv",
+      "radius_arcsec": 10,
+      "rows": 0,
+      "limit": "Catalogued-target absence, not proof of no image coverage."
+    },
+    {
+      "archive": "PTF lightcurve database",
+      "state": "mostly_saturated_rows_with_two_sparse_candidates",
+      "native": "ptf_lightcurves.csv",
+      "rows": 84,
+      "radius_arcsec": 5,
+      "filters": {
+        "g": 10,
+        "R": 74
+      },
+      "saturated_rows": 82,
+      "sparse_calibrated_unsaturated_candidates": 2,
+      "epoch_range": "2009-12-03 to 2015-01-25",
+      "limit": "All84 goodflag1 and qaflags0; those flags alone are insufficient. Preserve negative calibrated magnitudes and saturation masks. Two single-band dates cannot establish a lightcurve or contemporaneous color."
+    },
+    {
+      "archive": "SuperWASP DR1 NASA Exoplanet Archive",
+      "state": "catalogue_search_empty",
+      "native": "superwasp_catalog.csv",
+      "radius": "0.006x0.006deg rectangle",
+      "rows": 0,
+      "mirror_radius_arcsec": 36,
+      "limit": "DR1 catalogue empty; no claim about later proprietary WASP epochs.",
+      "mirror_same_underlying_DR1": "wasp_czech_search_fixed.html"
+    },
+    {
+      "archive": "KELT NASA Exoplanet Archive",
+      "state": "catalogue_search_empty",
+      "native": "kelt_catalog.csv",
+      "radius": "0.006x0.006deg rectangle",
+      "rows": 0
+    },
+    {
+      "archive": "ATLAS forced photometry",
+      "state": "authentication_required_no_data_request",
+      "native": "atlas_forced_home.html",
+      "limit": "Public service requires registration/token for forced-photometry jobs. No account created; no task submitted; no public cached target lightcurve found."
+    },
+    {
+      "archive": "ROSAT 2RXS",
+      "state": "catalogue_cone_empty",
+      "native": "rosat_2rxs_mirror_native.tsv",
+      "radius_arcsec": 180,
+      "rows": 0,
+      "limit": "No local sensitivity upper limit recovered."
+    },
+    {
+      "archive": "eROSITA eRASS1",
+      "state": "no_positionally_consistent_target_match",
+      "native": "erass1_alltables.tsv",
+      "radius_arcsec": 120,
+      "rows": 1,
+      "nearest_arcsec": 28.741,
+      "limit": "Only supplementary source1eRASSJ075444.9+164114, positional errors~4.45arcsec, likelihood5.76; reject as target rather than claim detection. Not a target flux upper limit."
+    },
+    {
+      "archive": "XMM 4XMM DR11 catalogue IX/65",
+      "state": "catalogue_cone_empty",
+      "native": "xmm_catalog_metadata.tsv",
+      "radius_arcsec": 60,
+      "rows": 0,
+      "limit": "Initial guessed table subname invalid, corrected catalogue-wide query empty; image coverage unestablished."
+    },
+    {
+      "archive": "AKARI IRC",
+      "state": "catalogue_cone_empty",
+      "native": "akari_irc_mirror_native.tsv",
+      "radius_arcsec": 30,
+      "rows": 0,
+      "limit": "No measured target limit."
+    },
+    {
+      "archive": "AKARI FIS",
+      "state": "catalogue_cone_empty",
+      "native": "akari_fis_mirror_native.tsv",
+      "radius_arcsec": 120,
+      "rows": 0,
+      "limit": "No measured target limit."
+    },
+    {
+      "archive": "IRAS PSC",
+      "state": "catalogue_cone_empty",
+      "native": "iras_psc_mirror_native.tsv",
+      "radius_arcsec": 120,
+      "rows": 0,
+      "limit": "No measured target limit."
+    },
+    {
+      "archive": "IRAS FSC",
+      "state": "catalogue_cone_empty",
+      "native": "iras_fsc_fixed.tsv",
+      "radius_arcsec": 120,
+      "rows": 0,
+      "limit": "Initial guessed table subname invalid, corrected catalogue-wide query empty; no measured target limit."
+    },
+    {
+      "archive": "Spitzer SEIP cryogenic",
+      "state": "catalogue_empty_and_no_sia_image_overlap",
+      "native": [
+        "spitzer_seip_catalog.csv",
+        "spitzer_seip_sia.xml"
+      ],
+      "source_radius_arcsec": 10,
+      "sia_radius_arcsec": 0.36,
+      "rows": 0,
+      "limit": "Bounded SEIP result; does not exhaust warm-Spitzer or other enhanced products."
+    },
+    {
+      "archive": "Herschel PACS point/slightly-extended/rejected source catalogues VIII/106",
+      "state": "catalogue_cone_empty",
+      "native": "herschel_catalog.tsv",
+      "radius_arcsec": 30,
+      "rows": 0,
+      "limit": "Image coverage and local dust limit not established."
+    },
+    {
+      "archive": "Gaia and AllWISE counterpart neighborhood",
+      "state": "only_target_catalogued_within20arcsec",
+      "native": [
+        "gaia_faint_neighborhood.txt",
+        "allwise_neighborhood.csv"
+      ],
+      "gaia_rows": 1,
+      "allwise_rows": 1,
+      "limit": "No magnitude cut on Gaia query, but catalogue incompleteness/unresolved companions/background sources remain possible; not an exhaustive exclusion of AGN."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "written_utc": "2026-11-08T21:44:15.670699+00:00",
+  "question": "Does J0754 exhibit a stable dominant cycle at the catalogue period912.3158778days?",
+  "authorship": "Ari proposed the question; Kyle submitted and authorized it, signed -Ari.",
+  "status": "Written before fitting/scanning periods in this stage. The broad2018\u20132022fading and later recovery have already been inspected, so this is not a blind test.",
+  "period_days": 912.3158778,
+  "epoch_hjd": 2458115.99394,
+  "scope": "Test a coherent dominant clock; failure does not exclude a weak/quasiperiodic912-daycomponent beneath larger changes.",
+  "inputs": [
+    {
+      "path": "results\\sky-plates-j0754-independent-20261108\\asassn_v1_lightcurve.csv",
+      "bytes": 409428,
+      "sha256": "58f6f77947f2deaabede6e84407cf1fc00ea14355d440b1f61a5cbb6bc5d7be2"
+    },
+    {
+      "path": "results\\sky-plates-j0754-independent-20261108\\asassn_variable_target.json",
+      "bytes": 21024,
+      "sha256": "71e5b8abb25bbfad712a12f2ebb5fe4ffd46fe7c0e20505de8c3c1cea0bf35e7"
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\modern_differential.json",
+      "bytes": 100869,
+      "sha256": "f38fa7a04b083fd80b210fc10eea14db6a6400090f20318f78e27eed9aad4b2c"
+    }
+  ],
+  "preprocessing": {
+    "native_screen": "Reuse previously defined ASAS-SN parse_row acceptance; no brightness clipping. Keep V/g separate. Principal ZTF differential stream only, all364points retained before time selection.",
+    "primary_dates": "Post2019g-band ASAS-SN and ZTF, independent of the older V catalogue fitting data. Retain all5ASAS-SN g cameras; no outcome selection.",
+    "binning": "UTC-date medians, then medians in fixed30-day bins indexed from catalogue epoch. One bin per camera/stream; unweighted bins avoid dense-camera/night dominance.",
+    "offsets": "Single constant offset per camera across all cycles. No year/cycle centering, detrending or phase shifts to force alignment."
+  },
+  "models": {
+    "null": "Per-camera constants",
+    "periodic": "Nominal fixed period with shared g-band sine/cosine coefficients; one harmonic primary and two-harmonic flexibility check. Free phase/amplitude, constant across cycles.",
+    "slow_reference": "Piecewise-linear curve with5time-only equally spaced knots across each dataset and camera constants. Same9parameter count as two-harmonic five-camera periodic model. Descriptive reference, not a physical model.",
+    "old_V": "Fit old222Vobservations separately for provenance; they are not independent validation.",
+    "forecast": "Fit data before2023-01-01, predict2023onward without phase/amplitude/offset refitting.",
+    "blocked_cv": "Leave out each90-day time block across all cameras together; refit on others and score withheld bins."
+  },
+  "phase_replay": {
+    "separation_days": 1824.6317556,
+    "tolerance_days": 15,
+    "matching": "Same camera, one-to-one nearest matches in time only; no magnitude-based selection. Compare bins separated by2P. Record all pairs and per-camera diagnostics."
+  },
+  "scans": {
+    "nearby": "\u00b110% around nominal, period selected on pre2023training only for forecast.",
+    "exploratory": "4096frequencies covering200\u20136000days. Inspect aliases/window; no white-noise false-alarm probability or precise replacement-period claim."
+  },
+  "cadence_positive_control": {
+    "simulations": 200,
+    "signal": "0.30mag peak-to-peak sinusoid at912.3158778days, random phase; actual bin times/cameras.",
+    "noise": "0.03mag Gaussian shared per90-day block plus0.04mag independent perbin; total0.05mag. Conditional power check, not a fitted noise model or observed false-alarm probability.",
+    "random_seed": 20261108
+  },
+  "decision": {
+    "support": "Dominant coherent model should explain>=50%of camera-centered variance, improve blocked-CV and forward forecast RMSE by>=20%, and give consistent independent ZTF behavior. These are practical dominance/prediction thresholds, not a p-value.",
+    "failure": "Nominal/nearby cycle is not supported as dominant if both surveys explain<50%variance, fail to reach20%predictive gains, and same-phase two-cycle RMS exceeds0.10mag and the95thpercentile of stable-signal simulations. Otherwise report mixed/inconclusive rather than force a verdict.",
+    "limitations": "Camera/systematic effects and correlated errors remain. A longer favored scale over few cycles is not a measured replacement period; no rotation/orbit/dust mechanism follows."
+  },
+  "implementation": [
+    "Add period_models.py numerical helpers and meaningful synthetic tests in existing tools/sky-plates.",
+    "Add test_j0754_period.py CLI analysis using existing raw snapshots, saving all decisions/metrics/figures outside source.",
+    "Verify tests and native-derived results, request narrow independent AI review, commit only owned paths, save/readback linked Workspace continuation."
+  ]
+}

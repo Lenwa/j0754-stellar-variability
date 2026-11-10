@@ -1,0 +1,6408 @@
+{
+  "status": "RETROSPECTIVE_DESCRIPTIVE",
+  "historical_annual": [
+    {
+      "year": 1892,
+      "time": 1892.1519722008202,
+      "n": 2,
+      "days": 2,
+      "mag": 13.830644,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1893,
+      "time": 1893.1510377205475,
+      "n": 1,
+      "days": 1,
+      "mag": 13.89064475,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1897,
+      "time": 1897.241310863013,
+      "n": 1,
+      "days": 1,
+      "mag": 13.312801,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1898,
+      "time": 1898.8394339808224,
+      "n": 1,
+      "days": 1,
+      "mag": 13.5888015,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1899,
+      "time": 1899.8845945684927,
+      "n": 2,
+      "days": 2,
+      "mag": 13.142959375,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1900,
+      "time": 1900.1156312589037,
+      "n": 2,
+      "days": 2,
+      "mag": 13.2381495,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1902,
+      "time": 1902.0825928589043,
+      "n": 2,
+      "days": 2,
+      "mag": 13.320022375,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1903,
+      "time": 1903.0580674027399,
+      "n": 3,
+      "days": 3,
+      "mag": 13.2654815,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1904,
+      "time": 1904.3471544918036,
+      "n": 3,
+      "days": 3,
+      "mag": 13.369650499999999,
+      "series": [
+        "a",
+        "i"
+      ]
+    },
+    {
+      "year": 1905,
+      "time": 1905.2412679068489,
+      "n": 1,
+      "days": 1,
+      "mag": 13.206009499999999,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1906,
+      "time": 1906.339803441096,
+      "n": 1,
+      "days": 1,
+      "mag": 13.34786,
+      "series": [
+        "a"
+      ]
+    },
+    {
+      "year": 1907,
+      "time": 1907.507716345206,
+      "n": 2,
+      "days": 2,
+      "mag": 13.3406025,
+      "series": [
+        "i",
+        "ma"
+      ]
+    },
+    {
+      "year": 1908,
+      "time": 1908.7469374535522,
+      "n": 3,
+      "days": 3,
+      "mag": 13.233008000000002,
+      "series": [
+        "a",
+        "i"
+      ]
+    },
+    {
+      "year": 1909,
+      "time": 1909.1317896082194,
+      "n": 3,
+      "days": 3,
+      "mag": 13.1692735,
+      "series": [
+        "ac",
+        "ma"
+      ]
+    },
+    {
+      "year": 1910,
+      "time": 1910.0282207452053,
+      "n": 1,
+      "days": 1,
+      "mag": 13.136511500000001,
+      "series": [
+        "ma"
+      ]
+    },
+    {
+      "year": 1913,
+      "time": 1913.9433064835612,
+      "n": 2,
+      "days": 2,
+      "mag": 13.054341749999999,
+      "series": [
+        "mc"
+      ]
+    },
+    {
+      "year": 1914,
+      "time": 1914.9625691260276,
+      "n": 7,
+      "days": 7,
+      "mag": 12.985066,
+      "series": [
+        "ac",
+        "mc"
+      ]
+    },
+    {
+      "year": 1915,
+      "time": 1915.1866262602734,
+      "n": 1,
+      "days": 1,
+      "mag": 12.879364,
+      "series": [
+        "ac"
+      ]
+    },
+    {
+      "year": 1917,
+      "time": 1917.853158975343,
+      "n": 1,
+      "days": 1,
+      "mag": 13.009446,
+      "series": [
+        "mc"
+      ]
+    },
+    {
+      "year": 1918,
+      "time": 1918.1209102191779,
+      "n": 2,
+      "days": 2,
+      "mag": 13.1058375,
+      "series": [
+        "mf"
+      ]
+    },
+    {
+      "year": 1919,
+      "time": 1919.0553503506856,
+      "n": 1,
+      "days": 1,
+      "mag": 12.978521,
+      "series": [
+        "mc"
+      ]
+    },
+    {
+      "year": 1920,
+      "time": 1920.1042203989066,
+      "n": 3,
+      "days": 3,
+      "mag": 13.007286,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1922,
+      "time": 1922.8887167315063,
+      "n": 1,
+      "days": 1,
+      "mag": 13.54052075,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1928,
+      "time": 1928.292595653006,
+      "n": 1,
+      "days": 1,
+      "mag": 13.2516225,
+      "series": [
+        "rh"
+      ]
+    },
+    {
+      "year": 1931,
+      "time": 1931.926867063013,
+      "n": 1,
+      "days": 1,
+      "mag": 13.787766,
+      "series": [
+        "mb"
+      ]
+    },
+    {
+      "year": 1932,
+      "time": 1932.107042803279,
+      "n": 6,
+      "days": 5,
+      "mag": 14.038582625,
+      "series": [
+        "ma",
+        "mb",
+        "mc",
+        "md",
+        "rh"
+      ]
+    },
+    {
+      "year": 1933,
+      "time": 1933.530729389041,
+      "n": 4,
+      "days": 4,
+      "mag": 14.113360250000001,
+      "series": [
+        "ma",
+        "rh"
+      ]
+    },
+    {
+      "year": 1934,
+      "time": 1934.265987331507,
+      "n": 9,
+      "days": 9,
+      "mag": 13.970837,
+      "series": [
+        "ac",
+        "ma",
+        "md",
+        "rh"
+      ]
+    },
+    {
+      "year": 1935,
+      "time": 1935.7460799287674,
+      "n": 5,
+      "days": 5,
+      "mag": 13.82559325,
+      "series": [
+        "i",
+        "ma",
+        "rh"
+      ]
+    },
+    {
+      "year": 1936,
+      "time": 1936.9079237499998,
+      "n": 14,
+      "days": 14,
+      "mag": 13.771197625,
+      "series": [
+        "a",
+        "i",
+        "ir",
+        "ma"
+      ]
+    },
+    {
+      "year": 1937,
+      "time": 1937.8380864534247,
+      "n": 24,
+      "days": 23,
+      "mag": 13.67681525,
+      "series": [
+        "ac",
+        "bm",
+        "i",
+        "ir",
+        "ma",
+        "mc",
+        "md",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1938,
+      "time": 1938.221659567123,
+      "n": 22,
+      "days": 22,
+      "mag": 13.60711075,
+      "series": [
+        "ac",
+        "ax",
+        "bm",
+        "i",
+        "ma",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1939,
+      "time": 1939.1895612849319,
+      "n": 19,
+      "days": 19,
+      "mag": 13.519314000000001,
+      "series": [
+        "ac",
+        "bm",
+        "ir",
+        "ma",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1940,
+      "time": 1940.2214394016396,
+      "n": 20,
+      "days": 20,
+      "mag": 13.41488825,
+      "series": [
+        "ac",
+        "bm",
+        "ir",
+        "ma",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1941,
+      "time": 1941.1974933917807,
+      "n": 20,
+      "days": 20,
+      "mag": 13.26271675,
+      "series": [
+        "a",
+        "ac",
+        "ax",
+        "bm",
+        "ir",
+        "ma",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1942,
+      "time": 1942.137261134247,
+      "n": 9,
+      "days": 9,
+      "mag": 13.261977,
+      "series": [
+        "ac",
+        "ir",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1943,
+      "time": 1943.02815970137,
+      "n": 15,
+      "days": 15,
+      "mag": 13.256766,
+      "series": [
+        "ac",
+        "i",
+        "mc",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1944,
+      "time": 1944.1341500437165,
+      "n": 3,
+      "days": 3,
+      "mag": 13.267352,
+      "series": [
+        "ac",
+        "rl"
+      ]
+    },
+    {
+      "year": 1945,
+      "time": 1945.2605028438356,
+      "n": 7,
+      "days": 7,
+      "mag": 13.398031,
+      "series": [
+        "ac",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1946,
+      "time": 1946.451403109589,
+      "n": 6,
+      "days": 6,
+      "mag": 13.489353999999999,
+      "series": [
+        "ac",
+        "ir",
+        "rh"
+      ]
+    },
+    {
+      "year": 1947,
+      "time": 1947.1181370602735,
+      "n": 8,
+      "days": 8,
+      "mag": 13.437641124999999,
+      "series": [
+        "ac",
+        "mc",
+        "rh"
+      ]
+    },
+    {
+      "year": 1948,
+      "time": 1948.1177678633878,
+      "n": 11,
+      "days": 11,
+      "mag": 13.310203999999999,
+      "series": [
+        "ac",
+        "mc",
+        "rh"
+      ]
+    },
+    {
+      "year": 1949,
+      "time": 1949.298826169863,
+      "n": 11,
+      "days": 11,
+      "mag": 13.2363795,
+      "series": [
+        "ac",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1950,
+      "time": 1950.866725589041,
+      "n": 6,
+      "days": 6,
+      "mag": 13.155245500000001,
+      "series": [
+        "ac",
+        "rh"
+      ]
+    },
+    {
+      "year": 1951,
+      "time": 1951.1044490726026,
+      "n": 2,
+      "days": 2,
+      "mag": 13.189067750000001,
+      "series": [
+        "ac",
+        "rh"
+      ]
+    },
+    {
+      "year": 1952,
+      "time": 1952.7870816038246,
+      "n": 1,
+      "days": 1,
+      "mag": 13.2099925,
+      "series": [
+        "mf"
+      ]
+    },
+    {
+      "year": 1953,
+      "time": 1953.1253998164382,
+      "n": 35,
+      "days": 35,
+      "mag": 13.130119249999998,
+      "series": [
+        "j",
+        "mf"
+      ]
+    },
+    {
+      "year": 1954,
+      "time": 1954.2432114068488,
+      "n": 8,
+      "days": 8,
+      "mag": 13.114900375000001,
+      "series": [
+        "mf"
+      ]
+    },
+    {
+      "year": 1956,
+      "time": 1956.1286896106558,
+      "n": 8,
+      "days": 8,
+      "mag": 13.065478249999998,
+      "series": [
+        "mc"
+      ]
+    },
+    {
+      "year": 1964,
+      "time": 1964.1315198155735,
+      "n": 2,
+      "days": 2,
+      "mag": 13.496612249999998,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1967,
+      "time": 1967.1150825315065,
+      "n": 2,
+      "days": 1,
+      "mag": 13.307466999999999,
+      "series": [
+        "dnb",
+        "dny"
+      ]
+    },
+    {
+      "year": 1968,
+      "time": 1968.1368906202183,
+      "n": 2,
+      "days": 1,
+      "mag": 13.18991625,
+      "series": [
+        "dnb",
+        "dny"
+      ]
+    },
+    {
+      "year": 1969,
+      "time": 1969.877752709589,
+      "n": 13,
+      "days": 7,
+      "mag": 13.305406249999999,
+      "series": [
+        "dnb",
+        "dnr",
+        "dny"
+      ]
+    },
+    {
+      "year": 1970,
+      "time": 1970.9214300657534,
+      "n": 7,
+      "days": 3,
+      "mag": 13.326121,
+      "series": [
+        "dnb",
+        "dnr",
+        "dny"
+      ]
+    },
+    {
+      "year": 1971,
+      "time": 1971.1318235630138,
+      "n": 6,
+      "days": 4,
+      "mag": 13.25153975,
+      "series": [
+        "dnb",
+        "dnr",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1972,
+      "time": 1972.1151646693986,
+      "n": 13,
+      "days": 5,
+      "mag": 13.29659,
+      "series": [
+        "dnb",
+        "dnr",
+        "dny",
+        "dsb",
+        "dsy"
+      ]
+    },
+    {
+      "year": 1973,
+      "time": 1973.9652607972607,
+      "n": 3,
+      "days": 3,
+      "mag": 13.333104,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1974,
+      "time": 1974.2837322410955,
+      "n": 12,
+      "days": 12,
+      "mag": 13.36414075,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1975,
+      "time": 1975.1714715205485,
+      "n": 14,
+      "days": 14,
+      "mag": 13.275702874999999,
+      "series": [
+        "dnb",
+        "dny"
+      ]
+    },
+    {
+      "year": 1976,
+      "time": 1976.185874051913,
+      "n": 13,
+      "days": 13,
+      "mag": 13.4067885,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1977,
+      "time": 1977.2030837123284,
+      "n": 10,
+      "days": 10,
+      "mag": 13.384079,
+      "series": [
+        "dnb",
+        "dny"
+      ]
+    },
+    {
+      "year": 1978,
+      "time": 1978.1865946657535,
+      "n": 13,
+      "days": 13,
+      "mag": 13.399415000000001,
+      "series": [
+        "dnb",
+        "mc"
+      ]
+    },
+    {
+      "year": 1979,
+      "time": 1979.2193707876713,
+      "n": 8,
+      "days": 8,
+      "mag": 13.285237875,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1980,
+      "time": 1980.1191353469947,
+      "n": 8,
+      "days": 8,
+      "mag": 13.338189374999999,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1981,
+      "time": 1981.3042494767128,
+      "n": 13,
+      "days": 13,
+      "mag": 13.3539695,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1982,
+      "time": 1982.5526837301372,
+      "n": 12,
+      "days": 12,
+      "mag": 13.437884,
+      "series": [
+        "dnb",
+        "dny",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1983,
+      "time": 1983.2495884602736,
+      "n": 9,
+      "days": 9,
+      "mag": 13.45508,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1984,
+      "time": 1984.2897588210385,
+      "n": 18,
+      "days": 18,
+      "mag": 13.551550249999998,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1985,
+      "time": 1985.2166108493152,
+      "n": 12,
+      "days": 12,
+      "mag": 13.515990375,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1986,
+      "time": 1986.208823809589,
+      "n": 14,
+      "days": 14,
+      "mag": 13.4513065,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1987,
+      "time": 1987.2701110520552,
+      "n": 8,
+      "days": 8,
+      "mag": 13.463269,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1988,
+      "time": 1988.2843397622953,
+      "n": 13,
+      "days": 13,
+      "mag": 13.400549,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1989,
+      "time": 1989.105060021918,
+      "n": 6,
+      "days": 6,
+      "mag": 13.408169749999999,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "year": 1889,
+      "rows": 1,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 1
+    },
+    {
+      "year": 1890,
+      "rows": 2,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 2
+    },
+    {
+      "year": 1891,
+      "rows": 2,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 2
+    },
+    {
+      "year": 1892,
+      "rows": 5,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 2
+    },
+    {
+      "year": 1893,
+      "rows": 1,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 0
+    },
+    {
+      "year": 1894,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1895,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1896,
+      "rows": 1,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 1
+    },
+    {
+      "year": 1897,
+      "rows": 1,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 0
+    },
+    {
+      "year": 1898,
+      "rows": 6,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 4
+    },
+    {
+      "year": 1899,
+      "rows": 14,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 12
+    },
+    {
+      "year": 1900,
+      "rows": 11,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 8
+    },
+    {
+      "year": 1901,
+      "rows": 18,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 17
+    },
+    {
+      "year": 1902,
+      "rows": 44,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 39
+    },
+    {
+      "year": 1903,
+      "rows": 61,
+      "primary": 3,
+      "retained": 3,
+      "no_detection": 57
+    },
+    {
+      "year": 1904,
+      "rows": 64,
+      "primary": 3,
+      "retained": 3,
+      "no_detection": 60
+    },
+    {
+      "year": 1905,
+      "rows": 64,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 62
+    },
+    {
+      "year": 1906,
+      "rows": 42,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 37
+    },
+    {
+      "year": 1907,
+      "rows": 28,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 25
+    },
+    {
+      "year": 1908,
+      "rows": 55,
+      "primary": 3,
+      "retained": 3,
+      "no_detection": 48
+    },
+    {
+      "year": 1909,
+      "rows": 38,
+      "primary": 3,
+      "retained": 3,
+      "no_detection": 30
+    },
+    {
+      "year": 1910,
+      "rows": 40,
+      "primary": 3,
+      "retained": 1,
+      "no_detection": 30
+    },
+    {
+      "year": 1911,
+      "rows": 41,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 40
+    },
+    {
+      "year": 1912,
+      "rows": 52,
+      "primary": 2,
+      "retained": 0,
+      "no_detection": 47
+    },
+    {
+      "year": 1913,
+      "rows": 55,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 49
+    },
+    {
+      "year": 1914,
+      "rows": 101,
+      "primary": 7,
+      "retained": 7,
+      "no_detection": 90
+    },
+    {
+      "year": 1915,
+      "rows": 68,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 62
+    },
+    {
+      "year": 1916,
+      "rows": 58,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 54
+    },
+    {
+      "year": 1917,
+      "rows": 51,
+      "primary": 3,
+      "retained": 1,
+      "no_detection": 45
+    },
+    {
+      "year": 1918,
+      "rows": 41,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 38
+    },
+    {
+      "year": 1919,
+      "rows": 33,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 32
+    },
+    {
+      "year": 1920,
+      "rows": 44,
+      "primary": 3,
+      "retained": 3,
+      "no_detection": 38
+    },
+    {
+      "year": 1921,
+      "rows": 56,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 55
+    },
+    {
+      "year": 1922,
+      "rows": 32,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 31
+    },
+    {
+      "year": 1923,
+      "rows": 46,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 44
+    },
+    {
+      "year": 1924,
+      "rows": 33,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 33
+    },
+    {
+      "year": 1925,
+      "rows": 45,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 44
+    },
+    {
+      "year": 1926,
+      "rows": 63,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 61
+    },
+    {
+      "year": 1927,
+      "rows": 51,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 49
+    },
+    {
+      "year": 1928,
+      "rows": 39,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 37
+    },
+    {
+      "year": 1929,
+      "rows": 39,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 38
+    },
+    {
+      "year": 1930,
+      "rows": 35,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 35
+    },
+    {
+      "year": 1931,
+      "rows": 32,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 29
+    },
+    {
+      "year": 1932,
+      "rows": 59,
+      "primary": 6,
+      "retained": 6,
+      "no_detection": 53
+    },
+    {
+      "year": 1933,
+      "rows": 57,
+      "primary": 4,
+      "retained": 4,
+      "no_detection": 52
+    },
+    {
+      "year": 1934,
+      "rows": 57,
+      "primary": 9,
+      "retained": 9,
+      "no_detection": 44
+    },
+    {
+      "year": 1935,
+      "rows": 54,
+      "primary": 5,
+      "retained": 5,
+      "no_detection": 43
+    },
+    {
+      "year": 1936,
+      "rows": 74,
+      "primary": 14,
+      "retained": 14,
+      "no_detection": 52
+    },
+    {
+      "year": 1937,
+      "rows": 73,
+      "primary": 24,
+      "retained": 24,
+      "no_detection": 41
+    },
+    {
+      "year": 1938,
+      "rows": 72,
+      "primary": 22,
+      "retained": 22,
+      "no_detection": 45
+    },
+    {
+      "year": 1939,
+      "rows": 80,
+      "primary": 19,
+      "retained": 19,
+      "no_detection": 48
+    },
+    {
+      "year": 1940,
+      "rows": 83,
+      "primary": 21,
+      "retained": 20,
+      "no_detection": 59
+    },
+    {
+      "year": 1941,
+      "rows": 102,
+      "primary": 21,
+      "retained": 20,
+      "no_detection": 65
+    },
+    {
+      "year": 1942,
+      "rows": 66,
+      "primary": 12,
+      "retained": 9,
+      "no_detection": 49
+    },
+    {
+      "year": 1943,
+      "rows": 85,
+      "primary": 18,
+      "retained": 15,
+      "no_detection": 62
+    },
+    {
+      "year": 1944,
+      "rows": 56,
+      "primary": 5,
+      "retained": 3,
+      "no_detection": 44
+    },
+    {
+      "year": 1945,
+      "rows": 57,
+      "primary": 9,
+      "retained": 7,
+      "no_detection": 37
+    },
+    {
+      "year": 1946,
+      "rows": 56,
+      "primary": 8,
+      "retained": 6,
+      "no_detection": 44
+    },
+    {
+      "year": 1947,
+      "rows": 36,
+      "primary": 8,
+      "retained": 8,
+      "no_detection": 20
+    },
+    {
+      "year": 1948,
+      "rows": 30,
+      "primary": 13,
+      "retained": 11,
+      "no_detection": 14
+    },
+    {
+      "year": 1949,
+      "rows": 75,
+      "primary": 13,
+      "retained": 11,
+      "no_detection": 51
+    },
+    {
+      "year": 1950,
+      "rows": 63,
+      "primary": 6,
+      "retained": 6,
+      "no_detection": 51
+    },
+    {
+      "year": 1951,
+      "rows": 40,
+      "primary": 3,
+      "retained": 2,
+      "no_detection": 36
+    },
+    {
+      "year": 1952,
+      "rows": 14,
+      "primary": 1,
+      "retained": 1,
+      "no_detection": 12
+    },
+    {
+      "year": 1953,
+      "rows": 62,
+      "primary": 35,
+      "retained": 35,
+      "no_detection": 23
+    },
+    {
+      "year": 1954,
+      "rows": 69,
+      "primary": 8,
+      "retained": 8,
+      "no_detection": 59
+    },
+    {
+      "year": 1955,
+      "rows": 4,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 4
+    },
+    {
+      "year": 1956,
+      "rows": 8,
+      "primary": 8,
+      "retained": 8,
+      "no_detection": 0
+    },
+    {
+      "year": 1957,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1958,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1959,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1960,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1961,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1962,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1963,
+      "rows": 1,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 1
+    },
+    {
+      "year": 1964,
+      "rows": 2,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 0
+    },
+    {
+      "year": 1965,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1966,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    },
+    {
+      "year": 1967,
+      "rows": 2,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 0
+    },
+    {
+      "year": 1968,
+      "rows": 2,
+      "primary": 2,
+      "retained": 2,
+      "no_detection": 0
+    },
+    {
+      "year": 1969,
+      "rows": 16,
+      "primary": 13,
+      "retained": 13,
+      "no_detection": 0
+    },
+    {
+      "year": 1970,
+      "rows": 8,
+      "primary": 7,
+      "retained": 7,
+      "no_detection": 1
+    },
+    {
+      "year": 1971,
+      "rows": 9,
+      "primary": 6,
+      "retained": 6,
+      "no_detection": 2
+    },
+    {
+      "year": 1972,
+      "rows": 13,
+      "primary": 13,
+      "retained": 13,
+      "no_detection": 0
+    },
+    {
+      "year": 1973,
+      "rows": 6,
+      "primary": 3,
+      "retained": 3,
+      "no_detection": 3
+    },
+    {
+      "year": 1974,
+      "rows": 19,
+      "primary": 13,
+      "retained": 12,
+      "no_detection": 4
+    },
+    {
+      "year": 1975,
+      "rows": 21,
+      "primary": 15,
+      "retained": 14,
+      "no_detection": 1
+    },
+    {
+      "year": 1976,
+      "rows": 18,
+      "primary": 13,
+      "retained": 13,
+      "no_detection": 2
+    },
+    {
+      "year": 1977,
+      "rows": 16,
+      "primary": 10,
+      "retained": 10,
+      "no_detection": 0
+    },
+    {
+      "year": 1978,
+      "rows": 20,
+      "primary": 13,
+      "retained": 13,
+      "no_detection": 3
+    },
+    {
+      "year": 1979,
+      "rows": 8,
+      "primary": 8,
+      "retained": 8,
+      "no_detection": 0
+    },
+    {
+      "year": 1980,
+      "rows": 13,
+      "primary": 8,
+      "retained": 8,
+      "no_detection": 5
+    },
+    {
+      "year": 1981,
+      "rows": 16,
+      "primary": 13,
+      "retained": 13,
+      "no_detection": 1
+    },
+    {
+      "year": 1982,
+      "rows": 18,
+      "primary": 13,
+      "retained": 12,
+      "no_detection": 1
+    },
+    {
+      "year": 1983,
+      "rows": 21,
+      "primary": 11,
+      "retained": 9,
+      "no_detection": 3
+    },
+    {
+      "year": 1984,
+      "rows": 26,
+      "primary": 18,
+      "retained": 18,
+      "no_detection": 2
+    },
+    {
+      "year": 1985,
+      "rows": 20,
+      "primary": 12,
+      "retained": 12,
+      "no_detection": 2
+    },
+    {
+      "year": 1986,
+      "rows": 22,
+      "primary": 14,
+      "retained": 14,
+      "no_detection": 4
+    },
+    {
+      "year": 1987,
+      "rows": 17,
+      "primary": 9,
+      "retained": 8,
+      "no_detection": 1
+    },
+    {
+      "year": 1988,
+      "rows": 18,
+      "primary": 13,
+      "retained": 13,
+      "no_detection": 1
+    },
+    {
+      "year": 1989,
+      "rows": 11,
+      "primary": 6,
+      "retained": 6,
+      "no_detection": 1
+    },
+    {
+      "year": 1990,
+      "rows": 0,
+      "primary": 0,
+      "retained": 0,
+      "no_detection": 0
+    }
+  ],
+  "largest_retained_gaps": [
+    {
+      "start": 1956.1750467978138,
+      "end": 1964.131454538251,
+      "years": 7.956407740437271
+    },
+    {
+      "start": 1922.8887167315063,
+      "end": 1928.292595653006,
+      "years": 5.403878921499654
+    },
+    {
+      "start": 1893.1510377205475,
+      "end": 1897.241310863013,
+      "years": 4.0902731424655485
+    },
+    {
+      "start": 1910.0282207452053,
+      "end": 1913.9406186630133,
+      "years": 3.9123979178079935
+    },
+    {
+      "start": 1928.292595653006,
+      "end": 1931.926867063013,
+      "years": 3.634271410007159
+    },
+    {
+      "start": 1964.1315850928959,
+      "end": 1967.1150825315065,
+      "years": 2.983497438610584
+    },
+    {
+      "start": 1920.1042790573772,
+      "end": 1922.8887167315063,
+      "years": 2.7844376741290944
+    },
+    {
+      "start": 1915.1866262602734,
+      "end": 1917.853158975343,
+      "years": 2.6665327150694793
+    },
+    {
+      "start": 1954.2513523506855,
+      "end": 1956.104136420765,
+      "years": 1.8527840700794513
+    },
+    {
+      "start": 1900.2222741150679,
+      "end": 1902.0471926219175,
+      "years": 1.824918506849599
+    },
+    {
+      "start": 1951.1098180246577,
+      "end": 1952.7870816038246,
+      "years": 1.6772635791669472
+    },
+    {
+      "start": 1972.1859955983605,
+      "end": 1973.8476557589047,
+      "years": 1.6616601605442156
+    }
+  ],
+  "local_features": {
+    "1940s": {
+      "windows": [
+        [
+          1941,
+          1945
+        ],
+        [
+          1945,
+          1949
+        ],
+        [
+          1949,
+          1957
+        ]
+      ],
+      "pooled": {
+        "status": "MEASURED",
+        "annual_equal_weight_mags": [
+          13.2622029375,
+          13.408807531249998,
+          13.157311875000001
+        ],
+        "times": [
+          1942.6242660677785,
+          1946.7369527192714,
+          1952.5077690384678
+        ],
+        "years": [
+          4,
+          4,
+          7
+        ],
+        "points": [
+          47,
+          32,
+          71
+        ],
+        "rise": 0.14660459374999846,
+        "recovery": -0.2514956562499968,
+        "peak_minus_linear_baseline": 0.19025147420159172
+      },
+      "by_series": {
+        "a": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "ac": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.308675000000001,
+            13.476699843749998,
+            13.163828166666669
+          ],
+          "times": [
+            1942.9604663371456,
+            1946.8384012931526,
+            1950.3535032817351
+          ],
+          "years": [
+            4,
+            4,
+            3
+          ],
+          "points": [
+            17,
+            18,
+            10
+          ],
+          "rise": 0.16802484374999693,
+          "recovery": -0.3128716770833293,
+          "peak_minus_linear_baseline": 0.24400263237194153
+        },
+        "ax": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "bm": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "dnb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dnr": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dny": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dsb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dsy": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "i": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "ir": {
+          "status": "INSUFFICIENT",
+          "years": [
+            2,
+            1,
+            0
+          ]
+        },
+        "j": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            1
+          ]
+        },
+        "ma": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "mb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mc": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            2,
+            1
+          ]
+        },
+        "md": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mf": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            3
+          ]
+        },
+        "rh": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.2575405,
+            13.4186821875,
+            13.198716833333334
+          ],
+          "times": [
+            1942.546201810502,
+            1946.7382649542496,
+            1950.5738659086753
+          ],
+          "years": [
+            3,
+            4,
+            3
+          ],
+          "points": [
+            7,
+            8,
+            4
+          ],
+          "rise": 0.16114168750000069,
+          "recovery": -0.21996535416666596,
+          "peak_minus_linear_baseline": 0.19185953044880222
+        },
+        "rl": {
+          "status": "INSUFFICIENT",
+          "years": [
+            4,
+            1,
+            1
+          ]
+        }
+      },
+      "minimum3_sensitivity": {
+        "ac": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.322449333333333,
+            13.476699843749998,
+            13.167178750000001
+          ],
+          "times": [
+            1942.296713526941,
+            1946.8384012931526,
+            1949.975345910274
+          ],
+          "years": [
+            3,
+            4,
+            2
+          ],
+          "points": [
+            16,
+            18,
+            9
+          ],
+          "rise": 0.1542505104166647,
+          "recovery": -0.30952109374999637,
+          "peak_minus_linear_baseline": 0.24608854531311408
+        },
+        "rh": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            1,
+            0
+          ]
+        },
+        "dnb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "1980s": {
+      "windows": [
+        [
+          1969,
+          1976
+        ],
+        [
+          1982,
+          1987
+        ],
+        [
+          1987,
+          1990
+        ]
+      ],
+      "pooled": {
+        "status": "MEASURED",
+        "annual_equal_weight_mags": [
+          13.30751494642857,
+          13.482362225,
+          13.423995916666668
+        ],
+        "times": [
+          1972.4952336523802,
+          1984.3034931340705,
+          1988.2198369454227
+        ],
+        "years": [
+          7,
+          5,
+          3
+        ],
+        "points": [
+          68,
+          65,
+          27
+        ],
+        "rise": 0.1748472785714288,
+        "recovery": -0.05836630833333167,
+        "peak_minus_linear_baseline": 0.08737686703748082
+      },
+      "by_series": {
+        "a": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ac": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ax": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "bm": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dnb": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.326392410714288,
+            13.489835349999998,
+            13.438072
+          ],
+          "times": [
+            1972.5688282337267,
+            1984.479246691495,
+            1988.2320488888017
+          ],
+          "years": [
+            7,
+            5,
+            3
+          ],
+          "points": [
+            41,
+            57,
+            22
+          ],
+          "rise": 0.1634429392857104,
+          "recovery": -0.0517633499999981,
+          "peak_minus_linear_baseline": 0.07852102757443369
+        },
+        "dnr": {
+          "status": "INSUFFICIENT",
+          "years": [
+            4,
+            0,
+            0
+          ]
+        },
+        "dny": {
+          "status": "INSUFFICIENT",
+          "years": [
+            4,
+            1,
+            0
+          ]
+        },
+        "dsb": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.353581,
+            13.549848874999999,
+            13.400897041666667
+          ],
+          "times": [
+            1971.6185147241374,
+            1984.049329475494,
+            1988.1817137572423
+          ],
+          "years": [
+            2,
+            4,
+            3
+          ],
+          "points": [
+            2,
+            6,
+            5
+          ],
+          "rise": 0.19626787499999843,
+          "recovery": -0.1489518333333315,
+          "peak_minus_linear_baseline": 0.16075680328310327
+        },
+        "dsy": {
+          "status": "INSUFFICIENT",
+          "years": [
+            1,
+            0,
+            0
+          ]
+        },
+        "i": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ir": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "j": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ma": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mb": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mc": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "md": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "mf": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rh": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rl": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "minimum3_sensitivity": {
+        "ac": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rh": {
+          "status": "INSUFFICIENT",
+          "years": [
+            0,
+            0,
+            0
+          ]
+        },
+        "dnb": {
+          "status": "MEASURED",
+          "annual_equal_weight_mags": [
+            13.324254849999999,
+            13.489835349999998,
+            13.438072
+          ],
+          "times": [
+            1973.086239120094,
+            1984.479246691495,
+            1988.2320488888017
+          ],
+          "years": [
+            5,
+            5,
+            3
+          ],
+          "points": [
+            38,
+            57,
+            22
+          ],
+          "rise": 0.16558049999999902,
+          "recovery": -0.0517633499999981,
+          "peak_minus_linear_baseline": 0.07996476393124041
+        }
+      }
+    }
+  },
+  "matched_controls": [
+    {
+      "name": "control_01_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.923716625,
+              13.966195343750002,
+              13.936731428571429
+            ],
+            "times": [
+              1942.7055143273635,
+              1946.9022176410153,
+              1952.5036703684102
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              25,
+              24,
+              64
+            ],
+            "rise": 0.042478718750000866,
+            "recovery": -0.02946391517857272,
+            "peak_minus_linear_baseline": 0.03690427504386662
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.8914025,
+                13.965214333333334,
+                13.922389999999998
+              ],
+              "times": [
+                1943.3163577810392,
+                1947.3921785662078,
+                1950.3548211442921
+              ],
+              "years": [
+                3,
+                3,
+                3
+              ],
+              "points": [
+                5,
+                12,
+                5
+              ],
+              "rise": 0.07381183333333396,
+              "recovery": -0.042824333333335574,
+              "peak_minus_linear_baseline": 0.055867647214556726
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.9123996875,
+                13.999716583333333,
+                14.068822125
+              ],
+              "times": [
+                1943.0929155047947,
+                1946.714247503275,
+                1951.0144092301366
+              ],
+              "years": [
+                2,
+                3,
+                2
+              ],
+              "points": [
+                3,
+                6,
+                2
+              ],
+              "rise": 0.08731689583333235,
+              "recovery": 0.06910554166666749,
+              "peak_minus_linear_baseline": 0.015807961049119967
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                3,
+                1
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              14.002453142857146,
+              13.958808050000002,
+              13.7062926875
+            ],
+            "times": [
+              1972.646849454602,
+              1984.6035306266099,
+              1988.8027794721554
+            ],
+            "years": [
+              7,
+              5,
+              2
+            ],
+            "points": [
+              52,
+              31,
+              6
+            ],
+            "rise": -0.04364509285714391,
+            "recovery": -0.2525153625000023,
+            "peak_minus_linear_baseline": 0.17553734582726932
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                14.002362041666666,
+                13.963889900000002,
+                13.846154187499998
+              ],
+              "times": [
+                1972.934419353657,
+                1984.5475831825001,
+                1988.78140142147
+              ],
+              "years": [
+                6,
+                5,
+                2
+              ],
+              "points": [
+                32,
+                29,
+                5
+              ],
+              "rise": -0.03847214166666468,
+              "recovery": -0.11773571250000359,
+              "peak_minus_linear_baseline": 0.0760018568541092
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                4,
+                5,
+                1
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_02_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.366129687499999,
+              13.37668559375,
+              13.386821178571429
+            ],
+            "times": [
+              1942.6174279201828,
+              1946.8144072257369,
+              1952.508751563708
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              42,
+              30,
+              67
+            ],
+            "rise": 0.010555906250001357,
+            "recovery": 0.010135584821428623,
+            "peak_minus_linear_baseline": 0.0017763168889057823
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.414675812499999,
+                13.362490125,
+                13.295759916666668
+              ],
+              "times": [
+                1942.8730385980969,
+                1946.8195761658544,
+                1950.3407347776256
+              ],
+              "years": [
+                4,
+                4,
+                3
+              ],
+              "points": [
+                14,
+                16,
+                6
+              ],
+              "rise": -0.05218568749999797,
+              "recovery": -0.06673020833333254,
+              "peak_minus_linear_baseline": 0.010659136261887525
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.23705516666667,
+                13.30638378125,
+                13.283604000000002
+              ],
+              "times": [
+                1942.5462018095889,
+                1946.7382649456993,
+                1950.5738659168949
+              ],
+              "years": [
+                3,
+                4,
+                3
+              ],
+              "points": [
+                7,
+                8,
+                4
+              ],
+              "rise": 0.0693286145833305,
+              "recovery": -0.02277978124999791,
+              "peak_minus_linear_baseline": 0.04502071559338461
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                3,
+                4,
+                1
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                1,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.344788892857142,
+              13.357411549999998,
+              13.271711875
+            ],
+            "times": [
+              1972.495233649253,
+              1984.3106008646562,
+              1988.2317211894615
+            ],
+            "years": [
+              7,
+              5,
+              3
+            ],
+            "points": [
+              66,
+              63,
+              22
+            ],
+            "rise": 0.012622657142856042,
+            "recovery": -0.08569967499999898,
+            "peak_minus_linear_baseline": 0.06749079711262773
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.333625017857145,
+                13.34217415,
+                13.284497000000002
+              ],
+              "times": [
+                1972.568828230795,
+                1984.5214181549018,
+                1988.2320488728399
+              ],
+              "years": [
+                7,
+                5,
+                3
+              ],
+              "points": [
+                41,
+                55,
+                20
+              ],
+              "rise": 0.008549132142855242,
+              "recovery": -0.05767714999999818,
+              "peak_minus_linear_baseline": 0.04603867944926243
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.29799255,
+                13.34217415,
+                13.284497000000002
+              ],
+              "times": [
+                1973.0862391151672,
+                1984.5214181549018,
+                1988.2320488728399
+              ],
+              "years": [
+                5,
+                5,
+                3
+              ],
+              "points": [
+                38,
+                55,
+                20
+              ],
+              "rise": 0.04418159999999993,
+              "recovery": -0.05767714999999818,
+              "peak_minus_linear_baseline": 0.05437082282524308
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_03_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.96783740625,
+              13.8603414375,
+              13.893888321428573
+            ],
+            "times": [
+              1942.8062507622933,
+              1946.806547433138,
+              1952.4416665464948
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              24,
+              23,
+              60
+            ],
+            "rise": -0.10749596874999945,
+            "recovery": 0.03354688392857241,
+            "peak_minus_linear_baseline": -0.07679482575332841
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.9301734375,
+                13.845524999999999,
+                13.8159455
+              ],
+              "times": [
+                1942.8470574426326,
+                1946.8117545003406,
+                1949.7267825157533
+              ],
+              "years": [
+                4,
+                4,
+                2
+              ],
+              "points": [
+                4,
+                12,
+                3
+              ],
+              "rise": -0.08464843750000206,
+              "recovery": -0.02957949999999876,
+              "peak_minus_linear_baseline": -0.0188203465660024
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                3,
+                3,
+                1
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                3,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.948791982142856,
+              13.8901768,
+              13.586724375
+            ],
+            "times": [
+              1972.5673876459202,
+              1984.6397870335622,
+              1988.8702843843398
+            ],
+            "years": [
+              7,
+              5,
+              2
+            ],
+            "points": [
+              44,
+              36,
+              3
+            ],
+            "rise": -0.058615182142855105,
+            "recovery": -0.30345242500000147,
+            "peak_minus_linear_baseline": 0.20949819849677276
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.910570354166667,
+                13.866466449999999,
+                13.586724375
+              ],
+              "times": [
+                1972.9125247156007,
+                1984.6477244719185,
+                1988.8702843843398
+              ],
+              "years": [
+                6,
+                5,
+                2
+              ],
+              "points": [
+                31,
+                35,
+                3
+              ],
+              "rise": -0.04410390416666843,
+              "recovery": -0.2797420749999997,
+              "peak_minus_linear_baseline": 0.19404965464685908
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                3,
+                5,
+                0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_04_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              12.24782521875,
+              12.31050325,
+              12.211918250000002
+            ],
+            "times": [
+              1942.787429281738,
+              1946.9257831922469,
+              1952.7522047652049
+            ],
+            "years": [
+              4,
+              4,
+              6
+            ],
+            "points": [
+              26,
+              13,
+              59
+            ],
+            "rise": 0.06267803124999993,
+            "recovery": -0.09858499999999815,
+            "peak_minus_linear_baseline": 0.07759013286108107
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                2,
+                3,
+                0
+              ]
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.302450666666665,
+                12.423691,
+                12.180876750000001
+              ],
+              "times": [
+                1942.702897514155,
+                1946.8298205860824,
+                1950.3112587815067
+              ],
+              "years": [
+                3,
+                4,
+                2
+              ],
+              "points": [
+                5,
+                4,
+                3
+              ],
+              "rise": 0.1212403333333345,
+              "recovery": -0.24281424999999857,
+              "peak_minus_linear_baseline": 0.1871843893535452
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                1,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              12.24060207142857,
+              12.244356824999999,
+              12.221980791666667
+            ],
+            "times": [
+              1972.4771680281094,
+              1984.2588387210671,
+              1988.3017165076465
+            ],
+            "years": [
+              7,
+              5,
+              3
+            ],
+            "points": [
+              52,
+              43,
+              18
+            ],
+            "rise": 0.003754753571428182,
+            "recovery": -0.022376033333332046,
+            "peak_minus_linear_baseline": 0.017618642725667044
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.39637665,
+                12.2405558,
+                12.20885225
+              ],
+              "times": [
+                1973.0703883485814,
+                1984.4681866011183,
+                1988.3971542686184
+              ],
+              "years": [
+                5,
+                5,
+                3
+              ],
+              "points": [
+                31,
+                35,
+                14
+              ],
+              "rise": -0.15582085000000134,
+              "recovery": -0.03170354999999958,
+              "peak_minus_linear_baseline": -0.016367733159883713
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.4290865,
+                12.2405558,
+                12.245475249999998
+              ],
+              "times": [
+                1972.8613708716855,
+                1984.4681866011183,
+                1988.9367293495025
+              ],
+              "years": [
+                4,
+                5,
+                2
+              ],
+              "points": [
+                29,
+                35,
+                12
+              ],
+              "rise": -0.18853070000000116,
+              "recovery": 0.004919449999999159,
+              "peak_minus_linear_baseline": -0.05595872982952699
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_05_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.12568609375,
+              13.0993681875,
+              13.126711589285716
+            ],
+            "times": [
+              1942.6140287550922,
+              1946.7369527339865,
+              1952.507023623603
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              41,
+              32,
+              65
+            ],
+            "rise": -0.026317906250000078,
+            "recovery": 0.027343401785715926,
+            "peak_minus_linear_baseline": -0.026745283418456722
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.1016046875,
+                13.135537875,
+                13.098867583333336
+              ],
+              "times": [
+                1942.8696394316812,
+                1946.8384013027312,
+                1950.34073476895
+              ],
+              "years": [
+                4,
+                4,
+                3
+              ],
+              "points": [
+                13,
+                18,
+                6
+              ],
+              "rise": 0.03393318750000063,
+              "recovery": -0.03667029166666502,
+              "peak_minus_linear_baseline": 0.03538717974121397
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.095334875,
+                12.984732906249999,
+                13.140267375000002
+              ],
+              "times": [
+                1942.5462018105025,
+                1946.7382649692954,
+                1950.3959296849316
+              ],
+              "years": [
+                3,
+                4,
+                2
+              ],
+              "points": [
+                7,
+                8,
+                3
+              ],
+              "rise": -0.11060196875000194,
+              "recovery": 0.15553446875000354,
+              "peak_minus_linear_baseline": -0.1345976894801506
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                3,
+                4,
+                1
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                1,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.07431742857143,
+              13.052170450000002,
+              13.108367833333332
+            ],
+            "times": [
+              1972.4952336557,
+              1984.3052064479118,
+              1988.2070410085846
+            ],
+            "years": [
+              7,
+              5,
+              3
+            ],
+            "points": [
+              67,
+              63,
+              22
+            ],
+            "rise": -0.022146978571427667,
+            "recovery": 0.056197383333330464,
+            "peak_minus_linear_baseline": -0.04774138313418774
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.020766285714288,
+                13.061990949999998,
+                13.10904675
+              ],
+              "times": [
+                1972.568828237047,
+                1984.5307460798329,
+                1988.212808916164
+              ],
+              "years": [
+                7,
+                5,
+                3
+              ],
+              "points": [
+                41,
+                55,
+                18
+              ],
+              "rise": 0.04122466428571059,
+              "recovery": 0.04705580000000076,
+              "peak_minus_linear_baseline": -0.026277570763602043
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.040406,
+                13.061990949999998,
+                13.10904675
+              ],
+              "times": [
+                1973.0862391266605,
+                1984.5307460798329,
+                1988.212808916164
+              ],
+              "years": [
+                5,
+                5,
+                3
+              ],
+              "points": [
+                38,
+                55,
+                18
+              ],
+              "rise": 0.021584949999997605,
+              "recovery": 0.04705580000000076,
+              "peak_minus_linear_baseline": -0.030347480919736824
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_06_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.3633795625,
+              13.434611999999998,
+              13.419795374999998
+            ],
+            "times": [
+              1942.6174279188149,
+              1946.7287560953064,
+              1952.4985891586184
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              42,
+              30,
+              65
+            ],
+            "rise": 0.0712324374999973,
+            "recovery": -0.014816624999999917,
+            "peak_minus_linear_baseline": 0.04775909120982824
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.3321053125,
+                13.475822812500002,
+                13.367473333333335
+              ],
+              "times": [
+                1942.8730385960364,
+                1946.8407798428166,
+                1950.3407347812788
+              ],
+              "years": [
+                4,
+                4,
+                3
+              ],
+              "points": [
+                14,
+                16,
+                6
+              ],
+              "rise": 0.14371750000000283,
+              "recovery": -0.1083494791666677,
+              "peak_minus_linear_baseline": 0.12492573991812783
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.366129583333333,
+                13.357998281250001,
+                13.524909625000001
+              ],
+              "times": [
+                1942.5462018118722,
+                1946.7382649433077,
+                1951.0144092369862
+              ],
+              "years": [
+                3,
+                4,
+                2
+              ],
+              "points": [
+                7,
+                8,
+                2
+              ],
+              "rise": -0.008131302083331349,
+              "recovery": 0.16691134374999983,
+              "peak_minus_linear_baseline": -0.08673305629929828
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                3,
+                3,
+                1
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                1,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.412194607142856,
+              13.434905375,
+              13.405021374999999
+            ],
+            "times": [
+              1972.4868332915241,
+              1984.453129424602,
+              1988.2213174716624
+            ],
+            "years": [
+              7,
+              5,
+              3
+            ],
+            "points": [
+              64,
+              57,
+              20
+            ],
+            "rise": 0.02271076785714321,
+            "recovery": -0.02988400000000091,
+            "peak_minus_linear_baseline": 0.028166111614842393
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.409776714285714,
+                13.43722755,
+                13.431069
+              ],
+              "times": [
+                1972.5565237304038,
+                1984.5210335443203,
+                1988.2329529819824
+              ],
+              "years": [
+                7,
+                5,
+                3
+              ],
+              "points": [
+                39,
+                52,
+                17
+              ],
+              "rise": 0.027450835714285304,
+              "recovery": -0.006158549999998542,
+              "peak_minus_linear_baseline": 0.011200211461721565
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.434676812500001,
+                13.43722755,
+                13.431069
+              ],
+              "times": [
+                1972.8596514412202,
+                1984.5210335443203,
+                1988.2329529819824
+              ],
+              "years": [
+                4,
+                5,
+                3
+              ],
+              "points": [
+                34,
+                52,
+                17
+              ],
+              "rise": 0.0025507374999982346,
+              "recovery": -0.006158549999998542,
+              "peak_minus_linear_baseline": 0.0052874352748570885
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_07_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.7163028125,
+              13.701309968750001,
+              13.74486317857143
+            ],
+            "times": [
+              1942.7024273389998,
+              1946.7366148503743,
+              1952.4985891695876
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              32,
+              28,
+              65
+            ],
+            "rise": -0.014992843749999096,
+            "recovery": 0.04355320982142885,
+            "peak_minus_linear_baseline": -0.02675437588045959
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.795710812500001,
+                13.68877190625,
+                13.810233583333334
+              ],
+              "times": [
+                1942.847057448112,
+                1946.8397265237147,
+                1950.3407347726027
+              ],
+              "years": [
+                4,
+                4,
+                3
+              ],
+              "points": [
+                8,
+                14,
+                6
+              ],
+              "rise": -0.1069389062500008,
+              "recovery": 0.12146167708333344,
+              "peak_minus_linear_baseline": -0.11467671180092864
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.797508791666667,
+                13.77631909375,
+                13.6983555
+              ],
+              "times": [
+                1942.5631036086754,
+                1946.7382649658787,
+                1951.014409228767
+              ],
+              "years": [
+                3,
+                4,
+                2
+              ],
+              "points": [
+                5,
+                8,
+                2
+              ],
+              "rise": -0.02118969791666636,
+              "recovery": -0.07796359375000073,
+              "peak_minus_linear_baseline": 0.02779456681303394
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                2,
+                3,
+                1
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.67571407142857,
+              13.678428100000001,
+              13.6056461875
+            ],
+            "times": [
+              1972.494471860728,
+              1984.468630448186,
+              1987.7549530615784
+            ],
+            "years": [
+              7,
+              5,
+              2
+            ],
+            "points": [
+              54,
+              49,
+              10
+            ],
+            "rise": 0.00271402857143066,
+            "recovery": -0.07278191250000177,
+            "peak_minus_linear_baseline": 0.0576928947687545
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.6627165625,
+                13.687164749999999,
+                13.61019575
+              ],
+              "times": [
+                1972.8258656155256,
+                1984.5251572620734,
+                1987.7309513928626
+              ],
+              "years": [
+                6,
+                5,
+                2
+              ],
+              "points": [
+                35,
+                46,
+                9
+              ],
+              "rise": 0.024448187499999108,
+              "recovery": -0.07696899999999829,
+              "peak_minus_linear_baseline": 0.06567279446505303
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                5,
+                5,
+                1
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_08_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.877258812500001,
+              13.91468784375,
+              13.92173825
+            ],
+            "times": [
+              1942.692397911631,
+              1947.0043076271158,
+              1952.5044743040178
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              25,
+              25,
+              60
+            ],
+            "rise": 0.03742903124999941,
+            "recovery": 0.007050406250000307,
+            "peak_minus_linear_baseline": 0.0178825753291747
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                4,
+                3,
+                1
+              ]
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.879506083333334,
+                13.862585874999999,
+                13.883778125
+              ],
+              "times": [
+                1942.6997121424658,
+                1946.6116216125483,
+                1951.0144092369862
+              ],
+              "years": [
+                3,
+                3,
+                2
+              ],
+              "points": [
+                4,
+                7,
+                2
+              ],
+              "rise": -0.016920208333335296,
+              "recovery": 0.021192250000000357,
+              "peak_minus_linear_baseline": -0.01893012403590788
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                3,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.937513803571429,
+              13.93374575,
+              13.723854
+            ],
+            "times": [
+              1972.5373843855289,
+              1984.5900975764646,
+              1988.6593016680588
+            ],
+            "years": [
+              7,
+              5,
+              2
+            ],
+            "points": [
+              50,
+              34,
+              6
+            ],
+            "rise": -0.003768053571429064,
+            "recovery": -0.2098917500000006,
+            "peak_minus_linear_baseline": 0.15596358924431897
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.9706274375,
+                13.9408605,
+                13.7562053125
+              ],
+              "times": [
+                1972.806710100469,
+                1984.5991183805738,
+                1988.758225039644
+              ],
+              "years": [
+                6,
+                5,
+                2
+              ],
+              "points": [
+                31,
+                31,
+                5
+              ],
+              "rise": -0.029766937499999813,
+              "recovery": -0.18465518749999887,
+              "peak_minus_linear_baseline": 0.1287479905133786
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                4,
+                5,
+                1
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_09_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.4651539375,
+              13.491996624999999,
+              13.505681000000001
+            ],
+            "times": [
+              1942.6180884061496,
+              1946.7338138021137,
+              1952.5036886041266
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              41,
+              29,
+              65
+            ],
+            "rise": 0.02684268749999852,
+            "recovery": 0.013684375000002191,
+            "peak_minus_linear_baseline": 0.009969836381742425
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.469647312500001,
+                13.4949915,
+                13.487909583333334
+              ],
+              "times": [
+                1942.8730385898682,
+                1946.819576165858,
+                1950.3407347835619
+              ],
+              "years": [
+                4,
+                4,
+                3
+              ],
+              "points": [
+                14,
+                16,
+                6
+              ],
+              "rise": 0.025344187499998228,
+              "recovery": -0.0070819166666655775,
+              "peak_minus_linear_baseline": 0.01569291939839701
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.519257166666668,
+                13.488191208333333,
+                13.47354325
+              ],
+              "times": [
+                1942.5562453963473,
+                1946.6116216152857,
+                1950.5743226009133
+              ],
+              "years": [
+                3,
+                3,
+                3
+              ],
+              "points": [
+                6,
+                7,
+                3
+              ],
+              "rise": -0.031065958333334365,
+              "recovery": -0.014647958333332767,
+              "peak_minus_linear_baseline": -0.007944812727632922
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                3,
+                4,
+                1
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                1,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.527314571428573,
+              13.559147049999998,
+              13.455989541666668
+            ],
+            "times": [
+              1972.4917248232287,
+              1984.4049084759986,
+              1988.282327422533
+            ],
+            "years": [
+              7,
+              5,
+              3
+            ],
+            "points": [
+              61,
+              58,
+              17
+            ],
+            "rise": 0.03183247857142568,
+            "recovery": -0.10315750833333048,
+            "peak_minus_linear_baseline": 0.08564348250551745
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.499652946428572,
+                13.563400625,
+                13.472624125000001
+              ],
+              "times": [
+                1972.5604278730664,
+                1984.5164829116152,
+                1988.2986372179669
+              ],
+              "years": [
+                7,
+                5,
+                3
+              ],
+              "points": [
+                40,
+                53,
+                15
+              ],
+              "rise": 0.06374767857142771,
+              "recovery": -0.0907764999999987,
+              "peak_minus_linear_baseline": 0.08428102321980191
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.5059670625,
+                13.563400625,
+                13.472624125000001
+              ],
+              "times": [
+                1972.866483687455,
+                1984.5164829116152,
+                1988.2986372179669
+              ],
+              "years": [
+                4,
+                5,
+                3
+              ],
+              "points": [
+                35,
+                53,
+                15
+              ],
+              "rise": 0.05743356249999998,
+              "recovery": -0.0907764999999987,
+              "peak_minus_linear_baseline": 0.0826047218743664
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_10_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              12.9145055,
+              12.847420031250001,
+              12.911787053571429
+            ],
+            "times": [
+              1942.7834104095461,
+              1946.8263576239467,
+              1952.4518569785089
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              33,
+              26,
+              60
+            ],
+            "rise": -0.06708546874999932,
+            "recovery": 0.06436702232142721,
+            "peak_minus_linear_baseline": -0.06594872611637115
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                4,
+                4,
+                1
+              ]
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.966573333333335,
+                12.939635958333334,
+                12.896177666666667
+              ],
+              "times": [
+                1942.5462018073058,
+                1946.6116216417097,
+                1950.5738658922373
+              ],
+              "years": [
+                3,
+                3,
+                3
+              ],
+              "points": [
+                7,
+                7,
+                4
+              ],
+              "rise": -0.02693737500000104,
+              "recovery": -0.04345829166666704,
+              "peak_minus_linear_baseline": 0.00871283862315586
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                3,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                1,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              12.921031124999999,
+              12.933787850000002,
+              12.985697541666667
+            ],
+            "times": [
+              1972.4956186357406,
+              1984.3111423032533,
+              1988.2354736341542
+            ],
+            "years": [
+              7,
+              5,
+              3
+            ],
+            "points": [
+              66,
+              64,
+              23
+            ],
+            "rise": 0.012756725000002689,
+            "recovery": 0.05190969166666548,
+            "peak_minus_linear_baseline": -0.03578677026696475
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.92362857142857,
+                12.932073900000002,
+                12.93847175
+              ],
+              "times": [
+                1972.5688282339167,
+                1984.5219595472295,
+                1988.2320489184474
+              ],
+              "years": [
+                7,
+                5,
+                3
+              ],
+              "points": [
+                41,
+                56,
+                20
+              ],
+              "rise": 0.008445328571433208,
+              "recovery": 0.006397849999997263,
+              "peak_minus_linear_baseline": -0.002882000982602051
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.906898325,
+                12.932073900000002,
+                12.93847175
+              ],
+              "times": [
+                1973.0862391241965,
+                1984.5219595472295,
+                1988.2320489184474
+              ],
+              "years": [
+                5,
+                5,
+                3
+              ],
+              "points": [
+                38,
+                56,
+                20
+              ],
+              "rise": 0.025175575000002226,
+              "recovery": 0.006397849999997263,
+              "peak_minus_linear_baseline": 0.0013363174097840158
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_11_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              12.768556874999998,
+              12.8125796875,
+              12.726897285714285
+            ],
+            "times": [
+              1942.6174279578222,
+              1946.7369527452784,
+              1952.5085945701828
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              42,
+              32,
+              65
+            ],
+            "rise": 0.04402281250000151,
+            "recovery": -0.08568240178571429,
+            "peak_minus_linear_baseline": 0.06137341606614477
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.7903358125,
+                12.831050375,
+                12.751474833333333
+              ],
+              "times": [
+                1942.8730386344319,
+                1946.8384013095722,
+                1950.3266483872146
+              ],
+              "years": [
+                4,
+                4,
+                3
+              ],
+              "points": [
+                14,
+                18,
+                5
+              ],
+              "rise": 0.04071456249999983,
+              "recovery": -0.07957554166666725,
+              "peak_minus_linear_baseline": 0.061388823887158495
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.742063833333333,
+                12.833314625,
+                12.716264166666667
+              ],
+              "times": [
+                1942.5462018109586,
+                1946.7382649805807,
+                1950.5738658844755
+              ],
+              "years": [
+                3,
+                4,
+                3
+              ],
+              "points": [
+                7,
+                8,
+                4
+              ],
+              "rise": 0.09125079166666694,
+              "recovery": -0.11705045833333294,
+              "peak_minus_linear_baseline": 0.10472343220460978
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                3,
+                4,
+                1
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                1,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              12.72589767857143,
+              12.7635131,
+              12.820318958333333
+            ],
+            "times": [
+              1972.4952336578483,
+              1984.3111423240618,
+              1988.2204134304764
+            ],
+            "years": [
+              7,
+              5,
+              3
+            ],
+            "points": [
+              67,
+              64,
+              24
+            ],
+            "rise": 0.03761542142857088,
+            "recovery": 0.05680585833333218,
+            "peak_minus_linear_baseline": -0.03333277973321458
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.79971382142857,
+                12.773779225000002,
+                12.819158916666666
+              ],
+              "times": [
+                1972.5688282388048,
+                1984.5219595466829,
+                1988.2320489403398
+              ],
+              "years": [
+                7,
+                5,
+                3
+              ],
+              "points": [
+                41,
+                56,
+                20
+              ],
+              "rise": -0.025934596428568213,
+              "recovery": 0.045379691666664,
+              "peak_minus_linear_baseline": -0.040773803581689805
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                12.793524600000001,
+                12.773779225000002,
+                12.819158916666666
+              ],
+              "times": [
+                1973.086239130765,
+                1984.5219595466829,
+                1988.2320489403398
+              ],
+              "years": [
+                5,
+                5,
+                3
+              ],
+              "points": [
+                38,
+                56,
+                20
+              ],
+              "rise": -0.0197453749999994,
+              "recovery": 0.045379691666664,
+              "peak_minus_linear_baseline": -0.03910035714613436
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "control_12_placebo",
+      "features": {
+        "1940s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.105542281249999,
+              13.084367875000002,
+              13.002169517857144
+            ],
+            "times": [
+              1942.6174411856089,
+              1946.7356031338443,
+              1952.5087515556795
+            ],
+            "years": [
+              4,
+              4,
+              7
+            ],
+            "points": [
+              41,
+              31,
+              67
+            ],
+            "rise": -0.021174406249997446,
+            "recovery": -0.0821983571428575,
+            "peak_minus_linear_baseline": 0.021863954165475263
+          },
+          "by_series": {
+            "ac": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.157590125,
+                13.123412375000001,
+                13.155358583333333
+              ],
+              "times": [
+                1942.8730385816468,
+                1946.8363680625964,
+                1950.3407347808215
+              ],
+              "years": [
+                4,
+                4,
+                3
+              ],
+              "points": [
+                14,
+                17,
+                6
+              ],
+              "rise": -0.03417774999999956,
+              "recovery": 0.03194620833333239,
+              "peak_minus_linear_baseline": -0.03299340416701746
+            },
+            "rh": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.039175541666667,
+                13.079437531249999,
+                13.201837583333335
+              ],
+              "times": [
+                1942.5462018068495,
+                1946.7382649303092,
+                1950.5738659287672
+              ],
+              "years": [
+                3,
+                4,
+                3
+              ],
+              "points": [
+                7,
+                8,
+                4
+              ],
+              "rise": 0.040261989583331825,
+              "recovery": 0.12240005208333571,
+              "peak_minus_linear_baseline": -0.04468047139928011
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                3,
+                4,
+                1
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                1,
+                1,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "1980s": {
+          "pooled": {
+            "status": "MEASURED",
+            "annual_equal_weight_mags": [
+              13.059768428571429,
+              13.0519721,
+              13.040288166666665
+            ],
+            "times": [
+              1972.4962161670676,
+              1984.3111422334412,
+              1988.2204133351531
+            ],
+            "years": [
+              7,
+              5,
+              3
+            ],
+            "points": [
+              66,
+              64,
+              24
+            ],
+            "rise": -0.007796328571428646,
+            "recovery": -0.011683933333335617,
+            "peak_minus_linear_baseline": 0.0068408482394506365
+          },
+          "by_series": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.04173907142857,
+                13.038298600000001,
+                13.028687166666666
+              ],
+              "times": [
+                1972.5698107482172,
+                1984.521959549696,
+                1988.2320488463854
+              ],
+              "years": [
+                7,
+                5,
+                3
+              ],
+              "points": [
+                40,
+                56,
+                20
+              ],
+              "rise": -0.0034404714285685145,
+              "recovery": -0.009611433333335029,
+              "peak_minus_linear_baseline": 0.006519682853292963
+            }
+          },
+          "minimum3_sensitivity": {
+            "ac": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "rh": {
+              "status": "INSUFFICIENT",
+              "years": [
+                0,
+                0,
+                0
+              ]
+            },
+            "dnb": {
+              "status": "MEASURED",
+              "annual_equal_weight_mags": [
+                13.05523045,
+                13.038298600000001,
+                13.028687166666666
+              ],
+              "times": [
+                1973.087614638737,
+                1984.521959549696,
+                1988.2320488463854
+              ],
+              "years": [
+                5,
+                5,
+                3
+              ],
+              "points": [
+                37,
+                56,
+                20
+              ],
+              "rise": -0.01693184999999886,
+              "recovery": -0.009611433333335029,
+              "peak_minus_linear_baseline": 0.0031088496089282103
+            }
+          }
+        }
+      }
+    }
+  ],
+  "half_interval_template": {
+    "shift_years": 44.5,
+    "template_times": [
+      1932.107042803279,
+      1933.530729389041,
+      1934.265987331507,
+      1935.7460799287674,
+      1936.9079237499998,
+      1937.8380864534247,
+      1938.221659567123,
+      1939.1895612849319,
+      1940.2214394016396,
+      1941.1974933917807,
+      1942.137261134247,
+      1943.02815970137
+    ],
+    "template_mags": [
+      0.7766056250000002,
+      0.8513832500000014,
+      0.7088599999999996,
+      0.5636162500000008,
+      0.5092206249999993,
+      0.41483825000000074,
+      0.34513375000000046,
+      0.2573370000000015,
+      0.15291125000000072,
+      0.0007397499999992618,
+      0.0,
+      -0.0052109999999991885
+    ],
+    "fits": {
+      "43.0": {
+        "False": {
+          "n": 127,
+          "time_range": [
+            1975.1235486739724,
+            1986.0170129561643
+          ],
+          "series": [
+            "dnb",
+            "dny",
+            "dsb",
+            "mc"
+          ],
+          "amplitude": -0.1904363515163947,
+          "rms_free": 0.1479825367834492,
+          "rms_no_repeat": 0.15832346271549777,
+          "rms_equal_depth_repeat": 0.38167041641247085,
+          "rank": 5,
+          "columns": 5,
+          "condition": 11.812176258187751,
+          "excluded_outside_template": 98
+        },
+        "True": {
+          "n": 127,
+          "time_range": [
+            1975.1235486739724,
+            1986.0170129561643
+          ],
+          "series": [
+            "dnb",
+            "dny",
+            "dsb",
+            "mc"
+          ],
+          "amplitude": -0.520549725688138,
+          "rms_free": 0.1473386543383453,
+          "rms_no_repeat": 0.14890346443495311,
+          "rms_equal_depth_repeat": 0.16019997541502373,
+          "rank": 6,
+          "columns": 6,
+          "condition": 102.47683454350158,
+          "excluded_outside_template": 98
+        }
+      },
+      "44.5": {
+        "False": {
+          "n": 127,
+          "time_range": [
+            1976.8207143142074,
+            1987.3207164273967
+          ],
+          "series": [
+            "dnb",
+            "dny",
+            "dsb",
+            "mc"
+          ],
+          "amplitude": -0.20498438269525288,
+          "rms_free": 0.14717205900477287,
+          "rms_no_repeat": 0.15823027273512613,
+          "rms_equal_depth_repeat": 0.37197002584779887,
+          "rank": 5,
+          "columns": 5,
+          "condition": 11.91066940710351,
+          "excluded_outside_template": 98
+        },
+        "True": {
+          "n": 127,
+          "time_range": [
+            1976.8207143142074,
+            1987.3207164273967
+          ],
+          "series": [
+            "dnb",
+            "dny",
+            "dsb",
+            "mc"
+          ],
+          "amplitude": -0.614339732514269,
+          "rms_free": 0.14632763184235395,
+          "rms_no_repeat": 0.1481886804994639,
+          "rms_equal_depth_repeat": 0.15873420564109147,
+          "rank": 6,
+          "columns": 6,
+          "condition": 108.07386472554013,
+          "excluded_outside_template": 98
+        }
+      },
+      "46.0": {
+        "False": {
+          "n": 126,
+          "time_range": [
+            1978.112793619178,
+            1988.9272671721308
+          ],
+          "series": [
+            "dnb",
+            "dny",
+            "dsb",
+            "mc"
+          ],
+          "amplitude": -0.18420130311061023,
+          "rms_free": 0.15072668982666715,
+          "rms_no_repeat": 0.15884600460318396,
+          "rms_equal_depth_repeat": 0.3558121755320162,
+          "rank": 5,
+          "columns": 5,
+          "condition": 11.863217955416882,
+          "excluded_outside_template": 99
+        },
+        "True": {
+          "n": 126,
+          "time_range": [
+            1978.112793619178,
+            1988.9272671721308
+          ],
+          "series": [
+            "dnb",
+            "dny",
+            "dsb",
+            "mc"
+          ],
+          "amplitude": -0.4001335152621248,
+          "rms_free": 0.15051622709356496,
+          "rms_no_repeat": 0.15122471670335025,
+          "rms_equal_depth_repeat": 0.15897388274079605,
+          "rank": 6,
+          "columns": 6,
+          "condition": 105.48246004767059,
+          "excluded_outside_template": 99
+        }
+      }
+    }
+  },
+  "legacy_asas": [
+    {
+      "year": "2002",
+      "rows": "7",
+      "target_raw_median": "12.151",
+      "control_common_offset": "-0.015500000000000291",
+      "target_corrected_median": "12.159500000000001",
+      "minimum_controls": "14"
+    },
+    {
+      "year": "2003",
+      "rows": "59",
+      "target_raw_median": "12.185",
+      "control_common_offset": "-0.006999999999999673",
+      "target_corrected_median": "12.190499999999998",
+      "minimum_controls": "7"
+    },
+    {
+      "year": "2004",
+      "rows": "44",
+      "target_raw_median": "12.161000000000001",
+      "control_common_offset": "0.0021250000000008207",
+      "target_corrected_median": "12.153",
+      "minimum_controls": "7"
+    },
+    {
+      "year": "2005",
+      "rows": "52",
+      "target_raw_median": "12.2355",
+      "control_common_offset": "-0.0003750000000000142",
+      "target_corrected_median": "12.235125",
+      "minimum_controls": "9"
+    },
+    {
+      "year": "2006",
+      "rows": "41",
+      "target_raw_median": "12.288",
+      "control_common_offset": "0.002000000000000668",
+      "target_corrected_median": "12.307999999999998",
+      "minimum_controls": "13"
+    },
+    {
+      "year": "2007",
+      "rows": "43",
+      "target_raw_median": "12.296",
+      "control_common_offset": "-0.0039999999999995595",
+      "target_corrected_median": "12.3",
+      "minimum_controls": "11"
+    },
+    {
+      "year": "2008",
+      "rows": "61",
+      "target_raw_median": "12.229",
+      "control_common_offset": "-0.009500000000000064",
+      "target_corrected_median": "12.228000000000002",
+      "minimum_controls": "9"
+    },
+    {
+      "year": "2009",
+      "rows": "31",
+      "target_raw_median": "12.175",
+      "control_common_offset": "-0.0035000000000007248",
+      "target_corrected_median": "12.186000000000002",
+      "minimum_controls": "13"
+    }
+  ],
+  "modern": {
+    "bA g": {
+      "annual": [
+        {
+          "year": 2018,
+          "time": 2018.916696344658,
+          "n": 3,
+          "days": 1,
+          "mag": 12.696,
+          "series": [
+            "bA g"
+          ]
+        },
+        {
+          "year": 2019,
+          "time": 2019.76594361589,
+          "n": 139,
+          "days": 49,
+          "mag": 12.68,
+          "series": [
+            "bA g"
+          ]
+        },
+        {
+          "year": 2020,
+          "time": 2020.7392629367487,
+          "n": 76,
+          "days": 25,
+          "mag": 12.810500000000001,
+          "series": [
+            "bA g"
+          ]
+        },
+        {
+          "year": 2021,
+          "time": 2021.2761445301367,
+          "n": 96,
+          "days": 25,
+          "mag": 12.906,
+          "series": [
+            "bA g"
+          ]
+        },
+        {
+          "year": 2022,
+          "time": 2022.2282803123294,
+          "n": 113,
+          "days": 36,
+          "mag": 12.954,
+          "series": [
+            "bA g"
+          ]
+        },
+        {
+          "year": 2023,
+          "time": 2023.8095860693145,
+          "n": 105,
+          "days": 35,
+          "mag": 12.849,
+          "series": [
+            "bA g"
+          ]
+        },
+        {
+          "year": 2024,
+          "time": 2024.8157600336067,
+          "n": 232,
+          "days": 75,
+          "mag": 12.861,
+          "series": [
+            "bA g"
+          ]
+        },
+        {
+          "year": 2025,
+          "time": 2025.2884393573975,
+          "n": 190,
+          "days": 61,
+          "mag": 12.814,
+          "series": [
+            "bA g"
+          ]
+        },
+        {
+          "year": 2026,
+          "time": 2026.3157161283561,
+          "n": 98,
+          "days": 34,
+          "mag": 12.7605,
+          "series": [
+            "bA g"
+          ]
+        }
+      ],
+      "faintest_well_sampled": {
+        "year": 2022,
+        "time": 2022.2282803123294,
+        "n": 113,
+        "days": 36,
+        "mag": 12.954,
+        "series": [
+          "bA g"
+        ]
+      }
+    },
+    "bE g": {
+      "annual": [
+        {
+          "year": 2018,
+          "time": 2018.970479053972,
+          "n": 5,
+          "days": 2,
+          "mag": 12.619,
+          "series": [
+            "bE g"
+          ]
+        },
+        {
+          "year": 2019,
+          "time": 2019.1671480917805,
+          "n": 55,
+          "days": 18,
+          "mag": 12.641,
+          "series": [
+            "bE g"
+          ]
+        },
+        {
+          "year": 2020,
+          "time": 2020.076771209836,
+          "n": 21,
+          "days": 8,
+          "mag": 12.626,
+          "series": [
+            "bE g"
+          ]
+        },
+        {
+          "year": 2021,
+          "time": 2021.3043060104108,
+          "n": 63,
+          "days": 22,
+          "mag": 12.846,
+          "series": [
+            "bE g"
+          ]
+        },
+        {
+          "year": 2022,
+          "time": 2022.3916942980816,
+          "n": 87,
+          "days": 27,
+          "mag": 12.927,
+          "series": [
+            "bE g"
+          ]
+        },
+        {
+          "year": 2023,
+          "time": 2023.3342350243834,
+          "n": 57,
+          "days": 21,
+          "mag": 12.869,
+          "series": [
+            "bE g"
+          ]
+        },
+        {
+          "year": 2024,
+          "time": 2024.2571025448087,
+          "n": 85,
+          "days": 29,
+          "mag": 12.838,
+          "series": [
+            "bE g"
+          ]
+        },
+        {
+          "year": 2025,
+          "time": 2025.3875904805482,
+          "n": 84,
+          "days": 28,
+          "mag": 12.7775,
+          "series": [
+            "bE g"
+          ]
+        },
+        {
+          "year": 2026,
+          "time": 2026.1852900232877,
+          "n": 110,
+          "days": 36,
+          "mag": 12.753499999999999,
+          "series": [
+            "bE g"
+          ]
+        }
+      ],
+      "faintest_well_sampled": {
+        "year": 2022,
+        "time": 2022.3916942980816,
+        "n": 87,
+        "days": 27,
+        "mag": 12.927,
+        "series": [
+          "bE g"
+        ]
+      }
+    },
+    "ba V": {
+      "annual": [
+        {
+          "year": 2012,
+          "time": 2012.8621575042353,
+          "n": 26,
+          "days": 13,
+          "mag": 12.1905,
+          "series": [
+            "ba V"
+          ]
+        },
+        {
+          "year": 2013,
+          "time": 2013.7016518360274,
+          "n": 48,
+          "days": 27,
+          "mag": 12.234,
+          "series": [
+            "ba V"
+          ]
+        },
+        {
+          "year": 2014,
+          "time": 2014.8562518217805,
+          "n": 94,
+          "days": 44,
+          "mag": 12.2585,
+          "series": [
+            "ba V"
+          ]
+        },
+        {
+          "year": 2015,
+          "time": 2015.69490004411,
+          "n": 193,
+          "days": 77,
+          "mag": 12.295,
+          "series": [
+            "ba V"
+          ]
+        },
+        {
+          "year": 2016,
+          "time": 2016.23864957541,
+          "n": 221,
+          "days": 76,
+          "mag": 12.312,
+          "series": [
+            "ba V"
+          ]
+        },
+        {
+          "year": 2017,
+          "time": 2017.228323452329,
+          "n": 165,
+          "days": 56,
+          "mag": 12.248,
+          "series": [
+            "ba V"
+          ]
+        },
+        {
+          "year": 2018,
+          "time": 2018.6975984206852,
+          "n": 104,
+          "days": 35,
+          "mag": 12.189499999999999,
+          "series": [
+            "ba V"
+          ]
+        }
+      ],
+      "faintest_well_sampled": {
+        "year": 2016,
+        "time": 2016.23864957541,
+        "n": 221,
+        "days": 76,
+        "mag": 12.312,
+        "series": [
+          "ba V"
+        ]
+      }
+    },
+    "be V": {
+      "annual": [
+        {
+          "year": 2016,
+          "time": 2016.9269760229506,
+          "n": 27,
+          "days": 9,
+          "mag": 12.283,
+          "series": [
+            "be V"
+          ]
+        },
+        {
+          "year": 2017,
+          "time": 2017.3698024154794,
+          "n": 70,
+          "days": 26,
+          "mag": 12.209,
+          "series": [
+            "be V"
+          ]
+        },
+        {
+          "year": 2018,
+          "time": 2018.1128011615065,
+          "n": 8,
+          "days": 3,
+          "mag": 12.1655,
+          "series": [
+            "be V"
+          ]
+        }
+      ],
+      "faintest_well_sampled": {
+        "year": 2017,
+        "time": 2017.3698024154794,
+        "n": 70,
+        "days": 26,
+        "mag": 12.209,
+        "series": [
+          "be V"
+        ]
+      }
+    },
+    "bi g": {
+      "annual": [
+        {
+          "year": 2017,
+          "time": 2017.964972851507,
+          "n": 44,
+          "days": 16,
+          "mag": 12.597000000000001,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2018,
+          "time": 2018.2385872276716,
+          "n": 235,
+          "days": 83,
+          "mag": 12.603,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2019,
+          "time": 2019.158939591781,
+          "n": 105,
+          "days": 36,
+          "mag": 12.641,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2020,
+          "time": 2020.1507620542347,
+          "n": 80,
+          "days": 26,
+          "mag": 12.6585,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2021,
+          "time": 2021.3533489591787,
+          "n": 63,
+          "days": 20,
+          "mag": 12.859,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2022,
+          "time": 2022.3124449268494,
+          "n": 102,
+          "days": 35,
+          "mag": 12.916,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2023,
+          "time": 2023.3151894297266,
+          "n": 72,
+          "days": 24,
+          "mag": 12.8825,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2024,
+          "time": 2024.2462208047814,
+          "n": 90,
+          "days": 29,
+          "mag": 12.857,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2025,
+          "time": 2025.743518559726,
+          "n": 70,
+          "days": 26,
+          "mag": 12.804,
+          "series": [
+            "bi g"
+          ]
+        },
+        {
+          "year": 2026,
+          "time": 2026.243942163699,
+          "n": 86,
+          "days": 29,
+          "mag": 12.754999999999999,
+          "series": [
+            "bi g"
+          ]
+        }
+      ],
+      "faintest_well_sampled": {
+        "year": 2022,
+        "time": 2022.3124449268494,
+        "n": 102,
+        "days": 35,
+        "mag": 12.916,
+        "series": [
+          "bi g"
+        ]
+      }
+    },
+    "bm g": {
+      "annual": [
+        {
+          "year": 2017,
+          "time": 2017.9233760887669,
+          "n": 15,
+          "days": 5,
+          "mag": 12.61,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2018,
+          "time": 2018.1778734660274,
+          "n": 109,
+          "days": 38,
+          "mag": 12.621,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2019,
+          "time": 2019.1830876113695,
+          "n": 118,
+          "days": 42,
+          "mag": 12.641,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2020,
+          "time": 2020.3708185349728,
+          "n": 37,
+          "days": 13,
+          "mag": 12.697,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2021,
+          "time": 2021.8850066997256,
+          "n": 30,
+          "days": 8,
+          "mag": 12.883,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2022,
+          "time": 2022.2352568704114,
+          "n": 116,
+          "days": 31,
+          "mag": 12.906,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2023,
+          "time": 2023.8658574326028,
+          "n": 87,
+          "days": 27,
+          "mag": 12.84,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2024,
+          "time": 2024.3707952142076,
+          "n": 19,
+          "days": 7,
+          "mag": 12.855,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2025,
+          "time": 2025.1474454746576,
+          "n": 86,
+          "days": 29,
+          "mag": 12.809,
+          "series": [
+            "bm g"
+          ]
+        },
+        {
+          "year": 2026,
+          "time": 2026.270516273014,
+          "n": 40,
+          "days": 13,
+          "mag": 12.7485,
+          "series": [
+            "bm g"
+          ]
+        }
+      ],
+      "faintest_well_sampled": {
+        "year": 2022,
+        "time": 2022.2352568704114,
+        "n": 116,
+        "days": 31,
+        "mag": 12.906,
+        "series": [
+          "bm g"
+        ]
+      }
+    },
+    "bq g": {
+      "annual": [
+        {
+          "year": 2017,
+          "time": 2017.8723930153421,
+          "n": 93,
+          "days": 32,
+          "mag": 12.62,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2018,
+          "time": 2018.123824037808,
+          "n": 115,
+          "days": 40,
+          "mag": 12.643,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2019,
+          "time": 2019.2117068912323,
+          "n": 121,
+          "days": 41,
+          "mag": 12.664,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2020,
+          "time": 2020.2956067519121,
+          "n": 135,
+          "days": 43,
+          "mag": 12.689,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2021,
+          "time": 2021.3043808419181,
+          "n": 99,
+          "days": 25,
+          "mag": 12.895,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2022,
+          "time": 2022.3291213887674,
+          "n": 96,
+          "days": 32,
+          "mag": 12.9465,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2023,
+          "time": 2023.3291332913695,
+          "n": 86,
+          "days": 29,
+          "mag": 12.879,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2024,
+          "time": 2024.3269174248635,
+          "n": 42,
+          "days": 14,
+          "mag": 12.851,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2025,
+          "time": 2025.799661198219,
+          "n": 136,
+          "days": 46,
+          "mag": 12.785499999999999,
+          "series": [
+            "bq g"
+          ]
+        },
+        {
+          "year": 2026,
+          "time": 2026.193877421918,
+          "n": 74,
+          "days": 25,
+          "mag": 12.758,
+          "series": [
+            "bq g"
+          ]
+        }
+      ],
+      "faintest_well_sampled": {
+        "year": 2022,
+        "time": 2022.3291213887674,
+        "n": 96,
+        "days": 32,
+        "mag": 12.9465,
+        "series": [
+          "bq g"
+        ]
+      }
+    }
+  },
+  "exploratory_15year": {
+    "period": 14.799731999954398,
+    "anchors": [
+      1933.530729389041,
+      2022.3291213887674
+    ],
+    "cycles_between_anchors": 6,
+    "schedule": [
+      {
+        "cycle": -3,
+        "center": 1889.1315333891778,
+        "window": [
+          1886.1315333891778,
+          1892.1315333891778
+        ],
+        "historical_retained": 1,
+        "historical_catalogue_rows": 8,
+        "annual": [
+          {
+            "year": 1892,
+            "time": 1892.1288092595632,
+            "n": 1,
+            "days": 1,
+            "mag": 13.930809,
+            "series": [
+              "i"
+            ]
+          }
+        ]
+      },
+      {
+        "cycle": -2,
+        "center": 1903.9312653891322,
+        "window": [
+          1900.9312653891322,
+          1906.9312653891322
+        ],
+        "historical_retained": 10,
+        "historical_catalogue_rows": 293,
+        "annual": [
+          {
+            "year": 1902,
+            "time": 1902.0825928589043,
+            "n": 2,
+            "days": 2,
+            "mag": 13.320022375,
+            "series": [
+              "i"
+            ]
+          },
+          {
+            "year": 1903,
+            "time": 1903.0580674027399,
+            "n": 3,
+            "days": 3,
+            "mag": 13.2654815,
+            "series": [
+              "i"
+            ]
+          },
+          {
+            "year": 1904,
+            "time": 1904.3471544918036,
+            "n": 3,
+            "days": 3,
+            "mag": 13.369650499999999,
+            "series": [
+              "a",
+              "i"
+            ]
+          },
+          {
+            "year": 1905,
+            "time": 1905.2412679068489,
+            "n": 1,
+            "days": 1,
+            "mag": 13.206009499999999,
+            "series": [
+              "i"
+            ]
+          },
+          {
+            "year": 1906,
+            "time": 1906.339803441096,
+            "n": 1,
+            "days": 1,
+            "mag": 13.34786,
+            "series": [
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "cycle": -1,
+        "center": 1918.7309973890865,
+        "window": [
+          1915.7309973890865,
+          1921.7309973890865
+        ],
+        "historical_retained": 7,
+        "historical_catalogue_rows": 281,
+        "annual": [
+          {
+            "year": 1917,
+            "time": 1917.853158975343,
+            "n": 1,
+            "days": 1,
+            "mag": 13.009446,
+            "series": [
+              "mc"
+            ]
+          },
+          {
+            "year": 1918,
+            "time": 1918.1209102191779,
+            "n": 2,
+            "days": 2,
+            "mag": 13.1058375,
+            "series": [
+              "mf"
+            ]
+          },
+          {
+            "year": 1919,
+            "time": 1919.0553503506856,
+            "n": 1,
+            "days": 1,
+            "mag": 12.978521,
+            "series": [
+              "mc"
+            ]
+          },
+          {
+            "year": 1920,
+            "time": 1920.1042203989066,
+            "n": 3,
+            "days": 3,
+            "mag": 13.007286,
+            "series": [
+              "i"
+            ]
+          }
+        ]
+      },
+      {
+        "cycle": 0,
+        "center": 1933.530729389041,
+        "window": [
+          1930.530729389041,
+          1936.530729389041
+        ],
+        "historical_retained": 28,
+        "historical_catalogue_rows": 312,
+        "annual": [
+          {
+            "year": 1931,
+            "time": 1931.926867063013,
+            "n": 1,
+            "days": 1,
+            "mag": 13.787766,
+            "series": [
+              "mb"
+            ]
+          },
+          {
+            "year": 1932,
+            "time": 1932.107042803279,
+            "n": 6,
+            "days": 5,
+            "mag": 14.038582625,
+            "series": [
+              "ma",
+              "mb",
+              "mc",
+              "md",
+              "rh"
+            ]
+          },
+          {
+            "year": 1933,
+            "time": 1933.530729389041,
+            "n": 4,
+            "days": 4,
+            "mag": 14.113360250000001,
+            "series": [
+              "ma",
+              "rh"
+            ]
+          },
+          {
+            "year": 1934,
+            "time": 1934.265987331507,
+            "n": 9,
+            "days": 9,
+            "mag": 13.970837,
+            "series": [
+              "ac",
+              "ma",
+              "md",
+              "rh"
+            ]
+          },
+          {
+            "year": 1935,
+            "time": 1935.7460799287674,
+            "n": 5,
+            "days": 5,
+            "mag": 13.82559325,
+            "series": [
+              "i",
+              "ma",
+              "rh"
+            ]
+          },
+          {
+            "year": 1936,
+            "time": 1936.0624580136614,
+            "n": 3,
+            "days": 3,
+            "mag": 13.7796445,
+            "series": [
+              "a",
+              "i",
+              "ma"
+            ]
+          }
+        ]
+      },
+      {
+        "cycle": 1,
+        "center": 1948.3304613889954,
+        "window": [
+          1945.3304613889954,
+          1951.3304613889954
+        ],
+        "historical_retained": 47,
+        "historical_catalogue_rows": 299,
+        "annual": [
+          {
+            "year": 1945,
+            "time": 1945.9270186493147,
+            "n": 3,
+            "days": 3,
+            "mag": 13.398031,
+            "series": [
+              "ac",
+              "rh",
+              "rl"
+            ]
+          },
+          {
+            "year": 1946,
+            "time": 1946.451403109589,
+            "n": 6,
+            "days": 6,
+            "mag": 13.489353999999999,
+            "series": [
+              "ac",
+              "ir",
+              "rh"
+            ]
+          },
+          {
+            "year": 1947,
+            "time": 1947.1181370602735,
+            "n": 8,
+            "days": 8,
+            "mag": 13.437641124999999,
+            "series": [
+              "ac",
+              "mc",
+              "rh"
+            ]
+          },
+          {
+            "year": 1948,
+            "time": 1948.1177678633878,
+            "n": 11,
+            "days": 11,
+            "mag": 13.310203999999999,
+            "series": [
+              "ac",
+              "mc",
+              "rh"
+            ]
+          },
+          {
+            "year": 1949,
+            "time": 1949.298826169863,
+            "n": 11,
+            "days": 11,
+            "mag": 13.2363795,
+            "series": [
+              "ac",
+              "rh",
+              "rl"
+            ]
+          },
+          {
+            "year": 1950,
+            "time": 1950.866725589041,
+            "n": 6,
+            "days": 6,
+            "mag": 13.155245500000001,
+            "series": [
+              "ac",
+              "rh"
+            ]
+          },
+          {
+            "year": 1951,
+            "time": 1951.1044490726026,
+            "n": 2,
+            "days": 2,
+            "mag": 13.189067750000001,
+            "series": [
+              "ac",
+              "rh"
+            ]
+          }
+        ]
+      },
+      {
+        "cycle": 2,
+        "center": 1963.1301933889497,
+        "window": [
+          1960.1301933889497,
+          1966.1301933889497
+        ],
+        "historical_retained": 2,
+        "historical_catalogue_rows": 3,
+        "annual": [
+          {
+            "year": 1964,
+            "time": 1964.1315198155735,
+            "n": 2,
+            "days": 2,
+            "mag": 13.496612249999998,
+            "series": [
+              "dnb"
+            ]
+          }
+        ]
+      },
+      {
+        "cycle": 3,
+        "center": 1977.9299253889042,
+        "window": [
+          1974.9299253889042,
+          1980.9299253889042
+        ],
+        "historical_retained": 68,
+        "historical_catalogue_rows": 96,
+        "annual": [
+          {
+            "year": 1974,
+            "time": 1974.948805742465,
+            "n": 2,
+            "days": 2,
+            "mag": 13.535786499999999,
+            "series": [
+              "dnb"
+            ]
+          },
+          {
+            "year": 1975,
+            "time": 1975.1714715205485,
+            "n": 14,
+            "days": 14,
+            "mag": 13.275702874999999,
+            "series": [
+              "dnb",
+              "dny"
+            ]
+          },
+          {
+            "year": 1976,
+            "time": 1976.185874051913,
+            "n": 13,
+            "days": 13,
+            "mag": 13.4067885,
+            "series": [
+              "dnb"
+            ]
+          },
+          {
+            "year": 1977,
+            "time": 1977.2030837123284,
+            "n": 10,
+            "days": 10,
+            "mag": 13.384079,
+            "series": [
+              "dnb",
+              "dny"
+            ]
+          },
+          {
+            "year": 1978,
+            "time": 1978.1865946657535,
+            "n": 13,
+            "days": 13,
+            "mag": 13.399415000000001,
+            "series": [
+              "dnb",
+              "mc"
+            ]
+          },
+          {
+            "year": 1979,
+            "time": 1979.2193707876713,
+            "n": 8,
+            "days": 8,
+            "mag": 13.285237875,
+            "series": [
+              "dnb"
+            ]
+          },
+          {
+            "year": 1980,
+            "time": 1980.1191353469947,
+            "n": 8,
+            "days": 8,
+            "mag": 13.338189374999999,
+            "series": [
+              "dnb"
+            ]
+          }
+        ]
+      },
+      {
+        "cycle": 4,
+        "center": 1992.7296573888586,
+        "window": [
+          1989.7296573888586,
+          1995.7296573888586
+        ],
+        "historical_retained": 1,
+        "historical_catalogue_rows": 3,
+        "annual": [
+          {
+            "year": 1989,
+            "time": 1989.9160073205485,
+            "n": 1,
+            "days": 1,
+            "mag": 13.39442175,
+            "series": [
+              "dnb"
+            ]
+          }
+        ]
+      },
+      {
+        "cycle": 5,
+        "center": 2007.529389388813,
+        "window": [
+          2004.529389388813,
+          2010.529389388813
+        ],
+        "historical_retained": 0,
+        "historical_catalogue_rows": 0,
+        "annual": []
+      },
+      {
+        "cycle": 6,
+        "center": 2022.3291213887674,
+        "window": [
+          2019.3291213887674,
+          2025.3291213887674
+        ],
+        "historical_retained": 0,
+        "historical_catalogue_rows": 0,
+        "annual": []
+      }
+    ],
+    "template_fits": {
+      "1": {
+        "False": {
+          "n": 92,
+          "time_range": [
+            1946.954343627397,
+            1956.1750467978138
+          ],
+          "series": [
+            "ac",
+            "j",
+            "mc",
+            "mf",
+            "rh",
+            "rl"
+          ],
+          "amplitude": 0.3767875978040216,
+          "rms_free": 0.12651665198860942,
+          "rms_no_repeat": 0.13984473011486484,
+          "rms_equal_depth_repeat": 0.16037040423488028,
+          "rank": 7,
+          "columns": 7,
+          "condition": 8.504459806753069,
+          "excluded_outside_template": 460
+        },
+        "True": {
+          "n": 92,
+          "time_range": [
+            1946.954343627397,
+            1956.1750467978138
+          ],
+          "series": [
+            "ac",
+            "j",
+            "mc",
+            "mf",
+            "rh",
+            "rl"
+          ],
+          "amplitude": -1.6954159391444392,
+          "rms_free": 0.10262297017172287,
+          "rms_no_repeat": 0.11840034991202018,
+          "rms_equal_depth_repeat": 0.13908793456203208,
+          "rank": 8,
+          "columns": 8,
+          "condition": 121.08239924567333,
+          "excluded_outside_template": 460
+        }
+      },
+      "2": {
+        "False": {
+          "n": 45,
+          "time_range": [
+            1964.131454538251,
+            1972.1859955983605
+          ],
+          "series": [
+            "dnb",
+            "dnr",
+            "dny",
+            "dsb",
+            "dsy"
+          ],
+          "amplitude": 0.10930379677586544,
+          "rms_free": 0.09662522751411161,
+          "rms_no_repeat": 0.09821352920143142,
+          "rms_equal_depth_repeat": 0.17287491309217326,
+          "rank": 6,
+          "columns": 6,
+          "condition": 4.199329276496674,
+          "excluded_outside_template": 507
+        },
+        "True": {
+          "n": 45,
+          "time_range": [
+            1964.131454538251,
+            1972.1859955983605
+          ],
+          "series": [
+            "dnb",
+            "dnr",
+            "dny",
+            "dsb",
+            "dsy"
+          ],
+          "amplitude": 0.04381767841653739,
+          "rms_free": 0.09659398194966591,
+          "rms_no_repeat": 0.09660725112906836,
+          "rms_equal_depth_repeat": 0.10271891369859987,
+          "rank": 7,
+          "columns": 7,
+          "condition": 55.33196008422362,
+          "excluded_outside_template": 507
+        }
+      },
+      "3": {
+        "False": {
+          "n": 127,
+          "time_range": [
+            1976.8207143142074,
+            1987.3207164273967
+          ],
+          "series": [
+            "dnb",
+            "dny",
+            "dsb",
+            "mc"
+          ],
+          "amplitude": -0.20557901908617282,
+          "rms_free": 0.14709168383832755,
+          "rms_no_repeat": 0.15823027273512613,
+          "rms_equal_depth_repeat": 0.3722792310044775,
+          "rank": 5,
+          "columns": 5,
+          "condition": 11.857265646255701,
+          "excluded_outside_template": 425
+        },
+        "True": {
+          "n": 127,
+          "time_range": [
+            1976.8207143142074,
+            1987.3207164273967
+          ],
+          "series": [
+            "dnb",
+            "dny",
+            "dsb",
+            "mc"
+          ],
+          "amplitude": -0.7022168393941737,
+          "rms_free": 0.14594740968856026,
+          "rms_no_repeat": 0.1481886804994639,
+          "rms_equal_depth_repeat": 0.15866436791941563,
+          "rank": 6,
+          "columns": 6,
+          "condition": 111.45264822410199,
+          "excluded_outside_template": 425
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    ".\\results\\sky-plates-j0754-20261107\\dasch_differential.csv": "7868f5d8f733714e303bb5592157e20c2bae5c28679b813ee7fb631e945bffdc",
+    ".\\results\\sky-plates-j0754-models-20261108\\history\\dasch_all_rows_quality_audit.csv": "785e1ada2ce696bfad57a0c3da0d7911f00dde5a89d9ecd45bfd456e61728903",
+    ".\\results\\sky-plates-j0754-models-20261108\\history\\controls\\annual_exact_frame_differential.csv": "b8fba0b35eaca05754169d9e2675b0387e2f651a015048da5693c4c7bf72694b",
+    ".\\results\\sky-plates-j0754-independent-20261108\\asassn_v1_lightcurve.csv": "58f6f77947f2deaabede6e84407cf1fc00ea14355d440b1f61a5cbb6bc5d7be2",
+    ".\\results\\sky-plates-j0754-20261107\\control_01_placebo.csv": "7a4b0ac60bfd9b201b04e987f060c40ddd787b6fa09e6f3ab9b4e78ffb5893ac",
+    ".\\results\\sky-plates-j0754-20261107\\control_02_placebo.csv": "2096fb1b974178949712306d2e9438fa9d922d6f9ed5b345b83ad0f975d57397",
+    ".\\results\\sky-plates-j0754-20261107\\control_03_placebo.csv": "c99987d76f9d15d3ad59ff8799e973fbc85150ea9d7ec37588ef07b3558ca5f1",
+    ".\\results\\sky-plates-j0754-20261107\\control_04_placebo.csv": "9f9496759f1b6d8b6dcb9552ebfea659d4e8a6c8ba1c711159625cfd6c950e33",
+    ".\\results\\sky-plates-j0754-20261107\\control_05_placebo.csv": "07e2f845ff8cf72da6332e3868fd405a54c3d7e7721fe5245bf0500df22dc6e0",
+    ".\\results\\sky-plates-j0754-20261107\\control_06_placebo.csv": "2aa3ea18ac51e63e898934bc5c5d621e94b69c1d0e99ab430417d32c98673dcc",
+    ".\\results\\sky-plates-j0754-20261107\\control_07_placebo.csv": "c7124c1f5fdaf4ad3cd3595b092129a8db94f21ceb161ca951c85e37ccba7d1e",
+    ".\\results\\sky-plates-j0754-20261107\\control_08_placebo.csv": "fb2feb6c9853991b6587612d78a6b75184fabef2ab35344d5a10e702230c8eab",
+    ".\\results\\sky-plates-j0754-20261107\\control_09_placebo.csv": "68490a4aa97a2f70bccf59c319c683877f6fea7e5da27839267297b3c1c36100",
+    ".\\results\\sky-plates-j0754-20261107\\control_10_placebo.csv": "fae7ce309a913ac664654e171dc5d3633de8002b38f55df07022161670f1cfd6",
+    ".\\results\\sky-plates-j0754-20261107\\control_11_placebo.csv": "d96a6d138e9b546878fb0095442eb2baec46fb6a9ef196c9530c31aadd023790",
+    ".\\results\\sky-plates-j0754-20261107\\control_12_placebo.csv": "670483c9c0170690f6398d9cf995e6acb5610572a4f00d63a59bdf0e3116a14e"
+  }
+}

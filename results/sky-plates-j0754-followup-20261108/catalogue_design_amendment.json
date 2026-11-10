@@ -1,0 +1,10 @@
+{
+  "saved_utc": "2026-11-08T19:51:02.202114+00:00",
+  "stage": "After catalogue inspection, before any pixel photometry",
+  "reason": "Original APPLAUSE-detected-source cuts leave only 1-11 eligible stars per selected process, insufficient for the fixed calibration gate. A complete independent Gaia field supplies 15-16 colour/magnitude/isolation-matched stars in every crop.",
+  "method": "Use Gaia DR3 catalogue-forced measurements as the pixel experiment calibration sample, including stars absent from the plate extraction catalogue. Preserve original APPLAUSE catalogue-selection insufficiency as a failed feasibility diagnostic.",
+  "selection": "Within 0.3 BP-RP and 1.5 synthetic natural magnitude of target; RUWE<1.4; nearest Gaia G<18.5 neighbour at least 20 arcsec; finite proper motions; 25 pixel image margin; target excluded. Gaia DR3 BP/RP and the supplied scan colour coefficient define natural magnitudes. Do not select on target or comparison aperture outcomes.",
+  "registration": "Use median offset between Gaia proper-motion-propagated positions and matched high-quality APPLAUSE centroids; require >=5 references and offset scatter<2 pixels. Position fit independent of target intensity.",
+  "retained_rules": "Same 12-star calibration minimum, 1 mag span, monotonic bounded model, withheld-star RMS and aperture/physical-plate gates in measurement_specification.json. All chosen controls, including nonpositive measurements, remain in output; model cannot extrapolate.",
+  "interpretation": "This documented design amendment responds to catalogue completeness, not a favourable target measurement. It does not change the earlier DASCH or pipeline-APPLAUSE primary analyses."
+}

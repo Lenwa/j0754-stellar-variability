@@ -1,0 +1,65 @@
+J0754: evidence dossier and competing-mechanism test
+Ari, with Kyle — 8 November 2026
+
+Finding
+J0754 has recorded multiyear fading-and-recovery episodes. The historical DASCH event and the modern episode are a legitimate pattern to investigate. The new result is that the modern optical fading is accompanied by infrared fading and partial recovery. A causal mechanism and stable long recurrence period remain unmeasured. Kyle explicitly asked that the investigation remain broader than dust; this comparison treats dust as one competing explanation.
+
+The most informative new measurements
+From 2018 to 2022, exact-frame comparison-corrected annual NEOWISE visit medians change by +0.11625 mag at 3.4 microns (W1) and +0.089375 mag at 4.6 microns (W2). Positive magnitude means fainter: about 10.2% and 7.9% less flux. March-to-March / October-to-October changes are +0.1175 / +0.1150 in W1 and +0.08875 / +0.0900 in W2. Raw curves give +0.1165 / +0.0925, so ensemble correction did not create the effect. Both infrared bands show a minimum around 2022 and partial recovery through the last 2024 target visit. WISE provides no 2025–2026 measurements.
+
+For comparison, the previous ZTF differential g analysis found +0.30886 mag in 2018–2022 and -0.13929 mag in 2022–2025. Three adequately sampled ASAS-SN g cameras independently gave +0.285 to +0.313 mag fading; five cameras support recovery. These survey/camera streams share some systematics, but their agreement strongly weakens a ZTF-specific artifact explanation.
+
+Actual color evidence
+We do not have a contemporaneous optical g-r curve for the modern dip: retrieved ZTF target rows are g only, while retrieved ASAS-SN V ends before the 2022 minimum. Static APASS/Gaia/Pan-STARRS-like catalogue colors must not be treated as event colors.
+Matching ASAS-SN g to corrected W1 visits within +/-30 days, requiring three UTC observing dates per camera/window, produces matched-season increases in g-W1 of +0.1865 (bi March), +0.1945 (bm March), +0.2230 (bq March) and +0.2075 mag (bq October). Thus the star gets redder across the optical-to-infrared baseline. The +/-15-day sensitivity is too sparse for a same-camera, same-half-year contrast across both years; its unmatched annual value is descriptive only. These colors are near-contemporaneous, not simultaneous.
+Same-exposure paired W1-W2 increases by +0.028875 mag; matched halves give +0.0345 and +0.02325. The small infrared color change is less decisive than the much larger fading in each band because W2 calibration/color systematics matter.
+
+What the wavelength test does to the hypotheses
+1. Ordinary Milky Way foreground dust screen: three Draine Rv=3.1,4.0,5.5 grain models predict W1 fading only 0.01294–0.01516 and W2 0.00727–0.00900 mag when normalized to a 0.30-mag g fade. The measured infrared amplitudes are much larger. That is a failed point prediction for these simple attenuation-only screens as the whole explanation. It does not exclude other grain populations, partial occultation, changing dust emission or combined processes.
+2. Stellar temperature / activity / spots: fixed-area blackbody cooling from 4000–5500 K, adjusted to dim g by 0.30 mag, predicts W1 0.0642–0.0773 and W2 0.0570–0.0706 mag. This is closer in wavelength dependence but still undershoots the observed point estimates. It is an illustration, not a stellar-atmosphere fit, and does not confirm cooling. Radius changes, multiple temperatures/spot coverage and molecular bands need explicit models.
+3. Pure wavelength-independent obscuration or area change: unequal optical/W1/W2 amplitudes do not support the simplest single-component gray fade. Mixed stellar components, dust emission or wavelength-dependent transparency could alter that prediction.
+4. Binary-driven geometry / activity: Gaia supplies a 35.92046-day SB1 candidate, worth checking independently. It fails the processing paper's recommended gold-sample efficiency and velocity-significance cuts; the internal fit/confidence is not proof of a true orbit. A companion, if validated, would still not by itself explain an eight-year episode. Rotation/activity, precession, extended disks and mixed mechanisms remain proposals.
+
+Recorded pattern and recurrence
+The DASCH differential series retains 552 detections from 1892–1989. The 1930s fade/recovery survives the original comparison-star and quality tests; its earlier event-vs-baseline contrast was about +0.6835 mag. Independent APPLAUSE catalogue and raw-pixel measurements remain INCONCLUSIVE, including wider orthogonal scans. Multiple scans of one plate are not independent epochs.
+Historical/modern figures now show the two records without optimized shifts, stretching, amplitude normalization or a shared waveform. The historical episode is deeper in the blue-sensitive plate system, and the onset is sparsely sampled. Different passbands prevent directly equating depths. Broad repeated behavior is evidence worth explaining even before a clock is established.
+The original Tang paper also noted a possible early dip near 1892. Our retained 1892–1893 sample contains only three detections, which cannot define its shape. An approximately 88–89-year separation between the 1930s and 2020s episodes motivates an orbital/recurrence hypothesis. A shorter half-interval hypothesis must also confront the 106 retained detections from 1973–1982. The historical record is not simply empty there. No long-period fitting, measured replacement period or formal event-identity test has been performed in this stage.
+The earlier stable dominant 912.3159-day model failed waveform-replay and blocked/forward prediction tests in both modern surveys. A weak or evolving component was not excluded. Exploratory multi-year sinusoid fits cover less than one cycle and do not measure a new period.
+
+Gemini's geometries — useful conditional proposals
+Gemini suggested a distant disk-bearing companion on an ~88-year orbit, or a precessing circumbinary ring around the possible close pair. Neither follows uniquely from the current record.
+For an assumed circular 88-year relative orbit and total mass 1–3 solar masses, Kepler gives separation 19.8–28.5 AU and speed 6.7–9.7 km/s. A central transverse path traversed in 8 years is 11.3–16.3 AU. Geometry, opacity gradients and eccentricity affect the mapping to disk dimensions; tidal stability needs the companion mass and a dynamical model. These values are not an observed orbit.
+For an illustrative luminosity 55 solar luminosities, blackbody grains have about 758 K at 1 AU, 438 K at 3 AU and 138 K at 30 AU. Actual temperatures depend on grain absorption/emission and illumination. Warm dust luminosity depends on total intercepted starlight, not merely the fraction blocked along our sightline. Therefore warm excess does not uniquely establish a close ring, and lack of warm excess does not establish a distant disk. As a concrete comparison, the precessing circumbinary-ring system KH 15D has been reported without detectable bright-phase dust excess out to 8 microns. It is an analogy, not evidence that J0754 has the same structure.
+
+Available data and useful limits
+DASCH: 854 detections / 583 original quality-passing / 552 differential detections; historical cause unresolved.
+APPLAUSE: five physical plates (1919,1935,1936,1937), larger X/Y scans and comparison stars; independent fading measurement still inconclusive.
+ZTF: 575 raw target points / 470 quality-passing, all g, 2018–2025; 364 same-exposure differential points in the previous reduction.
+ASAS-SN: 5249 native rows, 2012–2026; 5180 accepted; V and g / cameras kept separate. Earlier V2 coadded controls are useful annual diagnostics, not identical-frame corrections to V1.
+NEOWISE: 256 target rows plus original sixteen controls; 4423 total native rows. Target coverage 2014-10-23 to 2024-03-27. Primary W1 199 accepted / 197 corrected frames in 20 visits; W2 197 / 197 in 19 visits.
+AllWISE: one source match and 48 multiepoch rows, 2010-04 to 2010-10; retained separately from NEOWISE, not cross-mission zero-point shifted.
+2MASS: one exact match, 1997-11-01. J=10.424+/-0.021, H=9.833+/-0.020, Ks=9.696+/-0.017. AllWISE W1=9.497, W2=9.530, W3=9.380+/-0.041, W4=8.464+/-0.293. These asynchronous static points are SED context, not an event color curve; W4 is weak.
+TESS: eight retrieved products in 2021,2023,2026 windows, including repeated reductions. Detrended/normalized fluxes cannot simply establish the long-term fade. No new short-period/activity test has been done here.
+Gaia DR3: refreshed source, astrophysical-parameter and full NSS records; epoch photometry/RV and mean RVS flags false, mean XP flags true. XP retrieval returned HTTP500. Mean extinction is not variable-dust evidence; atmosphere/evolution outputs disagree and carry cautions. Details in literature audit.
+LAMOST DR12: six MRS catalogue rows from one 2018 test visit, with S/N=0 and missing RV values; no useful catalogue atmosphere/RV constraint. FITS not inspected. Bounded LRS/SDSS optical/APOGEE searches returned no rows, not proof that no spectrum exists anywhere.
+Literature: Tang2010 remains the dedicated mechanism paper found by the bounded refreshed bibliography/alias search; broad Gaia inclusion supplies no dedicated cause validation. The original historical 'no color change' result had no red/yellow plates during J0754's major1930–1940 fade. J0830's reddening/excess must not be assigned to J0754.
+
+What I would test next
+Use the observed three-band change together, rather than choosing dust first. Fit passband-integrated stellar-atmosphere / two-temperature spot models and alternative extinction/partial-covering models to matched bright/faint states, preserving survey offsets and real epoch coverage. Models should predict additional optical and near-IR colors before those data are used to choose among them. The best future measurements combine calibrated multiband photometry with spectra sensitive to temperature, chromospheric activity, line profiles and circumstellar absorption. Independent multi-epoch radial velocities would test the 35.92-day candidate. Existing TESS/SAP and optical photometry can first be checked for shorter modulation, but sector detrending and gaps need explicit treatment. A spectrum alone need not settle everything; these measurements can break specific degeneracies. Kyle's telescope remark was an idea, and no purchase, booking or external contact was initiated.
+
+Reliability and reproducibility
+The protocol predates target infrared time-series inspection; detailed flags followed documentation/schema inspection. No brightness clipping, event-driven control pruning or free epoch offsets were applied. Each original control remains subject to the same per-measurement cuts. Primary leave-one-control-out amplitudes range 0.11225–0.11700 (W1),0.08825–0.09125 (W2); quality variants agree. Control placebos span -0.00875..+0.003875 and -0.02700..+0.02925 mag. Official NEOWISE documentation describes seasonal zero-point errors, so these diagnostics matter.
+Sampling-only UTC-date-group bootstrap intervals are [0.10837,0.12775] and [0.08088,0.10188]. Only2–3 dates exist in each compared visit; visits and ensemble correction are fixed. Intervals omit calibration, comparison, atmosphere-model and temporal-correlation errors and are not model-exclusion significance. Target-specific systematics remain possible. Independent review rebuilt all17native tables, primary contrasts, flags and model calculations and found no load-bearing defect. Numerical capability tests:42 pass at final verification (see verification_receipt.json).
+
+Artifacts
+protocol.json; analysis_specification.json; implementation_notes.json; infrared_downloads.json; dust_analysis.json; optical_infrared.png; event_comparison.json; historical_modern_pattern.png; gemini_geometry_check.json; review.txt; literature/j0754_literature_audit.txt plus its structured findings/raw catalogue responses. Raw native IPAC tables, CSV conversions, exact request receipts and input hashes are retained. Source and results have different preservation states; see final verification/commit receipts.
+
+Primary sources
+Tang etal2010: https://hea-www.harvard.edu/DASCH/papers/apjl_710_1_77.pdf
+NEOWISE calibration: https://irsa.ipac.caltech.edu/data/WISE/docs/release/NEOWISE/expsup/sec4_2d.html
+NEOWISE quality: https://irsa.ipac.caltech.edu/data/WISE/docs/release/NEOWISE/expsup/sec2_3.html
+IRSA API: https://irsa.ipac.caltech.edu/onlinehelp/catalogs/catalogs/api.html
+Draine extinction: https://www.astro.princeton.edu/~draine/dust/dustmix.html
+Gaia SB1 processing: https://arxiv.org/html/2410.14372v1#S11.SS2
+KH15D ring and infrared counterexample: https://arxiv.org/abs/1602.01877
+EpsilonAurigae disk imaging: https://doi.org/10.1038/nature08968

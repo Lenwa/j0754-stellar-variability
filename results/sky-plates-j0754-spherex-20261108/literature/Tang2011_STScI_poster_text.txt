@@ -1,0 +1,217 @@
+s
+
+Flares
+
+Kepler Q0&Q1 lightcurve
+
+DASCH: Digital Access to a Sky Century@Harvard
+
+Explore Variables over 100 Years
+
+Sumin Tang, Jonathan Grindlay, Edward Los, Mathieu Servillat and Robert Kurucz 
+
+Harvard-Smithsonian Center for Astrophysics
+
+I. Introduction to DASCH:
+
+Digital Access to a Sky Century at Harvard
+
+• The Harvard College Observatory (HCO) maintains a collection of
+
+~550,000 photographic plates between 1880s-1980s covering the whole
+
+sky (Grindlay et al. 2009).
+
+• ~500-1500 measurements for each object with B<14-15 (up to 19 mag
+
+in some regions)
+
+• Study temporal variations of a wide variety of objects (stars to AGNs)
+
+• Astrometry: 0.8-3 arcsec, Photometry: 0.1-0.15 mag (Laycock et al.
+
+2010).
+
+• ~14,500 plates scanned so far, in several different fields, including the
+
+open cluster M44, Baade’s Window near the Galactic center, 3C 273,
+
+the Kepler field, and partial coverage of LMC (in progress).
+
+They are all ~K2III stars, most of them show strong chromospheric emission: 
+
+II. A New Type of Long-Term Variables: ~20 K giants with
+
+~1 mag dips over 10-100 yr
+
+III. More examples of variable stars and AGNs
+
+Abstract: DASCH is a project to digitize and analyzethe scientific data contained in the ~550,000 Harvard College Observatory (HCO) plates taken between the 1880s and 1990s,
+
+which is a unique resource for studying temporal variations in the universe on ~10-100 yr timescales. We have developed the astrometry and photometry pipeline, scanned ~14,500
+
+platesin several selected fields. Here we describe our variable search algorithms and present a few examples of variables we discovered, including a group of new type of variable K giants
+
+with 10-100 year dips, a group of Be variables showing ~1 mag variations over years, a new symbiotic nova, a 5-yr dust accretion event in KU Cyg around 1900, and a nova in 1914.
+
+Be variables which might be X-ray binaries 
+
+(Be stars with neutron star companions)
+
+Exposure map 
+
+of ~14,500 
+
+scanned plates
+
+120 yr
+
+Sackmann et al. 1993
+
+MS
+
+RGB
+
+HB
+
+AGB
+
+RGB
+
+AGB
+
+HB
+
+MS
+
+K2 III
+
+RGB Bump
+
+He
+
+-core flash
+
+He
+
+-shell ignition
+
+Summary
+
+ DASCH: 100 yr light curves of B<15 objects.
+
+ 14,500 plates scanned so far are only 2.6% of
+
+the whole Harvard plate collections.
+
+ Huge potential in exploring long-term
+
+variability for known variables and discovery
+
+of exciting new types of variables.
+
+For more details see DASCH website:
+
+http://hea-www.harvard.edu/DASCH/
+
+DASCH
+
+scanner
+
+Plates
+
+Scan
+
+Tycho-2
+
+Astrometry.net
+
+GSC2.3
+
+KIC, APASS
+
+WCS
+
+solution Meta-Data Photometric
+
+calibration
+
+Logbooks
+
+DASCH Pipeline
+
+Light curves
+
+Flag blends, 
+
+plate defects,
+
+pickering
+
+wedge, 
+
+multiple 
+
+exposures
+
+Clean
+
+Variable Search: pick up outliers via different statistics
+
+Light curve of a constant star:
+
+Novel dust formation mechanism or stellar evolution-driven variability?
+
+J0830
+
+J0754
+
+J0736
+
+1. Atmosphere fitting to derive stellar 
+
+parameters using high resolution echelle spectra 
+
+(MMT Hectochelle & Magellan MIKE):
+
+Two approaches to tackle the mystery:
+
+K5095511
+
+2. Five of them are in the Kepler FOV, so we will use 
+
+the Kepler data to study their stellar activity and 
+
+possibly stellar structure by asteroseismology (via an 
+
+approved Kepler GO Cycle 3 program).
+
+Further observation need: X-ray (Chandra); binary orbit (TRES).
+
+A new symbiotic nova with M1III+WD, 
+
+only 9 other are known
+
+An independent re-discovery of a 16 mag 
+
+Z=0.38 AGN by its variability
+
+KU Cyg: a 5-yr dust accretion event in ~1900
+
+Tang et al. 2011
+
+Tang et al. 2010
+
+Tang et al. in prep.
+
+J0754: [Fe/H]=-0.8, T=4500 K, logg=1.7
+
+Red: best-fit model
+
+A Nova near Baade’s Window
+
+An Algol system with transfer of material that maybe 
+
+come from a K giant star!
+
+Y axis: lc rms/detrended lc rms Y axis: Number of adjacent flare/dip points

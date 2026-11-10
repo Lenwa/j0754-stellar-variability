@@ -1,0 +1,176 @@
+{
+  "posthoc_sensitivity_note": "After initial difference localization. Fixed event window unchanged. No detection significance assigned. Positive-difference moments have uncalibrated correlated errors and respond to background/PRF mismatch.",
+  "sideband_variants": [
+    {
+      "guard_days": 0.1,
+      "sideband_width_days": 0.2,
+      "counts": {
+        "before": 29,
+        "event": 16,
+        "after": 25
+      },
+      "stationary_scale": 0.019099782772512744,
+      "motion_adjusted_scale": 0.019051510410816624,
+      "centroid_offset_pixels": 0.17854755765856395,
+      "difference_centroid_xy": [
+        3.5070731537863233,
+        3.6846985547599367
+      ]
+    },
+    {
+      "guard_days": 0.1,
+      "sideband_width_days": 0.3,
+      "counts": {
+        "before": 44,
+        "event": 16,
+        "after": 40
+      },
+      "stationary_scale": 0.01968040102644381,
+      "motion_adjusted_scale": 0.019636068252359626,
+      "centroid_offset_pixels": 0.18150841471800017,
+      "difference_centroid_xy": [
+        3.5051431969657423,
+        3.682414216949657
+      ]
+    },
+    {
+      "guard_days": 0.1,
+      "sideband_width_days": 0.5,
+      "counts": {
+        "before": 72,
+        "event": 16,
+        "after": 68
+      },
+      "stationary_scale": 0.020531209835861087,
+      "motion_adjusted_scale": 0.020490572499476237,
+      "centroid_offset_pixels": 0.17544089956212533,
+      "difference_centroid_xy": [
+        3.5205500965320087,
+        3.675323481688472
+      ]
+    },
+    {
+      "guard_days": 0.15,
+      "sideband_width_days": 0.2,
+      "counts": {
+        "before": 28,
+        "event": 16,
+        "after": 25
+      },
+      "stationary_scale": 0.01963948893654764,
+      "motion_adjusted_scale": 0.019594202628809697,
+      "centroid_offset_pixels": 0.1817357983040199,
+      "difference_centroid_xy": [
+        3.5084409623559183,
+        3.6784933734764445
+      ]
+    },
+    {
+      "guard_days": 0.15,
+      "sideband_width_days": 0.3,
+      "counts": {
+        "before": 43,
+        "event": 16,
+        "after": 40
+      },
+      "stationary_scale": 0.02020284600118218,
+      "motion_adjusted_scale": 0.020159147667826657,
+      "centroid_offset_pixels": 0.17698093946084414,
+      "difference_centroid_xy": [
+        3.5112114382842106,
+        3.6824876308580543
+      ]
+    },
+    {
+      "guard_days": 0.15,
+      "sideband_width_days": 0.5,
+      "counts": {
+        "before": 72,
+        "event": 16,
+        "after": 69
+      },
+      "stationary_scale": 0.02081388116316459,
+      "motion_adjusted_scale": 0.02077601957005404,
+      "centroid_offset_pixels": 0.16988897539548478,
+      "difference_centroid_xy": [
+        3.524197214532309,
+        3.6795144677408826
+      ]
+    },
+    {
+      "guard_days": 0.25,
+      "sideband_width_days": 0.2,
+      "counts": {
+        "before": 29,
+        "event": 16,
+        "after": 29
+      },
+      "stationary_scale": 0.020638532435759055,
+      "motion_adjusted_scale": 0.020598334817534026,
+      "centroid_offset_pixels": 0.17749929985749954,
+      "difference_centroid_xy": [
+        3.507040802246477,
+        3.6863180601718932
+      ]
+    },
+    {
+      "guard_days": 0.25,
+      "sideband_width_days": 0.3,
+      "counts": {
+        "before": 43,
+        "event": 16,
+        "after": 43
+      },
+      "stationary_scale": 0.02108062997790757,
+      "motion_adjusted_scale": 0.021043960659822444,
+      "centroid_offset_pixels": 0.17533454852868705,
+      "difference_centroid_xy": [
+        3.5210257712106294,
+        3.6750250578500236
+      ]
+    },
+    {
+      "guard_days": 0.25,
+      "sideband_width_days": 0.5,
+      "counts": {
+        "before": 72,
+        "event": 16,
+        "after": 72
+      },
+      "stationary_scale": 0.02135092777399187,
+      "motion_adjusted_scale": 0.021313407488073505,
+      "centroid_offset_pixels": 0.16774252331993458,
+      "difference_centroid_xy": [
+        3.5280047459026824,
+        3.678926439510516
+      ]
+    }
+  ],
+  "native_POS_CORR_statistics": {
+    "POS_CORR1": {
+      "min": 0.0,
+      "max": 0.0,
+      "std": 0.0
+    },
+    "POS_CORR2": {
+      "min": 0.0,
+      "max": 0.0,
+      "std": 0.0
+    }
+  },
+  "fixed_event_window_positive_difference_centroid_track": {
+    "difference_centroid_x": {
+      "median": 3.471987815278995,
+      "std": 0.04810552976234602,
+      "linear_drift_pixels_per_hour": -0.034163542767407865,
+      "peak_to_peak": 0.1847436675588252
+    },
+    "difference_centroid_y": {
+      "median": 3.608461541338527,
+      "std": 0.05614710295401023,
+      "linear_drift_pixels_per_hour": 0.02839815878413604,
+      "peak_to_peak": 0.17826819655975612
+    }
+  },
+  "interpretation": "Compact multiframe positive signal consistent with target location; no obvious large multi-pixel traversal in the selected event window. These moments do not exclude a close/unresolved contaminant or a moving source passing near target. Tiny cutout cannot establish origin by itself."
+}

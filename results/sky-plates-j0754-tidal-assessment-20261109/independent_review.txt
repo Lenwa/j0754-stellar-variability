@@ -1,0 +1,13 @@
+Independent review: J0754 tidal/alias follow-up, 9 November 2026
+
+No blocking mathematical error found.
+
+Tides: inspected original saved Hurley 2002 HTML equations 25-33 and tidal_scalings.json. Convective turnover coefficient, solar units/years, pumping-period conversion, f_conv reduction, k/T prefactor, beta=I/(MR^2), synchronization inverse timescale and near-circular eccentricity-damping expression agree with source. Independently recalculated all 1296 grid rows; maximum relative discrepancy 2.9e-9 from rounded orbital period. Near-synchronous grid range 1845-3620721 years verified. These are local fixed-structure damping times with assumed envelope/inertia/mass/radius, not integrated spin-up durations, measured ages, probabilities or synchronization confirmation. Small report language change requested: selected period peaks, not measured precise rotation periods.
+
+Aliases: reviewed check_rotation_aliases.py and report.txt. Weighted nuisance projection is applied to both data and sinusoidal basis. Actual-cadence noiseless injections test cross-talk among a bounded family, not noise significance. Pure half/double-period sinusoid comparisons do not exclude a 71.84-day spin dominated by its second harmonic; report retains that explicitly. Annual-alias preference strengthens the recurring photometric timescale, not the orbital interpretation of Gaia RVs. Source review found no blocking issue; worker owns numerical test/commit receipt.
+
+Radius/Roche consistency: formulae and conditional interpretation are appropriate; conflicting logg/luminosity/mass inputs must not be combined into one stellar solution. No Roche-overflow claim follows.
+
+Spot centroid appendix: |delta RV| <= d*vmax/(1-d) and d >= K/(K+vmax) are valid necessary bounds for removal of positive line-profile weights from an initially symmetric centroid. Gaia CCF velocities, changing local line contrasts and convective velocities need not obey that toy model. Photometric modulation is not total unspotted deficit. Keep as illustrative appendix, not independent confirmation of the binary or exclusion of activity.
+
+Overall: the tidal mechanism is physically plausible; current data do not establish every causal link or determine the long-dip trigger. No source files edited by reviewer.

@@ -1,0 +1,97 @@
+{
+  "W1_zero_Jy": 309.54,
+  "g_AB_zero_Jy": 3631,
+  "rows": [
+    {
+      "T": 4500,
+      "law": "rv31",
+      "cover": 0.8862372471815494,
+      "intrinsic_gAB_W1Vega": 3.3030701214987217,
+      "predicted_color": 5.163327265047314,
+      "observed_color": 3.11425,
+      "residual": 2.0490772650473135
+    },
+    {
+      "T": 4500,
+      "law": "rv4",
+      "cover": 0.8878912958539166,
+      "intrinsic_gAB_W1Vega": 3.3030701214987217,
+      "predicted_color": 5.167616552776283,
+      "observed_color": 3.11425,
+      "residual": 2.053366552776283
+    },
+    {
+      "T": 4500,
+      "law": "rv5.5",
+      "cover": 0.890626888320118,
+      "intrinsic_gAB_W1Vega": 3.3030701214987217,
+      "predicted_color": 5.174030082708143,
+      "observed_color": 3.11425,
+      "residual": 2.0597800827081425
+    },
+    {
+      "T": 5000,
+      "law": "rv31",
+      "cover": 0.8862372471815494,
+      "intrinsic_gAB_W1Vega": 2.611551142205208,
+      "predicted_color": 4.476813508353531,
+      "observed_color": 3.11425,
+      "residual": 1.3625635083535306
+    },
+    {
+      "T": 5000,
+      "law": "rv4",
+      "cover": 0.8878912958539166,
+      "intrinsic_gAB_W1Vega": 2.611551142205208,
+      "predicted_color": 4.480368842475428,
+      "observed_color": 3.11425,
+      "residual": 1.3661188424754283
+    },
+    {
+      "T": 5000,
+      "law": "rv5.5",
+      "cover": 0.890626888320118,
+      "intrinsic_gAB_W1Vega": 2.611551142205208,
+      "predicted_color": 4.485681891183156,
+      "observed_color": 3.11425,
+      "residual": 1.371431891183156
+    },
+    {
+      "T": 5500,
+      "law": "rv31",
+      "cover": 0.8862372471815494,
+      "intrinsic_gAB_W1Vega": 2.0560949844917964,
+      "predicted_color": 3.927771088695822,
+      "observed_color": 3.11425,
+      "residual": 0.813521088695822
+    },
+    {
+      "T": 5500,
+      "law": "rv4",
+      "cover": 0.8878912958539166,
+      "intrinsic_gAB_W1Vega": 2.0560949844917964,
+      "predicted_color": 3.9303871710614993,
+      "observed_color": 3.11425,
+      "residual": 0.8161371710614991
+    },
+    {
+      "T": 5500,
+      "law": "rv5.5",
+      "cover": 0.890626888320118,
+      "intrinsic_gAB_W1Vega": 2.0560949844917964,
+      "predicted_color": 3.934292745080983,
+      "observed_color": 3.11425,
+      "residual": 0.8200427450809826
+    }
+  ],
+  "caveat": "Nominal5000K temporal fits tested against baseline color;4500/5500K sensitivity holds geometry fixed, not refitted. ASASSNg uses SDSSg proxy and nominalAB convention; using savedSVOgVega zero4023.573 instead adds0.1115mag to modelcolor. No foreground reddening, extra emission or secondstar. Source photometric offsets/response differences not fully calibrated; not formalrejection.",
+  "calibration_source": "https://www.astronomy.ohio-state.edu/asassn/public/examples.shtml",
+  "input_hashes": {
+    "results\\sky-plates-j0754-broader-dust-20261109\\results.json": "20c1417f1982040d51f9e9ab97397b75e91ae6f4e6bfa489f73f277f5c61e014",
+    "results\\sky-plates-j0754-models-20261108\\models\\filter_g.xml": "ea4dc3871f0c5dcd9ef276fcebe5e9bca6abd80cdb18abf055bba207a92fc119",
+    "results\\sky-plates-j0754-models-20261108\\models\\filter_W1.xml": "68ca3cae986e6aaf00b9563e54bd4cee1460cc36d79bfdf03cd7f6faa7f3efb3",
+    "results\\sky-plates-j0754-models-20261108\\models\\ckm05_4500.fits": "7042e4ea07951af74b92bd8eb170afbd4344bda7dcb6fca0a2ae7e3d9cf0bd1b",
+    "results\\sky-plates-j0754-models-20261108\\models\\ckm05_5000.fits": "27d749870ab90fc4fb5f591aa9c8167768ff7ab81620a44291fe690f6ed28d12",
+    "results\\sky-plates-j0754-models-20261108\\models\\ckm05_5500.fits": "5741bc88403f66e6c735c8b54b8e377e8a20b84055c69c44eda56f26627d94d9"
+  }
+}

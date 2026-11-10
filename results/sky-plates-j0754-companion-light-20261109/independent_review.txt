@@ -1,0 +1,33 @@
+Independent review of J0754 companion-light sensitivity, 2026-11-09
+
+Reviewed protocol, source, tests, results.json and results_wide.json. No source edits.
+
+Numerical findings:
+- Mixture templates are normalized to unreddened F_lambda at1um; applying shared extinction and F_nu conversion preserves the stated mixture fraction at that wavelength.
+- Independently checked all five f=0 profile rows: exactly equal giant-only minima; all finite and mixture minima no worse than single-star minima.
+- Independently checked wider-primary3500-6500K grid: no baseline gets worse and every previously compatible fraction remains compatible.
+- Gaia20 bins cover native samples400-998nm. SPHEREx retains35/33 samples by2025/2026; passband edges extend beyond center-selection0.75-2.4um by expected widths.
+
+Interpretation:
+- Single-star shape RMS1.7367%Gaia;3.6069/3.5648%native SPHEREx2025/2026;3.4286/3.4690%local. All pass exploratory5% tolerance. No second component required under that criterion.
+- Wider-grid mixture best fits reach low-primary/high-companion temperature boundaries and large fractions. These are nuisance optima, not physical binary parameter measurements.
+- A3500K secondary's sampled5% compatibility stops at fraction.50Gaia,.45native2025,.40native2026/local2025/local2026, at1um. At10%, the permitted range expands to.70Gaia,.90/.85native and.90/.85local. These are weak model/tolerance-dependent envelope endpoints, not statistical limits.
+- Many other temperatures reach fraction.90, the search ceiling. This supplies no useful all-companion upper limit.
+- At3%, baseline SPHEREx models fail; treating mixture improvement as a discovery would overinterpret several-percent reduction/atmosphere/response uncertainty.
+- Broadband two-temperature shape can resemble a spotted surface as well as two stars. Exact equivalence holds for the same component templates and arbitrary weights; this experiment's dwarf gravity is not literally the gravity of a giant's spots. Exact identical-template/free-normalization degeneracy is established by algebra and unit test.
+
+Scope:
+- Independent epoch/free-scale fits do not constitute a constant-luminosity companion model across years; do not intersect fractional endpoints as if they were one physical fraction.
+- No coeval mass-radius prior, companion orbit prior, UV constraint, resolved lines or calibrated FAST continuum enters. Thus high dwarf fractions may be physically implausible but have not been physically ruled out by this shape-only test.
+- Companion grid3500-6500K/logg4.5 does not exclude cooler objects, hot stars or white dwarfs. Arbitrary extinction/atmosphere systematics are outside its sampled scope.
+- Excluding FAST from quantitative continuum bounds is appropriate given uncertified absolute calibration/LSF.
+
+Disposition: computational results support a conservative negative result and conditional shape envelopes. No blocking mathematical error found. Do not present a detection, confidence interval, bolometric fraction, or universal companion-light limit.
+
+ADDENDUM: longer-wavelength residual check reviewed after initial review.
+- Source reconstructs each previously selected nearIR optimum, using identical template normalization, extinction and Fnu conversion; computes its scale only from the original <=2.4um data. No longer-wave rescaling or profile filtering occurs.
+- Independently verified training wavelength arrays and observation arrays are exactly unchanged for all four SPHEREx reduction/epoch cases.
+- Defined diagnostic bands2.4-3.75,3.8-4.4 and4.4-5.0um intentionally leave a narrow gap. They are not a continuous integral or new statistical sample.
+- Wide-grid single-star median observed/model at4.4-5um is1.030/1.024(native/local2025) and1.101/1.093(2026). Mixture values are.970/.962(2025) and1.058/1.037(2026). The mixture reduces the2026 long-wave residual but overpredicts some2025 flux, particularly local3.8-4.4um observed/model.929.
+- This is useful diagnostic tension, not unique companion evidence, excess detection or formal significance. Only selected best-fit curves are evaluated, not the entire compatible atmosphere set; no companion envelope should be narrowed from these summaries. Longer-wave data were previously inspected in earlier work; held-out means excluded from this optimization, not blinded independent discovery data.
+Disposition: addition sound for descriptive residual comparison under these qualifications.

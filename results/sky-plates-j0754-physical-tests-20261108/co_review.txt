@@ -1,0 +1,15 @@
+Independent bounded review: SPHEREx CO-window check
+Reviewed analyze_spherex_co.py, test_spherex_co.py, the saved protocol, co_results.json, co_compatible_cases.json and co_window_shape.png. No maintained source edits made by this review.
+
+No load-bearing arithmetic or selection error found in this pass. The model is selected only on.75–2.4um; the4.0–4.2um reference and4.55–4.9um check windows do not enter its optimization. F_lambda to F_nu conversion, normalized Draine attenuation, free log normalization and CO/reference ratio-of-medians are internally consistent. Native/local wavelength labels and widths are kept separate, so the known+6.4nm nativeD5/D6 wavelength update is not an unrecorded coordinate error. The different window counts between reductions are legitimate consequences of those center-based window labels, although actual responses cross window edges.
+
+Independently recomputed stored-compatible-case counts/ranges exactly match the summary:
+local2025:450 cases, index.924862–1.150942; best.999322.
+local2026:392 cases, index.927305–1.153270; best1.054733.
+native2025:443 cases, index.895945–1.122067; best.976432.
+native2026:372 cases, index.962272–1.179223; best1.061329.
+For each best case the reported index exactly equals CO_median_obs_model/reference_median_obs_model. Every sampled5%nearIR shape-tolerance range includes unity. There are only5–6 reference and7–9 CO-window samples per case; the comparison does not create extra independent channels.
+
+Interpretation remains limited as already stated in the source/report. These are broad residual windows, not a CO equivalent width or a resolved CO/emission identification. The denominator is largelyD5 while the numerator isD6, so cross-detector calibration and continuum curvature can mimic a chemical-band residual. The reference normalization removes grey scale, not all atmosphere/extinction/spectral-shape error. Rectangular responses and coarse plane-parallel LTE CK04 spectra do not reproduce exact native throughput or validate low-gravity line formation. The5%selection is a chosen shape tolerance, not a confidence region or calibrated likelihood. Agreement between native/local reductions uses the same pixels. The2026best-model excess near5–6% relative to its reference remains visible, but model choices compatible with the declared nearIR tolerance also give indices below unity. No formal excess, CO fill-in detection, dust mass, dust upper limit or causal fading mechanism follows.
+
+Tests cover grey-scale cancellation, residual sign and missing reference rejection; the broader component suite passed during the associated physical-model work. This was a bounded source/formula/output review, not a rerun with exact passbands or an independent atmosphere calibration. No additional code change is required for the qualified conclusions currently proposed.

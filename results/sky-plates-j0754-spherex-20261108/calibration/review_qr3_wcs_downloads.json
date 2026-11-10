@@ -1,0 +1,20 @@
+[
+  {
+    "file": "review_qr3/spectral_wcs_D5_spx_cal-swcs-v5-2026-191.fits",
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/spectral_wcs/cal-swcs-v5-2026-191/5/spectral_wcs_D5_spx_cal-swcs-v5-2026-191.fits",
+    "bytes": 33312960,
+    "sha256": "3361428284bddad1dcdce42081ebfbd225acb0b19f6caa94fba3e133bbabfc1c"
+  },
+  {
+    "file": "review_qr3/spectral_wcs_D6_spx_cal-swcs-v5-2026-191.fits",
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/spectral_wcs/cal-swcs-v5-2026-191/6/spectral_wcs_D6_spx_cal-swcs-v5-2026-191.fits",
+    "bytes": 33312960,
+    "sha256": "19195d253892883586aa2183cb66238b32f6032ade62d490b36b85b0dd18f212"
+  },
+  {
+    "file": "official_CHANGES.md.txt",
+    "url": "https://raw.githubusercontent.com/Caltech-IPAC/spherex-pipelines/main/CHANGES.md",
+    "bytes": 77966,
+    "sha256": "e7dff914d34a691a02c791a51582b5813071273a33376fcf654de0cc566b141e"
+  }
+]

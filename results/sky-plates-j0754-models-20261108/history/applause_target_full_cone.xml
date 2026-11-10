@@ -1,0 +1,2203 @@
+<?xml version="1.0"?>
+<VOTABLE version="1.3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+    xmlns:stc="http://www.ivoa.net/xml/STC/v1.30">
+    <RESOURCE type="results">
+        <TABLE>
+                <FIELD name="source_id" ucd="meta.id;meta.main" datatype="long"> <DESCRIPTION>Source identification number. The number is constructed as follows: 4 x 10^13 + process_id x 10^7 + source number in the image.</DESCRIPTION> </FIELD>
+                
+                <FIELD name="process_id" ucd="meta.id" datatype="int"> <DESCRIPTION>Process identification number</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_id" ucd="meta.id" datatype="int"> <DESCRIPTION>Scan identification number</DESCRIPTION> </FIELD>
+                
+                <FIELD name="plate_id" ucd="meta.id" datatype="int"> <DESCRIPTION>Plate identification number</DESCRIPTION> </FIELD>
+                
+                <FIELD name="archive_id" ucd="meta.id" datatype="int"> <DESCRIPTION>Archive identification number</DESCRIPTION> </FIELD>
+                
+                <FIELD name="solution_num" ucd="meta.number" datatype="short"> <DESCRIPTION>Solution number within the process</DESCRIPTION> </FIELD>
+                
+                <FIELD name="annular_bin" ucd="meta.code" datatype="short"> <DESCRIPTION>Annular bin (1-9) where the source belongs (bin 1 is in the center, bin 9 is at the edge)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="dist_center" unit="px" ucd="pos.distance" datatype="double"> <DESCRIPTION>Distance of the source from plate center</DESCRIPTION> </FIELD>
+                
+                <FIELD name="dist_edge" unit="px" ucd="pos.distance" datatype="double"> <DESCRIPTION>Distance of the source from plate edge</DESCRIPTION> </FIELD>
+                
+                <FIELD name="sextractor_flags" ucd="meta.code" datatype="short"> <DESCRIPTION>Flags given by SExtractor</DESCRIPTION> </FIELD>
+                
+                <FIELD name="model_prediction" ucd="stat.likelihood" datatype="float"> <DESCRIPTION>Classification of the source as celestial (value close to 1) or artifact (value close to 0). The value is a prediction by a machine-learning algorithm.</DESCRIPTION> </FIELD>
+                
+                <FIELD name="ra_icrs" ucd="pos.eq.ra" datatype="double"> <DESCRIPTION>Right ascension of the source (International Celestial Reference System)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="dec_icrs" ucd="pos.eq.dec" datatype="double"> <DESCRIPTION>Declination of the source (International Celestial Reference System)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="ra_error" unit="arcsec" ucd="stat.error;pos.eq.ra" datatype="float"> <DESCRIPTION>Error of the right ascension</DESCRIPTION> </FIELD>
+                
+                <FIELD name="dec_error" unit="arcsec" ucd="stat.error;pos.eq.dec" datatype="float"> <DESCRIPTION>Error of the declination</DESCRIPTION> </FIELD>
+                
+                <FIELD name="gal_lon" ucd="pos.galactic.lon" datatype="double"> <DESCRIPTION>Galactic longitude of the source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="gal_lat" ucd="pos.galactic.lat" datatype="double"> <DESCRIPTION>Galactic latitude of the source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="ecl_lon" datatype="double"> <DESCRIPTION>Ecliptic longitude of the source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="ecl_lat" datatype="double"> <DESCRIPTION>Ecliptic latitude of the source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="x_sphere" ucd="pos.cartesian.x" datatype="double"> <DESCRIPTION>Source x-coordinate on the unit sphere</DESCRIPTION> </FIELD>
+                
+                <FIELD name="y_sphere" ucd="pos.cartesian.y" datatype="double"> <DESCRIPTION>Source y-coordinate on the unit sphere</DESCRIPTION> </FIELD>
+                
+                <FIELD name="z_sphere" ucd="pos.cartesian.z" datatype="double"> <DESCRIPTION>Source z-coordinate on the unit sphere</DESCRIPTION> </FIELD>
+                
+                <FIELD name="healpix256" ucd="pos.healpix" datatype="int"> <DESCRIPTION>Source HEALPix number (nside=256, nested ordering)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="healpix1024" ucd="pos.healpix" datatype="int"> <DESCRIPTION>Source HEALPix number (nside=1024, nested ordering)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="nn_dist" unit="arcsec" ucd="pos.angDistance" datatype="float"> <DESCRIPTION>Distance to the nearest neighbor among extracted sources</DESCRIPTION> </FIELD>
+                
+                <FIELD name="zenith_angle" unit="deg" ucd="pos.az.zd" datatype="float"> <DESCRIPTION>Zenith angle of the source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="airmass" ucd="obs.airMass" datatype="float"> <DESCRIPTION>Air mass (path length for light rays from a celestial source to pass through the atmosphere)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="natmag" unit="mag" ucd="phot.mag;em.opt" datatype="float"> <DESCRIPTION>Calibrated magnitude of the source in the plate natural photometric system</DESCRIPTION> </FIELD>
+                
+                <FIELD name="natmag_error" ucd="stat.error;phot.mag;em.opt" datatype="float"> <DESCRIPTION>Error estimate of the magnitude in the plate natural photometric system</DESCRIPTION> </FIELD>
+                
+                <FIELD name="bpmag" datatype="float"> <DESCRIPTION>Calibrated magnitude of the source in the Gaia EDR3 BP (blue) passband</DESCRIPTION> </FIELD>
+                
+                <FIELD name="bpmag_error" datatype="float"> <DESCRIPTION>Error estimate of the calibrated BP magnitude</DESCRIPTION> </FIELD>
+                
+                <FIELD name="rpmag" datatype="float"> <DESCRIPTION>Calibrated magnitude of the source in the Gaia EDR3 RP (red) passband</DESCRIPTION> </FIELD>
+                
+                <FIELD name="rpmag_error" datatype="float"> <DESCRIPTION>Error estimate of the calibrated RP magnitude</DESCRIPTION> </FIELD>
+                
+                <FIELD name="natmag_plate" unit="mag" ucd="phot.mag;em.opt" datatype="float"> <DESCRIPTION>Magnitude of the source in the plate natural photometric system, obtained through photometric calibration for the whole plate, without corrections</DESCRIPTION> </FIELD>
+                
+                <FIELD name="natmag_correction" unit="mag" ucd="phot.mag;em.opt;arith.diff" datatype="float"> <DESCRIPTION>Correction applied to the source magnitude in the plate natural photometric system</DESCRIPTION> </FIELD>
+                
+                <FIELD name="natmag_residual" unit="mag" ucd="phot.mag;em.opt;arith.diff" datatype="float"> <DESCRIPTION>Residual of the source magnitude in the plate natural photometric system after corrections, compared to the synthetic magnitude constructed from Gaia EDR3 photometry</DESCRIPTION> </FIELD>
+                
+                <FIELD name="phot_range_flags" datatype="short"> <DESCRIPTION>Photometric range flags: 0 - source natmag is in the range of calibration stars; 1 - source natmag is brighter than the brightest calibration star; 2 - source natmag is fainter than the estimated faint limit of the plate</DESCRIPTION> </FIELD>
+                
+                <FIELD name="phot_calib_flags" ucd="meta.code" datatype="short"> <DESCRIPTION>Flag for photometric calibration stars: 0 - source is not a calibration star; 1 - source is a valid calibration star; 2 - source was found to be an outlier of the photometric calibration curve</DESCRIPTION> </FIELD>
+                
+                <FIELD name="color_term" ucd="stat.fit.param" datatype="float"> <DESCRIPTION>Color term of the plate, characterizing color response of the emulsion and filter used. Color term 0 corresponds to the Gaia EDR3 RP passband, color term 1 corresponds to the BP passband. Values outside the 0...1 range are extrapolations.</DESCRIPTION> </FIELD>
+                
+                <FIELD name="cat_natmag" unit="mag" ucd="phot.mag;em.opt" datatype="float"> <DESCRIPTION>Magnitude of the source in the plate natural photometric system, RP+color_term * (BP-RP), based on the Gaia EDR3 catalogue</DESCRIPTION> </FIELD>
+                
+                <FIELD name="gaiaedr3_gmag" datatype="float"> <DESCRIPTION>Gaia EDR3 G-magnitude of the matched source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="gaiaedr3_id" datatype="long"> <DESCRIPTION>Gaia EDR3 source_id of the matched source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="gaiaedr3_bp_rp" datatype="float"> <DESCRIPTION>Gaia EDR3 BP-RP color index of the matched source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="gaiaedr3_dist" unit="arcsec" datatype="float"> <DESCRIPTION>Angular distance in the sky plane between the source and the matched Gaia EDR3 source</DESCRIPTION> </FIELD>
+                
+                <FIELD name="gaiaedr3_neighbors" datatype="int"> <DESCRIPTION>Number of Gaia EDR3 sources that are in the neighborhood of the source. The neighboring sources can be found in the source_xmatch table.</DESCRIPTION> </FIELD>
+                
+                <FIELD name="match_radius" unit="arcsec" ucd="pos.angDistance" datatype="float"> <DESCRIPTION>Radius in the sky plane that was used to cross-match extracted sources with the Gaia EDR3 catalogue</DESCRIPTION> </FIELD>
+                
+                <FIELD name="timestamp_insert" unit="Time[yyyy-mm-dd hh:mm:ss]" ucd="time.creation" arraysize="32" datatype="char"> <DESCRIPTION>Timestamp of insert</DESCRIPTION> </FIELD>
+                
+                <FIELD name="timestamp_update" unit="Time[yyyy-mm-dd hh:mm:ss]" ucd="time.creation" arraysize="32" datatype="char"> <DESCRIPTION>Timestamp of last update</DESCRIPTION> </FIELD>
+                
+                <FIELD name="pos" unit="(radians,radians)" ucd="meta.number" arraysize="*" datatype="char"> <DESCRIPTION>GIS index for (ra,dec)</DESCRIPTION> </FIELD>
+                
+            <DATA>
+                <TABLEDATA>
+                    <TR>
+                        <TD>41082970027150</TD>
+                        <TD>108297</TD>
+                        <TD>118276</TD>
+                        <TD>93759</TD>
+                        <TD>208</TD>
+                        <TD>1</TD>
+                        <TD>9</TD>
+                        <TD>7259.773</TD>
+                        <TD>369.04004</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.68928173964746</TD>
+                        <TD>16.693842293835313</TD>
+                        <TD>1.11418</TD>
+                        <TD>1.0668</TD>
+                        <TD>204.50544858551467</TD>
+                        <TD>21.31679988602147</TD>
+                        <TD>117.45588335793522</TD>
+                        <TD>-4.053139503106073</TD>
+                        <TD>-0.459826517485423</TD>
+                        <TD>0.8402634451216964</TD>
+                        <TD>0.2872575788546679</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>115.563866</TD>
+                        <TD>46.297085</TD>
+                        <TD>1.4450239</TD>
+                        <TD>13.472677</TD>
+                        <TD>0.21186371</TD>
+                        <TD>12.357148</TD>
+                        <TD>0.21242936</TD>
+                        <TD>11.1042385</TD>
+                        <TD>0.21242936</TD>
+                        <TD>13.523128</TD>
+                        <TD>-0.05045066</TD>
+                        <TD>0.12694359</TD>
+                        <TD>2</TD>
+                        <TD>1</TD>
+                        <TD>1.8903505</TD>
+                        <TD>13.599621</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>7.275125</TD>
+                        <TD>1</TD>
+                        <TD>7.712748</TD>
+                        <TD>2022-06-13 16:00:53.818580+00:00</TD>
+                        <TD>2022-06-13 16:00:53.818580+00:00</TD>
+                        <TD>(2.07151875318403 , 0.291362512836109)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40447170005307</TD>
+                        <TD>44717</TD>
+                        <TD>19189</TD>
+                        <TD>15989</TD>
+                        <TD>103</TD>
+                        <TD>0</TD>
+                        <TD>9</TD>
+                        <TD>5808.302</TD>
+                        <TD>534.42346</TD>
+                        <TD>1</TD>
+                        <TD>2.0295555e-08</TD>
+                        <TD>118.69126321351358</TD>
+                        <TD>16.69580523684962</TD>
+                        <TD>0.266361</TD>
+                        <TD>0.248795</TD>
+                        <TD>204.5043145520303</TD>
+                        <TD>21.31931768310217</TD>
+                        <TD>117.45737408366018</TD>
+                        <TD>-4.050849577664663</TD>
+                        <TD>-0.45985085122389185</TD>
+                        <TD>0.8402389087736353</TD>
+                        <TD>0.2872903945688971</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>4.4702864</TD>
+                        <TD>39.02847</TD>
+                        <TD>1.2860065</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:08:11.340345+00:00</TD>
+                        <TD>2022-06-14 03:08:11.340345+00:00</TD>
+                        <TD>(2.07155333642704 , 0.291396772654738)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40630350017965</TD>
+                        <TD>63035</TD>
+                        <TD>68716</TD>
+                        <TD>61377</TD>
+                        <TD>106</TD>
+                        <TD>0</TD>
+                        <TD>6</TD>
+                        <TD>9317.002</TD>
+                        <TD>4482.789</TD>
+                        <TD>0</TD>
+                        <TD>0.99999833</TD>
+                        <TD>118.69154239189164</TD>
+                        <TD>16.694623238628495</TD>
+                        <TD>0.150836</TD>
+                        <TD>0.138007</TD>
+                        <TD>204.50559384885713</TD>
+                        <TD>21.31909779482413</TD>
+                        <TD>117.4578640561534</TD>
+                        <TD>-4.051958480968907</TD>
+                        <TD>-0.45985779064207594</TD>
+                        <TD>0.8402418669543237</TD>
+                        <TD>0.287270634424929</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>64.795074</TD>
+                        <TD>36.742992</TD>
+                        <TD>1.2468778</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD></TD>
+                        <TD>2022-06-13 19:17:19.062343+00:00</TD>
+                        <TD>2022-06-13 19:17:19.062343+00:00</TD>
+                        <TD>(2.07155820900894 , 0.291376142894026)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004150101659</TD>
+                        <TD>415</TD>
+                        <TD>411</TD>
+                        <TD>412</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>4</TD>
+                        <TD>9350.496</TD>
+                        <TD>4891.1816</TD>
+                        <TD>0</TD>
+                        <TD>0.9999834</TD>
+                        <TD>118.6921323406541</TD>
+                        <TD>16.694462780607587</TD>
+                        <TD>0.678727</TD>
+                        <TD>0.566221</TD>
+                        <TD>204.5059911436051</TD>
+                        <TD>21.31955395859886</TD>
+                        <TD>117.45845085538909</TD>
+                        <TD>-4.0520077799268766</TD>
+                        <TD>-0.4598668284533255</TD>
+                        <TD>0.840237837682132</TD>
+                        <TD>0.28726795194649724</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>90.01904</TD>
+                        <TD>36.713055</TD>
+                        <TD>1.246394</TD>
+                        <TD>13.308514</TD>
+                        <TD>0.37971032</TD>
+                        <TD>12.462862</TD>
+                        <TD>0.379768</TD>
+                        <TD>11.209952</TD>
+                        <TD>0.379768</TD>
+                        <TD>13.184119</TD>
+                        <TD>0.12439465</TD>
+                        <TD>0.021231651</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.67495</TD>
+                        <TD>13.329745</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>3.2519176</TD>
+                        <TD>1</TD>
+                        <TD>4.4194927</TD>
+                        <TD>2022-06-14 00:02:42.999949+00:00</TD>
+                        <TD>2022-06-14 00:02:42.999949+00:00</TD>
+                        <TD>(2.07156850555726 , 0.29137334237325)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004160011858</TD>
+                        <TD>416</TD>
+                        <TD>412</TD>
+                        <TD>413</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>6</TD>
+                        <TD>9240.842</TD>
+                        <TD>2010.7129</TD>
+                        <TD>0</TD>
+                        <TD>0.97146374</TD>
+                        <TD>118.69083280323584</TD>
+                        <TD>16.69483636722109</TD>
+                        <TD>0.476324</TD>
+                        <TD>0.466088</TD>
+                        <TD>204.50509612441743</TD>
+                        <TD>21.318557053889233</TD>
+                        <TD>117.45715439315683</TD>
+                        <TD>-4.051879424147395</TD>
+                        <TD>-0.4598468714840277</TD>
+                        <TD>0.8402466246757002</TD>
+                        <TD>0.2872741974272056</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>113.279976</TD>
+                        <TD>36.70734</TD>
+                        <TD>1.2463018</TD>
+                        <TD>13.474521</TD>
+                        <TD>0.26194447</TD>
+                        <TD>12.236023</TD>
+                        <TD>0.26293743</TD>
+                        <TD>10.983112</TD>
+                        <TD>0.26293743</TD>
+                        <TD>13.633995</TD>
+                        <TD>-0.15947402</TD>
+                        <TD>0.24806786</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.9884971</TD>
+                        <TD>13.722589</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>1.469168</TD>
+                        <TD>1</TD>
+                        <TD>3.3321261</TD>
+                        <TD>2022-06-14 00:02:43.939720+00:00</TD>
+                        <TD>2022-06-14 00:02:43.939720+00:00</TD>
+                        <TD>(2.07154582435056 , 0.291379862689697)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40417980039678</TD>
+                        <TD>41798</TD>
+                        <TD>28881</TD>
+                        <TD>26491</TD>
+                        <TD>104</TD>
+                        <TD>1</TD>
+                        <TD>3</TD>
+                        <TD>6124.1436</TD>
+                        <TD>6204.246</TD>
+                        <TD>0</TD>
+                        <TD>0.7229822</TD>
+                        <TD>118.69116342691369</TD>
+                        <TD>16.694581622395077</TD>
+                        <TD>0.105252</TD>
+                        <TD>0.125546</TD>
+                        <TD>204.50548139535604</TD>
+                        <TD>21.3187477657348</TD>
+                        <TD>117.45751488460321</TD>
+                        <TD>-4.052068820485529</TD>
+                        <TD>-0.4598523332887858</TD>
+                        <TD>0.8402450915584365</TD>
+                        <TD>0.2872699387001955</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>50.286926</TD>
+                        <TD>26.059435</TD>
+                        <TD>1.112753</TD>
+                        <TD>12.620749</TD>
+                        <TD>0.19909342</TD>
+                        <TD>12.707656</TD>
+                        <TD>0.19912866</TD>
+                        <TD>11.454746</TD>
+                        <TD>0.19912866</TD>
+                        <TD>12.738657</TD>
+                        <TD>-0.117907785</TD>
+                        <TD>-0.22355461</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>0.9306364</TD>
+                        <TD>12.397195</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.3056059</TD>
+                        <TD>1</TD>
+                        <TD>0.8191425</TD>
+                        <TD>2022-06-13 23:41:46.172407+00:00</TD>
+                        <TD>2022-06-13 23:41:46.172407+00:00</TD>
+                        <TD>(2.07155159482232 , 0.291375416553731)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40049490045141</TD>
+                        <TD>4949</TD>
+                        <TD>4928</TD>
+                        <TD>4191</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>4</TD>
+                        <TD>8596.269</TD>
+                        <TD>3195.8633</TD>
+                        <TD>0</TD>
+                        <TD>0.99973845</TD>
+                        <TD>118.691253258349</TD>
+                        <TD>16.69376931766674</TD>
+                        <TD>0.510932</TD>
+                        <TD>0.58739</TD>
+                        <TD>204.50631923182408</TD>
+                        <TD>21.318506823241528</TD>
+                        <TD>117.45775545133333</TD>
+                        <TD>-4.052849602168276</TD>
+                        <TD>-0.45985560590326596</TD>
+                        <TD>0.8402479431770149</TD>
+                        <TD>0.28725635886109874</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>88.62286</TD>
+                        <TD>40.989414</TD>
+                        <TD>1.3233061</TD>
+                        <TD>14.169275</TD>
+                        <TD>0.43029416</TD>
+                        <TD>13.380753</TD>
+                        <TD>0.43074736</TD>
+                        <TD>12.127843</TD>
+                        <TD>0.43074736</TD>
+                        <TD>14.505283</TD>
+                        <TD>-0.33600774</TD>
+                        <TD>-0.8966589</TD>
+                        <TD>2</TD>
+                        <TD>2</TD>
+                        <TD>1.6293529</TD>
+                        <TD>13.272616</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>3.1854577</TD>
+                        <TD>1</TD>
+                        <TD>3.8925524</TD>
+                        <TD>2022-06-14 00:38:18.806038+00:00</TD>
+                        <TD>2022-06-14 00:38:18.806038+00:00</TD>
+                        <TD>(2.07155316267664 , 0.291361239161692)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40052150033084</TD>
+                        <TD>5215</TD>
+                        <TD>5194</TD>
+                        <TD>4413</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>5</TD>
+                        <TD>10122.643</TD>
+                        <TD>1301.4023</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69119800303181</TD>
+                        <TD>16.694431093319462</TD>
+                        <TD>0.247132</TD>
+                        <TD>0.374907</TD>
+                        <TD>204.50564391889435</TD>
+                        <TD>21.318718901341907</TD>
+                        <TD>117.4575763619012</TD>
+                        <TD>-4.052210220150762</TD>
+                        <TD>-0.45985320268170127</TD>
+                        <TD>0.8402454761082299</TD>
+                        <TD>0.28726742220975243</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>90.286705</TD>
+                        <TD>40.953186</TD>
+                        <TD>1.3225832</TD>
+                        <TD>13.915122</TD>
+                        <TD>0.15346228</TD>
+                        <TD>13.213324</TD>
+                        <TD>0.15609238</TD>
+                        <TD>11.960414</TD>
+                        <TD>0.15609238</TD>
+                        <TD>13.891458</TD>
+                        <TD>0.023664173</TD>
+                        <TD>-0.729229</TD>
+                        <TD>2</TD>
+                        <TD>1</TD>
+                        <TD>1.5601345</TD>
+                        <TD>13.185893</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.8031001</TD>
+                        <TD>1</TD>
+                        <TD>2.2451587</TD>
+                        <TD>2022-06-14 00:40:20.611728+00:00</TD>
+                        <TD>2022-06-14 00:40:20.611728+00:00</TD>
+                        <TD>(2.07155219828942 , 0.291372789325741)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40052140003279</TD>
+                        <TD>5214</TD>
+                        <TD>5193</TD>
+                        <TD>4413</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>5</TD>
+                        <TD>10118.122</TD>
+                        <TD>1286.3981</TD>
+                        <TD>0</TD>
+                        <TD>0.99998814</TD>
+                        <TD>118.6911958126061</TD>
+                        <TD>16.69450921022056</TD>
+                        <TD>0.318744</TD>
+                        <TD>0.267762</TD>
+                        <TD>204.50556595874735</TD>
+                        <TD>21.318747748972893</TD>
+                        <TD>117.4575593047058</TD>
+                        <TD>-4.052133952223492</TD>
+                        <TD>-0.45985298252723017</TD>
+                        <TD>0.8402451501161077</TD>
+                        <TD>0.2872687281399954</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>90.41794</TD>
+                        <TD>40.95311</TD>
+                        <TD>1.3225818</TD>
+                        <TD>13.847771</TD>
+                        <TD>0.15349022</TD>
+                        <TD>13.14917</TD>
+                        <TD>0.15611897</TD>
+                        <TD>11.89626</TD>
+                        <TD>0.15611897</TD>
+                        <TD>13.805789</TD>
+                        <TD>0.041981496</TD>
+                        <TD>-0.6650753</TD>
+                        <TD>2</TD>
+                        <TD>1</TD>
+                        <TD>1.5575823</TD>
+                        <TD>13.182695</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.52226746</TD>
+                        <TD>1</TD>
+                        <TD>2.0814312</TD>
+                        <TD>2022-06-14 00:40:20.021541+00:00</TD>
+                        <TD>2022-06-14 00:40:20.021541+00:00</TD>
+                        <TD>(2.07155216005928 , 0.291374152722867)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40055230004967</TD>
+                        <TD>5523</TD>
+                        <TD>5502</TD>
+                        <TD>4599</TD>
+                        <TD>101</TD>
+                        <TD>0</TD>
+                        <TD>9</TD>
+                        <TD>16523.967</TD>
+                        <TD>1177.5363</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69034113342056</TD>
+                        <TD>16.694310950081036</TD>
+                        <TD>0.300489</TD>
+                        <TD>0.373754</TD>
+                        <TD>204.50541534833135</TD>
+                        <TD>21.317917196459348</TD>
+                        <TD>117.45679185420194</TD>
+                        <TD>-4.05248526698941</TD>
+                        <TD>-0.45984092577648455</TD>
+                        <TD>0.8402528816221667</TD>
+                        <TD>0.28726541369728215</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>35.154552</TD>
+                        <TD>36.6294</TD>
+                        <TD>1.2450459</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 00:43:33.576628+00:00</TD>
+                        <TD>2022-06-14 00:43:33.576628+00:00</TD>
+                        <TD>(2.07153724309345 , 0.291370692430657)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40546400013395</TD>
+                        <TD>54640</TD>
+                        <TD>43446</TD>
+                        <TD>49671</TD>
+                        <TD>301</TD>
+                        <TD>0</TD>
+                        <TD>5</TD>
+                        <TD>2335.796</TD>
+                        <TD>1030.873</TD>
+                        <TD>3</TD>
+                        <TD>0.99966633</TD>
+                        <TD>118.69005722242441</TD>
+                        <TD>16.691989521898797</TD>
+                        <TD>0.880237</TD>
+                        <TD>0.835699</TD>
+                        <TD>204.50759070591747</TD>
+                        <TD>21.316752640577885</TD>
+                        <TD>117.45696981096543</TD>
+                        <TD>-4.054815749915029</TD>
+                        <TD>-0.45984234934107165</TD>
+                        <TD>0.8402653695983587</TD>
+                        <TD>0.2872266046281531</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>22.966301</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:33:29.162911+00:00</TD>
+                        <TD>2022-06-14 03:33:29.162911+00:00</TD>
+                        <TD>(2.07153228791178 , 0.291330175865528)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40546450001960</TD>
+                        <TD>54645</TD>
+                        <TD>43451</TD>
+                        <TD>49676</TD>
+                        <TD>301</TD>
+                        <TD>0</TD>
+                        <TD>4</TD>
+                        <TD>2143.183</TD>
+                        <TD>751.19354</TD>
+                        <TD>3</TD>
+                        <TD>0.0004940033</TD>
+                        <TD>118.69335879173973</TD>
+                        <TD>16.6977443077042</TD>
+                        <TD>0.573482</TD>
+                        <TD>0.492698</TD>
+                        <TD>204.5032502180679</TD>
+                        <TD>21.321926494370913</TD>
+                        <TD>117.45897687714535</TD>
+                        <TD>-4.048562143037366</TD>
+                        <TD>-0.4598769140353269</TD>
+                        <TD>0.8402135599316719</TD>
+                        <TD>0.2873228108666127</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>22.611448</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:33:29.837354+00:00</TD>
+                        <TD>2022-06-14 03:33:29.837354+00:00</TD>
+                        <TD>(2.07158991116682 , 0.291430615825579)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40055220006308</TD>
+                        <TD>5522</TD>
+                        <TD>5501</TD>
+                        <TD>4599</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>9</TD>
+                        <TD>16647.627</TD>
+                        <TD>1079.2261</TD>
+                        <TD>0</TD>
+                        <TD>0.9999998</TD>
+                        <TD>118.69084954553193</TD>
+                        <TD>16.694520564237493</TD>
+                        <TD>0.400157</TD>
+                        <TD>0.324045</TD>
+                        <TD>204.50541448818603</TD>
+                        <TD>21.318447375385734</TD>
+                        <TD>117.4572307827579</TD>
+                        <TD>-4.052186306145265</TD>
+                        <TD>-0.4598478771672923</TD>
+                        <TD>0.8402478792851773</TD>
+                        <TD>0.28726891795232046</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>33.57843</TD>
+                        <TD>36.629192</TD>
+                        <TD>1.2450426</TD>
+                        <TD>13.72604</TD>
+                        <TD>0.143564</TD>
+                        <TD>13.131212</TD>
+                        <TD>0.14577176</TD>
+                        <TD>11.878303</TD>
+                        <TD>0.14577176</TD>
+                        <TD>13.759105</TD>
+                        <TD>-0.03306459</TD>
+                        <TD>-0.64711666</TD>
+                        <TD>2</TD>
+                        <TD>1</TD>
+                        <TD>1.4747568</TD>
+                        <TD>13.078923</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>1.3626575</TD>
+                        <TD>1</TD>
+                        <TD>2.5745428</TD>
+                        <TD>2022-06-14 00:43:32.814735+00:00</TD>
+                        <TD>2022-06-14 00:43:32.814735+00:00</TD>
+                        <TD>(2.07154611655875 , 0.291374350887846)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40383500044999</TD>
+                        <TD>38350</TD>
+                        <TD>15536</TD>
+                        <TD>12895</TD>
+                        <TD>102</TD>
+                        <TD>1</TD>
+                        <TD>2</TD>
+                        <TD>5600.3022</TD>
+                        <TD>5696.247</TD>
+                        <TD>0</TD>
+                        <TD>0.9984726</TD>
+                        <TD>118.69115532880161</TD>
+                        <TD>16.69460527330176</TD>
+                        <TD>0.117615</TD>
+                        <TD>0.140203</TD>
+                        <TD>204.5054547801092</TD>
+                        <TD>21.318749954146362</TD>
+                        <TD>117.45750271320281</TD>
+                        <TD>-4.052047092782571</TD>
+                        <TD>-0.45985215760022075</TD>
+                        <TD>0.8402450525315812</TD>
+                        <TD>0.28727033408728786</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>65.950226</TD>
+                        <TD>40.639267</TD>
+                        <TD>1.316375</TD>
+                        <TD>13.410035</TD>
+                        <TD>0.22649415</TD>
+                        <TD>12.348722</TD>
+                        <TD>0.22825408</TD>
+                        <TD>11.095812</TD>
+                        <TD>0.22825408</TD>
+                        <TD>13.40148</TD>
+                        <TD>0.008555313</TD>
+                        <TD>0.1353693</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.8470782</TD>
+                        <TD>13.545404</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.25882274</TD>
+                        <TD>1</TD>
+                        <TD>0.915016</TD>
+                        <TD>2022-06-13 22:11:31.300314+00:00</TD>
+                        <TD>2022-06-13 22:11:31.300314+00:00</TD>
+                        <TD>(2.0715514534836 , 0.291375829339924)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40383610069782</TD>
+                        <TD>38361</TD>
+                        <TD>15547</TD>
+                        <TD>12901</TD>
+                        <TD>102</TD>
+                        <TD>1</TD>
+                        <TD>2</TD>
+                        <TD>5686.4297</TD>
+                        <TD>5618.92</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69124358769417</TD>
+                        <TD>16.694679947515603</TD>
+                        <TD>0.135876</TD>
+                        <TD>0.123249</TD>
+                        <TD>204.50541685633848</TD>
+                        <TD>21.318857075178183</TD>
+                        <TD>117.45757156152</TD>
+                        <TD>-4.051957617311297</TD>
+                        <TD>-0.45985327217299826</TD>
+                        <TD>0.8402440157365637</TD>
+                        <TD>0.2872715824627971</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>65.64958</TD>
+                        <TD>38.182262</TD>
+                        <TD>1.2710011</TD>
+                        <TD>13.531795</TD>
+                        <TD>0.18143621</TD>
+                        <TD>12.597422</TD>
+                        <TD>0.18254338</TD>
+                        <TD>11.344512</TD>
+                        <TD>0.18254338</TD>
+                        <TD>13.393002</TD>
+                        <TD>0.1387933</TD>
+                        <TD>-0.11332893</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.7457619</TD>
+                        <TD>13.418466</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.14717686</TD>
+                        <TD>1</TD>
+                        <TD>0.91723233</TD>
+                        <TD>2022-06-13 22:11:46.778793+00:00</TD>
+                        <TD>2022-06-13 22:11:46.778793+00:00</TD>
+                        <TD>(2.07155299389187 , 0.291377132650821)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40447210001979</TD>
+                        <TD>44721</TD>
+                        <TD>19193</TD>
+                        <TD>15991</TD>
+                        <TD>103</TD>
+                        <TD>0</TD>
+                        <TD>9</TD>
+                        <TD>5822.594</TD>
+                        <TD>482.58334</TD>
+                        <TD>2</TD>
+                        <TD>0.13545477</TD>
+                        <TD>118.69137162522888</TD>
+                        <TD>16.691654136573568</TD>
+                        <TD>0.284601</TD>
+                        <TD>0.248465</TD>
+                        <TD>204.50845407494054</TD>
+                        <TD>21.317777684121076</TD>
+                        <TD>117.45827297392842</TD>
+                        <TD>-4.054903887894833</TD>
+                        <TD>-0.45986243263081283</TD>
+                        <TD>0.8402562951478064</TD>
+                        <TD>0.2872209976992518</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>12.585564</TD>
+                        <TD>44.1029</TD>
+                        <TD>1.3906478</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:08:12.203162+00:00</TD>
+                        <TD>2022-06-14 03:08:12.203162+00:00</TD>
+                        <TD>(2.07155522856842 , 0.29132432228734)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40552410015098</TD>
+                        <TD>55241</TD>
+                        <TD>44047</TD>
+                        <TD>50272</TD>
+                        <TD>301</TD>
+                        <TD>1</TD>
+                        <TD>2</TD>
+                        <TD>1232.4983</TD>
+                        <TD>1467.0076</TD>
+                        <TD>0</TD>
+                        <TD>0.003558904</TD>
+                        <TD>118.69229949012413</TD>
+                        <TD>16.694802249317604</TD>
+                        <TD>2.71516</TD>
+                        <TD>2.34886</TD>
+                        <TD>204.5057239193256</TD>
+                        <TD>21.319834854673744</TD>
+                        <TD>117.45854323110945</TD>
+                        <TD>-4.051643948486665</TD>
+                        <TD>-0.45986846252770397</TD>
+                        <TD>0.8402350030614549</TD>
+                        <TD>0.28727362705741444</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>110.08325</TD>
+                        <TD>44.940453</TD>
+                        <TD>1.4106728</TD>
+                        <TD>12.168263</TD>
+                        <TD>0.28884786</TD>
+                        <TD>11.636349</TD>
+                        <TD>0.28924358</TD>
+                        <TD>10.383439</TD>
+                        <TD>0.28924358</TD>
+                        <TD>12.053675</TD>
+                        <TD>0.11458907</TD>
+                        <TD>0.84774685</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.4245431</TD>
+                        <TD>13.01601</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>3.7542818</TD>
+                        <TD>1</TD>
+                        <TD>17.950792</TD>
+                        <TD>2022-06-14 03:34:25.110345+00:00</TD>
+                        <TD>2022-06-14 03:34:25.110345+00:00</TD>
+                        <TD>(2.07157142286585 , 0.291379267219947)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40447170005337</TD>
+                        <TD>44717</TD>
+                        <TD>19189</TD>
+                        <TD>15989</TD>
+                        <TD>103</TD>
+                        <TD>0</TD>
+                        <TD>9</TD>
+                        <TD>5801.029</TD>
+                        <TD>536.4849</TD>
+                        <TD>3</TD>
+                        <TD>2.0514903e-12</TD>
+                        <TD>118.6871575400707</TD>
+                        <TD>16.695435771925077</TD>
+                        <TD>0.266361</TD>
+                        <TD>0.248795</TD>
+                        <TD>204.50301595333679</TD>
+                        <TD>21.315557586512764</TD>
+                        <TD>117.45357557467037</TD>
+                        <TD>-4.051965037737393</TD>
+                        <TD>-0.45979152987507443</TD>
+                        <TD>0.8402734835333261</TD>
+                        <TD>0.2872842180244289</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>13.740055</TD>
+                        <TD>39.02996</TD>
+                        <TD>1.2860335</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:08:11.340345+00:00</TD>
+                        <TD>2022-06-14 03:08:11.340345+00:00</TD>
+                        <TD>(2.07148167890745 , 0.291390324275334)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40447170005306</TD>
+                        <TD>44717</TD>
+                        <TD>19189</TD>
+                        <TD>15989</TD>
+                        <TD>103</TD>
+                        <TD>0</TD>
+                        <TD>9</TD>
+                        <TD>5813.826</TD>
+                        <TD>529.83295</TD>
+                        <TD>1</TD>
+                        <TD>1.0982381e-13</TD>
+                        <TD>118.69212783843209</TD>
+                        <TD>16.69673047335245</TD>
+                        <TD>0.266361</TD>
+                        <TD>0.248795</TD>
+                        <TD>204.50375190761224</TD>
+                        <TD>21.320443387803827</TD>
+                        <TD>117.45801136734816</TD>
+                        <TD>-4.049782929466607</TD>
+                        <TD>-0.4598613034447416</TD>
+                        <TD>0.8402278995266208</TD>
+                        <TD>0.2873058621942584</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>4.4702864</TD>
+                        <TD>39.027344</TD>
+                        <TD>1.2859861</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:08:11.340345+00:00</TD>
+                        <TD>2022-06-14 03:08:11.340345+00:00</TD>
+                        <TD>(2.07156842697866 , 0.291412921078072)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40447170005281</TD>
+                        <TD>44717</TD>
+                        <TD>19189</TD>
+                        <TD>15989</TD>
+                        <TD>103</TD>
+                        <TD>0</TD>
+                        <TD>9</TD>
+                        <TD>5817.3315</TD>
+                        <TD>528.35504</TD>
+                        <TD>1</TD>
+                        <TD>3.452111e-17</TD>
+                        <TD>118.69373286172869</TD>
+                        <TD>16.697011904466162</TD>
+                        <TD>0.266361</TD>
+                        <TD>0.248795</TD>
+                        <TD>204.50412437921597</TD>
+                        <TD>21.321967284935166</TD>
+                        <TD>117.45946999329344</TD>
+                        <TD>-4.049212374646529</TD>
+                        <TD>-0.4598841629489974</TD>
+                        <TD>0.840213779201038</TD>
+                        <TD>0.287310566999213</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>5.62644</TD>
+                        <TD>39.026627</TD>
+                        <TD>1.2859732</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:08:11.340345+00:00</TD>
+                        <TD>2022-06-14 03:08:11.340345+00:00</TD>
+                        <TD>(2.07159643991976 , 0.291417832977623)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40417990074965</TD>
+                        <TD>41799</TD>
+                        <TD>28882</TD>
+                        <TD>26491</TD>
+                        <TD>104</TD>
+                        <TD>0</TD>
+                        <TD>3</TD>
+                        <TD>6152.2104</TD>
+                        <TD>6183.373</TD>
+                        <TD>4</TD>
+                        <TD>0.0007921457</TD>
+                        <TD>118.6915783683876</TD>
+                        <TD>16.69485926528141</TD>
+                        <TD>0.0799858</TD>
+                        <TD>0.0516564</TD>
+                        <TD>204.50537554943102</TD>
+                        <TD>21.319222455667816</TD>
+                        <TD>117.45785266191017</TD>
+                        <TD>-4.051720229974119</TD>
+                        <TD>-0.4598577500915308</TD>
+                        <TD>0.8402405401047918</TD>
+                        <TD>0.28727458022798175</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>49.561718</TD>
+                        <TD>26.059431</TD>
+                        <TD>1.112753</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD></TD>
+                        <TD>2022-06-13 23:41:47.288362+00:00</TD>
+                        <TD>2022-06-13 23:41:47.288362+00:00</TD>
+                        <TD>(2.07155883691724 , 0.291380262336242)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40383580051796</TD>
+                        <TD>38358</TD>
+                        <TD>15544</TD>
+                        <TD>12899</TD>
+                        <TD>102</TD>
+                        <TD>1</TD>
+                        <TD>3</TD>
+                        <TD>5776.744</TD>
+                        <TD>5519.287</TD>
+                        <TD>0</TD>
+                        <TD>0.9999922</TD>
+                        <TD>118.6912412652212</TD>
+                        <TD>16.69461143746092</TD>
+                        <TD>0.115431</TD>
+                        <TD>0.148891</TD>
+                        <TD>204.50548351000882</TD>
+                        <TD>21.31882803940423</TD>
+                        <TD>117.45758252168415</TD>
+                        <TD>-4.052025283947023</TD>
+                        <TD>-0.4598534030233475</TD>
+                        <TD>0.8402443356992829</TD>
+                        <TD>0.28727043713740785</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>89.92418</TD>
+                        <TD>43.436428</TD>
+                        <TD>1.3753202</TD>
+                        <TD>13.041356</TD>
+                        <TD>0.2254035</TD>
+                        <TD>12.097865</TD>
+                        <TD>0.22604221</TD>
+                        <TD>10.844955</TD>
+                        <TD>0.22604221</TD>
+                        <TD>13.01318</TD>
+                        <TD>0.028176159</TD>
+                        <TD>0.3862276</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.7530397</TD>
+                        <TD>13.427584</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.18032217</TD>
+                        <TD>1</TD>
+                        <TD>0.94197726</TD>
+                        <TD>2022-06-13 22:11:44.148064+00:00</TD>
+                        <TD>2022-06-13 22:11:44.148064+00:00</TD>
+                        <TD>(2.07155295335707 , 0.291375936924796)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40546400013364</TD>
+                        <TD>54640</TD>
+                        <TD>43446</TD>
+                        <TD>49671</TD>
+                        <TD>301</TD>
+                        <TD>0</TD>
+                        <TD>5</TD>
+                        <TD>2331.8481</TD>
+                        <TD>1036.3936</TD>
+                        <TD>3</TD>
+                        <TD>2.2894224e-13</TD>
+                        <TD>118.69000740180135</TD>
+                        <TD>16.698368871524607</TD>
+                        <TD>0.880237</TD>
+                        <TD>0.835699</TD>
+                        <TD>204.50127646542825</TD>
+                        <TD>21.319222069090134</TD>
+                        <TD>117.45569852938372</TD>
+                        <TD>-4.048563719186815</TD>
+                        <TD>-0.4598262631972431</TD>
+                        <TD>0.840237710427504</TD>
+                        <TD>0.2873332519037882</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>22.966301</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:33:29.162911+00:00</TD>
+                        <TD>2022-06-14 03:33:29.162911+00:00</TD>
+                        <TD>(2.07153141837787 , 0.291441516520634)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40383620043685</TD>
+                        <TD>38362</TD>
+                        <TD>15548</TD>
+                        <TD>12901</TD>
+                        <TD>102</TD>
+                        <TD>1</TD>
+                        <TD>2</TD>
+                        <TD>5675.5146</TD>
+                        <TD>5628.042</TD>
+                        <TD>0</TD>
+                        <TD>0.9999906</TD>
+                        <TD>118.6911733976513</TD>
+                        <TD>16.694674814897994</TD>
+                        <TD>0.111575</TD>
+                        <TD>0.137678</TD>
+                        <TD>204.50539348736277</TD>
+                        <TD>21.318793259134743</TD>
+                        <TD>117.45750639540245</TD>
+                        <TD>-4.051975526170259</TD>
+                        <TD>-0.4598522551885871</TD>
+                        <TD>0.840244601652431</TD>
+                        <TD>0.28727149665763607</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>65.559654</TD>
+                        <TD>38.18228</TD>
+                        <TD>1.2710013</TD>
+                        <TD>13.532842</TD>
+                        <TD>0.19911556</TD>
+                        <TD>12.600942</TD>
+                        <TD>0.19997025</TD>
+                        <TD>11.348032</TD>
+                        <TD>0.19997025</TD>
+                        <TD>13.46981</TD>
+                        <TD>0.06303229</TD>
+                        <TD>-0.116848946</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.7437886</TD>
+                        <TD>13.415993</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.1544295</TD>
+                        <TD>1</TD>
+                        <TD>0.8860617</TD>
+                        <TD>2022-06-13 22:11:47.727080+00:00</TD>
+                        <TD>2022-06-13 22:11:47.727080+00:00</TD>
+                        <TD>(2.07155176884452 , 0.291377043069745)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004310010018</TD>
+                        <TD>431</TD>
+                        <TD>427</TD>
+                        <TD>422</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>4</TD>
+                        <TD>7821.233</TD>
+                        <TD>4055.8533</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69138519685815</TD>
+                        <TD>16.694623419693528</TD>
+                        <TD>0.485462</TD>
+                        <TD>0.431547</TD>
+                        <TD>204.50552999264963</TD>
+                        <TD>21.31895947469189</TD>
+                        <TD>117.45771587159342</TD>
+                        <TD>-4.051987129669228</TD>
+                        <TD>-0.4598554849413678</TD>
+                        <TD>0.8402431278072524</TD>
+                        <TD>0.2872706374519067</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>88.567474</TD>
+                        <TD>40.633343</TD>
+                        <TD>1.3162588</TD>
+                        <TD>13.7231</TD>
+                        <TD>0.3319763</TD>
+                        <TD>12.490243</TD>
+                        <TD>0.33237877</TD>
+                        <TD>11.237332</TD>
+                        <TD>0.33237877</TD>
+                        <TD>13.732522</TD>
+                        <TD>-0.009421901</TD>
+                        <TD>-0.006152153</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.983995</TD>
+                        <TD>13.716948</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.60803676</TD>
+                        <TD>1</TD>
+                        <TD>3.2477152</TD>
+                        <TD>2022-06-14 00:02:48.786065+00:00</TD>
+                        <TD>2022-06-14 00:02:48.786065+00:00</TD>
+                        <TD>(2.07155546543803 , 0.291376146054207)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004360021678</TD>
+                        <TD>436</TD>
+                        <TD>432</TD>
+                        <TD>425</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>3</TD>
+                        <TD>7180.971</TD>
+                        <TD>7021.011</TD>
+                        <TD>0</TD>
+                        <TD>0.00014331937</TD>
+                        <TD>118.69147982389147</TD>
+                        <TD>16.695419699887683</TD>
+                        <TD>0.397416</TD>
+                        <TD>0.63438</TD>
+                        <TD>204.5047826833307</TD>
+                        <TD>21.319356493278278</TD>
+                        <TD>117.45765222417567</TD>
+                        <TD>-4.051188249979526</TD>
+                        <TD>-0.45985495587703346</TD>
+                        <TD>0.8402388660419023</TD>
+                        <TD>0.28728394933923795</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>88.24899</TD>
+                        <TD>37.545235</TD>
+                        <TD>1.2601123</TD>
+                        <TD>12.892298</TD>
+                        <TD>0.41631502</TD>
+                        <TD>11.911817</TD>
+                        <TD>0.4164507</TD>
+                        <TD>10.658907</TD>
+                        <TD>0.4164507</TD>
+                        <TD>12.5439825</TD>
+                        <TD>0.34831545</TD>
+                        <TD>0.5722761</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.7825631</TD>
+                        <TD>13.464574</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>2.9038186</TD>
+                        <TD>1</TD>
+                        <TD>3.742918</TD>
+                        <TD>2022-06-14 00:02:49.691204+00:00</TD>
+                        <TD>2022-06-14 00:02:49.691204+00:00</TD>
+                        <TD>(2.07155711699133 , 0.291390043765364)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004390009029</TD>
+                        <TD>439</TD>
+                        <TD>435</TD>
+                        <TD>426</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>4</TD>
+                        <TD>7179.3174</TD>
+                        <TD>4261.799</TD>
+                        <TD>0</TD>
+                        <TD>1.2374716e-05</TD>
+                        <TD>118.69157696469848</TD>
+                        <TD>16.69467719606364</TD>
+                        <TD>0.491253</TD>
+                        <TD>0.435049</TD>
+                        <TD>204.5055546173662</TD>
+                        <TD>21.31914948979025</TD>
+                        <TD>117.45788628353496</TD>
+                        <TD>-4.051899183266866</TD>
+                        <TD>-0.45985816777024185</TD>
+                        <TD>0.8402413521554373</TD>
+                        <TD>0.2872715364650636</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>90.114716</TD>
+                        <TD>37.54525</TD>
+                        <TD>1.2601125</TD>
+                        <TD>13.537365</TD>
+                        <TD>0.3047648</TD>
+                        <TD>12.398876</TD>
+                        <TD>0.30554962</TD>
+                        <TD>11.145967</TD>
+                        <TD>0.30554962</TD>
+                        <TD>13.510405</TD>
+                        <TD>0.026960194</TD>
+                        <TD>0.085214615</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.9086753</TD>
+                        <TD>13.62258</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>1.2650036</TD>
+                        <TD>1</TD>
+                        <TD>3.280995</TD>
+                        <TD>2022-06-14 00:02:50.692429+00:00</TD>
+                        <TD>2022-06-14 00:02:50.692429+00:00</TD>
+                        <TD>(2.07155881241825 , 0.291377084628925)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004380013218</TD>
+                        <TD>438</TD>
+                        <TD>434</TD>
+                        <TD>426</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>4</TD>
+                        <TD>7216.508</TD>
+                        <TD>4225.7515</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69179628698829</TD>
+                        <TD>16.694475624153657</TD>
+                        <TD>0.57418</TD>
+                        <TD>0.733498</TD>
+                        <TD>204.5058423405181</TD>
+                        <TD>21.31926316318333</TD>
+                        <TD>117.4581316735493</TD>
+                        <TD>-4.052056800876808</TD>
+                        <TD>-0.4598618693306501</TD>
+                        <TD>0.8402404784104142</TD>
+                        <TD>0.28726816666028</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>90.23654</TD>
+                        <TD>37.545483</TD>
+                        <TD>1.2601165</TD>
+                        <TD>13.34553</TD>
+                        <TD>0.35394922</TD>
+                        <TD>12.225047</TD>
+                        <TD>0.35450235</TD>
+                        <TD>10.972137</TD>
+                        <TD>0.35450235</TD>
+                        <TD>13.259529</TD>
+                        <TD>0.08600076</TD>
+                        <TD>0.2590437</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.8943037</TD>
+                        <TD>13.604573</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>2.1119041</TD>
+                        <TD>1</TD>
+                        <TD>4.6575265</TD>
+                        <TD>2022-06-14 00:02:50.488846+00:00</TD>
+                        <TD>2022-06-14 00:02:50.488846+00:00</TD>
+                        <TD>(2.07156264031433 , 0.291373566535417)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004170024516</TD>
+                        <TD>417</TD>
+                        <TD>413</TD>
+                        <TD>413</TD>
+                        <TD>101</TD>
+                        <TD>0</TD>
+                        <TD>6</TD>
+                        <TD>9220.575</TD>
+                        <TD>2026.1426</TD>
+                        <TD>3</TD>
+                        <TD>4.531553e-11</TD>
+                        <TD>118.69018048206495</TD>
+                        <TD>16.697441690978252</TD>
+                        <TD>0.489963</TD>
+                        <TD>0.483521</TD>
+                        <TD>204.50226137201813</TD>
+                        <TD>21.319009174974948</TD>
+                        <TD>117.45603959134665</TD>
+                        <TD>-4.0494419855265225</TD>
+                        <TD>-0.4598310335519324</TD>
+                        <TD>0.8402404001349373</TD>
+                        <TD>0.287317751911785</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>12.603565</TD>
+                        <TD>36.7047</TD>
+                        <TD>1.2462591</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 00:02:44.185423+00:00</TD>
+                        <TD>2022-06-14 00:02:44.185423+00:00</TD>
+                        <TD>(2.07153443919834 , 0.29142533416734)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004210068430</TD>
+                        <TD>421</TD>
+                        <TD>417</TD>
+                        <TD>415</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>4</TD>
+                        <TD>9272.287</TD>
+                        <TD>4971.4297</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69222203370387</TD>
+                        <TD>16.694796957094304</TD>
+                        <TD>0.882455</TD>
+                        <TD>0.753718</TD>
+                        <TD>204.50569776441338</TD>
+                        <TD>21.319764578536812</TD>
+                        <TD>117.4584712475653</TD>
+                        <TD>-4.051663346946035</TD>
+                        <TD>-0.4598673393784995</TD>
+                        <TD>0.8402356480192446</TD>
+                        <TD>0.2872735385840822</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>36.392723</TD>
+                        <TD>42.796528</TD>
+                        <TD>1.3610883</TD>
+                        <TD>13.360606</TD>
+                        <TD>0.38608462</TD>
+                        <TD>12.332705</TD>
+                        <TD>0.38627976</TD>
+                        <TD>11.079795</TD>
+                        <TD>0.38627976</TD>
+                        <TD>12.952184</TD>
+                        <TD>0.4084223</TD>
+                        <TD>0.15138721</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.8204111</TD>
+                        <TD>13.511993</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>3.512253</TD>
+                        <TD>1</TD>
+                        <TD>5.8026237</TD>
+                        <TD>2022-06-14 00:02:46.129319+00:00</TD>
+                        <TD>2022-06-14 00:02:46.129319+00:00</TD>
+                        <TD>(2.07157007099629 , 0.291379174853226)</TD>
+                    </TR>
+                    <TR>
+                        <TD>41033980009513</TD>
+                        <TD>103398</TD>
+                        <TD>113377</TD>
+                        <TD>88825</TD>
+                        <TD>208</TD>
+                        <TD>1</TD>
+                        <TD>3</TD>
+                        <TD>2472.8926</TD>
+                        <TD>3077.8555</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69129500228048</TD>
+                        <TD>16.694816489025424</TD>
+                        <TD>0.507899</TD>
+                        <TD>0.52057</TD>
+                        <TD>204.5053029667995</TD>
+                        <TD>21.318956133146308</TD>
+                        <TD>117.45759381145568</TD>
+                        <TD>-4.051814177223156</TD>
+                        <TD>-0.4598536974995456</TD>
+                        <TD>0.8402430025415321</TD>
+                        <TD>0.2872738651113032</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>87.496315</TD>
+                        <TD>45.076694</TD>
+                        <TD>1.4140134</TD>
+                        <TD>13.224837</TD>
+                        <TD>0.18724799</TD>
+                        <TD>12.374485</TD>
+                        <TD>0.18852338</TD>
+                        <TD>11.121574</TD>
+                        <TD>0.18852338</TD>
+                        <TD>13.181022</TD>
+                        <TD>0.043815553</TD>
+                        <TD>0.10960865</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.678702</TD>
+                        <TD>13.334446</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.65497434</TD>
+                        <TD>1</TD>
+                        <TD>3.636463</TD>
+                        <TD>2022-06-13 15:44:25.585427+00:00</TD>
+                        <TD>2022-06-13 15:44:25.585427+00:00</TD>
+                        <TD>(2.07155389124569 , 0.291379515749733)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004370016953</TD>
+                        <TD>437</TD>
+                        <TD>433</TD>
+                        <TD>425</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>3</TD>
+                        <TD>7241.2544</TD>
+                        <TD>7010.0396</TD>
+                        <TD>0</TD>
+                        <TD>0.11237031</TD>
+                        <TD>118.69118354577988</TD>
+                        <TD>16.694867914234198</TD>
+                        <TD>0.337111</TD>
+                        <TD>0.243309</TD>
+                        <TD>204.50520707946134</TD>
+                        <TD>21.31887826916479</TD>
+                        <TD>117.45747889850082</TD>
+                        <TD>-4.0517841434958966</TD>
+                        <TD>-0.4598519392023269</TD>
+                        <TD>0.8402436709031119</TD>
+                        <TD>0.2872747248177645</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>16.763126</TD>
+                        <TD>37.54573</TD>
+                        <TD>1.2601206</TD>
+                        <TD>12.857839</TD>
+                        <TD>0.40301946</TD>
+                        <TD>11.8920765</TD>
+                        <TD>0.40337554</TD>
+                        <TD>10.639166</TD>
+                        <TD>0.40337554</TD>
+                        <TD>12.3847275</TD>
+                        <TD>0.47311082</TD>
+                        <TD>0.5920162</TD>
+                        <TD>0</TD>
+                        <TD>2</TD>
+                        <TD>1.7708153</TD>
+                        <TD>13.449855</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.7747602</TD>
+                        <TD>1</TD>
+                        <TD>2.07872</TD>
+                        <TD>2022-06-14 00:02:50.098345+00:00</TD>
+                        <TD>2022-06-14 00:02:50.098345+00:00</TD>
+                        <TD>(2.07155194596278 , 0.291380413288945)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004300024257</TD>
+                        <TD>430</TD>
+                        <TD>426</TD>
+                        <TD>422</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>4</TD>
+                        <TD>7857.0483</TD>
+                        <TD>4039.0144</TD>
+                        <TD>0</TD>
+                        <TD>0.9999902</TD>
+                        <TD>118.69133451048876</TD>
+                        <TD>16.6946883326541</TD>
+                        <TD>0.515406</TD>
+                        <TD>0.453235</TD>
+                        <TD>204.50544541479877</TD>
+                        <TD>21.31894042533652</TD>
+                        <TD>117.45765564313082</TD>
+                        <TD>-4.051932714212934</TD>
+                        <TD>-0.45985458537359813</TD>
+                        <TD>0.84024324911359</TD>
+                        <TD>0.2872717226423682</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>88.447464</TD>
+                        <TD>40.633297</TD>
+                        <TD>1.316258</TD>
+                        <TD>13.852653</TD>
+                        <TD>0.37944558</TD>
+                        <TD>12.620194</TD>
+                        <TD>0.37981933</TD>
+                        <TD>11.367285</TD>
+                        <TD>0.37981933</TD>
+                        <TD>13.849416</TD>
+                        <TD>0.0032367758</TD>
+                        <TD>-0.13610363</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.9836766</TD>
+                        <TD>13.716549</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.44212154</TD>
+                        <TD>1</TD>
+                        <TD>3.43171</TD>
+                        <TD>2022-06-14 00:02:48.501695+00:00</TD>
+                        <TD>2022-06-14 00:02:48.501695+00:00</TD>
+                        <TD>(2.071554580794 , 0.291377278999096)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004780102340</TD>
+                        <TD>478</TD>
+                        <TD>474</TD>
+                        <TD>446</TD>
+                        <TD>101</TD>
+                        <TD>0</TD>
+                        <TD>2</TD>
+                        <TD>5426.4634</TD>
+                        <TD>9855.183</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69003213214935</TD>
+                        <TD>16.694720644959226</TD>
+                        <TD>0.349172</TD>
+                        <TD>0.231253</TD>
+                        <TD>204.50488595960903</TD>
+                        <TD>21.3178065680193</TD>
+                        <TD>117.45642200322686</TD>
+                        <TD>-4.052139824540662</TD>
+                        <TD>-0.4598354080861384</TD>
+                        <TD>0.8402535596356597</TD>
+                        <TD>0.28727226282719576</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>81.4923</TD>
+                        <TD>37.23993</TD>
+                        <TD>1.255014</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 00:03:05.902036+00:00</TD>
+                        <TD>2022-06-14 00:03:05.902036+00:00</TD>
+                        <TD>(2.07153185000387 , 0.29137784295521)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004770167485</TD>
+                        <TD>477</TD>
+                        <TD>473</TD>
+                        <TD>446</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>2</TD>
+                        <TD>5339.58</TD>
+                        <TD>9913.074</TD>
+                        <TD>0</TD>
+                        <TD>0.99999964</TD>
+                        <TD>118.69132799891847</TD>
+                        <TD>16.694937873701342</TD>
+                        <TD>0.221132</TD>
+                        <TD>0.382944</TD>
+                        <TD>204.50519657055546</TD>
+                        <TD>21.31903300483356</TD>
+                        <TD>117.45760161221864</TD>
+                        <TD>-4.051688990612752</TD>
+                        <TD>-0.4598538892075089</TD>
+                        <TD>0.8402422038277508</TD>
+                        <TD>0.28727589437231293</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>81.81245</TD>
+                        <TD>37.239517</TD>
+                        <TD>1.255007</TD>
+                        <TD>13.46758</TD>
+                        <TD>0.20659502</TD>
+                        <TD>12.3396845</TD>
+                        <TD>0.20681599</TD>
+                        <TD>11.086775</TD>
+                        <TD>0.20681599</TD>
+                        <TD>13.487033</TD>
+                        <TD>-0.019452669</TD>
+                        <TD>0.14440632</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.9002203</TD>
+                        <TD>13.611986</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>1.0945024</TD>
+                        <TD>1</TD>
+                        <TD>2.2110262</TD>
+                        <TD>2022-06-14 00:03:03.958462+00:00</TD>
+                        <TD>2022-06-14 00:03:03.958462+00:00</TD>
+                        <TD>(2.07155446714566 , 0.29138163431199)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40049480015720</TD>
+                        <TD>4948</TD>
+                        <TD>4927</TD>
+                        <TD>4191</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>4</TD>
+                        <TD>8707.361</TD>
+                        <TD>3042.9578</TD>
+                        <TD>0</TD>
+                        <TD>0.39527288</TD>
+                        <TD>118.6908077376961</TD>
+                        <TD>16.69423925414521</TD>
+                        <TD>0.55977</TD>
+                        <TD>0.53265</TD>
+                        <TD>204.50567510173548</TD>
+                        <TD>21.318299739294453</TD>
+                        <TD>117.45724537112864</TD>
+                        <TD>-4.052470071012102</TD>
+                        <TD>-0.459847941168664</TD>
+                        <TD>0.8402494520799374</TD>
+                        <TD>0.2872642151092021</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>88.5496</TD>
+                        <TD>40.988823</TD>
+                        <TD>1.3232943</TD>
+                        <TD>14.232369</TD>
+                        <TD>0.4402553</TD>
+                        <TD>13.384107</TD>
+                        <TD>0.44073588</TD>
+                        <TD>12.131197</TD>
+                        <TD>0.44073588</TD>
+                        <TD>14.546781</TD>
+                        <TD>-0.31441146</TD>
+                        <TD>-0.90001297</TD>
+                        <TD>2</TD>
+                        <TD>2</TD>
+                        <TD>1.6770339</TD>
+                        <TD>13.332356</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>2.0386472</TD>
+                        <TD>1</TD>
+                        <TD>3.863478</TD>
+                        <TD>2022-06-14 00:38:18.046299+00:00</TD>
+                        <TD>2022-06-14 00:38:18.046299+00:00</TD>
+                        <TD>(2.07154538687436 , 0.291369441100516)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40447210001995</TD>
+                        <TD>44721</TD>
+                        <TD>19193</TD>
+                        <TD>15991</TD>
+                        <TD>103</TD>
+                        <TD>0</TD>
+                        <TD>9</TD>
+                        <TD>5836.989</TD>
+                        <TD>472.74646</TD>
+                        <TD>3</TD>
+                        <TD>8.582765e-10</TD>
+                        <TD>118.69484566354873</TD>
+                        <TD>16.69272591218534</TD>
+                        <TD>0.284601</TD>
+                        <TD>0.248465</TD>
+                        <TD>204.50880396773147</TD>
+                        <TD>21.32125844585559</TD>
+                        <TD>117.46134143736627</TD>
+                        <TD>-4.053214859942367</TD>
+                        <TD>-0.4599107996054075</TD>
+                        <TD>0.8402236975024733</TD>
+                        <TD>0.28723891547209773</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>12.585564</TD>
+                        <TD>44.100433</TD>
+                        <TD>1.39059</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:08:12.203162+00:00</TD>
+                        <TD>2022-06-14 03:08:12.203162+00:00</TD>
+                        <TD>(2.07161586197544 , 0.291343028300608)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40383570074325</TD>
+                        <TD>38357</TD>
+                        <TD>15543</TD>
+                        <TD>12899</TD>
+                        <TD>102</TD>
+                        <TD>1</TD>
+                        <TD>3</TD>
+                        <TD>5784.5693</TD>
+                        <TD>5512.9316</TD>
+                        <TD>0</TD>
+                        <TD>1.0</TD>
+                        <TD>118.69132943460978</TD>
+                        <TD>16.69465689154289</TD>
+                        <TD>0.148442</TD>
+                        <TD>0.123384</TD>
+                        <TD>204.505474379581</TD>
+                        <TD>21.31892356969318</TD>
+                        <TD>117.45765689377252</TD>
+                        <TD>-4.051964503609936</TD>
+                        <TD>-0.4598545866175088</TD>
+                        <TD>0.8402434281376651</TD>
+                        <TD>0.2872711970217419</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>90.019325</TD>
+                        <TD>43.43635</TD>
+                        <TD>1.3753184</TD>
+                        <TD>13.067129</TD>
+                        <TD>0.19710407</TD>
+                        <TD>12.131195</TD>
+                        <TD>0.1979238</TD>
+                        <TD>10.878284</TD>
+                        <TD>0.1979238</TD>
+                        <TD>12.956125</TD>
+                        <TD>0.11100404</TD>
+                        <TD>0.35289764</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.7470084</TD>
+                        <TD>13.420027</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.40599477</TD>
+                        <TD>1</TD>
+                        <TD>0.9651249</TD>
+                        <TD>2022-06-13 22:11:43.194908+00:00</TD>
+                        <TD>2022-06-13 22:11:43.194908+00:00</TD>
+                        <TD>(2.0715544922032 , 0.291376730248185)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40383490064999</TD>
+                        <TD>38349</TD>
+                        <TD>15535</TD>
+                        <TD>12895</TD>
+                        <TD>102</TD>
+                        <TD>1</TD>
+                        <TD>2</TD>
+                        <TD>5632.8203</TD>
+                        <TD>5665.793</TD>
+                        <TD>0</TD>
+                        <TD>0.9999965</TD>
+                        <TD>118.69124004641905</TD>
+                        <TD>16.694600608319988</TD>
+                        <TD>0.14144</TD>
+                        <TD>0.127168</TD>
+                        <TD>204.50549370070422</TD>
+                        <TD>21.318822700002553</TD>
+                        <TD>117.45758345142877</TD>
+                        <TD>-4.05203613595478</TD>
+                        <TD>-0.45985341121617046</TD>
+                        <TD>0.8402443931102278</TD>
+                        <TD>0.28727025609985535</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>65.90199</TD>
+                        <TD>40.639244</TD>
+                        <TD>1.3163745</TD>
+                        <TD>13.441426</TD>
+                        <TD>0.20220758</TD>
+                        <TD>12.37989</TD>
+                        <TD>0.2043652</TD>
+                        <TD>11.12698</TD>
+                        <TD>0.2043652</TD>
+                        <TD>13.364537</TD>
+                        <TD>0.076888606</TD>
+                        <TD>0.10420132</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>1.8472563</TD>
+                        <TD>13.545628</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>0.21152566</TD>
+                        <TD>1</TD>
+                        <TD>0.95101225</TD>
+                        <TD>2022-06-13 22:11:30.383760+00:00</TD>
+                        <TD>2022-06-13 22:11:30.383760+00:00</TD>
+                        <TD>(2.07155293208496 , 0.291375747920632)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40004170024500</TD>
+                        <TD>417</TD>
+                        <TD>413</TD>
+                        <TD>413</TD>
+                        <TD>101</TD>
+                        <TD>1</TD>
+                        <TD>6</TD>
+                        <TD>9224.362</TD>
+                        <TD>2022.6543</TD>
+                        <TD>2</TD>
+                        <TD>6.1417144e-05</TD>
+                        <TD>118.69156064716361</TD>
+                        <TD>16.694199886522032</TD>
+                        <TD>0.489963</TD>
+                        <TD>0.483521</TD>
+                        <TD>204.5060189385706</TD>
+                        <TD>21.3189470768312</TD>
+                        <TD>117.45796251497941</TD>
+                        <TD>-4.052370641652968</TD>
+                        <TD>-0.45985907739605747</TD>
+                        <TD>0.8402435824037924</TD>
+                        <TD>0.28726355697458067</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>12.603565</TD>
+                        <TD>36.708015</TD>
+                        <TD>1.2463126</TD>
+                        <TD>13.57922</TD>
+                        <TD>0.25643408</TD>
+                        <TD>12.31301</TD>
+                        <TD>0.25754845</TD>
+                        <TD>11.060101</TD>
+                        <TD>0.25754845</TD>
+                        <TD>13.710986</TD>
+                        <TD>-0.13176608</TD>
+                        <TD>0.17108059</TD>
+                        <TD>0</TD>
+                        <TD>1</TD>
+                        <TD>2.010615</TD>
+                        <TD>13.7503</TD>
+                        <TD></TD>
+                        <TD>667401913089980544</TD>
+                        <TD>1.25291</TD>
+                        <TD>2.0271559</TD>
+                        <TD>1</TD>
+                        <TD>3.4418612</TD>
+                        <TD>2022-06-14 00:02:44.185423+00:00</TD>
+                        <TD>2022-06-14 00:02:44.185423+00:00</TD>
+                        <TD>(2.07155852762354 , 0.291368754005873)</TD>
+                    </TR>
+                    <TR>
+                        <TD>40546450001952</TD>
+                        <TD>54645</TD>
+                        <TD>43451</TD>
+                        <TD>49676</TD>
+                        <TD>301</TD>
+                        <TD>0</TD>
+                        <TD>4</TD>
+                        <TD>2148.6326</TD>
+                        <TD>746.3455</TD>
+                        <TD>3</TD>
+                        <TD>0.0014134943</TD>
+                        <TD>118.69034405797458</TD>
+                        <TD>16.692166505796845</TD>
+                        <TD>0.573482</TD>
+                        <TD>0.492698</TD>
+                        <TD>204.50753228915232</TD>
+                        <TD>21.317074896265964</TD>
+                        <TD>117.45720617921575</TD>
+                        <TD>-4.054589446227448</TD>
+                        <TD>-0.45984612995330343</TD>
+                        <TD>0.8402622892082511</TD>
+                        <TD>0.28722956341832057</TD>
+                        <TD>75874</TD>
+                        <TD>1213997</TD>
+                        <TD>22.611448</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0.0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>0</TD>
+                        <TD>0</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>1</TD>
+                        <TD>0.0</TD>
+                        <TD>2022-06-14 03:33:29.837354+00:00</TD>
+                        <TD>2022-06-14 03:33:29.837354+00:00</TD>
+                        <TD>(2.07153729413654 , 0.291333264817272)</TD>
+                    </TR>
+                </TABLEDATA>
+            </DATA>
+        </TABLE>
+    </RESOURCE>
+</VOTABLE>

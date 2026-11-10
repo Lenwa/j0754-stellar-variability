@@ -1,0 +1,252 @@
+{
+  "target": "DASCH J075445.9+164141 / Gaia DR3 667401913089980544",
+  "user_authorisation": "Do that. Do we have modern observations of those stars as well?",
+  "modern": {
+    "ztf_sources_with_rows": 14,
+    "ztf_requested_sources": 17,
+    "target_raw_points": 575,
+    "target_quality_points": 470,
+    "target_ztf_dates": [
+      "2018-03-28",
+      "2025-10-20"
+    ],
+    "target_tess_products": 8,
+    "target_tess_epochs": [
+      "2021Oct-Dec",
+      "2023Oct-Dec",
+      "2026Jan"
+    ],
+    "products_can_share_epochs": true,
+    "problem_control_7954560": {
+      "status": "lightcurve_rows",
+      "raw_points": 513,
+      "good_points": 350,
+      "groups": [
+        {
+          "oid": "1561109100004490",
+          "band": "zg",
+          "points": 41,
+          "median_mag": 12.4084978,
+          "robust_scatter_mag": 0.01386483041999978,
+          "p05_p95_mag": [
+            12.384757,
+            12.4304981
+          ],
+          "min_max_mag": [
+            12.3769655,
+            12.4611006
+          ],
+          "median_error": 0.0124972314,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "566102100009595",
+          "band": "zg",
+          "points": 309,
+          "median_mag": 12.4300117,
+          "robust_scatter_mag": 0.014324288159999083,
+          "p05_p95_mag": [
+            12.4040844,
+            12.45652124
+          ],
+          "min_max_mag": [
+            12.36415,
+            12.4943972
+          ],
+          "median_error": 0.010910701,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        }
+      ]
+    },
+    "problem_control_1889792": {
+      "status": "lightcurve_rows",
+      "raw_points": 1788,
+      "good_points": 1531,
+      "groups": [
+        {
+          "oid": "1561109100004750",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 13.6663904,
+          "robust_scatter_mag": 0.008723914920000832,
+          "p05_p95_mag": [
+            13.65297964,
+            13.68539146
+          ],
+          "min_max_mag": [
+            13.636899,
+            13.71632
+          ],
+          "median_error": 0.0113948584,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100007403",
+          "band": "zr",
+          "points": 98,
+          "median_mag": 13.075702199999998,
+          "robust_scatter_mag": 0.013874837969996898,
+          "p05_p95_mag": [
+            13.052634905,
+            13.09880573
+          ],
+          "min_max_mag": [
+            13.034893,
+            14.3925905
+          ],
+          "median_error": 0.013516677049999998,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200005209",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.6778603,
+          "robust_scatter_mag": 0.006742864799999665,
+          "p05_p95_mag": [
+            13.66530705,
+            13.68980745
+          ],
+          "min_max_mag": [
+            13.6481104,
+            13.7039528
+          ],
+          "median_error": 0.0085031651,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200006807",
+          "band": "zr",
+          "points": 83,
+          "median_mag": 13.0712795,
+          "robust_scatter_mag": 0.011673399359999889,
+          "p05_p95_mag": [
+            13.05668181,
+            13.09287293
+          ],
+          "min_max_mag": [
+            13.0517883,
+            13.1031637
+          ],
+          "median_error": 0.010407309,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        },
+        {
+          "oid": "566102100003555",
+          "band": "zg",
+          "points": 373,
+          "median_mag": 13.6848669,
+          "robust_scatter_mag": 0.010543509899998261,
+          "p05_p95_mag": [
+            13.66564938,
+            13.70473862
+          ],
+          "min_max_mag": [
+            13.6252899,
+            14.3733959
+          ],
+          "median_error": 0.0104149915,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        },
+        {
+          "oid": "566202100013775",
+          "band": "zr",
+          "points": 796,
+          "median_mag": 13.0767398,
+          "robust_scatter_mag": 0.010996073549999957,
+          "p05_p95_mag": [
+            13.053544525,
+            13.09553075
+          ],
+          "min_max_mag": [
+            12.9668083,
+            13.1914902
+          ],
+          "median_error": 0.011178544249999998,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58217.1588079,
+          "last_mjd": 60968.4636574,
+          "first_date": "2018-04-09",
+          "last_date": "2025-10-20"
+        },
+        {
+          "oid": "566302100005471",
+          "band": "zi",
+          "points": 77,
+          "median_mag": 12.8665152,
+          "robust_scatter_mag": 0.007076746320001036,
+          "p05_p95_mag": [
+            12.8495699,
+            12.88401468
+          ],
+          "min_max_mag": [
+            12.8200169,
+            12.8935499
+          ],
+          "median_error": 0.0110474844,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 59184.4037847,
+          "last_mjd": 60449.1790509,
+          "first_date": "2020-12-01",
+          "last_date": "2024-05-19"
+        }
+      ]
+    }
+  },
+  "modern_exploratory": {
+    "same_exposure_points": 364,
+    "median_controls": 4.0,
+    "2018_to_2022_relative_fading_mag": 0.30886317499999905,
+    "2022_to_2025_change_mag": -0.13929306250000018,
+    "qualification": "Observed trend after common-exposure correction, not a physical-mechanism finding; source-specific systematics remain."
+  },
+  "historical": {
+    "physical_plates": 5,
+    "scan_orientations_per_plate": 2,
+    "enlarged_controls_per_scan": [
+      25,
+      28
+    ],
+    "all_complete_corroboration_verdicts": "INCONCLUSIVE",
+    "important_change": "Broader-field estimates change substantially; earlier small-field recovery numbers are not robust. This does not overturn the earlier Harvard/DASCH result.",
+    "problem_controls": "Both are weak in both1937orientations and near scan boundaries, about484\u2013600pixels. Modern quietness does not establish1937stability."
+  },
+  "next_useful_route": "Prioritise an independent modern-survey check of the apparent0.31mag trend; further plate work needs spatial response/coverage modelling before reliable quantitative use."
+}

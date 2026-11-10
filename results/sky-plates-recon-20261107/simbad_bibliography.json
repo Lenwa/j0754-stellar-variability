@@ -1,0 +1,209 @@
+{
+  "metadata": [
+    {
+      "name": "oid",
+      "description": "Object internal identifier",
+      "datatype": "LONG",
+      "ucd": "meta.record"
+    },
+    {
+      "name": "main_id",
+      "description": "Main identifier for an object",
+      "datatype": "CHAR",
+      "arraysize": "*",
+      "ucd": "meta.id;meta.main",
+      "utype": "mango:MangoObject.identifier"
+    },
+    {
+      "name": "bibcode",
+      "description": "Bibcode",
+      "datatype": "CHAR",
+      "arraysize": "19",
+      "ucd": "meta.bib.bibcode"
+    },
+    {
+      "name": "title",
+      "description": "Title",
+      "datatype": "UNICODECHAR",
+      "arraysize": "*",
+      "ucd": "meta.title"
+    },
+    {
+      "name": "doi",
+      "description": "DOI designation",
+      "datatype": "CHAR",
+      "arraysize": "*",
+      "ucd": "meta.ref.doi"
+    },
+    {
+      "name": "nbobject",
+      "description": "Number of objects studied in",
+      "datatype": "INT",
+      "ucd": "meta.id;arith.sum"
+    },
+    {
+      "name": "obj_freq",
+      "description": "flag",
+      "datatype": "SHORT",
+      "ucd": "meta.number"
+    },
+    {
+      "name": "ref_flag",
+      "description": "flag",
+      "datatype": "SHORT",
+      "ucd": "meta.code.multip"
+    }
+  ],
+  "data": [
+    [
+      5472059,
+      "2MASS J07544588+1641407",
+      "2023A&A...674A..34G",
+      "{\\em Gaia} Data Release 3 Stellar multiplicity, a teaser for the hidden treasure.",
+      "10.1051/0004-6361/202243782",
+      307214,
+      1,
+      32
+    ],
+    [
+      5472059,
+      "2MASS J07544588+1641407",
+      "2010ApJ...710L..77T",
+      "DASCH discovery of large amplitude ~10-100 year variability in K giants.",
+      "10.1088/2041-8205/710/1/L77",
+      7,
+      3,
+      152
+    ],
+    [
+      5472061,
+      "ASAS J083038+1407.3",
+      "2023A&A...674A..34G",
+      "{\\em Gaia} Data Release 3 Stellar multiplicity, a teaser for the hidden treasure.",
+      "10.1051/0004-6361/202243782",
+      307214,
+      1,
+      32
+    ],
+    [
+      5472061,
+      "ASAS J083038+1407.3",
+      "2010ApJ...710L..77T",
+      "DASCH discovery of large amplitude ~10-100 year variability in K giants.",
+      "10.1088/2041-8205/710/1/L77",
+      7,
+      3,
+      152
+    ],
+    [
+      5472061,
+      "ASAS J083038+1407.3",
+      "2016ApJS..224....2H",
+      "The K2 ecliptic plane input catalog (EPIC) and stellar classifications of 138,600 targets in campaigns 1-8.",
+      "10.3847/0067-0049/224/1/2",
+      31769,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2020AJ....160...12D",
+      "Rotationally driven ultraviolet emission of red giant stars.",
+      "10.3847/1538-3881/ab9080",
+      133,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2020ApJ...900....4S",
+      "The age distribution of stars in the Milky Way bulge.",
+      "10.3847/1538-4357/ab9ff6",
+      121537,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2019ApJ...879...69T",
+      "The Payne: self-consistent ab initio fitting of stellar spectra.",
+      "10.3847/1538-4357/ab2331",
+      222610,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2023A&A...674A..34G",
+      "{\\em Gaia} Data Release 3 Stellar multiplicity, a teaser for the hidden treasure.",
+      "10.1051/0004-6361/202243782",
+      307214,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2022ApJS..259...35A",
+      "The Seventeenth Data Release of the Sloan Digital Sky Surveys: Complete Release of MaNGA, MaStar, and APOGEE-2 Data.",
+      "10.3847/1538-4365/ac4414",
+      611006,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2023A&A...678A.158A",
+      "Spectroscopic age estimates for APOGEE red-giant stars: Precise spatial and kinematic trends with age in the Galactic disc.",
+      "10.1051/0004-6361/202346666",
+      171655,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2022AJ....163..152S",
+      "APOGEE Net: An Expanded Spectral Model of Both Low-mass and High-mass Stars.",
+      "10.3847/1538-3881/ac4de7",
+      583194,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2010ApJ...710L..77T",
+      "DASCH discovery of large amplitude ~10-100 year variability in K giants.",
+      "10.1088/2041-8205/710/1/L77",
+      7,
+      23,
+      152
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2016ApJ...823..114N",
+      "Spectroscopic determination of masses (and implied ages) for red giants.",
+      "10.3847/0004-637X/823/2/114",
+      72935,
+      1,
+      32
+    ],
+    [
+      6547171,
+      "ASAS J073607+2114.2",
+      "2016MNRAS.460.3179W",
+      "Distance and extinction determination for APOGEE stars with Bayesian method.",
+      "10.1093/mnras/stw1183",
+      77460,
+      1,
+      32
+    ]
+  ]
+}

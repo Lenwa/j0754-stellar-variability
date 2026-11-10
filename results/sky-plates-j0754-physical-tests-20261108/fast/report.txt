@@ -1,0 +1,152 @@
+FAST physical tests: actual equivalent widths, covariance and systematic sensitivities
+Ari/Kyle investigation, 8 November 2026 local date
+
+OUTCOME
+
+The tentative 2009 H-alpha difference survives the declared common-resolution, wavelength-window and exported-background rescaling checks. It remains a retrospective, unresolved line-change lead. A differential pseudo-continuum shift of about1.7% can account for the primary EW difference, and unknown calibration/background/LSF effects are not bounded by these data. This does not establish intrinsic chromospheric variability or the cause of the years-long dimming.
+
+Broad Mg b and Na D blend indices do not show a compelling coherent2008–2009 change. Their measured uncertainties and unresolved blends do not support a Ti/Fe line-depth ratio, a28K temperature limit or another precise temperature inference.
+
+WHAT WAS ACTUALLY ANALYZED
+
+Ten real processed FAST FITS from the public OIRSA recovery, eight UTC nights,2008–2012.
+Source: tools/sky-plates/fast_line_tests.py
+Tests: tools/sky-plates/test_fast_line_tests.py
+Inputs: results/sky-plates-j0754-spherex-20261108/literature/fast/
+Results: results/sky-plates-j0754-physical-tests-20261108/fast/
+
+protocol.txt was saved before these new comparisons. The2009 lead and earlier rough indices were already known; this is not a blind prediction. Attachment "Pasted text.txt" supplies mathematical ideas, NOT observed EW/SNR/LDR/temperature values. None of its numerical epoch tables was used as data. In particular, the three2009-11-12 spectra are300-line/mm/3arcsec, while the January2010 spectra are600-line/mm/2arcsec. The attachment's swapped configurations and claimed resolving powers are not adopted.
+
+The exact native linear WCS is lambda=CRVAL1+[(zero-based pixel+1)-CRPIX1]*CD1_1, Angstrom.
+All files are checked for DC-FLAG=0, WAT2_001=wtype=linear, Angstrom units and explicitly labeled BANDID4=sigma.
+Signal is cube[0,0,:]; sigma is cube[3,0,:]; the exported background is cube[2,0,:].
+Original FITS are read-only and unchanged. The existing harmless NUL-after-END header warning is retained in the run log; no original header is rewritten.
+
+COMMON RESOLUTION AND COVARIANCE
+
+Primary assumptions: native FWHM7A for300-line/mm and3A for600-line/mm; degrade to10A.
+These are approximate assumed Gaussian line-spread functions, not measured per-exposure resolutions.
+Additional kernel sigma = sqrt(target_FWHM^2-native_FWHM^2)/2.354820045.
+A native-pixel integration-weighted Gaussian operator is normalized to preserve a constant continuum.
+At zero added width, an explicit linear interpolation operator is used. No deconvolution is permitted.
+The shared output grid is0.5A; that oversampling does not create independent pixels.
+
+For native variance vector s^2 and linear smoothing/resampling operator A:
+y_out=A y_native;
+C_out=A diag(s^2) A^T.
+The ten *.common.npz products preserve wavelength, signal, full covariance, background and fitted continuum.
+
+A polynomial continuum is fitted by weighted least squares in disjoint flanking windows, with weights1/diag(C).
+If beta=B y, continuum c=X beta, coefficient covariance is B C B^T.
+For W=sum_i w_i(1-y_i/c_i), the total flux gradient is the sum of:
+g_line,i=-w_i/c_i inside the line window;
+g_cont=B^T sum_line[w_i y_i X_i/c_i^2].
+Thus Var(W)=(g_line+g_cont)^T C (g_line+g_cont), including the line/continuum cross-covariance.
+This uses the actual fitted linear/quadratic continuum where specified, not a constant-continuum toy.
+
+For the first2008 spectrum, variance contributions in A^2 are:
+line0.009864 + continuum0.006590 + cross(-0.000560) = total0.015894;
+sigma_total0.1261A.
+For the first2009-11-12 spectrum:
+line0.003904 + continuum0.002628 + cross(-0.000220) = total0.006312;
+sigma_total0.07945A.
+Dropping continuum uncertainty or treating smoothed grid points as independent understates these formal errors.
+
+Two actual-spectrum noise-injection checks add800 seeded realizations at native pixels, repeat the full linear transform and continuum/EW measurement:
+2008 first spectrum: propagated sigma0.12607A; Monte Carlo sigma0.12597A.
+2009 first spectrum: propagated sigma0.07945A; Monte Carlo sigma0.08095A.
+This validates the stated formal propagation under independent native-pixel noise. Native FAST extraction/resampling may already have correlations not supplied by the sigma band; that unknown covariance, LSF and continuum model mismatch remain outside these formal errors.
+
+PRIMARY H-ALPHA MEASUREMENT
+
+Line6547.8–6577.8A (30A); continuum6520–6540 and6580–6600A; linear fit.
+Positive pseudo-EW denotes net absorption relative to that local fitted continuum.
+No photospheric template was subtracted, so these are not net chromospheric emission EWs.
+
+UTC night | pseudo-EW A | formal sigma A | exposures
+2008-10-22 |1.32990 |.12607 |1
+2008-10-24 |1.31746 |.05593 |1
+2009-11-12 |.84321 |.04889 |3
+2009-11-19 |.41836 |.08516 |1
+2010-01-13 |1.02540 |.12624 |1
+2010-01-17 |.33964 |.05500 |1
+2012-03-26 |1.18006 |.05811 |1
+2012-05-17 |1.20825 |.05866 |1
+
+The three November12 exposures are averaged inside ONE night. Their sample scatter is.0178A; this does not estimate a shared night calibration error. Primary contrast = mean(two2008night EWs) minus November12night EW:
+DeltaW=.48047A, formal sigma=.08453A.
+The numerical ratio5.68 is a noise-model diagnostic, NOT calibrated discovery significance. Choice of this comparison is post-hoc, and formal sigma excludes systematics. No three-independent-replications claim is made.
+
+COMMON-RESOLUTION AND CONTINUUM SENSITIVITIES
+
+For common FWHM8/10/12A and shared300-native FWHM5/6/7/8A, the12 comparable2008–2009 contrast variants span.4775–.4847A.
+Allowing independent native-FWHM choices by exposure/night widens the envelope to approximately.4477–.5141A across those targets. These ranges are conditional on the assumed Gaussian LSF grid, not calibrated error bars. Actual non-Gaussian/variable LSFs could lie outside it.
+
+The18 valid continuum/window/degree combinations span DeltaW=.2481–.5197A.
+The protocol's20A half-window overlaps all three declared continuum definitions and is deliberately rejected rather than mixing line and continuum pixels. Valid10/15A half-windows, constant/linear/quadratic continua and three sideband definitions remain. Both2A wavelength-offset sensitivities retain positive contrasts (.4738–.4934A) when the same offset is applied across epochs.
+
+These coupled-definition sensitivities do not represent all possible differential night continuum biases. Their surviving sign is useful, but it does not establish a unique intrinsic change.
+
+APPLYING THE AUDIT'S THREE SYSTEMATIC TERMS
+
+1. Broadband additive contamination.
+Synthetic analytic tests confirm Wobs=W/(1+alpha) when alpha times the true/fitted continuum is added to both line and sidebands.
+Adding1.5% of the actual fitted continuum to all samples changes the primary contrast only from.4805 to.4734A.
+Even allowing independent +/-3% continuum-proportional additive offsets by exposure/night leaves the declared contrast envelope positive (.4158–.5460A).
+To dilute the2008mean EW1.32368A to the measured2009night EW.84321A by this idealized mechanism alone would require alpha≈.5698, about57%.
+This does NOT exclude arbitrary spectrally structured sky errors; it distinguishes this particular broadband additive family from a continuum-placement bias.
+
+2. Continuum placement only.
+Scaling c(lambda) by(1+beta) with the line flux unchanged gives the exact algebraic identity
+Wobs=W+[beta/(1+beta)](L-W), with L the finite integration-window length.
+It remains exact for a wavelength-dependent fitted continuum if the same fractional scale is applied to it.
+For the actual2009night EW and L30A, beta≈+0.016755 raises W to the2008mean.
+A+1.5% continuum-only bias raises the2009night EW from.8432 to1.2741A, much larger than the broadband-offset effect.
+Independent +/-3% continuum biases can reverse the contrast. This is a sensitivity threshold, not evidence that a1.7% bias actually occurred or a probability assigned to it. The sigma-derived continuum covariance does not bound systematic line blanketing or response-model mismatch.
+
+3. Localized emission inside H-alpha.
+Synthetic isolated-line injections of.1/.3/.5A equivalent area reduce absorption EW by approximately the injected area, as expected; their signs/units are tested.
+An approximately.48A differential unresolved emission component could mimic the observed contrast. It could be stellar, geocoronal/residual sky or another component. EW alone cannot decide.
+Injection into EVERY epoch largely preserves a contrast, so the relevant alternative is differential contamination/activity between nights, not a common additive line.
+
+ACTUAL EXPORTED BACKGROUND-BAND CHECK
+
+The stored background spectrum is propagated through the same operator. It is displayed separately from the normalized source in source_sky.png. Near H-alpha the2009 exported background is roughly3–4% of the source continuum, without an obvious strong narrow line after10A smoothing. This is the exported background estimate, NOT a directly measured sky-subtraction residual.
+
+Adding or subtracting up to the entire exported background band gives2009night EWs approximately.768–.924A. If the background scale can differ independently by exposure/night within the declared[-1,+1] range, the2008–2009 contrast still spans.3266–.6362A. A common scale across epochs hardly changes it.
+
+This check weakens one specific explanation: a modest rescaling of the exported background shape does not erase the primary contrast. It does not prove the difference intrinsic. Exported sky aperture normalization, spatially varying sky, unrecorded residual structure, template response and raw2D extraction details are not independently certified. A residual narrow line not represented by that band remains a different model. Raw2D spatial sky extraction or a calibrated higher-resolution comparison would be needed to separate those alternatives.
+
+TEMPERATURE-SENSITIVE BLENDS
+
+At the same assumed10A common resolution, broad locally normalized Mg b and Na D indices are measured from actual data:
+Mg b line5160–5190A, continuum5130–5150 and5200–5220A:
+Delta(2008mean−2009night)=+.0160 +/- .1058A formal.
+Na D line5880–5906A, continuum5850–5870 and5910–5930A:
+Delta=-.06995 +/- .07641A formal.
+
+Neither establishes a coherent2008–2009 photospheric temperature change. Metallicities, gravity, activity, blending, continuum placement and possible interstellar Na remain nuisance factors.
+No resolved Ti I/Fe I ratio is extracted, no excitation derivative is applied, and no Kelvin precision/upper bound is derived.
+The attachment's assumed DeltaV<=.04mag is not an observed premise here.
+These spectra precede the2018–22 optical/MIR fade and do not compare its bright and faint states.
+
+VALIDATION, REPRODUCTION AND STATE
+
+Tests were written before implementation; tests_red.txt records six expected missing-implementation failures.
+A later sensitivity-envelope test failed before its helper was added (tests_red_envelope.txt).
+Final seven numerical tests pass. They cover broadband versus continuum-only identities, line-only emission area,
+continuum influence gradients against finite differences, common-resolution synthetic recovery,
+full-covariance Monte Carlo agreement and correct repeated-night grouping.
+These tests validate calculations, not astrophysical calibration or causal interpretation.
+
+Commands from outer Lumen:
+runtime/sky-plates/venv/Scripts/python.exe -B -m unittest discover -s tools/sky-plates -p test_fast_line_tests.py -v
+runtime/sky-plates/venv/Scripts/python.exe -B tools/sky-plates/fast_line_tests.py --input results/sky-plates-j0754-spherex-20261108/literature/fast --out results/sky-plates-j0754-physical-tests-20261108/fast
+
+The source and tests have their maintained home in the existing Lumen checkout at HEAD4946a5cadb334bfc9fa6507cea899bb4f98abf7b at task start.
+Only the two assigned source files were created. Other agents' README/CO/TESS/constraint edits are preserved.
+No README edit, commit, branch switch, push or publication was performed by this subtask.
+Existing GitHub Desktop registration is reused through the parent workflow; it was not independently reopened/verified here.
+Parent owns integration, documentation and any eventual scoped commit.
+Input/source/output hashes and the final verification are in verification_receipt.json.
+

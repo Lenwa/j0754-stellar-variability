@@ -1,0 +1,4 @@
+-r requirements.txt
+Pillow>=11
+reportlab>=4
+pypdf>=5

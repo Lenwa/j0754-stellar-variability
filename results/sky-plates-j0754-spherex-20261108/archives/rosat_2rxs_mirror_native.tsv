@@ -1,0 +1,67 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:44:48 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:44:48	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F588%2FA103%2Fcat2rxs&-c=118.69117410685+%2B16.694621231895&-c.rs=180&-out.all=&-out.max=500	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=180.	
+#Constraint -out.max=500
+
+#RESOURCE=yCat_35880103
+#Name: J/A+A/588/A103
+#Title: Second ROSAT all-sky survey (2RXS) source catalog (Boller+, 2016)
+#INFO	ivoid=ivo://cds.vizier/j/a+a/588/a103	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/a+a/588/a103	    IVOID of underlying data collection
+#INFO	creator=Boller T.	    First author or institution
+#INFO	cites=bibcode:2016A&A...588A.103B	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2016	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/588/A103	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.35880103	    Dataset identifier that can be used for citation
+#INFO	publication_date=2017-06-13	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_A_A_588_A103_cat2rxs:
+#Name: J/A+A/588/A103/cat2rxs
+#Title: Catalogue of 135118 2RXS ROSAT sources
+#Column	Ximg	(A4)	Ximage in pdf	[ucd=meta.ref.url]
+#Column	2RXS	(A21)	IAU name (IAU_NAME) (1)	[ucd=meta.id;meta.main]
+#Column	Cts	(F9.2)	Background corrected source counts (CTS)	[ucd=phot.count;em.X-ray]
+#Column	e_Cts	(F10.6)	Error of the source counts (CERR)	[ucd=stat.error]
+#Column	RAJ2000	(F9.5)	Right ascension (J2000) (RA_DEG)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F9.5)	Declination (J2000) (DEC_DEG)	[ucd=pos.eq.dec;meta.main]
+#Column	HR1	(F6.3)	? Hardness ratio 1 value (HR_1) (2)	[ucd=phot.flux;arith.ratio]
+#Column	e_HR1	(F8.3)	? Error of HR1 (HR_1_err)	[ucd=stat.error]
+#Column	HR2	(F6.3)	? Hardness ratio 2 value (HR_2) (2)	[ucd=phot.flux;arith.ratio]
+#Column	e_HR2	(F9.3)	? Error of HR2 (HR_2_err)	[ucd=stat.error]
+#Column	dXMMSL1	(F6.1)	?=0 Distance of nearest XMMSL1  counterpart (dist_xmmsl1)	[ucd=pos.angDistance;src.orbital]
+#Column	d3XMM	(F6.1)	?=0 Distance of nearest 3XMM counterpart (dist_3xmm)	[ucd=pos.angDistance;src.orbital]
+#Column	d2RXP	(F6.1)	?=0 Distance of 2RXP nearest counterpart (dist_2rxp)	[ucd=pos.angDistance;src.orbital]
+#Column	d1RXS	(F6.1)	?=0 Distance to nearest 1RXS counterpart (dist_1rxs) (136)	[ucd=pos.angDistance;src.orbital]
+#Column	1RXS	(A16)	Source name in the 1RXS catalogue (SRCNAME_1rxs)	[ucd=meta.id]
+#Column	dVV10	(F6.1)	?=0 Distance to nearest VV10 counterpart (dist_vv10)	[ucd=pos.angDistance;src.orbital]
+#Column	dTYC2	(F6.1)	?=0 Distance to nearest Tyc2 counterpart (dist_tyc2) (162)	[ucd=pos.angDistance;src.orbital]
+#Column	dBSC	(F6.1)	?=0 Distance to nearest BSC counterpart (dist_bri)	[ucd=pos.angDistance;src.orbital]
+#Column	dHMXB	(F6.1)	?=0 Distance of nearest HMXBCAT  counterpart (dist_hmxb)	[ucd=pos.angDistance;src.orbital]
+#Column	dLMXB	(F6.1)	?=0 Distance to nearest LMXBCAT  counterpart (dist_lmxb)	[ucd=pos.angDistance;src.orbital]
+#Column	dATNF	(F6.1)	?=0 Distance to nearest ATNF counterpart (dist_atnf)	[ucd=pos.angDistance;src.orbital]
+#Column	dFUH	(F6.1)	?=0 Distance to nearest FUH counterpart (dist_fuh)	[ucd=pos.angDistance;src.orbital]
+#Column	d1SXPS	(F6.1)	?=0 Distance to nearest 1SXPS  counterparts (dist_1sxps)	[ucd=pos.angDistance;src.orbital]
+#Column	d1RXH	(F6.1)	?=0 Distance to nearest 1RXH counterpart (dist_1rxh)	[ucd=pos.angDistance;src.orbital]
+#Column	dFlem	(F6.1)	?=0 Distance to nearest Flemming  counterpart (dist_flem)	[ucd=pos.angDistance;src.orbital]
+#Column	dWD	(F6.1)	?=0 Distance to nearest WD counterpart (dist_wd)	[ucd=pos.angDistance;src.orbital]
+#Column	dSDSS	(F6.1)	?=0 Distance to nearest SDSS counterpart (dist_sdss)	[ucd=pos.angDistance;src.orbital]
+#Column	SPX	(A1)	[0/1] graphical illustrations from spectral fits available in spx subdirectory	[ucd=meta.code]
+#Column	gp	(A2)	Display the gamma*pow spectrum	[ucd=meta.ref.url]
+#Column	gm	(A2)	Display the gamma*meka spectrum	[ucd=meta.ref.url]
+#Column	gb	(A2)	Display the gamma*blackbody spectrum	[ucd=meta.ref.url]
+#Column	LCX	(A1)	[0/1] light curve exists as graphical illustration in clx subdirectory	[ucd=meta.code]
+#Column	i	(A1)	Display the ibroad image	[ucd=meta.ref.url]
+#Column	l	(A1)	Display the x-ray light curve	[ucd=meta.ref.url]
+#Column	b	(A1)	Display the source and background light curve	[ucd=meta.ref.url]

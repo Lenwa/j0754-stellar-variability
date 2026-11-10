@@ -1,0 +1,68 @@
+{
+  "target": {
+    "name": "DASCH J075445.9+164141",
+    "ra_deg": 118.6911741,
+    "dec_deg": 16.6946212,
+    "gaia_dr3_source_id": "667401913089980544"
+  },
+  "retrieval_date_utc": "2026-11-09",
+  "asas_sn": {
+    "status": "re_downloaded_existing_completed_job",
+    "raw_total": 5249,
+    "raw_g": 4284,
+    "accepted_g": 4220,
+    "rejected_g": 64,
+    "all_band_counts": {
+      "V": 965,
+      "g": 4284
+    },
+    "g_first_utc": "2017-10-07.4514018",
+    "g_last_utc": "2026-11-08.2998711",
+    "g_hjd_min": 2458033.9508984,
+    "g_hjd_max": 2461352.8024195,
+    "g_cameras": {
+      "bq": 1020,
+      "bi": 957,
+      "bm": 675,
+      "bE": 573,
+      "bA": 1059
+    },
+    "native_time_column": "HJD; the export also supplies UT Date; no barycentric/time-scale conversion made",
+    "flux_unit": "mJy",
+    "explicit_image_quality_flag": false,
+    "same_sha256_as_existing_20261108_file": true,
+    "native_sha256": "58f6f77947f2deaabede6e84407cf1fc00ea14355d440b1f61a5cbb6bc5d7be2",
+    "prior_file": ".\\results\\sky-plates-j0754-independent-20261108\\asassn_v1_lightcurve.csv",
+    "result_url": "https://asas-sn.osu.edu/sky-patrol/coordinate/d2c2ad05-c9a6-4362-93ac-523c2584d094"
+  },
+  "ztf": {
+    "r_i_3arcsec_query_rows": 0,
+    "all_bands_10arcsec_rows": 575,
+    "filter_counts": {
+      "zg": 575
+    },
+    "native_time_columns": [
+      "hjd",
+      "mjd"
+    ],
+    "mjd_min": 58205.1525926,
+    "mjd_max": 60968.4094329,
+    "same_sha256_as_existing_20261108_target_file": true,
+    "collection": "IRSA default latest public collection; release number not asserted",
+    "quality": "No CATFLAGS cut applied to retrieval. Native catflags and all columns retained.",
+    "objects": [
+      "1561109100003477",
+      "1562112200003829",
+      "566102100008926"
+    ]
+  },
+  "atlas": {
+    "status": "not_retrieved_authentication_required",
+    "forced_photometry_registration": "https://github.com/lukeshingles/atlasserver",
+    "service": "https://fallingstar-data.com/forcedphot/",
+    "historical_detections_login": "https://archive.stsci.edu/hlsp/atlas-var",
+    "notes": "No account created, sign-in attempted, credentials used, or forced-photometry job submitted. Web-tool access to forced-photometry homepage failed separately. Authentication requirement is documented; it is not evidence of absent observations."
+  },
+  "quality_screen": "Uses the previous project rules: finite HJD/mag/mag_err/flux/flux_err, 0<mag_err<99, mag<90, positive flux and flux_err, reject upper limits, verify case-sensitive g cameras. No brightness clipping, nightly averaging, zero-point adjustment, or time conversion.",
+  "transport_note": "Initial Windows curl failed with revocation-server-offline status; Python requests with ordinary TLS certificate verification subsequently succeeded. No TLS check was disabled."
+}

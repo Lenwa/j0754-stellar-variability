@@ -1,0 +1,346 @@
+var stem;
+var images=new Array("total", "band1", "band2", "band3", "ex");
+var obslcs=new Array("total", "band1", "band2", "band3", "HR1", "HR1");
+var sslcs=new Array("total", "band1", "band2", "band3");
+var showDetTab=1;
+var showUndetTab=1;
+var topurl;
+var sourceID;
+
+$(document).ready(reset);
+
+function reset()
+{
+  
+  topurl=$('#topurl').html();
+  sourceID=$('#sid').html();
+  stem=$('#psid').html();
+  scrollLinks();
+  $('#stab_controls').submit(updateStab);
+  updateStab();
+  updateDetTable();
+  updateUndetTable(); 
+  updatexCorrTable();
+  changeStamp(0);
+//   $('.stamp').draggable();
+  setupHelp();
+  setupLC();
+}
+
+function changeStamp(what)
+{
+  var imstem=stem+"_"+images[what];
+  
+  for (a=0; a<5; a++)
+  {
+    if (a==what)
+      $('#stamplink'+a).css({'fontWeight':'bold', 'color':'black', 'textDecoration':'none'});
+    else
+    {
+      $('#stamplink'+a).css({'fontWeight':'normal', 'color':'blue', 'textDecoration':'underline'});
+      $('#stampimlink'+a).css('display', 'none');
+    }
+  }
+  $('#stampimlink'+what).css('display', 'block');
+}
+
+function showStab()
+{
+  $("#stab_controls").slideDown("fast");
+  $('#stab_ctrl_link').attr('href', "javascript:hideStab();").html("Hide table controls");
+}
+
+function hideStab()
+{
+  $("#stab_controls").slideUp("fast");
+  $('#stab_ctrl_link').attr('href', "javascript:showStab();").html("Show table controls");;
+}
+
+function updateStab(event=-1)
+{
+  if (event!=-1)
+    event.preventDefault();
+  
+  $('#stabWork').css('display','block');
+  var formVals=$('#stab_controls').serialize();
+  
+  $('#stab_div').load(topurl+'/getSourceSpecDetailsTable.php', formVals, function()
+    {
+     $('#stabWork').css('display','none');
+     setupHelp();
+    });
+  
+ 
+}
+
+
+function changeObsLC(what)
+{
+  var imstem=stem+"_"+obslcs[what];
+  
+  for (a=0; a<6; a++)
+  {
+    if (a==what)
+    {
+      $('#obslclink'+a).css ( {'fontWeight':'bold', 'color':'black', 'textDecoration':'none'} );
+    }
+    else
+    {
+      $('#obslclink'+a).css ( {'fontWeight':'normal', 'color':'blue', 'textDecoration':'underline'} );
+      $('#obslcimlink'+a).css("display", 'none');
+    }
+  }
+  $('#obslcimlink'+what).css ("display","block");
+}
+
+function changeSSLC(what)
+{
+  var imstem=stem+"_"+sslcs[what];
+  
+  for (a=0; a<4; a++)
+  {
+    if (a==what)
+    {
+      $('#sslclink'+a).css ( {'fontWeight':'bold', 'color':'black', 'textDecoration':'none'} );
+
+    }
+    else
+    {
+      $('#sslclink'+a).css ( {'fontWeight':'normal', 'color':'blue', 'textDecoration':'underline'} );
+      $('#sslcimlink'+a).css("display", 'none');
+    }
+  }
+  $('#sslcimlink'+what).css ("display","block");
+
+}
+
+function showObsSec()
+{
+  $('#obsids').fadeIn('slow');
+  showObsTab=1;
+  $('#showObsIdLink').fadeOut("fast");
+  updateDetTable();
+  updateUndetTable();
+}
+
+
+
+function updateDetTable()
+{
+  if (showDetTab==0)
+    return;
+  $('#dettab_div').hide(300, function(){
+  $('#dettabWork').css('display','block');
+  var formVals=$('#detTab_controls').serialize();
+  
+  $('#dettab_div').load(topurl+'/getSourceDetectionsTable.php', formVals, function()
+    {
+     $('#dettabWork').css('display','none');
+     $('#dettab_div').show(200);
+     setupHelp();
+    });
+  
+  });
+  
+}
+
+
+function updateUndetTable()
+{
+  if (showUndetTab==0)
+    return;
+  
+  $('#undettab_div').hide(300, function(){
+  $('#undettabWork').css('display','block');
+  var formVals=$('#undetTab_controls').serialize();
+  
+  $('#undettab_div').load(topurl+'/getSourceNonDetectionsTable.php', formVals, function()
+    {
+     $('#undettabWork').css('display','none');
+     $('#undettab_div').show(200);
+     setupHelp();
+    });
+  
+  });
+  
+  
+}
+
+function showDetMore()
+{
+  $('#det_moreinfo').slideDown("fast");
+  document.getElementById('det_morelink').innerHTML="Hide table controls";
+  document.getElementById('det_morelink').href="javascript:hideObsMore();";
+}
+
+function hideDetMore()
+{
+  $('#det_moreinfo').slideUp("fast");
+  document.getElementById('det_morelink').innerHTML="Show table controls";
+  document.getElementById('det_morelink').href="javascript:showDetMore();";
+}
+
+
+function updatexCorrTable()
+{
+  $('#xCorrtabWork').css('display','block');
+  var formVals=$('#xCorr_ctrl').serialize();
+  
+  $('#xCorrtab_div').load(topurl+'/getSourceXcorrDetailsTable.php', formVals, function()
+    {
+     $('#xCorrtabWork').css('display','none');
+     setupHelp();
+    });
+  
+  
+}
+
+function sortxCorr(what)
+{
+  var xCorrCol=$('#xctab_sortCol').val();
+  var xCorrDir=$('#xctab_sortDir').val();
+    
+  if (what==xCorrCol)
+    xCorrDir=1-xCorrDir;
+  else
+    xCorrDir=0;
+  
+  xCorrCol=what;
+    
+  $('#xctab_sortCol').val(xCorrCol);
+  $('#xctab_sortDir').val(xCorrDir);
+    
+  updatexCorrTable();
+}
+
+function showDetControls()
+{
+  $('#detTab_controls').slideDown("fast");
+  $('#detTab_ctrl_link').html("Hide table controls").attr('href', 'javascript:hideDetControls();');
+}
+
+function hideDetControls()
+{
+  $('#detTab_controls').slideUp("fast");
+  $('#detTab_ctrl_link').html("Show table controls").attr('href', 'javascript:showDetControls();');
+}
+
+
+function showUndetControls()
+{
+  $('#undetTab_controls').slideDown("fast");
+  $('#undetTab_ctrl_link').html("Hide table controls").attr('href', 'javascript:hideUndetControls();');
+}
+
+function hideUndetControls()
+{
+  $('#undetTab_controls').slideUp("fast");
+  $('#undetTab_ctrl_link').html("Show table controls").attr('href', 'javascript:showUndetControls();');
+}
+
+function togglePlots()
+{
+  $('#showFittedFlux').prop('checked', $('#showFluxPlots').prop('checked'));
+  
+//  if(document.getElementById('showFluxPlots').checked)
+//    document.getElementById('showFittedFlux').checked=true;
+}
+
+
+function showAllRows(label,num)
+{
+  $('#'+label+'_extra').fadeIn('slow');
+  $('#'+label+'_showAll').val(1);
+  $('#'+label+'_stacked_showAll').val(1);
+  $('#'+label+'_showextra').html("Showing all "+num+" rows. <a href=\"javascript:hideAllRows('"+label+"',"+num+");\">Show only the first 10</a>.");
+}
+
+
+
+function hideAllRows(label,num)
+{
+  $('#'+label+'_extra').fadeOut('slow');
+  $('#'+label+'_showAll').val(0);
+  $('#'+label+'_stacked_showAll').val(0);
+  $('#'+label+'_showextra').html("Showing only the first 10 (/"+num+") rows. <a href=\"javascript:showAllRows('"+label+"',"+num+");\">Show all</a>.");
+}
+
+
+function showDetDetails(obs,band)
+{
+  var $headTD=$('#'+obs+' > td:first');
+  
+  $headTD.attr('rowspan',parseInt($headTD.attr('rowspan'))+1);
+  $('#detDetails_'+obs+'_'+band).fadeIn(1000);
+  
+  var $prevCell=$('#detDetailsLink_'+obs+'_'+band);
+  $prevCell.attr('rowspan',2);
+  
+  var theLink=$prevCell.find('a.small');
+  theLink.html("hide details");
+  theLink.attr('href', 'javascript:hideDetDetails("'+obs+'",'+band+');');
+
+ 
+}
+
+function hideDetDetails(obs,band)
+{
+  $('#detDetails_'+obs+'_'+band).fadeOut('fast');
+  var $headTD=$('#'+obs+' > td:first');
+  $headTD.attr('rowspan',parseInt($headTD.attr('rowspan'))-1);
+  var $prevCell=$('#detDetailsLink_'+obs+'_'+band);
+  $prevCell.attr('rowspan',1);
+  
+  
+  var theLink=$prevCell.find('a.small');
+  theLink.html("details");
+  theLink.attr('href', 'javascript:showDetDetails("'+obs+'",'+band+');');
+
+ 
+}
+
+function hideSec(stem)
+{
+  console.log('Hiding #'+stem+'Div');
+  $('#'+stem+'Div').hide(400);
+  $('#Hide'+stem).addClass('hidden');
+  $('#Show'+stem).removeClass('hidden');
+  
+  
+//   $('#toggle'+stem).html("Show "+label+" section").attr('href', 'javascript:showSec("'+stem+'","'+label+'");');
+}
+
+
+function showSec(stem)
+{
+  $('#'+stem+'Div').show(400);
+//   $('#toggle'+stem).html("Hide "+label+" section").attr('href', 'javascript:hideSec("'+stem+'","'+label+'");');
+  $('#Hide'+stem).removeClass('hidden');
+  $('#Show'+stem).addClass('hidden');
+  
+}
+
+function showFFlag(what)
+{
+  $('#'+what).slideDown(200);
+  $('#link_'+what).html('Hide').attr('href', 'javascript:hideFFlag("'+what+'");');
+}
+
+function hideFFlag(what)
+{
+  $('#'+what).slideUp(200);
+  $('#link_'+what).html('Show').attr('href', 'javascript:showFFlag("'+what+'");');
+}
+
+function showUL(what)
+{
+  $('#'+what).slideDown(200, function(){$('#'+what).css('display','block')});
+  $('#link_'+what).html('Less').attr('href', 'javascript:hideUL("'+what+'");');
+}
+
+
+function hideUL(what)
+{
+  $('#'+what).slideUp(200);
+  $('#link_'+what).html('More').attr('href', 'javascript:showUL("'+what+'");');
+}

@@ -1,0 +1,62 @@
+{
+  "authorship": "Numerical check of Gemini hypotheses supplied by Kyle; not an inferred orbit or physical fit.",
+  "assumptions": "Circular relative orbit; Kepler a^3=Mtotal P^2 in AU, solar masses, years. Uniform blackbody grains in radiative equilibrium; L=55 Lsun illustrative, not an accepted atmospheric solution.",
+  "kepler": [
+    {
+      "total_mass_msun": 1,
+      "period_years": 88,
+      "a_au": 19.7843497729948,
+      "v_km_s": 6.696384463923168,
+      "path_8yr_au": 11.300794164162065,
+      "path_10yr_au": 14.12599270520258,
+      "close_35_9204566d_a_au": 0.21305958787166795
+    },
+    {
+      "total_mass_msun": 2,
+      "period_years": 88,
+      "a_au": 24.926718737479003,
+      "v_km_s": 8.436915744285796,
+      "path_8yr_au": 14.238108447956925,
+      "path_10yr_au": 17.79763555994616,
+      "close_35_9204566d_a_au": 0.26843825964144086
+    },
+    {
+      "total_mass_msun": 3,
+      "period_years": 88,
+      "a_au": 28.53396995891322,
+      "v_km_s": 9.657857615706394,
+      "path_8yr_au": 16.298565527395205,
+      "path_10yr_au": 20.373206909244004,
+      "close_35_9204566d_a_au": 0.3072850990577866
+    }
+  ],
+  "dust_temperature": [
+    {
+      "r_au": 1,
+      "T_blackbody_K": 757.8859896067565,
+      "lambda_peak_um": 3.8234906565611047
+    },
+    {
+      "r_au": 3,
+      "T_blackbody_K": 437.56568011450685,
+      "lambda_peak_um": 6.622480079428717
+    },
+    {
+      "r_au": 25,
+      "T_blackbody_K": 151.5771979213513,
+      "lambda_peak_um": 19.11745328280552
+    },
+    {
+      "r_au": 30,
+      "T_blackbody_K": 138.3704175082488,
+      "lambda_peak_um": 20.942120810087548
+    }
+  ],
+  "qualifications": [
+    "Two separated dimming episodes do not establish an 88-year recurrence period or prove they share a mechanism.",
+    "Transverse path length is v*t for a central edge-on circular crossing, not a unique disk diameter; impact parameter, inclination, opacity gradients and eccentricity matter.",
+    "Disk stability, companion mass and precession timescale require an explicit dynamical model. A close binary alone does not imply a dusty torus.",
+    "Infrared luminosity depends on total intercepted starlight and dust temperature, grain properties and geometry; line-of-sight depth is not bolometric covering fraction.",
+    "No warm excess does not establish a cold distant disk; a warm excess does not uniquely establish a circumbinary ring."
+  ]
+}

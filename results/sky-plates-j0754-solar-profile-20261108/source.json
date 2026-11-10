@@ -1,0 +1,8 @@
+{
+  "url": "https://hesperia.gsfc.nasa.gov/hessi/images/diagrams.gif",
+  "source_page": "https://hesperia.gsfc.nasa.gov/hessi/flares.htm",
+  "event": "Solar flare6March1989",
+  "bands": "Xray/gammaray,notTESSoptical",
+  "sha256": "359c5274646928ff004cb0e303ba7e204d0434425240edd5f03abeec2e48cebe",
+  "comparison": "Qualitative time-profile comparison only; no scaling fit or energy equivalence."
+}

@@ -1,0 +1,6023 @@
+{
+  "native_rows": 5249,
+  "accepted_rows": 5180,
+  "filters": {
+    "V": 965,
+    "g": 4284
+  },
+  "accepted_filters": {
+    "V": 960,
+    "g": 4220
+  },
+  "rejection_reasons": {
+    "sentinel_or_invalid_error_flux": 69,
+    "upper_limit": 1,
+    "nonfinite": 1
+  },
+  "first_date": "2012-02-16",
+  "last_date": "2026-11-08",
+  "partial_year_note": "2026 observations end8November;2026 is a partial year.",
+  "primary_specification": "Original protocol.json; CSV-specific implementation/sensitivities specified after preliminary medians in replication_analysis_specification.json.",
+  "uncertainty": "3000 UTC-date block bootstrap draws per primary contrast; 500 for sensitivities. Sampling intervals do not include calibration systematics or inter-day correlation.",
+  "missing_flags": "V1 export has no explicit image quality flag. Sentinel/limit/error screens and seeing/error sensitivities are used; no brightness clipping.",
+  "cameras": [
+    {
+      "camera": "bA",
+      "band": "g",
+      "raw": 1059,
+      "accepted": 1052,
+      "annual": [
+        {
+          "year": 2018,
+          "observations": 3,
+          "days": 1,
+          "median": 12.696
+        },
+        {
+          "year": 2019,
+          "observations": 139,
+          "days": 49,
+          "median": 12.68
+        },
+        {
+          "year": 2020,
+          "observations": 76,
+          "days": 25,
+          "median": 12.810500000000001
+        },
+        {
+          "year": 2021,
+          "observations": 96,
+          "days": 25,
+          "median": 12.906
+        },
+        {
+          "year": 2022,
+          "observations": 113,
+          "days": 36,
+          "median": 12.954
+        },
+        {
+          "year": 2023,
+          "observations": 105,
+          "days": 35,
+          "median": 12.849
+        },
+        {
+          "year": 2024,
+          "observations": 232,
+          "days": 75,
+          "median": 12.861
+        },
+        {
+          "year": 2025,
+          "observations": 190,
+          "days": 61,
+          "median": 12.814
+        },
+        {
+          "year": 2026,
+          "observations": 98,
+          "days": 34,
+          "median": 12.7605
+        }
+      ],
+      "first_date": "2018-12-01",
+      "last_date": "2026-11-05",
+      "contrasts": {
+        "fading": {
+          "years": [
+            2018,
+            2022
+          ],
+          "observations": [
+            3,
+            113
+          ],
+          "days": [
+            1,
+            36
+          ],
+          "status": "INSUFFICIENT",
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                3,
+                112
+              ],
+              "days": [
+                1,
+                36
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "error_and_fwhm": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                3,
+                112
+              ],
+              "days": [
+                1,
+                36
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "common_months": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                3,
+                3
+              ],
+              "days": [
+                1,
+                1
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "january_april": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                66
+              ],
+              "days": [
+                0,
+                20
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                3,
+                32
+              ],
+              "days": [
+                1,
+                11
+              ],
+              "status": "INSUFFICIENT"
+            }
+          }
+        },
+        "recovery": {
+          "years": [
+            2022,
+            2025
+          ],
+          "observations": [
+            113,
+            190
+          ],
+          "days": [
+            36,
+            61
+          ],
+          "status": "MEASURED",
+          "medians": [
+            12.954,
+            12.814
+          ],
+          "delta": -0.14000000000000057,
+          "ci95": [
+            -0.15549999999999997,
+            -0.11800000000000033
+          ],
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                112,
+                190
+              ],
+              "days": [
+                36,
+                61
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.9535,
+                12.814
+              ],
+              "delta": -0.13949999999999996,
+              "ci95": [
+                -0.15276250000000008,
+                -0.11899999999999977
+              ]
+            },
+            "error_and_fwhm": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                112,
+                190
+              ],
+              "days": [
+                36,
+                61
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.9535,
+                12.814
+              ],
+              "delta": -0.13949999999999996,
+              "ci95": [
+                -0.15276250000000008,
+                -0.11899999999999977
+              ]
+            },
+            "common_months": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                113,
+                190
+              ],
+              "days": [
+                36,
+                61
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.954,
+                12.814
+              ],
+              "delta": -0.14000000000000057,
+              "ci95": [
+                -0.1535250000000002,
+                -0.12000000000000006
+              ]
+            },
+            "january_april": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                66,
+                100
+              ],
+              "days": [
+                20,
+                32
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.927,
+                12.829
+              ],
+              "delta": -0.09799999999999898,
+              "ci95": [
+                -0.12649999999999922,
+                -0.08873749999999926
+              ]
+            },
+            "october_december": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                32,
+                66
+              ],
+              "days": [
+                11,
+                21
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.9755,
+                12.8015
+              ],
+              "delta": -0.1739999999999995,
+              "ci95": [
+                -0.19700000000000012,
+                -0.15423750000000022
+              ]
+            }
+          },
+          "control_diagnostic": {
+            "sources": 0,
+            "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+          }
+        }
+      }
+    },
+    {
+      "camera": "bE",
+      "band": "g",
+      "raw": 573,
+      "accepted": 567,
+      "annual": [
+        {
+          "year": 2018,
+          "observations": 5,
+          "days": 2,
+          "median": 12.619
+        },
+        {
+          "year": 2019,
+          "observations": 55,
+          "days": 18,
+          "median": 12.641
+        },
+        {
+          "year": 2020,
+          "observations": 21,
+          "days": 8,
+          "median": 12.626
+        },
+        {
+          "year": 2021,
+          "observations": 63,
+          "days": 22,
+          "median": 12.846
+        },
+        {
+          "year": 2022,
+          "observations": 87,
+          "days": 27,
+          "median": 12.927
+        },
+        {
+          "year": 2023,
+          "observations": 57,
+          "days": 21,
+          "median": 12.869
+        },
+        {
+          "year": 2024,
+          "observations": 85,
+          "days": 29,
+          "median": 12.838
+        },
+        {
+          "year": 2025,
+          "observations": 84,
+          "days": 28,
+          "median": 12.7775
+        },
+        {
+          "year": 2026,
+          "observations": 110,
+          "days": 36,
+          "median": 12.753499999999999
+        }
+      ],
+      "first_date": "2018-10-22",
+      "last_date": "2026-10-27",
+      "contrasts": {
+        "fading": {
+          "years": [
+            2018,
+            2022
+          ],
+          "observations": [
+            5,
+            87
+          ],
+          "days": [
+            2,
+            27
+          ],
+          "status": "INSUFFICIENT",
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                5,
+                87
+              ],
+              "days": [
+                2,
+                27
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "error_and_fwhm": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                5,
+                87
+              ],
+              "days": [
+                2,
+                27
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "common_months": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                5,
+                22
+              ],
+              "days": [
+                2,
+                6
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "january_april": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                26
+              ],
+              "days": [
+                0,
+                8
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                5,
+                28
+              ],
+              "days": [
+                2,
+                8
+              ],
+              "status": "INSUFFICIENT"
+            }
+          }
+        },
+        "recovery": {
+          "years": [
+            2022,
+            2025
+          ],
+          "observations": [
+            87,
+            84
+          ],
+          "days": [
+            27,
+            28
+          ],
+          "status": "MEASURED",
+          "medians": [
+            12.927,
+            12.7775
+          ],
+          "delta": -0.14949999999999974,
+          "ci95": [
+            -0.16699999999999982,
+            -0.1355000000000004
+          ],
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                87,
+                84
+              ],
+              "days": [
+                27,
+                28
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.927,
+                12.7775
+              ],
+              "delta": -0.14949999999999974,
+              "ci95": [
+                -0.16699999999999982,
+                -0.1339999999999994
+              ]
+            },
+            "error_and_fwhm": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                87,
+                84
+              ],
+              "days": [
+                27,
+                28
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.927,
+                12.7775
+              ],
+              "delta": -0.14949999999999974,
+              "ci95": [
+                -0.16699999999999982,
+                -0.1339999999999994
+              ]
+            },
+            "common_months": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                78,
+                77
+              ],
+              "days": [
+                24,
+                25
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.9285,
+                12.775
+              ],
+              "delta": -0.1534999999999993,
+              "ci95": [
+                -0.17026249999999932,
+                -0.14000000000000057
+              ]
+            },
+            "january_april": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                26,
+                24
+              ],
+              "days": [
+                8,
+                8
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                28,
+                27
+              ],
+              "days": [
+                8,
+                9
+              ],
+              "status": "INSUFFICIENT"
+            }
+          },
+          "control_diagnostic": {
+            "sources": 0,
+            "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+          }
+        }
+      }
+    },
+    {
+      "camera": "ba",
+      "band": "V",
+      "raw": 856,
+      "accepted": 851,
+      "annual": [
+        {
+          "year": 2012,
+          "observations": 26,
+          "days": 13,
+          "median": 12.1905
+        },
+        {
+          "year": 2013,
+          "observations": 48,
+          "days": 27,
+          "median": 12.234
+        },
+        {
+          "year": 2014,
+          "observations": 94,
+          "days": 44,
+          "median": 12.2585
+        },
+        {
+          "year": 2015,
+          "observations": 193,
+          "days": 77,
+          "median": 12.295
+        },
+        {
+          "year": 2016,
+          "observations": 221,
+          "days": 76,
+          "median": 12.312
+        },
+        {
+          "year": 2017,
+          "observations": 165,
+          "days": 56,
+          "median": 12.248
+        },
+        {
+          "year": 2018,
+          "observations": 104,
+          "days": 35,
+          "median": 12.189499999999999
+        }
+      ],
+      "first_date": "2012-02-16",
+      "last_date": "2018-11-29",
+      "contrasts": {
+        "fading": {
+          "years": [
+            2018,
+            2022
+          ],
+          "observations": [
+            104,
+            0
+          ],
+          "days": [
+            35,
+            0
+          ],
+          "status": "INSUFFICIENT",
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                104,
+                0
+              ],
+              "days": [
+                35,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "error_and_fwhm": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                104,
+                0
+              ],
+              "days": [
+                35,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "common_months": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "january_april": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                49,
+                0
+              ],
+              "days": [
+                17,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                41,
+                0
+              ],
+              "days": [
+                13,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            }
+          }
+        },
+        "recovery": {
+          "years": [
+            2022,
+            2025
+          ],
+          "observations": [
+            0,
+            0
+          ],
+          "days": [
+            0,
+            0
+          ],
+          "status": "INSUFFICIENT",
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "error_and_fwhm": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "common_months": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "january_april": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            }
+          }
+        }
+      }
+    },
+    {
+      "camera": "bb",
+      "band": "V",
+      "raw": 4,
+      "accepted": 4,
+      "annual": [
+        {
+          "year": 2012,
+          "observations": 4,
+          "days": 3,
+          "median": 12.147
+        }
+      ],
+      "first_date": "2012-04-03",
+      "last_date": "2012-10-19",
+      "contrasts": {
+        "fading": {
+          "years": [
+            2018,
+            2022
+          ],
+          "observations": [
+            0,
+            0
+          ],
+          "days": [
+            0,
+            0
+          ],
+          "status": "INSUFFICIENT",
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "error_and_fwhm": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "common_months": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "january_april": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            }
+          }
+        },
+        "recovery": {
+          "years": [
+            2022,
+            2025
+          ],
+          "observations": [
+            0,
+            0
+          ],
+          "days": [
+            0,
+            0
+          ],
+          "status": "INSUFFICIENT",
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "error_and_fwhm": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "common_months": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "january_april": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            }
+          }
+        }
+      }
+    },
+    {
+      "camera": "be",
+      "band": "V",
+      "raw": 105,
+      "accepted": 105,
+      "annual": [
+        {
+          "year": 2016,
+          "observations": 27,
+          "days": 9,
+          "median": 12.283
+        },
+        {
+          "year": 2017,
+          "observations": 70,
+          "days": 26,
+          "median": 12.209
+        },
+        {
+          "year": 2018,
+          "observations": 8,
+          "days": 3,
+          "median": 12.1655
+        }
+      ],
+      "first_date": "2016-10-06",
+      "last_date": "2018-05-04",
+      "contrasts": {
+        "fading": {
+          "years": [
+            2018,
+            2022
+          ],
+          "observations": [
+            8,
+            0
+          ],
+          "days": [
+            3,
+            0
+          ],
+          "status": "INSUFFICIENT",
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                8,
+                0
+              ],
+              "days": [
+                3,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "error_and_fwhm": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                8,
+                0
+              ],
+              "days": [
+                3,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "common_months": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "january_april": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                6,
+                0
+              ],
+              "days": [
+                2,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            }
+          }
+        },
+        "recovery": {
+          "years": [
+            2022,
+            2025
+          ],
+          "observations": [
+            0,
+            0
+          ],
+          "days": [
+            0,
+            0
+          ],
+          "status": "INSUFFICIENT",
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "error_and_fwhm": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "common_months": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "january_april": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                0,
+                0
+              ],
+              "days": [
+                0,
+                0
+              ],
+              "status": "INSUFFICIENT"
+            }
+          }
+        }
+      }
+    },
+    {
+      "camera": "bi",
+      "band": "g",
+      "raw": 957,
+      "accepted": 947,
+      "annual": [
+        {
+          "year": 2017,
+          "observations": 44,
+          "days": 16,
+          "median": 12.597000000000001
+        },
+        {
+          "year": 2018,
+          "observations": 235,
+          "days": 83,
+          "median": 12.603
+        },
+        {
+          "year": 2019,
+          "observations": 105,
+          "days": 36,
+          "median": 12.641
+        },
+        {
+          "year": 2020,
+          "observations": 80,
+          "days": 26,
+          "median": 12.6585
+        },
+        {
+          "year": 2021,
+          "observations": 63,
+          "days": 20,
+          "median": 12.859
+        },
+        {
+          "year": 2022,
+          "observations": 102,
+          "days": 35,
+          "median": 12.916
+        },
+        {
+          "year": 2023,
+          "observations": 72,
+          "days": 24,
+          "median": 12.8825
+        },
+        {
+          "year": 2024,
+          "observations": 90,
+          "days": 29,
+          "median": 12.857
+        },
+        {
+          "year": 2025,
+          "observations": 70,
+          "days": 26,
+          "median": 12.804
+        },
+        {
+          "year": 2026,
+          "observations": 86,
+          "days": 29,
+          "median": 12.754999999999999
+        }
+      ],
+      "first_date": "2017-12-01",
+      "last_date": "2026-11-08",
+      "contrasts": {
+        "fading": {
+          "years": [
+            2018,
+            2022
+          ],
+          "observations": [
+            235,
+            102
+          ],
+          "days": [
+            83,
+            35
+          ],
+          "status": "MEASURED",
+          "medians": [
+            12.603,
+            12.916
+          ],
+          "delta": 0.3130000000000006,
+          "ci95": [
+            0.29100000000000037,
+            0.3439999999999994
+          ],
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                235,
+                102
+              ],
+              "days": [
+                83,
+                35
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.603,
+                12.916
+              ],
+              "delta": 0.3130000000000006,
+              "ci95": [
+                0.287737499999999,
+                0.34450000000000003
+              ]
+            },
+            "error_and_fwhm": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                235,
+                102
+              ],
+              "days": [
+                83,
+                35
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.603,
+                12.916
+              ],
+              "delta": 0.3130000000000006,
+              "ci95": [
+                0.287737499999999,
+                0.34450000000000003
+              ]
+            },
+            "common_months": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                235,
+                102
+              ],
+              "days": [
+                83,
+                35
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.603,
+                12.916
+              ],
+              "delta": 0.3130000000000006,
+              "ci95": [
+                0.287737499999999,
+                0.34450000000000003
+              ]
+            },
+            "january_april": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                180,
+                53
+              ],
+              "days": [
+                63,
+                18
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.601,
+                12.882
+              ],
+              "delta": 0.2809999999999988,
+              "ci95": [
+                0.2702375000000008,
+                0.30849999999999866
+              ]
+            },
+            "october_december": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                22,
+                30
+              ],
+              "days": [
+                8,
+                10
+              ],
+              "status": "INSUFFICIENT"
+            }
+          },
+          "control_diagnostic": {
+            "sources": 14,
+            "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry",
+            "median_delta": -0.0017151093178391363,
+            "range": [
+              -0.07363484073465543,
+              0.1344146935656898
+            ],
+            "target_minus_median_control": 0.31471510931783975
+          }
+        },
+        "recovery": {
+          "years": [
+            2022,
+            2025
+          ],
+          "observations": [
+            102,
+            70
+          ],
+          "days": [
+            35,
+            26
+          ],
+          "status": "MEASURED",
+          "medians": [
+            12.916,
+            12.804
+          ],
+          "delta": -0.1120000000000001,
+          "ci95": [
+            -0.14499999999999957,
+            -0.0909999999999993
+          ],
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                102,
+                70
+              ],
+              "days": [
+                35,
+                26
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.916,
+                12.804
+              ],
+              "delta": -0.1120000000000001,
+              "ci95": [
+                -0.1469999999999994,
+                -0.08999999999999986
+              ]
+            },
+            "error_and_fwhm": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                102,
+                70
+              ],
+              "days": [
+                35,
+                26
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.916,
+                12.804
+              ],
+              "delta": -0.1120000000000001,
+              "ci95": [
+                -0.1469999999999994,
+                -0.08999999999999986
+              ]
+            },
+            "common_months": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                102,
+                64
+              ],
+              "days": [
+                35,
+                24
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.916,
+                12.807
+              ],
+              "delta": -0.10899999999999999,
+              "ci95": [
+                -0.14676249999999996,
+                -0.0874749999999995
+              ]
+            },
+            "january_april": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                53,
+                29
+              ],
+              "days": [
+                18,
+                12
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.882,
+                12.816
+              ],
+              "delta": -0.06599999999999895,
+              "ci95": [
+                -0.09676249999999924,
+                -0.048500000000000654
+              ]
+            },
+            "october_december": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                30,
+                32
+              ],
+              "days": [
+                10,
+                11
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.952,
+                12.771
+              ],
+              "delta": -0.18099999999999916,
+              "ci95": [
+                -0.20000000000000023,
+                -0.13297499999999826
+              ]
+            }
+          },
+          "control_diagnostic": {
+            "sources": 0,
+            "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+          }
+        }
+      }
+    },
+    {
+      "camera": "bm",
+      "band": "g",
+      "raw": 675,
+      "accepted": 657,
+      "annual": [
+        {
+          "year": 2017,
+          "observations": 15,
+          "days": 5,
+          "median": 12.61
+        },
+        {
+          "year": 2018,
+          "observations": 109,
+          "days": 38,
+          "median": 12.621
+        },
+        {
+          "year": 2019,
+          "observations": 118,
+          "days": 42,
+          "median": 12.641
+        },
+        {
+          "year": 2020,
+          "observations": 37,
+          "days": 13,
+          "median": 12.697
+        },
+        {
+          "year": 2021,
+          "observations": 30,
+          "days": 8,
+          "median": 12.883
+        },
+        {
+          "year": 2022,
+          "observations": 116,
+          "days": 31,
+          "median": 12.906
+        },
+        {
+          "year": 2023,
+          "observations": 87,
+          "days": 27,
+          "median": 12.84
+        },
+        {
+          "year": 2024,
+          "observations": 19,
+          "days": 7,
+          "median": 12.855
+        },
+        {
+          "year": 2025,
+          "observations": 86,
+          "days": 29,
+          "median": 12.809
+        },
+        {
+          "year": 2026,
+          "observations": 40,
+          "days": 13,
+          "median": 12.7485
+        }
+      ],
+      "first_date": "2017-12-01",
+      "last_date": "2026-11-05",
+      "contrasts": {
+        "fading": {
+          "years": [
+            2018,
+            2022
+          ],
+          "observations": [
+            109,
+            116
+          ],
+          "days": [
+            38,
+            31
+          ],
+          "status": "MEASURED",
+          "medians": [
+            12.621,
+            12.906
+          ],
+          "delta": 0.28500000000000014,
+          "ci95": [
+            0.26900000000000013,
+            0.3055000000000004
+          ],
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                109,
+                116
+              ],
+              "days": [
+                38,
+                31
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.621,
+                12.906
+              ],
+              "delta": 0.28500000000000014,
+              "ci95": [
+                0.270999999999999,
+                0.3030000000000008
+              ]
+            },
+            "error_and_fwhm": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                109,
+                116
+              ],
+              "days": [
+                38,
+                31
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.621,
+                12.906
+              ],
+              "delta": 0.28500000000000014,
+              "ci95": [
+                0.270999999999999,
+                0.3030000000000008
+              ]
+            },
+            "common_months": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                107,
+                116
+              ],
+              "days": [
+                37,
+                31
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.621,
+                12.906
+              ],
+              "delta": 0.28500000000000014,
+              "ci95": [
+                0.26947499999999985,
+                0.30426249999999966
+              ]
+            },
+            "january_april": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                68,
+                68
+              ],
+              "days": [
+                22,
+                18
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.617,
+                12.907
+              ],
+              "delta": 0.28999999999999915,
+              "ci95": [
+                0.2657374999999997,
+                0.3119999999999995
+              ]
+            },
+            "october_december": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                15,
+                39
+              ],
+              "days": [
+                6,
+                10
+              ],
+              "status": "INSUFFICIENT"
+            }
+          },
+          "control_diagnostic": {
+            "sources": 14,
+            "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry",
+            "median_delta": 0.000744938942670359,
+            "range": [
+              -0.05469169549617803,
+              0.009801505168351099
+            ],
+            "target_minus_median_control": 0.2842550610573298
+          }
+        },
+        "recovery": {
+          "years": [
+            2022,
+            2025
+          ],
+          "observations": [
+            116,
+            86
+          ],
+          "days": [
+            31,
+            29
+          ],
+          "status": "MEASURED",
+          "medians": [
+            12.906,
+            12.809
+          ],
+          "delta": -0.09700000000000131,
+          "ci95": [
+            -0.1120000000000001,
+            -0.07900000000000063
+          ],
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                116,
+                86
+              ],
+              "days": [
+                31,
+                29
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.906,
+                12.809
+              ],
+              "delta": -0.09700000000000131,
+              "ci95": [
+                -0.1120000000000001,
+                -0.08023750000000046
+              ]
+            },
+            "error_and_fwhm": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                116,
+                86
+              ],
+              "days": [
+                31,
+                29
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.906,
+                12.809
+              ],
+              "delta": -0.09700000000000131,
+              "ci95": [
+                -0.1120000000000001,
+                -0.08023750000000046
+              ]
+            },
+            "common_months": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                83,
+                82
+              ],
+              "days": [
+                23,
+                27
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.908,
+                12.809999999999999
+              ],
+              "delta": -0.09800000000000075,
+              "ci95": [
+                -0.11452500000000047,
+                -0.08099999999999952
+              ]
+            },
+            "january_april": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                68,
+                65
+              ],
+              "days": [
+                18,
+                21
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.907,
+                12.814
+              ],
+              "delta": -0.09299999999999997,
+              "ci95": [
+                -0.1039999999999992,
+                -0.06999999999999935
+              ]
+            },
+            "october_december": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                39,
+                18
+              ],
+              "days": [
+                10,
+                7
+              ],
+              "status": "INSUFFICIENT"
+            }
+          },
+          "control_diagnostic": {
+            "sources": 0,
+            "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+          }
+        }
+      }
+    },
+    {
+      "camera": "bq",
+      "band": "g",
+      "raw": 1020,
+      "accepted": 997,
+      "annual": [
+        {
+          "year": 2017,
+          "observations": 93,
+          "days": 32,
+          "median": 12.62
+        },
+        {
+          "year": 2018,
+          "observations": 115,
+          "days": 40,
+          "median": 12.643
+        },
+        {
+          "year": 2019,
+          "observations": 121,
+          "days": 41,
+          "median": 12.664
+        },
+        {
+          "year": 2020,
+          "observations": 135,
+          "days": 43,
+          "median": 12.689
+        },
+        {
+          "year": 2021,
+          "observations": 99,
+          "days": 25,
+          "median": 12.895
+        },
+        {
+          "year": 2022,
+          "observations": 96,
+          "days": 32,
+          "median": 12.9465
+        },
+        {
+          "year": 2023,
+          "observations": 86,
+          "days": 29,
+          "median": 12.879
+        },
+        {
+          "year": 2024,
+          "observations": 42,
+          "days": 14,
+          "median": 12.851
+        },
+        {
+          "year": 2025,
+          "observations": 136,
+          "days": 46,
+          "median": 12.785499999999999
+        },
+        {
+          "year": 2026,
+          "observations": 74,
+          "days": 25,
+          "median": 12.758
+        }
+      ],
+      "first_date": "2017-10-07",
+      "last_date": "2026-11-04",
+      "contrasts": {
+        "fading": {
+          "years": [
+            2018,
+            2022
+          ],
+          "observations": [
+            115,
+            96
+          ],
+          "days": [
+            40,
+            32
+          ],
+          "status": "MEASURED",
+          "medians": [
+            12.643,
+            12.9465
+          ],
+          "delta": 0.30349999999999966,
+          "ci95": [
+            0.2859999999999996,
+            0.3249999999999993
+          ],
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                115,
+                96
+              ],
+              "days": [
+                40,
+                32
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.643,
+                12.9465
+              ],
+              "delta": 0.30349999999999966,
+              "ci95": [
+                0.2867375000000005,
+                0.32399999999999984
+              ]
+            },
+            "error_and_fwhm": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                115,
+                96
+              ],
+              "days": [
+                40,
+                32
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.643,
+                12.9465
+              ],
+              "delta": 0.30349999999999966,
+              "ci95": [
+                0.2867375000000005,
+                0.32399999999999984
+              ]
+            },
+            "common_months": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                115,
+                54
+              ],
+              "days": [
+                40,
+                18
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.643,
+                12.9405
+              ],
+              "delta": 0.29749999999999943,
+              "ci95": [
+                0.2804749999999991,
+                0.32699999999999996
+              ]
+            },
+            "january_april": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                78,
+                47
+              ],
+              "days": [
+                27,
+                15
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.6345,
+                12.937
+              ],
+              "delta": 0.3025000000000002,
+              "ci95": [
+                0.27399999999999913,
+                0.32399999999999807
+              ]
+            },
+            "october_december": {
+              "years": [
+                2018,
+                2022
+              ],
+              "observations": [
+                28,
+                27
+              ],
+              "days": [
+                10,
+                9
+              ],
+              "status": "INSUFFICIENT"
+            }
+          },
+          "control_diagnostic": {
+            "sources": 14,
+            "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry",
+            "median_delta": 0.00011366735261919558,
+            "range": [
+              -0.06152103907302653,
+              0.047719571521376736
+            ],
+            "target_minus_median_control": 0.30338633264738046
+          }
+        },
+        "recovery": {
+          "years": [
+            2022,
+            2025
+          ],
+          "observations": [
+            96,
+            136
+          ],
+          "days": [
+            32,
+            46
+          ],
+          "status": "MEASURED",
+          "medians": [
+            12.9465,
+            12.785499999999999
+          ],
+          "delta": -0.16100000000000136,
+          "ci95": [
+            -0.17800000000000082,
+            -0.1460000000000008
+          ],
+          "sensitivities": {
+            "error_le_0p1": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                96,
+                136
+              ],
+              "days": [
+                32,
+                46
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.9465,
+                12.785499999999999
+              ],
+              "delta": -0.16100000000000136,
+              "ci95": [
+                -0.17776250000000043,
+                -0.1479999999999997
+              ]
+            },
+            "error_and_fwhm": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                96,
+                136
+              ],
+              "days": [
+                32,
+                46
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.9465,
+                12.785499999999999
+              ],
+              "delta": -0.16100000000000136,
+              "ci95": [
+                -0.17776250000000043,
+                -0.1479999999999997
+              ]
+            },
+            "common_months": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                69,
+                136
+              ],
+              "days": [
+                23,
+                46
+              ],
+              "status": "MEASURED",
+              "medians": [
+                12.948,
+                12.785499999999999
+              ],
+              "delta": -0.16250000000000142,
+              "ci95": [
+                -0.18199999999999955,
+                -0.14623750000000024
+              ]
+            },
+            "january_april": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                47,
+                18
+              ],
+              "days": [
+                15,
+                6
+              ],
+              "status": "INSUFFICIENT"
+            },
+            "october_december": {
+              "years": [
+                2022,
+                2025
+              ],
+              "observations": [
+                27,
+                101
+              ],
+              "days": [
+                9,
+                34
+              ],
+              "status": "INSUFFICIENT"
+            }
+          },
+          "control_diagnostic": {
+            "sources": 0,
+            "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+          }
+        }
+      }
+    }
+  ],
+  "control_placebos": [
+    {
+      "gaia_id": "667454586568716288",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          22
+        ],
+        "days": [
+          1,
+          22
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          22,
+          1
+        ],
+        "days": [
+          22,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667454586568716288",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667454586568716288",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667454586568716288",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667454586568716288",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.342810761683879,
+          13.333450740044533
+        ],
+        "delta": -0.009360021639345462
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667454586568716288",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.340875806201211,
+          13.34312268115273
+        ],
+        "delta": 0.0022468749515187625
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667454586568716288",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.376144051918013,
+          13.385393418471917
+        ],
+        "delta": 0.009249366553904181
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667402462845806080",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          34
+        ],
+        "days": [
+          1,
+          34
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          34,
+          1
+        ],
+        "days": [
+          34,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667402462845806080",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667402462845806080",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667402462845806080",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667402462845806080",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.73746674211716,
+          12.732126251785491
+        ],
+        "delta": -0.005340490331668946
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667402462845806080",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.72913948546055,
+          12.730517597167108
+        ],
+        "delta": 0.001378111706557661
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667402462845806080",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          29,
+          29
+        ],
+        "days": [
+          29,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.777918128356518,
+          12.787595105756527
+        ],
+        "delta": 0.009676977400008724
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667397618122678528",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          33
+        ],
+        "days": [
+          1,
+          33
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          33,
+          1
+        ],
+        "days": [
+          33,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667397618122678528",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667397618122678528",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667397618122678528",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667397618122678528",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          11.506003120548467,
+          11.640417814114157
+        ],
+        "delta": 0.1344146935656898
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667397618122678528",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          11.450554603650243,
+          11.46003884067113
+        ],
+        "delta": 0.009484237020886965
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667397618122678528",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          29,
+          29
+        ],
+        "days": [
+          29,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          11.517248367558192,
+          11.564967939079569
+        ],
+        "delta": 0.047719571521376736
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667391399010134400",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          34
+        ],
+        "days": [
+          1,
+          34
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          34,
+          1
+        ],
+        "days": [
+          34,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667391399010134400",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667391399010134400",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667391399010134400",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667391399010134400",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          11.983325754234802,
+          11.992297072073242
+        ],
+        "delta": 0.00897131783844074
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667391399010134400",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          11.9895178936355,
+          11.992393206008106
+        ],
+        "delta": 0.002875312372607297
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667391399010134400",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.01846817161879,
+          12.00330964041801
+        ],
+        "delta": -0.0151585312007807
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667403768515830272",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          29
+        ],
+        "days": [
+          1,
+          29
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          29,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667403768515830272",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667403768515830272",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667403768515830272",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667403768515830272",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.444662958760988,
+          12.453476100597534
+        ],
+        "delta": 0.008813141836546023
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667403768515830272",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.462338132255827,
+          12.46209681135996
+        ],
+        "delta": -0.00024132089586714756
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667403768515830272",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.480518667974234,
+          12.480797133390855
+        ],
+        "delta": 0.0002784654166205769
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380575692566656",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          34
+        ],
+        "days": [
+          1,
+          34
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          34,
+          1
+        ],
+        "days": [
+          34,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380575692566656",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380575692566656",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380575692566656",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380575692566656",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.895549098167027,
+          13.88781229751478
+        ],
+        "delta": -0.0077368006522480215
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380575692566656",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.893293419533537,
+          13.887245915154729
+        ],
+        "delta": -0.006047504378807744
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380575692566656",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.922790143364004,
+          13.908610187648465
+        ],
+        "delta": -0.014179955715539094
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667382255023480576",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          34
+        ],
+        "days": [
+          1,
+          34
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          34,
+          1
+        ],
+        "days": [
+          34,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667382255023480576",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667382255023480576",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667382255023480576",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667382255023480576",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.68269603178781,
+          13.686904419908162
+        ],
+        "delta": 0.004208388120352069
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667382255023480576",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.678375101656904,
+          13.673372246001719
+        ],
+        "delta": -0.005002855655185101
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667382255023480576",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.69996493742035,
+          13.697854817920781
+        ],
+        "delta": -0.0021101194995694073
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380816210736128",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          34
+        ],
+        "days": [
+          1,
+          34
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          34,
+          1
+        ],
+        "days": [
+          34,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380816210736128",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380816210736128",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380816210736128",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380816210736128",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.926009454065527,
+          13.852374613330872
+        ],
+        "delta": -0.07363484073465543
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380816210736128",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.934164849857996,
+          13.879473154361818
+        ],
+        "delta": -0.05469169549617803
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667380816210736128",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.9816678734758,
+          13.920146834402773
+        ],
+        "delta": -0.06152103907302653
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667023509291889792",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          33
+        ],
+        "days": [
+          1,
+          33
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          33,
+          1
+        ],
+        "days": [
+          33,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667023509291889792",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667023509291889792",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667023509291889792",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667023509291889792",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.683715484420244,
+          13.674482311586992
+        ],
+        "delta": -0.009233172833251757
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667023509291889792",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.667316282311251,
+          13.661471319975771
+        ],
+        "delta": -0.005844962335480375
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667023509291889792",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.687980279454953,
+          13.694227669026692
+        ],
+        "delta": 0.0062473895717385375
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667024467067954560",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          29
+        ],
+        "days": [
+          1,
+          29
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          29,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667024467067954560",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667024467067954560",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667024467067954560",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667024467067954560",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.409370627697276,
+          12.408571001843594
+        ],
+        "delta": -0.0007996258536824286
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667024467067954560",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.404197089496314,
+          12.405598131795024
+        ],
+        "delta": 0.0014010422987098536
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667024467067954560",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.431650028206239,
+          12.440601849380224
+        ],
+        "delta": 0.008951821173985408
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667456064037465216",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          26
+        ],
+        "days": [
+          1,
+          26
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          26,
+          1
+        ],
+        "days": [
+          26,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667456064037465216",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667456064037465216",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667456064037465216",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667456064037465216",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          11.783601125694439,
+          11.773978372746841
+        ],
+        "delta": -0.009622752947597846
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667456064037465216",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          11.77997408839692,
+          11.78977559356527
+        ],
+        "delta": 0.009801505168351099
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667456064037465216",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          30,
+          29
+        ],
+        "days": [
+          30,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          11.807097402363295,
+          11.810554312412247
+        ],
+        "delta": 0.0034569100489516558
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667411636895893504",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          15
+        ],
+        "days": [
+          1,
+          15
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          15,
+          1
+        ],
+        "days": [
+          15,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667411636895893504",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667411636895893504",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667411636895893504",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667411636895893504",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.83082671348104,
+          13.842357950273882
+        ],
+        "delta": 0.011531236792842847
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667411636895893504",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.824791724606344,
+          13.821739068787956
+        ],
+        "delta": -0.003052655818388317
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667411636895893504",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          29,
+          29
+        ],
+        "days": [
+          29,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.873379016710746,
+          13.873327885999364
+        ],
+        "delta": -5.113071138218572e-05
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667409918908989568",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          34
+        ],
+        "days": [
+          1,
+          34
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          34,
+          0
+        ],
+        "days": [
+          34,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667409918908989568",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667409918908989568",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667409918908989568",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667409918908989568",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.598507854411716,
+          13.59587726162972
+        ],
+        "delta": -0.002630592781995844
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667409918908989568",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          29
+        ],
+        "days": [
+          34,
+          26
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.599795169510323,
+          13.60248925044182
+        ],
+        "delta": 0.002694080931497922
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          7
+        ],
+        "days": [
+          26,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667409918908989568",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          29,
+          28
+        ],
+        "days": [
+          29,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.62397279300794,
+          13.609725815076974
+        ],
+        "delta": -0.014246977930966409
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          28,
+          1
+        ],
+        "days": [
+          27,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667459156414046976",
+      "camera": "bA",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          14
+        ],
+        "days": [
+          1,
+          14
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          14,
+          1
+        ],
+        "days": [
+          14,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667459156414046976",
+      "camera": "bE",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          1,
+          23
+        ],
+        "days": [
+          1,
+          18
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          23,
+          0
+        ],
+        "days": [
+          18,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667459156414046976",
+      "camera": "ba",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          28,
+          0
+        ],
+        "days": [
+          28,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667459156414046976",
+      "camera": "be",
+      "band": "V",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          0
+        ],
+        "days": [
+          3,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          0,
+          0
+        ],
+        "days": [
+          0,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667459156414046976",
+      "camera": "bi",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          69,
+          35
+        ],
+        "days": [
+          69,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.90845534704394,
+          13.910552638800631
+        ],
+        "delta": 0.0020972917566908222
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          35,
+          0
+        ],
+        "days": [
+          31,
+          0
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667459156414046976",
+      "camera": "bm",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          35,
+          30
+        ],
+        "days": [
+          34,
+          27
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.911711262734233,
+          13.911823028913016
+        ],
+        "delta": 0.00011176617878305706
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          30,
+          7
+        ],
+        "days": [
+          27,
+          5
+        ],
+        "status": "INSUFFICIENT"
+      }
+    },
+    {
+      "gaia_id": "667459156414046976",
+      "camera": "bq",
+      "band": "g",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          29,
+          29
+        ],
+        "days": [
+          29,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          13.928204391875854,
+          13.90835564530445
+        ],
+        "delta": -0.019848746571403453
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          29,
+          1
+        ],
+        "days": [
+          28,
+          1
+        ],
+        "status": "INSUFFICIENT"
+      }
+    }
+  ],
+  "verdicts": {
+    "fading": {
+      "status": "CORROBORATED_DIRECTION",
+      "supporting_cameras": [
+        "bi",
+        "bm",
+        "bq"
+      ],
+      "contradictory_cameras": []
+    },
+    "recovery": {
+      "status": "CORROBORATED_DIRECTION",
+      "supporting_cameras": [
+        "bA",
+        "bE",
+        "bi",
+        "bm",
+        "bq"
+      ],
+      "contradictory_cameras": []
+    }
+  },
+  "conclusion": "Independent ASAS-SN photometry reproduces the direction of the modern ZTF dimming and recovery.",
+  "limits": "The V2 controls use coadded/different reduction, not identical V1 frames;2025control coverage is insufficient. Cause, period and connection to1930s remain unresolved."
+}

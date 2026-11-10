@@ -1,0 +1,1149 @@
+{
+  "retrieval_url": "https://gaia.ari.uni-heidelberg.de/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+%2A+FROM+gaiadr3.gaia_source+WHERE+source_id%3D667401913089980544",
+  "response": {
+    "metadata": [
+      {
+        "name": "source_id",
+        "description": "Unique source identifier (unique within a particular Data Release)",
+        "datatype": "LONG",
+        "ucd": "meta.id;meta.main"
+      },
+      {
+        "name": "designation",
+        "description": "Unique source designation (unique across all Data Releases)",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.id"
+      },
+      {
+        "name": "ra",
+        "description": "Right ascension",
+        "datatype": "DOUBLE",
+        "unit": "deg",
+        "ucd": "pos.eq.ra;meta.main"
+      },
+      {
+        "name": "dec",
+        "description": "Declination",
+        "datatype": "DOUBLE",
+        "unit": "deg",
+        "ucd": "pos.eq.dec;meta.main"
+      },
+      {
+        "name": "l",
+        "description": "Galactic longitude",
+        "datatype": "DOUBLE",
+        "unit": "deg",
+        "ucd": "pos.galactic.lon"
+      },
+      {
+        "name": "b",
+        "description": "Galactic latitude",
+        "datatype": "DOUBLE",
+        "unit": "deg",
+        "ucd": "pos.galactic.lat"
+      },
+      {
+        "name": "ecl_lon",
+        "description": "Ecliptic longitude",
+        "datatype": "DOUBLE",
+        "unit": "deg",
+        "ucd": "pos.ecliptic.lon"
+      },
+      {
+        "name": "ecl_lat",
+        "description": "Ecliptic latitude",
+        "datatype": "DOUBLE",
+        "unit": "deg",
+        "ucd": "pos.ecliptic.lat"
+      },
+      {
+        "name": "parallax",
+        "description": "Parallax",
+        "datatype": "DOUBLE",
+        "unit": "mas",
+        "ucd": "pos.parallax.trig"
+      },
+      {
+        "name": "pmra",
+        "description": "Proper motion in right ascension direction",
+        "datatype": "DOUBLE",
+        "unit": "mas.yr**-1",
+        "ucd": "pos.pm;pos.eq.ra"
+      },
+      {
+        "name": "pmdec",
+        "description": "Proper motion in declination direction",
+        "datatype": "DOUBLE",
+        "unit": "mas.yr**-1",
+        "ucd": "pos.pm;pos.eq.dec"
+      },
+      {
+        "name": "phot_g_mean_mag",
+        "description": "G-band mean magnitude",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.mag;em.opt"
+      },
+      {
+        "name": "phot_bp_mean_mag",
+        "description": "Integrated BP mean magnitude",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.mag;em.opt.B"
+      },
+      {
+        "name": "phot_rp_mean_mag",
+        "description": "Integrated RP mean magnitude",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.mag;em.opt.R"
+      },
+      {
+        "name": "ra_error",
+        "description": "Standard error of right ascension",
+        "datatype": "FLOAT",
+        "unit": "mas",
+        "ucd": "stat.error;pos.eq.ra"
+      },
+      {
+        "name": "dec_error",
+        "description": "Standard error of declination",
+        "datatype": "FLOAT",
+        "unit": "mas",
+        "ucd": "stat.error;pos.eq.dec"
+      },
+      {
+        "name": "parallax_error",
+        "description": "Standard error of parallax",
+        "datatype": "FLOAT",
+        "unit": "mas",
+        "ucd": "stat.error;pos.parallax.trig"
+      },
+      {
+        "name": "pmra_error",
+        "description": "Standard error of proper motion in right ascension direction",
+        "datatype": "FLOAT",
+        "unit": "mas.yr**-1",
+        "ucd": "stat.error;pos.pm;pos.eq.ra"
+      },
+      {
+        "name": "pmdec_error",
+        "description": "Standard error of proper motion in declination direction",
+        "datatype": "FLOAT",
+        "unit": "mas.yr**-1",
+        "ucd": "stat.error;pos.pm;pos.eq.dec"
+      },
+      {
+        "name": "ruwe",
+        "description": "Renormalised unit weight error",
+        "datatype": "FLOAT",
+        "ucd": "stat.error"
+      },
+      {
+        "name": "ag_gspphot",
+        "description": "Extinction in G band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "ag_gspphot_lower",
+        "description": "Lower confidence level (16%) of extinction in G band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "ag_gspphot_upper",
+        "description": "Upper confidence level (84%) of extinction in G band from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "astrometric_chi2_al",
+        "description": "AL chi-square value",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.chi2"
+      },
+      {
+        "name": "astrometric_excess_noise",
+        "description": "Excess noise of the source",
+        "datatype": "FLOAT",
+        "unit": "mas",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "astrometric_excess_noise_sig",
+        "description": "Significance of excess noise",
+        "datatype": "FLOAT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "astrometric_gof_al",
+        "description": "Goodness of fit statistic of model wrt along-scan observations",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.goodness"
+      },
+      {
+        "name": "astrometric_matched_transits",
+        "description": "Matched FOV transits used in the AGIS solution",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "astrometric_n_bad_obs_al",
+        "description": "Number of bad observations in the along-scan (AL) direction",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "astrometric_n_good_obs_al",
+        "description": "Number of good observations in the along-scan (AL) direction",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "astrometric_n_obs_ac",
+        "description": "Total number of observations in the across-scan (AC) direction",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "astrometric_n_obs_al",
+        "description": "Total number of observations in the along-scan (AL) direction",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "astrometric_params_solved",
+        "description": "Which parameters have been solved for?",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "astrometric_primary_flag",
+        "description": "Primary or seconday",
+        "datatype": "SHORT",
+        "ucd": "meta.code"
+      },
+      {
+        "name": "astrometric_sigma5d_max",
+        "description": "The longest semi-major axis of the 5-d error ellipsoid",
+        "datatype": "FLOAT",
+        "unit": "mas",
+        "ucd": "stat;pos.errorEllipse"
+      },
+      {
+        "name": "azero_gspphot",
+        "description": "Monochromatic extinction A\u2080 at 547.7nm from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "azero_gspphot_lower",
+        "description": "Lower confidence level (16%) of monochromatic extinction A\u2080 at 547.7nm from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "azero_gspphot_upper",
+        "description": "Upper confidence level (84%) of monochromatic extinction A\u2080 at 547.7nm from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phys.absorption;em.opt"
+      },
+      {
+        "name": "bp_g",
+        "description": "BP - G colour",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.color;em.opt.B;em.opt"
+      },
+      {
+        "name": "bp_rp",
+        "description": "BP - RP colour",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.color;em.opt.B;em.opt.R"
+      },
+      {
+        "name": "classprob_dsc_combmod_galaxy",
+        "description": "Probability from DSC-Combmod of being a galaxy (data used: BP/RP spectrum, photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_combmod_quasar",
+        "description": "Probability from DSC-Combmod of being a quasar (data used: BP/RP spectrum, photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "classprob_dsc_combmod_star",
+        "description": "Probability from DSC-Combmod of being a single star (but not a white dwarf) (data used: BP/RP spectrum, photometry, astrometry)",
+        "datatype": "FLOAT",
+        "ucd": "stat.probability"
+      },
+      {
+        "name": "dec_parallax_corr",
+        "description": "Correlation between declination and parallax",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "dec_pmdec_corr",
+        "description": "Correlation between declination and proper motion in declination",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "dec_pmra_corr",
+        "description": "Correlation between declination and proper motion in right ascension",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "dec_pseudocolour_corr",
+        "description": "Correlation between declination and pseudocolour",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation;em.wavenumber;pos.eq.dec"
+      },
+      {
+        "name": "distance_gspphot",
+        "description": "Distance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "pos.distance;pos.eq"
+      },
+      {
+        "name": "distance_gspphot_lower",
+        "description": "Lower confidence level (16%) of distance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "pos.distance;pos.eq"
+      },
+      {
+        "name": "distance_gspphot_upper",
+        "description": "Upper confidence level (84%) of distance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "pc",
+        "ucd": "pos.distance;pos.eq"
+      },
+      {
+        "name": "duplicated_source",
+        "description": "Source with multiple source identifiers",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "ebpminrp_gspphot",
+        "description": "Reddening E(G_BP - G_RP) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.color.excess"
+      },
+      {
+        "name": "ebpminrp_gspphot_lower",
+        "description": "Lower confidence level (16%) of reddening  E(G_BP - G_RP) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.color.excess;stat.min"
+      },
+      {
+        "name": "ebpminrp_gspphot_upper",
+        "description": "Upper confidence level (84%) of reddening  E(G_BP - G_RP) from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.color.excess;stat.max"
+      },
+      {
+        "name": "g_rp",
+        "description": "G - RP colour",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.color;em.opt;em.opt.R"
+      },
+      {
+        "name": "grvs_mag",
+        "description": "Integrated Grvs magnitude",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "phot.mag;em.opt"
+      },
+      {
+        "name": "grvs_mag_error",
+        "description": "Grvs magnitude uncertainty",
+        "datatype": "FLOAT",
+        "unit": "mag",
+        "ucd": "stat.error;phot.mag;em.opt"
+      },
+      {
+        "name": "grvs_mag_nb_transits",
+        "description": "Number of transits used to compute Grvs",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "has_epoch_photometry",
+        "description": "Flag indicating the availability of epoch photometry for this source",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "has_epoch_rv",
+        "description": "Flag indicating the availability of epoch radial velocity for this source",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "has_mcmc_gspphot",
+        "description": "Flag indicating the availability of GSP-Phot MCMC samples for this source",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "has_mcmc_msc",
+        "description": "Flag indicating the availability of MSC MCMC samples for this source",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "has_rvs",
+        "description": "Flag indicating the availability of mean RVS spectrum for this source",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "has_xp_continuous",
+        "description": "Flag indicating the availability of mean BP/RP spectrum in continuous representation for this source",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "has_xp_sampled",
+        "description": "Flag indicating the availability of mean BP/RP spectrum in sampled form for this source",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "in_andromeda_survey",
+        "description": "Flag indicating that the source is present in the Gaia Andromeda Photometric Survey (GAPS)",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "in_galaxy_candidates",
+        "description": "Flag indicating the availability of additional information in the galaxy candidates table",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "in_qso_candidates",
+        "description": "Flag indicating the availability of additional information in the QSO candidates table",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "ipd_frac_multi_peak",
+        "description": "Percent of successful-IPD windows with more than one peak",
+        "datatype": "SHORT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "ipd_frac_odd_win",
+        "description": "Percent of transits with truncated windows or multiple gate",
+        "datatype": "SHORT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "ipd_gof_harmonic_amplitude",
+        "description": "Amplitude of the IPD GoF versus position angle of scan",
+        "datatype": "FLOAT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "ipd_gof_harmonic_phase",
+        "description": "Phase of the IPD GoF versus position angle of scan",
+        "datatype": "FLOAT",
+        "unit": "deg",
+        "ucd": "pos.posAng;stat.value"
+      },
+      {
+        "name": "libname_gspphot",
+        "description": "Name of library that achieves the highest mean log-posterior in MCMC samples and was used to derive GSP-Phot parameters in this table",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.note"
+      },
+      {
+        "name": "logg_gspphot",
+        "description": "Surface gravity from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "phys.gravity"
+      },
+      {
+        "name": "logg_gspphot_lower",
+        "description": "Lower confidence level (16%) of surface gravity from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "phys.gravity;stat.min"
+      },
+      {
+        "name": "logg_gspphot_upper",
+        "description": "Upper confidence level (84%) of surface gravity from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "phys.gravity;stat.max"
+      },
+      {
+        "name": "matched_transits",
+        "description": "The number of transits matched to this source",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "matched_transits_removed",
+        "description": "The number of transits removed from an existing source in the current cycle",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "mh_gspphot",
+        "description": "Iron abundance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z"
+      },
+      {
+        "name": "mh_gspphot_lower",
+        "description": "Lower confidence level (16%) of iron abundance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.min"
+      },
+      {
+        "name": "mh_gspphot_upper",
+        "description": "Upper confidence level (84%) of iron abundance from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "phys.abund.Z;stat.max"
+      },
+      {
+        "name": "new_matched_transits",
+        "description": "The number of transits newly incorporated into an existing source in the current cycle",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "non_single_star",
+        "description": "Flag indicating the availability of additional information in the various Non-Single Star tables",
+        "datatype": "SHORT",
+        "ucd": "meta.code.status"
+      },
+      {
+        "name": "nu_eff_used_in_astrometry",
+        "description": "Effective wavenumber of the source used in the astrometric solution",
+        "datatype": "FLOAT",
+        "unit": "um**-1",
+        "ucd": "em.wavenumber"
+      },
+      {
+        "name": "parallax_over_error",
+        "description": "Parallax divided by its standard error",
+        "datatype": "FLOAT",
+        "ucd": "stat.snr;pos.parallax.trig"
+      },
+      {
+        "name": "parallax_pmdec_corr",
+        "description": "Correlation between parallax and proper motion in declination",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "parallax_pmra_corr",
+        "description": "Correlation between parallax and proper motion in right ascension",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "parallax_pseudocolour_corr",
+        "description": "Correlation between parallax and pseudocolour",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation;em.wavenumber;pos.parallax"
+      },
+      {
+        "name": "phot_bp_mean_flux",
+        "description": "Integrated BP mean flux",
+        "datatype": "DOUBLE",
+        "unit": "electron.s**-1",
+        "ucd": "phot.flux;em.opt.B"
+      },
+      {
+        "name": "phot_bp_mean_flux_error",
+        "description": "Error on the integrated BP mean flux",
+        "datatype": "FLOAT",
+        "unit": "electron.s**-1",
+        "ucd": "stat.error;phot.flux;em.opt.B"
+      },
+      {
+        "name": "phot_bp_mean_flux_over_error",
+        "description": "Integrated BP mean flux divided by its error",
+        "datatype": "FLOAT",
+        "ucd": "stat.snr;phot.flux;em.opt.B"
+      },
+      {
+        "name": "phot_bp_n_blended_transits",
+        "description": "Number of BP blended transits",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "phot_bp_n_contaminated_transits",
+        "description": "Number of BP contaminated transits",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "phot_bp_n_obs",
+        "description": "Number of observations contributing to BP photometry",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "phot_bp_rp_excess_factor",
+        "description": "BP/RP excess factor",
+        "datatype": "FLOAT",
+        "ucd": "arith.factor;phot.flux;em.opt"
+      },
+      {
+        "name": "phot_g_mean_flux",
+        "description": "G-band mean flux",
+        "datatype": "DOUBLE",
+        "unit": "electron.s**-1",
+        "ucd": "phot.flux;em.opt"
+      },
+      {
+        "name": "phot_g_mean_flux_error",
+        "description": "Error on G-band mean flux",
+        "datatype": "FLOAT",
+        "unit": "electron.s**-1",
+        "ucd": "stat.error;phot.flux;em.opt"
+      },
+      {
+        "name": "phot_g_mean_flux_over_error",
+        "description": "G-band mean flux divided by its error",
+        "datatype": "FLOAT",
+        "ucd": "stat.snr;phot.flux;em.opt"
+      },
+      {
+        "name": "phot_g_n_obs",
+        "description": "Number of observations contributing to G photometry",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "phot_proc_mode",
+        "description": "Photometry processing mode",
+        "datatype": "SHORT",
+        "ucd": "meta.code"
+      },
+      {
+        "name": "phot_rp_mean_flux",
+        "description": "Integrated RP mean flux",
+        "datatype": "DOUBLE",
+        "unit": "electron.s**-1",
+        "ucd": "phot.flux;em.opt.R"
+      },
+      {
+        "name": "phot_rp_mean_flux_error",
+        "description": "Error on the integrated RP mean flux",
+        "datatype": "FLOAT",
+        "unit": "electron.s**-1",
+        "ucd": "stat.error;phot.flux;em.opt.R"
+      },
+      {
+        "name": "phot_rp_mean_flux_over_error",
+        "description": "Integrated RP mean flux divided by its error",
+        "datatype": "FLOAT",
+        "ucd": "stat.snr;phot.flux;em.opt.R"
+      },
+      {
+        "name": "phot_rp_n_blended_transits",
+        "description": "Number of RP blended transits",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "phot_rp_n_contaminated_transits",
+        "description": "Number of RP contaminated transits",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "phot_rp_n_obs",
+        "description": "Number of observations contributing to RP photometry",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "phot_variable_flag",
+        "description": "Photometric variability flag",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.code;src.var"
+      },
+      {
+        "name": "pm",
+        "description": "Total proper motion",
+        "datatype": "FLOAT",
+        "unit": "mas.yr**-1",
+        "ucd": "pos.pm;pos.eq"
+      },
+      {
+        "name": "pmdec_pseudocolour_corr",
+        "description": "Correlation between proper motion in declination and pseudocolour",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation;em.wavenumber;pos.pm;pos.eq.dec"
+      },
+      {
+        "name": "pmra_pmdec_corr",
+        "description": "Correlation between proper motion in right ascension and proper motion in declination",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "pmra_pseudocolour_corr",
+        "description": "Correlation between proper motion in right asension and pseudocolour",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation;em.wavenumber;pos.pm;pos.eq.ra"
+      },
+      {
+        "name": "pseudocolour",
+        "description": "Astrometrically estimated pseudocolour of the source",
+        "datatype": "FLOAT",
+        "unit": "um**-1",
+        "ucd": "em.wavenumber"
+      },
+      {
+        "name": "pseudocolour_error",
+        "description": "Standard error of the pseudocolour of the source",
+        "datatype": "FLOAT",
+        "unit": "um**-1",
+        "ucd": "stat.error;em.wavenumber"
+      },
+      {
+        "name": "ra_dec_corr",
+        "description": "Correlation between right ascension and declination",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "radial_velocity",
+        "description": "Radial velocity ",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "spect.dopplerVeloc.opt;em.opt.I"
+      },
+      {
+        "name": "radial_velocity_error",
+        "description": "Radial velocity error ",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "stat.error;spect.dopplerVeloc.opt;em.opt.I"
+      },
+      {
+        "name": "random_index",
+        "description": "Random index for use when selecting subsets",
+        "datatype": "LONG",
+        "ucd": "meta.code"
+      },
+      {
+        "name": "ra_parallax_corr",
+        "description": "Correlation between right ascension and parallax\t\t",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "ra_pmdec_corr",
+        "description": "Correlation between right ascension and proper motion in declination",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "ra_pmra_corr",
+        "description": "Correlation between right ascension and proper motion in right ascension",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation"
+      },
+      {
+        "name": "ra_pseudocolour_corr",
+        "description": "Correlation between right ascension and pseudocolour",
+        "datatype": "FLOAT",
+        "ucd": "stat.correlation;em.wavenumber;pos.eq.ra"
+      },
+      {
+        "name": "ref_epoch",
+        "description": "Reference epoch",
+        "datatype": "DOUBLE",
+        "unit": "yr",
+        "ucd": "meta.ref;time.epoch"
+      },
+      {
+        "name": "rv_amplitude_robust",
+        "description": "Total amplitude in the radial velocity time series after outlier removal",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "stat.error;spect.dopplerVeloc.opt;em.opt.I"
+      },
+      {
+        "name": "rv_atm_param_origin",
+        "description": "Origin of the atmospheric parameters associated to the template",
+        "datatype": "SHORT",
+        "ucd": "meta.code.class"
+      },
+      {
+        "name": "rv_chisq_pvalue",
+        "description": "P-value for constancy based on a chi-squared criterion",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "rv_expected_sig_to_noise",
+        "description": "Expected signal to noise ratio in the combination of the spectra used to obtain the radial velocity",
+        "datatype": "FLOAT",
+        "ucd": "stat.snr"
+      },
+      {
+        "name": "rv_method_used",
+        "description": "Method used to obtain the radial velocity",
+        "datatype": "SHORT",
+        "ucd": "meta.code.class"
+      },
+      {
+        "name": "rv_nb_deblended_transits",
+        "description": "Number of valid transits that have undergone deblending",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "rv_nb_transits",
+        "description": "Number of transits used to compute the radial velocity ",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "rv_renormalised_gof",
+        "description": "Radial velocity renormalised goodness of fit",
+        "datatype": "FLOAT",
+        "ucd": "stat.fit.goodness"
+      },
+      {
+        "name": "rvs_spec_sig_to_noise",
+        "description": "Signal to noise ratio in the mean RVS spectrum",
+        "datatype": "FLOAT",
+        "ucd": "stat.snr"
+      },
+      {
+        "name": "rv_template_fe_h",
+        "description": "[Fe/H] of the template used to compute the radial velocityy",
+        "datatype": "FLOAT",
+        "unit": "dex",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "rv_template_logg",
+        "description": "Logg of the template used to compute the radial velocity ",
+        "datatype": "FLOAT",
+        "unit": "log(cm.s**-2)",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "rv_template_teff",
+        "description": "Teff of the template used to compute the radial velocity ",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "stat.fit.param"
+      },
+      {
+        "name": "rv_time_duration",
+        "description": "Time coverage of the radial velocity time series",
+        "datatype": "FLOAT",
+        "unit": "d",
+        "ucd": "time.duration"
+      },
+      {
+        "name": "rv_visibility_periods_used",
+        "description": "Number of visibility periods used to estimate the radial velocity",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "scan_direction_mean_k1",
+        "description": "Mean position angle of scan directions across the source",
+        "datatype": "FLOAT",
+        "unit": "deg",
+        "ucd": "pos.posAng;stat.mean"
+      },
+      {
+        "name": "scan_direction_mean_k2",
+        "description": "Mean position angle of scan directions across the source",
+        "datatype": "FLOAT",
+        "unit": "deg",
+        "ucd": "pos.posAng;stat.mean"
+      },
+      {
+        "name": "scan_direction_mean_k3",
+        "description": "Mean position angle of scan directions across the source",
+        "datatype": "FLOAT",
+        "unit": "deg",
+        "ucd": "pos.posAng;stat.mean"
+      },
+      {
+        "name": "scan_direction_mean_k4",
+        "description": "Mean position angle of scan directions across the source",
+        "datatype": "FLOAT",
+        "unit": "deg",
+        "ucd": "pos.posAng;stat.mean"
+      },
+      {
+        "name": "scan_direction_strength_k1",
+        "description": "Degree of concentration of scan directions across the source",
+        "datatype": "FLOAT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "scan_direction_strength_k2",
+        "description": "Degree of concentration of scan directions across the source",
+        "datatype": "FLOAT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "scan_direction_strength_k3",
+        "description": "Degree of concentration of scan directions across the source",
+        "datatype": "FLOAT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "scan_direction_strength_k4",
+        "description": "Degree of concentration of scan directions across the source",
+        "datatype": "FLOAT",
+        "ucd": "stat.value"
+      },
+      {
+        "name": "solution_id",
+        "description": "Solution Identifier",
+        "datatype": "LONG",
+        "ucd": "meta.version"
+      },
+      {
+        "name": "teff_gspphot",
+        "description": "Effective temperature from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective"
+      },
+      {
+        "name": "teff_gspphot_lower",
+        "description": "Lower confidence level (16%) of effective temperature from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective;stat.min"
+      },
+      {
+        "name": "teff_gspphot_upper",
+        "description": "Upper confidence level (84%) of effective temperature from GSP-Phot Aeneas best library using BP/RP spectra",
+        "datatype": "FLOAT",
+        "unit": "K",
+        "ucd": "phys.temperature.effective;stat.max"
+      },
+      {
+        "name": "vbroad",
+        "description": "Spectral line broadening parameter",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "spect.dopplerVeloc.opt;em.opt.I"
+      },
+      {
+        "name": "vbroad_error",
+        "description": "Uncertainty on the spectral line broadening",
+        "datatype": "FLOAT",
+        "unit": "km.s**-1",
+        "ucd": "stat.error;spect.dopplerVeloc.opt;em.opt.I"
+      },
+      {
+        "name": "vbroad_nb_transits",
+        "description": "Number of transits used to compute vbroad",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "visibility_periods_used",
+        "description": "Number of visibility periods used in Astrometric solution",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      }
+    ],
+    "data": [
+      {
+        "source_id": 667401913089980544,
+        "designation": "Gaia DR3 667401913089980544",
+        "ra": 118.69117410685017,
+        "dec": 16.694621231895034,
+        "l": 204.5054396010249,
+        "b": 21.31877056594574,
+        "ecl_lon": 117.4519815027977,
+        "ecl_lat": -4.052147212034476,
+        "parallax": 0.5993890213825405,
+        "pmra": -1.9660302266046077,
+        "pmdec": -1.719131419551588,
+        "phot_g_mean_mag": 11.937244,
+        "phot_bp_mean_mag": 12.484108,
+        "phot_rp_mean_mag": 11.231198,
+        "ra_error": 0.016417384,
+        "dec_error": 0.01184576,
+        "parallax_error": 0.019797163,
+        "pmra_error": 0.02011924,
+        "pmdec_error": 0.012925846,
+        "ruwe": 1.158499,
+        "ag_gspphot": 0.5538,
+        "ag_gspphot_lower": 0.5386,
+        "ag_gspphot_upper": 0.5652,
+        "astrometric_chi2_al": 777.186,
+        "astrometric_excess_noise": 0.10195008,
+        "astrometric_excess_noise_sig": 14.60649,
+        "astrometric_gof_al": 3.8758416,
+        "astrometric_matched_transits": 37,
+        "astrometric_n_bad_obs_al": 11,
+        "astrometric_n_good_obs_al": 315,
+        "astrometric_n_obs_ac": 326,
+        "astrometric_n_obs_al": 326,
+        "astrometric_params_solved": 31,
+        "astrometric_primary_flag": 0,
+        "astrometric_sigma5d_max": 0.028752314,
+        "azero_gspphot": 0.6984,
+        "azero_gspphot_lower": 0.6798,
+        "azero_gspphot_upper": 0.7125,
+        "bp_g": 0.54686356,
+        "bp_rp": 1.2529097,
+        "classprob_dsc_combmod_galaxy": 5.113397e-13,
+        "classprob_dsc_combmod_quasar": 1.0237135e-13,
+        "classprob_dsc_combmod_star": 0.9999654,
+        "dec_parallax_corr": -0.304891,
+        "dec_pmdec_corr": 0.58977336,
+        "dec_pmra_corr": -0.05076167,
+        "dec_pseudocolour_corr": null,
+        "distance_gspphot": 1626.0538,
+        "distance_gspphot_lower": 1607.7507,
+        "distance_gspphot_upper": 1645.8344,
+        "duplicated_source": 0,
+        "ebpminrp_gspphot": 0.2948,
+        "ebpminrp_gspphot_lower": 0.2866,
+        "ebpminrp_gspphot_upper": 0.301,
+        "g_rp": 0.7060461,
+        "grvs_mag": 10.9496975,
+        "grvs_mag_error": 0.0192013,
+        "grvs_mag_nb_transits": 20,
+        "has_epoch_photometry": 0,
+        "has_epoch_rv": 0,
+        "has_mcmc_gspphot": 1,
+        "has_mcmc_msc": 1,
+        "has_rvs": 0,
+        "has_xp_continuous": 1,
+        "has_xp_sampled": 1,
+        "in_andromeda_survey": 0,
+        "in_galaxy_candidates": 0,
+        "in_qso_candidates": 0,
+        "ipd_frac_multi_peak": 0,
+        "ipd_frac_odd_win": 0,
+        "ipd_gof_harmonic_amplitude": 0.046544135,
+        "ipd_gof_harmonic_phase": 179.74345,
+        "libname_gspphot": "MARCS",
+        "logg_gspphot": 2.8876,
+        "logg_gspphot_lower": 2.8751,
+        "logg_gspphot_upper": 2.8989,
+        "matched_transits": 39,
+        "matched_transits_removed": 0,
+        "mh_gspphot": -0.1307,
+        "mh_gspphot_lower": -0.1322,
+        "mh_gspphot_upper": -0.1295,
+        "new_matched_transits": 7,
+        "non_single_star": 2,
+        "nu_eff_used_in_astrometry": 1.4647179,
+        "parallax_over_error": 30.276512,
+        "parallax_pmdec_corr": -0.37859482,
+        "parallax_pmra_corr": 0.2789305,
+        "parallax_pseudocolour_corr": null,
+        "phot_bp_mean_flux": 138603.3076540515,
+        "phot_bp_mean_flux_error": 814.0504,
+        "phot_bp_mean_flux_over_error": 170.2638,
+        "phot_bp_n_blended_transits": 0,
+        "phot_bp_n_contaminated_transits": 0,
+        "phot_bp_n_obs": 38,
+        "phot_bp_rp_excess_factor": 1.2448001,
+        "phot_g_mean_flux": 316263.3861928815,
+        "phot_g_mean_flux_error": 488.10736,
+        "phot_g_mean_flux_over_error": 647.9382,
+        "phot_g_n_obs": 340,
+        "phot_proc_mode": 0,
+        "phot_rp_mean_flux": 255081.39478085915,
+        "phot_rp_mean_flux_error": 1128.2913,
+        "phot_rp_mean_flux_over_error": 226.0776,
+        "phot_rp_n_blended_transits": 0,
+        "phot_rp_n_contaminated_transits": 0,
+        "phot_rp_n_obs": 37,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "pm": 2.6116447,
+        "pmdec_pseudocolour_corr": null,
+        "pmra_pmdec_corr": -0.2113168,
+        "pmra_pseudocolour_corr": null,
+        "pseudocolour": null,
+        "pseudocolour_error": null,
+        "ra_dec_corr": -0.10873276,
+        "radial_velocity": 22.366299,
+        "radial_velocity_error": 1.3825586,
+        "random_index": 1038401607,
+        "ra_parallax_corr": -0.017666884,
+        "ra_pmdec_corr": 0.031426113,
+        "ra_pmra_corr": -0.003070242,
+        "ra_pseudocolour_corr": null,
+        "ref_epoch": 2016,
+        "rv_amplitude_robust": 17.685854,
+        "rv_atm_param_origin": 444,
+        "rv_chisq_pvalue": 0,
+        "rv_expected_sig_to_noise": 46.901142,
+        "rv_method_used": 1,
+        "rv_nb_deblended_transits": 1,
+        "rv_nb_transits": 21,
+        "rv_renormalised_gof": 11.822123,
+        "rvs_spec_sig_to_noise": null,
+        "rv_template_fe_h": 0.5,
+        "rv_template_logg": 4.5,
+        "rv_template_teff": 5000,
+        "rv_time_duration": 967.2294,
+        "rv_visibility_periods_used": 15,
+        "scan_direction_mean_k1": null,
+        "scan_direction_mean_k2": null,
+        "scan_direction_mean_k3": null,
+        "scan_direction_mean_k4": null,
+        "scan_direction_strength_k1": null,
+        "scan_direction_strength_k2": null,
+        "scan_direction_strength_k3": null,
+        "scan_direction_strength_k4": null,
+        "solution_id": 1636148068921376768,
+        "teff_gspphot": 5205.7764,
+        "teff_gspphot_lower": 5183.3394,
+        "teff_gspphot_upper": 5220.2515,
+        "vbroad": null,
+        "vbroad_error": null,
+        "vbroad_nb_transits": null,
+        "visibility_periods_used": 16
+      }
+    ]
+  },
+  "retrieved_utc": "2026-11-08T22:19:06.721953+00:00"
+}

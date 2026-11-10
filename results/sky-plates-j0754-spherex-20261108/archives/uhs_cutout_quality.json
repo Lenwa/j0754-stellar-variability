@@ -1,0 +1,41 @@
+[
+  {
+    "band": "J",
+    "shape": [
+      151,
+      151
+    ],
+    "native_file": "uhs_J_native_cutout.fits",
+    "gzip_stream": true,
+    "max_adu": 53332.0,
+    "central_21px_max_adu": 53332.0,
+    "pixels_above_40000": 16,
+    "not_calibrated_photometry": true
+  },
+  {
+    "band": "H",
+    "shape": [
+      151,
+      151
+    ],
+    "native_file": "uhs_H_native_cutout.fits",
+    "gzip_stream": true,
+    "max_adu": 53276.75,
+    "central_21px_max_adu": 53276.75,
+    "pixels_above_40000": 17,
+    "not_calibrated_photometry": true
+  },
+  {
+    "band": "K",
+    "shape": [
+      151,
+      151
+    ],
+    "native_file": "uhs_K_native_cutout.fits",
+    "gzip_stream": true,
+    "max_adu": 55780.0,
+    "central_21px_max_adu": 55780.0,
+    "pixels_above_40000": 19,
+    "not_calibrated_photometry": true
+  }
+]

@@ -1,0 +1,64 @@
+Gemini archive leads checked — Ari, 8 November 2026 local
+
+Kyle asked that the actual archive suggestions be followed, alongside checking
+Gemini's mathematical/physical suggestions. All four proposed public routes
+received bounded checks. No additional validated target spectrum, color curve
+or new TESS observation was recovered from these checks. Negative and restricted
+results are preserved rather than counted as successful measurements.
+
+LAMOST: native documented DR10 LRS cone query succeeded with zero rows; MRS
+returned six catalogue rows for the same single 2018-03-25 visit already saved.
+All have S/N zero and correspond to the previously inspected failed extraction.
+VizieR DR7 results repeat that visit; no additional epoch. V/164 is DR5, not
+DR8–10. Older native release documentation redirected to login and is recorded
+as access-restricted, not empty science coverage. See lamost/lamost_audit.txt.
+
+TESS: exact TESSCut coverage returns sectors44,45,46,71,72 and1751; Gemini's
+sectors7 and34 are not returned. Corrected MAST queries found eight HLSP product
+URIs, all identical to the eight already downloaded FITS, whose target IDs and
+hashes were verified. No new FFI download or additional light curve is claimed.
+Sector1751 is real, a Jan15–22,2026 special pointing for3I/ATLAS, with only4.25
+days of science collection and3.02 paused according to NASA. It cannot alone
+establish35.92day behavior. Coverage is not precision or an astrophysical signal.
+
+Pan-STARRS DR2: actual queries returned eight mean-table objects and75 individual
+detections. Main target has64 detections in2010–2014;52flagSATSTAR, with other
+spike/burntool problems. All five main mean-filter npt fields are zero, errors
+are−999, USE_SYNTH is set and HAS_PS1 is unset. Thus the reported mean colors
+must not be treated as measured PS1 colors. Four less-flagged detections remain
+diagnostic candidates only; no validated multiband light curve or color added.
+See archive_audit.txt, ps1_assessment.json and retained native CSVs/metadata.
+
+CfA: published archive/backend metadata provides a documented TAP service and
+declared hectochelle.data_public/echelle.data_public tables. Valid-column TAP
+queries work: a sample public product returns successfully. The web form's
+missing-ssa_redshift error is a generic invalid-column projection, not simply
+the spatial cone input. The alternate1arcmin target cone and alias/owner
+queries return valid zero-row responses, as does a5arcmin sensitivity cone;
+old Echelle's documented cone is also empty. A known-spectrum coordinate query
+is a successful positive control. The current Hectochelle public table has
+393267 spectra datedJune2009–December2024: this null does not cover earlier
+observations. Owner search is not exhaustive PI search, and no TRES holdings were
+documented in this archive. The high-resolution2011poster spectrum remains
+unrecovered. See cfa/ for exact metadata, queries, responses and final audit.
+
+Useful physical leads retained: inspect actual FAST background/sigma and local
+line profiles; calibrate temperature-sensitive indices after matching resolution;
+test photospheric CO structure near4.6microns before interpreting the SPHEREx
+residual as emission by dust. These suggestions are not completed new detections.
+
+Math/interpretation audit is in input_assessment.txt and math_checks.json. In
+particular,140000microJy=.14Jy=1.4e-24cgsFnu, not1.4e-18. The radius/cooling
+example does not reproduce its quoted changes in a simple Planck calculation.
+Sky-emission lines do not correct point-source slit-centering errors, and a
+clean sky band alone cannot prove intrinsic Halpha changes. Proposed RV
+precision, TiO temperature sensitivity and a smoking-gun activity classification
+remain unvalidated. The CO idea is physically worth testing; several suggested
+model families and LAMOST/TESS data had already been examined.
+
+Original Gemini text, native archive requests, metadata and hash receipts are
+saved locally in this directory. Earlier data/results and source commit4946a5c
+remain unchanged. No maintained code changed, no accounts/contact/paid request
+or publication occurred. Further archive absence beyond these queries is not
+established. This checkpoint changes the access/coverage record, not the causal
+conclusion: activity/atmospheric changes and nonuniform obscuration remain open.

@@ -1,0 +1,26 @@
+{
+  "written_utc": "2026-11-09T02:29:43.963230+00:00",
+  "origin": "Kyle supplied Argon audit; numericaltables are unverified external claims, not observations.",
+  "five_tests": [
+    "FAST Halpha common resolution/background/continuum error",
+    "FAST temperature-sensitive features tied to brightness",
+    "SPHEREx CO/atmosphere residual vs added dust",
+    "TESS variability/event sensitivity using actual cadence",
+    "Physical spots/partial covering/binary constraints tied to actual photometric bands"
+  ],
+  "prior_known": "Halpha tentative2009difference; SPX~9%selectedmodelMIRresidual; prior35.92dphotometrictemplatefailed; no knownnewepochs. Results exploratory, not blind confirmation.",
+  "CO_prediction": "If inferred MIRexcess stronglydepends onlowgravity/metallicity/photosphericCOassumptions, itcannotuniquelydetectdust. ComputeCO/ref observed/model index using fullapproximatepassbands; fitnearIRonly beforecheck.",
+  "CO_windows_um": {
+    "reference": [
+      4.0,
+      4.2
+    ],
+    "CO": [
+      4.55,
+      4.9
+    ]
+  },
+  "CO_grid": "ExistingCK04files3500\u20136500K,metal\u22121,\u2212.5,0; extendgravityfrom2\u20133to1\u20133 in.5steps wherevalid;DraineRv3.1Av0\u20131.5 step.05; nearIR.75\u20132.4 fitnormalization andlogshape;5%logRMSsensitivitiesnotconfidencebounds. Currentandnativewavelengthlabelsretained. NoformalCOexcessdetection/upperlimit fromcorrelatedcalibration.",
+  "data_type": "FAST1DextractedspectraandTESSHLSP1Dlightcurves,notraw2Ddetectorpixels. SPXhasnativecalibratedimagecutouts.",
+  "authorization": "Localdataanalysisandpublicprimarysourcechecks; noaccounts,contacts,purchasesorpublication."
+}

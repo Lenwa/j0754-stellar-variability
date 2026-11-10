@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+            "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<LINK href="http://wsa.roe.ac.uk/style.css" rel="stylesheet" type="text/css">
+<link href="http://wsa.roe.ac.uk/www/wsaserver.css" rel="stylesheet" type="text/css"> 
+<link rel="icon" href="http://wsa.roe.ac.uk/favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="http://wsa.roe.ac.uk/favicon.ico" type="image/x-icon"> 
+<!-- $CSSLINKS -->
+
+<title>WFCAM SCIENCE ARCHIVE</title>
+<META NAME="Keywords" CONTENT="WFCAM Science Archive">
+
+<!-- $EXTRAJAVASCRIPT -->
+
+
+</head>
+<!-- <body  marginheight="0" marginwidth="0" bgcolor="#000000" text="#FFFFFF" link="#33CCFF" vlink="#33CCFF" alink="#33CCFF">
+-->
+<body   marginheight="0" marginwidth="0" bgcolor="#000000" text="#FFFFFF" link="#33CCFF" vlink="#33CCFF" alink="#33CCFF">
+<TABLE CELLSPACING="0" CELLPADDING="8" border="0">
+<TR>
+
+<!-- Left column - logo and navigation -->
+<TD width="165" ROWSPAN="1" VALIGN="top" ALIGN="center" BGCOLOR="#000000">
+<!-- #CCCCC http://wsa.roe.ac.uk/ssa_new.gif -->
+
+<table BGCOLOR="#000000" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td  align=center><img SRC="http://wsa.roe.ac.uk/common/img/wsa_top.gif" alt="wsa logo" width="165" height="93"></td>
+</tr>
+</table>
+
+<table BGCOLOR="#333333" border="0" cellspacing="0" CELLPADDING="3">
+<tr>
+<td align="center">
+<TABLE  BORDER="0"  cellspacing="0" CELLPADDING="0">
+  <TR><TD width="165"   ALIGN="right">
+      <font color="red">UHSDR3<br>public</font><br>
+<a class="bar" href="http://wsa.roe.ac.uk/index.html" title="WFCAM Science Archive home page">
+
+<BIG><b>WSA Home</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/startHere.html" title="primer for users of the archive">
+<BIG><b>Start Here</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/dboverview.html" title="Description of the contents and structure of the archive">
+<BIG><b>Data Overview</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE  BORDER="0"  cellspacing="0" CELLPADDING="0">
+<TR><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/knownIssues.html" title="data - known issues and problems">
+<BIG><b>Known Issues</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165" ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/theSurveys.html" title="UKIDSS survey progress and info">
+<BIG><b>the Surveys</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165" ALIGN="right">
+<font color="red">&#42;</font><a class="bar" href="http://wsa.roe.ac.uk/coverage-maps.html" title="UKIDSS Coverage Maps">
+<BIG><b>Coverage Maps</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165" ALIGN="right">
+
+<a class="bar" href="http://wsa.roe.ac.uk/www/wsa_browser.html" title="Current schema listings of databases, tables and columns held in the archive">
+<BIG><b>Schema browser</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/dbaccess.html" title="Description of how users can access the data held in the archive">
+<BIG><b>Data access</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/login.html" title="User login form">
+<b><i>Login</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/ImageList_form.jsp" title="Get listings of archive contents">
+<b><i>Archive Listing</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/getImage_form.jsp" title="Get small area image cut-outs">
+<b><i>GetImage</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/colourImage_form.jsp" title="generate colour">
+<b><i>ColourImage</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/MultiGetImage_form.jsp" title="batch small area image cut-outs">
+<b><i>MultiGetImage</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/region_form.jsp" title="Search archive for objects in a given region">
+<b><i>Region</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/menu_form.jsp" title="Query the archive's main surveys using a set of forms to contsruct an SQL query">
+<b><i>Menu query</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/SQL_form.jsp" title="Query the archive by submitting an SQL query">
+<b><i>Freeform SQL</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/crossID_form.jsp" title="cross match an uploaded list of coordinates">
+<b><i>CrossID</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+
+
+<!--
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/xmatch.html">
+<b><i>CrossID</i></b></a></td>
+</TABLE></td>
+<tr>
+-->
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/DataAnalysis.jsp" title="WSA Data Analysis">
+<BIG><b>Analysis services</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/sqlcookbook.html" title="SQL examples of typical queries">
+<BIG><b>SQL Cookbook</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/qa.html" title="Common questions and answers">
+<BIG><b>Q&amp;A</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/glossary.html" title="Listings of terms and attributes used in the archive">
+<BIG><b>Glossary</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/releasehistory.html" title="Log of releases, additions, corrections etc">
+<BIG><b>Release History</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/nonSurvey.html" title="Non-survey WFCAM programmes">
+<BIG><b>non-Survey</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/gallery/" title="WSA gallery of pretty pics">
+<BIG><b>Gallery</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/pubs.html" title="WSA related publications and docs">
+<BIG><b>Publications</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/monitor.html" title="progress monitor">
+<BIG><b>Monitor</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/downtime.html" title="Log of archive downtime">
+<BIG><b>Downtime</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/links.html" title="WSA related links">
+<BIG><b>Links</b></BIG></a></td>
+</tr></TABLE></td>
+</tr>
+<!--
+<tr>
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/credits.html" title="List of credits">
+<BIG><b>Credits</b></BIG></a></td>
+</TABLE></td>
+</tr>
+-->
+</table>
+
+<table BGCOLOR="#000000" border="0" cellspacing="0" cellpadding="0">
+<tr><td align=center><a href="http://www.roe.ac.uk/ifa/wfau"><img SRC="http://wsa.roe.ac.uk/common/img/wsa_bottom.gif" alt="wsa logo bottom" width="165" height="93" border="0"></a></td>
+</tr>
+</table>
+
+
+<!--
+<td align=center>
+<A  HREF="http://www.roe.ac.uk/ifa/wfau">
+<IMG SRC="http://wsa.roe.ac.uk/common/img/wfau_new.gif" ALT="WFAU Home"  width="132" height="95" border=0></A></td><tr>
+-->
+
+<table><tr>
+<td align="center"><A class="bar" HREF="http://www.roe.ac.uk/ifa"><b>IFA</b> </a>&nbsp; &nbsp; <A class="bar" 
+HREF="http://www.roe.ac.uk/"><b> ROE</b> </a></td>
+</tr></table>
+</td>
+
+<!-- Top row - navigation and logo -->
+<TD VALIGN="top" ALIGN="left" COLSPAN="1"  width="100%">
+<center>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td nowrap valign="middle" ALIGN="middle">
+<a href="http://wsa.roe.ac.uk/index.html">Home</a> | 
+<a href="http://wsa.roe.ac.uk/dboverview.html">Overview</a> | 
+<a href="http://wsa.roe.ac.uk/www/wsa_browser.html">Browser</a> | 
+<a href="http://wsa.roe.ac.uk/dbaccess.html">Access</a> |
+<a href="http://wsa.roe.ac.uk/login.html">Login</a> |
+<a href="http://wsa.roe.ac.uk/sqlcookbook.html">Cookbook</a> |
+<a href="http://wsa.roe.ac.uk/nonSurvey.html">nonSurvey</a>&nbsp;<br>
+&nbsp;<br>
+
+</td>
+<td>&nbsp;
+</td>
+<td valign="middle">
+<img src="http://wsa.roe.ac.uk/common/img/wsa_small_black.gif" width="64" height="27" alt="WSA logo"> 
+</td>
+</tr>
+</table>
+</center>
+<p>
+
+<font color="#FF3333">
+*** 2025-09-17 UHS DR3 public release *** (to use select UHSDR3 in database drop down list<p>
+</font>
+
+
+<font color="#FF3333">Status: Not logged in.</font>
+<font color="#FF3333"><br>Please reload this page if you have logged in and are not seeing the correct login status.</font><p>
+
+<!--
+<em>UHSDR1 world public release now available (2018-01-01), the forms now require a database
+selection to be made from the drop-down list</em>
+-->
+   
+    
+
+
+
+<h3>
+
+Image Extraction
+</h3>
+<noscript><em>This form requires JavaScript for full functionality</em><p></noscript> 
+
+Use this form to extract cut-out images  
+around a given position or object name.
+
+
+For help on using this form see <a href="http://wsa.roe.ac.uk/getImage_help.html">getImage help</a>.
+<p>
+
+
+    <form action="./GetImage" method="post">
+ 
+<hr>
+<p>
+<b>Database release to use:</b>&nbsp;&nbsp;
+
+<select name="database"  onchange="location = 'getImage_form.jsp?programmeID=&database=' + this.options[this.selectedIndex ].value+'&ra='+this.form.ra.value+'&dec='+this.form.dec.value+'&sys='+this.form.sys.value+'&filterID='+this.form.filterID.value+'&xsize='+this.form.xsize.value+'&ysize='+this.form.ysize.value+'&obsType='+this.form.obsType.value+'&frameType='+this.form.frameType.value+'&mfid='+this.form.mfid.value+'&fsid='+this.form.fsid.value+'&name='+this.form.name.value;"><option disabled selected value=""> -:- select an option -:- </option><option value="UHSDR3" selected>UHSDR3<option value="UKIDSSDR11PLUS">UKIDSSDR11PLUS<option value="UHSDR2">UHSDR2<option value="UKIDSSDR10PLUS">UKIDSSDR10PLUS<option value="UHSDR1">UHSDR1<option value="UKIDSSDR11PLUSUDSONLY">UKIDSSDR11PLUSUDSONLY<option value="UKIDSSDR9PLUS">UKIDSSDR9PLUS<option value="UKIDSSDR8PLUS">UKIDSSDR8PLUS<option value="UKIDSSDR7PLUS">UKIDSSDR7PLUS<option value="UKIDSSDR6PLUS">UKIDSSDR6PLUS<option value="UKIDSSDR5PLUS">UKIDSSDR5PLUS<option value="UKIDSSDR4PLUS">UKIDSSDR4PLUS<option value="UKIDSSDR3PLUS">UKIDSSDR3PLUS<option value="UKIDSSDR2PLUS">UKIDSSDR2PLUS<option value="UKIDSSDR1PLUS">UKIDSSDR1PLUS<option value="UKIDSSDR1">UKIDSSDR1<option value="UKIDSSEDRPLUS">UKIDSSEDRPLUS<option value="UKIDSSEDR">UKIDSSEDR<option value="UKIDSSSV">UKIDSSSV<option value="WFCAMCAL08B">WFCAMCAL08B</select>
+<p>
+<b>Select the programme/survey you wish to use: </b>
+ 
+<!--1--> <select name="programmeID" onchange="location = 'getImage_form.jsp?database=UHSDR3&programmeID=' + this.options[this.selectedIndex ].value+'&ra='+this.form.ra.value+'&dec='+this.form.dec.value+'&sys='+this.form.sys.value+'&filterID='+this.form.filterID.value+'&xsize='+this.form.xsize.value+'&ysize='+this.form.ysize.value+'&obsType='+this.form.obsType.value+'&frameType='+this.form.frameType.value+'&mfid='+this.form.mfid.value+'&fsid='+this.form.fsid.value+'&name='+this.form.name.value;"><option value="all" >All surveys
+<option value="101">UKIDSS Large Area Survey, LAS<option value="102">UKIDSS Galactic Plane Survey, GPS<option value="103">UKIDSS Galactic Clusters Survey, GCS<option value="104">UKIDSS Deep Extragalactic Survey, DXS<option value="105">UKIDSS Ultra Deep Survey, UDS<option value="107" selected>UKIRT Hemisphere Survey, UHS</select> 
+
+
+<!--  	<input type="hidden" name="programmeID" value="107"> -->
+	
+ 
+<p>
+<table class="form" border="0">
+<tr>
+<td>
+<table border="2" cellspacing="3" cellpadding="3" >
+<tr>
+<!--
+<td nowrap align="right"><b>RA</b> or <b>Galactic Long.:</b></td>
+-->
+<td nowrap align="right"><b>RA</b> or <b>Galactic Long.:</b></td>
+<td><input type="text" name=ra value="" size=15></td>
+<td rowspan="2" > sexagesimal format or decimal degrees </td>
+<tr>
+<td nowrap align="right"><b>Dec</b> or <b>Galactic Lat.:</b></td>
+
+<td><input type="text" name=dec value="" size=15></td>
+<tr>
+<td nowrap align="right"><b>Coordinate System:</b></td>
+<td >
+<select name="sys" >
+<option value="J"  > J2000
+<option value="B"  > B1950
+<option value="G"  > Galactic
+</select>
+</td>
+<td>&nbsp;</td>
+
+<tr>
+<td nowrap align="right">
+or <b>Object name: </b></td>
+<td><input type="text" name=name size=15 value=""></td>
+<td> resolved by Sesame/CDS</td>
+
+<tr>
+<td align="right"><b>Filter/waveband:</b></td>
+<td><select name="filterID">
+<option value="all"  > all
+<option value="1"  > Z filter
+<option value="2"  > Y filter
+<option value="3"   > J filter
+<option value="4"  > H filter
+<option value="5"  > K filter
+<option value="6"  > H2 filter 
+<option value="7"  > Br filter 
+</select></td>
+<td>&nbsp</td>
+<tr>
+<td align="right"><b>X-size:</b></td>
+<td><input type="text" name=xsize size="5" value="1"></td>
+<td> in arcminutes (maximum 15) </td>
+<tr>
+<td align="right"><b>Y-size:</b></td>
+<td><input type="text" name=ysize size="5" value="1"></td>
+<td> in arcminutes (maximum 90) </td> <tr>
+<td colspan="3"> Additional constraints </td><tr>
+<td align="right"><b>Observation type:</b></td>
+<td><select name="obsType">
+<option value="object"  > object
+<option value="sky"  >sky
+<option value="dark"  >dark
+<option value="bias"  >bias
+<option value="flat"  >flat
+<option value="confidence"  >confidence
+<option value="focus"  >focus
+<option value="all"  >all
+</select></td>
+<td>&nbsp;</td>
+<tr>
+<td align="right"><b>Frame type:</b></td>
+<td><select name="frameType">
+<option value="stack"  > stack
+<option value="leav"  >interleave
+<option value="normal"  >normal
+<option value="deep%stack"  >deep stacks (DXS &amp; UDS)
+<option value="conf"  >confidence
+<option value="diff"  >difference
+<option value="all"  >all
+</select></td>
+<td>&nbsp;</td>
+<tr>
+<td align="right"><b>MultiframeID number:</b></td>
+<td><input type="text" name=mfid size="20" value=""></td>
+<td>&nbsp;</td>
+<tr>
+<td align="right"><b>FramesetID number:</b></td>
+<td><input type="text" name=fsid size="20" value=""></td>
+<td>&nbsp;</td>
+
+</table>
+</td>
+</table>
+<p>
+
+
+        <input class="FontSans" type="submit" value="Submit" />
+        <input class="FontSans" type="button" OnClick="location = 'getImage_form.jsp'" value="Clear">
+        </form>
+ 	      </p>
+
+
+   
+
+<P><BR clear="all">
+<center>
+<hr width=330>
+<a href="http://wsa.roe.ac.uk/index.html">Home</a> | 
+<a href="http://wsa.roe.ac.uk/dboverview.html">Overview</a> | 
+<a href="http://wsa.roe.ac.uk/www/wsa_browser.html">Browser</a> | 
+<a href="http://wsa.roe.ac.uk/dbaccess.html">Access</a> |
+<a href="http://wsa.roe.ac.uk/login.html">Login</a> |
+<a href="http://wsa.roe.ac.uk/sqlcookbook.html">Cookbook</a> |
+<a href="http://wsa.roe.ac.uk/nonSurvey.html">nonSurvey</a>
+<br> 
+<a href="http://wsa.roe.ac.uk:8080/wsa/ImageList_form.jsp">Listing</a> |
+<a href="http://wsa.roe.ac.uk:8080/wsa/region_form.jsp">Region</a> | 
+<a href="http://wsa.roe.ac.uk:8080/wsa/menu_form.jsp">MenuQuery</a> | 
+<a href="http://wsa.roe.ac.uk:8080/wsa/SQL_form.jsp">FreeSQL</a> 
+<br>
+<a href="http://wsa.roe.ac.uk/links.html">Links</a> |
+<a href="http://wsa.roe.ac.uk/credits.html">Credits</a>
+<br>
+<hr width=330>
+<p>
+<i><font size="-1">WFAU, Institute for Astronomy,<br>
+Royal Observatory, Blackford Hill<br>
+Edinburgh, EH9 3HJ, UK<br>
+
+
+<p><i><font size="-1"><em>wsa<b></b>-support<b>@</b>roe<b></b>.ac<b></b>.uk</em>
+            </font>
+          </i>
+          <p>
+            </center>
+          </table>
+          <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2506271-1";
+urchinTracker();
+</script>         
+        </body>
+      </html>

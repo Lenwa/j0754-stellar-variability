@@ -1,0 +1,629 @@
+[
+  {
+    "series": "a",
+    "orientation": "NorthLeftMirrored",
+    "fitted_plate_scale": 59.57,
+    "nominal_plate_scale": 60,
+    "description": "24-inch Bruce Doublet",
+    "aperture": 0.6,
+    "num_plates": 27379
+  },
+  {
+    "series": "ac",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 606.4,
+    "nominal_plate_scale": 600,
+    "description": "1.5-inch Cooke Lenses",
+    "aperture": 0.038,
+    "num_plates": 42544
+  },
+  {
+    "series": "adh",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 68,
+    "description": "32-36 inch BakerSchmidt 10 1/2 inch round Armagh-Dunsink-Harvard",
+    "aperture": 0.76,
+    "num_plates": 2966
+  },
+  {
+    "series": "al",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 1200,
+    "description": "Cooke Short Focus",
+    "aperture": 0.038,
+    "num_plates": 1
+  },
+  {
+    "series": "am",
+    "orientation": " 1.5-inch Cooke Lenses",
+    "fitted_plate_scale": 610.8,
+    "nominal_plate_scale": 600,
+    "description": "1-inch",
+    "aperture": 0.038,
+    "num_plates": 28561
+  },
+  {
+    "series": "b",
+    "orientation": " Voigtlander",
+    "fitted_plate_scale": 179.4,
+    "nominal_plate_scale": 179,
+    "description": "8-inch Bache Doublet",
+    "aperture": 0.2,
+    "num_plates": 76854
+  },
+  {
+    "series": "bm",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 384,
+    "nominal_plate_scale": 390,
+    "description": "3-inch Ross",
+    "aperture": 0.075,
+    "num_plates": 3222
+  },
+  {
+    "series": "br",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 204,
+    "nominal_plate_scale": 209,
+    "description": "8-inch Brashear Lens",
+    "aperture": 0.2,
+    "num_plates": 4176
+  },
+  {
+    "series": "c",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 52.56,
+    "nominal_plate_scale": 53,
+    "description": "11-inch Draper Refractor",
+    "aperture": 0.3,
+    "num_plates": 23223
+  },
+  {
+    "series": "d",
+    "orientation": "NorthForwardMirrored",
+    "description": "Positives",
+    "aperture": 0,
+    "num_plates": 18
+  },
+  {
+    "series": "dnb",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 577.3,
+    "nominal_plate_scale": 580,
+    "description": "Damons North Blue",
+    "aperture": 0.042,
+    "num_plates": 6771
+  },
+  {
+    "series": "dnr",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 579.7,
+    "nominal_plate_scale": 580,
+    "description": "Damons North Red",
+    "aperture": 0.042,
+    "num_plates": 1231
+  },
+  {
+    "series": "dny",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 576.1,
+    "nominal_plate_scale": 580,
+    "description": "Damons North Yellow",
+    "aperture": 0.042,
+    "num_plates": 506
+  },
+  {
+    "series": "dsb",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 574.5,
+    "nominal_plate_scale": 580,
+    "description": "Damons South Blue",
+    "aperture": 0.042,
+    "num_plates": 2897
+  },
+  {
+    "series": "dsr",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 579.7,
+    "nominal_plate_scale": 580,
+    "description": "Damons South Red",
+    "aperture": 0.042,
+    "num_plates": 698
+  },
+  {
+    "series": "dsy",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 581.8,
+    "nominal_plate_scale": 580,
+    "description": "Damons South Yellow",
+    "aperture": 0.042,
+    "num_plates": 407
+  },
+  {
+    "series": "fa",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 1298,
+    "nominal_plate_scale": 1242,
+    "description": "1.5-inch Ross-Xpress",
+    "aperture": 0.038,
+    "num_plates": 13929
+  },
+  {
+    "series": "h",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 59.6,
+    "nominal_plate_scale": 60,
+    "description": "24-inch Clark Reflector",
+    "aperture": 0.6,
+    "num_plates": 6719
+  },
+  {
+    "series": "i",
+    "orientation": " Voigtlander Reworked by Clark",
+    "fitted_plate_scale": 163.3,
+    "nominal_plate_scale": 163,
+    "description": "8-inch Draper Doublet",
+    "aperture": 0.2,
+    "num_plates": 59219
+  },
+  {
+    "series": "ir",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 164,
+    "nominal_plate_scale": 162,
+    "description": "8-inch Ross Lundin",
+    "aperture": 0.2,
+    "num_plates": 12816
+  },
+  {
+    "series": "j",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 98,
+    "description": "24-33 in Jewett Schmidt",
+    "aperture": 0.6,
+    "num_plates": 4770
+  },
+  {
+    "series": "ma",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 93.7,
+    "nominal_plate_scale": 97,
+    "description": "12-inch Metcalf Doublet",
+    "aperture": 0.3,
+    "num_plates": 11440
+  },
+  {
+    "series": "mb",
+    "orientation": " 6-inch (328-1776) 3-inch Ross Lundin (2388-2722)",
+    "fitted_plate_scale": 390,
+    "nominal_plate_scale": 193,
+    "description": "4-inch Cooke (1-327)",
+    "aperture": 0.1,
+    "num_plates": 2346
+  },
+  {
+    "series": "mc",
+    "orientation": "NorthLeftMirrored",
+    "fitted_plate_scale": 97.9,
+    "nominal_plate_scale": 98,
+    "description": "16-inch Metcalf Doublet (Refigured after 3500)",
+    "aperture": 0.4,
+    "num_plates": 40611
+  },
+  {
+    "series": "md",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 193,
+    "description": "4-inch Cooke Lens",
+    "aperture": 0.1,
+    "num_plates": 7666
+  },
+  {
+    "series": "mf",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 167.3,
+    "nominal_plate_scale": 167,
+    "description": "10-inch Metcalf Triplet",
+    "aperture": 0.25,
+    "num_plates": 40775
+  },
+  {
+    "series": "na",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 100,
+    "nominal_plate_scale": 100,
+    "description": "7.5-inch Cooke/Clark Refractor at Maria Mitchell Observatory",
+    "aperture": 0,
+    "num_plates": 2001
+  },
+  {
+    "series": "rb",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 395.5,
+    "nominal_plate_scale": 390,
+    "description": "3-inch Ross Fecker",
+    "aperture": 0.075,
+    "num_plates": 17031
+  },
+  {
+    "series": "rh",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 391.3,
+    "nominal_plate_scale": 390,
+    "description": "3-inch Ross Fecker",
+    "aperture": 0.075,
+    "num_plates": 16209
+  },
+  {
+    "series": "rl",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 290,
+    "description": "4-inch Ross Lundin",
+    "aperture": 0.1,
+    "num_plates": 5059
+  },
+  {
+    "series": "sb",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 26,
+    "description": "60-inch Rockefeller Reflector",
+    "aperture": 1.5,
+    "num_plates": 1
+  },
+  {
+    "series": "sh",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 26,
+    "description": "61-inch Wyeth Reflector",
+    "aperture": 1.5,
+    "num_plates": 1
+  },
+  {
+    "series": "x",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 42.3,
+    "nominal_plate_scale": 42.4,
+    "description": "13-inch Boyden Refractor",
+    "aperture": 0.33,
+    "num_plates": 16034
+  },
+  {
+    "series": "ctio",
+    "orientation": "NorthForward",
+    "fitted_plate_scale": 18,
+    "nominal_plate_scale": 18,
+    "description": "Cerro Tololo 4 meter",
+    "aperture": 4,
+    "num_plates": 1
+  },
+  {
+    "series": "ab",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 590,
+    "description": "2.5-inch Ross Portrait Lens",
+    "aperture": 0.0635,
+    "num_plates": 1088
+  },
+  {
+    "series": "aco",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 611.3,
+    "nominal_plate_scale": 600,
+    "description": "1 in Cook Lens #832 Series renamed from ac-a",
+    "aperture": 0.0254,
+    "num_plates": 78
+  },
+  {
+    "series": "ai",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 1360,
+    "nominal_plate_scale": 1200,
+    "description": "Patrol cameras",
+    "aperture": 0.038,
+    "num_plates": 44699
+  },
+  {
+    "series": "ak",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 614.5,
+    "nominal_plate_scale": 600,
+    "description": "1.5 in Cooke \"Long Focus\"",
+    "aperture": 0.038,
+    "num_plates": 754
+  },
+  {
+    "series": "an",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 574,
+    "description": "New Cooke Lens",
+    "aperture": 0,
+    "num_plates": 40
+  },
+  {
+    "series": "ax",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 695.7,
+    "nominal_plate_scale": 700,
+    "description": "3 inch Ross-Tessar Lens",
+    "aperture": 0.076,
+    "num_plates": 4837
+  },
+  {
+    "series": "ay",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 694.2,
+    "nominal_plate_scale": 700,
+    "description": "2.6-inch Zeiss-Tessar",
+    "aperture": 0.066,
+    "num_plates": 1995
+  },
+  {
+    "series": "bc",
+    "orientation": "NorthForwardMirrored",
+    "description": "16-inch Boller & Chivens",
+    "aperture": 0.406,
+    "num_plates": 1
+  },
+  {
+    "series": "bi",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 1446,
+    "nominal_plate_scale": 1200,
+    "description": "1.5 inch Ross (short focus)",
+    "aperture": 0.038,
+    "num_plates": 5660
+  },
+  {
+    "series": "bo",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 800,
+    "description": "2.5 inch Voigtlander (Little Bache or \"Bachito\")",
+    "aperture": 0.0635,
+    "num_plates": 1111
+  },
+  {
+    "series": "ca",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 596,
+    "nominal_plate_scale": 600,
+    "description": "2.5 inch Cooke Lens",
+    "aperture": 0.0635,
+    "num_plates": 1302
+  },
+  {
+    "series": "ee",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 330,
+    "nominal_plate_scale": 340,
+    "description": "4-inch Voightlander Lens",
+    "aperture": 0.102,
+    "num_plates": 2474
+  },
+  {
+    "series": "er",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 390,
+    "description": "3-inch Elmer Ross",
+    "aperture": 0.076,
+    "num_plates": 287
+  },
+  {
+    "series": "jdar",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 560,
+    "description": "3-inch Darlot (Series renamed from j)",
+    "aperture": 0.076,
+    "num_plates": 58
+  },
+  {
+    "series": "misc",
+    "orientation": "NorthForwardMirrored",
+    "description": "Logbook Only. Pages without plates.",
+    "aperture": 0,
+    "num_plates": 3
+  },
+  {
+    "series": "m",
+    "orientation": "NorthForwardMirrored",
+    "description": "5-in Voightlander Transit Photometer",
+    "aperture": 0.127,
+    "num_plates": 1
+  },
+  {
+    "series": "ro",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 390,
+    "description": "NULL",
+    "aperture": 0,
+    "num_plates": 56
+  },
+  {
+    "series": "rp",
+    "orientation": "NorthForwardMirrored",
+    "description": "NULL",
+    "aperture": 0,
+    "num_plates": 7
+  },
+  {
+    "series": "s",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 26.3,
+    "description": "60 inch Common",
+    "aperture": 1.52,
+    "num_plates": 10
+  },
+  {
+    "series": "z",
+    "orientation": "NorthForwardMirrored",
+    "description": "13-inch Boyden Refractor (spectrum plates)",
+    "aperture": 0.33,
+    "num_plates": 2
+  },
+  {
+    "series": "ayroe",
+    "orientation": "NorthForwardMirrored",
+    "description": "Roe 6-inch",
+    "aperture": 0.152,
+    "num_plates": 8
+  },
+  {
+    "series": "yb",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 55,
+    "nominal_plate_scale": 55,
+    "description": "YSO Double Astrograph",
+    "aperture": 0.508,
+    "num_plates": 1
+  },
+  {
+    "series": "pz",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 1553,
+    "nominal_plate_scale": 1553,
+    "description": "3 inch Perkin-Zeiss Lens",
+    "aperture": 0.076,
+    "num_plates": 166
+  },
+  {
+    "series": "me",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 600,
+    "description": "1.5-inch Cooke Lenses",
+    "aperture": 0.038,
+    "num_plates": 249
+  },
+  {
+    "series": "pas",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 95.64,
+    "nominal_plate_scale": 91.8,
+    "description": "Asiago Observatory 92/67 cm Schmidt",
+    "aperture": 0.67,
+    "num_plates": 1
+  },
+  {
+    "series": "hale",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 11.06,
+    "description": "200 inch Hale Telescope",
+    "aperture": 5,
+    "num_plates": 49
+  },
+  {
+    "series": "lwla",
+    "orientation": "NorthForwardMirrored",
+    "fitted_plate_scale": 36.687,
+    "nominal_plate_scale": 39.5,
+    "description": "Lowel 40 inch reflector",
+    "aperture": 1.01,
+    "num_plates": 868
+  },
+  {
+    "series": "ka",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 1200,
+    "description": "2.8-inch Kodak Aero-Ektar",
+    "aperture": 0.071,
+    "num_plates": 3690
+  },
+  {
+    "series": "kb",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 1200,
+    "description": "2.8-inch Kodak Aero-Ektar",
+    "aperture": 0.071,
+    "num_plates": 2591
+  },
+  {
+    "series": "kc",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 650,
+    "description": "K-19 Air Force Camera",
+    "aperture": 0.127,
+    "num_plates": 747
+  },
+  {
+    "series": "kd",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 650,
+    "description": "Air Force Camera",
+    "aperture": 0.127,
+    "num_plates": 821
+  },
+  {
+    "series": "ke",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 1160,
+    "description": "Eastman Aero-Ektar K-24 Lens on a K-19 Barrel",
+    "aperture": 0.071,
+    "num_plates": 560
+  },
+  {
+    "series": "kf",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 1160,
+    "description": "Eastman Aero-Ektar K-24 Lens on a K-19 Barrel",
+    "aperture": 0.071,
+    "num_plates": 492
+  },
+  {
+    "series": "kg",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 1160,
+    "description": "Eastman Aero-Ektar K-24 Lens on a K-19 Barrel Formerly KE (1951)",
+    "aperture": 0.071,
+    "num_plates": 195
+  },
+  {
+    "series": "kge",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 1160,
+    "description": "Eastman Aero-Ektar K-24 Lens on a K-19 Barrel Formerly KG (1950)",
+    "aperture": 0.071,
+    "num_plates": 138
+  },
+  {
+    "series": "kh",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 1160,
+    "description": "KE Camera with Installed Rough Focus",
+    "aperture": 0.071,
+    "num_plates": 213
+  },
+  {
+    "series": "ad",
+    "orientation": "NorthForwardMirrored",
+    "description": "Various Meteor Cameras",
+    "aperture": 0,
+    "num_plates": 4
+  },
+  {
+    "series": "e",
+    "orientation": "NorthForwardMirrored",
+    "description": "Miscellaneous test plates",
+    "aperture": 0,
+    "num_plates": 2
+  },
+  {
+    "series": "u",
+    "orientation": "NorthForwardMirrored",
+    "description": "Pole Star Recorder",
+    "aperture": 0,
+    "num_plates": 194
+  },
+  {
+    "series": "v",
+    "orientation": "NorthForwardMirrored",
+    "description": "Misc Basement",
+    "aperture": 0,
+    "num_plates": 45
+  },
+  {
+    "series": "poss",
+    "orientation": "NorthForwardMirrored",
+    "nominal_plate_scale": 67.19,
+    "description": "Palomar Sky Survey (POSS)",
+    "aperture": 1.219,
+    "num_plates": 7951
+  }
+]

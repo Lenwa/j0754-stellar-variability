@@ -1,0 +1,276 @@
+{
+  "ObjectInfoFlags": [
+    {
+      "name": "DEFAULT",
+      "value": 0,
+      "description": "Initial value; resets all bits."
+    },
+    {
+      "name": "FEW",
+      "value": 1,
+      "description": "Used within relphot; skip star."
+    },
+    {
+      "name": "POOR",
+      "value": 2,
+      "description": "Used within relphot; skip star."
+    },
+    {
+      "name": "ICRF_QSO",
+      "value": 4,
+      "description": "object IDed with known ICRF quasar (may have ICRF position measurement)"
+    },
+    {
+      "name": "HERN_QSO_P60",
+      "value": 8,
+      "description": "identified as likely QSO (Hernitschek et al 2015), P_QSO >= 0.60"
+    },
+    {
+      "name": "HERN_QSO_P05",
+      "value": 16,
+      "description": "identified as possible QSO (Hernitschek et al 2015), P_QSO >= 0.05"
+    },
+    {
+      "name": "HERN_RRL_P60",
+      "value": 32,
+      "description": "identified as likely RR Lyra (Hernitschek et al 2015), P_RRLyra >= 0.60"
+    },
+    {
+      "name": "HERN_RRL_P05",
+      "value": 64,
+      "description": "identified as possible RR Lyra (Hernitschek et al 2015), P_RRLyra >= 0.05"
+    },
+    {
+      "name": "HERN_VARIABLE",
+      "value": 128,
+      "description": "identified as a variable based on ChiSq (Hernitschek et al 2015)"
+    },
+    {
+      "name": "TRANSIENT",
+      "value": 256,
+      "description": "identified as a non-periodic (stationary) transient"
+    },
+    {
+      "name": "HAS_SOLSYS_DET",
+      "value": 512,
+      "description": "at least one detection identified with a known solar-system object (asteroid or other)."
+    },
+    {
+      "name": "MOST_SOLSYS_DET",
+      "value": 1024,
+      "description": "most detections identified with a known solar-system object (asteroid or other)."
+    },
+    {
+      "name": "LARGE_PM",
+      "value": 2048,
+      "description": "star with large proper motion"
+    },
+    {
+      "name": "RAW_AVE",
+      "value": 4096,
+      "description": "simple weighted average position was used (no IRLS fitting)"
+    },
+    {
+      "name": "FIT_AVE",
+      "value": 8192,
+      "description": "average position was fitted"
+    },
+    {
+      "name": "FIT_PM",
+      "value": 16384,
+      "description": "proper motion model was fitted"
+    },
+    {
+      "name": "FIT_PAR",
+      "value": 32768,
+      "description": "parallax model was fitted"
+    },
+    {
+      "name": "USE_AVE",
+      "value": 65536,
+      "description": "average position used (not PM or PAR)"
+    },
+    {
+      "name": "USE_PM",
+      "value": 131072,
+      "description": "proper motion used (not AVE or PAR)"
+    },
+    {
+      "name": "USE_PAR",
+      "value": 262144,
+      "description": "parallax used (not AVE or PM)"
+    },
+    {
+      "name": "NO_MEAN_ASTROM",
+      "value": 524288,
+      "description": "mean astrometry could not be measured"
+    },
+    {
+      "name": "STACK_FOR_MEAN",
+      "value": 1048576,
+      "description": "stack position used for mean astrometry"
+    },
+    {
+      "name": "MEAN_FOR_STACK",
+      "value": 2097152,
+      "description": "mean astrometry used for stack position"
+    },
+    {
+      "name": "BAD_PM",
+      "value": 4194304,
+      "description": "failure to measure proper-motion model"
+    },
+    {
+      "name": "EXT",
+      "value": 8388608,
+      "description": "extended in our data (eg, PS)"
+    },
+    {
+      "name": "EXT_ALT",
+      "value": 16777216,
+      "description": "extended in external data (eg, 2MASS)"
+    },
+    {
+      "name": "GOOD",
+      "value": 33554432,
+      "description": "good-quality measurement in our data (eg,PS)"
+    },
+    {
+      "name": "GOOD_ALT",
+      "value": 67108864,
+      "description": "good-quality measurement in external data (eg, 2MASS)"
+    },
+    {
+      "name": "GOOD_STACK",
+      "value": 134217728,
+      "description": "good-quality object in the stack (> 1 good stack measurement)"
+    },
+    {
+      "name": "BEST_STACK",
+      "value": 268435456,
+      "description": "the primary stack measurements are the best measurements"
+    },
+    {
+      "name": "SUSPECT_STACK",
+      "value": 536870912,
+      "description": "suspect object in the stack (no more than 1 good measurement, 2 or more suspect or good stack measurement)"
+    },
+    {
+      "name": "BAD_STACK",
+      "value": 1073741824,
+      "description": "poor-quality stack object (no more than 1 good or suspect measurement)"
+    }
+  ],
+  "ObjectFilterFlags": [
+    {
+      "name": "DEFAULT",
+      "value": 0,
+      "description": "Initial value; resets all bits."
+    },
+    {
+      "name": "SECF_STAR_FEW",
+      "value": 1,
+      "description": "Used within relphot: skip star."
+    },
+    {
+      "name": "SECF_STAR_POOR",
+      "value": 2,
+      "description": "Used within relphot: skip star."
+    },
+    {
+      "name": "SECF_USE_SYNTH",
+      "value": 4,
+      "description": "Synthetic photometry used in average measurement."
+    },
+    {
+      "name": "SECF_USE_UBERCAL",
+      "value": 8,
+      "description": "Ubercal photometry used in average measurement."
+    },
+    {
+      "name": "SECF_HAS_PS1",
+      "value": 16,
+      "description": "PS1 photometry used in average measurement."
+    },
+    {
+      "name": "SECF_HAS_PS1_STACK",
+      "value": 32,
+      "description": "PS1 stack photometry exists."
+    },
+    {
+      "name": "SECF_HAS_TYCHO",
+      "value": 64,
+      "description": "Tycho photometry used for synthetic magnitudes."
+    },
+    {
+      "name": "SECF_FIX_SYNTH",
+      "value": 128,
+      "description": "Synthetic magnitudes repaired with zeropoint map."
+    },
+    {
+      "name": "SECF_RANK_0",
+      "value": 256,
+      "description": "Average magnitude uses only rank 0 detections."
+    },
+    {
+      "name": "SECF_RANK_1",
+      "value": 512,
+      "description": "Average magnitude uses only rank 1 detections."
+    },
+    {
+      "name": "SECF_RANK_2",
+      "value": 1024,
+      "description": "Average magnitude uses only rank 2 detections."
+    },
+    {
+      "name": "SECF_RANK_3",
+      "value": 2048,
+      "description": "Average magnitude uses only rank 3 detections."
+    },
+    {
+      "name": "SECF_RANK_4",
+      "value": 4096,
+      "description": "Average magnitude uses only rank 4 detections."
+    },
+    {
+      "name": "SECF_STACK_PRIMARY",
+      "value": 16384,
+      "description": "PS1 stack photometry comes from primary skycell."
+    },
+    {
+      "name": "SECF_STACK_BESTDET",
+      "value": 32768,
+      "description": "PS1 stack best measurement is a detection (not forced)."
+    },
+    {
+      "name": "SECF_STACK_PRIMDET",
+      "value": 65536,
+      "description": "PS1 stack primary measurement is a detection (not forced)."
+    },
+    {
+      "name": "SECF_HAS_SDSS",
+      "value": 1048576,
+      "description": "This photcode has SDSS photometry."
+    },
+    {
+      "name": "SECF_HAS_HSC",
+      "value": 2097152,
+      "description": "This photcode has HSC photometry."
+    },
+    {
+      "name": "SECF_HAS_CFH",
+      "value": 4194304,
+      "description": "This photcode has CFH photometry (mostly Megacam)."
+    },
+    {
+      "name": "SECF_HAS_DES",
+      "value": 8388608,
+      "description": "This photcode has DES photometry."
+    },
+    {
+      "name": "SECF_OBJ_EXT",
+      "value": 16777216,
+      "description": "Extended in this band."
+    }
+  ]
+}

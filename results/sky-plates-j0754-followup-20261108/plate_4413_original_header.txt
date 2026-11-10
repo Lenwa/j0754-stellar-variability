@@ -1,0 +1,174 @@
+SIMPLE  =                    T / file conforms to FITS standard                 
+BITPIX  =                   16 / number of bits per data pixel                  
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                28552 / length of data axis 1                          
+NAXIS2  =                22809 / length of data axis 2                          
+EXTEND  =                    T / file may contain extensions                    
+BSCALE  =                  1.0 / physical_value = BZERO + BSCALE * array_value  
+BZERO   =                32768 / physical_value = BZERO + BSCALE * array_value  
+MINVAL  =               8995.0 / minimum image value                            
+MAXVAL  =              65535.0 / maximum image value                            
+        --------------------------------------- Original data of the observation
+DATEORIG= '1936-01-15'         / recorded date of the observation               
+TMS-ORIG= '05:47:00'           / recorded time of the start of exposure 1       
+TME-ORIG= '06:47:00'           / recorded time of the end of exposure 1         
+JDA-ORIG=                      / recorded Julian date, mid-point of exposure 1  
+TIMEFLAG= '        '           / quality flag of recorded time                  
+RA-ORIG = '07:50.0 '           / recorded right ascension of exposure 1         
+DEC-ORIG= '+21:00.0'           / recorded declination of exposure 1             
+COORFLAG= '        '           / quality flag of recorded coordinates           
+OBJECT  = 'Kleine Planeten'    / observed object or field (exposure 1)          
+OBJTYPE = '        '           / object type                                    
+EXPTIME =                 3600 / [s] exposure time of exposure 1                
+NUMEXP  =                    1 / number of exposures of the plate               
+OBSERVAT= 'Hamburger Sternwarte' / observatory name                             
+SITENAME= 'Hamburg-Bergedorf, Germany' / observatory site                       
+SITELONG=               10.242 / [deg] East longitude of the observatory        
+SITELAT =               53.482 / [deg] latitude of the observatory              
+SITEELEV=                   41 / [m] elevation of the observatory               
+TELESCOP= 'Lippert-Astrograph' / telescope name                                 
+OTA-NAME= 'Triplet K'          / optical tube assembly (OTA)                    
+OTA-DIAM=                  0.3 / [m] diameter of the OTA                        
+OTA-APER=                  0.3 / [m] clear aperture of the OTA                  
+FOCLEN  =                  1.5 / [m] focal length of the OTA                    
+PLTSCALE=                137.5 / [arcsec/mm] plate scale of the OTA             
+INSTRUME= '        '           / instrument                                     
+DETNAM  = 'photographic plate' / detector                                       
+METHOD  = 'direct photograph'  / method of observation                          
+FILTER  = '        '           / filter type                                    
+PRISM   = '        '           / objective prism                                
+PRISMANG= '        '           / prism angle "deg:min"                          
+DISPERS =                      / [Angstrom/mm] dispersion                       
+GRATING = '        '           / grating                                        
+FOCUS   =                      / focus position                                 
+TEMPERAT=                      / [deg C] air temperature (degrees Celsius)      
+CALMNESS= '3       '           / sky calmness (scale 1-5)                       
+SHARPNES= '3       '           / sky sharpness (scale 1-5)                      
+TRANSPAR= '2-3     '           / sky transparency (scale 1-5)                   
+SKYCOND = '        '           / other sky conditions                           
+OBSERVER= 'Wachmann (1927-69)' / observer name                                  
+OBSNOTES= '        '           / observer notes                                 
+NOTES   = '6 kleine Planeten 462 551 656' / miscellaneous notes                 
+BIBCODE = '        '           / bibcode of a related paper                     
+        ----------------------------------------------------- Photographic plate
+PLATENUM= 'LA04710 '           / plate number in archive                        
+PNUMORIG= '        '           / original plate number in archive               
+WFPDB-ID= 'HAM030B004710'      / plate identification in the WFPDB              
+SERIES  = '        '           / plate series                                   
+PLATEFMT= '24x30   '           / plate format in cm                             
+PLATESZ1=                   24 / [cm] plate size along axis 1                   
+PLATESZ2=                   30 / [cm] plate size along axis 2                   
+EMULSION= 'Agfa Astro Z'       / photographic emulsion type                     
+DEVELOP = '        '           / plate development details                      
+PQUALITY= '        '           / quality of plate                               
+PLATNOTE= '        '           / plate notes                                    
+        --------------------------------------- Computed data of the observation
+DATE-OBS= '1936-01-15T21:29:25' / UT date of the start of exposure 1            
+DATE-AVG= '1936-01-15T21:59:20' / UT date of the mid-point of exposure 1        
+DATE-END= '1936-01-15T22:29:15' / UT date of the end of exposure 1              
+YEAR    =        1936.03941253 / decimal year of the start of exposure 1        
+YEAR-AVG=        1936.03946941 / decimal year of the mid-point of exposure 1    
+YEAR-END=        1936.03952629 / decimal year of the end of exposure 1          
+JD      =        2428183.39543 / Julian date at the start of exposure 1         
+JD-AVG  =         2428183.4162 / Julian date at the mid-point of exposure 1     
+JD-END  =        2428183.43698 / Julian date at the end of exposure 1           
+HJD-AVG =        2428183.42188 / heliocentric JD at the mid-point of exposure 1 
+RA      = '07:53:45.8'         / right ascension of pointing (J2000) "h:m:s"    
+DEC     = '20:49:52.5'         / declination of pointing (J2000) "d:m:s"        
+RA_DEG  =              118.441 / [deg] right ascension of pointing (J2000)      
+DEC_DEG =              20.8312 / [deg] declination of pointing (J2000)          
+        ------------------------------------------------------------------- Scan
+SCANNER = 'Epson Expression 10000XL' / scanner name                             
+SCANRES1=                 2400 / [dpi] scan resolution along axis 1             
+SCANRES2=                 2400 / [dpi] scan resolution along axis 2             
+PIXSIZE1=              10.5833 / [um] pixel size along axis 1                   
+PIXSIZE2=              10.5833 / [um] pixel size along axis 2                   
+SCANSOFT= '        '           / scanning software                              
+SCANGAM =                      / scan gamma value                               
+SCANFOC = '        '           / scan focus                                     
+WEDGE   = '        '           / type of photometric step-wedge                 
+DATESCAN= '2013-04-03'         / scan date and time                             
+SCANAUTH= 'S. Preller'         / author of scan                                 
+SCANNOTE= '        '           / scan notes                                     
+        ------------------------------------------------------------- Data files
+FILENAME= 'LA04710_x.fits'     / filename of the plate scan                     
+FN-SCN1 = 'LA04710_y.fits'     / filename of scan 1                             
+FN-SCN2 = 'LA04710_x.fits'     / filename of scan 2                             
+FN-WEDGE= '        '           / filename of the wedge scan                     
+FN-PRE  = 'LA04710_pre.jpg'    / filename of the preview image                  
+FN-COVER= 'LA04710_cover.jpg'  / filename of the plate cover image              
+FN-LOG1 = 'LA-PV05-LA04701_04710.jpg' / filename of logbook image 1             
+FN-LOG2 = 'LA-LB25-1936-01-15a.jpg' / filename of logbook image 2               
+FN-LOG3 = 'LA-LB25-1936-01-15b.jpg' / filename of logbook image 3               
+FN-LOG4 = 'LA-LB25-1936-01-15c.jpg' / filename of logbook image 4               
+FN-LOG5 = 'LA-LB25-1936-01-15d.jpg' / filename of logbook image 5               
+ORIGIN  = 'Hamburger Sternwarte (Universitaet Hamburg)'                         
+DATE    = '2021-12-15T22:12:51' / last change of this file                      
+        -------------------------------------------------------------------- WCS
+HISTORY   Astrometric solution by SCAMP version 2.10.0 (2021-06-07)             
+EQUINOX =        2000.00000000 / Mean equinox                                   
+RADESYS = 'ICRS    '           / Astrometric system                             
+CTYPE1  = 'RA---TPV'           / WCS projection type for this axis              
+CTYPE2  = 'DEC--TPV'           / WCS projection type for this axis              
+CUNIT1  = 'deg     '           / Axis unit                                      
+CUNIT2  = 'deg     '           / Axis unit                                      
+CRVAL1  =   1.187237642370E+02 / World coordinate on this axis                  
+CRVAL2  =   2.075896885362E+01 / World coordinate on this axis                  
+CRPIX1  =   1.427650000000E+04 / Reference pixel on this axis                   
+CRPIX2  =   1.140500000000E+04 / Reference pixel on this axis                   
+CD1_1   =   4.030710393086E-04 / Linear projection matrix                       
+CD1_2   =   3.853851148305E-06 / Linear projection matrix                       
+CD2_1   =  -3.729922333183E-06 / Linear projection matrix                       
+CD2_2   =   4.026807768444E-04 / Linear projection matrix                       
+PV1_0   =   5.161376225870E-04 / Projection distortion parameter                
+PV1_1   =   1.002156793135E+00 / Projection distortion parameter                
+PV1_2   =   1.912791656541E-04 / Projection distortion parameter                
+PV1_4   =   1.636879516872E-04 / Projection distortion parameter                
+PV1_5   =   7.482805522078E-05 / Projection distortion parameter                
+PV1_6   =  -6.651383917771E-06 / Projection distortion parameter                
+PV1_7   =  -1.062585613232E-04 / Projection distortion parameter                
+PV1_8   =  -1.873636591570E-06 / Projection distortion parameter                
+PV1_9   =  -8.861478726458E-05 / Projection distortion parameter                
+PV1_10  =  -8.170135103333E-07 / Projection distortion parameter                
+PV2_0   =  -5.369171792572E-05 / Projection distortion parameter                
+PV2_1   =   1.000933082462E+00 / Projection distortion parameter                
+PV2_2   =   7.854975766740E-05 / Projection distortion parameter                
+PV2_4   =   9.234168994645E-05 / Projection distortion parameter                
+PV2_5   =   6.447368027299E-05 / Projection distortion parameter                
+PV2_6   =   1.631992007775E-05 / Projection distortion parameter                
+PV2_7   =  -7.055351592398E-05 / Projection distortion parameter                
+PV2_8   =  -8.178243632241E-07 / Projection distortion parameter                
+PV2_9   =  -6.727257444803E-05 / Projection distortion parameter                
+PV2_10  =   2.724461605479E-06 / Projection distortion parameter                
+FGROUPNO=                    1 / SCAMP field group label                        
+ASTIRMS1=   0.000000000000E+00 / Astrom. dispersion RMS (intern., high S/N)     
+ASTIRMS2=   0.000000000000E+00 / Astrom. dispersion RMS (intern., high S/N)     
+ASTRRMS1=   8.855904156571E-05 / Astrom. dispersion RMS (ref., high S/N)        
+ASTRRMS2=   7.433557046123E-05 / Astrom. dispersion RMS (ref., high S/N)        
+ASTINST =                    1 / SCAMP astrometric instrument label             
+FLXSCALE=   0.000000000000E+00 / SCAMP relative flux scale                      
+MAGZEROP=           0.00000000 / SCAMP zero-point                               
+PHOTIRMS=           0.00000000 / mag dispersion RMS (internal, high S/N)        
+PHOTINST=                    1 / SCAMP photometric instrument label             
+PHOTLINK=                    F / True if linked to a photometric field          
+        ---------------------------------------------------------------- Licence
+LICENCE = 'https://creativecommons.org/publicdomain/zero/1.0/'                  
+        ------------------------------------------------------- Acknowledgements
+COMMENT The digitized image is provided by Hamburger Sternwarte (Universitaet   
+COMMENT Hamburg). Funding for APPLAUSE has been provided by DFG (German Research
+COMMENT Foundation), Leibniz Institute for Astrophysics Potsdam (AIP), Dr. Karl 
+COMMENT Remeis-Sternwarte, Bamberg (Friedrich-Alexander-Universitaet Erlangen-  
+COMMENT Nuernberg), Hamburger Sternwarte (Unversity Hamburg) and Tartu          
+COMMENT Observatory (University of Tartu). We thank Thueringer Landessternwarte 
+COMMENT Tautenburg (TLS), Astrophysikalisches Institut und                      
+COMMENT Universitaetsternwarte Jena (University of Jena) and the Vatican        
+COMMENT Observatory for providing digitized Material for inclusion into the     
+COMMENT archive.                                                                
+        ---------------------------------------------------------------- History
+HISTORY ImageMagick 6.5.7-8 2012-08-17 Q16 http://www.imagemagick.org           
+HISTORY Header updated with PyPlate v4.0.10 at 2021-12-15T22:09:00              
+HISTORY WCS added with PyPlate v4.0.10 at 2021-12-15T22:12:51                   
+        -------------------------------------------------------------- Checksums
+CHECKSUM= 'h7DLj49Ih4CIh49I'   / HDU checksum updated 2021-12-15T23:13:09       
+DATASUM = '3670182998'         / data unit checksum updated 2021-12-15T23:13:09 
+        ------------------------------------------------------------------------

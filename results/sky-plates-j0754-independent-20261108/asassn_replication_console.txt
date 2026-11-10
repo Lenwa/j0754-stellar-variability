@@ -1,0 +1,1373 @@
+{
+  "native_rows": 5249,
+  "accepted_rows": 5180,
+  "verdicts": {
+    "fading": {
+      "status": "CORROBORATED_DIRECTION",
+      "supporting_cameras": [
+        "bi",
+        "bm",
+        "bq"
+      ],
+      "contradictory_cameras": []
+    },
+    "recovery": {
+      "status": "CORROBORATED_DIRECTION",
+      "supporting_cameras": [
+        "bA",
+        "bE",
+        "bi",
+        "bm",
+        "bq"
+      ],
+      "contradictory_cameras": []
+    }
+  },
+  "g_contrasts": [
+    {
+      "camera": "bA",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          3,
+          113
+        ],
+        "days": [
+          1,
+          36
+        ],
+        "status": "INSUFFICIENT",
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              3,
+              112
+            ],
+            "days": [
+              1,
+              36
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "error_and_fwhm": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              3,
+              112
+            ],
+            "days": [
+              1,
+              36
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "common_months": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              3,
+              3
+            ],
+            "days": [
+              1,
+              1
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "january_april": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              0,
+              66
+            ],
+            "days": [
+              0,
+              20
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "october_december": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              3,
+              32
+            ],
+            "days": [
+              1,
+              11
+            ],
+            "status": "INSUFFICIENT"
+          }
+        }
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          113,
+          190
+        ],
+        "days": [
+          36,
+          61
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.954,
+          12.814
+        ],
+        "delta": -0.14000000000000057,
+        "ci95": [
+          -0.15549999999999997,
+          -0.11800000000000033
+        ],
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              112,
+              190
+            ],
+            "days": [
+              36,
+              61
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.9535,
+              12.814
+            ],
+            "delta": -0.13949999999999996,
+            "ci95": [
+              -0.15276250000000008,
+              -0.11899999999999977
+            ]
+          },
+          "error_and_fwhm": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              112,
+              190
+            ],
+            "days": [
+              36,
+              61
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.9535,
+              12.814
+            ],
+            "delta": -0.13949999999999996,
+            "ci95": [
+              -0.15276250000000008,
+              -0.11899999999999977
+            ]
+          },
+          "common_months": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              113,
+              190
+            ],
+            "days": [
+              36,
+              61
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.954,
+              12.814
+            ],
+            "delta": -0.14000000000000057,
+            "ci95": [
+              -0.1535250000000002,
+              -0.12000000000000006
+            ]
+          },
+          "january_april": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              66,
+              100
+            ],
+            "days": [
+              20,
+              32
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.927,
+              12.829
+            ],
+            "delta": -0.09799999999999898,
+            "ci95": [
+              -0.12649999999999922,
+              -0.08873749999999926
+            ]
+          },
+          "october_december": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              32,
+              66
+            ],
+            "days": [
+              11,
+              21
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.9755,
+              12.8015
+            ],
+            "delta": -0.1739999999999995,
+            "ci95": [
+              -0.19700000000000012,
+              -0.15423750000000022
+            ]
+          }
+        },
+        "control_diagnostic": {
+          "sources": 0,
+          "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+        }
+      }
+    },
+    {
+      "camera": "bE",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          5,
+          87
+        ],
+        "days": [
+          2,
+          27
+        ],
+        "status": "INSUFFICIENT",
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              5,
+              87
+            ],
+            "days": [
+              2,
+              27
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "error_and_fwhm": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              5,
+              87
+            ],
+            "days": [
+              2,
+              27
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "common_months": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              5,
+              22
+            ],
+            "days": [
+              2,
+              6
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "january_april": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              0,
+              26
+            ],
+            "days": [
+              0,
+              8
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "october_december": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              5,
+              28
+            ],
+            "days": [
+              2,
+              8
+            ],
+            "status": "INSUFFICIENT"
+          }
+        }
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          87,
+          84
+        ],
+        "days": [
+          27,
+          28
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.927,
+          12.7775
+        ],
+        "delta": -0.14949999999999974,
+        "ci95": [
+          -0.16699999999999982,
+          -0.1355000000000004
+        ],
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              87,
+              84
+            ],
+            "days": [
+              27,
+              28
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.927,
+              12.7775
+            ],
+            "delta": -0.14949999999999974,
+            "ci95": [
+              -0.16699999999999982,
+              -0.1339999999999994
+            ]
+          },
+          "error_and_fwhm": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              87,
+              84
+            ],
+            "days": [
+              27,
+              28
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.927,
+              12.7775
+            ],
+            "delta": -0.14949999999999974,
+            "ci95": [
+              -0.16699999999999982,
+              -0.1339999999999994
+            ]
+          },
+          "common_months": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              78,
+              77
+            ],
+            "days": [
+              24,
+              25
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.9285,
+              12.775
+            ],
+            "delta": -0.1534999999999993,
+            "ci95": [
+              -0.17026249999999932,
+              -0.14000000000000057
+            ]
+          },
+          "january_april": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              26,
+              24
+            ],
+            "days": [
+              8,
+              8
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "october_december": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              28,
+              27
+            ],
+            "days": [
+              8,
+              9
+            ],
+            "status": "INSUFFICIENT"
+          }
+        },
+        "control_diagnostic": {
+          "sources": 0,
+          "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+        }
+      }
+    },
+    {
+      "camera": "bi",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          235,
+          102
+        ],
+        "days": [
+          83,
+          35
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.603,
+          12.916
+        ],
+        "delta": 0.3130000000000006,
+        "ci95": [
+          0.29100000000000037,
+          0.3439999999999994
+        ],
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              235,
+              102
+            ],
+            "days": [
+              83,
+              35
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.603,
+              12.916
+            ],
+            "delta": 0.3130000000000006,
+            "ci95": [
+              0.287737499999999,
+              0.34450000000000003
+            ]
+          },
+          "error_and_fwhm": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              235,
+              102
+            ],
+            "days": [
+              83,
+              35
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.603,
+              12.916
+            ],
+            "delta": 0.3130000000000006,
+            "ci95": [
+              0.287737499999999,
+              0.34450000000000003
+            ]
+          },
+          "common_months": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              235,
+              102
+            ],
+            "days": [
+              83,
+              35
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.603,
+              12.916
+            ],
+            "delta": 0.3130000000000006,
+            "ci95": [
+              0.287737499999999,
+              0.34450000000000003
+            ]
+          },
+          "january_april": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              180,
+              53
+            ],
+            "days": [
+              63,
+              18
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.601,
+              12.882
+            ],
+            "delta": 0.2809999999999988,
+            "ci95": [
+              0.2702375000000008,
+              0.30849999999999866
+            ]
+          },
+          "october_december": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              22,
+              30
+            ],
+            "days": [
+              8,
+              10
+            ],
+            "status": "INSUFFICIENT"
+          }
+        },
+        "control_diagnostic": {
+          "sources": 14,
+          "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry",
+          "median_delta": -0.0017151093178391363,
+          "range": [
+            -0.07363484073465543,
+            0.1344146935656898
+          ],
+          "target_minus_median_control": 0.31471510931783975
+        }
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          102,
+          70
+        ],
+        "days": [
+          35,
+          26
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.916,
+          12.804
+        ],
+        "delta": -0.1120000000000001,
+        "ci95": [
+          -0.14499999999999957,
+          -0.0909999999999993
+        ],
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              102,
+              70
+            ],
+            "days": [
+              35,
+              26
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.916,
+              12.804
+            ],
+            "delta": -0.1120000000000001,
+            "ci95": [
+              -0.1469999999999994,
+              -0.08999999999999986
+            ]
+          },
+          "error_and_fwhm": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              102,
+              70
+            ],
+            "days": [
+              35,
+              26
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.916,
+              12.804
+            ],
+            "delta": -0.1120000000000001,
+            "ci95": [
+              -0.1469999999999994,
+              -0.08999999999999986
+            ]
+          },
+          "common_months": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              102,
+              64
+            ],
+            "days": [
+              35,
+              24
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.916,
+              12.807
+            ],
+            "delta": -0.10899999999999999,
+            "ci95": [
+              -0.14676249999999996,
+              -0.0874749999999995
+            ]
+          },
+          "january_april": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              53,
+              29
+            ],
+            "days": [
+              18,
+              12
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.882,
+              12.816
+            ],
+            "delta": -0.06599999999999895,
+            "ci95": [
+              -0.09676249999999924,
+              -0.048500000000000654
+            ]
+          },
+          "october_december": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              30,
+              32
+            ],
+            "days": [
+              10,
+              11
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.952,
+              12.771
+            ],
+            "delta": -0.18099999999999916,
+            "ci95": [
+              -0.20000000000000023,
+              -0.13297499999999826
+            ]
+          }
+        },
+        "control_diagnostic": {
+          "sources": 0,
+          "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+        }
+      }
+    },
+    {
+      "camera": "bm",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          109,
+          116
+        ],
+        "days": [
+          38,
+          31
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.621,
+          12.906
+        ],
+        "delta": 0.28500000000000014,
+        "ci95": [
+          0.26900000000000013,
+          0.3055000000000004
+        ],
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              109,
+              116
+            ],
+            "days": [
+              38,
+              31
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.621,
+              12.906
+            ],
+            "delta": 0.28500000000000014,
+            "ci95": [
+              0.270999999999999,
+              0.3030000000000008
+            ]
+          },
+          "error_and_fwhm": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              109,
+              116
+            ],
+            "days": [
+              38,
+              31
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.621,
+              12.906
+            ],
+            "delta": 0.28500000000000014,
+            "ci95": [
+              0.270999999999999,
+              0.3030000000000008
+            ]
+          },
+          "common_months": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              107,
+              116
+            ],
+            "days": [
+              37,
+              31
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.621,
+              12.906
+            ],
+            "delta": 0.28500000000000014,
+            "ci95": [
+              0.26947499999999985,
+              0.30426249999999966
+            ]
+          },
+          "january_april": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              68,
+              68
+            ],
+            "days": [
+              22,
+              18
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.617,
+              12.907
+            ],
+            "delta": 0.28999999999999915,
+            "ci95": [
+              0.2657374999999997,
+              0.3119999999999995
+            ]
+          },
+          "october_december": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              15,
+              39
+            ],
+            "days": [
+              6,
+              10
+            ],
+            "status": "INSUFFICIENT"
+          }
+        },
+        "control_diagnostic": {
+          "sources": 14,
+          "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry",
+          "median_delta": 0.000744938942670359,
+          "range": [
+            -0.05469169549617803,
+            0.009801505168351099
+          ],
+          "target_minus_median_control": 0.2842550610573298
+        }
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          116,
+          86
+        ],
+        "days": [
+          31,
+          29
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.906,
+          12.809
+        ],
+        "delta": -0.09700000000000131,
+        "ci95": [
+          -0.1120000000000001,
+          -0.07900000000000063
+        ],
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              116,
+              86
+            ],
+            "days": [
+              31,
+              29
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.906,
+              12.809
+            ],
+            "delta": -0.09700000000000131,
+            "ci95": [
+              -0.1120000000000001,
+              -0.08023750000000046
+            ]
+          },
+          "error_and_fwhm": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              116,
+              86
+            ],
+            "days": [
+              31,
+              29
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.906,
+              12.809
+            ],
+            "delta": -0.09700000000000131,
+            "ci95": [
+              -0.1120000000000001,
+              -0.08023750000000046
+            ]
+          },
+          "common_months": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              83,
+              82
+            ],
+            "days": [
+              23,
+              27
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.908,
+              12.809999999999999
+            ],
+            "delta": -0.09800000000000075,
+            "ci95": [
+              -0.11452500000000047,
+              -0.08099999999999952
+            ]
+          },
+          "january_april": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              68,
+              65
+            ],
+            "days": [
+              18,
+              21
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.907,
+              12.814
+            ],
+            "delta": -0.09299999999999997,
+            "ci95": [
+              -0.1039999999999992,
+              -0.06999999999999935
+            ]
+          },
+          "october_december": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              39,
+              18
+            ],
+            "days": [
+              10,
+              7
+            ],
+            "status": "INSUFFICIENT"
+          }
+        },
+        "control_diagnostic": {
+          "sources": 0,
+          "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+        }
+      }
+    },
+    {
+      "camera": "bq",
+      "fading": {
+        "years": [
+          2018,
+          2022
+        ],
+        "observations": [
+          115,
+          96
+        ],
+        "days": [
+          40,
+          32
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.643,
+          12.9465
+        ],
+        "delta": 0.30349999999999966,
+        "ci95": [
+          0.2859999999999996,
+          0.3249999999999993
+        ],
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              115,
+              96
+            ],
+            "days": [
+              40,
+              32
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.643,
+              12.9465
+            ],
+            "delta": 0.30349999999999966,
+            "ci95": [
+              0.2867375000000005,
+              0.32399999999999984
+            ]
+          },
+          "error_and_fwhm": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              115,
+              96
+            ],
+            "days": [
+              40,
+              32
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.643,
+              12.9465
+            ],
+            "delta": 0.30349999999999966,
+            "ci95": [
+              0.2867375000000005,
+              0.32399999999999984
+            ]
+          },
+          "common_months": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              115,
+              54
+            ],
+            "days": [
+              40,
+              18
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.643,
+              12.9405
+            ],
+            "delta": 0.29749999999999943,
+            "ci95": [
+              0.2804749999999991,
+              0.32699999999999996
+            ]
+          },
+          "january_april": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              78,
+              47
+            ],
+            "days": [
+              27,
+              15
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.6345,
+              12.937
+            ],
+            "delta": 0.3025000000000002,
+            "ci95": [
+              0.27399999999999913,
+              0.32399999999999807
+            ]
+          },
+          "october_december": {
+            "years": [
+              2018,
+              2022
+            ],
+            "observations": [
+              28,
+              27
+            ],
+            "days": [
+              10,
+              9
+            ],
+            "status": "INSUFFICIENT"
+          }
+        },
+        "control_diagnostic": {
+          "sources": 14,
+          "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry",
+          "median_delta": 0.00011366735261919558,
+          "range": [
+            -0.06152103907302653,
+            0.047719571521376736
+          ],
+          "target_minus_median_control": 0.30338633264738046
+        }
+      },
+      "recovery": {
+        "years": [
+          2022,
+          2025
+        ],
+        "observations": [
+          96,
+          136
+        ],
+        "days": [
+          32,
+          46
+        ],
+        "status": "MEASURED",
+        "medians": [
+          12.9465,
+          12.785499999999999
+        ],
+        "delta": -0.16100000000000136,
+        "ci95": [
+          -0.17800000000000082,
+          -0.1460000000000008
+        ],
+        "sensitivities": {
+          "error_le_0p1": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              96,
+              136
+            ],
+            "days": [
+              32,
+              46
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.9465,
+              12.785499999999999
+            ],
+            "delta": -0.16100000000000136,
+            "ci95": [
+              -0.17776250000000043,
+              -0.1479999999999997
+            ]
+          },
+          "error_and_fwhm": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              96,
+              136
+            ],
+            "days": [
+              32,
+              46
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.9465,
+              12.785499999999999
+            ],
+            "delta": -0.16100000000000136,
+            "ci95": [
+              -0.17776250000000043,
+              -0.1479999999999997
+            ]
+          },
+          "common_months": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              69,
+              136
+            ],
+            "days": [
+              23,
+              46
+            ],
+            "status": "MEASURED",
+            "medians": [
+              12.948,
+              12.785499999999999
+            ],
+            "delta": -0.16250000000000142,
+            "ci95": [
+              -0.18199999999999955,
+              -0.14623750000000024
+            ]
+          },
+          "january_april": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              47,
+              18
+            ],
+            "days": [
+              15,
+              6
+            ],
+            "status": "INSUFFICIENT"
+          },
+          "october_december": {
+            "years": [
+              2022,
+              2025
+            ],
+            "observations": [
+              27,
+              101
+            ],
+            "days": [
+              9,
+              34
+            ],
+            "status": "INSUFFICIENT"
+          }
+        },
+        "control_diagnostic": {
+          "sources": 0,
+          "pipeline": "Sky Patrol V2, coadded; not identical-frame V1 photometry"
+        }
+      }
+    }
+  ]
+}

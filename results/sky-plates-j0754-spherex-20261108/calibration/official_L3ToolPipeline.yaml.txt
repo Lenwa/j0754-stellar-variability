@@ -1,0 +1,27 @@
+description: L3aToolPipeline
+tasks:
+  level3a:
+    class: spx_tasks.L3aTask
+    config:
+      connections.spximg: "level2"
+      connections.srccat: "srccat"
+      connections.solid_angle_pixel_map: "solid_angle_pixel_map"
+      connections.spectral_wcs: "spectral_wcs"
+      connections.phot_meas: "phot_meas"
+      connections.phot_meas_combined: "phot_meas_combined"
+      perform_forced_photometry.pass_thru_cols: ["name"]
+      perform_forced_photometry.merge_srccat: true
+      perform_forced_photometry.cat_phot_cols: [
+        "input_type", "ra", "dec", "name", "sersic", "ab_ratio", "phi", "shape_r", "SPHERExRefID"]
+  level3b_create_all_sky_catalog:
+    class: spx_tasks.CreateAllSkyCatalogTask
+    config:
+      connections.meas_table_list: "phot_meas"
+      connections.allsky_cat: "allsky_cat"
+      merge_refcat: false
+      pass_thru_cols: ["name"]
+  level3c_combine_catalog_tiles:
+    class: spx_tasks.CombineCatalogTilesTask
+    config:
+      connections.allsky_cat_list: "allsky_cat"
+      connections.allsky_cat_combined: "allsky_cat_combined"

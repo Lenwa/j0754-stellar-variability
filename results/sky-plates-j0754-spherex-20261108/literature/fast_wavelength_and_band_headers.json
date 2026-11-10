@@ -1,0 +1,202 @@
+[
+  {
+    "file": "0036.N221133017.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 3472.30419921875,
+    "CD1_1": 1.47108972072601,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 720.0,
+    "airmass": "1.03",
+    "PI": "Tang",
+    "PROGRAM": "#192 DASCH Long-Term Variables"
+  },
+  {
+    "file": "0062.N221133017.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 3473.68212890625,
+    "CD1_1": 1.47125792503357,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 300.0,
+    "airmass": "1.55",
+    "PI": "Tang",
+    "PROGRAM": "#192 DASCH Long-Term Variables"
+  },
+  {
+    "file": "0089.N2211330177.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 4749.923828125,
+    "CD1_1": 0.742787480354309,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 360.0,
+    "airmass": "1.15",
+    "PI": "Tang",
+    "PROGRAM": "#192 DASCH Long-Term Variables"
+  },
+  {
+    "file": "0123.N2211330177.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 3476.89453125,
+    "CD1_1": 1.47066938877106,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 100.0,
+    "airmass": "1.08",
+    "PI": "Sumin Tang",
+    "PROGRAM": "#184 M44 variables"
+  },
+  {
+    "file": "0135.N2211330177.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 3477.34448242187,
+    "CD1_1": 1.47066128253937,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 300.0,
+    "airmass": "1.04",
+    "PI": "Tang",
+    "PROGRAM": "#184 M44 Variables"
+  },
+  {
+    "file": "0146.N2211330177.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 3466.587890625,
+    "CD1_1": 1.47408175468445,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 360.0,
+    "airmass": "1.05",
+    "PI": "Tang",
+    "PROGRAM": "#192 DASCH Long-Term Variables"
+  },
+  {
+    "file": "0147.N2211330177.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 3466.587890625,
+    "CD1_1": 1.47408175468445,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 360.0,
+    "airmass": "1.05",
+    "PI": "Tang",
+    "PROGRAM": "#192 DASCH Long-Term Variables"
+  },
+  {
+    "file": "0148.N2211330177.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 3466.587890625,
+    "CD1_1": 1.47408175468445,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 360.0,
+    "airmass": "1.04",
+    "PI": "Tang",
+    "PROGRAM": "#192 DASCH Long-Term Variables"
+  },
+  {
+    "file": "0159.N2211330177.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 4743.04736328125,
+    "CD1_1": 0.74283754825592,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 600.0,
+    "airmass": "1.12",
+    "PI": "Tang",
+    "PROGRAM": "#192 DASCH Long-Term Variables"
+  },
+  {
+    "file": "0187.N2211330177.ms.fits",
+    "WAT0": "system=equispec",
+    "WAT1": "wtype=linear label=Wavelength units=angstroms",
+    "WAT2": "wtype=linear",
+    "CRPIX1": 1.0,
+    "CRVAL1": 4789.42041015625,
+    "CD1_1": 0.743135452270508,
+    "DC_FLAG": 0,
+    "BANDID": [
+      "spectrum - background fit, weights variance, clean yes",
+      "raw - background fit, weights none, clean no",
+      "background - background fit",
+      "sigma - background fit, weights variance, clean yes"
+    ],
+    "exposure": 120.0,
+    "airmass": "1.05",
+    "PI": "Tang",
+    "PROGRAM": "#192 DASCH Long-Term Variables"
+  }
+]

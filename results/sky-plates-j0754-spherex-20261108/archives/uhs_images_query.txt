@@ -1,0 +1,163 @@
+<HTML><HEAD>&nbsp;<script language="JavaScript" type="text/javascript">
+<!-- 
+window.focus(); 
+//--> </script>
+</HEAD><h3>GetImage cut-out results</h3>
+<br><b>J2000 coords:</b> RA: 118.6911741 Dec:16.694621
+<br><b>Programme:</b> UKIRT Hemisphere Survey, UHS
+<br><b>Filter:</b> all
+<br>Processing ...
+<br>Connecting to database: UHSDR3<p>
+<table border="1"><tr bgcolor="#FFFFCC"><td><b>Link</b></td><td><b>multiframeID</b></td><td><b>frametype</b></td><td><b>obstype</b></td><td><b>filterid</b></td><td><b>shortname</b></td><td><b>dateObs</b></td><td><b>extNum</b></td><td><b>deprecated</b></td>
+<tr bgcolor=#FFDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk39/wsa/ingest/fits/20130108_v5/w20130108_01391_st.fit&mfid=6124750&extNo=3&lx=353&hx=503&ly=1578&hy=1728&rf=90&flip=1&uniq=4931_719_39_28483_1&xpos=75.6&ypos=76&band=J&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>6124750</td>
+<td nowrap>stack</td>
+<td nowrap>OBJECT</td>
+<td nowrap>3</td>
+<td nowrap>J</td>
+<td nowrap>2013-01-08 10:51:47.0</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#DDDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk39/wsa/ingest/fits/20130108_v5/w20130108_01391.fit&mfid=6124749&extNo=3&lx=353&hx=503&ly=1578&hy=1728&rf=90&flip=1&uniq=4931_719_39_28483_2&xpos=75.6&ypos=76&band=J&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>6124749</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>3</td>
+<td nowrap>J</td>
+<td nowrap>2013-01-08 10:51:47.0</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#FFDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk39/wsa/ingest/fits/20130108_v5/w20130108_01392.fit&mfid=6124752&extNo=3&lx=344&hx=494&ly=1562&hy=1712&rf=90&flip=1&uniq=4931_719_39_28483_3&xpos=76.4&ypos=76.2&band=J&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>6124752</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>3</td>
+<td nowrap>J</td>
+<td nowrap>2013-01-08 10:52:00.0</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#DDDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk39/wsa/ingest/fits/20130108_v5/w20130108_01393.fit&mfid=6124753&extNo=3&lx=361&hx=511&ly=1570&hy=1720&rf=90&flip=1&uniq=4931_719_39_28483_4&xpos=75.6&ypos=76.2&band=J&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>6124753</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>3</td>
+<td nowrap>J</td>
+<td nowrap>2013-01-08 10:52:12.9</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#FFDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk39/wsa/ingest/fits/20130108_v5/w20130108_01394.fit&mfid=6124754&extNo=3&lx=369&hx=519&ly=1586&hy=1736&rf=90&flip=1&uniq=4931_719_39_28483_5&xpos=75.7&ypos=76.1&band=J&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>6124754</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>3</td>
+<td nowrap>J</td>
+<td nowrap>2013-01-08 10:52:25.5</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#DDDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk79/wsa/ingest/fits/20230109_v5/w20230109_01032_st.fit&mfid=13146294&extNo=3&lx=354&hx=504&ly=1586&hy=1736&rf=90&flip=1&uniq=4931_719_39_28483_6&xpos=76.4&ypos=76&band=H&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>13146294</td>
+<td nowrap>stack</td>
+<td nowrap>OBJECT</td>
+<td nowrap>4</td>
+<td nowrap>H</td>
+<td nowrap>2023-01-09 09:54:13.2</td>
+<td nowrap>4</td>
+<td nowrap>69</td>
+<tr bgcolor=#FFDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk79/wsa/ingest/fits/20230109_v5/w20230109_01032.fit&mfid=13146293&extNo=3&lx=354&hx=504&ly=1586&hy=1736&rf=90&flip=1&uniq=4931_719_39_28483_7&xpos=76.4&ypos=76&band=H&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>13146293</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>4</td>
+<td nowrap>H</td>
+<td nowrap>2023-01-09 09:54:13.2</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#DDDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk79/wsa/ingest/fits/20230109_v5/w20230109_01033.fit&mfid=13146296&extNo=3&lx=346&hx=496&ly=1570&hy=1720&rf=90&flip=1&uniq=4931_719_39_28483_8&xpos=76.1&ypos=76&band=H&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>13146296</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>4</td>
+<td nowrap>H</td>
+<td nowrap>2023-01-09 09:54:26.7</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#FFDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk79/wsa/ingest/fits/20230109_v5/w20230109_01034.fit&mfid=13146297&extNo=3&lx=362&hx=512&ly=1578&hy=1728&rf=90&flip=1&uniq=4931_719_39_28483_9&xpos=76.4&ypos=76.1&band=H&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>13146297</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>4</td>
+<td nowrap>H</td>
+<td nowrap>2023-01-09 09:54:40.2</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#DDDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk79/wsa/ingest/fits/20230109_v5/w20230109_01035.fit&mfid=13146298&extNo=3&lx=370&hx=521&ly=1594&hy=1744&rf=90&flip=1&uniq=4931_719_39_28483_10&xpos=76.5&ypos=76&band=H&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>13146298</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>4</td>
+<td nowrap>H</td>
+<td nowrap>2023-01-09 09:54:53.7</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#FFDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk61/wsa/ingest/fits/20190105_v5/w20190105_01335_st.fit&mfid=10820584&extNo=3&lx=369&hx=519&ly=1598&hy=1748&rf=90&flip=1&uniq=4931_719_39_28483_11&xpos=75.8&ypos=75.7&band=K&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>10820584</td>
+<td nowrap>stack</td>
+<td nowrap>OBJECT</td>
+<td nowrap>5</td>
+<td nowrap>K</td>
+<td nowrap>2019-01-05 09:33:36.8</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#DDDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk61/wsa/ingest/fits/20190105_v5/w20190105_01335.fit&mfid=10820583&extNo=3&lx=369&hx=519&ly=1598&hy=1748&rf=90&flip=1&uniq=4931_719_39_28483_12&xpos=75.8&ypos=75.7&band=K&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>10820583</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>5</td>
+<td nowrap>K</td>
+<td nowrap>2019-01-05 09:33:36.8</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#FFDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk61/wsa/ingest/fits/20190105_v5/w20190105_01336.fit&mfid=10820586&extNo=3&lx=361&hx=511&ly=1582&hy=1732&rf=90&flip=1&uniq=4931_719_39_28483_13&xpos=75.8&ypos=75.9&band=K&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>10820586</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>5</td>
+<td nowrap>K</td>
+<td nowrap>2019-01-05 09:33:48.9</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#DDDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk61/wsa/ingest/fits/20190105_v5/w20190105_01337.fit&mfid=10820587&extNo=3&lx=377&hx=527&ly=1590&hy=1740&rf=90&flip=1&uniq=4931_719_39_28483_14&xpos=76&ypos=76.1&band=K&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>10820587</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>5</td>
+<td nowrap>K</td>
+<td nowrap>2019-01-05 09:34:01.0</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+<tr bgcolor=#FFDDDD>
+<td><a href="http://wsa.roe.ac.uk/cgi-bin/getImage.cgi?file=/disk61/wsa/ingest/fits/20190105_v5/w20190105_01338.fit&mfid=10820588&extNo=3&lx=385&hx=535&ly=1606&hy=1756&rf=90&flip=1&uniq=4931_719_39_28483_15&xpos=76&ypos=75.8&band=K&ra=118.6911741&dec=16.694621" target=show>show</a></td>
+<td nowrap>10820588</td>
+<td nowrap>normal</td>
+<td nowrap>OBJECT</td>
+<td nowrap>5</td>
+<td nowrap>K</td>
+<td nowrap>2019-01-05 09:34:13.2</td>
+<td nowrap>4</td>
+<td nowrap>0</td>
+</table>
+15 rows returned. 

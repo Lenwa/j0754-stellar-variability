@@ -1,0 +1,84 @@
+{
+  "measurements": [
+    {
+      "source_id": "667401913089980544",
+      "orientation": "x",
+      "plate_id": 4599,
+      "original_pixel": [
+        1078.2979308114855,
+        1360.7186804998546
+      ],
+      "nearest_scan_boundary_pixels": 1078.2979308114855,
+      "signal": 860374.0,
+      "blank_sigma": 37517.193,
+      "calibration_gate": true
+    },
+    {
+      "source_id": "667024467067954560",
+      "orientation": "x",
+      "plate_id": 4599,
+      "original_pixel": [
+        495.0277458600322,
+        1054.4354124913589
+      ],
+      "nearest_scan_boundary_pixels": 495.0277458600322,
+      "signal": 9334.0,
+      "blank_sigma": 37517.193,
+      "calibration_gate": true
+    },
+    {
+      "source_id": "667023509291889792",
+      "orientation": "x",
+      "plate_id": 4599,
+      "original_pixel": [
+        484.09217376788234,
+        967.1422223039935
+      ],
+      "nearest_scan_boundary_pixels": 484.09217376788234,
+      "signal": -36862.0,
+      "blank_sigma": 37517.193,
+      "calibration_gate": true
+    },
+    {
+      "source_id": "667401913089980544",
+      "orientation": "y",
+      "plate_id": 4599,
+      "original_pixel": [
+        21532.44642309781,
+        1182.7082041530807
+      ],
+      "nearest_scan_boundary_pixels": 1182.7082041530807,
+      "signal": 707092.0,
+      "blank_sigma": 41194.041,
+      "calibration_gate": false
+    },
+    {
+      "source_id": "667024467067954560",
+      "orientation": "y",
+      "plate_id": 4599,
+      "original_pixel": [
+        21838.33503370917,
+        600.2509591205976
+      ],
+      "nearest_scan_boundary_pixels": 600.2509591205976,
+      "signal": 1606.0,
+      "blank_sigma": 41194.041,
+      "calibration_gate": false
+    },
+    {
+      "source_id": "667023509291889792",
+      "orientation": "y",
+      "plate_id": 4599,
+      "original_pixel": [
+        21925.59933561502,
+        589.1661498702773
+      ],
+      "nearest_scan_boundary_pixels": 589.1661498702773,
+      "signal": -37171.0,
+      "blank_sigma": 41194.041,
+      "calibration_gate": false
+    }
+  ],
+  "conclusion": "Both troublesome positions have weak signal in both orientations; scanner-only error is less plausible, but historical variability and shared plate/coverage effects remain unresolved.",
+  "limits": "The scans are the same physical plate. Photometric fits have different control membership and are not an isolated scanner-response experiment. No calibrated stellar upper limit inferred."
+}

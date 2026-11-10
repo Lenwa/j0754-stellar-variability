@@ -1,0 +1,30 @@
+{
+  "query_center_icrs_deg": [
+    118.69117410685,
+    16.694621231895
+  ],
+  "radius_arcsec": 10,
+  "catalogue_identities": {
+    "V/156": "LAMOST DR7 LRS and MRS catalogs",
+    "V/164": "LAMOST DR5 catalogs"
+  },
+  "successful_coverage": {
+    "native_DR10_v2_LRS_rows": 0,
+    "native_DR10_v2_MRS_rows": 6,
+    "vizier_DR7_LRS_rows": 0,
+    "vizier_DR7_LRS_multiple_epoch_rows": 0,
+    "vizier_DR7_MRS_rows": 6,
+    "vizier_DR5_LRS_rows": 0
+  },
+  "unique_matched_MRS_obsids": [
+    659111063
+  ],
+  "unique_matched_dates": [
+    "2018-03-25"
+  ],
+  "additional_epochs": 0,
+  "new_spectra_downloaded": 0,
+  "prior_spectrum_status": "Previously downloaded file from this same visit was inspected and found unusable; not counted as new.",
+  "native_DR7_DR8_DR9_vo_docs": "Redirected to login; access-restricted, not empty catalogue queries.",
+  "accounts_or_source_changes": false
+}

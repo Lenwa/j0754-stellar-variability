@@ -1,0 +1,23 @@
+{
+  "written_utc": "2026-11-09T02:31:25.573426+00:00",
+  "scope": "Argon3A and5A-C physical audit; no new observations; no SPHEREx fitting in this subtask.",
+  "observed_fades_mag": {
+    "g": 0.312,
+    "W1": 0.1175,
+    "W2": 0.08875
+  },
+  "fit_bands": [
+    "g",
+    "W1"
+  ],
+  "check_band": "W2",
+  "known_before_test": "All three fades and old CK04/Draine model comparisons known. This is retrospective application, not blind validation.",
+  "spot_test": "Replace invented V=.35 anchor with actual g=.312. Monochromatic Planck(4500/3800K) pedagogical case plus passband CK04 spot predictions. Add actual CousinsR response and preserve distinction from Sloanr.",
+  "dust_test": "Invert partial-screen depths at g=.48um andW1=3.4um for declared covering fractions; predict W2,R,I without fitting W2. Separately reproduce existing integrated Draine/atmosphere solutions. No alpha-to-grain-size unique inference.",
+  "atmosphere_grid": "Existing CK04 finite LTE grid3500-6500K,metal-1,-.5,0,logg2,2.5,3; nominalhot4500 and4000,5000,5500 sensitivity. Existing per-nuisance best fits matchingg/W1 \u00b1.02mag summarized; these are not confidence envelopes.",
+  "binary_inputs": "Saved Gaia NSS period,K,e and errors; orbit remains candidate. Use published K10.72447, not K<=8 upperlimit. Mass/radius/inclination conditional cases; leading ellipsoidal amplitude validity flagged near Roche lobe.",
+  "scaleheight": "H=kT/(mu*m_u*gSI) with gSI=10**loggCGS/100; hydrostatic/local temperature assumption. Nscaleheights5-10 is illustrative, not measured CO line-formation extent.",
+  "stellar_radius": "Compare posterlogg1.7 conditionalmass radii, cautioned GaiaGSPphot radius9.2474, and clearly assumed V/BC/extinction combinations; no NLTE diagnosis from discrepancy.",
+  "sources": "Primary Eggleton1983 Roche formula; Mazeh&Faigler2010 ellipsoidal coefficient0.15(15+u)(1+g)/(3-u).",
+  "limits": "No model probabilities, physical upper limits, recovered orbital validation, dust detection or inferred stellar radius change."
+}

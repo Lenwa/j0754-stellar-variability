@@ -1,0 +1,846 @@
+{
+  "status": "DESCRIPTIVE_POST_HOC",
+  "historical_annual": [
+    {
+      "year": 1892,
+      "n": 2,
+      "mag": 13.830644,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1893,
+      "n": 1,
+      "mag": 13.89064475,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1897,
+      "n": 1,
+      "mag": 13.312801,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1898,
+      "n": 1,
+      "mag": 13.5888015,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1899,
+      "n": 2,
+      "mag": 13.142959375,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1900,
+      "n": 2,
+      "mag": 13.2381495,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1902,
+      "n": 2,
+      "mag": 13.320022375,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1903,
+      "n": 3,
+      "mag": 13.2654815,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1904,
+      "n": 3,
+      "mag": 13.369650499999999,
+      "series": [
+        "a",
+        "i"
+      ]
+    },
+    {
+      "year": 1905,
+      "n": 1,
+      "mag": 13.206009499999999,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1906,
+      "n": 1,
+      "mag": 13.34786,
+      "series": [
+        "a"
+      ]
+    },
+    {
+      "year": 1907,
+      "n": 2,
+      "mag": 13.3406025,
+      "series": [
+        "i",
+        "ma"
+      ]
+    },
+    {
+      "year": 1908,
+      "n": 3,
+      "mag": 13.233008000000002,
+      "series": [
+        "a",
+        "i"
+      ]
+    },
+    {
+      "year": 1909,
+      "n": 3,
+      "mag": 13.1692735,
+      "series": [
+        "ac",
+        "ma"
+      ]
+    },
+    {
+      "year": 1910,
+      "n": 1,
+      "mag": 13.136511500000001,
+      "series": [
+        "ma"
+      ]
+    },
+    {
+      "year": 1913,
+      "n": 2,
+      "mag": 13.054341749999999,
+      "series": [
+        "mc"
+      ]
+    },
+    {
+      "year": 1914,
+      "n": 7,
+      "mag": 12.985066,
+      "series": [
+        "ac",
+        "mc"
+      ]
+    },
+    {
+      "year": 1915,
+      "n": 1,
+      "mag": 12.879364,
+      "series": [
+        "ac"
+      ]
+    },
+    {
+      "year": 1917,
+      "n": 1,
+      "mag": 13.009446,
+      "series": [
+        "mc"
+      ]
+    },
+    {
+      "year": 1918,
+      "n": 2,
+      "mag": 13.1058375,
+      "series": [
+        "mf"
+      ]
+    },
+    {
+      "year": 1919,
+      "n": 1,
+      "mag": 12.978521,
+      "series": [
+        "mc"
+      ]
+    },
+    {
+      "year": 1920,
+      "n": 3,
+      "mag": 13.007286,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1922,
+      "n": 1,
+      "mag": 13.54052075,
+      "series": [
+        "i"
+      ]
+    },
+    {
+      "year": 1928,
+      "n": 1,
+      "mag": 13.2516225,
+      "series": [
+        "rh"
+      ]
+    },
+    {
+      "year": 1931,
+      "n": 1,
+      "mag": 13.787766,
+      "series": [
+        "mb"
+      ]
+    },
+    {
+      "year": 1932,
+      "n": 6,
+      "mag": 14.038582625,
+      "series": [
+        "ma",
+        "mb",
+        "mc",
+        "md",
+        "rh"
+      ]
+    },
+    {
+      "year": 1933,
+      "n": 4,
+      "mag": 14.113360250000001,
+      "series": [
+        "ma",
+        "rh"
+      ]
+    },
+    {
+      "year": 1934,
+      "n": 9,
+      "mag": 13.970837,
+      "series": [
+        "ac",
+        "ma",
+        "md",
+        "rh"
+      ]
+    },
+    {
+      "year": 1935,
+      "n": 5,
+      "mag": 13.82559325,
+      "series": [
+        "i",
+        "ma",
+        "rh"
+      ]
+    },
+    {
+      "year": 1936,
+      "n": 14,
+      "mag": 13.771197625,
+      "series": [
+        "a",
+        "i",
+        "ir",
+        "ma"
+      ]
+    },
+    {
+      "year": 1937,
+      "n": 24,
+      "mag": 13.67681525,
+      "series": [
+        "ac",
+        "bm",
+        "i",
+        "ir",
+        "ma",
+        "mc",
+        "md",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1938,
+      "n": 22,
+      "mag": 13.60711075,
+      "series": [
+        "ac",
+        "ax",
+        "bm",
+        "i",
+        "ma",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1939,
+      "n": 19,
+      "mag": 13.519314000000001,
+      "series": [
+        "ac",
+        "bm",
+        "ir",
+        "ma",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1940,
+      "n": 20,
+      "mag": 13.41488825,
+      "series": [
+        "ac",
+        "bm",
+        "ir",
+        "ma",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1941,
+      "n": 20,
+      "mag": 13.26271675,
+      "series": [
+        "a",
+        "ac",
+        "ax",
+        "bm",
+        "ir",
+        "ma",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1942,
+      "n": 9,
+      "mag": 13.261977,
+      "series": [
+        "ac",
+        "ir",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1943,
+      "n": 15,
+      "mag": 13.256766,
+      "series": [
+        "ac",
+        "i",
+        "mc",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1944,
+      "n": 3,
+      "mag": 13.267352,
+      "series": [
+        "ac",
+        "rl"
+      ]
+    },
+    {
+      "year": 1945,
+      "n": 7,
+      "mag": 13.398031,
+      "series": [
+        "ac",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1946,
+      "n": 6,
+      "mag": 13.489353999999999,
+      "series": [
+        "ac",
+        "ir",
+        "rh"
+      ]
+    },
+    {
+      "year": 1947,
+      "n": 8,
+      "mag": 13.437641124999999,
+      "series": [
+        "ac",
+        "mc",
+        "rh"
+      ]
+    },
+    {
+      "year": 1948,
+      "n": 11,
+      "mag": 13.310203999999999,
+      "series": [
+        "ac",
+        "mc",
+        "rh"
+      ]
+    },
+    {
+      "year": 1949,
+      "n": 11,
+      "mag": 13.2363795,
+      "series": [
+        "ac",
+        "rh",
+        "rl"
+      ]
+    },
+    {
+      "year": 1950,
+      "n": 6,
+      "mag": 13.155245500000001,
+      "series": [
+        "ac",
+        "rh"
+      ]
+    },
+    {
+      "year": 1951,
+      "n": 2,
+      "mag": 13.189067750000001,
+      "series": [
+        "ac",
+        "rh"
+      ]
+    },
+    {
+      "year": 1952,
+      "n": 1,
+      "mag": 13.2099925,
+      "series": [
+        "mf"
+      ]
+    },
+    {
+      "year": 1953,
+      "n": 35,
+      "mag": 13.130119249999998,
+      "series": [
+        "j",
+        "mf"
+      ]
+    },
+    {
+      "year": 1954,
+      "n": 8,
+      "mag": 13.114900375000001,
+      "series": [
+        "mf"
+      ]
+    },
+    {
+      "year": 1956,
+      "n": 8,
+      "mag": 13.065478249999998,
+      "series": [
+        "mc"
+      ]
+    },
+    {
+      "year": 1964,
+      "n": 2,
+      "mag": 13.496612249999998,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1967,
+      "n": 2,
+      "mag": 13.307466999999999,
+      "series": [
+        "dnb",
+        "dny"
+      ]
+    },
+    {
+      "year": 1968,
+      "n": 2,
+      "mag": 13.18991625,
+      "series": [
+        "dnb",
+        "dny"
+      ]
+    },
+    {
+      "year": 1969,
+      "n": 13,
+      "mag": 13.305406249999999,
+      "series": [
+        "dnb",
+        "dnr",
+        "dny"
+      ]
+    },
+    {
+      "year": 1970,
+      "n": 7,
+      "mag": 13.326121,
+      "series": [
+        "dnb",
+        "dnr",
+        "dny"
+      ]
+    },
+    {
+      "year": 1971,
+      "n": 6,
+      "mag": 13.25153975,
+      "series": [
+        "dnb",
+        "dnr",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1972,
+      "n": 13,
+      "mag": 13.29659,
+      "series": [
+        "dnb",
+        "dnr",
+        "dny",
+        "dsb",
+        "dsy"
+      ]
+    },
+    {
+      "year": 1973,
+      "n": 3,
+      "mag": 13.333104,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1974,
+      "n": 12,
+      "mag": 13.36414075,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1975,
+      "n": 14,
+      "mag": 13.275702874999999,
+      "series": [
+        "dnb",
+        "dny"
+      ]
+    },
+    {
+      "year": 1976,
+      "n": 13,
+      "mag": 13.4067885,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1977,
+      "n": 10,
+      "mag": 13.384079,
+      "series": [
+        "dnb",
+        "dny"
+      ]
+    },
+    {
+      "year": 1978,
+      "n": 13,
+      "mag": 13.399415000000001,
+      "series": [
+        "dnb",
+        "mc"
+      ]
+    },
+    {
+      "year": 1979,
+      "n": 8,
+      "mag": 13.285237875,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1980,
+      "n": 8,
+      "mag": 13.338189374999999,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1981,
+      "n": 13,
+      "mag": 13.3539695,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1982,
+      "n": 12,
+      "mag": 13.437884,
+      "series": [
+        "dnb",
+        "dny",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1983,
+      "n": 9,
+      "mag": 13.45508,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1984,
+      "n": 18,
+      "mag": 13.551550249999998,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1985,
+      "n": 12,
+      "mag": 13.515990375,
+      "series": [
+        "dnb"
+      ]
+    },
+    {
+      "year": 1986,
+      "n": 14,
+      "mag": 13.4513065,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1987,
+      "n": 8,
+      "mag": 13.463269,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1988,
+      "n": 13,
+      "mag": 13.400549,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    },
+    {
+      "year": 1989,
+      "n": 6,
+      "mag": 13.408169749999999,
+      "series": [
+        "dnb",
+        "dsb"
+      ]
+    }
+  ],
+  "input_sha256": {
+    "results\\sky-plates-j0754-20261107\\dasch_differential.csv": "7868f5d8f733714e303bb5592157e20c2bae5c28679b813ee7fb631e945bffdc",
+    "results\\sky-plates-j0754-independent-20261108\\asassn_v1_lightcurve.csv": "58f6f77947f2deaabede6e84407cf1fc00ea14355d440b1f61a5cbb6bc5d7be2",
+    "results\\sky-plates-j0754-models-20261108\\history\\asas_annual_by_dataset.csv": "4febbf25de4692a7fca53d0018e71676fe4b9623c8b02384eea98adea442bcae",
+    "results\\sky-plates-j0754-models-20261108\\history\\controls\\annual_exact_frame_differential.csv": "b8fba0b35eaca05754169d9e2675b0387e2f651a015048da5693c4c7bf72694b"
+  },
+  "historical_baseline": 13.114900375000001,
+  "sparse_1892_1893_points": 3,
+  "points_1973_1982": 106,
+  "interpretation": "Historical 1930s fade/recovery and modern multiband fade/recovery are a recorded pattern. The 1892 feature is sparse. An ~88-89-year spacing is a candidate recurrence interval, not a fitted period. A half-interval hypothesis must confront the actually observed 1970s record. No common waveform or mechanism is established.",
+  "caveats": [
+    "Blue-sensitive historical natural magnitudes and modern g have different responses; depths cannot be equated directly.",
+    "The historical onset is sparsely sampled, so ingress/egress symmetry is not securely measurable.",
+    "No shift, amplitude normalization or time stretching was optimized to make events match.",
+    "APPLAUSE independent historical photometric corroboration remains inconclusive."
+  ],
+  "legacy_asas_annual": [
+    {
+      "dataset": "1",
+      "year": "2002",
+      "count": "1",
+      "median_mag0": "12.139"
+    },
+    {
+      "dataset": "1",
+      "year": "2003",
+      "count": "2",
+      "median_mag0": "12.2325"
+    },
+    {
+      "dataset": "2",
+      "year": "2002",
+      "count": "7",
+      "median_mag0": "12.151"
+    },
+    {
+      "dataset": "2",
+      "year": "2003",
+      "count": "59",
+      "median_mag0": "12.185"
+    },
+    {
+      "dataset": "2",
+      "year": "2004",
+      "count": "44",
+      "median_mag0": "12.161000000000001"
+    },
+    {
+      "dataset": "2",
+      "year": "2005",
+      "count": "52",
+      "median_mag0": "12.2355"
+    },
+    {
+      "dataset": "2",
+      "year": "2006",
+      "count": "41",
+      "median_mag0": "12.288"
+    },
+    {
+      "dataset": "2",
+      "year": "2007",
+      "count": "43",
+      "median_mag0": "12.296"
+    },
+    {
+      "dataset": "2",
+      "year": "2008",
+      "count": "61",
+      "median_mag0": "12.229"
+    },
+    {
+      "dataset": "2",
+      "year": "2009",
+      "count": "31",
+      "median_mag0": "12.175"
+    },
+    {
+      "dataset": "3",
+      "year": "2004",
+      "count": "1",
+      "median_mag0": "12.346"
+    },
+    {
+      "dataset": "4",
+      "year": "2004",
+      "count": "45",
+      "median_mag0": "12.166"
+    },
+    {
+      "dataset": "4",
+      "year": "2005",
+      "count": "3",
+      "median_mag0": "12.176"
+    }
+  ],
+  "legacy_asas_qualification": "Separate V system/dataset zero points; exact HJD/frame common-control correction supports the smaller episode, without uniqueness or cause established.",
+  "legacy_asas_same_frame_annual": [
+    {
+      "year": "2002",
+      "rows": "7",
+      "target_raw_median": "12.151",
+      "control_common_offset": "-0.015500000000000291",
+      "target_corrected_median": "12.159500000000001",
+      "minimum_controls": "14"
+    },
+    {
+      "year": "2003",
+      "rows": "59",
+      "target_raw_median": "12.185",
+      "control_common_offset": "-0.006999999999999673",
+      "target_corrected_median": "12.190499999999998",
+      "minimum_controls": "7"
+    },
+    {
+      "year": "2004",
+      "rows": "44",
+      "target_raw_median": "12.161000000000001",
+      "control_common_offset": "0.0021250000000008207",
+      "target_corrected_median": "12.153",
+      "minimum_controls": "7"
+    },
+    {
+      "year": "2005",
+      "rows": "52",
+      "target_raw_median": "12.2355",
+      "control_common_offset": "-0.0003750000000000142",
+      "target_corrected_median": "12.235125",
+      "minimum_controls": "9"
+    },
+    {
+      "year": "2006",
+      "rows": "41",
+      "target_raw_median": "12.288",
+      "control_common_offset": "0.002000000000000668",
+      "target_corrected_median": "12.307999999999998",
+      "minimum_controls": "13"
+    },
+    {
+      "year": "2007",
+      "rows": "43",
+      "target_raw_median": "12.296",
+      "control_common_offset": "-0.0039999999999995595",
+      "target_corrected_median": "12.3",
+      "minimum_controls": "11"
+    },
+    {
+      "year": "2008",
+      "rows": "61",
+      "target_raw_median": "12.229",
+      "control_common_offset": "-0.009500000000000064",
+      "target_corrected_median": "12.228000000000002",
+      "minimum_controls": "9"
+    },
+    {
+      "year": "2009",
+      "rows": "31",
+      "target_raw_median": "12.175",
+      "control_common_offset": "-0.0035000000000007248",
+      "target_corrected_median": "12.186000000000002",
+      "minimum_controls": "13"
+    }
+  ]
+}

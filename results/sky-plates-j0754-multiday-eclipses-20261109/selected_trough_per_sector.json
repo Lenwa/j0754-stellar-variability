@@ -1,0 +1,194 @@
+[
+  {
+    "key": "QLP_S44_SAP_FLUX",
+    "degree": 1,
+    "energy": 61.43844776927483,
+    "depth": 0.01445204650004083
+  },
+  {
+    "key": "QLP_S44_SAP_FLUX",
+    "degree": 2,
+    "energy": 43.71505207013229,
+    "depth": 0.012839892308850449
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "degree": 1,
+    "energy": 61.43844776927483,
+    "depth": 1.7078967534285957e-05
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "degree": 2,
+    "energy": 43.71505207013229,
+    "depth": -7.615777526360358e-06
+  },
+  {
+    "key": "QLP_S45_SAP_FLUX",
+    "degree": 1,
+    "energy": 49.93470360881409,
+    "depth": 0.0016342698514600926
+  },
+  {
+    "key": "QLP_S45_SAP_FLUX",
+    "degree": 2,
+    "energy": 48.80517527276857,
+    "depth": 0.0007443282389561033
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "degree": 1,
+    "energy": 49.93470360881409,
+    "depth": -1.9845150642876202e-05
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "degree": 2,
+    "energy": 48.80517527276857,
+    "depth": -1.9502081549888472e-05
+  },
+  {
+    "key": "QLP_S46_SAP_FLUX",
+    "degree": 1,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "QLP_S46_SAP_FLUX",
+    "degree": 2,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "degree": 1,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "degree": 2,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "QLP_S71_SAP_FLUX",
+    "degree": 1,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "QLP_S71_SAP_FLUX",
+    "degree": 2,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "degree": 1,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "degree": 2,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "QLP_S72_SAP_FLUX",
+    "degree": 1,
+    "energy": 39.51921276886372,
+    "depth": 0.003469706040981583
+  },
+  {
+    "key": "QLP_S72_SAP_FLUX",
+    "degree": 2,
+    "energy": 25.57338344948262,
+    "depth": -0.0011937942640345468
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "degree": 1,
+    "energy": 39.51921276886372,
+    "depth": -7.935023159561071e-05
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "degree": 2,
+    "energy": 25.57338344948262,
+    "depth": -0.00011174352607020635
+  },
+  {
+    "key": "TESS-SPOC_S71_SAP_FLUX",
+    "degree": 1,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "TESS-SPOC_S71_SAP_FLUX",
+    "degree": 2,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "TESS-SPOC_S71_PDCSAP_FLUX",
+    "degree": 1,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "TESS-SPOC_S71_PDCSAP_FLUX",
+    "degree": 2,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "TESS-SPOC_S72_SAP_FLUX",
+    "degree": 1,
+    "energy": 36.83276472239111,
+    "depth": 0.008761808902992073
+  },
+  {
+    "key": "TESS-SPOC_S72_SAP_FLUX",
+    "degree": 2,
+    "energy": 15.858040365881799,
+    "depth": 0.006888275420053313
+  },
+  {
+    "key": "TESS-SPOC_S72_PDCSAP_FLUX",
+    "degree": 1,
+    "energy": 36.83276472239111,
+    "depth": 0.007870863673948472
+  },
+  {
+    "key": "TESS-SPOC_S72_PDCSAP_FLUX",
+    "degree": 2,
+    "energy": 15.858040365881799,
+    "depth": 0.010759857860169513
+  },
+  {
+    "key": "TESS-SPOC_S1751_SAP_FLUX",
+    "degree": 1,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "TESS-SPOC_S1751_SAP_FLUX",
+    "degree": 2,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "degree": 1,
+    "energy": 0.0,
+    "depth": null
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "degree": 2,
+    "energy": 0.0,
+    "depth": null
+  }
+]

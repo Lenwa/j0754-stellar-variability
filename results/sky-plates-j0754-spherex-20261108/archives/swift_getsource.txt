@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <title>UKSSDC | 2SXPS Catalogue | 2SXPS J075445.6+164139</title>
+    <script type='text/javascript'>
+      <!--
+        var jspIndices;
+      -->
+    </script>
+    <meta name="keywords" content="2SXPS, Swift, XRT, catalogue, point source, UKSSDC, Leicester, variablility">
+    <meta name="description" lang="en" content="UKSSDC | 2SXPS Catalogue | 2SXPS J075445.6+164139">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="/style/2SXPS_public.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/dropdown.js"></script>
+    <script type="text/javascript" src="/scripts/centre.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/2SXPS/2SXPS_root.js"></script>
+    <script type="text/javascript" src="/scripts/jquery_scrollto.js"></script>
+    <script type="text/javascript" src="/scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/jsPlot-min.js"></script>
+    <script type="text/javascript" src="/2SXPS/help.js.php"></script>
+    <script type="text/javascript" src="/2SXPS/sourceIndex.js"></script>
+    <script type="text/javascript" src="/2SXPS/lcPlot.js"></script>
+    <link rel="icon" href="/icons/swift.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div id="holder">
+    <p style='visibility: hidden; display: none;'><a href='#mainContentPostBanner'>Skip banner and navigation tools</a>.</p>
+  <div id="swiftbanner">
+    <div id="uolbanner">
+      <a href="http://www.le.ac.uk">
+      <img class="uollogo" src="/images/uol_logo.png"
+         alt="University of Leicester logo"></a>
+      <a href="https://le.ac.uk/physics/">School of Physics &amp; Astronomy</a>
+     
+    </div>
+
+    <a href="https://swift.gsfc.nasa.gov" id="us"><span class="hidden">US Site | </span></a>
+    <a href="https://swift.ssdc.asi.it" id="it"><span class="hidden">Italian Site | </span></a>
+    <a href="https://www.swift.ac.uk" id="uk" ><span class="hidden">UK site</span></a>
+  </div>
+
+  <div id="addressBar">
+      <form class="right search" action="/search/search.php" method="get">
+      <p>
+          <label for="searchBox">Search:</label> 
+          <input id="searchBox" type="text" name="terms"  
+	         value="">
+          <input type="submit" name="submit" value="?">
+      </p>
+      </form>
+      <span class="right">&nbsp;|&nbsp;</span>
+      <a class="right" href="/sitemap.php">site map</a>
+  <ul>
+    <li>
+      <a href="https://www.swift.ac.uk/index.php">Home</a>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/about/index.php" 
+        onmouseover="menu_open('mabout')" 
+        onmouseout="menu_closetime()">About</a>
+        <div id="mabout" 
+            onmouseover="menu_cancelclosetime()" 
+            onmouseout="menu_closetime()">
+        <a href="https://www.swift.ac.uk/about/index.php">The Swift Mission</a>
+        <a href="https://www.swift.ac.uk/about/uk.php">UK involvement</a>
+        <a href="https://www.swift.ac.uk/about/instruments.php">Instruments</a>
+        <hr/>
+        <a href="https://www.swift.ac.uk/about/grb.php">GRBs before Swift </a>
+        <a href="https://www.swift.ac.uk/about/swiftera.php">GRBs in the Swift era</a>
+        <a href="https://www.swift.ac.uk/about/swifteranongrb.php">Non-GRB science with Swift</a>
+        <a href="https://www.swift.ac.uk/about/research.php">GRB research at Leicester</a>
+        
+        <hr/>
+        <a href="https://www.swift.ac.uk/about/status.php">Spacecraft status</a>
+        <a href="https://www.swift.ac.uk/about/press.php">Swift in the press</a>
+        <a href="https://www.swift.ac.uk/about/videos.php">Swift Videos</a>
+        </div>
+    </li>
+
+   
+    <li>
+      <a href="https://www.swift.ac.uk/support/index.php"
+        onmouseover="menu_open('msupport')"
+        onmouseout="menu_closetime()">Support</a>
+
+      <div id="msupport"
+          onmouseover="menu_cancelclosetime()"
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/support/index.php">Helpdesk</a>
+      <a href="https://www.swift.ac.uk/support/too.php">TOO requests</a>
+      <a href="https://www.swift.ac.uk/support/gi.php">Guest Investigator program</a>
+      <a href="https://www.swift.ac.uk/sunpos.php">Target visibility checker</a>
+      <a href="https://www.swift.ac.uk/support/transientSearch">Search transient database</a>
+      </div>
+    </li>
+
+ 
+    <li>
+      <a href="https://www.swift.ac.uk/archive/index.php" 
+        onmouseover="menu_open('marchive')" 
+        onmouseout="menu_closetime()">Data Access</a>
+
+      <div id="marchive" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/archive/index.php">Overview</a>
+      <a href="https://www.swift.ac.uk/archive/ql.php">Quick Look</a>
+      <a href="https://www.swift.ac.uk/gcn/index.php">GCN Notices</a>
+      <a href="https://www.swift.ac.uk/swift_portal">Download obs data</a>
+      <a href="https://www.swift.ac.uk/swift_live">Search obs catalogue</a>
+       <a href="https://www.swift.ac.uk/2SXPS">The 2SXPS catalogue</a>
+      <a href="https://www.swift.ac.uk/LSXPS">The LSXPS catalogue</a>
+      </div>
+    </li>
+    
+    
+    <li>
+      <a href="https://www.swift.ac.uk/analysis/index.php" 
+        onmouseover="menu_open('manal')" 
+        onmouseout="menu_closetime()">Data Analysis</a>
+
+      <div id="manal" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      <a href="https://www.swift.ac.uk/analysis/index.php">Data analysis overview</a>
+      <a href="https://www.swift.ac.uk/analysis/software.php">Swift software</a>
+      <hr/>
+      <a href="https://www.swift.ac.uk/user_objects/">Build XRT products</a>
+      <hr/>
+      <a href="https://www.swift.ac.uk/analysis/bat/index.php">BAT data analysis guide</a>
+      <a href="https://www.swift.ac.uk/analysis/xrt/index.php">XRT data analysis guide</a>
+      <a href="https://www.swift.ac.uk/analysis/xrt/digest_sci.php">XRT digest</a>
+      <a href="https://www.swift.ac.uk/analysis/uvot/index.php">UVOT data analysis guide</a>
+      </div>
+    </li>
+    
+    
+
+    <li>
+      <a href="https://www.swift.ac.uk/xrt_products/index.php" 
+        onmouseover="menu_open('mproducts')" 
+        onmouseout="menu_closetime()">Data Products</a>
+
+      <div id="mproducts" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+
+        <span class='menutitle'>GRBs</span>
+        <span class='menusubtitle'>Full dataset</span>
+        <a href="https://www.swift.ac.uk/xrt_products/index.php">Swift XRT products for GRBs</a>
+        <a href="https://www.swift.ac.uk/xrt_positions/">XRT positions</a>
+        <a href="https://www.swift.ac.uk/xrt_curves/">XRT light curves</a>
+        <a href="https://www.swift.ac.uk/xrt_spectra/">XRT spectra</a>
+        <a href="https://www.swift.ac.uk/xrt_live_cat/">XRT GRB catalogue</a>
+        <a href="https://www.swift.ac.uk/xrt_images/">XRT GRB images</a>
+        <a href="https://www.swift.ac.uk/burst_analyser/">Burst analyser</a>
+        <span class='menusubtitle'>Prompt data</span>
+        <a href="https://www.swift.ac.uk/grb_region/">GRB field info</a>
+        <a title="X-ray Prompt data index page" href="https://www.swift.ac.uk/sper/">XRT prompt analysis</a>
+
+        <span class='menutitle'>External triggers</span>
+        <a href="https://www.swift.ac.uk/EP/">Einstein Probe follow up</a>
+        <a href="https://www.swift.ac.uk/SVOM/">SVOM follow up</a>
+        <a href="https://www.swift.ac.uk/neutrino/">Neutrino follow up</a>
+        <a href="https://www.swift.ac.uk/LVC/">Gravitational Wave follow up</a>
+      </div>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/results/index.php" 
+        onmouseover="menu_open('mresults')" 
+        onmouseout="menu_closetime()">Publications</a>
+
+       <div id="mresults" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+        <a href="https://www.swift.ac.uk/results/index.php">Publication index</a>
+        <a href="https://www.swift.ac.uk/results/pub.php">Published papers</a>
+        <a href="https://www.swift.ac.uk/results/sub.php">Submitted papers</a>
+        <a href="https://www.swift.ac.uk/results/spie.php">XRT instrument papers</a>
+        <a href="https://www.swift.ac.uk/results/atels.php">ATels</a>
+        <a href="https://www.swift.ac.uk/results/grbs.php">GCNs</a>
+        <a href="https://www.swift.ac.uk/results/conferences.php">Conferences</a>
+      </div>
+    </li>
+
+    <li>
+      <a href="https://www.swift.ac.uk/links.php" 
+        onmouseover="menu_open('mlinks')" 
+        onmouseout="menu_closetime()">Links</a>
+
+      <div id="mlinks" 
+          onmouseover="menu_cancelclosetime()" 
+          onmouseout="menu_closetime()">
+      
+            Databases
+	    <a href="http://ned.ipac.caltech.edu/">NED</a>
+	    <a href="http://simbad.u-strasbg.fr/Simbad">Simbad</a>
+            <a href="http://gcn.gsfc.nasa.gov/gcn3_archive.html">GCN circulars archive</a>
+            <a href="https://swift.gsfc.nasa.gov/docs/swift/archive/grb_table/">GRB data table</a>
+	    Software &amp; Tools
+	    <a href="https://heasarc.nasa.gov/lheasoft/">Swift Software (HEASoft)</a>
+            <a href="https://heasarc.gsfc.nasa.gov/xanadu/xanadu.html">Xanadu</a>
+            <a href="https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3pimms/w3pimms.pl">WebPIMMS</a>
+	    Institutional Swift Sites
+	    <a href="https://swift.gsfc.nasa.gov">GSFC</a>
+	    <a href="http://www.swift.psu.edu">PSU</a>
+	    <a href="http://www.brera.inaf.it/~swift/SWIFT/">OAB</a>
+	    <a href="https://swift.ssdc.asi.it/">SSDC</a>
+	    <a href="http://www.mssl.ucl.ac.uk/general/projects/swift/SWIFT6.html">MSSL</a>
+	    <a href="http://www.swift.ac.uk">University of Leicester</a>
+                  </div>
+    </li>
+  </ul>  <br id='mainContentPostBanner' style='visibility: hidden; display: none;'>
+  </div>
+  <p class='hidden' id='sid'>161839</p>
+<p id='breadcrumb'><a href='https://www.swift.ac.uk' title='UKSSDC home'>Home</a> &gt; <a href='https://www.swift.ac.uk/archive/'>Data Access</a> &gt; <a href='/2SXPS/'>2SXPS Catalogue</a> &gt; 2SXPS J075445.6+164139</p><p id='help' class='hidden'><a href='javascript:showGlossary("SIhelp");'>Help</a>.</p>
+<p class='hidden' id='topurl'>/2SXPS</p><h1 id='sname'>2SXPS J075445.6+164139</h1>
+  <p id='shortcuts'>[<a class='scrolllink' href='#SpecSec'>Spectral/flux information</a> | <a class='scrolllink' href='#LCSec'>Temporal information</a> |
+                    <a class='scrolllink' href='#xCorrSec'>External catalogue matches</a> | <a href='#DetSec' class='scrolllink'>Detections</a> | 
+                    <a href='#UndetSec' class='scrolllink'>Non-detections</a> ]</p>
+
+  
+  
+<div id='stampdiv'>
+<p style='text-align: center'><a href='/2SXPS/SourceImages/source161839/total.png' id='stamplink0' onmouseover='changeStamp(0);'>Total</a> | <a href='/2SXPS/SourceImages/source161839/band1.png' id='stamplink1' onmouseover='changeStamp(1);'>Soft</a> | <a href='/2SXPS/SourceImages/source161839/band2.png' id='stamplink2' onmouseover='changeStamp(2);'>Medium</a> | <a href='/2SXPS/SourceImages/source161839/band3.png' id='stamplink3' onmouseover='changeStamp(3);'>Hard</a> | <a href='/2SXPS/SourceImages/source161839/ex.png' id='stamplink4' onmouseover='changeStamp(4);'>Exposure</a></p>
+<a id='stampimlink0' style='display:block;' href='/2SXPS/SourceImages/source161839/total.png'><img src='/2SXPS/SourceImages/source161839/total.png' class='stamp' alt='Postage stamp image of 2SXPS J075445.6+164139'/></a>
+<a id='stampimlink1' style='display:none;'  href='/2SXPS/SourceImages/source161839/band1.png'><img src='/2SXPS/SourceImages/source161839/band1.png' class='stamp' alt='Postage stamp image of 2SXPS J075445.6+164139'/></a>
+<a id='stampimlink2' style='display:none;'  href='/2SXPS/SourceImages/source161839/band2.png'><img src='/2SXPS/SourceImages/source161839/band2.png' class='stamp' alt='Postage stamp image of 2SXPS J075445.6+164139'/></a>
+<a id='stampimlink3' style='display:none;'  href='/2SXPS/SourceImages/source161839/band3.png'><img src='/2SXPS/SourceImages/source161839/band3.png' class='stamp' alt='Postage stamp image of 2SXPS J075445.6+164139'/></a>
+<a id='stampimlink4' style='display:none;'  href='/2SXPS/SourceImages/source161839/ex.png'><img src='/2SXPS/SourceImages/source161839/ex.png' class='stamp' alt='Postage stamp image of 2SXPS J075445.6+164139'/></a>
+<p class='caption'>This image is 160 pixels (=6.3&prime; to a side).<br/>2SXPS J075445.6+164139 is indicated by the cross-hairs. <a href='/2SXPS/webdocs.php#imThumbCols'>What do the colours mean?</a>The next nearest source is 495&prime;&prime; away.</p>
+</div>
+<dl id='sourcesummary' title='Summary details'>
+<dt class='2SXPS_help_SIdetflag'>Detection flag:</dt><dd style='color: #00FF00'>Good</dd>
+<dt class='2SXPS_help_SIexposure'>Total exposure:</dt><dd>4.2 ks</dd>
+<dt>RA (J2000):</dt><dd><span class='fixed'>07<sup>h</sup> 54<sup>m</sup> 45.62<sup>s</sup></span>=118.6901&deg;</dd>
+<dt>Dec (J2000):</dt><dd><span class='fixed'>+16&deg; 41&prime; 39.9&Prime;</span>=+16.6944&deg;</dd>
+<dt class='2SXPS_help_SIErr90'>Err<sub>90</sub>:</dt><dd><span class='fixed'>5.6&prime;&prime;</span>(Star trackers)</dd>
+<dt class='2SXPS_help_SIl'>l:</dt><dd><span class='fixed'>+204&deg; 30&prime; 18.7&Prime;</span>=204.5052&deg;</dd>
+<dt class='2SXPS_help_SIb'>b:</dt><dd><span class='fixed'>+21&deg; 19&prime; 03.8&Prime;</span>=+21.3177&deg;</dd>
+<dt class='2SXPS_help_SImeanrate'>Mean count rate</dt><dd>5.1 (&plusmn;1.3) &times;10<sup>-3</sup> ct s<sup>-1</sup></dd>
+<dt class='2SXPS_help_SIgal'>Galactic N<sub>H</sub></dt><dd>4.3&times;10<sup>20</sup> cm<sup>-2</sup></dd><dt class='2SXPS_help_SIHR'>HRs</dt><dd><span class='fixed'>HR1=-0.24 (+0.21, -0.27)</span><br/>HR2=-0.53 (+0.12, -0.47)</dd>
+<dt>Observed between:</dt><dd>2009-12-02 15:33 and 2010-10-09 06:04</dd>
+<dt class='2SXPS_help_SIpresent'>Present in:</dt><dd><span>2 datasets (total)<br/>1 datasets (with blind detections)</span><br/>2 datasets (count-rate detections)</dd>
+<dt class='2SXPS_help_SIxCorr'>External catalogue matches:</dt><dd>5<br/>Search <a href='http://vizier.u-strasbg.fr/viz-bin/VizieR-2?-c=118.6901%20%2B16.6944&amp;-c.eq=J2000&amp;-c.r=16&amp;-c.u=arcsec&amp;-c.geom=r&amp;-from=2&amp;-to=-1&amp;-this=-1&amp;-oc.form=dec&amp;!-4c=1&amp;-out.add=_r&amp;-sort=_r'>Vizier</a> | <a href='http://simbad.u-strasbg.fr/simbad/sim-coo?Coord=118.6901%20%2B16.6944&amp;CooDefinedFrames=ICRS-J2000&amp;Radius=16&amp;Radius.unit=arcsec'>Simbad</a>.</dd>
+<dt class='2SXPS_help_SI2SXPS_ID'>2SXPS ID</dt><dd>161839</dd>
+</dl>
+<p style='clear: left; margin-top: 30px; margin-left: 0;'><br/><a href='https://www.swift.ac.uk/user_objects/index.php?2SXPSname=2SXPS%20J075445.6%2B164139'>Build custom products for this source</a>.</p>
+<hr/><h2 id='SpecSec'>Spectral / Flux information</h2>
+<p id='HideSpecSec' class='toggle'><a href='javascript:hideSec("SpecSec");'>Hide spectral section</a>.</p><p id='ShowSpecSec' class='toggle hidden'><a href='javascript:showSec("SpecSec");'>Show spectral section</a>.</p><div id='SpecSecDiv'><p><a id='stab_ctrl_link' href='javascript:showStab();'>Show table controls</a>.</p>
+<form action='' class='fieldset' id='stab_controls'>
+  <h3>Fluxes:</h3><p><input type='checkbox' checked='checked' id='showObsFlux' name='showObsFlux'/><label for='showObsFlux'>Observed</label><input type='checkbox' checked='checked' id='showUnabsFlux' name='showUnabsFlux'/><label for='showUnabsFlux'>Unabsorbed</label></p>
+  <h3>Models:</h3><p><input type='checkbox' checked='checked' id='showPowFlux' name='showPowFlux'/><label for='showPowFlux'>Power-law</label><input type='checkbox' checked='checked' id='showAPECFlux' name='showAPECFlux'/><label for='showAPECFlux'>APEC</label></p>
+  <h3>Types:</h3><p><input type='checkbox' checked='checked' id='showBestFlux' name='showBestFlux'/><label for='showBestFlux' class='2SXPS_help_SIbest'>Best</label><input type='checkbox' id='showCannedFlux' name='showCannedFlux'/><label class='2SXPS_help_SIcanned' for='showCannedFlux'>Fixed</label>
+<input type='checkbox' id='showInterpFlux' name='showInterpFlux'/><label class='2SXPS_help_SIinterp' for='showInterpFlux'>HR-interpolated</label>
+<input class='hidden' type='checkbox' id='showFittedFlux' name='showFittedFlux'/>
+</p>
+<h3>Spectral details?</h3><p><input  type='checkbox' id='showFluxDetails' name='showFluxDetails'/><label for='showFluxDetails'>Yes</label></p>
+<p class='hidden'><input class='hidden' type='checkbox' id='showFluxPlots' name='showFluxPlots'/></p>
+<p style='display: block; float: none; clear: both;'><input type='hidden' name='stab_sid' value='161839'/><input type='button' class='button' id='stab_ctrl_button' onclick='updateStab();' value='Update table'/></p>
+</form>
+  <p>All fluxes are in erg cm<sup>-2</sup> s<sup>-1</sup> over the 0.3&#8212;10 keV band.</p>
+  <div id='stab_div'></div>
+  <p id="stabWork" class='working'>Working....</p>
+  
+  <p class='back'><a class='scrolllink' href='#holder'>Back to top</a>.</p>
+  
+</div><hr/>
+<h2 id='LCSec'>Temporal Information</h2>
+<p id='HideLCSec' class='toggle'><a href='javascript:hideSec("LCSec");'>Hide temporal section</a>.</p><p id='ShowLCSec' class='toggle hidden'><a href='javascript:showSec("LCSec");'>Show temporal section</a>.</p><div id='LCSecDiv'>  
+  <table style='clear: both;' id='lctable' border='1' class='chTable' cellspacing='0' cellpadding='7' summary='Count-rate details'>
+  <tr>
+    <th id='lctab_band'>Band</th>
+<th id='lctab_Total'>Total<br/><em>(0.3&#8212;10 keV)</em></td><th id='lctab_Soft'>Soft<br/><em>(0.3&#8212;1 keV)</em></td><th id='lctab_Medium'>Medium<br/><em>(1&#8212;2 keV)</em></td><th id='lctab_Hard'>Hard<br/><em>(2&#8212;10 keV)</em></td></tr>
+<tr><th id='lctab_rate' class='2SXPS_help_SImeanrate'>Mean rate<br/>(ct s<sup>-1</sup>)</th><td headers='lctab_rate'>5.1 (&plusmn;1.3) &times;10<sup>-3</sup></td><td headers='lctab_rate'>2.9 (&plusmn;1.0) &times;10<sup>-3</sup></td><td headers='lctab_rate'>1.7 (&plusmn;0.8) &times;10<sup>-3</sup></td><td headers='lctab_rate'>4 (+5, -4) &times;10<sup>-4</sup></td></tr>
+<tr><th id='lctab_peakrate' class='2SXPS_help_SIpeakrate'>Peak rate<br/>(ct s<sup>-1</sup>)</th><td headers='lctab_peakrate'>5.1 (+1.4, -1.2) &times;10<sup>-3</sup></td><td headers='lctab_peakrate'>2.90 (+1.08, -0.87) &times;10<sup>-3</sup></td><td headers='lctab_peakrate'>1.7 (+0.9, -0.7) &times;10<sup>-3</sup></td><td headers='lctab_peakrate'>4 (+5, -4) &times;10<sup>-4</sup></td></tr>
+<tr><th id='lctab_det' class='2SXPS_help_SIisDet'>Detected?</th><td headers='lctab_peakrate'>Yes</td><td headers='lctab_peakrate'>Blind: No<br/>Retrospective: Yes</td><td headers='lctab_peakrate'>Blind: No<br/>Retrospective: Yes</td><td headers='lctab_peakrate'>Blind: No<br/>Retrospective: No</td></tr>
+<tr><th id='lctab_ul' class='2SXPS_help_SIul'>3 &sigma; UL<br>(ct s<sup>-1</sup>)</th><td headers='lctab_peakrate'>N/A</td><td headers='lctab_peakrate'>&lt; 6.75&times; 10<sup>-3</sup></td><td headers='lctab_peakrate'>&lt; 4.94&times; 10<sup>-3</sup></td><td headers='lctab_peakrate'>&lt; 2.86&times; 10<sup>-3</sup></td></tr>
+<tr><th id='lctab_c' class='2SXPS_help_SIC'>Counts<br/>detected</th><td headers='lctab_peakrate'>18</td><td headers='lctab_peakrate'>10</td><td headers='lctab_peakrate'>6</td><td headers='lctab_peakrate'>2</td></tr>
+<tr><th id='lctab_b' class='2SXPS_help_SIBG'>BG<br/>counts</th><td headers='lctab_peakrate'>1.38</td><td headers='lctab_peakrate'>0.47</td><td headers='lctab_peakrate'>0.405</td><td headers='lctab_peakrate'>0.534</td></tr>
+<tr><th id='lctab_CF' class='2SXPS_help_SICF'>Corr<br/>fact</th><td headers='lctab_peakrate'>1.50</td><td headers='lctab_peakrate'>1.50</td><td headers='lctab_peakrate'>1.50</td><td headers='lctab_peakrate'>1.50</td></tr>
+<tr><th id='lctab_pchi' class='2SXPS_help_SIPchi'>P<sub>const,&chi;</sub></th><td headers='lctab_peakrate' style='text-align: left;'>3.77&times;10<sup>-3</sup> (obs)<br/>0.14 (snapshot)</td><td headers='lctab_peakrate' style='text-align: left;'>3.77&times;10<sup>-3</sup> (obs)<br/>0.20 (snapshot)</td><td headers='lctab_peakrate' style='text-align: left;'>3.77&times;10<sup>-3</sup> (obs)<br/>0.10 (snapshot)</td><td headers='lctab_peakrate' style='text-align: left;'>3.77&times;10<sup>-3</sup> (obs)<br/>0.19 (snapshot)</td></tr>
+</table>
+<div id='obslc' class='lcDiv'>
+<h3>One bin per observation</h3>
+<p><a id='obslc_bandLink_0' href='javascript:changeLC(0, "obslc");' class='selected'>Total</a> | <a id='obslc_bandLink_1' href='javascript:changeLC(1, "obslc");'>Soft</a> | <a id='obslc_bandLink_2' href='javascript:changeLC(2, "obslc");'>Medium</a> | <a id='obslc_bandLink_3' href='javascript:changeLC(3, "obslc");'>Hard</a> | <a id='obslc_bandLink_4' href='javascript:changeLC(4, "obslc");'>HR1</a> | <a id='obslc_bandLink_5' href='javascript:changeLC(5, "obslc");'>HR2</a></p>
+  <fieldset>
+    <p>
+      <input type='hidden' id='obslc_band' name='obslc_band' value='0'/>
+      <label for='obslc_xaxis' class='2SXPS_help_timeHelp'>X-axis</label>: 
+        <select id='obslc_xaxis' name='obslc_xaxis' onchange='changeXaxis("obslc");'><option value='0' selected='selected' >TDB</option><option value='1'>MJD</option><option value='2'>MET</option></select>
+      <span id='obslc_notHR'>
+      <label for='obslc_nondets' class='2SXPS_help_LCnondet'>Non-detections</label>: 
+        <select id='obslc_nondets' name='obslc_nondets' onchange='updatePlot("obslc");'>
+          <option value='1'>3-&sigma; upper limits</option>
+          <option value='2'>1-&sigma; data points</option>
+          <option value='0' selected='selected'>Auto select</option>
+        </select>
+      </span>
+      <span id='obslc_isHR' style='display:none;'>
+      <label for='obslc_showHR'>Show for</label>: 
+        <select id='obslc_showHR' name='obslc_showHR' onchange='updatePlot("obslc");'>
+          <option value='1'>Any detections</option>
+<!--          <option value='2'>All points</option> -->
+          <option value='0' selected='selected'>Blind detections only</option>
+        </select>
+      </span>
+      
+    </p>
+    <p>
+      <label for='obslc_showDP' class='2SXPS_help_LCDP'>Show bin markers?</label><input type='checkbox' onchange='toggleDP("obslc");' name='obslc_showDP' id='obslc_showDP'/>
+      <label for='obslc_showDP' class='2SXPS_help_LCBad'>Include flagged bins?</label><input type='checkbox' onchange='changeLCStem("obslc");' name='obslc_showBad' id='obslc_showBad'/>
+    </p>
+      </fieldset>
+<p><a id='rescaleLink_obslc' href='javascript:showRescale("obslc");'>Show plot axis controls</a> or click to zoom <span class='back'>[<span  class='2SXPS_help_LCjsplot'>more</span>]</span>.</p>
+<form method='post' id='obslc_rescale' action="nopage.php">
+  <p>
+    <label for='obslc_xlo'>Time range: </label>
+    <span class='obslc_rescale hideMe'>
+      <input type='text' size='5' id='obslc_xlo' name='obslc_xlo'/> &#8212;
+      <input type='text' size='5' name='obslc_xhi' id='obslc_xhi' />
+    </span>
+    <label for='obslc_xlog'>Logarithmic? </label>
+    <input type='checkbox' id='obslc_xlog' name='obslc_xlog' checked='checked' onchange='toggleLog("obslc");' />
+    <span class='obslc_rescale hideMe'><br/></span>
+    <label for='obslc_ylo0'>Rate range: </label>
+    <span class='obslc_rescale hideMe'> 
+        <input type='text' size='5' id='obslc_ylo0' name='obslc_ylo0'/> &#8212; 
+        <input type='text' size='5' name='obslc_yhi0' id='obslc_yhi0' />
+    </span>
+    <label for='obslc_ylog0'>Logarithmic? </label>
+    <input type='checkbox' id='obslc_ylog0' name='obslc_ylog0' checked='checked' onchange='toggleLog("obslc");' />
+  </p>
+
+  <p><input id='obslc_go' type='submit' class='button obslc_rescale' style='display:none;' value='Plot'/>
+  <input type='button' class='button' style='display:none;' value='Restore' id='obslc_restore'/></p>
+</form>
+      
+
+  <p>
+    <!-- <a href='javascript:makePS("obslc");' id='obslc_makePostscript'>Postscript version</a> | -->
+    <a href='javascript:makeDownload("obslc");' id='obslc_makeData'>Data file</a> |
+    <a id='enlargeLink_obslc' href='javascript:expand("obslc");'>Enlarge</a>.</p>
+
+  <p id='obslc_pslink' style='display:none;'>Working &hellip;</p> 
+
+  <div class='jsplot_element' id='obslc_canvasHolder'
+
+    data-windows='[{"left":0,"right":1,"bottom":0, "top":1, "y1Title":"Count Rate (0.3-10 keV)","showXAxis":1, "x1Title":"TDB", "dataLineWid":1, "axisLineWid":1, "axisFontSize":12, "labelFontSize":14}]'
+        
+    data-defaults='[{"oxlo":2455168.1431798, "oxhi":2455168.2572002, "oxlog":0, "oylo0":-0.000654049, "oyhi0":0.007194539, "oylog0":0}]'
+    data-tdbrange='[{"lo":2455168.1431798, "hi":2455168.2572002}]'
+    data-mjdrange='[{"lo":55167.638507859, "hi":55167.75252835}]'
+    data-metrange='[{"lo":281459972.39151, "hi":281469823.76194}]'
+    
+    data-title='2SXPS J075445.6+164139'
+
+    data-datasets='[{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=obslc&amp;LCStem=total_TDB&amp;dataset=0", "name":"total_TDB_dets", "colour":"#000000", "active":1, "isUL":0, "window":0,  "size":2},{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=obslc&amp;LCStem=total_TDB&amp;dataset=1", "name":"total_TDB_noBlindRates", "colour":"#000000", "active":1, "isUL":0, "window":0,  "size":2},{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=obslc&amp;LCStem=total_TDB&amp;dataset=2", "name":"total_TDB_noBlindULs", "colour":"#FF0000", "active":0, "isUL":1, "window":0,  "size":2},{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=obslc&amp;LCStem=total_TDB&amp;dataset=3", "name":"total_TDB_noDetRates", "colour":"#000000", "active":0, "isUL":0, "window":0,  "size":2},{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=obslc&amp;LCStem=total_TDB&amp;dataset=4", "name":"total_TDB_noDetULs", "colour":"#FF0000", "active":1, "isUL":1, "window":0,  "size":2}    ]'
+    
+  >
+  <canvas class='js_canvas' id='obslc_plotOverlay' height='310' width='400'>
+    This webpage uses the HTML &lt;canvas&gt; element, which your browser does not support.
+    Please either view <a href="/2SXPS/index_nocanvas.php">the old, no-canvas page</a> or update your browser.
+  </canvas>
+                
+  <canvas class='js_canvas' id='obslc_plot' height='310' width='400'>
+    This webpage uses the HTML &lt;canvas&gt; element, which your browser does not support.
+    Please either view <a href="/2SXPS/index_nocanvas.php">the old, no-canvas page</a> or update your browser.
+  </canvas>
+  <img id='obslc_working' class='jsp_loading' src='/images/ajax-loader.gif' alt='Working icon' />
+
+</div>
+</div><div id='sslc' class='lcDiv'>
+<h3>One bin per snapshot</h3>
+<p><a id='sslc_bandLink_0' href='javascript:changeLC(0, "sslc");' class='selected'>Total</a> | <a id='sslc_bandLink_1' href='javascript:changeLC(1, "sslc");'>Soft</a> | <a id='sslc_bandLink_2' href='javascript:changeLC(2, "sslc");'>Medium</a> | <a id='sslc_bandLink_3' href='javascript:changeLC(3, "sslc");'>Hard</a> | <a id='sslc_bandLink_4' href='javascript:changeLC(4, "sslc");'>HR1</a> | <a id='sslc_bandLink_5' href='javascript:changeLC(5, "sslc");'>HR2</a></p>
+  <fieldset>
+    <p>
+      <input type='hidden' id='sslc_band' name='sslc_band' value='0'/>
+      <label for='sslc_xaxis' class='2SXPS_help_timeHelp'>X-axis</label>: 
+        <select id='sslc_xaxis' name='sslc_xaxis' onchange='changeXaxis("sslc");'><option value='0' selected='selected' >TDB</option><option value='1'>MJD</option><option value='2'>MET</option></select>
+      <span id='sslc_notHR'>
+      <label for='sslc_nondets' class='2SXPS_help_LCnondet'>Non-detections</label>: 
+        <select id='sslc_nondets' name='sslc_nondets' onchange='updatePlot("sslc");'>
+          <option value='1'>3-&sigma; upper limits</option>
+          <option value='2'>1-&sigma; data points</option>
+          <option value='0' selected='selected'>Auto select</option>
+        </select>
+      </span>
+      <span id='sslc_isHR' style='display:none;'>
+      <label for='sslc_showHR'>Show for</label>: 
+        <select id='sslc_showHR' name='sslc_showHR' onchange='updatePlot("sslc");'>
+          <option value='1'>Any detections</option>
+<!--          <option value='2'>All points</option> -->
+          <option value='0' selected='selected'>Blind detections only</option>
+        </select>
+      </span>
+      
+    </p>
+    <p>
+      <label for='sslc_showDP' class='2SXPS_help_LCDP'>Show bin markers?</label><input type='checkbox' onchange='toggleDP("sslc");' name='sslc_showDP' id='sslc_showDP'/>
+      <label for='sslc_showDP' class='2SXPS_help_LCBad'>Include flagged bins?</label><input type='checkbox' onchange='changeLCStem("sslc");' name='sslc_showBad' id='sslc_showBad'/>
+    </p>
+      </fieldset>
+<p><a id='rescaleLink_sslc' href='javascript:showRescale("sslc");'>Show plot axis controls</a> or click to zoom <span class='back'>[<span  class='2SXPS_help_LCjsplot'>more</span>]</span>.</p>
+<form method='post' id='sslc_rescale' action="nopage.php">
+  <p>
+    <label for='sslc_xlo'>Time range: </label>
+    <span class='sslc_rescale hideMe'>
+      <input type='text' size='5' id='sslc_xlo' name='sslc_xlo'/> &#8212;
+      <input type='text' size='5' name='sslc_xhi' id='sslc_xhi' />
+    </span>
+    <label for='sslc_xlog'>Logarithmic? </label>
+    <input type='checkbox' id='sslc_xlog' name='sslc_xlog' checked='checked' onchange='toggleLog("sslc");' />
+    <span class='sslc_rescale hideMe'><br/></span>
+    <label for='sslc_ylo0'>Rate range: </label>
+    <span class='sslc_rescale hideMe'> 
+        <input type='text' size='5' id='sslc_ylo0' name='sslc_ylo0'/> &#8212; 
+        <input type='text' size='5' name='sslc_yhi0' id='sslc_yhi0' />
+    </span>
+    <label for='sslc_ylog0'>Logarithmic? </label>
+    <input type='checkbox' id='sslc_ylog0' name='sslc_ylog0' checked='checked' onchange='toggleLog("sslc");' />
+  </p>
+
+  <p><input id='sslc_go' type='submit' class='button sslc_rescale' style='display:none;' value='Plot'/>
+  <input type='button' class='button' style='display:none;' value='Restore' id='sslc_restore'/></p>
+</form>
+      
+
+  <p>
+    <!-- <a href='javascript:makePS("sslc");' id='sslc_makePostscript'>Postscript version</a> | -->
+    <a href='javascript:makeDownload("sslc");' id='sslc_makeData'>Data file</a> |
+    <a id='enlargeLink_sslc' href='javascript:expand("sslc");'>Enlarge</a>.</p>
+
+  <p id='sslc_pslink' style='display:none;'>Working &hellip;</p> 
+
+  <div class='jsplot_element' id='sslc_canvasHolder'
+
+    data-windows='[{"left":0,"right":1,"bottom":0, "top":1, "y1Title":"Count Rate (0.3-10 keV)","showXAxis":1, "x1Title":"TDB", "dataLineWid":1, "axisLineWid":1, "axisFontSize":12, "labelFontSize":14}]'
+        
+    data-defaults='[{"oxlo":2455168.1431798, "oxhi":2455168.2572002, "oxlog":0, "oylo0":-0.000654049, "oyhi0":0.007194539, "oylog0":0}]'
+    data-tdbrange='[{"lo":2455168.1431798, "hi":2455168.2572002}]'
+    data-mjdrange='[{"lo":55167.638507859, "hi":55167.75252835}]'
+    data-metrange='[{"lo":281459972.39151, "hi":281469823.76194}]'
+    
+    data-title='2SXPS J075445.6+164139'
+
+    data-datasets='[{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=sslc&amp;LCStem=total_TDB&amp;dataset=0", "name":"total_TDB_dets", "colour":"#000000", "active":1, "isUL":0, "window":0,  "size":2},{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=sslc&amp;LCStem=total_TDB&amp;dataset=1", "name":"total_TDB_noBlindRates", "colour":"#000000", "active":1, "isUL":0, "window":0,  "size":2},{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=sslc&amp;LCStem=total_TDB&amp;dataset=2", "name":"total_TDB_noBlindULs", "colour":"#FF0000", "active":0, "isUL":1, "window":0,  "size":2},{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=sslc&amp;LCStem=total_TDB&amp;dataset=3", "name":"total_TDB_noDetRates", "colour":"#000000", "active":0, "isUL":0, "window":0,  "size":2},{"file":"/2SXPS/getLCData.php?sid=161839&amp;type=sslc&amp;LCStem=total_TDB&amp;dataset=4", "name":"total_TDB_noDetULs", "colour":"#FF0000", "active":1, "isUL":1, "window":0,  "size":2}    ]'
+    
+  >
+  <canvas class='js_canvas' id='sslc_plotOverlay' height='310' width='400'>
+    This webpage uses the HTML &lt;canvas&gt; element, which your browser does not support.
+    Please either view <a href="/2SXPS/index_nocanvas.php">the old, no-canvas page</a> or update your browser.
+  </canvas>
+                
+  <canvas class='js_canvas' id='sslc_plot' height='310' width='400'>
+    This webpage uses the HTML &lt;canvas&gt; element, which your browser does not support.
+    Please either view <a href="/2SXPS/index_nocanvas.php">the old, no-canvas page</a> or update your browser.
+  </canvas>
+  <img id='sslc_working' class='jsp_loading' src='/images/ajax-loader.gif' alt='Working icon' />
+
+</div>
+</div><p class='back'><a class='scrolllink' href='#holder'>Back to top</a>.</p>
+</div>
+<hr/>
+<h2 id='xCorrSec'>External Catalogue matches</h2>
+<p id='HidexCorrSec' class='toggle'><a href='javascript:hideSec("xCorrSec");'>Hide external catalogue section</a>.</p><p id='ShowxCorrSec' class='toggle hidden'><a href='javascript:showSec("xCorrSec");'>Show external catalogue section</a>.</p><div id='xCorrSecDiv'><form action='' class='fieldset' id='xCorr_ctrl'>
+  <p>
+  <input type='hidden' id='xctab_showAll' name='xctab_showAll' value='0'/>
+  <input type='hidden' name='xctab_sid' value='161839'/>
+  <input type='hidden' name='xctab_sortCol' id='xctab_sortCol'value='0'/>
+  <input type='hidden' name='xctab_sortDir' id='xctab_sortDir'value='0'/>
+                                            
+  <label for='xctab_coordSys'>Coordinate type</label><select onchange='updatexCorrTable();' name='xctab_coordSys' id='xctab_coordSys'><option value='1' selected='selected'>Sexagesimal</option><option value='0'>Decimal</option></select>
+  </p>
+  </form>
+
+<div id='xCorrtab_div'>
+</div>
+<p id='xCorrtabWork' style='font-size:24px; font-style: italic;'>Working....</p>
+<p class='back'><a class='scrolllink' href='#holder'>Back to top</a>.</p>
+</div><hr/>
+<h2 id='DetSec'>Detections</h2>
+<p id='HideDetSec' class='toggle'><a href='javascript:hideSec("DetSec");'>Hide detections section</a>.</p><p id='ShowDetSec' class='toggle hidden'><a href='javascript:showSec("DetSec");'>Show detections section</a>.</p><div id='DetSecDiv'>  <p><a id='detTab_ctrl_link' href='javascript:showDetControls();'>Show table controls</a>.</p>
+  
+  
+  <!-- 
+  ##### 
+  ## DET TABLE CONTROLS
+  #####
+  -->
+  
+  
+  <form class='fieldset' id='detTab_controls' method='get' action='' onsubmit='updateDetTable(); return false;'>
+  <h3>Which observations?</h3>
+  <p>
+  <!--<input type='checkbox' checked='checked'  name='showdetobs' id='showdetobs'/><label for='showdetobs'>Source was detected</label>
+  <input type='checkbox'  name='showundetobs' id='showundetobs'/><label for='showundetobs'>Source was in the field, but not detected</label>-->
+  <input type='hidden' name='dettab_sid' value='161839'/>
+  <input type='hidden' name='dettab_name' value='2SXPS J075445.6+164139'/>
+  <input type='hidden' name='dettab_showAll' id='dettab_showAll' value='0'/>
+  <input type='hidden' name='dettab_stacked_showAll' id='dettab_stacked_showAll' value='0'/>
+  <input type='checkbox' checked='checked'  name='dettab_showunstacked' id='dettab_showunstacked'/><label for='dettab_showstacked'>Observations</label>
+  <input type='checkbox' checked='checked'  name='dettab_showstacked' id='dettab_showstacked'/><label for='dettab_showstacked'>Stacked images</label>
+  </p>
+  
+  <h3>Which bands?</h3><p>
+  <input type='checkbox' checked='checked' name='dettab_total' id='dettab_total'/><label for='dettab_total'>Total</label>
+  <input type='checkbox' name='dettab_band1' id='dettab_band1'/><label for='dettab_band1'>Soft</label>
+  <input type='checkbox' name='dettab_band2' id='dettab_band2'/><label for='dettab_band2'>Medium</label>
+  <input type='checkbox' name='dettab_band3' id='dettab_band3'/><label for='dettab_band3'>Hard</label></p>
+  
+  <p class='small'><a id='det_morelink' href='javascript:showDetMore();'>Select columns</a></p>
+  
+  <div id='det_moreinfo'>
+  <h3>Which information?</h3>
+  <h4>Summary</h4>
+  <p>
+    <input type='checkbox' checked='checked' name='dettab_detflag' id='dettab_detflag'/><label for='dettab_detflag'>Detection flag</label>
+    <input type='checkbox' checked='checked' name='dettab_exp' id='dettab_exp'/><label for='dettab_exp'>Exposure</label>
+    <input type='checkbox' checked='checked' name='dettab_HR1' id='dettab_HR1'/><label for='dettab_HR1'>HR1</label>
+    <input type='checkbox' checked='checked' name='dettab_HR2' id='dettab_HR2'/><label for='dettab_HR2'>HR2</label>
+    <input type='checkbox' checked='checked' name='dettab_fieldflag' id='dettab_fieldflag'/><label for='dettab_fieldflag'>Field flag</label>
+  </p>
+  <h4>Per-band</h4>
+  <p>
+    <input type='checkbox' checked='checked' name='dettab_bflag' id='dettab_bflag'/><label for='dettab_bflag'>Detection flag</label>
+    <input type='checkbox' checked='checked' name='dettab_snr' id='dettab_snr'/><label for='dettab_snr'>SNR</label>
+    <input type='checkbox' checked='checked' name='dettab_rate' id='dettab_rate'/><label for='dettab_rate'>Mean rate</label>
+    <input type='checkbox' checked='checked' name='dettab_cts' id='dettab_cts'/><label for='dettab_cts'>Counts</label>
+    <input type='checkbox' checked='checked' name='dettab_bg' id='dettab_bg'/><label for='dettab_bg'>Bg counts</label>
+    <input type='checkbox' checked='checked' name='dettab_cf' id='dettab_cf'/><label for='dettab_cf'>Corr factor</label>
+    <input type='checkbox' checked='checked' name='dettab_pchi' id='dettab_pchi'/><label for='dettab_pchi'>P<sub>const,&chi;</sub></label>
+  </p>
+  </div>
+  <p style='margin: 10px 0 10px 0;'><input type='button' class='button' id='dettab_ctrl_button' onclick='updateDetTable();' value='Update table'/><br/></p>
+  </form>
+  
+   <!-- 
+  ##### 
+  ## DET TABLE RESULTS
+  #####
+  -->
+  <p id='dettabWork' style='font-size:24px; font-style: italic;'>Working....</p>
+  <div id='dettab_div'></div>
+  
+  <p class='back'><a class='scrolllink' href='#holder'>Back to top</a>.</p>
+  
+  </div>
+  
+  <hr/>
+  
+<h2 id='UndetSec'>Non-detections</h2>
+<p id='HideUndetSec' class='toggle'><a href='javascript:hideSec("UndetSec");'>Hide non-detections section</a>.</p><p id='ShowUndetSec' class='toggle hidden'><a href='javascript:showSec("UndetSec");'>Show non-detections section</a>.</p><div id='UndetSecDiv'>  <p><a id='undetTab_ctrl_link' href='javascript:showUndetControls();'>Show table controls</a>.</p>
+  
+  
+  <!-- 
+  ##### 
+  ## TABLE CONTROLS
+  #####
+  -->
+  
+  
+  <form action='' class='fieldset' id='undetTab_controls'>
+  <h3>Which observations?</h3>
+  <p>
+  <input type='hidden' name='undettab_sid' value='161839'/>
+  <input type='hidden' name='undettab_unstacked_showAll' value='0'/>
+  <input type='hidden' name='undettab_name' value='2SXPS J075445.6+164139'/>
+  <input type='hidden' name='undettab_showAll' id='undettab_showAll' value='0'/>
+  <input type='hidden' name='undettab_stacked_showAll' id='undettab_stacked_showAll'value='0'/>
+  
+  <input type='checkbox' checked='checked'  name='undettab_showunstacked' id='showunstacked'/><label for='showstacked'>Observations</label>
+  <input type='checkbox' checked='checked'  name='undettab_showstacked' id='showstacked'/><label for='showstacked'>Stacked images</label>
+  </p>
+  
+  <h3>Which bands?</h3>
+  <p>
+  <input type='checkbox' checked='checked' name='undettab_total' id='undettab_total'/><label for='undettab_total'>Total</label>
+  <input type='checkbox' name='undettab_band1' id='undettab_band1'/><label for='undettab_band1'>Soft</label>
+  <input type='checkbox' name='undettab_band2' id='undettab_band2'/><label for='undettab_band2'>Medium</label>
+  <input type='checkbox' name='undettab_band3' id='undettab_band3'/><label for='undettab_band3'>Hard</label></p>
+  
+  <h3>What information?</h3>
+  <p>
+  <input type='checkbox' checked='checked' name='undettab_ul' id='undettab_ul'/><label for='undettab_ul'>Upper limit</label>
+  <input type='checkbox' checked='checked' name='undettab_cts' id='undettab_cts'/><label for='undettab_cts'>Counts</label>
+  <input type='checkbox' checked='checked' name='undettab_bg' id='undettab_bg'/><label for='undettab_bg'>Bg counts</label>
+  <input type='checkbox' checked='checked' name='undettab_cf' id='undettab_cf'/><label for='undettab_cf'>Corr factor</label>
+  <input type='checkbox' checked='checked' name='undettab_exp' id='undettab_exp'/><label for='undettab_exp'>Exposure</label>
+  </p>
+  
+  <p style='margin: 10px 0 10px 0;'><input type='button' class='button' id='undettab_ctrl_button' onclick='updateUndetTable();' value='Update table'/></p>
+  </form>
+
+  <p id='undettabWork' style='font-size:24px; font-style: italic;'>Working....</p>
+  <div id='undettab_div'></div>
+  
+  <p class='back'><a class='scrolllink' href='#holder'>Back to top</a>.</p>
+  
+  </div>
+  
+  
+  <br/><br/>
+  
+  <div id='glossary'>
+  </div>
+
+  <div id='lc'>
+  <p style='font-size: 80%; float: right'><a href='javascript:hideDownload();'>Close</a>.</p>
+  <h2>Data for your light curve</h2>
+  <p>2SXPS J075445.6+164139 &#8212; <span id='lcDataBand'></span>, per-<span id='lcDataType'></span> binning.</p>
+  <div id='lcData'>
+  </div>  
+  </div>
+  
+
+      <div id="footer">        <p>
+          UK Swift Science Data Centre<br/>
+          Last updated <span id='PageFootDate'>2019 May 31</span><br/>  
+          Web page maintained by Phil Evans<br/>
+          E-mail: <a href="mailto:swifthelp@le.ac.uk">swift help</a><br/>
+          Please read our <a href='/GDPR.php'>privacy notice</a>.
+        </p>
+
+      </div>    </div>
+  </body></html>

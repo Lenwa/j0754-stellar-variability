@@ -1,0 +1,44 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:44:48 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:44:48	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=II%2F297%2Firc&-c=118.69117410685+%2B16.694621231895&-c.rs=30&-out.all=&-out.max=500	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=30.	
+#Constraint -out.max=500
+
+#RESOURCE=yCat_2297
+#Name: II/297
+#Title: AKARI/IRC mid-IR all-sky Survey (ISAS/JAXA, 2010)
+#INFO	ivoid=ivo://cds.vizier/ii/297	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/297	    IVOID of underlying data collection
+#INFO	creator=Ishihara D.	    First author or institution
+#INFO	cites=bibcode:2010A&A...514A...1I	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2010	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/297	    Dataset landing page
+#INFO	publication_date=2017-06-13	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	II_297_irc:
+#Name: II/297/irc
+#Title: AKARI/IRC All-Sky Survey Point Source Catalogue (Version 1.0)
+#Column	objName	(A14)	AKARI source name (HHMMSSs+DDMMSS) (2)	[ucd=meta.id;meta.main]
+#Column	S09	(E10.3)	? Flux density in AKARI/S9W filter (1)	[ucd=phot.flux.density;em.IR.8-15um]
+#Column	e_S09	(E9.2)	? Flux error in S9W	[ucd=stat.error]
+#Column	q_S09	(I1)	[0,3] Flux quality flag for S9W (3)	[ucd=meta.code.qual]
+#Column	S18	(E10.3)	? Flux density in AKARI/L18W filter (1)	[ucd=phot.flux.density;em.IR.15-30um]
+#Column	e_S18	(E9.2)	? Flux error in L18W	[ucd=stat.error]
+#Column	q_S18	(I1)	[0,3] Flux quality flag for L18W (3)	[ucd=meta.code.qual]
+#Column	Nd09	(I3)	? Number of sources in 45" radius in S9W	[ucd=meta.number]
+#Column	Nd18	(I3)	? Number of sources in 45" radius in L18W	[ucd=meta.number]
+#Column	X09	(I2)	[0,1]? Extended source flag (5)	[ucd=meta.code]
+#Column	X18	(I2)	[0,1]? Extended source flag (5)	[ucd=meta.code]
+#Column	RAJ2000	(F9.5)	Right Ascension (J2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F9.5)	Declination (J2000)	[ucd=pos.eq.dec;meta.main]

@@ -1,0 +1,74 @@
+{
+  "url": "https://simbad.harvard.edu/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+b.main_id%2Cr.bibcode%2Cr.title%2Cr.doi%2Cr.nbobject%2Ch.obj_freq%2Ch.ref_flag+FROM+basic+b+JOIN+has_ref+h+ON+b.oid%3Dh.oidref+JOIN+ref+r+ON+r.oidbib%3Dh.oidbibref+WHERE+b.main_id%3D%272MASS+J07544588%2B1641407%27",
+  "response": {
+    "metadata": [
+      {
+        "name": "main_id",
+        "description": "Main identifier for an object",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.id;meta.main",
+        "utype": "mango:MangoObject.identifier"
+      },
+      {
+        "name": "bibcode",
+        "description": "Bibcode",
+        "datatype": "CHAR",
+        "arraysize": "19",
+        "ucd": "meta.bib.bibcode"
+      },
+      {
+        "name": "title",
+        "description": "Title",
+        "datatype": "UNICODECHAR",
+        "arraysize": "*",
+        "ucd": "meta.title"
+      },
+      {
+        "name": "doi",
+        "description": "DOI designation",
+        "datatype": "CHAR",
+        "arraysize": "*",
+        "ucd": "meta.ref.doi"
+      },
+      {
+        "name": "nbobject",
+        "description": "Number of objects studied in",
+        "datatype": "INT",
+        "ucd": "meta.id;arith.sum"
+      },
+      {
+        "name": "obj_freq",
+        "description": "flag",
+        "datatype": "SHORT",
+        "ucd": "meta.number"
+      },
+      {
+        "name": "ref_flag",
+        "description": "flag",
+        "datatype": "SHORT",
+        "ucd": "meta.code.multip"
+      }
+    ],
+    "data": [
+      [
+        "2MASS J07544588+1641407",
+        "2023A&A...674A..34G",
+        "{\\em Gaia} Data Release 3 Stellar multiplicity, a teaser for the hidden treasure.",
+        "10.1051/0004-6361/202243782",
+        307214,
+        1,
+        32
+      ],
+      [
+        "2MASS J07544588+1641407",
+        "2010ApJ...710L..77T",
+        "DASCH discovery of large amplitude ~10-100 year variability in K giants.",
+        "10.1088/2041-8205/710/1/L77",
+        7,
+        3,
+        152
+      ]
+    ]
+  }
+}

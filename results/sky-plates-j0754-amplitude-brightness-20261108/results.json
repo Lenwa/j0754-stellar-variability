@@ -1,0 +1,165 @@
+{
+  "protocol": "Exploratory comparison specified before calculation: use same July-June seasons retained by previous rotation search. Compare peak-to-peak sinusoidal amplitude with median brightness, using ASAS-SN bq only for brightness to avoid camera changes, and independent differential ZTF g. Amplitude joint-fits camera offsets/slopes at fixed35.9204566days and separately at previously selected seasonal30-42day peak. Selected-period amplitudes have selection bias. Spearman rank correlation is descriptive across few non-independent seasons, no significance claim. Simple prediction: increasing rotational amplitude as star fades, decreasing during recovery. Failure weakens this simple relation, not all spot geometries. Amplitude measures longitudinal asymmetry, not total spot coverage.",
+  "ASASSN": {
+    "seasons": [
+      {
+        "season": "2017/18",
+        "year": 2018,
+        "n": 187,
+        "brightness_n": 59,
+        "median_mag": 12.623,
+        "fixed_period_peak_to_peak_mag": 0.0647869581857525,
+        "selected_period_days": 36.23188405797101,
+        "selected_period_peak_to_peak_mag": 0.0649600293837539
+      },
+      {
+        "season": "2018/19",
+        "year": 2019,
+        "n": 155,
+        "brightness_n": 42,
+        "median_mag": 12.67,
+        "fixed_period_peak_to_peak_mag": 0.07614470907696623,
+        "selected_period_days": 34.305317324185246,
+        "selected_period_peak_to_peak_mag": 0.08374488331993533
+      },
+      {
+        "season": "2019/20",
+        "year": 2020,
+        "n": 131,
+        "brightness_n": 41,
+        "median_mag": 12.659,
+        "fixed_period_peak_to_peak_mag": 0.049703643059379396,
+        "selected_period_days": 35.97122302158273,
+        "selected_period_peak_to_peak_mag": 0.04971719323369892
+      },
+      {
+        "season": "2020/21",
+        "year": 2021,
+        "n": 106,
+        "brightness_n": 28,
+        "median_mag": 12.8565,
+        "fixed_period_peak_to_peak_mag": 0.06386828090432696,
+        "selected_period_days": 35.08771929824561,
+        "selected_period_peak_to_peak_mag": 0.06570690522510825
+      },
+      {
+        "season": "2021/22",
+        "year": 2022,
+        "n": 141,
+        "brightness_n": 30,
+        "median_mag": 12.91975,
+        "fixed_period_peak_to_peak_mag": 0.04755226772381301,
+        "selected_period_days": 34.07155025553663,
+        "selected_period_peak_to_peak_mag": 0.06052041371862799
+      },
+      {
+        "season": "2022/23",
+        "year": 2023,
+        "n": 128,
+        "brightness_n": 31,
+        "median_mag": 12.929,
+        "fixed_period_peak_to_peak_mag": 0.045840675985358556,
+        "selected_period_days": 37.31343283582089,
+        "selected_period_peak_to_peak_mag": 0.05296843501025856
+      },
+      {
+        "season": "2023/24",
+        "year": 2024,
+        "n": 159,
+        "brightness_n": 21,
+        "median_mag": 12.855,
+        "fixed_period_peak_to_peak_mag": 0.055739600676826755,
+        "selected_period_days": 35.1493848857645,
+        "selected_period_peak_to_peak_mag": 0.05701229351147297
+      },
+      {
+        "season": "2024/25",
+        "year": 2025,
+        "n": 154,
+        "brightness_n": 10,
+        "median_mag": 12.836,
+        "fixed_period_peak_to_peak_mag": 0.010132311144582804,
+        "selected_period_days": 40.080160320641276,
+        "selected_period_peak_to_peak_mag": 0.02163344825833986
+      },
+      {
+        "season": "2025/26",
+        "year": 2026,
+        "n": 207,
+        "brightness_n": 58,
+        "median_mag": 12.774999999999999,
+        "fixed_period_peak_to_peak_mag": 0.03764155429880753,
+        "selected_period_days": 36.90036900369003,
+        "selected_period_peak_to_peak_mag": 0.03975826006100901
+      }
+    ],
+    "descriptive_spearman_magnitude_vs_fixed_amplitude": -0.38333333333333336,
+    "descriptive_spearman_magnitude_vs_selected_amplitude": -0.03333333333333333
+  },
+  "ZTF": {
+    "seasons": [
+      {
+        "season": "2019/20",
+        "year": 2020,
+        "n": 58,
+        "brightness_n": 58,
+        "median_mag": -0.16892641250000162,
+        "fixed_period_peak_to_peak_mag": 0.05617407316072087,
+        "selected_period_days": 37.24394785847299,
+        "selected_period_peak_to_peak_mag": 0.06204839887118278
+      },
+      {
+        "season": "2020/21",
+        "year": 2021,
+        "n": 79,
+        "brightness_n": 79,
+        "median_mag": 0.011840799999998985,
+        "fixed_period_peak_to_peak_mag": 0.07263115148143139,
+        "selected_period_days": 35.39823008849557,
+        "selected_period_peak_to_peak_mag": 0.07407923691374702
+      },
+      {
+        "season": "2021/22",
+        "year": 2022,
+        "n": 32,
+        "brightness_n": 32,
+        "median_mag": 0.10110799999999731,
+        "fixed_period_peak_to_peak_mag": 0.05710074144542055,
+        "selected_period_days": 35.39823008849557,
+        "selected_period_peak_to_peak_mag": 0.05784152327398085
+      },
+      {
+        "season": "2022/23",
+        "year": 2023,
+        "n": 36,
+        "brightness_n": 36,
+        "median_mag": 0.09815916249999912,
+        "fixed_period_peak_to_peak_mag": 0.05566522302889415,
+        "selected_period_days": 37.31343283582089,
+        "selected_period_peak_to_peak_mag": 0.0663547318477666
+      },
+      {
+        "season": "2023/24",
+        "year": 2024,
+        "n": 32,
+        "brightness_n": 32,
+        "median_mag": 0.02689622499999844,
+        "fixed_period_peak_to_peak_mag": 0.06635497572474486,
+        "selected_period_days": 36.03603603603603,
+        "selected_period_peak_to_peak_mag": 0.06664620540976607
+      },
+      {
+        "season": "2024/25",
+        "year": 2025,
+        "n": 35,
+        "brightness_n": 35,
+        "median_mag": 0.00023002499999957848,
+        "fixed_period_peak_to_peak_mag": 0.004817690181014386,
+        "selected_period_days": 41.92872117400419,
+        "selected_period_peak_to_peak_mag": 0.022766771176060487
+      }
+    ],
+    "descriptive_spearman_magnitude_vs_fixed_amplitude": 0.2,
+    "descriptive_spearman_magnitude_vs_selected_amplitude": 0.08571428571428573
+  }
+}

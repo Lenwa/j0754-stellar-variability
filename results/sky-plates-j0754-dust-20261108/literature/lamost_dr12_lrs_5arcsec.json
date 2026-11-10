@@ -1,0 +1,11 @@
+{
+  "url": "https://www.lamost.org/dr12/v2.0/table/catalogue/q",
+  "status": 200,
+  "query": {
+    "ra": 118.69117410685,
+    "dec": 16.694621231895,
+    "radius_arcsec": 5
+  },
+  "response": [],
+  "retrieved_utc": "2026-11-08T22:19:06.721953+00:00"
+}

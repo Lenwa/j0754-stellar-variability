@@ -1,0 +1,55 @@
+TESS result and bounded pixel follow-up — J0754
+
+The new finding is a flare-like brightening close to J0754 on 23 December 2021.
+This is a candidate, not a formal stellar-flare classification.
+
+The original eight files are extracted light curves. A subsequent authorized
+7x7 MAST TESSCut recovered calibrated FFI pixels (3.91 MB), not complete FFIs
+or unprocessed detector data. The event window contains 16 quality-zero frames;
+its guarded before/after sidebands contain 43/40 frames. The new pixel extraction
+shows a rise and decay across many cadences and a peak core contrast near 2.5%.
+This is not a single-cadence cosmic spike.
+
+The positive difference image is compact at the target: its centroid is 0.177
+pixel from the Gaia WCS position, approximately 3.7 arcsec at TESS sampling.
+This is a descriptive positive-excess moment, not a calibrated positional
+confidence interval. The stationary source-shape model gives 2.02% brightening;
+adding first-derivative image-motion terms changes it to 2.016%. Across nine
+posthoc guarded-sideband choices the scale is 1.90–2.14% and the position offset
+0.168–0.182pixel. These ranges are methodological sensitivities, not errors.
+The simple core aperture contrast of 2.24% uses a raw-difference numerator and
+must not be treated as an event-plane-subtracted precision amplitude.
+
+QLP’s selected 3 h residual mean is 1.21%; its small/large aperture diagnostics
+are 1.24%/1.24%, and SAP has the same-sign excursion. Those use different
+baselines from the pixel difference, so their percentages are not interchangeable.
+Local flux/centroid correlations are modest and do not establish an artifact.
+TESSCut POS_CORR columns are entirely zero, supplying no independent jitter
+measurement. The difference does not show an obvious multi-pixel traversal
+within the selected window. Unresolved blends, a near-aligned moving source,
+PRF/background errors and calibration effects remain possible. No moving-object
+identity, flare energy or stellar mechanism was inferred.
+
+The broader TESS analysis strongly limits confident absence claims. QLP corrected
+20 min robust scatter is about 0.00093–0.00106 in fractional flux; SPOC sectors 71/72
+give 0.00172/0.00522, with residual lag1 correlations about 0.60/0.48. Matching QLP
+and SPOC highpass curves correlate only 0.16/0.34. The fixed 35.92/17.96 day amplitudes
+and low-frequency structure are reduction/baseline dependent. This is not a new
+orbital rejection or a secure rotation measurement.
+
+The observed-residual bootstrap resamples its own candidate events and often
+sets its threshold equal to the observed maximum. No excursions above that
+uncalibrated descriptive screen is NOT evidence that flares are absent. All 96
+selected positive/negative candidates remain saved, including false positives.
+4,608 native-time injections show sharply varying response with product, amplitude,
+duration and gaps. The 1/3/6 h boxes do not test multi-day giant transits; a 1 day
+highpass suppresses the separate models’ 2.7–5.7 day transits. No universal 0.002 mag
+transit/radius bound, 100 ppm precision or bolometric flare-energy threshold follows.
+Signed observed equivalent durations are reported without a bolometric conversion.
+
+Results.json, report.txt, the four rendered figures, native pixel ZIP/FITS,
+per-frame/pixel maps and sensitivity JSONs are retained. The original protocol
+and two chronological amendments remain separate. Final source and pixel/main
+result hashes agree. All 114 current component tests pass, including 15 TESS
+tests. The two assigned maintained files are saved and uncommitted for parent
+review. No push or publication occurred.

@@ -1,0 +1,172 @@
+{
+  "TICID": 18878735,
+  "tesscut_available_sector_identifiers": [
+    44,
+    45,
+    46,
+    71,
+    72,
+    1751
+  ],
+  "gemini_claimed_sectors": [
+    7,
+    34,
+    44,
+    45,
+    46,
+    71,
+    72
+  ],
+  "claimed_but_not_returned_by_current_tesscut": [
+    7,
+    34
+  ],
+  "current_mast_timeseries_rows": 8,
+  "current_mast_target_names": [
+    "18878735"
+  ],
+  "same_download_URIs_as_prior_metadata": true,
+  "existing_native_fits_products": [
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+      "sha256": "a42aa17a746c4f0326cd875803525510ab869fff2969930d349ac56fc61245da",
+      "bytes": 192960,
+      "TICID": 18878735,
+      "SECTOR": 44,
+      "pipeline": "QLP",
+      "rows": 3278,
+      "time_system": "TDB",
+      "BJDREF": 2457000,
+      "TSTART": 2500.19029594894,
+      "TSTOP": 2524.435736316783,
+      "start_utc_from_tdb": "2021-10-12T16:32:52.388",
+      "stop_utc_from_tdb": "2021-11-05T22:26:18.435",
+      "quality_zero_rows": 2821
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+      "sha256": "5e1a239cfb1779f7c7265abf0c2be04f4712be0c9c3c4eba5429a62a3f37a83e",
+      "bytes": 204480,
+      "TICID": 18878735,
+      "SECTOR": 45,
+      "pipeline": "QLP",
+      "rows": 3450,
+      "time_system": "TDB",
+      "BJDREF": 2457000,
+      "TSTART": 2525.512226629669,
+      "TSTOP": 2550.62548696072,
+      "start_utc_from_tdb": "2021-11-07T00:16:27.198",
+      "stop_utc_from_tdb": "2021-12-02T02:59:32.890",
+      "quality_zero_rows": 2811
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+      "sha256": "e37fe3dfdbffaffdff4450e28c0accd8b11cd2bee1decb37904e8b11d7a04f78",
+      "bytes": 218880,
+      "TICID": 18878735,
+      "SECTOR": 46,
+      "pipeline": "QLP",
+      "rows": 3707,
+      "time_system": "TDB",
+      "BJDREF": 2457000,
+      "TSTART": 2551.56997631241,
+      "TSTOP": 2578.703365713646,
+      "start_utc_from_tdb": "2021-12-03T01:39:36.770",
+      "stop_utc_from_tdb": "2021-12-30T04:51:41.614",
+      "quality_zero_rows": 2891
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+      "sha256": "c07c3343d8156b2cd48c97ade930a8fad0d167e6f4ab6e59474bb141c824b3a2",
+      "bytes": 665280,
+      "TICID": 18878735,
+      "SECTOR": 71,
+      "pipeline": "QLP",
+      "rows": 10932,
+      "time_system": "TDB",
+      "BJDREF": 2457000,
+      "TSTART": 3234.0305379382175,
+      "TSTOP": 3259.9682444091627,
+      "start_utc_from_tdb": "2023-10-16T12:42:49.295",
+      "stop_utc_from_tdb": "2023-11-11T11:13:07.134",
+      "quality_zero_rows": 8121
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+      "sha256": "ac8ae83aabd8a7bd3f60de3fbad7cd73a7a7df3d7b6b01d44deb7c7b5b186fed",
+      "bytes": 650880,
+      "TICID": 18878735,
+      "SECTOR": 72,
+      "pipeline": "QLP",
+      "rows": 10701,
+      "time_system": "TDB",
+      "BJDREF": 2457000,
+      "TSTART": 3260.1812315889706,
+      "TSTOP": 3285.586080661163,
+      "start_utc_from_tdb": "2023-11-11T16:19:49.227",
+      "stop_utc_from_tdb": "2023-12-07T02:02:48.186",
+      "quality_zero_rows": 9001
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+      "sha256": "d4a7a5510b2918430fc8ce9cbbb7f44b075af39cc28bc5d1a6b86cf40e54ab08",
+      "bytes": 1152000,
+      "TICID": 18878735,
+      "SECTOR": 71,
+      "pipeline": "TESS-SPOC",
+      "rows": 11205,
+      "time_system": "TDB",
+      "BJDREF": 2457000.0,
+      "TSTART": 3234.03861827837,
+      "TSTOP": 3259.969379402399,
+      "start_utc_from_tdb": "2023-10-16T12:54:27.437",
+      "stop_utc_from_tdb": "2023-11-11T11:14:45.198",
+      "quality_zero_rows": 8772
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+      "sha256": "71faa71d960e2b17745ee914d896bbfb19296641af94e94e3f4ffbba024f2f45",
+      "bytes": 1128960,
+      "TICID": 18878735,
+      "SECTOR": 72,
+      "pipeline": "TESS-SPOC",
+      "rows": 10975,
+      "time_system": "TDB",
+      "BJDREF": 2457000.0,
+      "TSTART": 3260.186997085756,
+      "TSTOP": 3285.587215812355,
+      "start_utc_from_tdb": "2023-11-11T16:28:07.366",
+      "stop_utc_from_tdb": "2023-12-07T02:04:26.263",
+      "quality_zero_rows": 8436
+    },
+    {
+      "path": "results\\sky-plates-j0754-checks-20261108\\hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+      "sha256": "d8f3cdcc8a206f2413a8a220ccd1e577a0b3079b67534c0c9bab778f387e637d",
+      "bytes": 342720,
+      "TICID": 18878735,
+      "SECTOR": 1751,
+      "pipeline": "TESS-SPOC",
+      "rows": 3131,
+      "time_system": "TDB",
+      "BJDREF": 2457000.0,
+      "TSTART": 4055.758249539495,
+      "TSTOP": 4062.987406097802,
+      "start_utc_from_tdb": "2026-01-15T06:10:43.576",
+      "stop_utc_from_tdb": "2026-01-22T11:40:42.702",
+      "quality_zero_rows": 1502
+    }
+  ],
+  "new_photometry_or_FFI_downloaded": false,
+  "sector1751": {
+    "interpretation": "Real dedicated3I/ATLAS special pointing15\u201322January2026, not a stitched or virtual sector identifier. Local file dates match.",
+    "official_source": "https://heasarc.gsfc.nasa.gov/docs/tess/sector1751_summary.html",
+    "native_doc": "tess1751_nasa_summary.html",
+    "mission_notes": "Only about4.25science days within7.27day interval; safe-mode gaps and special processing prevent treating this as a normal27daysector."
+  },
+  "query_correction": "Filtering obs_collection=TESS returned zero because the actual target products are inHLSP. Corrected all-collection timeseries query returns8existing products. The first filtered null does not imply absentFFIs.",
+  "limitations": [
+    "TESSCut reports public available calibrated sector coverage at this exact position; absence7/34is not an astrophysical nondetection.",
+    "QLP andTESS-SPOC products in the same sector share photons and are alternative reductions, not independent observing epochs.",
+    "Existing fixed-period/sector-reduction cautions still apply; this coverage audit supplies no new precision, rotation, flare or eclipse claim."
+  ]
+}

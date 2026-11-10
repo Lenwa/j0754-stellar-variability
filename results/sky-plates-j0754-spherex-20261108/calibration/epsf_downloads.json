@@ -1,0 +1,50 @@
+[
+  {
+    "detector": 1,
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/epsf/cal-epsf-v1-2026-191/1/epsf_D1_spx_cal-epsf-v1-2026-191.fits",
+    "path": ".\\results\\sky-plates-j0754-spherex-20261108\\calibration\\epsf_D1_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "f5eacb19eb90cb96a1684e9116b85f43f615ae5724c0aa26ac0c0ed45fa309e9",
+    "seconds": 1.396026372909546
+  },
+  {
+    "detector": 2,
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/epsf/cal-epsf-v1-2026-191/2/epsf_D2_spx_cal-epsf-v1-2026-191.fits",
+    "path": ".\\results\\sky-plates-j0754-spherex-20261108\\calibration\\epsf_D2_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "7b94af0250aa7e56a9e78af34ca2c1373985926c0a0f3263218d1b0ddc94a926",
+    "seconds": 1.8301420211791992
+  },
+  {
+    "detector": 3,
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/epsf/cal-epsf-v2-2026-191/3/epsf_D3_spx_cal-epsf-v2-2026-191.fits",
+    "path": ".\\results\\sky-plates-j0754-spherex-20261108\\calibration\\epsf_D3_spx_cal-epsf-v2-2026-191.fits",
+    "bytes": 8118720,
+    "sha256": "6c753e5e322e9905fe44be6505e492f1943e3b115e5dea49b010140570dad2a1",
+    "seconds": 1.828700304031372
+  },
+  {
+    "detector": 4,
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/epsf/cal-epsf-v1-2026-191/4/epsf_D4_spx_cal-epsf-v1-2026-191.fits",
+    "path": ".\\results\\sky-plates-j0754-spherex-20261108\\calibration\\epsf_D4_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "b37cb9423746477427121e2c3b3f4b8291c1df9cadba6f770ea1a7f962748b4c",
+    "seconds": 0.8391263484954834
+  },
+  {
+    "detector": 5,
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/epsf/cal-epsf-v1-2026-191/5/epsf_D5_spx_cal-epsf-v1-2026-191.fits",
+    "path": ".\\results\\sky-plates-j0754-spherex-20261108\\calibration\\epsf_D5_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "73847447802363cbae37078d404a39f266ec3cca863461cacaae730e18facfe7",
+    "seconds": 1.814328908920288
+  },
+  {
+    "detector": 6,
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/epsf/cal-epsf-v1-2026-191/6/epsf_D6_spx_cal-epsf-v1-2026-191.fits",
+    "path": ".\\results\\sky-plates-j0754-spherex-20261108\\calibration\\epsf_D6_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "52f85faeb93d67ed2020b68a628fc947c1f0b78cbf9282ca193ec6d588ac1a36",
+    "seconds": 1.1039164066314697
+  }
+]

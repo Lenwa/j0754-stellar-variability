@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Information on Service 'Smithsonian Astrophysical Observatory Telescope Data Center TAP service'</title>
+		<meta name="robots" content="nofollow" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><link rel="stylesheet" href="/static/css/formal.css" type="text/css" /><link rel="stylesheet" href="/static/css/gavo_dc.css" type="text/css" /><script src="/static/js/jquery-gavo.js" type="text/javascript"></script><script src="/static/js/gavo.js" type="text/javascript"></script>
+  </head>
+	<body class="container"><!-- a template for a DaCHS sidebar.
+Use renderers from grend.GavoRenderMixin here -->
+<div id="sidebar">
+	<div class="sidebaritem">
+<!--		<a href="/" n:render="rootlink"&gt;  -->
+		<a>
+			<img src="/static/img/logo_medium.png" class="silentlink" alt="[Operator logo]" /></a>
+		<a href="#body" class="invisible">Skip Header</a></div>
+	<div class="sidebaritem">
+<!--
+		<div class="navimainitem" onclick="followEmbeddedLink(this)"&gt;
+			<a href="/static/help.shtml"&gt;Help</a&gt;</div&gt;
+		<div class="navimainitem" onclick="followEmbeddedLink(this)"&gt;
+			<a&gt;<n:attr name="href" n:data="serviceURL info" n:render="string"/&gt;
+				Service Info</a&gt;</div&gt;
+-->
+	
+	<div class="sidebaritem">
+		<h3>Metadata</h3>
+		<div class="explodable"><h4 class="exploHead">Identifier</h4><div class="exploBody"><span class="plainmeta">ivo://cfa.tdc/tap</span></div></div>
+		
+		<div class="explodable"><h4 class="exploHead">Description</h4><div class="exploBody"><span class="plainmeta">The Smithsonian Astrophysical Observatory Telescope Data Center's TAP end point. The Table Access
+Protocol (TAP) lets you execute queries against our database tables,
+inspect various metadata, and upload your own data. It is thus the
+VO's premier way to access public data holdings.</span>
+<span class="plainmeta">Tables exposed through this endpoint include: data_public from the echelle schema, data_public from the fast schema, data_public from the hectochelle schema, data_public from the hectospec schema, obscore from the ivoa schema, m31 from the m31_proj schema, columns, groups, key_columns, keys, schemas, tables from the tap_schema schema.</span></div></div>
+		<div class="explodable"><h4 class="exploHead">Keywords</h4><div class="exploBody"><ul class="metaEnum"><li class="metaItem"><a href="http://www.ivoa.net/rdf/uat#virtual-observatories">Virtual observatories</a></li><li class="metaItem"><a href="http://www.ivoa.net/rdf/uat#catalogs">Catalogs</a></li></ul></div></div>
+		<div class="explodable"><h4 class="exploHead">Creator</h4><div class="exploBody"><ul class="metaEnum"><li class="metaItem"><span class="plainmeta">SAO TDC</span></li><li class="metaItem"><img class="metalogo" src="http://tdc-www.harvard.edu/common/headers/sao-banner1b.gif" alt="[Logo]"/></li></ul></div></div>
+		<div class="explodable"><h4 class="exploHead">Created</h4><div class="exploBody"><span class="plainmeta">2009-12-01T10:00:00Z</span></div></div>
+		
+		
+<!--
+		<n:invisible n:render="explodableMeta"&gt;source</n:invisible&gt;
+		<n:invisible title="Reference URL" n:render="explodableMeta"&gt;referenceURL</n:invisible&gt;
+-->
+	</div>
+
+	<!--
+	<div class="sidebarnote"&gt;
+		<a href="/adql"&gt;Try ADQL</a&gt; to query our data.</div&gt;
+	-->
+
+	<div class="sidebarmicro">
+		<!--
+		<p class="breakable"&gt;Please report errors and problems to the
+			<a&gt;<n:attr name="href"&gt;mailto:<n:invisible n:render="meta"&gt;tdchelp@cfa.harvard.edu</n:invisible&gt;</n:attr&gt;site operators</a&gt;.
+			Thanks.</p&gt;
+		<p&gt;<a href="/static/doc/privpol.shtml" n:render="rootlink"&gt;Privacy</a&gt; | 
+		   <a href="/static/doc/disclaimer.shtml" n:render="rootlink"&gt;Disclaimer</a&gt;</p&gt;
+		<p n:render="authinfo"/&gt;
+		-->
+	</div>
+
+	</div>
+</div>
+<div id="body"><a name="body"></a>
+
+		<h1>Information on Service 'Smithsonian Astrophysical Observatory Telescope Data Center TAP service'</h1>
+
+		<div class="wrapuseservice">
+			
+		</div>
+
+		<div class="metadescription">
+			<span class="plainmeta">The Smithsonian Astrophysical Observatory Telescope Data Center's TAP end point. The Table Access
+Protocol (TAP) lets you execute queries against our database tables,
+inspect various metadata, and upload your own data. It is thus the
+VO's premier way to access public data holdings.</span>
+<span class="plainmeta">Tables exposed through this endpoint include: data_public from the echelle schema, data_public from the fast schema, data_public from the hectochelle schema, data_public from the hectospec schema, obscore from the ivoa schema, m31 from the m31_proj schema, columns, groups, key_columns, keys, schemas, tables from the tap_schema schema.</span>
+		</div>
+
+		<p>For a list of all services and tables belonging to this service's 
+			resource, see <a href="/browse/__system__/tap">Information on resource '__system__/tap'</a></p>
+
+		
+			<h2 class="section" id="svcdoc">Service Documentation</h2>
+
+			<p>This service speaks TAP, a protocol designed to allow the exchange of
+queries and data between clients (that's normally something running on your
+computer) and servers (e.g., us).</p>
+<p>You will want to use some sort of client to query TAP services;
+examples for those include:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a> (see in the &quot;VO&quot; menu)</li>
+<li><a class="reference external" href="http://saada.unistra.fr/taphandle/?url=http://oirsa.cfa.harvard.edu:8080/tap">TAPHandle</a> (following this link should bring you to a page
+that lets you query this server) works completely within your
+browser,</li>
+<li><a class="reference external" href="https://github.com/pyvirtobs/pyvo">pyVO</a> (for VO support in python programmes)</li>
+</ul>
+<p>You can, in a pinch, use our service in an XML-enabled browser, too.
+Under <a class="reference external" href="#overview">Overview</a>, look for the bullet point on tap and
+follow the link to &quot;this service&quot;. Then, click on &quot;New job...&quot;
+in the job list, enter your query, click &quot;Set query&quot;, then
+&quot;Execute query&quot;.  Reload the page you are redirected to now
+and then to see when your job is finished, then retrieve the result.</p>
+<p>The queries this service executes are written an a dialect of SQL called
+ADQL.  You need to learn it to use this service.  See
+<a class="reference external" href="http://docs.g-vo.org/adql">our ADQL tutorial</a>.  Also do not miss the <a class="reference external" href="http://oirsa.cfa.harvard.edu:8080/__system__/tap/run/tap/examples">local examples</a>.</p>
+<p>By the way, for quick ad-hoc queries from within a browser,
+our <a class="reference external" href="http://oirsa.cfa.harvard.edu:8080/__system__/adql/query/form">ADQL form service</a> may be more convenient than TAP.</p>
+<p>Also see the <a class="reference external" href="http://oirsa.cfa.harvard.edu:8080/__system__/dc_tables/list/form">table metadata</a> of the tables exposed here.</p>
+<p>Local information: This service may put a much lower limit on
+uploads in sync queries than advertised in the table metadata.
+Unfortunately, current TOPCAT versions don't give terribly helpful error
+messages when the server rejects a query because the attached upload is
+too large (something like “Error writing request body to server“).
+If that happens to you, just switch to asynchronous querying (in TOPCAT,
+that's in the “Mode” combo box just above the query editor).</p>
+<div class="section" id="issues">
+<h4>Issues</h4>
+<p>For information on our ADQL implementation, see the
+<a class="reference external" href="/__system__/adql/query/info">ADQL service info</a>.</p>
+<p>If multiple output columns in a query would end up having the same name,
+in the output VOTable they are disambiguated by appending underscores.
+This is in violation of the specification, but since fixing it would
+require rather intrusive changes into our software and it is not
+clear why one should want to use names when they are not unique to begin
+with, this will probably not be fixed.</p>
+</div>
+
+		
+
+		<h2 class="section" id="overview">Overview</h2>
+
+		<p><strong>You can access</strong> this service using:</p>
+		<ul><li>
+				<em>dali</em> --
+					a complex interface consisting of multiple endpoints (sync, async, perhaps tables or examples, and possibly more).  This is used, in particular, for TAP.  You will usually need a client programme to use this.  In such clients, you can find this service by its IVOID, <code>ivo://cfa.tdc/tap</code>, or access it by entering its base URL <code>http://oirsa.cfa.harvard.edu:8080/__system__/tap/run</code> directly.  Using an XSL-enabled web browser you can, in a pinch, also operate <a href="http://oirsa.cfa.harvard.edu:8080/__system__/tap/run/async">the service</a> asynchronously without a specialized client.</li><li>
+				<em>sync</em> --
+					a renderer with some custom access method that should be mentioned in the service description</li><li>
+				<em>async</em> --
+					a renderer with some custom access method that should be mentioned in the service description</li></ul>
+
+		<div id="publications">
+			
+			
+				<p>This service is <strong>published</strong> as follows:</p>
+				<ul><li>Within the
+						set(s) <em>ivo_managed,local</em> with the renderer
+						<em class="renderer">dali</em></li><li>Within the
+						set(s) <em></em> with the renderer
+						<em class="renderer">examples</em></li></ul>
+				<p><em>local</em> means it is listed on our front page, 
+				<em>ivo_managed</em> means
+				it has a record in the VO registry.</p>
+	
+			
+
+		</div>
+
+		
+
+		
+
+
+		<div id="inputs">
+			<h2 id="svci-inputs" class="section">Input Fields</h2>
+			<p>The following fields are available to provide input to the service
+			(with some renderers, some of these fields may be unavailable):</p>
+			<table class="shorttable"><tr><th>Name</th><th>Table Head</th>
+					<th>Description</th><th>Unit</th><th>UCD</th></tr><tr class="notIndexed">
+					
+					<td>format</td>
+					<td>Format</td>
+					<td>Deprecated alias of RESPONSEFORMAT</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>lang</td>
+					<td>Lang</td>
+					<td>A name of a language that QUERY should be parsed as. See capabilities for what you can pass in here.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>maxrec</td>
+					<td>Match limit</td>
+					<td>Maximum number of records returned. Pass 0 to retrieve service parameters.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>maxrec</td>
+					<td>Match limit</td>
+					<td>Maximum number of records returned. Pass 0 to retrieve service parameters.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>query</td>
+					<td>Query</td>
+					<td>The query to be executed.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>request</td>
+					<td>Request</td>
+					<td>Type of operation requested; this can be doQuery or getCapabilities. Preferably, don't pass it at all.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>responseformat</td>
+					<td>Output Format</td>
+					<td>File format requested for output.</td>
+					<td>N/A</td>
+					<td>meta.code.mime</td>
+				</tr><tr class="notIndexed">
+					
+					<td>responseformat</td>
+					<td>Output Format</td>
+					<td>File format requested for output.</td>
+					<td>N/A</td>
+					<td>meta.code.mime</td>
+				</tr><tr class="notIndexed">
+					
+					<td>upload</td>
+					<td>Upload</td>
+					<td>A TAP-compliant upload; roughly: (tablename,source-uri), where source-uri can also have a param: scheme.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>verb</td>
+					<td>Verbosity</td>
+					<td>Exhaustiveness of column selection. VERB=1 only returns the most important columns, VERB=2 selects the columns deemed useful to the average user, VERB=3 returns a table with all available columns.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>verb</td>
+					<td>Verbosity</td>
+					<td>Exhaustiveness of column selection. VERB=1 only returns the most important columns, VERB=2 selects the columns deemed useful to the average user, VERB=3 returns a table with all available columns.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr><tr class="notIndexed">
+					
+					<td>version</td>
+					<td>Version</td>
+					<td>Don't use this parameter. You'll only break stuff.</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr></table>
+		</div>
+
+		
+
+		
+
+		
+
+
+		<p>
+			<a href="/getRR/__system__/tap/run
+				">
+				VOResource XML</a> (that's something exclusively for VO nerds)
+		</p>
+
+		<dl class="footnotes"></dl>
+	<footer style="clear:both" xmlns="http://www.w3.org/1999/xhtml">
+<p>Please report errors and problems to the
+			<a href="mailto:tdchelp@cfa.harvard.edu">site operators</a>.
+			Thanks.</p>
+</footer></div></body>
+</html>

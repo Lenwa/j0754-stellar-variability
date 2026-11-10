@@ -1,0 +1,110 @@
+J0754: primary-literature mechanism assessment
+8 November 2026; bounded literature work for the SPHEREx stage
+Target: DASCH J075445.9+164141 = ASASSN-V J075445.83+164141.1 = ASAS J075446+1641.7 = 2MASS J07544588+1641407 = Gaia DR3 667401913089980544 = TIC 18878735
+Position supplied by parent investigation: RA 118.69117410685, Dec +16.694621231895 degrees.
+
+OUTCOME AND ATTRIBUTION
+
+The best-supported next causal comparison is an active giant whose photosphere/magnetic structure changes, versus variable line-of-sight obscuration. No unique mechanism is established. This is a qualitative research priority, not a numerical posterior or a claim that dust has been disproved.
+
+Direct published target evidence remains Tang et al. (2010): an active K2III-like spectrum and historical fading. A later primary paper explicitly places Tang's three objects alongside overactive K giants, but it does not report new J0754 observations. That bridge is useful and was missing from the earlier bibliography-only discussion: Oláh et al. (2013, 2014) argue by analogy that Tang's objects may be active stars. Their interpretation must remain attributed to them, rather than presented as a confirmed RS CVn classification for J0754.
+
+Inputs from the earlier local investigation, not measurements newly made here: modern optical/MIR fading and partial recovery; comparison-supported ASAS 2004–2007 fading/recovery; unstable exact-35.92-day photometric template; Gaia candidate SB1; conflicting/cautioned Gaia atmosphere/evolution results. Paths:
+- results/sky-plates-j0754-dust-20261108/literature/j0754_literature_audit.txt
+- results/sky-plates-j0754-models-20261108/report.txt
+Those retained native catalogues and original measurements are authoritative for their numerical claims. This stage retrieved no new photometric catalogue and fitted no new stellar spectrum.
+
+DIRECT TARGET REPORTS VERSUS ANALOGS
+
+1. Tang, Grindlay, Los & Laycock (2010), ApJL 710 L77–L81, DOI 10.1088/2041-8205/710/1/L77.
+Primary source: https://hea-www.harvard.edu/DASCH/papers/apjl_710_1_77.pdf
+Preprint: https://arxiv.org/abs/1001.1395
+Direct target. J0754's sharper fading/slower recovery motivates their suggestion of irregular ejected obscuring layers. The spectrum is K2III-like, hydrogen bearing and chromospherically active. Crucially, its historical major fade has no red/yellow plates; J0830's reddening and NIR argument cannot be reassigned to J0754. The paper's short-period RV/RS CVn discussion is specifically about J0736. Nuclear-shell alternatives in the shared discussion are hypotheses, not observed lithium or a securely known evolutionary state for J0754. Tang's 2012 dissertation reuses this work and is not an independent follow-up.
+Thesis: https://dasch.cfa.harvard.edu/publications/thesis_bound_20120510.pdf
+
+2. Oláh, Moór, Strassmeier, Borkovits & Granzer (2013), Astronomische Nachrichten 334, 789–801, DOI 10.1002/asna.201211846.
+Primary source: https://arxiv.org/abs/1301.3435 ; full PDF saved.
+Analog study, with explicit citation/comment on Tang's stars. Three early-K giant SB1 systems show long-term activity-related variability with differing synchronization states. Two have SEDs consistent with photospheres; cycles near 10 and 5–6 years occur in two systems. This establishes that years of brightness changes, early-K giant spectra and an SB1 can coexist without a required detected dust excess. It supplies no J0754 orbit, cycle or atmospheric measurement.
+
+3. Oláh, Moór, Kővári, Granzer, Strassmeier, Kriskovics & Vida (2014), A&A 572 A94, DOI 10.1051/0004-6361/201424695.
+Primary source: https://arxiv.org/abs/1409.6515 ; full PDF saved.
+Analog study of IL Hya, XX Tri and DM UMa: 0.65–1.05 mag changes over decades. They explicitly compare the Tang giants, including similar reported low metallicities. Their multicolor analysis finds temperature changes alone insufficient for their stars; they suggest magnetic/structural radius changes, with approximately 9% inferred for IL Hya, at marginal significance. DM UMa shows large long-term brightness changes with little B−V change. These are author interpretations of other stars, not J0754 radius or mechanism detections. The paper's exclusion of dust from the analogs' lack of IR excess is not a universal veto of small or cold line-of-sight clouds.
+
+4. Soszyński et al. (2021), ApJL 911 L22, DOI 10.3847/2041-8213/abf3c9.
+Primary source: https://arxiv.org/abs/2103.12748 ; full PDF saved.
+Population analog. In a deliberately selected set of approximately 700 LSP variables with stable, well-sampled infrared variability, about half show secondary infrared minima. Authors interpret these as dusty material co-orbiting with a companion, hidden behind the giant at secondary eclipse. The diagnostic is repeatable phase-linked optical/infrared/RV geometry, not an IR measurement alone. It does not classify J0754 as an LSP star.
+
+5. Decin, Vermeulen, Esseldeurs, Driessen, Landri, Dionese, Siess & Skowron (2025), A&A, DOI 10.1051/0004-6361/202557634.
+Primary source: https://arxiv.org/abs/2510.24281 ; full PDF saved.
+Physical model for LSP analogs. It treats typical periods 500–1500 days, companions 0.08–0.25 Msun, separations 1.5–3 AU and luminous AGB-like dust-formation environments. Eccentric orbits plus time spent in dust are proposed to explain several population constraints. The class still has competing physical interpretations. Its parameter regime cannot simply be transferred to a purported 35.92-day orbit around a much less luminous K giant. J0754 has neither a validated LSP nor the phase-linked secondary infrared eclipse used in this argument.
+
+6. Rodriguez et al. (2016), AJ 151 123, DOI 10.3847/0004-6256/151/5/123.
+Primary source: https://arxiv.org/abs/1601.00135
+Disk-eclipse analog TYC 2505-672-1: repeated approximately 3.45-year, 4.5-mag eclipses separated by about 69 years, with bright/faint SED evidence for an extended opaque disk around a hot companion. It demonstrates that multiyear obscuration of an evolved star is physically possible. Its repeat eclipses and component SED evidence are substantially stronger than the current J0754 evidence; J0754's sparse possible 1892 feature and failed 912-day model do not establish an analogous ephemeris.
+
+7. Palacios, Charbonnel & Forestini (2001), A&A 375 L9–L13, DOI 10.1051/0004-6361:20010903.
+Primary source: https://arxiv.org/abs/astro-ph/0106441 ; full PDF saved.
+Mechanism proposal, not target observation. Their lithium-flash scenario concerns RGB-bump lithium enrichment and temporary luminosity/mass-loss changes that could form dust. J0754 has no usable Li abundance or secure RGB-bump placement in our evidence. A lithium detection would motivate abundance/evolution tests, but would not uniquely prove this trigger.
+
+8. Denissenkov, Blouin, Herwig, Stott & Woodward (latest version 2024), "Enhanced extra mixing in low-mass stars approaching the RGB tip and the problem of Li-rich red-clump stars."
+Primary source: https://arxiv.org/abs/2309.04634v2
+Modern alternative mixing theory emphasizes that Li-rich giants' evolutionary states are ambiguous without asteroseismology and proposes enhanced RGB-tip mixing. This reinforces why Li-rich, RGB bump, He flash and early-AGB hypotheses should not be treated as interchangeable diagnoses. This paper is background, not a J0754 analysis.
+
+9. Petz & Kochanek (2025), MNRAS 539, 1065–1076, DOI 10.1093/mnras/staf587.
+Primary source: https://arxiv.org/html/2501.14058v1
+And Petz et al. (2025), OJAp 8, DOI 10.33232/001c.146690:
+https://astro.theoj.org/article/146690-the-unhurried-universe-a-continued-search-for-long-term-variability-in-asas-sn
+Population context. These broad ASAS-SN searches find slow variables distributed among multiple stellar groups and classifications; they cite the Tang/active-giant work. Their target lists have magnitude and isolation selection boundaries. No J0754 inclusion or dedicated causal diagnosis was verified here. A catalogue classification such as SR, ROT or MISC is not a mechanism measurement. Parent archive team was notified of the candidate tables to avoid duplicate retrieval.
+
+CAUSAL COMPARISON: OUR INFERENCE FROM THOSE SOURCES AND LOCAL DATA
+
+Candidate family | What currently favors it | What would strengthen it | What would weaken the particular explanation
+
+Magnetic photosphere / changing spots, faculae and possibly stellar structure | Direct historical Ca H/K activity; compatible modern spectral-change models; close empirical active-K-giant analogs; lack of a permanent 35.92-day light waveform is compatible with evolving surface patterns | Bright/faint changes in temperature-sensitive photospheric lines or molecular bands, activity indices, line profiles/bisectors and changing rotational modulation; stable orbital RV separated from line distortions | Repeatable fading with unchanged temperature-sensitive normalized spectrum, accompanied by independent extinction/scattering/circumstellar evidence. Activity by itself is common and would not prove causation.
+
+Ejected/clumpy dust or nonuniform covering | Tang's morphology-motivated suggestion; modern partial-covering family survives the model comparison | State-linked extinction behavior, variable circumstellar absorption/scattering polarization, or thermal excess that changes with optical state; physical dust-emission/covering model across optical through MIR | Clean photospheric temperature/activity changes explaining the full broad SED evolution without obscuration. A null warm excess alone is weak for a small cloud. The already-disfavored uniform-screen model is only one dust geometry.
+
+Binary-related activity or secular obscuration | Gaia candidate SB1 is a real catalogue lead; active giant binary analogs exist | Independent repeated RV curve with line-shape checks; an inclination/component solution consistent with temperatures, sizes and luminosity; photometric/IR changes tied reproducibly to orbital or secular geometry | Failure of RV coherence or shifts correlated with line asymmetry. A real close binary would still not identify which process causes the slow fade.
+
+Wide companion with disk | Multiyear disk eclipses exist in primary literature | Repeat timing/shape plus a disk or second-component spectrum and a dynamically adequate orbit | Continued irregular changes without recurrent geometry; failure of companion/SED constraints. It remains possible but has no direct J0754 disk evidence.
+
+Ordinary pulsation | K giants can be variable; broad catalogue labels may include pulsators | A repeatable temperature–radius–velocity phase relation and physically consistent mode/time scale | Years-long noncoherent envelope with none of the required photospheric or velocity changes. A multi-year trend is not automatically a normal radial mode.
+
+Nuclear/evolution-triggered event | Proposed by Tang; could in principle drive atmospheric/mass-loss effects | Secure gravity/mass/evolution state; Li and C/N/isotopic abundances; a quantitatively relevant stellar model | A stable recurring activity pattern, or a reliable evolutionary placement inconsistent with the specific event. Present conflicting Gaia outputs cannot select a nuclear mechanism.
+
+No entry receives a probability. These processes can coexist: a binary can maintain activity; activity or pulsation can help mass loss; dust can then obscure. Establishing one link does not establish the entire chain.
+
+CONDITIONAL SCALE CHECKS: NOT A CONFIRMED ORBIT OR STELLAR SOLUTION
+
+Calculations and assumptions are fully retained in conditional_scales.json. Using the published Gaia candidate P=35.9204566 d, K=10.7245 km/s and e=0.022975 gives f(M)=0.004587 Msun and a1 sin i=0.03540 AU.
+
+For illustrative primary masses 1.0 / 1.5 / 2.6 Msun, the edge-on minimum companion masses are 0.186 / 0.240 / 0.341 Msun, and the relative semimajor axes 0.226 / 0.256 / 0.305 AU. The mass grid deliberately spans uncertainty; 2.6 Msun is the cautioned FLAME number, not an adopted result. Lower inclination raises the companion mass.
+
+At illustrative R=9.25 Rsun, circular relative velocities are 68–92 km/s and one stellar diameter crosses in 1.61–2.18 d. A simple compact recurring eclipse at this period cannot itself last continuously for years. A nearly all-around structure, larger circumbinary/wider material, precession or secular density changes would be additional hypotheses. For the same radius, synchronous equatorial rotation is 13.0 km/s; Tang's approximately 25 km/s chromospheric proxy with about 0.5 dex uncertainty cannot validate or reject synchronization.
+
+At illustrative L=54.64 Lsun, isolated zero-albedo blackbody grains have T approximately 1370–1593 K at those candidate orbital radii. The radius at T=1500 K is 0.2545 AU (0.398 AU at 1200 K; 0.177 AU at 1800 K). This places a simplistic near-orbit dust hypothesis near a thermal boundary, not beyond a proven exclusion. Real grain absorption/emission, gas shielding and structure matter; the input luminosity is also cautioned. Do not infer dust composition or survival from this alone.
+
+The modern g=+0.312 / W1=+0.1175 / W2=+0.08875 mag changes correspond to flux ratios 0.750 / 0.897 / 0.922; historical 1 mag corresponds to 0.398. Pure gray loss of one unchanging component does not reproduce these differing modern ratios. If interpreted solely as a fixed-temperature whole-surface area change, the g fade would imply Rf/Rb=0.866, but that same pure area model is contradicted by the smaller IR fade. The mixed temperature/scale model is not a direct radius measurement.
+
+A small cloud can have a large observed covering fraction but tiny global energy budget. An opaque absorbing clump with projected area 25% of the stellar disk at 1 AU intercepts only A/(4 pi r^2)=1.16e-4 of stellar luminosity at R=9.25 Rsun. This geometric example explains why "25% of our observed optical flux is lost" does not require "25% of all stellar light is re-radiated." It is not a fit to the wavelength-dependent data and excludes neither scattering nor an extended disk/shell.
+
+MEASUREMENTS THAT MOST DIRECTLY RESOLVE THE CAUSE
+
+1. Paired bright/faint normalized optical spectra plus simultaneous calibrated broad photometry. Temperature/spot-sensitive line ratios and molecular bands, Ca H/K or other activity diagnostics, H-alpha, line bisectors, v sin i and consistent continuum SEDs can distinguish changes of the visible atmosphere from a simple multiplicative extinction law. One static mean XP spectrum cannot do this. The usable modern color-model gaps are small and require control of calibration and actual brightness state.
+
+2. Validate the 35.92-day RV candidate independently across several cycles, while recording line shapes and activity. Coherent photospheric Doppler motion with no matching bisector disturbance would strengthen the companion interpretation. A stable orbit could coexist with changing rotation-related light patterns. A failed photometric template is not an orbit rejection.
+
+3. Extract SPHEREx with calibration/comparison checks and match each 2025/2026 visit to optical brightness. Use it to test later photospheric shape, cool-component contamination and possible excess/absorption structure. Two separated infrared observing windows cannot supply a validated orbital secondary-eclipse curve or recreate the missing 2022 spectrum.
+
+4. If new data indicate obscuration, compare optical/NIR/MIR energy and color changes with geometry rather than demanding an infrared brightening. A decrease in W1/W2 can accompany obscuration of the photosphere. Polarization and changing narrow circumstellar absorption would be additional evidence, with geometry-dependent null results.
+
+5. Determine gravity/evolutionary state and Li/C/N/isotopic abundances before investing in a nuclear-flash interpretation. A secure stellar atmosphere also narrows the atmosphere/spot model nuisance ranges. No existing failed LAMOST extraction supplies these diagnostics.
+
+SEARCH BOUNDARIES AND PRESERVATION
+
+Web searches covered exact/full and short coordinate aliases, ASAS and 2MASS aliases, Gaia ID, Tang's title and citing-paper phrases; targeted primary searches covered overactive K giants, RS CVn, lithium flash, LSP dust/binaries and multiyear disk eclipses. Search engine result absence is not an exhaustive literature null. ADS's citations endpoint could not be accessed by the web tool; therefore this is NOT a complete ADS citation audit. VSX's native web search endpoint was inaccessible and no current VSX remarks/classification were verified. Broad 2025 slow-variable tables were flagged to the parent archive team, not cross-matched here. Unrelated short-name J0754 quasars were rejected.
+
+Five public PDFs were downloaded after sandbox DNS failure, using approved public-network access into this results folder only. Checksums/byte counts and bibliography/query notes are in literature_receipt.json. No source repository files, accounts, contacts, paid requests, observing bookings, publication or remote push were used. This report is a locally saved research result, not a source commit or online backup.
+
+
+FOLLOW-UP POINTER: uv_xray_mechanism_update.txt adds native UV/X-ray association checks, conditional luminosities, and a visually verified direct J0754 atmosphere label in Tang's 2011 poster. The original assessment above precedes this find; retain that later evidence and its conference-poster limitations.

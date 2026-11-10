@@ -1,0 +1,43 @@
+J0754: testing the catalogue 912-day cycle — 8 November 2026
+
+RESULT: The stable dominant 912.3158778-day model fails on the longer modern record. This period does not describe the main fading and recovery. A weaker or changing component remains possible.
+
+Kyle authorized Ari’s proposed test, submitted as “Ok, test whether J0754 really follows that 912-day cycle. -Ari”. The protocol was saved before period fitting, while the broad modern trend was already known. Prediction tests are retrospective temporal tests, not blind future observations.
+
+Inputs are unchanged saved observations. The primary test uses g data from 2019 onward, separate from the older catalogue V sample. ASAS-SN supplies 3,601 accepted detections, reduced to 299 fixed 30-day bins; ZTF supplies 342 differential points, reduced to 55 bins. Daily medians precede time binning. Camera offsets are single constants across all cycles. There is no year/cycle centering, brightness clipping or detrending before fitting. V and g are never mixed.
+
+A stable clock gets free phase and amplitude and either one or two harmonics. Either model may pass; extra flexibility cannot invalidate a successful simpler waveform. The null is a constant per camera. Ninety-day blocks are held out across all cameras together. Forward tests fit before 2023 and predict later observations without phase/amplitude/offset refitting.
+
+ASAS-SN g
+  one_harmonic: 3.40% of camera-centered binned variance explained; blocked-CV RMSE gain -6.50%; forward RMSE gain +1.74%. Negative gains mean worse predictions than the camera constants.
+  two_harmonics: 7.90% of camera-centered binned variance explained; blocked-CV RMSE gain -12.69%; forward RMSE gain -18.56%. Negative gains mean worse predictions than the camera constants.
+  Same-phase replay: 75 unique same-camera pairs separated by two periods, within 15 days. RMS difference 0.1512 mag; median absolute difference 0.1485 mag.
+  Conditional sampling experiment recovered 200/200 stable 0.30-mag peak-to-peak sinusoids under the declared 0.05-mag noise model. Simulated replay RMS 95th percentile: 0.0834 mag. This is power under assumed signals/noise, not an observed false-alarm probability.
+  Exploratory single-harmonic scan maximum: 4190 days, only 0.68 cycles across the observing span. This is not a measured replacement period.
+
+ZTF g
+  one_harmonic: 3.74% of camera-centered binned variance explained; blocked-CV RMSE gain -7.84%; forward RMSE gain -2.02%. Negative gains mean worse predictions than the camera constants.
+  two_harmonics: 8.06% of camera-centered binned variance explained; blocked-CV RMSE gain -15.26%; forward RMSE gain -25.33%. Negative gains mean worse predictions than the camera constants.
+  Same-phase replay: 14 unique same-camera pairs separated by two periods, within 15 days. RMS difference 0.1638 mag; median absolute difference 0.1745 mag.
+  Conditional sampling experiment recovered 199/200 stable 0.30-mag peak-to-peak sinusoids under the declared 0.05-mag noise model. Simulated replay RMS 95th percentile: 0.0939 mag. This is power under assumed signals/noise, not an observed false-alarm probability.
+  Exploratory single-harmonic scan maximum: 3427 days, only 0.72 cycles across the observing span. This is not a measured replacement period.
+
+Two periods are almost exactly five years, so the repeat-phase comparison also nearly matches the observing season. A post-result check tightens matching to five days: 37 ASAS-SN pairs still differ by a median absolute 0.146 mag, and 7 ZTF pairs by 0.158 mag. These pairs share temporal/systematic effects and are not counted as independent significance measurements.
+
+Individual ASAS-SN camera fits explain only 3–14% of variance, so the weak shared model is not merely a camera-offset failure. Stricter error/seeing screens and 15/60-day bins preserve the weak fit. A ±10% period adjustment, selected on training observations only, does not produce useful later forecasts.
+
+A five-knot slow reference with the same parameter count as the two-harmonic clock explains 76%/87% of the ASAS-SN/ZTF binned variance and interpolates held-out time blocks better. Its future knot values cannot be learned from pre-2023 data, so it is explicitly not given an extrapolation forecast. A regression test guards this limitation. Slower variation is favored descriptively; recurrence and a replacement period remain unestablished.
+
+The old 222-point V sample is not independent validation. Our one/two-harmonic fits explain 8.5%/19.7% of its binned variance. We have not reproduced the catalogue’s full original multi-algorithm/Supersmoother pipeline. The catalogue paper searched periods from 0.05 to 1,000 days; this makes longer scales absent from that original search, but does not establish why this star received its particular period. Its classification probability is not a probability that the period is correct.
+
+At 21:59 UTC, Kyle supplied Gemini’s earlier qualitative assessment identifying the mismatch between the multi-year curve and a 912-day cycle. The numerical test agrees with that reading. Its assessment used the same supplied observational picture. Cross-survey agreement strongly weakens a ZTF-specific artifact explanation; it does not eliminate every possible systematic or identify the physical cause.
+
+Validation: all 34 numerical tests pass. An independent AI reviewer rebuilt all bins from native inputs, reproduced H1/H2 fits, blocked and forward scores, and every replay pair. No forecast-training bin contained post-cut observations. No material defect was found. All three input hashes still match the pre-fit protocol. The figure was visually inspected.
+
+Maintained source: tools/sky-plates. Source and tests remain in the existing repository; this result directory holds protocols, retained bins, metrics and figures. Existing GitHub Desktop registration is reused, previously visibly verified in this chat. Scoped local commit and exact hashes are recorded in source_state.json/file_manifest.json. No push or publication.
+
+Primary sources:
+ASAS-SN catalogue methods: https://arxiv.org/html/1809.07329v2#S3.SS2
+Catalogue target: https://asas-sn.osu.edu/variables/05a882b3-3477-5b94-b81b-17a186f6b4c1
+Native newer photometry: https://asas-sn.osu.edu/sky-patrol/coordinate/d2c2ad05-c9a6-4362-93ac-523c2584d094
+Periodogram interpretation: https://docs.astropy.org/en/stable/timeseries/lombscargle.html

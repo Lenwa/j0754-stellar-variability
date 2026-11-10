@@ -1,0 +1,14 @@
+{
+  "definition": "Toy first-moment upper bound only. A symmetric unspotted line-weight distribution has centroid0; remove positive weight fraction d entirely from velocities with abs(v)<=vmax, yielding abs(deltaRV)<=d*vmax/(1-d). Necessary d>=K/(K+vmax) to reach K. Gaia cross-correlation velocities, line-contrast changes, convection and pulsation need not obey this pure-dark-removal model. vmax values assume36day rotation and luminosity-derived radii, edge-on.",
+  "not_a_measurement": "Photometric peak-to-peak amplitude is NOT total deficit from unspotted star. No exclusion of activity or validation of orbit follows.",
+  "values": [
+    {
+      "assumed_max_projected_rotation_kms": 12.7992125,
+      "minimum_removed_line_weight_fraction": 0.4559010219731679
+    },
+    {
+      "assumed_max_projected_rotation_kms": 17.1288909,
+      "minimum_removed_line_weight_fraction": 0.3850332836690245
+    }
+  ]
+}

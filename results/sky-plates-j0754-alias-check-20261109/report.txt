@@ -1,0 +1,26 @@
+J0754 cadence / annual-alias check, 9 November 2026
+
+Outcome: the existing approximately 36-day photometric timescale is better supported than its simple yearly aliases. This strengthens identification of a recurring stellar timescale, not the claim that the Gaia RV variation is orbital or that tides cause the long dip.
+
+Existing work already searched 10–100 days, allowing independent seasonal amplitudes/phases, with block-sign correlated-noise sensitivities. This diagnostic adds the exact annual-alias comparison and noiseless injection cross-talk, not a new broad period discovery.
+
+Exact periods: Gaia 35.9204566 d; annual-frequency-plus 32.7041699 d; annual-frequency-minus 39.8383535 d; half 17.9602283 d; double 71.8409132 d; synodic lunar 29.53059 d.
+
+Equal-season mean fractional nuisance-SSE reduction:
+                 Gaia      annual+    annual-    half       double     lunar
+ASAS-SN          .308749   .150445    .106370    .017039    .020597    .024532
+ZTF              .559482   .154899    .287144    .054395    .151688    .166118
+
+Gaia period exceeds both annual aliases in 7/9 ASAS-SN seasons and 5/6 ZTF seasons. Deleting any one season still leaves a positive average margin over each remaining season's stronger annual alias: minimum .098643 for ASAS-SN, .209403 for ZTF. These are descriptive comparisons, not calibrated significance.
+
+Noiseless unit-amplitude 35.9205-day signals were injected on actual selected sampling, with 16 reproducible random phases per season and the identical nuisance projection. Explained fraction at true period is 1.000; at annual+ / annual- it averages .2403 / .2398 for ASAS-SN and .2013 / .2085 for ZTF. Conversely, injecting either annual alias produces only approximately .24–.25 ASAS-SN or .19–.21 ZTF power at the Gaia period. Thus ordinary sampling does not make these clocks observationally identical. The retained annual sampling-window structure can generate secondary peaks, but the 36-day preference is not merely an equality among these aliases.
+
+Limitations: this is a bounded family of sinusoidal aliases. It does not exclude arbitrary time-correlated instrumental behavior, evolving spots, or aliases of other true frequencies. Signals at 71.84 days with two similar active longitudes can place their dominant second harmonic at 35.92 days: the weak pure 71.84-day sinusoid does not rule that out. Half-period and double-period fits here each have only one sinusoidal pair, not unequal-complexity harmonic models. A lunar-frequency comparison is not proof that all moon-dependent systematics are absent. Seasonal phase freedom deliberately removes long-term phase coherence as a discriminator. ASAS-SN and ZTF independent hardware reduce, but do not mathematically eliminate, common seasonal-window concerns.
+
+The prior best photometric periods (35.78 / 36.30 d) differ from the candidate orbital period by about -0.40% / +1.06%; those are selected grid peaks, not precise rotation measurements with uncertainties. Individual season maxima cannot measure differential rotation without a model of spot evolution, period uncertainties and alias selection. The weakest 2024/25 season instead favors other tested clocks; the combined result is not universal season-by-season stationarity.
+
+Matching an active star's photometric and spectroscopic period is double-edged: it is consistent with synchronization if the spectroscopic motion is orbital, but activity can also perturb line centroids at the rotation period. Gaia's individual epoch RVs and line profiles are not released for this source, so this diagnostic cannot distinguish those causal explanations. Independent high-resolution RVs and bisector/activity diagnostics remain the critical missing test.
+
+Artifacts: results.json includes every seasonal score, spans, window diagnostics, injection matrices and input hashes. Source is check_rotation_aliases.py; tests test_rotation_aliases.py; guide rotation_aliases_README.md in existing maintained tools/sky-plates component. Three dedicated tests pass. Original data untouched; no downloads/contact/publication.
+
+Verification: 121 component tests passed; three new tests rerun after adding JSON leave-one-season summaries. Independent scientific/code review found no blocking issue. Scoped commit 8e099023d76b161aac8edaa0be3bdca1cd9abf96. Own source files clean; unrelated changes preserved. No push. Results remain outside source Git; source hashes in verification.json.

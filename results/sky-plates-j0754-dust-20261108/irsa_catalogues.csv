@@ -1,0 +1,5 @@
+table_name,description
+fp_psc,2MASS All-Sky Point Source Catalog (PSC)
+allwise_p3as_psd,AllWISE Source Catalog
+allwise_p3as_mep,AllWISE Multiepoch Photometry Table
+neowiser_p1bs_psd,NEOWISE-R Single Exposure (L1b) Source Table

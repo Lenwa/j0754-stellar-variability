@@ -1,0 +1,76 @@
+WARNING: Unexpected bytes trailing END keyword: '\x00'; these bytes will be replaced with spaces on write. [astropy.io.fits.header]
+{
+  "primary": {
+    "delta_2008minus2009_A": 0.48046555555830583,
+    "sigma_formal_A": 0.08453190094045518,
+    "formal_ratio_not_discovery_sigma": 5.683837110166834,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3298977573057602,
+        "sigma_formal": 0.12607016399104104,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3174615068442224,
+        "sigma_formal": 0.05593334317501194,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8432140765166855,
+        "sigma_formal": 0.0488885057527996,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.017808917850010073
+      },
+      "2009-11-19": {
+        "ew": 0.4183627932739016,
+        "sigma_formal": 0.08515724397507636,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 1.0253986391570211,
+        "sigma_formal": 0.12623661271267064,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3396442748653142,
+        "sigma_formal": 0.05500396568942877,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.180060834861707,
+        "sigma_formal": 0.05810933597133951,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.208248910693942,
+        "sigma_formal": 0.05865884327589847,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  "beta_required": 0.016754784065521718,
+  "alpha_required": 0.5698025791304475,
+  "MC": [
+    {
+      "file": "0123.N2211330177.ms.fits",
+      "draws": 800,
+      "predicted_sigma_A": 0.12607016399104104,
+      "empirical_sigma_A": 0.12597416675166453,
+      "mean_minus_measured_A": -0.000636859854047156
+    },
+    {
+      "file": "0146.N2211330177.ms.fits",
+      "draws": 800,
+      "predicted_sigma_A": 0.0794498547860735,
+      "empirical_sigma_A": 0.08095209661800444,
+      "mean_minus_measured_A": -0.005452724738014059
+    }
+  ]
+}

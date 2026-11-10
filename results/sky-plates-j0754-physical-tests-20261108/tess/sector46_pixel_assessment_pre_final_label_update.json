@@ -1,0 +1,69 @@
+{
+  "quality_counts": {
+    "before": 43,
+    "event": 16,
+    "after": 40
+  },
+  "sideband_mean_btjd": [
+    2571.72407277999,
+    2572.0817252013185,
+    2572.4497943763317
+  ],
+  "interpolation_after_weight": 0.49282317507346995,
+  "target_wcs_pixel_xy": [
+    3.640447326499661,
+    3.803402221084406
+  ],
+  "difference_positive_centroid_xy": [
+    3.5112114382842106,
+    3.6824876308580543
+  ],
+  "difference_centroid_offset_pixels": 0.17698093946084414,
+  "core_event_fractional_change": 0.02243720619653382,
+  "stationary_only_fractional_scale": 0.02020284600118218,
+  "stationary_plus_motion_model": {
+    "fractional_stationary_scale": 0.020159147667826657,
+    "derivative_x_coefficient_pixels": 0.0008506050150137862,
+    "derivative_y_coefficient_pixels": 0.0010113018596135046,
+    "residual_l2_over_difference_l2": 0.17249250971759916
+  },
+  "localization_note": "Positive-excess moment after outer-ring plane subtraction; no formal position/error distribution or PRF-calibrated astrometry. Derivative model is an instrumental-motion sensitivity, not an orbital motion fit.",
+  "file": "results\\sky-plates-j0754-physical-tests-20261108\\tess\\pixels\\tess-s0046-1-4_118.691174_16.694621_7x7_astrocut.fits",
+  "sha256": "eecd25f2b6387ca9bd1881384e43cf16ab76ccf7490a2e1562e098a5413d465e",
+  "sector": 46,
+  "camera": 1,
+  "ccd": 4,
+  "native_rows": 3707,
+  "flux_unit": "e-/s",
+  "kind": "Native calibrated FFI pixel cutout, not raw unprocessed detector counts.",
+  "event_window_btjd": [
+    2572.0260444438954,
+    2572.1371604654987
+  ],
+  "native_quality_counts": {
+    "18592": 1,
+    "18560": 46,
+    "18432": 13,
+    "2176": 10,
+    "2048": 260,
+    "0": 3320,
+    "129": 2,
+    "128": 46,
+    "32": 7,
+    "164": 2
+  },
+  "available_position_correction_rows": {
+    "POS_CORR1": 3707,
+    "POS_CORR2": 3707
+  },
+  "local_core_vs_border_correlation": 0.2259678316689196,
+  "reference_positive_centroid_xy": [
+    3.580355950549498,
+    3.32148679072184
+  ],
+  "peak_difference_pixel_yx": [
+    4,
+    4
+  ],
+  "event_date_utc": "2021-12-23T13:56:21.268"
+}

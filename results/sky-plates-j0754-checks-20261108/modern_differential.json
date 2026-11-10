@@ -1,0 +1,3366 @@
+{
+  "status": "Exploratory diagnostic designed after modern scatter/plots were seen; not a pre-specified physical-model test.",
+  "principal_object": "566102100008926",
+  "minimum_controls": 3,
+  "points": 364,
+  "median_controls": 4.0,
+  "robust_scatter_mag": 0.09245638153499906,
+  "annual": [
+    {
+      "year": 2018,
+      "points": 22,
+      "median_relative_mag": -0.18960758750000029,
+      "p16_p84": [
+        -0.2021721140000008,
+        -0.16702488700000015
+      ]
+    },
+    {
+      "year": 2019,
+      "points": 35,
+      "median_relative_mag": -0.1740527500000022,
+      "p16_p84": [
+        -0.19217271600000133,
+        -0.12534710800000043
+      ]
+    },
+    {
+      "year": 2020,
+      "points": 101,
+      "median_relative_mag": -0.12435300000000105,
+      "p16_p84": [
+        -0.1845193500000013,
+        0.034126249999999914
+      ]
+    },
+    {
+      "year": 2021,
+      "points": 77,
+      "median_relative_mag": 0.01746934999999894,
+      "p16_p84": [
+        -0.01802710400000116,
+        0.08828644599999946
+      ]
+    },
+    {
+      "year": 2022,
+      "points": 38,
+      "median_relative_mag": 0.11925558749999876,
+      "p16_p84": [
+        0.08417809599999906,
+        0.14657474899999892
+      ]
+    },
+    {
+      "year": 2023,
+      "points": 33,
+      "median_relative_mag": 0.04034799999999805,
+      "p16_p84": [
+        0.004713710999999492,
+        0.07847656799999927
+      ]
+    },
+    {
+      "year": 2024,
+      "points": 30,
+      "median_relative_mag": 0.03301198749999923,
+      "p16_p84": [
+        0.009371567999998545,
+        0.051260873999998895
+      ]
+    },
+    {
+      "year": 2025,
+      "points": 28,
+      "median_relative_mag": -0.020037475000001415,
+      "p16_p84": [
+        -0.047532012000001664,
+        -0.00028763100000080805
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "mjd": 58205.1525926,
+      "raw_mag": 12.6433878,
+      "relative_mag": -0.12792590000000104,
+      "corrected_relative_mag": -0.1912280000000015,
+      "controls": 4,
+      "control_offset": 0.06330210000000047,
+      "expid": "45115259"
+    },
+    {
+      "mjd": 58227.186412,
+      "raw_mag": 12.5544243,
+      "relative_mag": -0.21688939999999945,
+      "corrected_relative_mag": -0.21406420000000015,
+      "controls": 4,
+      "control_offset": -0.002825199999999306,
+      "expid": "47318641"
+    },
+    {
+      "mjd": 58235.1972106,
+      "raw_mag": 12.5821686,
+      "relative_mag": -0.18914510000000107,
+      "corrected_relative_mag": -0.19056990000000162,
+      "controls": 3,
+      "control_offset": 0.001424800000000559,
+      "expid": "48119721"
+    },
+    {
+      "mjd": 58238.1653009,
+      "raw_mag": 12.6076279,
+      "relative_mag": -0.16368579999999966,
+      "corrected_relative_mag": -0.17201447499999922,
+      "controls": 4,
+      "control_offset": 0.008328674999999564,
+      "expid": "48416530"
+    },
+    {
+      "mjd": 58369.4972222,
+      "raw_mag": 12.5442028,
+      "relative_mag": -0.22711089999999956,
+      "corrected_relative_mag": -0.1925877250000001,
+      "controls": 4,
+      "control_offset": -0.03452317499999946,
+      "expid": "61549722"
+    },
+    {
+      "mjd": 58375.4685301,
+      "raw_mag": 12.5885057,
+      "relative_mag": -0.18280799999999964,
+      "corrected_relative_mag": -0.1843262500000007,
+      "controls": 4,
+      "control_offset": 0.0015182500000010535,
+      "expid": "62146853"
+    },
+    {
+      "mjd": 58378.4947454,
+      "raw_mag": 12.5933819,
+      "relative_mag": -0.17793179999999964,
+      "corrected_relative_mag": -0.16601447499999988,
+      "controls": 4,
+      "control_offset": -0.011917324999999757,
+      "expid": "62449474"
+    },
+    {
+      "mjd": 58384.4582176,
+      "raw_mag": 12.5784273,
+      "relative_mag": -0.1928864000000008,
+      "corrected_relative_mag": -0.1654327250000014,
+      "controls": 4,
+      "control_offset": -0.0274536749999994,
+      "expid": "63045821"
+    },
+    {
+      "mjd": 58389.4755903,
+      "raw_mag": 12.6015491,
+      "relative_mag": -0.1697646000000006,
+      "corrected_relative_mag": -0.1647153500000016,
+      "controls": 3,
+      "control_offset": -0.005049249999999006,
+      "expid": "63547559"
+    },
+    {
+      "mjd": 58423.4778588,
+      "raw_mag": 12.5873365,
+      "relative_mag": -0.18397720000000106,
+      "corrected_relative_mag": -0.18390927500000132,
+      "controls": 4,
+      "control_offset": -6.792499999974666e-05,
+      "expid": "66947785"
+    },
+    {
+      "mjd": 58429.4543866,
+      "raw_mag": 12.5493021,
+      "relative_mag": -0.2220116000000001,
+      "corrected_relative_mag": -0.18419320000000106,
+      "controls": 4,
+      "control_offset": -0.03781839999999903,
+      "expid": "67545438"
+    },
+    {
+      "mjd": 58430.3724421,
+      "raw_mag": 12.5628471,
+      "relative_mag": -0.2084665999999995,
+      "corrected_relative_mag": -0.1899829999999998,
+      "controls": 4,
+      "control_offset": -0.01848359999999971,
+      "expid": "67637244"
+    },
+    {
+      "mjd": 58432.4451389,
+      "raw_mag": 12.6033659,
+      "relative_mag": -0.1679478000000003,
+      "corrected_relative_mag": -0.18923217500000078,
+      "controls": 4,
+      "control_offset": 0.021284375000000466,
+      "expid": "67844513"
+    },
+    {
+      "mjd": 58437.4790509,
+      "raw_mag": 12.5558205,
+      "relative_mag": -0.21549320000000094,
+      "corrected_relative_mag": -0.19665005000000146,
+      "controls": 4,
+      "control_offset": -0.018843149999999476,
+      "expid": "68347905"
+    },
+    {
+      "mjd": 58438.4243634,
+      "raw_mag": 12.5803909,
+      "relative_mag": -0.19092280000000095,
+      "corrected_relative_mag": -0.1966162500000017,
+      "controls": 4,
+      "control_offset": 0.005693450000000766,
+      "expid": "68442436"
+    },
+    {
+      "mjd": 58438.4427546,
+      "raw_mag": 12.5791006,
+      "relative_mag": -0.19221310000000003,
+      "corrected_relative_mag": -0.2062917500000001,
+      "controls": 3,
+      "control_offset": 0.014078650000000081,
+      "expid": "68444275"
+    },
+    {
+      "mjd": 58439.4278472,
+      "raw_mag": 12.5610704,
+      "relative_mag": -0.21024330000000013,
+      "corrected_relative_mag": -0.2052782750000004,
+      "controls": 4,
+      "control_offset": -0.004965024999999734,
+      "expid": "68542784"
+    },
+    {
+      "mjd": 58441.4783102,
+      "raw_mag": 12.5837336,
+      "relative_mag": -0.18758009999999992,
+      "corrected_relative_mag": -0.19212775000000093,
+      "controls": 3,
+      "control_offset": 0.004547650000001013,
+      "expid": "68747831"
+    },
+    {
+      "mjd": 58443.3274769,
+      "raw_mag": 12.5734253,
+      "relative_mag": -0.19788840000000008,
+      "corrected_relative_mag": -0.18876125000000066,
+      "controls": 3,
+      "control_offset": -0.009127149999999418,
+      "expid": "68932747"
+    },
+    {
+      "mjd": 58464.3168519,
+      "raw_mag": 12.6018095,
+      "relative_mag": -0.16950420000000044,
+      "corrected_relative_mag": -0.15005667500000097,
+      "controls": 4,
+      "control_offset": -0.019447524999999466,
+      "expid": "71031685"
+    },
+    {
+      "mjd": 58474.5050926,
+      "raw_mag": 12.6170235,
+      "relative_mag": -0.15429020000000016,
+      "corrected_relative_mag": -0.20758915000000133,
+      "controls": 4,
+      "control_offset": 0.05329895000000118,
+      "expid": "72050509"
+    },
+    {
+      "mjd": 58480.4649421,
+      "raw_mag": 12.5913372,
+      "relative_mag": -0.17997650000000043,
+      "corrected_relative_mag": -0.1688211750000006,
+      "controls": 4,
+      "control_offset": -0.011155324999999827,
+      "expid": "72646494"
+    },
+    {
+      "mjd": 58493.2459606,
+      "raw_mag": 12.6503668,
+      "relative_mag": -0.12094689999999986,
+      "corrected_relative_mag": -0.119939350000001,
+      "controls": 4,
+      "control_offset": -0.001007549999998858,
+      "expid": "73924596"
+    },
+    {
+      "mjd": 58505.2376852,
+      "raw_mag": 12.5797968,
+      "relative_mag": -0.19151689999999988,
+      "corrected_relative_mag": -0.1882293750000006,
+      "controls": 4,
+      "control_offset": -0.0032875249999992917,
+      "expid": "75123768"
+    },
+    {
+      "mjd": 58508.1932407,
+      "raw_mag": 12.5709829,
+      "relative_mag": -0.2003307999999997,
+      "corrected_relative_mag": -0.17586452499999972,
+      "controls": 4,
+      "control_offset": -0.024466274999999982,
+      "expid": "75419324"
+    },
+    {
+      "mjd": 58511.1720602,
+      "raw_mag": 12.5774059,
+      "relative_mag": -0.19390779999999985,
+      "corrected_relative_mag": -0.17418842500000054,
+      "controls": 4,
+      "control_offset": -0.019719374999999317,
+      "expid": "75717206"
+    },
+    {
+      "mjd": 58522.18125,
+      "raw_mag": 12.6398458,
+      "relative_mag": -0.13146790000000053,
+      "corrected_relative_mag": -0.10725030000000224,
+      "controls": 3,
+      "control_offset": -0.024217599999998285,
+      "expid": "76818125"
+    },
+    {
+      "mjd": 58556.2426505,
+      "raw_mag": 12.6684523,
+      "relative_mag": -0.1028614000000001,
+      "corrected_relative_mag": -0.1074672000000012,
+      "controls": 4,
+      "control_offset": 0.0046058000000011035,
+      "expid": "80224265"
+    },
+    {
+      "mjd": 58581.1701389,
+      "raw_mag": 12.5923376,
+      "relative_mag": -0.17897609999999986,
+      "corrected_relative_mag": -0.1760533250000007,
+      "controls": 4,
+      "control_offset": -0.002922774999999156,
+      "expid": "82717013"
+    },
+    {
+      "mjd": 58584.1928819,
+      "raw_mag": 12.5918131,
+      "relative_mag": -0.1795006000000008,
+      "corrected_relative_mag": -0.1567197500000015,
+      "controls": 4,
+      "control_offset": -0.022780849999999297,
+      "expid": "83019288"
+    },
+    {
+      "mjd": 58594.1702778,
+      "raw_mag": 12.6639204,
+      "relative_mag": -0.10739330000000002,
+      "corrected_relative_mag": -0.10851100000000091,
+      "controls": 4,
+      "control_offset": 0.0011177000000008874,
+      "expid": "84017027"
+    },
+    {
+      "mjd": 58598.1950926,
+      "raw_mag": 12.6148911,
+      "relative_mag": -0.15642260000000086,
+      "corrected_relative_mag": -0.13009885000000132,
+      "controls": 3,
+      "control_offset": -0.026323749999999535,
+      "expid": "84419509"
+    },
+    {
+      "mjd": 58602.1855208,
+      "raw_mag": 12.6651964,
+      "relative_mag": -0.10611730000000108,
+      "corrected_relative_mag": -0.11060887500000138,
+      "controls": 4,
+      "control_offset": 0.004491575000000303,
+      "expid": "84818552"
+    },
+    {
+      "mjd": 58608.1729514,
+      "raw_mag": 12.568573,
+      "relative_mag": -0.20274069999999966,
+      "corrected_relative_mag": -0.18101342499999973,
+      "controls": 4,
+      "control_offset": -0.021727274999999935,
+      "expid": "85417295"
+    },
+    {
+      "mjd": 58733.4888079,
+      "raw_mag": 12.6123857,
+      "relative_mag": -0.15892799999999951,
+      "corrected_relative_mag": -0.12649305000000055,
+      "controls": 4,
+      "control_offset": -0.03243494999999896,
+      "expid": "97948880"
+    },
+    {
+      "mjd": 58736.490787,
+      "raw_mag": 12.6243525,
+      "relative_mag": -0.1469611999999998,
+      "corrected_relative_mag": -0.1275220000000008,
+      "controls": 4,
+      "control_offset": -0.01943919999999899,
+      "expid": "98249078"
+    },
+    {
+      "mjd": 58739.5244907,
+      "raw_mag": 12.652914,
+      "relative_mag": -0.11839969999999944,
+      "corrected_relative_mag": -0.12444672500000031,
+      "controls": 4,
+      "control_offset": 0.006047025000000872,
+      "expid": "98552449"
+    },
+    {
+      "mjd": 58745.5265741,
+      "raw_mag": 12.6137753,
+      "relative_mag": -0.15753839999999997,
+      "corrected_relative_mag": -0.1532328249999999,
+      "controls": 4,
+      "control_offset": -0.0043055750000000614,
+      "expid": "99152657"
+    },
+    {
+      "mjd": 58748.5159838,
+      "raw_mag": 12.620862,
+      "relative_mag": -0.15045169999999963,
+      "corrected_relative_mag": -0.1569326249999996,
+      "controls": 4,
+      "control_offset": 0.006480924999999971,
+      "expid": "99451598"
+    },
+    {
+      "mjd": 58751.482963,
+      "raw_mag": 12.583353,
+      "relative_mag": -0.18796069999999965,
+      "corrected_relative_mag": -0.17614537499999994,
+      "controls": 4,
+      "control_offset": -0.01181532499999971,
+      "expid": "99748296"
+    },
+    {
+      "mjd": 58756.4690394,
+      "raw_mag": 12.5986204,
+      "relative_mag": -0.1726933000000006,
+      "corrected_relative_mag": -0.1747714000000018,
+      "controls": 4,
+      "control_offset": 0.002078100000001193,
+      "expid": "100246903"
+    },
+    {
+      "mjd": 58758.5120139,
+      "raw_mag": 12.5775633,
+      "relative_mag": -0.19375040000000077,
+      "corrected_relative_mag": -0.1943602500000008,
+      "controls": 3,
+      "control_offset": 0.0006098500000000229,
+      "expid": "100451201"
+    },
+    {
+      "mjd": 58759.4733449,
+      "raw_mag": 12.5751886,
+      "relative_mag": -0.19612509999999972,
+      "corrected_relative_mag": -0.17279422500000052,
+      "controls": 4,
+      "control_offset": -0.023330874999999196,
+      "expid": "100547334"
+    },
+    {
+      "mjd": 58763.4750694,
+      "raw_mag": 12.590991,
+      "relative_mag": -0.1803226999999996,
+      "corrected_relative_mag": -0.17415720000000068,
+      "controls": 4,
+      "control_offset": -0.006165499999998936,
+      "expid": "100947506"
+    },
+    {
+      "mjd": 58766.4653819,
+      "raw_mag": 12.5957928,
+      "relative_mag": -0.17552090000000042,
+      "corrected_relative_mag": -0.17537835000000168,
+      "controls": 4,
+      "control_offset": -0.0001425499999987423,
+      "expid": "101246538"
+    },
+    {
+      "mjd": 58767.4527778,
+      "raw_mag": 12.6155272,
+      "relative_mag": -0.1557864999999996,
+      "corrected_relative_mag": -0.15120175000000025,
+      "controls": 4,
+      "control_offset": -0.00458474999999936,
+      "expid": "101345277"
+    },
+    {
+      "mjd": 58768.4576042,
+      "raw_mag": 12.6128902,
+      "relative_mag": -0.1584234999999996,
+      "corrected_relative_mag": -0.1592747000000001,
+      "controls": 4,
+      "control_offset": 0.000851200000000496,
+      "expid": "101445760"
+    },
+    {
+      "mjd": 58779.4812731,
+      "raw_mag": 12.6178446,
+      "relative_mag": -0.15346910000000058,
+      "corrected_relative_mag": -0.1740527500000022,
+      "controls": 4,
+      "control_offset": 0.02058365000000162,
+      "expid": "102548127"
+    },
+    {
+      "mjd": 58785.4620486,
+      "raw_mag": 12.5826263,
+      "relative_mag": -0.18868740000000095,
+      "corrected_relative_mag": -0.19443827500000221,
+      "controls": 4,
+      "control_offset": 0.005750875000001265,
+      "expid": "103146204"
+    },
+    {
+      "mjd": 58787.4576852,
+      "raw_mag": 12.5630579,
+      "relative_mag": -0.20825579999999988,
+      "corrected_relative_mag": -0.1870933000000008,
+      "controls": 4,
+      "control_offset": -0.021162499999999085,
+      "expid": "103345768"
+    },
+    {
+      "mjd": 58788.4523032,
+      "raw_mag": 12.587183,
+      "relative_mag": -0.18413070000000076,
+      "corrected_relative_mag": -0.1936774500000018,
+      "controls": 4,
+      "control_offset": 0.009546750000001047,
+      "expid": "103445230"
+    },
+    {
+      "mjd": 58788.502338,
+      "raw_mag": 12.5724049,
+      "relative_mag": -0.19890879999999989,
+      "corrected_relative_mag": -0.1902576000000007,
+      "controls": 4,
+      "control_offset": -0.008651199999999193,
+      "expid": "103450233"
+    },
+    {
+      "mjd": 58796.5463194,
+      "raw_mag": 12.5987244,
+      "relative_mag": -0.17258930000000028,
+      "corrected_relative_mag": -0.19682125000000106,
+      "controls": 4,
+      "control_offset": 0.02423195000000078,
+      "expid": "104254631"
+    },
+    {
+      "mjd": 58802.5357523,
+      "raw_mag": 12.6169386,
+      "relative_mag": -0.1543751000000011,
+      "corrected_relative_mag": -0.16699962500000076,
+      "controls": 4,
+      "control_offset": 0.012624524999999664,
+      "expid": "104853575"
+    },
+    {
+      "mjd": 58812.4372685,
+      "raw_mag": 12.5918455,
+      "relative_mag": -0.17946820000000052,
+      "corrected_relative_mag": -0.1624141500000018,
+      "controls": 4,
+      "control_offset": -0.01705404999999871,
+      "expid": "105843726"
+    },
+    {
+      "mjd": 58830.2251736,
+      "raw_mag": 12.5533123,
+      "relative_mag": -0.21800140000000034,
+      "corrected_relative_mag": -0.20457940000000097,
+      "controls": 4,
+      "control_offset": -0.013421999999999379,
+      "expid": "107622517"
+    },
+    {
+      "mjd": 58836.4071991,
+      "raw_mag": 12.5755177,
+      "relative_mag": -0.19579599999999964,
+      "corrected_relative_mag": -0.20553182500000045,
+      "controls": 4,
+      "control_offset": 0.009735825000000808,
+      "expid": "108240719"
+    },
+    {
+      "mjd": 58850.4235995,
+      "raw_mag": 12.5844908,
+      "relative_mag": -0.186822900000001,
+      "corrected_relative_mag": -0.15888265000000157,
+      "controls": 4,
+      "control_offset": -0.027940249999999445,
+      "expid": "109642359"
+    },
+    {
+      "mjd": 58853.4580324,
+      "raw_mag": 12.581913,
+      "relative_mag": -0.1894007000000002,
+      "corrected_relative_mag": -0.17696050000000163,
+      "controls": 4,
+      "control_offset": -0.012440199999998569,
+      "expid": "109945803"
+    },
+    {
+      "mjd": 58861.3440394,
+      "raw_mag": 12.579937,
+      "relative_mag": -0.19137670000000107,
+      "corrected_relative_mag": -0.190764500000002,
+      "controls": 4,
+      "control_offset": -0.0006121999999990635,
+      "expid": "110734403"
+    },
+    {
+      "mjd": 58864.1925926,
+      "raw_mag": 12.5736494,
+      "relative_mag": -0.19766429999999957,
+      "corrected_relative_mag": -0.19721152500000017,
+      "controls": 4,
+      "control_offset": -0.00045277499999940574,
+      "expid": "111019259"
+    },
+    {
+      "mjd": 58867.388287,
+      "raw_mag": 12.5577908,
+      "relative_mag": -0.21352290000000096,
+      "corrected_relative_mag": -0.2058255750000022,
+      "controls": 4,
+      "control_offset": -0.007697324999998756,
+      "expid": "111338828"
+    },
+    {
+      "mjd": 58871.2159375,
+      "raw_mag": 12.5718307,
+      "relative_mag": -0.19948300000000074,
+      "corrected_relative_mag": -0.1912085000000019,
+      "controls": 4,
+      "control_offset": -0.008274499999998852,
+      "expid": "111721593"
+    },
+    {
+      "mjd": 58874.3571759,
+      "raw_mag": 12.5696402,
+      "relative_mag": -0.20167350000000006,
+      "corrected_relative_mag": -0.1806340500000001,
+      "controls": 3,
+      "control_offset": -0.02103944999999996,
+      "expid": "112035717"
+    },
+    {
+      "mjd": 58877.2311458,
+      "raw_mag": 12.6075468,
+      "relative_mag": -0.1637669000000006,
+      "corrected_relative_mag": -0.16138845000000224,
+      "controls": 4,
+      "control_offset": -0.0023784499999983666,
+      "expid": "112323114"
+    },
+    {
+      "mjd": 58877.2493519,
+      "raw_mag": 12.609725,
+      "relative_mag": -0.16158870000000114,
+      "corrected_relative_mag": -0.1592715250000012,
+      "controls": 4,
+      "control_offset": -0.002317174999999949,
+      "expid": "112324935"
+    },
+    {
+      "mjd": 58878.2365046,
+      "raw_mag": 12.5698843,
+      "relative_mag": -0.2014294000000003,
+      "corrected_relative_mag": -0.16904550000000196,
+      "controls": 4,
+      "control_offset": -0.032383899999998356,
+      "expid": "112423650"
+    },
+    {
+      "mjd": 58879.2067361,
+      "raw_mag": 12.618866,
+      "relative_mag": -0.15244769999999974,
+      "corrected_relative_mag": -0.14808845000000126,
+      "controls": 4,
+      "control_offset": -0.004359249999998482,
+      "expid": "112520673"
+    },
+    {
+      "mjd": 58879.2327662,
+      "raw_mag": 12.5997372,
+      "relative_mag": -0.17157650000000046,
+      "corrected_relative_mag": -0.15571025000000116,
+      "controls": 4,
+      "control_offset": -0.015866249999999305,
+      "expid": "112523276"
+    },
+    {
+      "mjd": 58880.2348958,
+      "raw_mag": 12.6116781,
+      "relative_mag": -0.15963559999999966,
+      "corrected_relative_mag": -0.15855325000000065,
+      "controls": 4,
+      "control_offset": -0.0010823499999990105,
+      "expid": "112623489"
+    },
+    {
+      "mjd": 58880.2357986,
+      "raw_mag": 12.6309471,
+      "relative_mag": -0.14036660000000012,
+      "corrected_relative_mag": -0.14848117500000058,
+      "controls": 4,
+      "control_offset": 0.008114575000000457,
+      "expid": "112623579"
+    },
+    {
+      "mjd": 58881.2123958,
+      "raw_mag": 12.6050196,
+      "relative_mag": -0.1662941,
+      "corrected_relative_mag": -0.14743810000000046,
+      "controls": 4,
+      "control_offset": -0.01885599999999954,
+      "expid": "112721239"
+    },
+    {
+      "mjd": 58888.2533565,
+      "raw_mag": 12.6402693,
+      "relative_mag": -0.1310444000000004,
+      "corrected_relative_mag": -0.14648340000000104,
+      "controls": 3,
+      "control_offset": 0.015439000000000647,
+      "expid": "113425335"
+    },
+    {
+      "mjd": 58888.2543171,
+      "raw_mag": 12.6152821,
+      "relative_mag": -0.15603160000000038,
+      "corrected_relative_mag": -0.1555042000000011,
+      "controls": 3,
+      "control_offset": -0.0005273999999992895,
+      "expid": "113425431"
+    },
+    {
+      "mjd": 58891.192338,
+      "raw_mag": 12.6086464,
+      "relative_mag": -0.16266730000000074,
+      "corrected_relative_mag": -0.16139677500000182,
+      "controls": 4,
+      "control_offset": -0.001270524999998912,
+      "expid": "113719233"
+    },
+    {
+      "mjd": 58891.1946759,
+      "raw_mag": 12.6235332,
+      "relative_mag": -0.14778049999999965,
+      "corrected_relative_mag": -0.14767632500000083,
+      "controls": 4,
+      "control_offset": -0.00010417499999881841,
+      "expid": "113719467"
+    },
+    {
+      "mjd": 58891.2455903,
+      "raw_mag": 12.6346292,
+      "relative_mag": -0.1366845000000012,
+      "corrected_relative_mag": -0.14434685000000158,
+      "controls": 3,
+      "control_offset": 0.007662350000000373,
+      "expid": "113724559"
+    },
+    {
+      "mjd": 58892.1887384,
+      "raw_mag": 12.6194201,
+      "relative_mag": -0.15189360000000107,
+      "corrected_relative_mag": -0.15387082500000115,
+      "controls": 4,
+      "control_offset": 0.0019772250000000824,
+      "expid": "113818873"
+    },
+    {
+      "mjd": 58893.2061806,
+      "raw_mag": 12.6068802,
+      "relative_mag": -0.16443349999999946,
+      "corrected_relative_mag": -0.162416949999999,
+      "controls": 3,
+      "control_offset": -0.00201655000000045,
+      "expid": "113920618"
+    },
+    {
+      "mjd": 58894.206088,
+      "raw_mag": 12.6161413,
+      "relative_mag": -0.15517239999999966,
+      "corrected_relative_mag": -0.17528590000000044,
+      "controls": 4,
+      "control_offset": 0.020113500000000784,
+      "expid": "114020608"
+    },
+    {
+      "mjd": 58894.2069907,
+      "raw_mag": 12.6259937,
+      "relative_mag": -0.1453199999999999,
+      "corrected_relative_mag": -0.16638072500000067,
+      "controls": 4,
+      "control_offset": 0.02106072500000078,
+      "expid": "114020699"
+    },
+    {
+      "mjd": 58895.1894097,
+      "raw_mag": 12.6360054,
+      "relative_mag": -0.13530830000000016,
+      "corrected_relative_mag": -0.17410710000000051,
+      "controls": 4,
+      "control_offset": 0.038798800000000355,
+      "expid": "114118940"
+    },
+    {
+      "mjd": 58895.2048958,
+      "raw_mag": 12.6225166,
+      "relative_mag": -0.14879709999999946,
+      "corrected_relative_mag": -0.16899640000000016,
+      "controls": 4,
+      "control_offset": 0.020199300000000697,
+      "expid": "114120489"
+    },
+    {
+      "mjd": 58896.2258102,
+      "raw_mag": 12.5953035,
+      "relative_mag": -0.17601020000000034,
+      "corrected_relative_mag": -0.16880732500000128,
+      "controls": 4,
+      "control_offset": -0.007202874999999054,
+      "expid": "114222581"
+    },
+    {
+      "mjd": 58898.1899306,
+      "raw_mag": 12.5883217,
+      "relative_mag": -0.1829920000000005,
+      "corrected_relative_mag": -0.1845193500000013,
+      "controls": 4,
+      "control_offset": 0.0015273500000008156,
+      "expid": "114418993"
+    },
+    {
+      "mjd": 58898.1908681,
+      "raw_mag": 12.5860138,
+      "relative_mag": -0.1852999000000004,
+      "corrected_relative_mag": -0.19266515000000073,
+      "controls": 4,
+      "control_offset": 0.007365250000000323,
+      "expid": "114419086"
+    },
+    {
+      "mjd": 58898.1913079,
+      "raw_mag": 12.572752,
+      "relative_mag": -0.19856170000000084,
+      "corrected_relative_mag": -0.19811920000000072,
+      "controls": 3,
+      "control_offset": -0.00044250000000012335,
+      "expid": "114419130"
+    },
+    {
+      "mjd": 58900.2773495,
+      "raw_mag": 12.5854712,
+      "relative_mag": -0.1858424999999997,
+      "corrected_relative_mag": -0.1948402250000001,
+      "controls": 4,
+      "control_offset": 0.0089977250000004,
+      "expid": "114627734"
+    },
+    {
+      "mjd": 58903.2485301,
+      "raw_mag": 12.5521994,
+      "relative_mag": -0.2191143000000011,
+      "corrected_relative_mag": -0.21044260000000126,
+      "controls": 4,
+      "control_offset": -0.008671699999999838,
+      "expid": "114924853"
+    },
+    {
+      "mjd": 58903.2494329,
+      "raw_mag": 12.5557222,
+      "relative_mag": -0.21559150000000038,
+      "corrected_relative_mag": -0.21332895000000107,
+      "controls": 3,
+      "control_offset": -0.002262549999999308,
+      "expid": "114924943"
+    },
+    {
+      "mjd": 58903.2839352,
+      "raw_mag": 12.5579681,
+      "relative_mag": -0.21334560000000025,
+      "corrected_relative_mag": -0.2050067000000011,
+      "controls": 4,
+      "control_offset": -0.00833889999999915,
+      "expid": "114928393"
+    },
+    {
+      "mjd": 58904.150162,
+      "raw_mag": 12.5467043,
+      "relative_mag": -0.2246094000000003,
+      "corrected_relative_mag": -0.2172458750000006,
+      "controls": 4,
+      "control_offset": -0.007363524999999704,
+      "expid": "115015016"
+    },
+    {
+      "mjd": 58904.1664815,
+      "raw_mag": 12.5688295,
+      "relative_mag": -0.20248420000000067,
+      "corrected_relative_mag": -0.2066174500000013,
+      "controls": 4,
+      "control_offset": 0.004133250000000643,
+      "expid": "115016648"
+    },
+    {
+      "mjd": 58905.1654167,
+      "raw_mag": 12.5632753,
+      "relative_mag": -0.2080383999999995,
+      "corrected_relative_mag": -0.20628084999999974,
+      "controls": 4,
+      "control_offset": -0.0017575499999997746,
+      "expid": "115116541"
+    },
+    {
+      "mjd": 58906.2566319,
+      "raw_mag": 12.5783281,
+      "relative_mag": -0.1929856000000001,
+      "corrected_relative_mag": -0.1869260000000006,
+      "controls": 4,
+      "control_offset": -0.006059599999999499,
+      "expid": "115225663"
+    },
+    {
+      "mjd": 58906.2575926,
+      "raw_mag": 12.5789757,
+      "relative_mag": -0.19233799999999945,
+      "corrected_relative_mag": -0.18836595000000056,
+      "controls": 4,
+      "control_offset": -0.0039720499999988945,
+      "expid": "115225759"
+    },
+    {
+      "mjd": 58909.2114583,
+      "raw_mag": 12.5598087,
+      "relative_mag": -0.21150500000000072,
+      "corrected_relative_mag": -0.1940804500000013,
+      "controls": 4,
+      "control_offset": -0.017424549999999428,
+      "expid": "115521145"
+    },
+    {
+      "mjd": 58909.2123495,
+      "raw_mag": 12.5893269,
+      "relative_mag": -0.18198680000000067,
+      "corrected_relative_mag": -0.17687845000000202,
+      "controls": 4,
+      "control_offset": -0.0051083499999986515,
+      "expid": "115521234"
+    },
+    {
+      "mjd": 58912.1351157,
+      "raw_mag": 12.6226702,
+      "relative_mag": -0.14864350000000037,
+      "corrected_relative_mag": -0.1603758750000006,
+      "controls": 4,
+      "control_offset": 0.01173237500000024,
+      "expid": "115813511"
+    },
+    {
+      "mjd": 58912.1360185,
+      "raw_mag": 12.6161642,
+      "relative_mag": -0.15514950000000027,
+      "corrected_relative_mag": -0.1590567500000013,
+      "controls": 4,
+      "control_offset": 0.003907250000001028,
+      "expid": "115813601"
+    },
+    {
+      "mjd": 58917.2173843,
+      "raw_mag": 12.677145,
+      "relative_mag": -0.09416870000000088,
+      "corrected_relative_mag": -0.1300743250000016,
+      "controls": 4,
+      "control_offset": 0.03590562500000072,
+      "expid": "116321738"
+    },
+    {
+      "mjd": 58954.1614699,
+      "raw_mag": 12.6456499,
+      "relative_mag": -0.12566379999999988,
+      "corrected_relative_mag": -0.11509380000000036,
+      "controls": 4,
+      "control_offset": -0.010569999999999524,
+      "expid": "120016146"
+    },
+    {
+      "mjd": 58956.2074769,
+      "raw_mag": 12.6503048,
+      "relative_mag": -0.12100889999999964,
+      "corrected_relative_mag": -0.11507750000000083,
+      "controls": 4,
+      "control_offset": -0.00593139999999881,
+      "expid": "120220747"
+    },
+    {
+      "mjd": 58962.1929977,
+      "raw_mag": 12.6402674,
+      "relative_mag": -0.1310462999999995,
+      "corrected_relative_mag": -0.10995290000000146,
+      "controls": 3,
+      "control_offset": -0.02109339999999804,
+      "expid": "120819299"
+    },
+    {
+      "mjd": 58963.1530787,
+      "raw_mag": 12.6240873,
+      "relative_mag": -0.14722640000000098,
+      "corrected_relative_mag": -0.13225705000000154,
+      "controls": 3,
+      "control_offset": -0.014969349999999437,
+      "expid": "120915307"
+    },
+    {
+      "mjd": 58963.1640741,
+      "raw_mag": 12.6368532,
+      "relative_mag": -0.1344605000000012,
+      "corrected_relative_mag": -0.1258245500000008,
+      "controls": 3,
+      "control_offset": -0.008635950000000392,
+      "expid": "120916407"
+    },
+    {
+      "mjd": 58965.1930208,
+      "raw_mag": 12.648572,
+      "relative_mag": -0.12274170000000062,
+      "corrected_relative_mag": -0.12435300000000105,
+      "controls": 4,
+      "control_offset": 0.0016113000000004263,
+      "expid": "121119302"
+    },
+    {
+      "mjd": 58967.2022222,
+      "raw_mag": 12.6312866,
+      "relative_mag": -0.14002710000000107,
+      "corrected_relative_mag": -0.12983162500000223,
+      "controls": 4,
+      "control_offset": -0.010195474999998844,
+      "expid": "121320222"
+    },
+    {
+      "mjd": 58967.203125,
+      "raw_mag": 12.6281424,
+      "relative_mag": -0.14317130000000056,
+      "corrected_relative_mag": -0.1351192250000004,
+      "controls": 4,
+      "control_offset": -0.008052075000000158,
+      "expid": "121320312"
+    },
+    {
+      "mjd": 58971.2343287,
+      "raw_mag": 12.6255045,
+      "relative_mag": -0.14580920000000042,
+      "corrected_relative_mag": -0.13825470000000095,
+      "controls": 4,
+      "control_offset": -0.007554499999999464,
+      "expid": "121723432"
+    },
+    {
+      "mjd": 58975.2160301,
+      "raw_mag": 12.5982599,
+      "relative_mag": -0.17305379999999992,
+      "corrected_relative_mag": -0.15794257500000164,
+      "controls": 4,
+      "control_offset": -0.015111224999998285,
+      "expid": "122121603"
+    },
+    {
+      "mjd": 59124.5088079,
+      "raw_mag": 12.7636776,
+      "relative_mag": -0.007636100000000923,
+      "corrected_relative_mag": -0.01348265000000115,
+      "controls": 4,
+      "control_offset": 0.005846550000000228,
+      "expid": "137050880"
+    },
+    {
+      "mjd": 59126.4987847,
+      "raw_mag": 12.7614079,
+      "relative_mag": -0.009905800000000298,
+      "corrected_relative_mag": -0.010537600000001035,
+      "controls": 4,
+      "control_offset": 0.0006318000000007373,
+      "expid": "137249878"
+    },
+    {
+      "mjd": 59128.4442593,
+      "raw_mag": 12.8130007,
+      "relative_mag": 0.041686999999999585,
+      "corrected_relative_mag": 0.0313896499999986,
+      "controls": 4,
+      "control_offset": 0.010297350000000982,
+      "expid": "137444425"
+    },
+    {
+      "mjd": 59130.5148495,
+      "raw_mag": 12.7914963,
+      "relative_mag": 0.02018260000000005,
+      "corrected_relative_mag": 0.01534604999999889,
+      "controls": 4,
+      "control_offset": 0.004836550000001161,
+      "expid": "137651484"
+    },
+    {
+      "mjd": 59135.4746875,
+      "raw_mag": 12.7902241,
+      "relative_mag": 0.018910399999999328,
+      "corrected_relative_mag": 0.016839999999998412,
+      "controls": 3,
+      "control_offset": 0.002070400000000916,
+      "expid": "138147468"
+    },
+    {
+      "mjd": 59137.4638426,
+      "raw_mag": 12.7648535,
+      "relative_mag": -0.006460200000001137,
+      "corrected_relative_mag": -0.009039900000002099,
+      "controls": 4,
+      "control_offset": 0.0025797000000009618,
+      "expid": "138346384"
+    },
+    {
+      "mjd": 59139.4436343,
+      "raw_mag": 12.7436333,
+      "relative_mag": -0.027680399999999494,
+      "corrected_relative_mag": -0.0159862249999998,
+      "controls": 4,
+      "control_offset": -0.011694174999999696,
+      "expid": "138544363"
+    },
+    {
+      "mjd": 59141.4636227,
+      "raw_mag": 12.758112,
+      "relative_mag": -0.01320169999999976,
+      "corrected_relative_mag": -0.01743795000000059,
+      "controls": 4,
+      "control_offset": 0.00423625000000083,
+      "expid": "138746362"
+    },
+    {
+      "mjd": 59143.5084722,
+      "raw_mag": 12.7321749,
+      "relative_mag": -0.03913879999999992,
+      "corrected_relative_mag": -0.03657105000000094,
+      "controls": 4,
+      "control_offset": -0.0025677499999989806,
+      "expid": "138950847"
+    },
+    {
+      "mjd": 59145.4630556,
+      "raw_mag": 12.7297211,
+      "relative_mag": -0.041592599999999535,
+      "corrected_relative_mag": -0.0491349750000003,
+      "controls": 4,
+      "control_offset": 0.007542375000000767,
+      "expid": "139146305"
+    },
+    {
+      "mjd": 59149.515544,
+      "raw_mag": 12.7225399,
+      "relative_mag": -0.04877380000000109,
+      "corrected_relative_mag": -0.049347175000002075,
+      "controls": 4,
+      "control_offset": 0.0005733750000009863,
+      "expid": "139551554"
+    },
+    {
+      "mjd": 59150.4535301,
+      "raw_mag": 12.7308598,
+      "relative_mag": -0.04045390000000104,
+      "corrected_relative_mag": -0.06043725000000233,
+      "controls": 4,
+      "control_offset": 0.019983350000001288,
+      "expid": "139645353"
+    },
+    {
+      "mjd": 59152.5230093,
+      "raw_mag": 12.7323103,
+      "relative_mag": -0.039003400000000354,
+      "corrected_relative_mag": -0.04094465000000014,
+      "controls": 3,
+      "control_offset": 0.0019412499999997834,
+      "expid": "139852300"
+    },
+    {
+      "mjd": 59155.5056481,
+      "raw_mag": 12.77139,
+      "relative_mag": 7.62999999999181e-05,
+      "corrected_relative_mag": -0.04099917500000139,
+      "controls": 4,
+      "control_offset": 0.041075475000001305,
+      "expid": "140150564"
+    },
+    {
+      "mjd": 59157.5054167,
+      "raw_mag": 12.7483597,
+      "relative_mag": -0.022954000000000363,
+      "corrected_relative_mag": -0.019928450000001874,
+      "controls": 4,
+      "control_offset": -0.003025549999998489,
+      "expid": "140350541"
+    },
+    {
+      "mjd": 59163.4400231,
+      "raw_mag": 12.8188934,
+      "relative_mag": 0.0475797,
+      "corrected_relative_mag": 0.04863394999999926,
+      "controls": 4,
+      "control_offset": -0.0010542499999992572,
+      "expid": "140944002"
+    },
+    {
+      "mjd": 59165.4436343,
+      "raw_mag": 12.8230171,
+      "relative_mag": 0.05170339999999918,
+      "corrected_relative_mag": 0.05367537499999919,
+      "controls": 4,
+      "control_offset": -0.0019719750000000147,
+      "expid": "141144363"
+    },
+    {
+      "mjd": 59168.4787963,
+      "raw_mag": 12.8321714,
+      "relative_mag": 0.06085769999999968,
+      "corrected_relative_mag": 0.05723179999999939,
+      "controls": 4,
+      "control_offset": 0.0036259000000002928,
+      "expid": "141447879"
+    },
+    {
+      "mjd": 59173.442662,
+      "raw_mag": 12.8323479,
+      "relative_mag": 0.06103419999999993,
+      "corrected_relative_mag": 0.03994012499999933,
+      "controls": 4,
+      "control_offset": 0.0210940750000006,
+      "expid": "141944266"
+    },
+    {
+      "mjd": 59177.5138426,
+      "raw_mag": 12.8080425,
+      "relative_mag": 0.03672880000000056,
+      "corrected_relative_mag": 0.006453449999999528,
+      "controls": 4,
+      "control_offset": 0.030275350000001033,
+      "expid": "142351384"
+    },
+    {
+      "mjd": 59180.4986227,
+      "raw_mag": 12.7628975,
+      "relative_mag": -0.008416200000000984,
+      "corrected_relative_mag": 0.009057724999998129,
+      "controls": 4,
+      "control_offset": -0.017473924999999113,
+      "expid": "142649862"
+    },
+    {
+      "mjd": 59182.5288542,
+      "raw_mag": 12.7464027,
+      "relative_mag": -0.02491099999999946,
+      "corrected_relative_mag": -0.018123250000000368,
+      "controls": 4,
+      "control_offset": -0.006787749999999093,
+      "expid": "142852885"
+    },
+    {
+      "mjd": 59184.4409259,
+      "raw_mag": 12.7346964,
+      "relative_mag": -0.03661729999999963,
+      "corrected_relative_mag": -0.03193860000000193,
+      "controls": 3,
+      "control_offset": -0.004678699999997704,
+      "expid": "143044092"
+    },
+    {
+      "mjd": 59189.4871875,
+      "raw_mag": 12.7473001,
+      "relative_mag": -0.02401359999999997,
+      "corrected_relative_mag": -0.03458940000000066,
+      "controls": 4,
+      "control_offset": 0.01057580000000069,
+      "expid": "143548718"
+    },
+    {
+      "mjd": 59194.4023264,
+      "raw_mag": 12.7699814,
+      "relative_mag": -0.00133229999999962,
+      "corrected_relative_mag": -0.0015735499999998126,
+      "controls": 4,
+      "control_offset": 0.0002412500000001927,
+      "expid": "144040232"
+    },
+    {
+      "mjd": 59194.4196181,
+      "raw_mag": 12.7730007,
+      "relative_mag": 0.0016870000000004381,
+      "corrected_relative_mag": -0.0035813249999998575,
+      "controls": 4,
+      "control_offset": 0.005268325000000296,
+      "expid": "144041961"
+    },
+    {
+      "mjd": 59194.4570718,
+      "raw_mag": 12.7902746,
+      "relative_mag": 0.018960899999999725,
+      "corrected_relative_mag": -0.0042618250000003854,
+      "controls": 4,
+      "control_offset": 0.02322272500000011,
+      "expid": "144045707"
+    },
+    {
+      "mjd": 59196.3423264,
+      "raw_mag": 12.7610254,
+      "relative_mag": -0.010288300000000916,
+      "corrected_relative_mag": 0.0037371249999988976,
+      "controls": 4,
+      "control_offset": -0.014025424999999814,
+      "expid": "144234232"
+    },
+    {
+      "mjd": 59196.4206366,
+      "raw_mag": 12.7840633,
+      "relative_mag": 0.012749599999999361,
+      "corrected_relative_mag": 0.031089699999999,
+      "controls": 4,
+      "control_offset": -0.018340099999999637,
+      "expid": "144242063"
+    },
+    {
+      "mjd": 59196.4555787,
+      "raw_mag": 12.7923355,
+      "relative_mag": 0.021021799999999757,
+      "corrected_relative_mag": 0.023434049999998763,
+      "controls": 4,
+      "control_offset": -0.0024122499999990055,
+      "expid": "144245557"
+    },
+    {
+      "mjd": 59198.3785764,
+      "raw_mag": 12.8245001,
+      "relative_mag": 0.05318639999999952,
+      "corrected_relative_mag": 0.023442249999999554,
+      "controls": 4,
+      "control_offset": 0.02974414999999997,
+      "expid": "144437857"
+    },
+    {
+      "mjd": 59198.3981481,
+      "raw_mag": 12.7964754,
+      "relative_mag": 0.025161699999999954,
+      "corrected_relative_mag": 0.024824324999999092,
+      "controls": 4,
+      "control_offset": 0.0003373750000008613,
+      "expid": "144439814"
+    },
+    {
+      "mjd": 59199.3408681,
+      "raw_mag": 12.8120375,
+      "relative_mag": 0.04072380000000031,
+      "corrected_relative_mag": 0.034126249999999914,
+      "controls": 4,
+      "control_offset": 0.006597550000000396,
+      "expid": "144534086"
+    },
+    {
+      "mjd": 59199.4229861,
+      "raw_mag": 12.8141432,
+      "relative_mag": 0.042829499999999854,
+      "corrected_relative_mag": 0.036169949999998785,
+      "controls": 4,
+      "control_offset": 0.006659550000001069,
+      "expid": "144542298"
+    },
+    {
+      "mjd": 59199.4239236,
+      "raw_mag": 12.8224373,
+      "relative_mag": 0.05112360000000038,
+      "corrected_relative_mag": 0.04416315000000015,
+      "controls": 4,
+      "control_offset": 0.006960450000000229,
+      "expid": "144542392"
+    },
+    {
+      "mjd": 59200.414456,
+      "raw_mag": 12.8090239,
+      "relative_mag": 0.03771019999999936,
+      "corrected_relative_mag": 0.038132699999998465,
+      "controls": 4,
+      "control_offset": -0.00042249999999910415,
+      "expid": "144641445"
+    },
+    {
+      "mjd": 59201.4108333,
+      "raw_mag": 12.826685,
+      "relative_mag": 0.055371299999999124,
+      "corrected_relative_mag": 0.04169347499999887,
+      "controls": 4,
+      "control_offset": 0.013677825000000254,
+      "expid": "144741083"
+    },
+    {
+      "mjd": 59202.3049421,
+      "raw_mag": 12.8165359,
+      "relative_mag": 0.045222199999999546,
+      "corrected_relative_mag": 0.0474737999999979,
+      "controls": 4,
+      "control_offset": -0.002251599999998355,
+      "expid": "144830494"
+    },
+    {
+      "mjd": 59202.3739815,
+      "raw_mag": 12.8262196,
+      "relative_mag": 0.05490589999999962,
+      "corrected_relative_mag": 0.053919799999999185,
+      "controls": 4,
+      "control_offset": 0.0009861000000004339,
+      "expid": "144837398"
+    },
+    {
+      "mjd": 59203.3443403,
+      "raw_mag": 12.8184748,
+      "relative_mag": 0.04716110000000029,
+      "corrected_relative_mag": 0.05826112499999958,
+      "controls": 4,
+      "control_offset": -0.011100024999999292,
+      "expid": "144934434"
+    },
+    {
+      "mjd": 59203.3742477,
+      "raw_mag": 12.8170004,
+      "relative_mag": 0.04568669999999919,
+      "corrected_relative_mag": 0.047222549999998975,
+      "controls": 4,
+      "control_offset": -0.0015358499999997832,
+      "expid": "144937424"
+    },
+    {
+      "mjd": 59203.4146181,
+      "raw_mag": 12.82162,
+      "relative_mag": 0.05030629999999903,
+      "corrected_relative_mag": 0.057612349999998536,
+      "controls": 4,
+      "control_offset": -0.007306049999999509,
+      "expid": "144941461"
+    },
+    {
+      "mjd": 59204.3328588,
+      "raw_mag": 12.8237581,
+      "relative_mag": 0.052444399999998836,
+      "corrected_relative_mag": 0.06280794999999806,
+      "controls": 4,
+      "control_offset": -0.010363549999999222,
+      "expid": "145033285"
+    },
+    {
+      "mjd": 59204.348912,
+      "raw_mag": 12.8269453,
+      "relative_mag": 0.05563159999999989,
+      "corrected_relative_mag": 0.04588599999999765,
+      "controls": 3,
+      "control_offset": 0.009745600000002241,
+      "expid": "145034891"
+    },
+    {
+      "mjd": 59205.3106366,
+      "raw_mag": 12.8140841,
+      "relative_mag": 0.04277040000000021,
+      "corrected_relative_mag": 0.049905349999999515,
+      "controls": 3,
+      "control_offset": -0.007134949999999307,
+      "expid": "145131063"
+    },
+    {
+      "mjd": 59210.2265162,
+      "raw_mag": 12.7968473,
+      "relative_mag": 0.025533599999999268,
+      "corrected_relative_mag": 0.03406777499999869,
+      "controls": 4,
+      "control_offset": -0.008534174999999422,
+      "expid": "145622651"
+    },
+    {
+      "mjd": 59210.2642245,
+      "raw_mag": 12.791234,
+      "relative_mag": 0.019920299999999003,
+      "corrected_relative_mag": 0.02021327499999792,
+      "controls": 4,
+      "control_offset": -0.0002929749999989184,
+      "expid": "145626422"
+    },
+    {
+      "mjd": 59216.4337384,
+      "raw_mag": 12.7723722,
+      "relative_mag": 0.001058499999999185,
+      "corrected_relative_mag": -0.006225925000000743,
+      "controls": 4,
+      "control_offset": 0.007284424999999928,
+      "expid": "146243373"
+    },
+    {
+      "mjd": 59217.4252199,
+      "raw_mag": 12.7445946,
+      "relative_mag": -0.026719100000001106,
+      "corrected_relative_mag": -0.018584525000002294,
+      "controls": 4,
+      "control_offset": -0.008134574999998812,
+      "expid": "146342521"
+    },
+    {
+      "mjd": 59218.2464931,
+      "raw_mag": 12.7652159,
+      "relative_mag": -0.00609780000000093,
+      "corrected_relative_mag": -0.012605700000001718,
+      "controls": 3,
+      "control_offset": 0.006507900000000788,
+      "expid": "146424649"
+    },
+    {
+      "mjd": 59218.3596065,
+      "raw_mag": 12.7661991,
+      "relative_mag": -0.005114600000000635,
+      "corrected_relative_mag": -0.018046400000001128,
+      "controls": 3,
+      "control_offset": 0.012931800000000493,
+      "expid": "146435960"
+    },
+    {
+      "mjd": 59219.4353125,
+      "raw_mag": 12.7502995,
+      "relative_mag": -0.02101419999999976,
+      "corrected_relative_mag": -0.01737545000000118,
+      "controls": 4,
+      "control_offset": -0.0036387499999985806,
+      "expid": "146543531"
+    },
+    {
+      "mjd": 59220.2589699,
+      "raw_mag": 12.757925,
+      "relative_mag": -0.013388700000000142,
+      "corrected_relative_mag": -0.013424675000000441,
+      "controls": 4,
+      "control_offset": 3.597500000029896e-05,
+      "expid": "146625896"
+    },
+    {
+      "mjd": 59220.3398264,
+      "raw_mag": 12.7436895,
+      "relative_mag": -0.027624199999999988,
+      "corrected_relative_mag": -0.02092207500000054,
+      "controls": 4,
+      "control_offset": -0.006702124999999448,
+      "expid": "146633982"
+    },
+    {
+      "mjd": 59221.3113079,
+      "raw_mag": 12.76618,
+      "relative_mag": -0.005133700000000019,
+      "corrected_relative_mag": -0.01808627499999993,
+      "controls": 4,
+      "control_offset": 0.01295257499999991,
+      "expid": "146731130"
+    },
+    {
+      "mjd": 59221.3823611,
+      "raw_mag": 12.7449312,
+      "relative_mag": -0.02638250000000042,
+      "corrected_relative_mag": -0.02825170000000199,
+      "controls": 4,
+      "control_offset": 0.0018692000000015696,
+      "expid": "146738236"
+    },
+    {
+      "mjd": 59222.3820139,
+      "raw_mag": 12.7409058,
+      "relative_mag": -0.030407900000000154,
+      "corrected_relative_mag": -0.03512910000000158,
+      "controls": 4,
+      "control_offset": 0.004721200000001424,
+      "expid": "146838201"
+    },
+    {
+      "mjd": 59222.4143981,
+      "raw_mag": 12.7430286,
+      "relative_mag": -0.02828509999999973,
+      "corrected_relative_mag": -0.026161475000000323,
+      "controls": 4,
+      "control_offset": -0.0021236249999994072,
+      "expid": "146841439"
+    },
+    {
+      "mjd": 59222.4587616,
+      "raw_mag": 12.7626677,
+      "relative_mag": -0.008646000000000598,
+      "corrected_relative_mag": -0.031171850000000667,
+      "controls": 4,
+      "control_offset": 0.02252585000000007,
+      "expid": "146845876"
+    },
+    {
+      "mjd": 59223.3232986,
+      "raw_mag": 12.7449226,
+      "relative_mag": -0.026391099999999668,
+      "corrected_relative_mag": -0.021563825000000314,
+      "controls": 4,
+      "control_offset": -0.004827274999999354,
+      "expid": "146932329"
+    },
+    {
+      "mjd": 59224.3334954,
+      "raw_mag": 12.7538862,
+      "relative_mag": -0.01742750000000015,
+      "corrected_relative_mag": -0.03706985000000085,
+      "controls": 4,
+      "control_offset": 0.019642350000000697,
+      "expid": "147033349"
+    },
+    {
+      "mjd": 59225.2272338,
+      "raw_mag": 12.7587385,
+      "relative_mag": -0.012575200000000564,
+      "corrected_relative_mag": -0.03952532500000139,
+      "controls": 4,
+      "control_offset": 0.026950125000000824,
+      "expid": "147122723"
+    },
+    {
+      "mjd": 59225.3535301,
+      "raw_mag": 12.7416325,
+      "relative_mag": -0.02968120000000063,
+      "corrected_relative_mag": -0.027045025000001388,
+      "controls": 4,
+      "control_offset": -0.002636174999999241,
+      "expid": "147135353"
+    },
+    {
+      "mjd": 59226.3038657,
+      "raw_mag": 12.7578888,
+      "relative_mag": -0.013424900000000406,
+      "corrected_relative_mag": -0.017925800000001324,
+      "controls": 4,
+      "control_offset": 0.004500900000000918,
+      "expid": "147230386"
+    },
+    {
+      "mjd": 59226.3489352,
+      "raw_mag": 12.7550631,
+      "relative_mag": -0.016250600000001114,
+      "corrected_relative_mag": -0.020633700000002086,
+      "controls": 4,
+      "control_offset": 0.004383100000000972,
+      "expid": "147234893"
+    },
+    {
+      "mjd": 59226.3858565,
+      "raw_mag": 12.7771502,
+      "relative_mag": 0.005836499999999134,
+      "corrected_relative_mag": -0.012435500000002264,
+      "controls": 4,
+      "control_offset": 0.018272000000001398,
+      "expid": "147238585"
+    },
+    {
+      "mjd": 59227.1971065,
+      "raw_mag": 12.7595377,
+      "relative_mag": -0.011776000000001119,
+      "corrected_relative_mag": -0.011139450000002604,
+      "controls": 4,
+      "control_offset": -0.0006365499999985147,
+      "expid": "147319710"
+    },
+    {
+      "mjd": 59227.4220486,
+      "raw_mag": 12.7379332,
+      "relative_mag": -0.03338049999999981,
+      "corrected_relative_mag": -0.013594874999999895,
+      "controls": 4,
+      "control_offset": -0.019785624999999918,
+      "expid": "147342204"
+    },
+    {
+      "mjd": 59228.2776273,
+      "raw_mag": 12.754323,
+      "relative_mag": -0.016990700000000913,
+      "corrected_relative_mag": -0.005498725000000704,
+      "controls": 4,
+      "control_offset": -0.01149197500000021,
+      "expid": "147427762"
+    },
+    {
+      "mjd": 59228.2871875,
+      "raw_mag": 12.7394543,
+      "relative_mag": -0.03185940000000009,
+      "corrected_relative_mag": -0.016858100000002096,
+      "controls": 3,
+      "control_offset": -0.015001299999997997,
+      "expid": "147428718"
+    },
+    {
+      "mjd": 59228.4030787,
+      "raw_mag": 12.7463331,
+      "relative_mag": -0.02498060000000102,
+      "corrected_relative_mag": -0.013578500000003046,
+      "controls": 3,
+      "control_offset": -0.011402099999997972,
+      "expid": "147440307"
+    },
+    {
+      "mjd": 59229.3001042,
+      "raw_mag": 12.7416782,
+      "relative_mag": -0.02963549999999948,
+      "corrected_relative_mag": -0.01282130000000059,
+      "controls": 4,
+      "control_offset": -0.01681419999999889,
+      "expid": "147530010"
+    },
+    {
+      "mjd": 59229.3754398,
+      "raw_mag": 12.7324963,
+      "relative_mag": -0.038817400000001,
+      "corrected_relative_mag": -0.010922675000001547,
+      "controls": 4,
+      "control_offset": -0.027894724999999454,
+      "expid": "147537543"
+    },
+    {
+      "mjd": 59230.3386921,
+      "raw_mag": 12.7903795,
+      "relative_mag": 0.01906579999999991,
+      "corrected_relative_mag": 0.009516374999999577,
+      "controls": 4,
+      "control_offset": 0.009549425000000333,
+      "expid": "147633869"
+    },
+    {
+      "mjd": 59230.3465509,
+      "raw_mag": 12.7585688,
+      "relative_mag": -0.012744899999999504,
+      "corrected_relative_mag": 0.004451249999999796,
+      "controls": 4,
+      "control_offset": -0.0171961499999993,
+      "expid": "147634655"
+    },
+    {
+      "mjd": 59230.3572222,
+      "raw_mag": 12.787816,
+      "relative_mag": 0.01650229999999908,
+      "corrected_relative_mag": 0.01339374999999876,
+      "controls": 4,
+      "control_offset": 0.0031085500000003208,
+      "expid": "147635722"
+    },
+    {
+      "mjd": 59231.2594097,
+      "raw_mag": 12.7684584,
+      "relative_mag": -0.002855300000000227,
+      "corrected_relative_mag": 0.008804524999999508,
+      "controls": 4,
+      "control_offset": -0.011659824999999735,
+      "expid": "147725940"
+    },
+    {
+      "mjd": 59231.3790741,
+      "raw_mag": 12.7859421,
+      "relative_mag": 0.01462839999999943,
+      "corrected_relative_mag": 0.0062240999999989555,
+      "controls": 4,
+      "control_offset": 0.008404300000000475,
+      "expid": "147737907"
+    },
+    {
+      "mjd": 59232.2677662,
+      "raw_mag": 12.8014345,
+      "relative_mag": 0.030120799999998837,
+      "corrected_relative_mag": 0.029612499999998043,
+      "controls": 4,
+      "control_offset": 0.0005083000000007942,
+      "expid": "147826776"
+    },
+    {
+      "mjd": 59232.3833912,
+      "raw_mag": 12.7996511,
+      "relative_mag": 0.028337399999999846,
+      "corrected_relative_mag": 0.039456749999999374,
+      "controls": 3,
+      "control_offset": -0.011119349999999528,
+      "expid": "147838339"
+    },
+    {
+      "mjd": 59232.395463,
+      "raw_mag": 12.7933722,
+      "relative_mag": 0.02205849999999998,
+      "corrected_relative_mag": 0.030263899999999566,
+      "controls": 3,
+      "control_offset": -0.008205399999999585,
+      "expid": "147839546"
+    },
+    {
+      "mjd": 59233.3626852,
+      "raw_mag": 12.8075857,
+      "relative_mag": 0.036272000000000304,
+      "corrected_relative_mag": 0.024313849999999526,
+      "controls": 4,
+      "control_offset": 0.011958150000000778,
+      "expid": "147936268"
+    },
+    {
+      "mjd": 59248.2290162,
+      "raw_mag": 12.8054895,
+      "relative_mag": 0.03417579999999987,
+      "corrected_relative_mag": 0.025468024999998562,
+      "controls": 4,
+      "control_offset": 0.008707775000001305,
+      "expid": "149422901"
+    },
+    {
+      "mjd": 59250.2571296,
+      "raw_mag": 12.7978344,
+      "relative_mag": 0.026520699999998953,
+      "corrected_relative_mag": 0.03097959999999844,
+      "controls": 4,
+      "control_offset": -0.004458899999999488,
+      "expid": "149625712"
+    },
+    {
+      "mjd": 59252.2687616,
+      "raw_mag": 12.7757444,
+      "relative_mag": 0.004430700000000343,
+      "corrected_relative_mag": 0.006708999999998966,
+      "controls": 3,
+      "control_offset": -0.002278299999998623,
+      "expid": "149826876"
+    },
+    {
+      "mjd": 59254.2284259,
+      "raw_mag": 12.7826443,
+      "relative_mag": 0.01133059999999908,
+      "corrected_relative_mag": 0.007850599999997598,
+      "controls": 4,
+      "control_offset": 0.003480000000001482,
+      "expid": "150022842"
+    },
+    {
+      "mjd": 59256.2746528,
+      "raw_mag": 12.805583,
+      "relative_mag": 0.03426930000000006,
+      "corrected_relative_mag": 0.011139574999999624,
+      "controls": 4,
+      "control_offset": 0.023129725000000434,
+      "expid": "150227465"
+    },
+    {
+      "mjd": 59260.1920602,
+      "raw_mag": 12.7739105,
+      "relative_mag": 0.0025967999999991775,
+      "corrected_relative_mag": -0.0030358250000013243,
+      "controls": 4,
+      "control_offset": 0.005632625000000502,
+      "expid": "150619206"
+    },
+    {
+      "mjd": 59263.276875,
+      "raw_mag": 12.7771082,
+      "relative_mag": 0.005794500000000369,
+      "corrected_relative_mag": 0.02800079999999916,
+      "controls": 4,
+      "control_offset": -0.02220629999999879,
+      "expid": "150927687"
+    },
+    {
+      "mjd": 59265.2029398,
+      "raw_mag": 12.8052969,
+      "relative_mag": 0.03398319999999977,
+      "corrected_relative_mag": 0.028301649999998624,
+      "controls": 4,
+      "control_offset": 0.005681550000001145,
+      "expid": "151120293"
+    },
+    {
+      "mjd": 59267.2352315,
+      "raw_mag": 12.7954388,
+      "relative_mag": 0.024125099999999122,
+      "corrected_relative_mag": 0.03308814999999843,
+      "controls": 4,
+      "control_offset": -0.008963049999999306,
+      "expid": "151323523"
+    },
+    {
+      "mjd": 59271.2259144,
+      "raw_mag": 12.8655233,
+      "relative_mag": 0.09420959999999923,
+      "corrected_relative_mag": 0.0748459249999982,
+      "controls": 4,
+      "control_offset": 0.019363675000001024,
+      "expid": "151722591"
+    },
+    {
+      "mjd": 59273.1729745,
+      "raw_mag": 12.851963,
+      "relative_mag": 0.08064929999999926,
+      "corrected_relative_mag": 0.06756272499999927,
+      "controls": 4,
+      "control_offset": 0.01308657499999999,
+      "expid": "151917297"
+    },
+    {
+      "mjd": 59275.1716319,
+      "raw_mag": 12.8299732,
+      "relative_mag": 0.0586594999999992,
+      "corrected_relative_mag": 0.06877174999999891,
+      "controls": 4,
+      "control_offset": -0.010112249999999712,
+      "expid": "152117163"
+    },
+    {
+      "mjd": 59278.2137269,
+      "raw_mag": 12.8169909,
+      "relative_mag": 0.045677200000000084,
+      "corrected_relative_mag": 0.059905999999998905,
+      "controls": 4,
+      "control_offset": -0.01422879999999882,
+      "expid": "152421372"
+    },
+    {
+      "mjd": 59293.1522569,
+      "raw_mag": 12.781332,
+      "relative_mag": 0.01001830000000048,
+      "corrected_relative_mag": -0.00505712500000044,
+      "controls": 4,
+      "control_offset": 0.01507542500000092,
+      "expid": "153915225"
+    },
+    {
+      "mjd": 59298.2473958,
+      "raw_mag": 12.7828093,
+      "relative_mag": 0.01149559999999994,
+      "corrected_relative_mag": 0.011840799999998985,
+      "controls": 4,
+      "control_offset": -0.00034519999999904627,
+      "expid": "154424739"
+    },
+    {
+      "mjd": 59301.2341319,
+      "raw_mag": 12.787096,
+      "relative_mag": 0.015782299999999694,
+      "corrected_relative_mag": 0.023454099999999478,
+      "controls": 4,
+      "control_offset": -0.007671799999999784,
+      "expid": "154723413"
+    },
+    {
+      "mjd": 59303.1948727,
+      "raw_mag": 12.800993,
+      "relative_mag": 0.029679299999999742,
+      "corrected_relative_mag": 0.037952624999999074,
+      "controls": 4,
+      "control_offset": -0.008273324999999332,
+      "expid": "154919487"
+    },
+    {
+      "mjd": 59306.1828819,
+      "raw_mag": 12.821394,
+      "relative_mag": 0.05008029999999941,
+      "corrected_relative_mag": 0.0509764749999988,
+      "controls": 4,
+      "control_offset": -0.0008961749999993884,
+      "expid": "155218288"
+    },
+    {
+      "mjd": 59308.2480671,
+      "raw_mag": 12.8278313,
+      "relative_mag": 0.05651759999999939,
+      "corrected_relative_mag": 0.059478699999998774,
+      "controls": 4,
+      "control_offset": -0.0029610999999993837,
+      "expid": "155424806"
+    },
+    {
+      "mjd": 59312.2076736,
+      "raw_mag": 12.8121223,
+      "relative_mag": 0.040808600000000084,
+      "corrected_relative_mag": 0.0456348749999993,
+      "controls": 4,
+      "control_offset": -0.004826274999999214,
+      "expid": "155820767"
+    },
+    {
+      "mjd": 59314.1931597,
+      "raw_mag": 12.7973099,
+      "relative_mag": 0.025996199999999803,
+      "corrected_relative_mag": 0.03274584999999952,
+      "controls": 3,
+      "control_offset": -0.006749649999999718,
+      "expid": "156019315"
+    },
+    {
+      "mjd": 59316.2084375,
+      "raw_mag": 12.8076925,
+      "relative_mag": 0.0363787999999996,
+      "corrected_relative_mag": 0.03898324999999847,
+      "controls": 4,
+      "control_offset": -0.00260444999999887,
+      "expid": "156220843"
+    },
+    {
+      "mjd": 59319.1877315,
+      "raw_mag": 12.7742567,
+      "relative_mag": 0.00294300000000014,
+      "corrected_relative_mag": 0.01650257499999963,
+      "controls": 4,
+      "control_offset": -0.01355957499999949,
+      "expid": "156518773"
+    },
+    {
+      "mjd": 59321.1737847,
+      "raw_mag": 12.7714252,
+      "relative_mag": 0.00011149999999915394,
+      "corrected_relative_mag": 0.018140699999998233,
+      "controls": 3,
+      "control_offset": -0.01802919999999908,
+      "expid": "156717378"
+    },
+    {
+      "mjd": 59328.1992708,
+      "raw_mag": 12.7752762,
+      "relative_mag": 0.003962500000000091,
+      "corrected_relative_mag": 0.01746934999999894,
+      "controls": 4,
+      "control_offset": -0.013506849999998849,
+      "expid": "157419927"
+    },
+    {
+      "mjd": 59335.2166204,
+      "raw_mag": 12.7968693,
+      "relative_mag": 0.02555559999999879,
+      "corrected_relative_mag": 0.05595389999999778,
+      "controls": 4,
+      "control_offset": -0.03039829999999899,
+      "expid": "158121662"
+    },
+    {
+      "mjd": 59477.4758218,
+      "raw_mag": 12.8851004,
+      "relative_mag": 0.11378670000000035,
+      "corrected_relative_mag": 0.10422442499999907,
+      "controls": 4,
+      "control_offset": 0.009562275000001286,
+      "expid": "172347582"
+    },
+    {
+      "mjd": 59479.4891435,
+      "raw_mag": 12.8871508,
+      "relative_mag": 0.11583710000000025,
+      "corrected_relative_mag": 0.1196079000000001,
+      "controls": 4,
+      "control_offset": -0.003770799999999852,
+      "expid": "172548914"
+    },
+    {
+      "mjd": 59483.4551389,
+      "raw_mag": 12.8924284,
+      "relative_mag": 0.12111469999999969,
+      "corrected_relative_mag": 0.1262749999999988,
+      "controls": 4,
+      "control_offset": -0.005160299999999118,
+      "expid": "172945513"
+    },
+    {
+      "mjd": 59489.4871412,
+      "raw_mag": 12.8711977,
+      "relative_mag": 0.09988399999999942,
+      "corrected_relative_mag": 0.09849974999999933,
+      "controls": 4,
+      "control_offset": 0.0013842500000000868,
+      "expid": "173548714"
+    },
+    {
+      "mjd": 59500.4779398,
+      "raw_mag": 12.8455267,
+      "relative_mag": 0.0742130000000003,
+      "corrected_relative_mag": 0.05162067499999967,
+      "controls": 4,
+      "control_offset": 0.022592325000000635,
+      "expid": "174647793"
+    },
+    {
+      "mjd": 59503.4976852,
+      "raw_mag": 12.8591318,
+      "relative_mag": 0.08781809999999979,
+      "corrected_relative_mag": 0.08614389999999883,
+      "controls": 4,
+      "control_offset": 0.0016742000000009583,
+      "expid": "174949768"
+    },
+    {
+      "mjd": 59509.4006713,
+      "raw_mag": 12.8634586,
+      "relative_mag": 0.0921448999999992,
+      "corrected_relative_mag": 0.09922399999999776,
+      "controls": 3,
+      "control_offset": -0.0070790999999985615,
+      "expid": "175540067"
+    },
+    {
+      "mjd": 59518.3590509,
+      "raw_mag": 12.8776274,
+      "relative_mag": 0.1063136999999994,
+      "corrected_relative_mag": 0.11509749999999919,
+      "controls": 4,
+      "control_offset": -0.008783799999999786,
+      "expid": "176435905"
+    },
+    {
+      "mjd": 59522.4569213,
+      "raw_mag": 12.9031763,
+      "relative_mag": 0.13186259999999983,
+      "corrected_relative_mag": 0.1184579750000001,
+      "controls": 4,
+      "control_offset": 0.013404624999999726,
+      "expid": "176845692"
+    },
+    {
+      "mjd": 59524.5085532,
+      "raw_mag": 12.8691082,
+      "relative_mag": 0.09779449999999912,
+      "corrected_relative_mag": 0.10299199999999686,
+      "controls": 3,
+      "control_offset": -0.005197499999997746,
+      "expid": "177050855"
+    },
+    {
+      "mjd": 59526.4485185,
+      "raw_mag": 12.8655128,
+      "relative_mag": 0.09419909999999909,
+      "corrected_relative_mag": 0.09062782499999855,
+      "controls": 4,
+      "control_offset": 0.00357127500000054,
+      "expid": "177244851"
+    },
+    {
+      "mjd": 59529.382419,
+      "raw_mag": 12.8624249,
+      "relative_mag": 0.09111120000000028,
+      "corrected_relative_mag": 0.0886945499999996,
+      "controls": 4,
+      "control_offset": 0.0024166500000006863,
+      "expid": "177538241"
+    },
+    {
+      "mjd": 59531.3950116,
+      "raw_mag": 12.8553181,
+      "relative_mag": 0.08400439999999953,
+      "corrected_relative_mag": 0.0810727999999985,
+      "controls": 4,
+      "control_offset": 0.0029316000000010334,
+      "expid": "177739501"
+    },
+    {
+      "mjd": 59536.419294,
+      "raw_mag": 12.861907,
+      "relative_mag": 0.0905933000000001,
+      "corrected_relative_mag": 0.09482687499999987,
+      "controls": 4,
+      "control_offset": -0.004233574999999767,
+      "expid": "178241929"
+    },
+    {
+      "mjd": 59538.3953588,
+      "raw_mag": 12.8744822,
+      "relative_mag": 0.10316849999999889,
+      "corrected_relative_mag": 0.0930378249999988,
+      "controls": 4,
+      "control_offset": 0.010130675000000089,
+      "expid": "178439535"
+    },
+    {
+      "mjd": 59550.2833102,
+      "raw_mag": 12.8753853,
+      "relative_mag": 0.10407159999999926,
+      "corrected_relative_mag": 0.09595819999999833,
+      "controls": 4,
+      "control_offset": 0.008113400000000937,
+      "expid": "179628331"
+    },
+    {
+      "mjd": 59622.2541898,
+      "raw_mag": 12.8905678,
+      "relative_mag": 0.11925409999999914,
+      "corrected_relative_mag": 0.12776827499999843,
+      "controls": 4,
+      "control_offset": -0.008514174999999291,
+      "expid": "186825418"
+    },
+    {
+      "mjd": 59627.3115509,
+      "raw_mag": 12.877511,
+      "relative_mag": 0.10619729999999983,
+      "corrected_relative_mag": 0.10922999999999838,
+      "controls": 4,
+      "control_offset": -0.003032699999998556,
+      "expid": "187331155"
+    },
+    {
+      "mjd": 59629.4064931,
+      "raw_mag": 12.8350763,
+      "relative_mag": 0.06376260000000045,
+      "corrected_relative_mag": 0.08523454999999913,
+      "controls": 4,
+      "control_offset": -0.021471949999998685,
+      "expid": "187540649"
+    },
+    {
+      "mjd": 59640.2061111,
+      "raw_mag": 12.8147545,
+      "relative_mag": 0.04344079999999906,
+      "corrected_relative_mag": 0.06411974999999792,
+      "controls": 3,
+      "control_offset": -0.020678949999998864,
+      "expid": "188620611"
+    },
+    {
+      "mjd": 59671.1996181,
+      "raw_mag": 12.8546543,
+      "relative_mag": 0.08334059999999965,
+      "corrected_relative_mag": 0.09815824999999911,
+      "controls": 4,
+      "control_offset": -0.01481764999999946,
+      "expid": "191719961"
+    },
+    {
+      "mjd": 59674.1805093,
+      "raw_mag": 12.8488426,
+      "relative_mag": 0.07752889999999901,
+      "corrected_relative_mag": 0.06682769999999749,
+      "controls": 4,
+      "control_offset": 0.01070120000000152,
+      "expid": "192018050"
+    },
+    {
+      "mjd": 59676.1947685,
+      "raw_mag": 12.8400421,
+      "relative_mag": 0.06872839999999947,
+      "corrected_relative_mag": 0.06802454999999874,
+      "controls": 4,
+      "control_offset": 0.0007038500000007275,
+      "expid": "192219476"
+    },
+    {
+      "mjd": 59682.2044792,
+      "raw_mag": 12.8879547,
+      "relative_mag": 0.11664099999999955,
+      "corrected_relative_mag": 0.09254684999999885,
+      "controls": 4,
+      "control_offset": 0.024094150000000703,
+      "expid": "192820447"
+    },
+    {
+      "mjd": 59684.264838,
+      "raw_mag": 12.881134,
+      "relative_mag": 0.1098202999999991,
+      "corrected_relative_mag": 0.10639704999999822,
+      "controls": 4,
+      "control_offset": 0.003423250000000877,
+      "expid": "193026483"
+    },
+    {
+      "mjd": 59687.1765046,
+      "raw_mag": 12.8900661,
+      "relative_mag": 0.11875239999999998,
+      "corrected_relative_mag": 0.1307791999999992,
+      "controls": 3,
+      "control_offset": -0.012026799999999227,
+      "expid": "193317650"
+    },
+    {
+      "mjd": 59689.1620139,
+      "raw_mag": 12.9020872,
+      "relative_mag": 0.1307735000000001,
+      "corrected_relative_mag": 0.14386812499999913,
+      "controls": 4,
+      "control_offset": -0.013094624999999027,
+      "expid": "193516201"
+    },
+    {
+      "mjd": 59693.1658681,
+      "raw_mag": 12.9240026,
+      "relative_mag": 0.15268889999999935,
+      "corrected_relative_mag": 0.1702863249999984,
+      "controls": 4,
+      "control_offset": -0.017597424999999056,
+      "expid": "193916586"
+    },
+    {
+      "mjd": 59695.1753704,
+      "raw_mag": 12.9217348,
+      "relative_mag": 0.15042109999999909,
+      "corrected_relative_mag": 0.15505404999999772,
+      "controls": 4,
+      "control_offset": -0.004632949999998637,
+      "expid": "194117537"
+    },
+    {
+      "mjd": 59697.195706,
+      "raw_mag": 12.9092951,
+      "relative_mag": 0.13798139999999925,
+      "corrected_relative_mag": 0.14622852499999883,
+      "controls": 4,
+      "control_offset": -0.008247124999999578,
+      "expid": "194319570"
+    },
+    {
+      "mjd": 59700.1945255,
+      "raw_mag": 12.9056892,
+      "relative_mag": 0.1343754999999991,
+      "corrected_relative_mag": 0.15123957499999818,
+      "controls": 4,
+      "control_offset": -0.01686407499999909,
+      "expid": "194619452"
+    },
+    {
+      "mjd": 59703.1811458,
+      "raw_mag": 12.8625031,
+      "relative_mag": 0.09118939999999931,
+      "corrected_relative_mag": 0.11773802499999864,
+      "controls": 4,
+      "control_offset": -0.026548624999999326,
+      "expid": "194918114"
+    },
+    {
+      "mjd": 59846.502338,
+      "raw_mag": 12.9335022,
+      "relative_mag": 0.16218849999999918,
+      "corrected_relative_mag": 0.13993662499999804,
+      "controls": 4,
+      "control_offset": 0.022251875000001142,
+      "expid": "209250233"
+    },
+    {
+      "mjd": 59848.4539815,
+      "raw_mag": 12.893877,
+      "relative_mag": 0.12256329999999949,
+      "corrected_relative_mag": 0.12867344999999908,
+      "controls": 4,
+      "control_offset": -0.006110149999999592,
+      "expid": "209445398"
+    },
+    {
+      "mjd": 59853.4933102,
+      "raw_mag": 12.8773994,
+      "relative_mag": 0.1060856999999995,
+      "corrected_relative_mag": 0.10368004999999858,
+      "controls": 4,
+      "control_offset": 0.002405650000000925,
+      "expid": "209949331"
+    },
+    {
+      "mjd": 59856.4438194,
+      "raw_mag": 12.8551207,
+      "relative_mag": 0.08380700000000019,
+      "corrected_relative_mag": 0.09873652499999963,
+      "controls": 4,
+      "control_offset": -0.014929524999999444,
+      "expid": "210244381"
+    },
+    {
+      "mjd": 59858.4667361,
+      "raw_mag": 12.8899403,
+      "relative_mag": 0.11862659999999892,
+      "corrected_relative_mag": 0.11969134999999831,
+      "controls": 4,
+      "control_offset": -0.0010647499999993926,
+      "expid": "210446673"
+    },
+    {
+      "mjd": 59860.504213,
+      "raw_mag": 12.891387,
+      "relative_mag": 0.1200732999999996,
+      "corrected_relative_mag": 0.10071269999999899,
+      "controls": 3,
+      "control_offset": 0.019360600000000616,
+      "expid": "210650421"
+    },
+    {
+      "mjd": 59863.4100347,
+      "raw_mag": 12.8887138,
+      "relative_mag": 0.11740009999999934,
+      "corrected_relative_mag": 0.11881982499999921,
+      "controls": 4,
+      "control_offset": -0.0014197249999998718,
+      "expid": "210941003"
+    },
+    {
+      "mjd": 59866.4762731,
+      "raw_mag": 12.914546,
+      "relative_mag": 0.1432322999999993,
+      "corrected_relative_mag": 0.13272469999999803,
+      "controls": 4,
+      "control_offset": 0.010507600000001283,
+      "expid": "211247627"
+    },
+    {
+      "mjd": 59871.4837153,
+      "raw_mag": 12.912446,
+      "relative_mag": 0.14113229999999888,
+      "corrected_relative_mag": 0.17300499999999808,
+      "controls": 4,
+      "control_offset": -0.0318726999999992,
+      "expid": "211748371"
+    },
+    {
+      "mjd": 59876.5069676,
+      "raw_mag": 12.9267216,
+      "relative_mag": 0.15540790000000015,
+      "corrected_relative_mag": 0.15055632500000016,
+      "controls": 4,
+      "control_offset": 0.004851574999999997,
+      "expid": "212250696"
+    },
+    {
+      "mjd": 59878.4426042,
+      "raw_mag": 12.933959,
+      "relative_mag": 0.16264529999999944,
+      "corrected_relative_mag": 0.15840619999999905,
+      "controls": 4,
+      "control_offset": 0.004239100000000384,
+      "expid": "212444260"
+    },
+    {
+      "mjd": 59880.4330787,
+      "raw_mag": 12.9087706,
+      "relative_mag": 0.1374569000000001,
+      "corrected_relative_mag": 0.13039037499999928,
+      "controls": 4,
+      "control_offset": 0.007066525000000823,
+      "expid": "212643307"
+    },
+    {
+      "mjd": 59882.509294,
+      "raw_mag": 12.8888111,
+      "relative_mag": 0.11749739999999953,
+      "corrected_relative_mag": 0.12324039999999847,
+      "controls": 4,
+      "control_offset": -0.005742999999998943,
+      "expid": "212850929"
+    },
+    {
+      "mjd": 59887.3705556,
+      "raw_mag": 12.8767729,
+      "relative_mag": 0.10545920000000031,
+      "corrected_relative_mag": 0.09730479999999986,
+      "controls": 4,
+      "control_offset": 0.00815440000000045,
+      "expid": "213337055"
+    },
+    {
+      "mjd": 59889.4874074,
+      "raw_mag": 12.8724003,
+      "relative_mag": 0.10108660000000036,
+      "corrected_relative_mag": 0.092259125,
+      "controls": 4,
+      "control_offset": 0.008827475000000362,
+      "expid": "213548740"
+    },
+    {
+      "mjd": 59899.4218171,
+      "raw_mag": 12.8957958,
+      "relative_mag": 0.12448209999999982,
+      "corrected_relative_mag": 0.12972059999999797,
+      "controls": 4,
+      "control_offset": -0.005238499999998147,
+      "expid": "214542181"
+    },
+    {
+      "mjd": 59903.392581,
+      "raw_mag": 12.8892927,
+      "relative_mag": 0.11797900000000006,
+      "corrected_relative_mag": 0.12403004999999911,
+      "controls": 4,
+      "control_offset": -0.006051049999999059,
+      "expid": "214939258"
+    },
+    {
+      "mjd": 59908.4418519,
+      "raw_mag": 12.8800087,
+      "relative_mag": 0.1086949999999991,
+      "corrected_relative_mag": 0.10293932499999858,
+      "controls": 4,
+      "control_offset": 0.005755675000000515,
+      "expid": "215444185"
+    },
+    {
+      "mjd": 59910.4217824,
+      "raw_mag": 12.9196863,
+      "relative_mag": 0.14837260000000008,
+      "corrected_relative_mag": 0.13164822500000017,
+      "controls": 4,
+      "control_offset": 0.016724374999999903,
+      "expid": "215642178"
+    },
+    {
+      "mjd": 59932.4450116,
+      "raw_mag": 12.823328,
+      "relative_mag": 0.052014299999999736,
+      "corrected_relative_mag": 0.05405039999999772,
+      "controls": 3,
+      "control_offset": -0.0020360999999979867,
+      "expid": "217844501"
+    },
+    {
+      "mjd": 59934.3991204,
+      "raw_mag": 12.8482351,
+      "relative_mag": 0.0769213999999998,
+      "corrected_relative_mag": 0.06727282499999898,
+      "controls": 4,
+      "control_offset": 0.009648575000000825,
+      "expid": "218039912"
+    },
+    {
+      "mjd": 59936.4481366,
+      "raw_mag": 12.8550148,
+      "relative_mag": 0.08370109999999897,
+      "corrected_relative_mag": 0.07202887499999822,
+      "controls": 4,
+      "control_offset": 0.011672225000000758,
+      "expid": "218244813"
+    },
+    {
+      "mjd": 59970.2754977,
+      "raw_mag": 12.8203249,
+      "relative_mag": 0.04901119999999892,
+      "corrected_relative_mag": 0.04826417499999902,
+      "controls": 4,
+      "control_offset": 0.0007470249999999012,
+      "expid": "221627549"
+    },
+    {
+      "mjd": 59972.3728472,
+      "raw_mag": 12.8538408,
+      "relative_mag": 0.08252710000000008,
+      "corrected_relative_mag": 0.06527677499999918,
+      "controls": 4,
+      "control_offset": 0.0172503250000009,
+      "expid": "221837284"
+    },
+    {
+      "mjd": 59981.1188657,
+      "raw_mag": 12.8691311,
+      "relative_mag": 0.09781740000000028,
+      "corrected_relative_mag": 0.09146779999999932,
+      "controls": 4,
+      "control_offset": 0.0063496000000009545,
+      "expid": "222711886"
+    },
+    {
+      "mjd": 59984.2056481,
+      "raw_mag": 12.9041395,
+      "relative_mag": 0.1328257999999991,
+      "corrected_relative_mag": 0.15824784999999864,
+      "controls": 4,
+      "control_offset": -0.02542204999999953,
+      "expid": "223020564"
+    },
+    {
+      "mjd": 59994.2557523,
+      "raw_mag": 12.8765926,
+      "relative_mag": 0.10527890000000006,
+      "corrected_relative_mag": 0.08231434999999987,
+      "controls": 4,
+      "control_offset": 0.022964550000000195,
+      "expid": "224025575"
+    },
+    {
+      "mjd": 60013.2789583,
+      "raw_mag": 12.8462095,
+      "relative_mag": 0.07489580000000018,
+      "corrected_relative_mag": 0.06849284999999927,
+      "controls": 4,
+      "control_offset": 0.0064029500000009065,
+      "expid": "225927895"
+    },
+    {
+      "mjd": 60021.1960417,
+      "raw_mag": 12.9025898,
+      "relative_mag": 0.13127609999999912,
+      "corrected_relative_mag": 0.09526367499999822,
+      "controls": 4,
+      "control_offset": 0.0360124250000009,
+      "expid": "226719604"
+    },
+    {
+      "mjd": 60031.1950347,
+      "raw_mag": 12.8533669,
+      "relative_mag": 0.08205319999999894,
+      "corrected_relative_mag": 0.07935284999999936,
+      "controls": 3,
+      "control_offset": 0.002700349999999574,
+      "expid": "227719503"
+    },
+    {
+      "mjd": 60036.2881597,
+      "raw_mag": 12.8428288,
+      "relative_mag": 0.07151509999999917,
+      "corrected_relative_mag": 0.05471202499999883,
+      "controls": 4,
+      "control_offset": 0.016803075000000334,
+      "expid": "228228815"
+    },
+    {
+      "mjd": 60045.1579977,
+      "raw_mag": 12.8032942,
+      "relative_mag": 0.03198049999999952,
+      "corrected_relative_mag": 0.04034799999999805,
+      "controls": 3,
+      "control_offset": -0.008367499999998529,
+      "expid": "229115799"
+    },
+    {
+      "mjd": 60050.1584375,
+      "raw_mag": 12.8155365,
+      "relative_mag": 0.04422280000000001,
+      "corrected_relative_mag": 0.05176774999999978,
+      "controls": 3,
+      "control_offset": -0.007544949999999773,
+      "expid": "229615843"
+    },
+    {
+      "mjd": 60052.2284954,
+      "raw_mag": 12.8281565,
+      "relative_mag": 0.05684280000000008,
+      "corrected_relative_mag": 0.06691287499999987,
+      "controls": 4,
+      "control_offset": -0.01007007499999979,
+      "expid": "229822849"
+    },
+    {
+      "mjd": 60055.1773264,
+      "raw_mag": 12.8410053,
+      "relative_mag": 0.06969160000000052,
+      "corrected_relative_mag": 0.06998769999999954,
+      "controls": 4,
+      "control_offset": -0.00029609999999902215,
+      "expid": "230117732"
+    },
+    {
+      "mjd": 60057.2006597,
+      "raw_mag": 12.8700123,
+      "relative_mag": 0.09869860000000052,
+      "corrected_relative_mag": 0.09758179999999861,
+      "controls": 3,
+      "control_offset": 0.0011168000000019163,
+      "expid": "230320065"
+    },
+    {
+      "mjd": 60220.4769097,
+      "raw_mag": 12.7697506,
+      "relative_mag": -0.0015631000000002615,
+      "corrected_relative_mag": 0.004140074999999577,
+      "controls": 4,
+      "control_offset": -0.005703174999999838,
+      "expid": "246647690"
+    },
+    {
+      "mjd": 60222.4485764,
+      "raw_mag": 12.752739,
+      "relative_mag": -0.018574700000000277,
+      "corrected_relative_mag": -0.00488805000000081,
+      "controls": 4,
+      "control_offset": -0.013686649999999467,
+      "expid": "246844857"
+    },
+    {
+      "mjd": 60229.4434375,
+      "raw_mag": 12.7581272,
+      "relative_mag": -0.013186499999999768,
+      "corrected_relative_mag": -0.007928450000000531,
+      "controls": 4,
+      "control_offset": -0.005258049999999237,
+      "expid": "247544343"
+    },
+    {
+      "mjd": 60232.4620718,
+      "raw_mag": 12.7456055,
+      "relative_mag": -0.025708200000000403,
+      "corrected_relative_mag": -0.01816270000000131,
+      "controls": 3,
+      "control_offset": -0.007545499999999095,
+      "expid": "247846207"
+    },
+    {
+      "mjd": 60234.4751968,
+      "raw_mag": 12.7712374,
+      "relative_mag": -7.62999999999181e-05,
+      "corrected_relative_mag": 0.0018681999999987653,
+      "controls": 3,
+      "control_offset": -0.0019444999999986834,
+      "expid": "248047519"
+    },
+    {
+      "mjd": 60236.4332176,
+      "raw_mag": 12.7873898,
+      "relative_mag": 0.01607609999999937,
+      "corrected_relative_mag": 0.011180624999999722,
+      "controls": 4,
+      "control_offset": 0.004895474999999649,
+      "expid": "248243321"
+    },
+    {
+      "mjd": 60238.4411343,
+      "raw_mag": 12.7870131,
+      "relative_mag": 0.01569939999999903,
+      "corrected_relative_mag": 0.014647499999998814,
+      "controls": 4,
+      "control_offset": 0.0010519000000002166,
+      "expid": "248444113"
+    },
+    {
+      "mjd": 60241.4708218,
+      "raw_mag": 12.8077755,
+      "relative_mag": 0.036461799999999656,
+      "corrected_relative_mag": 0.03901669999999946,
+      "controls": 4,
+      "control_offset": -0.0025548999999998045,
+      "expid": "248747082"
+    },
+    {
+      "mjd": 60245.4714931,
+      "raw_mag": 12.8558693,
+      "relative_mag": 0.08455559999999984,
+      "corrected_relative_mag": 0.07205049999999869,
+      "controls": 4,
+      "control_offset": 0.012505100000001157,
+      "expid": "249147149"
+    },
+    {
+      "mjd": 60248.5172801,
+      "raw_mag": 12.8261652,
+      "relative_mag": 0.05485149999999983,
+      "corrected_relative_mag": 0.05724234999999922,
+      "controls": 4,
+      "control_offset": -0.0023908499999993893,
+      "expid": "249451728"
+    },
+    {
+      "mjd": 60253.4777546,
+      "raw_mag": 12.7952795,
+      "relative_mag": 0.02396579999999915,
+      "corrected_relative_mag": 0.03876082499999889,
+      "controls": 4,
+      "control_offset": -0.01479502499999974,
+      "expid": "249947775"
+    },
+    {
+      "mjd": 60255.5168634,
+      "raw_mag": 12.8084803,
+      "relative_mag": 0.03716659999999905,
+      "corrected_relative_mag": 0.027656549999997893,
+      "controls": 4,
+      "control_offset": 0.009510050000001158,
+      "expid": "250151686"
+    },
+    {
+      "mjd": 60258.4049421,
+      "raw_mag": 12.7924871,
+      "relative_mag": 0.021173400000000342,
+      "corrected_relative_mag": 0.02094594999999977,
+      "controls": 4,
+      "control_offset": 0.00022745000000057303,
+      "expid": "250440494"
+    },
+    {
+      "mjd": 60260.4762153,
+      "raw_mag": 12.7972841,
+      "relative_mag": 0.025970400000000282,
+      "corrected_relative_mag": 0.010973400000000133,
+      "controls": 4,
+      "control_offset": 0.014997000000000149,
+      "expid": "250647621"
+    },
+    {
+      "mjd": 60262.4568866,
+      "raw_mag": 12.7803936,
+      "relative_mag": 0.009079899999999697,
+      "corrected_relative_mag": -0.0032092000000005783,
+      "controls": 4,
+      "control_offset": 0.012289100000000275,
+      "expid": "250845688"
+    },
+    {
+      "mjd": 60287.2991898,
+      "raw_mag": 12.8256779,
+      "relative_mag": 0.054364200000000196,
+      "corrected_relative_mag": 0.04856154999999873,
+      "controls": 4,
+      "control_offset": 0.005802650000001464,
+      "expid": "253329918"
+    },
+    {
+      "mjd": 60289.3628009,
+      "raw_mag": 12.8051453,
+      "relative_mag": 0.033831599999999185,
+      "corrected_relative_mag": 0.03073427499999859,
+      "controls": 4,
+      "control_offset": 0.0030973250000005947,
+      "expid": "253536280"
+    },
+    {
+      "mjd": 60291.4155324,
+      "raw_mag": 12.7823143,
+      "relative_mag": 0.011000599999999139,
+      "corrected_relative_mag": 0.00892037499999887,
+      "controls": 4,
+      "control_offset": 0.0020802250000002687,
+      "expid": "253741553"
+    },
+    {
+      "mjd": 60296.4618171,
+      "raw_mag": 12.7961016,
+      "relative_mag": 0.024787899999999752,
+      "corrected_relative_mag": 0.014220199999998684,
+      "controls": 4,
+      "control_offset": 0.010567700000001068,
+      "expid": "254246181"
+    },
+    {
+      "mjd": 60315.4141435,
+      "raw_mag": 12.8245201,
+      "relative_mag": 0.05320640000000054,
+      "corrected_relative_mag": 0.03849020000000003,
+      "controls": 4,
+      "control_offset": 0.014716200000000512,
+      "expid": "256141414"
+    },
+    {
+      "mjd": 60322.2766088,
+      "raw_mag": 12.829833,
+      "relative_mag": 0.058519300000000385,
+      "corrected_relative_mag": 0.06149999999999878,
+      "controls": 4,
+      "control_offset": -0.002980699999998393,
+      "expid": "256827660"
+    },
+    {
+      "mjd": 60324.3809144,
+      "raw_mag": 12.8408432,
+      "relative_mag": 0.0695294999999998,
+      "corrected_relative_mag": 0.05697149999999862,
+      "controls": 4,
+      "control_offset": 0.01255800000000118,
+      "expid": "257038091"
+    },
+    {
+      "mjd": 60352.2776042,
+      "raw_mag": 12.8413572,
+      "relative_mag": 0.07004349999999882,
+      "corrected_relative_mag": 0.050511974999998266,
+      "controls": 4,
+      "control_offset": 0.01953152500000055,
+      "expid": "259827760"
+    },
+    {
+      "mjd": 60352.2968981,
+      "raw_mag": 12.8394527,
+      "relative_mag": 0.0681390000000004,
+      "corrected_relative_mag": 0.050435674999999236,
+      "controls": 4,
+      "control_offset": 0.017703325000001158,
+      "expid": "259829689"
+    },
+    {
+      "mjd": 60357.3669329,
+      "raw_mag": 12.8225241,
+      "relative_mag": 0.05121040000000043,
+      "corrected_relative_mag": 0.05259225000000001,
+      "controls": 4,
+      "control_offset": -0.0013818499999995737,
+      "expid": "260336693"
+    },
+    {
+      "mjd": 60378.2062037,
+      "raw_mag": 12.7801828,
+      "relative_mag": 0.008869100000000074,
+      "corrected_relative_mag": -0.004014100000000909,
+      "controls": 3,
+      "control_offset": 0.012883200000000983,
+      "expid": "262420620"
+    },
+    {
+      "mjd": 60391.1939815,
+      "raw_mag": 12.8374929,
+      "relative_mag": 0.06617920000000055,
+      "corrected_relative_mag": 0.060464975000000365,
+      "controls": 4,
+      "control_offset": 0.005714225000000184,
+      "expid": "263719398"
+    },
+    {
+      "mjd": 60399.1540394,
+      "raw_mag": 12.7843895,
+      "relative_mag": 0.013075799999999305,
+      "corrected_relative_mag": 0.023339474999997556,
+      "controls": 4,
+      "control_offset": -0.010263674999998251,
+      "expid": "264515403"
+    },
+    {
+      "mjd": 60404.1723264,
+      "raw_mag": 12.7912436,
+      "relative_mag": 0.01992989999999928,
+      "corrected_relative_mag": 0.010935749999998912,
+      "controls": 4,
+      "control_offset": 0.008994150000000367,
+      "expid": "265017232"
+    },
+    {
+      "mjd": 60420.1950231,
+      "raw_mag": 12.8015623,
+      "relative_mag": 0.03024860000000018,
+      "corrected_relative_mag": 0.03920214999999949,
+      "controls": 3,
+      "control_offset": -0.00895354999999931,
+      "expid": "266619502"
+    },
+    {
+      "mjd": 60422.216331,
+      "raw_mag": 12.811141,
+      "relative_mag": 0.0398272999999989,
+      "corrected_relative_mag": 0.04547427499999834,
+      "controls": 4,
+      "control_offset": -0.005646974999999443,
+      "expid": "266821633"
+    },
+    {
+      "mjd": 60429.1814931,
+      "raw_mag": 12.7965708,
+      "relative_mag": 0.025257099999999255,
+      "corrected_relative_mag": 0.04368227499999833,
+      "controls": 4,
+      "control_offset": -0.018425174999999072,
+      "expid": "267518149"
+    },
+    {
+      "mjd": 60435.1965625,
+      "raw_mag": 12.7986956,
+      "relative_mag": 0.02738189999999996,
+      "corrected_relative_mag": 0.02613589999999899,
+      "controls": 4,
+      "control_offset": 0.0012460000000009686,
+      "expid": "268119656"
+    },
+    {
+      "mjd": 60571.4745833,
+      "raw_mag": 12.8443327,
+      "relative_mag": 0.07301900000000039,
+      "corrected_relative_mag": 0.04781719999999989,
+      "controls": 4,
+      "control_offset": 0.025201800000000496,
+      "expid": "281747458"
+    },
+    {
+      "mjd": 60574.4987847,
+      "raw_mag": 12.84729,
+      "relative_mag": 0.07597629999999889,
+      "corrected_relative_mag": 0.05862777499999883,
+      "controls": 4,
+      "control_offset": 0.01734852500000006,
+      "expid": "282049878"
+    },
+    {
+      "mjd": 60593.5149306,
+      "raw_mag": 12.8044147,
+      "relative_mag": 0.03310100000000027,
+      "corrected_relative_mag": 0.04961362499999922,
+      "controls": 4,
+      "control_offset": -0.01651262499999895,
+      "expid": "283951493"
+    },
+    {
+      "mjd": 60595.4446528,
+      "raw_mag": 12.8086843,
+      "relative_mag": 0.03737059999999914,
+      "corrected_relative_mag": 0.03236239999999846,
+      "controls": 4,
+      "control_offset": 0.005008200000000684,
+      "expid": "284144465"
+    },
+    {
+      "mjd": 60597.416331,
+      "raw_mag": 12.8035069,
+      "relative_mag": 0.03219320000000003,
+      "corrected_relative_mag": 0.033661575,
+      "controls": 4,
+      "control_offset": -0.0014683749999999662,
+      "expid": "284341633"
+    },
+    {
+      "mjd": 60602.4425463,
+      "raw_mag": 12.7868643,
+      "relative_mag": 0.015550599999999193,
+      "corrected_relative_mag": 0.021014199999997984,
+      "controls": 4,
+      "control_offset": -0.005463599999998792,
+      "expid": "284844254"
+    },
+    {
+      "mjd": 60604.3927546,
+      "raw_mag": 12.7859993,
+      "relative_mag": 0.014685599999999965,
+      "corrected_relative_mag": 0.0211452999999997,
+      "controls": 4,
+      "control_offset": -0.006459699999999735,
+      "expid": "285039275"
+    },
+    {
+      "mjd": 60608.4819213,
+      "raw_mag": 12.8055363,
+      "relative_mag": 0.03422259999999966,
+      "corrected_relative_mag": 0.03213399999999744,
+      "controls": 3,
+      "control_offset": 0.0020886000000022165,
+      "expid": "285448192"
+    },
+    {
+      "mjd": 60614.49,
+      "raw_mag": 12.8248367,
+      "relative_mag": 0.05352300000000021,
+      "corrected_relative_mag": 0.03402419999999928,
+      "controls": 3,
+      "control_offset": 0.019498800000000927,
+      "expid": "286048999"
+    },
+    {
+      "mjd": 60628.4332639,
+      "raw_mag": 12.7905769,
+      "relative_mag": 0.01926319999999926,
+      "corrected_relative_mag": 0.011528674999999211,
+      "controls": 4,
+      "control_offset": 0.007734525000000048,
+      "expid": "287443326"
+    },
+    {
+      "mjd": 60631.4583912,
+      "raw_mag": 12.7810116,
+      "relative_mag": 0.009697899999999038,
+      "corrected_relative_mag": 0.006590799999997898,
+      "controls": 4,
+      "control_offset": 0.0031071000000011395,
+      "expid": "287745839"
+    },
+    {
+      "mjd": 60636.4365972,
+      "raw_mag": 12.8033791,
+      "relative_mag": 0.032065400000000466,
+      "corrected_relative_mag": 0.01340240000000037,
+      "controls": 4,
+      "control_offset": 0.018663000000000096,
+      "expid": "288243659"
+    },
+    {
+      "mjd": 60653.30875,
+      "raw_mag": 12.8054619,
+      "relative_mag": 0.03414819999999885,
+      "corrected_relative_mag": 0.029741199999998358,
+      "controls": 4,
+      "control_offset": 0.004407000000000494,
+      "expid": "289930874"
+    },
+    {
+      "mjd": 60663.4190972,
+      "raw_mag": 12.7894087,
+      "relative_mag": 0.018094999999998862,
+      "corrected_relative_mag": -0.0037479500000019428,
+      "controls": 4,
+      "control_offset": 0.021842950000000805,
+      "expid": "290941909"
+    },
+    {
+      "mjd": 60665.3802662,
+      "raw_mag": 12.7559776,
+      "relative_mag": -0.01533610000000074,
+      "corrected_relative_mag": -0.020761600000001934,
+      "controls": 3,
+      "control_offset": 0.005425500000001193,
+      "expid": "291138026"
+    },
+    {
+      "mjd": 60667.3765278,
+      "raw_mag": 12.7454147,
+      "relative_mag": -0.025899000000000783,
+      "corrected_relative_mag": -0.026701550000001184,
+      "controls": 4,
+      "control_offset": 0.0008025500000004016,
+      "expid": "291337652"
+    },
+    {
+      "mjd": 60676.3578935,
+      "raw_mag": 12.7786093,
+      "relative_mag": 0.0072955999999990695,
+      "corrected_relative_mag": 0.0024802249999984483,
+      "controls": 4,
+      "control_offset": 0.004815375000000621,
+      "expid": "292235789"
+    },
+    {
+      "mjd": 60691.2837963,
+      "raw_mag": 12.799262,
+      "relative_mag": 0.02794830000000026,
+      "corrected_relative_mag": -0.0025183000000001954,
+      "controls": 4,
+      "control_offset": 0.030466600000000454,
+      "expid": "293728379"
+    },
+    {
+      "mjd": 60693.2571991,
+      "raw_mag": 12.764431,
+      "relative_mag": -0.006882700000000241,
+      "corrected_relative_mag": -0.003336500000001408,
+      "controls": 4,
+      "control_offset": -0.0035461999999988336,
+      "expid": "293925719"
+    },
+    {
+      "mjd": 60695.2540278,
+      "raw_mag": 12.7876024,
+      "relative_mag": 0.01628870000000049,
+      "corrected_relative_mag": 0.005003125000000885,
+      "controls": 4,
+      "control_offset": 0.011285574999999604,
+      "expid": "294125402"
+    },
+    {
+      "mjd": 60698.2213426,
+      "raw_mag": 12.7588072,
+      "relative_mag": -0.012506500000000642,
+      "corrected_relative_mag": -0.00680975000000128,
+      "controls": 4,
+      "control_offset": -0.005696749999999362,
+      "expid": "294422134"
+    },
+    {
+      "mjd": 60706.3170833,
+      "raw_mag": 12.7813263,
+      "relative_mag": 0.010012599999999594,
+      "corrected_relative_mag": 0.00023002499999957848,
+      "controls": 4,
+      "control_offset": 0.009782575000000016,
+      "expid": "295231708"
+    },
+    {
+      "mjd": 60726.3604282,
+      "raw_mag": 12.7725458,
+      "relative_mag": 0.001232099999999292,
+      "corrected_relative_mag": -0.0013876500000016279,
+      "controls": 4,
+      "control_offset": 0.00261975000000092,
+      "expid": "297236042"
+    },
+    {
+      "mjd": 60728.2552778,
+      "raw_mag": 12.7624788,
+      "relative_mag": -0.00883490000000009,
+      "corrected_relative_mag": -0.00553230000000049,
+      "controls": 3,
+      "control_offset": -0.0033025999999996003,
+      "expid": "297425527"
+    },
+    {
+      "mjd": 60730.2773958,
+      "raw_mag": 12.7682753,
+      "relative_mag": -0.0030383999999994415,
+      "corrected_relative_mag": -0.0032789749999997397,
+      "controls": 4,
+      "control_offset": 0.0002405750000002982,
+      "expid": "297627739"
+    },
+    {
+      "mjd": 60732.1906944,
+      "raw_mag": 12.7705336,
+      "relative_mag": -0.0007801000000000613,
+      "corrected_relative_mag": -0.006251300000000626,
+      "controls": 3,
+      "control_offset": 0.0054712000000005645,
+      "expid": "297819069"
+    },
+    {
+      "mjd": 60739.1510532,
+      "raw_mag": 12.7594099,
+      "relative_mag": -0.011903800000000686,
+      "corrected_relative_mag": -0.019975250000000777,
+      "controls": 4,
+      "control_offset": 0.008071450000000091,
+      "expid": "298515105"
+    },
+    {
+      "mjd": 60753.2178935,
+      "raw_mag": 12.759181,
+      "relative_mag": -0.01213270000000044,
+      "corrected_relative_mag": -0.022451225000001074,
+      "controls": 4,
+      "control_offset": 0.010318525000000633,
+      "expid": "299921789"
+    },
+    {
+      "mjd": 60755.1416667,
+      "raw_mag": 12.7094803,
+      "relative_mag": -0.06183340000000115,
+      "corrected_relative_mag": -0.05160005000000112,
+      "controls": 3,
+      "control_offset": -0.01023335000000003,
+      "expid": "300114166"
+    },
+    {
+      "mjd": 60759.2361574,
+      "raw_mag": 12.7284098,
+      "relative_mag": -0.04290390000000066,
+      "corrected_relative_mag": -0.03117035000000179,
+      "controls": 3,
+      "control_offset": -0.011733549999998871,
+      "expid": "300523615"
+    },
+    {
+      "mjd": 60761.1754977,
+      "raw_mag": 12.7621536,
+      "relative_mag": -0.009160100000000782,
+      "corrected_relative_mag": -0.020099700000002052,
+      "controls": 4,
+      "control_offset": 0.01093960000000127,
+      "expid": "300717549"
+    },
+    {
+      "mjd": 60773.1656366,
+      "raw_mag": 12.7753563,
+      "relative_mag": 0.004042600000000007,
+      "corrected_relative_mag": 0.00790779999999991,
+      "controls": 3,
+      "control_offset": -0.003865199999999902,
+      "expid": "301916563"
+    },
+    {
+      "mjd": 60775.2338542,
+      "raw_mag": 12.7408781,
+      "relative_mag": -0.030435600000000562,
+      "corrected_relative_mag": 0.0007409499999990743,
+      "controls": 4,
+      "control_offset": -0.031176549999999636,
+      "expid": "302123385"
+    },
+    {
+      "mjd": 60785.1656597,
+      "raw_mag": 12.7528172,
+      "relative_mag": -0.01849649999999947,
+      "corrected_relative_mag": -0.016308575000000047,
+      "controls": 4,
+      "control_offset": -0.0021879249999994244,
+      "expid": "303116565"
+    },
+    {
+      "mjd": 60788.2670833,
+      "raw_mag": 12.7328043,
+      "relative_mag": -0.03850940000000058,
+      "corrected_relative_mag": -0.026642850000001772,
+      "controls": 4,
+      "control_offset": -0.01186654999999881,
+      "expid": "303426708"
+    },
+    {
+      "mjd": 60948.4694444,
+      "raw_mag": 12.7367077,
+      "relative_mag": -0.03460600000000014,
+      "corrected_relative_mag": -0.03836037500000078,
+      "controls": 4,
+      "control_offset": 0.0037543750000006426,
+      "expid": "319446944"
+    },
+    {
+      "mjd": 60950.4924074,
+      "raw_mag": 12.7403898,
+      "relative_mag": -0.03092389999999945,
+      "corrected_relative_mag": -0.0469835750000005,
+      "controls": 4,
+      "control_offset": 0.01605967500000105,
+      "expid": "319649240"
+    },
+    {
+      "mjd": 60952.5037616,
+      "raw_mag": 12.73699,
+      "relative_mag": -0.034323699999999846,
+      "corrected_relative_mag": -0.05694322499999949,
+      "controls": 4,
+      "control_offset": 0.02261952499999964,
+      "expid": "319850376"
+    },
+    {
+      "mjd": 60954.5152546,
+      "raw_mag": 12.732439,
+      "relative_mag": -0.03887470000000093,
+      "corrected_relative_mag": -0.056068050000002145,
+      "controls": 3,
+      "control_offset": 0.017193350000001217,
+      "expid": "320051525"
+    },
+    {
+      "mjd": 60956.4579282,
+      "raw_mag": 12.7119112,
+      "relative_mag": -0.05940250000000091,
+      "corrected_relative_mag": -0.050809225000001845,
+      "controls": 4,
+      "control_offset": -0.008593274999999068,
+      "expid": "320245792"
+    },
+    {
+      "mjd": 60958.5177315,
+      "raw_mag": 12.7395515,
+      "relative_mag": -0.03176220000000107,
+      "corrected_relative_mag": -0.04761230000000172,
+      "controls": 4,
+      "control_offset": 0.015850100000000644,
+      "expid": "320451773"
+    },
+    {
+      "mjd": 60964.4384606,
+      "raw_mag": 12.7216749,
+      "relative_mag": -0.049638800000000316,
+      "corrected_relative_mag": -0.047110375000000815,
+      "controls": 4,
+      "control_offset": -0.002528424999999501,
+      "expid": "321043846"
+    },
+    {
+      "mjd": 60966.5207755,
+      "raw_mag": 12.7239647,
+      "relative_mag": -0.04734900000000053,
+      "corrected_relative_mag": -0.04736140000000155,
+      "controls": 4,
+      "control_offset": 1.2400000001022704e-05,
+      "expid": "321252077"
+    },
+    {
+      "mjd": 60968.4094329,
+      "raw_mag": 12.7251167,
+      "relative_mag": -0.046197000000001154,
+      "corrected_relative_mag": -0.0394411500000027,
+      "controls": 4,
+      "control_offset": -0.006755849999998453,
+      "expid": "321440943"
+    }
+  ],
+  "limits": [
+    "All available original control stars retained; no control rejected on historical or modern target outcome.",
+    "Image/filter/field/CCD/quadrant key must agree. Same-source duplicate controls collapse to one.",
+    "Detector, saturation, colour and long-term reference-star systematics remain; no physical cause or historical connection inferred.",
+    "Annual quantiles describe observations, not uncertainty of an independent annual mean. Large tails remain and need image vetting."
+  ]
+}

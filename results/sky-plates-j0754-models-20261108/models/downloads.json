@@ -1,0 +1,210 @@
+[
+  {
+    "file": "ckm05_3500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_3750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_4000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_4250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_4500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_4750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_5000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_5250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_5500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_5750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_6000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_6250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm05_6500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_3500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_3750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_4000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_4250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_4500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_4750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_5000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_5250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_5500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_5750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_6000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_6250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckm10_6500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_3500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_3750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_4000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_4250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_4500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_4750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_5000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_5250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_5500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_5750.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_6000.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_6250.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "ckp00_6500.fits",
+    "bytes": 69120
+  },
+  {
+    "file": "filter_B.xml",
+    "bytes": 7261
+  },
+  {
+    "file": "filter_CousinsI.xml",
+    "bytes": 9914
+  },
+  {
+    "file": "filter_H.xml",
+    "bytes": 11870
+  },
+  {
+    "file": "filter_J.xml",
+    "bytes": 16476
+  },
+  {
+    "file": "filter_Ks.xml",
+    "bytes": 13567
+  },
+  {
+    "file": "filter_V.xml",
+    "bytes": 7616
+  },
+  {
+    "file": "filter_W1.xml",
+    "bytes": 19579
+  },
+  {
+    "file": "filter_W2.xml",
+    "bytes": 22119
+  },
+  {
+    "file": "filter_g.xml",
+    "bytes": 14873
+  },
+  {
+    "file": "filter_r.xml",
+    "bytes": 13446
+  },
+  {
+    "file": "filter_sdss_i.xml",
+    "bytes": 14745
+  },
+  {
+    "file": "filter_z.xml",
+    "bytes": 19760
+  },
+  {
+    "file": "filter_ztfg.xml",
+    "bytes": 207388
+  }
+]

@@ -1,0 +1,19 @@
+J0754 independent ASAS-SN replication â€” checkpoint, 8 November 2026
+
+Question: Does an independent survey reproduce ZTF's apparent 2018-to-2022 fading and subsequent partial recovery?
+
+Result: INCONCLUSIVE â€” insufficient returned target coverage. This is an archive-access/coverage outcome, not a null variability measurement.
+
+Sky Patrol V2 identifies all 17 requested Gaia sources. Its native block contains 18,391 photometric rows for 14 comparison stars and zero J0754 rows. A separate target-only lookup and a 36-arcsecond master-catalogue cone identify the same ASAS-SN ID214748736751 and also return zero target photometry. This does not prove that the survey never observed the star.
+
+A separate public ASAS-SN variable-star record supplies222 V-band observations, all camera ba,2013-01-18 to2018-11-24. JSON and the embedded HTML agree exactly; the native CSV is header-only. Median V=12.2275 and robust MAD scatter0.0437367mag. Published rows have no image-quality flags, so they are screened only for finite values, positive flux/errors and0<mag_err<99. No brightness clipping. Annual medians require10observations;2013has4 and is not plotted as an annual median.
+
+The catalogue labels the star ROT: (uncertain rotational variable), amplitude0.17mag, period912.3158778days, classification probability0.874, reference ASAS-SN variable-star catalogue PaperII (2019). These are external catalogue claims. The period was not independently verified here and is not a demonstrated cause of the ZTF trend or the1930s event. The catalogue entry is evidence of attention after the2010 discovery; neglect should not be described categorically.
+
+The older V data end too early to test the2022 minimum or2025 recovery. The prior ZTF changes remain +0.308863175mag (2018â†’2022) and -0.1392930625mag (2022â†’2025), from the same-exposure differential diagnostic; neither is independently corroborated by this stage. Passbands/zero points are never aligned.
+
+Next concrete step: The visible Sky Patrol V1 form is prepared for6000days, RA118.69117410685, Dec16.694621231895, proper motions(-1.96603,-1.71913)mas/yr at epoch2016.0, aperture photometry. Kyle completed the human CAPTCHA and clicked Compute. Ari observed the query-check screen, checked its offered precomputed V-only light curve, then clicked Re-Compute This Light Curve. Job21eb35a3-8487-4560-a40d-be000fae5f7d was observed queued and then started. Public status receipts are preserved; the result remains pending. Once returned, preserve native photometry, retain cameras/filters/flags, and apply the pre-inspection protocol.json against the fixed comparison set. Adequate raw coverage is required before a replication verdict.
+
+Validation:21 numerical tests pass. Independent reviewer reproduced catalogue identities, row counts and dates and checked713 camera/year summary cells; HTML/JSON equality confirmed. Review exposed two future-use issues (stale missing-coverage verdict and malformed-response cache poisoning); both are fixed with fail-closed gates and validation before canonical caching. Previous four snapshot manifests remain unchanged. asassn_coverage.png visually checked.
+
+Maintained source: tools/sky-plates. Raw/results: this directory. Isolated runtime: runtime/sky-plates/venv. Existing repository Desktop registration reused, previously visibly verified in this chat. Local source commit is recorded in file_manifest.json after commit. No online push/publication.

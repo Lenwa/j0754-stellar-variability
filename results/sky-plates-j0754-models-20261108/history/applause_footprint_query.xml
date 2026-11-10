@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Leibniz-Institut f&uuml;r Astrophysik Potsdam - Supercomputing and E-Science</title>
+    <style type="text/css">
+        body {
+            height: 80%;
+            width: 600px;
+            margin: 200px auto;
+        }
+        p {
+            text-align: center;
+            font-family: Arial, Verdana, sans;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.aip.de"><img src="/aip_logo.png" alt="Leibniz-Institut f&uuml;r Astrophysik Potsdam - Supercomputing and E-Science" width="600"></a>
+    <p>
+        An error occured. Please contact the administrators.
+    </p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+SPHEREx CO-window check — exploratory, Ari,8November2026local.
+
+Prediction: if a long-wave residual uniquely requires extra emission, it should remain after credible stellar-atmosphere nuisance changes. This is a retrospective model-adequacy test, not a blinded detection.
+
+Current/native reductions are compared separately, each retaining its wavelength labels. A nearIR .75–2.4um fit selects each model, and the residual over4.55–4.9um is divided by that over4.0–4.2um. This removes a gray normalization difference; it does not remove differential detector calibration or establish CO identity.
+
+local 2025: nref=5, nCO=7, selected-model index=0.99932, sampled 5%nearIR log-RMS index range=[0.9248623211720655, 1.1509422150893298]; 450 compatible grid cases.
+local 2026: nref=6, nCO=9, selected-model index=1.05473, sampled 5%nearIR log-RMS index range=[0.9273048788676219, 1.1532698838852768]; 392 compatible grid cases.
+native 2025: nref=5, nCO=8, selected-model index=0.97643, sampled 5%nearIR log-RMS index range=[0.8959449647624648, 1.1220670571333415]; 443 compatible grid cases.
+native 2026: nref=5, nCO=9, selected-model index=1.06133, sampled 5%nearIR log-RMS index range=[0.9622715018359109, 1.1792229613376497]; 372 compatible grid cases.
+
+The selected-model April2026 longwave shape residual is roughly5.5–6.1% relative to the4.0–4.2um reference, whereas the absolute selected-model longwave excess was~9%. It is not all one gray offset. However all four sampled atmosphere-sensitivity intervals include1, so extra longwave emission is not robustly required by this grid. The ranges are NOT statistical confidence intervals or a completeness proof.
+
+The nuisance grid includes metal−1,−.5,0, logg1–3, temperatures3500–6500K and staticRv3.1 attenuation Av0–1.5. The current grids are coarse plane-parallel LTE models and approximate rectangularpassbands; they cannot validate a detailed low-gravity spherical/nonLTE CO spectrum. No CO emission, CO temperature, dust mass or formal infrared-excess upper limit has been measured. No current result identifies the mechanism of the historical/2018–22 fading.
+
+A future discriminating comparison would use response-convolved spherical giant atmospheres and shared calibration/epoch nuisances, ideally paired with modern spectra and simultaneous optical brightness. The observed shape is worth retaining, not naming as dust or CO prematurely.
+
+Primary physical motivation for CO affecting W2: https://doi.org/10.1051/0004-6361/201832833 . Original native inputs and calibrated extraction are in results/sky-plates-j0754-spherex-20261108.

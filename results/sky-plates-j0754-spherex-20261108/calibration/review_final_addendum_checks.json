@@ -1,0 +1,26 @@
+{
+  "rows": 220,
+  "quality_rows": 182,
+  "converged": 174,
+  "unconverged": 8,
+  "boundary": 0,
+  "offset_px_median_max": [
+    0.02509330648174158,
+    0.0772581398474921
+  ],
+  "flux_change_fraction_percentiles": [
+    -0.02678481210074868,
+    -0.00041697515424752294,
+    0.0019748374469883423,
+    0.009240205091590318,
+    0.01994666163772174
+  ],
+  "max_primary_flux_delta_ujy": 0.0,
+  "max_wavelength_delta_um": 0.0,
+  "all_primary_quality_unchanged": true,
+  "source_sha256": {
+    "spherex_photometry.py": "2fe3474ca76602405fda76352f3f4a2bb131e7476ebd4690aa0ceae56df446d0",
+    "extract_spherex.py": "a4d49387f2dbc0e191a38719b0dfcea7dac38d34c2bbdbc6f05067d2020ce9ac",
+    "test_spherex_photometry.py": "a37a7e846e3e5c81fcb8c4862dce661392df4ff6437f5889fdc799019b809e75"
+  }
+}

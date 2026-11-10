@@ -1,0 +1,250 @@
+<!DOCTYPE html><html>
+<head>
+<title>20.12.4 xp_sampled_mean_spectrum‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3</title>
+<!--Generated on Sat Jul 15 11:29:14 2023 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 10 July 2023.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../gaia_index-8-2-2.css" type="text/css">
+<link rel="stylesheet" href="../../../esdc_a.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+<script src="../../../collapse.js" type="text/javascript"></script>
+<script src="../../../navigation.js" type="text/javascript"></script>
+<script src="../../../jquery.min.js" type="text/javascript"></script>
+<link rel="up" href="." title="20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="up up" href="../" title="Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="up up up" href="../../" title="Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="up up up up" href="../../../" title="Gaia Data Release 3 Documentation release 1.3">
+<link rel="start" href="../../../" title="Gaia Data Release 3 Documentation release 1.3">
+<link rel="prev" href="ssec_dm_xp_continuous_mean_spectrum.html" title="20.12.3 xp_continuous_mean_spectrum ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="next" href="../sec_dm_variability_tables/" title="20.13 Variability tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="subsection" href="ssec_dm_rvs_mean_spectrum.html" title="20.12.1 rvs_mean_spectrum ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="subsection" href="ssec_dm_xp_summary.html" title="20.12.2 xp_summary ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="subsection" href="ssec_dm_xp_continuous_mean_spectrum.html" title="20.12.3 xp_continuous_mean_spectrum ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_main_source_catalogue/" title="20.1 Main source catalogue ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_astrophysical_parameter_tables/" title="20.2 Astrophysical parameter tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_auxiliary_tables/" title="20.3 Auxiliary tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_cross-matches/" title="20.4 Cross-matches ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_extra--galactic_tables/" title="20.5 Extra–galactic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_non--single_stars_tables/" title="20.6 Non–single stars tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_photometry/" title="20.7 Photometry ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_reference_frame/" title="20.8 Reference frame ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_science_alert_tables/" title="20.9 Science alert tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_simulation_tables/" title="20.10 Simulation tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_solar_system_object_tables/" title="20.11 Solar System object tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="." title="20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_variability_tables/" title="20.13 Variability tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dm_performance_verification/" title="20.14 Performance verification ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="section" href="../sec_dmdiff_dm_diffs/" title="20.15 Differences between the Gaia DR3 and EDR3/DR2 data models ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="chapter" href="../../chap_archive/" title="Chapter 18 Gaia ESA Archive ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="chapter" href="../../chap_cu9pvp/" title="Chapter 19 Performance verification ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="chapter" href="../" title="Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="part" href="../../../Introduction/" title="Part I Introduction to Gaia Data Release 3 ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="part" href="../../../Data_processing/" title="Part II Gaia data processing ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="part" href="../../../Data_analysis/" title="Part III Gaia data analysis ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="part" href="../../../Catalogue_consolidation/" title="Part IV Gaia catalogue ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="part" href="../../" title="Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="appendix" href="../../../Miscellaneous/" title="Miscellaneous ‣ Gaia Data Release 3 Documentation release 1.3">
+<link rel="bibliography" href="../../../bib.html" title="Bibliography ‣ Gaia Data Release 3 Documentation release 1.3">
+<style>
+
+.toc {
+	overflow: hidden;
+    float:left;
+    width: 150px;
+    height: 100%;
+    width: 15%;
+    
+}
+
+
+nav.ltx_page_navbar {
+    display: none;
+    /*margin-bottom: 1em;
+    padding: .25em;
+    border: black thin solid;
+    background-color: #EEEEFF;
+    width: 40em;*/
+	
+}
+
+figure.ltx_table figcaption::after {content: ' [Note that wide tables may scroll horizontally using scroll bars found below tables.]';}
+.ltx_page_main .ltx_page_content figure.ltx_table {max-width:100vw;}
+</style>
+<!-- Matomo --><script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//esdcwebanalytics.esac.esa.int/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '30']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script><!-- End Matomo Code -->
+</head>
+<body>
+<!--begin of second insertion point--><div class="esdc_tb">
+<div id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
+<ul>
+<li class="esdc_external"><div class="esdch4"><a target="_blank" href="http://www.esa.int/"><span>→</span> European Space Agency
+
+					</a></div></li>
+<li class="esdc_external"><div class="esdch4"><a href="http://www.esa.int/About_Us/ESAC" target="_blank">About
+						ESAC</a></div></li>
+</ul>
+</div>
+<div id="esdc_top-title"><div class="title"><a href="/archive/documentation/GDR3/"><h3>gaia data release 3 documentation</h3></a></div></div>
+<div class="w3-container">
+<div id="search_box_nav" align="right"><form action="/archive/documentation/GDR3/search/search.php" method="get">
+<input name="query" id="query" size="auto" action="/archive/documentation/GDR3/search/include/js_suggest/suggest.php" columns="2" autocomplete="on" delay="1500" type="text"><input value="Search" type="submit"><input name="search" value="1" type="hidden">
+</form></div>
+<div class="buttonHolder"><p class="button" style="margin:0;padding:0;"><button id="button1" class="buttonControl" aria-controls="ltx_page_navbar"><span>Show</span> Contents</button></p></div>
+</div>
+<!--end of second insertion point--><div class="main-holder w3-container">
+<nav class="ltx_page_navbar" aria-expanded="false"><a href="../../../" title="Gaia Data Release 3 Documentation release 1.3" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title">Gaia Data Release 3 <span class="ltx_text"> </span><span class="ltx_ref" style="font-size:90%;">Documentation release 1.3</span></span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_document">
+<a href="../../../" title="Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title">Gaia Data Release 3 <span class="ltx_text"> </span><span class="ltx_ref" style="font-size:90%;">Documentation release 1.3</span></span></a>
+<ul class="ltx_toclist ltx_toclist_document">
+<li class="ltx_tocentry ltx_tocentry_part"><a href="../../../Introduction/" title="Part I Introduction to Gaia Data Release 3 ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">I </span>Introduction to Gaia Data Release 3</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_part"><a href="../../../Data_processing/" title="Part II Gaia data processing ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">II </span>Gaia data processing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_part"><a href="../../../Data_analysis/" title="Part III Gaia data analysis ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">III </span>Gaia data analysis</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_part"><a href="../../../Catalogue_consolidation/" title="Part IV Gaia catalogue ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV </span>Gaia catalogue</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_part">
+<a href="../../" title="Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">V </span>Gaia archive</span></a>
+<ul class="ltx_toclist ltx_toclist_part">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../chap_archive/" title="Chapter 18 Gaia ESA Archive ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18 </span>Gaia ESA Archive</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../chap_cu9pvp/" title="Chapter 19 Performance verification ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19 </span>Performance verification</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="../" title="Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20 </span>Datamodel description</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_main_source_catalogue/" title="20.1 Main source catalogue ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.1 </span>Main source catalogue</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_astrophysical_parameter_tables/" title="20.2 Astrophysical parameter tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.2 </span>Astrophysical parameter tables</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_auxiliary_tables/" title="20.3 Auxiliary tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.3 </span>Auxiliary tables</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_cross-matches/" title="20.4 Cross-matches ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.4 </span>Cross-matches</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_extra--galactic_tables/" title="20.5 Extra–galactic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.5 </span>Extra–galactic tables</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_non--single_stars_tables/" title="20.6 Non–single stars tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.6 </span>Non–single stars tables</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_photometry/" title="20.7 Photometry ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.7 </span>Photometry</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_reference_frame/" title="20.8 Reference frame ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.8 </span>Reference frame</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_science_alert_tables/" title="20.9 Science alert tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.9 </span>Science alert tables</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_simulation_tables/" title="20.10 Simulation tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.10 </span>Simulation tables</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_solar_system_object_tables/" title="20.11 Solar System object tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.11 </span>Solar System object tables</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="." title="20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.12 </span>Spectroscopic tables</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="ssec_dm_rvs_mean_spectrum.html" title="20.12.1 rvs_mean_spectrum ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.12.1 </span>rvs_mean_spectrum</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="ssec_dm_xp_summary.html" title="20.12.2 xp_summary ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.12.2 </span>xp_summary</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="ssec_dm_xp_continuous_mean_spectrum.html" title="20.12.3 xp_continuous_mean_spectrum ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.12.3 </span>xp_continuous_mean_spectrum</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.12.4 </span>xp_sampled_mean_spectrum</span></span></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_variability_tables/" title="20.13 Variability tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.13 </span>Variability tables</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dm_performance_verification/" title="20.14 Performance verification ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.14 </span>Performance verification</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_dmdiff_dm_diffs/" title="20.15 Differences between the Gaia DR3 and EDR3/DR2 data models ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.15 </span>Differences between the Gaia DR3 and EDR3/DR2 data models</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../../Miscellaneous/" title="Miscellaneous ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title">Miscellaneous</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_bibliography"><a href="../../../bib.html" title="Bibliography ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_title">Bibliography</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main" id="maincontent">
+<header class="ltx_page_header">
+<div>
+<a href="." title="20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.12 </span>Spectroscopic tables</span></a><a href="ssec_dm_xp_continuous_mean_spectrum.html" title="20.12.3 xp_continuous_mean_spectrum ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.12.3 </span>xp_continuous_mean_spectrum</span></a><a href="../sec_dm_variability_tables/" title="20.13 Variability tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.13 </span>Variability tables</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_subsection ltx_authors_1line">
+<h1 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">20.12.4 </span><span class="ltx_text ltx_font_smallcaps" style="font-size:120%;">xp_sampled_mean_spectrum</span> </h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<blockquote class="ltx_quote">
+<p class="ltx_p">This is the BP/RP externally calibrated sampled mean spectrum. All mean spectra are sampled to the same set of absolute wavelength positions, viz. 343 values from 336 to 1020 nm with a step of 2 nm.
+
+<br class="ltx_break">
+
+<br class="ltx_break">
+Note this table is not available through the main archive TAP interface. Data are delivered via the Massive Data service indexed by the VO Datalink protocol and described in Chapter <a href="../../chap_archive/" title="Chapter 18 Gaia ESA Archive ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18</span></a>. For example this can be actioned in the archive user interface by querying the main source catalogue <span class="ltx_text ltx_font_typewriter">gaia_source</span> and selecting <span class="ltx_text ltx_font_typewriter">has_xp_sampled</span> <span class="ltx_text ltx_font_typewriter">= 't'</span>.
+
+<br class="ltx_break"></p>
+</blockquote>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Columns description:</span></p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold ltx_font_smallcaps" style="font-size:120%;">source_id <a name="xp_sampled_mean_spectrum-source_id" id="xp_sampled_mean_spectrum-source_id" class="ltx_anchor"></a></span>: Unique source identifier (unique within a particular Data Release) (long)</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">A unique single numerical identifier of the source obtained from <span class="ltx_text ltx_font_typewriter">gaia_source</span> (for a detailed description see <span class="ltx_text ltx_font_typewriter">gaia_source.<a href="../sec_dm_main_source_catalogue/ssec_dm_gaia_source.html#gaia_source-source_id" title="20.1.1 gaia_source ‣ 20.1 Main source catalogue ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref">source_id</a></span>).
+<br class="ltx_break"></p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold ltx_font_smallcaps" style="font-size:120%;">solution_id <a name="xp_sampled_mean_spectrum-solution_id" id="xp_sampled_mean_spectrum-solution_id" class="ltx_anchor"></a></span>: Solution Identifier (long)</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">All Gaia data processed by the Data Processing and Analysis Consortium comes tagged with a solution identifier. This is a numeric field attached to each table row that can be used to unequivocally identify the version of all the subsystems that were used in the generation of the data as well as the input data used. It is mainly for internal DPAC use but is included in the published data releases to enable end users to examine the provenance of processed data products. To decode a given solution ID visit <a href="https://gaia.esac.esa.int/decoder/solnDecoder.jsp" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://gaia.esac.esa.int/decoder/solnDecoder.jsp</a>
+<br class="ltx_break"></p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold ltx_font_smallcaps" style="font-size:120%;">ra <a name="xp_sampled_mean_spectrum-ra" id="xp_sampled_mean_spectrum-ra" class="ltx_anchor"></a></span>: Right Ascension (double, Angle[deg])</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Barycentric Right Ascension <math id="p8.m1" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math> of object in ICRS at reference epoch <span class="ltx_text ltx_font_typewriter">ref_epoch</span> as given in the main <span class="ltx_text ltx_font_typewriter">gaia_source</span> table.
+<br class="ltx_break"></p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold ltx_font_smallcaps" style="font-size:120%;">dec <a name="xp_sampled_mean_spectrum-dec" id="xp_sampled_mean_spectrum-dec" class="ltx_anchor"></a></span>: Declination (double, Angle[deg])</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Barycentric Declination <math id="p10.m1" class="ltx_Math" alttext="\delta" display="inline"><mi>δ</mi></math> of object in ICRS at reference epoch <span class="ltx_text ltx_font_typewriter">ref_epoch</span> as given in the main <span class="ltx_text ltx_font_typewriter">gaia_source</span> table.
+<br class="ltx_break"></p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold ltx_font_smallcaps" style="font-size:120%;">flux <a name="xp_sampled_mean_spectrum-flux" id="xp_sampled_mean_spectrum-flux" class="ltx_anchor"></a></span>: mean BP + RP combined spectrum flux (float[] array, Flux[W m<math id="p11.m1" class="ltx_Math" alttext="{}^{-2}" display="inline"><msup><mi></mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math> nm<math id="p11.m2" class="ltx_Math" alttext="{}^{-1}" display="inline"><msup><mi></mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>])</p>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Externally-calibrated combined BP and RP flux.
+<br class="ltx_break"></p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold ltx_font_smallcaps" style="font-size:120%;">flux_error <a name="xp_sampled_mean_spectrum-flux_error" id="xp_sampled_mean_spectrum-flux_error" class="ltx_anchor"></a></span>: mean BP + RP combined spectrum flux error (float[] array, Flux[W m<math id="p13.m1" class="ltx_Math" alttext="{}^{-2}" display="inline"><msup><mi></mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math> nm<math id="p13.m2" class="ltx_Math" alttext="{}^{-1}" display="inline"><msup><mi></mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>])</p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">Externally-calibrated combined BP and RP flux error.
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="ssec_dm_xp_continuous_mean_spectrum.html" title="20.12.3 xp_continuous_mean_spectrum ‣ 20.12 Spectroscopic tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.12.3 </span>xp_continuous_mean_spectrum</span></a>&nbsp;<a href="../../../bib.html" title="Bibliography ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a>&nbsp;&nbsp;<a href="../sec_dm_variability_tables/" title="20.13 Variability tables ‣ Chapter 20 Datamodel description ‣ Part V Gaia archive ‣ Gaia Data Release 3 Documentation release 1.3" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.13 </span>Variability tables</span></a>
+</div>
+<div class="ltx_page_logo">
+<a href="https://www.cosmos.esa.int/web/esdc/cookie-policy">(Cookie policy) </a>Generated  on Sat Jul 15 11:29:14 2023 by <span class="ltx_page_logo_ltxml"><a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a></span>
+</div></footer>
+</div>
+</div>
+<!--begin of third insertion point--><div class="esdc_tb"></div>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+	   var hs1 = new hideShow('button1');
+	   //var hs2 = new hideShow('button2');
+	   //var hs3 = new hideShow('button3');
+	   //var hs4 = new hideShow('button4');
+	   }); // end ready() 
+	</script><!--end of third insertion point-->
+</body>
+</html>

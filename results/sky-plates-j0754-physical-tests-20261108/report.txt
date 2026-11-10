@@ -1,0 +1,197 @@
+J0754: physical tests on actual telescope observations
+Ari with Kyle — 8 November 2026 local
+
+MAIN OUTCOME
+
+We applied the suitable equations to actual local observations, independently
+checked assumptions and corrected unsupported inputs in the supplied audit.
+The strongest new lead is a flare-like TESS event on2021-12-23: it is present
+in extracted light curves and a newly retrieved calibrated pixel cube places
+the compact positive excess close to J0754. It is a candidate on/near the star,
+not a confirmed stellar flare or an explanation for the multiyear fading.
+
+The earlier H-alpha lead also survives the tested numerical/reduction variants,
+but an approximately1.7% differential continuum bias could explain its size.
+Broad temperature-sensitive indices and current infrared models do not select
+a unique mechanism. Activity/atmospheric changes remain worth prioritizing
+alongside nonuniform obscuration and companion-related processes.
+
+AUTHORIZATION, INPUTS AND PREDECLARED COMPARISONS
+
+Kyle supplied Argon's audit and authorized applying it to the local FAST and
+TESS observations. Argon_audit_input.txt preserves the exact supplied text.
+protocol.json and per-task protocols preceded the new measurements; earlier
+H-alpha/infrared leads were already known, so these are retrospective tests,
+not blind discovery predictions. Pixel_protocol_amendment.json preceded
+inspection of the newly obtained image data. No supplied EW/SNR/temperature
+table or purported detection limit was treated as a telescope measurement.
+
+FAST:10 extracted spectra,8 UTC nights,2008–2012, with extracted/raw/background/
+sigma bands and verified linear Angstrom wavelength solution. TESS:8 FITS
+containing QLP or TESS-SPOC one-dimensional extracted light curves, yielding
+16 SAP/corrected products. SPHEREx: existing native calibrated cutouts and
+local/native spectrophotometry. The initial FAST/TESS products are not raw
+two-dimensional detector counts. A subsequent official TESSCut retrieval adds
+a7x7 calibrated FFI pixel cube for sector46:3707cadences, camera1/CCD4.
+
+1. H-ALPHA: ACTUAL EQUIVALENT WIDTH AND ERROR PROPAGATION
+
+The primary Gaussian-resolution assumptions are native FWHM7A for300line/mm,
+3A for600line/mm, smoothed to10A. The audit's6/2.3A assumptions lie inside
+the tested sensitivity grids; they are not known exact per-exposure LSFs.
+For linear smoothing/resampling operator A and independent native sigma vector,
+C_out=A diag(sigma^2) A^T. Equivalent-width uncertainty includes both the
+fitted-continuum gradient and line/continuum cross-covariance. Seeded injections
+into actual spectra reproduce the stated conditional noise propagation.
+
+Primary pseudo-EW, absorption-positive,30A window with flanking linear continuum:
+2008-10-22:1.32990±.12607A;
+2008-10-24:1.31746±.05593A;
+2009-11-12:.84321±.04889A (three exposures counted as one night).
+Mean2008 minus November2009=.48047±.08453A, formal noise only.
+The formal ratio5.68 is not calibrated discovery significance.
+
+The positive contrast survives all declared LSF, sideband/window, wavelength
+and exported-background-rescaling checks. Eighteen continuum/window/degree
+variants span.2481–.5197A. Independent LSF variation spans about.448–.514A
+in the primary smoothing region. These are conditional sensitivity envelopes,
+not confidence limits or exhaustive instrumental-error models.
+
+The audit's mathematical distinction is useful and verified: a broad additive
+offset affecting line and continuum gives Wobs=W/(1+alpha), while a continuum-
+only multiplicative bias gives deltaW=beta/(1+beta)*(window-W). Using the
+actual measurements, a differential continuum-only shift of1.675% could raise
+the2009 EW to the2008 value; idealized broad continuum dilution would require
+roughly57%. Local emission confined to the line subtracts its integrated
+equivalent area. Clean background alone cannot establish stellar activity.
+Unknown continuum/LSF/native extraction covariance remain outside formal sigma.
+See fast/report.txt, source_sky.png and night_EW.png.
+
+2. TEMPERATURE-SENSITIVE FEATURES
+
+Broad Mg b and Na D blends show no compelling coherent2008–2009 change under
+these checks. The spectra do not supply resolved, calibrated Ti/Fe line-depth
+ratios or a28K temperature limit. No such numbers were inferred from the
+attachment's table. Continuum calibration, blends, gravity/metallicity and
+unknown LSFs prevent precise temperature inference from these indices alone.
+The epochs do not sample the2022 minimum, so this is not a bright-versus-2022
+faint photosphere test. See fast/broad_indices.json and full report.
+
+3. INFRARED CO WINDOW VERSUS PHOTOSPHERE/DUST
+
+Extended existing CK04 sensitivity to logg1–3, T3500–6500K, metallicity−1/−.5/0,
+static DraineRv3.1 attenuation Av0–1.5 and free normalization. Models were
+selected only by0.75–2.4um shape, then the observed/model residual over
+4.55–4.9um was divided by that over4.0–4.2um. Approximate rectangular responses
+and coarse plane-parallel LTE atmospheres remain important limitations.
+
+Selected-model CO/reference indices:
+local2025 .9993,2026 1.0547;
+native2025 .9764,2026 1.0613.
+Thus the April2026 shape residual is about5.5–6.1% relative to the nearby
+reference, rather than all of the roughly9% absolute selected-model residual.
+But sampled near-IR-compatible atmosphere sets span unity in every case:
+local2025 .925–1.151,2026 .927–1.153;
+native2025 .896–1.122,2026 .962–1.179.
+The5% near-IR log-RMS tolerance is model sensitivity, not a confidence region.
+No CO emission, warm-dust detection/mass or formal excess upper limit follows.
+The calculation shows the need for more realistic response-convolved giant
+atmospheres/calibration, not a specific molecular identification.
+See co/co_report.txt, co_results.json and co_window_shape.png.
+
+4. TESS VARIABILITY, EVENT SENSITIVITY AND TARGETED PIXELS
+
+Sectors/reductions remain separate with native QUALITY=0/finite positive flux
+screens and no amplitude clipping. No multiyear DC baseline is stitched.
+QLP corrected20minute empirical fractional scatter is about.00093–.00106;
+TESS-SPOC71/72 give about.00172/.00522 before high-pass processing. Pipeline
+differences and red correlation matter; these are not universal precision limits.
+Fundamental35.9204566d and harmonic17.9602283d fits use joint signal/nuisance
+projection. Short baselines, processing and parameter identifiability prevent
+a new orbit, stable-rotation detection or universal companion exclusion.
+
+Actual-time native-cadence injections precede binning and repeat processing:
+4608 short-event injections explore gaps/duration/amplitude. Results quantify
+only the chosen extracted-lightcurve response. One-day high-pass and1/3/6hour
+boxes do not calibrate sensitivity to the2.7–5.7day giant-binary eclipse
+examples. No0.002mag transit limit,100ppm assumption or radius bound is adopted.
+The observed-residual bootstrap includes candidate excursions: none above that
+descriptive screen is not evidence of flare absence or a calibrated false alarm.
+
+An actual positive excursion near BTJD2572.03 on2021-12-23 is present in both
+QLP corrected and SAP light curves. A mean over roughly3hours is about1.2%, with
+an aperture/processing-dependent equivalent duration of order121s. Those are
+observed-aperture diagnostics, not bolometric flare energy or a full-event integral.
+
+The targeted calibrated pixel cube gives16 quality-zero event frames and43/40
+guarded pre/post reference frames. A compact positive difference lies close to
+the Gaia WCS position: positive-excess moment offset.177pixel, about3.7arcsec.
+A stationary reference-source-shape model gives about+2.02% scale; adding
+image-derivative motion terms changes it little. A simple core extraction
+peaks near2.5% with rapid rise and slower decay across many native frames.
+This is not a single-cadence spike or an obviously distant source in this cutout.
+Nine reference-window sensitivities give source-shape scales1.90–2.14% and
+centroid offsets.168–.182pixel. The2.24% simple aperture contrast is not a
+precision background-corrected amplitude. Supplied POS_CORR arrays are allzero,
+so they are not independent jitter evidence. No formal positional confidence
+region or exclusion of a close moving/unresolved contaminant is established.
+
+The moment estimate lacks PRF-calibrated astrometric errors, and an unresolved
+blend or calibration effect is not excluded. Localized brightening supports
+a flare-like candidate on/near J0754; it does not confirm a stellar flare.
+No claim of a relationship to the multiyear fading is established. See
+tess/report.txt, sector46_pixel_assessment.json and sector46_pixel_localization.png.
+
+5. PHYSICAL MODELS USING ACTUAL BANDS AND CONDITIONAL BINARY INPUTS
+
+The measured fading inputs are g=.312,W1=.1175,W2=.08875mag, not an observed
+V=.350mag fade. The fixed4500/3800K blackbody spot example, anchored to g,
+requires fraction.3532 and predicts W1=.09484,W2=.08544: it underpredicts W1.
+A representative passband-integrated stellar-atmosphere spot hypothesis with
+3700K spots predicts g=.312,W1=.11826,W2=.09238. This is a viable hypothesis,
+not a unique measured temperature/filling factor. Partial-covering and other
+temperature/scale/dilution hypotheses remain viable too.
+
+The partial-power-law illustration using actual g/W1 gives alpha≈.499 for
+full covering and.564 for half covering; covering nearer the optical flux
+loss produces different slopes. No unique slope/grain size is measured.
+True CousinsR forecasts were added to524 prior hypotheses without changing
+their old-band predictions. Best-fit R−I ranges are not full allowed envelopes
+or guaranteed discriminators; the prior broader tolerance sets remain relevant.
+
+The corrected scale-height arithmetic is reproducible:4500K/logg1.7/mu1.3
+gives H=5.7425e7m=.08254Rsun. The radius, number of pressure heights and actual
+CO atmosphere extension remain assumptions. Photometric/poster gravity tension
+does not by itself diagnose nonLTE or a real radius change.
+
+The candidate Gaia orbit's actual K≈10.7245km/s gives conditional mass function
+.00458720Msun. The audit's supposed historical K<=8km/s upper bound is not
+established. The printed ellipsoidal coefficient15(15+u)(1+g)/[32(3-u)] is
+3.125times the standard.15(15+u)(1+g)/(3-u) leading flux semi-amplitude.
+Roche-filling assumptions invalidate the small-distortion approximation;
+conditional radii/inclinations do not rule out every companion or eclipse.
+See models/physical_model_audit.txt and physical_model_results.json.
+
+WHAT THIS CHANGES
+
+There is stronger, directly inspected motivation to investigate stellar activity:
+a persistent H-alpha product-level difference and a localized flare-like TESS
+candidate. Neither establishes that activity drives the slow fading. The present
+spectra/colors remain compatible with multiple physical mechanisms. The most
+useful missing observation is still state-matched modern spectroscopy plus
+simultaneous colors, and independent activity/line-shape-controlled orbital RVs.
+
+REPRODUCTION, REVIEW AND SAVED STATE
+
+Maintained source: tools/sky-plates, with
+physical_tests_README.md and scoped plan. Runtime/native inputs/results remain
+outside source Git. Numerical tests, actual-noise/signal injections and independent
+scientific/code reviews are separate forms of evidence, not interchangeable.
+Independent review files and final source/test/commit/hash receipts accompany
+this checkpoint. New public retrievals are the modest TESSCut cube and one
+official CousinsR response. No account, contact, paid observing request, model
+deployment or publication occurred. The fading mechanism remains unresolved.
+
+FINAL SOURCE CHECKPOINT
+
+114 component tests passed. Source saved and committed as 8a49c3053181f26bab81bd0e646259015495ddaf (13scopedfiles). The maintained sky-plates component is clean; unrelated repository edits are preserved. Existing GitHub Desktop registration reused; no remote configured and no push/publication. Raw results remain saved locally outside source Git. FAST EOF-only normalization and source hash reconciliation are recorded; scientific calculations are unchanged.

@@ -1,0 +1,258 @@
+{
+  "ztf": [
+    {
+      "source_id": "667023509291889792",
+      "ra": 118.4509211627032,
+      "dec": 16.535277177029567,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.4509211627032 16.535277177029567 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 453825,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667024467067954560",
+      "ra": 118.45439512598213,
+      "dec": 16.57004763020371,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.45439512598213 16.57004763020371 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 130434,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667380506973089536",
+      "ra": 118.8774463201083,
+      "dec": 16.473945785841124,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.8774463201083 16.473945785841124 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 290634,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667380575692566656",
+      "ra": 118.86908859119971,
+      "dec": 16.474724053839626,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.86908859119971 16.474724053839626 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 176708,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667380816210736128",
+      "ra": 118.84533487427133,
+      "dec": 16.489099673325484,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.84533487427133 16.489099673325484 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 95251,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667382255023480576",
+      "ra": 118.81018362204178,
+      "dec": 16.48337710486429,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.81018362204178 16.48337710486429 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 90722,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667391399010134400",
+      "ra": 118.94433663730354,
+      "dec": 16.6699760345248,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.94433663730354 16.6699760345248 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 162,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667397618122678528",
+      "ra": 118.7903798062244,
+      "dec": 16.6347098274953,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.7903798062244 16.6347098274953 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 162,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667401913089980544",
+      "ra": 118.69117410685017,
+      "dec": 16.694621231895034,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.69117410685017 16.694621231895034 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 146254,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667402462845806080",
+      "ra": 118.60602479185786,
+      "dec": 16.68764001818488,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.60602479185786 16.68764001818488 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 146262,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667403768515830272",
+      "ra": 118.83716673115275,
+      "dec": 16.692420044233895,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.83716673115275 16.692420044233895 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 33092,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667409918908989568",
+      "ra": 118.72815702515194,
+      "dec": 16.83737287270805,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.72815702515194 16.83737287270805 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 90564,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667411636895893504",
+      "ra": 118.76310259188398,
+      "dec": 16.888235954735975,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.76310259188398 16.888235954735975 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 90640,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667434486121884288",
+      "ra": 118.93751958793864,
+      "dec": 16.90741720767971,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.93751958793864 16.90741720767971 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 399946,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667454586568716288",
+      "ra": 118.48465784663216,
+      "dec": 16.862590893691277,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.48465784663216 16.862590893691277 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 453220,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667456064037465216",
+      "ra": 118.45287312133307,
+      "dec": 16.900838281329833,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.45287312133307 16.900838281329833 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 162,
+      "status": "downloaded_or_cached"
+    },
+    {
+      "source_id": "667459156414046976",
+      "ra": 118.77056437012342,
+      "dec": 16.943509553100434,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+      "parameters": {
+        "CIRCLE": "118.77056437012342 16.943509553100434 0.0008333333333333334",
+        "FORMAT": "csv"
+      },
+      "bytes": 90551,
+      "status": "downloaded_or_cached"
+    }
+  ],
+  "tess": [
+    {
+      "uri": "mast:HLSP/qlp/s0044/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+      "status": "downloaded_or_cached",
+      "bytes": 192960
+    },
+    {
+      "uri": "mast:HLSP/qlp/s0045/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+      "status": "downloaded_or_cached",
+      "bytes": 204480
+    },
+    {
+      "uri": "mast:HLSP/qlp/s0046/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+      "status": "downloaded_or_cached",
+      "bytes": 218880
+    },
+    {
+      "uri": "mast:HLSP/qlp/s0071/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+      "file": "hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+      "status": "downloaded_or_cached",
+      "bytes": 665280
+    },
+    {
+      "uri": "mast:HLSP/qlp/s0072/0000/0000/1887/8735/hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+      "file": "hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+      "status": "downloaded_or_cached",
+      "bytes": 650880
+    },
+    {
+      "uri": "mast:HLSP/tess-spoc/s0071/target/0000/0000/1887/8735/hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+      "status": "downloaded_or_cached",
+      "bytes": 1152000
+    },
+    {
+      "uri": "mast:HLSP/tess-spoc/s0072/target/0000/0000/1887/8735/hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+      "status": "downloaded_or_cached",
+      "bytes": 1128960
+    },
+    {
+      "uri": "mast:HLSP/tess-spoc/s1751/target/0000/0000/1887/8735/hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+      "status": "downloaded_or_cached",
+      "bytes": 342720
+    }
+  ]
+}

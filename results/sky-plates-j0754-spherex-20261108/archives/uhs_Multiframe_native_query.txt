@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+    <title>WSA Database - SQL Query Results</title> 
+
+    <script type="text/javascript" src="http://wsa.roe.ac.uk/common/configurestyles.js"> 
+    </script> 
+  </head> 
+
+  <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#000080" alink="#FF0000" onLoad="swap(0);" > 
+
+<img name="imgMain" src="http://wsa.roe.ac.uk/static.gif" border="1"><p>
+    <h1>WSA Database - SQL Query Results</h1> 
+
+    <p> 
+      Data file generating queries can take a bit longer to execute 
+      as they write to a file ALL rows returned by the query. 
+    </p> 
+
+    <p> 
+      A web link to your generated output file will appear at the 
+      bottom of this page. 
+    </p> 
+
+    <p>
+<b>Connecting to UHSDR3 database</b><br>
+      <b>QUERY STARTED:</b> Sun Nov 08 23:50:47 GMT 2026&nbsp;&nbsp;&nbsp;[3 active, 21284 total] 
+    </p> 
+
+    <p> 
+      Please keep this browser window open and wait for your results or further information to	 appear below... 
+    </p> 
+
+timeout: 60<p>Connected to database
+<p>Submitted query: SELECT TOP 100 * FROM Multiframe WHERE multiframeID IN (6124750,10820584,13146294)<p>
+    <p>
+<script language="JavaScript" type="text/javascript"> <!-- 
+swap(1);
+--> </script>
+&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->      OK
+    </p> 
+
+    <p> 
+      (Query returned 3 result rows, 
+      all rows are shown in the displayed table.) 
+    </p> 
+
+The FITSlink column can be used to download the FITS file.<p>    <table border="1" cellspacing="0" cellpadding="3" bgcolor="#FFDDDD"> 
+      <tr bgcolor="#FFFFCC"> 
+        <th>&nbsp;</th> 
+<th nowrap="nowrap">FITSLink</th>        <th nowrap>multiframeID</th> 
+        <th nowrap>ukirtRunNo</th> 
+        <th nowrap>creationDate</th> 
+        <th nowrap>frameType</th> 
+        <th nowrap>cuEventID</th> 
+        <th nowrap>julianDayNum</th> 
+        <th nowrap>fileTimeStamp</th> 
+        <th nowrap>observer</th> 
+        <th nowrap>userid</th> 
+        <th nowrap>obsref</th> 
+        <th nowrap>project</th> 
+        <th nowrap>survey</th> 
+        <th nowrap>pointingID</th> 
+        <th nowrap>msbID</th> 
+        <th nowrap>object</th> 
+        <th nowrap>origin</th> 
+        <th nowrap>telescope</th> 
+        <th nowrap>instrument</th> 
+        <th nowrap>dhsVersion</th> 
+        <th nowrap>hdtFile</th> 
+        <th nowrap>utDate</th> 
+        <th nowrap>utStart</th> 
+        <th nowrap>utEnd</th> 
+        <th nowrap>numDetectors</th> 
+        <th nowrap>recipe</th> 
+        <th nowrap>obstype</th> 
+        <th nowrap>obsNum</th> 
+        <th nowrap>grpNum</th> 
+        <th nowrap>grpMem</th> 
+        <th nowrap>tileNum</th> 
+        <th nowrap>standard</th> 
+        <th nowrap>njitter</th> 
+        <th nowrap>jitterID</th> 
+        <th nowrap>jitterX</th> 
+        <th nowrap>jitterY</th> 
+        <th nowrap>nuStep</th> 
+        <th nowrap>uStepID</th> 
+        <th nowrap>uStepX</th> 
+        <th nowrap>uStepY</th> 
+        <th nowrap>nFoc</th> 
+        <th nowrap>nFocScan</th> 
+        <th nowrap>dateObs</th> 
+        <th nowrap>dateEnd</th> 
+        <th nowrap>mjdObs</th> 
+        <th nowrap>wcsAxes</th> 
+        <th nowrap>raDecSys</th> 
+        <th nowrap>equinox</th> 
+        <th nowrap>raBase</th> 
+        <th nowrap>decBase</th> 
+        <th nowrap>raTelOff</th> 
+        <th nowrap>decTelOff</th> 
+        <th nowrap>amStart</th> 
+        <th nowrap>amEnd</th> 
+        <th nowrap>telRa</th> 
+        <th nowrap>telDec</th> 
+        <th nowrap>gsRa</th> 
+        <th nowrap>gsDec</th> 
+        <th nowrap>expTime</th> 
+        <th nowrap>numExp</th> 
+        <th nowrap>numInts</th> 
+        <th nowrap>readInterval</th> 
+        <th nowrap>numReads</th> 
+        <th nowrap>filterName</th> 
+        <th nowrap>filterID</th> 
+        <th nowrap>extinction</th> 
+        <th nowrap>airTemp</th> 
+        <th nowrap>ambiPressure</th> 
+        <th nowrap>dewPoint</th> 
+        <th nowrap>domeTemp</th> 
+        <th nowrap>humidity</th> 
+        <th nowrap>mirrTempNE</th> 
+        <th nowrap>mirrTempNW</th> 
+        <th nowrap>mirrTempSE</th> 
+        <th nowrap>mirrTempSW</th> 
+        <th nowrap>mirrBottTempNW</th> 
+        <th nowrap>mirrTopTempNW</th> 
+        <th nowrap>secondaryTemp</th> 
+        <th nowrap>topAirTempNW</th> 
+        <th nowrap>trussTempENE</th> 
+        <th nowrap>trussTempWSW</th> 
+        <th nowrap>windDirection</th> 
+        <th nowrap>windSpeed</th> 
+        <th nowrap>tauCSO</th> 
+        <th nowrap>tauDate</th> 
+        <th nowrap>tauSource</th> 
+        <th nowrap>m2x</th> 
+        <th nowrap>m2y</th> 
+        <th nowrap>m2z</th> 
+        <th nowrap>m2u</th> 
+        <th nowrap>m2v</th> 
+        <th nowrap>m2w</th> 
+        <th nowrap>telFocus</th> 
+        <th nowrap>focusPos</th> 
+        <th nowrap>focusZero</th> 
+        <th nowrap>focusOffset</th> 
+        <th nowrap>focusFiltOff</th> 
+        <th nowrap>focusSerial</th> 
+        <th nowrap>focusNominOff</th> 
+        <th nowrap>focusInstFiltOff</th> 
+        <th nowrap>apertureX</th> 
+        <th nowrap>apertureY</th> 
+        <th nowrap>hourAngle</th> 
+        <th nowrap>z7</th> 
+        <th nowrap>z8</th> 
+        <th nowrap>z11</th> 
+        <th nowrap>astigAmpl</th> 
+        <th nowrap>astigPhi</th> 
+        <th nowrap>hz5cd</th> 
+        <th nowrap>hz5ch</th> 
+        <th nowrap>hz5sd</th> 
+        <th nowrap>hz5sh</th> 
+        <th nowrap>hz6cd</th> 
+        <th nowrap>hz6sd</th> 
+        <th nowrap>hz6ch</th> 
+        <th nowrap>hz6sh</th> 
+        <th nowrap>iz5</th> 
+        <th nowrap>iz6</th> 
+        <th nowrap>trefAmpl</th> 
+        <th nowrap>trefPhi</th> 
+        <th nowrap>hz9cd</th> 
+        <th nowrap>hz9ch</th> 
+        <th nowrap>hz9sd</th> 
+        <th nowrap>hz9sh</th> 
+        <th nowrap>hz10cd</th> 
+        <th nowrap>hz10ch</th> 
+        <th nowrap>hz10sd</th> 
+        <th nowrap>hz10sh</th> 
+        <th nowrap>iz9</th> 
+        <th nowrap>iz10</th> 
+        <th nowrap>cryostPres</th> 
+        <th nowrap>beamNS</th> 
+        <th nowrap>beamWE</th> 
+        <th nowrap>ccdTemp</th> 
+        <th nowrap>ccdTempSetPt</th> 
+        <th nowrap>corPlateTemp</th> 
+        <th nowrap>lncTemp</th> 
+        <th nowrap>M3Temp</th> 
+        <th nowrap>topRingTemp</th> 
+        <th nowrap>radShieldTemp</th> 
+        <th nowrap>fsTemp</th> 
+        <th nowrap>ssTemp</th> 
+        <th nowrap>detTempSetPt</th> 
+        <th nowrap>detTempAlt</th> 
+        <th nowrap>detHeaterLevel</th> 
+        <th nowrap>ccdHeaterLevel</th> 
+        <th nowrap>scTemp</th> 
+        <th nowrap>isu2Port</th> 
+        <th nowrap>isu2TiltOffset</th> 
+        <th nowrap>isu2PortOffset</th> 
+        <th nowrap>guiding</th> 
+        <th nowrap>fastGuiderMode</th> 
+        <th nowrap>autoGuiderFreq</th> 
+        <th nowrap>fileName</th> 
+        <th nowrap>catName</th> 
+        <th nowrap>versionNum</th> 
+        <th nowrap>darkID</th> 
+        <th nowrap>confID</th> 
+        <th nowrap>flatID</th> 
+        <th nowrap>frinID</th> 
+        <th nowrap>skyID</th> 
+        <th nowrap>maskID</th> 
+        <th nowrap>deprecated</th> 
+        <th nowrap>newlyIngested</th> 
+        <th nowrap>agentId</th> 
+        <th nowrap>remoteAgent</th> 
+        <th nowrap>trackSys</th> 
+        <th nowrap>raMoon</th> 
+        <th nowrap>decMoon</th> 
+        <th nowrap>illumMoon</th> 
+        <th nowrap>raMoonTopo</th> 
+        <th nowrap>decMoonTopo</th> 
+        <th nowrap>ignore</th> 
+        <th nowrap>reqJSkyMin</th> 
+        <th nowrap>reqJSkyMax</th> 
+        <th nowrap>reqSeeingMin</th> 
+        <th nowrap>reqSeeingMax</th> 
+        <th nowrap>reqCloudMin</th> 
+        <th nowrap>reqCloudMax</th> 
+        <th nowrap>reqTauMin</th> 
+        <th nowrap>reqTauMax</th> 
+        <th nowrap>reqMoonMin</th> 
+        <th nowrap>reqMoonMax</th> 
+        <th nowrap>illumFile</th> 
+        <th nowrap>msbRejected</th> 
+        <th nowrap>skyAlgorithm</th> 
+        <th nowrap>unfilteredID</th> 
+        <th nowrap>secFocalOffset</th> 
+        <th nowrap>mainImageID</th> 
+        <th nowrap>gpsObs</th> 
+        <th nowrap>gpsEnd</th> 
+        <th nowrap>lstObs</th> 
+        <th nowrap>lstEnd</th> 
+      </tr> 
+      <tr bgcolor="#FFDDDD" class="RowOdd"> 
+        <td nowrap class="RowHeader" bgcolor="#FFFFCC"><b>1</b></td> 
+<td align="right" nowrap="nowrap"><a href="http://wsa.roe.ac.uk/cgi-bin/fits_download.cgi?file=djoser:/disk39/wsa/ingest/fits/20130108_v5/w20130108_01391_st.fit&mfid=6124750&database=UHSDR3">FITS<a/></td> 
+<td align="right" nowrap>6124750</td> 
+<td align="right" nowrap>1391</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+<td align="right" nowrap>stack</td> 
+<td align="right" nowrap>36141</td> 
+<td align="right" nowrap>2456301</td> 
+<td align="right" nowrap>130108130417173338</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>U/UHS/UHSJ07</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>3323a5edca5ce0a6772bda7f9579306d</td> 
+<td align="right" nowrap>uhs07:18_129:1_1</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>UKIRT</td> 
+<td align="right" nowrap>WFCAM</td> 
+<td align="right" nowrap>UKDHS 2002 Oct 31</td> 
+<td align="right" nowrap>wfcam.hdt</td> 
+<td align="right" nowrap>2013-01-08 00:00:00.0</td> 
+<td align="right" nowrap>+10.8630550</td> 
+<td align="right" nowrap>+10.8661110</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>JITTER</td> 
+<td align="right" nowrap>OBJECT</td> 
+<td align="right" nowrap>1391</td> 
+<td align="right" nowrap>1391</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>1391</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>2013-01-08 10:51:47.0</td> 
+<td align="right" nowrap>2013-01-08 10:51:58.3</td> 
+<td align="right" nowrap>+56300.4526300</td> 
+<td align="right" nowrap>2</td> 
+<td align="right" nowrap>FK5</td> 
+<td align="right" nowrap>+2000.000000</td> 
+<td align="right" nowrap>+7.8923806</td> 
+<td align="right" nowrap>+16.4075333</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+1.003000</td> 
+<td align="right" nowrap>+1.003000</td> 
+<td align="right" nowrap>+7.8923806</td> 
+<td align="right" nowrap>+16.4075333</td> 
+<td align="right" nowrap>+7.8928083</td> 
+<td align="right" nowrap>+16.3718111</td> 
+<td align="right" nowrap>+10.000000</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>2</td> 
+<td align="right" nowrap>J</td> 
+<td align="right" nowrap>3</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-4.200000</td> 
+<td align="right" nowrap>+612.504000</td> 
+<td align="right" nowrap>-19.800000</td> 
+<td align="right" nowrap>-4.000000</td> 
+<td align="right" nowrap>+23.600000</td> 
+<td align="right" nowrap>-3.428000</td> 
+<td align="right" nowrap>-3.807000</td> 
+<td align="right" nowrap>-2.707000</td> 
+<td align="right" nowrap>-4.367000</td> 
+<td align="right" nowrap>-1.058000</td> 
+<td align="right" nowrap>-1.823000</td> 
+<td align="right" nowrap>-5.779000</td> 
+<td align="right" nowrap>-3.901000</td> 
+<td align="right" nowrap>-2.123000</td> 
+<td align="right" nowrap>-4.387000</td> 
+<td align="right" nowrap>+247.511000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.080000</td> 
+<td align="right" nowrap>2013-01-08 10:40:00.0</td> 
+<td align="right" nowrap>CSO225GHZ</td> 
+<td align="right" nowrap>-1.066000</td> 
+<td align="right" nowrap>+0.323000</td> 
+<td align="right" nowrap>+1.328000</td> 
+<td align="right" nowrap>+5.236000</td> 
+<td align="right" nowrap>+3.665000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.320000</td> 
+<td align="right" nowrap>-0.310000</td> 
+<td align="right" nowrap>+3.500000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-0.310000</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-3.750000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-2.963820</td> 
+<td align="right" nowrap>-405.000000</td> 
+<td align="right" nowrap>+1450.000000</td> 
+<td align="right" nowrap>+140.000000</td> 
+<td align="right" nowrap>+1359.026000</td> 
+<td align="right" nowrap>-12.942000</td> 
+<td align="right" nowrap>-514.000000</td> 
+<td align="right" nowrap>+9.000000</td> 
+<td align="right" nowrap>+1149.000000</td> 
+<td align="right" nowrap>-530.000000</td> 
+<td align="right" nowrap>+314.000000</td> 
+<td align="right" nowrap>-1129.000000</td> 
+<td align="right" nowrap>-558.000000</td> 
+<td align="right" nowrap>+2158.000000</td> 
+<td align="right" nowrap>+1360.000000</td> 
+<td align="right" nowrap>+90.000000</td> 
+<td align="right" nowrap>+554.300000</td> 
+<td align="right" nowrap>+47.000000</td> 
+<td align="right" nowrap>+206.000000</td> 
+<td align="right" nowrap>-30.000000</td> 
+<td align="right" nowrap>+124.000000</td> 
+<td align="right" nowrap>+60.000000</td> 
+<td align="right" nowrap>+36.000000</td> 
+<td align="right" nowrap>-100.000000</td> 
+<td align="right" nowrap>+7.000000</td> 
+<td align="right" nowrap>-155.000000</td> 
+<td align="right" nowrap>-630.000000</td> 
+<td align="right" nowrap>+404.000000</td> 
+<td align="right" nowrap>+4.3990000E-006</td> 
+<td align="right" nowrap>+45.000000</td> 
+<td align="right" nowrap>-405.000000</td> 
+<td align="right" nowrap>+160.200000</td> 
+<td align="right" nowrap>+160.000000</td> 
+<td align="right" nowrap>+191.200000</td> 
+<td align="right" nowrap>+101.300000</td> 
+<td align="right" nowrap>+121.100000</td> 
+<td align="right" nowrap>+127.200000</td> 
+<td align="right" nowrap>+141.500000</td> 
+<td align="right" nowrap>+73.800000</td> 
+<td align="right" nowrap>+16.700000</td> 
+<td align="right" nowrap>+75.000000</td> 
+<td align="right" nowrap>+74.500000</td> 
+<td align="right" nowrap>+62.000000</td> 
+<td align="right" nowrap>+14.000000</td> 
+<td align="right" nowrap>+269.900000</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>ON</td> 
+<td align="right" nowrap>Fast Guider</td> 
+<td align="right" nowrap>+20.000000</td> 
+<td align="right" nowrap>djoser:/disk39/wsa/ingest/fits/20130108_v5/w20130108_01391_st.fit</td> 
+<td align="right" nowrap>djoser:/disk39/wsa/ingest/fits/20130108_v5/w20130108_01391_st_cat.fits</td> 
+<td align="right" nowrap>+5.000000</td> 
+<td align="right" nowrap>6122735</td> 
+<td align="right" nowrap>6124751</td> 
+<td align="right" nowrap>6122757</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>6122784</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>J2000</td> 
+<td align="right" nowrap>+15.9645250</td> 
+<td align="right" nowrap>-19.8629550</td> 
+<td align="right" nowrap>+0.1576940</td> 
+<td align="right" nowrap>+16.0198140</td> 
+<td align="right" nowrap>-20.0013110</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>+15.5000000</td> 
+<td align="right" nowrap>+100.0000000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+1.1000000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>-9.9999950E008</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+100.0000000</td> 
+<td align="right" nowrap>illum_12b_jan_J.table</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+</tr> 
+      <tr bgcolor="#DDDDDD" class="RowEven"> 
+        <td nowrap class="RowHeader" bgcolor="#FFFFCC"><b>2</b></td> 
+<td align="right" nowrap="nowrap"><a href="http://wsa.roe.ac.uk/cgi-bin/fits_download.cgi?file=djoser:/disk61/wsa/ingest/fits/20190105_v5/w20190105_01335_st.fit&mfid=10820584&database=UHSDR3">FITS<a/></td> 
+<td align="right" nowrap>10820584</td> 
+<td align="right" nowrap>1335</td> 
+<td align="right" nowrap>2019-01-05 18:39:28.0</td> 
+<td align="right" nowrap>stack</td> 
+<td align="right" nowrap>50490</td> 
+<td align="right" nowrap>2458489</td> 
+<td align="right" nowrap>190105190205200546</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>U/UHSK/UHSK07</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>12094f65f099667ae120e55968ef8064</td> 
+<td align="right" nowrap>uhs07:18_129:1_1</td> 
+<td align="right" nowrap>Starlink Software</td> 
+<td align="right" nowrap>UKIRT</td> 
+<td align="right" nowrap>WFCAM</td> 
+<td align="right" nowrap>UKDHS 2002 Oct 31</td> 
+<td align="right" nowrap>wfcam.hdt</td> 
+<td align="right" nowrap>2019-01-05 00:00:00.0</td> 
+<td align="right" nowrap>+9.5600000</td> 
+<td align="right" nowrap>+9.5633340</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>JITTER</td> 
+<td align="right" nowrap>OBJECT</td> 
+<td align="right" nowrap>1335</td> 
+<td align="right" nowrap>1335</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>1335</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>2019-01-05 09:33:36.8</td> 
+<td align="right" nowrap>2019-01-05 09:33:48.1</td> 
+<td align="right" nowrap>+58488.3983330</td> 
+<td align="right" nowrap>2</td> 
+<td align="right" nowrap>FK5</td> 
+<td align="right" nowrap>+2000.000000</td> 
+<td align="right" nowrap>+7.8923806</td> 
+<td align="right" nowrap>+16.4075333</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+1.103000</td> 
+<td align="right" nowrap>+1.103000</td> 
+<td align="right" nowrap>+7.8923806</td> 
+<td align="right" nowrap>+16.4075333</td> 
+<td align="right" nowrap>+7.8928083</td> 
+<td align="right" nowrap>+16.3718111</td> 
+<td align="right" nowrap>+10.000000</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>2</td> 
+<td align="right" nowrap>K</td> 
+<td align="right" nowrap>5</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>+4.000000</td> 
+<td align="right" nowrap>+617.558000</td> 
+<td align="right" nowrap>-49.100000</td> 
+<td align="right" nowrap>+4.300000</td> 
+<td align="right" nowrap>+0.600000</td> 
+<td align="right" nowrap>+896.195000</td> 
+<td align="right" nowrap>+7.664000</td> 
+<td align="right" nowrap>+882.739000</td> 
+<td align="right" nowrap>+839.484000</td> 
+<td align="right" nowrap>+7.896000</td> 
+<td align="right" nowrap>+6.851000</td> 
+<td align="right" nowrap>+2.894000</td> 
+<td align="right" nowrap>+5.239000</td> 
+<td align="right" nowrap>+5.991000</td> 
+<td align="right" nowrap>+3.633000</td> 
+<td align="right" nowrap>+350.597000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.030000</td> 
+<td align="right" nowrap>2019-01-05 09:21:00.0</td> 
+<td align="right" nowrap>CSO225GHZ</td> 
+<td align="right" nowrap>-0.937000</td> 
+<td align="right" nowrap>+0.336000</td> 
+<td align="right" nowrap>+0.185000</td> 
+<td align="right" nowrap>+5.600000</td> 
+<td align="right" nowrap>+3.620000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-0.090000</td> 
+<td align="right" nowrap>+0.080000</td> 
+<td align="right" nowrap>+3.500000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.080000</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-3.480000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-26.057793</td> 
+<td align="right" nowrap>-405.000000</td> 
+<td align="right" nowrap>+1450.000000</td> 
+<td align="right" nowrap>+250.000000</td> 
+<td align="right" nowrap>+1848.061000</td> 
+<td align="right" nowrap>-20.345000</td> 
+<td align="right" nowrap>-362.000000</td> 
+<td align="right" nowrap>+9.000000</td> 
+<td align="right" nowrap>+1492.000000</td> 
+<td align="right" nowrap>-763.000000</td> 
+<td align="right" nowrap>-160.000000</td> 
+<td align="right" nowrap>-805.000000</td> 
+<td align="right" nowrap>+140.000000</td> 
+<td align="right" nowrap>+2273.000000</td> 
+<td align="right" nowrap>+987.000000</td> 
+<td align="right" nowrap>+44.000000</td> 
+<td align="right" nowrap>+614.979000</td> 
+<td align="right" nowrap>+45.708000</td> 
+<td align="right" nowrap>+206.000000</td> 
+<td align="right" nowrap>-30.000000</td> 
+<td align="right" nowrap>+124.000000</td> 
+<td align="right" nowrap>+60.000000</td> 
+<td align="right" nowrap>+36.000000</td> 
+<td align="right" nowrap>-100.000000</td> 
+<td align="right" nowrap>+7.000000</td> 
+<td align="right" nowrap>-155.000000</td> 
+<td align="right" nowrap>-630.000000</td> 
+<td align="right" nowrap>+404.000000</td> 
+<td align="right" nowrap>+2.1000000E-006</td> 
+<td align="right" nowrap>+45.000000</td> 
+<td align="right" nowrap>-405.000000</td> 
+<td align="right" nowrap>+160.100000</td> 
+<td align="right" nowrap>+160.000000</td> 
+<td align="right" nowrap>+193.800000</td> 
+<td align="right" nowrap>+101.400000</td> 
+<td align="right" nowrap>+116.800000</td> 
+<td align="right" nowrap>+126.300000</td> 
+<td align="right" nowrap>+141.500000</td> 
+<td align="right" nowrap>+75.300000</td> 
+<td align="right" nowrap>+17.400000</td> 
+<td align="right" nowrap>+75.000000</td> 
+<td align="right" nowrap>+74.700000</td> 
+<td align="right" nowrap>+66.500000</td> 
+<td align="right" nowrap>+13.500000</td> 
+<td align="right" nowrap>+1.400000</td> 
+<td align="right" nowrap>Lost</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>ON</td> 
+<td align="right" nowrap>Fast Guider</td> 
+<td align="right" nowrap>+15.000000</td> 
+<td align="right" nowrap>djoser:/disk61/wsa/ingest/fits/20190105_v5/w20190105_01335_st.fit</td> 
+<td align="right" nowrap>djoser:/disk61/wsa/ingest/fits/20190105_v5/w20190105_01335_st_cat.fits</td> 
+<td align="right" nowrap>+5.000000</td> 
+<td align="right" nowrap>10818749</td> 
+<td align="right" nowrap>10820585</td> 
+<td align="right" nowrap>10818778</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>10818800</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>J2000</td> 
+<td align="right" nowrap>+18.5319220</td> 
+<td align="right" nowrap>-21.4802130</td> 
+<td align="right" nowrap>+0.0040460</td> 
+<td align="right" nowrap>+18.5262060</td> 
+<td align="right" nowrap>-21.4552190</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>-9.9999950E008</td> 
+<td align="right" nowrap>-9.9999950E008</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+1.1000000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>-9.9999950E008</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+100.0000000</td> 
+<td align="right" nowrap>illum_18b_dec_K.table</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>2019-01-05 09:33:33.0</td> 
+<td align="right" nowrap>2019-01-05 09:33:45.0</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+</tr> 
+      <tr bgcolor="#FFDDDD" class="RowOdd"> 
+        <td nowrap class="RowHeader" bgcolor="#FFFFCC"><b>3</b></td> 
+<td align="right" nowrap="nowrap"><a href="http://wsa.roe.ac.uk/cgi-bin/fits_download.cgi?file=djoser:/disk79/wsa/ingest/fits/20230109_v5/w20230109_01032_st.fit&mfid=13146294&database=UHSDR3">FITS<a/></td> 
+<td align="right" nowrap>13146294</td> 
+<td align="right" nowrap>1032</td> 
+<td align="right" nowrap>2023-01-09 20:39:33.0</td> 
+<td align="right" nowrap>stack</td> 
+<td align="right" nowrap>64771</td> 
+<td align="right" nowrap>2459954</td> 
+<td align="right" nowrap>230109231119164821</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>U/UHSH/UHSH07</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>18a9564d6f9b43e4688a0abb29adf6bd</td> 
+<td align="right" nowrap>uhs07:18_129:1_1</td> 
+<td align="right" nowrap>Starlink Software</td> 
+<td align="right" nowrap>UKIRT</td> 
+<td align="right" nowrap>WFCAM</td> 
+<td align="right" nowrap>UKDHS 2002 Oct 31</td> 
+<td align="right" nowrap>wfcam.hdt</td> 
+<td align="right" nowrap>2023-01-09 00:00:00.0</td> 
+<td align="right" nowrap>+9.9036110</td> 
+<td align="right" nowrap>+9.9069440</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>JITTER</td> 
+<td align="right" nowrap>OBJECT</td> 
+<td align="right" nowrap>1032</td> 
+<td align="right" nowrap>1032</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>1032</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>2023-01-09 09:54:13.2</td> 
+<td align="right" nowrap>2023-01-09 09:54:25.8</td> 
+<td align="right" nowrap>+59953.4126500</td> 
+<td align="right" nowrap>2</td> 
+<td align="right" nowrap>FK5</td> 
+<td align="right" nowrap>+2000.000000</td> 
+<td align="right" nowrap>+7.8923806</td> 
+<td align="right" nowrap>+16.4075333</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+1.043000</td> 
+<td align="right" nowrap>+1.043000</td> 
+<td align="right" nowrap>+7.8923806</td> 
+<td align="right" nowrap>+16.4075333</td> 
+<td align="right" nowrap>+7.8928083</td> 
+<td align="right" nowrap>+16.3718111</td> 
+<td align="right" nowrap>+5.000000</td> 
+<td align="right" nowrap>2</td> 
+<td align="right" nowrap>1</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>2</td> 
+<td align="right" nowrap>H</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>+2.400000</td> 
+<td align="right" nowrap>+618.583000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.396000</td> 
+<td align="right" nowrap>+4.120000</td> 
+<td align="right" nowrap>+2.609000</td> 
+<td align="right" nowrap>-431.609000</td> 
+<td align="right" nowrap>+2.020000</td> 
+<td align="right" nowrap>+1.908000</td> 
+<td align="right" nowrap>+0.003000</td> 
+<td align="right" nowrap>+2.441000</td> 
+<td align="right" nowrap>+3.846000</td> 
+<td align="right" nowrap>+1.302000</td> 
+<td align="right" nowrap>+358.328000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.048000</td> 
+<td align="right" nowrap>2023-01-09 09:40:00.0</td> 
+<td align="right" nowrap>CSO225GHZ</td> 
+<td align="right" nowrap>-0.971000</td> 
+<td align="right" nowrap>+0.436000</td> 
+<td align="right" nowrap>+2.067000</td> 
+<td align="right" nowrap>+5.219000</td> 
+<td align="right" nowrap>+3.674000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+1.500000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+3.500000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-3.400000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-16.972034</td> 
+<td align="right" nowrap>-405.000000</td> 
+<td align="right" nowrap>+1450.000000</td> 
+<td align="right" nowrap>+202.000000</td> 
+<td align="right" nowrap>+1528.380000</td> 
+<td align="right" nowrap>-12.756000</td> 
+<td align="right" nowrap>+846.000000</td> 
+<td align="right" nowrap>+473.000000</td> 
+<td align="right" nowrap>-60.000000</td> 
+<td align="right" nowrap>-408.000000</td> 
+<td align="right" nowrap>-78.000000</td> 
+<td align="right" nowrap>-965.000000</td> 
+<td align="right" nowrap>-224.000000</td> 
+<td align="right" nowrap>+764.000000</td> 
+<td align="right" nowrap>+12.000000</td> 
+<td align="right" nowrap>+121.000000</td> 
+<td align="right" nowrap>+590.799000</td> 
+<td align="right" nowrap>+46.233000</td> 
+<td align="right" nowrap>+206.000000</td> 
+<td align="right" nowrap>-30.000000</td> 
+<td align="right" nowrap>+124.000000</td> 
+<td align="right" nowrap>+60.000000</td> 
+<td align="right" nowrap>+36.000000</td> 
+<td align="right" nowrap>-100.000000</td> 
+<td align="right" nowrap>+7.000000</td> 
+<td align="right" nowrap>-155.000000</td> 
+<td align="right" nowrap>-630.000000</td> 
+<td align="right" nowrap>+404.000000</td> 
+<td align="right" nowrap>+2.4000000E-006</td> 
+<td align="right" nowrap>+45.000000</td> 
+<td align="right" nowrap>-405.000000</td> 
+<td align="right" nowrap>+160.100000</td> 
+<td align="right" nowrap>+160.000000</td> 
+<td align="right" nowrap>+192.700000</td> 
+<td align="right" nowrap>+104.200000</td> 
+<td align="right" nowrap>+122.400000</td> 
+<td align="right" nowrap>+129.200000</td> 
+<td align="right" nowrap>+143.700000</td> 
+<td align="right" nowrap>+77.900000</td> 
+<td align="right" nowrap>+20.600000</td> 
+<td align="right" nowrap>+75.000000</td> 
+<td align="right" nowrap>+74.800000</td> 
+<td align="right" nowrap>+56.500000</td> 
+<td align="right" nowrap>+13.500000</td> 
+<td align="right" nowrap>+1.000000</td> 
+<td align="right" nowrap>Lost</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>ON</td> 
+<td align="right" nowrap>Fast Guider</td> 
+<td align="right" nowrap>+15.000000</td> 
+<td align="right" nowrap>djoser:/disk79/wsa/ingest/fits/20230109_v5/w20230109_01032_st.fit</td> 
+<td align="right" nowrap>djoser:/disk79/wsa/ingest/fits/20230109_v5/w20230109_01032_st_cat.fits</td> 
+<td align="right" nowrap>+5.000000</td> 
+<td align="right" nowrap>13145009</td> 
+<td align="right" nowrap>13146295</td> 
+<td align="right" nowrap>13145016</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>13145022</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>69</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>J2000</td> 
+<td align="right" nowrap>+9.2996710</td> 
+<td align="right" nowrap>+20.9761300</td> 
+<td align="right" nowrap>+0.9444460</td> 
+<td align="right" nowrap>+9.3378300</td> 
+<td align="right" nowrap>+20.9255570</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>-9.9999950E008</td> 
+<td align="right" nowrap>-9.9999950E008</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+1.0000000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>-9.9999950E008</td> 
+<td align="right" nowrap>+0.0000000E000</td> 
+<td align="right" nowrap>+100.0000000</td> 
+<td align="right" nowrap>illum_22b_jan_H.table</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>NONE</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>2023-01-09 09:54:10.0</td> 
+<td align="right" nowrap>2023-01-09 09:54:23.0</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+<td align="right" nowrap>9999-12-31 00:00:00.0</td> 
+</tr> 
+    </table>
+
+    <p> 
+      (Query returned 3 result rows, 
+      all rows are shown in the displayed table.) 
+    </p> 
+
+<p> 
+<table cellspacing="0" cellpadding="3"><tr><td align="right"><a href="http://wsa.roe.ac.uk/tmp/tmp_sql/results8_23_50_47_21383.csv"><img src="http://wsa.roe.ac.uk/tmp/images/icons/save.gif" border="0"></a></td><td><a class="dl" id="dl_id" href="http://wsa.roe.ac.uk/tmp/tmp_sql/results8_23_50_47_21383.csv">Download Results File </a>, your results in a CSV ASCII file 
+(Contains <b>3 rows</b>, 17.4 KB) 
+</td> 
+</table>
+    <p> 
+      <b>QUERY FINISHED:</b> Sun Nov 08 23:50:54 GMT 2026 
+    </p> 
+
+<script language="JavaScript" type="text/javascript"> <!-- 
+swap(0);
+--> </script>
+    <p> 
+      Click your browsers 'BACK' button to try another query...
+    </p> 
+
+
+    <hr size="1" noshade="noshade" /> 
+
+    <small class="FooterText"> 
+      &nbsp;Page created: 8 November 2026&nbsp;&nbsp;&#8226;&nbsp;&nbsp; 
+
+    <script type="text/javascript" src="http://wsa.roe.ac.uk/browserversion.js"> 
+    </script> 
+      <noscript> 
+        [!!]&nbsp;&nbsp;Style-sheets disabled (cannot detect browser support) 
+      </noscript> 
+    </small> 
+  </body> 
+</html> 
+

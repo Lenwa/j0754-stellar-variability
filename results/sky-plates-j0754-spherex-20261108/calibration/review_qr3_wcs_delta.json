@@ -1,0 +1,20 @@
+[
+  {
+    "detector": 5,
+    "cwave_delta_um_minmedmax": [
+      0.006399631500244141,
+      0.006400108337402344,
+      0.006400346755981445
+    ],
+    "cband_max_abs_delta_um": 0.0
+  },
+  {
+    "detector": 6,
+    "cwave_delta_um_minmedmax": [
+      0.006399631500244141,
+      0.006400108337402344,
+      0.006400108337402344
+    ],
+    "cband_max_abs_delta_um": 0.0
+  }
+]

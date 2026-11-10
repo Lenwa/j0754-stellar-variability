@@ -1,0 +1,170 @@
+[
+  {
+    "dataset": "SPHEREx_native_2025",
+    "model": "single",
+    "bands": {
+      "2.4_3.75": {
+        "n": 15,
+        "median_observed_model": 0.9977285309500451,
+        "log_rms_fixed_scale": 0.018610804195680692
+      },
+      "3.8_4.4": {
+        "n": 15,
+        "median_observed_model": 1.0312245209916835,
+        "log_rms_fixed_scale": 0.04426524955008246
+      },
+      "4.4_5.0": {
+        "n": 14,
+        "median_observed_model": 1.0300738162962024,
+        "log_rms_fixed_scale": 0.0431945844525386
+      }
+    }
+  },
+  {
+    "dataset": "SPHEREx_native_2025",
+    "model": "mixture",
+    "bands": {
+      "2.4_3.75": {
+        "n": 15,
+        "median_observed_model": 1.0059036679535536,
+        "log_rms_fixed_scale": 0.03776270152024592
+      },
+      "3.8_4.4": {
+        "n": 15,
+        "median_observed_model": 0.9614067845345036,
+        "log_rms_fixed_scale": 0.04313249353846516
+      },
+      "4.4_5.0": {
+        "n": 14,
+        "median_observed_model": 0.9695882214603553,
+        "log_rms_fixed_scale": 0.0506736433074724
+      }
+    }
+  },
+  {
+    "dataset": "SPHEREx_native_2026",
+    "model": "single",
+    "bands": {
+      "2.4_3.75": {
+        "n": 15,
+        "median_observed_model": 1.0207242526897828,
+        "log_rms_fixed_scale": 0.028916846585576843
+      },
+      "3.8_4.4": {
+        "n": 16,
+        "median_observed_model": 1.029740686546495,
+        "log_rms_fixed_scale": 0.03720516395928448
+      },
+      "4.4_5.0": {
+        "n": 14,
+        "median_observed_model": 1.1011296847681487,
+        "log_rms_fixed_scale": 0.09891226902357307
+      }
+    }
+  },
+  {
+    "dataset": "SPHEREx_native_2026",
+    "model": "mixture",
+    "bands": {
+      "2.4_3.75": {
+        "n": 15,
+        "median_observed_model": 0.9986783368015566,
+        "log_rms_fixed_scale": 0.018173743275636273
+      },
+      "3.8_4.4": {
+        "n": 16,
+        "median_observed_model": 1.003725056964696,
+        "log_rms_fixed_scale": 0.030820785235251384
+      },
+      "4.4_5.0": {
+        "n": 14,
+        "median_observed_model": 1.0581606997641255,
+        "log_rms_fixed_scale": 0.05755611474922036
+      }
+    }
+  },
+  {
+    "dataset": "SPHEREx_local_2025",
+    "model": "single",
+    "bands": {
+      "2.4_3.75": {
+        "n": 15,
+        "median_observed_model": 0.9829437226052361,
+        "log_rms_fixed_scale": 0.037869528085705075
+      },
+      "3.8_4.4": {
+        "n": 15,
+        "median_observed_model": 1.0100451196403382,
+        "log_rms_fixed_scale": 0.026959526850049667
+      },
+      "4.4_5.0": {
+        "n": 14,
+        "median_observed_model": 1.0237953381668898,
+        "log_rms_fixed_scale": 0.043401536539221755
+      }
+    }
+  },
+  {
+    "dataset": "SPHEREx_local_2025",
+    "model": "mixture",
+    "bands": {
+      "2.4_3.75": {
+        "n": 15,
+        "median_observed_model": 0.9551785601563784,
+        "log_rms_fixed_scale": 0.05992687182974013
+      },
+      "3.8_4.4": {
+        "n": 15,
+        "median_observed_model": 0.9287286984194106,
+        "log_rms_fixed_scale": 0.07739745408094537
+      },
+      "4.4_5.0": {
+        "n": 14,
+        "median_observed_model": 0.962218886506278,
+        "log_rms_fixed_scale": 0.04714819551378132
+      }
+    }
+  },
+  {
+    "dataset": "SPHEREx_local_2026",
+    "model": "single",
+    "bands": {
+      "2.4_3.75": {
+        "n": 15,
+        "median_observed_model": 0.999146261224338,
+        "log_rms_fixed_scale": 0.04603471114368728
+      },
+      "3.8_4.4": {
+        "n": 16,
+        "median_observed_model": 1.0305585614904267,
+        "log_rms_fixed_scale": 0.03744462893670795
+      },
+      "4.4_5.0": {
+        "n": 14,
+        "median_observed_model": 1.0930218795607098,
+        "log_rms_fixed_scale": 0.08984719642003355
+      }
+    }
+  },
+  {
+    "dataset": "SPHEREx_local_2026",
+    "model": "mixture",
+    "bands": {
+      "2.4_3.75": {
+        "n": 15,
+        "median_observed_model": 1.0062418996465228,
+        "log_rms_fixed_scale": 0.04623388317570896
+      },
+      "3.8_4.4": {
+        "n": 16,
+        "median_observed_model": 0.9953200260699314,
+        "log_rms_fixed_scale": 0.04724145763945636
+      },
+      "4.4_5.0": {
+        "n": 14,
+        "median_observed_model": 1.037416674791556,
+        "log_rms_fixed_scale": 0.044933239061248416
+      }
+    }
+  }
+]

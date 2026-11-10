@@ -1,0 +1,21 @@
+{
+  "input_sha256": "659eda5d2840c2f2edfa8590c7c66c56f8d998f3b70b01220b4ea7de5aed2105",
+  "Fnu_cgs": 1.4e-24,
+  "Gemini_Fnu_cgs": 1.4e-18,
+  "flux_conversion_error_factor": 1000000.0,
+  "blackbody_examples_Rratio_095_Tbright4500": {
+    "-80": {
+      "g": 0.2424376057854398,
+      "r": 0.2132824028428189,
+      "W1": 0.1415372058402811,
+      "W2": 0.1384788623137117
+    },
+    "-100": {
+      "g": 0.27594317827554793,
+      "r": 0.23932824635020447,
+      "W1": 0.14919579608138245,
+      "W2": 0.1453537093216504
+    }
+  },
+  "qualification": "Monochromatic illustrative Planck calculation, not replacement for existing passband-integrated atmosphere comparison."
+}

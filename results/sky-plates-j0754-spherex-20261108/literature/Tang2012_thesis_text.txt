@@ -1,0 +1,8065 @@
+PDF PAGE 1
+Exploring the Long-term and Extreme Variability
+
+of Stars
+
+A dissertation presented
+
+by
+
+Sumin Tang
+
+to
+
+The Department of Astronomy
+
+in partial fulfillment of the requirements
+
+for the degree of
+
+Doctor of Philosophy
+
+in the subject of
+
+Astronomy
+
+Harvard University
+
+Cambridge, Massachusetts
+
+May 2012
+
+PDF PAGE 2
+⃝c 2012 — Sumin Tang
+
+All rights reserved.
+
+PDF PAGE 3
+iii
+
+Thesis Advisor: Professor Jonathan Grindlay Sumin Tang
+
+Exploring the Long-term and Extreme Variability of Stars
+
+Abstract
+
+This thesis presents observational studies of long-term and extreme variability of
+
+stars with the Digital Access to a Sky Century@Harvard (DASCH) project. Stellar
+
+variations over decades are poorly explored. With the unique 100 years coverage of
+
+DASCH, for the first time, we are able to study the variable sky over long timescales
+
+in a systematic way. I have developed photometric calibration and variable search
+
+algorithms for DASCH. I have discovered exciting new types of long-term variables,
+
+which do not match any of the common classes, and studied the physical processes
+
+involved.
+
+Following a brief introduction on variable stars and DASCH in the first chapter,
+
+I describe my work on DASCH pipeline, including photometric development and
+
+defect filtering in chapter 2. I present our discovery of a group of peculiar long-term
+
+K giant variables with ∼ 1 mag variations over decades in chapter 3. Follow-up
+
+observations show that they consist of two subgroups, including a subgroup of RS
+
+CVn binaries with strong magnetic activity, and another subgroup of single stars.
+
+In both cases, the variation amplitudes and timescales are abnormal, and may be
+
+related to either ultra strong star spots, or novel dust formation processes.
+
+In chapter 4, I present the discovery of a 5 yr dip around 1900 in the eclipsing
+
+binary KU Cyg consisting of a F star and a K giant, which is related to the accretion
+
+disk surrounding the F star. It showed a slow fading (∼ 4 yr), which is probably
+
+PDF PAGE 4
+iv
+
+caused by increases in dust extinction in the disk, and a relatively fast brightening
+
+(∼ 1 yr), which may be due to the evaporation of dust transported inward through
+
+the disk. The extinction excess which caused the fading may arise from an increased
+
+mass transfer rate in the system or from dust clump ejections from the K giant, in
+
+accordance with K giant “dimming” as discussed above.
+
+In chapter 5, I present a 10 yr nova-like outburst in a peculiar symbiotic system.
+
+With P = 119 days, it is interestingly located in the period gap region between
+
+classical novae and symbiotic novae. The most probable explanation of the outburst
+
+is hydrogen shell-burning on the white dwarf (WD) without significant mass loss,
+
+which suggests a promising new channel for Type Ia Supernovae (SNe).
+
+In chapter 6, I present the DASCH light curves of Kepler planet-candidate host
+
+stars. We found no variation for these host stars. In chapter 7, I present my variable
+
+search algorithms and the resulting DASCH variable catalog for the Kepler field.
+
+The conclusion is presented in chapter 8.
+
+PDF PAGE 5
+Contents
+
+Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . iii
+
+Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ix
+
+Dedication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xii
+
+1 Introduction 1
+
+1.1 Variable Stars . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+
+1.2 DASCH Project . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+1.3 DASCH Pipeline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+1.4 Follow-up Observations . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+2 Developments in DASCH Photometry 7
+
+2.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+2.2 Annular Photometry and Color-term Fitting of Plates . . . . . . . . . 11
+
+2.3 Identify blended images . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+2.4 Filter out Dubious Detections . . . . . . . . . . . . . . . . . . . . . . 17
+
+2.4.1 Image Profiles . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+2.4.2 Drad filter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+2.5 Improved local calibration using neighbors with similar magnitudes . 27
+
+2.6 DASCH Photometry Performance and Sensitivities for Variables . . . 29
+
+2.7 Statistical Measurements for Defining Variable Search . . . . . . . . . 31
+
+2.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+
+v
+
+PDF PAGE 6
+CONTENTS vi
+
+3 Peculiar Long-term K Giant Variables 39
+
+3.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+
+3.2 Discovery of Three Unusual Variables . . . . . . . . . . . . . . . . . . 41
+
+3.2.1 Candidate Selection . . . . . . . . . . . . . . . . . . . . . . . . 41
+
+3.2.2 DASCH lightcurves . . . . . . . . . . . . . . . . . . . . . . . . 41
+
+3.2.3 Possible Color Evolution Derived from Plates . . . . . . . . . 42
+
+3.2.4 Spectroscopic Observations . . . . . . . . . . . . . . . . . . . . 44
+
+3.2.5 Occurrence Fraction of K2 III Long-term Erratic Variables . . 45
+
+3.3 Discussion of Individual Objects . . . . . . . . . . . . . . . . . . . . . 48
+
+3.3.1 J0830 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+
+3.3.2 J0754 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+
+3.3.3 J0736 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+
+3.4 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+
+4 DASCH on KU Cyg: A ∼5 Year Dust Accretion Event in ∼1900 55
+
+4.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+
+4.2 DASCH light curve . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+
+4.3 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+
+4.3.1 Higher mass transfer rate? . . . . . . . . . . . . . . . . . . . . 62
+
+4.3.2 Higher dust to gas ratio? . . . . . . . . . . . . . . . . . . . . . 64
+
+4.3.3 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+
+5 DASCH Discovery of A Possible Nova-like Outburst in A Peculiar
+
+Symbiotic Binary 66
+
+5.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+
+5.2 Observations and Results . . . . . . . . . . . . . . . . . . . . . . . . . 69
+
+5.2.1 DASCH and ASAS light curves . . . . . . . . . . . . . . . . . 69
+
+5.2.2 Light curve folding and the photometric period . . . . . . . . 71
+
+PDF PAGE 7
+CONTENTS vii
+
+5.2.3 Optical Spectroscopy . . . . . . . . . . . . . . . . . . . . . . . 72
+
+5.2.4 SED from archival data . . . . . . . . . . . . . . . . . . . . . 78
+
+5.3 System parameters . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78
+
+5.3.1 Ellipsoidal models . . . . . . . . . . . . . . . . . . . . . . . . . 78
+
+5.3.2 Estimates from the spectroscopic observations . . . . . . . . . 83
+
+5.4 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85
+
+6 100-year DASCH Light Curves of Kepler Planet-Candidate Host
+
+Stars 91
+
+6.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92
+
+6.2 DASCH light curves . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+
+6.3 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+
+7 DASCH Variable Search in the Kepler Field 101
+
+7.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+
+7.2 Variable Search Algorithms . . . . . . . . . . . . . . . . . . . . . . . 102
+
+7.2.1 Division of sub-fields . . . . . . . . . . . . . . . . . . . . . . . 102
+
+7.2.2 Excluding spurious light curves . . . . . . . . . . . . . . . . . 103
+
+7.2.3 Outliers in light curve statistics . . . . . . . . . . . . . . . . . 103
+
+7.2.4 Further removal of dubious variable candidates . . . . . . . . . 134
+
+7.3 Variable candidates . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+
+7.3.1 General properties and comparison with the ASAS variable cat￾alog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+
+7.3.2 A few example variables . . . . . . . . . . . . . . . . . . . . . 146
+
+7.4 DASCH-Kepler Variable Catalog . . . . . . . . . . . . . . . . . . . . 153
+
+7.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+
+8 Conclusions 155
+
+8.1 Photometric Development and Variable Search . . . . . . . . . . . . . 156
+
+PDF PAGE 8
+CONTENTS viii
+
+8.2 Individual Peculiar Long-term Variable Stars . . . . . . . . . . . . . . 157
+
+8.3 Additional Variables and Future Work . . . . . . . . . . . . . . . . . 157
+
+References 159
+
+PDF PAGE 9
+Acknowledgments
+
+I first want to thank my parents and husband for all of the love and support
+
+they have given me. Mom, Dad & Tian, thank you for everything.
+
+It is a great pleasure to thank my advisor, Josh Grindlay, for all of the guidance
+
+throughout the past six years. Josh, thank you for your numerous insightful and
+
+creative comments and suggestions, thank you for always being available when I
+
+need to discuss with you, thank you for your swift responses to my questions even
+
+many of them are silly, and thank you for believing in me that I can do it. Your
+
+support and encouragement helped me gain confidence in my understanding of the
+
+astrophysical world, and helped me develop into an independent researcher.
+
+I would like to thank all the other DASCH team members, who made this
+
+thesis possible. I especially want to thank Alison Doane, Edward Los, Bob
+
+Simcoe, Jaime Pepper, David Sliski, Silas Laycock and Mathieu Servillat for
+
+their work on DASCH. I would also like to thank many volunteers who have
+
+helped digitize logbooks, clean and scan plates, including George Champine,
+
+Chase Green, Julia Hardy, Ray Kenison, Jim Ostiguy, Steve Siok, Alan Sliski, Bill
+
+Toomey, volunteers at American Museum of Natural History and many others
+
+(http://hea-www.harvard.edu/DASCH/team.php).
+
+I want to thank my committee members, Dimitar Sasselov, Avi Loeb and
+
+Rosanne Di Stefano for their guidance, support and invaluable advices, and Howard
+
+Bond at STScI, for his help and advices during the past years, and for flying all the
+
+way from Baltimore for my defense. Thank you for your insightful comments and
+
+ix
+
+PDF PAGE 10
+CONTENTS x
+
+questions, and your feedback and edits on my thesis. I would also like to thank
+
+Martin Elvis for serving in my committee for several years, and for many great
+
+advices and help.
+
+I have benefited a lot from the help and discussions from many colleagues at
+
+CfA. In particular, I want to thank Bob Kurucz, Max Moe, Jonathan McDowell,
+
+Dave Latham, Jose Fernandez, Sam Quinn, Lars Buchhave, Allyson Bieryla, Scott
+
+Kenyon, Andrea Dupree, Anna Frebel, Francesca Civano, Soren Meibom, Warren
+
+Brown, Ruth Murray-Clay, Matthew Holman, Branden Allen, Maureen van den
+
+Berg, Paul Green, Emilio Falco, Perry Berlind, Nelson Caldwell, Mike Calkins,
+
+Jessica Mink, Bill Wyatt and Susan Tokarz. I also want to thank Jerry Orosz at San
+
+Diego State Univ., and Ronald Gilliland at Penn State Univ. for their generous help
+
+on my projects.
+
+I would like to thank my fellow Astronomy graduate students (past and present)
+
+for the supportive and friendly community they create. I especially would like to
+
+thank Ann Mao, Heng Hao, Roman Shcherbakov, Sasha Tchekhovskoi, Gongjie Li,
+
+Li Zeng, Wen-fai Fong, Joey Nelson, Robert Marcus, Jack Steiner, Laura Blecha,
+
+Xavier Koenig, Meredith Hughes, Heather Knutson and Gurtina Besla.
+
+I would like to thank many of the faculty members for their support and
+
+advices, especially Julia Lee, Jim Moran, Ramesh Narayan, Irwin Shapiro, David
+
+Charbonneau, Bob Kirshner and Daniel Eisenstein. I want to thank the CF and
+
+HEA computer staff, for helping out on many things. I can not imagine that anyone
+
+could graduate without the hard work of Peg Herlihy, Donna Adams and Jean
+
+Collins; thank you for caring about us so much.
+
+PDF PAGE 11
+CONTENTS xi
+
+Last but not the least, I would like to thank all my other friends, and all the
+
+people I have climbed with, who made each day much more pleasurable.
+
+PDF PAGE 12
+For my Parents, and
+
+For my dear husband, Tian.
+
+xii
+
+PDF PAGE 13
+Chapter 1
+
+Introduction
+
+1.1 Variable Stars
+
+A star is called variable if its brightness changes over time. The variability could be
+
+extrinsic, such as eclipses by a companion star, or intrinsic, such as pulsations, flares,
+
+accretion variability, or explosions (see e.g. Hoffmeister et al. 1990; Percy 2007).
+
+Note that the definition of variable stars must depend on variability amplitude and
+
+timescales: All stars are variable if the measurement accuracy is high enough; Or
+
+if we could wait long enough, all stars are variable with evolutionary changes over
+
+their lives. Our Sun, a G2 main sequence star, varies at 0.1% level over the solar
+
+cycle due to sunspots activity (Fr¨ohlich 2006), and such variability is normal among
+
+solar-type stars (Basri et al. 2010).
+
+The study of variable stars has kept changing our understanding of the universe.
+
+Chinese, Japanese and Arab Astronomers recorded the supernova in 1054, which was
+
+1
+
+PDF PAGE 14
+CHAPTER 1. INTRODUCTION 2
+
+called a “guest star” in Chinese documents. On Nov 11th 1572, Tycho Brahe was
+
+astonished to see a “new star” (Brahe 1573), which was realized hundreds of years
+
+later as a Type Ia supernova in the Milky Way. Unlike other moving objects known
+
+to be variable at that time such as comets and planets, this “new star” at a fixed
+
+position, totally changed the view of a “celestial world in which no change takes
+
+place”, and inaugurated a revolution in astronomy. In 1929, based on Henrietta Swan
+
+Leavitt’s period-luminosity relationship for Cepheids discovered from the Harvard
+
+plates (Leavitt & Pickering 1912), Edwin Hubble published his paper on a rough
+
+proportionality of the objects’ distances with their radial velocities, which revealed
+
+the expansion of the universe (Hubble 1929). In 1998, using type Ia supernovae as
+
+distance measures, astronomers discovered the accelerating universe (Riess et al.
+
+1998; Perlmutter et al. 1999), with the new accelerating force now referred to as
+
+“dark energy”.
+
+In this thesis, I work on long-term and extreme variability of stars. By
+
+“long-term” , I mean timescales from days to 100 years; by “extreme”, I mean
+
+variation amplitude >∼ 0.5 mag. In particular, I focus on unexpected rare variables
+
+with slow variations over years to decades, many of which are new types of
+
+variable stars. They may be related to dust processes, magnetic activity, accretion
+
+phenomena, or nuclear burning events, and provide important information about the
+
+physical processes involved.
+
+PDF PAGE 15
+CHAPTER 1. INTRODUCTION 3
+
+1.2 DASCH Project
+
+The time domain, especially on 10-100 yr timescales, is poorly explored despite its
+
+astrophysical importance. The Harvard College Observatory (HCO) maintains a
+
+collection of ∼500,000 glass astrophotographic plates from 1885 to 1992, constituting
+
+the largest continuous record of the whole sky in existence. Every point on the sky
+
+has been observed between 500 and 2000 times. This 100 years coverage is a unique
+
+resource for studying temporal variations in the universe on ∼1-100 yr timescales.
+
+DASCH (Digital Access to a Sky Century @ Harvard) is a project to digitize
+
+and analyze the scientific data contained in the HCO plates. The motivation is to
+
+explore the temporal variations of stars and active galaxies on the relatively poorly
+
+explored ∼ 1 − 100 yr timescales (but extending down to ∼ 1 week timescales
+
+as well), and to make these data available to the astronomical community, as
+
+summarized by Grindlay et al. (2009). An ultra-high speed digital plate scanner
+
+has been built (Simcoe et al. 2006). We developed the astrometry and photometry
+
+pipeline (Laycock et al. 2010; Los et al. 2011; Servillat et al. 2011, Tang et al. in
+
+prep.), and have scanned over 20,000 plates in five initial fields, including M44, 3C
+
+273, the Kepler field, Baade’s Window and the Large Magellanic Cloud (LMC). Each
+
+plate covers 5−30 degrees on a side with typical limiting magnitudes of B ∼ 14 − 15
+
+mag, and most of them are blue sensitive emulsions (Laycock et al. 2010, Tang et al.
+
+in prep.).
+
+With the advent of recent successful variability surveys, such as the Kepler
+
+space telescope (Borucki et al. 2010), and the Panoramic Survey Telescope and
+
+Rapid Response System (Pan-STARRS; Kaiser et al. 2002), the Palomar Transient
+
+PDF PAGE 16
+CHAPTER 1. INTRODUCTION 4
+
+Factory (PTF; Law et al. 2009), the Catalina Real-Time Transient Survey (CRTS;
+
+Djorgovski et al. 2011), the All Sky Automated Survey (ASAS; Pojmanski 2002),
+
+the MAssive Compact Halo Objects project (MACHO; Alcock et al. 2000), the
+
+Optical Gravitational Lensing Experiment (OGLE; Udalski et al. 1997), and the
+
+future Large Synoptic Survey Telescope (LSST; Tyson et al. 2003; Walker 2003), we
+
+are entering a golden era of time domain astronomy. Compared with other modern
+
+time-series data, DASCH extends the field on the timescale dimension, and provides
+
+irreplaceable information on the long-term evolution of the variable sky.
+
+1.3 DASCH Pipeline
+
+Here I briefly describe how the DASCH pipeline works; a flow chart is shown in
+
+Figure 1.1. Plates are cleaned, to remove writing marks and dust, and then scanned
+
+(Simcoe et al. 2006). We started with SExtractor (Bertin & Arnouts 1996) to extract
+
+star images. We use Astronometry.net (Lang et al. 2010), WCSTools (Mink 2002),
+
+and SCAMP (Bertin 2006) to get astrometric solutions (Servillat et al. 2011). We
+
+also do iterative processing to derive astrometric solutions for multiple exposure
+
+plates (Los et al. 2011). Next, we flag the blended images, plate defects (Tang et
+
+al. in prep.), and Pickering Wedge images (Los et al. 2011). We then divide each
+
+plate image into nine annular bins to correct vignetting and radially dependent PSF
+
+variations, derive the effective color response of each plate, fit the calibration curves,
+
+and run two local correction algorithms, to correct for the inhomogeneity of the
+
+plate (Laycock et al. 2010, Tang et al. in prep.).
+
+Combined with the meta-data from the logbooks, we get the light curves of
+
+PDF PAGE 17
+CHAPTER 1. INTRODUCTION 5
+
+Plates 
+
+Scan 
+
+SKY2000 
+
+Tycho-2 
+
+GSC2.3 
+
+KIC 
+
+APASS 
+
+WCS 
+
+solution Meta-Data Photometric 
+
+calibration 
+
+Logbooks 
+
+DASCH Pipeline 
+
+Lightcurves 
+
+Variable Search 
+
+Flag blends, 
+
+plate defects, 
+
+pickering 
+
+ wedge, 
+
+multiple 
+
+exposures 
+
+Clean 
+
+Astrometry.net 
+
+WCSTools 
+
+SCAMP 
+
+Figure 1.1.— Flow chart of DASCH pipeline. I marked the parts I developed or
+
+contributed significantly in red, including flagging blended images, filtering out image
+
+defects, photometric calibration, and the variable search.
+
+PDF PAGE 18
+CHAPTER 1. INTRODUCTION 6
+
+each object. I developed a pipeline to search for variable objects utilizing a set of
+
+measurements, including light curve RMS, amplitude, number of outburst and dip
+
+points, long-term trends in the light curves. More details are presented in Chapters
+
+2 and 7.
+
+1.4 Follow-up Observations
+
+Finding peculiar variables in DASCH is only the first step of the study. Follow-up
+
+observations, especially spectroscopic observations, are essential for understanding
+
+their properties and the physical processes involved.
+
+I have done significant amount of follow-up observations mostly using FAST
+
+and TRES spectrographs on the FLWO 1.5m telescope, and also the Hectochelle
+
+spectrograph on MMT and the MIKE spectrograph on Magellan. These spectra
+
+provide a lot of information on the stars. They are used to derive spectral and
+
+luminosity classifications, radial velocities and orbits, and stellar parameters such as
+
+temperatures, surface gravity and metallicity. Some spectral lines, such as Ca H&K
+
+and Hα emission lines, also help us understand their magnetic activity levels.
+
+PDF PAGE 19
+Chapter 2
+
+Developments in DASCH
+
+Photometry
+
+S. Tang, J. Grindlay, E. Los, & M. Servillat The Astronomical Journal, in prep.
+
+S. Laycock, S. Tang, J. Grindlay et al. The Astronomical Journal, Vol. 140,
+
+pp. 1062-1077, 2010
+
+Abstract
+
+Here I describe the DASCH photometry pipeline, focusing on the parts I developed.
+
+The initial photometry developments, including annular bin photometry, plate color￾term fitting, are described in Laycock et al. (2010). New photometry developments,
+
+including identifying blended images, filtering out defects by using image profiles
+
+and large astrometric deviations, as well as improved local calibrations by using
+
+neighbor stars with similar magnitudes and colors, are described in Tang et al. (in
+
+7
+
+PDF PAGE 20
+CHAPTER 2. DASCH PHOTOMETRY 8
+
+prep). All of the above developments are designed to serve the scientific purpose
+
+of finding real variables on DASCH plates. DASCH data from the Kepler field are
+
+used to illustrate the new photometry and light curve analysis tools. We report
+
+that our photometry accuracy is about 0.1 − 0.13 mag. We also define statistical
+
+measurements of light curves, which will be used for selecting variable stars. The
+
+variable search and results for the Kepler field are presented in Chapter 7.
+
+2.1 Introduction
+
+During the development phase for the high speed DASCH scanner (Simcoe et al.
+
+2006) and analysis software, we have scanned over 20, 000 plates in five selected fields
+
+covering M44, 3C 273, Baade’s Window, the Kepler field, and the Large Magellanic
+
+Cloud (LMC). The initial photometry and astrometry developments are described
+
+in Laycock et al. (2010; hereafter L10). The pipeline and database is described in
+
+Los et al. (2011). Further astrometry development is described in Servillat et al.
+
+(2011). As a pilot scientific study, we have discovered interesting long-term variables
+
+with ∼ 1 mag variations over years to decades, which provide important information
+
+about dust processes, accretion physics and possible nuclear shell burning on the
+
+surface of white dwarf (Tang et al. 2010, 2011a,b).
+
+It is now an unprecedented era for the time domain astrophysics, with the
+
+advent of large time domain surveys such as the Panoramic Survey Telescope and
+
+Rapid Response System (Pan-STARRS; Kaiser et al. 2002), the Palomar Transient
+
+Factory (PTF; Law et al. 2009), the Catalina Real-Time Transient Survey (CRTS;
+
+Djorgovski et al. 2011), and the future Large Synoptic Survey Telescope (LSST;
+
+PDF PAGE 21
+CHAPTER 2. DASCH PHOTOMETRY 9
+
+Walker 2003). DASCH, with its unique 100 year time coverage and sampling,
+
+opens a new window of studying variables, especially the ones with long timescale
+
+variations. This requires the correct removal of plate defects (dust, scratches, etc.
+
+that are more likely on old plate images) as well as good astrometry and photometry
+
+on each resolved object.
+
+One of the particularly interesting fields is the Kepler mission field. We have
+
+scanned 3654 plates taken from 1885 to 1990, in or covering part of the Kepler field.
+
+Most plates are blue-sensitive, close to Johnson B. Since the only plates scanned for
+
+the “Kepler field” were chosen to contain part or all of the Kepler field, the coverage
+
+for any given star decreases with increasing radius from the center of the Kepler
+
+field, as shown in Figure 2.1. At any given point within the Kepler field of view
+
+(FOV), there are at least 1500, 1000, 450, and 130 plates down to B =12, 13, 14,
+
+and 15 magnitudes, respectively. For photometric calibration, we used the Kepler
+
+Input Catalog (KIC) which contains Sloan-like griz photometry (Brown et al. 2011).
+
+KIC covers ∼ 177 square degrees centered at RA 19:22:40 and Dec +44:30, which is
+
+smaller than our scanned region. In other fields, we used the GSC2.3 catalog (Lasker
+
+et al. 1990), and the AAVSO APASS catalog (http://www.aavso.org/apass) for
+
+photometric calibration. For all other sky fields, we use the newly released APASS
+
+photometric catalog (BVR, gri) with photometric uncertainties (< 0.05mag) some 4
+
+times better than the GSC2.3.2 catalog used in our initial photometry (L10).
+
+Here I describe the photometry developments I developed, including annular
+
+bin photometry, plate color-term fitting, identifying blended images, filtering out
+
+dubious detections by image profiles and high astrometry deviations, improved
+
+local calibration using neighbors with similar magnitudes. The above developments
+
+PDF PAGE 22
+CHAPTER 2. DASCH PHOTOMETRY 10
+
+1000
+
+1500 1000
+
+2000
+
+12 mag
+
+RA
+
+Dec
+
+320 300 280
+
+20
+
+30
+
+40
+
+50
+
+60 600
+
+600
+
+1000
+
+1400
+
+13 mag
+
+RA
+
+Dec
+
+320 300 280
+
+20
+
+30
+
+40
+
+50
+
+60
+
+270
+
+270 450
+
+700
+
+14 mag
+
+RA
+
+Dec
+
+320 300 280
+
+20
+
+30
+
+40
+
+50
+
+60 55
+
+55
+
+130
+
+240
+
+15 mag
+
+RA
+
+Dec
+
+320 300 280
+
+20
+
+30
+
+40
+
+50
+
+60
+
+Figure 2.1.— Coverage contour of number of digitized plates in or covering part of
+
+the Kepler FOV. Four panels show number of plates reaching limiting magnitude of
+
+12 mag (upper-left panel), 13 mag (upper-right panel), 14 mag (lower-left), and 15
+
+mag (lower-right), respectively. The Kepler FOV is overlaid (black squares) in each
+
+panel.
+
+PDF PAGE 23
+CHAPTER 2. DASCH PHOTOMETRY 11
+
+are all essential to finding real variables on DASCH plates. We also describe
+
+statistical measurements of light curves, which will be used for selecting variables.
+
+A subsequent paper in preparation will report on the details of the initial DASCH
+
+variable search for the Kepler field (Tang et al 2012; Chapter 7).
+
+2.2 Annular Photometry and Color-term Fitting
+
+of Plates
+
+Here I briefly describe DASCH annular photometry and color-term fitting of plates.
+
+More details can be found at Laycock et al. (2010).
+
+Given the heterogeneous nature of the plate collection, the characteristic
+
+calibration curve, i.e. the instrumental magnitude vs. the catalog magnitude,
+
+is different for every single plate. Moreover, given the inhomogeneity of a plate,
+
+including vignetting and position dependent variations, the calibration curve also
+
+differs from place to place on a given plate. We first divided each plates into 9
+
+annular bins, as shown in Figure 2.2. Next, we fit the calibration curve in each bin
+
+separately. After extensive experimenting, we found that no polynomial model works
+
+consistently well to fit the calibration curve. We identified the statistical-analysis
+
+function rlowesss (Cleveland 1981), a robust (zero weight to outliers) local regression
+
+using weighted linear least squares and a first degree polynomial model, works the
+
+best for our calibration. An example fit is given in Figure 2.3.
+
+Another issue is the color responses of plates. Most Harvard plates are blue
+
+sensitive plates without filters, with a color response close to Johnson B. However,
+
+PDF PAGE 24
+CHAPTER 2. DASCH PHOTOMETRY 12
+
+0 5000 10000 15000
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+1.2
+
+1.4
+
+1.6
+
+1.8
+
+2
+
+x 104
+
+X IMAGE
+
+Y IMAGE
+
+rb07136, annular bins
+
+Figure 2.2.— Nine annular bins on plate rb 07136, to remove radial dependence of
+
+vignetting. There are thousands of stars in each bin, which insures independent
+
+calibration of magnitude values in each bin.
+
+PDF PAGE 25
+CHAPTER 2. DASCH PHOTOMETRY 13
+
+10 11 12 13 14 15 16 17
+
+−16
+
+−14
+
+−12
+
+−10
+
+−8
+
+Instrumental ISO
+
+mc00355 Photometric Calibration, bin 1
+
+Limiting mag = 16.38
+
+9 10 11 12 13 14 15 16 17 18
+
+−1
+
+−0.5
+
+0
+
+0.5
+
+1
+
+Residuals (mag)
+
+GSC2.3.2 B mag
+
+RMS = 0.257
+
+Figure 2.3.— Photometric calibration for bin 1 of plate mc 00355. The upper panel
+
+shows isophotal magnitudes from SExtractor vs GSC2.3 B magnitude. Blue dots are
+
+images matched with GSC stars, the red line is the calibration curve, and green lines
+
+are extrapolation of the calibration curve in bright end where there are no or too few
+
+stars, and the faint end beyond the limiting magnitude, which is indicated by the
+
+vertical black dashed line. The lower panel shows the calibration residuals vs GSC
+
+B magnitude, and the red dashed lines indicate the RMS of residuals at different
+
+magnitudes, which is mainly due to the error of GSC catalog.
+
+PDF PAGE 26
+CHAPTER 2. DASCH PHOTOMETRY 14
+
+a small fraction of the plates used red and yellow filters. In order to generate
+
+consistent and precise magnitudes, it is essential to understand the color response
+
+in each plate and correct it. We derive the color term C, by minimizing rms in the
+
+calibration curve. An example is shown in Figure 2.4. GSC2.3 B and R magnitudes
+
+are used in the calculation. C = 0 means the color response is the same as GSC B,
+
+and C = 1 means the color response is the same as GSC R. Figure 2.5 shows the
+
+color term distribution for M44 plates. Note that there is a color term change for
+
+rh plates in 1932, which is probably related to the telescope site move, and hence
+
+possible change of plate supply that year.
+
+2.3 Identify blended images
+
+Some scanned fields are crowded, such as the Kepler field, Baade’s Window and
+
+LMC. Moreover, due to overexposure and trailing on some plates, many bright
+
+objects may have their photometry contaminated by nearby objects. The effective
+
+brightness of the blended image is the sum of the fluxes of all of the component
+
+stars, but since plates are nonlinear, these blended images must be recognized and
+
+removed from the Photometry analysis. Otherwise, large errors/deviations from the
+
+true magnitude in the blended stars will lead to fake variables, which will severely
+
+pollute the pool of variables we are ultimately looking for.
+
+SExtractor is used for object detection and photometry (L10) does some image
+
+deblending but requires a saddle point in the point spread function (psf) that is
+
+usually lost for saturated stars. Therefore, many blended images are not recognized
+
+as blended in SExtractor. To overcome this problem, we use a second criterium to
+
+PDF PAGE 27
+CHAPTER 2. DASCH PHOTOMETRY 15
+
+−1.4 −1.2 −1 −0.8 −0.6 −0.4
+
+0.48
+
+0.49
+
+0.5
+
+0.51
+
+0.52
+
+0.53
+
+0.54
+
+0.55
+
+0.56
+
+color−term
+
+Photometric fitting RMS
+
+dnr001530
+
+0
+
+0
+
+1ww
+
+a
+
+1.out, colorterm = −0.871, flag=1
+
+Figure 2.4.— Color-term fitting for damons north red plate dnr00153. The color
+
+response of each plate is determined by stepping through a series of values of color
+
+term C, repeatedly fitting the calibration curve, so as to locate the C value producing
+
+the minimum rms in the residuals. The reference stars are GSC2.3 photoelectric
+
+magnitudes and the minimum scatter occurs for C = −0.873, meaning that the plate
+
+response = B −0.873(B −R); hence, this is confirmed to be a red-sensitive plate with
+
+an effective passband very close to R.
+
+PDF PAGE 28
+CHAPTER 2. DASCH PHOTOMETRY 16
+
+Figure 2.5.— Color term C by plate series and year. The color terms were obtained by
+
+minimizing the scatter in the calibration curve for each plate, relative to Johnson B
+
+and R magnitudes, such that B magnitude corresponds to C = 0, which is very close
+
+to the result obtained for most of our sample. Left: each plate series defines a distinct
+
+distribution which is well described by a single Gaussian; parameters from these fits
+
+are given in the legend. Five dn plates observed through a red filter were included
+
+for comparison; these appear at C ∼ −1, which corresponds closely to Johnson R,
+
+confirming the reliability of our technique. Right: the same data are plotted against
+
+time, showing the variations in emulsion properties. Note the change in response for
+
+rh plates that occurred in 1932, possibly due to the change of plate supply related to
+
+the telescope site move that year.
+
+PDF PAGE 29
+CHAPTER 2. DASCH PHOTOMETRY 17
+
+flag blended stars besides the SExtractor flag. We adopt a critical separation radius,
+
+∆rcrit, which is the sum of one half of the SExtractor full width half maximum
+
+(FWHM) radius and the astrometric error. For any SExtractor object, we search
+
+the input catalog (which is KIC in this paper) for stars within ∆rcrit. If there are
+
+multiple KIC stars matching one SExtractor object, then only the brightest star is
+
+accepted, while all the others are flagged as blended. For the brightest star, if the
+
+total flux of all the other stars within ∆rcrit contribute to more than 10% of the
+
+brightest star, then it is also flagged as blended.
+
+The FWHM of a star image on a plate depends on the brightness of the star
+
+and the plate properties, as shown in Figure 2.2. It ranges from 10 − 20′′ on small
+
+plate scale plates such as the mc plates (with scale 98”/mm), and up to 40 − 100′′ on
+
+large plate scale plates such as ac (606”/mm) and dnb (507”/mm). The astrometric
+
+error is much smaller than the FWHM, with typical values from sub-arcsecond to a
+
+few arcseconds, mostly depending on plate series (L10; Servillat et al. 2011).
+
+2.4 Filter out Dubious Detections
+
+2.4.1 Image Profiles
+
+There are many kinds of defects on the plates, including emulsion defects, scratches,
+
+ink marks, dust particles not removed, and even airplane and satellite tracks (post
+
+1957), which all must be “removed” in the search for variables. Ink marks (from
+
+visiting astronomers annotations of objects they were working on, and present on
+
+about 20% of the Harvard plates), and most of dust particles as well as “smudges”
+
+PDF PAGE 30
+CHAPTER 2. DASCH PHOTOMETRY 18
+
+8 10 12 14
+
+20
+
+40
+
+60 mc plates
+
+8 10 12 14
+
+i plates
+
+8 10 12 14
+
+20
+
+40
+
+60
+
+80
+
+FWHM (arcseconds)
+
+rh plates
+
+8 10 12 14
+
+bm plates
+
+8 10 12 14
+
+0
+
+50
+
+100
+
+150
+
+ KIC g mag
+
+ac plates
+
+8 10 12 14
+
+dnb plates
+
+Figure 2.6.— Image size (FWHM) of 400 randomly selected stars vs magnitude over
+
+different plate series (6 of the ∼10 principal series). For any given plate series, the
+
+solid points present the mean value of FWHM over different plates, and the error
+
+bars show the rms.
+
+PDF PAGE 31
+CHAPTER 2. DASCH PHOTOMETRY 19
+
+are removed during the plate cleaning (of the clear glass back side of the plate, which
+
+also contains (∼20% of all plates) annotations from the many users of the historical
+
+plates) before scanning, but other defects remain there. We have to identify these
+
+defects before any scientific study.
+
+Fortunately, most defects have different image profiles from real stars, which
+
+provides a way to filter them out. Plates are highly inhomogeneous, and images
+
+in different parts of the plate have different profiles, as shown in Fig. 2.7 which
+
+shows image parameters (from SExtractor) vs. spatial bin location on the plate.
+
+Therefore, we divided each plate into 5 × 5 bins to do the filtering. Objects at
+
+edges (within 5% of the plate width and height to plate edges) and corners (beyond
+
+85% of the distance from the plate center to one of the corners) are excluded in
+
+the analysis to avoid contaminations, as they are usually highly distorted. We used
+
+SExtractor parameters as profile measurements, including ellipticity, position angle
+
+(θ), instrumental isophotal magnitude (MAG ISO), FWHM (in arcsec), maximum
+
+flux with background subtracted (in counts), and isophotal area above the analysis
+
+threshold (ISO0, in units of pixel2
+
+). Most defects are located at different regions in
+
+at least one or more parameter spaces from real star images, as shown in Figures
+
+2.8-11.
+
+Filters are applied in the following four parameter spaces, as shown in Figures
+
+2.8-11:
+
+1. Ellipticity vs position angle, as shown in Figure 2.8. Objects beyond 2σ in
+
+ellipticity and objects beyond 2.5σ in position angle are flagged as defects.
+
+2. log(FWHM) vs instrumental magnitude, as shown in Figure 2.9. Objects are
+
+PDF PAGE 32
+CHAPTER 2. DASCH PHOTOMETRY 20
+
+−16 −14 −12 −10
+
+1
+
+1.5
+
+2
+
+MAG_ISO
+
+log(FWHM) (arcsec)
+
+−16 −14 −12 −10
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+MAG_ISO
+
+Ellipticity
+
+0 50 100 150
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+θ
+
+Ellipticity
+
+2.8 3 3.2 3.4 3.6
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+log(FLUX_MAX)
+
+log(ISO0) (pixel
+
+2
+
+)
+
+bin(1,1)
+
+bin(3,3)
+
+bin(3,5)
+
+Figure 2.7.— SExtractor parameter distributions for stars in different local bins of
+
+plate rh08346.
+
+PDF PAGE 33
+CHAPTER 2. DASCH PHOTOMETRY 21
+
+divided into 15 instrumental magnitude bins. In each bin, median and rms
+
+values of log(FWHM) are derived after two iterations of 3σ clipping. Objects
+
+beyond 2σ are flagged as defects.
+
+3. Ellipticity vs instrumental magnitude, as shown in Figure 2.10. Objects are
+
+divided into 15 instrumental magnitude bins. In each bin, median and rms
+
+values of ellipticity are derived after two iterations of 3σ clipping. Objects
+
+beyond 2σ are flagged as defects.
+
+4. log(ISO0) vs log(maximum flux), as shown in Figure 2.11. Objects are divided
+
+into 20 log(maximum flux) bins. In each bin, median and rms values of
+
+log(ISO0) are derived after two iterations of 3σ clipping. Objects beyond 2σ
+
+are flagged as defects.
+
+Both real stars and defects have wide distributions in parameter phase spaces,
+
+and the ideal goal that all defects are filtered out while all real stars are kept is
+
+impossible. Tighter constraints lead to less contamination from defects, while more
+
+real stars are lost; looser constraints yield more real stars, but with higher level of
+
+contamination from defects. We chose a 2 − σ cut-off to balance, and the resulted
+
+ratios are shown in Figure 2.12. The objects identified as defects are flagged, and
+
+still kept in the pipeline.
+
+2.4.2 Drad filter
+
+Since we started matching using a search radius (FW HM/2+ astrometric error)
+
+much larger than our astrometric error, we might include wrong matches, mostly real
+
+PDF PAGE 34
+CHAPTER 2. DASCH PHOTOMETRY 22
+
+Figure 2.8.— Ellipticity vs PA for stars in a local bins of plate BM01070.
+
+PDF PAGE 35
+CHAPTER 2. DASCH PHOTOMETRY 23
+
+Figure 2.9.— Fluxmax vs isophotal area above the analysis threshold for stars in a
+
+local bins of plate BM01070.
+
+PDF PAGE 36
+CHAPTER 2. DASCH PHOTOMETRY 24
+
+Figure 2.10.— Ellipticity vs Magnitude for stars in a local bins of plate BM01070.
+
+PDF PAGE 37
+CHAPTER 2. DASCH PHOTOMETRY 25
+
+Figure 2.11.— FWHM vs Magnitude for stars in a local bins of plate BM01070.
+
+PDF PAGE 38
+CHAPTER 2. DASCH PHOTOMETRY 26
+
+0 0.2 0.4 0.6 0.8 1
+
+0
+
+0.1
+
+0.2
+
+0.3
+
+0.4
+
+0.5
+
+0.6
+
+0.7
+
+0.8
+
+0.9
+
+1
+
+Percentage
+
+Number of Plates (arbitrarily normalized)
+
+median = 0.80
+
+median = 0.83
+
+percentage of real stars passed the filters
+
+percentage of fake stars filtered out
+
+Figure 2.12.— Efficiency of defect filters. They are based on the SExtractor pa￾rameters characterizing the image profiles. The blue solid line shows the percentage
+
+distribution of real stars, i.e., images matched with KIC objects with similar magni￾tudes, passed the filters; its median value, i.e. 0.83, is marked by the blue dash-dotted
+
+line. The red dashed line shows the percentage distribution of fake stars, i.e., images
+
+not matched with KIC objects thus most likely defects, failed the filters; its median
+
+value, i.e. 0.80, is marked by the red dotted line. The above results are based on
+
+3898 plates in the Kepler field.
+
+PDF PAGE 39
+CHAPTER 2. DASCH PHOTOMETRY 27
+
+stars matched with noise or defects. We define drad as the difference between the
+
+SExtractor image position and the input catalog (KIC, APASS, or GSC catalogs)
+
+position. We first find the median |drad| in the local bin defined as 50 × 50 grids
+
+on each plate and the rms dispersion, σdrad, of the |drad| values in this bin, as a
+
+measure of our astrometry uncertainty, and then flag stars with a drad greater than
+
+3σdrad plus a two pixels as wrong matches.
+
+2.5 Improved local calibration using neighbors
+
+with similar magnitudes
+
+After defect filtering, we divide each plate into 9 annular bins in order to proceed
+
+with photometry calibrations that will naturally take into account radial vignetting
+
+effects from the original telescope. In each annular bin, we derive the effective
+
+color response by minimizing the scatter in the catalog magnitude vs instrumental
+
+magnitude plane, and fit the calibration curve for each bin (Laycock et al. 2010).
+
+To correct the localized spatial variations in plate sensitivity, a first round local
+
+calibration is performed in 50 × 50 “local bins”, where a clipped median magnitude
+
+residual (plate magnitude - catalog magnitude) is computed for each bin, and applied
+
+to each star’s magnitude (Laycock et al. 2010). As there are many more faint stars
+
+in each bin which dominate the median residual, the first round local calibration
+
+accounts well for the spatial variations of the fainter stars, but not well for bright
+
+stars, especially the ones with B < 10 − 11 mag, as shown in Figure 2.13.
+
+To further improve the photometry, we perform a second round local calibration,
+
+PDF PAGE 40
+CHAPTER 2. DASCH PHOTOMETRY 28
+
+x104 
+
+x104 x104 
+
+x104 
+
+x104 
+
+x104 
+
+Figure 2.13.— Magnitude residual (plate magnitude - catalog magnitude) contour of
+
+plate rh07136 for stars in different magnitude bins. The X and Y axis are in units of
+
+pixels. Different colors are for different contour levels.
+
+PDF PAGE 41
+CHAPTER 2. DASCH PHOTOMETRY 29
+
+using neighbor stars with similar magnitudes. We first divide stars in magnitude
+
+bins, requiring a minimum number of stars in each magnitude bin of 5000, and a
+
+minimum bin size of 0.5 mag. For each magnitude bin, we then divide the plate into
+
+∼ 400 quasi-square spatial bins, for example, 17×23 spatial bins for a 8◦ ×11◦ plate.
+
+If the number of stars in a magnitude-spatial bin is less than 20, we expand the bin
+
+until it contains at least 20 stars. We then calculate the clipped median magnitude
+
+residual, and apply the residual correction to the magnitude of each star in the bin.
+
+Figure 10 shows the magnitude residual correction vs magnitude we derived for 9
+
+example spatial bins on plate rb07136. The median magnitude residual depends on
+
+both the spatial location, which reflects the inhomogeneity of the plate, and the
+
+magnitudes of stars, which suggests that fitting a dmag vs catalog mag to a sequence
+
+of stars around the given star would further improve the photometry. In principle,
+
+this is similar to what people do when examining the plates using eyepieces, i.e.
+
+comparing the image of the target object with a sequence of neighbor stars with
+
+similar magnitudes.
+
+2.6 DASCH Photometry Performance and Sensi￾tivities for Variables
+
+There are two measures of DASCH photometry performance. The first is light
+
+curve rms. As most stars are not variable at the ∼ 0.1 mag level, the light curve
+
+rms is dominated by photometric uncertainty, and the median light curve rms
+
+corresponds to the average uncertainty. The second is the number of unrecognized
+
+PDF PAGE 42
+CHAPTER 2. DASCH PHOTOMETRY 30
+
+5 10 15 20
+
+−0.2
+
+0
+
+0.2
+
+mag
+
+dmag−correction
+
+x=1/4, y=1/4
+
+5 10 15 20
+
+−0.5
+
+0
+
+0.5
+
+mag
+
+dmag−correction
+
+x=1/4, y=2/4
+
+5 10 15 20
+
+0
+
+0.2
+
+0.4
+
+mag
+
+dmag−correction
+
+x=1/4, y=3/4
+
+5 10 15 20
+
+−0.5
+
+0
+
+0.5
+
+mag
+
+dmag−correction
+
+x=2/4, y=1/4
+
+5 10 15 20
+
+−1
+
+0
+
+1
+
+mag
+
+dmag−correction
+
+x=2/4, y=2/4
+
+5 10 15 20
+
+−0.5
+
+0
+
+0.5
+
+mag
+
+dmag−correction
+
+rb07136
+
+s
+
+imple
+
+5 10 15 20
+
+−1
+
+−0.5
+
+0
+
+0.5
+
+mag
+
+dmag−correction
+
+x=3/4, y=1/4
+
+5 10 15 20
+
+−0.2
+
+0
+
+0.2
+
+mag
+
+dmag−correction
+
+x=3/4, y=2/4
+
+5 10 15 20
+
+−0.05
+
+0
+
+0.05
+
+mag
+
+dmag−correction
+
+x=3/4, y=3/4
+
+Figure 2.14.— Magnitude residual correction vs magnitude of 9 example spatial bins
+
+on plate rh07136. X = 1/4, Y = 1/4 means the spatial bin locates at 1/4 of both
+
+X and Y axis, X = 2/4, Y = 2/4 means the spatial bin locates at the center of the
+
+plate, and so on. Positive dmag correction means this must be subtracted to match
+
+the catalog value (i.e. stars are being measured as too dim).
+
+PDF PAGE 43
+CHAPTER 2. DASCH PHOTOMETRY 31
+
+bad measurements, which ultimately constrains our ability to find real variables.
+
+As shown in Figure 2.15, the second round magnitude-dependent local calibration
+
+slightly improves the median light curve rms (upper panel), and greatly reduced the
+
+number of bad measurements by one order of magnitude (lower panel). Here we
+
+use the number of points in a given light curve of a star that are ≥ 0.4mag brighter
+
+than the median magnitude as a measure of the number of “bad” points. In the
+
+next section, we describe how real variables are distinguished from this “nburst3”
+
+measure of the number of bad points.
+
+As KIC provides log(g), it is interesting to compare the light curve rms of main
+
+sequence stars and giant stars. I selected two groups, a group of main sequence stars
+
+with log(g) > 4, and a group of giant stars with log(g) < 3; Only stars with at least
+
+50 good points are used. As shown in Figures 2.16 and 2.17, giant stars show larger
+
+light curve rms than main sequence stars. Also note that our overall photometry
+
+accuracy as measured by the light curve rms of main sequence stars, is only ∼ 0.11
+
+mag, as shown in Figure 2.17.
+
+2.7 Statistical Measurements for Defining Vari￾able Search
+
+We developed a set of statistical measurements for the purpose of selecting variable
+
+stars. We first define ‘good’ points (AF LAGS == 0 in the DASCH database; see
+
+the DASCH website1
+
+), excluding the following cases:
+
+1http://hea-www.harvard.edu/DASCH/database.php
+
+PDF PAGE 44
+CHAPTER 2. DASCH PHOTOMETRY 32
+
+5 6 7 8 9 10 11 12 13 14 15 16
+
+0.1
+
+0.15
+
+0.2
+
+KIC g mag
+
+median light curve rms
+
+before mag−dep. cal.
+
+after mag−dep. cal.
+
+5 6 7 8 9 10 11 12 13 14 15 16
+
+0.01
+
+0.1
+
+1
+
+KIC g mag
+
+nburst3 per light curve
+
+Figure 2.15.— Upper panel: median light curve rms vs KIC g mag in 1 mag bins;
+
+Lower panel: number of nburst3 points per light curve vs KIC gmag, where nburst3
+
+points are defined as ≥ 0.4 mag brighter than median mag of a star. The results before
+
+magnitude-dependent local calibration are shown in red open circles with dashed lines,
+
+and the results after magnitude-dependent local calibration are shown in blue filled
+
+circles with solid lines.
+
+PDF PAGE 45
+CHAPTER 2. DASCH PHOTOMETRY 33
+
+6 7 8 9 10 11 12 13 14
+
+0.05
+
+0.1
+
+0.15
+
+0.2
+
+0.25
+
+0.3
+
+g (mag)
+
+light curve RMS (mag)
+
+log(g)>4
+
+log(g)<3
+
+Figure 2.16.— DASCH light curve rms vs KIC g mag for main sequence stars (log(g) >
+
+4; in blue), and giant stars (log(g) < 3; in red). Only stars with at least 50 good
+
+points are used. Stars are divided into 1 mag bins. Large solid circles are the mean
+
+values, the errorbars along x-axis represent the range of the bin, and the errorbars
+
+along y-axis represent the standard deviation of light curve rms in each bin.
+
+PDF PAGE 46
+CHAPTER 2. DASCH PHOTOMETRY 34
+
+0 0.05 0.1 0.15 0.2 0.25 0.3
+
+0
+
+100
+
+200
+
+300
+
+400
+
+500
+
+600
+
+700
+
+light curve RMS (mag)
+
+N
+
+log(g)>4, median = 0.109
+
+log(g)<3, median = 0.114
+
+Figure 2.17.— Histogram of DASCH light curve rms for main sequence stars (log(g) >
+
+4; in blue), and giant stars (log(g) < 3; in red). Only stars with at least 50 good
+
+points are used.
+
+PDF PAGE 47
+CHAPTER 2. DASCH PHOTOMETRY 35
+
+1. Blended images either flagged by SExtractor or our pipeline (see Chapter 2.3);
+
+2. Images flagged as defects or with a large astrometric position rms (see Chapter
+
+2.4);
+
+3. Images on multiple exposure or Pickering wedge plates (Los et al. 2011);
+
+4. Images in the local bins with extraordinary local bins with anomalously large
+
+photometry or astrometry errors, thus likely dubious;
+
+5. Images on plates with uncertain date, or within 23.5 degrees of horizon;
+
+6. Images which are too bright to be calibrated, due to the lack of calibration
+
+stars;
+
+7. Images matched with galaxies given by the input catalog (this “galaxy flag”
+
+does not eliminate them as candidate variables).
+
+Using these ‘good points’ (for selecting stellar variables), we then calculate the
+
+statistical measurements of each light curve. The measurements used for selecting
+
+variables are listed in Table 1, and are described in the following paragraphs.
+
+Description of other parameters in the summary table can be found at DASCH
+
+website3
+
+.
+
+Two amplitude measurements are calculated. The first one is called range local,
+
+which is the difference between the brightest and the faintest points, minus the
+
+sum of their errors. The second one is called range local2, which is similar to
+
+range local, but after removing the brightest and the faintest points. Light curve
+
+rms is calculated after 5σ clipping, and is called lightcurverms1 in our database.
+
+PDF PAGE 48
+CHAPTER 2. DASCH PHOTOMETRY 36
+
+We also de-trend the light curves in four different ways and then calculate
+
+the rms of the residuals, to look for variables with trends, which have residual
+
+rms significantly smaller than their light curve rms. Methods used for de-trending
+
+are listed in Table 1. The first two (lightcurverms2 and lightcurverms3) are
+
+sensitive to variables with slow variations over years to decades, while the other
+
+two (lightcurverms4 and lightcurverms5) are sensitive to variables with more than
+
+10 − 15 adjacent points in the trend.
+
+We use a set of different thresholds to define ‘outburst’, ‘dip’, and ‘dev’
+
+(deviation) points. If there are multiple adjacent points in a ‘outburst’ or ‘dip’
+
+in a light curve, then it is more likely to be a true variable. To quantify this, we
+
+define parameters (adjacentburstdip, adjacentburstdip2, and adjacentburstdip3) to
+
+measure the number of adjacent points in a light curve.
+
+To further exclude possible dubious variables which skipped our blending
+
+and defect filters, we calculate a set of correlation measurements, including the
+
+correlation coefficients between magnitude and ra, dec, and limiting magnitude. We
+
+also calculate the difference between the median DASCH magnitude of 20 deepest
+
+plates, and 20 shallowest plates. Blends and noise/defects trends to have significantly
+
+higher correlations.
+
+2.8 Summary
+
+In this chapter, I have described the photometry analysis improvements as well
+
+as variability search techniques that I have developed to find real variables on the
+
+PDF PAGE 49
+CHAPTER 2. DASCH PHOTOMETRY 37
+
+DASCH digitized images. These developments significantly improved the efficiency
+
+of removing dubious measurements, as well as reduced the overall photometric
+
+uncertainty. Our variable search starts from the summary table in Chapter 2.7, by
+
+selecting candidates with excess variability measurements compared with neighbor
+
+stars with similar magnitudes. Details of the algorithms and software for variable
+
+searches, and results for the DASCH variables in the Kepler field, are reported in
+
+Chapter 7 and Tang et al (in prep.).
+
+PDF PAGE 50
+CHAPTER 2. DASCH PHOTOMETRY 38
+
+Table 2.1: Statistical measurements in the summary table
+
+Parameter Description
+
+Light curve amplitude and rms:
+
+range local difference between the brightest and the faintest points, minus the sum of their errors
+
+range local2 similar to range local, but after removing the brightest and the faintest points.
+
+lightcurverms1 light curve rms after 4 iterations of 5σ clipping
+
+rms of light curve residuals after de-trending:
+
+lightcurverms2 de-trended using smooth(x,y,0.4, ‘lowess’)
+
+lightcurverms3 de-trended using smooth(y,0.8, ‘lowess’)
+
+lightcurverms4 de-trended using smooth(y,10, ‘sgolay’)
+
+lightcurverms5 de-trended using smooth(y,15, ‘loess’)
+
+Number of outburst and dip points:
+
+nburst number of points ≥ 0.8 mag brighter than the median value
+
+nburst2 number of points ≥ 0.5 mag brighter than the median value
+
+nburst3 number of points ≥ 0.4 mag brighter than the median value
+
+nburst4 number of points ≥ 3σ brighter than the median value,
+
+where σ is the median value of photometry uncertainty in the light curve
+
+ndip number of points ≥ 0.8 mag fainter than the median value
+
+ndip2 number of points ≥ 0.5 mag fainter than the median value
+
+ndip3 number of points ≥ 0.4 mag fainter than the median value
+
+ndip4 number of points ≥ 3σ fainter than the median value
+
+ndev2 number of points ≥ 2σ brighter or fainter than the median value
+
+ndev3 number of points ≥ 3σ brighter or fainter than the median value
+
+Adjacent points in ‘burst’ or ‘dip’:
+
+adjacentburstdip a measure of the number of adjacent nburst3/4 and ndip3/4 points
+
+adjacentburstdip2 a measure of the number of > 5 adjacent nburst3/4 and ndip3/4 points
+
+adjacentburstdip3 a measure of the number of > 7 adjacent nburst3/4 and ndip3/4 points
+
+Parameters used to remove dubious variables:
+
+magvsracorr correlation coefficient between light curve magnitude and ra
+
+magvsdeccorr correlation coefficient between light curve magnitude and dec
+
+magvslimitingcorr correlation coefficient between light curve magnitude and plate limiting mag
+
+Malmquist factor clipped median DASCH magnitude of 20 deepest plates
+
+− clipped median DASCH magnitude of 20 shallowest plates using ‘good’ points
+
+Malmquist factorB similar to Malmquist factor but also includes defects, low altitude,
+
+uncertain date and second quality plates
+
+PDF PAGE 51
+Chapter 3
+
+Peculiar Long-term K Giant
+
+Variables
+
+S. Tang, J. Grindlay, E. Los & S. Laycock The Astrophysical Journal Letters,
+
+Vol. 710, pp. L77-L81, 2010
+
+Abstract
+
+Here I present the discovery of three unusual long-term variables found in the Digital
+
+Access to a Sky Century at Harvard (DASCH) project, with ∼1 magnitude variations
+
+in their lightcurves on ∼ 10 − 100 yr timescales. They are all spectroscopically
+
+identified as K2 III giant stars, probably in the thick disk. Their lightcurves do not
+
+match any previously measured for known types of variable stars, or any theoretical
+
+model reported for red giants, and instead suggest a new dust formation mechanism
+
+or the first direct observation of “short” timescale evolution-driven variability. More
+
+39
+
+PDF PAGE 52
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 40
+
+theoretical work on the lithium flash near the Red Giant Branch (RGB) bump and
+
+the helium shell ignition in the lower Asymptotic Giant Branch (AGB), as well as
+
+long term monitoring of K2 III thick disk stars is needed.
+
+3.1 Introduction
+
+The time domain, especially on 10-100 yr timescales, is poorly explored despite its
+
+astrophysical importance. The Harvard College Observatory (HCO) maintains a
+
+collection of more than 500,000 glass astrophotographic plates from the 1880s to the
+
+1980s, constituting the only continuous record of the whole sky in existence. Every
+
+point on the sky has been observed between 500 and 1000 times. This 100 years
+
+coverage is a unique resource for studying temporal variations in the universe on
+
+∼10-100 yr timescales. The Digital Access to a Sky Century at Harvard (DASCH)
+
+collaboration has developed an ultra-high speed digital plate scanner (Simcoe et al.
+
+2006), and will ultimately enable the full Harvard plate collection to be digitized. We
+
+have developed the astrometry and photometry pipeline, and scanned 7000 plates
+
+in six different fields. An overview of the DASCH project is presented in Paper I
+
+(Grindlay et al. 2009), and the photometry and astrometry pipelines are described
+
+in paper II (Laycock et al. 2010) and paper III (Tang et al. in prep).
+
+Here we present the discovery of three unusual long-term variables found in
+
+the DASCH scans near the open cluster M44, which showed ∼1 mag dimmings
+
+and recoveries on ∼ 10 − 100 yr timescales in their lightcurves. Such variations
+
+are very unusual and haven’t been seen in any other common classes. We present
+
+their lightcurves and spectra in Chapter 3.2. Discussion on individual objects are in
+
+PDF PAGE 53
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 41
+
+Chapter 3.3 and summary is in Chapter 3.4.
+
+3.2 Discovery of Three Unusual Variables
+
+3.2.1 Candidate Selection
+
+Three unusual long-term variables presented here were found from ∼ 400 variables
+
+found on ∼ 1200 M44 plates by their peculiar long-term variabilities. These
+
+plates cover 5−25 degrees on a side with typical limiting magnitudes 14 − 15 mag
+
+(Laycock et al. 2010). There are ∼ 1.2 × 105 objects with more than 100 magnitude
+
+measurements. Details of our variable selection procedure and general properties of
+
+variables found in DASCH scans near M44 are described in Tang et al. (in prep.).
+
+3.2.2 DASCH lightcurves
+
+These variables showed unusual ∼1 mag dimmings on timescales from 10 to 100 yr
+
+in their lightcurves, as shown in black dots in Figure 3.1. DASCH J083038.5+140713
+
+(hereafter J0830; named by its equatorial coordinate in J2000; GSC2.3.2 catalog
+
+name N2313102243) declined for 1 mag in a century. It is classified as a ‘MISC’
+
+variable in ASAS (ASAS J083038+1407.3 Pojmanski 2002) since it became 0.3
+
+mag brighter in V gradually from 2003 to 2007, and then became 0.1 mag fainter
+
+from 2008 to 2009. DASCH J075445.9+164141 (hereafter J0754; GSC2.3.2 name
+
+N2211330177; ASAS J075446+1641.7) showed a sharp decrease around 1930, and
+
+then slowly recovered in 10 years. Another dip was shown around 1892, but
+
+PDF PAGE 54
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 42
+
+unfortunately we can not constrain the lightcurve profile of the dip due to the lack
+
+of data. DASCH J073606.5+211411 (hereafter J0736; GSC2.3.2 name N2230030699;
+
+ASAS J073607+2114.2) showed a 1 mag dip from 1930s to 1950s. Both J0754 and
+
+J0736 are new variables found with DASCH.
+
+3.2.3 Possible Color Evolution Derived from Plates
+
+The lightcurves of color variations back in time would constrain variable extinction,
+
+but is difficult to derive from DASCH. The majority of the Harvard plate collection
+
+are blue sensitive plates, and a small fraction of plates used filters to produce red
+
+and yellow sensitive measurements with details of wavelength responses unavailable.
+
+In order to generate consistent magnitudes, we did color-term fitting for the plates
+
+in annular bins to derive the effective color-term C in plates (Laycock et al. 2010),
+
+where C of a given plate is defined by
+
+m = B + C(B − R),
+
+where m is the effective magnitude in the plate, B is the GSC2 B magnitude and
+
+R is the GSC2 R magnitude. We then derive the (B-R) color of a given object
+
+by comparing its magnitudes with its neighbor stars (with B-R color from GSC2
+
+catalog) in pairs of blue vs red/yellow plates taken from the same night or very close
+
+in time (mostly within a week). Each pair of plates gives a (B-R) color of the object
+
+at that time. More details are described in Tang et al. (in prep.).
+
+We bin some plate pairs close in time, and plot the color evolution of the three
+
+variables by the red open squares in Figure 3.1. The color evolution data are limited
+
+mainly by the small number of red and yellow plates usually available. Both J0830
+
+PDF PAGE 55
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 43
+
+1900 1920 1940 1960 1980 2000
+
+12
+
+13
+
+14
+
+15
+
+DASCH J083038.5+140713
+
+1900 1920 1940 1960 1980 2000
+
+13
+
+14
+
+15
+
+DASCH J075445.9+164141
+
+1900 1920 1940 1960 1980 2000
+
+12
+
+13
+
+14
+
+DASCH J073606.5+211411
+
+Year
+
+B Magnitud
+
+e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+B-R color
+
+Figure 3.1.— Lightcurves and color evolution of 3 unusual long-term variables which
+
+were found in DASCH scans near M44. Black dots with errorbars are the lightcurves
+
+from DASCH, small green dots are the lightcurves from ASAS. Since ASAS data are
+
+in V band, while DASCH magnitudes are B, we added 1.16 mag to the ASAS V
+
+magnitudes in the plots which is the mean B-V value for K2 III stars (Cox 2000).
+
+Red open squares are the B-R color derived from plates with y-axis labeled in the
+
+right, and red dashed lines mark the weighted mean B-R color values from 1970s to
+
+1980s.
+
+PDF PAGE 56
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 44
+
+and J0736 are redder when they are fainter, at 7σ and 3σ level, respectively. We
+
+didn’t detect any color change in J0754, although we do not have red or yellow plates
+
+available during its major dimming phase (1930-1940).
+
+3.2.4 Spectroscopic Observations
+
+Spectra were acquired with FAST spectrograph on the 1.5 m Tillinghast reflector
+
+telescope at the F. L. Whipple Observatory (FLWO) and GMOS long-slit
+
+spectroscopy blue channel on Gemini North. They are wavelength-calibrated with
+
+standard packages, and are shown in Figures 3.2 and 3.3. According to their
+
+spectra, they are all K2-type stars. By comparing the region between 4900 − 5200
+
+˚A with FAST spectra of several K2 standards with different luminosity classes,
+
+we found all of them are giants (luminosity class III; Estimated uncertainties in
+
+luminosity class are II-IV. Luminosity class I and V are ruled out). We estimated
+
+metallicities [Fe/H]∼ −0.3 ± 0.3 for J0830, and [Fe/H]∼ −0.9 ± 0.4 for J0754 and
+
+J0736, by comparing with FAST spectra of several standard K giant stars with
+
+known metalicities (Faber et al. 1985). We also found that J0830 and J0754 do not
+
+show velocity changes within measurement errors (∼ 8 km/s), while J0736 showed
+
+significant radial velocity changes in three different epochs, i.e. 11 ± 6 km/s on Feb
+
+4th, −18 ± 6 km/s on Feb 19th, and 22 ± 6 km/s on April 18th, 2009, and is then
+
+probably in a close binary.
+
+As shown in Figure 3.3, all three variables show Ca II K and H emission lines
+
+in the absorption core, indicating the presence of active chromospheres. Ca II K
+
+and H emission lines are common among cool dwarf and evolved stars, signaling the
+
+PDF PAGE 57
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 45
+
+magnetic dynamo activity in chromospheres (Kraft 1967; Soderblom 1983; Dupree &
+
+Smith 1995). Their fluxes correlate with stellar rotational velocities (see Strassmeier
+
+et al. 1994; Pasquini et al. 2000, and references therein). Followed (Linsky et al.
+
+1979), assuming V − R = 0.84 for K2 III stars (Cox 2000), we calculated the
+
+net chromospheric loss in the K lines, which are log F
+
+′
+
+(K) = 6.35, 6.13 and 5.98,
+
+indicating rotation velocities about 40 km/s, 25 km/s and 16 km/s (Strassmeier
+
+et al. 1994, the uncertainty is large though, about 0.5 dex), for J0830, J0754 and
+
+J0736, respectively.
+
+3.2.5 Occurrence Fraction of K2 III Long-term Erratic
+
+Variables
+
+The plates we analyzed are centered around the open cluster M44. The coverage
+
+decreases when the region is farther away from the center of M44. There is roughly a
+
+40 × 40 deg2
+
+region with good coverage (i.e. more than 100 scans). From Keplercam
+
+photometry of a 3.2 deg2
+
+region near M44, we estimate there are about 4000-6000
+
+stars with 12 < B < 13.5 and 0.85 < g − r < 1.02 in this 40 × 40 deg2
+
+region. If we
+
+assume that objects with 0.85 < g − r < 1.02 are K2 III stars (Covey et al. 2007;
+
+Smith et al. 2002, note that some dwarfs and supergiants are also included, but
+
+there are many more giants than supergiants, and at 12-13 magnitude, we are seeing
+
+more giants than dwarfs), then the event rate of such long-term variables among K2
+
+III stars is about 3/5000 ∼ 0.06%.
+
+PDF PAGE 58
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 46
+
+3500 4000 4500 5000 5500 6000 6500 7000
+
+0
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+Wavelength (Angstrom)
+
+Intensity
+
+DASCH J083038.5+140713 Hδ
+
+Hγ
+
+Hβ Na I Hα
+
+Mg I
+
+CH
+
+Ca I/Fe I
+
+Ca II
+
+DASCH J075445.9+164141
+
+DASCH J073606.5+211411
+
+Figure 3.2.— FAST 300 grating spectra of the 3 erratic variables with lightcurves
+
+shown in Figure 3.1. All of them are K2 III stars. Spectral resolution is about 7˚A.
+
+PDF PAGE 59
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 47
+
+3900 4000 4100 4200 4300 4400 4500
+
+0
+
+1
+
+2
+
+3
+
+4
+
+Wavelength (Angstrom)
+
+Intensity
+
+Ca II K&H Mn I Fe I Sr II
+
+Hδ
+
+Sr II Ca I Fe I G Hγ Fe I
+
+4600 4700 4800 4900 5000 5100 5200
+
+0
+
+1
+
+2
+
+3
+
+4
+
+Wavelength (Angstrom)
+
+Intensity
+
+Hβ Fe I Fe I Mg I
+
+Figure 3.3.— Gemini B1200 grating spectra of the 3 erratic variables. From top to
+
+bottom are spectra of J0830, J0754, and J0736, respectively. Continuum are removed
+
+by a sixth-order polynomial fit. Spectral resolution is about 1.2 ˚A (R = 3744).
+
+PDF PAGE 60
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 48
+
+3.3 Discussion of Individual Objects
+
+Table 1 lists the galactic coordinates, GSC2.3.2 B-R colors, GSC B, ASAS V and
+
+2MASS JHK magnitudes, [Fe/H], proper motions, radial velocities, distances, and
+
+galactic velocities for the three variables. J0830 and J0754 have high proper motions
+
+(> 10 mas/yr), while J0736 has no proper motion within its error of 2 mas/yr. The
+
+3 stars are about 500 − 800 pc above the galactic plane. J0830 and J0754 have
+
+velocities about 100 km/s, while J0736 probably has smaller velocity < 30 km/s.
+
+Our spectra indicate metallicities [Fe/H]∼ −1 to 0. They are most probably thick
+
+disk giants (Carollo et al. 2010). The 2MASS H − K color of J0830 is 0.27, which
+
+is redder than H − K = 0.04 expected for a K2 giant (Covey et al. 2007). Note
+
+that J0830 also showed large reddening in the 1970s and 1980s in our plates during
+
+its dimming, as shown in Figure 3.1. As K2 III stars with [Fe/H]∼ −1 to 0, the 3
+
+erratic variables could be on the Red Giant Branch (RGB), but not near the tip, on
+
+the Horizontal Branch (HB), or early asymptotic giant branch (AGB).
+
+Timescales of 10-100 year are too long to be pulsations driven by ionization
+
+(Percy 2007), or convective instabilities which have timescales in the order of a
+
+year for a K giant (Prialnik 2000). The lightcurves of these 3 erratic variables look
+
+somewhat like R Coronae Borealis (RCB) stars. RCB stars are rare, hydrogen
+
+deficient, carbon-rich supergiants which undergo large amplitude (3 − 8 mag) fading
+
+events lasting weeks to a few years as dust condensates to block the light along
+
+the line of sight (Clayton 1996). Our variables share some of these typical RCB
+
+lightcurve features, and the lightcurve of J0830 is similar to some hot (T ∼ 20000 K)
+
+RCB stars (De Marco et al. 2002). Dust obscuration events have also been observed
+
+PDF PAGE 61
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 49
+
+in some other carbon rich stars. Whitelock et al. (2006) found about one-third of
+
+the Carbon-rich Miras and other AGB stars undergo dimming episodes.
+
+However, all of the three variables presented here are very different from normal
+
+RCB stars in the following aspects, and therefore are not RCB stars (or any other
+
+type of carbon-rich AGB stars): They are not post-AGB supergiants like RCB stars
+
+(Alcock et al. 2001); much cooler than most RCBs; have much longer variability
+
+timescales and much smaller amplitudes than average RCB stars; have no strong
+
+carbon absorption bands, and have strong hydrogen absorption lines. J0830 has
+
+weaker Hα absorption which might due to the chromospheric emission in the core,
+
+since the Ca II emission lines are very strong in J0830 and Hα emission is usually
+
+strongly correlated with Ca II lines (Cincunegui et al. 2007).
+
+Some symbiotic stars also show irregular long-term variations (see e.g. Sokoloski
+
+et al. 2006; Skopal 2008). However, there is no symbiotic signature in our variables,
+
+such as nebula emission lines or combination spectra. There is no common model
+
+that works well for these 3 erratic variables, as we discuss below.
+
+3.3.1 J0830
+
+1 The first possible model is dimming caused by obscuration of dust shells ejected
+
+from the star, which is consistent with our observation that the object became
+
+redder when it was fainter and its redder 2MASS H − K color. However, how to
+
+produce and maintain the dust for such a long time is not clear. For RGB stars,
+
+1Some of the models in this subChapter 3.may also apply to J0754 and J0736
+
+PDF PAGE 62
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 50
+
+significant mass loss occurs only at the very tip (Origlia et al. 2002), which is much
+
+too luminous for the three erratic variables. Bedding et al. (2002) found a 5-yr
+
+dimming event in the oxygen-rich, Mira-like variable L2 Pup, likely due to absorption
+
+by a dust shell containing silicates. L2 Pup is located near the tip of the AGB,
+
+and thus has high mass-loss rate (5 × 10−7 M⊙ yr −1
+
+), which if applied to our K2
+
+III stars would require they have low metallicity and be halo stars. Tsuji (2009)
+
+found excess absorption in CO lines of Arcturus (K1.5III), and proposed it might
+
+be caused by the formation of molecular clouds in the outer atmosphere. Arcturus
+
+only shows low amplitude optical variations of a few percent (Bedding 2000) and
+
+thus the absorption due to such molecular clouds is not enough to account for the 1
+
+magnitude dimming events in the three erratic variables.
+
+A second possible model, is the lithium flash near the RGB luminosity bump
+
+(Palacios et al. 2001), which proposed that rotation induced mixing leads to a thin
+
+and unstable lithium burning shell, which leads to an increase of nuclear luminosity,
+
+and mass loss which might account for the formation of a dust shell around the star
+
+and thus the reddening of the star. All of our 3 variables are chromospherically
+
+active and probably fast rotators, which fit to this model. However, the variation
+
+timescale and amplitude of surface luminosity in this model is unknown.
+
+A third possible model, which may be the most plausible one, is the evolution
+
+phase when the star is leaving the HB and beginning to ascend the AGB, at the point
+
+that helium is exhausted in the core and helium burning is ignited in a surrounding
+
+shell. This could apply to the point L in Figures 2 and 4 of Sackmann et al.
+
+(1993). We plotted the evolutionary tracks for [Z = 0.008, Y = 0.25] ([Fe/H]∼-0.4
+
+if assume the same composition as the Sun) from Girardi et al. (2000), and found
+
+PDF PAGE 63
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 51
+
+stars with mass 0.8 − 1.2 M⊙ are crossing this evolutionary phase near T ∼ 4400
+
+K and L ∼ 102.2L⊙ (which is the temperature and luminosity for K2 III stars Cox
+
+2000). The ignition of the helium-burning shell causes expansion and makes the
+
+hydrogen-burning shell expand and cool, which makes the surface luminosity decline
+
+and the color redden, and then recover later. If this process is similar to thermal
+
+pulses in He-burning shell of later AGB stars, then first the surface luminosity
+
+decreases by a factor of 2 over 50-100 yr, and then increases by a factor of 2 over
+
+200 yr (Mowlavi 1999), which is roughly consistent with J0830 and J0736. More
+
+theoretical study and simulations of this evolution phase may clarify the nature of
+
+our variables.
+
+Two other interesting observations might be related to the three erratic
+
+variables. Edmonds & Gilliland (1996, hereafter EG96) found a new class of variable
+
+stars in K giants with amplitudes 5 − 15 mmag and periods of days clumped in the
+
+color-magnitude diagram with B-V=1.1-1.2, which is the location of K2 III stars.
+
+They lie on both the AGB and the RGB. Bedin et al. (2000) found a ‘heap’ in the
+
+luminosity function which is about 1.4 magnitude brighter than the RGB bump, and
+
+in the case of 47 Tuc, the heap is in a similar location on the RGB to the variables
+
+found by EG96. The heap and the new class variables are not well understood yet
+
+(see e.g. Salaris et al. 2002), and it is surprising that they have similar color and
+
+luminosity class as our erratic variables, which show much longer timescale and
+
+larger amplitude variations. There might be some intrinsic link between the objects
+
+in the three independent observations. In Figure 4 of Sackmann et al. (1993), the
+
+location of the He-shell ignition is just about 0.6 dex, i.e. 1.5 magnitude, brighter
+
+than the RGB bump, consistent with the luminosity of K giant variables in EG96.
+
+PDF PAGE 64
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 52
+
+3.3.2 J0754
+
+This star is not yet included in any known variable catalogs. The sharper decline
+
+and slower recovery are similar to what is seen in RCB stars. It might be puffing off
+
+outer layers at irregular intervals, which blocks the light from the star.
+
+3.3.3 J0736
+
+This variable is probably a binary. Given its possible orbital period of ∼≤ 15 days
+
+(∼ 30 km/s change in radial velocities from Feb. 4 th to Feb. 19th) and its Ca K and
+
+H line emission, it might share some properties in common with RS CVn systems.
+
+It is not yet included in any known variable catalogs. Similar to J0830 and J0736,
+
+it might be puffing off out layers which blocks the light from the star, as supported
+
+by the measured reddening during dimming; it might also be lithium flash near the
+
+RGB bump, or the He-shell ignition in the lower AGB, as discussed in Chapter 3.3.1.
+
+3.4 Summary
+
+We have found three very interesting long-term variables, which do not resemble
+
+known classes of variables previously reported. We found no model reported for red
+
+giants which could explain both their timescales and amplitudes. The underlying
+
+causes of their 10-100 yr variations might be related to evolutionary nuclear
+
+shell-burning instability and/or variable dust obscuration. Higher resolution spectra
+
+and Infra-Red observation in future are needed to constrain surface gravity, mass,
+
+and possible dust properties. More theoretical work on the lithium flash near the
+
+PDF PAGE 65
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 53
+
+Table 3.1: List of the three unusual long-term variables found in DASCH.
+
+DASCH Name Gal. coord. GSCa GSCa ASASb 2MASSc
+
+[Fe/H] PMRAd PMDecd vr
+
+e Df u
+
+g v
+
+g wg
+
+l b B B-R V J H K mas/yr mas/yr km/s kpc
+
+J083038.5+140713 211 28 12.90 1.40 10.85 8.82 8.20 7.93 −0.3 ± 0.3 9.0 -10.8 0 ± 8 1.8 -82 -79 37
+
+J075445.9+164141 205 21 13.30 1.61 12.24 10.42 9.83 9.70 −0.9 ± 0.4 -3.0 -10.2 22 ± 8 2.1 -2 -81 -48
+
+J073606.5+211411 198 19 12.66 1.29 11.19 9.30 8.78 8.67 −0.9 ± 0.4 -1.8 -2.3 -
+
+e 1.6 - - -
+
+aFrom GSC2.3.2 catalog (Lasker et al. 1990).
+
+bMedian ASAS V magnitudes (Pojmanski 2002).
+
+c2MASS J, H and K magnitudes with typical uncertainty about 0.02 mag (Skrutskie et al. 2006).
+
+dProper motion in RA and Dec, from Tycho-2 catalog with typical uncertainty about 2 mas/yr
+
+(Høg et al. 2000).
+
+eRadial velocity. The radial velocity of J0736 is variable.
+
+fDistances of the objects assuming absolute B magnitude of 1.66 for K2 III stars (Cox 2000).
+
+gGalactic space velocity in km/s, corrected to the local standard of rest. u - positive toward the
+
+Galactic anti-center; v - positive in the direction of Galactic rotation; w - positive toward the
+
+North Galactic Pole. We didn’t estimate the Galactic space velocity for J0736, due to the
+
+uncertain nature of its radial velocity and its small proper motion velocity which is consistent with
+
+zero within uncertainty.
+
+RGB bump and the helium shell ignition in the AGB, including surface luminosity
+
+variation and possible dust formation, will be helpful to understand their nature.
+
+As most likely thick disk stars with [Fe/H]∼ −0.9 to −0.3, they are likely to have
+
+ages 8 − 16 Gyr (Bensby et al. 2004), and therefore likely to be ∼ 0.8 − 1.1 M⊙
+
+(Girardi et al. 2000). If all 3 stars are ∼ 1 M⊙ for which the RGB is nearly vertical,
+
+their similar spectral type is expected. The evolutionary timescales of variations
+
+in models 2 and 3 (Chapter 3.3.1) are both in the range ∼ 200 − 1000 yr. A ∼ 1
+
+M⊙ star with Z=0.004 to 0.008 ([Fe/H]∼ −0.7 to −0.4) spends ∼ 107.2 yr during
+
+RGB and ∼ 106.4 yr during AGB phases as K2 giants (T∼4300 to 4500 K Cox 2000;
+
+PDF PAGE 66
+CHAPTER 3. LONG-TERM K GIANT VARIABLES 54
+
+Girardi et al. 2000). Therefore, the predicted rate of such erratic variables among
+
+K2 giants is ∼ 600/107.2 ∼ 0.004%. This is ∼ 15 times smaller than our estimated
+
+occurrence fraction of our K2 III variables (0.06%), indicating other mechanisms
+
+beyond the evolutionary models we discussed in the paper might be relevant.
+
+We did a general search for long-term variables and it turned out surprisingly
+
+that three most interesting objects with drops in timescales ∼ 10 − 100 year are all
+
+K2 giants. Is this a coincidence or are thick disk K2 giants special? Due to the small
+
+size of the sample, we cannot answer the question for sure yet. We are working on a
+
+larger sample of similar long-term variables over more plates, and hopefully we will
+
+have more knowledge about the demographic very soon. We note that ∼ 1200 plates
+
+covering M44 field are only ∼ 0.2% of the whole Harvard plate collection, and there
+
+is huge potential to find more interesting objects and new classes of variables.
+
+Stellar evolution proceeds on astronomical, not human, timescales (except for
+
+pulsations and eruptive events). However, evolution-driven changes on ∼ 100 yr
+
+timescales, such as shell burning flashes and core helium flash in giants, are rare but
+
+can be observed with the DASCH database with both long-term data coverage and
+
+very large stellar samples. Note that AAVSO also provides invaluable long-term data,
+
+but mostly for a few thousand much brighter sources, see http://www.aavso.org.
+
+Instead of waiting for another century to gather data to study 100-yr variability, we
+
+could make it available for bright objects (B<15 mag) in several years from DASCH,
+
+provided support for this full digitization scanning can be found.
+
+PDF PAGE 67
+Chapter 4
+
+DASCH on KU Cyg: A ∼5 Year
+
+Dust Accretion Event in ∼1900
+
+S. Tang, J. Grindlay, E. Los & M. Servillat The Astrophysical Journal, Vol. 738,
+
+pp. 7-10, 2011
+
+Abstract
+
+KU Cyg is an eclipsing binary consisting of a F-type star accreting through a large
+
+accretion disk from a K5III red giant. Here I present the discovery of a 5-yr dip
+
+around 1900 found from its 100 yr DASCH light curve. It showed a ∼ 0.5 mag slow
+
+fading from 1899 to 1903, and brightened back around 1904 on a relatively shorter
+
+timescale. The light curve shape of the 1899 − 1904 fading-brightening event differs
+
+from the dust production and dispersion process observed in R Coronae Borealis
+
+(RCB) stars, which usually has a faster fading and slower recovery, and for KU Cyg
+
+55
+
+PDF PAGE 68
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 56
+
+is probably related to the accretion disk surrounding the F star. The slow fading
+
+in KU Cyg is probably caused by increases in dust extinction in the disk, and the
+
+subsequent quick brightening may be due to the evaporation of dust transported
+
+inwards through the disk. The extinction excess which caused the fading may arise
+
+from increased mass transfer rate in the system, or from dust clump ejections from
+
+the K giant.
+
+4.1 Introduction
+
+KU Cyg is an Algol-type eclipsing binary system with an orbital period, P= 38.4 days
+
+(Popper 1964, 1965). The gainer is a 3.85 M⊙ F−type star with a near main-sequence
+
+surface gravity, but is over-massive for its luminosity, and is surrounded by a large
+
+accretion disk (Olson et al. 1995). The donor is a 0.48 M⊙ K5III red giant which
+
+probably fills its Roche Lobe (Olson et al. 1995). The accretion disk around the
+
+gainer led to abnormally wide secondary eclipses, and is found to be large (close to
+
+or filling the primary star Roche lobe), thick, dusty, and probably eccentric (Olson
+
+1988; Zola 1992; Smak & Plavec 1997). Double-peaked Hα emission is visible at all
+
+orbital phases with chaotic fluctuations, which strongly supports the presence of a
+
+disk (Olson 1991; Olson & Etzel 1995). The inclination of the binary orbital plane is
+
+∼ 86 − 86.5 degree (Olson et al. 1995; Smak & Plavec 1997).
+
+Here I report the discovery of a 5-yr dip in brightness of KU Cyg between
+
+1899 and 1904 as determined from the Digital Access to a Sky Century at Harvard
+
+(DASCH) project. DASCH is a project to digitize and analyze the scientific data
+
+contained in the ∼ 530, 000 Harvard College Observatory (HCO) plates taken
+
+PDF PAGE 69
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 57
+
+between the 1880s and 1990s, which is a unique resource for studying temporal
+
+variations in the universe on ∼ 10 − 100 yr timescales (Grindlay et al. 2009). We
+
+have developed the astrometry and photometry pipeline, scanned ∼ 13,000 plates
+
+in several selected fields (Laycock et al. 2010; Los et al. 2011; Servillat et al. 2011,
+
+Tang et al. in prep.), and discovered new types of variable stars (e.g. Tang et al.
+
+2010). We present the DASCH light curve of KU Cyg in Chapter 4.2. Discussion is
+
+given in Chapter 4.3.
+
+4.2 DASCH light curve
+
+The Kepler field is one of our primary target fields for our initial scanning, selected
+
+in order to take advantage of the unprecedented Kepler data on short timescales
+
+(Borucki et al. 2010) which complements DASCH data on long timescales. We have
+
+scanned ∼ 3000 plates in or covering part of the Kepler field. These plates cover
+
+5−25 degrees on a side with typical limiting magnitudes 13−15 mag, and are mostly
+
+blue sensitive (Tang et al. in prep.). KU Cyg (RA=20:12:45.11, Dec=+47:23:41.4,
+
+J2000) is a few degrees outside the Kepler field of view, but fortunately, is still
+
+covered by the Kepler Input Catalog (KIC Brown et al. 2011). The KIC ID of KU
+
+Cyg is 10311340 with g = 11.675 and g−r = 0.622. We used the KIC for photometric
+
+calibration, and the measurements are calibrated to the g band. We have 827 plates
+
+taken from 1890 to 1990 with good calibrations covering KU Cyg, which yield 800
+
+detections and 27 upper limits. The typical photometric uncertainty is ∼ 0.1 − 0.15
+
+mag. Each measurement is locally re-calibrated using 38 clean neighbor stars with
+
+similar magnitudes and colors (g = 10.5 − 13 and 0.2 < g − r < 1) within 20 arcmin.
+
+PDF PAGE 70
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 58
+
+More details on DASCH photometry and calibration are described in (Laycock et al.
+
+2010) and Tang et al. (in prep.).
+
+The resulting DASCH light curve of KU Cyg is shown in Figure 4.1. The
+
+upper panel shows the whole light curve from 1890 to 1990. The lower-left panel
+
+shows the light curve from 1897 to 1906 to better display the fading-brightening
+
+event. The lower-right panel shows the light curve from 1980 to 1990 binned in 1
+
+year increments, where error bars represent the standard deviation of the mean, to
+
+better illustrate its yearly variability (primary eclipses are excluded; the secondary
+
+eclipses are broad and shallow and thus not excluded). Black dots with errorbars
+
+are DASCH measurements, and blue arrows (colors in electronic version) are upper
+
+limits. Red circles mark primary eclipses with orbital phase 0.965 − 0.035, using
+
+the ephemeris from Olson (1988) of JD = 2433884.840 + 38.439484E. In all three
+
+panels, blue dashed lines show a constant magnitude of 11.53, which is the median
+
+magnitude of KU Cyg from 1910 to 1990 with phases 0.05 − 0.95 (excluding the
+
+primary eclipses). All the measurements and upper limits fainter than 12.5 mag (i.e.
+
+1 mag below its normal high state) were taken during the primary eclipses, well in
+
+agreement with the ephemeris given in Olson (1988).
+
+The most striking feature in the light curve is the 5-year dip around 1900, as
+
+shown in Figure 4.1. KU Cyg started to show fading around 1899, and dropped from
+
+∼ 11.4 mag (as before 1895) to ∼ 12.0 mag in 1902 − 1903, and then in about half a
+
+year, it brightened to ∼ 11.5 mag in early 1903. After that, it showed fluctuations
+
+between 11.5 − 12.0 mag from 1903 to 1905.
+
+KU Cyg is also variable on year-timescales outside primary eclipses with
+
+PDF PAGE 71
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 59
+
+fluctuations ∼ 0.1 mag, as shown in the yearly binned light curve in the lower-right
+
+panel of Figure 4.1. Note there is a ∼ 0.15 mag brightening bump around 1984,
+
+which has been discovered by Olson (1988), and is verified by DASCH. There seems
+
+to be a slight trend of 0.1 − 0.2 mag brightening from 1910 to 1990, however, given
+
+our systematic uncertainty over 100 years of ∼ 0.1 mag (Tang et al. in prep.), it
+
+is not convincing. Compared with its ∼ 2000 neighbors with g = 11 − 12 within 5
+
+degrees, the brightening trend from 1910 to 1990 in KU Cyg is only at the 2σ level.
+
+We have also visually checked the light curves of all these neighbors, and none of
+
+them showed similar dip around 1900 as KU Cyg, which further supports that the
+
+5-year dip is real.
+
+The light curve of KU Cyg, folded on the 38.439484 days period (Olson 1988)
+
+is shown in Figure 4.2, with the upper panel for 1910 − 1990 and the lower panel
+
+for 1890 − 1910. Black dots are DASCH measurements, and blue arrows are upper
+
+limits. Both the deep primary eclipse and the shallow, wide secondary eclipse can be
+
+seen in the folded light curve from 1910 to 1990. KU Cyg showed larger variability
+
+on non-eclipse phases (0.05 − 0.95) during 1890 − 1910 than during 1910 − 1990,
+
+with rms of 0.20 mag and 0.15 mag, respectively. The 0.15 mag rms on non-eclipse
+
+phases during 1910 − 1990 further illustrates that our typical photometric errors are
+
+below 0.15 mag. Note that our coverage during eclipse phases (Figure 4.2) would
+
+allow a period measurement precision of dP ∼ P
+
+2dN/T ∼ 4 × 10−4 days for a phase
+
+uncertainty dN ∼ 0.01 over the T ∼ 100 years duration and so it is not possible to
+
+further refine the binary period given by Olson (1988).
+
+PDF PAGE 72
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 60
+
+1890 1900 1910 1920 1930 1940 1950 1960 1970 1980 1990
+
+11
+
+12
+
+13
+
+14
+
+Year
+
+Magnitude
+
+1898 1900 1902 1904 1906
+
+11
+
+11.5
+
+12
+
+12.5
+
+Year
+
+Magnitude
+
+1980 1985 1990
+
+11.4
+
+11.5
+
+11.6
+
+Year
+
+Figure 4.1.— DASCH Light curve of KU Cyg. The upper panel shows the whole light
+
+curve from 1890 to 1990. The lower-left panel shows the light curve from 1897 to 1906
+
+for the dimming event, and the lower-right panel shows the light curve from 1980 to
+
+1990 binned in 1 year increments with error bars showing the standard deviation
+
+of the mean (primary eclipses excluded). Black dots with errorbars are DASCH
+
+measurements calibrated to g band, and blue arrows are upper limits. Red circles
+
+mark primary eclipses with orbital phase 0.965 − 0.035. In all three panels, blue
+
+dashed lines show a constant magnitude of 11.53, which is the median magnitude of
+
+KU Cyg from 1910 to 1990 with phases 0.05 − 0.95 (excluding the primary eclipses).
+
+PDF PAGE 73
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 61
+
+0 0.2 0.4 0.6 0.8 1
+
+11
+
+12
+
+13
+
+14
+
+Magnitude
+
+(a) 1910−1990
+
+−0.2 0 0.2 0.4 0.6 0.8 1 1.2
+
+11
+
+12
+
+13
+
+14
+
+(b) 1890−1910
+
+Orbital Phase
+
+Magnitude
+
+Figure 4.2.— DASCH folded light curve of KU Cyg, using the adopted ephemeris
+
+from Olson (1988). The upper panel shows the folded light curve from 1910 to 1990,
+
+and the lower panel shows the folded light curve from 1890 to 1910. Black dots are
+
+DASCH measurements, and blue arrows are upper limits.
+
+PDF PAGE 74
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 62
+
+4.3 Discussion
+
+Since the orbital period of KU Cyg is ∼ 38.4 days, the ∼ 5-yr fading-brightening
+
+event we found from 1899 to 1904 must come from sources other than eclipses.
+
+Our plates are blue sensitive, where the flux is dominated by the F star; This is
+
+also illustrated in the folded light curve, where there are up to 2.4 mag decreases
+
+during the primary eclipses, which means the K5III giant contributes < 10% of the
+
+total flux. Therefore, the ∼ 0.5 mag dimming must be related to the F star and its
+
+accretion disk.
+
+4.3.1 Higher mass transfer rate?
+
+The simplest explanation of the fading-brightening event, perhaps, is increasing disk
+
+extinction of the F star arising from increasing mass transfer rate. RX Cas is an
+
+edge-on mass-transfering eclipsing binary system (P = 32.3 days), similar to KU
+
+Cyg. Kriz et al. (1980) suggested in RX Cas that when the rate of mass transfer
+
+increases, the disk density and consequently optical depth increases, leading to
+
+attenuation of the central star and resulting in fading in its light curve. Similar
+
+effects have been observed in Be shell stars (edge-on Be stars with high v sin i),
+
+where fadings are seen in mass ejection events (see e.g. Hubert & Floquet 1998;
+
+Gutierrez-Soto et al. 2008).
+
+It has been found that the accretion disk surrounding the F star in KU
+
+Cyg is thick and dusty, with dust to gas ratio ∼ 10−6
+
+, and a total disk mass
+
+∼ 10−8 − 10−5 M⊙ (Olson 1988; Smak & Plavec 1997). Smak & Plavec (1997)
+
+PDF PAGE 75
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 63
+
+estimated an extinction of 1.3 mag in V of the F star by the disk, with ∼ 0.75 mag
+
+extinction due to the full obscuration of about half of the F star by the disk, and
+
+the remaining ∼ 0.55 mag due to the absorption in the disk atmosphere. To cause
+
+a 0.5 − 0.6 mag dimming observed in KU Cyg, and assuming the same gas-to-dust
+
+ratio, the disk mass excess would be on the order of the accretion disk mass, i.e.
+
+∼ 10−8 − 10−5 M⊙. The timescale of accretion in the disk of KU Cyg is a few
+
+years (Smak & Plavec 1997). If we assume a ∼ 10−8 − 10−5 M⊙ ejection from the
+
+K5III star arrives at the outer region of the accretion disk around 1899, during the
+
+next few years, the ejected mass would move inwards, so that dust grains would be
+
+levitated above the disk by radiation pressure and photophoresis (see e.g. Vinkovi´c
+
+2009; Wurm & Haack 2009). This would result in an increased covering factor and a
+
+larger extinction.
+
+Later, when the dust moves to smaller radii in the disk and gets closer to the
+
+F star, it should reach the evaporation temperature and most dust particles at high
+
+scale heights would evaporate, leading to a brightening. Additionally, some of the
+
+dust particles may be transported outwards (Takeuchi & Lin 2003; Ciesla 2007), cool
+
+down to condensate, and disperse, leading to more extinction. Moreover, when the
+
+clump of excess mass is accreted onto the F star, the energy release on the boundary
+
+layer also leads to a brightening, as discussed in Olson (1988) and Smak & Plavec
+
+(1997) to explain the ∼ 0.2 mag brightening bump around 1984. The above three
+
+processes may together produce the fluctuations from 1903 to 1905 in KU Cyg.
+
+PDF PAGE 76
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 64
+
+4.3.2 Higher dust to gas ratio?
+
+An alternative explanation is that the dimming is caused by dust excess rather than
+
+mass excess, i.e., higher dust to gas ratio, in the disk surrounding the F star. In a
+
+similar way to the above discussion, when the dust clumps move inwards and are
+
+levitated above the disk, extinction of the F star becomes larger, and the system
+
+becomes fainter. The system brightens when the dust grains move closer to the F
+
+star and evaporate.
+
+However, where the dust excess comes from is a challenging question. It might
+
+arise from clumps of dusty gas ejected from the K5III giant. We have discovered
+
+a group of K2III giants with ∼ 1 mag dimming over 10 − 100 years, which do not
+
+match any known classes of variables (Tang et al. 2010). We suggested that the
+
+dimming might be caused by dust extinction in a certain evolution stage of K giants,
+
+though how the dust gets ejected is still unclear. The dimming of KU Cyg in 1899
+
+might arise from similar dust ejection processes in the K5III giant. The dust clumps
+
+then move to the accretion disk around the F star through Roche Lobe overflow.
+
+4.3.3 Summary
+
+In summary, the 5-year dip in brightness of KU Cyg observed around 1900 is unique
+
+in the way that it faded slowly and brightened relatively quickly, which is contrary
+
+to the dust production and dispersion process observed in RCB stars, where it
+
+usually takes longer for the dust to disperse and thus longer for the star to brighten
+
+(Clayton 1996). This fading-brightening event in KU Cyg is probably related to the
+
+accretion disk surrounding the F star, which provides interesting clue for the study
+
+PDF PAGE 77
+CHAPTER 4. KU CYG: A 5-YR DUST ACCRETION EVENT 65
+
+of dust confinement, levitation and evaporation in an accretion disk.
+
+PDF PAGE 78
+Chapter 5
+
+DASCH Discovery of A Possible
+
+Nova-like Outburst in A Peculiar
+
+Symbiotic Binary
+
+S. Tang, J. Grindlay, M. Moe, J. Orosz, R. Kurucz, S. Quinn & M. Servillat The
+
+Astrophysical Journal, in press (arXiv:1110.0019)
+
+Abstract
+
+I present photometric and spectroscopic observations of a peculiar variable
+
+(designated DASCH J075731.1+201735 or J0757) discovered from our DASCH
+
+project using the digitized Harvard College Observatory archival photographic
+
+plates. It brightened by about 1.5 magnitudes in B within a year starting in 1942,
+
+and then slowly faded back to its pre-outburst brightness from 1943 to the 1950s.
+
+66
+
+PDF PAGE 79
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 67
+
+The mean brightness level was stable before and after the outburst, and ellipsoidal
+
+variations with a period of P = 119.18 ± 0.07 days are seen, suggesting that the
+
+star is tidally distorted. Radial-velocity measurements indicate that the orbit is
+
+nearly circular (e = 0.02 ± 0.01) with a spectroscopic period that is the same as
+
+the photometric period. The binary consists of a 1.1 ± 0.3 M⊙ M0III star, and a
+
+0.6 ± 0.2 M⊙ companion, very likely a white dwarf (WD). Unlike other symbiotic
+
+binaries, there is no sign of emission lines or a stellar wind in the spectra. With an
+
+outburst timescale of ∼ 10 years and estimated B band peak luminosity MB ∼ 0.7,
+
+J0757 is different from any other known classic or symbiotic novae. The most
+
+probable explanation of the outburst is Hydrogen shell-burning on the WD, although
+
+an accretion-powered flare cannot be ruled out.
+
+5.1 Introduction
+
+Symbiotic stars are interacting binaries consisting of an evolved red giant and a
+
+hot object, which is usually a White Dwarf (WD; see e.g. Kenyon 1986, 1994;
+
+Nussbaumer 2000; Miko lajewska 2007, and references therein). Mass is transferred
+
+from the red giant to its hot companion via stellar wind in most cases, but could
+
+also be Roche lobe overflow in some cases. They usually show low temperature
+
+absorption features from the red giant, and strong emission lines from surrounding
+
+circumstellar material ionized by the hot component. Most symbiotic stars have red
+
+giant masses 0.6 − 3.2 M⊙, hot component masses 0.4 − 0.8 M⊙, and orbital periods
+
+∼ 200 − 1000 days (Miko lajewska 2003).
+
+Symbiotic stars are highly variable sources with variation timescales from
+
+PDF PAGE 80
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 68
+
+minutes to decades. The most common type of outburst, called a classical symbiotic
+
+outburst, recurs multiple times on decades-long time scales with amplitudes of
+
+1 − 3 mag, and with each outburst lasts from months to a few years (Kenyon 1986;
+
+Mikolajewska 2010). The nature of these outbursts is not entirely clear, and may
+
+be related to instabilities in the accretion disks (Miko lajewska 2003; Sokoloski et al.
+
+2006). Another relatively rare type of outburst is symbiotic nova (also called slow
+
+nova), which shows a single long outburst lasting from years to decades due to
+
+thermonuclear runaways at the surface of the WD (Allen 1980; Paczynski & Rudak
+
+1980; Kenyon & Webbink 1984). The peak luminosities range from 4000 to 40,000
+
+L⊙, depending on the mass of the WD (Murset & Nussbaumer 1994; Iben 2003).
+
+They mimic classical novae but with much longer timescales. Only 9 symbiotic novae
+
+are known so far (Belczy´nski et al. 2000; Mikolajewska 2010).
+
+DASCH (Digital Access to a Sky Century @ Harvard) is a project to digitize
+
+and analyze the scientific data contained in the Harvard College Observatory (HCO)
+
+photographic plates taken from the 1880s through the 1980s. The motivation is to
+
+explore the temporal variations of stars and active galaxies on the relatively poorly
+
+explored ∼ 1 − 100 yr timescales (but extending down to ∼ 1 week timescales as
+
+well), as summarized by (Grindlay et al. 2009). We developed the astrometry and
+
+photometry pipeline (Laycock et al. 2010; Los et al. 2011; Servillat et al. 2011, Tang
+
+et al. in prep.), and have scanned ∼ 19,000 plates in five initial fields. Here we
+
+report the discovery of an unusual 10-yr outburst in a peculiar symbiotic system,
+
+DASCH J075731.1+201735 (named after its equatorial J2000 coordinate; hereafter
+
+J0757).
+
+PDF PAGE 81
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 69
+
+5.2 Observations and Results
+
+5.2.1 DASCH and ASAS light curves
+
+J0757 was measured on 694 plates near the M44 field noted by its peculiar long-term
+
+variability. These plates cover 5−25 degrees on a side with typical limiting
+
+magnitudes B ∼ 14 − 15 mag, and most of them are blue sensitive emulsions. We
+
+used the GSC2.3.2 catalog (Lasker et al. 1990) for photometric calibration, and
+
+our typical uncertainty is ∼ 0.1 − 0.15 mag (Laycock et al. 2010, Tang et al. in
+
+prep.). There are ∼ 1.2 × 105 objects with more than 100 magnitude measurements
+
+distributed over ∼ 100 years from these plates covering the M44 field. J0757, which
+
+is N2211021132 in the GSC catalog, is the only one found with > 1 magnitude
+
+outburst on a ∼ 10 year timescale above a well-defined quiescence level.
+
+The DASCH light curve of J0757 is shown in Figure 5.1. We supplement
+
+the figure with V-band data from ASAS starting in the year 2000 (J0757 has the
+
+designation ASAS J075731+2017.6 Pojmanski 2002). J0757 is classified by ASAS
+
+as a semi-detached/contact binary with best-fit period of 119.2 days with 0.16
+
+mag variations in the V band. Since ASAS data are in the V band, while DASCH
+
+magnitudes are in B, we added 1.5 mag to the ASAS V mag in the plot, which is
+
+about the sum of the maximum galactic extinction (E(B − V ) = 0.06 Schlegel et al.
+
+1998) and the typical B − V value for a M0III star (1.43 Pickles 1998). We will
+
+discuss the spectral classification in Chapter 5.2.2.
+
+As shown in Figure 5.1, J0757 was in quiescence until about March 1942. J0757
+
+then brightened over the rest of the year of 1942, and slowly decayed until about
+
+PDF PAGE 82
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 70
+
+1880 1900 1920 1940 1960 1980 2000
+
+10
+
+11
+
+12
+
+13
+
+Year
+
+Magnitude
+
+1940 1945 1950
+
+10
+
+11
+
+12
+
+13
+
+Year
+
+Magnitude
+
+400 600 800
+
+10
+
+11
+
+12
+
+13
+
+JD − 2430000
+
+Magnitude
+
+Figure 5.1.— Light curve of DASCH J075731.1+201735. The upper panel shows the
+
+whole light curve. Black dots with error bars are the light curves from DASCH, and
+
+small green dots after Year 2000 are the light curves from ASAS. Since ASAS data
+
+are in the V band, while DASCH magnitudes are in the B band, we added 1.5 mag
+
+to the ASAS V mag in the plot to convert it to B, as described in the text. The
+
+lower left panel shows the light curve from 1940 to 1954 for the outburst event; Data
+
+before the red dashed line (May 1942) are used as before the outburst. The lower
+
+right panel shows the light curve around 1942 for the rising of the outburst. The
+
+blue dashed line marks the median magnitudes in JD 2430250−2430440 (12.22 mag;
+
+quiescence state) and JD 2430730−2430850 (10.68 mag; brightest state), and a naive
+
+linear increase in between; The time span of the linear increase is 88.5 days.
+
+PDF PAGE 83
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 71
+
+1950. The peak magnitude was reached around January, 1943. There is a seasonal
+
+gap between April and October in 1942 when the star was low or not visible in the
+
+night sky, and thus we do not know when exactly the outburst started. If we naively
+
+assume that its magnitude increased linearly, then the outburst rise time is ∼ 88.5
+
+days (see the lower right panel in Figure 5.1).
+
+Before and after the outburst when data are available (i.e. 1890−1942 and
+
+1962 − 1990), the magnitudes of J0757 were reasonably stable (note that the
+
+relatively constant B∼ 11.9 from ∼ 1950 − 1954 was not yet the quiescent value).
+
+The median DASCH magnitude before the outburst (e.g. before June 1942) is 12.24
+
+and the median magnitude after the outburst (after 1960) is 12.26. The median
+
+magnitude of the entire DASCH light curve excluding the period between June,
+
+1942 and the start of 1960 is 12.25, with rms scatter = 0.14 mag for the 607 data
+
+points outside the outburst. The median ASAS V magnitude is 10.75 mag, which
+
+corresponds to B=12.24, assuming the typical colors of an M0III star with galactic
+
+extinction.
+
+5.2.2 Light curve folding and the photometric period
+
+Both the DASCH and ASAS light curves show ellipsoidal variations. The ellipsoidal
+
+variation amplitude is ∼ 0.11 mag in the DASCH data (B band, 1890−1942 and
+
+1962 − 1990), and ∼ 0.16 mag in the ASAS data (V band, 2003 − 2009).
+
+We folded the light curves of J0757 to search for its photometric period. We
+
+divided DASCH light curve into two phases, i.e. before the outburst and after the
+
+outburst, as described in Chapter 5.2.1. We then got four sets of light curve data:
+
+PDF PAGE 84
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 72
+
+ASAS light curve, DASCH light curve excluding the outburst (before or after the
+
+outburst), DASCH light curve before the outburst, and DASCH light curve after the
+
+outburst.
+
+We first folded the ASAS light curve with a given period, and fit it with a 3
+
+harmonics Fourier model (an example is shown as the blue line in the upper panel
+
+of Figure 5.2). We fixed the model line in shape, but allow two free parameters,
+
+i.e. median magnitude and amplitude, for adjustments. Next, we fit the four sets
+
+of light curve data to the 3 harmonics Fourier model, and derived the reduced χ
+
+2
+
+as a function of different trial periods, as shown in the lower panels in Figure 5.2.
+
+DASCH data were binned by phase at the given period in the fitting. Our best fit
+
+period is 119.18 ± 0.07 days. The fact that the binary period is unchanged (within
+
+the errors) sets limits on the change of the orbit (due to mass transfer or onset of
+
+common envelope evolution). The resulting value for ˙a/a is 0 ± 4 × 10−6 yr−1
+
+.
+
+5.2.3 Optical Spectroscopy
+
+Spectra were obtained with the FAST spectrograph (Fabricant et al. 1998) on the
+
+1.5-m Tillinghast reflector telescope at the F. L. Whipple Observatory (FLWO) for
+
+spectral classification. The spectra were reduced and wavelength-calibrated with
+
+standard packages (Tokarz & Roll 1997). Figure 5.3 shows the FAST 300 grating
+
+spectrum, which has a resolution of about 7 ˚A. The upper panel shows the whole
+
+spectrum, which suggests that its spectral type is M0; The lower panels show two
+
+luminosity indicators, which suggest that DASCH J0757 belongs to luminosity class
+
+III. The lower-left panel shows Ca I at 4226 ˚A, which disappears with increasing
+
+PDF PAGE 85
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 73
+
+0 0.25 0.5 0.75 1
+
+12.2
+
+12.3
+
+12.4
+
+Phase
+
+Magnitude
+
+P = 119.18 days
+
+0.1 0.2 0.3
+
+1.14
+
+1.15
+
+1.16
+
+Reduced 
+
+χ
+
+2
+
+ASAS
+
+0.1 0.2 0.3
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+ Period − 119 (day)
+
+DASCH
+
+0.1 0.2 0.3
+
+1
+
+2
+
+3
+
+4
+
+5
+
+before outburst
+
+0.1 0.2 0.3
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+after outburst
+
+Figure 5.2.— Folded light curve and period search of DASCH J0757. The upper
+
+panel shows the foled light curve with P = 119.18 days and T0 = 2455597.98. Black
+
+solid dots are DASCH data binned by phase, with error bars represent the standard
+
+deviation of the mean. Small green dots are ASAS data. Blue solid line is the best fit
+
+3 harmonics Fourier model derived from the ASAS data. The lower panels show the
+
+reduced χ
+
+2 as a function of folding period. From the left to the right are the reduced
+
+χ
+
+2 using ASAS data, DASCH data excluding the outburst, DASCH data before the
+
+outburst (before June 1942, as indicated as red dashed line in the lower left panel in
+
+Figure 5.1), and DASCH data after the outburst (after 1960). The black dots are the
+
+reduced χ−square values, and the red lines are a sixth order polynomial fit. In the
+
+two lower middle panels, i.e. DASCH data excluding the outburst, and DASCH data
+
+before the outburst, 1−σ confidence levels by assuming χ
+
+2 distribution are marked as
+
+red horizontal lines. The more limited DASCH data after the outburst may suggest
+
+a ∼ 0.02 days longer period, but this is not a significant deviation. The vertical blue
+
+dashed lines mark the best fit period of 119.18 days.
+
+PDF PAGE 86
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 74
+
+luminosity, indicating that DASCH J0757 is not a luminosity class I star. The
+
+lower-right panel shows the CaH B-band at 6385 ˚A, and the blend near 6362 ˚A
+
+consisting of Ti, Fe, and Cr. The weakness of CaH B-band suggests that DASCH
+
+J0757 is not a main sequence star. We therefore adopt a spectral type of ∼M0III
+
+for DASCH J0757, with uncertainties of ∼ ±1 in both spectral type and luminosity
+
+class.
+
+We also obtained spectra using the MIKE echelle spectrograph (Bernstein et al.
+
+2003) on the 6.5 m Magallen/Clay telescope with a 0.7” ×5” slit on January 17,
+
+2011. The spectral resolution is R ∼ 30, 000. The spectra were extracted using
+
+an IDL pipeline developed by S. Burles, R. Bernstein, and J. S. Prochaska1
+
+. The
+
+reduced spectra have S/N ∼ 50 − 100 in 4300-9000 ˚A and S/N >∼ 10 in 3700-4300
+
+˚A. We computed a grid of spectrum templates for a range of abundances, effective
+
+temperatures, and gravities using Kurucz’s programs ATLAS12 and SYNTHE
+
+(Kurucz 2005). We derived the projected rotation velocity of 10 ± 1 km s−1
+
+. In
+
+M giants the continuum opacity is mainly H- which varies with metal abundance.
+
+The ratio of line to continuum does not change strongly with abundance. The TiO
+
+background is strong at any abundance because both Ti and O are alpha-enhanced
+
+at low abundances. We estimated an effective temperature of Tef f = 3850 ± 50 K; a
+
+surface gravity of log g = 1.0 ± 0.5 cgs; and a metallicity of [F e/H] = −0.6 ± 0.1,
+
+assuming J0757 is a population II star with alpha enhancements. The spectra can
+
+also be fit with Population I solar abundance templates. There is no sign of emission
+
+lines or wind in its spectra.
+
+1http://web.mit.edu/∼burles/www/MIKE/
+
+PDF PAGE 87
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 75
+
+4000 4500 5000 5500 6000 6500 7000
+
+0
+
+0.5
+
+1
+
+Wavelength (Angstrom)
+
+Intensity
+
+Hα
+
+Na D
+
+Mg I b
+
+CaI
+
+MgH
+
+4200 4220 4240 4260
+
+0
+
+0.05
+
+0.1
+
+Ca I
+
+Wavelength (Angstrom)
+
+Intensity
+
+6340 6360 6380 6400 6420
+
+0.5
+
+0.6
+
+0.7
+
+CaH B−band
+
+Ti/Fe/Cr blends
+
+Wavelength (Angstrom)
+
+Intensity
+
+Figure 5.3.— FAST 300 grating spectrum of DASCH J0757. Spectral resolution is
+
+about 7 ˚A. The upper panel shows the whole spectrum. The lower panels show two
+
+luminosity indicators, Ca I at 4226 ˚A, and the CaH B-band at 6385 ˚A with the blend
+
+near 6362 ˚A consisting of Ti, Fe, and Cr on the left.
+
+PDF PAGE 88
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 76
+
+To measure the radial velocity curve of J0757, we obtained spectra on 15
+
+different nights from October, 2010 through April, 2011 with the Tillinghast
+
+Reflector Echelle Spectrograph (TRES Szentgyorgyi & Fur´esz 2007) on FLWO 1.5
+
+m. These spectra were reduced and wavelength-calibrated with standard packages
+
+(Mink 2011). The spectral resolution is R ∼ 44, 000. The reduced spectra have
+
+typical S/N ∼ 10 − 30 in 4500-9000 ˚A, and S/N ∼ 5 − 10 in 4000-4500 ˚A.
+
+Radial velocities of DASCH J0757 were derived from the TRES spectra, and
+
+were fitted to a model velocity curve using the derived photometric period (see
+
+Figure 5.4).
+
+The derived orbital parameters are listed in Table 1. The resulting mass
+
+function is
+
+f1(M2) = (3.31 ± 0.02) × 10−2 M⊙, (5.1)
+
+and
+
+M2 sin i = (0.3211 ± 0.0006)(M1 + M2)
+
+2/3 M⊙, (5.2)
+
+where subscript 1 denotes the red giant, and 2 denotes its companion.
+
+For comparison, we have also fit a model velocity curve without using
+
+the photometric period of P = 119.18 ± 0.07 days, and got similar results:
+
+T0 = 2455597.969 ± 0.06, P = 118.89 ± 0.080 days, γ = −33.57 ± 0.04 km s−1
+
+,
+
+K = 13.885 ± 0.023 km s−1
+
+, e = 0.024 ± 0.015, and ω = 70.38 ± 0.09 deg. In the
+
+following discussion throughout the paper, we adopt the parameters obtained using
+
+the photometric period of P = 119.18 ± 0.07 days, as listed in Table 1.
+
+PDF PAGE 89
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 77
+
+-50000
+
+-45000
+
+-40000
+
+-35000
+
+-30000
+
+-25000
+
+-20000
+
+Radial velocity (m s-1
+
+)
+
+0.0 0.2 0.4 0.6 0.8 1.0
+
+Phase
+
+-150
+
+0
+
+150
+
+Residual (m s-1
+
+)
+
+Figure 5.4.— Radial velocity of DASCH J0757 as a function of orbital phase, using
+
+the ephemeris in Table 1. Blue solid dots are observation data using the TRES
+
+spectrograph at the FLWO 1.5m, and the smooth curve is the best-fitting model.
+
+Residuals from the fit are given in the lower panel.
+
+PDF PAGE 90
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 78
+
+5.2.4 SED from archival data
+
+Using archival data from WISE, IRAS, AKARI/IRAC, 2MASS, FON, SDSS,
+
+GALEX and ROSAT, we plotted the spectral energy distribution (SED) of J0757,
+
+as shown in Figure 5.5. The phase of the GALEX observation is 0.603 ± 0.01, and
+
+the phase of ROSAT observation is 0.426 ± 0.02. Here phase 0.5 is defined as inferior
+
+conjunction of the red giant. The SED is well matched by a synthetic spectrum of
+
+a Teff = 3750 K, and log g = 1.5 giant (Lejeune et al. 1997), from IR to optical, as
+
+shown in black line in Figure 5.6. However, there is an excess in the GALEX NUV
+
+(∼ 1900 − 2700˚A), which suggests a hot component in addition to the giant.
+
+5.3 System parameters
+
+5.3.1 Ellipsoidal models
+
+We derive system parameters from the light and velocity curves. For this purpose
+
+we used the ELC code of Orosz & Hauschildt (2000) to model the ASAS V-band
+
+light curve and the TRES radial velocity curve. The ELC model is based on
+
+standard Roche geometry and uses specific intensities from model atmospheres,
+
+in particular the NextGen models of Hauschildt et al. (1999). ELC’s use of the
+
+model atmosphere specific intensities eliminates the need for a parameterized limb
+
+darkening law, which is important in cases with red giants where the limb darkening
+
+near the stellar limb is very nonlinear (Orosz & Hauschildt 2000). We don’t have
+
+model atmosphere specific intensities appropriate for white dwarfs. However, since
+
+PDF PAGE 91
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 79
+
+Figure 5.5.— SED of DASCH J0757 using archival data. The black line represents a
+
+synthetic spectrum of a Tef f = 3750 K, and log g= 1.5 giant (Lejeune et al. 1997).
+
+Note that SDSS riz bands are saturated; It was not detected by GALEX FUV and
+
+ROSAT.
+
+PDF PAGE 92
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 80
+
+the red giant dominates the V-band flux, this is not a serious limitation.
+
+In our initial runs, we had 8 free parameters: the orbital period P, the time
+
+of periastron passage T0, the inclination i, the Roche lobe filling factor f1, the
+
+eccentricity e, the argument of periastron ω, the K-velocity of the red giant K, and
+
+the mass of the red giant M1. We assumed synchronous rotation. The models are
+
+somewhat insensitive to the temperature of the red giant, and that parameter was
+
+held fixed at T1 = 3720 K. In addition to the light and velocity curve, we used the
+
+projected rotational velocity of the red giant as an extra constraint.
+
+The model fits were optimized using ELC’s genetic code and its Monte Carlo
+
+Markov Chain code. After inspection of the post-fit residuals, additional free
+
+parameters were considered. We allowed the red giant’s rotation to be asynchronous
+
+with the orbit, where Ω is the ratio of the spin frequency to the orbital frequency.
+
+We also accounted for heating by the WD. In this case, we fixed the luminosity
+
+of the irradiating source to log Li = 36.6 (c.g.s. units) and allowed the albedo
+
+A1 to be a free parameter (the choice of A1 is somewhat arbitrary since different
+
+combinations of Li and A1 can give identical light curves). Finally, we included an
+
+accretion disk that is parameterized by the outer radius in terms of the Roche radius
+
+rout, the temperature at the inner rim Td, and the exponent of the disk temperature
+
+distribution ξ, where T(r) = Td(r/ri)
+
+ξ
+
+.
+
+Some typical results are shown in Figure 5.6. The binned ASAS light curve
+
+has maxima with different heights, which could be indicative of an eccentric orbit.
+
+However, the simultaneous fit to the radial velocities indicates a small eccentricity
+
+(0.012). Also, the minimum near phase 0.5, corresponding to the inferior conjunction
+
+PDF PAGE 93
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 81
+
+of the red giant, is deeper than the minimum at phase 0.0. For a pure ellipsoidal
+
+light curve, the minimum at phase 0.0 would be the deeper one. Heating by the
+
+irradiating source “fills in” the minimum near phase 0. However, in all of the models
+
+considered, we never had a case where the model curve had a deeper minimum near
+
+phase 0.5, so simple heating cannot explain the difference in the observed minima.
+
+An accretion disk could potentially eclipse the red giant near phase 0, thereby
+
+making the minimum there deeper. This is opposite of what we want. Normally, the
+
+accretion disk does not give phase modulated light in the ELC model (if it is not
+
+eclipsed by the star). However, a “hot spot” on the disk rim can be used to mimic
+
+the place where the matter transfer stream impacts the disk. As the binary turns
+
+in space, different areas of this spot are visible, giving rise to extra light at certain
+
+phases. An example model is shown in Figure 5.6. The hot spot has an angular
+
+width of 18◦
+
+, an azimuth (measured from the line of centers in the direction or the
+
+orbital motion) of 66◦
+
+, and has a temperature of 3800 K, which is 4.3 times hotter
+
+than the rest of the disk rim. The maximum near phase 0.75 is fit, but the minimum
+
+near phase 0.5 is still not well-fit.
+
+We did two runs of fitting with a Monte Carlo Markov chain, one with an
+
+external constraint on the rotational velocity, and one without the constraint.
+
+Results from both runs are similar. The best-fit ellipsoidal models have inclination
+
+of 60◦ ± 5
+
+◦
+
+, WD mass of 0.5 ± 0.1 M⊙, red giant mass of 1 ± 0.3 M⊙, and red giant
+
+radius of 43 ± 4 R⊙.
+
+We note that in order to match the observed rotational velocity of
+
+Vrotsini = 10 ± 1 km s−1 derived from the MIKE spectra, the red giant must be
+
+PDF PAGE 94
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 82
+
+Figure 5.6.— Top: The phased and binned ASAS V-band light curve of J7057 and
+
+some representative ellipsoidal models. The red line is a model that includes irradia￾tion and non synchronous rotation, and the blue line is a model that has an accretion
+
+disk with a hot spot. Bottom: The TRES radial velocity measurements phased on
+
+the same ephemeris (which uses the time of periastron passage as the zero-point) and
+
+the best-fitting model.
+
+PDF PAGE 95
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 83
+
+rotating 0.7 times slower than its synchronous velocity. Given the typical tidal
+
+synchronization timescale of ∼ 105 yr (Zahn 1989) adopting the parameters listed in
+
+Table 1, the red giant is expected to be co-rotating with the binary. Consequently,
+
+the size of the giant should be R1 = P Vrot/2π = 23.5/ sin i R⊙, which is 27 R⊙ if
+
+i = 60◦
+
+, which are smaller than the radius derived from ellipsoidal fitting. Such
+
+a discrepancy has been seen in many symbiotic binaries, and is an unresolved
+
+“embarrassing problem” (Miko lajewska 2007). It probably comes from the extended
+
+atmosphere, and that limb darkening near the limb is very nonlinear. The light
+
+curve models with near-linear limb darkening produce ellipsoidal light curves with
+
+amplitudes that are too small. Also, the rotational broadening kernel can be a lot
+
+different than the usual analytic kernel, which in turn leads to strange biases in the
+
+Vrotsini value (Orosz & Hauschildt 2000).
+
+5.3.2 Estimates from the spectroscopic observations
+
+Here we estimate the astrophysical parameters of DASCH J0757, based on the
+
+results in Sections 2 and 3.1. Since the galactic extinction is small (E(B − V ) = 0.06
+
+Schlegel et al. 1998), we do not take it into account for simplicity. The following
+
+estimated parameters are summarized in Table 1.
+
+The inclination from the ellipsoidal fitting is i ∼ 55◦ − 65◦
+
+, and we adopt a
+
+more tolerant value of i = 45◦ − 75◦
+
+in the following estimates. The radius of the
+
+red giant ranges from ∼ 25 − 33 R⊙ (from Vrot assuming synchronized rotation)
+
+to ∼ 43 R⊙ (from ellipsoidal fitting), as discussed in Chapter 5.3.1. Therefore, we
+
+adopt a radius and error bar that encompasses both methods as R1 = 35 ± 9 R⊙. At
+
+PDF PAGE 96
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 84
+
+Tef f = 3850 ± 50 K, the bolometric luminosity of the red giant is L = 250 ± 130 L⊙,
+
+and its distance is 1.0±0.3 kpc. The absolute magnitude of the system in quiescence
+
+is then MB = 2.2 ± 0.6.
+
+Combining the radius, effective temperature, log g = 1.0 ± 0.5 cgs and
+
+[F e/H] = −0.6 ± 0.1, the red giant mass inferred from stellar evolutionary models
+
+(Bertelli et al. 2008) is M1 ∼ 0.9 ± 0.4 M⊙. This mass estimate for the giant is
+
+determined solely from the equations of stellar structure and is therefore independent
+
+of its prior evolution. The mass of the giant may have been greater in the past.
+
+However, considering the giant is only partially filling its Roche lobe as inferred
+
+from the ellipsoidal fitting, and given the M0III wind loss rate of ∼ 10−9 − 10−8 M⊙
+
+yr−1
+
+(Cox 2000), we do not expect it has lost a significant fraction of its current
+
+mass over the ∼ 107 yr lifetime of the giant in its current phase of evolution.
+
+Requiring 0.8 M⊙ to turn-off from main sequence within a Hubble time, we then have
+
+M1 ∼ 1.1±0.3 M⊙. From equation (2) and our adopted i = 45−75◦
+
+, this implies the
+
+secondary mass is M2 ∼ 0.6 ± 0.2 M⊙, and the orbital separation a ∼ 120 ± 11 R⊙.
+
+Therefore, the Roche lobe radii of the two stars are RRL,1 ∼ 53 ± 4 R⊙, and
+
+RRL,2 ∼ 38 ± 6 R⊙, for the M giant and the secondary, respectively (Eggleton 1983).
+
+The Roche lobe filling factor of the M giant is then fRL = R1/RRL,1 = 0.66 ± 0.17.
+
+If the deviation of the ASAS folded light curve and the ellipsoidal model with a
+
+giant alone is caused by a hot component due to a WD companion, its accretion disk
+
+and/or a tidal stream, then it is about 3% the luminosity of the giant in the V band.
+
+The luminosity of the hot component is then 2 − 8 L⊙, for an effective temperature
+
+in the range of 3800 − 10, 000 K. For a M2 ∼ 0.6 M⊙ WD with R2 ∼ 0.01 R⊙,
+
+assuming all the gravitational potential energy is converted to thermal radiation, the
+
+PDF PAGE 97
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 85
+
+corresponding accretion rate is 1 − 4 × 10−9 M⊙ yr−1
+
+.
+
+During the 1942-1950s outburst, the B magnitude of J0757 increased by ∼ 1.5
+
+mag at the peak. At a distance of D ∼ 1 kpc, the absolute B magnitude of the
+
+outburst is MB,outburst peak ∼ 0.7 mag. The peak bolometric luminosity of the
+
+outburst, Loutburst peak depends on its SED. If the outburst has similar SED as a M0III
+
+star, then Loutburst peak ∼ 750 L⊙. The minimum required bolometric luminosity
+
+would be when the radiation is peaked in the B band, i.e. Loutburst peak ∼ 100 L⊙
+
+at T ∼ 8100 K. Such a temperature is consistent with the observed hot component
+
+temperature of CH Cyg during its 1992 outburst powered by accretion (Skopal
+
+et al. 1996). If the outburst is powered by Hydrogen shell-burning, the temperature
+
+during the outburst would be much hotter, i.e. Toutburst ∼ 105 K as observed in
+
+some symbiotic stars (Muerset et al. 1991). For example, Z And is found to have a
+
+temperature of ∼ 9 × 104 K during its 2000-2002 outburst (Sokoloski et al. 2006). If
+
+the outburst in J0757 has a temperature of 9 × 104 K, most of the radiation is in
+
+the UV, and the corresponding bolometric luminosity of ∆B = 1.5 mag increase is
+
+Loutburst peak ∼ 2.5 × 104 L⊙ assuming black body radiation.
+
+5.4 Discussion
+
+The amplitude and timescale of the 1940s outburst, and its stability during
+
+quiescence phases (except the periodic ellipsoidal variation), is very unusual. The
+
+mass loss rate of a M0III star is ∼ 10−9 − 10−8 M⊙ yr−1
+
+(Cox 2000). With a Roche
+
+lobe filling factor ∼ 0.5 − 0.8 as discussed in Chapter 5.3.2, a significant fraction
+
+of the wind could be transferred to its companion via wind Roche lobe overflow
+
+PDF PAGE 98
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 86
+
+(Podsiadlowski & Mohamed 2007). If the secondary is a 0.6 M⊙ Main Sequence
+
+(MS) star with R ∼ 0.6 R⊙, the only way to power the outburst is by gravitational
+
+energy release. The least required accretion rate to power the 1940s outburst of
+
+J0757 is then 3 × 10−6 M⊙ yr−1
+
+(Lpeak ∼ 100 L⊙ if T ∼ 8100 K), which is 2 to 3
+
+orders of magnitude higher compared with the typical mass loss rate of the M giant.
+
+Therefore, a compact object, almost certainly a WD (at ∼ 0.6 M⊙, it cannot be a
+
+Neutron star or a black hole), is needed to power the outburst.
+
+If the outburst was powered entirely by accretion on to a 0.6 M⊙ WD, the
+
+least required accretion rate to power the 1940s outburst of J0757 is 5 × 10−8 M⊙
+
+yr−1
+
+, assuming all the potential energy is converted into radiation (Lpeak ∼ 100 L⊙
+
+if T ∼ 8100 K). However, J0757 only showed one single outburst and was stable
+
+before and after the outburst, which is different from other symbiotic systems with
+
+accretion-powered outbursts, such as PU Vul (before its nuclear runaway outburst in
+
+1977), which was highly variable with multi-epoch outbursts (Liller & Liller 1979).
+
+Another symbiotic variable powered by accretion, CH Cyg, was stable prior to 1963
+
+for several decades, but later showed a series of outbursts since the onset of activity
+
+in 1963 (Mikolajewski et al. 1990).
+
+The most probable explanation of the J0757 outburst, is then Hydrogen burning
+
+on the surface of the WD. The outburst profile of J0757, i.e. a relatively sharp rise
+
+and exponential-like decay, closely resembles that of Z And and CI Cyg, which are
+
+believed to be related to the presence of unstable accretion disk around a white
+
+dwarf with hydrogen burning shell (Miko lajewska 2003; Mikolajewska et al. 2002). A
+
+“combination nova” outburst on Z And has been reported by (Sokoloski et al. 2006),
+
+which is triggered by an accretion instability and resulted in increased thermonuclear
+
+PDF PAGE 99
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 87
+
+burning. The outburst of J0757 may have started at the stable burning zone
+
+(M >˙ M˙
+
+crit = 3.3 × 10−8 M⊙ yr−1
+
+for a 0.6 M⊙ WD Nomoto et al. 2007; Shen &
+
+Bildsten 2007) with an increased accretion rate due to an accretion disk instability
+
+(King et al. 2003), when the accumulated envelope mass on the WD exceeded
+
+the critical value (3 × 10−5 M⊙ Townsley & Bildsten 2004). Then, consequently,
+
+hydrogen was ignited and started quasi-steady burning to power the outburst. The
+
+luminosity of such a quasi-steady burning increases with higher WD mass, as well
+
+as higher accretion rate. For a 0.6 M⊙ WD, the theoretical luminosity at M˙
+
+crit is
+
+L ∼ 103.4 L⊙, and the effective temperature is ∼ 2.5 × 105 K; If M˙ ∼ 4M˙
+
+crit, then
+
+the luminosity is ∼ 104 L⊙, and the effective temperature is ∼ 8 × 104 K (Nomoto
+
+et al. 2007). Such a range of luminosity and corresponding temperature is consistent
+
+with the estimated peak luminosity of J0757, which is ∼ 104 L⊙ if T ∼ 105 K.
+
+The timescale of the Hydrogen shell burning strongly depends on the mass of
+
+the WD, accretion rate, and whether a optically thick wind occurs (Kato & Hachisu
+
+1994; Prialnik & Kovetz 1995). Kato et al. (2011) suggested that the companion star
+
+plays an important role in producing a wind, and thus affects the timescale of the
+
+outburst. As shown in Figure 5.6 in Kato et al. (2011), in wide symbiotic binaries
+
+like PU Vul (Porb = 4900 days), the expanded WD envelope is not affected by the
+
+companion, resulting in a quiet evolution without strong winds in the outburst,
+
+and thus longer outburst (peak plateau timescale of ∼ 10 yr); On the other hand,
+
+in close binaries such as V723 Cas and HR Del (Porb < 1 day) with similar WD
+
+masses as PU Vul (∼ 0.6 M⊙), the companion would have been deeply embedded
+
+in the nova envelope, resulted in strong winds and much shorter outburst (peak
+
+plateau timescale of ∼ 200 days). We note that J0757, with Porb = 119.2 days and a
+
+PDF PAGE 100
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 88
+
+peak plateau lifetime of ∼ 1 yr (as shown in the lower-left panel in Figure 5.1), lies
+
+interestingly in the region between the canonical symbiotic novae such as PU Vul,
+
+and novae in close binaries such as V723 Cas.
+
+The absence of emission lines in the spectra of J0757 is peculiar, but not
+
+incompatible with the Hydrogen burning powered outburst picture. Nova emission
+
+lines disappear quite rapidly after the outburst (Downes et al. 2001), and it is not
+
+surprising that we do not see emission lines 60 years after the outburst. The lack
+
+of emission lines could be due to either or both of the following: The first possible
+
+reason is that there is no significant surrounding material. This may be either due
+
+to small amount of mass loss in the system even during the nova outburst, which is
+
+consistent with the recent results by Starrfield et al. (2012); or due to the fact that
+
+ejected shells disappear very fast, such as observed in V723 Cas (Krautter et al.
+
+2002). The second possible reason is the lack of ionizing UV photons. A post-nova
+
+WD can cool off fast, for example, the white dwarf in DQ Her has been found to
+
+be below 10 L⊙ 40 years after the nova outburst (Stasi´nska & Tylenda 1990). As
+
+discussed in sections 2 & 3, the luminosity of the hot component in J0757 is only
+
+a few L⊙, while the luminosity of the M giant is ∼ 250 L⊙, which dominates the
+
+spectrum. Similar cases have been found in a few symbiotic X-ray binaries, where
+
+the hot component is ∼ 3 orders of magnitude fainter than the red giant, and
+
+emission lines are absent in the optical spectra (Masetti et al. 2002, 2007).
+
+In summary, DASCH J0757 is an intriguing system with many unusual
+
+properties. It differs from other known classic or symbiotic novae, and is more likely
+
+a new type of nova-like variable located in the gap region between classic novae and
+
+symbiotic novae. Unlike most other symbiotic stars, it does not contain a luminous
+
+PDF PAGE 101
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 89
+
+hot component or nebula emission lines, and its magnitude is stable after the 1940s
+
+outburst. Its current photometric and spectroscopic profile is not different from a
+
+normal red giant binary. It would not be picked out without the detection of its
+
+long outburst in 1940s, made possible by the long timescales observed with DASCH.
+
+Future observation in the UV and X-ray will help understand its mass transfer and
+
+accretion processes.
+
+Given the lack of other observations during the outburst of J0757, it is hard
+
+to reach a definite conclusion whether it was powered by Hydrogen shell burning
+
+or accretion. If it was indeed Hydrogen burning with no significant mass loss,
+
+it could be a promising channel of accumulating mass on the WDs. Systems
+
+similar to DASCH J0757, but with more massive WDs (>∼ 1 M⊙), could thus be
+
+promising type Ia SNe progenitors. They are not luminous supersoft X-ray sources
+
+in quiescence (see also Di Stefano 2010), and would not be picked out by the usual
+
+searches for symbiotic stars, but could be detected by the study of their long-term
+
+light curves. Note that J0757 is found from ∼ 700 plates, while there are nearly
+
+half a million plates available to be scanned and analyzed in DASCH. With its 100
+
+year light curve coverage, DASCH has a great potential to find more of such sources,
+
+which will shed light on the understanding of type Ia SNe progenitors, as well as the
+
+study of binary evolution and accretion physics.
+
+PDF PAGE 102
+CHAPTER 5. DASCH PECULIAR NOVA-LIKE OUTBURST 90
+
+Table 5.1: Astrophysical parameters for DASCH J0757. Details are discussed in
+
+Sections 2&3.
+
+Parameter Value
+
+Observational parameters with highest confidence:
+
+Spectral type M0III
+
+T0 (HJD) 2455597.980 ± 0.054
+
+Period (days) 119.18 ± 0.07
+
+γ (km s−1
+
+) −33.57 ± 0.04
+
+K1 (km s−1
+
+) 13.906 ± 0.025
+
+Eccentricity 0.025 ± 0.01
+
+ω (deg) 70.49 ± 0.09
+
+Vrot sin i (km s−1
+
+) 10 ± 1
+
+Parameters derived from atmosphere fitting:
+
+Tef f (K) 3850 ± 50
+
+log g (cgs) 1.0 ± 0.5
+
+[Fe/H] −0.6 ± 0.1
+
+Estimates based on models:
+
+i (deg) 60 ± 15
+
+M1 (M⊙) 1.1 ± 0.3
+
+M2 (M⊙) 0.6 ± 0.2
+
+Orbital seperation (R⊙) 120 ± 11
+
+R1 (R⊙) 35 ± 9
+
+L1 (L⊙) 250 ± 130
+
+Distance (kpc) 1.0 ± 0.3
+
+hz (pc) 400 ± 110
+
+MB in quiescence 2.2 ± 0.6
+
+MB outburst 0.7 ± 0.6
+
+Loutburst peak (L⊙) 102 − 104
+
+(if no constraint on Thot)
+
+100 (if Thot ∼ 8100 K)
+
+2.5 × 104
+
+(if Thot ∼ 90, 000 K)
+
+Lhot in quiescence (L⊙) ∼ 2 − 8
+
+M˙
+
+in quiescence (M⊙ yr−1
+
+) ∼ 1 − 4 × 10−9
+
+PDF PAGE 103
+Chapter 6
+
+100-year DASCH Light Curves of
+
+Kepler Planet-Candidate Host
+
+Stars
+
+S. Tang, D. Sasselov, J. Grindlay, E. Los & M. Servillat The Astronomical Journal,
+
+submitted
+
+Abstract
+
+I present 100 year light curves of Kepler planet-candidate host stars from the Digital
+
+Access to a Sky Century at Harvard (DASCH) project. 240 out of 997 host stars
+
+have at least 10 good measurements on DASCH plates. 111 of them have at least
+
+100 good measurements, including 73% (74 out of 102) of all host stars with g ≤ 13
+
+mag, and 45% (102 out of 226) of all host stars with g ≤ 14 mag. Our typical
+
+91
+
+PDF PAGE 104
+CHAPTER 6. KEPLER PLANET HOST STARS 92
+
+photometric uncertainty is ∼ 0.1 − 0.15 mag. No variation is found at 3σ level for
+
+these host stars, which is good for the habitability of these planets.
+
+6.1 Introduction
+
+In 2011 the Kepler Mission has announced 997 stars with a total of 1235 planetary
+
+candidates that show transit-like signatures (Borucki et al. 2011). It is estimated that
+
+more than 95% of these candidates are planets (Morton & Johnson 2011). Kepler
+
+has completed 3 years of observations and with a 4-year extension will accumulate
+
+7.5 years of data for these host stars. Searching the host stars for significant very
+
+long-term variations on timescales of decades and for rare flare events is important
+
+for understanding fully the environments of their planets and for constraining the
+
+habitability of exoplanets in general. Here we present the 100-year light curves of
+
+Kepler planet-candidate host stars from the Digital Access to a Sky Century at
+
+Harvard (DASCH) project (Grindlay et al. 2009).
+
+The photometric variability of about 105,000 Kepler target stars, including the
+
+sample with planetary candidates, shows low-level variability due to modulation by
+
+spots and other manifestations of magnetic activity, e.g., white light flares (Basri
+
+et al. 2011). None of these have amplitudes that would be detectable (> 0.2 mag) in
+
+the DASCH data. Here we aim to complement the short-timescale and high-precision
+
+photometry by Kepler with much longer timescales. The DASCH project can reveal
+
+stars with rare flare events or extremely slow changes in luminosity; it is of interest
+
+to find out if any such star happens to have planetary candidates. This paper
+
+provides DASCH light curves for the current Kepler sample.
+
+PDF PAGE 105
+CHAPTER 6. KEPLER PLANET HOST STARS 93
+
+6.2 DASCH light curves
+
+In order to take advantage of the unprecedented Kepler data on short timescales
+
+(Borucki et al. 2010), which complements DASCH data on long timescales, we have
+
+scanned and processed 3653 plates taken from the 1880s to 1990 in or covering part
+
+of the Kepler field. Each plate covers 5−40 degrees on a side, and most of them
+
+are blue-sensitive (close to Johnson B). These plates are from 16 different series,
+
+each typically represents a single telescope (except mb series which consists of data
+
+from multiple telescopes). Table 1 lists information on number of plates in each
+
+series, telescope aperture, field of view (FOV), and median limiting magnitude of
+
+the plates used in this work. The errorbar in the limiting magnitude represents the
+
+rms of the limiting magnitude distribution in each plate series. These plates were
+
+selected by their overlap with the Kepler field, and most of them only cover part of
+
+the Kepler field. Most plates have limiting magnitudes 12 − 14 mag, while ∼ 9% of
+
+them (mc series) are down to ∼ 17 mag. We used the Kepler Input Catalog (KIC;
+
+Brown et al. 2011) for photometric calibration. The typical photometric uncertainty
+
+is ∼ 0.1 − 0.15 mag, and astrometric uncertainty ∼ 0.8 − 5
+
+′′ (Laycock et al. 2010;
+
+Los et al. 2011; Servillat et al. 2011, Tang et al. in prep.).
+
+Example DASCH light curves of 4 Kepler planet-candidate host stars are shown
+
+in Figure 6.1. Fainter stars have fewer DASCH measurements, due to smaller
+
+number of deeper plates available. All the light curve data and plots are available at
+
+the DASCH website (http://hea-www.harvard.edu/DASCH/papers/Kepler-planet￾host-star-lightcurves). Only good measurements are included. Blended images,
+
+measurements within 0.75 mag of the limiting magnitude which are more likely to be
+
+PDF PAGE 106
+CHAPTER 6. KEPLER PLANET HOST STARS 94
+
+Table 6.1: List of 3653 processed plates in the Kepler field.
+
+Seriesa Number Lens aperture FOV Limiting
+
+of plates (inches) (◦
+
+) magnitude
+
+ac 1577 1.5 34 × 43 12.1 ± 0.9
+
+i 690 8 9 × 12 13.8 ± 0.9
+
+dnb 428 1.6 33 × 41 14.2 ± 0.7
+
+rh 342 3 22 × 28 13.4 ± 1.1
+
+mc 320 16 6 × 7 17.0 ± 1.2
+
+bm 96 1.5 22 × 27 13.6 ± 0.9
+
+ay 63 2.6 39 × 49 12.4 ± 0.8
+
+dnr 47 1.6 33 × 41 11.7 ± 0.7
+
+ca 40 2.5 34 × 42 12.3 ± 0.7
+
+ma 19 12 5 × 7 16.0 ± 1.5
+
+dny 12 1.6 33 × 41 13.8 ± 1.0
+
+mb 8 3 to 6 22 × 28 13.4 ± 0.7
+
+aco 5 1 35 × 43 12.6 ± 1.1
+
+ax 4 3 39 × 49 12.9 ± 0.7
+
+am 2 1 34 × 43 12.9 ± 0.4
+
+aThere are 89 recently scanned ‘a’ series plates not included in the paper.
+
+PDF PAGE 107
+CHAPTER 6. KEPLER PLANET HOST STARS 95
+
+contaminated by noise, images within the outer border of the plates whose width is
+
+10% of the plate’s minor-axis length (the so called the ninth annular bin in Laycock
+
+et al. 2010), and dubious points with image profiles different from neighbor stars
+
+and thus are suspected to be emulsion defects or dust, are excluded. Stars with
+
+strong correlation between magnitude measurements and plate limiting magnitudes,
+
+or between magnitude measurements and plate astrometry uncertainties, are also
+
+excluded, which are very likely to be polluted by noise or blends. More detailed
+
+description can be found at Tang et al. (in prep.). For comparison, their Kepler light
+
+curves (Q0−Q6 for 8478994, 11623629 and 11086270, and Q1−Q6 for 4951877) are
+
+also shown in Figure 6.1 as green dots. We used the PDC corrected flux, which are
+
+converted to magnitudes and shifted to the mean magnitudes of DASCH light curves
+
+(See http://keplergo.arc.nasa.gov/CalibrationSN.shtml). Note that these stars have
+
+variations at 0.01% − 0.1% level in the Kepler light curves, which are much smaller
+
+than the plotting symbols and our photometric accuracy.
+
+Among 997 host stars, 240 stars have at least 10 good measurements on DASCH
+
+plates, and 111 stars have at least 100 good measurements. Distributions of g band
+
+magnitudes for all the host stars and host stars with at least 10 or 100 DASCH
+
+measurements, are shown in Figure 6.2. We have at least 100 measurements for 73%
+
+(74 out of 102) of all host stars with g ≤ 13 mag, and 45% (102 out of 226) of all
+
+host stars with g ≤ 14 mag. Most stars brighter than g = 13 mag were lost due to
+
+blending with neighbor stars, as expected in such a crowded field, with 70% of them
+
+have close neighbor stars brighter than g = 14 mag within 1 arcmin, while only 18%
+
+of g < 13 stars with at least 100 good measurements have g < 14 mag neighbor stars
+
+within 1 arcmin.
+
+PDF PAGE 108
+CHAPTER 6. KEPLER PLANET HOST STARS 96
+
+1900 1920 1940 1960 1980 2000
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+8478994 (n = 1268)
+
+11623629 (n = 732)
+
+11086270 (n = 200)
+
+4951877 (n = 117)
+
+Year
+
+Magnitude
+
+Figure 6.1.— Example DASCH Light curves of 4 Kepler planet-candidate host stars.
+
+From top to bottom: KIC 8478994, 11623629, 11086270, and 4951877. Number of
+
+measurements (n) in each light curve are also shown, which drops for fainter stars
+
+due to smaller number of deeper plates available. Kepler PDC corrected light curves
+
+are also shown in green dots for comparison; note that the variation in the Kepler
+
+light curves for these stars are at 10−4
+
+to 10−3
+
+level, much smaller than the plotting
+
+symbols.
+
+PDF PAGE 109
+CHAPTER 6. KEPLER PLANET HOST STARS 97
+
+8 10 12 14 16 18
+
+100
+
+101
+
+102
+
+103
+
+g
+
+Number of stars
+
+997 host stars
+
+240 with ≥10 DASCH points
+
+111 with ≥100 DASCH points
+
+Figure 6.2.— Distribution of g band magnitudes for 997 Kepler planet-candidate host
+
+stars from Borucki et al. 2011 (black dash-dotted line), 240 host stars with at least 10
+
+DASCH measurements (red solid line), and 111 host stars with at least 100 DASCH
+
+measurements (green dashed line).
+
+PDF PAGE 110
+CHAPTER 6. KEPLER PLANET HOST STARS 98
+
+The light curve rms vs. g band magnitude for the 240 host stars with at least
+
+10 DASCH measurements are shown in Figure 6.3. The black solid line shows the
+
+median light curve rms of all the stars with at least 10 DASCH measurements in the
+
+Kepler field, and the red dashed lines and green dash-dotted lines show the 1σ and
+
+2σ distribution, respectively. The median, 1σ, and 2σ distributions of light curve
+
+rms are calculated in 0.5 magnitude bins, after three iterations of 4σ-clipping. No
+
+variation is detected in any of the host stars at > 3σ level. There is one planet host
+
+star, i.e. KIC 3632418 (g = 8.74), with light curve rms above the 2σ distribution.
+
+Further examination show that some images are lightly polluted by a g = 11.43 mag
+
+neighbor star located at 51” away from the star, and thus its rms excess is dubious.
+
+6.3 Summary
+
+The Kepler mission has discovered more than 2000 planetary candidates and
+
+provided unparalleled precision light curves for their host stars. Here we complement
+
+that database with much longer timescale 100-year light curves from the DASCH
+
+project. Despite their inferior photometric accuracy, the DASCH light curves sample
+
+such an extended period of time (e.g., tens of solar-like cycles of activity), that rare
+
+or very slow phenomena can be studied. As a sample statistics, such long-term
+
+variations and rare flare events help us understand the planetary environments
+
+around main sequence stars and the habitability of exoplanets in general.
+
+We have scanned and processed 3653 plates taken from the 1880s to 1990 in or
+
+covering part of the Kepler field, and studied the light curves of 240 planet host stars
+
+that have at least 10 good measurements on DASCH plates. We find no variation
+
+PDF PAGE 111
+CHAPTER 6. KEPLER PLANET HOST STARS 99
+
+8 9 10 11 12 13 14 15 16 17
+
+0
+
+0.05
+
+0.1
+
+0.15
+
+0.2
+
+0.25
+
+0.3
+
+g
+
+light curve rms
+
+planet host stars
+
+median of stars in the Kepler FOV
+
+1σ (16 and 84 percentiles)
+
+2σ (2.5 and 97.5 percentiles)
+
+Figure 6.3.— DASCH light curve rms vs. g band magnitude. The 240 Kepler planet￾candidate host stars with at least 10 DASCH measurements are plotted as blue dots.
+
+Light curve rms percentiles of 80,024 stars with at least 10 DASCH measurements in
+
+the Kepler field are shown for comparison. The 50th percentile (median) is shown in
+
+black solid line, the 16th and 84th percentiles (1σ) are shown in red dashed line, and
+
+the 2.5th and 97.5th percentiles are shown in green dash-dotted lines. The analysis is
+
+divided into 0.5 magnitude bins, and variable candidates with > 3σ rms are excluded.
+
+PDF PAGE 112
+CHAPTER 6. KEPLER PLANET HOST STARS 100
+
+at 3σ level. All the light curve data and plots are available at the DASCH website
+
+(http://hea-www.harvard.edu/DASCH/papers/Kepler-planet-host-star-lightcurves).
+
+As the Kepler data extends in the next 4 years, it will be possible to improve on the
+
+determination of rotation modulation and small flares, as well as partial coverage of
+
+activity cycles, for the Kepler planet host stars. DASCH light curves over 100 year
+
+timescales will continue to provide unique constraints on long-timescale variability
+
+for planet host stars.
+
+PDF PAGE 113
+Chapter 7
+
+DASCH Variable Search in the
+
+Kepler Field
+
+S. Tang, J. Grindlay, & E. Los The Astronomical Journal, in prep.
+
+Abstract
+
+Here I present the DASCH variable search in the Kepler field of view (FOV). We
+
+have scanned over 3000 plates in or covering part of the Kepler FOV, with typical
+
+magnitude uncertainty of ∼ 0.1 − 0.13 mag down to B ∼ 13 − 14. I describe the
+
+variable search algorithms, and a preliminary DASCH variable catalog in the Kepler
+
+field. Most bright (g < 13 mag) and large amplitude (∆V > 0.5 mag) known ASAS
+
+variables are recovered by DASCH. Among the objects with more than 10 good
+
+measurements in DASCH, 92% of ASAS variables with DASCH light curve rms
+
+> 0.25 mag are found to be variables in DASCH. Some variables not included in the
+
+101
+
+PDF PAGE 114
+CHAPTER 7. DASCH VARIABLE SEARCH 102
+
+ASAS variables are also found. Several example variables are presented.
+
+7.1 Introduction
+
+A primary motivation of the DASCH project is to find variable objects, analyze
+
+their variability, and to study the physical processes involved. We have scanned and
+
+processed over 3000 plates in the Kepler field of view (FOV), chosen to overlap with
+
+the Kepler mission. The Kepler and DASCH surveys have similar brightness range
+
+(V∼ 9 − 16). Combining the long-term variations from DASCH, and the short-term
+
+variations from the extremely accurate Kepler data, enables a unique study of stellar
+
+variability on the widest range of timescale.
+
+In this chapter, I describe the variable search algorithms, and present the
+
+preliminary results in a Catalog of Kepler-DASCH variables in the Kepler FoV.
+
+Several example variables are also shown.
+
+7.2 Variable Search Algorithms
+
+7.2.1 Division of sub-fields
+
+The search for variables makes use of the light curve statistics in the summary ID
+
+table, as described in Chapter 2.7. Due to the inhomogeneous coverage of the plates,
+
+as shown in Figure 2.1, we need to compare the light curve statistics locally. We
+
+first divided the Kepler FOV into 21 sub-fields, each corresponds to 4 CCDs in the
+
+Kepler mission, as shown in Figure 7.1. Note that the star number density differs
+
+PDF PAGE 115
+CHAPTER 7. DASCH VARIABLE SEARCH 103
+
+from sub-field to sub-field, for example, sub-field 18 has the highest star number
+
+density as it is closest to the galactic plane.
+
+7.2.2 Excluding spurious light curves
+
+Next, we remove the highly spurious light curves with much larger variations in
+
+RA and Dec, or much stronger correlation between magnitude measurements and
+
+positions, compared with other neighbor stars. These objects show higher level
+
+of variability, high likely polluted by blends, or wrong matches. We also remove
+
+the spurious light curves with strong negative correlation between magnitude
+
+measurements and plate limiting magnitudes, i.e. appear brighter on deeper plates,
+
+which are likely polluted by blending of neighbor faint stars, or non-point sources
+
+such as galaxies or nebulae. The distribution of the above qualities are shown in
+
+Figures 7.2 − 8. We used 4σ as the threshold, as shown in vertical black lines in
+
+Figures 7.2 − 8.
+
+7.2.3 Outliers in light curve statistics
+
+After removing dubious light curves in last subsection, we now select variable
+
+candidates with excess variability compared with neighbor stars with similar
+
+magnitudes. I used 21 different sets of criteria, to select objects with excess
+
+variability as indicated by their statistical measurements, including light curve rms,
+
+amplitude, number of dip or outburst points with different thresholds, number of
+
+adjacent points in a single dip or outburst, and trends in the light curves. The
+
+definition of these measurements are listed in Chapter 2.7. I applied the criteria
+
+PDF PAGE 116
+CHAPTER 7. DASCH VARIABLE SEARCH 104
+
+305 300 295 290 285 280 275
+
+35
+
+40
+
+45
+
+50
+
+55
+
+RA
+
+Dec
+
+27977 stars in the Kepler field with ngood>=10
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+all DASCH stars
+
+ASAS variables
+
+Figure 7.1.— The Kepler field FOV and the division of 21 sub-fields. Blue dots are
+
+stars with ≥ 10 good points in DASCH light curves, and red open circles are ASAS
+
+variables (Pigulski et al. 2009) with ∆V ≥ 0.4 mag and ≥ 10 good points in DASCH
+
+light curves.
+
+PDF PAGE 117
+CHAPTER 7. DASCH VARIABLE SEARCH 105
+
+to the 20 sub-fields separately, as defined in Figure 7.1. The selection in sub-field
+
+19 are shown in Figures 7.9 − 29 as examples. Light curves are divided into 8 bins
+
+in number of good points (upper panels), or KIC g mag (lower panels), with equal
+
+number (exact or ±1) of objects in each bin. Then the σ and the thresholds are
+
+calculated separately for each bin after two iterations of 5σ clipping. Blue dots are
+
+all objects, red circles are ASAS variables with ∆V ≥ 0.4 mag. Stars are divided
+
+into 8 bins in number of good points (upper panel), or KIC g mag (lower panel),
+
+Green horizontal dashed lines marks the threshold, which differs from 5σ to 8σ,
+
+or are different number of points, in different measurements. Green diamonds are
+
+variable candidates which are above the threshold and get selected. In sub-field 19,
+
+all the three ASAS variables with ∆V > 0.4 mag are above the thresholds in at least
+
+one measurements, and thus are selected for further study.
+
+Different statistical measurements are sensitive to different types of variables.
+
+For example, light curve rms and amplitude are sensitive to pulsating stars, numbers
+
+of outburst points are sensitive to flare stars, numbers of dip points are sensitive to
+
+eclipsing binaries, while the light curve rms ratios before and after detrending are
+
+sensitive to long-term variables. Large amplitude variables such as Miras, stand out
+
+as outliers in most of the measurements, as shown in Figures 7.9 − 29, while smaller
+
+amplitude variables may only be selected by one or a few of the measurements.
+
+PDF PAGE 118
+CHAPTER 7. DASCH VARIABLE SEARCH 106
+
+0 1 2 3 4 5 6 7 8 9 10
+
+100
+
+101
+
+102
+
+103
+
+104
+
+rarms (arcsec)
+
+N
+
+all n>=10
+
+ASAS
+
+ASAS ∆V>0.4
+
+excess variability
+
+ASAS matched
+
+100*var/all
+
+Figure 7.2.— Histogram of rms in RA for stars with n ≥ 10 good points in the
+
+Kepler field. Objects with higher rms in RA are more likely to be contaminated
+
+by blending or mis-match. Blue solid line is for all stars with n ≥ 10, green solid
+
+line is for ASAS variables (Pigulski et al. 2009), red solid line is for ASAS variables
+
+with ∆V ≥ 0.4 mag, black dash-dotted line is for stars showing excess variations in
+
+DASCH light curves, cyan dash-dotted line is for ASAS variables which are included
+
+in the preliminary variable candidates, and yellow dashed line is the percentage of
+
+the preliminary variable candidates over all stars. The rising of the yellow dashed
+
+line suggests that stars with large rms in RA show higher level of variability in their
+
+light curves, which are dubious due to possible contamination from blends.
+
+PDF PAGE 119
+CHAPTER 7. DASCH VARIABLE SEARCH 107
+
+0 1 2 3 4 5 6 7 8 9 10
+
+100
+
+101
+
+102
+
+103
+
+104
+
+decrms (arcsec)
+
+N
+
+all n>=10
+
+ASAS
+
+ASAS ∆V>0.4
+
+excess variability
+
+ASAS matched
+
+100*var/all
+
+Figure 7.3.— Histogram of rms in Dec for stars with n ≥ 10 good points in the Kepler
+
+field. Objects with higher rms in RA are more likely to be contaminated by blending
+
+or mis-match. Symbols are similar as Figure 7.2.
+
+PDF PAGE 120
+CHAPTER 7. DASCH VARIABLE SEARCH 108
+
+−1 −0.8 −0.6 −0.4 −0.2 0 0.2 0.4 0.6 0.8 1
+
+100
+
+101
+
+102
+
+103
+
+104
+
+Coef. (mag, ra)
+
+N
+
+all n>=10
+
+ASAS
+
+ASAS ∆V>0.4
+
+excess variability
+
+ASAS matched
+
+100*var/all
+
+Figure 7.4.— Histogram of correlation coefficient between magnitude and RA for stars
+
+with n ≥ 10 good points in the Kepler field. Objects with higher absolute values of
+
+correlation coefficient are more likely to be contaminated by blending. Symbols are
+
+similar to Figure 7.2.
+
+PDF PAGE 121
+CHAPTER 7. DASCH VARIABLE SEARCH 109
+
+−1 −0.8 −0.6 −0.4 −0.2 0 0.2 0.4 0.6 0.8 1
+
+100
+
+101
+
+102
+
+103
+
+Coef. (mag, dec)
+
+N
+
+all n>=10
+
+ASAS
+
+ASAS ∆V>0.4
+
+excess variability
+
+ASAS matched
+
+100*var/all
+
+Figure 7.5.— Histogram of correlation coefficient between magnitude and Dec for stars
+
+with n ≥ 10 good points in the Kepler field. Objects with higher absolute values of
+
+correlation coefficient are more likely to be contaminated by blending. Symbols are
+
+similar to Figure 7.2.
+
+PDF PAGE 122
+CHAPTER 7. DASCH VARIABLE SEARCH 110
+
+−1 −0.5 0 0.5 1
+
+100
+
+101
+
+102
+
+103
+
+Coef. (mag, limiting mag)
+
+N
+
+all n>=10
+
+ASAS
+
+ASAS ∆V>0.4
+
+excess variability
+
+ASAS matched
+
+100*var/all
+
+Figure 7.6.— Histogram of correlation coefficient between magnitude and plate lim￾iting magnitude for stars with n ≥ 10 good points in the Kepler field. Objects with
+
+higher negative values of correlation coefficient, i.e. appear brighter on deeper plates,
+
+are more likely to be contaminated by blending of neighbor faint stars, or non-point
+
+sources such as galaxies or nebulae. Objects with higher positive values of correlation
+
+coefficient, i.e. appear fainter on deeper plates, are more likely to be contaminated
+
+by noise; although selection effect of real variables also contributes to a positive cor￾relation coefficient, as they are more likely to be observed on deeper plates when they
+
+are in fainter phases. Symbols are similar to Figure 7.2.
+
+PDF PAGE 123
+CHAPTER 7. DASCH VARIABLE SEARCH 111
+
+−0.5 −0.4 −0.3 −0.2 −0.1 0 0.1 0.2 0.3 0.4 0.5
+
+100
+
+101
+
+102
+
+103
+
+104
+
+Malmquist−Factor (mag)
+
+N
+
+all n>=10
+
+ASAS
+
+ASAS ∆V>0.4
+
+excess variability
+
+ASAS matched
+
+100*var/all
+
+Figure 7.7.— Histogram of clipped median DASCH magnitude of 20 deepest plates
+
+− clipped median DASCH magnitude of 20 shallowest plates using ‘good’ points.
+
+Objects with larger absolute values are more likely to be contaminated by blending
+
+or noise. Symbols are similar to Figure 7.2.
+
+PDF PAGE 124
+CHAPTER 7. DASCH VARIABLE SEARCH 112
+
+−0.4 −0.2 0 0.2 0.4 0.6 0.8
+
+100
+
+101
+
+102
+
+103
+
+104
+
+Malmquist−FactorB (mag)
+
+N
+
+all n>=10
+
+ASAS
+
+ASAS ∆V>0.4
+
+excess variability
+
+ASAS matched
+
+100*var/all
+
+Figure 7.8.— Similar to Figure 7.7, but also includes defects, low altitude, uncertain
+
+date and second quality plates. Objects with larger absolute values are more likely
+
+to be contaminated by blending or noise. Symbols are similar to Figure 7.2.
+
+PDF PAGE 125
+CHAPTER 7. DASCH VARIABLE SEARCH 113
+
+101
+
+102
+
+103
+
+0
+
+0.5
+
+1
+
+1.5
+
+ngood
+
+rmslocal
+
+CCD 19: 5σ outliers of rmslocal
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+0.5
+
+1
+
+1.5
+
+KIC g mag
+
+rmslocal
+
+Figure 7.9.— Light curve rms using all points vs number of good points (upper panel),
+
+and KIC g mag (lower panel). Blue dots are all objects, red circles are ASAS variables
+
+with ∆V ≥ 0.4 mag (here all the three are Miras), and green diamonds mark the
+
+variable candidates which are selected. Stars are divided into 8 bins in number of
+
+good points (upper panel), or KIC g mag (lower panel), with equal number (exact or
+
+±1) of objects in each bin. Then the σ and the thresholds (green horizontal dashed
+
+lines; 5σ here) are calculated separately for each bin.
+
+PDF PAGE 126
+CHAPTER 7. DASCH VARIABLE SEARCH 114
+
+101
+
+102
+
+103
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+ngood
+
+lcrms1
+
+CCD 19: 5σ outliers of lcrms1
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+KIC g mag
+
+lcrms1
+
+Figure 7.10.— Light curve rms calculated only using good points vs number of good
+
+points (upper panel), and KIC g mag (lower panel). Symbols are the same as Figure
+
+7.9.
+
+PDF PAGE 127
+CHAPTER 7. DASCH VARIABLE SEARCH 115
+
+101
+
+102
+
+103
+
+−1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+ngood
+
+range1
+
+CCD 19: 5σ outliers of range1
+
+6 7 8 9 10 11 12 13 14 15
+
+−1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+KIC g mag
+
+range1
+
+Figure 7.11.— Measurement range local vs number of good points (upper panel),
+
+and KIC g mag (lower panel). range local is defined as the difference between the
+
+brightest and the faintest points, minus the sum of their errors. Symbols are the same
+
+as Figure 7.9.
+
+PDF PAGE 128
+CHAPTER 7. DASCH VARIABLE SEARCH 116
+
+101
+
+102
+
+103
+
+−1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+ngood
+
+range2
+
+CCD 19: 5σ outliers of range2
+
+6 7 8 9 10 11 12 13 14 15
+
+−1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+KIC g mag
+
+range2
+
+Figure 7.12.— Measurement range local2 vs number of good points (upper panel),
+
+and KIC g mag (lower panel). range local is defined as the difference between the
+
+brightest and the faintest points, minus the sum of their errors. Symbols are the same
+
+as Figure 7.9.
+
+PDF PAGE 129
+CHAPTER 7. DASCH VARIABLE SEARCH 117
+
+101
+
+102
+
+103
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+ngood
+
+lcrms1−to−lcrms2
+
+CCD 19: 8σ outliers of lcrms1−to−lcrms2
+
+6 7 8 9 10 11 12 13 14 15
+
+0.5
+
+1
+
+1.5
+
+2
+
+KIC g mag
+
+lcrms1−to−lcrms2
+
+Figure 7.13.— Measurement lightcurverms1 over lcrms2 vs number of good points
+
+(upper panel), and KIC g mag (lower panel). lightcurverms1 is the rms after 4
+
+iterations of 5σ clipping, and lightcurverms2 rms of light curve residuals after de￾trending using smooth(x,y,0.4, ‘lowess’). Symbols are the same as Figure 7.9.
+
+PDF PAGE 130
+CHAPTER 7. DASCH VARIABLE SEARCH 118
+
+101
+
+102
+
+103
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+ngood
+
+lcrms1−to−lcrms3
+
+CCD 19: 8σ outliers of lcrms1−to−lcrms3
+
+6 7 8 9 10 11 12 13 14 15
+
+0.5
+
+1
+
+1.5
+
+2
+
+KIC g mag
+
+lcrms1−to−lcrms3
+
+Figure 7.14.— Measurement lightcurverms1 over lightcurverms3 vs number of good
+
+points (upper panel), and KIC g mag (lower panel). lightcurverms1 is the rms after
+
+4 iterations of 5σ clipping, and lightcurverms3 rms of light curve residuals after
+
+de-trending using smooth(y,0.8, ‘lowess’). Symbols are the same as Figure 7.9.
+
+PDF PAGE 131
+CHAPTER 7. DASCH VARIABLE SEARCH 119
+
+101
+
+102
+
+103
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+ngood
+
+lcrms1−to−lcrms4
+
+CCD 19: 6σ outliers of lcrms1−to−lcrms4
+
+6 7 8 9 10 11 12 13 14 15
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+KIC g mag
+
+lcrms1−to−lcrms4
+
+Figure 7.15.— Measurement lightcurverms1 over lightcurverms4 vs number of good
+
+points (upper panel), and KIC g mag (lower panel). lightcurverms1 is the rms after
+
+4 iterations of 5σ clipping, and lightcurverms4 rms of light curve residuals after
+
+de-trending using smooth(y,10, ‘sgolay’). Symbols are the same as Figure 7.9.
+
+PDF PAGE 132
+CHAPTER 7. DASCH VARIABLE SEARCH 120
+
+101
+
+102
+
+103
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+ngood
+
+lcrms1−to−lcrms5
+
+CCD 19: 6σ outliers of lcrms1−to−lcrms5
+
+6 7 8 9 10 11 12 13 14 15
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+KIC g mag
+
+lcrms1−to−lcrms5
+
+Figure 7.16.— Measurement lightcurverms1 over lightcurverms5 vs number of good
+
+points (upper panel), and KIC g mag (lower panel). lightcurverms1 is the rms after
+
+4 iterations of 5σ clipping, and lightcurverms5 rms of light curve residuals after
+
+de-trending using smooth(y,15, ‘loess’). Symbols are the same as Figure 7.9.
+
+PDF PAGE 133
+CHAPTER 7. DASCH VARIABLE SEARCH 121
+
+101
+
+102
+
+103
+
+0
+
+20
+
+40
+
+60
+
+80
+
+ngood
+
+ndev2
+
+CCD 19: 8σ outliers of ndev2
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+20
+
+40
+
+60
+
+80
+
+KIC g mag
+
+ndev2
+
+Figure 7.17.— Measurement ndev2 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). ndev2 is defined as the number of points ≥ 2σ brighter or fainter
+
+than the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 134
+CHAPTER 7. DASCH VARIABLE SEARCH 122
+
+101
+
+102
+
+103
+
+0
+
+20
+
+40
+
+60
+
+ngood
+
+ndev3
+
+CCD 19: 8σ outliers of ndev3
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+20
+
+40
+
+60
+
+KIC g mag
+
+ndev3
+
+Figure 7.18.— Measurement ndev3 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). ndev3 is defined as the number of points ≥ 3σ brighter or fainter
+
+than the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 135
+CHAPTER 7. DASCH VARIABLE SEARCH 123
+
+101
+
+102
+
+103
+
+0
+
+20
+
+40
+
+60
+
+80
+
+ngood
+
+nadj1
+
+CCD 19: nadj1>= 12
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+20
+
+40
+
+60
+
+80
+
+KIC g mag
+
+nadj1
+
+Figure 7.19.— Measurement nadj1 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). nadj1 is a measure of the number of adjacent nburst3/4 and
+
+ndip3/4 points. Symbols are the same as Figure 7.9.
+
+PDF PAGE 136
+CHAPTER 7. DASCH VARIABLE SEARCH 124
+
+101
+
+102
+
+103
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+ngood
+
+nadj2
+
+CCD 19: nadj2>= 1
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+KIC g mag
+
+nadj2
+
+Figure 7.20.— Measurement nadj2 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). nadj2 is a measure of the number of > 5 adjacent nburst3/4
+
+and ndip3/4 points. Symbols are the same as Figure 7.9.
+
+PDF PAGE 137
+CHAPTER 7. DASCH VARIABLE SEARCH 125
+
+101
+
+102
+
+103
+
+−1
+
+−0.5
+
+0
+
+0.5
+
+1
+
+ngood
+
+nadj3
+
+CCD 19: nadj3>= 1
+
+6 7 8 9 10 11 12 13 14 15
+
+−1
+
+−0.5
+
+0
+
+0.5
+
+1
+
+KIC g mag
+
+nadj3
+
+Figure 7.21.— Measurement nadj3 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). nadj3 is a measure of the number of > 7 adjacent nburst3/4
+
+and ndip3/4 points. Symbols are the same as Figure 7.9.
+
+PDF PAGE 138
+CHAPTER 7. DASCH VARIABLE SEARCH 126
+
+101
+
+102
+
+103
+
+0
+
+5
+
+10
+
+15
+
+ngood
+
+nburst1
+
+CCD 19: nburst1>= 2
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+5
+
+10
+
+15
+
+KIC g mag
+
+nburst1
+
+Figure 7.22.— Measurement nburst1 vs number of good points (upper panel), and
+
+KIC g mag (lower panel). nburst1 is defined as the number of points ≥ 0.8 mag
+
+brighter than the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 139
+CHAPTER 7. DASCH VARIABLE SEARCH 127
+
+101
+
+102
+
+103
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+ngood
+
+nburst2
+
+CCD 19: nburst2>= 5
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+KIC g mag
+
+nburst2
+
+Figure 7.23.— Measurement nburst2 vs number of good points (upper panel), and
+
+KIC g mag (lower panel). nburst2 is defined as the number of points ≥ 0.5 mag
+
+brighter than the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 140
+CHAPTER 7. DASCH VARIABLE SEARCH 128
+
+101
+
+102
+
+103
+
+0
+
+10
+
+20
+
+30
+
+ngood
+
+nburst3
+
+CCD 19: nburst3>= 6
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+10
+
+20
+
+30
+
+KIC g mag
+
+nburst3
+
+Figure 7.24.— Measurement nburst3 vs number of good points (upper panel), and
+
+KIC g mag (lower panel). nburst3 is defined as the number of points ≥ 0.4 mag
+
+brighter than the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 141
+CHAPTER 7. DASCH VARIABLE SEARCH 129
+
+101
+
+102
+
+103
+
+0
+
+10
+
+20
+
+30
+
+ngood
+
+nburst4
+
+CCD 19: nburst4>= 6
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+10
+
+20
+
+30
+
+KIC g mag
+
+nburst4
+
+Figure 7.25.— Measurement nburst4 vs number of good points (upper panel), and
+
+KIC g mag (lower panel). nburst4 is defined as the number of points ≥ 3σ brighter
+
+than the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 142
+CHAPTER 7. DASCH VARIABLE SEARCH 130
+
+101
+
+102
+
+103
+
+0
+
+5
+
+10
+
+15
+
+20
+
+ngood
+
+ndip1
+
+CCD 19: ndip1>= 2
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+5
+
+10
+
+15
+
+20
+
+KIC g mag
+
+ndip1
+
+Figure 7.26.— Measurement ndip1 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). ndip1 is defined as the number of points ≥ 0.8 mag fainter than
+
+the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 143
+CHAPTER 7. DASCH VARIABLE SEARCH 131
+
+101
+
+102
+
+103
+
+0
+
+10
+
+20
+
+30
+
+ngood
+
+ndip2
+
+CCD 19: ndip2>= 5
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+10
+
+20
+
+30
+
+KIC g mag
+
+ndip2
+
+Figure 7.27.— Measurement ndip2 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). ndip2 is defined as the number of points ≥ 0.5 mag fainter than
+
+the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 144
+CHAPTER 7. DASCH VARIABLE SEARCH 132
+
+101
+
+102
+
+103
+
+0
+
+10
+
+20
+
+30
+
+ngood
+
+ndip3
+
+CCD 19: ndip3>= 6
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+10
+
+20
+
+30
+
+KIC g mag
+
+ndip3
+
+Figure 7.28.— Measurement ndip3 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). ndip3 is defined as the number of points ≥ 0.4 mag fainter than
+
+the median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 145
+CHAPTER 7. DASCH VARIABLE SEARCH 133
+
+101
+
+102
+
+103
+
+0
+
+10
+
+20
+
+30
+
+40
+
+ngood
+
+ndip4
+
+CCD 19: ndip4>= 9
+
+6 7 8 9 10 11 12 13 14 15
+
+0
+
+10
+
+20
+
+30
+
+40
+
+KIC g mag
+
+ndip4
+
+Figure 7.29.— Measurement ndip4 vs number of good points (upper panel), and KIC
+
+g mag (lower panel). ndip4 is defined as the number of points ≥ 3σ fainter than the
+
+median value. Symbols are the same as Figure 7.9.
+
+PDF PAGE 146
+CHAPTER 7. DASCH VARIABLE SEARCH 134
+
+7.2.4 Further removal of dubious variable candidates
+
+Although we have identified and excluded most blended images and plate defects,
+
+there are still some light curves with dubious variations and thus included as variable
+
+candidates. Therefore, two more steps are used to further filter out dubious variables.
+
+First, if a star has neighbor or neighbors within 30 arcsec contributing ≥ 20% of
+
+its flux, then we calculate the flux ratio of these neighbors to the flux of the star,
+
+fneighbor/fstar. The blending of the star with its neighbors would resulted in higher
+
+light curve rms if not recognized. In the worst scenario, i.e., where half of the points
+
+are non-blended, and the other half are blended but not recognized, the light curve
+
+rms would be approximately rms ∼ sqrterror2 + (fneighbor/fstar/2)2
+
+. Therefore, if
+
+fneighbor/fstar > 0.2 and rms ≤ sqrterror2 + (fneighbor/fstar/2)2
+
+, where the error is
+
+given by the average light curve rms of two neighbor stars with similar magnitudes
+
+and colors, the light curve rms is likely heavily contaminated or even dominated by
+
+blending, and we remove it from the variable candidate list. An example is shown in
+
+Figure 7.30.
+
+Second, stars showing same outbursts or dips as its neighbor stars are excluded;
+
+An example is shown in Figure 7.31. In this case, the dips are from plate ac 36474
+
+with emulsion defect, and resulted in wrong magnitude calibration.
+
+7.3 Variable candidates
+
+After carrying out the above cleaning steps, we are able to derive a catalog of
+
+DASCH variable candidates in the Kepler FOV, containing 92 objects. In this
+
+PDF PAGE 147
+CHAPTER 7. DASCH VARIABLE SEARCH 135
+
+A good image A blended image 
+
+Figure 7.30.— An example light curve contaminated by blending, KIC 4763020. It
+
+has g = 13.06 mag, and it has a neighbor star K4762999 with g = 14.15 mag at a
+
+separation of 25′′. Light curves of two neighbor stars are also shown for comparison.
+
+An example good plate image is shown at the lower-left corner, and an example
+
+blended image is shown at the lower-right corner.
+
+PDF PAGE 148
+CHAPTER 7. DASCH VARIABLE SEARCH 136
+
+A good image A defect image 
+
+Figure 7.31.— An example light curve contaminated by emulsion defect, KIC 5200084.
+
+Light curves of two neighbor stars are shown for comparison, both also show the same
+
+dip in 1941, on plate ac 36474. An example good plate image is shown at the lower-left
+
+corner, and the defect image on plate ac 36474 is shown at the lower-right corner.
+
+PDF PAGE 149
+CHAPTER 7. DASCH VARIABLE SEARCH 137
+
+section, I describe the general properties of these candidates, discuss the selection
+
+efficiency by comparing with the ASAS variable catalog, and present a few example
+
+variables.
+
+7.3.1 General properties and comparison with the ASAS
+
+variable catalog
+
+The DASCH light curve rms and amplitude vs KIC g mag for these 92 DASCH
+
+variable candidates are shown in Figures 7.32-34. They are mostly bright stars
+
+(90 out of 92 with g < 14 mag, 77 out of 92 with g < 13 mag, and 55 out of 92
+
+with g < 12 mag). As expected, most of them are mostly large rms or/and large
+
+amplitude variables. For example, there are 84 (91.3%), 88 (95.7%), and 90 (97.8%)
+
+variables with range local > 0.5, 0.4, and 0.3 mag, respectively (range local is
+
+defined as the difference between the brightest and the faintest points, minus the
+
+sum of their errors). The distribution of their g mag, light curve rms and amplitude
+
+are also shown in Figures 7.32-34. Note that these 92 objects are the preliminary
+
+variable candidates, and further examination of their light curves and plate images
+
+on a one-by-one basis are still needed for verification.
+
+The ASAS variable catalog contains 947 objects in the Kepler field (Pigulski
+
+et al. 2009). Most of them are relatively faint, and only 322 of them have more than
+
+10 good points in DASCH. We obtained 50 of them as variable candidates. Their
+
+DASCH light curve rms and amplitude vs ASAS amplitude are shown in Figures
+
+7.35-37.
+
+We recovered most ASAS variables with large light curve rms, as shown in the
+
+PDF PAGE 150
+CHAPTER 7. DASCH VARIABLE SEARCH 138
+
+lower-right panel of Figure 7.35. All the 28 ASAS variables with rms> 0.3 mag, are
+
+found to be variables in DASCH light curves; 92%, i.e. 34 out of 37, ASAS variables
+
+with rms > 0.25 mag, are found to be variables in DASCH light curves.
+
+Most ASAS variables we missed are small amplitude variables (ASAS V
+
+amplitude ≤ 0.5 mag), limited by our photometry uncertainty (which is ∼ 0.1 − 0.13
+
+mag). The numbers and percentages of different types of ASAS variables we obtained
+
+as DASCH variables are listed in Table 7.1. We recovered all the Miras in the ASAS
+
+catalog, and 80% of RR Lyr stars and 58% of long period variables (APER) with
+
+∆V ≥ 0.5 mag. Our recovery rate of variables with a dominating periodicity but
+
+also other variations (QPER), Algol-type eclipsing binaries (EA), β Lyr-type and
+
+W UMa-type (EB/EW) are relatively lower, which is 33%, 33% and 9% for these
+
+types of ASAS variables with ∆V ≥ 0.5 mag, respectively. The 10 out of 11 EB/EW
+
+eclipsing binaries with ASAS ∆V ≥ 0.5 mag we missed all have relatively small
+
+amplitude (∆V ≤ 0.75 mag), and thus do not show significant variations in DASCH
+
+light curves (light curve rms < 0.25 mag).
+
+The ASAS variables with large amplitude in V band we missed are relatively
+
+faint stars, which have relatively poor coverage in DASCH. For example, among the
+
+14 ASAS variables with V amplitude > 0.8 mag we missed, 10 of them are fainter
+
+than g = 12.5 mag, and 6 of them are fainter than g = 13 mag; among the 46
+
+ASAS variables with V amplitude > 0.5 mag we missed, 24 of them are fainter than
+
+g = 12.5 mag, and 16 of them are fainter than g = 13 mag.
+
+PDF PAGE 151
+CHAPTER 7. DASCH VARIABLE SEARCH 139
+
+Table 7.1: Compare DASCH variables with the ASAS variable catalog.
+
+Variable Type APERa QPERb MIRA RRLyr EAc EB/EWd HADSe CEPf Total
+
+DASCH&ASAS 14 14 9 4 6 2 1 0 50
+
+ASAS ∆V >0.5
+
+DASCH 14 10 9 4 2 1 0 40
+
+ASAS 24 30 9 5 6 11 1 86
+
+ratio 58% 33% 100% 80% 33% 9% 0% 47%
+
+ASAS ∆V >0.8
+
+DASCH 9 5 9 3 0 26
+
+ASAS 13 13 9 4 1 40
+
+ratio 69% 38% 100% 75% 0% 65%
+
+ASAS ∆V >1
+
+DASCH 8 2 9 2 21
+
+ASAS 9 3 9 2 23
+
+ratio 89% 67% 100% 100% 91%
+
+ASAS ∆V >1.5
+
+DASCH 4 1 9 14
+
+ASAS 4 1 9 14
+
+ratio 100% 100% 100% 100%
+
+aASAS variables with no well-pronounced periodicity or the period is longer than the analyzed data
+
+(17 months; Pigulski et al. 2009).
+
+bASAS variables with dominated periodicity but also show other variations.
+
+cASAS Algol-type eclipsing binaries.
+
+dASAS β Lyr-type or W UMa-type eclipsing binaries.
+
+eASAS high-amplitude δ Sct stars.
+
+fASAS Cepheids.
+
+PDF PAGE 152
+CHAPTER 7. DASCH VARIABLE SEARCH 140
+
+8 10 12 14
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+g (mag)
+
+light curve RMS (mag)
+
+DASCH
+
+ASAS
+
+8 10 12 14
+
+0
+
+10
+
+20
+
+N
+
+0 30
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+N
+
+Figure 7.32.— DASCH light curve rms vs KIC g mag for 92 DASCH variable candi￾dates. Each blue dot represents a DASCH variable. Objects overlap with the ASAS
+
+variable catalog are marked by red open circles. The histograms in g mag and light
+
+curve rms are also shown, with blue for the whole sample, and red for these also in
+
+ASAS.
+
+PDF PAGE 153
+CHAPTER 7. DASCH VARIABLE SEARCH 141
+
+8 10 12 14
+
+0
+
+1
+
+2
+
+3
+
+4
+
+g (mag)
+
+amplitude 1 (mag)
+
+DASCH
+
+ASAS
+
+8 10 12 14
+
+0
+
+10
+
+20
+
+N
+
+0 30
+
+0
+
+1
+
+2
+
+3
+
+4
+
+N
+
+Figure 7.33.— DASCH light curve amplitude range local vs KIC g mag for 92 DASCH
+
+variable candidates. range local is defined as the difference between the brightest and
+
+the faintest points, minus the sum of their errors. Symbols are the same as Figure
+
+7.32.
+
+PDF PAGE 154
+CHAPTER 7. DASCH VARIABLE SEARCH 142
+
+8 10 12 14
+
+0
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+g (mag)
+
+amplitude 2 (mag)
+
+DASCH
+
+ASAS
+
+8 10 12 14
+
+0
+
+10
+
+20
+
+N
+
+0 30
+
+0
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+N
+
+Figure 7.34.— DASCH light curve amplitude range local2 vs KIC g mag for 92
+
+DASCH variable candidates. range local2 is defined as the difference between the sec￾ond brightest and the second faintest points, minus the sum of their errors. Symbols
+
+are the same as Figure 7.32.
+
+PDF PAGE 155
+CHAPTER 7. DASCH VARIABLE SEARCH 143
+
+0 2 4 6 8
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+ASAS V amplitude (mag)
+
+DASCH light curve RMS (mag)
+
+ASAS
+
+DASCH
+
+0 2 4 6 8
+
+1
+
+10
+
+100
+
+N
+
+0 50 100
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+N
+
+Figure 7.35.— DASCH light curve rms vs ASAS V band amplitude for 322 ASAS
+
+variables with ≥ 10 good points in DASCH. Each red dot represents a ASAS variable.
+
+Objects identified as DASCH variables are marked by blue diamonds. The histograms
+
+in both axis are also shown, with red for the whole sample, and red for these which
+
+are also DASCH variables.
+
+PDF PAGE 156
+CHAPTER 7. DASCH VARIABLE SEARCH 144
+
+0 2 4 6 8
+
+0
+
+1
+
+2
+
+3
+
+4
+
+ASAS V amplitude (mag)
+
+DASCH amplitude 1 (mag)
+
+ASAS
+
+DASCH
+
+0 2 4 6 8
+
+1
+
+10
+
+100
+
+N
+
+0
+
+0
+
+1
+
+2
+
+3
+
+4
+
+N
+
+Figure 7.36.— DASCH light curve amplitude range local vs ASAS V band amplitude
+
+for 322 ASAS variables with ≥ 10 good points in DASCH. range local is defined as
+
+the difference between the brightest and the faintest points, minus the sum of their
+
+errors. Symbols are the same as Figure 7.35.
+
+PDF PAGE 157
+CHAPTER 7. DASCH VARIABLE SEARCH 145
+
+0 2 4 6 8
+
+0
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+ASAS V amplitude (mag)
+
+DASCH amplitude 2 (mag)
+
+ASAS
+
+DASCH
+
+0 2 4 6 8
+
+1
+
+10
+
+100
+
+N
+
+0
+
+0
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+N
+
+Figure 7.37.— DASCH light curve amplitude range local2 vs ASAS V band amplitude
+
+for 322 ASAS variables with ≥ 10 good points in DASCH. range local2 is defined as
+
+the difference between the second brightest and the second faintest points, minus the
+
+sum of their errors. Symbols are the same as Figure 7.35.
+
+PDF PAGE 158
+CHAPTER 7. DASCH VARIABLE SEARCH 146
+
+7.3.2 A few example variables
+
+Here I present the DASCH light curves of 6 example variables, as shown in Figures
+
+7.38-43. The light curves of two neighbor stars for each variable are also shown for
+
+comparison.
+
+The first three examples are also ASAS variable(Pigulski et al. 2009). The first
+
+example, K10003658, is a MIRA variable, as shown in Figure 7.38. It has ∆V = 4.5
+
+mag in ASAS. The second example, K11125706, as shown in Figure 7.39, is classified
+
+as RR Lyrae type ab in ASAS with ∆V = 0.55 mag. The third example, K2708156,
+
+is an eclipse binary, as shown in Figure 7.40. It is also an ASAS eclipsing binary with
+
+P = 1.8913 days (Pigulski et al. 2009). The forth and fifth examples are eclipsing
+
+binaries not recognized in ASAS variable catalog, i.e. K9101279 (V1580 Cyg), as
+
+shown in Figure 7.41, and K9207508 (V512 Lyr), as shown in Figure 7.42.
+
+The last example, K4644922, showed a 2.5 mag dimming event from the 1890s
+
+to the 1960s, as shown in Figure 7.43. It is classified as a G dwarf in KIC catalog,
+
+however, our FAST spectrum suggests it is a G type giant. It is classified as ‘QPER’
+
+in ASAS with P = 128.8 days (‘QPER’ means it has a dominating periodicity, but
+
+also show other changes superimposed on the variability on a longer time scale;
+
+Pigulski et al. 2009). Its Kepler light curve shows modulation with P ∼ 129 days
+
+similar to ASAS. It is an extremely bright IR source, with IRAS flux of 2 Jy, 1.6
+
+Jy, and 0.5 Jy at 12, 25, and 60 µm, respectively. It is also an AKARI/IRC source,
+
+with flux of 1.7 Jy and 1.4 Jy at 9 and 18 µm, respectively, Its 20 µm to optical flux
+
+ratio is ∼ 250 times larger compared with PHI 2 ORI, a G8III IR standard star. It
+
+is probably a post-AGB star, and the 60 yr dip is likely a spectacular dust event.
+
+PDF PAGE 159
+CHAPTER 7. DASCH VARIABLE SEARCH 147
+
+1900 1920 1940 1960 1980
+
+10
+
+12
+
+14
+
+K10003658, 19:13:15.6 +46:58:56, CCD10, g=12.2, g−r=2, rms=1.1, ASAS ∆V=4.5
+
+1900 1920 1940 1960 1980
+
+10
+
+12
+
+14
+
+Magnitude
+
+K9944140, g=11.84, g−r=0.99, rms=0.19
+
+1900 1920 1940 1960 1980
+
+10
+
+12
+
+14
+
+Year
+
+K10065692, g=12.37, g−r=1.8, rms=0.27
+
+Figure 7.38.— DASCH light curves of K10003658 (top panel), a Mira variable star,
+
+and its two neighbors.
+
+PDF PAGE 160
+CHAPTER 7. DASCH VARIABLE SEARCH 148
+
+1900 1920 1940 1960 1980
+
+11
+
+11.5
+
+12
+
+12.5
+
+K11125706, 19:0:58.8 +48:44:42, CCD9, g=11.9, g−r=0.51, rms=0.26, ASAS ∆V=0.55
+
+1900 1920 1940 1960 1980
+
+10.5
+
+11
+
+11.5
+
+Magnitude
+
+12
+
+K11179104, g=11.64, g−r=0.64, rms=0.14
+
+1900 1920 1940 1960 1980
+
+11
+
+12
+
+13
+
+Year
+
+K11072219, g=12.18, g−r=0.24, rms=0.14
+
+Figure 7.39.— DASCH light curves of K11125706 (top panel), a RR Lyr variable star,
+
+and its two neighbors.
+
+PDF PAGE 161
+CHAPTER 7. DASCH VARIABLE SEARCH 149
+
+1900 1920 1940 1960 1980
+
+9.5
+
+10
+
+10.5
+
+11
+
+11.5
+
+K2708156, 19:21:8.9 +37:56:11, CCD8, g=10.7, g−r=0.11, rms=0.2, ASAS ∆V=0.23
+
+1900 1920 1940 1960 1980
+
+9.5
+
+10
+
+10.5
+
+11
+
+11.5
+
+Magnitude
+
+K2569639, g=10.61, g−r=−0.05, rms=0.1
+
+1900 1920 1940 1960 1980
+
+10
+
+11
+
+12
+
+Year
+
+K2297349, g=11.02, g−r=0.39, rms=0.15
+
+Figure 7.40.— DASCH light curves of K2708156 (top panel), an eclipsing binary, and
+
+its two neighbors.
+
+PDF PAGE 162
+CHAPTER 7. DASCH VARIABLE SEARCH 150
+
+A normal state image The dip image 
+
+Figure 7.41.— DASCH light curves of K9101279 (top panel), an eclipsing binary not
+
+included in the ASAS variable catalog, and its two neighbors.
+
+PDF PAGE 163
+CHAPTER 7. DASCH VARIABLE SEARCH 151
+
+1900 1920 1940 1960 1980
+
+13
+
+13.5
+
+14
+
+14.5
+
+K9207508, 19:6:22.8 +45:41:54, CCD, g=13.9, g−r=0.27, rms=0.2
+
+1900 1920 1940 1960 1980
+
+13
+
+13.5
+
+14
+
+14.5
+
+Magnitude
+
+K9207291, g=13.64, g−r=0.3, rms=0.15
+
+1900 1920 1940 1960 1980
+
+13
+
+13.5
+
+14
+
+14.5
+
+Year
+
+K9143223, g=13.93, g−r=0.74, rms=0.14
+
+Figure 7.42.— DASCH light curves of K9207508 (top panel), an eclipsing binary not
+
+included in the ASAS variable catalog, and its two neighbors.
+
+PDF PAGE 164
+CHAPTER 7. DASCH VARIABLE SEARCH 152
+
+1900 1920 1940 1960 1980
+
+10
+
+11
+
+12
+
+13
+
+K4644922, 19:15:12.1 +39:42:50, CCD7, g=11.6, g−r=0.51, rms=0.88, ASAS ∆V=0.82
+
+1900 1920 1940 1960 1980
+
+10
+
+11
+
+12
+
+13
+
+Magnitude
+
+K4645245, g=11.38, g−r=0.34, rms=0.11
+
+1900 1920 1940 1960 1980
+
+10
+
+12
+
+14
+
+Year
+
+K4737302, g=11.73, g−r=0.24, rms=0.12
+
+Figure 7.43.— DASCH light curves of K4644922 (top panel), a peculiar long-term
+
+variable, and its two neighbors.
+
+PDF PAGE 165
+CHAPTER 7. DASCH VARIABLE SEARCH 153
+
+7.4 DASCH-Kepler Variable Catalog
+
+The layout of the catalog of variable candidates is presented in Table 7.2, with
+
+the first 10 entries of the 92 sources. In the table, I provide the KIC id, RA, Dec,
+
+DASCH B mag (median value in DASCH light curve), DASCH light curve RMS,
+
+and DASCH light curve amplitude (∆B). I also provide the ASAS ID, type, period
+
+and ∆V for the variables included in the ASAS variable catalog (Pigulski et al.
+
+2009). They are ranked by increasing RA order. Note that although all of these 92
+
+objects show excess variability in DASCH light curves, some of them might not be
+
+genuine variables. Further examination of their light curves and plate images on a
+
+one-by-one basis and follow-up observations are still needed for verification.
+
+Table 7.2: DASCH catalog of variables in the Kepler FOV.
+
+KIC RA Dec B RMS ∆B ASAS ID Type Period ∆V
+
+(
+
+◦
+
+) (
+
+◦
+
+) (mag) (mag) (mag) (days) (mag)
+
+K7797807 280.03397 43.5762 9.74 0.18 0.7 NA NA NA NA
+
+K7869590 281.7762 43.6762 11.6 0.17 0.48 184706+4340.6 QPER 19.91 0.22
+
+K9933239 281.8351 46.8987 9.42 0.14 1.31 NA NA NA NA
+
+K7584285 282.05462 43.245 12.66 0.4 1.04 184813+4314.7 APER NA 1.28
+
+K8077489 282.67998 43.9574 7.92 0.21 0.91 NA NA NA NA
+
+K6020264 282.7415 41.3993 12.31 0.19 0.52 185058+4124.0 APER NA 0.61
+
+K11229003 282.87552 48.9119 12.46 0.55 1.18 185130+4854.7 MIRA 396 6.16
+
+K7662831 283.16208 43.3878 12.41 0.23 0.64 NA NA NA NA
+
+K7259917 283.25914 42.8456 12.07 0.21 0.7 NA NA NA NA
+
+K9815101 283.42019 46.686 12.19 0.29 0.82 185341+4641.2 QPER 148.3 0.93
+
+PDF PAGE 166
+CHAPTER 7. DASCH VARIABLE SEARCH 154
+
+7.5 Summary
+
+In this chapter, I described my variable search algorithms, and presented a
+
+preliminary variable candidate catalog including 92 variable candidates. I compared
+
+the catalog with the ASAS variable catalog, and 50 variables are included in both
+
+catalogs. I showed that most bright (g < 13 mag) and large amplitude (∆V > 0.5
+
+mag) ASAS variables are recovered by DASCH, with three example variables shown
+
+in Figures 7.38-39. ASAS variables not found by DASCH are mostly small amplitude
+
+variables (with light curve rms< 0.25 mag). Some variables not included in ASAS
+
+variable catalog are also found, with two example eclipsing binaries shown in Figures
+
+7.41-42. To illustrate the unique advantage of DASCH which covers a century
+
+timescale, a peculiar long-term variable with a 2.5 mag dip which lasted ∼ 60 years
+
+is shown in Figure 7.43. This object might be a post-AGB star with a spectacular
+
+dust event, and study of this object is in progress.
+
+PDF PAGE 167
+Chapter 8
+
+Conclusions
+
+This thesis is the culmination of six chapters (each chapter alone is a first-authored
+
+scientific paper) that includes two parts: (i) development of DASCH photometric
+
+pipeline and variable search, and (ii) studies of individual peculiar long-term
+
+variables.
+
+The variability of stars over long timescales from years to decades are poorly
+
+explored due to the lack of data. With the 100-yr data of DASCH, it is now possible
+
+to do it in a systematic way. I have found many peculiar long-term variables
+
+from DASCH. After finding them, I have carried out follow-up spectroscopic
+
+observations, which provide important information on these stars, including spectral
+
+and luminosity classifications, radial velocities and orbits, and stellar parameters
+
+such as temperatures, surface gravity and metallicity. Using DASCH data and
+
+follow-up spectra, I was able to study the long-term and extreme variability of
+
+stars, which provides important information on stellar evolution, magnetic cycles,
+
+accretion physics, and dust processes.
+
+155
+
+PDF PAGE 168
+CHAPTER 8. CONCLUSIONS 156
+
+8.1 Photometric Development and Variable
+
+Search
+
+In Chapter 2, I described my work on the DASCH photometry pipeline. It includes
+
+annular bin photometry, plate color-term fitting, identifying blended images, filtering
+
+out defects by image profiles and large astrometric deviations, as well as improved
+
+local calibrations by using neighbor stars with similar magnitudes and colors. All
+
+of the above developments are designed to serve the scientific purpose of finding
+
+real variables on DASCH plates. We report that our photometry accuracy is about
+
+0.1 − 0.13 mag. We also define statistical measurements of light curves, which will
+
+be used for selecting variable stars.
+
+In Chapter 6, I presented 100 year DASCH light curves of Kepler planet￾candidate host stars. No variation is found at 3σ level for these host stars, which is
+
+good for the habitability of these planets.
+
+In Chapter 7, I presented DASCH variable search in the Kepler field of view
+
+(FOV). I describe the variable search algorithms, the preliminary results of variable
+
+candidates, and presented several example variables. Comparing with the ASAS
+
+variable catalog, most of large amplitude variable stars with at least 10 good
+
+measurements in DASCH, i.e. 47% of the variables with ∆m ≥ 0.5 mag, and 92%
+
+of the variables with rms > 0.25 mag, are recovered by DASCH. I conclude this
+
+chapter with a preliminary version of the DASCH-Kepler Variables Catalog, with
+
+representative entries and a brief discussion of what the catalog contains and the
+
+verification work still to be done, as well as spectroscopic followup.
+
+PDF PAGE 169
+CHAPTER 8. CONCLUSIONS 157
+
+8.2 Individual Peculiar Long-term Variable Stars
+
+In Chapters 3-5, I studied individual exciting long-term variables discovered in
+
+DASCH. The most interesting one is a peculiar 10-yr nova, as in Chapter 5. With
+
+P = 119 days, it is interestingly located in the gap region between classic novae
+
+and symbiotic novae. The most probable explanation of the outburst is Hydrogen
+
+shell-burning on the WD without significant mass loss, which suggests a promising
+
+new channel for Type Ia Supernovae (SNe). I have found peculiar long-term K giant
+
+variables with 1 − 2 mag variations over decades, as presented in Chapter 3. It
+
+contains a subgroup of RS CVn binaries with strong magnetic activity, and another
+
+subgroup of single stars. In both cases, the variation amplitudes and timescales
+
+are abnormal, and may be related to either ultra strong star spots, or novel dust
+
+formation processes. I have also discovered a 5-yr duration dust accretion event in
+
+KU Cyg, which is probably related to its accretion disk.
+
+8.3 Additional Variables and Future Work
+
+There are several other very interesting variables. One is a G dwarf + white dwarf
+
+(WD) binary which showed ∼ 14 yr activity cycles. Its spectra show strong Ca H&K
+
+emissions, indicating strong chromospheric activity; It is also a bright soft X-ray and
+
+UV source, probably from the WD. We suggest that the G dwarf is barely filling its
+
+Roche lobe but when it undergoes enhanced flaring activity due to its convective
+
+stirring by its WD companion, the WD is able to accrete at moderately high rate
+
+(10−9 M⊙/yr) to produce the sustained brightenings that may be quasi-periodic on
+
+PDF PAGE 170
+CHAPTER 8. CONCLUSIONS 158
+
+a ∼ 14 yr “solar cycle”.
+
+Another one is a M giant with ∼ 3 yr eclipses, showing ∼ 4 mag dips in both
+
+optical bands and NIR JHK. It is probably an extremely rare Epsilon Aurigae-like
+
+system, where the dips were caused by the eclipse of a huge disk around its
+
+companion.
+
+I have also found a group of large amplitude (∼ 1 mag) Be variables which
+
+might be Be X-ray binaries (neutron star + Be star binaries). Follow-up observations
+
+are in progress and I expect to finish the papers on them soon.
+
+PDF PAGE 171
+References
+
+Alcock, C., et al. 2000, ApJ, 542, 281
+
+—. 2001, ApJ, 554, 298
+
+Allen, D. A. 1980, MNRAS, 192, 521
+
+Basri, G., et al. 2010, ApJ, 713, L155
+
+—. 2011, AJ, 141, 20
+
+Bedding, T. R. 2000, in The Third MONS Workshop: Science Preparation and
+
+Target Selection, ed. T. Teixeira & T. Bedding, 97
+
+Bedding, T. R., Zijlstra, A. A., Jones, A., Marang, F., Matsuura, M., Retter,
+
+A., Whitelock, P. A., & Yamamura, I. 2002, MNRAS, 337, 79
+
+Bedin, L. R., Piotto, G., Zoccali, M., Stetson, P. B., Saviane, I., Cassisi, S., &
+
+Bono, G. 2000, A&A, 363, 159
+
+Belczy´nski, K., Miko lajewska, J., Munari, U., Ivison, R. J., & Friedjung, M.
+
+2000, A&AS, 146, 407
+
+Bensby, T., Feltzing, S., & Lundstr¨om, I. 2004, A&A, 421, 969
+
+Bernstein, R., Shectman, S. A., Gunnels, S. M., Mochnacki, S., & Athey,
+
+A. E. 2003, in Society of Photo-Optical Instrumentation Engineers (SPIE)
+
+Conference Series, Vol. 4841, Society of Photo-Optical Instrumentation
+
+Engineers (SPIE) Conference Series, ed. M. Iye & A. F. M. Moorwood,
+
+1694–1704
+
+Bertelli, G., Girardi, L., Marigo, P., & Nasi, E. 2008, A&A, 484, 815
+
+Bertin, E. 2006, in Astronomical Society of the Pacific Conference Series, Vol.
+
+351, Astronomical Data Analysis Software and Systems XV, ed. C. Gabriel,
+
+C. Arviset, D. Ponz, & S. Enrique, 112
+
+159
+
+PDF PAGE 172
+REFERENCES 160
+
+Bertin, E., & Arnouts, S. 1996, A&AS, 117, 393
+
+Borucki, W. J., et al. 2010, Science, 327, 977
+
+—. 2011, ApJ, 736, 19
+
+Brahe, T. 1573, De nova stella (On the new star), ed.
+
+Brown, T. M., Latham, D. W., Everett, M. E., & Esquerdo, G. A. 2011, AJ,
+
+142, 112
+
+Carollo, D., et al. 2010, ApJ, 712, 692
+
+Ciesla, F. J. 2007, Science, 318, 613
+
+Cincunegui, C., D´ıaz, R. F., & Mauas, P. J. D. 2007, A&A, 469, 309
+
+Clayton, G. C. 1996, PASP, 108, 225
+
+Cleveland, W. S. a. 1981, Am. Stat., 35, 54
+
+Covey, K. R., et al. 2007, AJ, 134, 2398
+
+Cox, A. N. 2000, Allen’s astrophysical quantities, ed. Cox, A. N.
+
+De Marco, O., Clayton, G. C., Herwig, F., Pollacco, D. L., Clark, J. S., &
+
+Kilkenny, D. 2002, AJ, 123, 3387
+
+Di Stefano, R. 2010, ApJ, 712, 728
+
+Djorgovski, S. G., et al. 2011, ArXiv e-prints
+
+Downes, R. A., Duerbeck, H. W., & Delahodde, C. E. 2001, Journal of
+
+Astronomical Data, 7, 6
+
+Dupree, A. K., & Smith, G. H. 1995, AJ, 110, 405
+
+Edmonds, P. D., & Gilliland, R. L. 1996, ApJ, 464, L157
+
+Eggleton, P. P. 1983, ApJ, 268, 368
+
+Faber, S. M., Friel, E. D., Burstein, D., & Gaskell, C. M. 1985, ApJS, 57, 711
+
+Fabricant, D., Cheimets, P., Caldwell, N., & Geary, J. 1998, PASP, 110, 79
+
+Fr¨ohlich, C. 2006, in ESA Special Publication, Vol. 617, SOHO-17. 10 Years of
+
+SOHO and Beyond
+
+PDF PAGE 173
+REFERENCES 161
+
+Girardi, L., Bressan, A., Bertelli, G., & Chiosi, C. 2000, A&AS, 141, 371
+
+Grindlay, J., Tang, S., Simcoe, R., Laycock, S., Los, E., Mink, D., Doane,
+
+A., & Champine, G. 2009, in Astronomical Society of the Pacific Conference
+
+Series, Vol. 410, Preserving Astronomy’s Photographic Legacy: Current State
+
+and the Future of North American Astronomical Plates, ed. W. Osborn &
+
+L. Robbins, 101
+
+Gutierrez-Soto, J., et al. 2008, Communications in Asteroseismology, 157, 70
+
+Hauschildt, P. H., Allard, F., Ferguson, J., Baron, E., & Alexander, D. R.
+
+1999, ApJ, 525, 871
+
+Hoffmeister, C., Richter, G., & Wenzel, W. 1990, Variable stars, ed.
+
+Hoffmeister, C., Richter, G., & Wenzel, W.
+
+Høg, E., et al. 2000, A&A, 355, L27
+
+Hubble, E. 1929, Proceedings of the National Academy of Science, 15, 168
+
+Hubert, A. M., & Floquet, M. 1998, A&A, 335, 565
+
+Iben, Jr., I. 2003, in Astronomical Society of the Pacific Conference Series, Vol.
+
+303, Astronomical Society of the Pacific Conference Series, ed. R. L. M. Corradi,
+
+J. Mikolajewska, & T. J. Mahoney, 177
+
+Kaiser, N., et al. 2002, in Society of Photo-Optical Instrumentation Engineers
+
+(SPIE) Conference Series, Vol. 4836, Society of Photo-Optical Instrumentation
+
+Engineers (SPIE) Conference Series, ed. J. A. Tyson & S. Wolff, 154–164
+
+Kato, M., & Hachisu, I. 1994, ApJ, 437, 802
+
+Kato, M., Hachisu, I., Cassatella, A., & Gonz´alez-Riestra, R. 2011, ApJ, 727,
+
+72
+
+Kenyon, S. J. 1986, The symbiotic stars, ed. Kenyon, S. J.
+
+—. 1994, Mem. Soc. Astron. Italiana, 65, 135
+
+Kenyon, S. J., & Webbink, R. F. 1984, ApJ, 279, 252
+
+King, A. R., Rolfe, D. J., & Schenker, K. 2003, MNRAS, 341, L35
+
+Kraft, R. P. 1967, ApJ, 150, 551
+
+Krautter, J., et al. 2002, AJ, 124, 2888
+
+PDF PAGE 174
+REFERENCES 162
+
+Kriz, S., et al. 1980, Bulletin of the Astronomical Institutes of Czechoslovakia,
+
+31, 284
+
+Kurucz, R. L. 2005, Memorie della Societa Astronomica Italiana Supplementi,
+
+8, 14
+
+Lang, D., Hogg, D. W., Mierle, K., Blanton, M., & Roweis, S. 2010, AJ, 139,
+
+1782
+
+Lasker, B. M., Sturch, C. R., McLean, B. J., Russell, J. L., Jenkner, H., &
+
+Shara, M. M. 1990, AJ, 99, 2019
+
+Law, N. M., et al. 2009, PASP, 121, 1395
+
+Laycock, S., Tang, S., Grindlay, J., Los, E., Simcoe, R., & Mink, D. 2010, AJ,
+
+140, 1062
+
+Leavitt, H. S., & Pickering, E. C. 1912, Harvard College Observatory Circular,
+
+173, 1
+
+Liller, M. H., & Liller, W. 1979, AJ, 84, 1357
+
+Linsky, J. L., McClintock, W., Robertson, R. M., & Worden, S. P. 1979, ApJS,
+
+41, 47
+
+Los, E., Grindlay, J., Tang, S., Servillat, M., & Laycock, S. 2011, in
+
+Astronomical Society of the Pacific Conference Series, Vol. 442, Astronomical
+
+Data Analysis Software and Systems XX, ed. I. N. Evans, A. Accomazzi,
+
+D. J. Mink, & A. H. Rots, 269
+
+Masetti, N., et al. 2002, A&A, 382, 104
+
+—. 2007, A&A, 470, 331
+
+Miko lajewska, J. 2003, in Astronomical Society of the Pacific Conference
+
+Series, Vol. 303, Astronomical Society of the Pacific Conference Series, ed.
+
+R. L. M. Corradi, J. Mikolajewska, & T. J. Mahoney, 9
+
+Miko lajewska, J. 2007, Baltic Astronomy, 16, 1
+
+Mikolajewska, J. 2010, ArXiv e-prints
+
+Mikolajewska, J., Kolotilov, E. A., Shenavrin, V. I., & Yudin, B. F. 2002, in
+
+Astronomical Society of the Pacific Conference Series, Vol. 261, The Physics of
+
+Cataclysmic Variables and Related Objects, ed. B. T. G¨ansicke, K. Beuermann,
+
+& K. Reinsch, 645
+
+PDF PAGE 175
+REFERENCES 163
+
+Mikolajewski, M., Mikolajewska, J., & Khudiakova, T. N. 1990, A&A, 235, 219
+
+Mink, D. J. 2002, in Astronomical Society of the Pacific Conference
+
+Series, Vol. 281, Astronomical Data Analysis Software and Systems XI, ed.
+
+D. A. Bohlender, D. Durand, & T. H. Handley, 169
+
+Mink, D. J. 2011, in Astronomical Society of the Pacific Conference Series, Vol.
+
+442, Astronomical Data Analysis Software and Systems XX, ed. I. N. Evans,
+
+A. Accomazzi, D. J. Mink, & A. H. Rots, 305
+
+Morton, T. D., & Johnson, J. A. 2011, ApJ, 738, 170
+
+Mowlavi, N. 1999, A&A, 344, 617
+
+Muerset, U., Nussbaumer, H., Schmid, H. M., & Vogel, M. 1991, A&A, 248,
+
+458
+
+Murset, U., & Nussbaumer, H. 1994, A&A, 282, 586
+
+Nomoto, K., Saio, H., Kato, M., & Hachisu, I. 2007, ApJ, 663, 1269
+
+Nussbaumer, H. 2000, in Astronomical Society of the Pacific Conference
+
+Series, Vol. 204, Thermal and Ionization Aspects of Flows from Hot Stars, ed.
+
+H. Lamers & A. Sapar, 317
+
+Olson, E. C. 1988, AJ, 96, 1439
+
+—. 1991, AJ, 102, 1423
+
+Olson, E. C., & Etzel, P. B. 1995, AJ, 109, 1308
+
+Olson, E. C., Etzel, P. B., & Dewey, M. R. 1995, AJ, 110, 2378
+
+Origlia, L., Ferraro, F. R., Fusi Pecci, F., & Rood, R. T. 2002, ApJ, 571, 458
+
+Orosz, J. A., & Hauschildt, P. H. 2000, A&A, 364, 265
+
+Paczynski, B., & Rudak, B. 1980, A&A, 82, 349
+
+Palacios, A., Charbonnel, C., & Forestini, M. 2001, A&A, 375, L9
+
+Pasquini, L., de Medeiros, J. R., & Girardi, L. 2000, A&A, 361, 1011
+
+Percy, J. R. 2007, Understanding variable stars, ed. Percy, J. R.
+
+Perlmutter, S., et al. 1999, ApJ, 517, 565
+
+PDF PAGE 176
+REFERENCES 164
+
+Pickles, A. J. 1998, PASP, 110, 863
+
+Pigulski, A., Pojma´nski, G., Pilecki, B., & Szczygie l, D. M. 2009, Acta Astron.,
+
+59, 33
+
+Podsiadlowski, P., & Mohamed, S. 2007, Baltic Astronomy, 16, 26
+
+Pojmanski, G. 2002, Acta Astron., 52, 397
+
+Popper, D. M. 1964, ApJ, 139, 143
+
+—. 1965, ApJ, 141, 314
+
+Prialnik, D. 2000, An Introduction to the Theory of Stellar Structure and
+
+Evolution, ed. Prialnik, D.
+
+Prialnik, D., & Kovetz, A. 1995, ApJ, 445, 789
+
+Riess, A. G., et al. 1998, AJ, 116, 1009
+
+Sackmann, I.-J., Boothroyd, A. I., & Kraemer, K. E. 1993, ApJ, 418, 457
+
+Salaris, M., Cassisi, S., & Weiss, A. 2002, PASP, 114, 375
+
+Schlegel, D. J., Finkbeiner, D. P., & Davis, M. 1998, ApJ, 500, 525
+
+Servillat, M., Los, E. J., Grindlay, J. E., Tang, S., & Laycock, S. 2011, in
+
+Astronomical Society of the Pacific Conference Series, Vol. 442, Astronomical
+
+Data Analysis Software and Systems XX, ed. I. N. Evans, A. Accomazzi,
+
+D. J. Mink, & A. H. Rots, 273
+
+Shen, K. J., & Bildsten, L. 2007, ApJ, 660, 1444
+
+Simcoe, R. J., Grindlay, J. E., Los, E. J., Doane, A., Laycock, S. G.,
+
+Mink, D. J., Champine, G., & Sliski, A. 2006, in Society of Photo-Optical
+
+Instrumentation Engineers (SPIE) Conference Series, Vol. 6312, Society of
+
+Photo-Optical Instrumentation Engineers (SPIE) Conference Series
+
+Skopal, A. 2008, Journal of the American Association of Variable Star
+
+Observers (JAAVSO), 36, 9
+
+Skopal, A., et al. 1996, MNRAS, 282, 327
+
+Skrutskie, M. F., et al. 2006, AJ, 131, 1163
+
+Smak, J. I., & Plavec, M. J. 1997, Acta Astron., 47, 345
+
+PDF PAGE 177
+REFERENCES 165
+
+Smith, J. A., et al. 2002, AJ, 123, 2121
+
+Soderblom, D. R. 1983, ApJS, 53, 1
+
+Sokoloski, J. L., et al. 2006, ApJ, 636, 1002
+
+Starrfield, S., Timmes, F., Iliadis, C., Hix, W., Arnett, W., Meakin, C., &
+
+Sparks, W. 2012, Baltic Astronomy, 21, 75
+
+Stasi´nska, G., & Tylenda, R. 1990, in Lecture Notes in Physics, Berlin Springer
+
+Verlag, Vol. 369, IAU Colloq. 122: Physics of Classical Novae, ed. A. Cassatella
+
+& R. Viotti, 293
+
+Strassmeier, K. G., Handler, G., Paunzen, E., & Rauth, M. 1994, A&A, 281,
+
+855
+
+Szentgyorgyi, A. H., & Fur´esz, G. 2007, in Revista Mexicana de Astronomia
+
+y Astrofisica Conference Series, Vol. 28, Revista Mexicana de Astronomia y
+
+Astrofisica Conference Series, ed. S. Kurtz, 129–133
+
+Takeuchi, T., & Lin, D. N. C. 2003, ApJ, 593, 524
+
+Tang, S., Grindlay, J., Los, E., & Laycock, S. 2010, ApJ, 710, L77
+
+Tang, S., Grindlay, J., Los, E., & Servillat, M. 2011a, ApJ, 738, 7
+
+Tang, S., Grindlay, J., Moe, M., Orosz, J., Kurucz, R., Quinn, S., & Servillat,
+
+M. 2011b, ArXiv e-prints
+
+Tokarz, S. P., & Roll, J. 1997, in Astronomical Society of the Pacific Conference
+
+Series, Vol. 125, Astronomical Data Analysis Software and Systems VI, ed.
+
+G. Hunt & H. Payne, 140
+
+Townsley, D. M., & Bildsten, L. 2004, ApJ, 600, 390
+
+Tsuji, T. 2009, A&A, 504, 543
+
+Tyson, J. A., Wittman, D. M., Hennawi, J. F., & Spergel, D. N. 2003, Nuclear
+
+Physics B Proceedings Supplements, 124, 21
+
+Udalski, A., Kubiak, M., & Szymanski, M. 1997, Acta Astron., 47, 319
+
+Vinkovi´c, D. 2009, Nature, 459, 227
+
+Walker, A. R. 2003, Mem. Soc. Astron. Italiana, 74, 999
+
+PDF PAGE 178
+REFERENCES 166
+
+Whitelock, P. A., Feast, M. W., Marang, F., & Groenewegen, M. A. T. 2006,
+
+MNRAS, 369, 751
+
+Wurm, G., & Haack, H. 2009, in Astronomical Society of the Pacific Conference
+
+Series, Vol. 414, Cosmic Dust - Near and Far, ed. T. Henning, E. Gr¨un, &
+
+J. Steinacker, 509
+
+Zahn, J.-P. 1989, A&A, 220, 112
+
+Zola, S. 1992, Acta Astron., 42, 355

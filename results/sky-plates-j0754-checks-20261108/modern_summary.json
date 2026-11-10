@@ -1,0 +1,1612 @@
+{
+  "ztf": {
+    "667023509291889792": {
+      "status": "lightcurve_rows",
+      "raw_points": 1788,
+      "good_points": 1531,
+      "groups": [
+        {
+          "oid": "1561109100004750",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 13.6663904,
+          "robust_scatter_mag": 0.008723914920000832,
+          "p05_p95_mag": [
+            13.65297964,
+            13.68539146
+          ],
+          "min_max_mag": [
+            13.636899,
+            13.71632
+          ],
+          "median_error": 0.0113948584,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100007403",
+          "band": "zr",
+          "points": 98,
+          "median_mag": 13.075702199999998,
+          "robust_scatter_mag": 0.013874837969996898,
+          "p05_p95_mag": [
+            13.052634905,
+            13.09880573
+          ],
+          "min_max_mag": [
+            13.034893,
+            14.3925905
+          ],
+          "median_error": 0.013516677049999998,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200005209",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.6778603,
+          "robust_scatter_mag": 0.006742864799999665,
+          "p05_p95_mag": [
+            13.66530705,
+            13.68980745
+          ],
+          "min_max_mag": [
+            13.6481104,
+            13.7039528
+          ],
+          "median_error": 0.0085031651,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200006807",
+          "band": "zr",
+          "points": 83,
+          "median_mag": 13.0712795,
+          "robust_scatter_mag": 0.011673399359999889,
+          "p05_p95_mag": [
+            13.05668181,
+            13.09287293
+          ],
+          "min_max_mag": [
+            13.0517883,
+            13.1031637
+          ],
+          "median_error": 0.010407309,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        },
+        {
+          "oid": "566102100003555",
+          "band": "zg",
+          "points": 373,
+          "median_mag": 13.6848669,
+          "robust_scatter_mag": 0.010543509899998261,
+          "p05_p95_mag": [
+            13.66564938,
+            13.70473862
+          ],
+          "min_max_mag": [
+            13.6252899,
+            14.3733959
+          ],
+          "median_error": 0.0104149915,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        },
+        {
+          "oid": "566202100013775",
+          "band": "zr",
+          "points": 796,
+          "median_mag": 13.0767398,
+          "robust_scatter_mag": 0.010996073549999957,
+          "p05_p95_mag": [
+            13.053544525,
+            13.09553075
+          ],
+          "min_max_mag": [
+            12.9668083,
+            13.1914902
+          ],
+          "median_error": 0.011178544249999998,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58217.1588079,
+          "last_mjd": 60968.4636574,
+          "first_date": "2018-04-09",
+          "last_date": "2025-10-20"
+        },
+        {
+          "oid": "566302100005471",
+          "band": "zi",
+          "points": 77,
+          "median_mag": 12.8665152,
+          "robust_scatter_mag": 0.007076746320001036,
+          "p05_p95_mag": [
+            12.8495699,
+            12.88401468
+          ],
+          "min_max_mag": [
+            12.8200169,
+            12.8935499
+          ],
+          "median_error": 0.0110474844,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 59184.4037847,
+          "last_mjd": 60449.1790509,
+          "first_date": "2020-12-01",
+          "last_date": "2024-05-19"
+        }
+      ]
+    },
+    "667024467067954560": {
+      "status": "lightcurve_rows",
+      "raw_points": 513,
+      "good_points": 350,
+      "groups": [
+        {
+          "oid": "1561109100004490",
+          "band": "zg",
+          "points": 41,
+          "median_mag": 12.4084978,
+          "robust_scatter_mag": 0.01386483041999978,
+          "p05_p95_mag": [
+            12.384757,
+            12.4304981
+          ],
+          "min_max_mag": [
+            12.3769655,
+            12.4611006
+          ],
+          "median_error": 0.0124972314,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "566102100009595",
+          "band": "zg",
+          "points": 309,
+          "median_mag": 12.4300117,
+          "robust_scatter_mag": 0.014324288159999083,
+          "p05_p95_mag": [
+            12.4040844,
+            12.45652124
+          ],
+          "min_max_mag": [
+            12.36415,
+            12.4943972
+          ],
+          "median_error": 0.010910701,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        }
+      ]
+    },
+    "667380506973089536": {
+      "status": "lightcurve_rows",
+      "raw_points": 1143,
+      "good_points": 951,
+      "groups": [
+        {
+          "oid": "1561109100010795",
+          "band": "zg",
+          "points": 52,
+          "median_mag": 13.90270805,
+          "robust_scatter_mag": 0.012691352519999697,
+          "p05_p95_mag": [
+            13.879206555,
+            13.922915155
+          ],
+          "min_max_mag": [
+            13.8708344,
+            13.945879
+          ],
+          "median_error": 0.01123483665,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100016551",
+          "band": "zr",
+          "points": 97,
+          "median_mag": 13.0697641,
+          "robust_scatter_mag": 0.012732272280001202,
+          "p05_p95_mag": [
+            13.04826832,
+            13.102433999999999
+          ],
+          "min_max_mag": [
+            13.0340433,
+            13.1170702
+          ],
+          "median_error": 0.0135245183,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200005876",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.9123278,
+          "robust_scatter_mag": 0.009314879279998895,
+          "p05_p95_mag": [
+            13.8980384,
+            13.93025395
+          ],
+          "min_max_mag": [
+            13.8939676,
+            13.9431324
+          ],
+          "median_error": 0.00848457497,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200007633",
+          "band": "zr",
+          "points": 83,
+          "median_mag": 13.0610819,
+          "robust_scatter_mag": 0.009437935080001611,
+          "p05_p95_mag": [
+            13.04173064,
+            13.07798228
+          ],
+          "min_max_mag": [
+            13.0363894,
+            13.1035204
+          ],
+          "median_error": 0.0104107084,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        },
+        {
+          "oid": "566101200003496",
+          "band": "zg",
+          "points": 181,
+          "median_mag": 13.9143066,
+          "robust_scatter_mag": 0.017863402619999046,
+          "p05_p95_mag": [
+            13.8775339,
+            13.9471273
+          ],
+          "min_max_mag": [
+            13.8519173,
+            14.1328001
+          ],
+          "median_error": 0.00968099385,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        },
+        {
+          "oid": "566201200013879",
+          "band": "zr",
+          "points": 487,
+          "median_mag": 13.0752687,
+          "robust_scatter_mag": 0.012851028540001079,
+          "p05_p95_mag": [
+            13.04249725,
+            13.097014249999999
+          ],
+          "min_max_mag": [
+            12.9601269,
+            13.1406603
+          ],
+          "median_error": 0.0106982375,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58217.1588079,
+          "last_mjd": 60968.4636574,
+          "first_date": "2018-04-09",
+          "last_date": "2025-10-20"
+        }
+      ]
+    },
+    "667380575692566656": {
+      "status": "lightcurve_rows",
+      "raw_points": 693,
+      "good_points": 561,
+      "groups": [
+        {
+          "oid": "1561109100005211",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 13.919179,
+          "robust_scatter_mag": 0.013183427460000926,
+          "p05_p95_mag": [
+            13.89968928,
+            13.9458897
+          ],
+          "min_max_mag": [
+            13.8876381,
+            13.9568129
+          ],
+          "median_error": 0.0112245297,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100008049",
+          "band": "zr",
+          "points": 98,
+          "median_mag": 13.06903315,
+          "robust_scatter_mag": 0.014530147170001586,
+          "p05_p95_mag": [
+            13.04689483,
+            13.097060515
+          ],
+          "min_max_mag": [
+            13.0277834,
+            14.1190062
+          ],
+          "median_error": 0.013525486,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200005870",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.9285231,
+          "robust_scatter_mag": 0.011362349879999338,
+          "p05_p95_mag": [
+            13.91432145,
+            13.947739599999998
+          ],
+          "min_max_mag": [
+            13.905262,
+            13.9685392
+          ],
+          "median_error": 0.00848391838,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200007621",
+          "band": "zr",
+          "points": 83,
+          "median_mag": 13.0578575,
+          "robust_scatter_mag": 0.010942329300000017,
+          "p05_p95_mag": [
+            13.04133907,
+            13.0723136
+          ],
+          "min_max_mag": [
+            13.0263357,
+            13.0827265
+          ],
+          "median_error": 0.0104117868,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        },
+        {
+          "oid": "566101200003492",
+          "band": "zg",
+          "points": 85,
+          "median_mag": 13.9310217,
+          "robust_scatter_mag": 0.0164126785199984,
+          "p05_p95_mag": [
+            13.89506566,
+            13.961817719999999
+          ],
+          "min_max_mag": [
+            13.8856468,
+            13.9961605
+          ],
+          "median_error": 0.00968359783,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60964.4384606,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-16"
+        },
+        {
+          "oid": "566201200013869",
+          "band": "zr",
+          "points": 191,
+          "median_mag": 13.0754995,
+          "robust_scatter_mag": 0.012917449020000355,
+          "p05_p95_mag": [
+            13.053254599999999,
+            13.099295600000001
+          ],
+          "min_max_mag": [
+            13.0231495,
+            13.117939
+          ],
+          "median_error": 0.0106981946,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58217.1588079,
+          "last_mjd": 60952.4348495,
+          "first_date": "2018-04-09",
+          "last_date": "2025-10-04"
+        }
+      ]
+    },
+    "667380816210736128": {
+      "status": "lightcurve_rows",
+      "raw_points": 373,
+      "good_points": 300,
+      "groups": [
+        {
+          "oid": "1561109100005100",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 14.0337486,
+          "robust_scatter_mag": 0.010300363500001145,
+          "p05_p95_mag": [
+            14.01367146,
+            14.054687900000001
+          ],
+          "min_max_mag": [
+            14.003933,
+            14.0787888
+          ],
+          "median_error": 0.0111562433,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100007900",
+          "band": "zr",
+          "points": 97,
+          "median_mag": 13.1437464,
+          "robust_scatter_mag": 0.011611130159999086,
+          "p05_p95_mag": [
+            13.12185996,
+            13.17171134
+          ],
+          "min_max_mag": [
+            13.1144629,
+            13.1842947
+          ],
+          "median_error": 0.0134275472,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200005740",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 14.0416031,
+          "robust_scatter_mag": 0.010175973359998638,
+          "p05_p95_mag": [
+            14.024290050000001,
+            14.062250599999999
+          ],
+          "min_max_mag": [
+            14.0185881,
+            14.0749998
+          ],
+          "median_error": 0.00848187692,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200007434",
+          "band": "zr",
+          "points": 83,
+          "median_mag": 13.1364822,
+          "robust_scatter_mag": 0.008108784179999521,
+          "p05_p95_mag": [
+            13.12024953,
+            13.15121991
+          ],
+          "min_max_mag": [
+            13.1094503,
+            13.155961
+          ],
+          "median_error": 0.0103861615,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        },
+        {
+          "oid": "566201200013711",
+          "band": "zr",
+          "points": 16,
+          "median_mag": 13.1630287,
+          "robust_scatter_mag": 0.013821760889999488,
+          "p05_p95_mag": [
+            13.1461377,
+            13.188078175000001
+          ],
+          "min_max_mag": [
+            13.144743,
+            13.1908741
+          ],
+          "median_error": 0.0106826271,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58217.1588079,
+          "last_mjd": 59275.2335648,
+          "first_date": "2018-04-09",
+          "last_date": "2021-03-02"
+        }
+      ]
+    },
+    "667382255023480576": {
+      "status": "lightcurve_rows",
+      "raw_points": 354,
+      "good_points": 283,
+      "groups": [
+        {
+          "oid": "1561109100005146",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 13.6762447,
+          "robust_scatter_mag": 0.009649946880000959,
+          "p05_p95_mag": [
+            13.65430772,
+            13.69465294
+          ],
+          "min_max_mag": [
+            13.6408806,
+            13.7230768
+          ],
+          "median_error": 0.0113877645,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100007975",
+          "band": "zr",
+          "points": 97,
+          "median_mag": 12.9402161,
+          "robust_scatter_mag": 0.011471172720001645,
+          "p05_p95_mag": [
+            12.92012674,
+            12.96709268
+          ],
+          "min_max_mag": [
+            12.9126625,
+            14.1761999
+          ],
+          "median_error": 0.013698007,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200005790",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.6811686,
+          "robust_scatter_mag": 0.011188440900000181,
+          "p05_p95_mag": [
+            13.6686144,
+            13.6990099
+          ],
+          "min_max_mag": [
+            13.6558952,
+            13.7072449
+          ],
+          "median_error": 0.00850279257,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200007491",
+          "band": "zr",
+          "points": 82,
+          "median_mag": 12.93141125,
+          "robust_scatter_mag": 0.009676856069999388,
+          "p05_p95_mag": [
+            12.918762039999999,
+            12.952811215
+          ],
+          "min_max_mag": [
+            12.9103098,
+            12.9811058
+          ],
+          "median_error": 0.010455947350000001,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        }
+      ]
+    },
+    "667391399010134400": {
+      "status": "no_rows_in_cone",
+      "raw_points": 0,
+      "good_points": 0,
+      "groups": []
+    },
+    "667397618122678528": {
+      "status": "no_rows_in_cone",
+      "raw_points": 0,
+      "good_points": 0,
+      "groups": []
+    },
+    "667401913089980544": {
+      "status": "lightcurve_rows",
+      "raw_points": 575,
+      "good_points": 470,
+      "groups": [
+        {
+          "oid": "1561109100003477",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 12.6100626,
+          "robust_scatter_mag": 0.10306323552000213,
+          "p05_p95_mag": [
+            12.549960519999999,
+            12.86457058
+          ],
+          "min_max_mag": [
+            12.5255365,
+            12.8887901
+          ],
+          "median_error": 0.0123016657,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1562112200003829",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 12.7714739,
+          "robust_scatter_mag": 0.09836191091999945,
+          "p05_p95_mag": [
+            12.56449845,
+            12.8640523
+          ],
+          "min_max_mag": [
+            12.5621185,
+            12.8967772
+          ],
+          "median_error": 0.00868999586,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "566102100008926",
+          "band": "zg",
+          "points": 366,
+          "median_mag": 12.7713137,
+          "robust_scatter_mag": 0.09632585634000074,
+          "p05_p95_mag": [
+            12.57015895,
+            12.893514849999999
+          ],
+          "min_max_mag": [
+            12.5442028,
+            14.4755735
+          ],
+          "median_error": 0.0107514742,
+          "fainter_than_median_by_0_3": 2,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        }
+      ]
+    },
+    "667402462845806080": {
+      "status": "lightcurve_rows",
+      "raw_points": 574,
+      "good_points": 474,
+      "groups": [
+        {
+          "oid": "1561109100003545",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 12.7598677,
+          "robust_scatter_mag": 0.013097140139998608,
+          "p05_p95_mag": [
+            12.73940814,
+            12.77655278
+          ],
+          "min_max_mag": [
+            12.7196636,
+            12.8009052
+          ],
+          "median_error": 0.0121597527,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1562112200003864",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 12.7747326,
+          "robust_scatter_mag": 0.010800889260001053,
+          "p05_p95_mag": [
+            12.759172,
+            12.7947364
+          ],
+          "min_max_mag": [
+            12.7479525,
+            12.7996845
+          ],
+          "median_error": 0.00868909527,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "566102100002194",
+          "band": "zg",
+          "points": 370,
+          "median_mag": 12.778970699999999,
+          "robust_scatter_mag": 0.014496195630002503,
+          "p05_p95_mag": [
+            12.751462824999999,
+            12.806558935
+          ],
+          "min_max_mag": [
+            12.7300215,
+            14.2235842
+          ],
+          "median_error": 0.010748055749999999,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        }
+      ]
+    },
+    "667403768515830272": {
+      "status": "lightcurve_rows",
+      "raw_points": 128,
+      "good_points": 91,
+      "groups": [
+        {
+          "oid": "1561109100003478",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 12.4676781,
+          "robust_scatter_mag": 0.015177079680001877,
+          "p05_p95_mag": [
+            12.44890975,
+            12.49268105
+          ],
+          "min_max_mag": [
+            12.4352617,
+            12.5033989
+          ],
+          "median_error": 0.0124393115,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1562112200003860",
+          "band": "zg",
+          "points": 40,
+          "median_mag": 12.47616245,
+          "robust_scatter_mag": 0.008073498300000646,
+          "p05_p95_mag": [
+            12.45975031,
+            12.49836031
+          ],
+          "min_max_mag": [
+            12.4460154,
+            12.5064459
+          ],
+          "median_error": 0.00877636857,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60341.3750347,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-01"
+        }
+      ]
+    },
+    "667409918908989568": {
+      "status": "lightcurve_rows",
+      "raw_points": 354,
+      "good_points": 284,
+      "groups": [
+        {
+          "oid": "1561109100002307",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 13.6034803,
+          "robust_scatter_mag": 0.013183427460000926,
+          "p05_p95_mag": [
+            13.58627586,
+            13.61771912
+          ],
+          "min_max_mag": [
+            13.5591173,
+            13.6302061
+          ],
+          "median_error": 0.0114409309,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100013260",
+          "band": "zr",
+          "points": 98,
+          "median_mag": 12.802697649999999,
+          "robust_scatter_mag": 0.01181891655000041,
+          "p05_p95_mag": [
+            12.783575845000001,
+            12.82150719
+          ],
+          "min_max_mag": [
+            12.7634468,
+            14.1501045
+          ],
+          "median_error": 0.0138867921,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200002538",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.6079216,
+          "robust_scatter_mag": 0.008701231140001743,
+          "p05_p95_mag": [
+            13.596304400000001,
+            13.627884850000001
+          ],
+          "min_max_mag": [
+            13.5865002,
+            13.6394043
+          ],
+          "median_error": 0.0085116988,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200003336",
+          "band": "zr",
+          "points": 82,
+          "median_mag": 12.78887035,
+          "robust_scatter_mag": 0.01007419286999962,
+          "p05_p95_mag": [
+            12.774123015,
+            12.802667170000001
+          ],
+          "min_max_mag": [
+            12.7600002,
+            12.8115797
+          ],
+          "median_error": 0.0105096502,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        }
+      ]
+    },
+    "667411636895893504": {
+      "status": "lightcurve_rows",
+      "raw_points": 354,
+      "good_points": 283,
+      "groups": [
+        {
+          "oid": "1561109100001877",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 13.8403349,
+          "robust_scatter_mag": 0.014492711519999976,
+          "p05_p95_mag": [
+            13.81621092,
+            13.86738244
+          ],
+          "min_max_mag": [
+            13.8056498,
+            13.8747406
+          ],
+          "median_error": 0.0112749226,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100012707",
+          "band": "zr",
+          "points": 98,
+          "median_mag": 12.728860350000001,
+          "robust_scatter_mag": 0.013796334299997316,
+          "p05_p95_mag": [
+            12.70645036,
+            12.744612865
+          ],
+          "min_max_mag": [
+            12.6949568,
+            13.7556467
+          ],
+          "median_error": 0.01398992395,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200002069",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.8499146,
+          "robust_scatter_mag": 0.012089120399999004,
+          "p05_p95_mag": [
+            13.83349705,
+            13.8701525
+          ],
+          "min_max_mag": [
+            13.8297396,
+            13.8819246
+          ],
+          "median_error": 0.00848789886,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200002703",
+          "band": "zr",
+          "points": 81,
+          "median_mag": 12.7153168,
+          "robust_scatter_mag": 0.009256909620000933,
+          "p05_p95_mag": [
+            12.7007141,
+            12.7346535
+          ],
+          "min_max_mag": [
+            12.6906281,
+            12.7438526
+          ],
+          "median_error": 0.0105388258,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        }
+      ]
+    },
+    "667434486121884288": {
+      "status": "lightcurve_rows",
+      "raw_points": 1579,
+      "good_points": 1375,
+      "groups": [
+        {
+          "oid": "1562112200001913",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.6857634,
+          "robust_scatter_mag": 0.009447868500001814,
+          "p05_p95_mag": [
+            13.667900549999999,
+            13.70637415
+          ],
+          "min_max_mag": [
+            13.6651297,
+            13.7129488
+          ],
+          "median_error": 0.00850228034,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200002487",
+          "band": "zr",
+          "points": 82,
+          "median_mag": 13.08332445,
+          "robust_scatter_mag": 0.011250561839999252,
+          "p05_p95_mag": [
+            13.066998799999999,
+            13.10696444
+          ],
+          "min_max_mag": [
+            13.0610723,
+            13.1257095
+          ],
+          "median_error": 0.0104033267,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        },
+        {
+          "oid": "566101200000157",
+          "band": "zg",
+          "points": 368,
+          "median_mag": 13.685370899999999,
+          "robust_scatter_mag": 0.013825244999998066,
+          "p05_p95_mag": [
+            13.66062023,
+            13.709984225
+          ],
+          "min_max_mag": [
+            13.6283722,
+            14.4740648
+          ],
+          "median_error": 0.009654491675000001,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        },
+        {
+          "oid": "566201200008978",
+          "band": "zr",
+          "points": 797,
+          "median_mag": 13.0936489,
+          "robust_scatter_mag": 0.014386557359999885,
+          "p05_p95_mag": [
+            13.05731696,
+            13.1162739
+          ],
+          "min_max_mag": [
+            12.9748144,
+            13.8762617
+          ],
+          "median_error": 0.0106948316,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58217.1588079,
+          "last_mjd": 60968.4636574,
+          "first_date": "2018-04-09",
+          "last_date": "2025-10-20"
+        },
+        {
+          "oid": "566301200000446",
+          "band": "zi",
+          "points": 77,
+          "median_mag": 12.91502,
+          "robust_scatter_mag": 0.011960282459999826,
+          "p05_p95_mag": [
+            12.884247,
+            12.930971119999999
+          ],
+          "min_max_mag": [
+            12.8572044,
+            12.9331398
+          ],
+          "median_error": 0.0108499322,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 59184.4037847,
+          "last_mjd": 60449.1790509,
+          "first_date": "2020-12-01",
+          "last_date": "2024-05-19"
+        }
+      ]
+    },
+    "667454586568716288": {
+      "status": "lightcurve_rows",
+      "raw_points": 1787,
+      "good_points": 1334,
+      "groups": [
+        {
+          "oid": "1561109100002134",
+          "band": "zg",
+          "points": 53,
+          "median_mag": 13.3418446,
+          "robust_scatter_mag": 0.012080521320001225,
+          "p05_p95_mag": [
+            13.31538566,
+            13.35735058
+          ],
+          "min_max_mag": [
+            13.2997532,
+            13.3822012
+          ],
+          "median_error": 0.0116457418,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100003411",
+          "band": "zr",
+          "points": 89,
+          "median_mag": 12.4531898,
+          "robust_scatter_mag": 0.012055020600000821,
+          "p05_p95_mag": [
+            12.425601,
+            12.471829
+          ],
+          "min_max_mag": [
+            12.3931913,
+            14.0677881
+          ],
+          "median_error": 0.0143843843,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200002257",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.3609562,
+          "robust_scatter_mag": 0.008569724520000347,
+          "p05_p95_mag": [
+            13.34381005,
+            13.38059045
+          ],
+          "min_max_mag": [
+            13.3387165,
+            13.3956337
+          ],
+          "median_error": 0.00855112169,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200002965",
+          "band": "zr",
+          "points": 68,
+          "median_mag": 12.452130799999999,
+          "robust_scatter_mag": 0.007988619450000303,
+          "p05_p95_mag": [
+            12.438210665,
+            12.470161725
+          ],
+          "min_max_mag": [
+            12.4361696,
+            12.4764919
+          ],
+          "median_error": 0.0106502706,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5090856,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        },
+        {
+          "oid": "566102100000625",
+          "band": "zg",
+          "points": 372,
+          "median_mag": 13.35830545,
+          "robust_scatter_mag": 0.014621327070000505,
+          "p05_p95_mag": [
+            13.33195164,
+            13.384360545
+          ],
+          "min_max_mag": [
+            13.2895041,
+            13.9275923
+          ],
+          "median_error": 0.0105156386,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58205.1525926,
+          "last_mjd": 60968.4094329,
+          "first_date": "2018-03-28",
+          "last_date": "2025-10-20"
+        },
+        {
+          "oid": "566202100010296",
+          "band": "zr",
+          "points": 630,
+          "median_mag": 12.46028135,
+          "robust_scatter_mag": 0.013352369729998665,
+          "p05_p95_mag": [
+            12.29148498,
+            12.482453545
+          ],
+          "min_max_mag": [
+            11.992487,
+            13.790307
+          ],
+          "median_error": 0.011597889,
+          "fainter_than_median_by_0_3": 2,
+          "brighter_than_median_by_0_3": 6,
+          "first_mjd": 58217.1588079,
+          "last_mjd": 60966.4664352,
+          "first_date": "2018-04-09",
+          "last_date": "2025-10-18"
+        },
+        {
+          "oid": "566302100001117",
+          "band": "zi",
+          "points": 71,
+          "median_mag": 12.0881758,
+          "robust_scatter_mag": 0.012848359860001496,
+          "p05_p95_mag": [
+            12.07069015,
+            12.11224745
+          ],
+          "min_max_mag": [
+            12.0647964,
+            12.1389322
+          ],
+          "median_error": 0.0119111855,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 59184.4037847,
+          "last_mjd": 60449.1790509,
+          "first_date": "2020-12-01",
+          "last_date": "2024-05-19"
+        }
+      ]
+    },
+    "667456064037465216": {
+      "status": "no_rows_in_cone",
+      "raw_points": 0,
+      "good_points": 0,
+      "groups": []
+    },
+    "667459156414046976": {
+      "status": "lightcurve_rows",
+      "raw_points": 354,
+      "good_points": 284,
+      "groups": [
+        {
+          "oid": "1561109100001461",
+          "band": "zg",
+          "points": 52,
+          "median_mag": 13.898018350000001,
+          "robust_scatter_mag": 0.013246289699998123,
+          "p05_p95_mag": [
+            13.87923129,
+            13.919119245
+          ],
+          "min_max_mag": [
+            13.8709097,
+            13.9235344
+          ],
+          "median_error": 0.01123779315,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58384.458669,
+          "last_mjd": 60335.2960069,
+          "first_date": "2018-09-23",
+          "last_date": "2024-01-26"
+        },
+        {
+          "oid": "1561209100002385",
+          "band": "zr",
+          "points": 98,
+          "median_mag": 13.1665716,
+          "robust_scatter_mag": 0.012487050240000899,
+          "p05_p95_mag": [
+            13.145791065000001,
+            13.18730055
+          ],
+          "min_max_mag": [
+            13.1350365,
+            13.9635925
+          ],
+          "median_error": 0.01339795905,
+          "fainter_than_median_by_0_3": 1,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58429.3956597,
+          "last_mjd": 60929.5155787,
+          "first_date": "2018-11-07",
+          "last_date": "2025-09-11"
+        },
+        {
+          "oid": "1562112200008702",
+          "band": "zg",
+          "points": 51,
+          "median_mag": 13.9097385,
+          "robust_scatter_mag": 0.011924848319999218,
+          "p05_p95_mag": [
+            13.8966422,
+            13.930849049999999
+          ],
+          "min_max_mag": [
+            13.8911324,
+            13.9378653
+          ],
+          "median_error": 0.00848468672,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58427.4089815,
+          "last_mjd": 60355.2875579,
+          "first_date": "2018-11-05",
+          "last_date": "2024-02-15"
+        },
+        {
+          "oid": "1562212200002036",
+          "band": "zr",
+          "points": 83,
+          "median_mag": 13.1614027,
+          "robust_scatter_mag": 0.010013332139999475,
+          "p05_p95_mag": [
+            13.144163260000001,
+            13.17638972
+          ],
+          "min_max_mag": [
+            13.1349916,
+            13.1823721
+          ],
+          "median_error": 0.0103783542,
+          "fainter_than_median_by_0_3": 0,
+          "brighter_than_median_by_0_3": 0,
+          "first_mjd": 58432.3926157,
+          "last_mjd": 60934.5170833,
+          "first_date": "2018-11-10",
+          "last_date": "2025-09-16"
+        }
+      ]
+    }
+  },
+  "tess": [
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+      "sector": 44,
+      "column": "KSPSAP_FLUX",
+      "raw_points": 3278,
+      "good_points": 2821,
+      "first_date": "2021-10-13",
+      "last_date": "2021-11-05",
+      "robust_scatter_mag": 0.0014166868359500218,
+      "p05_p95_relative_mag": [
+        -0.002362872676338298,
+        0.0023298267669682932
+      ],
+      "crowdsap": null
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+      "sector": 45,
+      "column": "KSPSAP_FLUX",
+      "raw_points": 3450,
+      "good_points": 2811,
+      "first_date": "2021-11-07",
+      "last_date": "2021-12-02",
+      "robust_scatter_mag": 0.0013584028808561312,
+      "p05_p95_relative_mag": [
+        -0.002304948935799839,
+        0.0022129999103050503
+      ],
+      "crowdsap": null
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+      "sector": 46,
+      "column": "KSPSAP_FLUX",
+      "raw_points": 3707,
+      "good_points": 2891,
+      "first_date": "2021-12-04",
+      "last_date": "2021-12-30",
+      "robust_scatter_mag": 0.0013652996046438141,
+      "p05_p95_relative_mag": [
+        -0.002483480449864479,
+        0.002360785772497693
+      ],
+      "crowdsap": null
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+      "sector": 71,
+      "column": "DET_FLUX",
+      "raw_points": 10932,
+      "good_points": 8121,
+      "first_date": "2023-10-18",
+      "last_date": "2023-11-10",
+      "robust_scatter_mag": 0.0026265290890907568,
+      "p05_p95_relative_mag": [
+        -0.0045212082378713785,
+        0.004310740319651349
+      ],
+      "crowdsap": null
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+      "sector": 72,
+      "column": "DET_FLUX",
+      "raw_points": 10701,
+      "good_points": 9001,
+      "first_date": "2023-11-13",
+      "last_date": "2023-12-07",
+      "robust_scatter_mag": 0.0025362653057954205,
+      "p05_p95_relative_mag": [
+        -0.004191486268164177,
+        0.004220593156562285
+      ],
+      "crowdsap": null
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+      "sector": 71,
+      "column": "PDCSAP_FLUX",
+      "raw_points": 11205,
+      "good_points": 8772,
+      "first_date": "2023-10-18",
+      "last_date": "2023-11-10",
+      "robust_scatter_mag": 0.0028119805964523696,
+      "p05_p95_relative_mag": [
+        -0.00743046958896931,
+        0.0048374864913710664
+      ],
+      "crowdsap": 0.98887753
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+      "sector": 72,
+      "column": "PDCSAP_FLUX",
+      "raw_points": 10975,
+      "good_points": 8435,
+      "first_date": "2023-11-14",
+      "last_date": "2023-12-07",
+      "robust_scatter_mag": 0.005744272727870249,
+      "p05_p95_relative_mag": [
+        -0.008898535217968196,
+        0.007785519423759596
+      ],
+      "crowdsap": 0.99048316
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+      "sector": 1751,
+      "column": "PDCSAP_FLUX",
+      "raw_points": 3131,
+      "good_points": 1502,
+      "first_date": "2026-01-18",
+      "last_date": "2026-01-22",
+      "robust_scatter_mag": 0.0018583659038725376,
+      "p05_p95_relative_mag": [
+        -0.0032394413152428154,
+        0.0032617269741059044
+      ],
+      "crowdsap": 0.99155581
+    }
+  ],
+  "limits": [
+    "No rows in a3arcsec cone is not proof that survey images are absent.",
+    "catflags0 and reported errors do not by themselves rule out saturation, blending or all instrumental effects.",
+    "Scatter is computed within each object/filter; no cross-detector absolute trend or period claim.",
+    "TESS reductions and sector normalisation can suppress long-term variations. Modern stability cannot prove1937stability."
+  ]
+}

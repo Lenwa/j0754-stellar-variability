@@ -1,0 +1,156 @@
+Independent review of J0754 competing spectral-change models
+Reviewer: model_review subagent; 8 November 2026
+Scope: read-only source/data/output review and numerical reproduction. No network,
+source edits, new physical-model fitting to W2, or commits. This file is the only
+reviewer-authored artifact. Initial findings below describe the original best-fit
+envelopes; the final delta review records root's subsequent compatible-set update.
+
+Verdict
+No blocking implementation error found in the original passband calculations or
+the g/W1-only fitting logic. The comparison supports multiple bounded spectral
+explanations; it does not select a unique cause. One material range-reporting issue
+was identified and root explicitly agreed to address it before strong color claims.
+
+Material finding: best-fit ranges were narrower than full compatible sets
+compare_stellar_models.py originally saved one best tau per partial-covering
+nuisance case and one best spot temperature per starting-spot case. summarize()
+then retained best fits with max g/W1 residual <=0.02 mag. Those are ranges among
+profiled best fits, not the envelope of every sampled physical parameter set
+satisfying the same tolerance. The distinction matters for proposed new-color
+discrimination. At the nominal atmosphere (5000 K, logg2.5, [M/H]=-0.5), scanning
+all dust tau while holding g exactly fixed yields g-Ks changes 0.085-0.148 mag
+across the three laws; allowing both g and W1 their +/-0.02 tolerance yields
+0.071-0.166 mag. The original primary best-fit summary was only 0.107-0.123 mag.
+These are descriptive sampled ranges, not statistical intervals.
+Concrete resolution: preserve original best-fit records, additionally enumerate
+the declared compatible parameter set in each family, summarize that envelope,
+and identify the tolerance and sampling density. Root is implementing this.
+
+Passband, spectrum, and extinction checks
+- All 39 cached CK04 FITS wavelength arrays are identical, with 1221 samples.
+  Headers and column units explicitly identify Angstrom wavelengths and FLAM
+  surface fluxes. Their 90.9-1.6e6 Angstrom coverage encloses every response used.
+- SVO identity metadata match distinct canonical filter filenames. SDSS g/i use
+  DetectorType=1; WISE W1/W2 and generic Cousins I use DetectorType=0. Multiplying
+  photon responses by wavelength for F_lambda is correct; energy responses use
+  no additional wavelength factor. Normalization cancels from each fading ratio.
+  No AB/Vega zero point is needed for these within-band differential magnitudes.
+- Independent dense quadrature of the same linearly interpolated nominal spectrum
+  and response agrees with band_flux() to 6.6e-5 mag or better for all 12 bands.
+  This verifies numerical quadrature, not the underlying stellar atmosphere.
+  Native response-covered samples: g107, W1 100, W2 84; W1/W2 steps <=200 Angstrom.
+- The Draine native file identifies column 4 (zero-based index3) as C_ext/H and
+  wavelength in microns. Ascending/log interpolation and conversion from
+  Angstrom to micron in extinction_deficits() are consistent. Optical depth is
+  normalized at 0.48 micron; finite-depth transmission is integrated over each
+  spectrum-weighted passband before the covering fraction is applied.
+- No source mutation or stale case-insensitive I/i file loading was found. The
+  filterID guard correctly rejects a wrong response even if a filename collides.
+
+Fit reproduction and leakage
+- Independently reloaded native spectra and reproduced nominal temperature+scale:
+  T_faint=4837.949442 K, area ratio=0.930641806, W2 fade=0.125534295 mag.
+- Reproduced the nominal 3500 K two-component case: companion area ratio
+  3.924888117, covered fraction=0.296406277, W2 fade=0.104000148 mag.
+- Changed only supplied W2 from 0.08875 to 4 mag and reran all four flexible
+  helpers (temperature+scale, partial dust, two component, spots). Predictions
+  changed by exactly zero. Other family optimization in main() explicitly uses
+  only the first two bands. summarize() also gates only g/W1. No W2-based model
+  selection was found. W2 was already known and remains a retrospective check.
+- The original seven stellar-model tests passed. Their synthetic recovery checks
+  address the relevant algebra and detector-weighting/coverage/identity contracts.
+
+Physical coverage that should remain visible in the report
+- At fixed nuisance assumptions, gray/screen/fixed-area cooling fit one quantity;
+  temperature+scale, spots, partial dust, and two-component geometry effectively
+  fit two quantities to two training bands. Exact reproduction by flexible
+  families therefore supplies no comparative likelihood or unique explanation.
+  Counts of passing sampled cases are not model probabilities or physical rates.
+- 13 of the original 97 compatible best-fit spot cases hit the 3500 K cool-grid
+  floor; fitted faint-state spot fractions span 0.260-0.798. Cooler atmosphere
+  spectra and different initial spot fractions could alter the predictions.
+- All three original compatible fixed-area best fits use the lowest tested
+  primary bright temperature, 4000 K, and T_faint=3858-3864 K. The four-point
+  primary temperature grid cannot support a claim that only three physical
+  stellar configurations work, or that success has low prior probability.
+- Original two-component area ratios span 2.80-11.09 with covered fractions
+  0.262-0.996. These are bounded spectral dilution geometries. Neither shared
+  logg/metallicity nor a fitted area ratio establishes a coeval stellar pair,
+  its orbital geometry, or its dynamical ability to cause the multi-year fade.
+- No calibrated static SED constraint was used to weight bright T/logg/metallicity.
+  The 250 K LTE grid and the SDSS-g proxy restrict absolute color predictions;
+  a 10 K interpolated spot search does not create 10 K atmosphere information.
+  Root's existing qualifications properly avoid confidence intervals and cause
+  probabilities. New-color claims should use the broadened compatible envelopes.
+
+Additional bounded 35.9204566-day audit
+Reviewed orbit_photometry.py, its four tests, and short_period/report.md. Joint
+weighted nuisance projection correctly residualizes both the signal design and
+data; validation periodic coefficients remain frozen from training while nuisance
+terms are re-estimated. No period search, brightness clipping, or unintended
+cross-band pooling was found. Independent reproduction of the primary ASAS-SN g
+test matches all saved beta vectors exactly: 1396 daily camera groups; training
+semi-amplitude=0.025655446 mag, validation=0.000680355 mag, held-out SSE improvement
+=-0.260178410. Four orbit tests pass. The report correctly limits this to the exact
+candidate period/waveform and states daily-noise, cadence-shift, Gaia ephemeris,
+short-sector, and TESS reduction limitations. This supports non-establishment of
+a stable counterpart, not exclusion of companions or all nearby/evolving periods.
+
+Final changed-output review
+The compatible-envelope update resolves the material range-reporting concern.
+Original best-fit records remain separate and explicitly labeled. The new
+compatibility_envelopes use g/W1 tolerance constraints only, with no W2-based
+pruning. The qualification names the temperature, tau, and companion-area nodes,
+and explicitly denies a mathematically exhaustive or calibrated confidence set.
+
+The general fraction interval correctly inverts the two training magnitude
+bounds into flux-loss bounds and intersects the resulting covering constraints
+with physical [0,limit]. Sampling the two endpoints suffices for each within-band
+prediction and color at a fixed supplied deficit because the corresponding
+derivatives have constant sign inside the positive-flux interval. The midpoint
+is an additional sample, not a statistical weight. Spot changes correctly use
+effective deficit d/(1-start*d) with change <=1-start; independent direct flux
+ratios agree to 2e-15 at starts 0, 0.1, and 0.3, and every checked end fraction
+remains <=1. The temperature+scale calculation correctly intersects both gray
+offset intervals at each sampled cooling temperature. Nominal compatible cooling
+temperatures are 4810-4868 K, with gray offsets 0.05109-0.10547 mag. Independent
+nominal dust, spot, and temperature predictions all satisfy both training bounds
+and lie inside the saved primary envelopes. W2-only mutation of the new dust
+envelope input leaves the predictions identical. All eight model tests pass,
+including the non-optimal-compatible covering regression.
+
+Updated primary envelope examples (magnitude color changes):
+- Partial dust covering: V-I 0.000143-0.005100, H-Ks 0.040021-0.057561,
+  g-Ks 0.069168-0.166162.
+- Cool spots: V-I 0.028773-0.156842, H-Ks -0.006848-0.018902,
+  g-Ks 0.160661-0.259178.
+Thus g-Ks now overlaps; it cannot alone provide the earlier apparent clean family
+split. V-I and H-Ks remain separated within these sampled assumptions, but the
+smallest family gaps are only about 0.024 and 0.021 mag, comparable to individual
+declared band/model systematic scales. They are conditional targets for accurate
+matched-state color observations, not guaranteed mechanism discrimination.
+Atmosphere assumptions, colder spots, initial coverage, geometric priors, and
+unmodeled mixtures remain outside the sampled-envelope completeness claim.
+
+No remaining numerical or physical-interval blocker found. Final visual review
+of the regenerated model_predictions.png confirms the W2 axis includes the
+-0.013636-mag temperature+scale brightening tail, the legend is outside the axes,
+and every family and failure label is visible. The right panel now shows V-I;
+all six color predictions remain available in the numerical outputs. The source
+stellar_models_README.md explicitly explains g-Ks overlap, modest V-I/H-Ks gaps,
+systematic scales, grid boundaries, model capacity, and reproduction commands.
+The earlier range and presentation concerns are closed. Final verdict: suitable
+for the declared exploratory comparison, with sampled-grid/tolerance envelopes
+and retrospective W2 checking clearly distinguished from continuous confidence
+regions, a calibrated model selection, or a unique physical explanation.
+
+Quick historical-audit cross-check
+Read history/history_audit.txt for internal count and provenance consistency.
+No obvious laundering found: 303 dated plus 11 undated APPLAUSE exposure rows
+sum to314; geometric coverage remains separate from target photometry and limits;
+the nine scan rows correspond to six plates; existing1952/1971 epochs are not
+claimed as new; ASAS raw, selected, duplicate and unique-frame counts are kept
+distinct; NSVS145 remains a catalogue count, not recovered measurements. Failed
+queries, flagged natural magnitudes, and source non-recoveries are explicitly
+retained as those outcomes. This is a text/internal-consistency check, not an
+independent fresh archive retrieval.

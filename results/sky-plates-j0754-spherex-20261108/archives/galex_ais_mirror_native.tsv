@@ -1,0 +1,46 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-08T23:44:48 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-08T23:44:48	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=II%2F335%2Fgalex_ais&-c=118.69117410685+%2B16.694621231895&-c.rs=30&-out.all=&-out.max=500	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=118.691174+16.694621,rs=30.	
+#Constraint -out.max=500
+
+#RESOURCE=yCat_2335
+#Name: II/335
+#Title: Revised catalog of GALEX UV sources (GUVcat_AIS GR6+7) (Bianchi+ 2017)
+#INFO	ivoid=ivo://cds.vizier/ii/335	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/335	    IVOID of underlying data collection
+#INFO	creator=Bianchi L.	    First author or institution
+#INFO	cites=bibcode:2017ApJS..230...24B	    Article or Data origin sources
+#INFO	journal=ApJS	    Journal name
+#INFO	original_date=2017	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/335	    Dataset landing page
+#INFO	publication_date=2023-12-20	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	II_335_galex_ais:
+#Name: II/335/galex_ais
+#Title: the revised GALEX catalog of UV sources (GUVcat_AIS) from GR6+7 (82,992,086 sources)
+#Column	RAJ2000	(F10.6)	Source's right ascension (J2000) (RA)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	Source's declination (J2000) (DEC)	[ucd=pos.eq.dec;meta.main]
+#Column	Name	(a22)	GALEX identifier in JHHMMSS.s+DDMMSS format; column added by CDS	[ucd=meta.id]
+#Column	r.fov	(F9.6)	[/0.6] Distance of source from center of the field (fov_radius)	[ucd=pos.angDistance]
+#Column	b	(I1)	[1/3] bands: 1=NUV, 2=FUV, 3=both (band)	[ucd=meta.code]
+#Column	FUVmag	(F7.4)	[10.6/23.8]? GALEX FUV calibrated magnitude in AB system (fuv_mag)	[ucd=phot.mag;em.UV.100-200nm]
+#Column	e_FUVmag	(F7.4)	[0.001/0.6]? FUV mag error (fuv_magerr)	[ucd=stat.error;phot.mag;em.UV.100-200nm]
+#Column	NUVmag	(F7.4)	[9.6/24.5] GALEX NUV calibrated magnitude in AB system (nuv_mag)	[ucd=phot.mag;em.UV.200-300nm]
+#Column	e_NUVmag	(F7.4)	[0.0007/0.5] NUV mag error (nuv_magerr)	[ucd=stat.error;phot.mag]
+#Column	Fafl	(I3)	[0/416]? FUV artifact flag (logical OR near source) (fuv_artifact)	[ucd=meta.code]
+#Column	Nafl	(I3)	[0/913] NUV artifact flag (logical OR near source) (nuv_artifact)	[ucd=meta.code]
+#Column	Fexf	(I2)	[0/19]? Extraction flags for FUV band (fuv_flags)	[ucd=meta.code]
+#Column	Nexf	(I2)	[0/51] Extraction flags for NUV band (nuv_flags)	[ucd=meta.code]
+#Column	Fr	(F9.6)	[-0.2/0.3]? Source FWHM in FUV assuming a gaussian core (fuv_fwhm_world)	[ucd=phys.angSize]
+#Column	Nr	(F9.6)	[-0.1/0.5] Source FWHM in NUV assuming a gaussian core (nuv_fwhm_world)	[ucd=phys.angSize]

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+    <title>WSA Database - SQL Query Results</title> 
+
+    <script type="text/javascript" src="http://wsa.roe.ac.uk/common/configurestyles.js"> 
+    </script> 
+  </head> 
+
+  <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#000080" alink="#FF0000" onLoad="swap(0);" > 
+
+<img name="imgMain" src="http://wsa.roe.ac.uk/static.gif" border="1"><p>
+    <h1>WSA Database - SQL Query Results</h1> 
+
+    <p> 
+      Data file generating queries can take a bit longer to execute 
+      as they write to a file ALL rows returned by the query. 
+    </p> 
+
+    <p> 
+      A web link to your generated output file will appear at the 
+      bottom of this page. 
+    </p> 
+
+    <p>
+<b>Connecting to UHSDR3 database</b><br>
+      <b>QUERY STARTED:</b> Sun Nov 08 23:49:39 GMT 2026&nbsp;&nbsp;&nbsp;[2 active, 21277 total] 
+    </p> 
+
+    <p> 
+      Please keep this browser window open and wait for your results or further information to	 appear below... 
+    </p> 
+
+timeout: 60<p>Connected to database
+<p>Submitted query: SELECT TOP 100 * FROM uhsSource WHERE ra BETWEEN 118.6897 AND 118.6927 AND dec BETWEEN 16.6932 AND 16.6961<p>
+    <p>
+<script language="JavaScript" type="text/javascript"> <!-- 
+swap(1);
+--> </script>
+&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->      OK
+    </p> 
+
+    <p> 
+      (Query returned 1 result row, 
+       all rows are shown in the displayed table.) 
+    </p> 
+
+The getFSLink column can be used to display 1 arcmin image cut-outs around the RA/Dec of the object.<p>    <table border="1" cellspacing="0" cellpadding="3" bgcolor="#FFDDDD"> 
+      <tr bgcolor="#FFFFCC"> 
+        <th>&nbsp;</th> 
+<th nowrap="nowrap">getFSLink</th>        <th nowrap>sourceID</th> 
+        <th nowrap>cuEventID</th> 
+        <th nowrap>frameSetID</th> 
+        <th nowrap>ra</th> 
+        <th nowrap>dec</th> 
+        <th nowrap>sigRa</th> 
+        <th nowrap>sigDec</th> 
+        <th nowrap>epoch</th> 
+        <th nowrap>muRa</th> 
+        <th nowrap>muDec</th> 
+        <th nowrap>sigMuRa</th> 
+        <th nowrap>sigMuDec</th> 
+        <th nowrap>chi2</th> 
+        <th nowrap>nFrames</th> 
+        <th nowrap>cx</th> 
+        <th nowrap>cy</th> 
+        <th nowrap>cz</th> 
+        <th nowrap>htmID</th> 
+        <th nowrap>l</th> 
+        <th nowrap>b</th> 
+        <th nowrap>lambda</th> 
+        <th nowrap>eta</th> 
+        <th nowrap>priOrSec</th> 
+        <th nowrap>jmhPnt</th> 
+        <th nowrap>jmhPntErr</th> 
+        <th nowrap>hmkPnt</th> 
+        <th nowrap>hmkPntErr</th> 
+        <th nowrap>jmhExt</th> 
+        <th nowrap>jmhExtErr</th> 
+        <th nowrap>hmkExt</th> 
+        <th nowrap>hmkExtErr</th> 
+        <th nowrap>mergedClassStat</th> 
+        <th nowrap>mergedClass</th> 
+        <th nowrap>pStar</th> 
+        <th nowrap>pGalaxy</th> 
+        <th nowrap>pNoise</th> 
+        <th nowrap>pSaturated</th> 
+        <th nowrap>eBV</th> 
+        <th nowrap>aJ</th> 
+        <th nowrap>aH</th> 
+        <th nowrap>aK</th> 
+        <th nowrap>jHallMag</th> 
+        <th nowrap>jHallMagErr</th> 
+        <th nowrap>jPetroMag</th> 
+        <th nowrap>jPetroMagErr</th> 
+        <th nowrap>jPsfMag</th> 
+        <th nowrap>jPsfMagErr</th> 
+        <th nowrap>jSerMag2D</th> 
+        <th nowrap>jSerMag2DErr</th> 
+        <th nowrap>jAperMag3</th> 
+        <th nowrap>jAperMag3Err</th> 
+        <th nowrap>jAperMag4</th> 
+        <th nowrap>jAperMag4Err</th> 
+        <th nowrap>jAperMag6</th> 
+        <th nowrap>jAperMag6Err</th> 
+        <th nowrap>jGausig</th> 
+        <th nowrap>jEll</th> 
+        <th nowrap>jPA</th> 
+        <th nowrap>jErrBits</th> 
+        <th nowrap>jDeblend</th> 
+        <th nowrap>jClass</th> 
+        <th nowrap>jClassStat</th> 
+        <th nowrap>jppErrBits</th> 
+        <th nowrap>jSeqNum</th> 
+        <th nowrap>jXi</th> 
+        <th nowrap>jEta</th> 
+        <th nowrap>hHallMag</th> 
+        <th nowrap>hHallMagErr</th> 
+        <th nowrap>hPetroMag</th> 
+        <th nowrap>hPetroMagErr</th> 
+        <th nowrap>hPsfMag</th> 
+        <th nowrap>hPsfMagErr</th> 
+        <th nowrap>hSerMag2D</th> 
+        <th nowrap>hSerMag2DErr</th> 
+        <th nowrap>hAperMag3</th> 
+        <th nowrap>hAperMag3Err</th> 
+        <th nowrap>hAperMag4</th> 
+        <th nowrap>hAperMag4Err</th> 
+        <th nowrap>hAperMag6</th> 
+        <th nowrap>hAperMag6Err</th> 
+        <th nowrap>hGausig</th> 
+        <th nowrap>hEll</th> 
+        <th nowrap>hPA</th> 
+        <th nowrap>hErrBits</th> 
+        <th nowrap>hDeblend</th> 
+        <th nowrap>hClass</th> 
+        <th nowrap>hClassStat</th> 
+        <th nowrap>hppErrBits</th> 
+        <th nowrap>hSeqNum</th> 
+        <th nowrap>hXi</th> 
+        <th nowrap>hEta</th> 
+        <th nowrap>kHallMag</th> 
+        <th nowrap>kHallMagErr</th> 
+        <th nowrap>kPetroMag</th> 
+        <th nowrap>kPetroMagErr</th> 
+        <th nowrap>kPsfMag</th> 
+        <th nowrap>kPsfMagErr</th> 
+        <th nowrap>kSerMag2D</th> 
+        <th nowrap>kSerMag2DErr</th> 
+        <th nowrap>kAperMag3</th> 
+        <th nowrap>kAperMag3Err</th> 
+        <th nowrap>kAperMag4</th> 
+        <th nowrap>kAperMag4Err</th> 
+        <th nowrap>kAperMag6</th> 
+        <th nowrap>kAperMag6Err</th> 
+        <th nowrap>kGausig</th> 
+        <th nowrap>kEll</th> 
+        <th nowrap>kPA</th> 
+        <th nowrap>kErrBits</th> 
+        <th nowrap>kDeblend</th> 
+        <th nowrap>kClass</th> 
+        <th nowrap>kClassStat</th> 
+        <th nowrap>kppErrBits</th> 
+        <th nowrap>kSeqNum</th> 
+        <th nowrap>kXi</th> 
+        <th nowrap>kEta</th> 
+      </tr> 
+      <tr bgcolor="#FFDDDD" class="RowOdd"> 
+        <td nowrap class="RowHeader" bgcolor="#FFFFCC"><b>1</b></td> 
+<td align="right" nowrap="nowrap"><a href="http://wsa.roe.ac.uk:8080/wsa/GetImage?mode=show&ra=118.69117496409241&dec=16.69464025880964&fsid=459561709602&database=UHSDR3" target=getI>view<a/></td> 
+<td align="right" nowrap>460007256094</td> 
+<td align="right" nowrap>68030</td> 
+<td align="right" nowrap>459561709602</td> 
+<td align="right" nowrap>+118.6911750</td> 
+<td align="right" nowrap>+16.6946403</td> 
+<td align="right" nowrap>+2.118463E-006</td> 
+<td align="right" nowrap>+2.118463E-006</td> 
+<td align="right" nowrap>+2016.0154593</td> 
+<td align="right" nowrap>-3.517785</td> 
+<td align="right" nowrap>+1.580033</td> 
+<td align="right" nowrap>+2.546285</td> 
+<td align="right" nowrap>+2.546285</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>2</td> 
+<td align="right" nowrap>-0.4598524</td> 
+<td align="right" nowrap>+0.8402447</td> 
+<td align="right" nowrap>+0.2872709</td> 
+<td align="right" nowrap>16045020122717</td> 
+<td align="right" nowrap>+204.5054194</td> 
+<td align="right" nowrap>+21.3187781</td> 
+<td align="right" nowrap>-61.2976099</td> 
+<td align="right" nowrap>+4.2380141</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>+27.252466</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>+0.993865</td> 
+<td align="right" nowrap>+0.003067</td> 
+<td align="right" nowrap>+0.003067</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.035275</td> 
+<td align="right" nowrap>+0.031360</td> 
+<td align="right" nowrap>+0.020389</td> 
+<td align="right" nowrap>+0.012699</td> 
+<td align="right" nowrap>+10.429726</td> 
+<td align="right" nowrap>+0.000525</td> 
+<td align="right" nowrap>+10.429726</td> 
+<td align="right" nowrap>+0.000525</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>+10.408772</td> 
+<td align="right" nowrap>+0.000551</td> 
+<td align="right" nowrap>+10.305136</td> 
+<td align="right" nowrap>+0.000496</td> 
+<td align="right" nowrap>+10.293867</td> 
+<td align="right" nowrap>+0.000477</td> 
+<td align="right" nowrap>+2.679551</td> 
+<td align="right" nowrap>+0.038840</td> 
+<td align="right" nowrap>+94.050520</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>+17.909883</td> 
+<td align="right" nowrap>65552</td> 
+<td align="right" nowrap>1249</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>+0.000000E000</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>-9999</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>+9.689646</td> 
+<td align="right" nowrap>+0.000647</td> 
+<td align="right" nowrap>+9.689646</td> 
+<td align="right" nowrap>+0.000647</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>+9.913033</td> 
+<td align="right" nowrap>+0.000599</td> 
+<td align="right" nowrap>+9.715270</td> 
+<td align="right" nowrap>+0.000529</td> 
+<td align="right" nowrap>+9.701287</td> 
+<td align="right" nowrap>+0.000549</td> 
+<td align="right" nowrap>+2.931304</td> 
+<td align="right" nowrap>+0.027356</td> 
+<td align="right" nowrap>+108.824630</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>+20.630924</td> 
+<td align="right" nowrap>65536</td> 
+<td align="right" nowrap>771</td> 
+<td align="right" nowrap>-0.016333</td> 
+<td align="right" nowrap>+0.003527</td> 
+</tr> 
+    </table>
+
+    <p> 
+      (Query returned 1 result row, 
+       all rows are shown in the displayed table.) 
+    </p> 
+
+<p> 
+<table cellspacing="0" cellpadding="3"><tr><td align="right"><a href="http://wsa.roe.ac.uk/tmp/tmp_sql/results8_23_49_39_21376.csv"><img src="http://wsa.roe.ac.uk/tmp/images/icons/save.gif" border="0"></a></td><td><a class="dl" id="dl_id" href="http://wsa.roe.ac.uk/tmp/tmp_sql/results8_23_49_39_21376.csv">Download Results File </a>, your results in a CSV ASCII file 
+(Contains <b>1 row</b>, 3.8 KB) 
+</td> 
+</table>
+    <p> 
+      <b>QUERY FINISHED:</b> Sun Nov 08 23:49:46 GMT 2026 
+    </p> 
+
+<script language="JavaScript" type="text/javascript"> <!-- 
+swap(0);
+--> </script>
+    <p> 
+      Click your browsers 'BACK' button to try another query...
+    </p> 
+
+
+    <hr size="1" noshade="noshade" /> 
+
+    <small class="FooterText"> 
+      &nbsp;Page created: 8 November 2026&nbsp;&nbsp;&#8226;&nbsp;&nbsp; 
+
+    <script type="text/javascript" src="http://wsa.roe.ac.uk/browserversion.js"> 
+    </script> 
+      <noscript> 
+        [!!]&nbsp;&nbsp;Style-sheets disabled (cannot detect browser support) 
+      </noscript> 
+    </small> 
+  </body> 
+</html> 
+

@@ -1,0 +1,2 @@
+ref_text,ref_number,gsc_bin_index,ra_deg,dec_deg,pos_epoch,stdmag,color,pm_ra_masyr,u_pm_ra_masyr,pm_dec_masyr,u_pm_dec_masyr,class,v_flag,mag_flag,num_matches,dra_asec,ddec_asec
+APASS_J073606.5+211411,407360651211411,115088787,114.02712,21.236351,2000.0,12.02,0.84,-2.6,1,-0.9,1,0,1,0,1301,-0.12303753484785922,0.13640040000524323

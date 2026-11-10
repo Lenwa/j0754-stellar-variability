@@ -1,0 +1,77 @@
+test_broadband_offset_and_continuum_bias_differ (test_fast_line_tests.NumericalTests.test_broadband_offset_and_continuum_bias_differ) ... FAIL
+test_common_resolution_recovers_equal_injected_lines (test_fast_line_tests.NumericalTests.test_common_resolution_recovers_equal_injected_lines) ... FAIL
+test_covariance_matches_native_pixel_monte_carlo (test_fast_line_tests.NumericalTests.test_covariance_matches_native_pixel_monte_carlo) ... FAIL
+test_gradient_includes_fitted_continuum (test_fast_line_tests.NumericalTests.test_gradient_includes_fitted_continuum) ... FAIL
+test_local_emission_subtracts_its_equivalent_area (test_fast_line_tests.NumericalTests.test_local_emission_subtracts_its_equivalent_area) ... FAIL
+test_repeat_exposures_are_one_night (test_fast_line_tests.NumericalTests.test_repeat_exposures_are_one_night) ... FAIL
+
+======================================================================
+FAIL: test_broadband_offset_and_continuum_bias_differ (test_fast_line_tests.NumericalTests.test_broadband_offset_and_continuum_bias_differ)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 21, in test_broadband_offset_and_continuum_bias_differ
+    f=self.api();x,y,c,line,sides=self.profile()
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 12, in api
+    self.assertIsNotNone(m, "FAST numerical API is not implemented")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : FAST numerical API is not implemented
+
+======================================================================
+FAIL: test_common_resolution_recovers_equal_injected_lines (test_fast_line_tests.NumericalTests.test_common_resolution_recovers_equal_injected_lines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 47, in test_common_resolution_recovers_equal_injected_lines
+    f=self.api();x=np.arange(-50,50,.25);out=np.arange(-40,40,.5)
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 12, in api
+    self.assertIsNotNone(m, "FAST numerical API is not implemented")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : FAST numerical API is not implemented
+
+======================================================================
+FAIL: test_covariance_matches_native_pixel_monte_carlo (test_fast_line_tests.NumericalTests.test_covariance_matches_native_pixel_monte_carlo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 61, in test_covariance_matches_native_pixel_monte_carlo
+    f=self.api();rng=np.random.default_rng(1296)
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 12, in api
+    self.assertIsNotNone(m, "FAST numerical API is not implemented")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : FAST numerical API is not implemented
+
+======================================================================
+FAIL: test_gradient_includes_fitted_continuum (test_fast_line_tests.NumericalTests.test_gradient_includes_fitted_continuum)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 36, in test_gradient_includes_fitted_continuum
+    f=self.api();x,y,c,line,sides=self.profile()
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 12, in api
+    self.assertIsNotNone(m, "FAST numerical API is not implemented")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : FAST numerical API is not implemented
+
+======================================================================
+FAIL: test_local_emission_subtracts_its_equivalent_area (test_fast_line_tests.NumericalTests.test_local_emission_subtracts_its_equivalent_area)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 29, in test_local_emission_subtracts_its_equivalent_area
+    f=self.api();x,y,c,line,sides=self.profile()
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 12, in api
+    self.assertIsNotNone(m, "FAST numerical API is not implemented")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : FAST numerical API is not implemented
+
+======================================================================
+FAIL: test_repeat_exposures_are_one_night (test_fast_line_tests.NumericalTests.test_repeat_exposures_are_one_night)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 72, in test_repeat_exposures_are_one_night
+    f=self.api()
+  File ".\build\github-desktop-review\tools\sky-plates\test_fast_line_tests.py", line 12, in api
+    self.assertIsNotNone(m, "FAST numerical API is not implemented")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : FAST numerical API is not implemented
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+FAILED (failures=6)

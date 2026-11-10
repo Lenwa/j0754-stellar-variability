@@ -1,0 +1,17 @@
+Gemini suggestions assessed by Ari,8November2026 local.
+
+Useful leads: background/sigma checks for Halpha; common-resolution locally normalized temperature-sensitive bands; explicit CO/atmosphere-grid sensitivity near4.6um; documented alternate archive routes.
+
+Corrections:140000microJy=.14Jy=1.4e-24erg/s/cm2/Hz, not1.4e-18. The quoted60–90Lsun may still be plausible with correct units, but is not derived rigorously from one peak; a4500K unreddened blackbody normalized there gives~59Lsun,4750K~65. Neither establishes Lbol or a smoking-gun class. The coronal dividing line is not a universal K2III cutoff.
+
+5%radius shrink gives.1114mag gray loss. Adding80–100K cooling to4500K givesg.242–.276,W1.142–.149,W2.138–.145mag in a monochromatic Planck illustration, not the quotedg.30,W1/W2.10–.12. Existing atmosphere/spot/partialcover grids already address the broader families. Matched observedW1/g=.3766,W2/g=.2845, consistent with rounded Gemini ratios.
+
+Sky-emission lines trace instrument wavelength drift but not point-source slit miscentering: sky illuminates slit differently. Telluric absorption on the stellar beam could help if measurable. OxygenBband686.7nm lies beyond allthree600line/mmFASTspectra ending673–678nm. Claimed3–6km/s precision is unvalidated; actual Gaia candidateK is10.7245km/s, not a measured15–40. Clean skyband alone cannot prove intrinsicHalpha dynamics; extraction/LSF/normalization alternatives remain.
+
+Narrow indices reduce broadfluxcalibration sensitivity but are not completely immune to continuum,blends,gravity,metallicity,LSF. Ca422.7 andTiO705.4 lackcoveragein600line/mmFAST. Sensitivity100–200K must be calibrated atJ0754metallicity/gravity rather than assumed.
+
+CO4.6um is a physically credible alternative contributor to the residual; neither CO emission nor nonLTE mismatch is detected here. W2 continuum/CO response must be forward modeled; cooling alone doesnot universally imply lessW2 fading.
+
+Archive checks delegated as independent bounded retrievals: newerLAMOST epochs, actualTESSsectorcoverage,PS1nativeflags, documentedCfAalternatequeries. PriorLAMOST2018failedspectrum and priorTESSproducts remain partofcoverage. No wholesale newanalysis or precisionRVs claimed.
+
+Sources: https://doi.org/10.1051/0004-6361/201424882 ; https://doi.org/10.1051/0004-6361/201832833 ; https://outerspace.stsci.edu/spaces/PANSTARRS/pages/298812205/PS1%2BFAQ%2B-%2BFrequently%2Basked%2Bquestions ; https://www.aanda.org/articles/aa/pdf/2024/08/aa49181-24.pdf

@@ -1,0 +1,482 @@
+[
+  {
+    "file": "0123.N2211330177.ms.fits",
+    "utc": "2008-10-22T11:56:29.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.9874254762873381
+  },
+  {
+    "file": "0123.N2211330177.ms.fits",
+    "utc": "2008-10-22T11:56:29.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.9414603607210952
+  },
+  {
+    "file": "0123.N2211330177.ms.fits",
+    "utc": "2008-10-22T11:56:29.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 1.2785580402609331
+  },
+  {
+    "file": "0123.N2211330177.ms.fits",
+    "utc": "2008-10-22T11:56:29.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 1.1825618281405232
+  },
+  {
+    "file": "0123.N2211330177.ms.fits",
+    "utc": "2008-10-22T11:56:29.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 1.3629361814043517
+  },
+  {
+    "file": "0123.N2211330177.ms.fits",
+    "utc": "2008-10-22T11:56:29.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 1.2235194231799005
+  },
+  {
+    "file": "0135.N2211330177.ms.fits",
+    "utc": "2008-10-24T12:29:22.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.8371776407248807
+  },
+  {
+    "file": "0135.N2211330177.ms.fits",
+    "utc": "2008-10-24T12:29:22.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.8383212131143132
+  },
+  {
+    "file": "0135.N2211330177.ms.fits",
+    "utc": "2008-10-24T12:29:22.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 1.1622175361065497
+  },
+  {
+    "file": "0135.N2211330177.ms.fits",
+    "utc": "2008-10-24T12:29:22.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 1.1643862020383913
+  },
+  {
+    "file": "0135.N2211330177.ms.fits",
+    "utc": "2008-10-24T12:29:22.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 1.3596570782436797
+  },
+  {
+    "file": "0135.N2211330177.ms.fits",
+    "utc": "2008-10-24T12:29:22.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 1.363207897728672
+  },
+  {
+    "file": "0146.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:04:04.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.458647455266834
+  },
+  {
+    "file": "0146.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:04:04.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.4281296112328212
+  },
+  {
+    "file": "0146.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:04:04.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.6985159874032763
+  },
+  {
+    "file": "0146.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:04:04.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.625926118545387
+  },
+  {
+    "file": "0146.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:04:04.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.8667958476060538
+  },
+  {
+    "file": "0146.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:04:04.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.7626129452225685
+  },
+  {
+    "file": "0147.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:10:16.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.47325542434452117
+  },
+  {
+    "file": "0147.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:10:16.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.4377079029248035
+  },
+  {
+    "file": "0147.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:10:16.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.7807391466556353
+  },
+  {
+    "file": "0147.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:10:16.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.6963842631035003
+  },
+  {
+    "file": "0147.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:10:16.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.887467141490134
+  },
+  {
+    "file": "0147.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:10:16.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.7659972509550392
+  },
+  {
+    "file": "0148.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:19:23.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.4570909923675851
+  },
+  {
+    "file": "0148.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:19:23.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.4280838711953194
+  },
+  {
+    "file": "0148.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:19:23.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.7423645422548594
+  },
+  {
+    "file": "0148.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:19:23.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.6735015686656574
+  },
+  {
+    "file": "0148.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:19:23.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.8656447111370411
+  },
+  {
+    "file": "0148.N2211330177.ms.fits",
+    "utc": "2009-11-12T11:19:23.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.76652159687373
+  },
+  {
+    "file": "0187.N2211330177.ms.fits",
+    "utc": "2009-11-19T12:08:55.000Z",
+    "grating": "600",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.1722232652531249
+  },
+  {
+    "file": "0187.N2211330177.ms.fits",
+    "utc": "2009-11-19T12:08:55.000Z",
+    "grating": "600",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.15755116051210077
+  },
+  {
+    "file": "0187.N2211330177.ms.fits",
+    "utc": "2009-11-19T12:08:55.000Z",
+    "grating": "600",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.36891415501223285
+  },
+  {
+    "file": "0187.N2211330177.ms.fits",
+    "utc": "2009-11-19T12:08:55.000Z",
+    "grating": "600",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.33972958771366824
+  },
+  {
+    "file": "0187.N2211330177.ms.fits",
+    "utc": "2009-11-19T12:08:55.000Z",
+    "grating": "600",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.4299633366341543
+  },
+  {
+    "file": "0187.N2211330177.ms.fits",
+    "utc": "2009-11-19T12:08:55.000Z",
+    "grating": "600",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.3877899750355789
+  },
+  {
+    "file": "0159.N2211330177.ms.fits",
+    "utc": "2010-01-13T09:19:49.000Z",
+    "grating": "600",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.6116241227061636
+  },
+  {
+    "file": "0159.N2211330177.ms.fits",
+    "utc": "2010-01-13T09:19:49.000Z",
+    "grating": "600",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.5341498114432903
+  },
+  {
+    "file": "0159.N2211330177.ms.fits",
+    "utc": "2010-01-13T09:19:49.000Z",
+    "grating": "600",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.9466358619552423
+  },
+  {
+    "file": "0159.N2211330177.ms.fits",
+    "utc": "2010-01-13T09:19:49.000Z",
+    "grating": "600",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.7826532333027884
+  },
+  {
+    "file": "0159.N2211330177.ms.fits",
+    "utc": "2010-01-13T09:19:49.000Z",
+    "grating": "600",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 1.3358372342773823
+  },
+  {
+    "file": "0159.N2211330177.ms.fits",
+    "utc": "2010-01-13T09:19:49.000Z",
+    "grating": "600",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 1.0952494262277161
+  },
+  {
+    "file": "0089.N2211330177.ms.fits",
+    "utc": "2010-01-17T05:36:48.000Z",
+    "grating": "600",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.14070087353254823
+  },
+  {
+    "file": "0089.N2211330177.ms.fits",
+    "utc": "2010-01-17T05:36:48.000Z",
+    "grating": "600",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.14782554505845055
+  },
+  {
+    "file": "0089.N2211330177.ms.fits",
+    "utc": "2010-01-17T05:36:48.000Z",
+    "grating": "600",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.2261443392580524
+  },
+  {
+    "file": "0089.N2211330177.ms.fits",
+    "utc": "2010-01-17T05:36:48.000Z",
+    "grating": "600",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.2402601421424174
+  },
+  {
+    "file": "0089.N2211330177.ms.fits",
+    "utc": "2010-01-17T05:36:48.000Z",
+    "grating": "600",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.3109702889092171
+  },
+  {
+    "file": "0089.N2211330177.ms.fits",
+    "utc": "2010-01-17T05:36:48.000Z",
+    "grating": "600",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.33130784685739756
+  },
+  {
+    "file": "0036.N221133017.ms.fits",
+    "utc": "2012-03-26T02:51:32.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.8544541729635068
+  },
+  {
+    "file": "0036.N221133017.ms.fits",
+    "utc": "2012-03-26T02:51:32.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.8347229236575355
+  },
+  {
+    "file": "0036.N221133017.ms.fits",
+    "utc": "2012-03-26T02:51:32.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 1.0734170447683806
+  },
+  {
+    "file": "0036.N221133017.ms.fits",
+    "utc": "2012-03-26T02:51:32.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 1.0356720018514722
+  },
+  {
+    "file": "0036.N221133017.ms.fits",
+    "utc": "2012-03-26T02:51:32.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 1.2215539129439275
+  },
+  {
+    "file": "0036.N221133017.ms.fits",
+    "utc": "2012-03-26T02:51:32.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 1.1595316717131174
+  },
+  {
+    "file": "0062.N221133017.ms.fits",
+    "utc": "2012-05-17T03:06:19.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.7647370931162185
+  },
+  {
+    "file": "0062.N221133017.ms.fits",
+    "utc": "2012-05-17T03:06:19.000Z",
+    "grating": "300",
+    "half_window_A": 5,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.7532928281182936
+  },
+  {
+    "file": "0062.N221133017.ms.fits",
+    "utc": "2012-05-17T03:06:19.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 0,
+    "pseudoEW_A": 0.9984287374697434
+  },
+  {
+    "file": "0062.N221133017.ms.fits",
+    "utc": "2012-05-17T03:06:19.000Z",
+    "grating": "300",
+    "half_window_A": 10,
+    "continuum_definition": 1,
+    "pseudoEW_A": 0.9744850908548094
+  },
+  {
+    "file": "0062.N221133017.ms.fits",
+    "utc": "2012-05-17T03:06:19.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 0,
+    "pseudoEW_A": 1.258359491984541
+  },
+  {
+    "file": "0062.N221133017.ms.fits",
+    "utc": "2012-05-17T03:06:19.000Z",
+    "grating": "300",
+    "half_window_A": 15,
+    "continuum_definition": 1,
+    "pseudoEW_A": 1.2239404373331506
+  }
+]

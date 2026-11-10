@@ -1,0 +1,194 @@
+{
+  "protocol": "Exploratory follow-up specified before this search: 10\u00e2\u20ac\u201c100 day frequency grid, 30\u00e2\u20ac\u201c42 day neighborhood of Gaia assessed explicitly. Independent sine/cosine in each July\u00e2\u20ac\u201cJune season; joint per-camera offsets and linear trends, >=30 daily camera groups and >=120 day span. Equal-season mean fractional SSE reduction. No clipping or downloads. Block-sign null diagnostics use shared signs across cameras in 3/7/14-day blocks and 256 draws, scanning the same range; these are sensitivity diagnostics, not calibrated astrophysical false-alarm probabilities. A recurring peak near 36 days across seasons and independent ZTF would support rotation; broad/discordant peaks weaken identification. Season-long stationarity still assumed; this is not a fully evolving spot model.",
+  "ASASSN": {
+    "seasons": [
+      {
+        "season": "2017/18",
+        "n": 187,
+        "best_period_days": 36.23188405797101,
+        "best_power": 0.8039485187187967,
+        "near_period_days": 36.23188405797101,
+        "near_power": 0.8039485187187967,
+        "power_at_gaia": 0.7972589348930685
+      },
+      {
+        "season": "2018/19",
+        "n": 155,
+        "best_period_days": 34.305317324185246,
+        "best_power": 0.25870953139260433,
+        "near_period_days": 34.305317324185246,
+        "near_power": 0.25870953139260433,
+        "power_at_gaia": 0.20400404958353277
+      },
+      {
+        "season": "2019/20",
+        "n": 131,
+        "best_period_days": 35.97122302158273,
+        "best_power": 0.4554704039702499,
+        "near_period_days": 35.97122302158273,
+        "near_power": 0.4554704039702499,
+        "power_at_gaia": 0.455319452146024
+      },
+      {
+        "season": "2020/21",
+        "n": 106,
+        "best_period_days": 35.08771929824561,
+        "best_power": 0.33033663012212344,
+        "near_period_days": 35.08771929824561,
+        "near_power": 0.33033663012212344,
+        "power_at_gaia": 0.3105863250021895
+      },
+      {
+        "season": "2021/22",
+        "n": 141,
+        "best_period_days": 34.07155025553663,
+        "best_power": 0.19519647992951417,
+        "near_period_days": 34.07155025553663,
+        "near_power": 0.19519647992951417,
+        "power_at_gaia": 0.12101491364798903
+      },
+      {
+        "season": "2022/23",
+        "n": 128,
+        "best_period_days": 37.31343283582089,
+        "best_power": 0.22194395681783186,
+        "near_period_days": 37.31343283582089,
+        "near_power": 0.22194395681783186,
+        "power_at_gaia": 0.156735288856558
+      },
+      {
+        "season": "2023/24",
+        "n": 159,
+        "best_period_days": 35.1493848857645,
+        "best_power": 0.5140776639263317,
+        "near_period_days": 35.1493848857645,
+        "near_power": 0.5140776639263317,
+        "power_at_gaia": 0.48271894417126615
+      },
+      {
+        "season": "2024/25",
+        "n": 154,
+        "best_period_days": 40.080160320641276,
+        "best_power": 0.08646438405091045,
+        "near_period_days": 40.080160320641276,
+        "near_power": 0.08646438405091045,
+        "power_at_gaia": 0.020951617558213547
+      },
+      {
+        "season": "2025/26",
+        "n": 207,
+        "best_period_days": 36.90036900369003,
+        "best_power": 0.250257327560183,
+        "near_period_days": 36.90036900369003,
+        "near_power": 0.250257327560183,
+        "power_at_gaia": 0.2300114733027074
+      }
+    ],
+    "best_period_days": 35.77817531305903,
+    "best_mean_power": 0.3092841454336884,
+    "near_period_days": 35.77817531305903,
+    "near_mean_power": 0.3092841454336884,
+    "block_sign_diagnostics": {
+      "3": {
+        "draws": 256,
+        "fraction_null_max_anywhere_ge_observed": 0.0,
+        "fraction_null_max_near_ge_observed": 0.0,
+        "null_near_max_p95": 0.04458880449249274
+      },
+      "7": {
+        "draws": 256,
+        "fraction_null_max_anywhere_ge_observed": 0.0,
+        "fraction_null_max_near_ge_observed": 0.0,
+        "null_near_max_p95": 0.05570451313846279
+      },
+      "14": {
+        "draws": 256,
+        "fraction_null_max_anywhere_ge_observed": 0.0,
+        "fraction_null_max_near_ge_observed": 0.0,
+        "null_near_max_p95": 0.07424101909103759
+      }
+    }
+  },
+  "ZTF": {
+    "seasons": [
+      {
+        "season": "2019/20",
+        "n": 58,
+        "best_period_days": 37.24394785847299,
+        "best_power": 0.6562895707154777,
+        "near_period_days": 37.24394785847299,
+        "near_power": 0.6562895707154777,
+        "power_at_gaia": 0.5250992163164485
+      },
+      {
+        "season": "2020/21",
+        "n": 79,
+        "best_period_days": 35.39823008849557,
+        "best_power": 0.7870779016785908,
+        "near_period_days": 35.39823008849557,
+        "near_power": 0.7870779016785908,
+        "power_at_gaia": 0.7709138293359336
+      },
+      {
+        "season": "2021/22",
+        "n": 32,
+        "best_period_days": 35.39823008849557,
+        "best_power": 0.6755300069812251,
+        "near_period_days": 35.39823008849557,
+        "near_power": 0.6755300069812251,
+        "power_at_gaia": 0.6466034289090227
+      },
+      {
+        "season": "2022/23",
+        "n": 36,
+        "best_period_days": 37.31343283582089,
+        "best_power": 0.7233494011674817,
+        "near_period_days": 37.31343283582089,
+        "near_power": 0.7233494011674817,
+        "power_at_gaia": 0.5698064637325103
+      },
+      {
+        "season": "2023/24",
+        "n": 32,
+        "best_period_days": 36.03603603603603,
+        "best_power": 0.8328614824109515,
+        "near_period_days": 36.03603603603603,
+        "near_power": 0.8328614824109515,
+        "power_at_gaia": 0.8315948257025157
+      },
+      {
+        "season": "2024/25",
+        "n": 35,
+        "best_period_days": 41.92872117400419,
+        "best_power": 0.3195186334239804,
+        "near_period_days": 41.92872117400419,
+        "near_power": 0.3195186334239804,
+        "power_at_gaia": 0.012640348013484341
+      }
+    ],
+    "best_period_days": 36.297640653357526,
+    "best_mean_power": 0.5679506982991436,
+    "near_period_days": 36.297640653357526,
+    "near_mean_power": 0.5679506982991436,
+    "block_sign_diagnostics": {
+      "3": {
+        "draws": 256,
+        "fraction_null_max_anywhere_ge_observed": 0.0,
+        "fraction_null_max_near_ge_observed": 0.0,
+        "null_near_max_p95": 0.15417625959178155
+      },
+      "7": {
+        "draws": 256,
+        "fraction_null_max_anywhere_ge_observed": 0.0,
+        "fraction_null_max_near_ge_observed": 0.0,
+        "null_near_max_p95": 0.1931795183905803
+      },
+      "14": {
+        "draws": 256,
+        "fraction_null_max_anywhere_ge_observed": 0.0,
+        "fraction_null_max_near_ge_observed": 0.0,
+        "null_near_max_p95": 0.22734948736541422
+      }
+    }
+  }
+}

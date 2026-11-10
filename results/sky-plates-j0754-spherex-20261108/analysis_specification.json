@@ -1,0 +1,9 @@
+{
+  "written_utc": "2026-11-09T00:05:56.634962+00:00",
+  "status": "POST_HOC_SPECIFICATION_BEFORE_MODEL_COMPUTATION",
+  "known": "Local and native SED broad shape already inspected. Native/local differences several percent, formal local errors too small for physical variability significance. No causal prior.",
+  "fit": "Per reduction and per season fit .75\u20132.4um only using coarse CK04 3500\u20136500K,logg2\u20133,metal\u22121\u20130; Draine Rv3.1/4/5.5 static attenuation Av0\u20132 step.05; free normalization, equal log flux weights. Actual passband shapes unavailable; approximate rectangular CWAVE/CBAND, mean Fnu.",
+  "retrospective_check": "Report ratios at2.45\u20133.75,3.8\u20134.4,4.4\u20135um, already-seen measurements. No formal detection significance or upper limit. Static recovery-era spectra cannot recover2022colors.",
+  "selection": "Use predeclared local quality intersect official SOURCE-only flags andfit_ql<5 for modelcheck. Retain all measurements in primary output; no fluxclipping.",
+  "ambiguities": "Temperature/extinction and normalization degeneracy; approximate passbands; uncertain atmosphere grid/calibration; not numerical posterior. Native/local share pixels. Fitted scale doesnotmeasure radius."
+}

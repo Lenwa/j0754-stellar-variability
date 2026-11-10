@@ -1,0 +1,527 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+            "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<LINK href="http://wsa.roe.ac.uk/style.css" rel="stylesheet" type="text/css">
+<link href="http://wsa.roe.ac.uk/www/wsaserver.css" rel="stylesheet" type="text/css"> 
+<link rel="icon" href="http://wsa.roe.ac.uk/favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="http://wsa.roe.ac.uk/favicon.ico" type="image/x-icon"> 
+
+
+<title>WFCAM SCIENCE ARCHIVE</title>
+<META NAME="Keywords" CONTENT="WFCAM Science Archive">
+
+
+
+
+</head>
+<!-- <body  marginheight="0" marginwidth="0" bgcolor="#000000" text="#FFFFFF" link="#33CCFF" vlink="#33CCFF" alink="#33CCFF">
+-->
+<body   marginheight="0" marginwidth="0" bgcolor="#000000" text="#FFFFFF" link="#33CCFF" vlink="#33CCFF" alink="#33CCFF">
+<TABLE CELLSPACING="0" CELLPADDING="8" border="0">
+<TR>
+
+<!-- Left column - logo and navigation -->
+<TD width="165" ROWSPAN="1" VALIGN="top" ALIGN="center" BGCOLOR="#000000">
+<!-- #CCCCC http://wsa.roe.ac.uk/ssa_new.gif -->
+
+<table BGCOLOR="#000000" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td  align=center><img SRC="http://wsa.roe.ac.uk/common/img/wsa_top.gif" alt="wsa logo" width="165" height="93"></td>
+</tr>
+</table>
+
+<table BGCOLOR="#333333" border="0" cellspacing="0" CELLPADDING="3">
+<tr>
+<td align="center">
+<TABLE  BORDER="0"  cellspacing="0" CELLPADDING="0">
+  <TR><TD width="165"   ALIGN="right">
+      <font color="red">UHSDR3<br>public</font><br>
+<a class="bar" href="http://wsa.roe.ac.uk/index.html" title="WFCAM Science Archive home page">
+
+<BIG><b>WSA Home</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/startHere.html" title="primer for users of the archive">
+<BIG><b>Start Here</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/dboverview.html" title="Description of the contents and structure of the archive">
+<BIG><b>Data Overview</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE  BORDER="0"  cellspacing="0" CELLPADDING="0">
+<TR><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/knownIssues.html" title="data - known issues and problems">
+<BIG><b>Known Issues</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165" ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/theSurveys.html" title="UKIDSS survey progress and info">
+<BIG><b>the Surveys</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165" ALIGN="right">
+<font color="red">&#42;</font><a class="bar" href="http://wsa.roe.ac.uk/coverage-maps.html" title="UKIDSS Coverage Maps">
+<BIG><b>Coverage Maps</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165" ALIGN="right">
+
+<a class="bar" href="http://wsa.roe.ac.uk/www/wsa_browser.html" title="Current schema listings of databases, tables and columns held in the archive">
+<BIG><b>Schema browser</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/dbaccess.html" title="Description of how users can access the data held in the archive">
+<BIG><b>Data access</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/login.html" title="User login form">
+<b><i>Login</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/ImageList_form.jsp" title="Get listings of archive contents">
+<b><i>Archive Listing</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/getImage_form.jsp" title="Get small area image cut-outs">
+<b><i>GetImage</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/colourImage_form.jsp" title="generate colour">
+<b><i>ColourImage</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/MultiGetImage_form.jsp" title="batch small area image cut-outs">
+<b><i>MultiGetImage</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/region_form.jsp" title="Search archive for objects in a given region">
+<b><i>Region</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/menu_form.jsp" title="Query the archive's main surveys using a set of forms to contsruct an SQL query">
+<b><i>Menu query</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/SQL_form.jsp" title="Query the archive by submitting an SQL query">
+<b><i>Freeform SQL</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/crossID_form.jsp" title="cross match an uploaded list of coordinates">
+<b><i>CrossID</i></b></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+
+
+<!--
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/xmatch.html">
+<b><i>CrossID</i></b></a></td>
+</TABLE></td>
+<tr>
+-->
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk:8080/wsa/DataAnalysis.jsp" title="WSA Data Analysis">
+<BIG><b>Analysis services</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/sqlcookbook.html" title="SQL examples of typical queries">
+<BIG><b>SQL Cookbook</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/qa.html" title="Common questions and answers">
+<BIG><b>Q&amp;A</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/glossary.html" title="Listings of terms and attributes used in the archive">
+<BIG><b>Glossary</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/releasehistory.html" title="Log of releases, additions, corrections etc">
+<BIG><b>Release History</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/nonSurvey.html" title="Non-survey WFCAM programmes">
+<BIG><b>non-Survey</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/gallery/" title="WSA gallery of pretty pics">
+<BIG><b>Gallery</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/pubs.html" title="WSA related publications and docs">
+<BIG><b>Publications</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/monitor.html" title="progress monitor">
+<BIG><b>Monitor</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/downtime.html" title="Log of archive downtime">
+<BIG><b>Downtime</b></BIG></a></td>
+</tr></TABLE></td>
+</tr><tr>
+
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/links.html" title="WSA related links">
+<BIG><b>Links</b></BIG></a></td>
+</tr></TABLE></td>
+</tr>
+<!--
+<tr>
+<td align="center">
+<TABLE BORDER="0"  cellspacing="0" CELLPADDING="0">
+<tr><TD width="165"   ALIGN="right">
+<a class="bar" href="http://wsa.roe.ac.uk/credits.html" title="List of credits">
+<BIG><b>Credits</b></BIG></a></td>
+</TABLE></td>
+</tr>
+-->
+</table>
+
+<table BGCOLOR="#000000" border="0" cellspacing="0" cellpadding="0">
+<tr><td align=center><a href="http://www.roe.ac.uk/ifa/wfau"><img SRC="http://wsa.roe.ac.uk/common/img/wsa_bottom.gif" alt="wsa logo bottom" width="165" height="93" border="0"></a></td>
+</tr>
+</table>
+
+
+<!--
+<td align=center>
+<A  HREF="http://www.roe.ac.uk/ifa/wfau">
+<IMG SRC="http://wsa.roe.ac.uk/common/img/wfau_new.gif" ALT="WFAU Home"  width="132" height="95" border=0></A></td><tr>
+-->
+
+<table><tr>
+<td align="center"><A class="bar" HREF="http://www.roe.ac.uk/ifa"><b>IFA</b> </a>&nbsp; &nbsp; <A class="bar" 
+HREF="http://www.roe.ac.uk/"><b> ROE</b> </a></td>
+</tr></table>
+</td>
+
+<!-- Top row - navigation and logo -->
+<TD VALIGN="top" ALIGN="left" COLSPAN="1"  width="100%">
+<center>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td nowrap valign="middle" ALIGN="middle">
+<a href="http://wsa.roe.ac.uk/index.html">Home</a> | 
+<a href="http://wsa.roe.ac.uk/dboverview.html">Overview</a> | 
+<a href="http://wsa.roe.ac.uk/www/wsa_browser.html">Browser</a> | 
+<a href="http://wsa.roe.ac.uk/dbaccess.html">Access</a> |
+<a href="http://wsa.roe.ac.uk/login.html">Login</a> |
+<a href="http://wsa.roe.ac.uk/sqlcookbook.html">Cookbook</a> |
+<a href="http://wsa.roe.ac.uk/nonSurvey.html">nonSurvey</a>&nbsp;<br>
+&nbsp;<br>
+
+</td>
+<td>&nbsp;
+</td>
+<td valign="middle">
+<img src="http://wsa.roe.ac.uk/common/img/wsa_small_black.gif" width="64" height="27" alt="WSA logo"> 
+</td>
+</tr>
+</table>
+</center>
+<p>
+
+<h2><a name="Quality_Bit_Flags"></a><a name="_Quality_Bit_Flags"></a>Quality Error Bit Flags </h2>
+<p>This page details the quality error bit flags assigned during post processing. These
+flags appear as the ppErrBits attributes in the detection and source tables. The flags can be
+used to refine object samples extracted from the archive. Examples of this usage are given in the
+<a href="sqlcookbook.html#Quality flags">SQL cookbook</a>.
+</p>
+<div><ul>
+<li> <a href="#Bit_flag_design"> Bit flag design</a>
+</li> <li> <a href="#Quality_issues"> Quality issues</a>
+</li> <li> <a href="#Future_flags"> Possible future flags</a>
+</li>
+</ul>
+</div>
+<h2><a name="Bit_flag_design"></a> Bit flag design </h2>
+<p><code>ppErrBits</code> is a 32-bit (4-byte) integer in every detection table (e.g. <code>lasDetection</code>) that contains
+the quality error information for each source detection encoded as a bit flag, according to the prescription given in the table below.
+So the bit flag will give a 'yes' or 'no' answer to up to 32 different quality issues for every source detection. The
+<code>ppErrBits</code> attribute from the detection table is propagated into the relevant passband ppErrBits in the corresponding source table
+during source merging. For example the ppErrBits flag in lasDetection for Y-band observations is propagated into yppErrBits in lasSource.
+</p>
+<p>The quality issues are listed in order of severity, such that a selection of sources can be easily filtered according to the level
+of quality the user desires. These quality issues are divided amongst the four bytes such that the least significant byte represents
+information about the source that is most probably harmless (such as it is a deblended source), the most significant byte contains
+bits that highlight some kind of severe warning about the quality of the source, and the two remaining bytes in the middle
+contain various warnings that could just possibly imply the source is spurious.
+</p>
+<p>For example, to select only those sources with absolutely no quality issues
+the user can filter on <code>ppErrBits = 0</code>, and to include sources with only minor
+quality issues the user can filter as <code>ppErrBits &lt; 256</code> (i.e. where only the
+first byte contains 1s, so that is a range up to 2^8). Alternatively, the user
+could use hexadecimal bit masks if they prefer, which will also allow them to
+ignore the list of priorities and pick out specific quality issues that they
+are interested in.
+</p>
+<h3><a name="Bit_flag_table"></a><a name="_Bit_flag_table"></a>  Bit flag table </h3>
+
+<table border="1" >
+<tr ><td >Bytes</td><td >Quality Category</td><td >Bits</td><td>Detection Quality Issue</td><td >Bit Mask</td><td >Decimal Threshold</td></tr>
+<tr><td rowspan="8" >Byte 0 (LSB)</td>
+    <td rowspan="8" >Information</td>
+    <td >Bit 0</td><td >&nbsp;</td><td >0x00 00 00 01</td><td >1</td></tr>
+<tr><td >Bit 1</td><td >&nbsp;</td><td >0x00 00 00 02</td><td >2</td></tr>
+<tr><td >Bit 2</td><td >Close to a bright source (not yet implemented)</td><td >0x00 00 00 04</td><td >4</td></tr>
+<tr><td >Bit 3</td><td >&nbsp;</td><td >0x00 00 00 08</td><td >8</td></tr>
+<tr><td >Bit 4</td><td ><a href="#Source_image_is_deblended" >Deblended</a></td><td >0x00 00 00 10</td><td >16</td></tr>
+<tr><td >Bit 5</td><td >&nbsp;</td><td >0x00 00 00 20</td><td >32</td></tr>
+<tr><td >Bit 6</td><td ><a href="#Bad_pixel_in_default_aperture" >Bad pixel(s) in default aperture</a></td><td >0x00 00 00 40</td><td >64</td></tr>
+<tr><td >Bit 7</td><td >&nbsp;</td><td >0x00 00 00 80</td><td >128</td></tr>
+<tr><td rowspan="8" >Byte 1</td>
+    <td rowspan="8" >Warning</td>
+    <td >Bit 8</td><td >&nbsp;</td><td nowrap>0x00 00 01 00</td><td >256</td></tr>
+<tr><td >Bit 9</td><td >&nbsp;</td><td >0x00 00 02 00</td><td >512</td></tr>
+<tr><td >Bit 10</td><td >&nbsp;</td><td >0x00 00 04 00</td><td >1 024</td></tr>
+<tr><td >Bit 11</td><td >&nbsp;</td><td >0x00 00 08 00</td><td >2 048</td></tr>
+<tr><td >Bit 12</td><td >&nbsp;</td><td >0x00 00 10 00</td><td >4 096</td></tr>
+<tr><td >Bit 13</td><td >&nbsp;</td><td >0x00 00 20 00</td><td >8 192</td></tr>
+<tr><td >Bit 14</td><td >&nbsp;</td><td >0x00 00 40 00</td><td >16 384</td></tr>
+<tr><td >Bit 15</td><td ><a href="#Poor_flat_field">Source in poor flat field region</a></td><td >0x00 00 80 00</td><td >32 768</td></tr>
+<tr><td rowspan="8" >Byte 2</td>
+    <td rowspan="8" >Important Warning</td>
+    <td >Bit 16</td><td ><a href="#Saturated_source_image" >Close to saturated</a></td><td >0x00 01 00 00</td><td >65 536</td></tr>
+<tr><td >Bit 17</td><td ><a href="#Photometric_calibration" >Photometric calibration probably subject to
+systematic error</a></td><td >0x00 02 00 00</td><td >131 072</td></tr>
+<tr><td >Bit 18</td><td >&nbsp;</td><td >0x00 04 00 00</td><td >262 144</td></tr>
+<tr><td >Bit 19</td><td ><a href="#Possible_cross_talk_artefact" >Possible cross-talk artefact/contamination</a></td><td >0x00 08 00 00</td><td >524 288</td></tr>
+<tr><td >Bit 20</td><td >Possible diffraction spike artefact/contamination (not yet implemented)</td><td >0x00 10 00 00</td><td >1 048 576</td></tr>
+<tr><td >Bit 21</td><td >&nbsp;</td><td >0x00 20 00 00</td><td >2 097 152</td></tr>
+<tr><td >Bit 22</td><td ><a href="#Source_image_close_to_frame_boun" >Lies within a dither offset of the stacked frame boundary</a></td><td >0x00 40 00 00</td><td >4 194 304</td></tr>
+<tr><td >Bit 23</td><td >&nbsp;</td><td >0x00 80 00 00</td><td >8 388 608</td></tr>
+<tr><td rowspan="8" >Byte 3 (MSB)</td>
+    <td rowspan="8" >Severe Warning</td>
+    <td >Bit 24</td><td >&nbsp;</td><td >0x01 00 00 00</td><td >16 777 216</td></tr>
+<tr><td >Bit 25</td><td >&nbsp;</td><td >0x02 00 00 00</td><td >33 554 432</td></tr>
+<tr><td >Bit 26</td><td >&nbsp;</td><td >0x04 00 00 00</td><td >67 108 864</td></tr>
+<tr><td >Bit 27</td><td >&nbsp;</td><td >0x08 00 00 00</td><td >134 217 728</td></tr>
+<tr><td >Bit 28</td><td >&nbsp;</td><td >0x10 00 00 00</td><td >268 435 456</td></tr>
+<tr><td >Bit 29</td><td >&nbsp;</td><td >0x20 00 00 00</td><td >536 870 912</td></tr>
+<tr><td >Bit 30</td><td >used in UHS to indicate failed quantitative QC</td><td >0x40 00 00 00</td><td >1 073 741 824</td></tr>
+<tr><td >Bit 31</td><td >used in UHS to indicate failed eyeball QC </td><td >0x80 00 00 00</td><td >2 147 483 648</td></tr>
+</table>
+
+<h2><a name="Quality_issues"></a> Quality issues </h2>
+<p>At the time of DR2 only quality flags that could be generated, relatively
+easily, from pre-existing information in the database were implemented. The
+agreed list of five different quality issues implemented for DR2 are listed
+below:
+</p>
+<p><em>Note on the UDS: For DR2 the UDS sources are unchanged from DR1, due to no
+observations of this field during the 06A semester, and so do not have any
+ppErrBits flags. The UDS sources already have the default SExtractor bit flags
+in the errBits attribute (see the glossary entry for this attribute for more
+details). From DR3 the UDS has a cross-talk flag. The boundary flag will be
+calculated only if deemed worthwhile and a worthy algorithm is deduced. The
+remaining bit flags described below will only be included if they are already
+contained within the SExtractor bit flag attribute, errBits.</em>
+</p>
+<h3><a name="Source_image_is_deblended"></a> Source image is deblended </h3>
+<p>This is determined from the <code>aprof2</code> to <code>aprof8</code> detection attributes, all of which should be -1 if the source image is deblended.
+</p>
+<h3><a name="Bad_pixel_in_default_aperture"></a> Bad pixel in default aperture </h3>
+<p>These sources have at least one bad pixel in the default aperture, so contain missing information. The total number of bad pixels in the default aperture is supplied in the <code>errBits</code> attribute (for all surveys other than the UDS), which can be used to refine the criterion.
+</p>
+<h3><a name="Poor_flat_field">Source in poor flat field region</a></h3>
+<p>The flag that marks if an object is within a dither step of the edge is not
+ideal and the reason is that the flat-field goes awry near the edges of
+detectors 1 and 2. There is also an edge region on detector 2 near 2048, 220
+where a bite is taken out, where the flat-field is bad (though is better at
+longer wavelengths). This flag covers a 5" buffer around all of detectors 1
+and 2 i.e. flag if the object is within dither step + 5" of the edge. In
+addition, any object whose coordinates are within 300 (0.4") pixels of
+coordinate 2270 220 (with suitable modification for microstepped images) are
+flagged, this is not applied to deeps because it's less of a problem and harder
+to define. </p>
+<h3><a name="Saturated_source_image"></a> Saturated source image </h3>
+<p>Source image contains at least one pixel that is close to being saturated,
+defined as having a count (pixel height + sky level) &gt; 40,000 ADU for
+catalogues from nightly stacks. For deep multi-night stacks, the flag has only
+been applied since DR8 and is set to a count &gt; <code>0.9 * avSaturLevel</code>
+(the average saturation level of the detector) .
+</p>
+<h3><a name="Photometric_calibration">Photometric calibration probably subject to
+systematic error</a></h3>
+<p>This flag is applied to GPS detections from DR7 onwards that come from
+multiframes with a poor photometric calibration due to heavy and highly variable
+extinction in Galactic centre fields. A detector level criterion is applied to
+all frames in that multiframe:
+<code>nightZPerrcat &lt; 0.05 AND photZPcat - 1.505 - nightZPcat &lt; -0.1</code>
+</p>
+<h3><a name="Possible_cross_talk_artefact">Possible cross-talk artefact</a></h3>
+<p><em>Cross-talk flagging was applied to the DR2 release (LAS, GCS, DXS) but did not affect the seaming.
+The GPS cannot ever be cross-talk flagged with the current algorithm parameters as its fields are just simply too crowded.</em>
+</p>
+<p>Source may possibly be a cross-talk artefact, or at least be contaminated by it.
+All sources within a pre-defined radius (for practical purposes, a box) of a suspected cross-talk artefact are flagged.
+</p>
+<p>The cross-talk artefacts are illustrated and described in this <a href="http://www.ast.cam.ac.uk/~wfcam/docs/reports/sv/" target="_top">CASU document</a>. There are artefacts either side of a bright source, in one dimension, all of the way to the detector quadrant boundary
+(at most 7 orders, though with dithering you can produce 8+ in a stacked image product). The orientation of the line of artefacts rotates between each detector quadrant in the way illustrated in the CASU document.
+</p>
+<p>The flagging was implemented by assuming that all point sources brighter than 14th magnitude in the J-band of the 2MASS catalogue will produce cross-talk in WFCAM detector fields. The size of the artefact was empirically calculated as a function of the magnitude of the cross-talk producing source, and all sources lying within these radii are flagged for artefacts up to the highest order (i.e. to the edge of a detector or quadrant boundary). The possibility of cross-talk artefacts appearing in two dimensions for stars that lie within dither offsets of a quadrant boundary in stacked images is also considered.
+</p>
+<h3><a name="Source_image_close_to_frame_boun"></a> Source lies within a dither offset of the frame boundary </h3>
+<p>Source lies within a jitter + microstep offset of the stacked frame boundary with an additional safety margin of twice the default aperture radius to include all cases where the source image is incomplete. This is an important warning because all of these sources should certainly contain missing information - i.e. there may be partial sources and/or the source may not be present in all component images of the stack.
+</p>
+<p>For deep stacks we also consider any positional offsets in creating the final deep stack image from intermediate stacks.
+</p>
+<h2><a name="Future_flags"></a> Possible future flags </h2>
+<h3><a name="Source_close_to_bright_star"></a> Source close to bright star </h3>
+<p>Bright star halos generate many spurious sources.
+</p>
+<h3><a name="Diffraction_spike"></a> Diffraction spike </h3>
+<p>Spurious sources occur in lines along diffraction spikes.
+</p>
+
+<P><BR clear="all">
+<center>
+<hr width=330>
+<a href="http://wsa.roe.ac.uk/index.html">Home</a> | 
+<a href="http://wsa.roe.ac.uk/dboverview.html">Overview</a> | 
+<a href="http://wsa.roe.ac.uk/www/wsa_browser.html">Browser</a> | 
+<a href="http://wsa.roe.ac.uk/dbaccess.html">Access</a> |
+<a href="http://wsa.roe.ac.uk/login.html">Login</a> |
+<a href="http://wsa.roe.ac.uk/sqlcookbook.html">Cookbook</a> |
+<a href="http://wsa.roe.ac.uk/nonSurvey.html">nonSurvey</a>
+<br> 
+<a href="http://wsa.roe.ac.uk:8080/wsa/ImageList_form.jsp">Listing</a> |
+<a href="http://wsa.roe.ac.uk:8080/wsa/region_form.jsp">Region</a> | 
+<a href="http://wsa.roe.ac.uk:8080/wsa/menu_form.jsp">MenuQuery</a> | 
+<a href="http://wsa.roe.ac.uk:8080/wsa/SQL_form.jsp">FreeSQL</a> 
+<br>
+<a href="http://wsa.roe.ac.uk/links.html">Links</a> |
+<a href="http://wsa.roe.ac.uk/credits.html">Credits</a>
+<br>
+<hr width=330>
+<p>
+<i><font size="-1">WFAU, Institute for Astronomy,<br>
+Royal Observatory, Blackford Hill<br>
+Edinburgh, EH9 3HJ, UK<br>
+
+
+<p><i><font size="-1"><em>wsa<b></b>-support<b>@</b>roe<b></b>.ac<b></b>.uk</em>
+<br>31/7/2017<br></font></i><p>
+</center> </table> 
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2506271-1";
+urchinTracker();
+</script>
+</BODY>
+</html>
+

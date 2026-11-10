@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Smithsonian Astrophysical Observatory Telescope Data Center Home</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><link rel="stylesheet" href="/static/css/formal.css" type="text/css" /><link rel="stylesheet" href="/static/css/gavo_dc.css" type="text/css" /><script src="/static/js/jquery-gavo.js" type="text/javascript"></script><script src="/static/js/gavo.js" type="text/javascript"></script>
+
+	<style type="text/css">
+		.panel {
+			position: relative;
+			background-color: #EAEBEE;
+			margin-top: 0px;
+			min-height:70ex;
+			margin-left: 5px;
+			padding: 5px;
+		}
+
+		.infolink {
+			text-decoration: none;
+			color: #333;
+			white-space: nowrap;
+			background-color: #eee;
+			border: 1pt solid #aaa;
+			padding: 1pt 3pt 1pt 3pt;
+			font-size: 80%;
+		}
+
+		.srvDesc {
+			margin-top: 4pt;
+			margin-bottom: 4pt;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function makePanelShower(panelId) {
+			return function (){
+				$(".panel").css("display", "none");
+				$("#"+panelId).css("display", "block");
+			}
+		}
+			
+		$(document).ready(function() {
+			$("#tabset_tabs li").bind("click", makeTabCallback({
+				'by-subject': makePanelShower("subject-list"),
+				'by-title': makePanelShower("title-list"),
+			}));
+			$("#tabset_tabs li a").removeAttr("href");
+			makePanelShower("title-list")();
+		});
+	</script>
+
+  </head>
+  <body>
+		<div id="header">
+			<img src="/static/img/logo_medium.png" alt="[operator logo]" class="logo headlinelogo" />
+			<h1 id="pagehead">Smithsonian Astrophysical Observatory Telescope Data Center</h1>
+		</div>
+		<div><span class="plainmeta">This datacenter is meant to provide access to spectra and images
+collected with optical/infrared spectrographs installed on CfA's
+ground-based telescopes</span></div>
+
+		<p>Please check out our <a href="/static/help.shtml">site help</a>.
+		<span>
+		Data <a href="/__system__/dc_tables/list/form">on this site</a> can 
+		also be queried through <a href="/tap">TAP</a> and an
+		<a href="/adql">ADQL form</a>.</span></p>
+
+		<hr />
+		<h2>Services available here</h2>
+
+		<div class="container">
+		<ul id="tabset_tabs">
+        <li class="selected"><a href="#title-list" name="by-title"><span>By Title</span></a></li>
+        <li><a href="#subject-list" name="by-subject"><span>By Subject</span></a></li>
+		</ul>
+
+		<div id="title-list" class="panel">
+				<h3>C...</h3>
+				<ul><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/echelle/echelle_public.ssap.q/ssa/info">CfA Reticon Echelle Spectra</a>
+						
+
+						<div class="srvDesc"> Optical echelle spectra collected with the CfA Digital Speedometer on
+the 1.5m Oak Ridge, 1.5m Tillinghast, and 4.5m MMT telescopes</div>
+					</li></ul>
+			
+				<h3>F...</h3>
+				<ul><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/fast/fast_public.ssap.q/ssa/info">FLWO FAST Spectra</a>
+						
+
+						<div class="srvDesc"> Optical spectra collected with the FAST spectrograph on the F.L.
+Whipple Observatory 1.5m Tillinghast telescope</div>
+					</li></ul>
+			
+				<h3>P...</h3>
+				<ul><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/echelle/echelle_public.ssap.q/web/form">Public Data Archive of Processed Echelle Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/echelle/echelle_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+						<div class="srvDesc"> Optical echelle spectra collected with the CfA Digital Speedometer on
+the 1.5m Oak Ridge, 1.5m Tillinghast, and 4.5m MMT telescopes</div>
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/fast/fast_public.ssap.q/web/form">Public Data Archive of Processed FAST Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/fast/fast_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+						<div class="srvDesc"> Optical spectra collected with the FAST spectrograph on the F.L.
+Whipple Observatory 1.5m Tillinghast telescope</div>
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/hectochelle/hectochelle_public.ssap.q/web/form">Public Data Archive of Processed Hectochelle Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/hectochelle/hectochelle_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+						<div class="srvDesc"> Optical spectra collected with the multi-fiber Hectochelle
+Spectrograph at the MMT 6.5m telescope</div>
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/hectospec/hectospec_public.ssap.q/web/form">Public Data Archive of Processed Hectospec Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/hectospec/hectospec_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+						<div class="srvDesc"> Optical spectra collected with the multi-fiber Hectospec Spectrograph
+at the MMT 6.5m telescope</div>
+					</li></ul>
+			
+				<h3>S...</h3>
+				<ul><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/__system__/tap/run/info">Smithsonian Astrophysical Observatory Telescope Data Center TAP service</a>
+						
+
+						<div class="srvDesc">The Smithsonian Astrophysical Observatory Telescope Data Center's TAP end point. The Table Access
+Protocol (TAP) lets you execute queries against our database tables,
+inspect various metadata, and upload your own data. It is thus the
+VO's premier way to access public data holdings.
+
+Tables exposed through this endpoint include: data_public from the echelle schema, data_public from the fast schema, data_public from the hectospec schema, obscore from the ivoa schema, m31 from the m31_proj schema, columns, groups, key_columns, keys, schemas, tables from the tap_schema schema.</div>
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/m31_proj/m31_proj.scs.q/cone/form">Star clusters and other objects in M31 field</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/m31_proj/m31_proj.scs.q/cone/info">Service Info</a>
+						
+
+						
+
+						<div class="srvDesc"> This catalog contains derived information and access to spectra for a
+catalog of objects in the field of M31, drawn from the study of star
+clusters, HII regions, PNe and individual stars in M31 done with
+Hectospec on the MMT by Nelson Caldwell and a host of others.</div>
+					</li></ul>
+			</div>
+
+		<div id="subject-list" style="position:static" class="panel">
+				<h3>Catalogs</h3>
+				<ul><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/__system__/tap/run/info">Smithsonian Astrophysical Observatory Telescope Data Center TAP service</a>
+						
+
+					</li></ul>
+			
+				<h3>Individual (m31) - galaxies: star clusters - globular clusters:
+general - star clusters: general</h3>
+				<ul><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/m31_proj/m31_proj.scs.q/cone/form">Star clusters and other objects in M31 field</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/m31_proj/m31_proj.scs.q/cone/info">Service Info</a>
+						
+
+						
+
+					</li></ul>
+			
+				<h3>Optical spectroscopy</h3>
+				<ul><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/echelle/echelle_public.ssap.q/ssa/info">CfA Reticon Echelle Spectra</a>
+						
+
+					</li><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/fast/fast_public.ssap.q/ssa/info">FLWO FAST Spectra</a>
+						
+
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/echelle/echelle_public.ssap.q/web/form">Public Data Archive of Processed Echelle Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/echelle/echelle_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/fast/fast_public.ssap.q/web/form">Public Data Archive of Processed FAST Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/fast/fast_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/hectochelle/hectochelle_public.ssap.q/web/form">Public Data Archive of Processed Hectochelle Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/hectochelle/hectochelle_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/hectospec/hectospec_public.ssap.q/web/form">Public Data Archive of Processed Hectospec Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/hectospec/hectospec_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+					</li></ul>
+			
+				<h3>Stars, galaxies</h3>
+				<ul><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/echelle/echelle_public.ssap.q/ssa/info">CfA Reticon Echelle Spectra</a>
+						
+
+					</li><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/fast/fast_public.ssap.q/ssa/info">FLWO FAST Spectra</a>
+						
+
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/echelle/echelle_public.ssap.q/web/form">Public Data Archive of Processed Echelle Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/echelle/echelle_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/fast/fast_public.ssap.q/web/form">Public Data Archive of Processed FAST Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/fast/fast_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/hectochelle/hectochelle_public.ssap.q/web/form">Public Data Archive of Processed Hectochelle Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/hectochelle/hectochelle_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+					</li><li>
+						
+
+						
+							<a title="Use the service" class="serviceref" href="/hectospec/hectospec_public.ssap.q/web/form">Public Data Archive of Processed Hectospec Spectra</a>
+							<span class="sep"> </span>
+							<a title="Resource information" class="infolink" href="http://oirsa.cfa.harvard.edu:8080/hectospec/hectospec_public.ssap.q/web/info">Service Info</a>
+						
+
+						
+
+					</li></ul>
+			
+				<h3>Virtual observatories</h3>
+				<ul><li>
+						
+
+						
+
+						
+							<a title="Resource information" class="serviceref" href="http://oirsa.cfa.harvard.edu:8080/__system__/tap/run/info">Smithsonian Astrophysical Observatory Telescope Data Center TAP service</a>
+						
+
+					</li></ul>
+			</div>
+		</div>
+
+		<p class="attribution">
+			<a href="mailto:contact.address">
+				Contact us</a>
+			<a href="/__system__/services/overview/form">[s]</a>
+		</p>
+  </body>
+</html>

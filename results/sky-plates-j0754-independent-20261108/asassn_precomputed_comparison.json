@@ -1,0 +1,21 @@
+{
+  "count": 222,
+  "first_date": "2013-01-18 10:46:01.632",
+  "last_date": "2018-11-24 14:25:16.032",
+  "identical_epoch_camera_keys": 222,
+  "median_magnitude_difference": 0.0,
+  "max_absolute_magnitude_difference": 0.002000000000000668,
+  "requests": [
+    {
+      "url": "https://asas-sn.osu.edu/photometry/c66fdb9c-d3e7-575b-b9a0-172bb9891acc.json?page=2",
+      "file": "asassn_precomputed_photometry_page2.json",
+      "rows": 100
+    },
+    {
+      "url": "https://asas-sn.osu.edu/photometry/c66fdb9c-d3e7-575b-b9a0-172bb9891acc.json?page=3",
+      "file": "asassn_precomputed_photometry_page3.json",
+      "rows": 22
+    }
+  ],
+  "note": "Alternative precomputed reductions of the same222Vepochs; not independent later coverage. JSON uses100rows/page, while browser HTML table uses20. The earlier page12 JSON request was out of range and returned500."
+}

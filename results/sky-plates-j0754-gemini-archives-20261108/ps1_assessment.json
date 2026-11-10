@@ -1,0 +1,151 @@
+{
+  "query_radius_arcsec": 3,
+  "mean_rows": 8,
+  "detection_rows": 75,
+  "mean_page_size": 10000,
+  "main_objID": "128031186911494135",
+  "main_match_arcsec": 0.00679009252446378,
+  "main_detections": 64,
+  "main_filters": {
+    "3": 11,
+    "1": 11,
+    "5": 13,
+    "4": 15,
+    "2": 14
+  },
+  "main_first_mjd": 55202.4157922,
+  "main_last_mjd": 56984.6644549,
+  "main_first_date": "2010-01-06T09:58:44.446",
+  "main_last_date": "2014-11-23T15:56:48.903",
+  "main_flag_counts": {
+    "infoFlag": {
+      "PSFMODEL": 64,
+      "FITTED": 63,
+      "SATSTAR": 52,
+      "AP_MAGS": 64,
+      "LINEAR_FIT": 63,
+      "NONLINEAR_FIT": 63,
+      "PEAK_ON_SPIKE": 39,
+      "BIG_RADIUS": 30,
+      "PSFSTAR": 5,
+      "EXTMODEL": 3,
+      "EXT_LIMIT": 3
+    },
+    "infoFlag2": {
+      "ON_BURNTOOL": 51,
+      "PASS1_SRC": 63
+    },
+    "infoFlag3": {
+      "PHOTOM_UBERCAL": 50,
+      "USED_OBJ": 15,
+      "UNDEF_4": 15
+    }
+  },
+  "main_mean_band_records": [
+    {
+      "filter": "g",
+      "meanPSFMag_native": 13.071000099182129,
+      "meanPSFMagErr_native": -999.0,
+      "meanPSFMagNpt": 0,
+      "flags": 114724,
+      "decoded_flags": [
+        "SECF_USE_SYNTH",
+        "SECF_HAS_PS1_STACK",
+        "SECF_STACK_PRIMARY",
+        "SECF_STACK_BESTDET",
+        "SECF_STACK_PRIMDET"
+      ],
+      "synthetic_photometry_used": true,
+      "PS1_photometry_used": false,
+      "use_as_observed_color": false
+    },
+    {
+      "filter": "r",
+      "meanPSFMag_native": 12.220000267028809,
+      "meanPSFMagErr_native": -999.0,
+      "meanPSFMagNpt": 0,
+      "flags": 245796,
+      "decoded_flags": [
+        "SECF_USE_SYNTH",
+        "SECF_HAS_PS1_STACK",
+        "SECF_STACK_PRIMARY",
+        "SECF_STACK_BESTDET",
+        "SECF_STACK_PRIMDET"
+      ],
+      "synthetic_photometry_used": true,
+      "PS1_photometry_used": false,
+      "use_as_observed_color": false
+    },
+    {
+      "filter": "i",
+      "meanPSFMag_native": 11.859000205993652,
+      "meanPSFMagErr_native": -999.0,
+      "meanPSFMagNpt": 0,
+      "flags": 245796,
+      "decoded_flags": [
+        "SECF_USE_SYNTH",
+        "SECF_HAS_PS1_STACK",
+        "SECF_STACK_PRIMARY",
+        "SECF_STACK_BESTDET",
+        "SECF_STACK_PRIMDET"
+      ],
+      "synthetic_photometry_used": true,
+      "PS1_photometry_used": false,
+      "use_as_observed_color": false
+    },
+    {
+      "filter": "z",
+      "meanPSFMag_native": 11.652000427246094,
+      "meanPSFMagErr_native": -999.0,
+      "meanPSFMagNpt": 0,
+      "flags": 16420,
+      "decoded_flags": [
+        "SECF_USE_SYNTH",
+        "SECF_HAS_PS1_STACK",
+        "SECF_STACK_PRIMARY"
+      ],
+      "synthetic_photometry_used": true,
+      "PS1_photometry_used": false,
+      "use_as_observed_color": false
+    },
+    {
+      "filter": "y",
+      "meanPSFMag_native": 11.529000282287598,
+      "meanPSFMagErr_native": -999.0,
+      "meanPSFMagNpt": 0,
+      "flags": 114724,
+      "decoded_flags": [
+        "SECF_USE_SYNTH",
+        "SECF_HAS_PS1_STACK",
+        "SECF_STACK_PRIMARY",
+        "SECF_STACK_BESTDET",
+        "SECF_STACK_PRIMDET"
+      ],
+      "synthetic_photometry_used": true,
+      "PS1_photometry_used": false,
+      "use_as_observed_color": false
+    }
+  ],
+  "least_flagged_diagnostic_count": 4,
+  "least_flagged_diagnostic_filters": {
+    "5": 3,
+    "1": 1
+  },
+  "least_flagged_diagnostic_dates": [
+    "2011-12-09T09:41:34.506",
+    "2012-01-21T12:01:22.296",
+    "2010-03-09T05:28:08.132",
+    "2010-03-09T05:41:22.286"
+  ],
+  "usable_observed_colors": false,
+  "assessment": "Native main-object mean grizy values use synthetic-photometry flag; all five mean PSF counts0 and errors-999.52/64detectionsSATSTAR. Other rows require image/calibration validation; no observed multiband color or reliable lightcurve accepted. Nearby catalogue fragments are not promoted as target photometry.",
+  "bright_limit_official_grizy_mag": [
+    14.5,
+    15,
+    15,
+    14,
+    13
+  ],
+  "primary_source_doc": "ps1_bright_limits.html",
+  "raw_native_preserved": true
+}

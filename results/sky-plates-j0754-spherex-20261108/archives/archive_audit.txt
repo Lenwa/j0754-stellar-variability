@@ -1,0 +1,183 @@
+J0754 archive widening audit — 8 November 2026
+
+Target: Gaia DR3 667401913089980544 = 2MASS J07544588+1641407 =
+DASCH J075445.9+164141. ICRS center: RA 118.69117410685, Dec 16.694621231895.
+This bounded public retrieval is separate from the ongoing SPHEREx extraction.
+Only new experiment results in this archives directory were saved. No maintained
+source, prior reductions, credentials, accounts, contacts or publication changed.
+
+NEW DATA: GALEX NEAR ULTRAVIOLET
+
+MAST returns GALEX J075445.8+164140, source 6377917456271281015, only 0.1423 arcsec
+from the target. NUV AB magnitude = 18.6138439 +/- 0.0528619, flux = 130.155258
++/- 6.335404 microJy, artifact flag = 0, field radius = 0.17926 deg, exposure =
+176 s. Observation AIS_199_1_10 (6377917456270229504) spans MJD 53768.652384 to
+53768.721944, 2006-02-02. NUV and FUV observation entries are two filters from
+one epoch. This adds ultraviolet context during the known ASAS trough era.
+It is not a multiepoch ultraviolet variability measurement.
+
+FUV exposure of 176 s exists, but its catalogue fluxes and magnitudes are -999
+sentinels. There is no supplied numerical FUV upper limit. A survey depth must
+not replace a measured local sensitivity limit. A second catalogue source about
+30 arcsec away is unrelated and has artifact flag 256 and 0.778 mag uncertainty.
+
+The VizieR II/335 AIS cone was empty, but the direct MAST catalogue recovers the
+star. That earlier catalogue-subset null therefore does not establish absence
+of UV data. The magnitude and flux agree within 0.0062% using a rounded 3631 Jy
+AB zero point. Raw responses: galex_mast.json and galex_observations.txt.
+Exports: galex_target.json and galex_catalog_all_rows.csv.
+
+NEW DATA: SWIFT X-RAY COUNTERPART CANDIDATE
+
+2SXPS 161839 = 2SXPS J075445.6+164139 is 3.882 arcsec from Gaia, within the X-ray
+90% error radius of 5.6 arcsec. The target's proper-motion displacement between
+2009 and the Gaia reference epoch is only about 0.02 arcsec. Detection flag 0
+and field flag 0 both mean Good. Catalogue exposure = 4183 s, total counts = 18,
+mean 0.3–10 keV count rate = 0.00506 +/- 0.00134 count/s. The native stacked
+source detection lists S/N = 2.9 and source likelihood = 40. These are different
+archive statistics, not a new independently calibrated significance estimate.
+
+Catalogue date coverage is 2009-12-02 through 2010-10-09. The actual downloaded
+light curve contains one per-observation retrospective rate at MJD 55167.695518,
+2009-12-02: 0.0050573 (+0.0014014, -0.0011969) count/s. Two snapshot rates are
+0.00316794 (+0.00171806, -0.00130338) and 0.006963 (+0.00234485, -0.00193203).
+They share the same photons as the per-observation result and stacked detection.
+No separate 2010 rate was recovered. Catalogue NObs = 2 is not a count of two
+independent recovered epochs. Dataset 2 exports are upper-limit alternatives for
+the same bins, not extra observations. The parsed rates retain this distinction.
+
+Power-law observed flux = 1.545e-13 +/- 4.094e-14 erg/cm2/s; unabsorbed flux =
+2.056e-13. WhichPow = 1 means a hardness-ratio-derived conversion, not a fitted
+spectrum. APEC observed flux = 1.118e-13 +/- 2.963e-14; unabsorbed = 1.265e-13.
+WhichAPEC = 0 means a fixed kT = 1 keV spectrum with Galactic NH = 4.34e20 cm^-2.
+HasSpec = 0. Flux errors propagate count-rate errors and omit spectral-model
+uncertainty. HR1 = -0.242 (+0.2133, -0.2668), HR2 = -0.527 (+0.1178, -0.4725).
+No fitted temperature, line diagnostic or precise X-ray spectrum was recovered.
+
+The native 2SXPS cross-match names the exact 2MASS and AllWISE star. Gaia queries
+without a magnitude cut, and AllWISE queries, each return only the target within
+20 arcsec of the X-ray centroid. AllWISE cc_flags = 0000. This strengthens the
+positional association but cannot exclude uncatalogued or unresolved sources,
+background objects, or an accidental association. X-ray emission is compatible
+with stellar activity among other possibilities; it does not identify the
+cause of fading.
+
+Source page: https://www.swift.ac.uk/2SXPS/2SXPSJ075445.6+164139
+Files: swift_full_catalog.tsv, swift_source_complete.json, swift_xcorr.html,
+swift_detections.html, swift_native_total_rates.csv and original rate exports.
+
+NEW DATA: FLAGGED SWIFT UVW1 PHOTOMETRY
+
+UVOT SSC1 source 1672504 lies 0.104 arcsec from the target in observation
+00031554001, starting 2009-12-02. UVW1 Vega magnitude = 15.2100 +/- 0.0058,
+AB = 16.730, nominal catalogue significance = 188.4. Quality flag 128 means
+multiple exposure values within the aperture. The catalogue flux conversion
+assumes a GRB spectrum, and UVW1 has an optical red tail that can matter for a
+cool star. Calibration and systematic errors can exceed the formal error.
+Treat this as flagged broad-band context requiring forward response modeling,
+not a clean monochromatic UV measurement. The observation's 4909.5 s field
+exposure is not a recovered target effective exposure. No other UVOT filter was
+recovered. Different filters and dates prevent a direct GALEX–UVW1 variability
+claim. Files: swift_uvot_catalog.tsv, swift_uvot_observation.txt,
+swift_uvot_target.json, uvot_readme.txt and uvot_redleak_docs.txt.
+
+NEW NEAR-INFRARED PIXELS: UHS SATURATION LIMITATIONS
+
+The official WSA HTTPS hostname has a TLS certificate mismatch; its documented
+HTTP site and public query service on port 8080 work without login. Public UHS
+DR3, released 2025-09-17, returned one merged source and two target detections.
+An all-frame image query returned 15 covering rows: a stack and four normal
+frames each at J (2013-01-08), K (2019-01-05), and H (2023-01-09). These are
+three physical band/epoch groups, not 15 independent measurements. The merged
+astrometric epoch 2016.015 is not an actual simultaneous JHK date.
+
+J aperture-3 magnitude = 10.408772 +/- 0.000551 has ppErrBits = 65552: bit 16
+(close to saturation) plus bit 4 (deblended). K = 9.913033 +/- 0.000599 has
+ppErrBits = 65536 (bit 16). Formal errors do not make saturated fluxes accurate.
+H stack 13146294 has deprecated = 69 and no curated target measurement. Code 69
+was not decoded here. A guessed generic Detection table was invalid; that error
+is not a target nondetection. Native source, detection and Multiframe CSVs are
+saved unchanged with separate parsed exports that remove only comment lines.
+
+Three native gzip FITS cutouts, each 151 by 151 pixels, were recovered. Central
+21-pixel-region maxima are 53332 (J), 53276.75 (H), and 55780 (K) ADU; 16, 17,
+and 19 pixels respectively exceed 40000 ADU, the documented nightly-stack
+close-to-saturation criterion. No PSF-wing reconstruction was attempted. The
+pixels are a possible later technical project, not validated new photometry.
+Cross-year J-K is not a simultaneous colour, and these data do not measure the
+colour of the 2018–22 fade. Files uhs_[JHK]_native_cutout.fits preserve original
+gzip bytes despite the .fits suffix; astropy reads them correctly.
+
+NEW OPTICAL ROWS: PTF MOSTLY SATURATED
+
+A 5 arcsec IRSA query returns 84 actual epoch rows: 10 g and 74 R, from two
+source IDs at the target, 2009-12-03 through 2015-01-25. All 84 have goodflag = 1
+and qaflags = 0. Those summary fields alone are insufficient: 82 rows carry
+SExtractor saturation flag value 4 and image-mask bit 8. Some uncalibrated
+magnitudes are grossly negative and remain preserved. Photcalflag is 0 for 29
+rows; nbestobs is 0 for both source objects.
+
+Two rows have no SExtractor saturation, only informational image-mask bit 1
+(pre-flattening SExtractor detection), and photcalflag = 1. Retain them as sparse
+candidates: g = 12.583 +/- 0.180 on 2014-11-18 and R = 11.761 +/- 0.087 on
+2015-01-23. Different dates and filters prevent a useful light curve or colour.
+ptf_all_rows_quality_audit.csv preserves every native column plus decoded bits;
+ptf_two_unsaturated_candidates.csv isolates these two explicitly marked rows.
+No cross-survey shift, interpolation or comparison-star correction was applied.
+
+BOUNDED NULLS, REJECTED ASSOCIATIONS AND ACCESS LIMITATIONS
+
+UKIDSS DR9 LAS: 10 arcsec cone empty. Image coverage is not established by that
+catalogue null; the separate public UHS route is described above.
+SuperWASP DR1: NASA target rectangle approximately 21.6 by 21.6 arcsec empty;
+Czech mirror 36 arcsec cone also empty. Both serve the same underlying DR1, not
+independent epochs. This says nothing exhaustive about later WASP data.
+KELT: same NASA target rectangle empty.
+ATLAS: service requires registration/token access for forced-photometry jobs.
+No account was created and no job submitted. No public cached target curve was
+found during this bounded search.
+ROSAT 2RXS: 180 arcsec cone empty; no source-specific numerical limit recovered.
+eROSITA eRASS1: queried all three tables within 120 arcsec. Only a supplementary
+source, 1eRASS J075444.9+164114, lies 28.741 arcsec away, with position errors
+about 4.45 arcsec and likelihood 5.76. It is rejected as a target association.
+No target eROSITA flux or upper limit was measured.
+XMM 4XMM DR11 (IX/65): 60 arcsec catalogue cone empty. The initial guessed DR13
+subtable was invalid; the corrected response is explicitly DR11. Newer XMM
+releases and image coverage were not exhaustively searched.
+AKARI IRC (30 arcsec), AKARI FIS (120 arcsec), IRAS PSC (120 arcsec), IRAS FSC
+(120 arcsec): valid corrected catalogue cones empty. No numerical dust limits.
+Spitzer SEIP: 10 arcsec source cone empty and exact-overlap SIA query returns
+zero images. This is bounded to cryogenic SEIP, not all warm-Spitzer products.
+Herschel PACS VIII/106: 30 arcsec cones empty in 70/100/160 micron point-source,
+slightly extended and rejected-source lists. Image coverage and local limits
+remain unknown.
+
+PROVENANCE AND VERIFICATION
+
+query_receipts.jsonl records exact methods, URLs, parameters, UTC retrieval
+times, statuses, lengths, native filenames and SHA-256 values. Primary CDS
+connections timed out despite authorized network access; the Harvard VizieR
+mirror worked. These failures are not archive-outage or astrophysical claims.
+Invalid catalogue subnames, the generic Detection table failure, and an initial
+malformed Czech radius query are preserved alongside corrected queries.
+
+archive_inventory.json distinguishes detections, flagged data, catalogue nulls,
+empty image coverage, rejected associations and authentication/access limits.
+archive_verification.json records 98 requests, 82 downloaded native-response
+hashes checked with zero failures, three verified FITS arrays, correct PTF row
+and saturation counts, and GALEX magnitude/flux consistency. No maintained code
+was edited. These are saved experiment results, not a Git commit or online
+backup; nothing was pushed or published.
+
+Primary documentation:
+https://mast.stsci.edu/api/v0/pyex.html
+https://www.swift.ac.uk/2SXPS/docs.php
+https://www.swift.ac.uk/2SXPS/webdocs.php
+https://swift.gsfc.nasa.gov/analysis/uvot_digest/redleak.html
+http://wsa.roe.ac.uk/ppErrBits.html
+https://arxiv.org/html/2506.14621v1
+https://irsa.ipac.caltech.edu/data/PTF/sources/Sources_cols.html
+https://www.ptf.caltech.edu/page/data_quality
+https://irsa.ipac.caltech.edu/docs/program_interface/siav2_seip.html
+https://exoplanetarchive.ipac.caltech.edu/docs/API_superwasptimeseries_columns.html
+https://github.com/lukeshingles/atlasserver

@@ -1,0 +1,81 @@
+Legacy ASAS control check — 8 November 2026
+
+The protocol was saved at 23:22:20 UTC before control downloads began at 23:22:43.
+All sixteen previously selected Gaia comparison stars returned actual photometry:
+6,751 raw rows in 64 datasets. Raw files, original IDs, coordinate-derived ASAS
+queries, exact response URLs/times/hashes and all catalogue positions are retained.
+The fixed sample was selected for the earlier plate experiment, not by ASAS outcome.
+
+Association gate: accept each dataset only if its measured catalogue position is
+within 10 arcsec of the requested Gaia position. This routine association check
+rejects four of 64 datasets; separations across all datasets span 0.093–24.293
+arcsec. Every control's main F0800+16_438 dataset remains available. The gate is
+based on position, not light-curve variation. All rejected datasets remain saved.
+
+Actual aperture identity was separately audited after review: two raw catalogue
+datasets return identical field/mean-RA/mean-Dec under both Gaia IDs
+667380506973089536 and 667380575692566656. For the latter requested star those
+positions are 22.52 and 24.29 arcsec away, so the position gate already excludes
+these aliases. The former matches at 7.58 and 5.51 arcsec. The ensemble now also
+explicitly merges stars linked by an identical ASAS aperture within a frame,
+while preserving one vote across a star's overlapping datasets. This changes no
+retained target exposure or numerical result: no accepted exact frame contains
+these shared-aperture aliases. shared_asas_aperture_audit.json records the evidence.
+Nearby but non-identical ASAS apertures can still overlap and remain correlated.
+
+Grade A/B measured MAG_0 plus the position gate retain 5,716 rows. Collapsing
+duplicate entries of the same star/dataset/HJD/frame gives 5,714; counting a star
+only once per HJD/frame across overlapping catalogues gives 5,577 star-exposure
+identities. No cross-field zero-point alignment was applied. Each control's own
+dataset has a separate 2004 baseline requiring at least three accepted exposures.
+At an exact target HJD/frame, overlapping datasets of one control yield one median
+residual vote; the ensemble is the median across distinct control stars.
+
+All 338 target main-field A/B rows have 7–16 distinct exact-frame controls.
+There are 338 distinct HJD values, 338 HJD/frame pairs and 334 HJD-calendar-date
+labels. UTC observation timestamps are not available from this archive extract;
+HJD labels must not be represented as recovered UTC nights or converted to BJD.
+MER values remain frame statistics, not individual stellar error estimates.
+
+Main MAG_0 result, annual medians:
+2007 minus 2004: raw +0.135 mag; corrected +0.147 mag (44 and 43 exposures).
+2009 minus 2007: raw -0.121 mag; corrected -0.114 mag (43 and 31 exposures).
+Matched common control offset changes by -0.006125 mag from 2004 to 2007.
+This test therefore does not find the target trough to be a common ensemble change.
+
+Leave-one-control-out sensitivity retains all 338 target exposures in every case:
+corrected 2007-minus-2004 deltas range +0.1410 to +0.1585 mag;
+corrected 2009-minus-2007 deltas range -0.1305 to -0.11225 mag.
+The sixteen individual main-field control changes range -0.0230 to +0.1265 mag,
+with median -0.0050 mag. Four controls fade by about +0.0545,+0.0615,+0.1205,+0.1265.
+Thus the target differs from the median common change, but two individual controls
+show similar-size changes. This limits any claim of target uniqueness or complete
+exclusion of spatial, colour, aperture and other instrumental effects.
+
+Post-protocol aperture sensitivity (requested after the primary comparison):
+aperture    raw 2007-2004    corrected 2007-2004    corrected 2009-2007
+MAG_0       +0.1350          +0.1470                -0.1140
+MAG_1       +0.1460          +0.1435                -0.1245
+MAG_2       +0.1615          +0.158375              -0.12375
+Each aperture retains 338 target exposures. The change and recovery persist in
+all three apertures; this is a sensitivity diagnostic, not a blend-free proof.
+
+Interpretation: comparison-supported ASAS variation survives this common-frame
+check. It does not independently replicate the 1930s event, determine a period,
+establish a dust/binary explanation, or quantify a false-positive probability.
+
+Outputs: comparison_results.json; target_exact_frame_differential.csv;
+annual_exact_frame_differential.csv; per_dataset_placebos.csv;
+all_control_rows.csv; accepted_control_rows.csv; catalogue_position_audit.json;
+selected_control_queries.json; query_receipts.jsonl; asas_control_check.png.
+Raw responses preserve every dataset, magnitude aperture, grade and sentinel.
+
+Source: tools/sky-plates/
+historical_extension_controls.py; historical_extension_controls_fetch.py;
+test_historical_extension_controls.py. Dependencies are the existing requests,
+matplotlib and original historical_extension/analysis_core modules. Run from the
+outer Lumen workspace with runtime/sky-plates/venv/Scripts/python.exe -B followed
+by the analysis source path. Three numerical contract tests pass for exact-frame
+identity, separate dataset baselines, one vote per control star and explicit shared
+ASAS-aperture de-duplication across Gaia IDs. No source
+commit, push, publication or further archive retrieval was performed.

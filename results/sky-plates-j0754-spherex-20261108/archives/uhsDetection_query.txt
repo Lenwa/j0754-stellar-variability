@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+    <title>WSA Database - SQL Query Results</title> 
+
+    <script type="text/javascript" src="http://wsa.roe.ac.uk/common/configurestyles.js"> 
+    </script> 
+  </head> 
+
+  <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#000080" alink="#FF0000" onLoad="swap(0);" > 
+
+<img name="imgMain" src="http://wsa.roe.ac.uk/static.gif" border="1"><p>
+    <h1>WSA Database - SQL Query Results</h1> 
+
+    <p> 
+      Data file generating queries can take a bit longer to execute 
+      as they write to a file ALL rows returned by the query. 
+    </p> 
+
+    <p> 
+      A web link to your generated output file will appear at the 
+      bottom of this page. 
+    </p> 
+
+    <p>
+<b>Connecting to UHSDR3 database</b><br>
+      <b>QUERY STARTED:</b> Sun Nov 08 23:49:39 GMT 2026&nbsp;&nbsp;&nbsp;[3 active, 21278 total] 
+    </p> 
+
+    <p> 
+      Please keep this browser window open and wait for your results or further information to	 appear below... 
+    </p> 
+
+timeout: 60<p>Connected to database
+<p>Submitted query: SELECT TOP 100 * FROM uhsDetection WHERE ra BETWEEN 118.6897 AND 118.6927 AND dec BETWEEN 16.6932 AND 16.6961<p>
+    <p>
+<script language="JavaScript" type="text/javascript"> <!-- 
+swap(1);
+--> </script>
+&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->&#8226;<!--                                                                                                    -->      OK
+    </p> 
+
+    <p> 
+      (Query returned 2 result rows, 
+      all rows are shown in the displayed table.) 
+    </p> 
+
+The getMFLink column can be used to display 1 arcmin image cut-outs around the RA/Dec of the object.<p>    <table border="1" cellspacing="0" cellpadding="3" bgcolor="#FFDDDD"> 
+      <tr bgcolor="#FFFFCC"> 
+        <th>&nbsp;</th> 
+<th nowrap="nowrap">getMFLink</th>        <th nowrap>multiframeID</th> 
+        <th nowrap>extNum</th> 
+        <th nowrap>cuEventID</th> 
+        <th nowrap>seqNum</th> 
+        <th nowrap>filterID</th> 
+        <th nowrap>isoFlux</th> 
+        <th nowrap>isoMag</th> 
+        <th nowrap>x</th> 
+        <th nowrap>xErr</th> 
+        <th nowrap>y</th> 
+        <th nowrap>yErr</th> 
+        <th nowrap>gauSig</th> 
+        <th nowrap>ell</th> 
+        <th nowrap>pa</th> 
+        <th nowrap>aProf1</th> 
+        <th nowrap>aProf2</th> 
+        <th nowrap>aProf3</th> 
+        <th nowrap>aProf4</th> 
+        <th nowrap>aProf5</th> 
+        <th nowrap>aProf6</th> 
+        <th nowrap>aProf7</th> 
+        <th nowrap>aProf8</th> 
+        <th nowrap>pHeight</th> 
+        <th nowrap>pHeightErr</th> 
+        <th nowrap>aperFlux1</th> 
+        <th nowrap>aperFlux1err</th> 
+        <th nowrap>aperMag1</th> 
+        <th nowrap>aperMag1err</th> 
+        <th nowrap>aperFlux2</th> 
+        <th nowrap>aperFlux2err</th> 
+        <th nowrap>aperMag2</th> 
+        <th nowrap>aperMag2err</th> 
+        <th nowrap>aperFlux3</th> 
+        <th nowrap>aperFlux3err</th> 
+        <th nowrap>aperMag3</th> 
+        <th nowrap>aperMag3err</th> 
+        <th nowrap>aperFlux4</th> 
+        <th nowrap>aperFlux4err</th> 
+        <th nowrap>aperMag4</th> 
+        <th nowrap>aperMag4err</th> 
+        <th nowrap>aperFlux5</th> 
+        <th nowrap>aperFlux5err</th> 
+        <th nowrap>aperMag5</th> 
+        <th nowrap>aperMag5err</th> 
+        <th nowrap>aperFlux6</th> 
+        <th nowrap>aperFlux6err</th> 
+        <th nowrap>aperMag6</th> 
+        <th nowrap>aperMag6err</th> 
+        <th nowrap>aperFlux7</th> 
+        <th nowrap>aperFlux7err</th> 
+        <th nowrap>aperMag7</th> 
+        <th nowrap>aperMag7err</th> 
+        <th nowrap>aperFlux8</th> 
+        <th nowrap>aperFlux8err</th> 
+        <th nowrap>aperMag8</th> 
+        <th nowrap>aperMag8err</th> 
+        <th nowrap>aperFlux9</th> 
+        <th nowrap>aperFlux9err</th> 
+        <th nowrap>aperMag9</th> 
+        <th nowrap>aperMag9err</th> 
+        <th nowrap>aperFlux10</th> 
+        <th nowrap>aperFlux10err</th> 
+        <th nowrap>aperMag10</th> 
+        <th nowrap>aperMag10err</th> 
+        <th nowrap>aperFlux11</th> 
+        <th nowrap>aperFlux11err</th> 
+        <th nowrap>aperMag11</th> 
+        <th nowrap>aperMag11err</th> 
+        <th nowrap>aperFlux12</th> 
+        <th nowrap>aperFlux12err</th> 
+        <th nowrap>aperMag12</th> 
+        <th nowrap>aperMag12err</th> 
+        <th nowrap>aperFlux13</th> 
+        <th nowrap>aperFlux13err</th> 
+        <th nowrap>aperMag13</th> 
+        <th nowrap>aperMag13err</th> 
+        <th nowrap>petroRad</th> 
+        <th nowrap>kronRad</th> 
+        <th nowrap>hallRad</th> 
+        <th nowrap>petroFlux</th> 
+        <th nowrap>petroFluxErr</th> 
+        <th nowrap>petroMag</th> 
+        <th nowrap>petroMagErr</th> 
+        <th nowrap>kronFlux</th> 
+        <th nowrap>kronFluxErr</th> 
+        <th nowrap>kronMag</th> 
+        <th nowrap>kronMagErr</th> 
+        <th nowrap>hallFlux</th> 
+        <th nowrap>hallFluxErr</th> 
+        <th nowrap>hallMag</th> 
+        <th nowrap>hallMagErr</th> 
+        <th nowrap>errBits</th> 
+        <th nowrap>sky</th> 
+        <th nowrap>skyVar</th> 
+        <th nowrap>deblend</th> 
+        <th nowrap>ra</th> 
+        <th nowrap>dec</th> 
+        <th nowrap>cx</th> 
+        <th nowrap>cy</th> 
+        <th nowrap>cz</th> 
+        <th nowrap>htmID</th> 
+        <th nowrap>l</th> 
+        <th nowrap>b</th> 
+        <th nowrap>lambda</th> 
+        <th nowrap>eta</th> 
+        <th nowrap>class</th> 
+        <th nowrap>classStat</th> 
+        <th nowrap>psfFlux</th> 
+        <th nowrap>psfFluxErr</th> 
+        <th nowrap>psfMag</th> 
+        <th nowrap>psfMagErr</th> 
+        <th nowrap>psfFitX</th> 
+        <th nowrap>psfFitXerr</th> 
+        <th nowrap>psfFitY</th> 
+        <th nowrap>psfFitYerr</th> 
+        <th nowrap>psfFitChi2</th> 
+        <th nowrap>psfFitDof</th> 
+        <th nowrap>SerFlux1D</th> 
+        <th nowrap>SerMag1D</th> 
+        <th nowrap>SerScaleLen1D</th> 
+        <th nowrap>SerIdx1D</th> 
+        <th nowrap>SerFit1DChi2</th> 
+        <th nowrap>SerFitNu1D</th> 
+        <th nowrap>SerFlux2D</th> 
+        <th nowrap>SerMag2D</th> 
+        <th nowrap>SerScaleLen2D</th> 
+        <th nowrap>SerIdx2D</th> 
+        <th nowrap>SerFit2DChi2</th> 
+        <th nowrap>SerFitNu2D</th> 
+        <th nowrap>ppErrBits</th> 
+        <th nowrap>deprecated</th> 
+        <th nowrap>objID</th> 
+      </tr> 
+      <tr bgcolor="#FFDDDD" class="RowOdd"> 
+        <td nowrap class="RowHeader" bgcolor="#FFFFCC"><b>1</b></td> 
+<td align="right" nowrap="nowrap"><a href="http://wsa.roe.ac.uk:8080/wsa/GetImage?mode=show&ra=118.69117801832981&dec=16.694638943515663&mfid=6124750&database=UHSDR3" target=getI>view<a/></td> 
+<td align="right" nowrap>6124750</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>36447</td> 
+<td align="right" nowrap>1249</td> 
+<td align="right" nowrap>3</td> 
+<td align="right" nowrap>+1.201900E006</td> 
+<td align="right" nowrap>+10.272951</td> 
+<td align="right" nowrap>+427.478150</td> 
+<td align="right" nowrap>+0.010032</td> 
+<td align="right" nowrap>+1653.082900</td> 
+<td align="right" nowrap>+0.010035</td> 
+<td align="right" nowrap>+2.679551</td> 
+<td align="right" nowrap>+0.038840</td> 
+<td align="right" nowrap>+94.050520</td> 
+<td align="right" nowrap>+979.957000</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>+52919.492000</td> 
+<td align="right" nowrap>+108.544880</td> 
+<td align="right" nowrap>+245285.250000</td> 
+<td align="right" nowrap>+233.701390</td> 
+<td align="right" nowrap>+11.112409</td> 
+<td align="right" nowrap>+0.001034</td> 
+<td align="right" nowrap>+491310.700000</td> 
+<td align="right" nowrap>+330.752400</td> 
+<td align="right" nowrap>+10.762917</td> 
+<td align="right" nowrap>+0.000731</td> 
+<td align="right" nowrap>+8.642993E005</td> 
+<td align="right" nowrap>+438.748840</td> 
+<td align="right" nowrap>+10.408772</td> 
+<td align="right" nowrap>+0.000551</td> 
+<td align="right" nowrap>+1.068114E006</td> 
+<td align="right" nowrap>+488.084870</td> 
+<td align="right" nowrap>+10.305136</td> 
+<td align="right" nowrap>+0.000496</td> 
+<td align="right" nowrap>+1.133502E006</td> 
+<td align="right" nowrap>+503.612270</td> 
+<td align="right" nowrap>+10.295890</td> 
+<td align="right" nowrap>+0.000482</td> 
+<td align="right" nowrap>+1.164492E006</td> 
+<td align="right" nowrap>+512.101800</td> 
+<td align="right" nowrap>+10.293867</td> 
+<td align="right" nowrap>+0.000477</td> 
+<td align="right" nowrap>+1.189700E006</td> 
+<td align="right" nowrap>+520.886000</td> 
+<td align="right" nowrap>+10.281991</td> 
+<td align="right" nowrap>+0.000475</td> 
+<td align="right" nowrap>+1.246982E006</td> 
+<td align="right" nowrap>+536.616900</td> 
+<td align="right" nowrap>+10.232972</td> 
+<td align="right" nowrap>+0.000467</td> 
+<td align="right" nowrap>+1.283058E006</td> 
+<td align="right" nowrap>+548.405760</td> 
+<td align="right" nowrap>+10.202006</td> 
+<td align="right" nowrap>+0.000464</td> 
+<td align="right" nowrap>+1.051632E006</td> 
+<td align="right" nowrap>+504.938840</td> 
+<td align="right" nowrap>+10.417963</td> 
+<td align="right" nowrap>+0.000521</td> 
+<td align="right" nowrap>+8.357640E005</td> 
+<td align="right" nowrap>+462.063780</td> 
+<td align="right" nowrap>+10.667413</td> 
+<td align="right" nowrap>+0.000600</td> 
+<td align="right" nowrap>+7.682332E005</td> 
+<td align="right" nowrap>+462.732120</td> 
+<td align="right" nowrap>+10.758889</td> 
+<td align="right" nowrap>+0.000654</td> 
+<td align="right" nowrap>+7.343687E005</td> 
+<td align="right" nowrap>+475.071230</td> 
+<td align="right" nowrap>+10.807837</td> 
+<td align="right" nowrap>+0.000702</td> 
+<td align="right" nowrap>+8.830770</td> 
+<td align="right" nowrap>+8.830770</td> 
+<td align="right" nowrap>+17.661540</td> 
+<td align="right" nowrap>+1.040300E006</td> 
+<td align="right" nowrap>+502.831450</td> 
+<td align="right" nowrap>+10.429726</td> 
+<td align="right" nowrap>+0.000525</td> 
+<td align="right" nowrap>+1.040300E006</td> 
+<td align="right" nowrap>+502.831450</td> 
+<td align="right" nowrap>+10.429726</td> 
+<td align="right" nowrap>+0.000525</td> 
+<td align="right" nowrap>+1.040300E006</td> 
+<td align="right" nowrap>+502.831450</td> 
+<td align="right" nowrap>+10.429726</td> 
+<td align="right" nowrap>+0.000525</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>+412.345730</td> 
+<td align="right" nowrap>+0.022644</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>+118.6911780</td> 
+<td align="right" nowrap>+16.6946389</td> 
+<td align="right" nowrap>-0.4598524</td> 
+<td align="right" nowrap>+0.8402447</td> 
+<td align="right" nowrap>+0.2872709</td> 
+<td align="right" nowrap>16045020122717</td> 
+<td align="right" nowrap>+204.5054219</td> 
+<td align="right" nowrap>+21.3187803</td> 
+<td align="right" nowrap>-61.2976082</td> 
+<td align="right" nowrap>+4.2380085</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>+17.909883</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9999</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>65552</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>282581329</td> 
+</tr> 
+      <tr bgcolor="#DDDDDD" class="RowEven"> 
+        <td nowrap class="RowHeader" bgcolor="#FFFFCC"><b>2</b></td> 
+<td align="right" nowrap="nowrap"><a href="http://wsa.roe.ac.uk:8080/wsa/GetImage?mode=show&ra=118.69117328172466&dec=16.69463992316049&mfid=10820584&database=UHSDR3" target=getI>view<a/></td> 
+<td align="right" nowrap>10820584</td> 
+<td align="right" nowrap>4</td> 
+<td align="right" nowrap>50594</td> 
+<td align="right" nowrap>771</td> 
+<td align="right" nowrap>5</td> 
+<td align="right" nowrap>+1.128342E006</td> 
+<td align="right" nowrap>+9.685987</td> 
+<td align="right" nowrap>+443.609920</td> 
+<td align="right" nowrap>+0.010042</td> 
+<td align="right" nowrap>+1672.654900</td> 
+<td align="right" nowrap>+0.010044</td> 
+<td align="right" nowrap>+2.931304</td> 
+<td align="right" nowrap>+0.027356</td> 
+<td align="right" nowrap>+108.824630</td> 
+<td align="right" nowrap>+484.000000</td> 
+<td align="right" nowrap>364</td> 
+<td align="right" nowrap>226</td> 
+<td align="right" nowrap>148</td> 
+<td align="right" nowrap>101</td> 
+<td align="right" nowrap>70</td> 
+<td align="right" nowrap>46</td> 
+<td align="right" nowrap>35</td> 
+<td align="right" nowrap>+47384.562000</td> 
+<td align="right" nowrap>+104.605020</td> 
+<td align="right" nowrap>+196808.270000</td> 
+<td align="right" nowrap>+213.913710</td> 
+<td align="right" nowrap>+10.837225</td> 
+<td align="right" nowrap>+0.001180</td> 
+<td align="right" nowrap>+415559.720000</td> 
+<td align="right" nowrap>+310.474500</td> 
+<td align="right" nowrap>+10.380140</td> 
+<td align="right" nowrap>+0.000811</td> 
+<td align="right" nowrap>+7.655179E005</td> 
+<td align="right" nowrap>+422.150120</td> 
+<td align="right" nowrap>+9.913033</td> 
+<td align="right" nowrap>+0.000599</td> 
+<td align="right" nowrap>+1.004013E006</td> 
+<td align="right" nowrap>+489.188420</td> 
+<td align="right" nowrap>+9.715270</td> 
+<td align="right" nowrap>+0.000529</td> 
+<td align="right" nowrap>+1.065479E006</td> 
+<td align="right" nowrap>+518.802200</td> 
+<td align="right" nowrap>+9.701572</td> 
+<td align="right" nowrap>+0.000529</td> 
+<td align="right" nowrap>+1.098797E006</td> 
+<td align="right" nowrap>+555.825560</td> 
+<td align="right" nowrap>+9.701287</td> 
+<td align="right" nowrap>+0.000549</td> 
+<td align="right" nowrap>+1.116764E006</td> 
+<td align="right" nowrap>+614.572800</td> 
+<td align="right" nowrap>+9.694089</td> 
+<td align="right" nowrap>+0.000597</td> 
+<td align="right" nowrap>+1.124758E006</td> 
+<td align="right" nowrap>+672.559900</td> 
+<td align="right" nowrap>+9.689441</td> 
+<td align="right" nowrap>+0.000649</td> 
+<td align="right" nowrap>+1.129562E006</td> 
+<td align="right" nowrap>+736.516300</td> 
+<td align="right" nowrap>+9.684814</td> 
+<td align="right" nowrap>+0.000708</td> 
+<td align="right" nowrap>+1.133332E006</td> 
+<td align="right" nowrap>+805.318050</td> 
+<td align="right" nowrap>+9.681195</td> 
+<td align="right" nowrap>+0.000771</td> 
+<td align="right" nowrap>+1.136553E006</td> 
+<td align="right" nowrap>+877.888000</td> 
+<td align="right" nowrap>+9.678114</td> 
+<td align="right" nowrap>+0.000839</td> 
+<td align="right" nowrap>+1.139365E006</td> 
+<td align="right" nowrap>+1030.899900</td> 
+<td align="right" nowrap>+9.675431</td> 
+<td align="right" nowrap>+0.000982</td> 
+<td align="right" nowrap>+1.141050E006</td> 
+<td align="right" nowrap>+1191.359100</td> 
+<td align="right" nowrap>+9.673827</td> 
+<td align="right" nowrap>+0.001134</td> 
+<td align="right" nowrap>+6.206085</td> 
+<td align="right" nowrap>+6.206085</td> 
+<td align="right" nowrap>+12.412170</td> 
+<td align="right" nowrap>+1.124546E006</td> 
+<td align="right" nowrap>+670.414500</td> 
+<td align="right" nowrap>+9.689646</td> 
+<td align="right" nowrap>+0.000647</td> 
+<td align="right" nowrap>+1.124546E006</td> 
+<td align="right" nowrap>+670.414500</td> 
+<td align="right" nowrap>+9.689646</td> 
+<td align="right" nowrap>+0.000647</td> 
+<td align="right" nowrap>+1.124546E006</td> 
+<td align="right" nowrap>+670.414500</td> 
+<td align="right" nowrap>+9.689646</td> 
+<td align="right" nowrap>+0.000647</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>+8395.294000</td> 
+<td align="right" nowrap>+0.100830</td> 
+<td align="right" nowrap>-99999999</td> 
+<td align="right" nowrap>+118.6911733</td> 
+<td align="right" nowrap>+16.6946399</td> 
+<td align="right" nowrap>-0.4598523</td> 
+<td align="right" nowrap>+0.8402448</td> 
+<td align="right" nowrap>+0.2872709</td> 
+<td align="right" nowrap>16045020122706</td> 
+<td align="right" nowrap>+204.5054191</td> 
+<td align="right" nowrap>+21.3187765</td> 
+<td align="right" nowrap>-61.2976114</td> 
+<td align="right" nowrap>+4.2380154</td> 
+<td align="right" nowrap>-1</td> 
+<td align="right" nowrap>+20.630924</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9999</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>-9.999995E008</td> 
+<td align="right" nowrap>65536</td> 
+<td align="right" nowrap>0</td> 
+<td align="right" nowrap>796283205</td> 
+</tr> 
+    </table>
+
+    <p> 
+      (Query returned 2 result rows, 
+      all rows are shown in the displayed table.) 
+    </p> 
+
+<p> 
+<table cellspacing="0" cellpadding="3"><tr><td align="right"><a href="http://wsa.roe.ac.uk/tmp/tmp_sql/results8_23_49_42_21377.csv"><img src="http://wsa.roe.ac.uk/tmp/images/icons/save.gif" border="0"></a></td><td><a class="dl" id="dl_id" href="http://wsa.roe.ac.uk/tmp/tmp_sql/results8_23_49_42_21377.csv">Download Results File </a>, your results in a CSV ASCII file 
+(Contains <b>2 rows</b>, 6.4 KB) 
+</td> 
+</table>
+    <p> 
+      <b>QUERY FINISHED:</b> Sun Nov 08 23:49:52 GMT 2026 
+    </p> 
+
+<script language="JavaScript" type="text/javascript"> <!-- 
+swap(0);
+--> </script>
+    <p> 
+      Click your browsers 'BACK' button to try another query...
+    </p> 
+
+
+    <hr size="1" noshade="noshade" /> 
+
+    <small class="FooterText"> 
+      &nbsp;Page created: 8 November 2026&nbsp;&nbsp;&#8226;&nbsp;&nbsp; 
+
+    <script type="text/javascript" src="http://wsa.roe.ac.uk/browserversion.js"> 
+    </script> 
+      <noscript> 
+        [!!]&nbsp;&nbsp;Style-sheets disabled (cannot detect browser support) 
+      </noscript> 
+    </small> 
+  </body> 
+</html> 
+

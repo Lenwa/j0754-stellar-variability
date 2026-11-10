@@ -1,0 +1,28 @@
+{
+  "saved_utc": "2026-11-08T19:39:28.348310+00:00",
+  "question": "Can independent APPLAUSE scan remeasurement establish J0754 was fainter than normal in 1935-1937?",
+  "prediction": "At the proper-motion-corrected catalog position, target photographic signal is weaker than predicted by same-image colour/magnitude-matched stars; a calibrated faint upper limit can support dimming even without a secure target detection.",
+  "weakening_outcomes": [
+    "Comparable stars show the same deficit",
+    "Astrometric offset, blend, scratch or scan issue explains the apparent deficit",
+    "Calibration controls cannot recover withheld normal stars",
+    "Target lies outside empirically validated brightness range",
+    "Normal brightness cannot be rejected from calibrated upper limits"
+  ],
+  "event_plates": [
+    4191,
+    4413,
+    4599
+  ],
+  "initial_reference_plates": [
+    413,
+    446
+  ],
+  "reason": "All three independently exposed event plates in the retained target extract; 1919 reference plates from the same Lippert Astrograph with one exposure and prior target measurements. Other baseline material can be inspected later but must be labelled exploratory.",
+  "independence": "Different scans/processes of one physical plate are correlated; retain them as reproducibility checks and never count them as separate epochs.",
+  "measurement": "Measure raw scanned image density relative to local sky. Photographic density is nonlinear in incident flux: calibrate empirical signal versus same-image catalogue synthetic natural magnitude, never assume scanned counts are linear photon flux.",
+  "controls": "Use all isolated same-image catalogue stars within available cutout, within 0.3 BP-RP of target, nearest neighbour at least 20 arcsec and clean artifact/astrometry checks; select without using target outcome. Broader colour sensitivity must be explicitly secondary.",
+  "validation": "Assess held-out comparison-star predictions and empirically measured false positives at blank locations. Do not claim injection recovery of incident flux from adding a linear PSF to photographic density.",
+  "decision": "Independent corroboration requires at least two physical event plates with usable calibration and either a target estimate demonstrably fainter than normal or a validated brightness upper limit excluding normal, with controls and position tests passing. Otherwise report inconclusive or a narrower result.",
+  "limits": "Earlier DASCH reduction and APPLAUSE catalogue depth gates remain preserved. Pixel analysis is a separate followup with its own calibration and cannot retroactively turn below-limit catalogue values into reliable measurements."
+}

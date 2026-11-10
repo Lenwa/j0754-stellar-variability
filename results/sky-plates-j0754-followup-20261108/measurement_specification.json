@@ -1,0 +1,23 @@
+{
+  "saved_utc": "2026-11-08T19:43:41.382490+00:00",
+  "status": "Pre-pixel-reduction measurement specification",
+  "field": "1300 pixel native-resolution square; use catalogue cone radius 15 arcmin, within provider warning threshold",
+  "primary_aperture_pixels": 6,
+  "sensitivity_apertures_pixels": [
+    4,
+    8
+  ],
+  "sky_annulus_pixels": [
+    12,
+    20
+  ],
+  "minimum_calibration_stars": 12,
+  "minimum_catalogue_magnitude_span": 1.0,
+  "calibration": "Quadratic magnitude versus log10 signed positive local density sum, robust three-MAD training outlier rejection, derivative must remain monotonic; reject target extrapolation",
+  "withheld_control_gate": "At least 12 valid leave-one-out predictions, median absolute residual <=0.25 mag; target magnitude plus/minus empirical held-out residual quantiles and blank-aperture noise are descriptive, not all systematic uncertainty",
+  "target_detection": "Signal must exceed five times robust scatter of blank-aperture sums. Negative/weak signals retained rather than clipped.",
+  "comparison_safety": "No target values in fit or scan-polarity choice. Catalogue controls selected before measuring target. Proper position and expected normal brightness will be checked against static catalogue and local astrometry.",
+  "corroboration_gate": "At least two physically separate event plates satisfy model/position/signal support and show dimming exceeding both 0.2 mag and three times held-out control RMS; aperture sensitivities must have consistent sign. This is conservative pilot screening, not a formal combined significance.",
+  "control_magnitude_window": "Catalogue natural magnitude within 1.5 mag of target expected magnitude, selected before examining cutout measurements",
+  "further_specified_utc": "2026-11-08T19:46:03.024537+00:00"
+}

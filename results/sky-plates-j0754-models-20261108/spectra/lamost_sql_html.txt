@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://nadc.china-vo.org/sr/images/favicon.ico">
+    
+    <title>SQL Query | LAMOST DR12 v2.0</title>
+    
+    
+
+    <link rel="stylesheet" href="https://nadc.china-vo.org/sr/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://nadc.china-vo.org/sr/open-iconic/font/css/open-iconic-bootstrap.css">
+    <link rel="stylesheet" href="/lmusers/static/lamost/css/style.css?v=3">
+    <link rel="stylesheet" href="https://nadc.china-vo.org/sr/css/bootstrap-treeview.min.css">
+    <link href="https://nadc.china-vo.org/sr/css/select2.min.css" rel="stylesheet"/>
+    <link href="https://nadc.china-vo.org/sr/css/select2-bootstrap.css" rel="stylesheet">
+    
+
+    
+
+    
+    <script src="https://nadc.china-vo.org/sr/js/jquery.min.js"></script>
+    <script src="https://nadc.china-vo.org/sr/js/popper.min.js"></script>
+    <script src="https://nadc.china-vo.org/sr/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="https://nadc.china-vo.org/sr/js/bootstrap.min.js"></script>
+    <script src="/lmusers/static/lamost/js/script.js?v=2"></script>
+    <script src="https://nadc.china-vo.org/sr/js/select2.min.js"></script>
+    <script src="/lmusers/static/lamost/js/lamost.js"></script>
+    <script src="https://nadc.china-vo.org/sr/js/bootstrap-treeview.min.js"></script>
+    <script type="text/javascript">
+        var prx = '/lmusers';
+        var csrf_token = "IjA1NjZmMDk2ODZmMTdkMTE2YWI0ZjRhY2M2MWZlYzFjZjc1NmE3N2Yi.avD97g.28nVqHxG_nJa8Vd66b85nuLE-1g";
+        
+        var is_authenticated = false;
+        
+        $(function(){
+            $('#assistant_logo').on("mouseover", function() {
+                $('#assistant_logo').width(200);
+                $('#assistant_logo').height(200);
+            });
+            $('#assistant_logo').on("mouseout", function() {
+                $('#assistant_logo').width(48);
+                $('#assistant_logo').height(48);
+            });
+            $('#wechat_group').on("mouseover", function() {
+                $('#wechat_group').width(200);
+                $('#wechat_group').height(200);
+            });
+            $('#wechat_group').on("mouseout", function() {
+                $('#wechat_group').width(52);
+                $('#wechat_group').height(52);
+            });
+        });
+    </script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//analytics.escience.org.cn/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '23']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
+    
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand navbar-dark topNav-bg index-topNav">
+    <div class="container-fluid index-navbar-container">
+        <div class="row" style="margin: 0px;width: 100%;">
+            <a class="navbar-brand" href="https://www.lamost.org/data">
+                <img src="https://nadc.china-vo.org/sr/images/lamost_logo.png" style="margin-left: 20px;">
+            </a>
+        <div class="collapse navbar-collapse" id="chinavo-navbar">
+            <ul class="navbar-nav mr-auto chinavoNavbar-ul">
+                <li class="nav-item">
+                    <a class="nav-link" href="/dr12/v2.0/">LAMOST DR12 v2.0</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        DATA ACCESS
+                    </a>
+                    <div class="dropdown-menu chinavoDropdownMenu" aria-labelledby="navbarDropdown0">
+                        <a class="dropdown-item" href="/dr12/v2.0/search">Low Resolution Catalogue Query</a>
+                        <a class="dropdown-item" href="/dr12/v2.0/plan">Low Resolution Observing Plan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/dr12/v2.0/medcas/search">Medium Resolution Catalogue Query</a>
+                        <a class="dropdown-item" href="/dr12/v2.0/medcas/plan">Medium Resolution Observing Plan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/dr12/v2.0/sql">SQL Query</a>
+                        <a class="dropdown-item" href="/dr12/v2.0/vo">VO Services</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/dr12/v2.0/catalogue">All Catalogues</a>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/user/">File FTP Download</a>
+                        
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="/dr12/v2.0/tar/">File Package Download</a>
+
+                    </div>
+                </li>
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        DOCUMENTS
+                    </a>
+                    <div class="dropdown-menu chinavoDropdownMenu" aria-labelledby="navbarDropdown0">
+                        
+        <a class="dropdown-item" href="/dr12/v2.0/doc/lr-data-production-description">Low Resolution Data Description</a>
+        <a class="dropdown-item" href="/dr12/v2.0/doc/lr-data-production-description_cn">低分辨率数据说明</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/dr12/v2.0/doc/mr-data-production-description">Medium Resolution Data Description</a>
+        <a class="dropdown-item" href="/dr12/v2.0/doc/mr-data-production-description_cn">中分辨率数据说明</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/dr12/v2.0/doc/release_note">Release Note</a>
+        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=1">Data Policy</a>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=2">Publication Policy</a>
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        HELP
+                    </a>
+                    <div class="dropdown-menu chinavoDropdownMenu" aria-labelledby="navbarDropdown0">
+                        <a class="dropdown-item" href="/dr12/v2.0/doc/query-introduction">Query Introduction</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/dr12/v2.0/doc/faq">FAQ</a>
+                        <a class="dropdown-item" href="/dr12/v2.0/doc/faq_chinese">常见问题</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/user/contactus">Contact Us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/user/odr">Data Disk Request</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=6">Programming Packages	</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=7">LAMOST Data Product Introduction Video</a>                        
+                        <a class="dropdown-item" href="http://www.lamost.org/lmusers/cms/article/view?id=8">LAMOST Data Publish System Introduction Video</a>						
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto chinavoNavbar-ul">
+                    
+                    <li class="nav-item"><a class="nav-link" href="/lmusers/user/login">Login</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    
+    <div class="main-container headline-container">
+        <div class="row index-headline-row" style="margin: 0px;">
+            <div class="container-fluid main-chinavo-container">
+                
+                
+
+                
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        
+    
+    <li class="breadcrumb-item">
+        
+        <a href="/dr12/v2.0/">LAMOST DR12 v2.0</a>
+        
+    </li>
+
+        
+    
+    <li class="breadcrumb-item active" aria-current="page">
+        
+            SQL Query
+        
+    </li>
+
+    </ol>
+</nav>
+
+<form id="searchFrm" method="post" action="sql/q" style="padding-left: 100px; padding-right: 100px;">
+    <div>
+        <h5>Statements</h5>
+        <textarea name="sql" rows="10" cols="100">select c.obsid,c.obsdate, c.ra, c.dec, c.z, c.mjd,s.logg ,s.teff,f.file
+    from catalogue c 
+        left outer join stellar s on c.obsid=s.obsid 
+            left outer join obsfits f on c.obsid=f.obsid
+    where spos(c.ra,c.dec) @ scircle '&lt;(342.60217d,-2.8008677d),0.2d&gt;'
+    limit 50;
+        </textarea>
+        <div style="clear:both;"></div>
+        <div style="width:500px;float:left;">
+            <label><input name="output.fmt" type="radio" value="html" checked="checked">html</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="output.fmt" type="radio" value="csv">CSV</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="output.fmt" type="radio" value="json">JSON</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="output.fmt" type="radio" value="txt">TXT</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="output.fmt" type="radio" value="vot">VOTable</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div style="width:230px;float:left;">
+        <button id="sBtn" class="btn btn-primary" type="button">Execute</button>
+        <button class="btn btn-warning" type="reset">Reset</button>
+    </div>
+    <div style="clear:both; height: 50px;"></div>
+    
+    <div>
+        <h4>Available Datatables</h4>
+        
+
+        <div class="catalog">
+            <div style="text-align: center;"><h5>Low Resolution Catalogues</h5></div>
+            <table class="table table-striped table-hover table-bordered">
+                <tr><th>Table Name</th><th>Description</th><th>Query</th></tr>
+                
+                <tr>
+                    <td>catalogue</td>
+                    <td>LAMOST LRS General Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/catalogue"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>stellar</td>
+                    <td>LAMOST LRS Stellar Parameter Catalogue of A, F, G and K Stars</td>
+                    <td><a href="/dr12/v2.0/table/stellar"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>astellar</td>
+                    <td>LAMOST LRS Line-Index Catalogue of A Type Stars</td>
+                    <td><a href="/dr12/v2.0/table/astellar"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>mstellar</td>
+                    <td>LAMOST LRS Catalogue of gM, dM, and sdM Stars</td>
+                    <td><a href="/dr12/v2.0/table/mstellar"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>cv</td>
+                    <td>LAMOST LRS Catalogue of Cataclysmic Variable Stars</td>
+                    <td><a href="/dr12/v2.0/table/cv"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>wd</td>
+                    <td>LAMOST LRS Catalogue of White Dwarf Stars</td>
+                    <td><a href="/dr12/v2.0/table/wd"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>qso</td>
+                    <td>LAMOST LRS Catalogue of Emission Line Features of QSOs</td>
+                    <td><a href="/dr12/v2.0/table/qso"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>galaxy</td>
+                    <td>LAMOST LRS Catalogue of Stellar Population Synthesis of Galaxies</td>
+                    <td><a href="/dr12/v2.0/table/galaxy"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>mec</td>
+                    <td>LAMOST LRS Multiple Epoch Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/mec"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>plan</td>
+                    <td>LAMOST LRS Observed Plate Information Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/plan"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>inputcatalog</td>
+                    <td>LAMOST LRS Input Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/inputcatalog"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr><td>obsfits</td><td>Low Resolution obsid-file corresponding Table</td><td>&nbsp;</td></tr>
+            </table>
+        </div>
+
+
+
+        <div class="catalog">
+            <div style="text-align: center;"><h5>Medium Resolution Catalogues</h5></div>
+            <table class="table table-striped table-hover table-bordered">
+                <tr><th>Table Name</th><th>Description</th><th>Query</th></tr>
+                
+                <tr>
+                    <td>med_catalogue</td>
+                    <td>LAMOST MRS General Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/med_catalogue"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>med_stellar</td>
+                    <td>LAMOST MRS Parameter Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/med_stellar"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>med_mec</td>
+                    <td>LAMOST MRS Multiple Epoch Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/med_mec"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>med_plan</td>
+                    <td>LAMOST MRS Observed Plate Information Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/med_plan"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr>
+                    <td>med_inputcatalog</td>
+                    <td>LAMOST MRS Input Catalogue</td>
+                    <td><a href="/dr12/v2.0/table/med_inputcatalog"><span class="oi oi-magnifying-glass"> Query</span></a></td>
+                </tr>
+                
+                <tr><td>med_obsfits</td><td>Medium Resolution obsid-file corresponding Table</td><td>&nbsp;</td></tr>
+            </table>
+        </div>
+
+    </div>
+    <div style="clear:both; height: 50px;"></div>
+        
+    <div>
+        <h4 style="color:red">Notice</h4>
+        <ul>
+            <li>The charaters comparing in PostgreSQL is case-sensitive, which means class='star' and class='STAR' is not the same. If you want case-insensitive, you could use <span style="font-weight:bold">class <span style="color:red">ilike</span> 'star'</span>.</li>
+            <li><a href="http://pgsphere.projects.pgfoundry.org/">pg_Sphere library</a> is available for geometrical search on sphere.</li>
+        </ul>
+    </div>
+    <div style="clear:both; height: 50px;"></div>
+        
+    <div>
+        <h4>Samples</h4>
+        <ul>
+        <li>Looking for objects that in the circle with center at (331.7 degree, -1.4degress) and radius=0.2 degree.<br>
+        <pre>select c.obsid,c.obsdate, c.ra, c.dec, c.z, c.lmjd 
+    from catalogue c 
+    where spos(c.ra,c.dec) @ scircle '&lt;(331.7d, -1.4d),0.2d&gt;' 
+    limit 50
+        </pre>
+        </li>
+        <li>Given certain condition, query the plan list and the information of center stars<br>
+        <pre>	
+    select obsdate,planid,ra,dec,mjm 
+    from plan 
+    where obsdate&lt;='2012-12-01' and planid ilike 'GAC%' 
+    limit 10
+        </pre>
+        </li>
+        <li>Query the redshift of galaxies during given time<br>
+        <pre>select obsdate,planid,spid,fiberid,class,subclass,z 
+    from catalogue 
+    where obsdate between '20121201' and '20121230' and class ilike 'GALAXY' 
+    limit 10
+        </pre>
+        </li>
+        <li>Query stellar atmosphere parameters under certain condition such as date<br>
+    <pre>	
+    select obsdate,planid,spid,fiberid,rv,logg,feh,teff 
+    from stellar 
+    where obsdate between '20121201' and '20121230' 
+    limit 10
+    </pre>	
+        </li>
+        <li>Query the parameters of F type stars cross-matching between two tables (left connection)<br>
+        <pre>select a.obsdate,a.planid,a.spid,a.fiberid,b.rv,logg,feh,teff 
+    from catalogue as a 
+        left join stellar as b on a.obsid=b.obsid 
+    where a.class ilike 'STAR' and a.subclass ilike 'F%' 
+    limit 10
+        </pre>
+        </li>
+        <li>Query the parameters of G type stars cross-matching between two tables (fully connected)<br>
+        <pre>select a.obsdate,a.planid,a.spid,a.fiberid,b.rv,logg,feh,teff 
+    from catalogue as a 
+        join stellar as b on a.obsid=b.obsid 
+    where a.class ilike 'STAR' and a.subclass ilike 'G%' 
+    limit 10
+        </pre>
+        </li>
+        <li>Query the radial velocity and other information of M type stars with H alpha magnetic activity<br>
+        <pre>select obsdate,planid,spid,fiberid,rv 
+    from mstellar 
+    where atcha=1 
+    limit 10
+        </pre>
+        </li>
+        </ul>
+    </div>
+</form>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div id="icon-container" style="text-align: center;">
+    <div><a href="https://chat.china-vo.org/lamost"><img src="https://nadc.china-vo.org/sr/images/aiAssistantLogo.png" id="assistant_logo" border="0" width="48" height="48" style="margin-right: 20px; margin-bottom: 5px;"></a></div>
+    <div><img src="https://nadc.china-vo.org/sr/images/wechat_lm_group.png" id="wechat_group" width="52" height="52" style="margin-right: 20px;"></div>
+</div>
+
+<footer class="nadcFooter">
+    <div class="container-fluid foot-container">
+        <div id="footer">
+            <div style="float:left;">
+                Copyright © 2023, <a href="http://www.nao.cas.cn/">National Astronomical Observatories</a>, Chinese Academy of Sciences <br>
+                Address: 20A Datun Road, Chaoyang District, Beijing, 100101, China<br>
+                <a href="http://www.beian.miit.gov.cn/">京ICP备05002854号-4</a> 文保网安备案号1101050056  E-mail: support(at)lamost.org
+            </div>
+            <div style="float:right; width:200px; text-align:right;">
+                <a href="http://www.china-vo.org/"><img border="0" src="https://nadc.china-vo.org/sr/images/power_logo_white.png"></a>
+                <a href="https://nadc.china-vo.org/"><img border="0" src="https://nadc.china-vo.org/sr/images/logo_nsti_and_nadc.png" style="width:180px; margin-top:5px;"></a></div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

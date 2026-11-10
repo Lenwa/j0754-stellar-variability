@@ -1,0 +1,140 @@
+{
+  "input": "results\\sky-plates-j0754-spherex-20261108\\literature\\fast",
+  "spectra": 10,
+  "independent_nights": 8,
+  "assumed_native_FWHM_A": {
+    "300": 7,
+    "600": 3
+  },
+  "corresponding_resolution_km_s": {
+    "300": 319.7640040836228,
+    "600": 137.04171603583836
+  },
+  "method": "Native spectra, same-grating comparisons, neighbouring metal-line registration, equal-night reference; smooth continuum and symmetric line-depth nuisance. Exposures retained separately in input; plotted/compared night means.",
+  "assessment": "No clean detached or consistently identifiable blue absorption component in native or registered spectra. Low-resolution 2008-10-22 has a blue/core residual near -200km/s, blended with the main line at assumed ~320km/s resolution; not classified as an eruption. Higher-resolution blue-side dips recur at the same relative wavelengths and do not show a distinct evolving component.",
+  "limits": "No precise absolute RV or calibrated LSF. No atmosphere model or injected detection limits; fixed blends are not eruptions. Sparse 2008-2012 spectra are not contemporaneous with 2021 TESS flare. Weak/blended or unobserved eruptions remain unconstrained.",
+  "records": [
+    {
+      "night": "2008-10-22",
+      "grating": "300",
+      "reference_core_A": 6563.637862855168,
+      "shifts_A": [
+        -2.80496459392765e-12
+      ],
+      "blue_interval_km_s": [
+        -600,
+        -150
+      ],
+      "extra_absorption_EW_A": 0.057933588810249695,
+      "maximum_blue_residual_depth_fraction": 0.06087322486350384,
+      "note": "Descriptive residual; continuum, interpolation, template and LSF systematics not converted into discovery significance."
+    },
+    {
+      "night": "2008-10-24",
+      "grating": "300",
+      "reference_core_A": 6563.637862855168,
+      "shifts_A": [
+        -0.2922891529142444
+      ],
+      "blue_interval_km_s": [
+        -600,
+        -150
+      ],
+      "extra_absorption_EW_A": 0.06643611840891576,
+      "maximum_blue_residual_depth_fraction": 0.01443587698235835,
+      "note": "Descriptive residual; continuum, interpolation, template and LSF systematics not converted into discovery significance."
+    },
+    {
+      "night": "2009-11-12",
+      "grating": "300",
+      "reference_core_A": 6563.637862855168,
+      "shifts_A": [
+        -1.0227517052531023,
+        -2.4377506300101706,
+        -2.2380855253811442
+      ],
+      "blue_interval_km_s": [
+        -600,
+        -150
+      ],
+      "extra_absorption_EW_A": -0.0542183667274368,
+      "maximum_blue_residual_depth_fraction": 0.007644436797414624,
+      "note": "Descriptive residual; continuum, interpolation, template and LSF systematics not converted into discovery significance."
+    },
+    {
+      "night": "2012-03-26",
+      "grating": "300",
+      "reference_core_A": 6563.637862855168,
+      "shifts_A": [
+        -1.258402238718075
+      ],
+      "blue_interval_km_s": [
+        -600,
+        -150
+      ],
+      "extra_absorption_EW_A": -0.03057648852885918,
+      "maximum_blue_residual_depth_fraction": 0.008648313125966936,
+      "note": "Descriptive residual; continuum, interpolation, template and LSF systematics not converted into discovery significance."
+    },
+    {
+      "night": "2012-05-17",
+      "grating": "300",
+      "reference_core_A": 6563.637862855168,
+      "shifts_A": [
+        0.21427985361878465
+      ],
+      "blue_interval_km_s": [
+        -600,
+        -150
+      ],
+      "extra_absorption_EW_A": -0.04063946756143462,
+      "maximum_blue_residual_depth_fraction": 0.01787553926975928,
+      "note": "Descriptive residual; continuum, interpolation, template and LSF systematics not converted into discovery significance."
+    },
+    {
+      "night": "2009-11-19",
+      "grating": "600",
+      "reference_core_A": 6562.876918235907,
+      "shifts_A": [
+        -6.809314397060451e-13
+      ],
+      "blue_interval_km_s": [
+        -600,
+        -150
+      ],
+      "extra_absorption_EW_A": -0.003638259503119445,
+      "maximum_blue_residual_depth_fraction": 0.037491044229595816,
+      "note": "Descriptive residual; continuum, interpolation, template and LSF systematics not converted into discovery significance."
+    },
+    {
+      "night": "2010-01-13",
+      "grating": "600",
+      "reference_core_A": 6562.876918235907,
+      "shifts_A": [
+        0.8460422501634767
+      ],
+      "blue_interval_km_s": [
+        -600,
+        -150
+      ],
+      "extra_absorption_EW_A": -0.05984345163630515,
+      "maximum_blue_residual_depth_fraction": 0.03934731656020389,
+      "note": "Descriptive residual; continuum, interpolation, template and LSF systematics not converted into discovery significance."
+    },
+    {
+      "night": "2010-01-17",
+      "grating": "600",
+      "reference_core_A": 6562.876918235907,
+      "shifts_A": [
+        0.7788432003536093
+      ],
+      "blue_interval_km_s": [
+        -600,
+        -150
+      ],
+      "extra_absorption_EW_A": 0.05758090746523331,
+      "maximum_blue_residual_depth_fraction": 0.029512188191267642,
+      "note": "Descriptive residual; continuum, interpolation, template and LSF systematics not converted into discovery significance."
+    }
+  ]
+}

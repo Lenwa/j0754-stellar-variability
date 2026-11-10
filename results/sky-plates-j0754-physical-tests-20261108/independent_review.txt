@@ -1,0 +1,55 @@
+Independent scientific/code review: FAST and extracted TESS tests
+
+Scope: Four new FAST/TESS analysis/test modules, saved protocols, numerical results and reports. No source edits, commits, downloads, installation, unrelated private-file reads or new astrophysical model fitting. Review against task-start HEAD4946a5cadb334bfc9fa6507cea899bb4f98abf7b. Review does not cover the separate CO/constraint analyses. Existing shared checkout has unrelated changes; they were untouched.
+
+Verdict: No blocking code defect found in the reviewed calculations. Supported claims are conditional numerical diagnostics, not calibrated astrophysical detections, absence claims or universal limits.
+
+FAST
+- A diag(native_variance) A.T correctly preserves covariance introduced by the declared Gaussian smoothing/interpolation. Constant continua are preserved. The actual pre-existing extraction covariance remains unknown; this is explicitly disclosed.
+- The continuum estimator uses fixed diagonal-variance WLS rather than GLS; this is a legitimate fixed linear estimator. Its coefficient covariance B C B.T, line/continuum cross term, and total EW gradient correctly propagate the full C. WLS is not the statistically optimal GLS estimator under correlated noise, but that does not invalidate this propagation. First-order noise propagation remains conditional on the fitted continuum model.
+- The stated contrast0.480466A +/-0.084532A is the equal mean of two2008 nights minus the2009-11-12 night. Three repeat exposures remain one night. They reduce formal independent exposure noise, not shared calibration uncertainty.
+- The independent-LSF extrema deliberately broaden the shared-LSF sensitivity check. Both remain finite assumed Gaussian grids, not a measurement of exposure LSFs or confidence limits.
+- The separate broadband-addition and continuum-only identities are correct. The latter gives beta=0.0167548 to eliminate the primary contrast. Formal continuum covariance cannot bound such systematic placement errors. Localized H-alpha residual emission need not follow the exported background shape; the report correctly leaves that alternative open.
+- No supported28K temperature constraint, resolved Ti/Fe LDR, chromospheric attribution or connection to2018-22 fading follows from these indices.
+
+TESS
+- Independently inspected all8 actual FITS headers: BJDREFI=2457000, TIMESYS=TDB, TIMEUNIT=d, TIMEREF=SOLARSYSTEM; BJDREFF absent or0. Thus the current inputs support the BTJD basis used in the fixed templates. Loader does not enforce these header values for arbitrary future files; current results are unaffected.
+- All8 TESS input hashes and the analysis-source hash match results.json at review. QUALITY==0 and finite/positive data/error filters preserve bright and faint excursions; no amplitude clipping is used. Separate normalization forbids recovering a multi-year DC offset.
+- Time binning keeps occupied bins and native mappings. Event windows reject large internal gaps; equivalent-duration integration rejects large missing intervals. Short missing cadences allowed by the declared max-gap criterion remain a sampling approximation.
+- Injection adds flux at quality-retained native times before fixed20min averaging. Updating local median only within half a baseline width of affected bins is mathematically equivalent to full recomputation; its dedicated test passes. Median normalization is held fixed, which makes this a post-normalization diagnostic, appropriate to its stated upstream-pipeline limitations. Fixed-template paired injections verify linear numerical response only, not upstream attenuation or signal identification.
+- Candidate-containing residual bootstrap thresholds cannot establish absence or calibrated FAP. Resampling sample-index blocks also does not validate stationary time correlation across original data gaps; these are declared descriptive screens. The QLP46 positive candidate starts BTJD2572.026044 and ends2572.137160, has mean excursion0.0121026, white-scaled score38.9804, and is just below its candidate-containing threshold~39. Therefore zero candidates above that threshold must not suppress the observed lead or imply absence of events. Existing method_amendment.json explicitly recognizes this. Final synthesis should name the lead separately from threshold status.
+- Alternative reductions reuse photons; centroid/background correlations and aperture dependence are diagnostics, not independent replication or proof of a flare/contaminant. No bolometric energies, transit-radius limits, precision floor or universal completeness bound is established.
+
+Nonblocking reporting note: Keep the QLP46 candidate and self-inclusion explanation prominent whenever summarizing zero above-screen events. Existing detailed report limitations are adequate; a short summary that says only no detected events would not be supported.
+
+Pixel follow-up boundary: At this review, pixel_protocol_amendment.json and a bounded7x7 TESSCut FITS exist, but no completed pixel analysis module/results were available. Pixel localization or raw-pixel conclusions are NOT covered by this review. The original eight files remain extracted light curves; any later pixel result must be labeled separately and reviewed against the amendment. Do not claim a raw telescope-pixel check from the extracted-lightcurve analysis alone.
+
+Independent verification: runtime/sky-plates/venv/Scripts/python.exe -B -m unittest discover -s tools/sky-plates -p test_fast_line_tests.py -v =>7 tests passed, exit0. Corresponding test_tess_variability.py =>11 tests passed, exit0. No dependency installs. Numerical tests validate the declared operators, not astrophysical calibration. No full real-data rerun was needed for this bounded review.
+
+Saved review only; source remains parent-owned and uncommitted here. No GitHub Desktop registration, commit, push or publication claim is made by this reviewer.
+
+Review UTC: 2026-11-09T02:43:24.985602+00:00
+Reviewed source SHA256:
+fast_line_tests.py 5b586378b250c87fb864218d24874c6c85bbe81333368d90714ac4262fac8bb2
+test_fast_line_tests.py 573526f3d9b42dd0e2c4c11074f77efaf42fb682551098a0bd67a6531b9da90f
+analyze_tess_variability.py f4ba1f8f4a707ce7434c59fb26a2051bb23a08138404b997a0f9755cdb11c76a
+test_tess_variability.py 693206d34d5618c7e82bc7c26b26b2fd19af127e17c641f574dca69b07117a1f
+
+
+PIXEL FOLLOW-UP ADDENDUM (supersedes the earlier unreviewed pixel boundary)
+Reviewed pixel_difference/analyze_pixels in the same source module, four added tests, sector46_pixel_assessment.json, actual cutout headers and sector46_pixel_localization.png. The image was rendered and visually inspected. The cutout is calibrated FFI FLUX(e-/s), not raw detector counts. Sector46/camera1/CCD4,3707cadences,7x7pixels. Its TDB/SOLARSYSTEM BTJD metadata is consistent with the selected extracted-lightcurve event.
+
+No blocking defect found. Celestial WCS comes from APERTURE HDU2; all_world2pix origin0, returned(x,y), array indices[y,x] and image origin lower are consistent. The target maps to(x,y)=(3.64045,3.80340). Quality0/finite-pixel gates leave43before,16event and40after frames. Guarded fixed windows match the protocol amendment; event-time interpolation of sideband images is correctly weighted at0.492823. Positive-excess centroid after outer-ring planar subtraction=(3.51121,3.68249),0.17698pixel from the specified target WCS. The difference image visibly concentrates positive excess near the target location. This strengthens localization beyond extracted-aperture flux alone, but a positive-part moment is not PRF astrometry and has no calibrated error distribution. The reference image includes blended scene light. Proper-motion/absolute WCS errors, small-patch background selection and temporal systematics are not bounded here; a coincident contaminant is not excluded.
+
+The stationary-source plus image-gradient sensitivity model is a legitimate local linear image comparison; derivative coefficients are model coefficients, not certified pointing measurements or orbital motion. Its stationary coefficient~0.02016 and residual norm ratio0.17249 do not by themselves distinguish stellar flare, unresolved contaminant or instrument response. The plotted rapid rise/decay is a candidate shape, not a causal identification. No claim that the fade is explained follows.
+
+Nonblocking amplitude-label caution: core_event_fractional_change=0.022437 uses uncorrected event-minus-sideband diff over baseline border-subtracted reference. It is a simple local aperture contrast; the event-plane contribution is not removed from its numerator. The separately fitted stationary-only coefficient0.02020 includes plane nuisance and is preferable when discussing background-controlled model sensitivity. The plot/CSV core series uses per-frame border subtraction, so those figures need not match exactly. Do not describe the2.24% scalar as a rigorously plane-corrected or intrinsic amplitude.
+
+Provenance caution: results.json source_sha256 initially matched the pre-pixel module. Adding the pixel helper changes that module without recalculating the extracted-lightcurve results. Parent/writer should retain a receipt identifying the generating source snapshot and final extension, or refresh the derived results under the final source. Do not silently replace a generation hash with a final hash. Pixel assessment currently hashes its input but relies on parent/writer final receipt for source/amendment provenance.
+
+Independent post-pixel test run: test_tess_variability.py now15tests, all passed, exit0. This includes stationary-source localization, displaced-source discrimination, background-plane stationary-coefficient rejection and FITS/WCS export. No new archive queries or source edits by reviewer. Parent notified of all caveats. Review remains approval for conditional diagnostic reporting, not astrophysical classification.
+
+Pixel addendum UTC: 2026-11-09T02:47:00.651679+00:00
+Final reviewed source SHA256:
+analyze_tess_variability.py bfb9420604dfe9499be1117697c9a645df0221f4130eb6c3109a0519f3063eed
+test_tess_variability.py b61cd942a2112163642ab6eba506f93fba77812496c938d67f70076077cd9b0e

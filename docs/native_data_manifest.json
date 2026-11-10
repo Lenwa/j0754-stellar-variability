@@ -1,0 +1,2060 @@
+[
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/catalogue_union.fits",
+    "bytes": 1175040,
+    "sha256": "c8356f831cb352b6f36513181d4a39c06e82814b7bafbb45e7014cb835f5aa81",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+    "bytes": 192960,
+    "sha256": "a42aa17a746c4f0326cd875803525510ab869fff2969930d349ac56fc61245da",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+    "bytes": 204480,
+    "sha256": "5e1a239cfb1779f7c7265abf0c2be04f4712be0c9c3c4eba5429a62a3f37a83e",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+    "bytes": 218880,
+    "sha256": "e37fe3dfdbffaffdff4450e28c0accd8b11cd2bee1decb37904e8b11d7a04f78",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+    "bytes": 665280,
+    "sha256": "c07c3343d8156b2cd48c97ade930a8fad0d167e6f4ab6e59474bb141c824b3a2",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+    "bytes": 650880,
+    "sha256": "ac8ae83aabd8a7bd3f60de3fbad7cd73a7a7df3d7b6b01d44deb7c7b5b186fed",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+    "bytes": 1152000,
+    "sha256": "d4a7a5510b2918430fc8ce9cbbb7f44b075af39cc28bc5d1a6b86cf40e54ab08",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+    "bytes": 1128960,
+    "sha256": "71faa71d960e2b17745ee914d896bbfb19296641af94e94e3f4ffbba024f2f45",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+    "bytes": 342720,
+    "sha256": "d8f3cdcc8a206f2413a8a220ccd1e577a0b3079b67534c0c9bab778f387e637d",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_413_x.fits",
+    "bytes": 19376640,
+    "sha256": "3b4b885f0c2d810c4e8742ea2c956a921f589971eb50eec46feb86fa30a18a25",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_413_y.fits",
+    "bytes": 19376640,
+    "sha256": "2e4d6a06e6b36f79353fc578d89f15a84c3787608b2806aad11a14fab461fff8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_4191_x.fits",
+    "bytes": 19376640,
+    "sha256": "e7b426520ca63f878c51a5291c06d17657ad6c3386fa241deedd1aa3ecb4d9ec",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_4191_y.fits",
+    "bytes": 19376640,
+    "sha256": "eba244585cefcafd1950fa29a3725f8345d5c944ed1f2c3b7c55122d6cf5bda2",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_4413_x.fits",
+    "bytes": 19376640,
+    "sha256": "1ae93a0d307ac7a5104a4bde8f03052f9c2daa4e4ae23d96c73642b2e0b58496",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_4413_y.fits",
+    "bytes": 19376640,
+    "sha256": "ee34d22d1d3d9e4a79e8939073ac5573b06d3929585e84ae69614e2ff17126b3",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_446_x.fits",
+    "bytes": 19376640,
+    "sha256": "f78ddb1c3bad2a358c76c71dd7c3644376b21ba1210b0341e4055035eb63363c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_446_y.fits",
+    "bytes": 19376640,
+    "sha256": "264890825b9a94cb7cb9f46c9c50c0c6839361f59f66b98ea77f3f61a59d8e85",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_4599_x.fits",
+    "bytes": 19376640,
+    "sha256": "7ad8132326eab8166e027fb0c9355fb40499c3dce0ffe97a314c1699ba6a9fe8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-checks-20261108/plate_4599_y.fits",
+    "bytes": 19376640,
+    "sha256": "d5a28ff25caec724c786df47c2ae775de15ef27c160b07f69f7e83da896f2755",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-followup-20261108/catalogue_union.fits",
+    "bytes": 1175040,
+    "sha256": "c8356f831cb352b6f36513181d4a39c06e82814b7bafbb45e7014cb835f5aa81",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-followup-20261108/plate_413_x.fits",
+    "bytes": 6776640,
+    "sha256": "0ff503c9130293af6f507497f0067e0c71804350d14b45527e8835d1e3f9e3f0",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-followup-20261108/plate_4191_x.fits",
+    "bytes": 6776640,
+    "sha256": "95df14595a47bb3388b865309e74f943bcdf36eee64d439b5377aff5f851f9c9",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-followup-20261108/plate_4413_x.fits",
+    "bytes": 6776640,
+    "sha256": "2349118acf4ff2bf87c3769d3583e459fd4a31158545c8c7c8c60b03c12fcf5a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-followup-20261108/plate_446_x.fits",
+    "bytes": 6776640,
+    "sha256": "76974b03a20205c8b68d7e355e80f87de0817e0dd3cdfb23755dd69110af7052",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-followup-20261108/plate_4599_x.fits",
+    "bytes": 6776640,
+    "sha256": "01d9a105b3ae05c08ed4f77419500384dc584021818d473391dbc3018dd7a60a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-independent-20261108/asassn_index.parquet",
+    "bytes": 5605,
+    "sha256": "6c3ae19a887464fb114e9c8966de9cb0eab68aaee07eb2c004cb1fd5dd31fe3b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-independent-20261108/asassn_lightcurves.parquet",
+    "bytes": 1117297,
+    "sha256": "998404718920a0688da6627a2b75f67dc60805e333e1e62e55e0f47210efc3ad",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-independent-20261108/asassn_master_cone_index.parquet",
+    "bytes": 4407,
+    "sha256": "1d61704609776b30165c8a015bf33e0b5b1fae67edc4365c591dc614a5394ad2",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-independent-20261108/asassn_master_cone_lightcurves.parquet",
+    "bytes": 3267,
+    "sha256": "f3802c7be6f744a904fe1bc3664b85821017b6253d3e714f4f92409b9e5b8e19",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-independent-20261108/asassn_target_index.parquet",
+    "bytes": 4870,
+    "sha256": "8934240e9f8283d96b1d37ef0381180475d691c534a16408c9f9c9d0aae4b025",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-independent-20261108/asassn_target_lightcurve.parquet",
+    "bytes": 3267,
+    "sha256": "f3802c7be6f744a904fe1bc3664b85821017b6253d3e714f4f92409b9e5b8e19",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_3500.fits",
+    "bytes": 69120,
+    "sha256": "905b3fd8fb4e931ab79348c89da043b3a9dd2f9365a1b189c6302fa44de22f50",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_3750.fits",
+    "bytes": 69120,
+    "sha256": "d50f8447bcb3b91a62302fe072118a365b2bf135d350b37588e5ba6275f46f59",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_4000.fits",
+    "bytes": 69120,
+    "sha256": "4eb178ca5c4552d65e9d783edf7b6d79e65aa2802fce3e796f72d79549297e93",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_4250.fits",
+    "bytes": 69120,
+    "sha256": "15def608ae05aa6edcb10ea929aee98450303b8f013c481743fc83a6a17ec04b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_4500.fits",
+    "bytes": 69120,
+    "sha256": "7042e4ea07951af74b92bd8eb170afbd4344bda7dcb6fca0a2ae7e3d9cf0bd1b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_4750.fits",
+    "bytes": 69120,
+    "sha256": "47d55c4576d90a7d033ccf1d2428c998c88c0aee4452f290c158e66d169903c8",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_5000.fits",
+    "bytes": 69120,
+    "sha256": "27d749870ab90fc4fb5f591aa9c8167768ff7ab81620a44291fe690f6ed28d12",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_5250.fits",
+    "bytes": 69120,
+    "sha256": "2619c93e4a780ed39bd83aa0f301b192824003201d33a00f0198a9970b731375",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_5500.fits",
+    "bytes": 69120,
+    "sha256": "5741bc88403f66e6c735c8b54b8e377e8a20b84055c69c44eda56f26627d94d9",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_5750.fits",
+    "bytes": 69120,
+    "sha256": "4af6465676627c2c5dbeae565f60e8505db939e8388dcb005ab3579affb1efd1",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_6000.fits",
+    "bytes": 69120,
+    "sha256": "bdcc1110e9036f976221e169bda5a51dbd5f95070ef597df7aab9b0fcdce2e3b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_6250.fits",
+    "bytes": 69120,
+    "sha256": "b717534b0f41bc8942cb77abb14e02e85b669523c33b5370e6e65b3b59bd109b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm05_6500.fits",
+    "bytes": 69120,
+    "sha256": "245ec0ea508e1b2aa5181003cec439be83198683b0025c082465050b49d984dc",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_3500.fits",
+    "bytes": 69120,
+    "sha256": "d7e97746933a38faa8152c245c8546fd6fd1f0186cb254b2d496621933763ffd",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_3750.fits",
+    "bytes": 69120,
+    "sha256": "d1535c6335d55742ffb147f9ab98d2ae4a717b33e1ad96a013be3104b64f53f6",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_4000.fits",
+    "bytes": 69120,
+    "sha256": "0480fe7bb718df1e10063dfad06e428e5af30440d54c7323061c37939a47908b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_4250.fits",
+    "bytes": 69120,
+    "sha256": "51cf10a63ddad7ca6123d872aed33290e0cfc222460d83b25883de83ac8bedab",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_4500.fits",
+    "bytes": 69120,
+    "sha256": "50b64021aa61ce443a22e234175f16019770af7e6f4ba60f47d8127a35ccee9a",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_4750.fits",
+    "bytes": 69120,
+    "sha256": "dd423cd4cf7f93206b522d54a8745c4f9cd22b7023718b75577facd4d8f92869",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_5000.fits",
+    "bytes": 69120,
+    "sha256": "2fcfb4181873faae6838f33fef66be4e95e9d8c0716b8a351b3057b5ff411025",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_5250.fits",
+    "bytes": 69120,
+    "sha256": "92dde27529def2ccd11a7e80e1c40caf006798f127dcba2a2add45189617d8e7",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_5500.fits",
+    "bytes": 69120,
+    "sha256": "025b8e4aed1439319be171b241b0b27621ccdf1c44218fcaf0d9c949fb528287",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_5750.fits",
+    "bytes": 69120,
+    "sha256": "165b5a27ba6b63cf7dcbb05aca6bf55a7eb9941dfd2a26d0b027a9d76752ad73",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_6000.fits",
+    "bytes": 69120,
+    "sha256": "deb5b70004d7a6708d4da73dbcf6cbd6b8748c01926490c24e9b112e7cd38997",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_6250.fits",
+    "bytes": 69120,
+    "sha256": "d20aa3fb86d6115b0e86fd39cc951bf11c0392853f7d67d7f442462e46c1d79b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckm10_6500.fits",
+    "bytes": 69120,
+    "sha256": "23f0379a4931b03d59e8b0ea99243108a3315abed709023c5f270602e0073c5d",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_3500.fits",
+    "bytes": 69120,
+    "sha256": "21947bfde2cc8bdbda4a92f4ba9b8654b76b048f1140a400264415998a63290d",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_3750.fits",
+    "bytes": 69120,
+    "sha256": "3d8798501620b8e07715ec3e04aa590cbd052d77265a90e5988b0912705a749b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_4000.fits",
+    "bytes": 69120,
+    "sha256": "9015ecd2129b7467db5e46ed4909b8b990f650328635855fd4bc4a2bbff1f948",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_4250.fits",
+    "bytes": 69120,
+    "sha256": "1ba4619b038d78268d9196fab5a7a571688a2c2c0cb491415f94c0d98772d789",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_4500.fits",
+    "bytes": 69120,
+    "sha256": "a1b405f4ddbbfaa76bce9d72262df75a1d39a25dc48c2769f46f4fe0b4c725af",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_4750.fits",
+    "bytes": 69120,
+    "sha256": "bad44ba513e6f957d70c6b114fbf7460e2e075274c3fae02eadf69793b7a06e0",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_5000.fits",
+    "bytes": 69120,
+    "sha256": "c89b206bb254360ff10cabfd0f6bab333e630129feafae6ad34f7300a93c5da5",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_5250.fits",
+    "bytes": 69120,
+    "sha256": "a64cb9e01d34527cbe6722157420f162773c53f929a2812e410abb204c4b51ef",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_5500.fits",
+    "bytes": 69120,
+    "sha256": "41dfc5930fd13336ab0b41bd9505baf3c78e0aa57a92af3d34b9eab724da96bf",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_5750.fits",
+    "bytes": 69120,
+    "sha256": "ebee9553c6e35d6cb529ebf783cc0501169861af3493f947141bc6c925ff3b94",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_6000.fits",
+    "bytes": 69120,
+    "sha256": "d8465b2ee70276f64ab32e8797dea8734f0d0c91b1f9cd8d643d66c5bd652a19",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_6250.fits",
+    "bytes": 69120,
+    "sha256": "9240b010a43fc05a30b15fce70b9e44dc70061ea6e290ecf4fa985508f45e571",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/models/ckp00_6500.fits",
+    "bytes": 69120,
+    "sha256": "40898a828d1752938684f7907c741ecd641562e7196ef7a26b42309c988d44bb",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-models-20261108/spectra/spherex/coverage_sample_D6.fits",
+    "bytes": 5063040,
+    "sha256": "9f5a79abe479272d903964e6f1da3301be0aba68dac3f72326506b8eaebabff2",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-oscillation-check-20261109/power_spectra.npz",
+    "bytes": 473818,
+    "sha256": "82b4c28ed1db3462fba8290d6d826952ed4c1baa72ec8a83bcf0296ff675fd2c",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0036.N221133017.ms.fits.common.npz",
+    "bytes": 218602,
+    "sha256": "379b51089a11d94efb9d6d77421693e79beb5f3b90a0adbdf08353ea8386ca2b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0062.N221133017.ms.fits.common.npz",
+    "bytes": 218453,
+    "sha256": "f96ec9f01addc947880c7dbcaf4d88154cc96a7aac6f4409513df5d7e866fba2",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0089.N2211330177.ms.fits.common.npz",
+    "bytes": 279680,
+    "sha256": "ac672221cd3d4b43e2e2482af042858c24180049c0d4ce3e566a83edd8669afc",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0123.N2211330177.ms.fits.common.npz",
+    "bytes": 218516,
+    "sha256": "3a6dac893ec3faf84a7870fdd736a7f50d9622acd217811a3f20d806da1a9136",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0135.N2211330177.ms.fits.common.npz",
+    "bytes": 218613,
+    "sha256": "0e5d714bd44d5f82db29a1f8cf354491553149bb2f8708b8d99302a704f2b763",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0146.N2211330177.ms.fits.common.npz",
+    "bytes": 218681,
+    "sha256": "e5fdc9e771dca6382255059d715f498908aebed05f70b5f16b462828d4dbb730",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0147.N2211330177.ms.fits.common.npz",
+    "bytes": 218179,
+    "sha256": "e0c2f68ccb424c1174ffc6172f8e1ac9762958de1adb2a11922cdebaedd5f84f",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0148.N2211330177.ms.fits.common.npz",
+    "bytes": 218760,
+    "sha256": "93e3efc645039acff0836afcd10a853ad7f2cf6bee1a487ffeab5d08900d0c07",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0159.N2211330177.ms.fits.common.npz",
+    "bytes": 279989,
+    "sha256": "a47051e8931287a3acf97e76d05ff9c1e72e3a2465681c92a5d74d2f5c4db086",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/fast/0187.N2211330177.ms.fits.common.npz",
+    "bytes": 279352,
+    "sha256": "c3cbd7732dc91704e50b8667025a30f57e8d065e7b69d89aad8de3050a46e676",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/tess/pixels/tess-s0046-1-4_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 3911040,
+    "sha256": "eecd25f2b6387ca9bd1881384e43cf16ab76ccf7490a2e1562e098a5413d465e",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-physical-tests-20261108/tess/sector46_event_difference_maps.fits",
+    "bytes": 83520,
+    "sha256": "ba80ebf008ad12cc0dcce06ba7bb5ed48fa392658fc316dd37d874281d395c68",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/archives/uhs_H_native_cutout.fits",
+    "bytes": 48528,
+    "sha256": "065bf976639b01197edd7e24e008f732ef4395fa1caa8c965eb114c828fc7439",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/archives/uhs_J_native_cutout.fits",
+    "bytes": 36961,
+    "sha256": "b1816d58fc6711994393417cb63a3ceb9043558ba8e0a7f154867144849e031e",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/archives/uhs_K_native_cutout.fits",
+    "bytes": 44731,
+    "sha256": "bbcd24a6fe7394ac3b6c33721a1c2b9d517c9871d91c3a539e284b47c5707554",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/epsf_D1_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "f5eacb19eb90cb96a1684e9116b85f43f615ae5724c0aa26ac0c0ed45fa309e9",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/epsf_D2_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "7b94af0250aa7e56a9e78af34ca2c1373985926c0a0f3263218d1b0ddc94a926",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/epsf_D3_spx_cal-epsf-v2-2026-191.fits",
+    "bytes": 8118720,
+    "sha256": "6c753e5e322e9905fe44be6505e492f1943e3b115e5dea49b010140570dad2a1",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/epsf_D4_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "b37cb9423746477427121e2c3b3f4b8291c1df9cadba6f770ea1a7f962748b4c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/epsf_D5_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "73847447802363cbae37078d404a39f266ec3cca863461cacaae730e18facfe7",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/epsf_D6_spx_cal-epsf-v1-2026-191.fits",
+    "bytes": 7943040,
+    "sha256": "52f85faeb93d67ed2020b68a628fc947c1f0b78cbf9282ca193ec6d588ac1a36",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/review_qr3/spectral_wcs_D5_spx_cal-swcs-v5-2026-191.fits",
+    "bytes": 33312960,
+    "sha256": "3361428284bddad1dcdce42081ebfbd225acb0b19f6caa94fba3e133bbabfc1c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/review_qr3/spectral_wcs_D6_spx_cal-swcs-v5-2026-191.fits",
+    "bytes": 33312960,
+    "sha256": "19195d253892883586aa2183cb66238b32f6032ade62d490b36b85b0dd18f212",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/solid_angle_pixel_map_D1_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "sha256": "a1fdf6616906e6d2b66ea5262fa989319bc5c5f1f6dd09687677b0906e36619a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/solid_angle_pixel_map_D2_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "sha256": "f8b2d7a438abd2378c007650d81017db2e18d08255a7d93e6b6b35c93461d4a5",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/solid_angle_pixel_map_D3_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "sha256": "ade6b35c9200bca169a4117ac1ded5e74393186bd946520d59797eb3e310eec8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/solid_angle_pixel_map_D4_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "sha256": "9aa43d0cd5e0499c79f3178381578e2fd52d585d0c8e2414651b1d8ad03f09b7",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/solid_angle_pixel_map_D5_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "sha256": "3d5b3c7fc4a4d4672fabe0c248c9c7a533c670834daba99e6cdbc6ce3ce60478",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/solid_angle_pixel_map_D6_spx_cal-sapm-v2-2025-164.fits",
+    "bytes": 16652160,
+    "sha256": "63fb2bb9e2e9eb4bee1d96c902e8465401a2737b88381f5c35afdf54d74e1216",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/spectral_wcs_D1_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "sha256": "a4f1057aeece7f85ab16dff958a4396c99b36f6021734485176c41ac089623f1",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/spectral_wcs_D3_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "sha256": "8ba38095e547645b8a77072cf683764c791df5cc49bc17b5adf0b8880c3a5563",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/spectral_wcs_D4_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "sha256": "76f50bf3108a90ae7b37d6cfb3df06deb6405d46d56f512e91bbfa38ec1ebb5d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/spectral_wcs_D5_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "sha256": "994ed5eab972200ef11066b04e4d19e80ad94147eec0a751648f872e54a56faf",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/calibration/spectral_wcs_D6_spx_cal-wcs-v4-2025-254.fits",
+    "bytes": 33312960,
+    "sha256": "8872df333578ac80c308c7077bb86e4d3d2a639ee53c75f0f2fe94ee04ab6a96",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0036.N221133017.ms.fits",
+    "bytes": 54720,
+    "sha256": "9451cc3f126bc3d65672a84492a9cd92bda741a3d75942f6305ca6df9be3e5f1",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0062.N221133017.ms.fits",
+    "bytes": 54720,
+    "sha256": "db54e51a76d858e9485a3c01bfb6e0c8436e338d24bb45b549db4092d47f4969",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0089.N2211330177.ms.fits",
+    "bytes": 54720,
+    "sha256": "5303afb9659ba2301e611ec22e992d90c1df4e7b617d75aba38a69c35b825296",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0123.N2211330177.ms.fits",
+    "bytes": 54720,
+    "sha256": "7c2e16566f07b8a073f01c3fc67891dfa3ade9c2f051c1df1cc742cebb3a29db",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0135.N2211330177.ms.fits",
+    "bytes": 54720,
+    "sha256": "c94b4f410c8e72b3451f8633dc4e136860b2d74c0f37fa482866a748692cdccd",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0146.N2211330177.ms.fits",
+    "bytes": 54720,
+    "sha256": "0edf149cb9eee30ab1ec827deeee2269e7c44e0544e5a5e4670367d347cfdbfe",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0147.N2211330177.ms.fits",
+    "bytes": 54720,
+    "sha256": "4a6752530d9ee50dbe4bf930aabda6cedee53a995c96cc1b1220d3067ad27505",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0148.N2211330177.ms.fits",
+    "bytes": 54720,
+    "sha256": "5efb1a38a41f7a98319d43699dd15bfcce24809ec73368d2b882e7f9ce255f76",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0159.N2211330177.ms.fits",
+    "bytes": 54720,
+    "sha256": "c5fdf0b270b449e4e0c34bb219ba266eb7562be3d36b669bfb54097900dd8d6e",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/literature/fast/0187.N2211330177.ms.fits",
+    "bytes": 57600,
+    "sha256": "e3a3dd9ce284428343db6548c8e4c9f655bd1923992734b2890d3a8768bbef0b",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0111_1D1.fits",
+    "bytes": 5071680,
+    "sha256": "65a40eaa69a61335ee59521562db255f7b09b1c09d65e80247f646efbc2fa56f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0111_1D4.fits",
+    "bytes": 5071680,
+    "sha256": "d084f84c7826cc1781cfb60263c6ec2fe826bdb30dcf3e5cb8c20de5d542f80f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0111_2D1.fits",
+    "bytes": 5071680,
+    "sha256": "44c607daeaa2f56aacf820cb732238d57c4f28fe98e33e844588a39330411b07",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0111_2D4.fits",
+    "bytes": 5071680,
+    "sha256": "0d3754382834ec79ed3ff3fb1f6c8be942a908e12746eb5ae6dd09aa110b48be",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0111_3D1.fits",
+    "bytes": 5071680,
+    "sha256": "6d32211316ce12854849d2438e1754fb041387bf2660ab4c80b3b0784198a181",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0111_3D4.fits",
+    "bytes": 5071680,
+    "sha256": "959f9887d07ead04adc3062affecec8104815c05d668a5ea2df35c6e95b6902b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0111_4D1.fits",
+    "bytes": 5071680,
+    "sha256": "185c09c2b7b6fc742ab0f546d13016be9d8201ab09f151bc04af496777eca47e",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0111_4D4.fits",
+    "bytes": 5071680,
+    "sha256": "e767ed1c176060686a7d955a33f5ddbf53b2cf75f5e473967d4fd883a12ff30c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0268_1D2.fits",
+    "bytes": 5071680,
+    "sha256": "a1c76bdaa2ae60b2eb093fa61a2f50e6c911d6fc93964e5346cd17e3754f4c07",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0268_1D5.fits",
+    "bytes": 5071680,
+    "sha256": "d1410aa5014893b0765cff1efed11dca87678f57273648d334764b1e7551d25a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0268_2D2.fits",
+    "bytes": 5071680,
+    "sha256": "1edd594739f353ffcd66e2ee1faca6b56586cecbeebaa8915e738d34726f49cd",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0268_2D5.fits",
+    "bytes": 5071680,
+    "sha256": "82eefecdbd470b39158c65d431c1e9592da2b41635967f60255f5d5020af02c0",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0268_3D2.fits",
+    "bytes": 5071680,
+    "sha256": "36244f8af1993de944ba8700fc0e016e7b074ef5c8b570db2a88822fdaa51922",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0268_3D5.fits",
+    "bytes": 5071680,
+    "sha256": "f72386f158ec030b0162698f72e70cebe0c933f31d8bae357e17dddbb3186534",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0268_4D2.fits",
+    "bytes": 5071680,
+    "sha256": "2f3977b4180aa1e43bfabec3df9ef34c3e8cef0810b389333dbddc993ca9d33f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0268_4D5.fits",
+    "bytes": 5071680,
+    "sha256": "4685ab46f73def5d4e9a758d6e3e1a638bda52fa48f5f78bec9e7466ea77d509",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0303_1D1.fits",
+    "bytes": 5071680,
+    "sha256": "ef94b4bddea1272916e91f46ac66523da7b66f215e6b36d773ad057dafed0507",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0303_1D4.fits",
+    "bytes": 5071680,
+    "sha256": "797c5f83f371bdfe48700c98c28d9fc54a209863642daf04bbc2283c8fef59fd",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0303_2D1.fits",
+    "bytes": 5071680,
+    "sha256": "ff2ba68dd9747930881e396eb5396e1007ff234d0104b6c1fcbab8be552650c8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0303_2D4.fits",
+    "bytes": 5071680,
+    "sha256": "53f3595d1b0b6dbdffbf784bd0bbbfe5ebfa58687ac5c85e4425df1fe9253e41",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0303_3D1.fits",
+    "bytes": 5071680,
+    "sha256": "4fc0c1e01f04c045334734346c331964bd1e4c2b889efc6206282bcdf2a3b42f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0303_3D4.fits",
+    "bytes": 5071680,
+    "sha256": "ad0dbc1c2d0b52c8a1407540f679d9459bbbd419fdef85bf4933dff990f8f36c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0303_4D1.fits",
+    "bytes": 5071680,
+    "sha256": "04d7203ec58bebaedd0f391618a9fdc8286fefe226f9fd466a76f3d275178097",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0303_4D4.fits",
+    "bytes": 5071680,
+    "sha256": "7e139dc758311f74f39cc838a0e90e35781fe0abeaf707cf1651609bd17ee94c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0402_1D1.fits",
+    "bytes": 5071680,
+    "sha256": "5eb10fbc70aa61823acd46e9fc56f0ed8105a272cd9b2d89885db032bc76d451",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0402_1D4.fits",
+    "bytes": 5071680,
+    "sha256": "37c91cc251abc0367ab4ee4ad7b89724afe03ceb5028aa88a0be485f0b8be738",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0402_2D1.fits",
+    "bytes": 5071680,
+    "sha256": "0ff62b2275c1e139551079565e3978bc60d15718216a77a1d7403de28942c689",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0402_2D4.fits",
+    "bytes": 5071680,
+    "sha256": "60101bbe007808df1b0a7032536201fe40273184661c25a9361fa8308a17e6c2",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0402_3D1.fits",
+    "bytes": 5071680,
+    "sha256": "5c8e734e1fdd49e304e099bd012f15d2d038ab8bd4dc50df431c583fc4781426",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0402_3D4.fits",
+    "bytes": 5071680,
+    "sha256": "5ab86f7939ff18600fbbadfd50c7e0d92966cd8cf83adc1410ae7c70790b2352",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0454_1D1.fits",
+    "bytes": 5060160,
+    "sha256": "2fa0cc2c7350cf828491180fd085dc6838d9c5f90f0e929d88df52d9a1238cb0",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0454_1D4.fits",
+    "bytes": 5071680,
+    "sha256": "04a8b6ac9d9c302ac36e30fe007a8ea480885f4d19d546a8fe672119f01e675b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0454_2D1.fits",
+    "bytes": 5071680,
+    "sha256": "f6f6a48aa805d160b5d1fb9f598c87a9729fd7f589f840df820608b28e8a575a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0454_2D4.fits",
+    "bytes": 5071680,
+    "sha256": "f82158ec51a36c0b7a9a833c02df00e35f95598b062d7ede65c893cc83d9d994",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0454_3D1.fits",
+    "bytes": 5071680,
+    "sha256": "baa3ea5c47428541493858b7b5358fb920e82c56fda99af2b4d0ad128983d227",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0454_3D4.fits",
+    "bytes": 5071680,
+    "sha256": "df4803d3f06da7410bff4faa601a57abe4e410932ec66065ecfe45d133015363",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0454_4D1.fits",
+    "bytes": 5071680,
+    "sha256": "3eac66882b9ae7666afb3249c1b3336f973bd19a1ceec4b6623b96423f96ebca",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0454_4D4.fits",
+    "bytes": 5071680,
+    "sha256": "d8c4574b52d252046ebbff30ea4a659b0982cd9f747a67d6b26f1ba5590c28cf",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0495_1D1.fits",
+    "bytes": 5071680,
+    "sha256": "d616ae1c1a80988bcdd4bf103766814b4caa9f4f953e69a862c2be2d306a5f5c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0495_1D4.fits",
+    "bytes": 5071680,
+    "sha256": "28c0bd09c5a63d1e5efffdb5125b9bd71fa64a5c27e8479ff330fdfdb87f30fc",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0496_1D1.fits",
+    "bytes": 5071680,
+    "sha256": "4854ac9dffc7a715706111f9bce72f4072b87d7aff6e4a89208456ee32a88789",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0496_1D4.fits",
+    "bytes": 5071680,
+    "sha256": "b521979be72f6637cde64366a425171610a20c6f9207d82676b6602532bdadf9",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0496_2D1.fits",
+    "bytes": 5071680,
+    "sha256": "bccf943f7168ac493d2bed64195691f37f27ee8ff91a7988b95a6d3b38bf2585",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0496_2D4.fits",
+    "bytes": 5071680,
+    "sha256": "1a478c8b7d156e6e09effcacf63b75c660fb0f49fe55cf17eb02d3f76dcabde5",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0496_3D1.fits",
+    "bytes": 5071680,
+    "sha256": "e67577cee8ccee5edad64080bc3dc40543d397fe1605b09fc33a77921faec8cd",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0496_3D4.fits",
+    "bytes": 5071680,
+    "sha256": "5db3dfad547c9cacd50bc6e03cee7caa20567e15136bd2fcd100a3c6543a1d5c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0615_1D3.fits",
+    "bytes": 5071680,
+    "sha256": "23583d2aefee7c89ef9f302fa97804b098e1c10cbbc6be16f3302a069e85f255",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0615_1D6.fits",
+    "bytes": 5071680,
+    "sha256": "6ac575791c8dd7e53ad2c9f45c313eb8c86a192d2e0fc33d8317e73ecf742a1f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0615_2D3.fits",
+    "bytes": 5071680,
+    "sha256": "47047a282c3713764dd6e12bb81243064559d3d8119a8387a3bc82e99b544b08",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0615_2D6.fits",
+    "bytes": 5071680,
+    "sha256": "3848c19806ce47ea49334638ce35bb26914bd763d6ada41f7d55f0942c9d339f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0615_3D3.fits",
+    "bytes": 5071680,
+    "sha256": "330d25251c46a060fd8ccbde41c782365f3902eaf5383b398163921f99ecc4ce",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0615_3D6.fits",
+    "bytes": 5071680,
+    "sha256": "1daa97ef692bd75025eb30bb8ec79c6ab5854aa4be4f00f40a5281db95a7855f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0615_4D3.fits",
+    "bytes": 5071680,
+    "sha256": "fa6876a2477088125b322e626d81cb9d63a64aec28c255ae2645dc1865a8c676",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0683_1D2.fits",
+    "bytes": 5071680,
+    "sha256": "bbdcd52e0e2eae24132db12d97d85be01b5885eef7c253fbd54617e54e162897",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0683_1D5.fits",
+    "bytes": 5071680,
+    "sha256": "fc64d6fb8cd5a63733a11d73325e0f474cb5b596d55cff3d9d6605815f433a61",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0683_2D2.fits",
+    "bytes": 5071680,
+    "sha256": "9408fb7bb5d16fc70bb531e15d6aabd0a6f1266c8e52b90ef5fd4b2837f98168",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0683_2D5.fits",
+    "bytes": 5071680,
+    "sha256": "2f981797abd740f6ba5a90821f0872722c63dbf84b3a55aa07cbe17a61c10214",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0683_3D2.fits",
+    "bytes": 5071680,
+    "sha256": "e9e2a661850737b036d2016cbcbc4eb46b6925d41a51f1ef260a66f4dc367848",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0683_3D5.fits",
+    "bytes": 5071680,
+    "sha256": "30fc8cf8bd97ab6feec51aa864907d1a0b590e5212dfc94d3c4c4394077991f3",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0683_4D2.fits",
+    "bytes": 5071680,
+    "sha256": "d65562286ca478cd651f40f340acd2f6953ce849657b93dc89c5570d14a3f361",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W42_2A_0683_4D5.fits",
+    "bytes": 5071680,
+    "sha256": "6de4e81da75a409d3f609b1091855f08d75c3c29036b723420d290f1de58a541",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0041_1D3.fits",
+    "bytes": 5071680,
+    "sha256": "e88cce3a5012767d0477aa15bb96d1f5be33f9a9a6ef5b599f5600e831f091d0",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0041_1D6.fits",
+    "bytes": 5071680,
+    "sha256": "a2726d8e511bf8bb0a138481a7820e97b5cb576d9123f5d5cb9258ede256ce04",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0041_2D3.fits",
+    "bytes": 5071680,
+    "sha256": "0fda075ef14c85388e55b3515bf4960cff5f0036803ca18f0ef2dfeff3a0357c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0041_2D6.fits",
+    "bytes": 5071680,
+    "sha256": "df511f6175cb6db3921c3a2aba9bcc477419a707fe7e45b0c4c99ea8191db333",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0041_3D3.fits",
+    "bytes": 5071680,
+    "sha256": "27e7554e2cfe92e6a197591c9f0360c8d9d7d2d84ed1289d1a61b956fab50f4a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0041_3D6.fits",
+    "bytes": 5071680,
+    "sha256": "f1db6be7923caab88771a4d29fb3d571ab947989f914ec29c1977b7e28eb6450",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0041_4D3.fits",
+    "bytes": 5071680,
+    "sha256": "0c1f6fb2a74a314a4ed3bcf0f21ef5722580fcdc410dbd23dba32445b57795b0",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0041_4D6.fits",
+    "bytes": 5071680,
+    "sha256": "315cb92ab4761807b8f3533a046e1bc6c11db720be826a740c863b5ae39e5e16",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0087_3D5.fits",
+    "bytes": 5060160,
+    "sha256": "922bc80cd8b34963859bd2a9851f1f60e9c4ece4107fccaf9c437886b4d64cf7",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0087_4D2.fits",
+    "bytes": 5071680,
+    "sha256": "8b362d491d5046ddb62ea152589c21aa298872b24893a9bebb00e57eda007958",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0087_4D5.fits",
+    "bytes": 5071680,
+    "sha256": "26071b53906dbd6a9cd9f8ed6bf3090aae92bc94e9c6cf23cea4ed75441bda06",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0100_1D2.fits",
+    "bytes": 5071680,
+    "sha256": "766e2afd22a223738f4afd8698e1f4ddda9c408431e73c59377675f863e629ee",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0100_1D5.fits",
+    "bytes": 5071680,
+    "sha256": "b74e85c776e9494a5a4c847c8ffc54dbbe122d90b0d4b7b7ce649a4ec10e36df",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0100_2D2.fits",
+    "bytes": 5071680,
+    "sha256": "ba460737dfa283840e9e60bdea2b4337926b35073950835c8449f71aba2d236e",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0100_2D5.fits",
+    "bytes": 5071680,
+    "sha256": "413df27eba7edf1a41c85f90b7613d0475e018f08e0d7d2f3a90bd0e105dfa11",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0100_3D2.fits",
+    "bytes": 5071680,
+    "sha256": "0fa11de4aab4f1e2ce5b45fb836d714909ff6548f885bb284b755dd753f74330",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0100_3D5.fits",
+    "bytes": 5071680,
+    "sha256": "245ee3dd877e90d957c17df7e812234517ef5f35723b3d45c6fff9ea05eda109",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0100_4D2.fits",
+    "bytes": 5071680,
+    "sha256": "07da8d0fa648be803c1eb907561ca0b34018d06b37f0046a1f83a41c394cd59c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0100_4D5.fits",
+    "bytes": 5071680,
+    "sha256": "0917d62d90c1c70f163b43473b05229880b4fe09207be55783871e59b97a883f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0130_1D2.fits",
+    "bytes": 5071680,
+    "sha256": "0ed1bee67272d664d616c442d5159554ac40378ff151dc1621d95cb815ef105c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0130_1D5.fits",
+    "bytes": 5071680,
+    "sha256": "a1f1ede1347c3eec668d4046228a1bfcd37df8c554b4852383aa1ecf8773e466",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0130_2D2.fits",
+    "bytes": 5071680,
+    "sha256": "a8d500623a1eb7adebbbd172e239ae62a24fef185de7cfb3638b0d1d6666f3c7",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0130_2D5.fits",
+    "bytes": 5071680,
+    "sha256": "f21408bc091d44f137b80e11d7007d9a4aa9c8e32449822356bf2ac42096cbbc",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0130_3D2.fits",
+    "bytes": 5071680,
+    "sha256": "b5957665eebc72a91207b4d521737385e53f3082c835f8d191f5c11f8ac1440c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0130_3D5.fits",
+    "bytes": 5071680,
+    "sha256": "22339d2421e42f18bb96972da99c34f629771d3e64430e89d10c170fa8e220df",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0131_1D2.fits",
+    "bytes": 5071680,
+    "sha256": "1ead283d356c7116c5bbb05a32eb53fe2d315c92d5c414269c441927ec0fdf03",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0131_1D5.fits",
+    "bytes": 5071680,
+    "sha256": "b79df7d2a08c19014be204c3c4953be209806cb877765f8205a79bfcd28470ca",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0131_2D2.fits",
+    "bytes": 5071680,
+    "sha256": "bc62afda41450cd3d691e849f381ebdbd4124ccd54e56c23168da602d99b74aa",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0131_2D5.fits",
+    "bytes": 5071680,
+    "sha256": "f77f5d012356dda9ec0e06f0d9fd55d8d150ec02f12b4d248756c2296a59e0ac",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0422_2D3.fits",
+    "bytes": 5071680,
+    "sha256": "258a5cc41e346806ee2238a563e4b4dbeee858bf228e57befbe46f3c5273bfdf",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0422_2D6.fits",
+    "bytes": 5071680,
+    "sha256": "c9f0ee113ce75c45655ae967abe1b14f566282852f2db02e75f2e3799bf45323",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0422_3D3.fits",
+    "bytes": 5071680,
+    "sha256": "16eaab9c72b8c387261cedfff0a64d09c25144a70b03a819cfcd6cc971e445b5",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0422_3D6.fits",
+    "bytes": 5071680,
+    "sha256": "8b60c8525e7b051bf2ffd6acd513ea58064483d9cfe48d3a431dcf0c983a05cc",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0422_4D3.fits",
+    "bytes": 5071680,
+    "sha256": "ce92ca870e8dda502118e1d909d3403729d5fc889692e24b9754a99f7b432adf",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0422_4D6.fits",
+    "bytes": 5071680,
+    "sha256": "d77b4afaacfc063f8aab566449861345bc2af6e9f3f82b702f389cb4d60f3609",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0497_1D3.fits",
+    "bytes": 5071680,
+    "sha256": "5f734621b92ba6971c9567a1f11da6651ce1c8e9c23934e4473d4f7e7c4f8183",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0497_1D6.fits",
+    "bytes": 5071680,
+    "sha256": "274140f7d5da5a50996d190d853038322862245ae58e448443a05947783ca20d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0497_2D3.fits",
+    "bytes": 5071680,
+    "sha256": "7dd7307189ed7f04cf459f15bb998ab125c58319cd49bd5843d4946e4a6ee36e",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0497_2D6.fits",
+    "bytes": 5071680,
+    "sha256": "2c962d2046866e6f42df02369141bd5fed76e86bd047135b7b7243d05f6845e1",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0497_3D3.fits",
+    "bytes": 5071680,
+    "sha256": "7d3f9d7df31bab26a5a254be417552f4c7ae6eeb5c28ed55e39a1030a847afa8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0497_3D6.fits",
+    "bytes": 5071680,
+    "sha256": "c268b99f645423adc4f824a87d56c3cb32a40a249b40a0fd7d2708210400cded",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0497_4D3.fits",
+    "bytes": 5071680,
+    "sha256": "6896c7470b27f9d4e8b027881fb4645c48b4cd75a2cfa474fd9baeaa0432eb87",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0497_4D6.fits",
+    "bytes": 5071680,
+    "sha256": "fc988aaca4479a59b1d1ef604b96895af91e9b03ed9d752a6a2d51475dcf680b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0679_1D3.fits",
+    "bytes": 5071680,
+    "sha256": "aaf17662ea4cccde2233bbea2f8990471c6114516a6f9b72a9c6cefcb7a0c45d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0679_1D6.fits",
+    "bytes": 5071680,
+    "sha256": "f5d91a4082031ee887139cd2f307de4c2d099e4d7c38974557a43835603da8bf",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0679_2D3.fits",
+    "bytes": 5071680,
+    "sha256": "744cbc3bba08565f146d09b9285652169d7499eacff2a781dbcc18f03316409f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_1A_0679_2D6.fits",
+    "bytes": 5071680,
+    "sha256": "c9ea5c542177e276c1abf5fe2dcd5c84e15958487cf815a29e7365bebeaea17b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_2A_0017_1D3.fits",
+    "bytes": 5071680,
+    "sha256": "0e68599a094ba87ecb308d16a360bea6dceb1ba647c4a9a6e26905a4cb7ea8b2",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_2A_0017_1D6.fits",
+    "bytes": 5071680,
+    "sha256": "be5194d3a0ec751048ded7ff5cb79b88c6c429f9c075e402d15cc6eac67bf493",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2025W43_2A_0017_2D3.fits",
+    "bytes": 5071680,
+    "sha256": "1a9dac0119504f8c0b87be12a9a0bc6479e31ba887be75a18ae9d103467f37a3",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0065_1D3.fits",
+    "bytes": 5074560,
+    "sha256": "fa3843900e1b6b353617da7750c665954c19656ffafebca2ede16c546f27db7b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0065_1D6.fits",
+    "bytes": 5074560,
+    "sha256": "ba9b0608f83d3d7afa984b1b677f4b160db08d5321b32a12188983a8e17de5b8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0065_2D3.fits",
+    "bytes": 5074560,
+    "sha256": "7ad03ecfc04daeb98cd709c4120407fef9675f2b82901950ee7c0ebb343968df",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0065_2D6.fits",
+    "bytes": 5074560,
+    "sha256": "0cd649057b59577fd6a109983b9d47702db4234e8fbd6e06d732f25a5f1ffb0b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0065_3D3.fits",
+    "bytes": 5074560,
+    "sha256": "a7dcc49a58f83eae104d4ae292deb2275a55e551c37cf2e89099dfc718e7abdc",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0065_3D6.fits",
+    "bytes": 5074560,
+    "sha256": "9013240d6b0f2c4bd0084cb17e0d45b5e950aa3e7e09a3bf5b35bcd39bc5319a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0095_3D3.fits",
+    "bytes": 5074560,
+    "sha256": "0b3d3d83189245bf7c17c1a62b12b66cb78c079824f2829a7c3e830154ecae49",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0095_3D6.fits",
+    "bytes": 5074560,
+    "sha256": "51386f6eddc1bffb792daee88cae0e93f3e7a948e8697012d8246777d9f457d1",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0304_1D3.fits",
+    "bytes": 5074560,
+    "sha256": "3b618249860f1a17e86fc955bbe8d78f1adad126e1f90611647f44ebfc9bafd2",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0304_1D6.fits",
+    "bytes": 5074560,
+    "sha256": "b46503b9bb327e2787e05e196e53ea0771decd548df8733a27019cd46fffefcc",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0304_2D3.fits",
+    "bytes": 5074560,
+    "sha256": "e9551ac8d228db0acc918b73c348fe3b13fc939d58eaf62c680c4d7502ba05e2",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0304_2D6.fits",
+    "bytes": 5074560,
+    "sha256": "9f3974c9621416bcd81905da3a2bd907a6ee629c41d146906b29c6ea12caeaaf",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0304_3D3.fits",
+    "bytes": 5074560,
+    "sha256": "d07be3ee14356f196b9f159bb83f6af39549734aeac9c218ded7089aebef7557",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0304_3D6.fits",
+    "bytes": 5074560,
+    "sha256": "b409fd2185ce8d75eacdd0c3fab32175d9528c1f0fbc3a40a372460fa43038e0",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0304_4D3.fits",
+    "bytes": 5074560,
+    "sha256": "8dad66102df7f90fecddd497cb4150ecab73f09a75d8d91e5bd9a0eca96a193d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0304_4D6.fits",
+    "bytes": 5074560,
+    "sha256": "a84508d3ecb7cf69d6e29a80d2519412f6874bd3f95c9447a757b07844e8cc31",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0318_1D3.fits",
+    "bytes": 5074560,
+    "sha256": "44dbbf7559a71d90556c0041cc9aea2d25744d8732a4a83f57519cbc2c139cf6",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0318_1D6.fits",
+    "bytes": 5074560,
+    "sha256": "3365978ef23e9df459c6c5155a514e6fcd853b0ef19f7e7696fa6054db7dd57d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0571_4D2.fits",
+    "bytes": 5074560,
+    "sha256": "ff800295d4e2318ddb4cad5f253230d0fe47dc7f830603ed3d66169660ddba56",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0571_4D5.fits",
+    "bytes": 5074560,
+    "sha256": "ae758db5286c81b851520b63e5e417c2259d03fc518c73d092219a8088bbf953",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0619_1D3.fits",
+    "bytes": 5074560,
+    "sha256": "9dd26b24b43df8e10d4587ec5ea03bfa3161c4e593471f192215eeebbd74c330",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0619_1D6.fits",
+    "bytes": 5074560,
+    "sha256": "f2557ae4922bbcf0afef7eda45c591d23a9b367fca8112d1c3130a0a38fa3c8c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0619_2D3.fits",
+    "bytes": 5074560,
+    "sha256": "09aae8257ff67ef1b2124d3be79dc8b0c32c1f2b546e2defddcc0651aa1f1621",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0619_2D6.fits",
+    "bytes": 5074560,
+    "sha256": "044888e5ecf90d6da791656f4e1d242c64cc97fc0ae1b356bb3fafe736ad25d3",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0619_3D3.fits",
+    "bytes": 5074560,
+    "sha256": "8ac67ec3d5c92fa7f6a29df5c7591c197ed77ead1496d681dfb3edb2a50ff354",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0619_3D6.fits",
+    "bytes": 5074560,
+    "sha256": "94dc0031de570fdec9665040c018e437897c82271295b1894bc5411fce409021",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0619_4D3.fits",
+    "bytes": 5074560,
+    "sha256": "32c9d1fd860f6b4d0d1b8da28dce522942cb4eab388fc7dca3b5cba49c64f018",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0619_4D6.fits",
+    "bytes": 5074560,
+    "sha256": "225e7cfe280acf793b295a774433ebd2b08c0c29f2c17538be08aa4435751f50",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0645_1D2.fits",
+    "bytes": 5074560,
+    "sha256": "f970070a17ada06739b843d0ac6469f461fb6a8f9dadc6165339e5a7e0eb99c6",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0645_1D5.fits",
+    "bytes": 5074560,
+    "sha256": "7e07d069a74a34e4a7cb882602d9de515d4e8750e54bbd68d243ef9a80f1912c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0645_2D2.fits",
+    "bytes": 5074560,
+    "sha256": "09150919bd5550dff28747e63c63f681217e44b1752fe8461cffe7ecd2f4427b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0645_2D5.fits",
+    "bytes": 5074560,
+    "sha256": "5cf93c9046b5caa9ecc212d40889ea630fc4a4154b811b098ad13b669d5559d5",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0645_3D2.fits",
+    "bytes": 5074560,
+    "sha256": "c477fd5a1fe0e0fbb195f07501521c3099ffeb7fcb9fc2ef0a6a86880c7ac0ad",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0645_3D5.fits",
+    "bytes": 5074560,
+    "sha256": "c92ef8066da37b63100450d6ced9330833e5e28ed3e8911f1289e4ff69efdefd",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W14_2A_0645_4D2.fits",
+    "bytes": 5074560,
+    "sha256": "4e2a743fbba7a0f0666fc247cfdc5379598a3df308ba21797989a2ffb6df511d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0224_1D2.fits",
+    "bytes": 5074560,
+    "sha256": "b99b7410fa4ca5a5f0031296d690a5e237d95262302a0fb4f11fd146e1a453b5",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0224_1D5.fits",
+    "bytes": 5074560,
+    "sha256": "170633451a03959af692fa6c2662584ea7f5059e6166625b2428f3b770182aa2",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0224_2D2.fits",
+    "bytes": 5074560,
+    "sha256": "d4126cc9ea3e0175267a1701147db47407f22eb08b2f3b96419ffa90084464a1",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0224_2D5.fits",
+    "bytes": 5074560,
+    "sha256": "5bc915a44ff9898f43b0f5d376bec54fb1ccb90eaa0b61287d530bb56d1e4f55",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0224_3D2.fits",
+    "bytes": 5074560,
+    "sha256": "0285688f2762c698ab4882facd12558faadc5cf9a202a546ab5706ed9fd5dc41",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0224_3D5.fits",
+    "bytes": 5074560,
+    "sha256": "d32c5e2a871545c86c895cf43a8c6adb2f9f712539bb4dc1d5caf60368688fa6",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0224_4D2.fits",
+    "bytes": 5074560,
+    "sha256": "13780d5873508c4411271743f716023a8dc8e8e3b0872c7c9bfd60abcdf96430",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0224_4D5.fits",
+    "bytes": 5074560,
+    "sha256": "6069dc01778cfc64a96079243cbea46a6c48ab4f3b49f5f784031b698b4915ee",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0271_1D3.fits",
+    "bytes": 5074560,
+    "sha256": "dc10d0a92fbed4d653692d5b6a19abb952de13e5990e52885957e27497c481e8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0271_1D6.fits",
+    "bytes": 5074560,
+    "sha256": "0cdd394c30cbced465dba214f7f489d3ee71beddf9c7c9743e429bb34306beb4",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0271_2D3.fits",
+    "bytes": 5074560,
+    "sha256": "c11a6edce3037ebbdbda2cd86812825b35a895e9e16240b15ed90baf712da471",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0271_2D6.fits",
+    "bytes": 5074560,
+    "sha256": "9eb0f6ec28d0be35bab4071e8334cf44ea4d83c11a472742e39cb399e61c00bb",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0271_3D3.fits",
+    "bytes": 5074560,
+    "sha256": "61620c666ec14f1ebcd21fe3a9e791506d83e12b1d84fd85fdff7468d81a7ee9",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0271_3D6.fits",
+    "bytes": 5074560,
+    "sha256": "2e55020d06f3117e57af9aba1b9a529f34ca75f031f5ecef6e7984bb073dca76",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0271_4D3.fits",
+    "bytes": 5074560,
+    "sha256": "1310177b0e9d4e43ff8431802f46ae4c15912c4d2e5e43bf98f37ef5f2a5f73f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0271_4D6.fits",
+    "bytes": 5074560,
+    "sha256": "edeb68b0b15f70577ef78aba114684ad1b1239710a2fb832822bca5970d3b37f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0430_4D1.fits",
+    "bytes": 5074560,
+    "sha256": "fa29aa4cae5fa4da3a27ffaa8b2637f0591d94262a422fb7582f768c724ba732",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0430_4D4.fits",
+    "bytes": 5074560,
+    "sha256": "cf5b99166f9a8fef61d0690f8cc93de1f2fd00aef8825ea7415f90262048d054",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0496_1D2.fits",
+    "bytes": 5074560,
+    "sha256": "099adcedb8c1e3c01ecfe8e76c1c7127f5c0e4f92efbe1652b51748dc6cb7b7c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0496_1D5.fits",
+    "bytes": 5074560,
+    "sha256": "8b4bbcddf37bdd4a6d80359ab294bec7cf70c4a5af6048968314978f956747a3",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0496_2D2.fits",
+    "bytes": 5074560,
+    "sha256": "30184c8eb0b8cd6132d84e9dc2ae5ffa32ef9a05a4d42d9f4ef8eaf7c0354f22",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0496_2D5.fits",
+    "bytes": 5074560,
+    "sha256": "39a154fdd78dba68ee377366407a151afc6602d6e26729cd396684a6768cc3c5",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0496_3D2.fits",
+    "bytes": 5074560,
+    "sha256": "f5be722cf4a8f1656c9fef920c1d8776a374d786f28cb0ca31c06e93085ae5ac",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0496_3D5.fits",
+    "bytes": 5074560,
+    "sha256": "a0617c0f43ee97a71bcc7bb23f343e53292f9cc375878cc1e4a636421b9df7e9",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0496_4D2.fits",
+    "bytes": 5074560,
+    "sha256": "6a0232b57dcd4615a43b3bae826eeaa1d08ba44261457fbebb50a821f5e19d4a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0496_4D5.fits",
+    "bytes": 5074560,
+    "sha256": "5d4193063df7643365f5d95d999a1a2e7ef289bbcac898ebd759dc375d083673",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0525_1D1.fits",
+    "bytes": 5074560,
+    "sha256": "7033896e16e81586fa5ddce66e72778ce40ee9817c014fe285fb80c5fd7d208d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0525_1D4.fits",
+    "bytes": 5074560,
+    "sha256": "c4a647ce833edaaff9f1e17e18d09258ec3d415aa5fd58a7091ac4bf764f52a5",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0525_2D1.fits",
+    "bytes": 5074560,
+    "sha256": "58d9c64808e67244eb15f5bb5c8b56feb82eaeceaef7d97e0d7fd3fc807f254a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0525_2D4.fits",
+    "bytes": 5074560,
+    "sha256": "a3e06939bd067af72ff6561755a0bd4596ac5c24f952591c1851012ecdc4089f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0560_1D3.fits",
+    "bytes": 5074560,
+    "sha256": "cd71755ccade428d5992017cffd3e1643ff34e141d702edc085f881bad00a765",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0560_1D6.fits",
+    "bytes": 5074560,
+    "sha256": "a2a2687c38fa813ef60decad21b2410f7269567d2ca1b7fa6a1e290bbb6cccd8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0560_2D3.fits",
+    "bytes": 5074560,
+    "sha256": "be7bb42eaa985921378915c9dfc412006218a0c3b51c47d4cc93e1d95d7bcf84",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_1A_0560_2D6.fits",
+    "bytes": 5074560,
+    "sha256": "66fbca7575c9537c26b4020c4a54633cc76e8fc9b2aaa3ec180b9ed8a348eeea",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0077_1D1.fits",
+    "bytes": 5074560,
+    "sha256": "f0b86d4867e0aaca71f2179119412b9c9f6eaa410ba2e12080fb4d7a31bd9968",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0077_1D4.fits",
+    "bytes": 5074560,
+    "sha256": "9912b0d60e98299ea65784fe4306f7beb1b5d894bf039512231d91ccd5ca89aa",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0077_2D1.fits",
+    "bytes": 5074560,
+    "sha256": "208ff32ed1ce43c17f351fdbf43ecd9fddc41b5d2434af3b8b5c6c35b21840f9",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0077_2D4.fits",
+    "bytes": 5074560,
+    "sha256": "e7730307a4736c1a02ef8014a2ce4167af5e27df0826e514a6744f19c23f6bae",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0077_3D1.fits",
+    "bytes": 5074560,
+    "sha256": "ce0f1f3c9e679b71ca383e5fd86470427a3e8b782005726f8f71b44a22b568eb",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0110_1D1.fits",
+    "bytes": 5074560,
+    "sha256": "31666ecefcbcfef56ea4567c6b921625fa3fa530065527511f674c40d279a28e",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0110_1D4.fits",
+    "bytes": 5074560,
+    "sha256": "fb2098a38a3cfa6e003ce587349ea5619dbb9e2932b08dfd81e21656033eff2d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0110_2D1.fits",
+    "bytes": 5074560,
+    "sha256": "31f225f1f7e2e6b399b2b97dd22e23d08a1ef03590ed3e9b36baf6b640a48d6c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0110_2D4.fits",
+    "bytes": 5074560,
+    "sha256": "6a5b67599df401b0646fd4bb5258ebd3964a8a555e359b35d4bd24928b5a625f",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0110_3D1.fits",
+    "bytes": 5074560,
+    "sha256": "d47f59e164c73b14a9faeee5203e89b5855dd5a1ba9aa75f2c05d8b1f4ac266d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0110_3D4.fits",
+    "bytes": 5074560,
+    "sha256": "91ab904f4ea5899e2fb03447263a36b5197d418867c1578149bbd7386027cc77",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0110_4D1.fits",
+    "bytes": 5074560,
+    "sha256": "5ef446afe93fb91af2dc31400347086840eb8ea613c7ffee38fab7f123270c4a",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0110_4D4.fits",
+    "bytes": 5074560,
+    "sha256": "67369e18a17862f6186edfc7a820f39930aaed57a4cc85c8d8f022fc37a03314",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0247_1D2.fits",
+    "bytes": 5074560,
+    "sha256": "32a47225feaffdcc97393dcf6e40e619c68bf8400fb2a8bdf55bcf7a0303ef42",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0247_1D5.fits",
+    "bytes": 5074560,
+    "sha256": "dab686afcaf70df70c5a479fa59153357fae64a471f0b8e0dbcbdd974a333f82",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0247_2D2.fits",
+    "bytes": 5074560,
+    "sha256": "1988eb2b478c07bf58458416c03469ea5d0703bb87343f1df6eb0cd01575e7d7",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0247_2D5.fits",
+    "bytes": 5074560,
+    "sha256": "8371a4f3c0703e3cebf29d11c7132eecc6fd8612f0ee9e757aa46f8b1a596582",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0616_1D2.fits",
+    "bytes": 5074560,
+    "sha256": "a42a48ee2932fc61194840024c219d2a6ebac6459bfbb2288fe3c4afbfcd78b1",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0616_1D5.fits",
+    "bytes": 5074560,
+    "sha256": "b60d027115959c59287b4a5ba792346b35472a99a84541cafa0376897bca8287",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0616_2D2.fits",
+    "bytes": 5074560,
+    "sha256": "454a058f845494106319689c674dba1ced8c58f51ed8c2906b3d92b7fa458618",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0616_2D5.fits",
+    "bytes": 5074560,
+    "sha256": "f1e8fd329bf75f8963ab02889c1c6bdca0cd984accc1679fd33b045272fbc729",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0616_3D2.fits",
+    "bytes": 5074560,
+    "sha256": "6a7e65f27f7a7a20a38a853ef6366d224997d1d53df0918883666cc7b9f4847b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0616_3D5.fits",
+    "bytes": 5074560,
+    "sha256": "aeaa1fbccb6728596971c2ba35f76488ff45c1793a70b575c36e7576f6bbb9bc",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0630_1D1.fits",
+    "bytes": 5074560,
+    "sha256": "60e0d316fdfbd70625b025a953ac97fd078ce861d57bcee0d268be6f54541c74",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0630_1D4.fits",
+    "bytes": 5074560,
+    "sha256": "c1da8b7dacc964517e06141d33ce5f7c7abedbc8fa1654684d210db08a30883c",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0630_2D1.fits",
+    "bytes": 5074560,
+    "sha256": "6048f79a3adab4c4b87deb3c3ca48e265363a190fc06a565fb1f18b141ef85ff",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0630_2D4.fits",
+    "bytes": 5074560,
+    "sha256": "ca65436365ac9d1d50067d6b46b59d682194c49051012b4631f8ff0d18bb28c8",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0630_3D1.fits",
+    "bytes": 5074560,
+    "sha256": "006213dec26591010444952ea68fe2ffb6fd97cbde80a4a133a748375402b04e",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0630_3D4.fits",
+    "bytes": 5074560,
+    "sha256": "fa4b37b679b900a00d5c7e8f9dff01560b22335ca8da9ab4d486891ccdd8b81d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0630_4D1.fits",
+    "bytes": 5074560,
+    "sha256": "6150d3cf5745809861d2b13ef058f0bf91dc8bf74ebf1ed91789789d1e5e857d",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W15_2A_0630_4D4.fits",
+    "bytes": 5074560,
+    "sha256": "d6aa0ce6337af76e4648168823566b1a9d63ff93a1b0dd4a096b247329370933",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0013_1D2.fits",
+    "bytes": 5074560,
+    "sha256": "2f76d6bef5bdae2b4c8ee555c0e54fa1799dc765e5c18b6770a5abfa047cb6c9",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0013_1D5.fits",
+    "bytes": 5074560,
+    "sha256": "56c2e23afd53c5fe3bdb761b024bdbdbff22fd3a18aceadc31c9f5b893fed52e",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0124_1D1.fits",
+    "bytes": 5074560,
+    "sha256": "ae79dbb196479018d891c63c1ed4dedbb2fe96f6963c05a1e82517737af24287",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0124_1D4.fits",
+    "bytes": 5074560,
+    "sha256": "dac6f0554d9ca261a7394a867b01ef7d72a0f99480efa692dee0958c8a2216c5",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0124_2D1.fits",
+    "bytes": 5074560,
+    "sha256": "2da41fb1235b858edff5e5b0292de059f9de11977ff9ae51009519b958b316a4",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0124_2D4.fits",
+    "bytes": 5074560,
+    "sha256": "38490459b9951a0cf8c09087677ab13cb9543a437465734cb576682d5bb87d76",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0124_3D1.fits",
+    "bytes": 5074560,
+    "sha256": "5a7755d9fe0469a586105b5c60268878b68270e61e5386ba8573fb2122885d52",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0124_3D4.fits",
+    "bytes": 5074560,
+    "sha256": "75b6fc57297ba2f48e3d23a3b6b9ec117ff1a0e8bb31d1ce399fc45748f7b267",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0124_4D1.fits",
+    "bytes": 5074560,
+    "sha256": "58609f4c86bcd61b61e7a2025f70c3a60c91f89d438a962c9071590baa11ef54",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0124_4D4.fits",
+    "bytes": 5074560,
+    "sha256": "0989d4d879238e6bca2f1dd4ae778746785526f93efb0cb3b2091af5ba21f180",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0574_1D1.fits",
+    "bytes": 5074560,
+    "sha256": "3a64557afe868538952a5edba27b678b42b32543d67f6810e844812517cde06b",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-spherex-20261108/science/2026W16_1A_0574_1D4.fits",
+    "bytes": 5074560,
+    "sha256": "3804cc74c7dc53a7c2bfc55f528d53e4784da7fa65ee82395edace1c18ef4be2",
+    "included": false
+  },
+  {
+    "path": "results/sky-plates-recon-20261107/J0736_asassn_catalog.parquet",
+    "bytes": 4870,
+    "sha256": "ad084178304fe46056c8c34037b7e0f268c6aa4239d0acac0549a011506d6feb",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-recon-20261107/J0754_asassn_catalog.parquet",
+    "bytes": 4870,
+    "sha256": "8934240e9f8283d96b1d37ef0381180475d691c534a16408c9f9c9d0aae4b025",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-recon-20261107/J0830_asassn_catalog.parquet",
+    "bytes": 4870,
+    "sha256": "d39d74684f5c40c49f92700012d12b59abf2ee638404f4254226e3b612f41d0a",
+    "included": true
+  }
+]

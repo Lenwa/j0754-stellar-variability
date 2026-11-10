@@ -1,0 +1,2687 @@
+{
+  "period_days": 35.9204566,
+  "phase_zero_jd": 2457000.0,
+  "protocol": "protocol.json",
+  "asassn_inventory": {
+    "raw": 5249,
+    "valid": 5180,
+    "rejects": {
+      "sentinel_or_invalid_error_flux": 69,
+      "upper_limit": 1,
+      "nonfinite": 1
+    }
+  },
+  "daily_counts": {
+    "g": 1396,
+    "V": 369
+  },
+  "asassn_g": {
+    "spline365": {
+      "full": {
+        "n": 1396,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2461352.801538767,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          -0.01135834576572727,
+          -0.0002795264678868113
+        ],
+        "covariance_white": [
+          [
+            2.3226837615354892e-06,
+            7.24390349154407e-08
+          ],
+          [
+            7.243903491544102e-08,
+            2.364337379641152e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.01136178478849445,
+            "amplitude_white_sigma": 0.001525212193035638,
+            "cosine_phase_cycles": 0.5039159787880849
+          }
+        ],
+        "nuisance_rank": 15,
+        "nuisance_columns": 16,
+        "signal_condition": 1.0326969285122232,
+        "signal_energy_retained": [
+          0.9909802489360768,
+          0.9927116580612675
+        ],
+        "phase_energy_retained_range": [
+          0.9901539530761791,
+          0.9936359154042783
+        ],
+        "weighted_sse": 5492.85078523992,
+        "null_weighted_sse": 5714.105278546276,
+        "fraction_sse_improvement": 0.03872075898514871,
+        "delta_bic": -40.64578045898708,
+        "residual_rms_mag": 0.05757853514091527
+      },
+      "train": {
+        "n": 618,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2459579.9704363667,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          -0.025649406744999964,
+          -0.0005566365443971932
+        ],
+        "covariance_white": [
+          [
+            5.071751571073127e-06,
+            2.240129165514168e-07
+          ],
+          [
+            2.240129165514169e-07,
+            5.063167321239942e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.02565544602249215,
+            "amplitude_white_sigma": 0.0022542107021142213,
+            "cosine_phase_cycles": 0.5034533958046576
+          }
+        ],
+        "nuisance_rank": 10,
+        "nuisance_columns": 11,
+        "signal_condition": 1.0452364394147113,
+        "signal_energy_retained": [
+          0.9742222541661968,
+          0.9796721573368042
+        ],
+        "phase_energy_retained_range": [
+          0.9719677508818119,
+          0.9823574246589167
+        ],
+        "weighted_sse": 2278.0991504067174,
+        "null_weighted_sse": 2765.983220362059,
+        "fraction_sse_improvement": 0.1763872124616429,
+        "delta_bic": -107.07287561390268,
+        "residual_rms_mag": 0.049247734221459165
+      },
+      "validation": {
+        "n": 778,
+        "start_jd": 2459581.3958266,
+        "end_jd": 2461352.801538767,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          0.00015014588819946273,
+          0.0006635809680229088
+        ],
+        "covariance_white": [
+          [
+            3.3443504475923962e-06,
+            5.67791503364373e-08
+          ],
+          [
+            5.677915033643788e-08,
+            3.454903218230208e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.0006803554136371858,
+            "amplitude_white_sigma": 0.0018638567477150412,
+            "cosine_phase_cycles": 0.2145849658218407
+          }
+        ],
+        "nuisance_rank": 11,
+        "nuisance_columns": 12,
+        "signal_condition": 1.0235872363151297,
+        "signal_energy_retained": [
+          0.9924199539599199,
+          0.9918858189577997
+        ],
+        "phase_energy_retained_range": [
+          0.9894661842247904,
+          0.9949456622574844
+        ],
+        "weighted_sse": 2461.844693354497,
+        "null_weighted_sse": 2462.2735125123727,
+        "fraction_sse_improvement": 0.00017415577745394373,
+        "delta_bic": 13.177948053666244,
+        "residual_rms_mag": 0.05985032644612199
+      },
+      "heldout": {
+        "n": 778,
+        "fraction_sse_improvement": -0.2601784104244802,
+        "weighted_sse_null": 2462.2735125123727,
+        "weighted_sse_frozen": 3102.903921028143,
+        "white_noise_scaled_delta_chi2": -199.55684079557625,
+        "frozen_coefficients": [
+          -0.025649406744999964,
+          -0.0005566365443971932
+        ]
+      },
+      "phase_difference_cycles": -0.2888684299828169,
+      "coefficient_discrepancy_white_chi2": 79.10368868578803,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+    },
+    "spline180": {
+      "full": {
+        "n": 1396,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2461352.801538767,
+        "mode": "spline180",
+        "harmonics": 1,
+        "beta": [
+          -0.010723286832867492,
+          -0.0004683021193388169
+        ],
+        "covariance_white": [
+          [
+            1.9534135530768595e-06,
+            6.776590537544318e-08
+          ],
+          [
+            6.776590537544337e-08,
+            1.9757552445240462e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.010733507692032766,
+            "amplitude_white_sigma": 0.0013997727293283226,
+            "cosine_phase_cycles": 0.5069461229180359
+          }
+        ],
+        "nuisance_rank": 25,
+        "nuisance_columns": 26,
+        "signal_condition": 1.035592301290689,
+        "signal_energy_retained": [
+          0.9772489384176041,
+          0.9852438862047124
+        ],
+        "phase_energy_retained_range": [
+          0.9766978481217035,
+          0.9856636383735031
+        ],
+        "weighted_sse": 4521.467668220623,
+        "null_weighted_sse": 4715.901708188389,
+        "fraction_sse_improvement": 0.041229451332745914,
+        "delta_bic": -44.293744724235346,
+        "residual_rms_mag": 0.05436471408350136
+      },
+      "train": {
+        "n": 618,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2459579.9704363667,
+        "mode": "spline180",
+        "harmonics": 1,
+        "beta": [
+          -0.024598613772112136,
+          -0.0012151805270742971
+        ],
+        "covariance_white": [
+          [
+            3.9081318051069735e-06,
+            1.7717497773247337e-07
+          ],
+          [
+            1.7717497773247343e-07,
+            3.882018465225894e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.024628610663675804,
+            "amplitude_white_sigma": 0.001981295191463653,
+            "cosine_phase_cycles": 0.5078559260924667
+          }
+        ],
+        "nuisance_rank": 15,
+        "nuisance_columns": 16,
+        "signal_condition": 1.046699558170361,
+        "signal_energy_retained": [
+          0.9666546849151749,
+          0.9769447249182345
+        ],
+        "phase_energy_retained_range": [
+          0.9659151865886789,
+          0.9779911713652559
+        ],
+        "weighted_sse": 1727.2253923003461,
+        "null_weighted_sse": 2172.198585222251,
+        "fraction_sse_improvement": 0.20484922324741173,
+        "delta_bic": -128.807162164037,
+        "residual_rms_mag": 0.04455371774709062
+      },
+      "validation": {
+        "n": 778,
+        "start_jd": 2459581.3958266,
+        "end_jd": 2461352.801538767,
+        "mode": "spline180",
+        "harmonics": 1,
+        "beta": [
+          0.0007163862421549075,
+          0.0004901890901188588
+        ],
+        "covariance_white": [
+          [
+            3.2475735106380063e-06,
+            7.978402229497713e-08
+          ],
+          [
+            7.978402229497706e-08,
+            3.3376829497608373e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.0008680406626537633,
+            "amplitude_white_sigma": 0.0018304849920478291,
+            "cosine_phase_cycles": 0.09550550961787142
+          }
+        ],
+        "nuisance_rank": 16,
+        "nuisance_columns": 17,
+        "signal_condition": 1.0282259722428542,
+        "signal_energy_retained": [
+          0.9779792521732124,
+          0.9825029227116073
+        ],
+        "phase_energy_retained_range": [
+          0.9749431371093414,
+          0.9853566033972799
+        ],
+        "weighted_sse": 2339.7003929461816,
+        "null_weighted_sse": 2340.393014327022,
+        "fraction_sse_improvement": 0.00029594233814589366,
+        "delta_bic": 13.083175833209616,
+        "residual_rms_mag": 0.059263519830438934
+      },
+      "heldout": {
+        "n": 778,
+        "fraction_sse_improvement": -0.2597370981472289,
+        "weighted_sse_null": 2340.393014327022,
+        "weighted_sse_frozen": 2948.2799043923683,
+        "white_noise_scaled_delta_chi2": -197.9196687881884,
+        "frozen_coefficients": [
+          -0.024598613772112136,
+          -0.0012151805270742971
+        ]
+      },
+      "phase_difference_cycles": -0.41235041647459525,
+      "coefficient_discrepancy_white_chi2": 89.64574428268239,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+    },
+    "spline730": {
+      "full": {
+        "n": 1396,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2461352.801538767,
+        "mode": "spline730",
+        "harmonics": 1,
+        "beta": [
+          -0.010472843264301205,
+          -0.001893223643395451
+        ],
+        "covariance_white": [
+          [
+            3.100332598756085e-06,
+            1.0188608532002798e-07
+          ],
+          [
+            1.0188608532002844e-07,
+            3.1438784083392237e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.010642590934661102,
+            "amplitude_white_sigma": 0.0017712655733196098,
+            "cosine_phase_cycles": 0.5284637617449339
+          }
+        ],
+        "nuisance_rank": 10,
+        "nuisance_columns": 11,
+        "signal_condition": 1.0339464600383126,
+        "signal_energy_retained": [
+          0.9927959709199623,
+          0.9983436036680935
+        ],
+        "phase_energy_retained_range": [
+          0.9927807194992944,
+          0.9983458151414014
+        ],
+        "weighted_sse": 7371.149852406667,
+        "null_weighted_sse": 7563.63624223921,
+        "fraction_sse_improvement": 0.025448922141125818,
+        "delta_bic": -21.503839819324362,
+        "residual_rms_mag": 0.0622943670359832
+      },
+      "train": {
+        "n": 618,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2459579.9704363667,
+        "mode": "spline730",
+        "harmonics": 1,
+        "beta": [
+          -0.024325362257474815,
+          -0.003933429590911738
+        ],
+        "covariance_white": [
+          [
+            7.586485601932497e-06,
+            3.7222481696637743e-07
+          ],
+          [
+            3.7222481696637823e-07,
+            7.490817854810882e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.024641329454882104,
+            "amplitude_white_sigma": 0.002775132183495099,
+            "cosine_phase_cycles": 0.5255146269523152
+          }
+        ],
+        "nuisance_rank": 8,
+        "nuisance_columns": 9,
+        "signal_condition": 1.0510847558887162,
+        "signal_energy_retained": [
+          0.976472133453524,
+          0.9927920288939671
+        ],
+        "phase_energy_retained_range": [
+          0.9764054662208748,
+          0.9927957561086993
+        ],
+        "weighted_sse": 3425.133102991013,
+        "null_weighted_sse": 3870.1843770711907,
+        "fraction_sse_improvement": 0.11499485055980097,
+        "delta_bic": -62.64302501133171,
+        "residual_rms_mag": 0.05608108783909852
+      },
+      "validation": {
+        "n": 778,
+        "start_jd": 2459581.3958266,
+        "end_jd": 2461352.801538767,
+        "mode": "spline730",
+        "harmonics": 1,
+        "beta": [
+          -0.00012924982682876313,
+          0.0005961439747724853
+        ],
+        "covariance_white": [
+          [
+            4.034339730416183e-06,
+            6.397369987716515e-08
+          ],
+          [
+            6.397369987716532e-08,
+            4.1648815459433355e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.0006099943904601114,
+            "amplitude_white_sigma": 0.002032861509355658,
+            "cosine_phase_cycles": 0.28398042494842546
+          }
+        ],
+        "nuisance_rank": 8,
+        "nuisance_columns": 9,
+        "signal_condition": 1.0225475528470558,
+        "signal_energy_retained": [
+          0.9938160425787151,
+          0.9939536105346751
+        ],
+        "phase_energy_retained_range": [
+          0.9901364122483615,
+          0.9977819297649086
+        ],
+        "weighted_sse": 2985.705969750457,
+        "null_weighted_sse": 2986.0561646470665,
+        "fraction_sse_improvement": 0.0001172767279984388,
+        "delta_bic": 13.222206403315424,
+        "residual_rms_mag": 0.0631720617357404
+      },
+      "heldout": {
+        "n": 778,
+        "fraction_sse_improvement": -0.19418953104872294,
+        "weighted_sse_null": 2986.0561646470665,
+        "weighted_sse_frozen": 3565.9170109450283,
+        "white_noise_scaled_delta_chi2": -149.52593890751663,
+        "frozen_coefficients": [
+          -0.024325362257474815,
+          -0.003933429590911738
+        ]
+      },
+      "phase_difference_cycles": -0.24153420200388975,
+      "coefficient_discrepancy_white_chi2": 51.50625447197399,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+    },
+    "season": {
+      "full": {
+        "n": 1396,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2461352.801538767,
+        "mode": "season",
+        "harmonics": 1,
+        "beta": [
+          -0.010636850588814094,
+          -0.0003636610947699605
+        ],
+        "covariance_white": [
+          [
+            1.9586362240184483e-06,
+            6.317420595471959e-08
+          ],
+          [
+            6.317420595471964e-08,
+            1.983604397425884e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.01064306534042726,
+            "amplitude_white_sigma": 0.0014010638925964867,
+            "cosine_phase_cycles": 0.5054391969966043
+          }
+        ],
+        "nuisance_rank": 24,
+        "nuisance_columns": 25,
+        "signal_condition": 1.0332212288665008,
+        "signal_energy_retained": [
+          0.9801721303638377,
+          0.9869122913753702
+        ],
+        "phase_energy_retained_range": [
+          0.98016161435685,
+          0.9869472277850422
+        ],
+        "weighted_sse": 4551.179668756535,
+        "null_weighted_sse": 4743.080720832423,
+        "fraction_sse_improvement": 0.04045915795466559,
+        "delta_bic": -43.172623702067774,
+        "residual_rms_mag": 0.05441041640605572
+      },
+      "train": {
+        "n": 618,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2459579.9704363667,
+        "mode": "season",
+        "harmonics": 1,
+        "beta": [
+          -0.02470866731359505,
+          -0.001087094098324276
+        ],
+        "covariance_white": [
+          [
+            4.043287728012561e-06,
+            1.8254333198610663e-07
+          ],
+          [
+            1.8254333198610674e-07,
+            4.006546487496575e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.02473256990271193,
+            "amplitude_white_sigma": 0.002014757612628086,
+            "cosine_phase_cycles": 0.5069977425859962
+          }
+        ],
+        "nuisance_rank": 14,
+        "nuisance_columns": 15,
+        "signal_condition": 1.0466703288277983,
+        "signal_energy_retained": [
+          0.9656846537326497,
+          0.9783332593248155
+        ],
+        "phase_energy_retained_range": [
+          0.9650373792334201,
+          0.9793002425367316
+        ],
+        "weighted_sse": 1788.157307239868,
+        "null_weighted_sse": 2236.669039949853,
+        "fraction_sse_improvement": 0.2005266423860549,
+        "delta_bic": -125.4567030084016,
+        "residual_rms_mag": 0.04517667950849458
+      },
+      "validation": {
+        "n": 778,
+        "start_jd": 2459581.3958266,
+        "end_jd": 2461352.801538767,
+        "mode": "season",
+        "harmonics": 1,
+        "beta": [
+          0.0007400516009845592,
+          0.0007492335380321277
+        ],
+        "covariance_white": [
+          [
+            3.183916464094767e-06,
+            6.179712596151785e-08
+          ],
+          [
+            6.179712596151822e-08,
+            3.280636357449916e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.0010531036352762007,
+            "amplitude_white_sigma": 0.0018151212429207266,
+            "cosine_phase_cycles": 0.12598123060148983
+          }
+        ],
+        "nuisance_rank": 16,
+        "nuisance_columns": 17,
+        "signal_condition": 1.0245790392984482,
+        "signal_energy_retained": [
+          0.9817827459154366,
+          0.9838055448799772
+        ],
+        "phase_energy_retained_range": [
+          0.9817380784959888,
+          0.9838628380672002
+        ],
+        "weighted_sse": 2303.270698258331,
+        "null_weighted_sse": 2304.2910655834107,
+        "fraction_sse_improvement": 0.0004428118219611532,
+        "delta_bic": 12.968869152327782,
+        "residual_rms_mag": 0.058918826115029896
+      },
+      "heldout": {
+        "n": 778,
+        "fraction_sse_improvement": -0.26780479582123173,
+        "weighted_sse_null": 2304.2910655834107,
+        "weighted_sse_frozen": 2921.3912639146647,
+        "white_noise_scaled_delta_chi2": -204.06725441577862,
+        "frozen_coefficients": [
+          -0.02470866731359505,
+          -0.001087094098324276
+        ]
+      },
+      "phase_difference_cycles": -0.38101651198450637,
+      "coefficient_discrepancy_white_chi2": 89.7418947725231,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+    },
+    "equal_weight_spline365": {
+      "full": {
+        "n": 1396,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2461352.801538767,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          -0.014067894932814275,
+          -0.0003754257328969588
+        ],
+        "covariance_white": [
+          [
+            4.771145617620922e-06,
+            1.301905931156179e-07
+          ],
+          [
+            1.3019059311561845e-07,
+            4.855250232256206e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.014072903478728999,
+            "amplitude_white_sigma": 0.002185897811604508,
+            "cosine_phase_cycles": 0.5042463128307
+          }
+        ],
+        "nuisance_rank": 15,
+        "nuisance_columns": 16,
+        "signal_condition": 1.028840414155299,
+        "signal_energy_retained": [
+          0.9917977276273064,
+          0.9923821756425129
+        ],
+        "phase_energy_retained_range": [
+          0.99105280970072,
+          0.9931846650390002
+        ],
+        "weighted_sse": 4.59253282706345,
+        "null_weighted_sse": 4.730674183976367,
+        "fraction_sse_improvement": 0.029201198717262455,
+        "delta_bic": -26.88917913804962,
+        "residual_rms_mag": 0.05735660347405375
+      },
+      "train": {
+        "n": 618,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2459579.9704363667,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          -0.027445690796788984,
+          -0.003742546385286316
+        ],
+        "covariance_white": [
+          [
+            8.151153957858984e-06,
+            3.365585390932014e-07
+          ],
+          [
+            3.365585390932028e-07,
+            8.144223760747063e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.027699685860293925,
+            "amplitude_white_sigma": 0.0028707384718726615,
+            "cosine_phase_cycles": 0.5215696333979807
+          }
+        ],
+        "nuisance_rank": 10,
+        "nuisance_columns": 11,
+        "signal_condition": 1.042199049083129,
+        "signal_energy_retained": [
+          0.9742044129474413,
+          0.9796487761721251
+        ],
+        "phase_energy_retained_range": [
+          0.9732381053474449,
+          0.9808489611074488
+        ],
+        "weighted_sse": 1.4879312720076483,
+        "null_weighted_sse": 1.7168900420230213,
+        "fraction_sse_improvement": 0.13335668820444058,
+        "delta_bic": -75.59999849904574,
+        "residual_rms_mag": 0.04906786911969636
+      },
+      "validation": {
+        "n": 778,
+        "start_jd": 2459581.3958266,
+        "end_jd": 2461352.801538767,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          -0.0030803669635589143,
+          0.002846694272894683
+        ],
+        "covariance_white": [
+          [
+            9.133384289460183e-06,
+            1.2170371177916533e-07
+          ],
+          [
+            1.217037117791654e-07,
+            9.42067351990913e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.004194321031289397,
+            "amplitude_white_sigma": 0.0030239699432272776,
+            "cosine_phase_cycles": 0.38127139014225486
+          }
+        ],
+        "nuisance_rank": 11,
+        "nuisance_columns": 12,
+        "signal_condition": 1.0205043775330198,
+        "signal_energy_retained": [
+          0.9939190538919739,
+          0.9916271253937963
+        ],
+        "phase_energy_retained_range": [
+          0.9902526081979821,
+          0.9953640229387009
+        ],
+        "weighted_sse": 2.7396698054386817,
+        "null_weighted_sse": 2.7465610125888134,
+        "fraction_sse_improvement": 0.0025090311551594358,
+        "delta_bic": 11.358973858438734,
+        "residual_rms_mag": 0.0593416083801214
+      },
+      "heldout": {
+        "n": 778,
+        "fraction_sse_improvement": -0.08767775247432685,
+        "weighted_sse_null": 2.7465610125888134,
+        "weighted_sse_frozen": 2.987373309206212,
+        "white_noise_scaled_delta_chi2": -67.24883614780875,
+        "frozen_coefficients": [
+          -0.027445690796788984,
+          -0.003742546385286316
+        ]
+      },
+      "phase_difference_cycles": -0.14029824325572582,
+      "coefficient_discrepancy_white_chi2": 36.35916955674244,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+    },
+    "spline365_plus_harmonic": {
+      "full": {
+        "n": 1396,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2461352.801538767,
+        "mode": "spline365",
+        "harmonics": 2,
+        "beta": [
+          -0.011337738755236526,
+          -0.00024115899127067839,
+          -0.0011210552555123085,
+          -0.0008923537663597936
+        ],
+        "covariance_white": [
+          [
+            2.32540079275427e-06,
+            7.420301848653569e-08,
+            -9.060884224275842e-09,
+            -4.3289798615567994e-08
+          ],
+          [
+            7.420301848653585e-08,
+            2.36984496167364e-06,
+            -8.134494869278338e-09,
+            -9.187694182791281e-08
+          ],
+          [
+            -9.060884224275725e-09,
+            -8.134494869277934e-09,
+            2.3141752260151982e-06,
+            3.9203724741951745e-09
+          ],
+          [
+            -4.328979861556805e-08,
+            -9.187694182791271e-08,
+            3.920372474193935e-09,
+            2.376055921821445e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.011340303247314993,
+            "amplitude_white_sigma": 0.0015259672767619693,
+            "cosine_phase_cycles": 0.5033847894681671
+          },
+          {
+            "harmonic": 2,
+            "semi_amplitude_mag": 0.0014328503516586359,
+            "amplitude_white_sigma": 0.001530358333266942,
+            "cosine_phase_cycles": 0.6069988750467159
+          }
+        ],
+        "nuisance_rank": 15,
+        "nuisance_columns": 16,
+        "signal_condition": 1.0521291503797352,
+        "signal_energy_retained": [
+          0.9909802489360768,
+          0.9927116580612675,
+          0.9908269226855737,
+          0.9932211969553398
+        ],
+        "phase_energy_retained_range": [
+          0.9870218545352507,
+          0.9913151588073585,
+          0.99401427871426,
+          0.9955342948625797
+        ],
+        "weighted_sse": 5489.355530182398,
+        "null_weighted_sse": 5714.105278546276,
+        "fraction_sse_improvement": 0.039332447935060855,
+        "delta_bic": -27.051644606865352,
+        "residual_rms_mag": 0.057585079687197185
+      },
+      "train": {
+        "n": 618,
+        "start_jd": 2458033.9521395667,
+        "end_jd": 2459579.9704363667,
+        "mode": "spline365",
+        "harmonics": 2,
+        "beta": [
+          -0.025651710329355197,
+          -0.0005014865600529023,
+          -0.0021093054816243573,
+          -0.000645968746455659
+        ],
+        "covariance_white": [
+          [
+            5.0915846547316265e-06,
+            2.401787494639517e-07,
+            8.014755361605756e-08,
+            -2.2648456801275168e-07
+          ],
+          [
+            2.401787494639491e-07,
+            5.09739571410419e-06,
+            -1.2787280191418336e-08,
+            -3.593792586807787e-07
+          ],
+          [
+            8.014755361605844e-08,
+            -1.2787280191417373e-08,
+            5.062669345137353e-06,
+            -1.2826179562290746e-07
+          ],
+          [
+            -2.2648456801275026e-07,
+            -3.5937925868077784e-07,
+            -1.2826179562290878e-07,
+            5.0527784706976885e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.02565661184940564,
+            "amplitude_white_sigma": 0.002258533638047777,
+            "cosine_phase_cycles": 0.5031110556774634
+          },
+          {
+            "harmonic": 2,
+            "semi_amplitude_mag": 0.00220600209342785,
+            "amplitude_white_sigma": 0.0022338302901238932,
+            "cosine_phase_cycles": 0.5472973802976073
+          }
+        ],
+        "nuisance_rank": 10,
+        "nuisance_columns": 11,
+        "signal_condition": 1.098613348932704,
+        "signal_energy_retained": [
+          0.9742222541661968,
+          0.9796721573368042,
+          0.9790724276104859,
+          0.9861621327841444
+        ],
+        "phase_energy_retained_range": [
+          0.9704515609016147,
+          0.9751746901084561,
+          0.9792934446941705,
+          0.9935059648366389
+        ],
+        "weighted_sse": 2274.425074629435,
+        "null_weighted_sse": 2765.983220362059,
+        "fraction_sse_improvement": 0.17771551978839562,
+        "delta_bic": -95.21740215468704,
+        "residual_rms_mag": 0.0492178239440539
+      },
+      "validation": {
+        "n": 778,
+        "start_jd": 2459581.3958266,
+        "end_jd": 2461352.801538767,
+        "mode": "spline365",
+        "harmonics": 2,
+        "beta": [
+          0.00014723005410339357,
+          0.0006919414854109629,
+          -0.00021210568867173648,
+          -0.0014180029208983036
+        ],
+        "covariance_white": [
+          [
+            3.351668535857973e-06,
+            5.6914016705828744e-08,
+            -5.90063974461258e-08,
+            1.5299351129999086e-08
+          ],
+          [
+            5.691401670582922e-08,
+            3.4627022120053624e-06,
+            -1.9526523982894094e-08,
+            -6.739717476216398e-08
+          ],
+          [
+            -5.9006397446125044e-08,
+            -1.9526523982894193e-08,
+            3.329623165946078e-06,
+            6.732572776716549e-08
+          ],
+          [
+            1.5299351129998156e-08,
+            -6.739717476216517e-08,
+            6.732572776716553e-08,
+            3.494500767525022e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.0007074317691933392,
+            "amplitude_white_sigma": 0.0018657609738920475,
+            "cosine_phase_cycles": 0.21663292031482437
+          },
+          {
+            "harmonic": 2,
+            "semi_amplitude_mag": 0.0014337786115167963,
+            "amplitude_white_sigma": 0.0018736576338634042,
+            "cosine_phase_cycles": 0.7263687179258707
+          }
+        ],
+        "nuisance_rank": 11,
+        "nuisance_columns": 12,
+        "signal_condition": 1.0473924509408727,
+        "signal_energy_retained": [
+          0.9924199539599199,
+          0.9918858189577997,
+          0.9905409776546391,
+          0.9918180452754596
+        ],
+        "phase_energy_retained_range": [
+          0.9868099539623025,
+          0.9885412320646971,
+          0.995018944934476,
+          0.9966169358345676
+        ],
+        "weighted_sse": 2459.956497162105,
+        "null_weighted_sse": 2462.2735125123727,
+        "fraction_sse_improvement": 0.0009410064879038504,
+        "delta_bic": 25.89445837602219,
+        "residual_rms_mag": 0.05982751584174805
+      },
+      "heldout": {
+        "n": 778,
+        "fraction_sse_improvement": -0.2617980435508094,
+        "weighted_sse_null": 2462.2735125123727,
+        "weighted_sse_frozen": 3106.891900775091,
+        "white_noise_scaled_delta_chi2": -200.79909940347073,
+        "frozen_coefficients": [
+          -0.025651710329355197,
+          -0.0005014865600529023,
+          -0.0021093054816243573,
+          -0.000645968746455659
+        ]
+      },
+      "phase_difference_cycles": -0.286478135362639,
+      "coefficient_discrepancy_white_chi2": 79.24180413668901,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+    }
+  },
+  "injection": {
+    "paired_recovery_note": "Joint fitting has unit linear response where identifiable; this does not prove the baseline contains a stable signal.",
+    "circular_shift_draws": 200,
+    "circular_shift_null_amplitude_p50_p95": [
+      0.00268957677013902,
+      0.0051346085272784454
+    ],
+    "circular_shift_limit": "Within-camera residual circular shifts preserve sample order but distort irregular time spacings; diagnostic sensitivity, not calibrated false alarm probability.",
+    "cases": [
+      {
+        "injected_semi_amplitude_mag": 0.01,
+        "phases": 12,
+        "maximum_paired_coefficient_error_mag": 2.3255648830085146e-16,
+        "recovered_total_amplitude_range_mag": [
+          0.0013868086621874251,
+          0.021360174832959627
+        ],
+        "maximum_total_phase_error_cycles": 0.46769929486528766,
+        "circular_shift_recovery_amplitude_p05_p50_p95": [
+          0.006552716401244284,
+          0.010302361934497094,
+          0.013940807267728656
+        ]
+      },
+      {
+        "injected_semi_amplitude_mag": 0.03,
+        "phases": 12,
+        "maximum_paired_coefficient_error_mag": 2.8360474132579647e-16,
+        "recovered_total_amplitude_range_mag": [
+          0.01864374982766146,
+          0.041359290365330086
+        ],
+        "maximum_total_phase_error_cycles": 0.06140233887817057,
+        "circular_shift_recovery_amplitude_p05_p50_p95": [
+          0.02634959223751279,
+          0.030100030104909997,
+          0.03383528550784529
+        ]
+      },
+      {
+        "injected_semi_amplitude_mag": 0.1,
+        "phases": 12,
+        "maximum_paired_coefficient_error_mag": 2.6994297768389907e-16,
+        "recovered_total_amplitude_range_mag": [
+          0.08864209496866945,
+          0.11135869659225307
+        ],
+        "maximum_total_phase_error_cycles": 0.018050250559115515,
+        "circular_shift_recovery_amplitude_p05_p50_p95": [
+          0.09624357957254841,
+          0.10002655886537802,
+          0.10380281213152234
+        ]
+      }
+    ]
+  },
+  "asassn_V": {
+    "full": {
+      "n": 369,
+      "start_jd": 2455973.8864196,
+      "end_jd": 2458452.116371067,
+      "mode": "spline365",
+      "harmonics": 1,
+      "beta": [
+        0.002260410498569532,
+        -0.006613660974818322
+      ],
+      "covariance_white": [
+        [
+          3.8949885897577396e-06,
+          -3.4031588111372595e-08
+        ],
+        [
+          -3.403158811137258e-08,
+          3.560940175911263e-06
+        ]
+      ],
+      "parameters": [
+        {
+          "harmonic": 1,
+          "semi_amplitude_mag": 0.006989275149246752,
+          "amplitude_white_sigma": 0.0019017647972850772,
+          "cosine_phase_cycles": 0.8024148646720715
+        }
+      ],
+      "nuisance_rank": 11,
+      "nuisance_columns": 12,
+      "signal_condition": 1.0468184392532702,
+      "signal_energy_retained": [
+        0.9711512996353154,
+        0.9815893114976212
+      ],
+      "phase_energy_retained_range": [
+        0.9644517372728569,
+        0.9883288035409178
+      ],
+      "weighted_sse": 594.0004520842557,
+      "null_weighted_sse": 616.5641036959297,
+      "fraction_sse_improvement": 0.03659579186725037,
+      "delta_bic": -1.9355447088856952,
+      "residual_rms_mag": 0.025847152123393613
+    },
+    "train": {
+      "n": 249,
+      "start_jd": 2455973.8864196,
+      "end_jd": 2457752.0475415,
+      "mode": "spline365",
+      "harmonics": 1,
+      "beta": [
+        0.004434638843788059,
+        -0.003774802182157218
+      ],
+      "covariance_white": [
+        [
+          5.270717465144907e-06,
+          -1.6483284134984182e-07
+        ],
+        [
+          -1.648328413498422e-07,
+          4.646006550675248e-06
+        ]
+      ],
+      "parameters": [
+        {
+          "harmonic": 1,
+          "semi_amplitude_mag": 0.005823671796148268,
+          "amplitude_white_sigma": 0.0022739762261140785,
+          "cosine_phase_cycles": 0.8877646933126249
+        }
+      ],
+      "nuisance_rank": 9,
+      "nuisance_columns": 10,
+      "signal_condition": 1.073956946410754,
+      "signal_energy_retained": [
+        0.9685264979005817,
+        0.9856793688868496
+      ],
+      "phase_energy_retained_range": [
+        0.9629128023422149,
+        0.9908078887529349
+      ],
+      "weighted_sse": 354.9690840244371,
+      "null_weighted_sse": 364.78306809362806,
+      "fraction_sse_improvement": 0.026903617321053952,
+      "delta_bic": 4.244141817912158,
+      "residual_rms_mag": 0.02461695681584555
+    },
+    "validation": {
+      "n": 120,
+      "start_jd": 2457756.087178867,
+      "end_jd": 2458452.116371067,
+      "mode": "spline365",
+      "harmonics": 1,
+      "beta": [
+        -0.002523774759158992,
+        -0.013997659574713744
+      ],
+      "covariance_white": [
+        [
+          1.3337776497164945e-05,
+          5.536743567166225e-07
+        ],
+        [
+          5.53674356716621e-07,
+          1.3401636611750902e-05
+        ]
+      ],
+      "parameters": [
+        {
+          "harmonic": 1,
+          "semi_amplitude_mag": 0.014223357993263876,
+          "amplitude_white_sigma": 0.0036868678701726977,
+          "cosine_phase_cycles": 0.721609418848054
+        }
+      ],
+      "nuisance_rank": 5,
+      "nuisance_columns": 6,
+      "signal_condition": 1.04237861092089,
+      "signal_energy_retained": [
+        0.9713926175087627,
+        0.9495332661803922
+      ],
+      "phase_energy_retained_range": [
+        0.9465553879476076,
+        0.9753246358736565
+      ],
+      "weighted_sse": 217.2600192289111,
+      "null_weighted_sse": 245.9161328147417,
+      "fraction_sse_improvement": 0.11652799374255929,
+      "delta_bic": -5.292497247480151,
+      "residual_rms_mag": 0.026910965499148676
+    },
+    "heldout": {
+      "n": 120,
+      "fraction_sse_improvement": 0.030475383353509966,
+      "weighted_sse_null": 245.9161328147417,
+      "weighted_sse_frozen": 238.42174439439978,
+      "white_noise_scaled_delta_chi2": 3.5046690856536435,
+      "frozen_coefficients": [
+        0.004434638843788059,
+        -0.003774802182157218
+      ]
+    },
+    "phase_difference_cycles": -0.1661552744645709,
+    "coefficient_discrepancy_white_chi2": 8.231602231630093,
+    "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+  },
+  "ztf": {
+    "spline365": {
+      "full": {
+        "n": 314,
+        "start_jd": 2458205.6525926,
+        "end_jd": 2460968.9094329,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          -0.012072658760834928,
+          0.01387952923378933
+        ],
+        "covariance_white": [
+          [
+            5.367441046674803e-06,
+            -2.7149897341084147e-07
+          ],
+          [
+            -2.7149897341084073e-07,
+            5.1674783087808e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.01839539130617169,
+            "amplitude_white_sigma": 0.0023499966767940813,
+            "cosine_phase_cycles": 0.36393699993045775
+          }
+        ],
+        "nuisance_rank": 10,
+        "nuisance_columns": 11,
+        "signal_condition": 1.0565214579632478,
+        "signal_energy_retained": [
+          0.9545151131781431,
+          0.9741488198487285
+        ],
+        "phase_energy_retained_range": [
+          0.952597919330345,
+          0.9755292360915644
+        ],
+        "weighted_sse": 600.3452643776278,
+        "null_weighted_sse": 722.2360098783139,
+        "fraction_sse_improvement": 0.168768579568918,
+        "delta_bic": -46.54318415579699,
+        "residual_rms_mag": 0.027654493982420463
+      },
+      "train": {
+        "n": 186,
+        "start_jd": 2458205.6525926,
+        "end_jd": 2459550.7833102,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          -0.024223248436506858,
+          0.015419438480364374
+        ],
+        "covariance_white": [
+          [
+            8.327696267525743e-06,
+            -1.7532884833054844e-07
+          ],
+          [
+            -1.7532884833054847e-07,
+            7.440334127873321e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.02871454070443185,
+            "amplitude_white_sigma": 0.0028689135678198435,
+            "cosine_phase_cycles": 0.4097805275963409
+          }
+        ],
+        "nuisance_rank": 6,
+        "nuisance_columns": 7,
+        "signal_condition": 1.0624575889113468,
+        "signal_energy_retained": [
+          0.9594569091995115,
+          0.9864486139002407
+        ],
+        "phase_energy_retained_range": [
+          0.9592191928882078,
+          0.9868323706656703
+        ],
+        "weighted_sse": 316.4788105432672,
+        "null_weighted_sse": 494.8998849887834,
+        "fraction_sse_improvement": 0.360519531035171,
+        "delta_bic": -72.70895776558508,
+        "residual_rms_mag": 0.02608830375026644
+      },
+      "validation": {
+        "n": 128,
+        "start_jd": 2459622.7541898,
+        "end_jd": 2460968.9094329,
+        "mode": "spline365",
+        "harmonics": 1,
+        "beta": [
+          0.005036187089094108,
+          0.0104063737829166
+        ],
+        "covariance_white": [
+          [
+            8.396330824249623e-06,
+            -8.041559941683697e-07
+          ],
+          [
+            -8.0415599416837e-07,
+            8.97161802628133e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.01156095998203143,
+            "amplitude_white_sigma": 0.0028691123034416746,
+            "cosine_phase_cycles": 0.1782645517453963
+          }
+        ],
+        "nuisance_rank": 6,
+        "nuisance_columns": 7,
+        "signal_condition": 1.1036987664938311,
+        "signal_energy_retained": [
+          0.9404257332701755,
+          0.9536073315988708
+        ],
+        "phase_energy_retained_range": [
+          0.9275702456964852,
+          0.9639270939098643
+        ],
+        "weighted_sse": 156.32739450803922,
+        "null_weighted_sse": 177.62783444419583,
+        "fraction_sse_improvement": 0.11991611564035831,
+        "delta_bic": -6.646410245522668,
+        "residual_rms_mag": 0.022102558852712565
+      },
+      "heldout": {
+        "n": 128,
+        "fraction_sse_improvement": -0.6319132967214025,
+        "weighted_sse_null": 177.62783444419583,
+        "weighted_sse_frozen": 289.8732248973111,
+        "white_noise_scaled_delta_chi2": -77.0934222000111,
+        "frozen_coefficients": [
+          -0.024223248436506858,
+          0.015419438480364374
+        ]
+      },
+      "phase_difference_cycles": -0.23151597585094463,
+      "coefficient_discrepancy_white_chi2": 51.85632584922603,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+    },
+    "season": {
+      "full": {
+        "n": 314,
+        "start_jd": 2458205.6525926,
+        "end_jd": 2460968.9094329,
+        "mode": "season",
+        "harmonics": 1,
+        "beta": [
+          -0.01202136149147647,
+          0.012859841682523849
+        ],
+        "covariance_white": [
+          [
+            3.7126209117295965e-06,
+            -1.8797350654447582e-07
+          ],
+          [
+            -1.8797350654447505e-07,
+            3.4314928158409995e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.017603654740091082,
+            "amplitude_white_sigma": 0.0019365280340629474,
+            "cosine_phase_cycles": 0.36963861197143577
+          }
+        ],
+        "nuisance_rank": 18,
+        "nuisance_columns": 19,
+        "signal_condition": 1.0680175244622185,
+        "signal_energy_retained": [
+          0.9039198226016605,
+          0.9609068775681511
+        ],
+        "phase_energy_retained_range": [
+          0.9028013522865586,
+          0.961413769763752
+        ],
+        "weighted_sse": 382.78193005176735,
+        "null_weighted_sse": 490.5675055265097,
+        "fraction_sse_improvement": 0.21971609260800862,
+        "delta_bic": -66.40381071842273,
+        "residual_rms_mag": 0.022082126099168445
+      },
+      "train": {
+        "n": 186,
+        "start_jd": 2458205.6525926,
+        "end_jd": 2459550.7833102,
+        "mode": "season",
+        "harmonics": 1,
+        "beta": [
+          -0.023621673257614512,
+          0.014811421784687423
+        ],
+        "covariance_white": [
+          [
+            4.494291856642232e-06,
+            -1.0128089861277225e-07
+          ],
+          [
+            -1.0128089861277227e-07,
+            3.996723739750251e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.0278812062646761,
+            "amplitude_white_sigma": 0.0021083267502003352,
+            "cosine_phase_cycles": 0.4108644067878884
+          }
+        ],
+        "nuisance_rank": 10,
+        "nuisance_columns": 11,
+        "signal_condition": 1.0654037673112327,
+        "signal_energy_retained": [
+          0.9460246090315597,
+          0.9771835108982199
+        ],
+        "phase_energy_retained_range": [
+          0.9459984481588947,
+          0.9772752018500475
+        ],
+        "weighted_sse": 164.6094148790826,
+        "null_weighted_sse": 330.35207361344425,
+        "fraction_sse_improvement": 0.5017152062084603,
+        "delta_bic": -119.11303585438347,
+        "residual_rms_mag": 0.018814854282599332
+      },
+      "validation": {
+        "n": 128,
+        "start_jd": 2459622.7541898,
+        "end_jd": 2460968.9094329,
+        "mode": "season",
+        "harmonics": 1,
+        "beta": [
+          0.005065032600037191,
+          0.008766023772378078
+        ],
+        "covariance_white": [
+          [
+            8.612799149398854e-06,
+            -8.062684839379659e-07
+          ],
+          [
+            -8.062684839379676e-07,
+            8.299723483516419e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.01012411615981055,
+            "amplitude_white_sigma": 0.0027712022702280205,
+            "cosine_phase_cycles": 0.16661266690532353
+          }
+        ],
+        "nuisance_rank": 10,
+        "nuisance_columns": 11,
+        "signal_condition": 1.1023378907498063,
+        "signal_energy_retained": [
+          0.8274887239974973,
+          0.9303986905223329
+        ],
+        "phase_energy_retained_range": [
+          0.8229593708836682,
+          0.9322374008715386
+        ],
+        "weighted_sse": 136.3267314502419,
+        "null_weighted_sse": 152.0281113320832,
+        "fraction_sse_improvement": 0.10327945104536573,
+        "delta_bic": -4.249348123531327,
+        "residual_rms_mag": 0.02064027702774374
+      },
+      "heldout": {
+        "n": 128,
+        "fraction_sse_improvement": -0.6459435626581309,
+        "weighted_sse_null": 152.0281113320832,
+        "weighted_sse_frozen": 250.229691190116,
+        "white_noise_scaled_delta_chi2": -76.22134039365946,
+        "frozen_coefficients": [
+          -0.023621673257614512,
+          0.014811421784687423
+        ]
+      },
+      "phase_difference_cycles": -0.24425173988256488,
+      "coefficient_discrepancy_white_chi2": 64.13168178202801,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY"
+    }
+  },
+  "tess_inventory": [
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+      "sector": "44",
+      "series": "QLP_SAP_FLUX",
+      "quality_zero_points": 2821,
+      "median_flux": 0.9994824528694153,
+      "start_jd": 2459500.704236525,
+      "end_jd": 2459524.1926591056
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+      "sector": "44",
+      "series": "QLP_KSPSAP_FLUX",
+      "quality_zero_points": 2821,
+      "median_flux": 1.0000059604644775,
+      "start_jd": 2459500.704236525,
+      "end_jd": 2459524.1926591056
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+      "sector": "45",
+      "series": "QLP_SAP_FLUX",
+      "quality_zero_points": 2811,
+      "median_flux": 0.9998618960380554,
+      "start_jd": 2459526.0400547935,
+      "end_jd": 2459550.583817515
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+      "sector": "45",
+      "series": "QLP_KSPSAP_FLUX",
+      "quality_zero_points": 2811,
+      "median_flux": 1.0000057220458984,
+      "start_jd": 2459526.0400547935,
+      "end_jd": 2459550.583817515
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+      "sector": "46",
+      "series": "QLP_SAP_FLUX",
+      "quality_zero_points": 2891,
+      "median_flux": 0.9994671940803528,
+      "start_jd": 2459552.86868187,
+      "end_jd": 2459578.654753346
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+      "sector": "46",
+      "series": "QLP_KSPSAP_FLUX",
+      "quality_zero_points": 2891,
+      "median_flux": 1.0000097751617432,
+      "start_jd": 2459552.86868187,
+      "end_jd": 2459578.654753346
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+      "sector": "71",
+      "series": "QLP_SAP_FLUX",
+      "quality_zero_points": 8121,
+      "median_flux": 1.0024890899658203,
+      "start_jd": 2460235.5329972273,
+      "end_jd": 2460259.4635714996
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+      "sector": "71",
+      "series": "QLP_DET_FLUX",
+      "quality_zero_points": 8121,
+      "median_flux": 1.0000125169754028,
+      "start_jd": 2460235.5329972273,
+      "end_jd": 2460259.4635714996
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+      "sector": "72",
+      "series": "QLP_SAP_FLUX",
+      "quality_zero_points": 9001,
+      "median_flux": 0.9995373487472534,
+      "start_jd": 2460261.8758294894,
+      "end_jd": 2460285.549041362
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+      "sector": "72",
+      "series": "QLP_DET_FLUX",
+      "quality_zero_points": 9001,
+      "median_flux": 1.0000362396240234,
+      "start_jd": 2460261.8758294894,
+      "end_jd": 2460285.549041362
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+      "sector": "71",
+      "series": "SPOC_SAP_FLUX",
+      "quality_zero_points": 8772,
+      "median_flux": 3788.3555908203125,
+      "start_jd": 2460235.748274057,
+      "end_jd": 2460259.3964137067
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+      "sector": "71",
+      "series": "SPOC_PDCSAP_FLUX",
+      "quality_zero_points": 8772,
+      "median_flux": 4475.46240234375,
+      "start_jd": 2460235.748274057,
+      "end_jd": 2460259.3964137067
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+      "sector": "72",
+      "series": "SPOC_SAP_FLUX",
+      "quality_zero_points": 8435,
+      "median_flux": 3727.667236328125,
+      "start_jd": 2460262.5842062556,
+      "end_jd": 2460285.58605845
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+      "sector": "72",
+      "series": "SPOC_PDCSAP_FLUX",
+      "quality_zero_points": 8435,
+      "median_flux": 4652.04833984375,
+      "start_jd": 2460262.5842062556,
+      "end_jd": 2460285.58605845
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+      "sector": "1751",
+      "series": "SPOC_SAP_FLUX",
+      "quality_zero_points": 1502,
+      "median_flux": 3892.957763671875,
+      "start_jd": 2461059.2964602318,
+      "end_jd": 2461062.986248819
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+      "sector": "1751",
+      "series": "SPOC_PDCSAP_FLUX",
+      "quality_zero_points": 1502,
+      "median_flux": 4816.35205078125,
+      "start_jd": 2461059.2964602318,
+      "end_jd": 2461062.986248819
+    }
+  ],
+  "tess": {
+    "QLP_SAP_FLUX": {
+      "full": {
+        "n": 114,
+        "start_jd": 2459501.100902129,
+        "end_jd": 2460285.524458729,
+        "mode": "group_linear",
+        "harmonics": 1,
+        "beta": [
+          -0.00023305828396260155,
+          0.0014175897656618225
+        ],
+        "covariance_white": [
+          [
+            2.6285993948548183e-06,
+            4.7649524435835966e-08
+          ],
+          [
+            4.764952443583591e-08,
+            3.320330625142713e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.0014366199592908118,
+            "amplitude_white_sigma": 0.0018129728875448362,
+            "cosine_phase_cycles": 0.2759338121447276
+          }
+        ],
+        "nuisance_rank": 10,
+        "nuisance_columns": 10,
+        "signal_condition": 1.125154221188268,
+        "signal_energy_retained": [
+          0.3446625952711806,
+          0.22685937954256696
+        ],
+        "phase_energy_retained_range": [
+          0.22530436086457706,
+          0.34751974707973876
+        ],
+        "weighted_sse": 11.95315607103791,
+        "null_weighted_sse": 12.026944998675825,
+        "fraction_sse_improvement": 0.006135300996723547,
+        "delta_bic": 8.77081817734601,
+        "residual_rms_mag": 0.006476179313057187
+      },
+      "train": {
+        "n": 70,
+        "start_jd": 2459501.100902129,
+        "end_jd": 2459578.5804458773,
+        "mode": "group_linear",
+        "harmonics": 1,
+        "beta": [
+          0.006932427534516865,
+          -0.0001847765992581764
+        ],
+        "covariance_white": [
+          [
+            1.1578979940290546e-06,
+            1.4559731262058094e-07
+          ],
+          [
+            1.455973126205808e-07,
+            1.68872212207391e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.006934889610726403,
+            "amplitude_white_sigma": 0.0010726224235876969,
+            "cosine_phase_cycles": 0.9957588957411552
+          }
+        ],
+        "nuisance_rank": 6,
+        "nuisance_columns": 6,
+        "signal_condition": 1.241087045614908,
+        "signal_energy_retained": [
+          0.3927859026651802,
+          0.21706955151493348
+        ],
+        "phase_energy_retained_range": [
+          0.2075928235504369,
+          0.40751253485275224
+        ],
+        "weighted_sse": 2.1783965889885857,
+        "null_weighted_sse": 3.6601694445915087,
+        "fraction_sse_improvement": 0.4048372289956361,
+        "delta_bic": -27.827433745371856,
+        "residual_rms_mag": 0.0035281695691259237
+      },
+      "validation": {
+        "n": 44,
+        "start_jd": 2460236.0201538713,
+        "end_jd": 2460285.524458729,
+        "mode": "group_linear",
+        "harmonics": 1,
+        "beta": [
+          -0.017207742566262754,
+          0.007492803778428673
+        ],
+        "covariance_white": [
+          [
+            7.646418938422625e-06,
+            -1.0743685989560514e-06
+          ],
+          [
+            -1.0743685989560483e-06,
+            7.457515832098885e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.018768284756173273,
+            "amplitude_white_sigma": 0.002898761426000776,
+            "cosine_phase_cycles": 0.4346392890316503
+          }
+        ],
+        "nuisance_rank": 4,
+        "nuisance_columns": 4,
+        "signal_condition": 1.1546474565798683,
+        "signal_energy_retained": [
+          0.2713735449273428,
+          0.24301523145982692
+        ],
+        "phase_energy_retained_range": [
+          0.22145644950071305,
+          0.29184671562808573
+        ],
+        "weighted_sse": 3.961844460394048,
+        "null_weighted_sse": 8.366775554084315,
+        "fraction_sse_improvement": 0.5264789362659503,
+        "delta_bic": -25.32421154732022,
+        "residual_rms_mag": 0.006001397155809977
+      },
+      "heldout": {
+        "n": 44,
+        "fraction_sse_improvement": -0.4545284215308627,
+        "weighted_sse_null": 8.366775554084315,
+        "weighted_sse_frozen": 12.169712839985268,
+        "white_noise_scaled_delta_chi2": -18.181136861234506,
+        "frozen_coefficients": [
+          0.006932427534516865,
+          -0.0001847765992581764
+        ]
+      },
+      "phase_difference_cycles": 0.4388803932904951,
+      "coefficient_discrepancy_white_chi2": 69.09853646407798,
+      "status": "DIAGNOSTIC_ONLY_WHITE_UNCERTAINTY",
+      "daily_groups": 114,
+      "sectors": [
+        "44",
+        "45",
+        "46",
+        "71",
+        "72"
+      ],
+      "by_sector": {
+        "44": {
+          "n": 21,
+          "start_jd": 2459501.100902129,
+          "end_jd": 2459523.8488780595,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            0.0030389307961925668,
+            -0.016389879220403747
+          ],
+          "covariance_white": [
+            [
+              6.518323523487991e-06,
+              6.4168862828894e-06
+            ],
+            [
+              6.416886282889399e-06,
+              2.1330022642212674e-05
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.016669230373459663,
+              "amplitude_white_sigma": 0.00430549089977181,
+              "cosine_phase_cycles": 0.779178366256303
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.398134921732786,
+          "signal_energy_retained": [
+            0.5236580292894031,
+            0.08458294186928186
+          ],
+          "phase_energy_retained_range": [
+            0.05087329093742023,
+            0.6470916092596181
+          ],
+          "weighted_sse": 296.5768111852571,
+          "null_weighted_sse": 757.8060576724622,
+          "fraction_sse_improvement": 0.6086375818950723,
+          "delta_bic": -13.611501327926597,
+          "residual_rms_mag": 0.0037580187991195645
+        },
+        "45": {
+          "n": 24,
+          "start_jd": 2459526.2622986357,
+          "end_jd": 2459550.5444630296,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            -0.0003520758512136949,
+            0.004950818313975614
+          ],
+          "covariance_white": [
+            [
+              2.1913918737320753e-06,
+              -9.927689179013225e-07
+            ],
+            [
+              -9.927689179013225e-07,
+              1.0960729904974868e-06
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.004963321406377405,
+              "amplitude_white_sigma": 0.0011144841198023339,
+              "cosine_phase_cycles": 0.2612992303256504
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.333873833638915,
+          "signal_energy_retained": [
+            0.16811560247659627,
+            0.5038641327941366
+          ],
+          "phase_energy_retained_range": [
+            0.07089493189503807,
+            0.7574267765523945
+          ],
+          "weighted_sse": 62.549023843674505,
+          "null_weighted_sse": 173.81064526154788,
+          "fraction_sse_improvement": 0.6401312258547134,
+          "delta_bic": -18.17227226523874,
+          "residual_rms_mag": 0.0016143758319609998
+        },
+        "46": {
+          "n": 25,
+          "start_jd": 2459553.1778171426,
+          "end_jd": 2459578.5804458773,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            0.008699213971922207,
+            0.003635229269899936
+          ],
+          "covariance_white": [
+            [
+              1.992163014573838e-06,
+              1.7390704820664272e-06
+            ],
+            [
+              1.7390704820664272e-06,
+              4.9937711888344296e-06
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.009428213806125938,
+              "amplitude_white_sigma": 0.00191722837606121,
+              "cosine_phase_cycles": 0.06299745603556965
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.200420159863668,
+          "signal_energy_retained": [
+            0.6311590850367096,
+            0.15648532464256498
+          ],
+          "phase_energy_retained_range": [
+            0.08788977666309412,
+            0.8237909562590159
+          ],
+          "weighted_sse": 176.0968798183802,
+          "null_weighted_sse": 532.4510749025937,
+          "fraction_sse_improvement": 0.6692712474087967,
+          "delta_bic": -21.223666303704086,
+          "residual_rms_mag": 0.0026540299909261025
+        },
+        "71": {
+          "n": 20,
+          "start_jd": 2460236.0201538713,
+          "end_jd": 2460258.979021265,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            -0.018900043662098485,
+            0.01638408349666009
+          ],
+          "covariance_white": [
+            [
+              1.2270606115924504e-06,
+              1.019892136026841e-06
+            ],
+            [
+              1.019892136026841e-06,
+              1.895597826929845e-06
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.025012993472488625,
+              "amplitude_white_sigma": 0.0007101595162447302,
+              "cosine_phase_cycles": 0.3863294825001437
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.3233933036951546,
+          "signal_energy_retained": [
+            0.368308407548928,
+            0.14918163025915687
+          ],
+          "phase_energy_retained_range": [
+            0.05153479689734432,
+            0.6835009638956877
+          ],
+          "weighted_sse": 30.770659023267154,
+          "null_weighted_sse": 2480.895022445494,
+          "fraction_sse_improvement": 0.9875969524123857,
+          "delta_bic": -81.80479672036641,
+          "residual_rms_mag": 0.0012403761329384559
+        },
+        "72": {
+          "n": 24,
+          "start_jd": 2460262.201202177,
+          "end_jd": 2460285.524458729,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            0.005091684108434386,
+            -0.010789862401327687
+          ],
+          "covariance_white": [
+            [
+              2.2505867068049255e-05,
+              -1.3526273389914818e-05
+            ],
+            [
+              -1.3526273389914813e-05,
+              1.587511014581087e-05
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.011930900121100175,
+              "amplitude_white_sigma": 0.005246301920753656,
+              "cosine_phase_cycles": 0.8201733304973526
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.5082770711874365,
+          "signal_energy_retained": [
+            0.21314701465147246,
+            0.3462232249001353
+          ],
+          "phase_energy_retained_range": [
+            0.05903445160257381,
+            0.658156987268941
+          ],
+          "weighted_sse": 599.8919860707566,
+          "null_weighted_sse": 865.815199188233,
+          "fraction_sse_improvement": 0.3071362264912876,
+          "delta_bic": -2.4500173186434475,
+          "residual_rms_mag": 0.004999549921704438
+        }
+      }
+    },
+    "QLP_KSPSAP_FLUX": {
+      "full": {
+        "n": 70,
+        "start_jd": 2459501.100902129,
+        "end_jd": 2459578.5804458773,
+        "mode": "group_linear",
+        "harmonics": 1,
+        "beta": [
+          7.735006841027523e-05,
+          0.00010519673318643388
+        ],
+        "covariance_white": [
+          [
+            2.3238955183315727e-09,
+            2.922130826937064e-10
+          ],
+          [
+            2.922130826937062e-10,
+            3.38925690469455e-09
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.00013057329648964223,
+            "amplitude_white_sigma": 5.739615909773522e-05,
+            "cosine_phase_cycles": 0.14909261235915483
+          }
+        ],
+        "nuisance_rank": 6,
+        "nuisance_columns": 6,
+        "signal_condition": 1.241087045614908,
+        "signal_energy_retained": [
+          0.3927859026651802,
+          0.21706955151493348
+        ],
+        "phase_energy_retained_range": [
+          0.2075928235504369,
+          0.40751253485275224
+        ],
+        "weighted_sse": 0.004372031125716184,
+        "null_weighted_sse": 0.004745297735415308,
+        "fraction_sse_improvement": 0.0786603139595109,
+        "delta_bic": 2.7621363476945646,
+        "residual_rms_mag": 0.00015806022587638068
+      },
+      "status": "INSUFFICIENT_INDEPENDENT_EPOCHS",
+      "daily_groups": 70,
+      "sectors": [
+        "44",
+        "45",
+        "46"
+      ],
+      "by_sector": {
+        "44": {
+          "n": 21,
+          "start_jd": 2459501.100902129,
+          "end_jd": 2459523.8488780595,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            0.0001505792855784706,
+            0.0001568602168099332
+          ],
+          "covariance_white": [
+            [
+              6.708779298161356e-09,
+              6.604378211388314e-09
+            ],
+            [
+              6.604378211388313e-09,
+              2.1953254362989434e-08
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.00021743791956092167,
+              "amplitude_white_sigma": 0.00014574359722806804,
+              "cosine_phase_cycles": 0.12825105330945527
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.398134921732786,
+          "signal_energy_retained": [
+            0.5236580292894031,
+            0.08458294186928186
+          ],
+          "phase_energy_retained_range": [
+            0.05087329093742023,
+            0.6470916092596181
+          ],
+          "weighted_sse": 0.3052423470582325,
+          "null_weighted_sse": 0.3660139812653866,
+          "fraction_sse_improvement": 0.16603637379384772,
+          "delta_bic": 2.2761695594870326,
+          "residual_rms_mag": 0.00012056263873985103
+        },
+        "45": {
+          "n": 24,
+          "start_jd": 2459526.2622986357,
+          "end_jd": 2459550.5444630296,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            -0.0002086985929480798,
+            0.0002575625368444215
+          ],
+          "covariance_white": [
+            [
+              2.2914432392684386e-08,
+              -1.0380953093554095e-08
+            ],
+            [
+              -1.0380953093554095e-08,
+              1.1461158882289797e-08
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.0003315019805133029,
+              "amplitude_white_sigma": 0.00016172798503746795,
+              "cosine_phase_cycles": 0.35838130146615704
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.333873833638915,
+          "signal_energy_retained": [
+            0.16811560247659627,
+            0.5038641327941366
+          ],
+          "phase_energy_retained_range": [
+            0.07089493189503807,
+            0.7574267765523945
+          ],
+          "weighted_sse": 0.6540479570426292,
+          "null_weighted_sse": 0.8447963927260174,
+          "fraction_sse_improvement": 0.22579219954748475,
+          "delta_bic": 0.21414849136443959,
+          "residual_rms_mag": 0.00016508179248514825
+        },
+        "46": {
+          "n": 25,
+          "start_jd": 2459553.1778171426,
+          "end_jd": 2459578.5804458773,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            9.242511532830958e-05,
+            8.251317344696834e-05
+          ],
+          "covariance_white": [
+            [
+              7.368569176678279e-09,
+              6.432436028819143e-09
+            ],
+            [
+              6.432436028819143e-09,
+              1.8470852128183395e-08
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.0001238984492870706,
+              "amplitude_white_sigma": 0.0001366892098491779,
+              "cosine_phase_cycles": 0.11599196823452211
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.200420159863668,
+          "signal_energy_retained": [
+            0.6311590850367096,
+            0.15648532464256498
+          ],
+          "phase_energy_retained_range": [
+            0.08788977666309412,
+            0.8237909562590159
+          ],
+          "weighted_sse": 0.6513433043613217,
+          "null_weighted_sse": 0.6873087201747194,
+          "fraction_sse_improvement": 0.05232789103018365,
+          "delta_bic": 5.094083820477771,
+          "residual_rms_mag": 0.0001614116853714528
+        }
+      }
+    },
+    "QLP_DET_FLUX": {
+      "full": {
+        "n": 44,
+        "start_jd": 2460236.0201538713,
+        "end_jd": 2460285.524458729,
+        "mode": "group_linear",
+        "harmonics": 1,
+        "beta": [
+          0.00011199175870041078,
+          0.00017583936597326895
+        ],
+        "covariance_white": [
+          [
+            1.0879579016981979e-08,
+            -1.5286473524190443e-09
+          ],
+          [
+            -1.5286473524190397e-09,
+            1.0610801398549993e-08
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.00020847454675017822,
+            "amplitude_white_sigma": 9.645257119416842e-05,
+            "cosine_phase_cycles": 0.15974171339541995
+          }
+        ],
+        "nuisance_rank": 4,
+        "nuisance_columns": 4,
+        "signal_condition": 1.1546474565798683,
+        "signal_energy_retained": [
+          0.2713735449273428,
+          0.24301523145982692
+        ],
+        "phase_energy_retained_range": [
+          0.22145644950071305,
+          0.29184671562808573
+        ],
+        "weighted_sse": 0.005637043981890575,
+        "null_weighted_sse": 0.006331750997962845,
+        "fraction_sse_improvement": 0.10971799369491664,
+        "delta_bic": 2.4548310289669413,
+        "residual_rms_mag": 0.00022637547212722367
+      },
+      "status": "INSUFFICIENT_INDEPENDENT_EPOCHS",
+      "daily_groups": 44,
+      "sectors": [
+        "71",
+        "72"
+      ],
+      "by_sector": {
+        "71": {
+          "n": 20,
+          "start_jd": 2460236.0201538713,
+          "end_jd": 2460258.979021265,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            -7.141183791588033e-05,
+            -0.00016255569582435432
+          ],
+          "covariance_white": [
+            [
+              3.487071117699184e-08,
+              2.898338009637736e-08
+            ],
+            [
+              2.898338009637736e-08,
+              5.386925772543532e-08
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.0001775500065881834,
+              "amplitude_white_sigma": 0.0002685917680742016,
+              "cosine_phase_cycles": 0.68412162444571
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.3233933036951546,
+          "signal_energy_retained": [
+            0.368308407548928,
+            0.14918163025915687
+          ],
+          "phase_energy_retained_range": [
+            0.05153479689734432,
+            0.6835009638956877
+          ],
+          "weighted_sse": 0.8744431639228804,
+          "null_weighted_sse": 0.9019820092470163,
+          "fraction_sse_improvement": 0.030531479610248158,
+          "delta_bic": 5.371319051705656,
+          "residual_rms_mag": 0.0002090984414005614
+        },
+        "72": {
+          "n": 24,
+          "start_jd": 2460262.201202177,
+          "end_jd": 2460285.524458729,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            -3.906736693435676e-05,
+            0.0003547576991393779
+          ],
+          "covariance_white": [
+            [
+              4.515880535226809e-08,
+              -2.7140938196684714e-08
+            ],
+            [
+              -2.7140938196684705e-08,
+              3.185396087397348e-08
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.0003569023455482592,
+              "amplitude_white_sigma": 0.00019472928954606116,
+              "cosine_phase_cycles": 0.2674564525883361
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.5082770711874365,
+          "signal_energy_retained": [
+            0.21314701465147246,
+            0.3462232249001353
+          ],
+          "phase_energy_retained_range": [
+            0.05903445160257381,
+            0.658156987268941
+          ],
+          "weighted_sse": 1.2037041429882993,
+          "null_weighted_sse": 1.6307183899381217,
+          "fraction_sse_improvement": 0.2618565226127275,
+          "delta_bic": -0.9307017666725921,
+          "residual_rms_mag": 0.0002239516449843116
+        }
+      }
+    },
+    "SPOC_SAP_FLUX": {
+      "full": {
+        "n": 49,
+        "start_jd": 2460236.1233116016,
+        "end_jd": 2461062.7431959137,
+        "mode": "group_linear",
+        "harmonics": 1,
+        "beta": [
+          -0.021080711282639476,
+          0.010567688124936744
+        ],
+        "covariance_white": [
+          [
+            3.915734689063508e-06,
+            -5.104466499123357e-09
+          ],
+          [
+            -5.104466499123317e-09,
+            4.010822466599515e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.023581187851504266,
+            "amplitude_white_sigma": 0.001984671530371536,
+            "cosine_phase_cycles": 0.4260431931970354
+          }
+        ],
+        "nuisance_rank": 6,
+        "nuisance_columns": 6,
+        "signal_condition": 1.012138710075153,
+        "signal_energy_retained": [
+          0.2047402341058223,
+          0.2316211937899396
+        ],
+        "phase_energy_retained_range": [
+          0.20042177081422136,
+          0.23744691003313118
+        ],
+        "weighted_sse": 2.161352679208437,
+        "null_weighted_sse": 9.604261128026188,
+        "fraction_sse_improvement": 0.7749589843094338,
+        "delta_bic": -65.29851687398619,
+        "residual_rms_mag": 0.004200439898448379
+      },
+      "status": "INSUFFICIENT_INDEPENDENT_EPOCHS",
+      "daily_groups": 49,
+      "sectors": [
+        "1751",
+        "71",
+        "72"
+      ],
+      "by_sector": {
+        "71": {
+          "n": 22,
+          "start_jd": 2460236.1233116016,
+          "end_jd": 2460258.948458037,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            -0.017400505247019422,
+            0.017761111934619708
+          ],
+          "covariance_white": [
+            [
+              1.6359877631564864e-06,
+              1.5196185326496295e-06
+            ],
+            [
+              1.5196185326496301e-06,
+              3.0179933963776923e-06
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.024864325448433967,
+              "amplitude_white_sigma": 0.0009065669365435408,
+              "cosine_phase_cycles": 0.37336781327451396
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.465110995375109,
+          "signal_energy_retained": [
+            0.36320124948083427,
+            0.1524588837023356
+          ],
+          "phase_energy_retained_range": [
+            0.052299190365710624,
+            0.6181264284498401
+          ],
+          "weighted_sse": 54.661001019535256,
+          "null_weighted_sse": 2792.1065948832074,
+          "fraction_sse_improvement": 0.9804230249949244,
+          "delta_bic": -80.35274034791979,
+          "residual_rms_mag": 0.001576258530645725
+        },
+        "72": {
+          "n": 22,
+          "start_jd": 2460263.04142453,
+          "end_jd": 2460285.543231759,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            -0.01681044755183074,
+            0.006289611232489821
+          ],
+          "covariance_white": [
+            [
+              8.051732208767513e-07,
+              -4.214294703934324e-07
+            ],
+            [
+              -4.214294703934323e-07,
+              4.5357015366125525e-07
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.01794854747183499,
+              "amplitude_white_sigma": 0.0010191306833206635,
+              "cosine_phase_cycles": 0.44301865781376654
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.507341643715304,
+          "signal_energy_retained": [
+            0.1520789514258101,
+            0.3533438647219302
+          ],
+          "phase_energy_retained_range": [
+            0.049525885372012746,
+            0.6124890849979744
+          ],
+          "weighted_sse": 14.12028627662327,
+          "null_weighted_sse": 310.6369020690046,
+          "fraction_sse_improvement": 0.9545440796551383,
+          "delta_bic": -61.82018363031714,
+          "residual_rms_mag": 0.0008011436789939534
+        }
+      }
+    },
+    "SPOC_PDCSAP_FLUX": {
+      "full": {
+        "n": 49,
+        "start_jd": 2460236.1233116016,
+        "end_jd": 2461062.7431959137,
+        "mode": "group_linear",
+        "harmonics": 1,
+        "beta": [
+          -0.0030880558056526697,
+          2.4865305721187474e-05
+        ],
+        "covariance_white": [
+          [
+            3.123676344438322e-06,
+            -4.071956483370144e-09
+          ],
+          [
+            -4.071956483370113e-09,
+            3.1995301662419325e-06
+          ]
+        ],
+        "parameters": [
+          {
+            "harmonic": 1,
+            "semi_amplitude_mag": 0.0030881559128796863,
+            "amplitude_white_sigma": 0.0017674124684028047,
+            "cosine_phase_cycles": 0.498718497643479
+          }
+        ],
+        "nuisance_rank": 6,
+        "nuisance_columns": 6,
+        "signal_condition": 1.012138710075153,
+        "signal_energy_retained": [
+          0.2047402341058223,
+          0.2316211937899396
+        ],
+        "phase_energy_retained_range": [
+          0.20042177081422136,
+          0.23744691003313118
+        ],
+        "weighted_sse": 1.7241633491891273,
+        "null_weighted_sse": 1.8525494807555762,
+        "fraction_sse_improvement": 0.06930240347161243,
+        "delta_bic": 4.264417955043527,
+        "residual_rms_mag": 0.0037516400214470855
+      },
+      "status": "INSUFFICIENT_INDEPENDENT_EPOCHS",
+      "daily_groups": 49,
+      "sectors": [
+        "1751",
+        "71",
+        "72"
+      ],
+      "by_sector": {
+        "71": {
+          "n": 22,
+          "start_jd": 2460236.1233116016,
+          "end_jd": 2460258.948458037,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            0.0009421927473045282,
+            0.0025505727822522865
+          ],
+          "covariance_white": [
+            [
+              5.26653585142637e-06,
+              4.891922582140787e-06
+            ],
+            [
+              4.891922582140788e-06,
+              9.715458012182465e-06
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.0027190345144259245,
+              "amplitude_white_sigma": 0.0035158896505328966,
+              "cosine_phase_cycles": 0.19368208185190441
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.465110995375109,
+          "signal_energy_retained": [
+            0.36320124948083427,
+            0.1524588837023356
+          ],
+          "phase_energy_retained_range": [
+            0.052299190365710624,
+            0.6181264284498401
+          ],
+          "weighted_sse": 175.9634931430107,
+          "null_weighted_sse": 182.91732544964387,
+          "fraction_sse_improvement": 0.03801625838087985,
+          "delta_bic": 5.329414867329035,
+          "residual_rms_mag": 0.0028281337658267822
+        },
+        "72": {
+          "n": 22,
+          "start_jd": 2460263.04142453,
+          "end_jd": 2460285.543231759,
+          "mode": "group_linear",
+          "harmonics": 1,
+          "beta": [
+            -0.014198840317365988,
+            0.006523859631990043
+          ],
+          "covariance_white": [
+            [
+              2.0464155996821955e-05,
+              -1.071098516465611e-05
+            ],
+            [
+              -1.0710985164656107e-05,
+              1.1527867717606603e-05
+            ]
+          ],
+          "parameters": [
+            {
+              "harmonic": 1,
+              "semi_amplitude_mag": 0.015625869923174426,
+              "amplitude_white_sigma": 0.0051993695563071355,
+              "cosine_phase_cycles": 0.4314525272593815
+            }
+          ],
+          "nuisance_rank": 2,
+          "nuisance_columns": 2,
+          "signal_condition": 2.507341643715304,
+          "signal_energy_retained": [
+            0.1520789514258101,
+            0.3533438647219302
+          ],
+          "phase_energy_retained_range": [
+            0.049525885372012746,
+            0.6124890849979744
+          ],
+          "weighted_sse": 358.87897609157346,
+          "null_weighted_sse": 558.0746810486817,
+          "fraction_sse_improvement": 0.35693377915442837,
+          "delta_bic": -3.531081693325671,
+          "residual_rms_mag": 0.004038895979278887
+        }
+      }
+    }
+  },
+  "uncertainty": "Covariances and coefficient discrepancy assume independent daily noise after nuisance fit and estimate residual variance. They exclude red noise, calibration, period/ephemeris uncertainty and detrending uncertainty. Delta BIC is a descriptive independent-Gaussian statistic only.",
+  "verdict": "NOT_ESTABLISHED: the exact35.9204566-day training waveform worsens independent-epoch fits under every tested ASAS-SN nuisance variant; TESS is reduction-dependent and baseline-limited."
+}

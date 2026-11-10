@@ -1,0 +1,1 @@
+{"url": "https://www.plate-archive.org/conesearch/api/applause_dr4.source_calib/", "parameters": {"RA": 118.69125, "DEC": 16.694722222, "SR": 0.25, "VERB": 3}, "outcome": "ReadTimeout after 55 seconds before response", "fallback": "Four overlapping 7.5 arcmin subfields; retain only stars within original 15 arcmin radius and image"}

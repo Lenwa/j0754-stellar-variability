@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Data Quality Flags | Palomar Transient Factory
+
+</title>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=1020' name='viewport'>
+<meta content='non_profit' property='og:type'>
+<meta content='Palomar Transient Factory' property='og:site_name'>
+
+<link href='/images/favicon.png' rel='icon' type='image/png'>
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Ropa+Sans" media="screen" rel="stylesheet" type="text/css" />
+<link href='/javascripts/video-js/video-js.min.css' media='screen' rel='stylesheet' type='text/css'>
+<link href="/assets/application-8f84420f6720c3ec0274656b3be41beb.css" media="screen" rel="stylesheet" type="text/css" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="pXXDzTr99thBaHQulQHtURwwnXOHrHTaOLtToVntbyA=" name="csrf-token" />
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-T1ERLYFRQ0'></script>
+<script>
+  //<![CDATA[
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1ERLYFRQ0');
+  //]]>
+</script>
+
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="pXXDzTr99thBaHQulQHtURwwnXOHrHTaOLtToVntbyA=" name="csrf-token" />
+</head>
+<body>
+<div class='flash_wrapper'>
+<div class='row'>
+<div class='flash'>
+</div>
+</div>
+</div>
+
+<div class='header'>
+<div class='row'>
+<div class='container'>
+<div class='span12'>
+<div class='mission_title'>
+<h1>
+<a href="/iptf"><div class='big_cap'>Intermediate</div> <div class='big_cap'>Palomar</div> <div class='big_cap'>Transient</div> <div class='big_cap'>Factory</div> 
+</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+
+<div class='navigation_wrapper'>
+<div class='row'>
+<div class='container'>
+<div class='span12'>
+<div class='navigation'>
+<div class='primary_nav left'>
+<a href="/" class="main_nav"><div class='big_cap'>Home</div> 
+</a><span>
+|
+</span>
+<a href="/news" class="big_cap main_nav">News</a>
+<span>
+|
+</span>
+<a href="/images" class="big_cap main_nav">Images</a>
+<span>
+|
+</span>
+<a href="/videos" class="big_cap main_nav">Videos</a>
+</div>
+<a href="/page/about" class="big_cap main_nav">About</a>
+<span>
+|
+</span>
+<a href="/page/data_access" class="active"><div class='big_cap'>Data</div> <div class='big_cap'>Access</div> 
+</a><span>
+|
+</span>
+<a href="/page/publications" class="big_cap">Publications</a>
+<span>
+|
+</span>
+<a href="/page/meetings" class="big_cap">Meetings</a>
+<span>
+|
+</span>
+<a href="/page/people" class="big_cap">People</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='content'>
+<div class='container'>
+<div class='row page'>
+<div class='span3'>
+<div class='dark_panel_border'>
+<div class='panel'>
+<div class='side_navigation'>
+<ul>
+<li class=''>
+<a href="/page/data_access">Data Access</a>
+</li>
+<li class=''>
+<a href="/page/first_data_release">First Data Release (DR1)</a>
+</li>
+<li class=''>
+<a href="/page/DR2">Second Data Release (DR2)</a>
+</li>
+<li class=''>
+<a href="/page/DR3">Third Data Release (DR3)</a>
+</li>
+<li class=''>
+<a href="/page/documentation">Documentation</a>
+</li>
+<li class='sub_page'>
+<a href="/page/data_processing">Data Processing</a>
+</li>
+<li class='sub_page'>
+<a href="/page/astro_cal">Astrometric Calibration</a>
+</li>
+<li class='sub_page'>
+<a href="/page/photo_cal">Photometric Calibration</a>
+</li>
+<li class='active sub_page'>
+<a href="/page/data_quality">Data Quality Flags</a>
+</li>
+<li class='sub_page'>
+<a href="/page/file_naming">File Names and Types</a>
+</li>
+<li class='sub_page'>
+<a href="/page/file_headers">File Headers</a>
+</li>
+<li class='sub_page'>
+<a href="/page/lcdb">Lightcurve Construction</a>
+</li>
+<li class='sub_page'>
+<a href="/page/data_papers">Papers</a>
+</li>
+<li class=''>
+<a href="/page/gettingdata">Getting Survey Data</a>
+</li>
+<li class=''>
+<a href="/page/asteroids_data">Asteroids</a>
+</li>
+<li class=''>
+<a href="/page/spectra_data">Public Light Curves and Spectra</a>
+</li>
+<li class=''>
+<a href="/page/code">Code</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='span9'>
+<div class='panel_border'>
+<div class='panel'>
+<div class='raw'>
+<p>
+	<strong>InfoBits</strong></p>
+<p class="p1">
+	Images are tagged during data processing to indicate specific types of conditional branching in the pipeline, most often associated with error conditions. These are reflected in the archive retrieval system as a column entitled &quot;infobits&quot;. The majority of infobit states are fatal errors and either halt processing or prevent the data from being archived. However, a few infobit states are considered non-fatal but do reflect a likely error in calibration of the data. The most common of these are related to the image astrometry (bits 10, 17, and 18), and indicate that the astrometric calibration is suspect. In these cases the image contents are usually fine, as they have been correctly flat-fielded, etc. The data are therefore archived and are being released to users under the assumption that an interested astronomer could recalibrate the images.</p>
+<p class="p2">
+	<em><strong>To get the cleanest data possible, users should select data with infobits=0.</strong></em></p>
+<p class="p2">
+	&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" class="twikiTable" style="border-width: 1px;">
+	<tbody>
+		<tr class="twikiTableEven">
+			<td bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				<b>Bit</b></td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				<b>Description</b></td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="right" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				0</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				SCAMP failed</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="right" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				1</td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				WCS solution determined to be bad</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="right" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				2</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				FITS-shrinker module failed</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="right" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				3</td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				JPEG-creator module failed</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="right" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				4</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				No sources found by SExtractor</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="right" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				8</td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				Insufficient number of 2Mass sources in image for WCS verification</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="right" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				9</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				Insufficient number of 2Mass matches for WCS verification</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				10</td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				2Mass astrometric RMSE(s) exceeded threshold</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				11</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				SExtractor before scamp failed</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				12</td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				PV to SIP conversion failed</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				13</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				SCAMP terminated with exitcode=0 but had insufficient number of catalog stars</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				14</td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				SCAMP terminated with exitcode=0 but had insufficient number of matches</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				15</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				Anomalous low-order WCS terms (CDELT1, CDELT2, CROTA2, CRPIX1, and CRPIX2)</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				16</td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				Track-finder module failed</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				17</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				High distortion in WCS solution</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				18</td>
+			<td bgcolor="#ffffff" style="vertical-align: top;" valign="top">
+				Astrometry.net was run</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align: top;" valign="top">
+				19</td>
+			<td bgcolor="#edf4f9" style="vertical-align: top;" valign="top">
+				Error from sub runAstrometryDotNet</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td bgcolor="#ffffff" class="twikiFirstCol twikiLast" style="vertical-align: top;" valign="top">
+				20</td>
+			<td bgcolor="#ffffff" class="twikiLast" style="vertical-align: top;" valign="top">
+				Time limit reached in sub runAstrometryDotNet</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Image Masks</strong></p>
+<p>
+	Each Level-1 image is accompanied by a mask file. This mask file corresponds pixel-by-pixel to the science image. Each pixel contains a value where each bit encodes a specific condition. These codes are:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="twikiTable" style="border-width:1px;">
+	<tbody>
+		<tr class="twikiTableEven">
+			<td bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				Bit #</td>
+			<td bgcolor="#ffffff" style="vertical-align:top;" valign="top">
+				Condition</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="center" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				0</td>
+			<td bgcolor="#edf4f9" style="vertical-align:top;" valign="top">
+				aircraft/satellite track</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="center" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				1</td>
+			<td bgcolor="#ffffff" style="vertical-align:top;" valign="top">
+				detection by SExtractor (before flattening)</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="center" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				2</td>
+			<td bgcolor="#edf4f9" style="vertical-align:top;" valign="top">
+				high dark current</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="center" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				3</td>
+			<td bgcolor="#ffffff" style="vertical-align:top;" valign="top">
+				reserved</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="center" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				4</td>
+			<td bgcolor="#edf4f9" style="vertical-align:top;" valign="top">
+				noisy/hot pixel</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="center" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				5</td>
+			<td bgcolor="#ffffff" style="vertical-align:top;" valign="top">
+				ghost</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="center" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				6</td>
+			<td bgcolor="#edf4f9" style="vertical-align:top;" valign="top">
+				CCD-bleed</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="center" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				7</td>
+			<td bgcolor="#ffffff" style="vertical-align:top;" valign="top">
+				rad hit</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="center" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				8</td>
+			<td bgcolor="#edf4f9" style="vertical-align:top;" valign="top">
+				saturated</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="center" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				9</td>
+			<td bgcolor="#ffffff" style="vertical-align:top;" valign="top">
+				dead/bad pixel</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="center" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				10</td>
+			<td bgcolor="#edf4f9" style="vertical-align:top;" valign="top">
+				not-a-number pixel</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="center" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				11</td>
+			<td bgcolor="#ffffff" style="vertical-align:top;" valign="top">
+				dirt on optics (pixel Nsigma below coarse local median)</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="center" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				12</td>
+			<td bgcolor="#edf4f9" style="vertical-align:top;" valign="top">
+				halo</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="center" bgcolor="#ffffff" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				13</td>
+			<td bgcolor="#ffffff" style="vertical-align:top;" valign="top">
+				reserved</td>
+		</tr>
+		<tr class="twikiTableOdd">
+			<td align="center" bgcolor="#edf4f9" class="twikiFirstCol" style="vertical-align:top;" valign="top">
+				14</td>
+			<td bgcolor="#edf4f9" style="vertical-align:top;" valign="top">
+				reserved</td>
+		</tr>
+		<tr class="twikiTableEven">
+			<td align="center" bgcolor="#ffffff" class="twikiFirstCol twikiLast" style="vertical-align:top;" valign="top">
+				15</td>
+			<td bgcolor="#ffffff" class="twikiLast" style="vertical-align:top;" valign="top">
+				reserved&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p>
+	Some notes:</p>
+<ul>
+	<li>
+		Because these are bit-encoded, users need to test against specific values (e.g. do not use a greater or less-than test).</li>
+	<li>
+		Under rare conditions of exceptionally good seeing, the resulting undersampling of the beam by the large CCD pixels will result in an erroneous trigger of the radhit bit. This occurs in much of the data on the Kepler Field.</li>
+	<li>
+		Aircraft and satellites pass over Palomar frequently, but are quite obvious.</li>
+	<li>
+		PTF suffers substantial ghosting due to internal reflections in the optical train. An empirical algorithm maps ghosts based on bright stars from a parent catalog. While this model identifies the majority of the ghosts (which arise from a specific set of internal reflections), there are others which are not mapped at all. Further, it does not predict the complex shape of the ghosts, but instead masks an affected circular region. Ghosts most often manifest in the catalog data as distortions in object photometry, as the ghosts have hard edges which affect background estimation.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+
+</div>
+<div class='clear'></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class='footer_wrapper'>
+<div class='container'>
+<div class='footer'>
+<div class='row'>
+<div class='span3'>
+<ul>
+<li>
+<a href="/page/18">Contact</a>
+</li>
+<li>
+<a href="/page/33">Privacy Policy</a>
+</li>
+<li>
+<a href="/page/34">Image Use Policy</a>
+</li>
+</ul>
+</div>
+<div class='span9'>
+<div class='disclaimer right'>
+The Palomar Observatory is a collection of telescopes located in San Diego County, California.
+</div>
+<div class='clear'></div>
+<div class='made_by right'>
+<a href="http://ice.ipac.caltech.edu" target="_ice">Designed by IPAC Communications and Education team
+</a></div>
+</div>
+</div>
+<div class='row'>
+<div class='span12'>
+<div class='affiliates'>
+<div class='center'>
+<a href="http://www.ipac.caltech.edu" alt="Infrared Processing and Analysis Center" title="Infrared Processing and Analysis Center"><img alt="Icon_ipac" src="/assets/icon_ipac-264cdbfba1c32ad4b95c7083db5d3228.png" /></a>
+<a href="http://www.caltech.edu" alt="California Institute of Technology" title="California Institute of Technology"><img alt="Icon_caltech" src="/assets/icon_caltech-b4f166872a2b5e80ff64ba46dce1a136.png" /></a>
+<a href="http://www.ipmu.jp/" alt="Kavli Institute for the Physics and Mathematics of the Universe" title="Kavli Institute for the Physics and Mathematics of the Universe"><img alt="Ipmu_logo" src="/assets/logos/ipmu_logo-fa63bd989f2bff2cf7a2cdae4f1a03cf.png" /></a>
+<a href="https://www.lanl.gov/" alt="Los Alamos National Laboratory" title="Los Alamos National Laboratory"><img alt="Lanl_logo" src="/assets/logos/lanl_logo-52eeb7a17844ca33a9dd36f0430f8e40.png" /></a>
+<a href="http://okc.albanova.se/" alt="Oskar Klein Centre" title="Oskar Klein Centre"><img alt="Okc_logo" src="/assets/logos/okc_logo-c4fdd0afdd6181465c8f3ccf1b61d6f6.png" /></a>
+<a href="http://ust.edu.tw/new/english/" alt="University System of Taiwan" title="University System of Taiwan"><img alt="Ust_logo" src="/assets/logos/ust_logo-95ff14e08c9c8f5122ca87c69784d9d3.png" /></a>
+<a href="https://www4.uwm.edu/" alt="University of Wisconsin-Milwaukee" title="University of Wisconsin-Milwaukee"><img alt="Uwm_logo" src="/assets/logos/uwm_logo-4f9b2a6454964a01bb015547a4ba84f3.png" /></a>
+<a href="http://www.weizmann.ac.il/" alt="Weizmann Institute of Science" title="Weizmann Institute of Science"><img alt="Wis_logo" src="/assets/logos/wis_logo-81f0da4a8a768efe585bda5efd2f039f.png" /></a>
+<a href="http://www.umd.edu/" alt="University System of Maryland" title="University System of Maryland"><img alt="Umd_logo" src="/assets/logos/umd_logo-16c38bb45b5a8fa43ceb9b50ddde89d7.png" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="/assets/application-508ba9f8710f7d61fbcdeb79c517d8cd.js" type="text/javascript"></script>
+<script src="/assets/application-508ba9f8710f7d61fbcdeb79c517d8cd.js" type="text/javascript"></script>
+<!-- = javascript_include_tag "/javascripts/video-js/video" -->
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<!DOCTYPE VOTABLE SYSTEM "http://cdsweb.u-strasbg.fr/xml/VOTable.dtd">
+<VOTABLE version="1.0">
+  <DEFINITIONS>
+    <COOSYS system="eq_FK5" equinox="2000" />
+  </DEFINITIONS>
+  <RESOURCE ID="StarDB">
+     <DESCRIPTION>
+       Cone Search response for StarDB's variability analysis of the Northern Sky Variability Survey.
+    </DESCRIPTION>
+    <LINK href="http://stardb.yonsei.ac.kr" />
+<PARAM ID="default_search_radius" ucd="OBS_ANG-SIZE" datatype="double" 
+           value="0.2" />
+    <TABLE ID="NSVS_DR2">
+      <DESCRIPTION> Variability analysis of the Norther Sky Variability Survey Data 
+        References: 1) Detecting variability in massive astronomical time series data - I. Application of an infinite Gaussian mixture model (Shin et al., 2009, MNRAS, 400, 1897) 
+                    2) Detecting Variability in Massive Astronomical Time-Series Data II: Variable Candidates in the Northern Sky Variability Survey (Shin et al., 2012, AJ, 143, 65)
+      </DESCRIPTION>
+      <FIELD name="unique_id" datatype="char" arraysize="*"  ucd="ID_MAIN">
+        <DESCRIPTION> NSVS Object ID </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="field_name" datatype="char" arraysize="*"  >
+        <DESCRIPTION> NSVS field name </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="ra" datatype="double" unit="degree" ucd="POS_EQ_RA_MAIN">
+        <DESCRIPTION> Right Ascension </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="dec" datatype="double" unit="degree" ucd="POS_EQ_DEC_MAIN">
+        <DESCRIPTION> Declination </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="median_ROTSE_mag" datatype="float" unit="mag." >
+        <DESCRIPTION> Median ROTSE Mag. </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="mag_scatter" datatype="float" unit="mag." >
+        <DESCRIPTION> Scatter of magnitude </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="number_of_good_data_points" datatype="int">
+        <DESCRIPTION> Number of good photometric data points in light curves </DESCRIPTION>
+      </FIELD>
+      
+	  <FIELD name="var1" datatype="double">
+        <DESCRIPTION> Variability index 1 </DESCRIPTION>
+      </FIELD>
+      
+	  <FIELD name="var2" datatype="double">
+        <DESCRIPTION> Variability index 2 </DESCRIPTION>
+      </FIELD>
+      
+	  <FIELD name="var3" datatype="double">
+        <DESCRIPTION> Variability index 3 </DESCRIPTION>
+      </FIELD>
+      
+	  <FIELD name="var4" datatype="double">
+        <DESCRIPTION> Variability index 4 </DESCRIPTION>
+      </FIELD>
+      
+	  <FIELD name="var5" datatype="double">
+        <DESCRIPTION> Variability index 5 </DESCRIPTION>
+      </FIELD>
+      
+	  <FIELD name="var6" datatype="double">
+        <DESCRIPTION> Variability index 6 </DESCRIPTION>
+      </FIELD>
+      
+	  <FIELD name="var7" datatype="double">
+        <DESCRIPTION> Variability index 7 </DESCRIPTION>
+      </FIELD>
+      
+	  <FIELD name="var8" datatype="double">
+        <DESCRIPTION> Variability index 8 </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="cluster_id" datatype="int">
+        <DESCRIPTION> Cluster ID in the given field </DESCRIPTION>
+      </FIELD>
+
+	  <FIELD name="d_m" datatype="double">
+        <DESCRIPTION> Mahalanobis distance from the largest cluster in the given field </DESCRIPTION>
+      </FIELD>
+	  
+      <FIELD name="SIMBAD_id" datatype="char" arraysize="*"  >
+        <DESCRIPTION> SIMBAD name </DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="SIMBAD_type" datatype="char" arraysize="*"  >
+        <DESCRIPTION> SIMBAD type </DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="WISE_id" datatype="char" arraysize="*"  >
+        <DESCRIPTION> WISE ID </DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="WISE_distance" datatype="char" arraysize="*"  >
+        <DESCRIPTION> WISE distance </DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="2MASS_id" datatype="char" arraysize="*"  >
+        <DESCRIPTION> 2MASS ID </DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="2MASS_distance" datatype="char" arraysize="*"  >
+        <DESCRIPTION> 2MASS distance </DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="SDSS_id" datatype="char" arraysize="*"  >
+        <DESCRIPTION> SDSS ID</DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="SDSS_distance" datatype="char" arraysize="*"  >
+        <DESCRIPTION> SDSS distance </DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="GALEX_id" datatype="char" arraysize="*"  >
+        <DESCRIPTION> GALEX ID</DESCRIPTION>
+      </FIELD>
+
+      <FIELD name="GALEX_distance" datatype="char" arraysize="*"  >
+        <DESCRIPTION> GALEX distance </DESCRIPTION>
+      </FIELD>
+<DATA>
+<TABLEDATA>
+<TR>
+<TD>9996805</TD><TD>076a</TD><TD>118.69119</TD><TD>16.69465</TD><TD>12.28</TD><TD>0.033</TD><TD>145</TD><TD>0.002367</TD><TD>1.279254</TD><TD>1.482854</TD><TD>1</TD><TD>2.479007</TD><TD>52.611134</TD><TD>0.745977</TD><TD>8.400858</TD><TD>2</TD><TD>4.03025</TD><TD>2MASS J07544588+1641407</TD><TD>Star,V*,IR</TD><TD>J075445.88+164140.6</TD><TD>0.05</TD><TD>07544588+1641407</TD><TD>0.018</TD><TD>1237664835922100469</TD><TD>0.141455</TD><TD>6377917456271281015</TD><TD>0.0391893</TD>
+</TR>
+</TABLEDATA>
+</DATA>
+    </TABLE>
+  </RESOURCE>
+</VOTABLE>

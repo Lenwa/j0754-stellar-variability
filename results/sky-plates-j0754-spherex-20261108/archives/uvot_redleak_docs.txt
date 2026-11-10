@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="description" content="The Neil Gehrels Swift Observatory">
+	<meta name="keywords" content="swift, grb, swift homepage, swift website, swift web site, science support center, ssc, swift ssc, gssc, gamma-ray, gamma, space, telescope, nasa, NASA, bursts, bat, xrt, uvot">
+	<meta name="robots" content="noodp">
+	<!-- NASA Required Meta -->
+	<meta name="orgcode" content="661">
+	<meta name="rno" content="Phillip.A.Newman.1">
+	<meta name="content-owner" content="John.D.Myers.1">
+	<meta name="webmaster" content="Stephan.F.Fantasia.1">
+<!-- CSS -->
+	<link rel="stylesheet" href="/inc/css/swift.css">
+<!-- Javascript -->
+	<!-- Google Analytics -->
+	<script language="javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA"></script>
+<!-- Feed -->
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/news/swiftnews.rss">
+<!-- Page Title -->
+
+	<title>Swift: Analysis > UVOT Digest > Astrometry</title>
+</head>
+
+<body>
+
+<!-- Start Skip To Content -->
+<div id="skip"><a href="#content-wrapper">Skip navigation and go straight to page content.</a></div>
+<!-- End Skip To Content -->
+
+<!-- Start Page Container -->
+<div id="page-container">
+<!-- Comment out when not needed. -->
+<!-- <div class="archive-note">
+There will be a network outage, Wednesday May 2, 2018 from 19:00 EDT - 23:59 EDT. All services, web sites, and systems that require access to the internet will be affected by this work.
+</div> -->
+<!-- <div class="downtime">
+The HEASARC welcomes your participation in a <a href="https://tinyurl.com/heasarcsurvey">brief survey</a> to capture how users access and utilize HEASARC data, software, and services. The outcome(s) of this survey will be used to guide, prioritize, and plan our activities and development in the coming years. It contains 18 questions, generally takes just a few minutes to complete, and your answers will remain totally anonymous. We thank you in advance for your valuable feedback.
+</div> -->
+<!-- <div class="downtime">Due to the lapse in federal government funding, NASA is not updating this website. We sincerely regret this inconvenience.</div> -->
+
+
+<!-- Start NASA Banner -->
+<div id="nasa-banner">
+<!-- Left - Logo -->
+	<div class="nasa-logo">
+	<a href="https://www.nasa.gov/"><img src="/inc/img/nasa_logo.gif" width="140" height="98" border="0" alt="NASA Logo"></a>
+	</div>
+<!-- Middle - Affiliations -->
+	<div id="nasa-affiliation">
+	<h1><a href="https://www.nasa.gov/">National Aeronautics and Space Administration</a></h1>
+	<h2><a href="https://www.nasa.gov/goddard">Goddard Space Flight Center</a></h2>
+	</div>
+<!-- Right - Search and Links -->
+	<div id="nasa-search-links">
+		<div id="search-wrapper">
+		<form method="post" action="https://heasarc.gsfc.nasa.gov/cgi-bin/search/search.pl?swindex=swift">
+	    <label id="search-label" for="searchfield">Search Site:</label> <input name="tquery" id="search" size="25" maxlength="60" value="Swift" onfocus="this.value='';" title="search field">
+	    <input name="swindex" type="hidden" value="swift">
+	    <input id="search-img" type="image" height="22" width="49" src="/inc/img/search_go.jpg" alt="search" />
+	    </form>
+		</div>
+	    <div id="header-links">
+	    <a href="https://heasarc.gsfc.nasa.gov/">HEASARC</a> &bull; <a href="https://science.gsfc.nasa.gov/">Sciences and Exploration</a>
+	    </div>
+    </div>
+</div>
+<!-- End NASA Banner -->
+
+<!-- Start Top Main Navigation -->
+<div id="nav">
+<ul>
+    <li class="nav-heasarc"><a href="https://heasarc.gsfc.nasa.gov/">HEASARC</a></li>
+    <li class="nav-swift"><a href="/">Swift Home</a></li>
+    <li class="nav-archive"><a href="/archive/">Archive</a></li>
+    <li class="nav-analysis"><a href="/analysis/">Data Analysis</a></li>
+	<li class="nav-caldb"><a href="/caldb/">Calibration</a></li>
+    <li class="nav-proposals"><a href="/proposals/">Proposals &amp; Tools</a></li>
+    <li class="nav-epo"><a href="https://imagine.gsfc.nasa.gov/observatories/learning/swift/">EPO</li>
+</ul>
+</div>
+<!-- End Top Main Navigation -->
+
+<!-- Start Mission Banner Graphic -->
+<div id="mission-banner">
+<a href="/"><img src="/inc/img/swift_banner.jpg" width="952" height="100" alt="The Neil Gehrels Swift Observatory"></a>
+</div>
+<!-- End Mission Banner Graphic -->
+
+<!-- Start Bottom Main Navigation -->
+<div id="nav">
+<ul>
+    <li class="nav-about"><a href="/about_swift/">About Swift</a></li>
+    <li class="nav-quicklook"><a href="/sdc/ql/">Quicklook Data</a></li>
+    <li class="nav-gcn"><a href="https://gcn.gsfc.nasa.gov/">GCN</a></li>
+    <li class="nav-results"><a href="/results/">Results</a></li>
+    <li class="nav-ops"><a href="/operations/">Operations</a></li>
+    <li class="nav-sites"><a href="/related_sites.html">Related Sites</a></li>
+    <li class="nav-gallery"><a href="/gallery/">Gallery</a></li>
+</ul>
+</div>
+<!-- End Bottom Main Navigation -->
+
+<!-- Start Page Content Wrapper -->
+<div id="content-wrapper">
+
+<!-- Page Content Starts Here -->
+
+<p>
+     Return to: <a href="/analysis/uvot_digest/index.html"
+title="Return to the UVOT Digest Index">UVOT Digest</a>
+</p>
+
+
+<h1>Red Leak</h1>
+<em>Updated September 21, 2010</em>
+
+<p>
+     The transmission curves of the <i>Swift</i>/UVOT UVW1 and UVW2
+filters have extended red tails.  This means that the flux measured
+with these filters will be a combination of the ultraviolet flux from
+the source and a contribution from the source's optical flux.  The
+degree to which the optical flux affects the observed flux in the
+filter will depend on the spectrum of the source.  For a source with a
+predominantly optical spectrum, the percentage of light that leaks
+into an ultraviolet filter could be significant compared with the
+actual ultraviolet flux.  Figure 1 shows the effective area curves of
+the <i>Swift</i>/UVOT UVW1 (red) and UVW2 (blue) filters.
+</p>
+
+<div>
+  <p>
+    <img src="redleak2.png" width="440"  height="440" alt="Red Leak">
+  </p>
+  <p>
+    <b>Figure 1</b>: The effective area curves of the
+    <i>Swift</i>/UVOT UVW1 (red) and UVW2 (blue) filters
+    showing their red leaks.
+  </p>
+</div>
+
+<p>
+     Return to: <a href="/analysis/uvot_digest/index.html"
+title="Return to the UVOT Digest Index">UVOT Digest</a>
+</p>
+
+<!-- Page Content Ends Here -->
+</div>
+<!-- End Page Content Wrapper -->
+
+<!-- Start Footer -->
+<div id="footer">
+<!-- Left - NASA Logo -->
+	<div class="nasa-logo">
+	<a href="https://www.nasa.gov/"><img src="/inc/img/nasa_logo.gif" width="140" height="98" border="0" alt="NASA Logo"></a>
+	</div>
+<!-- Left/Middle - GSFC Signature -->
+	<div id="goddard-signature">
+	<a href="https://www.nasa.gov/goddard"><img src="/inc/img/goddardsignature.png" width="172" height="68" border="0" alt="Goddard Signature"></a>
+	</div>
+<!-- Right/Middle - Contacts -->
+	<div id="contacts">
+	<ul>
+		<li>Curator: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#104;&#110;&#46;&#100;&#46;&#109;&#121;&#101;&#114;&#115;&#64;&#110;&#97;&#115;&#97;&#46;&#103;&#111;&#118;">J.D. Myers</a></li>
+		<li>NASA Official &amp; Swift PI: Brad Cenko</li>
+		<li>PAO Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#114;&#97;&#110;&#99;&#105;&#115;&#46;&#106;&#46;&#114;&#101;&#100;&#100;&#121;&#64;&#110;&#97;&#115;&#97;&#46;&#103;&#111;&#118;">Francis Reddy</a></li>
+		<li><a href="https://heasarc.gsfc.nasa.gov/cgi-bin/Feedback">Questions/Comments/Feedback</a></li>
+	</ul>
+	</div>
+<!-- Right - Notices -->
+	<div id="notices">
+	<ul>
+		<li>&rsaquo; <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy and Important Notices</a></li>
+		<li>&rsaquo; <a href="https://www.nasa.gov/accessibility/">Accessibility</a></li>
+		<li>&rsaquo; <a href="https://www.nasa.gov/about/contact/index.html">Contact NASA</a></li>
+		<li>&rsaquo; Page Last Updated: Tue, Mar 20, 2012</li>
+	</ul>
+	</div>
+</div>
+<!-- End Footer -->
+
+</div>
+<!-- End Page Container -->
+
+</body>
+</html>
+

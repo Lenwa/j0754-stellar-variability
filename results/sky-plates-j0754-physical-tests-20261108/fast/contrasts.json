@@ -1,0 +1,1722 @@
+[
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "10",
+      "native": "5"
+    },
+    "delta_2008minus2009_A": 0.4831677772775199,
+    "sigma_formal_A": 0.0824243022534362,
+    "formal_ratio_not_discovery_sigma": 5.861957748721823,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3086060375469588,
+        "sigma_formal": 0.12291570513394702,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.301433904398866,
+        "sigma_formal": 0.0545286014937389,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8218521936953925,
+        "sigma_formal": 0.04767972173373298,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.01706175269798494
+      },
+      "2012-03-26": {
+        "ew": 1.1618693938316236,
+        "sigma_formal": 0.056651077478578324,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1899553960424172,
+        "sigma_formal": 0.057186779699520296,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "10",
+      "native": "6"
+    },
+    "delta_2008minus2009_A": 0.4820563663002789,
+    "sigma_formal_A": 0.08335796429473036,
+    "formal_ratio_not_discovery_sigma": 5.7829671151260715,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3180839266938187,
+        "sigma_formal": 0.12431369249025892,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.30884479374256,
+        "sigma_formal": 0.05514964523090407,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8314079939179103,
+        "sigma_formal": 0.04821520334860396,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.017431257340953604
+      },
+      "2012-03-26": {
+        "ew": 1.1700965828153154,
+        "sigma_formal": 0.057296551685044175,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1982764010909261,
+        "sigma_formal": 0.057838149644285415,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "10",
+      "native": "7"
+    },
+    "delta_2008minus2009_A": 0.48046555555830583,
+    "sigma_formal_A": 0.08453190094045518,
+    "formal_ratio_not_discovery_sigma": 5.683837110166834,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3298977573057602,
+        "sigma_formal": 0.12607016399104104,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3174615068442224,
+        "sigma_formal": 0.05593334317501194,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8432140765166855,
+        "sigma_formal": 0.0488885057527996,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.017808917850010073
+      },
+      "2012-03-26": {
+        "ew": 1.180060834861707,
+        "sigma_formal": 0.05810933597133951,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.208248910693942,
+        "sigma_formal": 0.05865884327589847,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "10",
+      "native": "8"
+    },
+    "delta_2008minus2009_A": 0.47858119920080777,
+    "sigma_formal_A": 0.08602132462936536,
+    "formal_ratio_not_discovery_sigma": 5.563518130682599,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3447227625808345,
+        "sigma_formal": 0.12829399057639468,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3271179072717745,
+        "sigma_formal": 0.05693402824003133,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8573391357254967,
+        "sigma_formal": 0.0497439483111009,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.017985915496701286
+      },
+      "2012-03-26": {
+        "ew": 1.1917353909262407,
+        "sigma_formal": 0.05914359479108987,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.2203363662378846,
+        "sigma_formal": 0.059703351559174986,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "12",
+      "native": "5"
+    },
+    "delta_2008minus2009_A": 0.48465757554019107,
+    "sigma_formal_A": 0.0790548462855582,
+    "formal_ratio_not_discovery_sigma": 6.130649774329251,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.273278452616973,
+        "sigma_formal": 0.11787199882813125,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.2711059166384842,
+        "sigma_formal": 0.05229604002195738,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.7875346090875376,
+        "sigma_formal": 0.04574382738472974,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.015659122604227933
+      },
+      "2012-03-26": {
+        "ew": 1.1305699526660642,
+        "sigma_formal": 0.054324885170915584,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1566388210936076,
+        "sigma_formal": 0.05484266670716327,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "12",
+      "native": "6"
+    },
+    "delta_2008minus2009_A": 0.4847380019239974,
+    "sigma_formal_A": 0.07985334469823518,
+    "formal_ratio_not_discovery_sigma": 6.0703531424490285,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.2818637564553148,
+        "sigma_formal": 0.11906655630191286,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.2787725286052969,
+        "sigma_formal": 0.05282440119083472,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.7955801406063084,
+        "sigma_formal": 0.04620325867082811,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.015975176840310544
+      },
+      "2012-03-26": {
+        "ew": 1.1382083277647996,
+        "sigma_formal": 0.05487589848466906,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1650092233772227,
+        "sigma_formal": 0.05539749931954426,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "12",
+      "native": "7"
+    },
+    "delta_2008minus2009_A": 0.48444832606958277,
+    "sigma_formal_A": 0.08083139342834286,
+    "formal_ratio_not_discovery_sigma": 5.993319000482738,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.2921778958226426,
+        "sigma_formal": 0.12053046093839412,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.2877645093138606,
+        "sigma_formal": 0.053472014847366,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8055228764986687,
+        "sigma_formal": 0.04676539390513972,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.016384038547886233
+      },
+      "2012-03-26": {
+        "ew": 1.147373108795004,
+        "sigma_formal": 0.055550968702896386,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1748600220581327,
+        "sigma_formal": 0.05607758056149014,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "12",
+      "native": "8"
+    },
+    "delta_2008minus2009_A": 0.48358151740092925,
+    "sigma_formal_A": 0.08201459005697145,
+    "formal_ratio_not_discovery_sigma": 5.896286466408101,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.304416318174087,
+        "sigma_formal": 0.12230214806897347,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.2980376142596532,
+        "sigma_formal": 0.05425654121932937,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.817645448815941,
+        "sigma_formal": 0.047444663138972824,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.016889915780626166
+      },
+      "2012-03-26": {
+        "ew": 1.1581926276083783,
+        "sigma_formal": 0.05636801090909707,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1861835523025632,
+        "sigma_formal": 0.056901257753854156,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "8",
+      "native": "5"
+    },
+    "delta_2008minus2009_A": 0.47893135893466554,
+    "sigma_formal_A": 0.08570846664244225,
+    "formal_ratio_not_discovery_sigma": 5.587911879612393,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3416314902674993,
+        "sigma_formal": 0.12782748502157038,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3252179794371648,
+        "sigma_formal": 0.05672313266089203,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8544933759176665,
+        "sigma_formal": 0.04956406286562267,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.017991914136927425
+      },
+      "2012-03-26": {
+        "ew": 1.1894051203619527,
+        "sigma_formal": 0.058925988513305286,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.2178303068298046,
+        "sigma_formal": 0.05948363012698006,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "8",
+      "native": "6"
+    },
+    "delta_2008minus2009_A": 0.47783088132648865,
+    "sigma_formal_A": 0.08690547754915862,
+    "formal_ratio_not_discovery_sigma": 5.498282672184854,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3533158358178696,
+        "sigma_formal": 0.12961007769457902,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3320894123601117,
+        "sigma_formal": 0.057532250055335,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8648717427625021,
+        "sigma_formal": 0.050253149343510904,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.017770998963952008
+      },
+      "2012-03-26": {
+        "ew": 1.1978390908919534,
+        "sigma_formal": 0.059759764076118306,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.2273971157731993,
+        "sigma_formal": 0.06032514747965442,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "8",
+      "native": "7"
+    },
+    "delta_2008minus2009_A": 0.47777026878923357,
+    "sigma_formal_A": 0.08858764339195913,
+    "formal_ratio_not_discovery_sigma": 5.393193119217793,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3679230345438895,
+        "sigma_formal": 0.1321037693811768,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3398090100162672,
+        "sigma_formal": 0.05867878035135586,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8760957534908447,
+        "sigma_formal": 0.051226158109714474,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.015924855114884437
+      },
+      "2012-03-26": {
+        "ew": 1.206715654586916,
+        "sigma_formal": 0.06093654690808504,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.2410159834522596,
+        "sigma_formal": 0.061509860622918244,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "LSF",
+      "target": "8",
+      "native": "8"
+    },
+    "delta_2008minus2009_A": 0.47750482136893013,
+    "sigma_formal_A": 0.09112307000491571,
+    "formal_ratio_not_discovery_sigma": 5.240218765052261,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3713688457277218,
+        "sigma_formal": 0.13584775429771215,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3460521404214132,
+        "sigma_formal": 0.06043386162943584,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8812056717056374,
+        "sigma_formal": 0.05269438198068583,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.008221871000084072
+      },
+      "2012-03-26": {
+        "ew": 1.2123225945144864,
+        "sigma_formal": 0.06270962832420261,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.258145928262946,
+        "sigma_formal": 0.06329223927418033,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "0",
+      "degree": "0"
+    },
+    "delta_2008minus2009_A": 0.4818967013447657,
+    "sigma_formal_A": 0.06309999299067498,
+    "formal_ratio_not_discovery_sigma": 7.637032565375739,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.1970628196084026,
+        "sigma_formal": 0.09390216817981978,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.156969512259013,
+        "sigma_formal": 0.04170569294852025,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.695119464588942,
+        "sigma_formal": 0.036638280692827,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.00827419568439636
+      },
+      "2009-11-19": {
+        "ew": 0.38174383870470185,
+        "sigma_formal": 0.06390143409572195,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.8216241612851788,
+        "sigma_formal": 0.09430846960097468,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.2831470474160412,
+        "sigma_formal": 0.041326580515015476,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.0699317871375544,
+        "sigma_formal": 0.04332681120501993,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.0008504754999985,
+        "sigma_formal": 0.043813183172454896,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "0",
+      "degree": "1"
+    },
+    "delta_2008minus2009_A": 0.4859409834337961,
+    "sigma_formal_A": 0.0632158289159541,
+    "formal_ratio_not_discovery_sigma": 7.687014340662338,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.1902271593302327,
+        "sigma_formal": 0.09406216842473618,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.1415033633892382,
+        "sigma_formal": 0.041795795447443114,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.6799242779259392,
+        "sigma_formal": 0.03670961746013152,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.009218052794248071
+      },
+      "2009-11-19": {
+        "ew": 0.36239686036566304,
+        "sigma_formal": 0.06402654506985528,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.8315671968717884,
+        "sigma_formal": 0.09445264435051383,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.27675581846892583,
+        "sigma_formal": 0.041372510005158916,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.0510022907055747,
+        "sigma_formal": 0.0434177428012308,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 0.9916005815336996,
+        "sigma_formal": 0.043883881526175304,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "0",
+      "degree": "2"
+    },
+    "delta_2008minus2009_A": 0.3247582634316766,
+    "sigma_formal_A": 0.09555658874080487,
+    "formal_ratio_not_discovery_sigma": 3.3985962424064358,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.1170446101599385,
+        "sigma_formal": 0.14271423187163995,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.1215519020798246,
+        "sigma_formal": 0.06311835759832442,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.7945399926882049,
+        "sigma_formal": 0.055165586107860515,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.08317745820425114
+      },
+      "2009-11-19": {
+        "ew": 0.6727712455273431,
+        "sigma_formal": 0.08946029139904914,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 1.8444863884724154,
+        "sigma_formal": 0.127594858353064,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3165525051274574,
+        "sigma_formal": 0.059392049617120385,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.2505748732613238,
+        "sigma_formal": 0.06447093819539922,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1820335160945408,
+        "sigma_formal": 0.06539975001187354,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "1",
+      "degree": "0"
+    },
+    "delta_2008minus2009_A": 0.49717622816583706,
+    "sigma_formal_A": 0.06037077358553572,
+    "formal_ratio_not_discovery_sigma": 8.235379449982,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.1344877061258007,
+        "sigma_formal": 0.08991413589553149,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.1542331219378135,
+        "sigma_formal": 0.03979467358020188,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.64718418586597,
+        "sigma_formal": 0.035036956681728036,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.007387487623446706
+      },
+      "2009-11-19": {
+        "ew": 0.36929615351943557,
+        "sigma_formal": 0.06125086106983601,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.7223904966973104,
+        "sigma_formal": 0.09058962999907585,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3024069162842845,
+        "sigma_formal": 0.039505684880840115,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.0419813671827474,
+        "sigma_formal": 0.041419930689877475,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 0.9737756397657525,
+        "sigma_formal": 0.04186903985086585,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "1",
+      "degree": "1"
+    },
+    "delta_2008minus2009_A": 0.49982319834452305,
+    "sigma_formal_A": 0.06044609709428897,
+    "formal_ratio_not_discovery_sigma": 8.268907710697288,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.1262365497893623,
+        "sigma_formal": 0.09001715788389045,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.1411528882150217,
+        "sigma_formal": 0.03985121604289965,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.6338715206576689,
+        "sigma_formal": 0.0350845923524049,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.009283658812293668
+      },
+      "2009-11-19": {
+        "ew": 0.3535877427692932,
+        "sigma_formal": 0.061336007108783355,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.7153670424450419,
+        "sigma_formal": 0.09072236894680116,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.2967531366924235,
+        "sigma_formal": 0.039537516994014504,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.0256667641804063,
+        "sigma_formal": 0.04148331015296333,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 0.9643213916182221,
+        "sigma_formal": 0.04191765216110652,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "1",
+      "degree": "2"
+    },
+    "delta_2008minus2009_A": 0.4354352986098572,
+    "sigma_formal_A": 0.08006297179686545,
+    "formal_ratio_not_discovery_sigma": 5.438660205052556,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.2850507020766875,
+        "sigma_formal": 0.11880259503028952,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.1578917690676451,
+        "sigma_formal": 0.05326730178248392,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.7860359369623092,
+        "sigma_formal": 0.046607016066965434,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.037536458382329455
+      },
+      "2009-11-19": {
+        "ew": 0.4718167634875506,
+        "sigma_formal": 0.0799629941222389,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 1.2546129833423438,
+        "sigma_formal": 0.11676963176810236,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.2525342374167668,
+        "sigma_formal": 0.052359253598128784,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.1541549005140035,
+        "sigma_formal": 0.055025221303977835,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.0883844717449336,
+        "sigma_formal": 0.0556953763907309,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "2",
+      "degree": "0"
+    },
+    "delta_2008minus2009_A": 0.48249098401592216,
+    "sigma_formal_A": 0.06371698615813799,
+    "formal_ratio_not_discovery_sigma": 7.572407502427011,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.0067775535492742,
+        "sigma_formal": 0.09504744812310953,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.0972366828329834,
+        "sigma_formal": 0.041870834841651154,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.5695161341752066,
+        "sigma_formal": 0.03691961909084846,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.03828598262567316
+      },
+      "2009-11-19": {
+        "ew": 0.33934118067831764,
+        "sigma_formal": 0.06416698848304551,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.5083497513032322,
+        "sigma_formal": 0.09537414491597547,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.2346779821272456,
+        "sigma_formal": 0.04152600561520844,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.0095153032580022,
+        "sigma_formal": 0.04351951596767647,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 0.9276884118969475,
+        "sigma_formal": 0.04402548892896972,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "2",
+      "degree": "1"
+    },
+    "delta_2008minus2009_A": 0.4675442159210169,
+    "sigma_formal_A": 0.06382752799741002,
+    "formal_ratio_not_discovery_sigma": 7.325118653192848,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.0232335942984754,
+        "sigma_formal": 0.09524543332242862,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.1244893999795014,
+        "sigma_formal": 0.04193448738000512,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.6063172812179715,
+        "sigma_formal": 0.03696491417695854,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.035955796051579746
+      },
+      "2009-11-19": {
+        "ew": 0.38589153013272715,
+        "sigma_formal": 0.064182339822847,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.543173326731244,
+        "sigma_formal": 0.09545599343447858,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.24664762560284778,
+        "sigma_formal": 0.04163495903727378,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.0595740136519267,
+        "sigma_formal": 0.04353781809076393,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 0.9542142544550946,
+        "sigma_formal": 0.04409177692765944,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "10",
+      "sideset": "2",
+      "degree": "2"
+    },
+    "delta_2008minus2009_A": 0.5152626583678075,
+    "sigma_formal_A": 0.10065053327242482,
+    "formal_ratio_not_discovery_sigma": 5.119323679817738,
+    "nights": {
+      "2008-10-22": {
+        "ew": 0.9821453980238607,
+        "sigma_formal": 0.14967898692460505,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.040898914229307,
+        "sigma_formal": 0.0663012718384074,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.49625949775877637,
+        "sigma_formal": 0.058571455543480165,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.05692934433596563
+      },
+      "2009-11-19": {
+        "ew": 0.3614023358203381,
+        "sigma_formal": 0.09514000266679751,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.6975032349462705,
+        "sigma_formal": 0.13921694786406136,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.026539986559398158,
+        "sigma_formal": 0.06298856517469331,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.067910485549205,
+        "sigma_formal": 0.06797543874937534,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.0201700614198552,
+        "sigma_formal": 0.06887844588438112,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "0",
+      "degree": "0"
+    },
+    "delta_2008minus2009_A": 0.4744021742218192,
+    "sigma_formal_A": 0.08441371803362709,
+    "formal_ratio_not_discovery_sigma": 5.619965395113104,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.340298325139416,
+        "sigma_formal": 0.12591137072183972,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.340809422951496,
+        "sigma_formal": 0.05583836633210772,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8661516998236367,
+        "sigma_formal": 0.04881369361498774,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.018963172790129816
+      },
+      "2009-11-19": {
+        "ew": 0.44742739336043763,
+        "sigma_formal": 0.085049761043737,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 1.010236023790148,
+        "sigma_formal": 0.12614148523115848,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.34918755599086204,
+        "sigma_formal": 0.0549799679133506,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.20873227282792,
+        "sigma_formal": 0.05801116895288813,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.222272951355686,
+        "sigma_formal": 0.05858980146445319,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "0",
+      "degree": "1"
+    },
+    "delta_2008minus2009_A": 0.48046555555830583,
+    "sigma_formal_A": 0.08453190094045518,
+    "formal_ratio_not_discovery_sigma": 5.683837110166834,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3298977573057602,
+        "sigma_formal": 0.12607016399104104,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3174615068442224,
+        "sigma_formal": 0.05593334317501194,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8432140765166855,
+        "sigma_formal": 0.0488885057527996,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.017808917850010073
+      },
+      "2009-11-19": {
+        "ew": 0.4183627932739016,
+        "sigma_formal": 0.08515724397507636,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 1.0253986391570211,
+        "sigma_formal": 0.12623661271267064,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3396442748653142,
+        "sigma_formal": 0.05500396568942877,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.180060834861707,
+        "sigma_formal": 0.05810933597133951,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.208248910693942,
+        "sigma_formal": 0.05865884327589847,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "0",
+      "degree": "2"
+    },
+    "delta_2008minus2009_A": 0.24807287300197967,
+    "sigma_formal_A": 0.1314952532243216,
+    "formal_ratio_not_discovery_sigma": 1.886553825473722,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.2237265879575847,
+        "sigma_formal": 0.1969109982804106,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.2885655582417497,
+        "sigma_formal": 0.08693340894421996,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 1.0080732000976875,
+        "sigma_formal": 0.07555237859866328,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.1237438856066476
+      },
+      "2009-11-19": {
+        "ew": 0.8642565723275284,
+        "sigma_formal": 0.1206065392446713,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 2.4890983742183908,
+        "sigma_formal": 0.17366409093085905,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3967104454675401,
+        "sigma_formal": 0.08007911642875788,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.4692491816330515,
+        "sigma_formal": 0.08882031231208706,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.4831222124479424,
+        "sigma_formal": 0.08986219926705312,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "1",
+      "degree": "0"
+    },
+    "delta_2008minus2009_A": 0.4969739160817791,
+    "sigma_formal_A": 0.08002491531308081,
+    "formal_ratio_not_discovery_sigma": 6.210239825152856,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.244920455848223,
+        "sigma_formal": 0.1194511663576297,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3366475270314386,
+        "sigma_formal": 0.05278819602815588,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.7938100753580518,
+        "sigma_formal": 0.046262224058506655,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.019027231957208825
+      },
+      "2009-11-19": {
+        "ew": 0.42867643419272516,
+        "sigma_formal": 0.08113122894832991,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.8602358079695023,
+        "sigma_formal": 0.12048161431787666,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3781511416544479,
+        "sigma_formal": 0.05229317010368974,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.166221701024542,
+        "sigma_formal": 0.05495410769274814,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.18126310343369,
+        "sigma_formal": 0.055496020166589916,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "1",
+      "degree": "1"
+    },
+    "delta_2008minus2009_A": 0.5009198718557819,
+    "sigma_formal_A": 0.08010821405208804,
+    "formal_ratio_not_discovery_sigma": 6.253040063158483,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.2323603389710824,
+        "sigma_formal": 0.11956301309094983,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.316920483053428,
+        "sigma_formal": 0.05285176806915363,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.7737205391564732,
+        "sigma_formal": 0.046315980900328506,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.01653807870863015
+      },
+      "2009-11-19": {
+        "ew": 0.4051085087389092,
+        "sigma_formal": 0.08121643142918462,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.8494802285078031,
+        "sigma_formal": 0.12062544569452847,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.36971011298054085,
+        "sigma_formal": 0.05231736033993294,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.141539751168131,
+        "sigma_formal": 0.05502735166995072,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1669262805692815,
+        "sigma_formal": 0.05554939958944614,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "1",
+      "degree": "2"
+    },
+    "delta_2008minus2009_A": 0.40816097638103743,
+    "sigma_formal_A": 0.1097389831397118,
+    "formal_ratio_not_discovery_sigma": 3.7193799751305896,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.4662924672272788,
+        "sigma_formal": 0.16325434162272334,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3415213705583056,
+        "sigma_formal": 0.07308251274975945,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.9957459425117547,
+        "sigma_formal": 0.06359548717020765,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.06172346307517242
+      },
+      "2009-11-19": {
+        "ew": 0.57731541079357,
+        "sigma_formal": 0.10810580697272727,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 1.6385385337293599,
+        "sigma_formal": 0.1590668122361402,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.30541184850939657,
+        "sigma_formal": 0.07078182078224145,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.3304011913139007,
+        "sigma_formal": 0.07550379386045702,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.3485617234132574,
+        "sigma_formal": 0.07625038024615828,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "2",
+      "degree": "0"
+    },
+    "delta_2008minus2009_A": 0.47348158338068635,
+    "sigma_formal_A": 0.08556762214219268,
+    "formal_ratio_not_discovery_sigma": 5.533419902610762,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.0502628425945282,
+        "sigma_formal": 0.12794770252156987,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.2499591457977948,
+        "sigma_formal": 0.056263214660002836,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.6766294108154752,
+        "sigma_formal": 0.04937384918114691,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.028212761399197313
+      },
+      "2009-11-19": {
+        "ew": 0.3835528257262627,
+        "sigma_formal": 0.08593281772393158,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.5366948187612024,
+        "sigma_formal": 0.1279196451977369,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.27629827859600425,
+        "sigma_formal": 0.05557740872808706,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.1168431605991198,
+        "sigma_formal": 0.05849130203801381,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1114554700800574,
+        "sigma_formal": 0.05909667357662244,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "2",
+      "degree": "1"
+    },
+    "delta_2008minus2009_A": 0.45133612555172264,
+    "sigma_formal_A": 0.08569115585642571,
+    "formal_ratio_not_discovery_sigma": 5.267009425195871,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.075359897496423,
+        "sigma_formal": 0.12817863128238474,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.2915809597361898,
+        "sigma_formal": 0.05633250851236765,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.7321343030645836,
+        "sigma_formal": 0.04941857883255916,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.02496112963860457
+      },
+      "2009-11-19": {
+        "ew": 0.45373695953295445,
+        "sigma_formal": 0.08586647955882513,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.58874921907969,
+        "sigma_formal": 0.1279018874431925,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.29436051033222616,
+        "sigma_formal": 0.05567155282538869,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.1930786633993895,
+        "sigma_formal": 0.05849628278783264,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1515820343482703,
+        "sigma_formal": 0.059166069325327295,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "continuum",
+      "half": "15",
+      "sideset": "2",
+      "degree": "2"
+    },
+    "delta_2008minus2009_A": 0.5197025634447651,
+    "sigma_formal_A": 0.14027752200131433,
+    "formal_ratio_not_discovery_sigma": 3.704817108473699,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.015319954202196,
+        "sigma_formal": 0.20921098620022033,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.169709359184736,
+        "sigma_formal": 0.09249172640664172,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.572812093248701,
+        "sigma_formal": 0.08122065087581955,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.06920153493156726
+      },
+      "2009-11-19": {
+        "ew": 0.41834005264651153,
+        "sigma_formal": 0.13040078501030772,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.8127420188776802,
+        "sigma_formal": 0.19125285904588551,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": -0.023114582360027832,
+        "sigma_formal": 0.08625699675569017,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.205236744085505,
+        "sigma_formal": 0.09482804453272677,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.2474256586833432,
+        "sigma_formal": 0.09584870958708323,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "wavelength",
+      "offset": "-2"
+    },
+    "delta_2008minus2009_A": 0.49338457010518566,
+    "sigma_formal_A": 0.08462797266176708,
+    "formal_ratio_not_discovery_sigma": 5.830041233258624,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.2823573251971807,
+        "sigma_formal": 0.12628162929415263,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.3398067619208396,
+        "sigma_formal": 0.05590329735863123,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8176974734538244,
+        "sigma_formal": 0.0489268496702216,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.011259099638306342
+      },
+      "2009-11-19": {
+        "ew": 0.4191152187216941,
+        "sigma_formal": 0.08518091812016536,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 0.8244377945234136,
+        "sigma_formal": 0.12654896163310508,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3356923364940933,
+        "sigma_formal": 0.05501856964140526,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.2009211656620453,
+        "sigma_formal": 0.058080887301058585,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.2119982969516399,
+        "sigma_formal": 0.05864045606508633,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  },
+  {
+    "specification": {
+      "family": "wavelength",
+      "offset": "2"
+    },
+    "delta_2008minus2009_A": 0.4738031203220955,
+    "sigma_formal_A": 0.0845472906144495,
+    "formal_ratio_not_discovery_sigma": 5.604001226753923,
+    "nights": {
+      "2008-10-22": {
+        "ew": 1.3352408113545542,
+        "sigma_formal": 0.12601071070963563,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2008-10-24": {
+        "ew": 1.2648390348845455,
+        "sigma_formal": 0.05602738006230251,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2009-11-12": {
+        "ew": 0.8262368027974544,
+        "sigma_formal": 0.04892650322367099,
+        "n_exposures": 3,
+        "repeat_sample_sd": 0.04536256856370106
+      },
+      "2009-11-19": {
+        "ew": 0.3927882423220801,
+        "sigma_formal": 0.0852372036885523,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-13": {
+        "ew": 1.1452055204388216,
+        "sigma_formal": 0.12577187682514712,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2010-01-17": {
+        "ew": 0.3280549601138011,
+        "sigma_formal": 0.05499441822598614,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-03-26": {
+        "ew": 1.123938277974331,
+        "sigma_formal": 0.058205229786292216,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      },
+      "2012-05-17": {
+        "ew": 1.1692704417207398,
+        "sigma_formal": 0.05875637276278332,
+        "n_exposures": 1,
+        "repeat_sample_sd": null
+      }
+    }
+  }
+]

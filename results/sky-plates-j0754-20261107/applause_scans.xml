@@ -1,0 +1,982 @@
+<?xml version="1.0"?>
+<VOTABLE version="1.3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+    xmlns:stc="http://www.ivoa.net/xml/STC/v1.30">
+    <RESOURCE type="results">
+        <LINK title="applause_dr4.scan" content-role="doc" href="https://doi.org/10.17876/plate/dr.4/10"/>
+        <TABLE name="applause_user_anonymous.2026-11-08-03-31-41-081657">
+                <FIELD name="scan_id" ucd="meta.id" datatype="int"> <DESCRIPTION>Scan identification number</DESCRIPTION> </FIELD>
+                
+                <FIELD name="plate_id" ucd="meta.id" datatype="int"> <DESCRIPTION>Plate identification number</DESCRIPTION> </FIELD>
+                
+                <FIELD name="archive_id" ucd="meta.id" datatype="int"> <DESCRIPTION>Archive identification number</DESCRIPTION> </FIELD>
+                
+                <FIELD name="filename_scan" ucd="meta.ref;meta.file;meta.fits" arraysize="255" datatype="char"> <DESCRIPTION>Name of the scan file</DESCRIPTION> </FIELD>
+                
+                <FIELD name="filename_wedge" ucd="meta.ref;meta.file;meta.fits" arraysize="255" datatype="char"> <DESCRIPTION>Name of the wedge scan file</DESCRIPTION> </FIELD>
+                
+                <FIELD name="naxis1" ucd="meta.number" datatype="short"> <DESCRIPTION>Length of data axis 1 (number of pixels in a row)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="naxis2" ucd="meta.number" datatype="short"> <DESCRIPTION>Length of data axis 2 (number of rows)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="minval" ucd="phot.count;stat.min" datatype="int"> <DESCRIPTION>Minimum pixel value in the image</DESCRIPTION> </FIELD>
+                
+                <FIELD name="maxval" ucd="phot.count;stat.max" datatype="int"> <DESCRIPTION>Maximum pixel value in the image</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scanner" ucd="meta.id" arraysize="80" datatype="char"> <DESCRIPTION>Name of the device used for digitizing the plate</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_res1" unit="dpi" ucd="meta.unit" datatype="short"> <DESCRIPTION>Scan resolution along axis 1</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_res2" unit="dpi" ucd="meta.unit" datatype="short"> <DESCRIPTION>Scan resolution along axis 2</DESCRIPTION> </FIELD>
+                
+                <FIELD name="pixel_size1" unit="um" ucd="phys.size" datatype="float"> <DESCRIPTION>Pixel size along axis 1</DESCRIPTION> </FIELD>
+                
+                <FIELD name="pixel_size2" unit="um" ucd="phys.size" datatype="float"> <DESCRIPTION>Pixel size along axis 2</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_software" ucd="meta.id;meta.software" arraysize="80" datatype="char"> <DESCRIPTION>Name of the scanning software</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_gamma" ucd="meta.unit" datatype="float"> <DESCRIPTION>Scan gamma value</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_focus" ucd="meta.unit" arraysize="80" datatype="char"> <DESCRIPTION>Scan focus setting</DESCRIPTION> </FIELD>
+                
+                <FIELD name="wedge" ucd="meta.code;meta.cryptic" arraysize="80" datatype="char"> <DESCRIPTION>Type of photometric step-wedge</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_date" ucd="time.epoch;time.creation" arraysize="32" datatype="char"> <DESCRIPTION>Scan date and time</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_author" ucd="meta.id" arraysize="80" datatype="char"> <DESCRIPTION>Author of the scan</DESCRIPTION> </FIELD>
+                
+                <FIELD name="scan_notes" ucd="meta.note" arraysize="255" datatype="char"> <DESCRIPTION>Notes about the scan</DESCRIPTION> </FIELD>
+                
+                <FIELD name="origin" ucd="meta.curation;instr.obsty" arraysize="80" datatype="char"> <DESCRIPTION>Institute responsible for the scan</DESCRIPTION> </FIELD>
+                
+                <FIELD name="file_datetime" unit="Time[yyyy-mm-dd hh:mm:ss]" ucd="time.creation;meta.file" arraysize="32" datatype="char"> <DESCRIPTION>Timestamp of the last change of file</DESCRIPTION> </FIELD>
+                
+                <FIELD name="file_size" unit="byte" ucd="meta.number;meta.file" datatype="long"> <DESCRIPTION>File size</DESCRIPTION> </FIELD>
+                
+                <FIELD name="fits_checksum" ucd="meta.note;meta.file;meta.fits" arraysize="16" datatype="char"> <DESCRIPTION>Checksum of the FITS file (from the CHECKSUM header keyword)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="fits_datasum" ucd="meta.note;meta.file;meta.fits" arraysize="10" datatype="char"> <DESCRIPTION>Checksum of the image part of the FITS file (from the DATASUM header keyword)</DESCRIPTION> </FIELD>
+                
+                <FIELD name="timestamp_insert" unit="Time[yyyy-mm-dd hh:mm:ss]" ucd="time.creation" arraysize="32" datatype="char"> <DESCRIPTION>Timestamp of insert</DESCRIPTION> </FIELD>
+                
+                <FIELD name="timestamp_update" unit="Time[yyyy-mm-dd hh:mm:ss]" ucd="time.creation" arraysize="32" datatype="char"> <DESCRIPTION>Timestamp of last update</DESCRIPTION> </FIELD>
+                
+            <DATA>
+                <TABLEDATA>
+                    <TR>
+                        <TD>410</TD>
+                        <TD>412</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00584_x.fits</TD>
+                        <TD></TD>
+                        <TD>28304</TD>
+                        <TD>28428</TD>
+                        <TD>2827</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:24:52</TD>
+                        <TD>1609269120</TD>
+                        <TD>lEa3nCZ3lCa3lCY3</TD>
+                        <TD>3753857229</TD>
+                        <TD>2021-10-28 19:15:25.076264+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>411</TD>
+                        <TD>412</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00584_y.fits</TD>
+                        <TD></TD>
+                        <TD>28304</TD>
+                        <TD>28428</TD>
+                        <TD>2313</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:25:03</TD>
+                        <TD>1609269120</TD>
+                        <TD>W5Aaa22aZ28aa28a</TD>
+                        <TD>1365395720</TD>
+                        <TD>2021-10-28 19:15:30.050954+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>412</TD>
+                        <TD>413</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00585_x.fits</TD>
+                        <TD></TD>
+                        <TD>22480</TD>
+                        <TD>22481</TD>
+                        <TD>257</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:21:25</TD>
+                        <TD>1010761920</TD>
+                        <TD>LQAkNN9iLNAiLN7i</TD>
+                        <TD>1881108016</TD>
+                        <TD>2021-10-28 19:15:33.453541+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>413</TD>
+                        <TD>413</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00585_y.fits</TD>
+                        <TD></TD>
+                        <TD>22480</TD>
+                        <TD>22481</TD>
+                        <TD>0</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:21:35</TD>
+                        <TD>1010761920</TD>
+                        <TD>cBYFdBVEcBVEcBVE</TD>
+                        <TD>3535924131</TD>
+                        <TD>2021-10-28 19:15:37.655649+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>416</TD>
+                        <TD>415</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00589_x.fits</TD>
+                        <TD></TD>
+                        <TD>28304</TD>
+                        <TD>28428</TD>
+                        <TD>1542</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:24:42</TD>
+                        <TD>1609269120</TD>
+                        <TD>eaFafWFSeaFYeUFY</TD>
+                        <TD>1298618547</TD>
+                        <TD>2021-10-28 19:15:51.779420+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>417</TD>
+                        <TD>415</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00589_y.fits</TD>
+                        <TD></TD>
+                        <TD>28304</TD>
+                        <TD>28428</TD>
+                        <TD>1028</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:25:06</TD>
+                        <TD>1609269120</TD>
+                        <TD>WApIY8oHWAoHW7oH</TD>
+                        <TD>3336607937</TD>
+                        <TD>2021-10-28 19:15:56.608199+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>426</TD>
+                        <TD>422</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00597_x.fits</TD>
+                        <TD></TD>
+                        <TD>22712</TD>
+                        <TD>22716</TD>
+                        <TD>0</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:27:19</TD>
+                        <TD>1031866560</TD>
+                        <TD>29cM29bM29bM29bM</TD>
+                        <TD>1602353632</TD>
+                        <TD>2021-10-28 19:16:31.213174+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>427</TD>
+                        <TD>422</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00597_y.fits</TD>
+                        <TD></TD>
+                        <TD>22712</TD>
+                        <TD>22716</TD>
+                        <TD>0</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:27:11</TD>
+                        <TD>1031866560</TD>
+                        <TD>CIQoFFPoCFPoCFPo</TD>
+                        <TD>1201826453</TD>
+                        <TD>2021-10-28 19:16:34.610373+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>432</TD>
+                        <TD>425</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00602_x.fits</TD>
+                        <TD></TD>
+                        <TD>28328</TD>
+                        <TD>28421</TD>
+                        <TD>514</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:30:05</TD>
+                        <TD>1610236800</TD>
+                        <TD>lkafojUfljZfljZf</TD>
+                        <TD>3544091772</TD>
+                        <TD>2021-10-28 19:16:53.541873+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>433</TD>
+                        <TD>425</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00602_y.fits</TD>
+                        <TD></TD>
+                        <TD>28328</TD>
+                        <TD>28421</TD>
+                        <TD>1028</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:30:54</TD>
+                        <TD>1610236800</TD>
+                        <TD>4M3E7K0E4K0E4K0E</TD>
+                        <TD>1692889069</TD>
+                        <TD>2021-10-28 19:16:58.214772+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>434</TD>
+                        <TD>426</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00603_x.fits</TD>
+                        <TD></TD>
+                        <TD>22768</TD>
+                        <TD>22908</TD>
+                        <TD>257</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:30:19</TD>
+                        <TD>1043153280</TD>
+                        <TD>ZABde3AZZ9Abd9AZ</TD>
+                        <TD>3114326408</TD>
+                        <TD>2021-10-28 19:17:01.521193+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>435</TD>
+                        <TD>426</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00603_y.fits</TD>
+                        <TD></TD>
+                        <TD>22768</TD>
+                        <TD>22773</TD>
+                        <TD>257</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:30:37</TD>
+                        <TD>1037007360</TD>
+                        <TD>WhdUaZbSXfbSaZbS</TD>
+                        <TD>4264764849</TD>
+                        <TD>2021-10-28 19:17:05.462381+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>473</TD>
+                        <TD>446</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00626_x.fits</TD>
+                        <TD></TD>
+                        <TD>28376</TD>
+                        <TD>28376</TD>
+                        <TD>0</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:46:18</TD>
+                        <TD>1610409600</TD>
+                        <TD>9lXeBjWZ9jWbAjWZ</TD>
+                        <TD>4168172960</TD>
+                        <TD>2021-10-28 19:20:02.749273+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>474</TD>
+                        <TD>446</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA00626_y.fits</TD>
+                        <TD></TD>
+                        <TD>28376</TD>
+                        <TD>28376</TD>
+                        <TD>1028</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-14 18:46:09</TD>
+                        <TD>1610409600</TD>
+                        <TD>EAfDE7ZAEAfAE7ZA</TD>
+                        <TD>2137364418</TD>
+                        <TD>2021-10-28 19:20:09.092219+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>4927</TD>
+                        <TD>4191</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA04467_x.fits</TD>
+                        <TD></TD>
+                        <TD>28616</TD>
+                        <TD>22930</TD>
+                        <TD>6225</TD>
+                        <TD>65534</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-08-12 00:00:00</TD>
+                        <TD>S. Preller</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-15 20:46:11</TD>
+                        <TD>1312346880</TD>
+                        <TD>XOFYZN9XXNCXXN9X</TD>
+                        <TD>4199300131</TD>
+                        <TD>2021-10-28 23:04:22.617493+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>4928</TD>
+                        <TD>4191</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA04467_y.fits</TD>
+                        <TD></TD>
+                        <TD>23048</TD>
+                        <TD>28648</TD>
+                        <TD>5633</TD>
+                        <TD>65534</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-08-12 00:00:00</TD>
+                        <TD>S. Preller</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-15 20:46:47</TD>
+                        <TD>1320575040</TD>
+                        <TD>BeOpEdNoBdNoBdNo</TD>
+                        <TD>2463154750</TD>
+                        <TD>2021-10-28 23:04:26.926537+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>5193</TD>
+                        <TD>4413</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA04710_x.fits</TD>
+                        <TD></TD>
+                        <TD>28552</TD>
+                        <TD>22809</TD>
+                        <TD>8995</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2013-04-03 00:00:00</TD>
+                        <TD>S. Preller</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-15 22:13:11</TD>
+                        <TD>1302500160</TD>
+                        <TD>h7DLj49Ih4CIh49I</TD>
+                        <TD>3670182998</TD>
+                        <TD>2021-10-28 23:17:18.225718+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>5194</TD>
+                        <TD>4413</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA04710_y.fits</TD>
+                        <TD></TD>
+                        <TD>22848</TD>
+                        <TD>28552</TD>
+                        <TD>8481</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2013-04-03 00:00:00</TD>
+                        <TD>S. Preller</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-15 22:13:18</TD>
+                        <TD>1304729280</TD>
+                        <TD>fAPjf5NgfANgf3Ng</TD>
+                        <TD>142885670 </TD>
+                        <TD>2021-10-28 23:17:23.048445+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>5501</TD>
+                        <TD>4599</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA04900_x.fits</TD>
+                        <TD></TD>
+                        <TD>28616</TD>
+                        <TD>22930</TD>
+                        <TD>6256</TD>
+                        <TD>65534</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-09-02 00:00:00</TD>
+                        <TD>S. Preller</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-16 00:16:06</TD>
+                        <TD>1312346880</TD>
+                        <TD>mqQQnoQOmoQOmoQO</TD>
+                        <TD>1409458042</TD>
+                        <TD>2021-10-28 23:32:20.278970+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>5502</TD>
+                        <TD>4599</TD>
+                        <TD>101</TD>
+                        <TD>DR4/scans/HAM-LA/LA04900_y.fits</TD>
+                        <TD></TD>
+                        <TD>23048</TD>
+                        <TD>28648</TD>
+                        <TD>6478</TD>
+                        <TD>65534</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-09-02 00:00:00</TD>
+                        <TD>S. Preller</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2021-12-16 00:16:37</TD>
+                        <TD>1320575040</TD>
+                        <TD>33kZ61hX31hX31hX</TD>
+                        <TD>1807503943</TD>
+                        <TD>2021-10-28 23:32:25.281881+00:00</TD>
+                        <TD>2022-07-11 13:44:35.713185+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>15535</TD>
+                        <TD>12895</TD>
+                        <TD>102</TD>
+                        <TD>DR4/scans/HAM-GS/GS04740_x.fits</TD>
+                        <TD></TD>
+                        <TD>22592</TD>
+                        <TD>22595</TD>
+                        <TD>1440</TD>
+                        <TD>65532</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-05-22 00:00:00</TD>
+                        <TD>K. Polzin</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2022-02-21 09:34:12</TD>
+                        <TD>1020948480</TD>
+                        <TD>CkQ7EiO6CiO6CiO6</TD>
+                        <TD>1196202587</TD>
+                        <TD>2021-11-24 00:15:58.453059+00:00</TD>
+                        <TD>2022-07-11 13:45:14.176933+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>15536</TD>
+                        <TD>12895</TD>
+                        <TD>102</TD>
+                        <TD>DR4/scans/HAM-GS/GS04740_y.fits</TD>
+                        <TD></TD>
+                        <TD>22592</TD>
+                        <TD>22595</TD>
+                        <TD>1357</TD>
+                        <TD>65532</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-05-22 00:00:00</TD>
+                        <TD>K. Polzin</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2022-02-21 09:34:34</TD>
+                        <TD>1020948480</TD>
+                        <TD>oO8HqO89oO8EoO89</TD>
+                        <TD>2928303501</TD>
+                        <TD>2021-11-24 00:16:01.536583+00:00</TD>
+                        <TD>2022-07-11 13:45:14.176933+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>15543</TD>
+                        <TD>12899</TD>
+                        <TD>102</TD>
+                        <TD>DR4/scans/HAM-GS/GS04744_x.fits</TD>
+                        <TD></TD>
+                        <TD>22592</TD>
+                        <TD>22595</TD>
+                        <TD>1679</TD>
+                        <TD>65532</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-05-22 00:00:00</TD>
+                        <TD>K. Polzin</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2022-02-21 09:36:05</TD>
+                        <TD>1020948480</TD>
+                        <TD>iAFcj5CZiACai3CY</TD>
+                        <TD>484209383 </TD>
+                        <TD>2021-11-24 00:16:27.202584+00:00</TD>
+                        <TD>2022-07-11 13:45:14.176933+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>15544</TD>
+                        <TD>12899</TD>
+                        <TD>102</TD>
+                        <TD>DR4/scans/HAM-GS/GS04744_y.fits</TD>
+                        <TD></TD>
+                        <TD>22592</TD>
+                        <TD>22595</TD>
+                        <TD>860</TD>
+                        <TD>65532</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-05-22 00:00:00</TD>
+                        <TD>K. Polzin</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2022-02-21 09:36:17</TD>
+                        <TD>1020948480</TD>
+                        <TD>UKEaWI9WUICaUI9U</TD>
+                        <TD>2530782293</TD>
+                        <TD>2021-11-24 00:16:31.412228+00:00</TD>
+                        <TD>2022-07-11 13:45:14.176933+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>15547</TD>
+                        <TD>12901</TD>
+                        <TD>102</TD>
+                        <TD>DR4/scans/HAM-GS/GS04746_x.fits</TD>
+                        <TD></TD>
+                        <TD>22592</TD>
+                        <TD>22595</TD>
+                        <TD>2890</TD>
+                        <TD>65532</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-05-22 00:00:00</TD>
+                        <TD>K. Polzin</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2022-02-21 09:36:57</TD>
+                        <TD>1020948480</TD>
+                        <TD>3RTa5RRR3RRX3RRX</TD>
+                        <TD>2540274368</TD>
+                        <TD>2021-11-24 00:16:43.278212+00:00</TD>
+                        <TD>2022-07-11 13:45:14.176933+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>15548</TD>
+                        <TD>12901</TD>
+                        <TD>102</TD>
+                        <TD>DR4/scans/HAM-GS/GS04746_y.fits</TD>
+                        <TD></TD>
+                        <TD>22592</TD>
+                        <TD>22595</TD>
+                        <TD>1996</TD>
+                        <TD>65532</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-05-22 00:00:00</TD>
+                        <TD>K. Polzin</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2022-02-21 09:37:33</TD>
+                        <TD>1020951360</TD>
+                        <TD>1QaR1OYP1OaP1OYP</TD>
+                        <TD>1591662459</TD>
+                        <TD>2021-11-24 00:16:47.122954+00:00</TD>
+                        <TD>2022-07-11 13:45:14.176933+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>28881</TD>
+                        <TD>26491</TD>
+                        <TD>104</TD>
+                        <TD>DR4/scans/HAM-HS/HS02188_x.fits</TD>
+                        <TD></TD>
+                        <TD>22592</TD>
+                        <TD>22595</TD>
+                        <TD>0</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-10-29 00:00:00</TD>
+                        <TD>K. Polzin</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2022-02-23 07:14:12</TD>
+                        <TD>1020948480</TD>
+                        <TD>NiXVQiUSNiUSNiUS</TD>
+                        <TD>455430104 </TD>
+                        <TD>2021-11-30 14:18:22.028278+00:00</TD>
+                        <TD>2022-07-11 13:50:29.745565+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>28882</TD>
+                        <TD>26491</TD>
+                        <TD>104</TD>
+                        <TD>DR4/scans/HAM-HS/HS02188_y.fits</TD>
+                        <TD></TD>
+                        <TD>22592</TD>
+                        <TD>22595</TD>
+                        <TD>0</TD>
+                        <TD>65535</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2014-10-29 00:00:00</TD>
+                        <TD>K. Polzin</TD>
+                        <TD></TD>
+                        <TD>Hamburger Sternwarte (Universitaet Hamburg)</TD>
+                        <TD>2022-02-23 07:14:56</TD>
+                        <TD>1020948480</TD>
+                        <TD>jaDQlS9QjYCQjY9Q</TD>
+                        <TD>1604415394</TD>
+                        <TD>2021-11-30 14:18:23.941148+00:00</TD>
+                        <TD>2022-07-11 13:50:29.745565+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>44047</TD>
+                        <TD>50272</TD>
+                        <TD>301</TD>
+                        <TD>DR4/scans/Tartu/plaat1733.fits</TD>
+                        <TD></TD>
+                        <TD>7284</TD>
+                        <TD>5399</TD>
+                        <TD>54</TD>
+                        <TD>65333</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>1600</TD>
+                        <TD>1600</TD>
+                        <TD>15.875</TD>
+                        <TD>15.875</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>2007-03-20 12:57:05</TD>
+                        <TD>M. Burmeister</TD>
+                        <TD></TD>
+                        <TD>Tartu Observatory, University of Tartu</TD>
+                        <TD>2022-03-13 14:47:32</TD>
+                        <TD>78667200</TD>
+                        <TD>oESDo9QCoEQCo9QC</TD>
+                        <TD>1184875072</TD>
+                        <TD>2022-03-13 09:34:45.897284+00:00</TD>
+                        <TD>2022-07-11 14:27:44.184243+00:00</TD>
+                    </TR>
+                    <TR>
+                        <TD>113377</TD>
+                        <TD>88825</TD>
+                        <TD>208</TD>
+                        <TD>DR4/scans/Bamberg-North/011889_1952_h.fits</TD>
+                        <TD></TD>
+                        <TD>8092</TD>
+                        <TD>10760</TD>
+                        <TD>1062</TD>
+                        <TD>49182</TD>
+                        <TD>Epson Expression 10000XL</TD>
+                        <TD>2400</TD>
+                        <TD>2400</TD>
+                        <TD>10.5833</TD>
+                        <TD>10.5833</TD>
+                        <TD>VueScan 9 X64 (9.5.50) Professional Edition</TD>
+                        <TD>1.0</TD>
+                        <TD>-0.375</TD>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>H. Edelmann</TD>
+                        <TD>scan orientation: 14</TD>
+                        <TD>Dr. Karl Remeis-Sternwarte, Bamberg</TD>
+                        <TD>2022-05-01 08:45:01</TD>
+                        <TD>174156480</TD>
+                        <TD>XGQVZ9OTXEOTX9OT</TD>
+                        <TD>3316442816</TD>
+                        <TD>2022-04-20 17:35:03.173257+00:00</TD>
+                        <TD>2022-07-11 14:26:06.413728+00:00</TD>
+                    </TR>
+                </TABLEDATA>
+            </DATA>
+        </TABLE>
+            <INFO name="QUERY_STATUS" value="OK" />
+            <INFO name="QUERY" value="SELECT * FROM applause_dr4.scan WHERE plate_id IN (412,413,415,422,425,426,446,4191,4413,4599,12895,12899,12901,26491,50272,88825)" />
+            <INFO name="QUERY_LANGUAGE" value="adql-2.0" />
+            <INFO name="SOURCE" value="applause_dr4.scan" />
+    </RESOURCE>
+    <RESOURCE type="meta" utype="adhoc:service">
+        <PARAM name="standardID" datatype="char" arraysize="*" value="ivo://ivoa.net/std/DataLink#links-1.0" />
+        <PARAM name="accessURL" datatype="char" arraysize="*" value="https://www.plate-archive.org/datalink/links" />
+        <GROUP name="inputParams">
+            <PARAM name="ID" datatype="char" arraysize="*" value="" ref="datalinkID"/>
+        </GROUP>
+    </RESOURCE>
+</VOTABLE>
