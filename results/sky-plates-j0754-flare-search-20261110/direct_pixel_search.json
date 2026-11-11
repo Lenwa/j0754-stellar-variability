@@ -1,0 +1,232 @@
+{
+  "source_sha256": "276ed79177bea93b4c8fca57c1e376ca56423b740beea477c03e9afc351b3f23",
+  "products": [
+    {
+      "sector": 44,
+      "file": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0044-4-2_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "8bbfcfc06a863921610f68ab82d351661da7a8d70ad6ea95df6dc0885a847253",
+      "accepted_rows": 3261,
+      "noise_20min": 0.001074732638233934,
+      "events": []
+    },
+    {
+      "sector": 45,
+      "file": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0045-2-1_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "17e2cfccc9ef2069e869da9a535c0154ab1a05a47fc6c1afb2d46b8361c5691d",
+      "accepted_rows": 3121,
+      "noise_20min": 0.0011090134970896566,
+      "events": [
+        {
+          "start_index": 622,
+          "stop_index": 627,
+          "peak_index": 624,
+          "peak_btjd": 2534.564726409669,
+          "peak_residual": 0.006527248018269649,
+          "peak_noise_units": 5.885634426811636,
+          "points": 5,
+          "method": "20min",
+          "start_btjd": 2534.536946104647,
+          "stop_btjd": 2534.5925067132953,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "pixel_offset": 0.29067356273704287,
+          "stationary_scale": 0.004655149510676292,
+          "gap_or_edge_hours": 66.08947892758079,
+          "known_screen_match": null
+        },
+        {
+          "start_index": 892,
+          "stop_index": 903,
+          "peak_index": 895,
+          "peak_btjd": 2541.3292121620702,
+          "peak_residual": 0.008143574012606791,
+          "peak_noise_units": 7.343079262766119,
+          "points": 11,
+          "method": "20min",
+          "start_btjd": 2541.2875417382365,
+          "stop_btjd": 2541.426443142982,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "pixel_offset": 0.15295102665592952,
+          "stationary_scale": 0.0053285572829925455,
+          "gap_or_edge_hours": 8.084063691210758,
+          "known_screen_match": "new_S45"
+        }
+      ]
+    },
+    {
+      "sector": 71,
+      "file": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0071-4-3_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "c2817ab9568092d3a6ff21e23d32672a5f39bf03ad578ff20f8a4007848fd3f1",
+      "accepted_rows": 8961,
+      "noise_20min": 0.000987286410678603,
+      "events": [
+        {
+          "start_index": 817,
+          "stop_index": 832,
+          "peak_index": 831,
+          "peak_btjd": 3247.0036978395547,
+          "peak_residual": 0.008949810174841701,
+          "peak_noise_units": 9.065059620024673,
+          "points": 15,
+          "method": "20min",
+          "start_btjd": 3246.812708061671,
+          "stop_btjd": 3247.0036978395547,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "pixel_offset": 1.055499100844559,
+          "stationary_scale": 0.005106080783442726,
+          "gap_or_edge_hours": 0.05556068103396683,
+          "known_screen_match": null
+        },
+        {
+          "start_index": 1488,
+          "stop_index": 1504,
+          "peak_index": 1492,
+          "peak_btjd": 3259.8116490149496,
+          "peak_residual": 0.008239957938541674,
+          "peak_noise_units": 8.346066399190088,
+          "points": 16,
+          "method": "20min",
+          "start_btjd": 3259.7560886040233,
+          "stop_btjd": 3259.9632826791535,
+          "methods": [
+            "20min"
+          ],
+          "pixel_failure": "Insufficient event/sideband quality frames",
+          "gap_or_edge_hours": 3.7503288249426987,
+          "known_screen_match": null
+        }
+      ]
+    },
+    {
+      "sector": 72,
+      "file": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0072-2-4_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "4d3567b4afd85d2455edd0ede188bd1331c71d5cf6b9f9538df87d561149eb78",
+      "accepted_rows": 9577,
+      "noise_20min": 0.0008895773861229255,
+      "events": [
+        {
+          "start_index": 40,
+          "stop_index": 48,
+          "peak_index": 43,
+          "peak_btjd": 3262.0278132181884,
+          "peak_residual": 0.004718071669255826,
+          "peak_noise_units": 5.303722579795731,
+          "points": 8,
+          "method": "20min",
+          "start_btjd": 3261.986142838044,
+          "stop_btjd": 3262.0833737259527,
+          "methods": [
+            "20min"
+          ],
+          "pixel_offset": 0.7252665043277793,
+          "stationary_scale": -0.0006582325455856277,
+          "gap_or_edge_hours": 12.417771588901815,
+          "known_screen_match": null
+        },
+        {
+          "start_index": 856,
+          "stop_index": 879,
+          "peak_index": 868,
+          "peak_btjd": 3275.223330491856,
+          "peak_residual": 0.006856267271073431,
+          "peak_noise_units": 7.7073308944546435,
+          "points": 23,
+          "method": "20min",
+          "start_btjd": 3275.0566511220027,
+          "stop_btjd": 3275.3622299680533,
+          "methods": [
+            "20min"
+          ],
+          "pixel_offset": 0.7303362989406768,
+          "stationary_scale": -0.0017978630381853182,
+          "gap_or_edge_hours": 10.973057998315198,
+          "known_screen_match": null
+        },
+        {
+          "start_index": 1018,
+          "stop_index": 1032,
+          "peak_index": 1028,
+          "peak_btjd": 3277.4457208103445,
+          "peak_residual": 0.008520679567819083,
+          "peak_noise_units": 9.578345516352481,
+          "points": 14,
+          "method": "20min",
+          "start_btjd": 3277.306821544975,
+          "stop_btjd": 3277.4873905855197,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "pixel_offset": 0.12216482967058337,
+          "stationary_scale": 0.007599053346248729,
+          "gap_or_edge_hours": 45.19776117831498,
+          "known_screen_match": "new_S72"
+        },
+        {
+          "start_index": 1170,
+          "stop_index": 1173,
+          "peak_index": 1170,
+          "peak_btjd": 3279.6125460336593,
+          "peak_residual": 0.0048182375650474545,
+          "peak_noise_units": 5.416321997625118,
+          "points": 3,
+          "method": "20min",
+          "start_btjd": 3279.6125460336593,
+          "stop_btjd": 3279.6403257990255,
+          "methods": [
+            "20min"
+          ],
+          "pixel_offset": 0.6185407742800443,
+          "stationary_scale": 0.009233958012171174,
+          "gap_or_edge_hours": 1.5834467397617118,
+          "known_screen_match": null
+        }
+      ]
+    },
+    {
+      "sector": 1751,
+      "file": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s1751-2-2_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "3891333493cfd678c641c101e5319a7dd84a827eccb95829f96b9bc6a2390668",
+      "accepted_rows": 1823,
+      "noise_20min": 0.001186883512666944,
+      "events": []
+    },
+    {
+      "sector": 46,
+      "file": "results/sky-plates-j0754-physical-tests-20261108/tess/pixels/tess-s0046-1-4_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "eecd25f2b6387ca9bd1881384e43cf16ab76ccf7490a2e1562e098a5413d465e",
+      "accepted_rows": 3320,
+      "noise_20min": 0.0010942943461682353,
+      "events": [
+        {
+          "start_index": 1186,
+          "stop_index": 1207,
+          "peak_index": 1192,
+          "peak_btjd": 2572.0817252024544,
+          "peak_residual": 0.026490816686003393,
+          "peak_noise_units": 24.208127163192646,
+          "points": 21,
+          "method": "20min",
+          "start_btjd": 2571.9983887404787,
+          "stop_btjd": 2572.276176884509,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "pixel_offset": 0.19590010533220234,
+          "stationary_scale": 0.0172059383843562,
+          "gap_or_edge_hours": 4.750176783338247,
+          "known_screen_match": "original_S46"
+        }
+      ]
+    }
+  ]
+}

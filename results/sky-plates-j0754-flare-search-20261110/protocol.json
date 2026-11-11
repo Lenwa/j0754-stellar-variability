@@ -1,0 +1,12 @@
+{
+  "question": "Are there additional sustained flare-like brightenings in the eight saved TIC18878735 light curves?",
+  "scope": "Offline, existing FITS only. Earlier Sector46 event and older exploratory results known; this is a new exploratory search, not a blind discovery experiment.",
+  "quality": "QUALITY=0, finite positive flux and error when present; no brightness clipping. Each product normalized independently. Also inspect native rows excluded by quality around candidates.",
+  "screen": "Run both native cadence and 20-minute bins on corrected flux, plus SAP as a diagnostic. Remove two-day time-window median. Require >=3 consecutive residual points >3 robust difference-noise units, with peak >=5 units; split at gaps >2.5 typical cadences. Merge peaks within 0.3 days for display only. These thresholds are candidate screens, not Gaussian significances or calibrated false alarms.",
+  "sensitivity": "Repeat candidate amplitudes with 1, 2 and 3-day baselines; assess same-time SAP, alternate apertures/reductions, background, centroid, gap proximity. Invert residual sign as an artifact diagnostic. Native-only candidates remain visible.",
+  "injections": "Use quality-retained native timestamps; add asymmetric FRED-like profiles before median removal. Linear rise0.1tau + exp decay to6tau with tau=FWHM/(0.05+ln2). FWHM0.5/2/4.6h, amplitude0.005/0.01/0.025, 24 uniform times per interval including gaps. Recover within max(FWHM,1h). Full observed-noise pipeline rerun; report sampled coverage and usable-time-conditioned recovery separately. No upstream archive-pipeline completeness claimed.",
+  "coverage": "Union of native timestamp-centered cadence intervals across all products; alternate reductions of same photons count once. Also report per-product and QLP+latest-only unique exposure.",
+  "pixel_limit": "Only Sector46 has existing calibrated time-series pixels. No new download. Other-sector events cannot gain new pixel localization here.",
+  "weakening_outcomes": "Impulse-only, nonreproducible in SAP/apertures, negative mirrors, close to gap/quality boundary or corresponding background/position change weakens stellar-flare interpretation. No new candidates means only no additional events passing this screen at measured sensitivity, not no flares.",
+  "deliverables": "Source/tests, complete candidate JSON/CSV, per-sector plots, top-candidate diagnostics, injection table, short report. Preserve original inputs and earlier results."
+}

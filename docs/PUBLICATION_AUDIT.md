@@ -1,5 +1,15 @@
 # Public release audit
 
+## Expanded flare-search follow-up, 10 November 2026
+
+The new source, search products and five public MAST pixel cutouts were checked
+with the same Gitleaks configuration (zero findings), plus private local-path
+and personal-email pattern checks (no matches). All 151 numerical tests pass.
+New plots were visually reviewed. Download receipts contain public archive
+URLs, relative paths and hashes. The new data are calibrated 7x7 cutouts totaling
+31.75 MB; the original private workspace remains excluded. The new findings are
+exploratory source-centered flare candidates, with rejected hits retained.
+
 Prepared 10 November 2026 for publication of the astronomy work only.
 
 ## Scope

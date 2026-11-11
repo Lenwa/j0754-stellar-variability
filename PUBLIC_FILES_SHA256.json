@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 5906,
-    "sha256": "d3d41a561701d231f50579bb3b917d33086fac3ed3a56c877300974506479841"
+    "bytes": 6436,
+    "sha256": "5a93490f3416f77e117b47ce80c0343a253a9bc5ab1b8389701eaa88529506ea"
   },
   {
     "path": "docs/J0754_findings_2026-11-10.docx",
@@ -41,18 +41,18 @@
   },
   {
     "path": "docs/PUBLICATION_AUDIT.md",
-    "bytes": 3230,
-    "sha256": "6c9c749a087aa05e3994b74fd21d9c3812071abee69a4226dbe26c1b8065170b"
+    "bytes": 3833,
+    "sha256": "a209ac00fce3b61695cddb42410b88224bdde0c191bbbb08b83d7197ece76364"
   },
   {
     "path": "docs/native_data_manifest.json",
-    "bytes": 77274,
-    "sha256": "01c8663429449353ac9f2daa6e2d2bbdff5da34f3a1b0deb22c31919b03a5695"
+    "bytes": 78562,
+    "sha256": "3f943126573425b422c30f2d7085730a22cc54365fc7b679498b00e1342746f5"
   },
   {
     "path": "docs/public_archive_requests.json",
-    "bytes": 86049,
-    "sha256": "eec8cb04912a8d97840efddca38b53fa6b9061d0649cff8eb435966f5d931241"
+    "bytes": 87207,
+    "sha256": "1b30f2f7893f442feccddd1a81d13d563896fbf02e59981a4159a445f850e7b1"
   },
   {
     "path": "requirements-report.txt",
@@ -1128,6 +1128,181 @@
     "path": "results/sky-plates-j0754-flare-energy-20261108/energy_estimate.json",
     "bytes": 5216,
     "sha256": "1af4d9672b7e7f1f70696a32cb1f0215c635d380aa14cf6b515ec4ee0c99741e"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/all_extracted_screen_hits.csv",
+    "bytes": 1657,
+    "sha256": "726bf8f9e0edd1f1b55a188563d18c1218f4f100c0328717ad74cc9d24ca7b51"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/all_intervals.png",
+    "bytes": 386735,
+    "sha256": "a74cd38717c41159c230ac4b3353fd31427b69f305ef401f8eee0cd677b2f031"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/archive_refresh.json",
+    "bytes": 2796,
+    "sha256": "df59ea34d4af67b4224c6bf5501571e3db08d84a4f204b7a732eca18d10e910f"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/candidate_catalogue.csv",
+    "bytes": 1364,
+    "sha256": "3d71da14361b72c06b20ce5d2f8de64ce80522f763b90eacd85a491e3259aae0"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/candidate_catalogue.json",
+    "bytes": 2319,
+    "sha256": "8d751041e2e8fc101cb655468bd315824559044ec2f14de491bf19fbff89f8c6"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/candidate_diagnostics.png",
+    "bytes": 1384079,
+    "sha256": "040ac82ff0c92f9546fcb182d586bc16a19d61d6fb61ed913f7c12501e77e401"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/current_mast_cone.json",
+    "bytes": 45503,
+    "sha256": "96d8726762f61a63388d3ae1da7a00781b76dd699a513d9ddcde0d67e5aab591"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/current_tesscut_coverage.json",
+    "bytes": 699,
+    "sha256": "b42d7d823b070961bbe9df94c70b1a009842899ca72066b33aab386e4e9ff3ce"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/direct_pixel_search.json",
+    "bytes": 7940,
+    "sha256": "a5e1ca50f78b95d2af71c184e960de9aca455f6500d57158a3835b8801a897f7"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/direct_pixel_search.png",
+    "bytes": 314392,
+    "sha256": "ff9ef0f31f553e80d53a90dee8255ad3b3e877785250a5bd0ec658edfc578465"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/direct_pixel_specification.json",
+    "bytes": 888,
+    "sha256": "7acdb4024ad7793673e8660ce334159f6707fc44f7a4ebbbdf45466f78cc1b2c"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/four_event_lightcurves.png",
+    "bytes": 304220,
+    "sha256": "f97de871d03d2d34f9a8fe5b4f28604051e2a1af865c9bafd1192c53beca8ad3"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/injections.json",
+    "bytes": 26171,
+    "sha256": "0ec597b8366bc2d1a4fb0b51af3506b3ab5deba8974e483610c838ea9dc00f34"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/method_notes.json",
+    "bytes": 1515,
+    "sha256": "aeb6ca27c945bc1a79019165b6e6f70af93264c45492334f8d656352f1564d3e"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixel_candidate_comparison.png",
+    "bytes": 472289,
+    "sha256": "70c70dee2cce1b64745d8ae59c3a4d0365863f2546d189c33b4169daa98b961b"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixel_followup.json",
+    "bytes": 28187,
+    "sha256": "61be2e2ac79cc1ab55f9cb319f868e750b12af0fdf4e5c0bd09067b050da7328"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixel_followup_specification.json",
+    "bytes": 1872,
+    "sha256": "014f1b30b09749209ee4f8ba61dddcc3ac92ea091f563e4e4d9f689d380b9924"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0044-4-2_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 3461760,
+    "sha256": "8bbfcfc06a863921610f68ab82d351661da7a8d70ad6ea95df6dc0885a847253"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0045-2-1_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 3643200,
+    "sha256": "17e2cfccc9ef2069e869da9a535c0154ab1a05a47fc6c1afb2d46b8361c5691d"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0071-4-3_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 11468160,
+    "sha256": "c2817ab9568092d3a6ff21e23d32672a5f39bf03ad578ff20f8a4007848fd3f1"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0072-2-4_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 11226240,
+    "sha256": "4d3567b4afd85d2455edd0ede188bd1331c71d5cf6b9f9538df87d561149eb78"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s1751-2-2_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 1952640,
+    "sha256": "3891333493cfd678c641c101e5319a7dd84a827eccb95829f96b9bc6a2390668"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/protocol.json",
+    "bytes": 2473,
+    "sha256": "6056b72d1870d14b19019a257cfab93f8edbdd4cb573e3d16aedff7b327099ad"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/report.txt",
+    "bytes": 7174,
+    "sha256": "d3263b012d034b6e079b78da53cefdd1268e915060a3996a73cc817a08adcf6d"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/search_results.json",
+    "bytes": 52322,
+    "sha256": "a38eb572854d61a5714bd71e7c382aef163a48dedd7cc6511ff53027b2b73464"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector1751_direct_pixel_20min.csv",
+    "bytes": 31021,
+    "sha256": "cd904739a9bbadf263e68c9f321925334079de765a9ae0dcbd55bf505ff7d9e3"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector44_direct_pixel_20min.csv",
+    "bytes": 165708,
+    "sha256": "448383d110652d0461955c23fb607c1d3c9ff478cdc642fdc02c208cda9e57bd"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector45_2534_local_pixel_series.csv",
+    "bytes": 36230,
+    "sha256": "afdeb305acedcd634c2e3c751600a11a7fa7d0c0bf45fc0a0c38f69e3ad7b0e3"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector45_2541_local_pixel_series.csv",
+    "bytes": 24565,
+    "sha256": "07e7e9d30f4cbab1536425a252d563eef07ae03e23cd847ac52801d002eef403"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector45_direct_pixel_20min.csv",
+    "bytes": 158728,
+    "sha256": "cffa51aee28188c7f9e9e9ee44370a506ad140f52f32bcfa783e6684b7918d1f"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector46_2572_local_pixel_series.csv",
+    "bytes": 35706,
+    "sha256": "d27188835500bdd8c60ca76737c645bee05bcb1269291742a3ab645a89626071"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector46_direct_pixel_20min.csv",
+    "bytes": 169257,
+    "sha256": "cf77d65406621958f1567fba74d474fba6019f53f2181f339c13a7a148e5dcb9"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector71_direct_pixel_20min.csv",
+    "bytes": 152663,
+    "sha256": "a448b1a83364bb715f4fd65b13b075ade25f0ba296653e81393e52b82b7f77d5"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector72_3277_local_pixel_series.csv",
+    "bytes": 108440,
+    "sha256": "0a931543222f87928648ed95751acfef202e16bb273f8b70d34bf173dff63e7e"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/sector72_direct_pixel_20min.csv",
+    "bytes": 162488,
+    "sha256": "92c5a3e73ce5917e05309d3724f8b7e33dff0ad56d3ad52617b0e39d39c26c95"
   },
   {
     "path": "results/sky-plates-j0754-followup-20261108/LA04467_x_header.txt",
@@ -4346,8 +4521,8 @@
   },
   {
     "path": "tools/sky-plates/README.md",
-    "bytes": 30161,
-    "sha256": "cc37e0481cd0ea105320bfda6239fea5c45ef15251354b47ac47d4520ffde22b"
+    "bytes": 31055,
+    "sha256": "828abc2b44e73150b1797801fabfe43623761360b5cedd0321f3fdb7c8b64e33"
   },
   {
     "path": "tools/sky-plates/analysis_core.py",
@@ -4570,6 +4745,11 @@
     "sha256": "f413c826f995fcd083265e2e1d2b7e76720ba6ce1cd164cf4e629ffac6020599"
   },
   {
+    "path": "tools/sky-plates/fetch_tess_flare_pixels.py",
+    "bytes": 4076,
+    "sha256": "9e2f4fdf4cd72b959c1e66c887241eba770c67948907f2dbd3b573bd407b172b"
+  },
+  {
     "path": "tools/sky-plates/historical_extension.py",
     "bytes": 21969,
     "sha256": "42bade3cc35b44411280a73e9a667707b12e9556c82ea465d101ae982906f555"
@@ -4670,6 +4850,16 @@
     "sha256": "98f7683a98a83203fe22b0e62a90af5d9296aa9d32b3f0f48487bae66055c542"
   },
   {
+    "path": "tools/sky-plates/search_tess_flares.py",
+    "bytes": 13318,
+    "sha256": "96b6916dd3aa7d1e0f6a5570d09703742dfd6aab37c80591a5ed83069d7564bb"
+  },
+  {
+    "path": "tools/sky-plates/search_tess_pixel_flares.py",
+    "bytes": 4048,
+    "sha256": "276ed79177bea93b4c8fca57c1e376ca56423b740beea477c03e9afc351b3f23"
+  },
+  {
     "path": "tools/sky-plates/spherex_README.md",
     "bytes": 4863,
     "sha256": "26f84f9a3adb4a4de703103b6c5cc7c05e3193b52dabe08807a936048978c9e4"
@@ -4698,6 +4888,11 @@
     "path": "tools/sky-plates/summarize_modern.py",
     "bytes": 6192,
     "sha256": "d10c41558275fda5eaecdc378da5ef7e8fc0ca2c1a6fedd880c6741ed19f8117"
+  },
+  {
+    "path": "tools/sky-plates/summarize_tess_flare_search.py",
+    "bytes": 3785,
+    "sha256": "e448efef6a64fd7ca217659da2d9aa54f98e9c450db06517b25a066a70e448fc"
   },
   {
     "path": "tools/sky-plates/test_analysis.py",
@@ -4795,6 +4990,11 @@
     "sha256": "82293e02991cecef80faf97f14d6cbb4d1d4d1b11cf44c703205f18cfc20985f"
   },
   {
+    "path": "tools/sky-plates/test_search_tess_flares.py",
+    "bytes": 1546,
+    "sha256": "ae0a56940044b214f35204c907b5da1a3a271687d0bb343826232f1f32dd9c33"
+  },
+  {
     "path": "tools/sky-plates/test_spherex_co.py",
     "bytes": 703,
     "sha256": "1ed9a09afa5f2ffeba56fd7852e9968ef265e05c0621321247015d55f2e2d879"
@@ -4823,5 +5023,10 @@
     "path": "tools/sky-plates/test_tess_variability.py",
     "bytes": 6782,
     "sha256": "b61cd942a2112163642ab6eba506f93fba77812496c938d67f70076077cd9b0e"
+  },
+  {
+    "path": "tools/sky-plates/vet_tess_flare_pixels.py",
+    "bytes": 6298,
+    "sha256": "c1f755aefbca7b6d71b214eb2c396169e1c14f00296064d9ee850b5c096c1d59"
   }
 ]

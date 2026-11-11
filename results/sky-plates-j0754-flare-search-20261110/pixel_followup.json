@@ -1,0 +1,889 @@
+{
+  "source_sha256": "c1f755aefbca7b6d71b214eb2c396169e1c14f00296064d9ee850b5c096c1d59",
+  "events": [
+    {
+      "quality_counts": {
+        "before": 43,
+        "event": 11,
+        "after": 43
+      },
+      "sideband_mean_btjd": [
+        2534.2209450396867,
+        2534.561253871198,
+        2534.9015624954495
+      ],
+      "interpolation_after_weight": 0.5000001522586173,
+      "target_wcs_pixel_xy": [
+        3.0452091483992643,
+        3.844197934701209
+      ],
+      "difference_positive_centroid_xy": [
+        2.890966474198998,
+        3.6229592798899133
+      ],
+      "difference_centroid_offset_pixels": 0.2696986186971695,
+      "core_event_fractional_change": 0.00530759883204669,
+      "core_event_fractional_change_definition": "Simple aperture contrast: raw event-minus-sideband difference numerator, divided by background-subtracted reference core flux. Not an event-plane-subtracted precision amplitude.",
+      "stationary_only_fractional_scale": 0.00450685898949309,
+      "stationary_plus_motion_model": {
+        "fractional_stationary_scale": 0.004519014217389075,
+        "derivative_x_coefficient_pixels": 8.197406199431621e-05,
+        "derivative_y_coefficient_pixels": 0.0006461978694114251,
+        "residual_l2_over_difference_l2": 0.26693204641715534
+      },
+      "localization_note": "Positive-excess moment after outer-ring plane subtraction; no formal position/error distribution or PRF-calibrated astrometry. Derivative model is an instrumental-motion sensitivity, not an orbital motion fit.",
+      "sector": 45,
+      "event_window_btjd": [
+        2534.52,
+        2534.6
+      ],
+      "file": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0045-2-1_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "17e2cfccc9ef2069e869da9a535c0154ab1a05a47fc6c1afb2d46b8361c5691d",
+      "sideband_sensitivity": [
+        {
+          "guard_days": 0.1,
+          "side_days": 0.1,
+          "offset_pixels": 0.33096474134681847,
+          "centroid_xy": [
+            2.9587977211133465,
+            3.5247128407622634
+          ],
+          "stationary_scale": 0.0026933311495584973,
+          "scale_with_motion": 0.002703872998774617
+        },
+        {
+          "guard_days": 0.15,
+          "side_days": 0.3,
+          "offset_pixels": 0.2696986186971695,
+          "centroid_xy": [
+            2.890966474198998,
+            3.6229592798899133
+          ],
+          "stationary_scale": 0.00450685898949309,
+          "scale_with_motion": 0.004519014217389075
+        },
+        {
+          "guard_days": 0.3,
+          "side_days": 0.4,
+          "offset_pixels": 0.16248187711823858,
+          "centroid_xy": [
+            2.9243344229289603,
+            3.7356177287042365
+          ],
+          "stationary_scale": 0.005507243311669565,
+          "scale_with_motion": 0.0055166547149794005
+        },
+        {
+          "guard_days": 0.5,
+          "side_days": 0.4,
+          "offset_pixels": 0.08818914776470235,
+          "centroid_xy": [
+            2.971670628959247,
+            3.795521329005714
+          ],
+          "stationary_scale": 0.005696244594044624,
+          "scale_with_motion": 0.0056932949593894696
+        }
+      ],
+      "local_core_border_correlation": -0.12304262421563904,
+      "hourly_positive_moments": [
+        {
+          "btjd": 2534.259142984334,
+          "frames": 6,
+          "relative_core_flux": 0.0005039386705148289,
+          "positive_moment_xy": [
+            2.5005926625358335,
+            3.4468880682955096
+          ]
+        },
+        {
+          "btjd": 2534.300813460398,
+          "frames": 6,
+          "relative_core_flux": 0.00020524724246769507,
+          "positive_moment_xy": [
+            3.0726433243698823,
+            3.0028612728952244
+          ]
+        },
+        {
+          "btjd": 2534.342483933668,
+          "frames": 6,
+          "relative_core_flux": 0.0015375191721399932,
+          "positive_moment_xy": [
+            2.877269598139294,
+            3.0846783194351244
+          ]
+        },
+        {
+          "btjd": 2534.384154404105,
+          "frames": 6,
+          "relative_core_flux": 0.002467251848436547,
+          "positive_moment_xy": [
+            3.0084841358258774,
+            3.601582994405803
+          ]
+        },
+        {
+          "btjd": 2534.425824871671,
+          "frames": 6,
+          "relative_core_flux": 0.0029628186960352445,
+          "positive_moment_xy": [
+            3.0034454971443725,
+            3.473412763623621
+          ]
+        },
+        {
+          "btjd": 2534.467495336365,
+          "frames": 6,
+          "relative_core_flux": 0.0027229898780766204,
+          "positive_moment_xy": [
+            3.1498875351616156,
+            3.5650440443701727
+          ]
+        },
+        {
+          "btjd": 2534.509165798265,
+          "frames": 6,
+          "relative_core_flux": 0.004024795492297469,
+          "positive_moment_xy": [
+            3.1737992615864266,
+            3.526013925112984
+          ]
+        },
+        {
+          "btjd": 2534.5508362572164,
+          "frames": 6,
+          "relative_core_flux": 0.00531904611246133,
+          "positive_moment_xy": [
+            2.98598059281463,
+            3.6018173146383567
+          ]
+        },
+        {
+          "btjd": 2534.5925067131784,
+          "frames": 6,
+          "relative_core_flux": 0.0047640474817351635,
+          "positive_moment_xy": [
+            2.8114650312483835,
+            3.5526142662732725
+          ]
+        },
+        {
+          "btjd": 2534.6341771662314,
+          "frames": 6,
+          "relative_core_flux": 0.002368132704325806,
+          "positive_moment_xy": [
+            3.1001433919243095,
+            3.4823518559561
+          ]
+        },
+        {
+          "btjd": 2534.6758476163736,
+          "frames": 6,
+          "relative_core_flux": 0.0035821739098070107,
+          "positive_moment_xy": [
+            3.0730066626427632,
+            3.352426818417183
+          ]
+        },
+        {
+          "btjd": 2534.7175180635286,
+          "frames": 6,
+          "relative_core_flux": 0.001803460799422248,
+          "positive_moment_xy": [
+            2.6383998753261775,
+            3.4003902379623114
+          ]
+        },
+        {
+          "btjd": 2534.7591885075385,
+          "frames": 6,
+          "relative_core_flux": 0.001084124574040816,
+          "positive_moment_xy": [
+            2.7639548721886382,
+            3.3583080043375135
+          ]
+        },
+        {
+          "btjd": 2534.800858948562,
+          "frames": 6,
+          "relative_core_flux": 0.00013703545095172798,
+          "positive_moment_xy": [
+            2.6348279186330488,
+            3.142236900074813
+          ]
+        },
+        {
+          "btjd": 2534.842529386558,
+          "frames": 6,
+          "relative_core_flux": 0.0016506590066851883,
+          "positive_moment_xy": [
+            2.9870733522209254,
+            3.3555741814164834
+          ]
+        }
+      ],
+      "note": "Post-screen follow-up. White cross is target WCS; black plus is positive excess moment. Large offsets undermine target association. Positive-moment centroids have noise bias and no formal calibrated error."
+    },
+    {
+      "quality_counts": {
+        "before": 23,
+        "event": 11,
+        "after": 43
+      },
+      "sideband_mean_btjd": [
+        2541.0687719764437,
+        2541.339629767513,
+        2541.679938139108
+      ],
+      "interpolation_after_weight": 0.44318191617261676,
+      "target_wcs_pixel_xy": [
+        3.0452091483992643,
+        3.844197934701209
+      ],
+      "difference_positive_centroid_xy": [
+        2.8930854462080045,
+        3.722947496882017
+      ],
+      "difference_centroid_offset_pixels": 0.1945335175226134,
+      "core_event_fractional_change": -0.021379918613439353,
+      "core_event_fractional_change_definition": "Simple aperture contrast: raw event-minus-sideband difference numerator, divided by background-subtracted reference core flux. Not an event-plane-subtracted precision amplitude.",
+      "stationary_only_fractional_scale": 0.005546897011931351,
+      "stationary_plus_motion_model": {
+        "fractional_stationary_scale": 0.005551350215959778,
+        "derivative_x_coefficient_pixels": -0.00030153931611598406,
+        "derivative_y_coefficient_pixels": 0.0008671463911721355,
+        "residual_l2_over_difference_l2": 0.036078383679598675
+      },
+      "localization_note": "Positive-excess moment after outer-ring plane subtraction; no formal position/error distribution or PRF-calibrated astrometry. Derivative model is an instrumental-motion sensitivity, not an orbital motion fit.",
+      "sector": 45,
+      "event_window_btjd": [
+        2541.3,
+        2541.38
+      ],
+      "file": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0045-2-1_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "17e2cfccc9ef2069e869da9a535c0154ab1a05a47fc6c1afb2d46b8361c5691d",
+      "sideband_sensitivity": [
+        {
+          "guard_days": 0.1,
+          "side_days": 0.1,
+          "offset_pixels": 0.19684531847839107,
+          "centroid_xy": [
+            2.9545530509725406,
+            3.669470857789199
+          ],
+          "stationary_scale": 0.004696972720806782,
+          "scale_with_motion": 0.0047038700923180896
+        },
+        {
+          "guard_days": 0.15,
+          "side_days": 0.3,
+          "offset_pixels": 0.1945335175226134,
+          "centroid_xy": [
+            2.8930854462080045,
+            3.722947496882017
+          ],
+          "stationary_scale": 0.005546897011931351,
+          "scale_with_motion": 0.005551350215959778
+        },
+        {
+          "guard_days": 0.3,
+          "side_days": 0.4,
+          "error": "Insufficient event/sideband quality frames"
+        },
+        {
+          "guard_days": 0.5,
+          "side_days": 0.4,
+          "error": "Insufficient event/sideband quality frames"
+        }
+      ],
+      "local_core_border_correlation": 0.2560463030493026,
+      "hourly_positive_moments": [
+        {
+          "btjd": 2541.037519149989,
+          "frames": 6,
+          "relative_core_flux": -8.37069586976195e-05,
+          "positive_moment_xy": [
+            3.326783642090673,
+            3.2142209508266517
+          ]
+        },
+        {
+          "btjd": 2541.0791895865505,
+          "frames": 6,
+          "relative_core_flux": 3.591314396352482e-05,
+          "positive_moment_xy": [
+            2.6242632925447675,
+            2.9950998509203224
+          ]
+        },
+        {
+          "btjd": 2541.1208600210557,
+          "frames": 6,
+          "relative_core_flux": -0.0007623793617195784,
+          "positive_moment_xy": [
+            3.0980163510419443,
+            2.95887941075812
+          ]
+        },
+        {
+          "btjd": 2541.1625304535037,
+          "frames": 6,
+          "relative_core_flux": -0.0006278522392658322,
+          "positive_moment_xy": [
+            2.796299421368212,
+            3.150317887694819
+          ]
+        },
+        {
+          "btjd": 2541.2042008838957,
+          "frames": 6,
+          "relative_core_flux": 0.0008946450883918581,
+          "positive_moment_xy": [
+            2.7499627153093322,
+            3.6073842260161797
+          ]
+        },
+        {
+          "btjd": 2541.2458713120745,
+          "frames": 6,
+          "relative_core_flux": -0.0005688612162292513,
+          "positive_moment_xy": [
+            2.9254251488865397,
+            2.712414628005521
+          ]
+        },
+        {
+          "btjd": 2541.2875417381974,
+          "frames": 6,
+          "relative_core_flux": 0.004571427667498851,
+          "positive_moment_xy": [
+            2.9339048895947335,
+            3.621130010755275
+          ]
+        },
+        {
+          "btjd": 2541.3292121620702,
+          "frames": 6,
+          "relative_core_flux": 0.006602529502376979,
+          "positive_moment_xy": [
+            2.967191957444942,
+            3.706499418233502
+          ]
+        },
+        {
+          "btjd": 2541.3708825838858,
+          "frames": 6,
+          "relative_core_flux": 0.005892003572364968,
+          "positive_moment_xy": [
+            2.9143345704920036,
+            3.755074798287694
+          ]
+        },
+        {
+          "btjd": 2541.4125530034894,
+          "frames": 6,
+          "relative_core_flux": 0.0047125140508306185,
+          "positive_moment_xy": [
+            2.870506751438892,
+            3.46060791414833
+          ]
+        },
+        {
+          "btjd": 2541.4542234209202,
+          "frames": 6,
+          "relative_core_flux": 0.0025027794286038483,
+          "positive_moment_xy": [
+            2.869141937253204,
+            3.5939514254225737
+          ]
+        },
+        {
+          "btjd": 2541.495893836178,
+          "frames": 6,
+          "relative_core_flux": 0.0017657666655362947,
+          "positive_moment_xy": [
+            2.7421873202404545,
+            3.403315256809048
+          ]
+        },
+        {
+          "btjd": 2541.5375642492627,
+          "frames": 6,
+          "relative_core_flux": 0.0031552484721355154,
+          "positive_moment_xy": [
+            3.1054425319134644,
+            3.607833404674204
+          ]
+        },
+        {
+          "btjd": 2541.579234660135,
+          "frames": 6,
+          "relative_core_flux": 0.0016899605119754153,
+          "positive_moment_xy": [
+            2.7323558042066898,
+            3.3486630090742953
+          ]
+        },
+        {
+          "btjd": 2541.620905068757,
+          "frames": 6,
+          "relative_core_flux": 0.0007808970769117018,
+          "positive_moment_xy": [
+            2.832698179394718,
+            3.2739847238387427
+          ]
+        }
+      ],
+      "note": "Post-screen follow-up. White cross is target WCS; black plus is positive excess moment. Large offsets undermine target association. Positive-moment centroids have noise bias and no formal calibrated error."
+    },
+    {
+      "quality_counts": {
+        "before": 43,
+        "event": 16,
+        "after": 40
+      },
+      "sideband_mean_btjd": [
+        2571.72407277999,
+        2572.0817252013185,
+        2572.4497943763317
+      ],
+      "interpolation_after_weight": 0.49282317507346995,
+      "target_wcs_pixel_xy": [
+        3.640447326499661,
+        3.803402221084406
+      ],
+      "difference_positive_centroid_xy": [
+        3.5112114382842106,
+        3.6824876308580543
+      ],
+      "difference_centroid_offset_pixels": 0.17698093946084414,
+      "core_event_fractional_change": 0.02243720619653382,
+      "core_event_fractional_change_definition": "Simple aperture contrast: raw event-minus-sideband difference numerator, divided by background-subtracted reference core flux. Not an event-plane-subtracted precision amplitude.",
+      "stationary_only_fractional_scale": 0.02020284600118218,
+      "stationary_plus_motion_model": {
+        "fractional_stationary_scale": 0.020159147667826657,
+        "derivative_x_coefficient_pixels": 0.0008506050150137862,
+        "derivative_y_coefficient_pixels": 0.0010113018596135046,
+        "residual_l2_over_difference_l2": 0.17249250971759916
+      },
+      "localization_note": "Positive-excess moment after outer-ring plane subtraction; no formal position/error distribution or PRF-calibrated astrometry. Derivative model is an instrumental-motion sensitivity, not an orbital motion fit.",
+      "sector": 46,
+      "event_window_btjd": [
+        2572.0260444438954,
+        2572.1371604654987
+      ],
+      "file": "results/sky-plates-j0754-physical-tests-20261108/tess/pixels/tess-s0046-1-4_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "eecd25f2b6387ca9bd1881384e43cf16ab76ccf7490a2e1562e098a5413d465e",
+      "sideband_sensitivity": [
+        {
+          "guard_days": 0.1,
+          "side_days": 0.1,
+          "offset_pixels": 0.195999144945275,
+          "centroid_xy": [
+            3.5074740500352157,
+            3.6594099554393753
+          ],
+          "stationary_scale": 0.018257282371543268,
+          "scale_with_motion": 0.01820906078747518
+        },
+        {
+          "guard_days": 0.15,
+          "side_days": 0.3,
+          "offset_pixels": 0.17698093946084414,
+          "centroid_xy": [
+            3.5112114382842106,
+            3.6824876308580543
+          ],
+          "stationary_scale": 0.02020284600118218,
+          "scale_with_motion": 0.020159147667826657
+        },
+        {
+          "guard_days": 0.3,
+          "side_days": 0.4,
+          "offset_pixels": 0.1730143886617501,
+          "centroid_xy": [
+            3.530430460691209,
+            3.6698721947918744
+          ],
+          "stationary_scale": 0.02135628330179235,
+          "scale_with_motion": 0.02132025235086011
+        },
+        {
+          "guard_days": 0.5,
+          "side_days": 0.4,
+          "offset_pixels": 0.15534710436169605,
+          "centroid_xy": [
+            3.5378128689313715,
+            3.686787938283256
+          ],
+          "stationary_scale": 0.02197653184844951,
+          "scale_with_motion": 0.021936639157594195
+        }
+      ],
+      "local_core_border_correlation": 0.4077622582411713,
+      "hourly_positive_moments": [
+        {
+          "btjd": 2571.7831028208107,
+          "frames": 6,
+          "relative_core_flux": -0.0020775822744741324,
+          "positive_moment_xy": [
+            3.0175556142951043,
+            2.9121987024741203
+          ]
+        },
+        {
+          "btjd": 2571.824771074305,
+          "frames": 6,
+          "relative_core_flux": -0.0003957335404166466,
+          "positive_moment_xy": [
+            3.1559310653332067,
+            3.2637861671644424
+          ]
+        },
+        {
+          "btjd": 2571.866439323763,
+          "frames": 6,
+          "relative_core_flux": -0.003326625925201776,
+          "positive_moment_xy": [
+            2.9739299061676885,
+            3.0025954137529336
+          ]
+        },
+        {
+          "btjd": 2571.9081075669365,
+          "frames": 6,
+          "relative_core_flux": -0.0030409907594752075,
+          "positive_moment_xy": [
+            2.8552519242148184,
+            2.9179879112338587
+          ]
+        },
+        {
+          "btjd": 2571.94977579707,
+          "frames": 6,
+          "relative_core_flux": -0.001958159340903265,
+          "positive_moment_xy": [
+            3.0424105650314988,
+            3.1800770633572886
+          ]
+        },
+        {
+          "btjd": 2571.9914440345765,
+          "frames": 6,
+          "relative_core_flux": 0.002481152073436762,
+          "positive_moment_xy": [
+            3.2594513819672555,
+            3.362635630309801
+          ]
+        },
+        {
+          "btjd": 2572.0331122682805,
+          "frames": 6,
+          "relative_core_flux": 0.017093133681672274,
+          "positive_moment_xy": [
+            3.491021491289016,
+            3.656897360727257
+          ]
+        },
+        {
+          "btjd": 2572.074780497716,
+          "frames": 6,
+          "relative_core_flux": 0.02334869595506739,
+          "positive_moment_xy": [
+            3.5252800001581575,
+            3.671930878684263
+          ]
+        },
+        {
+          "btjd": 2572.116448723426,
+          "frames": 6,
+          "relative_core_flux": 0.020088370706532837,
+          "positive_moment_xy": [
+            3.4680954257958723,
+            3.68538245422354
+          ]
+        },
+        {
+          "btjd": 2572.1581169450237,
+          "frames": 6,
+          "relative_core_flux": 0.015347757774491858,
+          "positive_moment_xy": [
+            3.5067625870462864,
+            3.545487238255207
+          ]
+        },
+        {
+          "btjd": 2572.199785162506,
+          "frames": 6,
+          "relative_core_flux": 0.013711273067095853,
+          "positive_moment_xy": [
+            3.4729238032323306,
+            3.62864595681111
+          ]
+        },
+        {
+          "btjd": 2572.241453376109,
+          "frames": 6,
+          "relative_core_flux": 0.009172549765974777,
+          "positive_moment_xy": [
+            3.455260179465394,
+            3.613499878117335
+          ]
+        },
+        {
+          "btjd": 2572.2727045337697,
+          "frames": 3,
+          "relative_core_flux": 0.007994473339102562,
+          "positive_moment_xy": [
+            3.5089003626080832,
+            3.570812003621398
+          ]
+        },
+        {
+          "btjd": 2572.32826214159,
+          "frames": 5,
+          "relative_core_flux": 0.004386444636132536,
+          "positive_moment_xy": [
+            3.502038136571431,
+            3.4931141042019584
+          ]
+        },
+        {
+          "btjd": 2572.3664579927035,
+          "frames": 6,
+          "relative_core_flux": 0.003020460195508168,
+          "positive_moment_xy": [
+            3.656693304077065,
+            3.6187398892372267
+          ]
+        }
+      ],
+      "note": "Post-screen follow-up. White cross is target WCS; black plus is positive excess moment. Large offsets undermine target association. Positive-moment centroids have noise bias and no formal calibrated error."
+    },
+    {
+      "quality_counts": {
+        "before": 129,
+        "event": 78,
+        "after": 129
+      },
+      "sideband_mean_btjd": [
+        3277.000085586706,
+        3277.3901611053407,
+        3277.7802364419163
+      ],
+      "interpolation_after_weight": 0.5000001166819278,
+      "target_wcs_pixel_xy": [
+        3.479851864214324,
+        3.2853662019407075
+      ],
+      "difference_positive_centroid_xy": [
+        3.389383888149733,
+        3.337706848432014
+      ],
+      "difference_centroid_offset_pixels": 0.10451793132449258,
+      "core_event_fractional_change": 0.002840325783013804,
+      "core_event_fractional_change_definition": "Simple aperture contrast: raw event-minus-sideband difference numerator, divided by background-subtracted reference core flux. Not an event-plane-subtracted precision amplitude.",
+      "stationary_only_fractional_scale": 0.00674923780438652,
+      "stationary_plus_motion_model": {
+        "fractional_stationary_scale": 0.006746755903485037,
+        "derivative_x_coefficient_pixels": 0.0003613431481622187,
+        "derivative_y_coefficient_pixels": -0.001088238482599705,
+        "residual_l2_over_difference_l2": 0.10651723744950592
+      },
+      "localization_note": "Positive-excess moment after outer-ring plane subtraction; no formal position/error distribution or PRF-calibrated astrometry. Derivative model is an instrumental-motion sensitivity, not an orbital motion fit.",
+      "sector": 72,
+      "event_window_btjd": [
+        3277.3,
+        3277.48
+      ],
+      "file": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0072-2-4_118.691174_16.694621_7x7_astrocut.fits",
+      "sha256": "4d3567b4afd85d2455edd0ede188bd1331c71d5cf6b9f9538df87d561149eb78",
+      "sideband_sensitivity": [
+        {
+          "guard_days": 0.1,
+          "side_days": 0.1,
+          "offset_pixels": 0.04955009204190546,
+          "centroid_xy": [
+            3.4321830179041575,
+            3.298889985169487
+          ],
+          "stationary_scale": 0.005133165738326156,
+          "scale_with_motion": 0.005135286213099257
+        },
+        {
+          "guard_days": 0.15,
+          "side_days": 0.3,
+          "offset_pixels": 0.10451793132449258,
+          "centroid_xy": [
+            3.389383888149733,
+            3.337706848432014
+          ],
+          "stationary_scale": 0.00674923780438652,
+          "scale_with_motion": 0.006746755903485037
+        },
+        {
+          "guard_days": 0.3,
+          "side_days": 0.4,
+          "offset_pixels": 0.10707289894547513,
+          "centroid_xy": [
+            3.3840910196344622,
+            3.3332667899740445
+          ],
+          "stationary_scale": 0.0073503163880369845,
+          "scale_with_motion": 0.0073538909290808
+        },
+        {
+          "guard_days": 0.5,
+          "side_days": 0.4,
+          "offset_pixels": 0.2003399647375797,
+          "centroid_xy": [
+            3.292595566395437,
+            3.3565784227895126
+          ],
+          "stationary_scale": 0.0070524234224155396,
+          "scale_with_motion": 0.00705035421184636
+        }
+      ],
+      "local_core_border_correlation": 0.24114725617818125,
+      "hourly_positive_moments": [
+        {
+          "btjd": 3277.089212652004,
+          "frames": 18,
+          "relative_core_flux": 8.167365298187044e-05,
+          "positive_moment_xy": [
+            2.856739870477604,
+            3.3018135631027152
+          ]
+        },
+        {
+          "btjd": 3277.130882444072,
+          "frames": 18,
+          "relative_core_flux": 0.0005177913132121434,
+          "positive_moment_xy": [
+            3.2803369075294895,
+            3.445819891539791
+          ]
+        },
+        {
+          "btjd": 3277.1725522342263,
+          "frames": 18,
+          "relative_core_flux": 0.001351944217461598,
+          "positive_moment_xy": [
+            3.125278558582406,
+            3.2541302472298916
+          ]
+        },
+        {
+          "btjd": 3277.214222022453,
+          "frames": 18,
+          "relative_core_flux": 0.0012670876639778233,
+          "positive_moment_xy": [
+            3.2654101976394823,
+            3.06086841197828
+          ]
+        },
+        {
+          "btjd": 3277.2558918087916,
+          "frames": 18,
+          "relative_core_flux": 0.0031684143705852743,
+          "positive_moment_xy": [
+            3.3363997441152375,
+            3.4143774041917423
+          ]
+        },
+        {
+          "btjd": 3277.2975615931123,
+          "frames": 18,
+          "relative_core_flux": 0.0036309837063379833,
+          "positive_moment_xy": [
+            3.3118396451158048,
+            3.401279167496343
+          ]
+        },
+        {
+          "btjd": 3277.3392313755057,
+          "frames": 18,
+          "relative_core_flux": 0.005044011832825681,
+          "positive_moment_xy": [
+            3.3219897023948546,
+            3.1828676865652534
+          ]
+        },
+        {
+          "btjd": 3277.380901155919,
+          "frames": 18,
+          "relative_core_flux": 0.0076732349802035825,
+          "positive_moment_xy": [
+            3.503817944681379,
+            3.289530775591576
+          ]
+        },
+        {
+          "btjd": 3277.4225709343164,
+          "frames": 18,
+          "relative_core_flux": 0.0072997476955154956,
+          "positive_moment_xy": [
+            3.3554054988618054,
+            3.4530938339120647
+          ]
+        },
+        {
+          "btjd": 3277.46424071063,
+          "frames": 18,
+          "relative_core_flux": 0.007342202981095262,
+          "positive_moment_xy": [
+            3.284455257595687,
+            3.2899921618719907
+          ]
+        },
+        {
+          "btjd": 3277.505910484926,
+          "frames": 18,
+          "relative_core_flux": 0.004102632430405841,
+          "positive_moment_xy": [
+            3.5665868385784547,
+            3.1928730568788732
+          ]
+        },
+        {
+          "btjd": 3277.547580257152,
+          "frames": 18,
+          "relative_core_flux": 0.00434218582485749,
+          "positive_moment_xy": [
+            3.3247835161729156,
+            3.210442487008739
+          ]
+        },
+        {
+          "btjd": 3277.5892500272703,
+          "frames": 18,
+          "relative_core_flux": 0.0032104305001205546,
+          "positive_moment_xy": [
+            3.177881480386518,
+            3.3103689398526335
+          ]
+        },
+        {
+          "btjd": 3277.630919795332,
+          "frames": 18,
+          "relative_core_flux": 0.0024681518976774064,
+          "positive_moment_xy": [
+            3.2097624453072,
+            3.1416400153508635
+          ]
+        },
+        {
+          "btjd": 3277.6725895612326,
+          "frames": 18,
+          "relative_core_flux": 0.0013401312605119428,
+          "positive_moment_xy": [
+            3.3586352224604292,
+            2.9049465376396952
+          ]
+        }
+      ],
+      "note": "Post-screen follow-up. White cross is target WCS; black plus is positive excess moment. Large offsets undermine target association. Positive-moment centroids have noise bias and no formal calibrated error."
+    }
+  ]
+}

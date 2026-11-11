@@ -1,0 +1,5 @@
+{
+  "scope": "Post-candidate expansion authorized by Kyle. Obtain remaining S44/S71/S1751 7x7 pixels and run same gap-aware threshold screen on direct aperture flux, bypassing processed QLP/SPOC flattening.",
+  "method": "Core radius1.5pixels centered at target WCS; subtract outer-ring median times core pixel count; require q=0, finite full pixel frames, positive core flux; normalize each interval separately. Same two-day median, native+20minute search as saved protocol. Report candidate centroid/sideband diagnostics where enough frames exist.",
+  "limitations": "Direct aperture has different quality exclusions and more instrumental drift than processed products. Threshold detections alone are not additional flares. Same photons, not independent replication. Existing lightcurve injection completeness does not validate this additional pixel extraction or upstream pipeline."
+}

@@ -1,5 +1,24 @@
 # Historical sky plates
 
+## Expanded TESS flare search
+
+The maintained source is now this standalone public repository. From its root:
+
+```bash
+python -B tools/sky-plates/search_tess_flares.py --injections
+python -B tools/sky-plates/fetch_tess_flare_pixels.py --sectors 44,45,71,72,1751
+python -B tools/sky-plates/search_tess_pixel_flares.py
+python -B tools/sky-plates/vet_tess_flare_pixels.py
+python -B tools/sky-plates/summarize_tess_flare_search.py
+```
+
+The fetch step requires public MAST access and reuses cached files. Other steps
+are offline. Results/protocols are in `results/sky-plates-j0754-flare-search-20261110`.
+The threshold screen, native-time injections, direct-aperture cross-check and
+post-screen pixel follow-up are distinct stages. The search finds three new
+source-centered candidates; screen hits are not automatically stellar flares.
+These commands regenerate that exploratory result directory.
+
 ## J0754 review report
 
 `build_review_report.py` produces the compact scientific-review packet from

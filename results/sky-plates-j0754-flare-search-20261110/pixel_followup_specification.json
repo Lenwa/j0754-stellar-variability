@@ -1,0 +1,9 @@
+{
+  "scope_change": "After the existing-data screen Kyle authorized additional public TESS data retrieval. Fetch S45 and S72 calibrated 7x7 pixels, refresh MAST and TESSCut inventory. These are post-screen tests, not preregistered blind discovery.",
+  "events": {"S45": [2541.30,2541.38], "S46_reference": [2572.0260444438954,2572.1371604654987], "S72": [3277.30,3277.48]},
+  "windows": "Windows selected to contain strong screen excursions. Primary: guard0.3d/side0.4d; sensitivity guard0.15d/side0.3d and guard0.5d/side0.4d. QUALITY=0 with finite pixel frames; interpolate before/after images to event mean time.",
+  "test": "Use existing pixel_difference routine unchanged. Outer-ring plane removal; compare positive difference centroid to Gaia WCS target; compare stationary source-shape scaling with gradient motion terms; plot all three events side by side. Hourly moments are descriptive, not precision astrometry.",
+  "weakening": "An excess spatially displaced from target, background structure, or motion dependence weakens attribution to a J0754 flare even if aperture lightcurve looks convincing.",
+  "quality_count_amendment_before_pixel_flux_results": "Initial primary guard0.3/side0.4 fails for S45: only2 quality-retained before frames (need3); guard0.5 gives0. Use already-declared guard0.15/side0.3 for all3 events (S45 before23/event11/after43). Add narrow guard0.1/side0.1 sensitivity; retain wider-window failures explicitly. Choice based on available-frame counts, not centroid/flux results.",
+  "direct_search_followup_amendment": "The new all-sector direct-aperture search also flags S45 BTJD2534.56, away from quality boundaries and with source-centered excess. Add event window2534.52..2534.60 to the same diagnostics. This is post hoc candidate selection; retain all other direct-screen hits, including failures, in direct_pixel_search.json."
+}

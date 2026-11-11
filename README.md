@@ -12,6 +12,13 @@ measured results, model-dependent quantities and open hypotheses. This work has
 not been peer reviewed. The star and its historical variability were reported
 by [Tang et al. (2010)](https://arxiv.org/abs/1001.1395).
 
+**10 November follow-up:** an expanded TESS search finds three additional
+source-centered flare-like candidates (16 and 22 November 2021; 28 November
+2023), alongside the original December 2021 event. Five new calibrated pixel
+cutouts, the complete search hits, injection trials and rejected excursions
+are included. See the [search report](results/sky-plates-j0754-flare-search-20261110/report.txt)
+and [four-event comparison](results/sky-plates-j0754-flare-search-20261110/four_event_lightcurves.png).
+
 ## What is here
 
 | Area | Tools and methods |
@@ -42,7 +49,7 @@ python -m pip install -r requirements.txt
 python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
 ```
 
-The publication snapshot passes **147 numerical tests**. Tests cover model
+The current snapshot passes **151 numerical tests** (147 in the initial release). Tests cover model
 integration, injections, nuisance projection, period/alias behavior, covariance,
 pixel reductions and failure cases; they do not substitute for independent
 scientific review. No credentials are required for these offline tests.

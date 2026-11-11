@@ -1,0 +1,920 @@
+[
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 0,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 0,
+    "well_sampled_recovery_fraction": 0.0,
+    "all_time_recovery_fraction": 0.0,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.12563667284771668,
+      0.9924867326919167,
+      1.0607518319281146
+    ]
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 20,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.8333333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.12563667284771668,
+      0.9924867326919167,
+      1.0607518319281146
+    ]
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.12563667284771668,
+      0.9924867326919167,
+      1.0607518319281146
+    ]
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 12,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 12,
+    "well_sampled_recovery_fraction": 0.631578947368421,
+    "all_time_recovery_fraction": 0.5,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.22710725883765887,
+      0.9942999495054807,
+      1.0034460546328816
+    ]
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.22710725883765887,
+      0.9942999495054807,
+      1.0034460546328816
+    ]
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.22710725883765887,
+      0.9942999495054807,
+      1.0034460546328816
+    ]
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 18,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 17,
+    "well_sampled_recovery_fraction": 0.85,
+    "all_time_recovery_fraction": 0.75,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.25821859196167884,
+      0.9860403822576196,
+      1.0001695469871201
+    ]
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.25821859196167884,
+      0.9860403822576196,
+      1.0001695469871201
+    ]
+  },
+  {
+    "key": "QLP_S44_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.25821859196167884,
+      0.9860403822576196,
+      1.0001695469871201
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 1,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 1,
+    "well_sampled_recovery_fraction": 0.05263157894736842,
+    "all_time_recovery_fraction": 0.041666666666666664,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.742461758484782,
+      0.935553966048465,
+      1.019811973680182
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.742461758484782,
+      0.935553966048465,
+      1.019811973680182
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.742461758484782,
+      0.935553966048465,
+      1.019811973680182
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 11,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 10,
+    "well_sampled_recovery_fraction": 0.47619047619047616,
+    "all_time_recovery_fraction": 0.4583333333333333,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6093894421020691,
+      0.8981088351965102,
+      0.9373676349691548
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 21,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6093894421020691,
+      0.8981088351965102,
+      0.9373676349691548
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 21,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6093894421020691,
+      0.8981088351965102,
+      0.9373676349691548
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 19,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 17,
+    "well_sampled_recovery_fraction": 0.85,
+    "all_time_recovery_fraction": 0.7916666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45036895421962253,
+      0.8986722344385731,
+      0.9206550150982138
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45036895421962253,
+      0.8986722344385731,
+      0.9206550150982138
+    ]
+  },
+  {
+    "key": "QLP_S45_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45036895421962253,
+      0.8986722344385731,
+      0.9206550150982138
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 1,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 1,
+    "well_sampled_recovery_fraction": 0.05263157894736842,
+    "all_time_recovery_fraction": 0.041666666666666664,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.21837524964470142,
+      0.9354516156350163,
+      1.0050179725217334
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.21837524964470142,
+      0.9354516156350163,
+      1.0050179725217334
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.21837524964470142,
+      0.9354516156350163,
+      1.0050179725217334
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 13,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 13,
+    "well_sampled_recovery_fraction": 0.6190476190476191,
+    "all_time_recovery_fraction": 0.5416666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.3336844796599302,
+      0.901728254597036,
+      0.9413041593153891
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 21,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.3336844796599302,
+      0.901728254597036,
+      0.9413041593153891
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 21,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.3336844796599302,
+      0.901728254597036,
+      0.9413041593153891
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 15,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 13,
+    "well_sampled_recovery_fraction": 0.6842105263157895,
+    "all_time_recovery_fraction": 0.625,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45205752121926,
+      0.8872672039139846,
+      0.9248633323694399
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45205752121926,
+      0.8872672039139846,
+      0.9248633323694399
+    ]
+  },
+  {
+    "key": "QLP_S46_KSPSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45205752121926,
+      0.8872672039139846,
+      0.9248633323694399
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 1,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 1,
+    "well_sampled_recovery_fraction": 0.05263157894736842,
+    "all_time_recovery_fraction": 0.041666666666666664,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.0,
+      0.9982530407597182,
+      1.0036751338146686
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 10,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 10,
+    "well_sampled_recovery_fraction": 0.5263157894736842,
+    "all_time_recovery_fraction": 0.4166666666666667,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.0,
+      0.9982530407597182,
+      1.0036751338146686
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 19,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.7916666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.0,
+      0.9982530407597182,
+      1.0036751338146686
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 5,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 5,
+    "well_sampled_recovery_fraction": 0.2631578947368421,
+    "all_time_recovery_fraction": 0.20833333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.00030087567808747206,
+      0.9980293900366561,
+      1.000168868232215
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 19,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.7916666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.00030087567808747206,
+      0.9980293900366561,
+      1.000168868232215
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 19,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 19,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.7916666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.00030087567808747206,
+      0.9980293900366561,
+      1.000168868232215
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 8,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 18,
+    "new_recoveries_well_sampled": 7,
+    "well_sampled_recovery_fraction": 0.3888888888888889,
+    "all_time_recovery_fraction": 0.3333333333333333,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.023938266936664284,
+      0.9947984261526658,
+      0.9999835748291704
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 19,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 18,
+    "new_recoveries_well_sampled": 18,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.7916666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.023938266936664284,
+      0.9947984261526658,
+      0.9999835748291704
+    ]
+  },
+  {
+    "key": "QLP_S71_DET_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 19,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 18,
+    "new_recoveries_well_sampled": 18,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.7916666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.023938266936664284,
+      0.9947984261526658,
+      0.9999835748291704
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 0,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 0,
+    "well_sampled_recovery_fraction": 0.0,
+    "all_time_recovery_fraction": 0.0,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45624842523172615,
+      0.9985527664920653,
+      1.0030658370458059
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 18,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 17,
+    "well_sampled_recovery_fraction": 0.85,
+    "all_time_recovery_fraction": 0.75,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45624842523172615,
+      0.9985527664920653,
+      1.0030658370458059
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.45624842523172615,
+      0.9985527664920653,
+      1.0030658370458059
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 11,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 11,
+    "well_sampled_recovery_fraction": 0.55,
+    "all_time_recovery_fraction": 0.4583333333333333,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.48195898788197755,
+      0.9984921654831767,
+      1.0000502772608482
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.48195898788197755,
+      0.9984921654831767,
+      1.0000502772608482
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.48195898788197755,
+      0.9984921654831767,
+      1.0000502772608482
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 14,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 12,
+    "well_sampled_recovery_fraction": 0.6,
+    "all_time_recovery_fraction": 0.5833333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.5824908476843054,
+      0.9956153407136872,
+      0.9999717307389817
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.5824908476843054,
+      0.9956153407136872,
+      0.9999717307389817
+    ]
+  },
+  {
+    "key": "QLP_S72_DET_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 22,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 20,
+    "new_recoveries_well_sampled": 20,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9166666666666666,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.5824908476843054,
+      0.9956153407136872,
+      0.9999717307389817
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 5,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 23,
+    "new_recoveries_well_sampled": 5,
+    "well_sampled_recovery_fraction": 0.21739130434782608,
+    "all_time_recovery_fraction": 0.20833333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.9605394189661733,
+      0.9990487430591184,
+      1.003849105206158
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 23,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 23,
+    "new_recoveries_well_sampled": 23,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9583333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.9605394189661733,
+      0.9990487430591184,
+      1.003849105206158
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 0.5,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 23,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 23,
+    "new_recoveries_well_sampled": 23,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9583333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.9605394189661733,
+      0.9990487430591184,
+      1.003849105206158
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 21,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 19,
+    "well_sampled_recovery_fraction": 0.9047619047619048,
+    "all_time_recovery_fraction": 0.875,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6300089434794728,
+      0.999839963118101,
+      1.0001704302768335
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 23,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 21,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9583333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6300089434794728,
+      0.999839963118101,
+      1.0001704302768335
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 2.0,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 23,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 21,
+    "new_recoveries_well_sampled": 21,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 0.9583333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6300089434794728,
+      0.999839963118101,
+      1.0001704302768335
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.005,
+    "trials": 24,
+    "new_recoveries": 23,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 18,
+    "new_recoveries_well_sampled": 17,
+    "well_sampled_recovery_fraction": 0.9444444444444444,
+    "all_time_recovery_fraction": 0.9583333333333334,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6088950783766629,
+      0.993947143240169,
+      1.000024682053163
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.01,
+    "trials": 24,
+    "new_recoveries": 24,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 18,
+    "new_recoveries_well_sampled": 18,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 1.0,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6088950783766629,
+      0.993947143240169,
+      1.000024682053163
+    ]
+  },
+  {
+    "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+    "fwhm_hours": 4.6,
+    "amplitude_fractional": 0.025,
+    "trials": 24,
+    "new_recoveries": 24,
+    "preexisting_matches": 0,
+    "at_least_80percent_profile_sampled": 18,
+    "new_recoveries_well_sampled": 18,
+    "well_sampled_recovery_fraction": 1.0,
+    "all_time_recovery_fraction": 1.0,
+    "sampled_integral_fraction_p10_p50_p90": [
+      0.6088950783766629,
+      0.993947143240169,
+      1.000024682053163
+    ]
+  }
+]

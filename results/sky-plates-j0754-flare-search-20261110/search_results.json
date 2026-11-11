@@ -1,0 +1,1696 @@
+{
+  "scope": "Offline search of existing light curves; no new data retrieved.",
+  "inventory": [
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000018878735_tess_v01_llc.fits",
+      "sha256": "a42aa17a746c4f0326cd875803525510ab869fff2969930d349ac56fc61245da",
+      "sector": 44,
+      "provider": "QLP",
+      "columns": [
+        {
+          "name": "TIME",
+          "unit": "BJD-2457000, days"
+        },
+        {
+          "name": "CADENCENO",
+          "unit": null
+        },
+        {
+          "name": "SAP_FLUX",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_ERR",
+          "unit": null
+        },
+        {
+          "name": "QUALITY",
+          "unit": null
+        },
+        {
+          "name": "ORBITID",
+          "unit": null
+        },
+        {
+          "name": "SAP_X",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_Y",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_BKG",
+          "unit": null
+        },
+        {
+          "name": "SAP_BKG_ERR",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_SML",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_LAG",
+          "unit": null
+        }
+      ],
+      "rows": 3278,
+      "quality_counts": {
+        "4096": 440,
+        "0": 2821,
+        "32": 12,
+        "164": 3,
+        "128": 1,
+        "4260": 1
+      },
+      "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+      "pipeline_version": null,
+      "bjdref": 2457000
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000018878735_tess_v01_llc.fits",
+      "sha256": "5e1a239cfb1779f7c7265abf0c2be04f4712be0c9c3c4eba5429a62a3f37a83e",
+      "sector": 45,
+      "provider": "QLP",
+      "columns": [
+        {
+          "name": "TIME",
+          "unit": "BJD-2457000, days"
+        },
+        {
+          "name": "CADENCENO",
+          "unit": null
+        },
+        {
+          "name": "SAP_FLUX",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_ERR",
+          "unit": null
+        },
+        {
+          "name": "QUALITY",
+          "unit": null
+        },
+        {
+          "name": "ORBITID",
+          "unit": null
+        },
+        {
+          "name": "SAP_X",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_Y",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_BKG",
+          "unit": null
+        },
+        {
+          "name": "SAP_BKG_ERR",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_SML",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_LAG",
+          "unit": null
+        }
+      ],
+      "rows": 3450,
+      "quality_counts": {
+        "4096": 310,
+        "6144": 26,
+        "4224": 2,
+        "22656": 2,
+        "0": 2811,
+        "2048": 244,
+        "164": 2,
+        "18560": 20,
+        "128": 12,
+        "2176": 8,
+        "18432": 6,
+        "2080": 1,
+        "32": 6
+      },
+      "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+      "pipeline_version": null,
+      "bjdref": 2457000
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000018878735_tess_v01_llc.fits",
+      "sha256": "e37fe3dfdbffaffdff4450e28c0accd8b11cd2bee1decb37904e8b11d7a04f78",
+      "sector": 46,
+      "provider": "QLP",
+      "columns": [
+        {
+          "name": "TIME",
+          "unit": "BJD-2457000, days"
+        },
+        {
+          "name": "CADENCENO",
+          "unit": null
+        },
+        {
+          "name": "SAP_FLUX",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_ERR",
+          "unit": null
+        },
+        {
+          "name": "QUALITY",
+          "unit": null
+        },
+        {
+          "name": "ORBITID",
+          "unit": null
+        },
+        {
+          "name": "SAP_X",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_Y",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_BKG",
+          "unit": null
+        },
+        {
+          "name": "SAP_BKG_ERR",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_SML",
+          "unit": null
+        },
+        {
+          "name": "KSPSAP_FLUX_LAG",
+          "unit": null
+        }
+      ],
+      "rows": 3707,
+      "quality_counts": {
+        "4096": 429,
+        "6144": 24,
+        "22656": 7,
+        "4224": 3,
+        "22528": 2,
+        "0": 2891,
+        "2048": 236,
+        "128": 43,
+        "164": 2,
+        "18560": 39,
+        "18432": 11,
+        "2176": 10,
+        "32": 6,
+        "18592": 1,
+        "4128": 1,
+        "129": 2
+      },
+      "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+      "pipeline_version": null,
+      "bjdref": 2457000
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0071-0000000018878735_tess_v01_llc.fits",
+      "sha256": "c07c3343d8156b2cd48c97ade930a8fad0d167e6f4ab6e59474bb141c824b3a2",
+      "sector": 71,
+      "provider": "QLP",
+      "columns": [
+        {
+          "name": "TIME",
+          "unit": "BJD-2457000, days"
+        },
+        {
+          "name": "CADENCENO",
+          "unit": null
+        },
+        {
+          "name": "SAP_FLUX",
+          "unit": null
+        },
+        {
+          "name": "DET_FLUX",
+          "unit": null
+        },
+        {
+          "name": "DET_FLUX_ERR",
+          "unit": null
+        },
+        {
+          "name": "QUALITY",
+          "unit": null
+        },
+        {
+          "name": "ORBITID",
+          "unit": null
+        },
+        {
+          "name": "SAP_X",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_Y",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_BKG",
+          "unit": null
+        },
+        {
+          "name": "SAP_BKG_ERR",
+          "unit": null
+        },
+        {
+          "name": "DET_FLUX_SML",
+          "unit": null
+        },
+        {
+          "name": "DET_FLUX_LAG",
+          "unit": null
+        },
+        {
+          "name": "SYS_RM_FLUX",
+          "unit": null
+        }
+      ],
+      "rows": 10932,
+      "quality_counts": {
+        "1073741996": 1,
+        "1073741988": 1,
+        "1073741984": 2,
+        "1073741952": 40,
+        "1073741824": 840,
+        "1073743872": 730,
+        "1073760256": 652,
+        "2048": 538,
+        "0": 8121,
+        "1073741864": 1,
+        "32": 3,
+        "1073741992": 2,
+        "1073741856": 1
+      },
+      "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+      "pipeline_version": null,
+      "bjdref": 2457000
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0072-0000000018878735_tess_v01_llc.fits",
+      "sha256": "ac8ae83aabd8a7bd3f60de3fbad7cd73a7a7df3d7b6b01d44deb7c7b5b186fed",
+      "sector": 72,
+      "provider": "QLP",
+      "columns": [
+        {
+          "name": "TIME",
+          "unit": "BJD-2457000, days"
+        },
+        {
+          "name": "CADENCENO",
+          "unit": null
+        },
+        {
+          "name": "SAP_FLUX",
+          "unit": null
+        },
+        {
+          "name": "DET_FLUX",
+          "unit": null
+        },
+        {
+          "name": "DET_FLUX_ERR",
+          "unit": null
+        },
+        {
+          "name": "QUALITY",
+          "unit": null
+        },
+        {
+          "name": "ORBITID",
+          "unit": null
+        },
+        {
+          "name": "SAP_X",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_Y",
+          "unit": "pixel"
+        },
+        {
+          "name": "SAP_BKG",
+          "unit": null
+        },
+        {
+          "name": "SAP_BKG_ERR",
+          "unit": null
+        },
+        {
+          "name": "DET_FLUX_SML",
+          "unit": null
+        },
+        {
+          "name": "DET_FLUX_LAG",
+          "unit": null
+        },
+        {
+          "name": "SYS_RM_FLUX",
+          "unit": null
+        }
+      ],
+      "rows": 10701,
+      "quality_counts": {
+        "1073741992": 2,
+        "1073741856": 3,
+        "1073741824": 576,
+        "1073744000": 1,
+        "1073743872": 471,
+        "1073760256": 640,
+        "0": 9001,
+        "1073741864": 1,
+        "32": 2,
+        "1073741952": 1,
+        "40": 1,
+        "128": 2
+      },
+      "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+      "pipeline_version": null,
+      "bjdref": 2457000
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0071_tess_v1_lc.fits",
+      "sha256": "d4a7a5510b2918430fc8ce9cbbb7f44b075af39cc28bc5d1a6b86cf40e54ab08",
+      "sector": 71,
+      "provider": "TESS-SPOC",
+      "columns": [
+        {
+          "name": "TIME",
+          "unit": "BJD - 2457000, days"
+        },
+        {
+          "name": "TIMECORR",
+          "unit": "d"
+        },
+        {
+          "name": "CADENCENO",
+          "unit": null
+        },
+        {
+          "name": "SAP_FLUX",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_FLUX_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_BKG",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_BKG_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "PDCSAP_FLUX",
+          "unit": "e-/s"
+        },
+        {
+          "name": "PDCSAP_FLUX_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "QUALITY",
+          "unit": null
+        },
+        {
+          "name": "PSF_CENTR1",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR1_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR2",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR2_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR1",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR1_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR2",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR2_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "POS_CORR1",
+          "unit": "pixels"
+        },
+        {
+          "name": "POS_CORR2",
+          "unit": "pixels"
+        }
+      ],
+      "rows": 11205,
+      "quality_counts": {
+        "172": 1,
+        "164": 1,
+        "160": 5,
+        "128": 40,
+        "4096": 1450,
+        "16384": 644,
+        "0": 8772,
+        "8": 273,
+        "32": 4,
+        "32768": 14,
+        "512": 1
+      },
+      "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+      "pipeline_version": "spoc-5.0.103-20231116",
+      "bjdref": 2457000
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s0072_tess_v1_lc.fits",
+      "sha256": "71faa71d960e2b17745ee914d896bbfb19296641af94e94e3f4ffbba024f2f45",
+      "sector": 72,
+      "provider": "TESS-SPOC",
+      "columns": [
+        {
+          "name": "TIME",
+          "unit": "BJD - 2457000, days"
+        },
+        {
+          "name": "TIMECORR",
+          "unit": "d"
+        },
+        {
+          "name": "CADENCENO",
+          "unit": null
+        },
+        {
+          "name": "SAP_FLUX",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_FLUX_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_BKG",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_BKG_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "PDCSAP_FLUX",
+          "unit": "e-/s"
+        },
+        {
+          "name": "PDCSAP_FLUX_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "QUALITY",
+          "unit": null
+        },
+        {
+          "name": "PSF_CENTR1",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR1_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR2",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR2_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR1",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR1_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR2",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR2_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "POS_CORR1",
+          "unit": "pixels"
+        },
+        {
+          "name": "POS_CORR2",
+          "unit": "pixels"
+        }
+      ],
+      "rows": 10975,
+      "quality_counts": {
+        "168": 1,
+        "32": 5,
+        "4096": 1406,
+        "128": 4,
+        "16384": 630,
+        "0": 8436,
+        "32768": 217,
+        "8": 273,
+        "160": 3
+      },
+      "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+      "pipeline_version": "spoc-5.0.104-20240131",
+      "bjdref": 2457000
+    },
+    {
+      "file": "hlsp_tess-spoc_tess_phot_0000000018878735-s1751_tess_v1_lc.fits",
+      "sha256": "d8f3cdcc8a206f2413a8a220ccd1e577a0b3079b67534c0c9bab778f387e637d",
+      "sector": 1751,
+      "provider": "TESS-SPOC",
+      "columns": [
+        {
+          "name": "TIME",
+          "unit": "BJD - 2457000, days"
+        },
+        {
+          "name": "TIMECORR",
+          "unit": "d"
+        },
+        {
+          "name": "CADENCENO",
+          "unit": null
+        },
+        {
+          "name": "SAP_FLUX",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_FLUX_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_BKG",
+          "unit": "e-/s"
+        },
+        {
+          "name": "SAP_BKG_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "PDCSAP_FLUX",
+          "unit": "e-/s"
+        },
+        {
+          "name": "PDCSAP_FLUX_ERR",
+          "unit": "e-/s"
+        },
+        {
+          "name": "QUALITY",
+          "unit": null
+        },
+        {
+          "name": "PSF_CENTR1",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR1_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR2",
+          "unit": "pixel"
+        },
+        {
+          "name": "PSF_CENTR2_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR1",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR1_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR2",
+          "unit": "pixel"
+        },
+        {
+          "name": "MOM_CENTR2_ERR",
+          "unit": "pixel"
+        },
+        {
+          "name": "POS_CORR1",
+          "unit": "pixels"
+        },
+        {
+          "name": "POS_CORR2",
+          "unit": "pixels"
+        }
+      ],
+      "rows": 3131,
+      "quality_counts": {
+        "8": 92,
+        "4096": 220,
+        "32768": 101,
+        "2": 1205,
+        "128": 1,
+        "0": 1502,
+        "160": 1,
+        "32": 9
+      },
+      "data_kind": "Extracted aperture/processed lightcurve; no raw telescope pixel time series analyzed.",
+      "pipeline_version": "spoc-5.0.125-20250926",
+      "bjdref": 2457000
+    }
+  ],
+  "products": [
+    {
+      "key": "QLP_S44_KSPSAP_FLUX",
+      "sector": 44,
+      "provider": "QLP",
+      "metadata": {
+        "raw_rows": 3278,
+        "accepted_rows": 2821,
+        "rejected_rows": 457,
+        "quality_zero_count": 2821,
+        "native_error_column": "KSPSAP_FLUX_ERR",
+        "median_relative_native_error": 0.001300644758970982,
+        "native_normalization_median": 1.0000059604644775,
+        "first_btjd": 2500.7042365250722,
+        "last_btjd": 2524.1926591058395,
+        "median_cadence_seconds": 600.0595248362515,
+        "all_finite_positive_flux_robust_scatter": 0.0013485600020886875,
+        "quality_zero_native_robust_scatter": 0.0013042427882982814,
+        "no_amplitude_clipping": true
+      },
+      "exposure_days": 19.59218936716661,
+      "noise_20min": 0.0009164276712201002,
+      "events": [],
+      "negative_events": []
+    },
+    {
+      "key": "QLP_S45_KSPSAP_FLUX",
+      "sector": 45,
+      "provider": "QLP",
+      "metadata": {
+        "raw_rows": 3450,
+        "accepted_rows": 2811,
+        "rejected_rows": 639,
+        "quality_zero_count": 2811,
+        "native_error_column": "KSPSAP_FLUX_ERR",
+        "median_relative_native_error": 0.0012529683781436502,
+        "native_normalization_median": 1.0000057220458984,
+        "first_btjd": 2526.0400547935556,
+        "last_btjd": 2550.5838175148815,
+        "median_cadence_seconds": 600.0518764150911,
+        "all_finite_positive_flux_robust_scatter": 0.0013679573938900165,
+        "quality_zero_native_robust_scatter": 0.0012513098641783321,
+        "no_amplitude_clipping": true
+      },
+      "exposure_days": 19.52245133780798,
+      "noise_20min": 0.0009074454467047394,
+      "events": [
+        {
+          "start_index": 885,
+          "stop_index": 888,
+          "peak_index": 886,
+          "peak_btjd": 2541.3365665419324,
+          "peak_residual": 0.006590447861969828,
+          "peak_noise_units": 7.262638085740706,
+          "points": 3,
+          "method": "20min",
+          "start_btjd": 2541.3226764542815,
+          "stop_btjd": 2541.3504566289616,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "date_utc": "2021-11-22T20:03:30.166",
+          "baseline_days_peak_residual": {
+            "1.0": 0.006728431825074321,
+            "2.0": 0.006590447861969828,
+            "3.0": 0.0064268042461152475
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": -1587.0098876953125,
+              "local_side_MAD_units": -0.5552147869328005,
+              "flux_correlation": 0.013348239845835582
+            },
+            "SAP_X": {
+              "event_minus_side_median": 0.000244140625,
+              "local_side_MAD_units": 0.17986420252709207,
+              "flux_correlation": 0.22386212881685522
+            },
+            "SAP_Y": {
+              "event_minus_side_median": -0.000732421875,
+              "local_side_MAD_units": -0.1974119296029059,
+              "flux_correlation": 0.1540358484865176
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S45_SAP_FLUX": {
+              "maximum_residual": 0.008937043376535447,
+              "median_residual": 0.00415692517731403
+            },
+            "KSPSAP_FLUX_SML": {
+              "maximum_residual": 0.005059540271759033,
+              "median_residual": 0.001779511570930481
+            },
+            "KSPSAP_FLUX_LAG": {
+              "maximum_residual": 0.00795318542253759,
+              "median_residual": 0.002264168824295143
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 4.917091631814401,
+          "flagged_native_rows_within_6h": 7,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        }
+      ],
+      "negative_events": []
+    },
+    {
+      "key": "QLP_S46_KSPSAP_FLUX",
+      "sector": 46,
+      "provider": "QLP",
+      "metadata": {
+        "raw_rows": 3707,
+        "accepted_rows": 2891,
+        "rejected_rows": 816,
+        "quality_zero_count": 2891,
+        "native_error_column": "KSPSAP_FLUX_ERR",
+        "median_relative_native_error": 0.0012645288161053751,
+        "native_normalization_median": 1.0000097751617432,
+        "first_btjd": 2552.8686818700176,
+        "last_btjd": 2578.6547533461617,
+        "median_cadence_seconds": 600.0325773384247,
+        "all_finite_positive_flux_robust_scatter": 0.0013550941624973372,
+        "quality_zero_native_robust_scatter": 0.0012569604074057373,
+        "no_amplitude_clipping": true
+      },
+      "exposure_days": 20.077359793347114,
+      "noise_20min": 0.0009255940408813638,
+      "events": [
+        {
+          "start_index": 1143,
+          "stop_index": 1157,
+          "peak_index": 1147,
+          "peak_btjd": 2572.0677129551395,
+          "peak_residual": 0.016155234011508313,
+          "peak_noise_units": 17.453908839046836,
+          "points": 14,
+          "method": "20min",
+          "start_btjd": 2572.0121549395003,
+          "stop_btjd": 2572.1927184656515,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "date_utc": "2021-12-23T13:36:21.216",
+          "baseline_days_peak_residual": {
+            "1.0": 0.015815595164441587,
+            "2.0": 0.016155234011508313,
+            "3.0": 0.01611738543205188
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": 24.355003356933594,
+              "local_side_MAD_units": 0.5354376999001306,
+              "flux_correlation": 0.0017892699347895463
+            },
+            "SAP_X": {
+              "event_minus_side_median": -0.000152587890625,
+              "local_side_MAD_units": -0.11629151025458538,
+              "flux_correlation": -0.3217498021024145
+            },
+            "SAP_Y": {
+              "event_minus_side_median": 0.0006103515625,
+              "local_side_MAD_units": 0.6744907594765952,
+              "flux_correlation": 0.280600729268511
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S46_SAP_FLUX": {
+              "maximum_residual": 0.024418072292102577,
+              "median_residual": 0.01984610583424884
+            },
+            "KSPSAP_FLUX_SML": {
+              "maximum_residual": 0.015969237698011673,
+              "median_residual": 0.011479268878259674
+            },
+            "KSPSAP_FLUX_LAG": {
+              "maximum_residual": 0.016865282299671436,
+              "median_residual": 0.011457397563613136
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 5.083556934539956,
+          "flagged_native_rows_within_6h": 12,
+          "existing_event": true,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        }
+      ],
+      "negative_events": [
+        {
+          "start_index": 1136,
+          "stop_index": 1142,
+          "peak_index": 1138,
+          "peak_btjd": 2571.9461797865665,
+          "peak_residual": 0.004702939314720156,
+          "peak_noise_units": 5.0809956708903945,
+          "points": 6,
+          "method": "20min",
+          "start_btjd": 2571.914928395258,
+          "stop_btjd": 2571.9843759287887,
+          "methods": [
+            "20min"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "QLP_S71_DET_FLUX",
+      "sector": 71,
+      "provider": "QLP",
+      "metadata": {
+        "raw_rows": 10932,
+        "accepted_rows": 8121,
+        "rejected_rows": 2811,
+        "quality_zero_count": 8121,
+        "native_error_column": "DET_FLUX_ERR",
+        "median_relative_native_error": 0.002452049678612798,
+        "native_normalization_median": 1.0000125169754028,
+        "first_btjd": 3235.532997227427,
+        "last_btjd": 3259.463571499623,
+        "median_cadence_seconds": 200.01978552536457,
+        "all_finite_positive_flux_robust_scatter": 0.002786796592039707,
+        "quality_zero_native_robust_scatter": 0.0024191826326637285,
+        "no_amplitude_clipping": true
+      },
+      "exposure_days": 18.800432607720268,
+      "noise_20min": 0.0010397901228466552,
+      "events": [],
+      "negative_events": []
+    },
+    {
+      "key": "QLP_S72_DET_FLUX",
+      "sector": 72,
+      "provider": "QLP",
+      "metadata": {
+        "raw_rows": 10701,
+        "accepted_rows": 9001,
+        "rejected_rows": 1700,
+        "quality_zero_count": 9001,
+        "native_error_column": "DET_FLUX_ERR",
+        "median_relative_native_error": 0.00233605955657599,
+        "native_normalization_median": 1.0000362396240234,
+        "first_btjd": 3261.875829489431,
+        "last_btjd": 3285.5490413619086,
+        "median_cadence_seconds": 200.01612823907635,
+        "all_finite_positive_flux_robust_scatter": 0.0027096747706971997,
+        "quality_zero_native_robust_scatter": 0.0023357071334161174,
+        "no_amplitude_clipping": true
+      },
+      "exposure_days": 20.83726164163454,
+      "noise_20min": 0.0009180557668751994,
+      "events": [],
+      "negative_events": []
+    },
+    {
+      "key": "TESS-SPOC_S71_PDCSAP_FLUX",
+      "sector": 71,
+      "provider": "TESS-SPOC",
+      "metadata": {
+        "raw_rows": 11205,
+        "accepted_rows": 8772,
+        "rejected_rows": 2433,
+        "quality_zero_count": 8772,
+        "native_error_column": "PDCSAP_FLUX_ERR",
+        "median_relative_native_error": 0.0017909444532998784,
+        "native_normalization_median": 4475.46240234375,
+        "first_btjd": 3235.7482740572345,
+        "last_btjd": 3259.3964137066678,
+        "median_cadence_seconds": 200.0198071153136,
+        "all_finite_positive_flux_robust_scatter": 0.0025906586337153714,
+        "quality_zero_native_robust_scatter": 0.0025903351248949408,
+        "no_amplitude_clipping": true
+      },
+      "exposure_days": 20.30752755488129,
+      "noise_20min": 0.0006916749512637621,
+      "events": [
+        {
+          "start_index": 0,
+          "stop_index": 3,
+          "peak_index": 0,
+          "peak_btjd": 3235.754061671303,
+          "peak_residual": 0.004818656169904493,
+          "peak_noise_units": 6.966648367271805,
+          "points": 3,
+          "method": "20min",
+          "start_btjd": 3235.754061671303,
+          "stop_btjd": 3235.7818422196488,
+          "methods": [
+            "20min"
+          ],
+          "date_utc": "2023-10-18T06:04:41.746",
+          "baseline_days_peak_residual": {
+            "1.0": 0.005227969962513744,
+            "2.0": 0.004818656169904493,
+            "3.0": 0.005033641375147455
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": 703.440388997396,
+              "local_side_MAD_units": 3.758790056280578,
+              "flux_correlation": 0.08062014755094733
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": -0.004372438204654827,
+              "local_side_MAD_units": -2.577204507524938,
+              "flux_correlation": -0.035259608477467036
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": 0.0002095335605645232,
+              "local_side_MAD_units": 0.5544485448403412,
+              "flux_correlation": -0.12657048749088515
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": -0.004984122233660552,
+              "local_side_MAD_units": -3.2596550346394753,
+              "flux_correlation": -0.0877024663366467
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": 0.0003759401539961682,
+              "local_side_MAD_units": 0.7249620263402948,
+              "flux_correlation": -0.23666425903450333
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S71_SAP_FLUX": {
+              "maximum_residual": 0.003430315852760577,
+              "median_residual": 0.0015641221756504363
+            },
+            "QLP_S71_DET_FLUX": {
+              "maximum_residual": 0.0022346723508123224,
+              "median_residual": 0.00010139119870553509
+            },
+            "TESS-SPOC_S71_SAP_FLUX": {
+              "maximum_residual": 0.0021913882193678735,
+              "median_residual": 0.0007245472246448954
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 0.13890273764627636,
+          "flagged_native_rows_within_6h": 105,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        },
+        {
+          "start_index": 65,
+          "stop_index": 68,
+          "peak_index": 67,
+          "peak_btjd": 3236.684710662818,
+          "peak_residual": 0.003466402320145538,
+          "peak_noise_units": 5.01160597736272,
+          "points": 3,
+          "method": "20min",
+          "start_btjd": 3236.656930081734,
+          "stop_btjd": 3236.684710662818,
+          "methods": [
+            "20min"
+          ],
+          "date_utc": "2023-10-19T04:24:49.819",
+          "baseline_days_peak_residual": {
+            "1.0": 0.003021975913874468,
+            "2.0": 0.003466402320145538,
+            "3.0": 0.0036823876257258323
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": -19.567799886067633,
+              "local_side_MAD_units": -0.3638800756716724,
+              "flux_correlation": -0.3020950594047158
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": 0.0005892040983326297,
+              "local_side_MAD_units": 0.15272026814308848,
+              "flux_correlation": 0.20990696517901017
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": 0.0008612645651737694,
+              "local_side_MAD_units": 0.19658222582165544,
+              "flux_correlation": -0.17223457379794715
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": 0.00011791521683335304,
+              "local_side_MAD_units": 0.02338450649684473,
+              "flux_correlation": 0.21381907006531142
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": 0.00013352185487744417,
+              "local_side_MAD_units": 0.026001932938217537,
+              "flux_correlation": -0.1550503012649409
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S71_SAP_FLUX": {
+              "maximum_residual": 0.0014304774955780052,
+              "median_residual": -0.00033301670684349194
+            },
+            "QLP_S71_DET_FLUX": {
+              "maximum_residual": 0.001182839369996358,
+              "median_residual": -0.00021403263329348535
+            },
+            "TESS-SPOC_S71_SAP_FLUX": {
+              "maximum_residual": 0.0022690014965957364,
+              "median_residual": 0.0007549411038637981
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 22.47447853400081,
+          "flagged_native_rows_within_6h": 0,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        },
+        {
+          "start_index": 754,
+          "stop_index": 772,
+          "peak_index": 756,
+          "peak_btjd": 3249.28317379882,
+          "peak_residual": 0.007464267051374374,
+          "peak_noise_units": 10.791582140912261,
+          "points": 18,
+          "method": "20min",
+          "start_btjd": 3249.260023359928,
+          "stop_btjd": 3249.4915277660766,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "date_utc": "2023-10-31T18:46:37.034",
+          "baseline_days_peak_residual": {
+            "1.0": 0.005171473385275285,
+            "2.0": 0.007464267051374374,
+            "3.0": 0.0071005760177903395
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": 1159.2811889648438,
+              "local_side_MAD_units": 9.12691150645516,
+              "flux_correlation": 0.9296159814758893
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": -0.0028129678566983785,
+              "local_side_MAD_units": -3.467073841126911,
+              "flux_correlation": -0.3942216546081544
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": 0.0034014274801847932,
+              "local_side_MAD_units": 3.611106523312207,
+              "flux_correlation": 0.717903788933195
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": -0.0038197465861837063,
+              "local_side_MAD_units": -3.472946639230779,
+              "flux_correlation": -0.8661731050280153
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": 0.004730911925435059,
+              "local_side_MAD_units": 2.3207243778298334,
+              "flux_correlation": 0.7752804601684559
+            }
+          },
+          "alternate_reductions": {
+            "TESS-SPOC_S71_SAP_FLUX": {
+              "maximum_residual": -0.0007634209934807012,
+              "median_residual": -0.001794479440413629
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 0.5833910593937617,
+          "flagged_native_rows_within_6h": 97,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        },
+        {
+          "start_index": 1034,
+          "stop_index": 1051,
+          "peak_index": 1041,
+          "peak_btjd": 3253.2418992950447,
+          "peak_residual": 0.005049188389482372,
+          "peak_noise_units": 7.2999439697172495,
+          "points": 17,
+          "method": "20min",
+          "start_btjd": 3253.1427383089817,
+          "stop_btjd": 3253.3657540580302,
+          "methods": [
+            "20min"
+          ],
+          "date_utc": "2023-11-04T17:47:10.917",
+          "baseline_days_peak_residual": {
+            "1.0": 0.0027679413363689478,
+            "2.0": 0.005049188389482372,
+            "3.0": 0.009381250286165025
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": -3.0839029947917425,
+              "local_side_MAD_units": -1.2629277952405318,
+              "flux_correlation": -0.6243658767260464
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": 0.0015672130248276517,
+              "local_side_MAD_units": 1.03705282137302,
+              "flux_correlation": 0.5723269342492935
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": -0.003058325080019131,
+              "local_side_MAD_units": -0.5472841756516331,
+              "flux_correlation": -0.024640524263130015
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": 0.0003609998772541659,
+              "local_side_MAD_units": 0.18394423123654305,
+              "flux_correlation": 0.20845930245201905
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": -0.00439071203581989,
+              "local_side_MAD_units": -0.6902373613995108,
+              "flux_correlation": -0.03653934654442383
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S71_SAP_FLUX": {
+              "maximum_residual": 0.0011186620398292895,
+              "median_residual": -0.0003952467637348021
+            },
+            "QLP_S71_DET_FLUX": {
+              "maximum_residual": 0.001289942608995398,
+              "median_residual": -0.00037052515286514764
+            },
+            "TESS-SPOC_S71_SAP_FLUX": {
+              "maximum_residual": 0.0026437814692382524,
+              "median_residual": 0.0015786826294386003
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 2.2502212826912,
+          "flagged_native_rows_within_6h": 24,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        },
+        {
+          "start_index": 1447,
+          "stop_index": 1470,
+          "peak_index": 1468,
+          "peak_btjd": 3259.3813661171885,
+          "peak_residual": 0.010618938096371117,
+          "peak_noise_units": 15.35249769703126,
+          "points": 23,
+          "method": "20min",
+          "start_btjd": 3259.0896742270156,
+          "stop_btjd": 3259.3929411860327,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "date_utc": "2023-11-10T21:08:00.850",
+          "baseline_days_peak_residual": {
+            "1.0": 0.006611608779222511,
+            "2.0": 0.010618938096371117,
+            "3.0": 0.009514572752953549
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": 622.8696899414062,
+              "local_side_MAD_units": 951.2936323851028,
+              "flux_correlation": 0.6258914112489846
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": -0.003450240730217047,
+              "local_side_MAD_units": -2.809010076206307,
+              "flux_correlation": -0.8805685072593696
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": -0.0037858314362892997,
+              "local_side_MAD_units": -2.180408327708552,
+              "flux_correlation": -0.6416564081345993
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": -0.0049024352338165045,
+              "local_side_MAD_units": -3.060896146405315,
+              "flux_correlation": -0.916843919980155
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": -0.004954040050506592,
+              "local_side_MAD_units": -2.127831783785379,
+              "flux_correlation": -0.6737132298638477
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S71_SAP_FLUX": {
+              "maximum_residual": 0.0033019846154724117,
+              "median_residual": 0.0004884542316963966
+            },
+            "QLP_S71_DET_FLUX": {
+              "maximum_residual": 0.0014274041004065374,
+              "median_residual": -0.0007782779074692436
+            },
+            "TESS-SPOC_S71_SAP_FLUX": {
+              "maximum_residual": 0.0012347986700740159,
+              "median_residual": 0.0003508547615954094
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 0.3611421475034149,
+          "flagged_native_rows_within_6h": 101,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        }
+      ],
+      "negative_events": [
+        {
+          "start_index": 318,
+          "stop_index": 328,
+          "peak_index": 318,
+          "peak_btjd": 3240.171175419948,
+          "peak_residual": 0.003600961274623893,
+          "peak_noise_units": 5.206146713921853,
+          "points": 10,
+          "method": "20min",
+          "start_btjd": 3240.171175419948,
+          "stop_btjd": 3240.296188087121,
+          "methods": [
+            "20min"
+          ]
+        },
+        {
+          "start_index": 342,
+          "stop_index": 350,
+          "peak_index": 342,
+          "peak_btjd": 3240.7140544628355,
+          "peak_residual": 0.004365685270024029,
+          "peak_noise_units": 6.311758524791838,
+          "points": 8,
+          "method": "20min",
+          "start_btjd": 3240.7140544628355,
+          "stop_btjd": 3240.8101289938713,
+          "methods": [
+            "20min"
+          ]
+        },
+        {
+          "start_index": 1409,
+          "stop_index": 1415,
+          "peak_index": 1413,
+          "peak_btjd": 3258.617410392106,
+          "peak_residual": 0.0047445760103713526,
+          "peak_noise_units": 6.859545805009302,
+          "points": 6,
+          "method": "20min",
+          "start_btjd": 3258.561849876854,
+          "stop_btjd": 3258.631300518926,
+          "methods": [
+            "20min"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TESS-SPOC_S72_PDCSAP_FLUX",
+      "sector": 72,
+      "provider": "TESS-SPOC",
+      "metadata": {
+        "raw_rows": 10975,
+        "accepted_rows": 8435,
+        "rejected_rows": 2540,
+        "quality_zero_count": 8436,
+        "native_error_column": "PDCSAP_FLUX_ERR",
+        "median_relative_native_error": 0.0017017346958756827,
+        "native_normalization_median": 4652.04833984375,
+        "first_btjd": 3262.584206255512,
+        "last_btjd": 3285.586058449969,
+        "median_cadence_seconds": 200.01602225383976,
+        "all_finite_positive_flux_robust_scatter": 0.005285910450863157,
+        "quality_zero_native_robust_scatter": 0.005285910450863157,
+        "no_amplitude_clipping": true
+      },
+      "exposure_days": 19.52696459251547,
+      "noise_20min": 0.0008778305942833879,
+      "events": [
+        {
+          "start_index": 0,
+          "stop_index": 13,
+          "peak_index": 3,
+          "peak_btjd": 3262.631664356131,
+          "peak_residual": 0.006981376686212014,
+          "peak_noise_units": 7.95298857396423,
+          "points": 13,
+          "method": "20min",
+          "start_btjd": 3262.5899938286807,
+          "stop_btjd": 3262.7566759386314,
+          "methods": [
+            "20min"
+          ],
+          "date_utc": "2023-11-14T03:08:26.618",
+          "baseline_days_peak_residual": {
+            "1.0": 0.004391249304418069,
+            "2.0": 0.006981376686212014,
+            "3.0": 0.008817397970099153
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": 246.70503743489576,
+              "local_side_MAD_units": 4.152873597132667,
+              "flux_correlation": 0.7569696232975064
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": 0.0015482746105135448,
+              "local_side_MAD_units": 1.2555430793347686,
+              "flux_correlation": 0.5497884087167111
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": -0.0018953928583869128,
+              "local_side_MAD_units": -1.994558448798285,
+              "flux_correlation": -0.11313838079954244
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": 0.0017255459388252343,
+              "local_side_MAD_units": 1.970074203528439,
+              "flux_correlation": 0.4921638501334505
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": -0.0029791525254646914,
+              "local_side_MAD_units": -2.488647431699612,
+              "flux_correlation": -0.24212809970286042
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S72_SAP_FLUX": {
+              "maximum_residual": 0.0027043466451959113,
+              "median_residual": -0.0006266353891625684
+            },
+            "QLP_S72_DET_FLUX": {
+              "maximum_residual": 0.002917591299880923,
+              "median_residual": -5.369687193445179e-05
+            },
+            "TESS-SPOC_S72_SAP_FLUX": {
+              "maximum_residual": 0.0016415796548781927,
+              "median_residual": 4.710125350452458e-06
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 1.1389944148504583,
+          "flagged_native_rows_within_6h": 87,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        },
+        {
+          "start_index": 721,
+          "stop_index": 729,
+          "peak_index": 727,
+          "peak_btjd": 3272.882555115653,
+          "peak_residual": 0.0055403392007994014,
+          "peak_noise_units": 6.311399075037054,
+          "points": 8,
+          "method": "20min",
+          "start_btjd": 3272.7992154991784,
+          "stop_btjd": 3272.8964450523526,
+          "methods": [
+            "20min"
+          ],
+          "date_utc": "2023-11-24T09:09:43.579",
+          "baseline_days_peak_residual": {
+            "1.0": 0.003909130809978309,
+            "2.0": 0.0055403392007994014,
+            "3.0": 0.007306229387291456
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": 168.73384602864598,
+              "local_side_MAD_units": 233.6560966433278,
+              "flux_correlation": -0.20015759171557007
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": 0.003793592871488727,
+              "local_side_MAD_units": 2.932892581101974,
+              "flux_correlation": 0.36548355289904455
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": -0.0028433855250113993,
+              "local_side_MAD_units": -3.4859406888784825,
+              "flux_correlation": 0.3695607748996333
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": 0.0035408169796937727,
+              "local_side_MAD_units": 3.571359680045758,
+              "flux_correlation": 0.4954576736385855
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": -0.0033173843500359608,
+              "local_side_MAD_units": -3.3206082956576126,
+              "flux_correlation": 0.4457569742161206
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S72_SAP_FLUX": {
+              "maximum_residual": 0.006104303296537421,
+              "median_residual": -0.0002149543250881394
+            },
+            "QLP_S72_DET_FLUX": {
+              "maximum_residual": 0.0018238062337523897,
+              "median_residual": 0.00022551593500243677
+            },
+            "TESS-SPOC_S72_SAP_FLUX": {
+              "maximum_residual": 0.0005414188120113999,
+              "median_residual": -0.0002985717349907694
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 0.8611760863022937,
+          "flagged_native_rows_within_6h": 36,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        },
+        {
+          "start_index": 827,
+          "stop_index": 841,
+          "peak_index": 834,
+          "peak_btjd": 3277.396803982739,
+          "peak_residual": 0.009715194971972985,
+          "peak_noise_units": 11.067277713080768,
+          "points": 14,
+          "method": "20min",
+          "start_btjd": 3277.299573987924,
+          "stop_btjd": 3277.480143971043,
+          "methods": [
+            "20min",
+            "native"
+          ],
+          "date_utc": "2023-11-28T21:30:14.681",
+          "baseline_days_peak_residual": {
+            "1.0": 0.008946551846893486,
+            "2.0": 0.009715194971972985,
+            "3.0": 0.009747942643293372
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": -12.675506591797102,
+              "local_side_MAD_units": -0.13396433334461433,
+              "flux_correlation": -0.1850943383958704
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": -0.00031415921500865807,
+              "local_side_MAD_units": -0.2287761621431087,
+              "flux_correlation": 0.12893095703105378
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": 0.0004968748794453859,
+              "local_side_MAD_units": 0.4233252221843846,
+              "flux_correlation": 0.23174929029681746
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": 0.0005387380745863387,
+              "local_side_MAD_units": 0.4506966454103042,
+              "flux_correlation": 0.19151592772639664
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": 0.00017113642146189892,
+              "local_side_MAD_units": 0.21872970669191236,
+              "flux_correlation": 0.1575609815847901
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S72_SAP_FLUX": {
+              "maximum_residual": 0.00787052061047026,
+              "median_residual": 0.007462437357829292
+            },
+            "QLP_S72_DET_FLUX": {
+              "maximum_residual": 0.0026739661432456283,
+              "median_residual": 0.002119037208480279
+            },
+            "TESS-SPOC_S72_SAP_FLUX": {
+              "maximum_residual": 0.009524844956099787,
+              "median_residual": 0.007294799814214733
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 34.41943659005119,
+          "flagged_native_rows_within_6h": 0,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        },
+        {
+          "start_index": 1395,
+          "stop_index": 1410,
+          "peak_index": 1402,
+          "peak_btjd": 3285.494617673967,
+          "peak_residual": 0.00636315942955375,
+          "peak_noise_units": 7.248732809031656,
+          "points": 15,
+          "method": "20min",
+          "start_btjd": 3285.3973894770675,
+          "stop_btjd": 3285.586058449969,
+          "methods": [
+            "20min"
+          ],
+          "date_utc": "2023-12-06T23:51:05.784",
+          "baseline_days_peak_residual": {
+            "1.0": 0.004471386634716672,
+            "2.0": 0.00636315942955375,
+            "3.0": 0.008161806034073312
+          },
+          "ancillary": {
+            "SAP_BKG": {
+              "event_minus_side_median": 1.3038330078125,
+              "local_side_MAD_units": 2.983532220584497,
+              "flux_correlation": 0.4447993018128566
+            },
+            "MOM_CENTR1": {
+              "event_minus_side_median": 0.0032581963278062176,
+              "local_side_MAD_units": 3.223308941884848,
+              "flux_correlation": 0.8068775166113967
+            },
+            "MOM_CENTR2": {
+              "event_minus_side_median": -0.0031094567120817374,
+              "local_side_MAD_units": -2.951548351067414,
+              "flux_correlation": -0.535336282635925
+            },
+            "POS_CORR1": {
+              "event_minus_side_median": 0.004368634496737893,
+              "local_side_MAD_units": 4.116595861241146,
+              "flux_correlation": 0.8645754622222589
+            },
+            "POS_CORR2": {
+              "event_minus_side_median": -0.00363966062044104,
+              "local_side_MAD_units": -2.47148659104516,
+              "flux_correlation": -0.5848702001850173
+            }
+          },
+          "alternate_reductions": {
+            "QLP_S72_SAP_FLUX": {
+              "maximum_residual": 0.0011304084994856372,
+              "median_residual": -2.5467933143994304e-05
+            },
+            "QLP_S72_DET_FLUX": {
+              "maximum_residual": 0.0012773110505867693,
+              "median_residual": 0.0001819072803084474
+            },
+            "TESS-SPOC_S72_SAP_FLUX": {
+              "maximum_residual": 0.0012711716859792714,
+              "median_residual": 0.0007219645206942849
+            }
+          },
+          "nearest_quality_gap_or_edge_hours": 2.1945786240576126,
+          "flagged_native_rows_within_6h": 0,
+          "existing_event": false,
+          "assessment": "Screened excursion; inspect shape and diagnostics before attribution."
+        }
+      ],
+      "negative_events": [
+        {
+          "start_index": 942,
+          "stop_index": 960,
+          "peak_index": 948,
+          "peak_btjd": 3278.9802624445874,
+          "peak_residual": 0.006943083602600709,
+          "peak_noise_units": 7.909366166792872,
+          "points": 18,
+          "method": "20min",
+          "start_btjd": 3278.8969226012573,
+          "stop_btjd": 3279.1330521333516,
+          "methods": [
+            "20min"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TESS-SPOC_S1751_PDCSAP_FLUX",
+      "sector": 1751,
+      "provider": "TESS-SPOC",
+      "metadata": {
+        "raw_rows": 3131,
+        "accepted_rows": 1502,
+        "rejected_rows": 1629,
+        "quality_zero_count": 1502,
+        "native_error_column": "PDCSAP_FLUX_ERR",
+        "median_relative_native_error": 0.0017399720943293766,
+        "native_normalization_median": 4816.35205078125,
+        "first_btjd": 4059.2964602318802,
+        "last_btjd": 4062.9862488192416,
+        "median_cadence_seconds": 199.99825822451385,
+        "all_finite_positive_flux_robust_scatter": 0.0017107057774067814,
+        "quality_zero_native_robust_scatter": 0.0017107057774067814,
+        "no_amplitude_clipping": true
+      },
+      "exposure_days": 3.476819233948845,
+      "noise_20min": 0.0007324265498809435,
+      "events": [],
+      "negative_events": []
+    }
+  ],
+  "unique_accepted_cadence_days": 104.18182301472007,
+  "preferred_unique_days": 102.30651398162536,
+  "source_sha256": "96b6916dd3aa7d1e0f6a5570d09703742dfd6aab37c80591a5ed83069d7564bb",
+  "protocol_sha256": "6056b72d1870d14b19019a257cfab93f8edbdd4cb573e3d16aedff7b327099ad"
+}

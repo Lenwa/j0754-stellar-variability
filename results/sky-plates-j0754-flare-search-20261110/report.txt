@@ -1,0 +1,120 @@
+J0754: THREE ADDITIONAL SOURCE-CENTERED FLARE CANDIDATES
+10 November 2026, America/New_York
+
+Finding
+The search recovers the previously studied 23 December 2021 event and finds
+three additional source-centered, hour-scale brightenings in calibrated TESS
+pixels. The new events are smaller than the original. They survive direct
+aperture extraction, background removal and a spatial source/motion test.
+
+UTC date       Sector  Peak direct-aperture excess*  Excess position offset
+2021-11-16       45           0.65%                  0.27 pixel (~5.7 arcsec)
+2021-11-22       45           0.81%                  0.19 pixel (~4.1 arcsec)
+2021-12-23       46           2.65%                  0.18 pixel (~3.7 arcsec)
+2023-11-28       72           0.85%                  0.10 pixel (~2.2 arcsec)
+
+*20-minute averages from a 1.5-pixel-radius aperture minus outer-ring median
+background, relative to a two-day running median. These are descriptive peak
+amplitudes, not a remeasurement of the earlier event's bolometric energy.
+Pixel offsets use the event-minus-sideband positive light distribution, not
+formal precision astrometry. The original event is included for comparison.
+
+Data and coverage
+Eight saved QLP/TESS-SPOC lightcurve FITS represent six distinct intervals:
+44,45,46,71,72 and1751. Quality-retained cadence intervals union to104.18 days;
+alternate reductions of the same exposures are counted once. Using QLP for
+the five long sectors plus the short latest interval gives102.31 days. These
+are nominal accepted-cadence coverage, not continuous calendar monitoring or
+an exposure-time/dead-time correction.
+
+A fresh public MAST3-arcsecond cone search returns33 observation records and
+the same eight extracted TESS products. TESSCut still returns the same six
+intervals, so no new observing dates were found in that query. Five new full
+7x7 calibrated pixel series were downloaded for44,45,71,72 and1751; the prior
+Sector46 cutout was reused. New files total31.75MB uncompressed. Public query
+responses, exact retrieval URLs and file hashes are retained. These pixels
+are calibrated FFI cutouts, not raw uncalibrated detector images.
+
+Search
+Corrected lightcurves were searched at native cadence and in20-minute bins.
+After a two-day running median, a candidate needs at least3 consecutive
+points above3 robust adjacent-difference noise units and a peak of5 units.
+Runs break at gaps over2.5 typical cadences. Positive and negative detections
+are retained. These numbers screen candidates; correlated noise prevents
+interpreting them as Gaussian detection significance.
+
+The corrected-product search recovers November22 and November28, plus the
+original event. Baselines of1,2 and3 days preserve their positive peaks.
+November22 appears in SAP and alternate QLP apertures. November28 appears in
+both providers' SAP lightcurves and SPOC corrected flux, but is substantially
+attenuated by QLP correction. Alternate reductions reuse the same photons.
+
+A separate direct-pixel search bypasses both providers' flattening and finds
+the November16 candidate in addition to those three. It is away from quality
+boundaries; it was missed by the corrected-product screen. This illustrates
+why corrected-flux non-detections alone cannot exclude flares.
+
+Spatial checks
+For the four candidates, fixed event windows are compared with interpolated
+before/after images. An outer-ring plane is removed from the difference map.
+Each excess is compact and close to J0754's Gaia WCS position. Fitting a source
+brightness change jointly with image-gradient motion terms changes the fitted
+source scale by less than0.3% relative in all four cases. Telescope motion is
+therefore not a sufficient explanation in this diagnostic.
+
+Before/event/after quality-retained frames are43/11/43 for November16,
+23/11/43 for November22,43/16/40 for December23, and129/78/129 for November28.
+These counts correspond to the primary guard0.15d/side0.3d; see
+pixel_followup.json for all variants.
+The larger pre-event sidebands for November22 have too few accepted frames;
+those failures are explicitly retained. Working sideband variants keep its
+excess near0.19pixel. November16 is weaker and more baseline-sensitive:
+offset0.09-0.33pixel, event-mean source scale0.27-0.57%. November28 remains
+within0.05-0.20pixel across the sideband choices. The source-scale amplitudes
+are averages over selected event windows and differ from peak amplitudes.
+
+Rejected and unresolved excursions
+The extracted-product screen returns11 product-level positive hits: the known
+event, the two new hits and8 other detections. Most of those additional hits
+occur near quality gaps/edges or lack a comparable SAP/alternate-reduction
+signal. The direct pixel search returns9 hits, of which4 are the four events
+above. Other direct-aperture hits include gap-boundary excursions, broad
+background/position-linked structures, displaced or nonpositive source-shape
+contrasts, and one event lacking usable sidebands. All hits are retained in
+the JSON/figures. None of these five is promoted to a new stellar flare here.
+
+Sensitivity
+1296 synthetic FRED-like profiles were injected into the quality-retained
+native extracted lightcurves before binning and median removal:24 uniform
+times x6 nonduplicated preferred products x3 widths x3 amplitudes. Detection
+uses the native OR20-minute screen. The observed robust noise estimate is held
+fixed for paired recovery trials; the baseline is recomputed near each added
+event. These tests measure this search's response in already-reduced data.
+They do not correct for signal removed by upstream QLP/SPOC processing.
+
+For4.6-hour,2.5%-peak profiles, all115 trials with at least80% of the profile
+sampled were recovered;129/144 were recovered including trials affected by
+gaps. For0.5-hour,0.5%-peak profiles, only8/120 well-sampled trials recovered.
+The search can find original-sized events when sampled but misses many small,
+short events. No formal flare-frequency distribution or absence limit follows.
+
+Interpretation and next step
+We now have four spatially consistent flare-like events rather than a single
+isolated excursion. That strengthens the repeated magnetic-activity picture.
+November16 has the least robust baseline/localization of the four. The data
+support three additional candidates; a calibrated PRF/centroid uncertainty
+analysis and an unresolved-neighbor/moving-source check would strengthen their
+classification. No new bolometric energies are assigned in this search, and
+these events do not by themselves settle the cause of the years-long dimming.
+
+Reproduce from the repository root
+python -B tools/sky-plates/search_tess_flares.py --injections
+python -B tools/sky-plates/fetch_tess_flare_pixels.py --sectors 44,45,71,72,1751
+python -B tools/sky-plates/search_tess_pixel_flares.py
+python -B tools/sky-plates/vet_tess_flare_pixels.py
+python -B tools/sky-plates/summarize_tess_flare_search.py
+
+The fetch command reuses cached FITS.
+Results and methods are exploratory. Saved protocols distinguish original
+screen choices, quality-count adaptations, and the authorized pixel expansion.
+Four new numerical safeguards and all147 existing tests pass (151 total).

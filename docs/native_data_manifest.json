@@ -2056,5 +2056,35 @@
     "bytes": 4870,
     "sha256": "d39d74684f5c40c49f92700012d12b59abf2ee638404f4254226e3b612f41d0a",
     "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0044-4-2_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 3461760,
+    "sha256": "8bbfcfc06a863921610f68ab82d351661da7a8d70ad6ea95df6dc0885a847253",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0071-4-3_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 11468160,
+    "sha256": "c2817ab9568092d3a6ff21e23d32672a5f39bf03ad578ff20f8a4007848fd3f1",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s1751-2-2_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 1952640,
+    "sha256": "3891333493cfd678c641c101e5319a7dd84a827eccb95829f96b9bc6a2390668",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0045-2-1_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 3643200,
+    "sha256": "17e2cfccc9ef2069e869da9a535c0154ab1a05a47fc6c1afb2d46b8361c5691d",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0072-2-4_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 11226240,
+    "sha256": "4d3567b4afd85d2455edd0ede188bd1331c71d5cf6b9f9538df87d561149eb78",
+    "included": true
   }
 ]
