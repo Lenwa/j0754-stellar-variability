@@ -1,5 +1,15 @@
 # J0754 stellar variability laboratory
 
+**Tang's other two stars, 11 November:** [full analysis](results/tang-sibling-analysis-20261111/report.txt)
+and [main figure](results/tang-sibling-analysis-20261111/downlink_offset_models.png).
+J0830 has a strong 38–39-day TESS modulation, close to its 38.389-day Gaia
+candidate period, after allowing separate QLP reference offsets at downlinks.
+J0736 favors roughly 19–21 days. J0830's independent 2015 K2 epoch does not
+repeat a dominant 38-day signal. No excursion passes the initial seven-file
+screen. All seven previously downloaded products are now analyzed; one K2SC
+alternative is also retained. Candidate orbits and the historical fading cause
+remain open.
+
 **Comparison-giant screening, 11 November:** [report](results/giant-screening-20261111/report.txt),
 [full catalogue screen](results/giant-screening-20261111/screened_catalog.csv),
 [five physical matches](results/giant-screening-20261111/physical_shortlist.csv) and
@@ -7,8 +17,9 @@
 The 61 published giant-labelled entries were screened; twelve Kepler light curves
 were reduced for five selected stars. KIC 2852961 is the strongest activity
 benchmark. Tang's other two historical fading stars have Gaia candidate SB1
-periods near 38–39 days. Seven sibling TESS/K2 products are retained for follow-up,
-explicitly unreduced. The Dixon 7,286-star rows were not retrieved or screened.
+periods near 38–39 days. That screening snapshot retains seven sibling TESS/K2
+products; their completed follow-up is linked above. The Dixon 7,286-star rows
+were not retrieved or screened.
 
 **Current evidence checkpoint, 11 November:** [source-linked evidence table](docs/J0754_evidence_2026-11-11.csv)
 ([readable HTML](docs/J0754_evidence_2026-11-11.html), [text summary](docs/J0754_evidence_summary_2026-11-11.txt))
@@ -86,7 +97,7 @@ python -m pip install -r requirements.txt
 python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
 ```
 
-The current snapshot passes **188 tests** (147 in the initial release). Tests cover model
+The current snapshot passes **205 tests** (147 in the initial release). Tests cover model
 integration, injections, nuisance projection, period/alias behavior, covariance,
 pixel reductions and failure cases; they do not substitute for independent
 scientific review. No credentials are required for these offline tests.

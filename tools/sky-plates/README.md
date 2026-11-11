@@ -1,5 +1,36 @@
 # Historical sky plates
 
+## Tang sibling light curves
+
+The [sibling report](../../results/tang-sibling-analysis-20261111/report.txt)
+analyzes TESS sectors 44–46 for J0736/J0830 and J0830's separate 2015 K2 epoch.
+[The main figure](../../results/tang-sibling-analysis-20261111/downlink_offset_models.png)
+shows a 38–39-day J0830 modulation matching its Gaia candidate period under
+separate QLP spacecraft-orbit reference offsets. J0736 favors 19–21 days.
+J0830's older epoch does not repeat the dominant signal. The preliminary native
+cadence/local-noise excursion screen finds no qualifying events.
+
+```bash
+python -B tools/sky-plates/analyze_tang_siblings.py
+python -B tools/sky-plates/tang_sibling_followup.py
+python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
+```
+
+These commands run offline with the existing NumPy/SciPy/Astropy/Matplotlib
+environment and the included FITS. Optional `tang_sibling_followup.py --fetch`
+requests bounded alternate public K2 products and preserves failed receipts.
+`tang_sibling_core.py` owns the numerical methods; 17 new tests bring the
+component to 205. Results, protocol, source hashes, bins, full scans and four
+figures live in `results/tang-sibling-analysis-20261111`. The original pre-fit
+snapshot and later amendments keep the exploratory sequence explicit.
+
+Calibration terms are fitted jointly with stellar waves. Pipeline alternatives
+reuse exposures, the epochs have independent phases, and frozen-wave holdouts
+refit nuisance terms in the held-out sector. The QLP gap-offset sensitivity was
+added after review; centroids are target flux-weighted measurements. Neither
+period agreement nor a two-cycle light curve confirms an orbit or long-fading
+mechanism. No new pixel localization or flare completeness is claimed.
+
 ## Comparison giants
 
 The [screening report](../../results/giant-screening-20261111/report.txt) and
@@ -7,7 +38,7 @@ complete 86-row table retain 61 giant labels, 17 dwarf labels and eight
 unclassified objects from Olah et al. (2022), joined to the original 2021
 rotation and multiplicity notes. Physical similarity selects five follow-ups
 without using the newly retrieved light curves. Twelve Kepler FITS are reduced;
-seven sibling TESS/K2 FITS are downloaded and explicitly not yet analyzed.
+seven sibling TESS/K2 FITS were downloaded for the subsequent analysis above.
 
 ```bash
 python -B tools/sky-plates/fetch_giant_screening.py catalogues

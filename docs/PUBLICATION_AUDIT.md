@@ -128,3 +128,27 @@ plot lines stop at missing annual bins. The source hash manifest was regenerated
 after those edits. All 188 component tests passed, including 12 new safeguards.
 Scientific plots were inspected. Full-repository Gitleaks and targeted private
 path/contact checks were clean. Native survey files remain unchanged.
+
+## 11 November Tang sibling analysis
+
+The seven retained sibling FITS are now analyzed without altering their native
+bytes. One additional compact public K2SC FITS is included with its retrieval
+receipt and SHA-256. The EVEREST response exceeded the existing 12 MB retention
+bound; its failed-size receipt remains visible without retaining the product.
+All previous native-manifest and public-request records are preserved.
+
+The initial pre-fit plan snapshot is unchanged. The protocol separates later
+centroid/K2SC follow-up and post-review QLP spacecraft-orbit reference offsets.
+A fresh read-only review reproduced the native fits, sector holdouts and
+corrected zero-excursion result. Native-cadence bridging, local noise, numerical
+ties and flat-null scans were corrected with regression tests. The report
+distinguishes fitted periods from confirmed orbits, alternative reductions
+from new observations, and 2021 modulation from historical fading.
+
+All 205 component tests pass, including 17 new sibling safeguards. Four figures
+were visually inspected. New source/native hashes match; the original plan
+snapshot hash matches. Full-repository Gitleaks scanned 198.92 MB without
+findings, and targeted private path/contact/key checks were clean. Public
+request receipts contain archive URLs and catalogue identifiers, with no
+account pages or credentials. The publication manifest hashes canonical Git
+blobs; native FITS retain their exact archive bytes.

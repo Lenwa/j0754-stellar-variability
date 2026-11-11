@@ -1,0 +1,199 @@
+TANG'S OTHER TWO HISTORICAL FADING GIANTS: MODERN LIGHT-CURVE ANALYSIS
+11 November 2026 | Kyle Hicks and Ari | archival, exploratory analysis
+
+FINDING
+
+J0830 shows a strong 38–39-day brightness modulation in 2021 TESS data, close
+to its 38.389-day Gaia candidate orbital period. The fitted variation is about
+5.2–5.4% from minimum to maximum under the simpler reference-offset models.
+J0736 favors a shorter 19–21-day signal; a stable 39.421-day waveform is less
+successful. Neither star yields a qualifying positive excursion in the initial
+seven-file flare screen. J0830 is the stronger lead for the activity/binary
+comparison with J0754.
+
+DATA AND IDENTITIES
+
+Target | Gaia DR3 source         | TESS TIC | Gaia candidate SB1 period
+J0736  | 865283696503303936      | 70330439 | 39.4209178 d
+J0830  | 651437519650162304      | 20445282 | 38.3891917 d
+
+Each Gaia solution uses 12 accepted radial-velocity measurements. These are
+catalogue candidates, not orbits newly fitted or confirmed in this analysis.
+The prior screening retains the original Gaia responses and formal errors.
+
+Both targets have QLP TESS sectors 44, 45 and 46 from 2021. After QUALITY=0,
+finite-time and positive-finite-flux cuts, the primary aperture flux contains
+8,416 observations for J0736 and 8,562 for J0830, reduced to 329 and 328
+distinct 0.2-day bins. Their spans are 78.12 and 77.95 days. J0830 also has
+K2 campaign 5 observations from 2015, EPIC 211569759: 2,160 strict accepted
+SAP points, 283 bins and a 74.78-day span. No brightness clipping is applied.
+FITS identifiers and positions match the intended catalogue targets within
+one arcsecond. This verifies product identity; pixel-level host attribution
+is a separate task.
+
+The seven previously retained FITS are unchanged. One additional K2SC FITS
+was recovered for the same 2015 exposures. An EVEREST response was available
+but exceeded the retrieval script's 12 MB retention bound; it was not saved
+or analyzed. That is a size-policy failure, not an archive nondetection.
+
+METHOD
+
+Use aperture SAP flux for slow variability. QLP's KSPSAP products are filtered
+for transit searches and remove much of the multi-week structure. Their small
+remaining amplitudes cannot constrain the original stellar signal. Normalize
+each sector by its accepted median, then jointly fit calibration terms and
+sine/cosine terms. Search 5–100 days on 1,601 uniformly spaced frequencies;
+test each Gaia period, its half-period and a two-harmonic representation.
+Compare global, sector-linear, quadratic and centroid/background models.
+The two epochs are fitted separately, with no phase coherence across six years.
+
+An independent review identified a useful pipeline-informed sensitivity test:
+QLP constructs a separate reference image within each TESS spacecraft orbit.
+Each retained sector has one roughly three-day downlink gap and an aperture
+reference-level jump. Splitting at observed gaps greater than 1.5 days gives
+six arcs. Assign each arc its own offset, with optional global, sector or arc
+slopes. These models use time and sector identity, without centroid/background
+regressors. They were added after the initial fits and review, not preregistered.
+
+J0830: A REPRODUCIBLE FIVE-WEEK MODULATION IN TESS
+
+Nuisance model             | Free peak | Semiamplitude at Gaia | Fixed-period power
+Six arc offsets            | 38.77 d   | 2.69%                 | 0.9620
+Six offsets + global slope | 38.77 d   | 2.70%                 | 0.9628
+Six offsets + sector slopes| 38.42 d   | 2.62%                 | 0.9582
+Six offsets + arc slopes   | 39.68 d   | 3.13%                 | 0.8341
+
+Power here means fractional residual sum-of-squares improvement over the same
+nuisance-only model. It is not a probability or confidence level. The extra
+arc slopes remove much more signal information; the simpler models carry the
+main amplitude result. Free-peak digits describe the scan grid, not a precise
+astrophysical period measurement or an uncertainty interval.
+
+For the six-offset/sector-slope model, fit the stellar sine/cosine coefficients
+on two sectors, freeze them and evaluate the third. Only that sector's nuisance
+offsets/slopes are refitted. The held-out improvements are 0.919, 0.867 and
+0.939 for S44, S45 and S46. Six offsets without slopes give 0.947, 0.953 and
+0.955. Thus a common Gaia-period waveform explains the shapes of the separate
+2021 sectors well, conditional on the stated calibration treatment.
+
+The original centroid/background model also gives a 38.42-day
+free peak and 2.53% semiamplitude. Target centroids are flux-weighted measurements
+from the same pixels, not independent pointing telemetry. Importantly, the
+reference-offset result above does not require those regressors. The unmodified
+sector-offset-only curves favor other periods; treating the within-sector
+reference changes matters. All unsuccessful model variants remain visible.
+
+J0830 IN 2015: THE SAME DOMINANT PERIOD DOES NOT REAPPEAR
+
+The original K2 SAP/PDC linear-baseline scans favor about 65–72 days, depending
+on the quality mask. The fixed Gaia-period improvements are only 0.019–0.068
+for SAP and 0.031–0.049 for PDC. Alternate baseline models change the peaks.
+These are short, structured records, not a securely measured 70-day rotation.
+
+K2SC explicitly separates position and time components. Following its product
+documentation, restore time variability as flux + trtime - median(trtime).
+Both restored SAP and PDC curves favor approximately 66.2 days with a linear
+baseline, or the 100-day search boundary with a quadratic baseline. Neither
+provides a stable dominant 38-day repeat. K2SC uses upstream release 7 rather
+than the native product's release 31 and has different quality flags and
+coverage. It is another reduction of the same epoch, not an independent
+instrument or a common-cadence replication.
+
+J0736: SHORTER AND LESS STABLE VARIABILITY
+
+The reference-offset models peak at 20.23, 20.23, 20.53 and 19.39 days,
+respectively. The original centroid/background fit peaks at 20.73 days.
+This is near half of Gaia's 39.42-day period, but the waveform is imperfect
+and several apparent structures depend on treatment of calibration changes.
+At fixed Gaia period, the six-offset/sector-slope held-out scores are
+0.518, -0.113 and 0.026; the original instrument model gives 0.539, 0.621 and
+-0.390. A consistent 39.42-day wave is not established.
+
+Two active longitudes can produce half-period modulation; an ellipsoidal
+binary can also show two brightness maxima per orbit. Those are possibilities,
+not classifications supplied by this light curve. J0736 remains useful for
+follow-up, with a weaker photometric match to its Gaia candidate than J0830.
+
+EXCURSIONS, HISTORICAL BEHAVIOR AND INTERPRETATION
+
+The preliminary screen uses native corrected flux, a one-day rolling-median
+baseline and local residual MAD within +/-0.5 days, requiring at least 20
+accepted samples to estimate the noise. A candidate needs three consecutive
+native cadence IDs above five local robust standard deviations, with no large
+time gap and peak excess at least 0.2% for TESS or 0.5% for K2. Zero events
+pass in all seven files. An independent implementation reproduces that result.
+This is a bounded initial scan, not a flare-rate upper limit or proof that
+either star is inactive; no injection completeness study was performed here.
+
+The previous screening already recovered the published historical trends:
+J0736's broad trough/recovery and J0830's sustained fading. It retained 800
+and 1,379 standard-quality DASCH detections, respectively. Those screening
+curves have not received J0754's same-exposure comparison-star replication.
+Sector-normalized TESS flux cannot measure a century-scale change.
+
+J0830's photometric timescale agreeing with a separate Gaia spectroscopic
+candidate is useful evidence for the binary/activity investigation. Evolving
+spots are compatible with a strong 2021 signal and a different 2015 waveform.
+The light curves alone do not distinguish spots from orbital brightness
+effects, validate a Gaia solution, localize all variability to the catalogue
+star or explain the historical fade. Each epoch covers only about two proposed
+cycles. A raw-pixel extraction with nearby comparison stars, followed by
+independent seasonal photometry or radial velocities, is the clearest next test.
+
+VERIFICATION AND REPRODUCIBILITY
+
+An initial plan and original byte-hashed snapshot precede the period fits.
+The protocol records later additions separately. Review corrected native
+cadence bridging, the local-noise implementation and floating-point ties in
+block-sign diagnostics. For the original J0830 instrument model, exact
+enumeration of six 14-day blocks gives 2/64=0.03125. This is a conditional
+sign-sensitivity result, not a calibrated false-alarm probability; it excludes
+calibration-model selection and is not used to claim a discovery significance.
+No null probability was retroactively assigned to the new arc-offset models.
+
+All 205 component tests pass, including 17 sibling-analysis safeguards.
+Native hashes, all fit/search outputs, failed requests, per-file accepted
+counts and reproducible commands accompany this report. Four figures were
+visually inspected. The independent review reproduced the numerical fits,
+sector holdouts and corrected excursion null result. No email or manuscript
+has been submitted.
+
+FILES (relative to this report)
+
+downlink_offset_models.png        Main comparison: corrected shapes and scans.
+sibling_lightcurves.png           Original SAP and pipeline-filtered epochs.
+period_sensitivity.png            Initial baseline/reduction sensitivity.
+instrument_model_and_k2sc.png     Centroid model and restored 2015 K2SC curves.
+results.json / followup.json      Complete numerical outputs, including failures.
+file_measurements.csv             Counts, ranges, positions and native correlations.
+*_bins.csv / *_periodogram.csv    Reusable extracted photometry and search profiles.
+*_fit.csv                        Joint arc-model data, nuisance, signal and residuals.
+protocol.json                    Original protocol plus dated amendments.
+input_source_hashes.json          Original seven FITS and numerical source hashes.
+followup_source_hashes.json       Follow-up source and new K2SC FITS hash.
+
+Run from repository root:
+python -B tools/sky-plates/analyze_tang_siblings.py
+python -B tools/sky-plates/tang_sibling_followup.py
+python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
+
+PRIMARY SOURCES
+
+Tang et al. (2010), the original historical fading stars:
+https://arxiv.org/abs/1001.1395
+Huang et al. (2020), QLP extraction, orbit references and filtering:
+https://arxiv.org/html/2011.06459v1
+QLP S40–55 release and applicable extraction references:
+https://arxiv.org/abs/2211.04386
+QLP product/column definitions:
+https://archive.stsci.edu/hlsp/qlp
+https://archive.stsci.edu/hlsps/qlp/hlsp_qlp_tess_ffi_all_tess_v1_data-prod-desc.pdf
+K2SC v2 documentation and correction convention:
+https://archive.stsci.edu/hlsps/k2sc/hlsp_k2sc_k2_llc_all_kepler_v2_readme.txt
+Lightkurve Kepler quality-bit definitions (default mask 1130799):
+https://lightkurve.github.io/lightkurve/_modules/lightkurve/utils.html
+Gaia/MAST identifiers, raw responses and native request receipts:
+../giant-screening-20261111/
+
+Observations remain credited to DASCH, Gaia, TESS/QLP and Kepler/K2/K2SC.
+This report records an exploratory archival result; it has not been peer reviewed.

@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-11-11T15:54:01.375389+00:00",
+  "status": "Exploratory follow-up; native headers and flux ranges inspected, period-fit results not yet seen.",
+  "plan": "docs/superpowers/plans/2026-11-11-tang-siblings.md",
+  "plan_original_snapshot": "results/tang-sibling-analysis-20261111/protocol_plan_snapshot.txt",
+  "plan_sha256": "b937a3ecae32c2535f633661e4029ceed006b775c289c6917c1139638f4c8293",
+  "period_grid_days": [
+    5,
+    100
+  ],
+  "frequency_grid_points": 1601,
+  "quality_primary": "All flags zero; K2 default mask as separate sensitivity",
+  "period_hypotheses": {
+    "J0736": 39.42091782293346,
+    "J0830": 38.38919173490344
+  },
+  "independent_epochs": "K2 2015 and TESS 2021 fitted independently; alternative reductions not independent instruments",
+  "documentation": [
+    "https://archive.stsci.edu/hlsp/qlp",
+    "https://lightkurve.github.io/lightkurve/_modules/lightkurve/io/qlp.html",
+    "https://lightkurve.github.io/lightkurve/_modules/lightkurve/utils.html"
+  ],
+  "amendments": [
+    {
+      "stage": "After initial period fits",
+      "changes": [
+        "Centroid-regressor subsets and leave-one-sector-out frozen-wave tests.",
+        "K2SC alternative reduction requested and temporal variability restored using its official convention.",
+        "EVEREST response exceeded original 12 MB bound and was not retained."
+      ]
+    },
+    {
+      "stage": "After independent read-only review",
+      "changes": [
+        "QLP reference offsets separated at >1.5-day downlink gaps, with four slope sensitivities and conditional holdouts; no centroid/background terms used.",
+        "Local residual MAD and consecutive native cadence IDs enforce the original excursion contract. Corrected and independent screens both yield zero events.",
+        "Numerical ties included in sign diagnostics; exact enumeration when at most eight occupied blocks.",
+        "Flat-null free scans return zero power and no identifiable peak.",
+        "K2SC/native upstream release and quality-flag differences recorded."
+      ]
+    }
+  ],
+  "amendments_recorded_utc": "2026-11-11T16:19:44.681146+00:00"
+}

@@ -2248,5 +2248,11 @@
     "bytes": 4870,
     "sha256": "d39d74684f5c40c49f92700012d12b59abf2ee638404f4254226e3b612f41d0a",
     "included": true
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits",
+    "bytes": 501120,
+    "sha256": "339a180a297a900e6ed030de1ce94887dbf9965a1d381025f8259a0aab0b1dd5",
+    "included": true
   }
 ]

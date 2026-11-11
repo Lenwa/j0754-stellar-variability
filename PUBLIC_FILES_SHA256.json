@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 9162,
-    "sha256": "7b7c8a8270e6202e8791d86426bf41eb63f9a0c661b3ba89777eaa71df8e0d70"
+    "bytes": 9860,
+    "sha256": "33b90b2f0534ee36a2e08a548145c1bdc1c95b0d108c308b5af5a272980da6f5"
   },
   {
     "path": "docs/J0754_dataset_inventory_2026-11-11.json",
@@ -66,8 +66,8 @@
   },
   {
     "path": "docs/PUBLICATION_AUDIT.md",
-    "bytes": 7497,
-    "sha256": "8ab3a63203bc999066f38fad83cf3f62aed291b693cf9376b8d6a18c1cee63c0"
+    "bytes": 8956,
+    "sha256": "726a28b90aa81e0d7fcc2d4a92048d04828d8c6e5dcf2dd785fcd230eb0dc89b"
   },
   {
     "path": "docs/j0754_evidence_records.json",
@@ -76,13 +76,13 @@
   },
   {
     "path": "docs/native_data_manifest.json",
-    "bytes": 84887,
-    "sha256": "c662e3da755b86e4a07870f4d159033192dc06a5988a02a782970bda8d073756"
+    "bytes": 85123,
+    "sha256": "586fd4bd487461822930f8d02c4dc333062a035b26c79278a324260bb3634a15"
   },
   {
     "path": "docs/public_archive_requests.json",
-    "bytes": 129707,
-    "sha256": "1ab7e23db1f66afdf07c93ca5155a2fad4d8229ef8fabf2e66a0958f3b06227c"
+    "bytes": 130232,
+    "sha256": "c3d3887ce50acc0c6f79ea455749cdec011e8dd5bd7c4cde5e25ab42a5ce938c"
   },
   {
     "path": "docs/superpowers/plans/2026-11-11-flare-comparison-evidence.md",
@@ -93,6 +93,11 @@
     "path": "docs/superpowers/plans/2026-11-11-giant-screening.md",
     "bytes": 4677,
     "sha256": "0730109c74b62c64f1b5f8cc459e77781807db185033e7d2384517caa62180ab"
+  },
+  {
+    "path": "docs/superpowers/plans/2026-11-11-tang-siblings.md",
+    "bytes": 5116,
+    "sha256": "57c4b72129a4026753b0802cda28384039d498ec391b3e973f74ce1f10061607"
   },
   {
     "path": "requirements-report.txt",
@@ -5980,9 +5985,544 @@
     "sha256": "9050cb2f2305c2db33e224bcb32692bcb6f59acb1ad225fbbeb899b27fa39527"
   },
   {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_KSPSAP_FLUX_strict_global_linear_periodogram.csv",
+    "bytes": 63973,
+    "sha256": "dcbca21fdbe1e7bae73dd447f915bdc0ba6d63938f0a1809e135615cee5d08c4"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_KSPSAP_FLUX_strict_global_linear_two_harmonic_periodogram.csv",
+    "bytes": 63285,
+    "sha256": "16c8455c75cec1d5dda31f96f37e1a6b6d2a49c3ea4a65934e686b22435abcca"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_KSPSAP_FLUX_strict_instrument_periodogram.csv",
+    "bytes": 64068,
+    "sha256": "f4cd6e6ae640aad01ff250a275bbd1835b4e8b4272fc528f809f02a080310178"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_KSPSAP_FLUX_strict_sector_linear_periodogram.csv",
+    "bytes": 63862,
+    "sha256": "e05fbc2fbc50c7e88f7ddc7f907ee2cf41539acf5881feaeea14431438639058"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_KSPSAP_FLUX_strict_sector_quadratic_periodogram.csv",
+    "bytes": 64155,
+    "sha256": "0c201090049411e7db9dbb5903f522c49fa8e9e18b286043a5657da53345e07c"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S44_KSPSAP_FLUX_LAG_strict_bins.csv",
+    "bytes": 11033,
+    "sha256": "d38eef14bccbc8678963361262bb2230cecf28a5ce81488a1ed53c21bde8a78f"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S44_KSPSAP_FLUX_SML_strict_bins.csv",
+    "bytes": 11015,
+    "sha256": "eccc73a8805fbf919a56292858b787241b7af43e01e94329181aad4217c08e4b"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S44_KSPSAP_FLUX_strict_bins.csv",
+    "bytes": 11009,
+    "sha256": "f7ab6fbf68179dd910575a824fe906daa46a596b6197d3f04fc269ab8a2e4cb2"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S44_SAP_FLUX_strict_bins.csv",
+    "bytes": 10926,
+    "sha256": "cb09992287a7beb3b9a0ac9d6a03a47cbcbc7e035720ad1d10b5029c4ad07c92"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S45_KSPSAP_FLUX_LAG_strict_bins.csv",
+    "bytes": 11175,
+    "sha256": "eb7c78c596191f8fa9b1b10a2c50128e06624c4b57f71343e9bab1b5f89c24fe"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S45_KSPSAP_FLUX_SML_strict_bins.csv",
+    "bytes": 11178,
+    "sha256": "feb211e7b6e7253431817362fa9790fe1a54bf7c11a293b4869da43153dd4c9a"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S45_KSPSAP_FLUX_strict_bins.csv",
+    "bytes": 11180,
+    "sha256": "5475e1d3011178a8b7ad28b8bda0a4cd633de3b76b7528e9e7cef12c2242ab84"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S45_SAP_FLUX_strict_bins.csv",
+    "bytes": 11119,
+    "sha256": "474e2f39765133717d6446c292e896be7a3c6670031b70c6ccf0a86e461f183e"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S46_KSPSAP_FLUX_LAG_strict_bins.csv",
+    "bytes": 12034,
+    "sha256": "122a0183042ea70462d38da93cddadd1e3fbce6744de566f10af866c3b0a9845"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S46_KSPSAP_FLUX_SML_strict_bins.csv",
+    "bytes": 12024,
+    "sha256": "0333f80196f2728bb4d2f8f57c2add1405283fce27395fcc2a0a88c5ebec2914"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S46_KSPSAP_FLUX_strict_bins.csv",
+    "bytes": 12040,
+    "sha256": "5868e78f25a1923052f9d10e8da4e81fc10f96cb1cf59f9a4a5a742a0e5c623d"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_S46_SAP_FLUX_strict_bins.csv",
+    "bytes": 11949,
+    "sha256": "bb24efed8cf1ec027ad2808d27b1edaa0357ef59c7a631f1a2b4b2b756dc2322"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_FLUX_strict_global_linear_periodogram.csv",
+    "bytes": 61881,
+    "sha256": "c257450ea0ee095af33f7ac50285dd00ca1be804f7807f3caf8ef8752122f9cc"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_FLUX_strict_global_linear_two_harmonic_periodogram.csv",
+    "bytes": 61434,
+    "sha256": "fff2964b9f14d2004958b7ead716d23d1d50be57fc6905855c9f4d295df202e4"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_FLUX_strict_instrument_periodogram.csv",
+    "bytes": 61259,
+    "sha256": "3081d0a07af0dce5ab3dac3c5a76f75a4a6fc52b8825222b963d753ee6133239"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_FLUX_strict_sector_linear_periodogram.csv",
+    "bytes": 61762,
+    "sha256": "cfb9e8068ad7e57b8dd2b02573c5ac8c7a7c8e586cb9d62cbcd814d12ed407ec"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_FLUX_strict_sector_quadratic_periodogram.csv",
+    "bytes": 61571,
+    "sha256": "ebce2ce4d719f48fd6d8696f54cc91c07de349b9e82663da5feed8943078e807"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_arc_global_linear_periodogram.csv",
+    "bytes": 61824,
+    "sha256": "44988748ccc1a1f8ae29e7d849cabfe53f3c7905c7ddfac67bfe69cf5f6b6486"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_arc_linear_periodogram.csv",
+    "bytes": 61228,
+    "sha256": "2353187cbb4d95b8cd8c35507901f0f6819c4f05d9899ae8322d157ac9e82ac4"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_arc_offset_periodogram.csv",
+    "bytes": 61744,
+    "sha256": "edfe6a6844e1554de262514e63fff86839820eb403747a1a463f6e865bacba74"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_arc_sector_linear_fit.csv",
+    "bytes": 39580,
+    "sha256": "d01fbdc9404f5aa01bb528c0938216877fa9345c9e222825f0159dca86c2125d"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0736_TESS_SAP_arc_sector_linear_periodogram.csv",
+    "bytes": 61571,
+    "sha256": "14f67a6e2c42975a909886272b7ce068d22626c46d04c0de207728022ed1164e"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_PDC_kepler_default_bins.csv",
+    "bytes": 16008,
+    "sha256": "e352cea6e2d4bc256d7a710375d19f79f23d3915737dc1c8ebf84c0320335a91"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_PDC_kepler_default_global_linear_periodogram.csv",
+    "bytes": 63044,
+    "sha256": "cad796ffb55f5ebc68592e5efeb5a0d57a59fcabf9d80e4ae18a7755c979d032"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_PDC_kepler_default_sector_quadratic_periodogram.csv",
+    "bytes": 62157,
+    "sha256": "cd5a116f6cc306489008ccf8882ac956cf1abd137cf44398f56f80c15af505be"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_PDC_strict_bins.csv",
+    "bytes": 15906,
+    "sha256": "7cf773c33cfd6a7c926265d2fb568ecdeb9556e33c2a686806922781700064b8"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_PDC_strict_global_linear_periodogram.csv",
+    "bytes": 63049,
+    "sha256": "d487bd9e8aaebe36b241b374ff519557120449e82e9346b06f579dfbc4af6f82"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_PDC_strict_sector_quadratic_periodogram.csv",
+    "bytes": 62139,
+    "sha256": "f4fc5d08dfc29fb45c43f009fc18072099497d8eeeaff5c7f117ca3579a504c6"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_SAP_kepler_default_bins.csv",
+    "bytes": 15976,
+    "sha256": "5d25284d0a6c4a8705dea8fac857de85c17ea24e3eaf41aa4b208927244d2df6"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_SAP_kepler_default_global_linear_periodogram.csv",
+    "bytes": 62797,
+    "sha256": "449cfa85b30b511b8cefd54fe85b95f460554a6a2ee967cb2f24751bbd82a25c"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_SAP_kepler_default_sector_quadratic_periodogram.csv",
+    "bytes": 62134,
+    "sha256": "2a86c73ac4cdcfb5eeb62979691612e486d2caef3e961c1982d9eaa352cb9d89"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_SAP_strict_bins.csv",
+    "bytes": 15918,
+    "sha256": "74869f986a0f23121854d3dd5a513825627170437f871703e9967213688c6193"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_SAP_strict_global_linear_periodogram.csv",
+    "bytes": 62789,
+    "sha256": "943b96f807201555cddc0b84ac2534d6c3a5f87cf161d5cdce798841066e5c25"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2SC_SAP_strict_sector_quadratic_periodogram.csv",
+    "bytes": 62145,
+    "sha256": "071ab237b536b9cb56e655088359dbc71459314ee9cab66eb1e5fec3ae4cb2d3"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_K2C5_PDCSAP_FLUX_kepler_default_bins.csv",
+    "bytes": 38889,
+    "sha256": "368be74133c1169ba41297eb1b0fc48045508228755bf1d6e7b833e81264ad0f"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_K2C5_PDCSAP_FLUX_strict_bins.csv",
+    "bytes": 29328,
+    "sha256": "327f027f83c70e63b38c819ead5df72dc2b01661eea81062571f90ad88b5b782"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_K2C5_SAP_FLUX_kepler_default_bins.csv",
+    "bytes": 38888,
+    "sha256": "b868d942e89e59a86f484a16217d91b1462dba6b53f5200ff1c735d64c8f0457"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_K2C5_SAP_FLUX_strict_bins.csv",
+    "bytes": 29286,
+    "sha256": "618fae9826b8a65a6ce9953c16a37a58570bbe0312a1d734dbc5eb96c9ead086"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_kepler_default_global_linear_periodogram.csv",
+    "bytes": 63261,
+    "sha256": "2d4c4d4ce1f623d3384aec15b6e391c69b7eecb4085d26a3186f1e2eddd03e10"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_kepler_default_global_linear_two_harmonic_periodogram.csv",
+    "bytes": 63009,
+    "sha256": "50dd809c2ed25528ed74d4285146448285407d7d7389c149ee8bcc35026ebfec"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_kepler_default_instrument_periodogram.csv",
+    "bytes": 62153,
+    "sha256": "555b4fccee74f19ce2d180c0a78bde05f5c07f916a61b24c8ed90107c73e7cbe"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_kepler_default_sector_linear_periodogram.csv",
+    "bytes": 63261,
+    "sha256": "2d4c4d4ce1f623d3384aec15b6e391c69b7eecb4085d26a3186f1e2eddd03e10"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_kepler_default_sector_quadratic_periodogram.csv",
+    "bytes": 62164,
+    "sha256": "deb09a38731cf9e3495494de852ac6ff2f7103c852b9d0cee66f14c5d05d21b0"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_strict_global_linear_periodogram.csv",
+    "bytes": 61784,
+    "sha256": "5b6dd815628d35e63630a38e486c0a222d6d7abe8059fe3710882565f8ae4813"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_strict_global_linear_two_harmonic_periodogram.csv",
+    "bytes": 61574,
+    "sha256": "26fd311c858028776b544b14fb61442269d0b4ac84a64e2a9a24822bfcce78a0"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_strict_instrument_periodogram.csv",
+    "bytes": 61895,
+    "sha256": "a306e6964e0de4a4827d1e130ddcb5af0f360455e1f263915f57fec48568c6f5"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_strict_sector_linear_periodogram.csv",
+    "bytes": 61784,
+    "sha256": "5b6dd815628d35e63630a38e486c0a222d6d7abe8059fe3710882565f8ae4813"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_PDCSAP_FLUX_strict_sector_quadratic_periodogram.csv",
+    "bytes": 61928,
+    "sha256": "3742c234ec84dbf203cbffa42904fa228374c39fb6c36ca17acf4e3049d27a81"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_kepler_default_global_linear_periodogram.csv",
+    "bytes": 62902,
+    "sha256": "9b9bf3e0a0d56d1a6743a7d7a4cfd8e01f1b0e30d329e911965482869f3bb346"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_kepler_default_global_linear_two_harmonic_periodogram.csv",
+    "bytes": 62718,
+    "sha256": "878d81f416a9d4001e29c0bea198f5429b857ac5129a1780f81ef391e944827d"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_kepler_default_instrument_periodogram.csv",
+    "bytes": 62278,
+    "sha256": "6b57d8494a5655e06117253b5f1b2a42b76732b427927c5586ddd899ebbc4406"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_kepler_default_sector_linear_periodogram.csv",
+    "bytes": 62902,
+    "sha256": "9b9bf3e0a0d56d1a6743a7d7a4cfd8e01f1b0e30d329e911965482869f3bb346"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_kepler_default_sector_quadratic_periodogram.csv",
+    "bytes": 62170,
+    "sha256": "e6cb2d12a00b69c5a2189859e76a7f83782b15aaa8fe08c085f3e1d817b7d9a5"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_strict_global_linear_periodogram.csv",
+    "bytes": 61772,
+    "sha256": "787824be5e59f7a4bcc51c3b8612ee6e47246d2215e13a9837330db0fa647769"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_strict_global_linear_two_harmonic_periodogram.csv",
+    "bytes": 61439,
+    "sha256": "6c5fe95b0295658ff4a55e5d494aeeb9c0ca29138278765428ac56d89d4de1cd"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_strict_instrument_periodogram.csv",
+    "bytes": 61935,
+    "sha256": "e646c97386cb749caead208bf31d486359c6d1a1247a94a0fabc33bd3c27df93"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_strict_sector_linear_periodogram.csv",
+    "bytes": 61772,
+    "sha256": "787824be5e59f7a4bcc51c3b8612ee6e47246d2215e13a9837330db0fa647769"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_K2_SAP_FLUX_strict_sector_quadratic_periodogram.csv",
+    "bytes": 61858,
+    "sha256": "2ff24694ead6d6311c1af1bfea30baaca05ed152b686a2f96cbf586a347165a3"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_KSPSAP_FLUX_strict_global_linear_periodogram.csv",
+    "bytes": 64089,
+    "sha256": "aa9278daa0a1a86290df1723e2e9e564d4d1893b547cb053a8fe18ddbfd7a7be"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_KSPSAP_FLUX_strict_global_linear_two_harmonic_periodogram.csv",
+    "bytes": 63459,
+    "sha256": "3433a3ce78a4825717bab1b98dd9d8a8c6e1998906283385c608ae3f3ab9851d"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_KSPSAP_FLUX_strict_instrument_periodogram.csv",
+    "bytes": 63968,
+    "sha256": "149cdb44aa7136648707461d41dba2b904d3711a5ae2f151791e7689ccdeae84"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_KSPSAP_FLUX_strict_sector_linear_periodogram.csv",
+    "bytes": 64067,
+    "sha256": "4cd8f64902cc946ee9f2861464af6081879100f337924cbec731004c8dac7308"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_KSPSAP_FLUX_strict_sector_quadratic_periodogram.csv",
+    "bytes": 63825,
+    "sha256": "cf9d064f620064b34dd3e3e64794dcd85b0716c5620eaedb96078ae900f3aca7"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S44_KSPSAP_FLUX_LAG_strict_bins.csv",
+    "bytes": 10534,
+    "sha256": "6ad83e723bbcbc1e5bfc2abed4090ab2880df5f029c571bd57e9aced8f940756"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S44_KSPSAP_FLUX_SML_strict_bins.csv",
+    "bytes": 10542,
+    "sha256": "8237982b02c9dea1b0716514128e9b5b3cec2d305e94ce6c8487ca7fa3f10af1"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S44_KSPSAP_FLUX_strict_bins.csv",
+    "bytes": 10535,
+    "sha256": "be63b62eb58ad3c63ee1aa97b59a6eacd79c852ff2adda3822564078f9b10358"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S44_SAP_FLUX_strict_bins.csv",
+    "bytes": 10421,
+    "sha256": "7a6d7e10858e5daf580a7889947a5cbc5b23267b3fd74d58b98372fb17fc8de3"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S45_KSPSAP_FLUX_LAG_strict_bins.csv",
+    "bytes": 11335,
+    "sha256": "254153d565d04da9f8cdbe9b4276d5d80168426921d9f60cd62d06b0c2f70d6f"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S45_KSPSAP_FLUX_SML_strict_bins.csv",
+    "bytes": 11323,
+    "sha256": "41c3cda0489cdf3362766a7a53e9a342f2f32ac71ba9a108b27c57e187066395"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S45_KSPSAP_FLUX_strict_bins.csv",
+    "bytes": 11331,
+    "sha256": "edda9ec5e2aca023988569bf06560663c59c4c14bb3171d3775be88b8abb20b9"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S45_SAP_FLUX_strict_bins.csv",
+    "bytes": 11220,
+    "sha256": "51d6f00623e1e3d259ddc0e3c710d039454342218b3eae56a0d969cc43fb0fd4"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S46_KSPSAP_FLUX_LAG_strict_bins.csv",
+    "bytes": 12120,
+    "sha256": "f898fb95b218b5a5f71898172d945b7c67545536dc3a8af046b6f7cff31e855a"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S46_KSPSAP_FLUX_SML_strict_bins.csv",
+    "bytes": 12106,
+    "sha256": "3762aa6d1711ac67a3aff835ead062d462a472fd071cb2debfd057cac29cb0d7"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S46_KSPSAP_FLUX_strict_bins.csv",
+    "bytes": 12113,
+    "sha256": "cc9b08baad1d5cbf2a3d1ecbb9ae2da5629273d52ea1e4ca968c06ed6126b84b"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_S46_SAP_FLUX_strict_bins.csv",
+    "bytes": 11959,
+    "sha256": "ec495d087436a4d6254024a8e71e4b4ede60a34ff4883e9d8fe49d006a281ef5"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_FLUX_strict_global_linear_periodogram.csv",
+    "bytes": 61820,
+    "sha256": "04064c95436278dbb16c3d11cb76ef2d36cb77f493422826e1037b2e9a036450"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_FLUX_strict_global_linear_two_harmonic_periodogram.csv",
+    "bytes": 61371,
+    "sha256": "665c93be5091b8439dfbf22dd6c3841f74a7d271520fcb9095146b4bea4304a0"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_FLUX_strict_instrument_periodogram.csv",
+    "bytes": 61515,
+    "sha256": "21badfcbb815128384dd12988faf68b19a29979f42033653f9e0bd5b7c84585d"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_FLUX_strict_sector_linear_periodogram.csv",
+    "bytes": 61673,
+    "sha256": "ef5135f79054dba4fa64b6134555d8dc223fe95c0b044c1c10c27769eb9f4148"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_FLUX_strict_sector_quadratic_periodogram.csv",
+    "bytes": 61739,
+    "sha256": "6e8ba1564323a639a7dea353a17f760e41f4cd291554e0af9f144e2d1f9bdeba"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_arc_global_linear_periodogram.csv",
+    "bytes": 61725,
+    "sha256": "9359c83d0aedb8724c07ffa072baceed123a465943b43e6b0c36411ab9dd952b"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_arc_linear_periodogram.csv",
+    "bytes": 61352,
+    "sha256": "d0358bcc9ec75bb8656d9167954c42bb5b58620e365aa54d61ca50e530d8d6f8"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_arc_offset_periodogram.csv",
+    "bytes": 61762,
+    "sha256": "f78638d41ff04a39aa8ff132af80dd660a68cf6ac73bf7301b64543fc160457b"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_arc_sector_linear_fit.csv",
+    "bytes": 38838,
+    "sha256": "3b3d48c7d6316590212842e4beefba081481f5b7cb9cb2391845386339eb7e93"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/J0830_TESS_SAP_arc_sector_linear_periodogram.csv",
+    "bytes": 61508,
+    "sha256": "dd76bf6f5617e23a1afbc7ed187fe701a7a55604aeae015229c060413d87b561"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/additional_k2_products.json",
+    "bytes": 653,
+    "sha256": "bde5f3b906311d90c07697dcb3beafe9055d91bde2be8a3a295d6850e91ae107"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/downlink_offset_models.png",
+    "bytes": 340628,
+    "sha256": "2a2eae4ce99e418835477b4e7e4bbaa4ddc126690ce0014323f044da18b8c497"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/file_measurements.csv",
+    "bytes": 10490,
+    "sha256": "f5136d7915fb6f5856adc1c9d4a6abad85ccf32b5a0197144f7f0e2e9088352a"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/followup.json",
+    "bytes": 56154,
+    "sha256": "6b720df765c9e0bf25dde6c1c7b52b84b70724cdce22e987ac26fed4d27b0d2f"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/followup_source_hashes.json",
+    "bytes": 279,
+    "sha256": "6c938916f78068eef5899c213a6afa2f927e61d130335d7421f493c0058240cc"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/hlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits.receipt.json",
+    "bytes": 534,
+    "sha256": "52cf9634e8242cbae21db4b68099bb5eee19ddeae150dc7e3ae556fdd5573f45"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits",
+    "bytes": 501120,
+    "sha256": "339a180a297a900e6ed030de1ce94887dbf9965a1d381025f8259a0aab0b1dd5"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits.receipt.json",
+    "bytes": 568,
+    "sha256": "bdcbf4a8d6a19626518fd7e53f12ca7b5fe136dca5a8d42261e877c230ea91f4"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/input_source_hashes.json",
+    "bytes": 1352,
+    "sha256": "6091b5e78f3ee6606dbe39c09ae021c3ff76dec412b61ff414028c529c8912ad"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/instrument_model_and_k2sc.png",
+    "bytes": 250687,
+    "sha256": "1841a2bedf5acd0645e4bec7682df55e5eefb954407796f0945e1712937b29e8"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/period_sensitivity.png",
+    "bytes": 278350,
+    "sha256": "41f934b91312511bd2047f1e0e9ccea7e4746a39203eee8baef465c77d3c70c7"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/protocol.json",
+    "bytes": 2138,
+    "sha256": "3731cb623ed6f440735496d7d6ff13b9f68ac6262cde2b60342f2e418a90363e"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/protocol_plan_snapshot.txt",
+    "bytes": 4670,
+    "sha256": "b937a3ecae32c2535f633661e4029ceed006b775c289c6917c1139638f4c8293"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/report.txt",
+    "bytes": 11462,
+    "sha256": "49cb5ba1fa51052f2c189ffeb8696dfb1564cfb3b539cb5f30bee76ed0965557"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/results.json",
+    "bytes": 136790,
+    "sha256": "a4e9c17f601217ca248bf3fe8c38d27cadacf97ba55aefa2ffacf2c49f9f2d0f"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/sibling_lightcurves.png",
+    "bytes": 463381,
+    "sha256": "a2a9dd607740cad581ab3006350b05967d8b27f23302d136fa6e1d097ed4241b"
+  },
+  {
+    "path": "results/tang-sibling-analysis-20261111/verification.json",
+    "bytes": 1669,
+    "sha256": "d09f9b4aa67b17077b6100c1ebe5a7884b010ce6c2bad973a52970743b1a96a3"
+  },
+  {
     "path": "tools/sky-plates/README.md",
-    "bytes": 36352,
-    "sha256": "c301a152aca48beb54889fa969998c6f428a213f253cd0936122b18a89041622"
+    "bytes": 38117,
+    "sha256": "d02b03c4eeeae2862269a3ae60576df733692a3fd2a609d4227cd95654f1e6b4"
   },
   {
     "path": "tools/sky-plates/analysis_core.py",
@@ -6018,6 +6558,11 @@
     "path": "tools/sky-plates/analyze_spherex_co.py",
     "bytes": 5566,
     "sha256": "621250cd2690d5ed69afe8b5495f2cfcad842c7342c09b8a00c2b7b77f6d4036"
+  },
+  {
+    "path": "tools/sky-plates/analyze_tang_siblings.py",
+    "bytes": 15886,
+    "sha256": "c3473f00d501f67de465ea91e694f25a4b28fd11d19c5aa995086952a26e8c06"
   },
   {
     "path": "tools/sky-plates/analyze_tess_variability.py",
@@ -6405,6 +6950,16 @@
     "sha256": "e448efef6a64fd7ca217659da2d9aa54f98e9c450db06517b25a066a70e448fc"
   },
   {
+    "path": "tools/sky-plates/tang_sibling_core.py",
+    "bytes": 10026,
+    "sha256": "c777fbba42128df5790878d5a9cc6d548e84a7b6fabecca5e079ea8c844832ea"
+  },
+  {
+    "path": "tools/sky-plates/tang_sibling_followup.py",
+    "bytes": 11695,
+    "sha256": "56516e564355157c25e56f9a6d424eb5b73b92ec67813c483d7c8f2777dff54c"
+  },
+  {
     "path": "tools/sky-plates/test_analysis.py",
     "bytes": 4696,
     "sha256": "127c6bb8b64ff8a99781d1c00b7caa3ce1cb7d02e81c155cf3ccb57833f79baf"
@@ -6543,6 +7098,11 @@
     "path": "tools/sky-plates/test_stellar_models.py",
     "bytes": 4686,
     "sha256": "16f1842396c21800bcf1ec4b062a2f2452930734ff0770bfd8dfa2e1f81731ae"
+  },
+  {
+    "path": "tools/sky-plates/test_tang_siblings.py",
+    "bytes": 6577,
+    "sha256": "3f87950dc00a1c6d31b8e40963b3c83e93ec353f9a6b1a98ab01a7fb1bda3cf6"
   },
   {
     "path": "tools/sky-plates/test_tess_event_comparison.py",

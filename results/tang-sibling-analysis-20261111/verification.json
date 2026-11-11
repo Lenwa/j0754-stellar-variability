@@ -1,0 +1,49 @@
+{
+  "verified_utc": "2026-11-11T16:21:11.176680+00:00",
+  "component_tests": {
+    "command": "python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'",
+    "passed": 205,
+    "new_sibling_tests": 17,
+    "exit_code": 0
+  },
+  "independent_readonly_review": {
+    "scope": [
+      "Native FITS period fits and holdouts",
+      "Product definitions and correction conventions",
+      "Native cadence/local-noise excursion scan"
+    ],
+    "findings_addressed": [
+      "Cadence continuity",
+      "Local robust noise",
+      "Floating-point null ties and exact small-block enumeration",
+      "Absolute BJD test tolerance",
+      "Flat null period scan"
+    ],
+    "scientific_update": "Time-only six-arc QLP reference-offset fits reproduce J0830 38\u201339-day signal without target centroid regressors.",
+    "outside_review": [
+      "Pixel host attribution",
+      "Orbital confirmation",
+      "Historical fading mechanism",
+      "Narrative publication readiness"
+    ]
+  },
+  "figure_visual_inspection": [
+    "downlink_offset_models.png",
+    "sibling_lightcurves.png",
+    "period_sensitivity.png",
+    "instrument_model_and_k2sc.png"
+  ],
+  "hash_checks": {
+    "main_inputs_and_source": 9,
+    "followup_source_and_input": 2,
+    "original_plan_snapshot": true,
+    "prior_native_manifest_entries_unchanged": true,
+    "prior_public_request_entries_unchanged": true
+  },
+  "privacy": {
+    "full_repository_gitleaks_exit": 0,
+    "scanned_bytes_approx": 198923781,
+    "targeted_private_strings": "No matches"
+  },
+  "publication_state": "Saved in registered dedicated repository; actual commit and push state verified separately after execution"
+}

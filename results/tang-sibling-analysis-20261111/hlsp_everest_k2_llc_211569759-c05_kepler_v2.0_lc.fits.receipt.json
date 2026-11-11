@@ -1,0 +1,14 @@
+{
+  "file": "hlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file",
+  "params": {
+    "uri": "mast:HLSP/everest/v2/c05/211500000/69759/hlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:56:57.987845+00:00",
+  "http_status": 200,
+  "response_sha256": "29e9afb9053d2f5439aefea1aea62b85e4e31c48a76ad09d31f4377353867c5d",
+  "response_bytes": 13164480,
+  "state": "failed",
+  "error": "Response exceeds 12 MB bound"
+}

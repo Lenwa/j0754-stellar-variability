@@ -1,0 +1,11 @@
+{
+  "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits": "3e23efbf23b9ede66261cc1844721001493cf2d09ac63956b40ff4804a879314",
+  "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits": "bbc4166fb566fe5d4a9e962f025589ef3e3b051a49d2db442a372ec93386cd5d",
+  "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits": "b9fedbab00d96505c809e2eefe09e25354b9b7c17a8991a723167763d372741c",
+  "results/giant-screening-20261111/ktwo211569759-c05_llc.fits": "5d99524851efd08b5b71af7f99ff4db73685dbd8c9806d2fc37e04805c1fc95e",
+  "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits": "774d8ad8f2db27a9ccac437df7da67d5ef4f391c629d0e5591fc3abc1839155a",
+  "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits": "46ff2926baaf298d0c74490ab67d26a521ed909d6f66879c9bf382e7911e14e2",
+  "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits": "e05da70d586c50008e1af1f7fa1ea0062e43af52e43ee82f8bc1f1652e3a8ef8",
+  "tools/sky-plates/analyze_tang_siblings.py": "c3473f00d501f67de465ea91e694f25a4b28fd11d19c5aa995086952a26e8c06",
+  "tools/sky-plates/tang_sibling_core.py": "c777fbba42128df5790878d5a9cc6d548e84a7b6fabecca5e079ea8c844832ea"
+}

@@ -1,0 +1,4175 @@
+{
+  "file_measurements": [
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "group": "S44",
+      "raw_rows": 3278,
+      "accepted_rows": 2792,
+      "binned_rows": 106,
+      "median_native_flux": 0.999764621257782,
+      "first_bjd": 2459500.5311129177,
+      "last_bjd": 2459524.193142165,
+      "span_days": 23.66202924726531,
+      "p05_p95_relative_percent": [
+        -0.5159844531181679,
+        0.7314001500125178
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.23489052264935228,
+        "SAP_Y": -0.20949007831047337,
+        "SAP_BKG": -0.12780588612988766
+      },
+      "camera": 3,
+      "ccd": 3
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX",
+      "quality": "strict",
+      "group": "S44",
+      "raw_rows": 3278,
+      "accepted_rows": 2792,
+      "binned_rows": 106,
+      "median_native_flux": 1.000002145767212,
+      "first_bjd": 2459500.5311129177,
+      "last_bjd": 2459524.193142165,
+      "span_days": 23.66202924726531,
+      "p05_p95_relative_percent": [
+        -0.10666556120155768,
+        0.11131918385680617
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.02134624542526327,
+        "SAP_Y": -0.004610351186792384,
+        "SAP_BKG": -0.05969396206530166
+      },
+      "camera": 3,
+      "ccd": 3
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_SML",
+      "quality": "strict",
+      "group": "S44",
+      "raw_rows": 3278,
+      "accepted_rows": 2792,
+      "binned_rows": 106,
+      "median_native_flux": 1.0000028014183044,
+      "first_bjd": 2459500.5311129177,
+      "last_bjd": 2459524.193142165,
+      "span_days": 23.66202924726531,
+      "p05_p95_relative_percent": [
+        -0.09018574722230444,
+        0.09610089559899393
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.0012596967193771221,
+        "SAP_Y": -0.013329299524361925,
+        "SAP_BKG": -0.056627990677920716
+      },
+      "camera": 3,
+      "ccd": 3
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_LAG",
+      "quality": "strict",
+      "group": "S44",
+      "raw_rows": 3278,
+      "accepted_rows": 2792,
+      "binned_rows": 106,
+      "median_native_flux": 1.0000000298023224,
+      "first_bjd": 2459500.5311129177,
+      "last_bjd": 2459524.193142165,
+      "span_days": 23.66202924726531,
+      "p05_p95_relative_percent": [
+        -0.12760400391804705,
+        0.13222634398262212
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.031513090779869204,
+        "SAP_Y": -0.00701964103101679,
+        "SAP_BKG": -0.06966089191994924
+      },
+      "camera": 3,
+      "ccd": 3
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "group": "S45",
+      "raw_rows": 3450,
+      "accepted_rows": 2733,
+      "binned_rows": 107,
+      "median_native_flux": 1.0001024007797241,
+      "first_bjd": 2459526.4294645777,
+      "last_bjd": 2459550.473067991,
+      "span_days": 24.04360341327265,
+      "p05_p95_relative_percent": [
+        -0.662042058214185,
+        0.27820360935921773
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.08708503077666119,
+        "SAP_Y": 0.5866358547579725,
+        "SAP_BKG": -0.13561121337080728
+      },
+      "camera": 2,
+      "ccd": 4
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX",
+      "quality": "strict",
+      "group": "S45",
+      "raw_rows": 3450,
+      "accepted_rows": 2733,
+      "binned_rows": 107,
+      "median_native_flux": 1.000009298324585,
+      "first_bjd": 2459526.4294645777,
+      "last_bjd": 2459550.473067991,
+      "span_days": 24.04360341327265,
+      "p05_p95_relative_percent": [
+        -0.10437749130196572,
+        0.10639806997185808
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.007830009040755164,
+        "SAP_Y": 0.0011237306799788994,
+        "SAP_BKG": -0.022831452883359284
+      },
+      "camera": 2,
+      "ccd": 4
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_SML",
+      "quality": "strict",
+      "group": "S45",
+      "raw_rows": 3450,
+      "accepted_rows": 2733,
+      "binned_rows": 107,
+      "median_native_flux": 1.0000137090682983,
+      "first_bjd": 2459526.4294645777,
+      "last_bjd": 2459550.473067991,
+      "span_days": 24.04360341327265,
+      "p05_p95_relative_percent": [
+        -0.09546983492004779,
+        0.0944243837828429
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.004639297318959131,
+        "SAP_Y": 0.00039270138463799877,
+        "SAP_BKG": -0.01967778099235547
+      },
+      "camera": 2,
+      "ccd": 4
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_LAG",
+      "quality": "strict",
+      "group": "S45",
+      "raw_rows": 3450,
+      "accepted_rows": 2733,
+      "binned_rows": 107,
+      "median_native_flux": 1.0000125169754028,
+      "first_bjd": 2459526.4294645777,
+      "last_bjd": 2459550.473067991,
+      "span_days": 24.04360341327265,
+      "p05_p95_relative_percent": [
+        -0.11870831675848681,
+        0.12312019734135315
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.0650776117858631,
+        "SAP_Y": -0.004123666578430229,
+        "SAP_BKG": -0.0076076169844545545
+      },
+      "camera": 2,
+      "ccd": 4
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "group": "S46",
+      "raw_rows": 3707,
+      "accepted_rows": 2891,
+      "binned_rows": 116,
+      "median_native_flux": 0.9997158050537109,
+      "first_bjd": 2459552.8690362214,
+      "last_bjd": 2459578.6549085057,
+      "span_days": 25.785872284322977,
+      "p05_p95_relative_percent": [
+        -0.2436346799226885,
+        0.9909942782353465
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.6251446313522182,
+        "SAP_Y": 0.301312468020885,
+        "SAP_BKG": 0.8237675575261991
+      },
+      "camera": 1,
+      "ccd": 4
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX",
+      "quality": "strict",
+      "group": "S46",
+      "raw_rows": 3707,
+      "accepted_rows": 2891,
+      "binned_rows": 116,
+      "median_native_flux": 0.9999978542327881,
+      "first_bjd": 2459552.8690362214,
+      "last_bjd": 2459578.6549085057,
+      "span_days": 25.785872284322977,
+      "p05_p95_relative_percent": [
+        -0.11190200021695684,
+        0.11447096591918893
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.037541221527165165,
+        "SAP_Y": -0.01744958246052115,
+        "SAP_BKG": -0.09447841902917443
+      },
+      "camera": 1,
+      "ccd": 4
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_SML",
+      "quality": "strict",
+      "group": "S46",
+      "raw_rows": 3707,
+      "accepted_rows": 2891,
+      "binned_rows": 116,
+      "median_native_flux": 0.9999962449073792,
+      "first_bjd": 2459552.8690362214,
+      "last_bjd": 2459578.6549085057,
+      "span_days": 25.785872284322977,
+      "p05_p95_relative_percent": [
+        -0.10112860030542237,
+        0.0978890756971662
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.015178417942631485,
+        "SAP_Y": -0.0027591398294146254,
+        "SAP_BKG": -0.0680013079206339
+      },
+      "camera": 1,
+      "ccd": 4
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits",
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_LAG",
+      "quality": "strict",
+      "group": "S46",
+      "raw_rows": 3707,
+      "accepted_rows": 2891,
+      "binned_rows": 116,
+      "median_native_flux": 1.0000004768371582,
+      "first_bjd": 2459552.8690362214,
+      "last_bjd": 2459578.6549085057,
+      "span_days": 25.785872284322977,
+      "p05_p95_relative_percent": [
+        -0.1342981413373301,
+        0.13103478859195494
+      ],
+      "header_match_arcsec": 0.0015497045807162612,
+      "header_identifier": 70330439,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.06135604240140308,
+        "SAP_Y": -0.021402101938546227,
+        "SAP_BKG": -0.16925281924798213
+      },
+      "camera": 1,
+      "ccd": 4
+    },
+    {
+      "file": "ktwo211569759-c05_llc.fits",
+      "target": "J0830",
+      "mission": "K2",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "group": "K2C5",
+      "raw_rows": 3663,
+      "accepted_rows": 2160,
+      "binned_rows": 283,
+      "median_native_flux": 944704.59375,
+      "first_bjd": 2457139.6310547376,
+      "last_bjd": 2457214.4113126025,
+      "span_days": 74.78025786485523,
+      "p05_p95_relative_percent": [
+        -1.1101555654947304,
+        1.320928794308629
+      ],
+      "header_match_arcsec": 0.16060073759439886,
+      "header_identifier": 211569759,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "POS_CORR1": 0.4231512653540132,
+        "POS_CORR2": -0.5329765318587636,
+        "SAP_BKG": 0.8595307895432073
+      },
+      "camera": null,
+      "ccd": null
+    },
+    {
+      "file": "ktwo211569759-c05_llc.fits",
+      "target": "J0830",
+      "mission": "K2",
+      "column": "PDCSAP_FLUX",
+      "quality": "strict",
+      "group": "K2C5",
+      "raw_rows": 3663,
+      "accepted_rows": 2160,
+      "binned_rows": 283,
+      "median_native_flux": 941717.15625,
+      "first_bjd": 2457139.6310547376,
+      "last_bjd": 2457214.4113126025,
+      "span_days": 74.78025786485523,
+      "p05_p95_relative_percent": [
+        -0.7368328381773592,
+        1.0829545455676604
+      ],
+      "header_match_arcsec": 0.16060073759439886,
+      "header_identifier": 211569759,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "POS_CORR1": 0.22865804450374508,
+        "POS_CORR2": -0.34852914399970125,
+        "SAP_BKG": 0.6993096629398549
+      },
+      "camera": null,
+      "ccd": null
+    },
+    {
+      "file": "ktwo211569759-c05_llc.fits",
+      "target": "J0830",
+      "mission": "K2",
+      "column": "SAP_FLUX",
+      "quality": "kepler_default",
+      "group": "K2C5",
+      "raw_rows": 3663,
+      "accepted_rows": 3445,
+      "binned_rows": 375,
+      "median_native_flux": 942766.25,
+      "first_bjd": 2457139.610622548,
+      "last_bjd": 2457214.4317445117,
+      "span_days": 74.82112196367234,
+      "p05_p95_relative_percent": [
+        -0.9328969402542797,
+        1.4436067795172036
+      ],
+      "header_match_arcsec": 0.16060073759439886,
+      "header_identifier": 211569759,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "POS_CORR1": 0.378233574424007,
+        "POS_CORR2": -0.4789183674971713,
+        "SAP_BKG": 0.7648686846004163
+      },
+      "camera": null,
+      "ccd": null
+    },
+    {
+      "file": "ktwo211569759-c05_llc.fits",
+      "target": "J0830",
+      "mission": "K2",
+      "column": "PDCSAP_FLUX",
+      "quality": "kepler_default",
+      "group": "K2C5",
+      "raw_rows": 3663,
+      "accepted_rows": 3444,
+      "binned_rows": 375,
+      "median_native_flux": 942811.1875,
+      "first_bjd": 2457139.6310547376,
+      "last_bjd": 2457214.4317445117,
+      "span_days": 74.80068977409974,
+      "p05_p95_relative_percent": [
+        -0.8245845088680537,
+        0.9269724538562452
+      ],
+      "header_match_arcsec": 0.16060073759439886,
+      "header_identifier": 211569759,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "POS_CORR1": -0.09945522034254164,
+        "POS_CORR2": -0.01590812418202036,
+        "SAP_BKG": 0.2740849504359197
+      },
+      "camera": null,
+      "ccd": null
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "group": "S44",
+      "raw_rows": 3278,
+      "accepted_rows": 2821,
+      "binned_rows": 102,
+      "median_native_flux": 1.000160574913025,
+      "first_bjd": 2459500.703357407,
+      "last_bjd": 2459524.1987271663,
+      "span_days": 23.495369759388268,
+      "p05_p95_relative_percent": [
+        -1.7256290409185748,
+        0.9379668901680738
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.10383643751980391,
+        "SAP_Y": -0.5781764456415986,
+        "SAP_BKG": -0.7752781691350441
+      },
+      "camera": 4,
+      "ccd": 3
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX",
+      "quality": "strict",
+      "group": "S44",
+      "raw_rows": 3278,
+      "accepted_rows": 2821,
+      "binned_rows": 102,
+      "median_native_flux": 0.9999998807907104,
+      "first_bjd": 2459500.703357407,
+      "last_bjd": 2459524.1987271663,
+      "span_days": 23.495369759388268,
+      "p05_p95_relative_percent": [
+        -0.08915067781813946,
+        0.08832217315699609
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.020147506646612866,
+        "SAP_Y": -0.0050120787004035786,
+        "SAP_BKG": -0.025725554290260005
+      },
+      "camera": 4,
+      "ccd": 3
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_SML",
+      "quality": "strict",
+      "group": "S44",
+      "raw_rows": 3278,
+      "accepted_rows": 2821,
+      "binned_rows": 102,
+      "median_native_flux": 0.9999998211860657,
+      "first_bjd": 2459500.703357407,
+      "last_bjd": 2459524.1987271663,
+      "span_days": 23.495369759388268,
+      "p05_p95_relative_percent": [
+        -0.0836670548320484,
+        0.08147360351209443
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.03743556471949581,
+        "SAP_Y": -0.01690195394200735,
+        "SAP_BKG": -0.021017401186426678
+      },
+      "camera": 4,
+      "ccd": 3
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_LAG",
+      "quality": "strict",
+      "group": "S44",
+      "raw_rows": 3278,
+      "accepted_rows": 2821,
+      "binned_rows": 102,
+      "median_native_flux": 0.999999463558197,
+      "first_bjd": 2459500.703357407,
+      "last_bjd": 2459524.1987271663,
+      "span_days": 23.495369759388268,
+      "p05_p95_relative_percent": [
+        -0.09569530852184815,
+        0.09856825394118918
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.03383332872058619,
+        "SAP_Y": -0.014660636591583922,
+        "SAP_BKG": -0.031175296495539264
+      },
+      "camera": 4,
+      "ccd": 3
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "group": "S45",
+      "raw_rows": 3450,
+      "accepted_rows": 2811,
+      "binned_rows": 109,
+      "median_native_flux": 0.9997191429138184,
+      "first_bjd": 2459526.0391830336,
+      "last_bjd": 2459550.583114295,
+      "span_days": 24.543931261170655,
+      "p05_p95_relative_percent": [
+        -1.8342580213425497,
+        2.058827948408881
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.11921163588429788,
+        "SAP_Y": 0.5180304307148604,
+        "SAP_BKG": 0.46100760406883406
+      },
+      "camera": 2,
+      "ccd": 1
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX",
+      "quality": "strict",
+      "group": "S45",
+      "raw_rows": 3450,
+      "accepted_rows": 2811,
+      "binned_rows": 109,
+      "median_native_flux": 1.0000022649765015,
+      "first_bjd": 2459526.0391830336,
+      "last_bjd": 2459550.583114295,
+      "span_days": 24.543931261170655,
+      "p05_p95_relative_percent": [
+        -0.08206348905488436,
+        0.07883888507618231
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.01054611627647782,
+        "SAP_Y": -0.00753005774354677,
+        "SAP_BKG": -0.020870214133608393
+      },
+      "camera": 2,
+      "ccd": 1
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_SML",
+      "quality": "strict",
+      "group": "S45",
+      "raw_rows": 3450,
+      "accepted_rows": 2811,
+      "binned_rows": 109,
+      "median_native_flux": 1.0,
+      "first_bjd": 2459526.0391830336,
+      "last_bjd": 2459550.583114295,
+      "span_days": 24.543931261170655,
+      "p05_p95_relative_percent": [
+        -0.07534623146057129,
+        0.07337331771850586
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.03204661802842095,
+        "SAP_Y": -0.016681023487342676,
+        "SAP_BKG": -0.022853933185552316
+      },
+      "camera": 2,
+      "ccd": 1
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_LAG",
+      "quality": "strict",
+      "group": "S45",
+      "raw_rows": 3450,
+      "accepted_rows": 2811,
+      "binned_rows": 109,
+      "median_native_flux": 0.9999945163726807,
+      "first_bjd": 2459526.0391830336,
+      "last_bjd": 2459550.583114295,
+      "span_days": 24.543931261170655,
+      "p05_p95_relative_percent": [
+        -0.08810508881020862,
+        0.08575367267953382
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.003497588292154746,
+        "SAP_Y": -0.0017051272668276356,
+        "SAP_BKG": -0.022750137978022954
+      },
+      "camera": 2,
+      "ccd": 1
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "group": "S46",
+      "raw_rows": 3707,
+      "accepted_rows": 2930,
+      "binned_rows": 117,
+      "median_native_flux": 0.9989087581634521,
+      "first_bjd": 2459552.492968609,
+      "last_bjd": 2459578.65439744,
+      "span_days": 26.161428831052035,
+      "p05_p95_relative_percent": [
+        -2.2075418040363948,
+        1.908072411400541
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.055351428803767276,
+        "SAP_Y": 0.38186097853442724,
+        "SAP_BKG": -0.2748478995472804
+      },
+      "camera": 1,
+      "ccd": 1
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX",
+      "quality": "strict",
+      "group": "S46",
+      "raw_rows": 3707,
+      "accepted_rows": 2930,
+      "binned_rows": 117,
+      "median_native_flux": 0.9999961853027344,
+      "first_bjd": 2459552.492968609,
+      "last_bjd": 2459578.65439744,
+      "span_days": 26.161428831052035,
+      "p05_p95_relative_percent": [
+        -0.08531751992233438,
+        0.0872090805400072
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.0027863871300569,
+        "SAP_Y": 0.005854078605502183,
+        "SAP_BKG": -0.03066844300087364
+      },
+      "camera": 1,
+      "ccd": 1
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_SML",
+      "quality": "strict",
+      "group": "S46",
+      "raw_rows": 3707,
+      "accepted_rows": 2930,
+      "binned_rows": 117,
+      "median_native_flux": 0.9999996721744537,
+      "first_bjd": 2459552.492968609,
+      "last_bjd": 2459578.65439744,
+      "span_days": 26.161428831052035,
+      "p05_p95_relative_percent": [
+        -0.08114906825541501,
+        0.08040490402143607
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": 0.0002836540339910816,
+        "SAP_Y": -0.0018691500441489056,
+        "SAP_BKG": -0.016324537202310106
+      },
+      "camera": 1,
+      "ccd": 1
+    },
+    {
+      "file": "hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits",
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_LAG",
+      "quality": "strict",
+      "group": "S46",
+      "raw_rows": 3707,
+      "accepted_rows": 2930,
+      "binned_rows": 117,
+      "median_native_flux": 0.9999971389770508,
+      "first_bjd": 2459552.492968609,
+      "last_bjd": 2459578.65439744,
+      "span_days": 26.161428831052035,
+      "p05_p95_relative_percent": [
+        -0.08974488423790783,
+        0.09322550742769664
+      ],
+      "header_match_arcsec": 0.17209751705769571,
+      "header_identifier": 20445282,
+      "regressor_imputed_rows": [
+        0,
+        0,
+        0
+      ],
+      "correlations": {
+        "SAP_X": -0.010458119401176146,
+        "SAP_Y": 0.014970645560868556,
+        "SAP_BKG": -0.034290277054755076
+      },
+      "camera": 1,
+      "ccd": 1
+    }
+  ],
+  "period_tests": [
+    {
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "points": 329,
+      "span_days": 78.0682364157401,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              0.0007908605390657404,
+              -0.0020530750733124396
+            ],
+            "harmonic_semiamplitudes": [
+              0.002200131279925867
+            ],
+            "power": 0.18423774203974286,
+            "null_sse": 0.003577907787699403,
+            "residual_sse": 0.0029187221356672534,
+            "phase_energy_retention": [
+              0.802492378683782,
+              0.8554703578665378
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.0475704831465102
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              -0.002900739365614271,
+              0.0009720512785839045
+            ],
+            "harmonic_semiamplitudes": [
+              0.003059276475806148
+            ],
+            "power": 0.39047476931671876,
+            "null_sse": 0.003577907787699403,
+            "residual_sse": 0.002180825069660987,
+            "phase_energy_retention": [
+              0.8726149124979266,
+              0.9238193174440751
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.015079782589775
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              0.0007669116251262381,
+              -0.0022890323711764835,
+              -0.003058430797350659,
+              0.000950431950267382
+            ],
+            "harmonic_semiamplitudes": [
+              0.002414088365625335,
+              0.0032027050807515896
+            ],
+            "power": 0.6103136436702631,
+            "null_sse": 0.003577907787699403,
+            "residual_sse": 0.0013942618490723703,
+            "phase_energy_retention": [
+              0.7632548791395856,
+              0.7793226456900167,
+              0.9828417654587484,
+              0.9999915028605669
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.1247535346240125
+          },
+          "free_peak": {
+            "best_period_days": 19.00011875074219,
+            "power": 0.41438894677366905,
+            "span_cycles": 4.108828867855922,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "block_sign_diagnostics": {
+            "7": {
+              "draws": 256,
+              "occupied_blocks": 12,
+              "trial_exceedances": 17,
+              "raw_trial_fraction": 0.06640625,
+              "fraction_scanned_max_ge_observed": 0.07003891050583658,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability"
+            },
+            "14": {
+              "draws": 256,
+              "occupied_blocks": 6,
+              "trial_exceedances": 28,
+              "raw_trial_fraction": 0.109375,
+              "fraction_scanned_max_ge_observed": 0.11284046692607004,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability",
+              "exact_patterns": 64,
+              "exact_exceedances": 8,
+              "exact_conditional_fraction": 0.125
+            }
+          },
+          "free_two_harmonic_peak": {
+            "best_period_days": 38.24091778202677,
+            "power": 0.6210096252582075,
+            "span_cycles": 2.041484382271604,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_linear": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              -0.001461858428038771,
+              -0.0033570285231923876
+            ],
+            "harmonic_semiamplitudes": [
+              0.0036615120604956706
+            ],
+            "power": 0.15898715757316229,
+            "null_sse": 0.0030773819271861466,
+            "residual_sse": 0.0025881177218158007,
+            "phase_energy_retention": [
+              0.17891106191647266,
+              0.2297586858419831
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.1031578690055455
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              -0.0032144781695771702,
+              0.0013486374595875878
+            ],
+            "harmonic_semiamplitudes": [
+              0.0034859278391973433
+            ],
+            "power": 0.56076897242282,
+            "null_sse": 0.0030773819271861466,
+            "residual_sse": 0.0013516816261254136,
+            "phase_energy_retention": [
+              0.805320918180803,
+              0.8741357600575015
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.0295829063185349
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              -0.002101677749367387,
+              -0.0016697914153404013,
+              -0.0028756039788943007,
+              0.001674107836412408
+            ],
+            "harmonic_semiamplitudes": [
+              0.00268426018353856,
+              0.0033274217182933346
+            ],
+            "power": 0.6360448681843407,
+            "null_sse": 0.0030773819271861466,
+            "residual_sse": 0.0011200289449561618,
+            "phase_energy_retention": [
+              0.1368765783308645,
+              0.19000535774813754,
+              0.9395213935342059,
+              0.9864428368875583
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 2.431123206868048
+          },
+          "free_peak": {
+            "best_period_days": 19.94515083520319,
+            "power": 0.5636487008805906,
+            "span_cycles": 3.9141462032941696,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "block_sign_diagnostics": {
+            "7": {
+              "draws": 256,
+              "occupied_blocks": 12,
+              "trial_exceedances": 3,
+              "raw_trial_fraction": 0.01171875,
+              "fraction_scanned_max_ge_observed": 0.01556420233463035,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability"
+            },
+            "14": {
+              "draws": 256,
+              "occupied_blocks": 6,
+              "trial_exceedances": 15,
+              "raw_trial_fraction": 0.05859375,
+              "fraction_scanned_max_ge_observed": 0.0622568093385214,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability",
+              "exact_patterns": 64,
+              "exact_exceedances": 4,
+              "exact_conditional_fraction": 0.0625
+            }
+          }
+        },
+        "sector_quadratic": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -0.001058227923015802,
+              0.011807892101614353
+            ],
+            "harmonic_semiamplitudes": [
+              0.011855216666953706
+            ],
+            "power": 0.34392604967216545,
+            "null_sse": 0.002000231680552968,
+            "residual_sse": 0.001312299900231269,
+            "phase_energy_retention": [
+              0.02422526947237873,
+              0.03211585836156863
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.1833630383485445
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -0.002632905460893602,
+              0.002102014365009537
+            ],
+            "harmonic_semiamplitudes": [
+              0.0033690733973467837
+            ],
+            "power": 0.5121622189129734,
+            "null_sse": 0.002000231680552968,
+            "residual_sse": 0.000975788584700934,
+            "phase_energy_retention": [
+              0.467567111541209,
+              0.6106141264296947
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.1275345520018536
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              0.0034729133152133994,
+              0.0028794025457601962,
+              -0.0021232387371824305,
+              0.0024653969425958173
+            ],
+            "harmonic_semiamplitudes": [
+              0.0045113286197656696,
+              0.0032536632922957544
+            ],
+            "power": 0.5334789766906879,
+            "null_sse": 0.002000231680552968,
+            "residual_sse": 0.0009331501304672758,
+            "phase_energy_retention": [
+              0.010529341114020626,
+              0.017293032280925432,
+              0.4691038703531705,
+              0.6117235564120629
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 7.962639808488969
+          },
+          "free_peak": {
+            "best_period_days": 56.43738977072311,
+            "power": 0.6197637282113553,
+            "span_cycles": 1.3832715639913948,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "instrument": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              -0.0007517406399358639,
+              -0.005606956387313371
+            ],
+            "harmonic_semiamplitudes": [
+              0.005657125941586009
+            ],
+            "power": 0.5469001460487958,
+            "null_sse": 0.0016428093729171475,
+            "residual_sse": 0.0007443566869384289,
+            "phase_energy_retention": [
+              0.12020558653808708,
+              0.19050651637221072
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.2252905803732226
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              -0.0033177644913152523,
+              0.0017453991609376154
+            ],
+            "harmonic_semiamplitudes": [
+              0.0037488637546374084
+            ],
+            "power": 0.5547019922996411,
+            "null_sse": 0.0016428093729171475,
+            "residual_sse": 0.0007315397407914817,
+            "phase_energy_retention": [
+              0.374475675991198,
+              0.39856011234480904
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.0217830919608932
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              -0.005854183880411241,
+              -0.0026858264547641245,
+              -0.0013700459568953289,
+              0.004232058837576691
+            ],
+            "harmonic_semiamplitudes": [
+              0.006440895329903882,
+              0.004448297194288643
+            ],
+            "power": 0.8881593541705706,
+            "null_sse": 0.0016428093729171475,
+            "residual_sse": 0.00018373286124169386,
+            "phase_energy_retention": [
+              0.03875364120859916,
+              0.06907971697212184,
+              0.5289731079799704,
+              0.6101268350621204
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 3.3295000216608
+          },
+          "free_peak": {
+            "best_period_days": 20.730759264058044,
+            "power": 0.6493906500768523,
+            "span_cycles": 3.7658165541042634,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        }
+      }
+    },
+    {
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX",
+      "quality": "strict",
+      "points": 329,
+      "span_days": 78.0682364157401,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              7.524532951627725e-07,
+              1.0094674343980092e-05
+            ],
+            "harmonic_semiamplitudes": [
+              1.0122679293171903e-05
+            ],
+            "power": 0.001050315755021347,
+            "null_sse": 1.2815566399184292e-05,
+            "residual_sse": 1.2802106007885706e-05,
+            "phase_energy_retention": [
+              0.802492378683782,
+              0.8554703578665378
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.0475704831465102
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              9.037073487676354e-06,
+              1.0123004292177185e-05
+            ],
+            "harmonic_semiamplitudes": [
+              1.3569963637427352e-05
+            ],
+            "power": 0.0021227935935023146,
+            "null_sse": 1.2815566399184292e-05,
+            "residual_sse": 1.2788361596935e-05,
+            "phase_energy_retention": [
+              0.8726149124979266,
+              0.9238193174440751
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.015079782589775
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              1.5185983145929406e-06,
+              1.1268095000250055e-05,
+              9.91630314829638e-06,
+              1.0484217710682805e-05
+            ],
+            "harmonic_semiamplitudes": [
+              1.1369965073637862e-05,
+              1.443093514412381e-05
+            ],
+            "power": 0.0034330982517845055,
+            "null_sse": 1.2815566399184292e-05,
+            "residual_sse": 1.2771569300583624e-05,
+            "phase_energy_retention": [
+              0.7632548791395856,
+              0.7793226456900167,
+              0.9828417654587484,
+              0.9999915028605669
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.1247535346240125
+          },
+          "free_peak": {
+            "best_period_days": 5.246073641758746,
+            "power": 0.004923750406142522,
+            "span_cycles": 14.88126964027286,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "free_two_harmonic_peak": {
+            "best_period_days": 6.593316025878765,
+            "power": 0.012730371914411244,
+            "span_cycles": 11.840511831879782,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_linear": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              2.597218514413884e-05,
+              3.2613848394696666e-05
+            ],
+            "harmonic_semiamplitudes": [
+              4.169193577028638e-05
+            ],
+            "power": 0.0049887404081111475,
+            "null_sse": 1.2808325273125895e-05,
+            "residual_sse": 1.274442786327562e-05,
+            "phase_energy_retention": [
+              0.17891106191647266,
+              0.2297586858419831
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.1031578690055455
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              9.303940951984299e-06,
+              9.149698384637395e-06
+            ],
+            "harmonic_semiamplitudes": [
+              1.304914931203742e-05
+            ],
+            "power": 0.0017913343479935007,
+            "null_sse": 1.2808325273125895e-05,
+            "residual_sse": 1.2785381280123871e-05,
+            "phase_energy_retention": [
+              0.805320918180803,
+              0.8741357600575015
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.0295829063185349
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              1.940321362657566e-05,
+              3.2443886841353284e-05,
+              4.2456819772131025e-06,
+              6.86160737392911e-06
+            ],
+            "harmonic_semiamplitudes": [
+              3.780331324650087e-05,
+              8.068920076787878e-06
+            ],
+            "power": 0.005560343639370746,
+            "null_sse": 1.2808325273125895e-05,
+            "residual_sse": 1.2737106583162477e-05,
+            "phase_energy_retention": [
+              0.1368765783308645,
+              0.19000535774813754,
+              0.9395213935342059,
+              0.9864428368875583
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 2.431123206868048
+          },
+          "free_peak": {
+            "best_period_days": 88.44665561083471,
+            "power": 0.005958049263136568,
+            "span_cycles": 0.8826589979754615,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_quadratic": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -4.5283507072758856e-05,
+              1.6169760927023892e-05
+            ],
+            "harmonic_semiamplitudes": [
+              4.808385572357639e-05
+            ],
+            "power": 0.000918122226556739,
+            "null_sse": 1.2729194964450535e-05,
+            "residual_sse": 1.27175080076275e-05,
+            "phase_energy_retention": [
+              0.02422526947237873,
+              0.03211585836156863
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.1833630383485445
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -9.037815841753201e-07,
+              1.9108810876596073e-06
+            ],
+            "harmonic_semiamplitudes": [
+              2.1138324633398967e-06
+            ],
+            "power": 2.8554164782201852e-05,
+            "null_sse": 1.2729194964450535e-05,
+            "residual_sse": 1.2728831492919976e-05,
+            "phase_energy_retention": [
+              0.467567111541209,
+              0.6106141264296947
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.1275345520018536
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -6.768483365931228e-05,
+              4.2597991597174765e-05,
+              5.817759476790413e-06,
+              -1.0728048793346015e-05
+            ],
+            "harmonic_semiamplitudes": [
+              7.99739057168133e-05,
+              1.2203989357673069e-05
+            ],
+            "power": 0.001368636879791274,
+            "null_sse": 1.2729194964450535e-05,
+            "residual_sse": 1.2711773318772134e-05,
+            "phase_energy_retention": [
+              0.010529341114020626,
+              0.017293032280925432,
+              0.4691038703531705,
+              0.6117235564120629
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 7.962639808488969
+          },
+          "free_peak": {
+            "best_period_days": 5.236287472182223,
+            "power": 0.005555803988081746,
+            "span_cycles": 14.909081449495966,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "instrument": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              2.6264468169250862e-05,
+              2.5607574241567018e-05
+            ],
+            "harmonic_semiamplitudes": [
+              3.668201394077155e-05
+            ],
+            "power": 0.0032159952870709496,
+            "null_sse": 1.2654045872970806e-05,
+            "residual_sse": 1.2613350521080952e-05,
+            "phase_energy_retention": [
+              0.12020558653808708,
+              0.19050651637221072
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.2252905803732226
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              1.0751693956825163e-05,
+              -1.698672858538529e-06
+            ],
+            "harmonic_semiamplitudes": [
+              1.0885054543802993e-05
+            ],
+            "power": 0.0006018804941967382,
+            "null_sse": 1.2654045872970806e-05,
+            "residual_sse": 1.2646429649587195e-05,
+            "phase_energy_retention": [
+              0.374475675991198,
+              0.39856011234480904
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.0217830919608932
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              6.419986743893211e-05,
+              2.1850196680096427e-05,
+              -7.4115418591277415e-06,
+              -2.9372894398240555e-05
+            ],
+            "harmonic_semiamplitudes": [
+              6.781632601472416e-05,
+              3.029352864985844e-05
+            ],
+            "power": 0.005114105085355702,
+            "null_sse": 1.2654045872970806e-05,
+            "residual_sse": 1.2589331752621521e-05,
+            "phase_energy_retention": [
+              0.03875364120859916,
+              0.06907971697212184,
+              0.5289731079799704,
+              0.6101268350621204
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 3.3295000216608
+          },
+          "free_peak": {
+            "best_period_days": 5.269050912204439,
+            "power": 0.006650733485523113,
+            "span_cycles": 14.816375418752274,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        }
+      }
+    },
+    {
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_SML",
+      "quality": "strict",
+      "points": 329,
+      "span_days": 78.0682364157401,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              8.504391597287944e-07,
+              -9.585143840413889e-07
+            ],
+            "harmonic_semiamplitudes": [
+              1.2814041473377792e-06
+            ],
+            "power": 2.2151768735656496e-05,
+            "null_sse": 1.0406159849231174e-05,
+            "residual_sse": 1.0405929334384768e-05,
+            "phase_energy_retention": [
+              0.802492378683782,
+              0.8554703578665378
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.0475704831465102
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              6.7456201113569745e-06,
+              5.892212697142509e-06
+            ],
+            "harmonic_semiamplitudes": [
+              8.956648991398015e-06
+            ],
+            "power": 0.0011430830810482684,
+            "null_sse": 1.0406159849231174e-05,
+            "residual_sse": 1.0394264743968834e-05,
+            "phase_energy_retention": [
+              0.8726149124979266,
+              0.9238193174440751
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.015079782589775
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              1.3119010595179888e-06,
+              -1.9492237144576334e-07,
+              6.756439495887081e-06,
+              5.950369598318732e-06
+            ],
+            "harmonic_semiamplitudes": [
+              1.326302801344573e-06,
+              9.003131289622444e-06
+            ],
+            "power": 0.0011670262100490492,
+            "null_sse": 1.0406159849231174e-05,
+            "residual_sse": 1.0394015587941161e-05,
+            "phase_energy_retention": [
+              0.7632548791395856,
+              0.7793226456900167,
+              0.9828417654587484,
+              0.9999915028605669
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.1247535346240125
+          }
+        }
+      }
+    },
+    {
+      "target": "J0736",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_LAG",
+      "quality": "strict",
+      "points": 329,
+      "span_days": 78.0682364157401,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 39.42091782293346,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              1.1194133031705984e-05,
+              2.0868670148800026e-05
+            ],
+            "harmonic_semiamplitudes": [
+              2.368142749309991e-05
+            ],
+            "power": 0.003570655923125221,
+            "null_sse": 2.0443602280007606e-05,
+            "residual_sse": 2.037060521043648e-05,
+            "phase_energy_retention": [
+              0.802492378683782,
+              0.8554703578665378
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.0475704831465102
+          },
+          "at_half_gaia": {
+            "period_days": 19.71045891146673,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              1.3961769582417721e-05,
+              1.851166487947504e-05
+            ],
+            "harmonic_semiamplitudes": [
+              2.318647766441713e-05
+            ],
+            "power": 0.003875512981466711,
+            "null_sse": 2.0443602280007606e-05,
+            "residual_sse": 2.0364372833983494e-05,
+            "phase_energy_retention": [
+              0.8726149124979266,
+              0.9238193174440751
+            ],
+            "span_cycles": 3.9607518407561395,
+            "signal_condition": 1.015079782589775
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 39.42091782293346,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              1.256993566115594e-05,
+              2.2839625681769574e-05,
+              1.5928531878514112e-05,
+              1.970065582041169e-05
+            ],
+            "harmonic_semiamplitudes": [
+              2.6070132025153765e-05,
+              2.5334442317903138e-05
+            ],
+            "power": 0.008165214160002154,
+            "null_sse": 2.0443602280007606e-05,
+            "residual_sse": 2.0276675889189435e-05,
+            "phase_energy_retention": [
+              0.7632548791395856,
+              0.7793226456900167,
+              0.9828417654587484,
+              0.9999915028605669
+            ],
+            "span_cycles": 1.9803759203780698,
+            "signal_condition": 1.1247535346240125
+          }
+        }
+      }
+    },
+    {
+      "target": "J0830",
+      "mission": "K2",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "points": 283,
+      "span_days": 74.69852961041033,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.00048610502223795553,
+              0.0008588928988934689
+            ],
+            "harmonic_semiamplitudes": [
+              0.000986911903066626
+            ],
+            "power": 0.018636349420417475,
+            "null_sse": 0.00707341923102393,
+            "residual_sse": 0.006941596518637468,
+            "phase_energy_retention": [
+              0.9261679295021462,
+              0.971924547231896
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.0467852465538152
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.001006170758744537,
+              -0.0006088201673705585
+            ],
+            "harmonic_semiamplitudes": [
+              0.0011760278874030463
+            ],
+            "power": 0.024987799021245816,
+            "null_sse": 0.00707341923102393,
+            "residual_sse": 0.006896670052886089,
+            "phase_energy_retention": [
+              0.9282123089431311,
+              0.998874537557511
+            ],
+            "span_cycles": 3.8916437796471994,
+            "signal_condition": 1.0682236453100526
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.000717964396355519,
+              0.0008876951655132878,
+              0.0011983530332233636,
+              -0.0005835469981841726
+            ],
+            "harmonic_semiamplitudes": [
+              0.0011416985509799897,
+              0.001332882999863602
+            ],
+            "power": 0.04957812141132378,
+            "null_sse": 0.00707341923102393,
+            "residual_sse": 0.006722732393595033,
+            "phase_energy_retention": [
+              0.8838475631159762,
+              0.9428815344876901,
+              0.999999999999998,
+              0.9999999999999997
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.2314530361991067
+          },
+          "free_peak": {
+            "best_period_days": 72.46376811594203,
+            "power": 0.7122672083890803,
+            "span_cycles": 1.0308397086236625,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "block_sign_diagnostics": {
+            "7": {
+              "draws": 256,
+              "occupied_blocks": 10,
+              "trial_exceedances": 2,
+              "raw_trial_fraction": 0.0078125,
+              "fraction_scanned_max_ge_observed": 0.011673151750972763,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability"
+            },
+            "14": {
+              "draws": 256,
+              "occupied_blocks": 6,
+              "trial_exceedances": 5,
+              "raw_trial_fraction": 0.01953125,
+              "fraction_scanned_max_ge_observed": 0.023346303501945526,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability",
+              "exact_patterns": 64,
+              "exact_exceedances": 2,
+              "exact_conditional_fraction": 0.03125
+            }
+          },
+          "free_two_harmonic_peak": {
+            "best_period_days": 64.17970316887283,
+            "power": 0.7205114582013932,
+            "span_cycles": 1.163896464492206,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.00048610502223795553,
+              0.0008588928988934689
+            ],
+            "harmonic_semiamplitudes": [
+              0.000986911903066626
+            ],
+            "power": 0.018636349420417475,
+            "null_sse": 0.00707341923102393,
+            "residual_sse": 0.006941596518637468,
+            "phase_energy_retention": [
+              0.9261679295021462,
+              0.971924547231896
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.0467852465538152
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.001006170758744537,
+              -0.0006088201673705585
+            ],
+            "harmonic_semiamplitudes": [
+              0.0011760278874030463
+            ],
+            "power": 0.024987799021245816,
+            "null_sse": 0.00707341923102393,
+            "residual_sse": 0.006896670052886089,
+            "phase_energy_retention": [
+              0.9282123089431311,
+              0.998874537557511
+            ],
+            "span_cycles": 3.8916437796471994,
+            "signal_condition": 1.0682236453100526
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.000717964396355519,
+              0.0008876951655132878,
+              0.0011983530332233636,
+              -0.0005835469981841726
+            ],
+            "harmonic_semiamplitudes": [
+              0.0011416985509799897,
+              0.001332882999863602
+            ],
+            "power": 0.04957812141132378,
+            "null_sse": 0.00707341923102393,
+            "residual_sse": 0.006722732393595033,
+            "phase_energy_retention": [
+              0.8838475631159762,
+              0.9428815344876901,
+              0.999999999999998,
+              0.9999999999999997
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.2314530361991067
+          },
+          "free_peak": {
+            "best_period_days": 72.46376811594203,
+            "power": 0.7122672083890803,
+            "span_cycles": 1.0308397086236625,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "block_sign_diagnostics": {
+            "7": {
+              "draws": 256,
+              "occupied_blocks": 10,
+              "trial_exceedances": 2,
+              "raw_trial_fraction": 0.0078125,
+              "fraction_scanned_max_ge_observed": 0.011673151750972763,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability"
+            },
+            "14": {
+              "draws": 256,
+              "occupied_blocks": 6,
+              "trial_exceedances": 5,
+              "raw_trial_fraction": 0.01953125,
+              "fraction_scanned_max_ge_observed": 0.023346303501945526,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability",
+              "exact_patterns": 64,
+              "exact_exceedances": 2,
+              "exact_conditional_fraction": 0.03125
+            }
+          }
+        },
+        "sector_quadratic": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.002280259954192596,
+              0.00042049128384797154
+            ],
+            "harmonic_semiamplitudes": [
+              0.0023187061863217027
+            ],
+            "power": 0.1959887267426772,
+            "null_sse": 0.0035143030143781045,
+            "residual_sse": 0.0028255392412021873,
+            "phase_energy_retention": [
+              0.8437697206289242,
+              0.9583219100350284
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.0557015390206053
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.0009342456033978831,
+              -0.0015505781500353435
+            ],
+            "harmonic_semiamplitudes": [
+              0.0018102782788387266
+            ],
+            "power": 0.12184018644995565,
+            "null_sse": 0.0035143030143781045,
+            "residual_sse": 0.003086119679864635,
+            "phase_energy_retention": [
+              0.9156555406931053,
+              0.9796470121546835
+            ],
+            "span_cycles": 3.8916437796471994,
+            "signal_condition": 1.0548298478832216
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.0028918346489229287,
+              0.00020234578939148018,
+              0.001375798220017636,
+              -0.0020564007645929696
+            ],
+            "harmonic_semiamplitudes": [
+              0.002898905216662949,
+              0.0024741877145484023
+            ],
+            "power": 0.4079680121209358,
+            "null_sse": 0.0035143030143781045,
+            "residual_sse": 0.0020805797996116568,
+            "phase_energy_retention": [
+              0.7980601081333646,
+              0.8838486184992199,
+              0.9970649806265239,
+              0.9999999999999971
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.320456932013102
+          },
+          "free_peak": {
+            "best_period_days": 16.187778227438283,
+            "power": 0.5522512037394848,
+            "span_cycles": 4.614501666683099,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "instrument": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              -0.00043503919108667705,
+              0.0015523839206700526
+            ],
+            "harmonic_semiamplitudes": [
+              0.0016121894848113464
+            ],
+            "power": 0.11646377189454049,
+            "null_sse": 0.0021221888402408115,
+            "residual_sse": 0.0018750307232338662,
+            "phase_energy_retention": [
+              0.4150259088261452,
+              0.8977173935337457
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.4507363811274179
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              0.0014869546588816421,
+              -0.0017516753724966766
+            ],
+            "harmonic_semiamplitudes": [
+              0.0022976946638274616
+            ],
+            "power": 0.30328841396986894,
+            "null_sse": 0.0021221888402408115,
+            "residual_sse": 0.0014785535527396202,
+            "phase_energy_retention": [
+              0.8562698029632827,
+              0.9605071841733969
+            ],
+            "span_cycles": 3.8916437796471994,
+            "signal_condition": 1.0931413445275717
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              -1.8013950884764478e-05,
+              0.001652947587511229,
+              0.001832014505065421,
+              -0.00157371128283279
+            ],
+            "harmonic_semiamplitudes": [
+              0.0016530457433131336,
+              0.0024151282260959405
+            ],
+            "power": 0.43709393586427514,
+            "null_sse": 0.0021221888402408115,
+            "residual_sse": 0.0011945929674127137,
+            "phase_energy_retention": [
+              0.3681619873512665,
+              0.7940037197398777,
+              0.9748375437644232,
+              0.9970484536016418
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.766623879577899
+          },
+          "free_peak": {
+            "best_period_days": 16.125781092521667,
+            "power": 0.5900553478531,
+            "span_cycles": 4.632242567465571,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        }
+      }
+    },
+    {
+      "target": "J0830",
+      "mission": "K2",
+      "column": "PDCSAP_FLUX",
+      "quality": "strict",
+      "points": 283,
+      "span_days": 74.69852961041033,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              -0.0004929662267312203,
+              0.001487833653108493
+            ],
+            "harmonic_semiamplitudes": [
+              0.001567375092318294
+            ],
+            "power": 0.049360628509854676,
+            "null_sse": 0.006380724180645468,
+            "residual_sse": 0.0060657676247407805,
+            "phase_energy_retention": [
+              0.9261679295021462,
+              0.971924547231896
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.0467852465538152
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.0013395253225114818,
+              -0.0007451873275857064
+            ],
+            "harmonic_semiamplitudes": [
+              0.0015328510178239162
+            ],
+            "power": 0.04700183841220795,
+            "null_sse": 0.006380724180645468,
+            "residual_sse": 0.006080818413753902,
+            "phase_energy_retention": [
+              0.9282123089431311,
+              0.998874537557511
+            ],
+            "span_cycles": 3.8916437796471994,
+            "signal_condition": 1.0682236453100526
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              -0.00023625355102638743,
+              0.0015516217722751273,
+              0.0014508941093392225,
+              -0.0005149567108919952
+            ],
+            "harmonic_semiamplitudes": [
+              0.0015695049743695573,
+              0.0015395694627420868
+            ],
+            "power": 0.09519213850168862,
+            "null_sse": 0.006380724180645468,
+            "residual_sse": 0.005773329400700391,
+            "phase_energy_retention": [
+              0.8838475631159762,
+              0.9428815344876901,
+              0.999999999999998,
+              0.9999999999999997
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.2314530361991067
+          },
+          "free_peak": {
+            "best_period_days": 70.05253940455341,
+            "power": 0.6837590576790065,
+            "span_cycles": 1.0663215101886074,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "free_two_harmonic_peak": {
+            "best_period_days": 62.745098039215684,
+            "power": 0.6980096458015053,
+            "span_cycles": 1.1905078156659148,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              -0.0004929662267312203,
+              0.001487833653108493
+            ],
+            "harmonic_semiamplitudes": [
+              0.001567375092318294
+            ],
+            "power": 0.049360628509854676,
+            "null_sse": 0.006380724180645468,
+            "residual_sse": 0.0060657676247407805,
+            "phase_energy_retention": [
+              0.9261679295021462,
+              0.971924547231896
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.0467852465538152
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.0013395253225114818,
+              -0.0007451873275857064
+            ],
+            "harmonic_semiamplitudes": [
+              0.0015328510178239162
+            ],
+            "power": 0.04700183841220795,
+            "null_sse": 0.006380724180645468,
+            "residual_sse": 0.006080818413753902,
+            "phase_energy_retention": [
+              0.9282123089431311,
+              0.998874537557511
+            ],
+            "span_cycles": 3.8916437796471994,
+            "signal_condition": 1.0682236453100526
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              -0.00023625355102638743,
+              0.0015516217722751273,
+              0.0014508941093392225,
+              -0.0005149567108919952
+            ],
+            "harmonic_semiamplitudes": [
+              0.0015695049743695573,
+              0.0015395694627420868
+            ],
+            "power": 0.09519213850168862,
+            "null_sse": 0.006380724180645468,
+            "residual_sse": 0.005773329400700391,
+            "phase_energy_retention": [
+              0.8838475631159762,
+              0.9428815344876901,
+              0.999999999999998,
+              0.9999999999999997
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.2314530361991067
+          },
+          "free_peak": {
+            "best_period_days": 70.05253940455341,
+            "power": 0.6837590576790065,
+            "span_cycles": 1.0663215101886074,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_quadratic": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.001200288694942184,
+              0.001074086947556909
+            ],
+            "harmonic_semiamplitudes": [
+              0.0016107003824790411
+            ],
+            "power": 0.1263783112853426,
+            "null_sse": 0.0027467856379072373,
+            "residual_sse": 0.002399651507525688,
+            "phase_energy_retention": [
+              0.8437697206289242,
+              0.9583219100350284
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.0557015390206053
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.0012666116733443154,
+              -0.00169988823601542
+            ],
+            "harmonic_semiamplitudes": [
+              0.002119888003172739
+            ],
+            "power": 0.21187562379239222,
+            "null_sse": 0.0027467856379072373,
+            "residual_sse": 0.0021648087174516574,
+            "phase_energy_retention": [
+              0.9156555406931053,
+              0.9796470121546835
+            ],
+            "span_cycles": 3.8916437796471994,
+            "signal_condition": 1.0548298478832216
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.0018138317443132247,
+              0.0009052976981965921,
+              0.0016182351766113314,
+              -0.0019039429418476592
+            ],
+            "harmonic_semiamplitudes": [
+              0.0020272023872910183,
+              0.0024987364432116138
+            ],
+            "power": 0.40119324352226493,
+            "null_sse": 0.0027467856379072373,
+            "residual_sse": 0.0016447937985748593,
+            "phase_energy_retention": [
+              0.7980601081333646,
+              0.8838486184992199,
+              0.9970649806265239,
+              0.9999999999999971
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.320456932013102
+          },
+          "free_peak": {
+            "best_period_days": 16.125781092521667,
+            "power": 0.6191551431955395,
+            "span_cycles": 4.632242567465571,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "instrument": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              -0.00045690150860487264,
+              0.0017228700696565202
+            ],
+            "harmonic_semiamplitudes": [
+              0.0017824253884759585
+            ],
+            "power": 0.12851439535347708,
+            "null_sse": 0.0023734325735550025,
+            "residual_sse": 0.0020684123214523343,
+            "phase_energy_retention": [
+              0.4150259088261452,
+              0.8977173935337457
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.4507363811274179
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              0.0014561769410752813,
+              -0.0017950855729518312
+            ],
+            "harmonic_semiamplitudes": [
+              0.0023114461918762393
+            ],
+            "power": 0.2753757874659948,
+            "null_sse": 0.0023734325735550025,
+            "residual_sse": 0.0017198467096148512,
+            "phase_energy_retention": [
+              0.8562698029632827,
+              0.9605071841733969
+            ],
+            "span_cycles": 3.8916437796471994,
+            "signal_condition": 1.0931413445275717
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              -3.145749684292026e-05,
+              0.001818847098600383,
+              0.0018357180024509588,
+              -0.0015974902984413077
+            ],
+            "harmonic_semiamplitudes": [
+              0.0018191191116017262,
+              0.002433482245288968
+            ],
+            "power": 0.41974385513499113,
+            "null_sse": 0.0023734325735550025,
+            "residual_sse": 0.0013771988352280623,
+            "phase_energy_retention": [
+              0.3681619873512665,
+              0.7940037197398777,
+              0.9748375437644232,
+              0.9970484536016418
+            ],
+            "span_cycles": 1.9458218898235997,
+            "signal_condition": 1.766623879577899
+          },
+          "free_peak": {
+            "best_period_days": 15.942606616181745,
+            "power": 0.5755196611603821,
+            "span_cycles": 4.685465269812989,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        }
+      }
+    },
+    {
+      "target": "J0830",
+      "mission": "K2",
+      "column": "SAP_FLUX",
+      "quality": "kepler_default",
+      "points": 375,
+      "span_days": 74.71896155923605,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.0020194044283324375,
+              -0.0009473745887092983
+            ],
+            "harmonic_semiamplitudes": [
+              0.0022305857653317817
+            ],
+            "power": 0.06788982398864574,
+            "null_sse": 0.012080781005832498,
+            "residual_sse": 0.011260618909701155,
+            "phase_energy_retention": [
+              0.8401928978361108,
+              0.9988561827768624
+            ],
+            "span_cycles": 1.9463541216290208,
+            "signal_condition": 1.0651653355301145
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.001495582303659672,
+              -0.002078905270944081
+            ],
+            "harmonic_semiamplitudes": [
+              0.0025609790222840666
+            ],
+            "power": 0.09977824150559655,
+            "null_sse": 0.012080781005832498,
+            "residual_sse": 0.01087538192105632,
+            "phase_energy_retention": [
+              0.9624251371432161,
+              0.9988843802106205
+            ],
+            "span_cycles": 3.8927082432580415,
+            "signal_condition": 1.0035297592116217
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.0019908566668892166,
+              -0.0007722496987011857,
+              0.0013373084879931972,
+              -0.0021052152199647818
+            ],
+            "harmonic_semiamplitudes": [
+              0.0021353875210933762,
+              0.0024940579613212713
+            ],
+            "power": 0.162047644094943,
+            "null_sse": 0.012080781005832498,
+            "residual_sse": 0.010123118905010406,
+            "phase_energy_retention": [
+              0.8025452023680594,
+              0.9976269603366882,
+              0.9999999999999993,
+              1.0
+            ],
+            "span_cycles": 1.9463541216290208,
+            "signal_condition": 1.1169814612015043
+          },
+          "free_peak": {
+            "best_period_days": 64.6725949878739,
+            "power": 0.7877617891482036,
+            "span_cycles": 1.1553419431096874,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "free_two_harmonic_peak": {
+            "best_period_days": 61.37322593018796,
+            "power": 0.8153410790958329,
+            "span_cycles": 1.2174520799058024,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.0020194044283324375,
+              -0.0009473745887092983
+            ],
+            "harmonic_semiamplitudes": [
+              0.0022305857653317817
+            ],
+            "power": 0.06788982398864574,
+            "null_sse": 0.012080781005832498,
+            "residual_sse": 0.011260618909701155,
+            "phase_energy_retention": [
+              0.8401928978361108,
+              0.9988561827768624
+            ],
+            "span_cycles": 1.9463541216290208,
+            "signal_condition": 1.0651653355301145
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.001495582303659672,
+              -0.002078905270944081
+            ],
+            "harmonic_semiamplitudes": [
+              0.0025609790222840666
+            ],
+            "power": 0.09977824150559655,
+            "null_sse": 0.012080781005832498,
+            "residual_sse": 0.01087538192105632,
+            "phase_energy_retention": [
+              0.9624251371432161,
+              0.9988843802106205
+            ],
+            "span_cycles": 3.8927082432580415,
+            "signal_condition": 1.0035297592116217
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.0019908566668892166,
+              -0.0007722496987011857,
+              0.0013373084879931972,
+              -0.0021052152199647818
+            ],
+            "harmonic_semiamplitudes": [
+              0.0021353875210933762,
+              0.0024940579613212713
+            ],
+            "power": 0.162047644094943,
+            "null_sse": 0.012080781005832498,
+            "residual_sse": 0.010123118905010406,
+            "phase_energy_retention": [
+              0.8025452023680594,
+              0.9976269603366882,
+              0.9999999999999993,
+              1.0
+            ],
+            "span_cycles": 1.9463541216290208,
+            "signal_condition": 1.1169814612015043
+          },
+          "free_peak": {
+            "best_period_days": 64.6725949878739,
+            "power": 0.7877617891482036,
+            "span_cycles": 1.1553419431096874,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_quadratic": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.002944014187104462,
+              -0.00015089741178548236
+            ],
+            "harmonic_semiamplitudes": [
+              0.0029478788242999245
+            ],
+            "power": 0.30440307568462444,
+            "null_sse": 0.004835224401016395,
+            "residual_sse": 0.0033633672217216587,
+            "phase_energy_retention": [
+              0.8401928905679084,
+              0.965550688754031
+            ],
+            "span_cycles": 1.9463541216290208,
+            "signal_condition": 1.0472565382905963
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.0015046265645817377,
+              -0.002001931826252271
+            ],
+            "harmonic_semiamplitudes": [
+              0.002504322690031537
+            ],
+            "power": 0.2384031406790884,
+            "null_sse": 0.004835224401016395,
+            "residual_sse": 0.0036824917179259227,
+            "phase_energy_retention": [
+              0.9624250036204494,
+              0.9987317648254126
+            ],
+            "span_cycles": 3.8927082432580415,
+            "signal_condition": 1.0036062789429596
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.002913775335810295,
+              2.2468360280797535e-05,
+              0.001338203316957921,
+              -0.0020823476227223277
+            ],
+            "harmonic_semiamplitudes": [
+              0.002913861962205846,
+              0.0024752696296311866
+            ],
+            "power": 0.5361252170007338,
+            "null_sse": 0.004835224401016395,
+            "residual_sse": 0.0022429386697742373,
+            "phase_energy_retention": [
+              0.8025451428132498,
+              0.9655423233764222,
+              0.998765960165763,
+              0.9999999999999997
+            ],
+            "span_cycles": 1.9463541216290208,
+            "signal_condition": 1.1162540520607298
+          },
+          "free_peak": {
+            "best_period_days": 100.0,
+            "power": 0.4792142627573069,
+            "span_cycles": 0.7471896155923605,
+            "at_search_edge": true,
+            "flat_null": false
+          }
+        },
+        "instrument": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              0.0016514823286931973,
+              0.0006918073428477124
+            ],
+            "harmonic_semiamplitudes": [
+              0.0017905282130153432
+            ],
+            "power": 0.15706185939356543,
+            "null_sse": 0.00320960976410184,
+            "residual_sse": 0.002705502486624262,
+            "phase_energy_retention": [
+              0.5072464016133973,
+              0.9208694138502109
+            ],
+            "span_cycles": 1.9463541216290208,
+            "signal_condition": 1.3167900158657504
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              0.0018596910717273063,
+              -0.0018131944091119327
+            ],
+            "harmonic_semiamplitudes": [
+              0.0025973303308391535
+            ],
+            "power": 0.36932956373321557,
+            "null_sse": 0.00320960976410184,
+            "residual_sse": 0.0020242059901722383,
+            "phase_energy_retention": [
+              0.8914354170966533,
+              0.9903780593941993
+            ],
+            "span_cycles": 3.8927082432580415,
+            "signal_condition": 1.031332021377932
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              0.0012356940480551446,
+              0.001331847880743403,
+              0.0019022367078057262,
+              -0.0019330182846260873
+            ],
+            "harmonic_semiamplitudes": [
+              0.0018167989866354516,
+              0.0027120221572144924
+            ],
+            "power": 0.5418954535567765,
+            "null_sse": 0.00320960976410184,
+            "residual_sse": 0.001470336825243615,
+            "phase_energy_retention": [
+              0.4137924313245423,
+              0.9074799719278863,
+              0.9876878938493395,
+              0.9987963630551687
+            ],
+            "span_cycles": 1.9463541216290208,
+            "signal_condition": 1.5459817978381907
+          },
+          "free_peak": {
+            "best_period_days": 100.0,
+            "power": 0.4812897720358127,
+            "span_cycles": 0.7471896155923605,
+            "at_search_edge": true,
+            "flat_null": false
+          }
+        }
+      }
+    },
+    {
+      "target": "J0830",
+      "mission": "K2",
+      "column": "PDCSAP_FLUX",
+      "quality": "kepler_default",
+      "points": 375,
+      "span_days": 74.70874556526542,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.001432063955826775,
+              -0.0003519765485194253
+            ],
+            "harmonic_semiamplitudes": [
+              0.0014746845982398673
+            ],
+            "power": 0.030557219968794458,
+            "null_sse": 0.01199254356120723,
+            "residual_sse": 0.011626084769622071,
+            "phase_energy_retention": [
+              0.8401843870164214,
+              0.9988561092080039
+            ],
+            "span_cycles": 1.9460880052168499,
+            "signal_condition": 1.0651676316373644
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.001792887947379595,
+              -0.002215157259774372
+            ],
+            "harmonic_semiamplitudes": [
+              0.002849801550527707
+            ],
+            "power": 0.12451334242920797,
+            "null_sse": 0.01199254356120723,
+            "residual_sse": 0.010499311878173441,
+            "phase_energy_retention": [
+              0.9624176776583516,
+              0.9988840949619485
+            ],
+            "span_cycles": 3.8921760104336998,
+            "signal_condition": 1.0035371913148707
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.0013835407719223183,
+              -0.00014700706830252493,
+              0.0017047216456477826,
+              -0.002249303832939582
+            ],
+            "harmonic_semiamplitudes": [
+              0.0013913289135579364,
+              0.0028223117513869332
+            ],
+            "power": 0.15203910847949875,
+            "null_sse": 0.01199254356120723,
+            "residual_sse": 0.010169207929759729,
+            "phase_energy_retention": [
+              0.8025300678262841,
+              0.9976265648954288,
+              0.9999999999999993,
+              1.0
+            ],
+            "span_cycles": 1.9460880052168499,
+            "signal_condition": 1.116987227254536
+          },
+          "free_peak": {
+            "best_period_days": 64.6725949878739,
+            "power": 0.7822618205848095,
+            "span_cycles": 1.1551839783029165,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "free_two_harmonic_peak": {
+            "best_period_days": 60.92916984006093,
+            "power": 0.8207148676198907,
+            "span_cycles": 1.2261572865899186,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.001432063955826775,
+              -0.0003519765485194253
+            ],
+            "harmonic_semiamplitudes": [
+              0.0014746845982398673
+            ],
+            "power": 0.030557219968794458,
+            "null_sse": 0.01199254356120723,
+            "residual_sse": 0.011626084769622071,
+            "phase_energy_retention": [
+              0.8401843870164214,
+              0.9988561092080039
+            ],
+            "span_cycles": 1.9460880052168499,
+            "signal_condition": 1.0651676316373644
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.001792887947379595,
+              -0.002215157259774372
+            ],
+            "harmonic_semiamplitudes": [
+              0.002849801550527707
+            ],
+            "power": 0.12451334242920797,
+            "null_sse": 0.01199254356120723,
+            "residual_sse": 0.010499311878173441,
+            "phase_energy_retention": [
+              0.9624176776583516,
+              0.9988840949619485
+            ],
+            "span_cycles": 3.8921760104336998,
+            "signal_condition": 1.0035371913148707
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 2,
+            "beta": [
+              0.0013835407719223183,
+              -0.00014700706830252493,
+              0.0017047216456477826,
+              -0.002249303832939582
+            ],
+            "harmonic_semiamplitudes": [
+              0.0013913289135579364,
+              0.0028223117513869332
+            ],
+            "power": 0.15203910847949875,
+            "null_sse": 0.01199254356120723,
+            "residual_sse": 0.010169207929759729,
+            "phase_energy_retention": [
+              0.8025300678262841,
+              0.9976265648954288,
+              0.9999999999999993,
+              1.0
+            ],
+            "span_cycles": 1.9460880052168499,
+            "signal_condition": 1.116987227254536
+          },
+          "free_peak": {
+            "best_period_days": 64.6725949878739,
+            "power": 0.7822618205848095,
+            "span_cycles": 1.1551839783029165,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_quadratic": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.0023783476753045864,
+              0.0004633299646427182
+            ],
+            "harmonic_semiamplitudes": [
+              0.0024230584641651864
+            ],
+            "power": 0.23251588433742565,
+            "null_sse": 0.0043678256894647965,
+            "residual_sse": 0.0033522368366471636,
+            "phase_energy_retention": [
+              0.8401843821147054,
+              0.9655532037380248
+            ],
+            "span_cycles": 1.9460880052168499,
+            "signal_condition": 1.0472601997321191
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.0018023505392862178,
+              -0.0021361260004279874
+            ],
+            "harmonic_semiamplitudes": [
+              0.002794906394885129
+            ],
+            "power": 0.3288504391615854,
+            "null_sse": 0.0043678256894647965,
+            "residual_sse": 0.0029314642933030437,
+            "phase_energy_retention": [
+              0.9624175632311333,
+              0.9987310834226805
+            ],
+            "span_cycles": 3.8921760104336998,
+            "signal_condition": 1.0036138986470726
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 3,
+            "beta": [
+              0.0023280424448495363,
+              0.0006664760253623246,
+              0.0017058218323007157,
+              -0.0022258219852561824
+            ],
+            "harmonic_semiamplitudes": [
+              0.002421563940391368,
+              0.002804302343472177
+            ],
+            "power": 0.5618211089446379,
+            "null_sse": 0.0043678256894647965,
+            "residual_sse": 0.0019138890169328074,
+            "phase_energy_retention": [
+              0.8025300196151941,
+              0.9655449227632598,
+              0.998765452087103,
+              1.0
+            ],
+            "span_cycles": 1.9460880052168499,
+            "signal_condition": 1.1162625026024668
+          },
+          "free_peak": {
+            "best_period_days": 100.0,
+            "power": 0.4313246562905694,
+            "span_cycles": 0.7470874556526542,
+            "at_search_edge": true,
+            "flat_null": false
+          }
+        },
+        "instrument": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              0.0018378584220513354,
+              0.0006393136234667389
+            ],
+            "harmonic_semiamplitudes": [
+              0.0019458791043266783
+            ],
+            "power": 0.15852863008985674,
+            "null_sse": 0.0036744473415849903,
+            "residual_sse": 0.003091942238186206,
+            "phase_energy_retention": [
+              0.5074576896406081,
+              0.9208988705936622
+            ],
+            "span_cycles": 1.9460880052168499,
+            "signal_condition": 1.3165329937571029
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              0.0018274500265638698,
+              -0.0020027288203063424
+            ],
+            "harmonic_semiamplitudes": [
+              0.0027111798773364194
+            ],
+            "power": 0.35278052644348223,
+            "null_sse": 0.0036744473415849903,
+            "residual_sse": 0.0023781738740317835,
+            "phase_energy_retention": [
+              0.8914221960918184,
+              0.990407427164177
+            ],
+            "span_cycles": 3.8921760104336998,
+            "signal_condition": 1.0313459992671732
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "instrument",
+            "nuisance_rank": 5,
+            "beta": [
+              0.0014585144854461288,
+              0.0012619415347314862,
+              0.0018223945328336498,
+              -0.0021320953961548833
+            ],
+            "harmonic_semiamplitudes": [
+              0.0019286681781313874,
+              0.0028048088369097145
+            ],
+            "power": 0.5220791564592151,
+            "null_sse": 0.0036744473415849903,
+            "residual_sse": 0.001756094973036493,
+            "phase_energy_retention": [
+              0.41398320298444813,
+              0.9075397641359262,
+              0.9876999741617958,
+              0.9987963239881767
+            ],
+            "span_cycles": 1.9460880052168499,
+            "signal_condition": 1.545630632511544
+          },
+          "free_peak": {
+            "best_period_days": 100.0,
+            "power": 0.5180536132786063,
+            "span_cycles": 0.7470874556526542,
+            "at_search_edge": true,
+            "flat_null": false
+          }
+        }
+      }
+    },
+    {
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "SAP_FLUX",
+      "quality": "strict",
+      "points": 328,
+      "span_days": 77.89200729317963,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              0.0029977027618926446,
+              -0.005158644346331235
+            ],
+            "harmonic_semiamplitudes": [
+              0.005966391986837104
+            ],
+            "power": 0.14223507265268553,
+            "null_sse": 0.03294377497560129,
+            "residual_sse": 0.028258014748492915,
+            "phase_energy_retention": [
+              0.8225802891857633,
+              0.8818787065112245
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.10553276401374
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              -0.004586250983819128,
+              -0.009427448787856639
+            ],
+            "harmonic_semiamplitudes": [
+              0.010483820331074046
+            ],
+            "power": 0.47365418976850815,
+            "null_sse": 0.03294377497560129,
+            "residual_sse": 0.017339817931616805,
+            "phase_energy_retention": [
+              0.8256753195414351,
+              0.9264889778945452
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.047302331344324
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              0.003907960081827513,
+              -0.005560592051565328,
+              -0.005136738384792776,
+              -0.00963741699804002
+            ],
+            "harmonic_semiamplitudes": [
+              0.00679649438792447,
+              0.010920892254203143
+            ],
+            "power": 0.6541290746095693,
+            "null_sse": 0.03294377497560129,
+            "residual_sse": 0.011394293936665334,
+            "phase_energy_retention": [
+              0.7504592441845355,
+              0.7977888767202098,
+              0.964142409753971,
+              0.9960070378055638
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.1462260448208668
+          },
+          "free_peak": {
+            "best_period_days": 19.94515083520319,
+            "power": 0.5090126924545275,
+            "span_cycles": 3.9053105156617938,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "block_sign_diagnostics": {
+            "7": {
+              "draws": 256,
+              "occupied_blocks": 12,
+              "trial_exceedances": 23,
+              "raw_trial_fraction": 0.08984375,
+              "fraction_scanned_max_ge_observed": 0.0933852140077821,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability"
+            },
+            "14": {
+              "draws": 256,
+              "occupied_blocks": 6,
+              "trial_exceedances": 38,
+              "raw_trial_fraction": 0.1484375,
+              "fraction_scanned_max_ge_observed": 0.1517509727626459,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability",
+              "exact_patterns": 64,
+              "exact_exceedances": 10,
+              "exact_conditional_fraction": 0.15625
+            }
+          },
+          "free_two_harmonic_peak": {
+            "best_period_days": 20.087884494664156,
+            "power": 0.6925958296249015,
+            "span_cycles": 3.8775614880635985,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              -0.0026659978422399074,
+              -0.019716432750174612
+            ],
+            "harmonic_semiamplitudes": [
+              0.01989586049626871
+            ],
+            "power": 0.4387481027352015,
+            "null_sse": 0.03171445492530252,
+            "residual_sse": 0.017799797997544973,
+            "phase_energy_retention": [
+              0.18288547000923197,
+              0.2735590600961302
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.1451363847215508
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              -0.005462950985069399,
+              -0.009746137990269022
+            ],
+            "harmonic_semiamplitudes": [
+              0.011172781175277523
+            ],
+            "power": 0.5309446896065431,
+            "null_sse": 0.03171445492530252,
+            "residual_sse": 0.014875833498947073,
+            "phase_energy_retention": [
+              0.7969679250823565,
+              0.8869540387353545
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.0341336818706326
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              0.0009120577195550393,
+              -0.013317125830148002,
+              -0.0040911066883612375,
+              -0.007841820529869706
+            ],
+            "harmonic_semiamplitudes": [
+              0.013348321604598649,
+              0.008844846135362676
+            ],
+            "power": 0.715962649680925,
+            "null_sse": 0.03171445492530252,
+            "residual_sse": 0.009008089743796664,
+            "phase_energy_retention": [
+              0.14101923255324758,
+              0.25340180447940613,
+              0.874361252194849,
+              0.9756539838790786
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 2.379992155334826
+          },
+          "free_peak": {
+            "best_period_days": 80.8080808080808,
+            "power": 0.7378025255102828,
+            "span_cycles": 0.963913590253098,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "block_sign_diagnostics": {
+            "7": {
+              "draws": 256,
+              "occupied_blocks": 12,
+              "trial_exceedances": 0,
+              "raw_trial_fraction": 0.0,
+              "fraction_scanned_max_ge_observed": 0.0038910505836575876,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability"
+            },
+            "14": {
+              "draws": 256,
+              "occupied_blocks": 6,
+              "trial_exceedances": 28,
+              "raw_trial_fraction": 0.109375,
+              "fraction_scanned_max_ge_observed": 0.11284046692607004,
+              "monte_carlo_convention": "Plus-one correction; numerical ties counted at relative/absolute tolerance 1e-12",
+              "status": "Conditional block-sign sensitivity, not a calibrated false-alarm probability",
+              "exact_patterns": 64,
+              "exact_exceedances": 6,
+              "exact_conditional_fraction": 0.09375
+            }
+          }
+        },
+        "sector_quadratic": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -0.0052794749902548115,
+              0.019685146181732654
+            ],
+            "harmonic_semiamplitudes": [
+              0.020380820306575242
+            ],
+            "power": 0.20337336844547704,
+            "null_sse": 0.009922597000236205,
+            "residual_sse": 0.007904605024571182,
+            "phase_energy_retention": [
+              0.028520113547304313,
+              0.03961530662246956
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.2477898746478213
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -0.0028625326948644595,
+              -0.005280410771351588
+            ],
+            "harmonic_semiamplitudes": [
+              0.006006399199468335
+            ],
+            "power": 0.30449016524689143,
+            "null_sse": 0.009922597000236205,
+            "residual_sse": 0.006901263799955974,
+            "phase_energy_retention": [
+              0.4466844305279825,
+              0.734053305098717
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.2608106113252793
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -0.007545866809799417,
+              0.011144422047115536,
+              -0.0012185923578912645,
+              -0.004895507238542797
+            ],
+            "harmonic_semiamplitudes": [
+              0.013458761037906396,
+              0.005044894295952683
+            ],
+            "power": 0.3522518319558944,
+            "null_sse": 0.009922597000236205,
+            "residual_sse": 0.0064273440291429396,
+            "phase_energy_retention": [
+              0.012105819047633594,
+              0.026605879612094575,
+              0.4500098914312984,
+              0.7361762181600023
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 8.291088110517764
+          },
+          "free_peak": {
+            "best_period_days": 11.790714812085483,
+            "power": 0.469302235563277,
+            "span_cycles": 6.606215868552797,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "instrument": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              -0.0025996585553031935,
+              -0.02515809111736467
+            ],
+            "harmonic_semiamplitudes": [
+              0.02529204960602806
+            ],
+            "power": 0.963300648922066,
+            "null_sse": 0.015283884060363372,
+            "residual_sse": 0.0005609086269657152,
+            "phase_energy_retention": [
+              0.12328951363855746,
+              0.17412629946440775
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.1118324867527647
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              -0.005558856822566376,
+              -0.009393082738078148
+            ],
+            "harmonic_semiamplitudes": [
+              0.010914709913606244
+            ],
+            "power": 0.5852453616006389,
+            "null_sse": 0.015283884060363372,
+            "residual_sse": 0.006339061806793769,
+            "phase_energy_retention": [
+              0.26606433583466477,
+              0.5767689757314717
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.4864902455865676
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              -0.004071020676397454,
+              -0.02561876441586537,
+              -0.0016542980900357308,
+              0.0005430824998813415
+            ],
+            "harmonic_semiamplitudes": [
+              0.025940206235557674,
+              0.0017411607543168534
+            ],
+            "power": 0.9702860477001446,
+            "null_sse": 0.015283884060363372,
+            "residual_sse": 0.000454144601926158,
+            "phase_energy_retention": [
+              0.03804844177560771,
+              0.07977216404949168,
+              0.42542110294746255,
+              0.7065267374671946
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 3.9510328173735374
+          },
+          "free_peak": {
+            "best_period_days": 38.41536614645859,
+            "power": 0.9633338530757821,
+            "span_cycles": 2.027626314850582,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        }
+      }
+    },
+    {
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX",
+      "quality": "strict",
+      "points": 328,
+      "span_days": 77.89200729317963,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              5.880057233503174e-06,
+              2.7366756442053116e-06
+            ],
+            "harmonic_semiamplitudes": [
+              6.485712501403339e-06
+            ],
+            "power": 0.0005484080768620725,
+            "null_sse": 1.1226093601513736e-05,
+            "residual_sse": 1.1219937121111056e-05,
+            "phase_energy_retention": [
+              0.8225802891857633,
+              0.8818787065112245
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.10553276401374
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              -2.4677601004198764e-06,
+              1.5595925592557656e-05
+            ],
+            "harmonic_semiamplitudes": [
+              1.5789956776439232e-05
+            ],
+            "power": 0.0030418847433014706,
+            "null_sse": 1.1226093601513736e-05,
+            "residual_sse": 1.1191945118660417e-05,
+            "phase_energy_retention": [
+              0.8256753195414351,
+              0.9264889778945452
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.047302331344324
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              5.348683912682767e-06,
+              2.7378788186651865e-06,
+              -2.7060918659466604e-06,
+              1.536459483108375e-05
+            ],
+            "harmonic_semiamplitudes": [
+              6.008693703583742e-06,
+              1.5601080331512565e-05
+            ],
+            "power": 0.003514110202800902,
+            "null_sse": 1.1226093601513736e-05,
+            "residual_sse": 1.1186643871451059e-05,
+            "phase_energy_retention": [
+              0.7504592441845355,
+              0.7977888767202098,
+              0.964142409753971,
+              0.9960070378055638
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.1462260448208668
+          },
+          "free_peak": {
+            "best_period_days": 9.211283822682788,
+            "power": 0.006456636688560594,
+            "span_cycles": 8.456151041765812,
+            "at_search_edge": false,
+            "flat_null": false
+          },
+          "free_two_harmonic_peak": {
+            "best_period_days": 6.9183205776797685,
+            "power": 0.011234989792965002,
+            "span_cycles": 11.258802829183534,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              1.8274821475649396e-06,
+              -1.4195260840830269e-05
+            ],
+            "harmonic_semiamplitudes": [
+              1.4312411443878973e-05
+            ],
+            "power": 0.0006890140675913647,
+            "null_sse": 1.1214003418087067e-05,
+            "residual_sse": 1.1206276811977986e-05,
+            "phase_energy_retention": [
+              0.18288547000923197,
+              0.2735590600961302
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.1451363847215508
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              -1.41285314187655e-06,
+              1.7623732903578966e-05
+            ],
+            "harmonic_semiamplitudes": [
+              1.7680274756270117e-05
+            ],
+            "power": 0.003722506619583399,
+            "null_sse": 1.1214003418087067e-05,
+            "residual_sse": 1.1172259216131206e-05,
+            "phase_energy_retention": [
+              0.7969679250823565,
+              0.8869540387353545
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.0341336818706326
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_linear",
+            "nuisance_rank": 6,
+            "beta": [
+              -8.540676853859207e-06,
+              -2.865342644229841e-05,
+              1.411637877012078e-06,
+              2.2821249883566032e-05
+            ],
+            "harmonic_semiamplitudes": [
+              2.9899197447527786e-05,
+              2.2864867542672923e-05
+            ],
+            "power": 0.005997795561724084,
+            "null_sse": 1.1214003418087067e-05,
+            "residual_sse": 1.1146744118156905e-05,
+            "phase_energy_retention": [
+              0.14101923255324758,
+              0.25340180447940613,
+              0.874361252194849,
+              0.9756539838790786
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 2.379992155334826
+          },
+          "free_peak": {
+            "best_period_days": 9.201219161538905,
+            "power": 0.006089443447860321,
+            "span_cycles": 8.465400717631878,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "sector_quadratic": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -4.581576025803404e-05,
+              -8.805870671315705e-05
+            ],
+            "harmonic_semiamplitudes": [
+              9.926439299172417e-05
+            ],
+            "power": 0.005732246483008296,
+            "null_sse": 1.1197768875607e-05,
+            "residual_sse": 1.1133580504352262e-05,
+            "phase_energy_retention": [
+              0.028520113547304313,
+              0.03961530662246956
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.2477898746478213
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -8.981207163786894e-07,
+              2.7623551513352805e-05
+            ],
+            "harmonic_semiamplitudes": [
+              2.7638147894387653e-05
+            ],
+            "power": 0.0050875394466126656,
+            "null_sse": 1.1197768875607e-05,
+            "residual_sse": 1.1140799784738298e-05,
+            "phase_energy_retention": [
+              0.4466844305279825,
+              0.734053305098717
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.2608106113252793
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "sector_quadratic",
+            "nuisance_rank": 9,
+            "beta": [
+              -1.688876915082614e-05,
+              -6.857902528552008e-05,
+              -1.8601555378336155e-06,
+              1.7621890162624384e-05
+            ],
+            "harmonic_semiamplitudes": [
+              7.062799184843003e-05,
+              1.7719796599524813e-05
+            ],
+            "power": 0.007097005807171652,
+            "null_sse": 1.1197768875607e-05,
+            "residual_sse": 1.111829824486945e-05,
+            "phase_energy_retention": [
+              0.012105819047633594,
+              0.026605879612094575,
+              0.4500098914312984,
+              0.7361762181600023
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 8.291088110517764
+          },
+          "free_peak": {
+            "best_period_days": 9.221370526194457,
+            "power": 0.008867999544688017,
+            "span_cycles": 8.446901365899746,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        },
+        "instrument": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              1.630108679873342e-05,
+              1.0928242161810324e-06
+            ],
+            "harmonic_semiamplitudes": [
+              1.6337677178452042e-05
+            ],
+            "power": 0.000589392556502033,
+            "null_sse": 1.1039506680954065e-05,
+            "residual_sse": 1.1033000077888856e-05,
+            "phase_energy_retention": [
+              0.12328951363855746,
+              0.17412629946440775
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.1118324867527647
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              -3.13246266582198e-06,
+              1.2892841157933152e-05
+            ],
+            "harmonic_semiamplitudes": [
+              1.3267919033385137e-05
+            ],
+            "power": 0.001514452124353527,
+            "null_sse": 1.1039506680954065e-05,
+            "residual_sse": 1.102278787660928e-05,
+            "phase_energy_retention": [
+              0.26606433583466477,
+              0.5767689757314717
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.4864902455865676
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "instrument",
+            "nuisance_rank": 15,
+            "beta": [
+              1.429853751560186e-06,
+              -4.34094660473544e-05,
+              6.554310667549464e-06,
+              2.883482394140454e-05
+            ],
+            "harmonic_semiamplitudes": [
+              4.343300846438415e-05,
+              2.9570357793887938e-05
+            ],
+            "power": 0.0032117304480593356,
+            "null_sse": 1.1039506680954065e-05,
+            "residual_sse": 1.1004050761215291e-05,
+            "phase_energy_retention": [
+              0.03804844177560771,
+              0.07977216404949168,
+              0.42542110294746255,
+              0.7065267374671946
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 3.9510328173735374
+          },
+          "free_peak": {
+            "best_period_days": 9.221370526194457,
+            "power": 0.0065654803860818005,
+            "span_cycles": 8.446901365899746,
+            "at_search_edge": false,
+            "flat_null": false
+          }
+        }
+      }
+    },
+    {
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_SML",
+      "quality": "strict",
+      "points": 328,
+      "span_days": 77.89200729317963,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              -6.868181534577894e-06,
+              -2.455632206931774e-07
+            ],
+            "harmonic_semiamplitudes": [
+              6.872570035094147e-06
+            ],
+            "power": 0.0006592452935832993,
+            "null_sse": 9.70634437681006e-06,
+            "residual_sse": 9.699945514961749e-06,
+            "phase_energy_retention": [
+              0.8225802891857633,
+              0.8818787065112245
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.10553276401374
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              -1.0967614152827374e-05,
+              1.886204361092739e-05
+            ],
+            "harmonic_semiamplitudes": [
+              2.1818919528377798e-05
+            ],
+            "power": 0.006778073552681674,
+            "null_sse": 9.70634437681006e-06,
+            "residual_sse": 9.640554060696383e-06,
+            "phase_energy_retention": [
+              0.8256753195414351,
+              0.9264889778945452
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.047302331344324
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              -6.928830986496162e-06,
+              -6.630769200038087e-07,
+              -1.051533757684098e-05,
+              1.9177333025032745e-05
+            ],
+            "harmonic_semiamplitudes": [
+              6.9604863221811675e-06,
+              2.1871040814463667e-05
+            ],
+            "power": 0.007457677663572859,
+            "null_sse": 9.70634437681006e-06,
+            "residual_sse": 9.633957589156177e-06,
+            "phase_energy_retention": [
+              0.7504592441845355,
+              0.7977888767202098,
+              0.964142409753971,
+              0.9960070378055638
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.1462260448208668
+          }
+        }
+      }
+    },
+    {
+      "target": "J0830",
+      "mission": "TESS",
+      "column": "KSPSAP_FLUX_LAG",
+      "quality": "strict",
+      "points": 328,
+      "span_days": 77.89200729317963,
+      "models": {
+        "global_linear": {
+          "at_gaia": {
+            "period_days": 38.38919173490344,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              7.507924604258019e-06,
+              -2.212219879743055e-06
+            ],
+            "harmonic_semiamplitudes": [
+              7.827058748952465e-06
+            ],
+            "power": 0.0006403582342847658,
+            "null_sse": 1.2288700884044978e-05,
+            "residual_sse": 1.2280831713245217e-05,
+            "phase_energy_retention": [
+              0.8225802891857633,
+              0.8818787065112245
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.10553276401374
+          },
+          "at_half_gaia": {
+            "period_days": 19.19459586745172,
+            "harmonics": 1,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              2.1517847971831227e-06,
+              2.0405390043505762e-05
+            ],
+            "harmonic_semiamplitudes": [
+              2.051853115213154e-05
+            ],
+            "power": 0.0047351729366672535,
+            "null_sse": 1.2288700884044978e-05,
+            "residual_sse": 1.2230511760192049e-05,
+            "phase_energy_retention": [
+              0.8256753195414351,
+              0.9264889778945452
+            ],
+            "span_cycles": 4.0580175707299535,
+            "signal_condition": 1.047302331344324
+          },
+          "at_gaia_two_harmonics": {
+            "period_days": 38.38919173490344,
+            "harmonics": 2,
+            "nuisance": "global_linear",
+            "nuisance_rank": 4,
+            "beta": [
+              6.377910876236766e-06,
+              -1.908289850703948e-06,
+              1.610102339930624e-06,
+              2.010152922378773e-05
+            ],
+            "harmonic_semiamplitudes": [
+              6.657275516269319e-06,
+              2.016590951779369e-05
+            ],
+            "power": 0.00519351409048352,
+            "null_sse": 1.2288700884044978e-05,
+            "residual_sse": 1.2224879342849953e-05,
+            "phase_energy_retention": [
+              0.7504592441845355,
+              0.7977888767202098,
+              0.964142409753971,
+              0.9960070378055638
+            ],
+            "span_cycles": 2.0290087853649768,
+            "signal_condition": 1.1462260448208668
+          }
+        }
+      }
+    }
+  ],
+  "independent_epoch_profiles": [
+    {
+      "target": "J0830",
+      "mode": "global_linear",
+      "best_period_days": 56.061667834618085,
+      "mean_epoch_power": 0.5442399967999849,
+      "at_gaia": 0.08044384571954494,
+      "phase_coherence": "Not imposed across epochs",
+      "interpretation": "Mean descriptive profile, not a six-year coherent period measurement"
+    },
+    {
+      "target": "J0830",
+      "mode": "sector_linear",
+      "best_period_days": 78.54688267059402,
+      "mean_epoch_power": 0.7236348957040295,
+      "at_gaia": 0.22868989113442212,
+      "phase_coherence": "Not imposed across epochs",
+      "interpretation": "Mean descriptive profile, not a six-year coherent period measurement"
+    }
+  ],
+  "common_cadence_diagnostics": [
+    {
+      "group": "S44",
+      "column": "SAP_FLUX",
+      "matched_cadences": 2621,
+      "binned_pairs": 101,
+      "linear_detrended_correlation": -0.3420799684176373,
+      "interpretation": "Different variable stars on common spacecraft cadences; correlation is a systematics diagnostic, not a constant-star calibration."
+    },
+    {
+      "group": "S44",
+      "column": "KSPSAP_FLUX",
+      "matched_cadences": 2621,
+      "binned_pairs": 101,
+      "linear_detrended_correlation": 0.13143204197519173,
+      "interpretation": "Different variable stars on common spacecraft cadences; correlation is a systematics diagnostic, not a constant-star calibration."
+    },
+    {
+      "group": "S45",
+      "column": "SAP_FLUX",
+      "matched_cadences": 2454,
+      "binned_pairs": 107,
+      "linear_detrended_correlation": 0.14183214078960174,
+      "interpretation": "Different variable stars on common spacecraft cadences; correlation is a systematics diagnostic, not a constant-star calibration."
+    },
+    {
+      "group": "S45",
+      "column": "KSPSAP_FLUX",
+      "matched_cadences": 2454,
+      "binned_pairs": 107,
+      "linear_detrended_correlation": -0.024586084187311615,
+      "interpretation": "Different variable stars on common spacecraft cadences; correlation is a systematics diagnostic, not a constant-star calibration."
+    },
+    {
+      "group": "S46",
+      "column": "SAP_FLUX",
+      "matched_cadences": 2560,
+      "binned_pairs": 115,
+      "linear_detrended_correlation": -0.44066418478648134,
+      "interpretation": "Different variable stars on common spacecraft cadences; correlation is a systematics diagnostic, not a constant-star calibration."
+    },
+    {
+      "group": "S46",
+      "column": "KSPSAP_FLUX",
+      "matched_cadences": 2560,
+      "binned_pairs": 115,
+      "linear_detrended_correlation": 0.12775814747159683,
+      "interpretation": "Different variable stars on common spacecraft cadences; correlation is a systematics diagnostic, not a constant-star calibration."
+    }
+  ],
+  "preliminary_excursions": [],
+  "limitations": [
+    "Gaia SB1 fits remain candidates.",
+    "Only about two proposed cycles per observing epoch.",
+    "QLP detrending removes slow structure; corrected curves cannot set a stellar-amplitude limit.",
+    "SAP is less filtered but retains instrumental effects.",
+    "Sector-normalized data cannot measure absolute decade-long fading.",
+    "No pixel-level flare host attribution in this stage."
+  ]
+}

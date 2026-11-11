@@ -1141,5 +1141,7 @@
     "sha256": "8b7bac72c1793ef45869af022675e25849209fd0ef6d07470dbe297415c5f84c",
     "bytes": 18353,
     "state": "saved"
-  }
+  },
+  "results/tang-sibling-analysis-20261111/hlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits.receipt.json": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHLSP%2Feverest%2Fv2%2Fc05%2F211500000%2F69759%2Fhlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits",
+  "results/tang-sibling-analysis-20261111/hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits.receipt.json": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHLSP%2Fk2sc%2Fv2%2Fc05%2F211500000%2Fhlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits"
 }

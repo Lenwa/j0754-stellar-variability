@@ -1,0 +1,16 @@
+[
+  {
+    "target": "J0830",
+    "file": "hlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits",
+    "uri": "mast:HLSP/everest/v2/c05/211500000/69759/hlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits",
+    "state": "failed",
+    "reason": "Post-initial-fit comparison of alternate K2 corrections; not independent observations"
+  },
+  {
+    "target": "J0830",
+    "file": "hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits",
+    "uri": "mast:HLSP/k2sc/v2/c05/211500000/hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits",
+    "state": "saved",
+    "reason": "Post-initial-fit comparison of alternate K2 corrections; not independent observations"
+  }
+]

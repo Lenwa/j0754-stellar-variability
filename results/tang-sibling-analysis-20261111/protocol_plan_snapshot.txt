@@ -1,0 +1,28 @@
+# Tang sibling light-curve analysis plan
+
+> For agentic workers: use superpowers:executing-plans for the explicitly authorized continuation, with one final independent scientific/code review.
+
+Goal: analyze J0736 and J0830 using the seven already retrieved FITS, testing their separate Gaia candidate periods and reporting changing variability and preliminary excursions.
+
+Spec: Kyle's request, “Ok analyze Dr. Tang's other two stars”, following the approved giant screening. Source remains in the clean registered astronomy repository. Preserve the completed screening as a dated snapshot.
+
+Prediction before period fitting: a tidally maintained active-giant interpretation would be supported by modulation around 39.4209178 d (J0736) and 38.3891917 d (J0830), potentially with a half-period harmonic and changing waveform. Weaken it if apparent matching signals depend strongly on filtering, fitted baselines or pointing/background terms, or if independent epochs disagree. A match alone cannot distinguish spots, ellipsoidal variability or other orbital effects, confirm a Gaia orbit, or explain century-scale fading.
+
+Inputs: TESS QLP sectors 44–46 for each star; J0830 K2 campaign 5. Native identity, time references, quality bits and hashes are checked first. QLP KSPSAP columns are detrended; SAP is primary for slow variability. K2 SAP/PDC are alternative reductions of one epoch. Do not treat reductions as independent observations or force a common phase between 2015 and 2021.
+
+Methods: primary QUALITY=0, positive finite flux, no brightness clipping; K2 Lightkurve default mask 1130799 as an explicitly separate sensitivity. Keep 0.2-day medians per sector for rotation. Jointly fit nuisance terms and periodic terms; compare sector offsets plus global slope, sector slopes, sector quadratics and available pointing/background terms. Scan 5–100 days with one harmonic, retain peaks with fewer than two cycles as poorly identified, and test two harmonics at the Gaia period and over the same range. Quantify fixed-period signal energy left after projecting nuisance terms. Do not interpret pipeline filtering as an upper bound on stellar modulation.
+
+Use 256 shared-time block-sign trials with 7/14-day blocks as conditional sensitivity diagnostics, not calibrated false-alarm probabilities. Search the same grid in each trial. Compare common-cadence signals between the two TESS targets as a possible shared-systematics diagnostic, without assuming either target is constant. Preliminary positive excursion screening requires three consecutive accepted cadences, no gaps over 2.5 native cadences, a local median baseline, five local robust standard deviations and at least 0.2% (TESS) or 0.5% (K2) peak amplitude. Candidates remain unlocalized and are not automatically flares.
+
+Deliverables: maintained numerical core/runner/tests; protocol with original plan snapshot; native/binned photometry and complete fit/search outputs; plots; readable report comparing observations with the two Gaia periods and historical context. Inputs are never overwritten. No new observing requests, email or manuscript submission. Existing public astronomy publication authorization applies after privacy review.
+
+Review focus: TESS/K2 use different BJD zero points; sector offsets can mimic long periods; instrumental regressors can remove true signal; only about two cycles are observed; spot coherence across six years is not required; short detrended curves cannot reject a long physical signal; flagged or gapped cadences cannot form a flare candidate; nominal white-noise precision is not astrophysical significance.
+
+## Tasks
+
+- [ ] Add safeguards for time conversion, identity, quality masks, duplicate/group-aware bins, joint nuisance fits, harmonic ambiguity, projection retention and gap-aware excursions; observe missing behavior then implement.
+- [ ] Reduce the seven native FITS offline and execute the declared period/baseline/quality/epoch comparisons and conditional diagnostics. Inspect curves, retain failures and avoid adding unplanned confidence claims.
+- [ ] Write the report/figures and source hashes; get an independent read-only review and address material findings with regression coverage.
+- [ ] Run relevant and complete component checks, privacy/canonical-manifest checks, update entry points, commit scoped paths and verify any authorized public push. Record actual commit/publication state separately after completion.
+
+Execution ruling: reuse the dedicated astronomy checkout and dependencies in place, consistent with the previous stages. This is the requested next analysis rather than a new application. No parallel implementation.

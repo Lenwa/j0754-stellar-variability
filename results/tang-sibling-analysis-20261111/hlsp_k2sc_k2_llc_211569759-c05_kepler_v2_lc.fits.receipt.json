@@ -1,0 +1,15 @@
+{
+  "file": "hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file",
+  "params": {
+    "uri": "mast:HLSP/k2sc/v2/c05/211500000/hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:56:59.704902+00:00",
+  "http_status": 200,
+  "response_sha256": "339a180a297a900e6ed030de1ce94887dbf9965a1d381025f8259a0aab0b1dd5",
+  "response_bytes": 501120,
+  "sha256": "339a180a297a900e6ed030de1ce94887dbf9965a1d381025f8259a0aab0b1dd5",
+  "bytes": 501120,
+  "state": "saved"
+}
