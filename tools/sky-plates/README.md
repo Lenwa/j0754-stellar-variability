@@ -1,5 +1,15 @@
 # Historical sky plates
 
+## GALEX calibration and eROSITA identity
+
+`fetch_galex_erosita_followup.py galex` retrieves background photons, the NUV
+flat and global event coverage; `erosita` streams the complete released Gaia
+counterpart table while retaining only this X-ray source.
+`analyze_galex_erosita_followup.py` runs offline on those inputs, testing
+background, deadtime, flat response, aperture size and binning sensitivity.
+Results and an exploratory protocol are in `results/sky-plates-j0754-galex-erosita-20261111`.
+Seven safeguards cover detector geometry, exposure, error states and identity.
+
 ## Recovered radio/UV measurements
 
 `python -B tools/sky-plates/analyze_radio_uv.py` runs offline on the recovered

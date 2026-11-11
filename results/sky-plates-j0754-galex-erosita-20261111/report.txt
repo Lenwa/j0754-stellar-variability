@@ -1,0 +1,97 @@
+J0754: GALEX calibration and released eROSITA counterpart
+11 November 2026
+
+FINDINGS
+
+eROSITA: the survey team's released Gaia/NWAY catalogue selects J0754 itself,
+Gaia DR3 667401913089980544, as the best counterpart to
+3eRASS J075445.3+164136 (UID 311707200169). Its p_any is 0.918834;
+p_i is 0.99999994, and match_flag is 1. The offset is 8.34644 arcsec.
+This materially strengthens the independent X-ray association beyond the
+positional match in our previous report.
+
+p_any is the probability that a counterpart exists in the input Gaia catalogue;
+p_i is its relative probability among that catalogue's candidate counterparts.
+The nearly-unity p_i is not a 99.999994% unconditional identification. The
+X-ray-emitter Gaia prior is 0.924435, distinct from the output probability.
+Only one row for this X-ray UID occurs in the complete released Gaia table.
+The faint UVOT source 9.38 arcsec from the X-ray position remains outside this
+Gaia-only comparison; it is not thereby proven spurious. J0754 is nevertheless
+the preferred, physically supported identification in this independent release.
+DR2 is catalogue-only, so it cannot tell us whether eROSITA caught a flare.
+The detection supplies evidence for X-ray activity, not a flare light curve.
+
+GALEX: modest short-timescale fluctuations remain after correcting background,
+flat response, time-dependent sensitivity, deadtime and shutter coverage.
+The detector corrections do not explain away the 20-second fluctuations.
+They agree across 6, 9 and 12 arcsec apertures; variable aperture loss alone
+does not explain the shape. No clear fast-rise/exponential-decay event appears.
+
+The evidence for variability depends strongly on temporal binning. Approximate
+constant-source Poisson-reference probabilities (100,000 simulations each):
+
+aperture       20-second bins    30-second bins    40-second bins
+6 arcsec       0.0111            0.5848            0.4152
+9 arcsec       0.0176            0.4471            0.2730
+12 arcsec      0.0107            0.4672            0.2188
+
+These are uncorrected for the multiple, correlated analysis choices. They are
+conditional on response tracks estimated from detected photon positions.
+Conclusion: a weak UV variability hint, insufficient for a new flare claim.
+The two very short visits (97 and 82 nominal seconds, separated by ~1.65 hr)
+cannot establish an hours-long flare or a long-term activity cycle.
+
+METHOD AND DATA
+
+Retrieved 1,057 nominal NUV photons within 30 arcsec, including source photons
+and a 20-30 arcsec background annulus. Reused the independently retrieved
+spacecraft/aspect coverage. Source apertures are 6, 9 and 12 arcsec. Native
+millisecond photon times are converted to seconds. Short trailing bins below
+half the requested bin length are merged, avoiding the previous 2-second tail.
+
+Flat coordinates and the NUV time-sensitivity polynomial follow gPhoton's
+curvetools and galextools. Photons receive inverse-response weights; count
+errors use a Poisson reference conditional on each bin's harmonic response.
+Detector dead fractions follow gPhoton's empirical global-count model, using
+both NUVPhotonsV flag=0 and NUVPhotonsNULLV. Global event counts in native
+50-millisecond intervals measure open coverage directly, including partial
+intervals at bin boundaries. The old two-argument shutter function is no longer
+accepted by the server: its explicit ERROR responses are preserved but unused.
+No inferred scalar was substituted for that failure.
+
+No infinite-aperture correction is made: corrected count rates are aperture
+rates, not an absolute UV luminosity. Background simulation includes both
+source-aperture and annulus photon noise. Probabilities test a constant source
+under the stated detector model; they do not identify the cause of a departure.
+
+The eROSITA Gaia catalogue is 855,031,704 compressed bytes. Every binary-table
+row was streamed and checked by UID, retaining the target row and original
+header only. The public FITS repeats the name GDR3_source_id; the second copy
+is explicitly renamed GDR3_source_id_duplicate in the retained ECSV. The
+original field order/header is saved. Null purity/completeness fields remain
+null; they are not additional probability measurements.
+
+REPRODUCTION
+
+python -B tools/sky-plates/fetch_galex_erosita_followup.py galex
+python -B tools/sky-plates/fetch_galex_erosita_followup.py erosita
+python -B tools/sky-plates/analyze_galex_erosita_followup.py
+python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
+
+Fetch commands reuse saved inputs. Analysis is offline. protocol.json precedes
+the corrected analysis but follows earlier inspection of raw counts/positions.
+galex_corrected.png shows aperture sensitivity and detector factors. Exact
+counts, effective exposures, response factors and simulations are in results.json.
+
+PRIMARY SOURCES
+
+Official eROSITA counterpart definitions and data:
+https://erosita.mpe.mpg.de/dr2/AllSkySurveyData_dr2/Catalogues_dr2/
+https://erosita.mpe.mpg.de/dr2/AllSkySurveyData_dr2/Catalogues_dr2/RamosM_DR2/eRASSc3_Main_GDR3_Public_27Jul2026.html
+Release scope:
+https://erosita.mpe.mpg.de/dr2/FAQ_dr2/
+GALEX calibration algorithms (gPhoton):
+https://github.com/cmillion/gPhoton/blob/master/gPhoton/curvetools.py
+https://github.com/cmillion/gPhoton/blob/master/gPhoton/galextools.py
+https://github.com/cmillion/gPhoton/blob/master/gPhoton/dbasetools.py
+https://doi.org/10.3847/1538-4357/833/2/292

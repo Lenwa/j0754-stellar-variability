@@ -1,0 +1,10 @@
+{
+  "url": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest",
+  "params": {
+    "query": "select shutter*0.05 from GPFCore.dbo.fGetNUVShutter(822935895495,822935915495)",
+    "format": "extjs"
+  },
+  "retrieved_utc": "2026-11-11T12:44:25.151119+00:00",
+  "bytes": 159,
+  "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+}

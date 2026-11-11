@@ -1,0 +1,6 @@
+{
+  "question": "Do the GALEX fluctuations survive instrumental correction, and does the official eROSITA counterpart catalogue select J0754?",
+  "status": "Exploratory follow-up: raw GALEX counts and X-ray positions were already inspected.",
+  "galex": "Use nominal photons, a 20-30 arcsec background annulus, detector flat/time response, deadtime and shutter. Compare 6, 9 and 12 arcsec apertures and 20/30/40-second bins, with short trailing bins merged. Real variability should survive calibration and aperture choices; a disappearing fluctuation weakens the variability interpretation. Quantify a constant-source null using count simulations; do not identify a flare from a p value alone.",
+  "erosita": "Read the released Gaia/NWAY counterpart rows by X-ray UID, retaining alternative matches and posterior definitions. A high p_any and p_i selecting Gaia 667401913089980544 supports association; another preferred counterpart or low probabilities weakens it. Catalogue-only DR2 cannot establish flare timing."
+}

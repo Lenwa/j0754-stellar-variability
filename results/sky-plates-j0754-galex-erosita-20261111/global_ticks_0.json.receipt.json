@@ -1,0 +1,10 @@
+{
+  "url": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest",
+  "params": {
+    "query": "select time/50 as tick,count(*) as n from (select time from GPFCore.dbo.NUVPhotonsV where time >= 822929964995 and time < 822930063995 and flag=0 union all select time from GPFCore.dbo.NUVPhotonsNULLV where time >= 822929964995 and time < 822930063995) as events group by time/50 order by tick",
+    "format": "extjs"
+  },
+  "retrieved_utc": "2026-11-11T12:45:18.596619+00:00",
+  "bytes": 47994,
+  "sha256": "d5ff6ba393fd4b374ce5e69b16aed06196cd18dc5461f55b6460b288557ef9c4"
+}

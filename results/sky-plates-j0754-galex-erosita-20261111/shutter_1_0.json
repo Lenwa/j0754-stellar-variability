@@ -1,0 +1,4 @@
+{
+  "status" : "ERROR",
+  "msg" : "An insufficient number of arguments were supplied for the procedure or function GPFCore.dbo.fGetNUVShutter.",
+  "data" : {}}

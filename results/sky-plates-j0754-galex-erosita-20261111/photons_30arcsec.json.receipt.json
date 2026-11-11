@@ -1,0 +1,10 @@
+{
+  "url": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest",
+  "params": {
+    "query": "select time,ra,dec,xi,eta,x,y,flag,q from GPFCore.dbo.fGetNearbyObjEqNUVAllColumns(118.69117410685,16.694621231895,0.008333333333333333,822929964995,822935977995,0)",
+    "format": "extjs"
+  },
+  "retrieved_utc": "2026-11-11T12:44:20.180438+00:00",
+  "bytes": 93315,
+  "sha256": "f9220485c931e5dd32ddd5d5813e0ebba4dcb74ce6ace06b54c4fd4eab663d00"
+}

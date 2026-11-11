@@ -1,5 +1,10 @@
 # J0754 stellar variability laboratory
 
+**11 November follow-up:** the official eROSITA Gaia/NWAY catalogue selects
+J0754 with p_any=0.919. Corrected GALEX fluctuations remain a weak, bin-dependent
+UV variability hint. See the [report](results/sky-plates-j0754-galex-erosita-20261111/report.txt)
+and [calibrated UV plot](results/sky-plates-j0754-galex-erosita-20261111/galex_corrected.png).
+
 Reproducible archival astronomy tools and supporting evidence for **DASCH
 J075445.9+164141**, an active giant with historical and modern fading episodes.
 This repository unifies the plate photometry, modern optical/infrared analysis,
@@ -21,8 +26,8 @@ and [four-event comparison](results/sky-plates-j0754-flare-search-20261110/four_
 
 **Multiwavelength inventory:** all seven follow-up archive groups were queried.
 GALEX individual photons, two Swift UVW1 image extensions and three VLASS radio
-cutouts were recovered. A plausible eROSITA DR2 counterpart remains to be
-validated. Current XMM/Chandra source searches and APOGEE DR17/DR19 target
+cutouts were recovered. The official eROSITA DR2 Gaia counterpart catalogue selects J0754
+(see the 11 November follow-up below). Current XMM/Chandra source searches and APOGEE DR17/DR19 target
 queries are empty. See the [instrument inventory](results/sky-plates-j0754-multiwavelength-20261110/report.txt).
 
 **Radio/UV measurements:** no radio detection or significant epoch change is
@@ -62,7 +67,7 @@ python -m pip install -r requirements.txt
 python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
 ```
 
-The current snapshot passes **159 tests** (147 in the initial release). Tests cover model
+The current snapshot passes **166 tests** (147 in the initial release). Tests cover model
 integration, injections, nuisance projection, period/alias behavior, covariance,
 pixel reductions and failure cases; they do not substitute for independent
 scientific review. No credentials are required for these offline tests.

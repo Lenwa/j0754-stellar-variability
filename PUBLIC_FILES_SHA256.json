@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 7321,
-    "sha256": "843733cecf6ee41129e10252d7f3d6e25afca4c770c858ca41207c7c5cfe54b7"
+    "bytes": 7717,
+    "sha256": "39bd7136a8b1dd6e78819428432e8cedc624689e153b741b81d848f78486360c"
   },
   {
     "path": "docs/J0754_findings_2026-11-10.docx",
@@ -41,18 +41,18 @@
   },
   {
     "path": "docs/PUBLICATION_AUDIT.md",
-    "bytes": 4783,
-    "sha256": "da7f2cd86942ecb75176b49647500a42d648d6fd34e1686ae9b2fccccda63d8f"
+    "bytes": 5221,
+    "sha256": "eb6d0c278080cfa2776d0f9eec4fb63be1f7cb0b48a2622de14647bce021e708"
   },
   {
     "path": "docs/native_data_manifest.json",
-    "bytes": 80412,
-    "sha256": "4f3876fcb06dfb848cb8d43b83a7f9d7655811b30ea0bc6865c4d2924b406212"
+    "bytes": 80623,
+    "sha256": "8ab5ee98f2140b3fc8c83024a3bbb0d143e98bb5f3ba9975c4b67ab454641bc3"
   },
   {
     "path": "docs/public_archive_requests.json",
-    "bytes": 89267,
-    "sha256": "dba939e17bd415db45b1b09eba755f0f1fab6d95f3f17cd235385f1d0fdaa070"
+    "bytes": 92886,
+    "sha256": "102f48f46a66734bdf28a42192514ab8286b9bf59970c02f02e71f5ee93aefbd"
   },
   {
     "path": "requirements-report.txt",
@@ -1428,6 +1428,261 @@
     "path": "results/sky-plates-j0754-followup-20261108/secondary_calibration_protocol.json",
     "bytes": 1345,
     "sha256": "09a3f0b111e53cf2477f61610c7c2ee54605b8802442938776860f7717334567"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/NUV_flat.fits",
+    "bytes": 2563200,
+    "sha256": "df6bb14936fda626f3d94efd18e20eddc24f208eb984a06276c840ec54b77b3e"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/NUV_flat.fits.receipt.json",
+    "bytes": 251,
+    "sha256": "5bc7d4c997f067487fcda7455402b1ca06bff0f1b3df05789303b8eaa8aeca47"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/erosita_gaia_counterparts.ecsv",
+    "bytes": 7942,
+    "sha256": "11f81859751a64df1b030e2d0e6d2213b0fe9310063ac13c7db1e159c0994e84"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/erosita_gaia_original_header.txt",
+    "bytes": 40320,
+    "sha256": "1c0a815bc6981f8fdd137b80756cdf42982815c914f533ea17b748abd1bfc1a3"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/erosita_gaia_receipt.json",
+    "bytes": 435,
+    "sha256": "03002b58bd10ba9a96d44eac03932096f7f4b86b1be7099f36816fc26b873472"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/galex_corrected.png",
+    "bytes": 249794,
+    "sha256": "488e5a8e574c70f0ca232d4305342760e88fa2e24996a5357aa7242bd7c61bf9"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_0.json",
+    "bytes": 374,
+    "sha256": "7552284afb60216fdf6c91815de969c4861f76b017a76601d812dff7ccf0a80c"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_0.json.receipt.json",
+    "bytes": 524,
+    "sha256": "3f4102555899f6b0b0daec4fc68817e39d0d1656b3c9188ff0035e283c00d344"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_1.json",
+    "bytes": 374,
+    "sha256": "5ab487fe8adb50f0155f2fd43a87552f705759a9b127445dbf0a26fae1feabc3"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_1.json.receipt.json",
+    "bytes": 524,
+    "sha256": "2fd3f936efb743fd1f01ad553800f875c62bf12820ca4735a0bad6143e826a11"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_2.json",
+    "bytes": 374,
+    "sha256": "edc7429b5ed83d52a7e5fe3789513ce20febf914e030daf44d27b827fc066aaf"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_2.json.receipt.json",
+    "bytes": 524,
+    "sha256": "c190ae97ca4d3d2bcb4bad81b51eb068154ab09184e705686522648dcc970b20"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_3.json",
+    "bytes": 374,
+    "sha256": "ed8582abf3104a48c169af85866a89a5a2cae5e845e667316dec610bc8c908b8"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_3.json.receipt.json",
+    "bytes": 524,
+    "sha256": "9fc33b80e25a4a987dc610635d5e411509ee035fc132d5f7681ac642762be013"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_4.json",
+    "bytes": 374,
+    "sha256": "8eda1d577386e05502b6dca128a7764dcdceeb36246a52e4fecc333dec508153"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_0_4.json.receipt.json",
+    "bytes": 524,
+    "sha256": "40492cce460608df242ef3c6fe5c005c4c4a94fb69b5f3bafd321f511738f0cd"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_1_0.json",
+    "bytes": 374,
+    "sha256": "fedc5abecb11c79a8870930ed61e826f08ccf77198d0d2f0179cdcb6cc427982"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_1_0.json.receipt.json",
+    "bytes": 524,
+    "sha256": "7b1bb4ded16add9f465674c9d555d5194fb0c4644b0d25fe1d49a1af26ecd267"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_1_1.json",
+    "bytes": 374,
+    "sha256": "c4ed3e563ebf832a888e0c1537e29d93984a5bef365e3ae990d12d018614e6c1"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_1_1.json.receipt.json",
+    "bytes": 524,
+    "sha256": "8b84bdcc2f265a2b75ae30bf5c58d9f1ad783736a20370b924bfb3acb26641f4"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_1_2.json",
+    "bytes": 374,
+    "sha256": "e2a68aace63833e8d75c599cbb9e01aa11ab5ef536c5b55e3f48f7d21a25c025"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_1_2.json.receipt.json",
+    "bytes": 524,
+    "sha256": "28363c4d1df98a80a90009dec8deca52cce77ee93fd373e072766fa190842eff"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_1_3.json",
+    "bytes": 374,
+    "sha256": "4bc3d9f0f2d4348c688280daf5e0ad5bb24ce4f0167cdf9a5a02e4db27c74bd8"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_1_3.json.receipt.json",
+    "bytes": 524,
+    "sha256": "933f4b091d65533cc881ec740f9346e4eaf184aebc383b0e605d5c03b52478d7"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_ticks_0.json",
+    "bytes": 47994,
+    "sha256": "d5ff6ba393fd4b374ce5e69b16aed06196cd18dc5461f55b6460b288557ef9c4"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_ticks_0.json.receipt.json",
+    "bytes": 602,
+    "sha256": "db22fe91616ed00c8d8304d7e0747f952601b36d7cf6a467de3b24d53c8e2d3a"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_ticks_1.json",
+    "bytes": 40794,
+    "sha256": "ba704a1b4edf475c7a9ddfc9cd4069648e7afe2ba18a94185d52d2e38cc3cc78"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/global_ticks_1.json.receipt.json",
+    "bytes": 602,
+    "sha256": "159ce4eb0f638b2b6fbb62be6eb36fa2063f8ba95f9eff9f5033caf2b44fba7d"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/photons_30arcsec.json",
+    "bytes": 93315,
+    "sha256": "f9220485c931e5dd32ddd5d5813e0ebba4dcb74ce6ace06b54c4fd4eab663d00"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/photons_30arcsec.json.receipt.json",
+    "bytes": 473,
+    "sha256": "f08de240b7619d5ea2423e675df08c4617eb195e76419fd080985a5b85885cfc"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/protocol.json",
+    "bytes": 1019,
+    "sha256": "7e33399b22d1885fd1bada9c510978fc26ec71bbba6fac4b4b9ef810ff1655c6"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/report.txt",
+    "bytes": 5415,
+    "sha256": "a54c57bf67e20e975de3a043848449a9ef50309fb17c1391862cba6a1f6a181c"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/results.json",
+    "bytes": 43377,
+    "sha256": "07be9e4b3b97f89d084507c1c241055cf6e905e51245d141a2563103217a0a87"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_0.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_0.json.receipt.json",
+    "bytes": 385,
+    "sha256": "20cfb595146d8c65f8bc97bb3403096cf857c83c87e803157509b4c787210ee6"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_1.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_1.json.receipt.json",
+    "bytes": 385,
+    "sha256": "c9439b19870c23f25cb1346260cee7c342f25420bc6e4117187581a5f4147868"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_2.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_2.json.receipt.json",
+    "bytes": 385,
+    "sha256": "26b80b7612fc47b0947a52a18962d3d4ae9bd2268d5e6d8b883c3226e9255a4c"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_3.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_3.json.receipt.json",
+    "bytes": 385,
+    "sha256": "6449249d149211d1ba468a9cd04af7e7f729278107f29abd392f2330ccfd8635"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_4.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_0_4.json.receipt.json",
+    "bytes": 385,
+    "sha256": "675578b9f5e744be68b58a828dd29c916715ca4108d406c95d15ec324eb5aff5"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_1_0.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_1_0.json.receipt.json",
+    "bytes": 385,
+    "sha256": "9d2505dc573c440ec878b8b353ee5e055f17d546944c7fefcc0f23a367ee936f"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_1_1.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_1_1.json.receipt.json",
+    "bytes": 385,
+    "sha256": "83e32e4d27969e4824d8c341104a7b2d4e6d5fd9076b7f1288576620c6ce1808"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_1_2.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_1_2.json.receipt.json",
+    "bytes": 385,
+    "sha256": "0cf8ea43f33af9472ce2b86121ede35405a457f2dc05dcda731776f2c7e7917b"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_1_3.json",
+    "bytes": 159,
+    "sha256": "f956b4e87ea73034f470b5dd8fe6587c570d1e251d4da191f48244fbf6ac1e90"
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/shutter_1_3.json.receipt.json",
+    "bytes": 385,
+    "sha256": "ec4b6717a78fbbd6fcf78b1a5f96e0ce536ed44f4ce338a6c49a81cb03b90e15"
   },
   {
     "path": "results/sky-plates-j0754-gemini-archives-20261108/archive_audit.txt",
@@ -5031,8 +5286,8 @@
   },
   {
     "path": "tools/sky-plates/README.md",
-    "bytes": 32572,
-    "sha256": "20eeaa5b6289a6311c10e7c342b9320fd3abdbccbad83fc26ba904b918d3ba95"
+    "bytes": 33152,
+    "sha256": "867d4c247b82f7031de19ba7cc23f0c443be18efb23e55328b1c6b82de536105"
   },
   {
     "path": "tools/sky-plates/analysis_core.py",
@@ -5043,6 +5298,11 @@
     "path": "tools/sky-plates/analyze.py",
     "bytes": 12357,
     "sha256": "2c1cf07a12c27e386db0bc5c2ed13575270ced128f1e50d07b5fb56ac0d6add9"
+  },
+  {
+    "path": "tools/sky-plates/analyze_galex_erosita_followup.py",
+    "bytes": 7908,
+    "sha256": "93db201e39813149e5c8cede8c92c43e56d514b8f394536e121e2bd1c8e47d10"
   },
   {
     "path": "tools/sky-plates/analyze_j0754_dust.py",
@@ -5238,6 +5498,11 @@
     "path": "tools/sky-plates/fetch_dust_data.py",
     "bytes": 3564,
     "sha256": "2a0962e92eb85d45e1878e7910eb1fdd9d269bd280ea26c2c0828f8b5133eb61"
+  },
+  {
+    "path": "tools/sky-plates/fetch_galex_erosita_followup.py",
+    "bytes": 5961,
+    "sha256": "986a9c259ff8bb0b67a59bbd1c8d8dbf0fc30b86d8fe20909d52b303c3a3ddf4"
   },
   {
     "path": "tools/sky-plates/fetch_historical_extension.py",
@@ -5463,6 +5728,11 @@
     "path": "tools/sky-plates/test_fast_relative_rv.py",
     "bytes": 791,
     "sha256": "49dbeb917ebb34d0ef224ea86c71fe1ae30a7a5d06b5c6686a60c270a39273c4"
+  },
+  {
+    "path": "tools/sky-plates/test_galex_erosita_followup.py",
+    "bytes": 1824,
+    "sha256": "0ce1e216b6eadb9cbc2ef4f432e0cb23cf2694a35a818f47d9738d1c3269010b"
   },
   {
     "path": "tools/sky-plates/test_historical_extension.py",

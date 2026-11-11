@@ -1,0 +1,9 @@
+{
+  "url": "https://erosita.mpe.mpg.de/dr2/AllSkySurveyData_dr2/Catalogues_dr2/RamosM_DR2/eRASSc3_Main_GDR3_Public_27Jul2026.fits.gz",
+  "retrieved_utc": "2026-11-11T12:46:21.381870+00:00",
+  "filter_UID": 311707200169,
+  "rows_scanned": 2176277,
+  "rows_selected": 1,
+  "subset_sha256": "80545e53f5b29f890322232e9ce997921437858f793936432da7e4ed975a09da",
+  "scope": "All binary-table rows scanned; retained matching UID rows only."
+}

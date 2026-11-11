@@ -84,3 +84,11 @@ python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
 Report a suspected credential through GitHub's private security reporting route
 where available, rather than pasting it into a public issue. Scientific errors
 and reproducibility issues can be filed in ordinary repository issues.
+
+## 11 November GALEX/eROSITA follow-up
+
+Public detector calibration, photon/background queries and the target subset of
+the official Gaia counterpart catalogue are included with request receipts.
+The full 855 MB counterpart catalogue was streamed, not copied into the repo.
+The original duplicate-column header and unused shutter API errors are retained.
+The corrected analysis, figure, protocol and 166-test suite were checked locally.

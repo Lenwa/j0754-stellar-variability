@@ -1,0 +1,13 @@
+{
+  "status" : "COMPLETE",
+  "msg" : "",
+  "data" : { "name":"NewDataSet",
+"Tables":[{ "name":"Table",
+"ExtendedProperties":{"Paging":{"page":1,"pageSize":1,"pagesFiltered":1,"rows":1,"rowsFiltered":1,"rowsTotal":1}},
+"Columns":[ 
+  {"text": "Column1","dataIndex": "Column1","ignoreValue": null}],
+"Fields":[ 
+  {"name":"Column1", "type": "int"}],
+"Rows":[ 
+  [572827]]
+}]}}

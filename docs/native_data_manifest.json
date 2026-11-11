@@ -2128,5 +2128,11 @@
     "bytes": 37440,
     "sha256": "5cd5dcd1489bcb40afd23b7025fd4af7855e6ad60e063167ef2f73f41e02a4ff",
     "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/NUV_flat.fits",
+    "bytes": 2563200,
+    "sha256": "df6bb14936fda626f3d94efd18e20eddc24f208eb984a06276c840ec54b77b3e",
+    "included": true
   }
 ]
