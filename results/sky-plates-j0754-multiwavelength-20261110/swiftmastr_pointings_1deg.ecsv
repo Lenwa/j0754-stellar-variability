@@ -1,0 +1,448 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: __row
+#   datatype: string
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: name
+#   datatype: string
+#   description: Designation of the Pointed Source
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: orig_target_id
+#   datatype: int32
+#   description: Trigger Number as Originally Assigned
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {width: 8}
+#   - values: {'null': -2147483648}
+# - name: target_id
+#   datatype: int32
+#   description: Unique Trigger Number with Any Degeneracy Removed
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {width: 8}
+#   - values: {'null': -2147483648}
+# - name: ra
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Right Ascension (Pointing Position)
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;meta.main}
+#   - {precision: F5}
+# - name: dec
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Declination (Pointing Position)
+#   meta: !!omap
+#   - {ucd: pos.eq.dec;meta.main}
+#   - {precision: F5}
+# - name: roll_angle
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Roll Angle (degree)
+#   meta: !!omap
+#   - {precision: F5}
+# - name: start_time
+#   unit: d
+#   datatype: float64
+#   description: Start Time of the Observation
+#   meta: !!omap
+#   - {ucd: time.start;obs}
+# - name: stop_time
+#   unit: d
+#   datatype: float64
+#   description: Stop Time of the Observation
+#   meta: !!omap
+#   - {ucd: time.end;obs}
+# - name: orig_obs_segment
+#   datatype: int32
+#   description: Observation Segment as Originally Assigned
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {width: 3}
+#   - values: {'null': -2147483648}
+# - name: obs_segment
+#   datatype: int32
+#   description: True Observation Segment (Corrected Value)
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {width: 3}
+#   - values: {'null': -2147483648}
+# - name: orig_obsid
+#   datatype: string
+#   description: Observation Number as Originally Assigned (Orig_Target_ID + Orig_Obs_Segment)
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: DataLinkID
+#   datatype: string
+#   description: Unique Observation Number (Target_ID + Obs_Segment)
+#   meta: !!omap
+#   - {ucd: meta.id;meta.main}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: xrt_exposure
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source Considering All XRT Modes
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray}
+#   - {precision: F5}
+# - name: uvot_exposure
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source Considering All UVOT Filters and Modes
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - {precision: F5}
+# - name: bat_exposure
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source Considering All BAT Event and Survey Modes
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.gamma}
+#   - {precision: F5}
+# - name: xrt_expo_lr
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of Low Rate XRT Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray}
+#   - {precision: F5}
+# - name: xrt_expo_pu
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of Piled-up XRT Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray}
+#   - {precision: F5}
+# - name: xrt_expo_wt
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of Windowed Timing XRT Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray}
+#   - {precision: F5}
+# - name: xrt_expo_pc
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of Photon Counting XRT Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray}
+#   - {precision: F5}
+# - name: xrt_expo_im
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of Image Modes
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray}
+#   - {precision: F5}
+# - name: uvot_expo_uu
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter U
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_bb
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter B
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_vv
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter V
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.opt}
+#   - {precision: F5}
+# - name: uvot_expo_w1
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter UVW1
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_w2
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter UVW2
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_m2
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter UVM2
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_wh
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter WHITE
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_gu
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter UGRISM
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_gv
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter VGRISM
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_mg
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure on Source of UVOT Filter Magnifier
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: uvot_expo_bl
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure of UVOT Blocked Filter
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.UV}
+#   - {precision: F5}
+# - name: bat_expo_ev
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure BAT Event Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.gamma}
+#   - {precision: F5}
+# - name: bat_expo_sv
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure BAT Survey Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.gamma}
+#   - {precision: F5}
+# - name: bat_expo_rt
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure BAT Rate Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.gamma}
+#   - {precision: F5}
+# - name: bat_expo_mt
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure BAT Mask-Tag Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.gamma}
+#   - {precision: F5}
+# - name: bat_expo_pl
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Effective Exposure BAT Pulsar Mode
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.gamma}
+#   - {precision: F5}
+# - name: bat_no_masktag
+#   datatype: int16
+#   description: Number of Sources with Mask-Tag Rate within This Observation
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - name: archive_date
+#   unit: d
+#   datatype: int32
+#   description: Public Date
+#   meta: !!omap
+#   - {ucd: time.release}
+#   - values: {'null': -2147483648}
+# - name: software_version
+#   datatype: string
+#   description: Software Version Used in the Pipeline
+#   meta: !!omap
+#   - {ucd: meta.version;meta.software}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: processing_date
+#   unit: d
+#   datatype: float64
+#   description: Date of Processing
+#   meta: !!omap
+#   - {ucd: time.processing}
+# - name: processing_version
+#   datatype: string
+#   description: Version of Processing Script
+#   meta: !!omap
+#   - {ucd: meta.version}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: num_processed
+#   datatype: int16
+#   description: Number of Times Sequence Has Been Processed
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - name: prnb
+#   datatype: int32
+#   description: Proposal Number
+#   meta: !!omap
+#   - values: {'null': -2147483648}
+# - name: pi
+#   datatype: string
+#   description: Principal Investigator Last Name
+#   meta: !!omap
+#   - {ucd: meta.id.PI}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: att_flag
+#   datatype: string
+#   description: Attitude Flag
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: tdrss_flag
+#   datatype: string
+#   description: Flag Indicates TDRSS Message Exists
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: grb_flag
+#   datatype: string
+#   description: Flag Indicates Gamma-Ray Burst
+#   meta: !!omap
+#   - {ucd: meta.code;src;em.gamma}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: lii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Galactic Longitude (Pointing Position)
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon}
+#   - {precision: F5}
+# - name: bii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Galactic Latitude (Pointing Position)
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: F5}
+# - name: saa_fraction
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Fraction of Observation Spent in the South Atlantic Anomaly (SAA)
+#   meta: !!omap
+#   - {ucd: meta.code.qual;time.duration;obs.exposure}
+#   - {precision: F5}
+# - name: af_total
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Total Time Per Sequence, According to the As-Flown Timeline (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.sequence}
+#   - {precision: F5}
+# - name: af_onsource
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Time on Source Per Sequence, According to the As-Flown Timeline (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - {precision: F5}
+# - name: af_inslew
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Time in Slew Per Sequence, According to the As-Flown Timeline (s)
+#   meta: !!omap
+#   - {precision: F5}
+# - name: af_insaa
+#   unit: s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Time in SAA Per Sequence, According to the As-Flown Timeline (s)
+#   meta: !!omap
+#   - {precision: F5}
+# - name: cycle
+#   datatype: int16
+#   description: Proposal Cycle Number
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - {name: __x_ra_dec, datatype: float64}
+# - {name: __y_ra_dec, datatype: float64}
+# - {name: __z_ra_dec, datatype: float64}
+# meta: !!omap
+# - {description: 'Query result for:
+# 
+#     SELECT TOP 300 * FROM swiftmastr WHERE CONTAINS(POINT(''ICRS'',ra,dec),CIRCLE(''ICRS'',118.69117410685,16.694621231895,1.0))=1'}
+# schema: astropy-2.0
+__row name orig_target_id target_id ra dec roll_angle start_time stop_time orig_obs_segment obs_segment orig_obsid DataLinkID xrt_exposure uvot_exposure bat_exposure xrt_expo_lr xrt_expo_pu xrt_expo_wt xrt_expo_pc xrt_expo_im uvot_expo_uu uvot_expo_bb uvot_expo_vv uvot_expo_w1 uvot_expo_w2 uvot_expo_m2 uvot_expo_wh uvot_expo_gu uvot_expo_gv uvot_expo_mg uvot_expo_bl bat_expo_ev bat_expo_sv bat_expo_rt bat_expo_mt bat_expo_pl bat_no_masktag archive_date software_version processing_date processing_version num_processed prnb pi att_flag tdrss_flag grb_flag lii bii saa_fraction af_total af_onsource af_inslew af_insaa cycle __x_ra_dec __y_ra_dec __z_ra_dec
+"""307909""" """SDSSJ075355.24+1619""" 90315 90315 118.48056083 16.33354206 92.2472320055758 55478.2451388889 55478.2861805556 3 3 """00090315003""" """00090315003""" 502.482 495.202 519.0 0.0 0.0 11.583 490.899 0.0 0.0 0.0 0.0 232.442 262.76 0.0 0.0 0.0 0.0 0.0 0.0 0.0 519.0 660.8 1184.0 682.0 2 55489 """Hea_27Jul2015_V6.17_Swift_Rel4.5(Bld34)_27Jul2015_SDCpatch_2""" 57615.0 """3.17.06""" 5 60900606 """WINDHORST""" """112""" """N""" """N""" 204.77550938 20.99057331 0.0 656.199420034885 504.999379038811 151.200040996075 0.0 6 0.84350408141593 -0.457614868231991 0.281228549417882
+"""308016""" """SDSSJ075355.24+1619""" 90315 90315 118.42185111 16.35488986 275.645337275791 55328.6777777778 55328.7221759259 1 1 """00090315001""" """00090315001""" 736.602 729.453 754.0 0.0 0.0 1.969 734.633 0.0 0.0 0.0 0.0 135.683 593.77 0.0 0.0 0.0 0.0 0.0 0.0 0.0 754.0 854.4 1624.0 806.0 5 55339 """Hea_27Jul2015_V6.17_Swift_Rel4.5(Bld34)_27Jul2015_SDCpatch_1""" 57582.0 """3.17.04""" 4 60900606 """WINDHORST""" """112""" """N""" """N""" 204.73059953 20.9473182 0.0 850.199539959431 739.99909901619 110.200440943241 0.0 6 0.843880334773821 -0.456700404062601 0.281586081884528
+"""308030""" """DragFixed20675""" 3620675 3620675 119.00538025 16.35788394 283.005978919747 61139.7061805556 61139.711724537 1 1 """03620675001""" """03620675001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61150 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61150.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 204.96539782 21.46267653 0.0 356.799999952316 229.399600028992 127.400399923325 0.0 0 0.83917251247579 -0.465263937881831 0.281636223543352
+"""308053""" """SDSSJ075355.24+1619""" 90315 90315 118.45062739 16.36094145 290.970526824479 55340.2545717593 55340.6254513889 2 2 """00090315002""" """00090315002""" 774.855 688.499 840.0 0.0 0.0 10.156 764.699 0.0 0.0 0.0 0.0 19.374 669.125 0.0 0.0 0.0 0.0 0.0 0.0 0.0 840.0 1592.0 1856.0 1612.0 2 55351 """Hea_27Jul2015_V6.17_Swift_Rel4.5(Bld34)_27Jul2015_SDCpatch_1""" 57582.0 """3.17.04""" 8 60900606 """WINDHORST""" """112""" """N""" """N""" 204.73637256 20.97506619 0.0 1580.39812004566 784.998076975346 795.400043070316 0.0 6 0.843624700785771 -0.457110006324664 0.281687426666481
+"""308479""" """0754+16""" 31554 31554 118.6135204 16.57357442 92.4885969935351 55167.6455439815 55167.7497337963 1 1 """00031554001""" """00031554001""" 4988.016 4988.181 5025.0 0.0 0.0 0.0 4988.016 0.0 0.0 0.0 0.0 4988.181 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 5025.0 5305.6 15864.0 0.0 3 55178 """Hea_27Jul2015_V6.17_Swift_Rel4.5(Bld34)_27Jul2015_SDCpatch_1""" 57506.0 """3.17.03""" 5 1 """Swift""" """112""" """N""" """N""" 204.5933069 21.20265555 0.0 5299.39856004715 4994.99893802404 304.399622023106 0.0 0 0.841398211800346 -0.45900280103944 0.285246345843604
+"""309883""" """DragPointing04259""" 3604259 3604259 117.9849199 17.1835937 355.985160140045 61086.4700578704 61086.477037037 1 1 """03604259001""" """03604259001""" 0.0 0.0 238.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 238.0 483.2 0.0 0.0 0 61097 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61096.0 """3.20.02""" 5 1 """Swift""" """110""" """N""" """N""" 203.73867852 20.88999107 0.0 477.199999928474 214.999998927116 262.200001001358 0.0 0 0.843653477619637 -0.448293727440278 0.295434499742318
+"""309930""" """DragPointing04279""" 3604279 3604279 117.9866716 17.18591338 356.00042550537 61086.533275463 61086.5401967593 1 1 """03604279001""" """03604279001""" 0.0 0.0 240.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 240.0 478.4 0.0 0.0 0 61097 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61096.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 203.73709888 20.89244129 0.0 474.600020051003 214.999999046326 259.600021004677 0.0 0 0.843629208658252 -0.44831390694249 0.295473178377685
+"""310368""" """DragPointing30282""" 3630282 3630282 117.9989283 17.36018519 341.032247791395 61173.614525463 61173.6186921296 1 1 """03630282001""" """03630282001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61184 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61183.0 """3.20.02""" 3 1 """Swift""" """110""" """N""" """N""" 203.57038833 20.97157735 "" "" "" "" "" 0 0.842735858225791 -0.448070384834987 0.298377618956695
+"""310414""" """DragPointing20748""" 3620748 3620748 117.99503924 17.37851072 281.999257201567 61139.9617476852 61139.9673032407 1 1 """03620748001""" """03620748001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61150 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61150.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 203.55077401 20.97534165 0.0 358.800000071526 199.999999046326 158.8000010252 0.0 0 0.842681960285815 -0.44796836264225 0.298682875104143
+"""310568""" """DragPointing34661""" 3634661 3634661 119.01255507 17.43163546 195.998916379942 61189.4367592593 61189.4436921296 1 1 """03634661001""" """03634661001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 203.90534779 21.88999361 "" "" "" "" "" 0 0.834351481919599 -0.462727612583018 0.299567623704213
+"""310626""" """DragPointing34596""" 3634596 3634596 119.00028125 17.43297517 194.973135275499 61189.1846759259 61189.1908796296 1 1 """03634596001""" """03634596001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 3 1 """Swift""" """110""" """N""" """N""" 203.8991097 21.87972647 "" "" "" "" "" 0 0.834444461054223 -0.462545472333546 0.299589932140025
+"""310656""" """DragPointing34612""" 3634612 3634612 118.9994144 17.43456733 194.949462057676 61189.2485648148 61189.2548148148 1 1 """03634612001""" """03634612001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 3 1 """Swift""" """110""" """N""" """N""" 203.89718241 21.87958379 "" "" "" "" "" 0 0.834444177297329 -0.462528811437984 0.299616444082013
+"""310817""" """DragPointing34629""" 3634629 3634629 119.00104977 17.43803332 194.003101680251 61189.314525463 "" 1 1 """03634629001""" """03634629001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 203.89439529 21.88236915 "" "" "" "" "" 0 0.834415121619749 -0.462543840293026 0.299674157409809
+"""310822""" """DragPointing34645""" 3634645 3634645 119.00078052 17.43829699 193.989893877585 61189.3784143518 61189.3826041667 1 1 """03634645001""" """03634645001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 203.89402586 21.88223504 "" "" "" "" "" 0 0.834416089077852 -0.462539250512386 0.29967854781993
+"""310910""" """DragPointing34679""" 3634679 3634679 119.00262503 17.44062717 193.995408088086 61189.5048032407 61189.5089699074 1 1 """03634679001""" """03634679001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 203.89244988 21.88476243 "" "" "" "" "" 0 0.834390538184527 -0.462560202844941 0.299717347733132
+"""310918""" """DragPointing34628""" 3634628 3634628 119.00162621 17.44091993 196.011283698909 61189.3110416667 61189.3159143518 1 1 """03634628001""" """03634628001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 203.89175988 21.88399838 "" "" "" "" "" 0 0.834397262309386 -0.462544914594084 0.299722222455647
+"""310922""" """DragPointing34695""" 3634695 3634695 119.00194429 17.44117317 194.986492294115 61189.5666087963 61189.5714699074 1 1 """03634695001""" """03634695001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 3 1 """Swift""" """110""" """N""" """N""" 203.89163562 21.88437643 "" "" "" "" "" 0 0.834393535833772 -0.46254890449195 0.299726439127603
+"""310923""" """DragPointing34644""" 3634644 3634644 118.9980351 17.44117712 196.003761596011 61189.3749537037 61189.3798263889 1 1 """03634644001""" """03634644001""" 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0 61200 """Hea_21Mar2024_V6.33.1_Swift_Rel5.8(Bld47)_30Jun2023_SDCpatch_2""" 61199.0 """3.20.02""" 4 1 """Swift""" """110""" """N""" """N""" 203.89006876 21.88094206 "" "" "" "" "" 0 0.834425074714879 -0.462491964198677 0.299726504898581

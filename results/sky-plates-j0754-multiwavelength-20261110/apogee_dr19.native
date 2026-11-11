@@ -1,0 +1,14 @@
+[
+  {
+    "TableName": "Table1",
+    "Rows": []
+  },
+  {
+    "TableName": "SqlQuery",
+    "Rows": [
+      {
+        "query": "SELECT TOP 20 * FROM apogee_drp_allstar WHERE ra BETWEEN 118.68817410685 AND 118.69417410685 AND dec BETWEEN 16.691621231895 AND 16.697621231895"
+      }
+    ]
+  }
+]

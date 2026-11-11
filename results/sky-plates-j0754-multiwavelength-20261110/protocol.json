@@ -1,0 +1,7 @@
+{
+  "question": "What public GALEX,SwiftUVOT,XMM,Chandra,eROSITA,APOGEE andVLASS data are available for J0754?",
+  "target_icrs": [118.69117410685,16.694621231895],
+  "scope": "Metadata first. Reuse earlier GALEX andSwiftUVOT detections andDR17/XMM/eRASS1 searches as dated context, then query updated releases, pointing coverage and downloadable-product inventories. No new observing proposals, accounts, bulk full-survey files or paid requests.",
+  "matching": "Source catalogues use tight target neighborhood or120arcsec for low-resolutionXray search, preserving separations;pointing lists1degree conservatively include possible footprints. Position match alone is not a new physical detection. Distinguish source null, observation coverage, access failure and unqueried release.",
+  "output": "Exact public queries/native responses/hashes/UTC retrieval receipts plus a concise instrument-by-instrument inventory. Inspect results before adaptive follow-ups."
+}

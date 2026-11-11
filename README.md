@@ -19,6 +19,12 @@ cutouts, the complete search hits, injection trials and rejected excursions
 are included. See the [search report](results/sky-plates-j0754-flare-search-20261110/report.txt)
 and [four-event comparison](results/sky-plates-j0754-flare-search-20261110/four_event_lightcurves.png).
 
+**Multiwavelength inventory:** all seven follow-up archive groups were queried.
+GALEX individual photons, two Swift UVW1 image extensions and three VLASS radio
+cutouts were recovered. A plausible eROSITA DR2 counterpart remains to be
+validated. Current XMM/Chandra source searches and APOGEE DR17/DR19 target
+queries are empty. See the [instrument inventory](results/sky-plates-j0754-multiwavelength-20261110/report.txt).
+
 ## What is here
 
 | Area | Tools and methods |
@@ -49,7 +55,7 @@ python -m pip install -r requirements.txt
 python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
 ```
 
-The current snapshot passes **151 numerical tests** (147 in the initial release). Tests cover model
+The current snapshot passes **154 tests** (147 in the initial release). Tests cover model
 integration, injections, nuisance projection, period/alias behavior, covariance,
 pixel reductions and failure cases; they do not substitute for independent
 scientific review. No credentials are required for these offline tests.

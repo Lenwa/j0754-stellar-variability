@@ -1,0 +1,22 @@
+{
+  "name": "mast_observations",
+  "url": "https://mast.stsci.edu/api/v0/invoke",
+  "params": {
+    "request": "{\"service\": \"Mast.Caom.Cone\", \"params\": {\"ra\": 118.69117410685, \"dec\": 16.694621231895, \"radius\": 0.0008333333333333334}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1}"
+  },
+  "retrieved_utc": "2026-11-11T03:40:51.051425+00:00",
+  "status_code": 200,
+  "url_resolved": "https://mast.stsci.edu/api/v0/invoke?request=%7B%22service%22%3A+%22Mast.Caom.Cone%22%2C+%22params%22%3A+%7B%22ra%22%3A+118.69117410685%2C+%22dec%22%3A+16.694621231895%2C+%22radius%22%3A+0.0008333333333333334%7D%2C+%22format%22%3A+%22json%22%2C+%22pagesize%22%3A+1000%2C+%22page%22%3A+1%7D",
+  "bytes": 34727,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/mast_observations.native",
+  "sha256": "0f71fa610a5ad0bd73c23d1e2dd366d97f04e7d7c61193b52a189a626f6edc89",
+  "state": "json_response",
+  "json_keys": [
+    "status",
+    "msg",
+    "data",
+    "fields",
+    "paging"
+  ],
+  "rows": 33
+}

@@ -1,0 +1,21 @@
+{
+  "name": "gphoton_nuv_aspect",
+  "url": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest",
+  "params": {
+    "query": "select distinct time from GPFCore.dbo.fGetNearbyAspectEq(118.69117410685,16.694621231895,37.5,1000,1200000000000) where band='NUV' or band='FUV/NUV' order by time",
+    "format": "extjs"
+  },
+  "retrieved_utc": "2026-11-11T03:44:16.464344+00:00",
+  "status_code": 200,
+  "url_resolved": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest?query=select+distinct+time+from+GPFCore.dbo.fGetNearbyAspectEq%28118.69117410685%2C16.694621231895%2C37.5%2C1000%2C1200000000000%29+where+band%3D%27NUV%27+or+band%3D%27FUV%2FNUV%27+order+by+time&format=extjs",
+  "bytes": 3942,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aspect.native",
+  "sha256": "542080740fad483dfbdf13ddf377a37413c4faa1d5d431acc07f8dcf934aee26",
+  "state": "json_response",
+  "json_keys": [
+    "status",
+    "msg",
+    "data"
+  ],
+  "rows": 179
+}

@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 6436,
-    "sha256": "5a93490f3416f77e117b47ce80c0343a253a9bc5ab1b8389701eaa88529506ea"
+    "bytes": 6849,
+    "sha256": "26c55518ca64a1f69608ecdb190c2786a3161453948e5449eb379d56ecc64b21"
   },
   {
     "path": "docs/J0754_findings_2026-11-10.docx",
@@ -41,18 +41,18 @@
   },
   {
     "path": "docs/PUBLICATION_AUDIT.md",
-    "bytes": 3833,
-    "sha256": "a209ac00fce3b61695cddb42410b88224bdde0c191bbbb08b83d7197ece76364"
+    "bytes": 4347,
+    "sha256": "dbcae1a3170d45c61be49dc39a68a496e908670ddcd5ec3229e70e0efafffcba"
   },
   {
     "path": "docs/native_data_manifest.json",
-    "bytes": 78562,
-    "sha256": "3f943126573425b422c30f2d7085730a22cc54365fc7b679498b00e1342746f5"
+    "bytes": 80412,
+    "sha256": "4f3876fcb06dfb848cb8d43b83a7f9d7655811b30ea0bc6865c4d2924b406212"
   },
   {
     "path": "docs/public_archive_requests.json",
-    "bytes": 87207,
-    "sha256": "1b30f2f7893f442feccddd1a81d13d563896fbf02e59981a4159a445f850e7b1"
+    "bytes": 89267,
+    "sha256": "dba939e17bd415db45b1b09eba755f0f1fab6d95f3f17cd235385f1d0fdaa070"
   },
   {
     "path": "requirements-report.txt",
@@ -2820,6 +2820,481 @@
     "sha256": "3c92bcdb9acc78a3986aeea5e80eb8a02d12bc1969a4812a828d667976923b48"
   },
   {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/apogee_dr17.json",
+    "bytes": 283,
+    "sha256": "b7d6665c1a107515884d0fc44940edc90f4b13b4a596af1114e0152d8e722688"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/apogee_dr17.native",
+    "bytes": 283,
+    "sha256": "b7d6665c1a107515884d0fc44940edc90f4b13b4a596af1114e0152d8e722688"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/apogee_dr17_receipt.json",
+    "bytes": 855,
+    "sha256": "a8952bad876f7c9f8dd8a00526818279c9df7df1f689c8c701f9ee6995d9b5eb"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/apogee_dr19.json",
+    "bytes": 291,
+    "sha256": "ef3d9fe786cf62c09b2f1288ad3e8c4472d088fb186876347db8ee7f884ecdcf"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/apogee_dr19.native",
+    "bytes": 291,
+    "sha256": "ef3d9fe786cf62c09b2f1288ad3e8c4472d088fb186876347db8ee7f884ecdcf"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/apogee_dr19_receipt.json",
+    "bytes": 871,
+    "sha256": "da5eb4633d4e66fcd1dc82523cff2c121f76dccfb9b7d4956981d8b4596cde3f"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/chanmaster_pointings_1deg.ecsv",
+    "bytes": 4756,
+    "sha256": "da33dfacb371266945f3f117e39b620b8b97932aff31793c1ce3ef5ba9b28ea3"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/chanmaster_pointings_1deg.native",
+    "bytes": 4662,
+    "sha256": "05cb234f70dc1e4d669661ff6696b6aeb11be2fea1b5404a8a2bd5b9963558f8"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/chanmaster_pointings_1deg_initial_format_error.native",
+    "bytes": 385,
+    "sha256": "c9f7a0afceb727882b7e0ddf865ecc9ae9fab32ad658c5ef21ea8d7e44127603"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/chanmaster_pointings_1deg_receipt.json",
+    "bytes": 1238,
+    "sha256": "d2e77b7c954f0ae2601a6937490e5c8427bcc0561535c2a1e0b3c1fcaa05a535"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/csc_sources_60arcsec.ecsv",
+    "bytes": 149174,
+    "sha256": "91c6af2f8558d49f5022c638342a4f0cb40fd7b917d027eaadda3697f038210b"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/csc_sources_60arcsec.native",
+    "bytes": 128371,
+    "sha256": "0ccf0e704f0d85d8738d1dbc821ba82f77378671b8f7d21308a04405dc850e05"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/csc_sources_60arcsec_receipt.json",
+    "bytes": 12871,
+    "sha256": "cb9e0a37ebc01e14494556d9d0f875688c837a74639c5afb16feb5e80d0a3e4d"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR1_Main.ecsv",
+    "bytes": 33706,
+    "sha256": "2a28c10b2c6cba8d3eb7da0b501421874aa3dc15ab65abafb45c69135afa4417"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR1_Main.native",
+    "bytes": 39567,
+    "sha256": "ecfecb0948729850ea12a01d8f1101e3b0c94e51780c20b4811fb9c13737143a"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR1_Main_receipt.json",
+    "bytes": 5620,
+    "sha256": "e441e0a8b7b435b9d359f151f58895baec2d0bd940cc1aaf9e654e876ce92b7f"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR1_Supp.ecsv",
+    "bytes": 33774,
+    "sha256": "cb0156595933114ef2b54896cc001bfb4348671736f820179032869c89bb1d5b"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR1_Supp.native",
+    "bytes": 39676,
+    "sha256": "c11d936de759bbefa13cd688feea5eb2008d67a3bc50ce0e368ec0ec4cd3802d"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR1_Supp_receipt.json",
+    "bytes": 5620,
+    "sha256": "1462840667f1b815eaa8e1c52298032c460eac529ec5d302cba1cbf592705622"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR2_Hard.ecsv",
+    "bytes": 13326,
+    "sha256": "ec799c5a4e545785d9b5783b23f513237003b15f041d107f37219dd47994c26e"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR2_Hard.native",
+    "bytes": 14457,
+    "sha256": "57da8aae28d1a12693518dcffc64f8749962f4389a27a8b3afb8db8b218efc14"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR2_Hard_receipt.json",
+    "bytes": 2707,
+    "sha256": "0624823aa845dc7fdffb2a52798f73c3d79f8b0c19aa0557f87a1ad4ad3da278"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR2_Main.ecsv",
+    "bytes": 33706,
+    "sha256": "591bfc5bef2de66b60f028dbf974d7d6585d20c4ad3c39d60b2e58a5bd7c8b1d"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR2_Main.native",
+    "bytes": 39766,
+    "sha256": "5a7f43f682592087aec1ebec9dbf49b39f45151d3841660f0008cb10476d9781"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR2_Main_receipt.json",
+    "bytes": 5588,
+    "sha256": "e904dd693b3e7486b39a22c1cac305ea43bf687cf54ec764fd6dac61d8f60ee1"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_limit_DR1_eRASS1.json",
+    "bytes": 366,
+    "sha256": "849d29bfa52dd8c1573cadd4c591ade32eb0e29db392e4741fd01e4ca95a60e8"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_limit_DR1_eRASS1.native",
+    "bytes": 336,
+    "sha256": "db2f971eb0829c277865df3bc10b1ac6d299f2b221054a33bd97dc9fe6dc988c"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_limit_DR1_eRASS1_receipt.json",
+    "bytes": 888,
+    "sha256": "b6e6cab8044ca61fded047aa82441f4bb3e958432ced2a170ba81a8bdf2595d5"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_limit_DR2_eRASSc3.json",
+    "bytes": 280,
+    "sha256": "08f3a45717c93c8c03cf99aa59417e5422ad6a5fb5f294dc187cd43b2dd6a0de"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_limit_DR2_eRASSc3.native",
+    "bytes": 256,
+    "sha256": "43b3d076c9929c72cced3ac5526c26d0cc1ac20d49946be3b333e1b4cff97b21"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/erosita_limit_DR2_eRASSc3_receipt.json",
+    "bytes": 840,
+    "sha256": "babaca1386798847582a3323f79dccbef8a9b70106b7413eae2970a40ff5e468"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/galex_catalog.json",
+    "bytes": 3865,
+    "sha256": "aa484d202669caf54e6408ef84c650cdcd23c480dc0a4cfd2aefe4e60b747c7c"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/galex_catalog.native",
+    "bytes": 2534,
+    "sha256": "2377b85b5f643779d4a0754ae7f07a80640134b622fee7071b698e8309d58772"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/galex_catalog_receipt.json",
+    "bytes": 1005,
+    "sha256": "9bba4e4bf411a245db64fd7213538ced64a0d0b2de6a0602a749d8a4392757f2"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/galex_nuv_aperture_photons.csv",
+    "bytes": 36935,
+    "sha256": "1ab5d9ae201f127d88ff1dbb4ef10ae78ab908f7fa419fb2a6a72211ed04b1db"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/galex_products.json",
+    "bytes": 320866,
+    "sha256": "4f69af5932055917322b104b29d3e0701d1de898fe58fe937431082b2b116334"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/galex_products.native",
+    "bytes": 249904,
+    "sha256": "026a8c1c1172a20066807ceec1d1e9dad234f256fb831da1c5c25d138d266201"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/galex_products_receipt.json",
+    "bytes": 875,
+    "sha256": "c4c46fbe834d7ac2bb79e6e5c72468b2949af5f33d6c94ce3bb9896d7c3b8c76"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/galex_small_timing_products.json",
+    "bytes": 1410,
+    "sha256": "0ab13c538609fd83d606fd817f8ae67f8f9c7ff534d7346c4b9013191d144c11"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aperture_photons.json",
+    "bytes": 104913,
+    "sha256": "367fb0f7376c99a52f0ae8d63e4092370153f62b404ed4ad0266632a0f311eec"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aperture_photons.native",
+    "bytes": 41212,
+    "sha256": "b1e1dd41dc655dc17e69120d18e4832c042fedc895f409327a6c371203618baa"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aperture_photons_receipt.json",
+    "bytes": 1056,
+    "sha256": "3af85283d95859228dc3bc8dcac32b4f17e99f5166d987d734926bfa9bb72e83"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aspect.json",
+    "bytes": 9987,
+    "sha256": "fbf6230d796a9ae7a0cc6f4596bdd86eab298a37914aeb6a7488cb523255ba09"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aspect.native",
+    "bytes": 3942,
+    "sha256": "542080740fad483dfbdf13ddf377a37413c4faa1d5d431acc07f8dcf934aee26"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aspect_receipt.json",
+    "bytes": 1025,
+    "sha256": "d2c856caa3cc621f04c51117119f4689859f2976a9f0f099f5fb2ca52c0162d2"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_ranges.json",
+    "bytes": 99,
+    "sha256": "ec88449e00aa5b7bf2c1d566357194bee4f0f28353e9112f7d3d4e037bbbf9f8"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_ranges.native",
+    "bytes": 101,
+    "sha256": "0f2688cf04f2c30eae2f8a8b7381a0f8ad81152b6ecaf5bd900ee0f599464dd9"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_ranges_receipt.json",
+    "bytes": 962,
+    "sha256": "6988f3ecb7159653f3b22aea252df8645549702f4ad3b909fecbff48d456b38f"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_slew_radio_tables.ecsv",
+    "bytes": 933,
+    "sha256": "8ce9b74af79e3956e2cfe652e42d0924128ceeb46be19b9d9338a37f66ad63e3"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_slew_radio_tables.native",
+    "bytes": 1277,
+    "sha256": "89c3302e33f1bdad739b8256498da75300317e42e290c8f525430bca0e565f11"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_slew_radio_tables_receipt.json",
+    "bytes": 885,
+    "sha256": "4088a25ad8eb2697eec341f30da91e8a1e6eb9e8456bc79b73b8045dec3160de"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_tables.ecsv",
+    "bytes": 9739,
+    "sha256": "d0bcf713530132521746057c1cc0a1dcc62d5c86d3176ee2785485a38ebf6026"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_tables.native",
+    "bytes": 12250,
+    "sha256": "969a69ad864d47853af3596bd66223ace962c2aabe55360b0aa9b0e6da9302c2"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_tables_initial_format_error.native",
+    "bytes": 385,
+    "sha256": "c9f7a0afceb727882b7e0ddf865ecc9ae9fab32ad658c5ef21ea8d7e44127603"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_tables_receipt.json",
+    "bytes": 1052,
+    "sha256": "b1e6bb963eefcb5e9aadb1f994584028c4d9df9d22bf64a8fcfcc64382f7d553"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/mast_observations.json",
+    "bytes": 45503,
+    "sha256": "245830b3715fb47a1210e97135b73a7a6cd0735063752adefc63bf000e2d271d"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/mast_observations.native",
+    "bytes": 34727,
+    "sha256": "0f71fa610a5ad0bd73c23d1e2dd366d97f04e7d7c61193b52a189a626f6edc89"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/mast_observations_receipt.json",
+    "bytes": 1009,
+    "sha256": "b75e5db62ec04e29fa6cb5c215e7dfa7507a9cb7bdd38c2d90795c2e20f0e179"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_downloads.json",
+    "bytes": 6199,
+    "sha256": "c5f3483de9b2e790fc2b7d062848eb0d2aef2fd7e7d7244ac243b1ccb7a358d3"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0001_sg10-scst.fits.gz",
+    "bytes": 29448,
+    "sha256": "0accb82dc83b1f17ad1ae7a2a40633f283595633b532b550fc0dd065ed4d4b02"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0002_sg10-scst.fits.gz",
+    "bytes": 27162,
+    "sha256": "7f0636d7d2d6c861d6350caedbf46e994b6261c7de3037ab61243d21d0a00a10"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 37440,
+    "sha256": "5cd5dcd1489bcb40afd23b7025fd4af7855e6ad60e063167ef2f73f41e02a4ff"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 43200,
+    "sha256": "b26fa56e249b5a057f9c62993ee851c7381695550b2e833986dccd8e63fe80b1"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 97920,
+    "sha256": "9ae436623c1bb8123de49a7467dd9f81ee69ae0cfad868061f87f0e019b20667"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_ex.img.gz",
+    "bytes": 209339,
+    "sha256": "cfb74cd3b5c0659a5f4d8c21cf5d848e8aac84dc5e44c874c7f057cdce35bd48"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_sk.img.gz",
+    "bytes": 3970773,
+    "sha256": "9ff7fbcf1748d83b58324305934ab3b36ca9d1522b69c3609d27f95436adadfd"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/protocol.json",
+    "bytes": 964,
+    "sha256": "ab5b0a2cf8e0f309510f3f54dfbcdcaf7b3ac0403cd04f802b66e176776cf590"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/query_inventory.json",
+    "bytes": 75275,
+    "sha256": "050351624177c328ed5d6500cc0240c3a83afcfc5ba1d6f6a1a9fbe6cbafea51"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/report.txt",
+    "bytes": 8629,
+    "sha256": "5e558b639e8fe7a342844ae1fcf80401eb6f369fc8ef5f079df70235c04fb2f3"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swift_uvot_image_listing.native",
+    "bytes": 1136,
+    "sha256": "47fe8f84adbd1cfed497d9a20046d3385acb2da4cab227ad82e0e24a53e46e6e"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swift_uvot_image_listing_receipt.json",
+    "bytes": 842,
+    "sha256": "cd614c280835e199dc97a5f337dd43c6bfcb4d57c97c0401169200e5be38b4c4"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swiftmastr_pointings_1deg.ecsv",
+    "bytes": 22207,
+    "sha256": "8519bc08b1fe592e4100bccb06f3703d6d08ee702c2a698f8da73e728822ed88"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swiftmastr_pointings_1deg.native",
+    "bytes": 23997,
+    "sha256": "7fbc8bb130cbe08d3d9fd691ba4fe7d58d1916ecb0fcfacdd2b5abda28072ebe"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swiftmastr_pointings_1deg_initial_format_error.native",
+    "bytes": 385,
+    "sha256": "c9f7a0afceb727882b7e0ddf865ecc9ae9fab32ad658c5ef21ea8d7e44127603"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swiftmastr_pointings_1deg_receipt.json",
+    "bytes": 1961,
+    "sha256": "3f3ebda134269ded1cbe99e36398ca999eec86681b8f98a3d2261446854210f5"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swuvotssc_sources_60arcsec.ecsv",
+    "bytes": 22519,
+    "sha256": "b3c65513752b74c09db3c03bc304296bff936b278d7939e9f7b2dede505387a0"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swuvotssc_sources_60arcsec.native",
+    "bytes": 21209,
+    "sha256": "14156e272c588c8f293a3bdd8bcf6e96b0c89d927fe2deb67f02dd61a53ba1cd"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/swuvotssc_sources_60arcsec_receipt.json",
+    "bytes": 2718,
+    "sha256": "b864b48c6cef9e3b50f0067135b0039c9a207a921dacf02ff048682bdb2e208e"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/vlass_artifacts.native",
+    "bytes": 1885,
+    "sha256": "36c9715fae759f01ff9124a47381c2dd603df3c1d246c8b0d2253f0c92cc44ea"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/vlass_artifacts_receipt.json",
+    "bytes": 1315,
+    "sha256": "f31643e303bc91876e2970a67c543518f87329e15ad95b5b60e693f502ebb7e6"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/vlass_cadc_coverage.native",
+    "bytes": 609,
+    "sha256": "144cb0be10de147e97e33f5cbe8499162e94fdb737b71a8288d2110a97086df9"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/vlass_cadc_coverage_receipt.json",
+    "bytes": 1572,
+    "sha256": "2644bee148344cc7a6fa2e4831cfdeadbac884f05d3b8e089a090b41ef293b6f"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmmaster_pointings_1deg.ecsv",
+    "bytes": 10162,
+    "sha256": "c2312bbae52b9fe3bb5887f06231b8d1a5ee048a979936e756f0ec85098cc939"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmmaster_pointings_1deg.native",
+    "bytes": 9301,
+    "sha256": "8e1f167d4d1272eee16762b88ea05f2b381bd02244f0878c05a80ca279433c64"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmmaster_pointings_1deg_initial_format_error.native",
+    "bytes": 385,
+    "sha256": "c9f7a0afceb727882b7e0ddf865ecc9ae9fab32ad658c5ef21ea8d7e44127603"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmmaster_pointings_1deg_receipt.json",
+    "bytes": 1717,
+    "sha256": "7da212374d3d9a558b6ba9b8558e50e3a6825112ddbc9197e06106fa71abe9dd"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmslewcln_sources_60arcsec.ecsv",
+    "bytes": 23915,
+    "sha256": "16127cfb4988ccd8aef5d6a5091b97e80ac42e4417b7af2ef0539a1b28d38544"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmslewcln_sources_60arcsec.native",
+    "bytes": 20502,
+    "sha256": "ac2ea9acc09bbe834efe2603f624275357ab6ebabe362b9a92035bad8735383d"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmslewcln_sources_60arcsec_receipt.json",
+    "bytes": 2719,
+    "sha256": "6d228a5274e89c66dc668820eb21395ff290c2962456f74a17a401445988a5bd"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmslewful_sources_60arcsec.ecsv",
+    "bytes": 23915,
+    "sha256": "3af5dd18c98f6587b1ad6ddf218acc1d8caf73777b206f9d0c47d36bc212087e"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmslewful_sources_60arcsec.native",
+    "bytes": 20502,
+    "sha256": "c8f689a1bf6a974161d11b672cbf2d7480205af8a742000458cc5c339fe1546d"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmslewful_sources_60arcsec_receipt.json",
+    "bytes": 2719,
+    "sha256": "62a626b41b3a2167bf785842558571e9756348e6b7bb090a8b8878dd87ad314d"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmssc_sources_60arcsec.ecsv",
+    "bytes": 97028,
+    "sha256": "fe1decf8e134f45fc291aa31b732ac9312b35dab8900a866f5839e34cab1efae"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmssc_sources_60arcsec.native",
+    "bytes": 81823,
+    "sha256": "67cc04f757f52324d4bd084ab825eb388b6dc9cd81c6b9b5f08f39396ec359a2"
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/xmmssc_sources_60arcsec_receipt.json",
+    "bytes": 9115,
+    "sha256": "b4b9910b1d881a15d8795690c77d69d1823e9b52362baea8e060af1ae2884e04"
+  },
+  {
     "path": "results/sky-plates-j0754-optical-overlay-20261108/Hao2017_Fig3.jpg",
     "bytes": 87041,
     "sha256": "f0d6a557cef71fcbcfc3112d3bf1dceaeb758b6e6119956f842a29b4e173df63"
@@ -4521,8 +4996,8 @@
   },
   {
     "path": "tools/sky-plates/README.md",
-    "bytes": 31055,
-    "sha256": "828abc2b44e73150b1797801fabfe43623761360b5cedd0321f3fdb7c8b64e33"
+    "bytes": 31836,
+    "sha256": "6f793e615b73bdc50e2c34e2d6ce69faabc508cf028d652bb130eeb12df35390"
   },
   {
     "path": "tools/sky-plates/analysis_core.py",
@@ -4825,6 +5300,11 @@
     "sha256": "df337a6613e7b98b6ff60bf5c478655e83438f563cb5d901f4c7d5993ee039f2"
   },
   {
+    "path": "tools/sky-plates/query_multiwavelength_archives.py",
+    "bytes": 12344,
+    "sha256": "e5c08544db195a5ca24864063124c00d3c0ae6006fc5668d589103b721f9239c"
+  },
+  {
     "path": "tools/sky-plates/remeasure_applause.py",
     "bytes": 15114,
     "sha256": "9342a1c13d79267f2cedfefbd64a41db35bcf03d651ec4b8c63664206531d239"
@@ -4963,6 +5443,11 @@
     "path": "tools/sky-plates/test_multiday_eclipse_check.py",
     "bytes": 1401,
     "sha256": "43bd0b0b8c8f6f0bae4700a43e419f1436d591a2f6493cde7aa1904a91a9650d"
+  },
+  {
+    "path": "tools/sky-plates/test_multiwavelength_queries.py",
+    "bytes": 784,
+    "sha256": "75af3d632eeb9874ef812a9c1e667e57baa5732a87252bd129c49596b91dda34"
   },
   {
     "path": "tools/sky-plates/test_orbit_photometry.py",

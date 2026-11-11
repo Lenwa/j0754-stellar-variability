@@ -1,0 +1,1307 @@
+<?xml version="1.0"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
+ <RESOURCE type="results">
+  <INFO name="QUERY_STATUS" value="OK">No errors detected in query preprocessing</INFO>
+  <TABLE>
+   <DESCRIPTION>Query result for:&#xA;SELECT TOP 300 * FROM xmmssc WHERE CONTAINS(POINT(&apos;ICRS&apos;,ra,dec),CIRCLE(&apos;ICRS&apos;,118.69117410685,16.694621231895,0.016666666666666666))=1</DESCRIPTION>
+   <FIELD datatype="char" arraysize="*" name="__row"/>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;src" name="srcid">
+    <DESCRIPTION>Unique Source Identifier</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;meta.main" name="name">
+    <DESCRIPTION>Source Designation (IAU)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;obs" name="obsid">
+    <DESCRIPTION>Unique Observation Identifier</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.id" name="pps_srcnum">
+    <DESCRIPTION>Source Number Attributed to a Detection by the Automatic Pipeline Processing</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.number;obs" name="n_obs" width="8">
+    <DESCRIPTION>Total Number of Observations per Stack</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.number" name="n_contrib" width="8">
+    <DESCRIPTION>Number of Observations with Which the Source Was Fitted</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="n_exp" width="3">
+    <DESCRIPTION>Number of Exposures Covering the Source</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra;meta.main" precision="F6" name="ra">
+    <DESCRIPTION>Corrected Right Ascension of the Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec;meta.main" precision="F6" name="dec">
+    <DESCRIPTION>Corrected Declination of the Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;pos;stat.mean" precision="F5" name="error_radius">
+    <DESCRIPTION>Positional Uncertainty (arcsec)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.smajAxis;pos.errorEllipse" precision="E6" name="error_ell_major">
+    <DESCRIPTION>Semi-Major Axis of the Positional Error Ellipse</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.sminAxis;pos.errorEllipse" precision="E6" name="error_ell_minor">
+    <DESCRIPTION>Semi-Minor Axis of the Positional Error Ellipse</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="stat.error;pos.posAng" precision="E6" name="error_ell_pa">
+    <DESCRIPTION>Rotation Angle of the Positional Error Ellipse</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon" precision="F8" name="lii">
+    <DESCRIPTION>Corrected Galactic Longitude of the Source (degrees)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="F8" name="bii">
+    <DESCRIPTION>Corrected Galactic Latitude of the Source (degrees)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="pos.cartesian.x;instr.pixel" precision="E6" name="x_pixel">
+    <DESCRIPTION>X Coordinate of Combined Observation of a Stack</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;pos.cartesian.x;instr.pixel" precision="E6" name="x_pixel_error">
+    <DESCRIPTION>Symmetrical Uncertainty in X Coordinate of Combined Observation of a Stack</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;pos.cartesian.x;instr.pixel" precision="E6" name="x_pixel_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Asymmetrical Uncertainty in X Coordinate of Stacked Observation</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;pos.cartesian.x;instr.pixel" precision="E6" name="x_pixel_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Asymmetrical Uncertainty in X Coordinate of Stacked Observation</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="pos.cartesian.y;instr.pixel" precision="E6" name="y_pixel">
+    <DESCRIPTION>Y Coordinate of Combined Observation of a Stack</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;pos.cartesian.y;instr.pixel" precision="E6" name="y_pixel_error">
+    <DESCRIPTION>Symmetrical Uncertainty in Y Coordinate of Combined Observation of a Stack</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;pos.cartesian.y;instr.pixel" precision="E6" name="y_pixel_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Asymmetrical Uncertainty in Y Coordinate of Stacked Observation</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;pos.cartesian.y;instr.pixel" precision="E6" name="y_pixel_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Asymmetrical Uncertainty in Y Coordinate of Stacked Observation</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.id;instr" name="ccdpn">
+    <DESCRIPTION>PN CCD Number in Which the Detection Lies</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="pos.cartesian.x;instr.pixel" name="pn_rawx">
+    <DESCRIPTION>X Raw Pixel Position of Detection in PN Image</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="pos.cartesian.y;instr.pixel" name="pn_rawy">
+    <DESCRIPTION>Y Raw Pixel Position of Detection in PN Image</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.id;instr" name="ccdm1">
+    <DESCRIPTION>M1 CCD Number in Which Detection Lies</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="pos.cartesian.x;instr.pixel" name="m1_rawx">
+    <DESCRIPTION>X Raw Pixel Position of Detection in M1 Image</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="pos.cartesian.y;instr.pixel" name="m1_rawy">
+    <DESCRIPTION>Y Raw Pixel Position of Detection in M1 Image</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.id;instr" name="ccdm2">
+    <DESCRIPTION>M2 CCD Number in Which Detection Lies</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="pos.cartesian.x;instr.pixel" name="m2_rawx">
+    <DESCRIPTION>X Raw Pixel Position of Detection in M2 Image</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="pos.cartesian.y;instr.pixel" name="m2_rawy">
+    <DESCRIPTION>Y Raw Pixel Position of Detection in M2 Image</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance" precision="E6" name="dist_nn">
+    <DESCRIPTION>Distance to the Nearest Neighbor</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="n_blend">
+    <DESCRIPTION>Number of Simultaneously Fit Sources Taking into Account Blended Sources</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E6" name="ep_flux">
+    <DESCRIPTION>EPIC Total Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E6" name="ep_flux_error">
+    <DESCRIPTION>Uncertainty in EPIC Total Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="ep_1_flux">
+    <DESCRIPTION>EPIC Band 1 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="ep_1_flux_error">
+    <DESCRIPTION>Uncertainty in EPIC Band 1 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="ep_2_flux">
+    <DESCRIPTION>EPIC Band 2 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="ep_2_flux_error">
+    <DESCRIPTION>Uncertainty in EPIC Band 2 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="ep_3_flux">
+    <DESCRIPTION>EPIC Band 3 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="ep_3_flux_error">
+    <DESCRIPTION>Uncertainty in EPIC Band 3 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="ep_4_flux">
+    <DESCRIPTION>EPIC Band 4 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="ep_4_flux_error">
+    <DESCRIPTION>Uncertainty in EPIC Band 4 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="ep_5_flux">
+    <DESCRIPTION>EPIC Band 5 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="ep_5_flux_error">
+    <DESCRIPTION>Uncertainty in EPIC Band 5 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="pn_flux">
+    <DESCRIPTION>PN Total Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="pn_flux_error">
+    <DESCRIPTION>Uncertainty in PN Total Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="pn_1_flux">
+    <DESCRIPTION>PN Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="pn_1_flux_error">
+    <DESCRIPTION>Uncertainty in PN Band 1 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="pn_2_flux">
+    <DESCRIPTION>PN Band 2 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="pn_2_flux_error">
+    <DESCRIPTION>Uncertainty in PN Band 2 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="pn_3_flux">
+    <DESCRIPTION>PN Band 3 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="pn_3_flux_error">
+    <DESCRIPTION>Uncertainty in PN Band 3 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="pn_4_flux">
+    <DESCRIPTION>PN Band 4 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="pn_4_flux_error">
+    <DESCRIPTION>Uncertainty in PN Band 4 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="pn_5_flux">
+    <DESCRIPTION>PN Band 5 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="pn_5_flux_error">
+    <DESCRIPTION>Uncertainty in PN Band 5 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="m1_flux">
+    <DESCRIPTION>M1 Total Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="m1_flux_error">
+    <DESCRIPTION>Uncertainty in M1 Total Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="m1_1_flux">
+    <DESCRIPTION>M1 Band 1 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="m1_1_flux_error">
+    <DESCRIPTION>Uncertainty in M1 Band 1 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="m1_2_flux">
+    <DESCRIPTION>M1 Band 2 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="m1_2_flux_error">
+    <DESCRIPTION>Uncertainty in M1 Band 2 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="m1_3_flux">
+    <DESCRIPTION>M1 Band 3 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="m1_3_flux_error">
+    <DESCRIPTION>Uncertainty in M1 Band 3 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="m1_4_flux">
+    <DESCRIPTION>M1 Band 4 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="m1_4_flux_error">
+    <DESCRIPTION>Uncertainty in M1 Band 4 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="m1_5_flux">
+    <DESCRIPTION>M1 Band 5 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="m1_5_flux_error">
+    <DESCRIPTION>Uncertainty in M1 Band 5 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="m2_flux">
+    <DESCRIPTION>M2 Total Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="m2_flux_error">
+    <DESCRIPTION>Uncertainty in M2 Total Band Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="m2_1_flux">
+    <DESCRIPTION>M2 Band 1 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="m2_1_flux_error">
+    <DESCRIPTION>Uncertainty in M2 Band 1 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="m2_2_flux">
+    <DESCRIPTION>M2 Band 2 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="m2_2_flux_error">
+    <DESCRIPTION>Uncertainty in M2 Band 2 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="m2_3_flux">
+    <DESCRIPTION>M2 Band 3 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="m2_3_flux_error">
+    <DESCRIPTION>Uncertainty in M2 Band 3 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="m2_4_flux">
+    <DESCRIPTION>M2 Band 4 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="m2_4_flux_error">
+    <DESCRIPTION>Uncertainty in M2 Band 4 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="m2_5_flux">
+    <DESCRIPTION>M2 Band 5 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="m2_5_flux_error">
+    <DESCRIPTION>Uncertainty in M2 Band 5 Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray" precision="E5" name="ep_rate">
+    <DESCRIPTION>EPIC Total Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray" precision="E5" name="ep_rate_error">
+    <DESCRIPTION>Uncertainty in EPIC Total Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="pn_rate">
+    <DESCRIPTION>PN Total Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="pn_rate_error">
+    <DESCRIPTION>Uncertainty in PN Total Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="pn_1_rate">
+    <DESCRIPTION>PN Band 1 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="pn_1_rate_error">
+    <DESCRIPTION>Uncertainty in PN Band 1 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="pn_2_rate">
+    <DESCRIPTION>PN Band 2 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="pn_2_rate_error">
+    <DESCRIPTION>Uncertainty in PN Band 2 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="pn_3_rate">
+    <DESCRIPTION>PN Band 3 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="pn_3_rate_error">
+    <DESCRIPTION>Uncertainty in PN Band 3 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.medium" precision="E5" name="pn_4_rate">
+    <DESCRIPTION>PN Band 4 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.medium" precision="E5" name="pn_4_rate_error">
+    <DESCRIPTION>Uncertainty in PN Band 4 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.medium" precision="E5" name="pn_5_rate">
+    <DESCRIPTION>PN Band 5 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.medium" precision="E5" name="pn_5_rate_error">
+    <DESCRIPTION>Uncertainty in PN Band 5 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="m1_rate">
+    <DESCRIPTION>M1 Total Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="m1_rate_error">
+    <DESCRIPTION>Uncertainty in M1 Total Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="m1_1_rate">
+    <DESCRIPTION>M1 Band 1 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="m1_1_rate_error">
+    <DESCRIPTION>Uncertainty in M1 Band 1 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="m1_2_rate">
+    <DESCRIPTION>M1 Band 2 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="m1_2_rate_error">
+    <DESCRIPTION>Uncertainty in M1 Band 2 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="m1_3_rate">
+    <DESCRIPTION>M1 Band 3 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="m1_3_rate_error">
+    <DESCRIPTION>Uncertainty in M1 Band 3 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.medium" precision="E5" name="m1_4_rate">
+    <DESCRIPTION>M1 Band 4 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.medium" precision="E5" name="m1_4_rate_error">
+    <DESCRIPTION>Uncertainty in M1 Band 4 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.medium" precision="E5" name="m1_5_rate">
+    <DESCRIPTION>M1 Band 5 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.medium" precision="E5" name="m1_5_rate_error">
+    <DESCRIPTION>Uncertainty in M1 Band 5 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="m2_rate">
+    <DESCRIPTION>M2 Total Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="m2_rate_error">
+    <DESCRIPTION>Uncertainty in M2 Total Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="m2_1_rate">
+    <DESCRIPTION>M2 Band 1 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="m2_1_rate_error">
+    <DESCRIPTION>Uncertainty in M2 Band 1 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="m2_2_rate">
+    <DESCRIPTION>M2 Band 2 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="m2_2_rate_error">
+    <DESCRIPTION>Uncertainty in M2 Band 2 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="m2_3_rate">
+    <DESCRIPTION>M2 Band 3 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="m2_3_rate_error">
+    <DESCRIPTION>Uncertainty in M2 Band 3 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.medium" precision="E5" name="m2_4_rate">
+    <DESCRIPTION>M2 Band 4 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.medium" precision="E5" name="m2_4_rate_error">
+    <DESCRIPTION>Uncertainty in M2 Band 4 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.medium" precision="E5" name="m2_5_rate">
+    <DESCRIPTION>M2 Band 5 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.medium" precision="E5" name="m2_5_rate_error">
+    <DESCRIPTION>Uncertainty in M2 Band 5 Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="phot;em.X-ray" precision="F6" name="ep_cts">
+    <DESCRIPTION>EPIC Total Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="stat.error;phot;em.X-ray" precision="F6" name="ep_cts_error">
+    <DESCRIPTION>Uncertainty in EPIC Total Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="phot;em.X-ray" precision="F6" name="pn_cts">
+    <DESCRIPTION>PN Total Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="stat.error;phot;em.X-ray" precision="F6" name="pn_cts_error">
+    <DESCRIPTION>Uncertainty in PN Total Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="phot.count;em.X-ray" precision="F6" name="m1_cts">
+    <DESCRIPTION>M1 Total Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="stat.error;phot.count;em.X-ray" precision="F6" name="m1_cts_error">
+    <DESCRIPTION>Uncertainty in M1 Total Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="phot.count;em.X-ray" precision="F6" name="m2_cts">
+    <DESCRIPTION>M2 Total Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="stat.error;phot;em.X-ray" precision="F6" name="m2_cts_error">
+    <DESCRIPTION>Uncertainty in M2 Total Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="ep_det_ml">
+    <DESCRIPTION>EPIC Total Band Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="pn_det_ml">
+    <DESCRIPTION>PN Total Band Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="pn_1_det_ml">
+    <DESCRIPTION>PN Band 1 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="pn_2_det_ml">
+    <DESCRIPTION>PN Band 2 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="pn_3_det_ml">
+    <DESCRIPTION>PN Band 3 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="pn_4_det_ml">
+    <DESCRIPTION>PN Band 4 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="pn_5_det_ml">
+    <DESCRIPTION>PN Band 5 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m1_det_ml">
+    <DESCRIPTION>M1 Total Band Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m1_1_det_ml">
+    <DESCRIPTION>M1 Band 1 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m1_2_det_ml">
+    <DESCRIPTION>M1 Band 2 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m1_3_det_ml">
+    <DESCRIPTION>M1 Band 3 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m1_4_det_ml">
+    <DESCRIPTION>M1 Band 4 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m1_5_det_ml">
+    <DESCRIPTION>M1 Band 5 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m2_det_ml">
+    <DESCRIPTION>M2 Total Band Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m2_1_det_ml">
+    <DESCRIPTION>M2 Band 1 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m2_2_det_ml">
+    <DESCRIPTION>M2 Band 2 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m2_3_det_ml">
+    <DESCRIPTION>M2 Band 3 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m2_4_det_ml">
+    <DESCRIPTION>M2 Band 4 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;instr.bandpass" precision="E5" name="m2_5_det_ml">
+    <DESCRIPTION>M2 Band 5 Detection Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize" precision="E5" name="extent">
+    <DESCRIPTION>Extent Radius (arcsec)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;phys.angSize" precision="E5" name="extent_error">
+    <DESCRIPTION>Uncertainty in Extent Radius (arcsec)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;stat.min;phys.angSize" precision="E5" name="extent_neg_err">
+    <DESCRIPTION>Uncertainty in Extent Radius (arcsec)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;stat.max;phys.angSize" precision="E5" name="extent_pos_err">
+    <DESCRIPTION>Uncertainty in Extent Radius (arcsec)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phys.angSize" precision="E5" name="extent_ml">
+    <DESCRIPTION>Extent Likelihood</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood" precision="E6" name="stack_det_ml">
+    <DESCRIPTION>Detection Maximum Likelihood Using Fitting of the 5-Band Spectrum</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray" precision="E6" name="stack_flux">
+    <DESCRIPTION>Mean Flux of Spectral Detection Using Fitting of the 5-Band Spectrum</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.count;em.X-ray" precision="E6" name="stack_flux_error">
+    <DESCRIPTION>1-Sigma Symmetric Error on Mean Flux of Spectral Detection Using Fitting</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;stat.min;phot.count;em.X-ray" precision="E6" name="stack_flux_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Asymmetric Error on Mean Flux of Spectral Detection Using Fitting</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;stat.max;phot.count;em.X-ray" precision="E6" name="stack_flux_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Asymmetric Error on Mean Flux of Spectral Detection Using Fitting</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="phys.columnDensity" precision="E6" name="stack_nh">
+    <DESCRIPTION>Hydrogen column density from fitting of the 5 band spectrum</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity" precision="E6" name="stack_nh_error">
+    <DESCRIPTION>1-Sigma Uncertainty on STACK_NH</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;stat.min;phys.columnDensity" precision="E6" name="stack_nh_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Uncertainty on STACK_NH</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;stat.max;phys.columnDensity" precision="E6" name="stack_nh_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Uncertainty on STACK_NH</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;spect.index" precision="E6" name="stack_gamma">
+    <DESCRIPTION>Power-law index from fitting of the 5 band spectrum</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;stat.fit.param;spect.index" precision="E6" name="stack_gamma_error">
+    <DESCRIPTION>1-Sigma Uncertainty on STACK_GAMMA</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;stat.min;stat.fit.param;spect.index" precision="E6" name="stack_gamma_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Uncertainty on STACK_GAMMA</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;stat.max;stat.fit.param;spect.index" precision="E6" name="stack_gamma_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Uncertainty on STACK_GAMMA</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="pn_1_ecf">
+    <DESCRIPTION>Energy Conversion Factor for PN in the 0.2-0.5 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="pn_2_ecf">
+    <DESCRIPTION>Energy Conversion Factor for PN in the 0.5-1.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="pn_3_ecf">
+    <DESCRIPTION>Energy Conversion Factor for PN in the 1.0-2.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="pn_4_ecf">
+    <DESCRIPTION>Energy Conversion Factor for PN in the 2.0-4.5 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="pn_5_ecf">
+    <DESCRIPTION>Energy Conversion Factor for PN in the 4.5-12.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m1_1_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS1 in the 0.2-0.5 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m1_2_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS1 in the 0.5-1.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m1_3_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS1 in the 1.0-2.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m1_4_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS1 in the 2.0-4.5 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m1_5_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS1 in the 4.5-12.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m2_1_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS2 in the 0.2-0.5 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m2_2_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS2 in the 0.5-1.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m2_3_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS2 in the 1.0-2.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m2_4_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS2 in the 2.0-4.5 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct.cm^2/erg" datatype="double" ucd="arith.factor;phot.flux;phys.energy" precision="E6" name="m2_5_ecf">
+    <DESCRIPTION>Energy Conversion Factor for MOS2 in the 4.5-12.0 keV Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="ep_hr1">
+    <DESCRIPTION>EPIC Hardness Ratio for Bands 1 and 2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="ep_hr1_error">
+    <DESCRIPTION>Uncertainty in EPIC Hardness Ratio for Bands 1 and 2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="ep_hr2">
+    <DESCRIPTION>EPIC Hardness Ratio for Bands 2 and 3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="ep_hr2_error">
+    <DESCRIPTION>Uncertainty in EPIC Hardness Ratio for Bands 2 and 3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio" precision="E5" name="ep_hr3">
+    <DESCRIPTION>EPIC Hardness Ratio for Bands 3 and 4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio" precision="E5" name="ep_hr3_error">
+    <DESCRIPTION>Uncertainty in EPIC Hardness Ratio for Bands 3 and 4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.medium" precision="E5" name="ep_hr4">
+    <DESCRIPTION>EPIC Hardness Ratio for Bands 4 and 5</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.medium" precision="E5" name="ep_hr4_error">
+    <DESCRIPTION>Uncertainty in EPIC Hardness Ratio for Bands 4 and 5</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="pn_hr1">
+    <DESCRIPTION>PN Hardness Ratio for Bands 1 and 2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="pn_hr1_error">
+    <DESCRIPTION>Uncertainty in PN Hardness Ratio for Bands 1 and 2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="pn_hr2">
+    <DESCRIPTION>PN Hardness Ratio for Bands 2 and 3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="pn_hr2_error">
+    <DESCRIPTION>Uncertainty in PN Hardness Ratio for Bands 2 and 3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft" precision="E5" name="pn_hr3">
+    <DESCRIPTION>PN Hardness Ratio for Bands 3 and 4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft" precision="E5" name="pn_hr3_error">
+    <DESCRIPTION>Uncertainty in PN Hardness Ratio for Bands 3 and 4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.medium" precision="E5" name="pn_hr4">
+    <DESCRIPTION>PN Hardness Ratio for Bands 4 and 5</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.medium" precision="E5" name="pn_hr4_error">
+    <DESCRIPTION>Uncertainty in PN Hardness Ratio for Bands 4 and 5</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="m1_hr1">
+    <DESCRIPTION>M1 Hardness Ratio for Bands 1 and 2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="m1_hr1_error">
+    <DESCRIPTION>Uncertainty in M1 Hardness Ratio for Bands 1 and 2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="m1_hr2">
+    <DESCRIPTION>M1 Hardness Ratio for Bands 2 and 3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="m1_hr2_error">
+    <DESCRIPTION>Uncertainty in M1 Hardness Ratio for Bands 2 and 3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft" precision="E5" name="m1_hr3">
+    <DESCRIPTION>M1 Hardness Ratio for Bands 3 and 4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft" precision="E5" name="m1_hr3_error">
+    <DESCRIPTION>Uncertainty in M1 Hardness Ratio for Bands 3 and 4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.medium" precision="E5" name="m1_hr4">
+    <DESCRIPTION>M1 Hardness Ratio for Bands 4 and 5</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.medium" precision="E5" name="m1_hr4_error">
+    <DESCRIPTION>Uncertainty in M1 Hardness Ratio for Bands 4 and 5</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="m2_hr1">
+    <DESCRIPTION>M2 Hardness Ratio for Bands 1 and 2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="m2_hr1_error">
+    <DESCRIPTION>Uncertainty in M2 Hardness Ratio for Bands 1 and 2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="m2_hr2">
+    <DESCRIPTION>M2 Hardness Ratio for Bands 2 and 3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.soft" precision="E5" name="m2_hr2_error">
+    <DESCRIPTION>Uncertainty in M2 Hardness Ratio for Bands 2 and 3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft" precision="E5" name="m2_hr3">
+    <DESCRIPTION>M2 Hardness Ratio for Bands 3 and 4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft" precision="E5" name="m2_hr3_error">
+    <DESCRIPTION>Uncertainty in M2 Hardness Ratio for Bands 3 and 4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.flux;arith.ratio;em.X-ray.medium" precision="E5" name="m2_hr4">
+    <DESCRIPTION>M2 Hardness Ratio for Bands 4 and 5</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.flux;arith.ratio;em.X-ray.medium" precision="E5" name="m2_hr4_error">
+    <DESCRIPTION>Uncertainty in M2 Hardness Ratio for Bands 4 and 5</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="pn_1_exposure">
+    <DESCRIPTION>PN Band 1 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="pn_2_exposure">
+    <DESCRIPTION>PN Band 2 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="pn_3_exposure">
+    <DESCRIPTION>PN Band 3 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="pn_4_exposure">
+    <DESCRIPTION>PN Band 4 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="pn_5_exposure">
+    <DESCRIPTION>PN Band 5 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m1_1_exposure">
+    <DESCRIPTION>M1 Band 1 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m1_2_exposure">
+    <DESCRIPTION>M1 Band 2 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m1_3_exposure">
+    <DESCRIPTION>M1 Band 3 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m1_4_exposure">
+    <DESCRIPTION>M1 Band 4 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m1_5_exposure">
+    <DESCRIPTION>M1 Band 5 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m2_1_exposure">
+    <DESCRIPTION>M2 Band 1 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m2_2_exposure">
+    <DESCRIPTION>M2 Band 2 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m2_3_exposure">
+    <DESCRIPTION>M2 Band 3 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m2_4_exposure">
+    <DESCRIPTION>M2 Band 4 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" name="m2_5_exposure">
+    <DESCRIPTION>M2 Band 5 Exposure Map (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="pn_bg">
+    <DESCRIPTION>PN Total Band Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="pn_1_bg">
+    <DESCRIPTION>PN Band 1 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="pn_2_bg">
+    <DESCRIPTION>PN Band 2 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="pn_3_bg">
+    <DESCRIPTION>PN Band 3 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="pn_4_bg">
+    <DESCRIPTION>PN Band 4 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="pn_5_bg">
+    <DESCRIPTION>PN Band 5 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m1_bg">
+    <DESCRIPTION>M1 Total Band Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m1_1_bg">
+    <DESCRIPTION>M1 Band 1 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m1_2_bg">
+    <DESCRIPTION>M1 Band 2 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m1_3_bg">
+    <DESCRIPTION>M1 Band 3 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m1_4_bg">
+    <DESCRIPTION>M1 Band 4 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m1_5_bg">
+    <DESCRIPTION>M1 Band 5 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m2_bg">
+    <DESCRIPTION>M2 Total Band Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m2_1_bg">
+    <DESCRIPTION>M2 Band 1 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m2_2_bg">
+    <DESCRIPTION>M2 Band 2 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m2_3_bg">
+    <DESCRIPTION>M2 Band 3 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m2_4_bg">
+    <DESCRIPTION>M2 Band 4 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="m2_5_bg">
+    <DESCRIPTION>M2 Band 5 Background Map Value (ct/pixel)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="F2" name="ep_ontime">
+    <DESCRIPTION>EPIC Total Good Exposure Time (After GTI Filtering) of the CCD</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="F2" name="pn_ontime">
+    <DESCRIPTION>PN Total Good Exposure Time (After GTI Filtering) of the CCD</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="F2" name="m1_ontime">
+    <DESCRIPTION>M1 Total Good Exposure Time (After GTI Filtering) of the CCD</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="F2" name="m2_ontime">
+    <DESCRIPTION>M2 Total Good Exposure Time (After GTI Filtering) of the CCD</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.value" precision="E5" name="pn_pileup">
+    <DESCRIPTION>Estimate of the Pile-Up Level in EPIC/pn</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.value" precision="E5" name="m1_pileup">
+    <DESCRIPTION>Estimate of the Pile-Up Level in EPIC/MOS1</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.value" precision="E5" name="m2_pileup">
+    <DESCRIPTION>Estimate of the Pile-Up Level in EPIC/MOS2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="meta.code;instr.det" precision="F6" name="pn_maskfrac">
+    <DESCRIPTION>PSF Weighted Mean of PN Detector Coverage of a Detection</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="meta.code;instr.det" precision="F6" name="m1_maskfrac">
+    <DESCRIPTION>PSF Weighted Mean of M1 Detector Coverage of a Detection</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="meta.code;instr.det" precision="F6" name="m2_maskfrac">
+    <DESCRIPTION>PSF Weighted Mean of M2 Detector Coverage of a Detection</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcmin" datatype="double" ucd="pos.distance" precision="E5" name="dist_ref">
+    <DESCRIPTION>Distance to the Reference Coordinates of the Field</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcmin" datatype="double" ucd="instr.offset" precision="E5" name="ep_offax">
+    <DESCRIPTION>Distance between Detection Position and On-Axis Position of EPIC (arcmin)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcmin" datatype="double" ucd="instr.offset" precision="E5" name="pn_offax">
+    <DESCRIPTION>Distance between Detection Position and On-Axis Position of PN Detector (arcmin)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcmin" datatype="double" ucd="instr.offset" precision="E5" name="m1_offax">
+    <DESCRIPTION>Distance between Detection Position and On-Axis Position of M1 Detector (arcmin)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcmin" datatype="double" ucd="instr.offset" precision="E5" name="m2_offax">
+    <DESCRIPTION>Distance between Detection Position and On-Axis Position of M2 Detector (arcmin)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;phot" name="tseries_flag">
+    <DESCRIPTION>Boolean Flag [T/F] Indicates Source Has Time Series in at Least One Exposure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;spect" name="spectra_flag">
+    <DESCRIPTION>Boolean Flag [T/F] Indicates Source Has a Spectrum in at Least One Exposure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2" precision="F6" name="chi2prob">
+    <DESCRIPTION>Chi^2 Probability That Source Is Constant</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.variance;src.var" precision="F6" name="fvar">
+    <DESCRIPTION>Fractional Excess Variance of Timeseries for the Detection</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;src.var" precision="F6" name="fvar_error">
+    <DESCRIPTION>Error in Fractional Excess Variance of Timeseries for the Detection</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src.var" name="var_flag">
+    <DESCRIPTION>Flag [T/F] Indicates Source Was Detected as Variable in at Least One Exposure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="pn_1_vig">
+    <DESCRIPTION>PN Band 1 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="pn_2_vig">
+    <DESCRIPTION>PN Band 2 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="pn_3_vig">
+    <DESCRIPTION>PN Band 3 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="pn_4_vig">
+    <DESCRIPTION>PN Band 4 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="pn_5_vig">
+    <DESCRIPTION>PN Band 5 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m1_1_vig">
+    <DESCRIPTION>M1 Band 1 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m1_2_vig">
+    <DESCRIPTION>M1 Band 2 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m1_3_vig">
+    <DESCRIPTION>M1 Band 3 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m1_4_vig">
+    <DESCRIPTION>M1 Band 4 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m1_5_vig">
+    <DESCRIPTION>M1 Band 5 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m2_1_vig">
+    <DESCRIPTION>M2 Band 1 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m2_2_vig">
+    <DESCRIPTION>M2 Band 2 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m2_3_vig">
+    <DESCRIPTION>M2 Band 3 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m2_4_vig">
+    <DESCRIPTION>M2 Band 4 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="instr.bandpass" precision="E5" name="m2_5_vig">
+    <DESCRIPTION>M2 Band 5 Vignetting Value</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code.qual" name="sum_flag">
+    <DESCRIPTION>Summary Flag of the Source: 0=Good, 1=Warning, 2=Possibly Spurious</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="ep_flag">
+    <DESCRIPTION>EPIC Detection Quality Flags Combining PN, MOS1, and MOS2 Flags</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="pn_flag">
+    <DESCRIPTION>EPIC/PN Detection Quality Flags</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="m1_flag">
+    <DESCRIPTION>EPIC/MOS1 Detection Quality Flags</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="m2_flag">
+    <DESCRIPTION>EPIC/MOS2 Detection Quality Flags</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var" precision="F5" name="var_chi2">
+    <DESCRIPTION>Reduced Chi Squared of EPIC Band 0.2-12.0 keV Inter-Observation Variability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var" precision="F5" name="var_chi2_1">
+    <DESCRIPTION>Reduced Chi Squared of EPIC Band 1 Inter-Observation Variability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var" precision="F5" name="var_chi2_2">
+    <DESCRIPTION>Reduced Chi Squared of EPIC Band 2 Inter-Observation Variability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var" precision="F5" name="var_chi2_3">
+    <DESCRIPTION>Reduced Chi Squared of EPIC Band 3 Inter-Observation Variability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var" precision="F5" name="var_chi2_4">
+    <DESCRIPTION>Reduced Chi Squared of EPIC Band 4 Inter-Observation Variability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var" precision="F5" name="var_chi2_5">
+    <DESCRIPTION>Reduced Chi Squared of EPIC Band 5 Inter-Observation Variability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="F5" name="var_prob">
+    <DESCRIPTION>Probability That EPIC Band 0.2-12.0 keV Flux Variability Is Consistent</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="F5" name="var_prob_1">
+    <DESCRIPTION>Probability That EPIC Band 1 Flux Variability Is Consistent</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="F5" name="var_prob_2">
+    <DESCRIPTION>Probability That EPIC Band 2 Flux Variability Is Consistent</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="F5" name="var_prob_3">
+    <DESCRIPTION>Probability That EPIC Band 3 Flux Variability Is Consistent</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="F5" name="var_prob_4">
+    <DESCRIPTION>Probability That EPIC Band 4 Flux Variability Is Consistent</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="F5" name="var_prob_5">
+    <DESCRIPTION>Probability That EPIC Band 5 Flux Variability Is Consistent</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.var.amplitude;phot.flux;em.X-ray" precision="F5" name="fratio">
+    <DESCRIPTION>Maximum EPIC Inter-Observation Flux Ratio Band 0.2-12.0 keV</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;src.var.amplitude;phot.flux" precision="F5" name="fratio_error">
+    <DESCRIPTION>1-Sigma Uncertainty on FRATIO</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.var.amplitude;phot.flux;em.X-ray.soft" precision="F5" name="fratio_1">
+    <DESCRIPTION>Maximum EPIC Band 1 Inter-Observation Flux Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;src.var.amplitude;phot.flux" precision="F5" name="fratio_1_error">
+    <DESCRIPTION>1-Sigma Uncertainty on FRATIO_1</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.var.amplitude;phot.flux;em.X-ray.soft" precision="F5" name="fratio_2">
+    <DESCRIPTION>Maximum EPIC Band 2 Inter-Observation Flux Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;src.var.amplitude;phot.flux" precision="F5" name="fratio_2_error">
+    <DESCRIPTION>1-Sigma Uncertainty on FRATIO_2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.var.amplitude;phot.flux;em.X-ray.soft" precision="F5" name="fratio_3">
+    <DESCRIPTION>Maximum EPIC Band 3 Inter-Observation Flux Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;src.var.amplitude;phot.flux" precision="F5" name="fratio_3_error">
+    <DESCRIPTION>1-Sigma Uncertainty on FRATIO_3</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.var.amplitude;phot.flux;em.X-ray.medium" precision="F5" name="fratio_4">
+    <DESCRIPTION>Maximum EPIC Band 4 Inter-Observation Flux Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;src.var.amplitude;phot.flux" precision="F5" name="fratio_4_error">
+    <DESCRIPTION>1-Sigma Uncertainty on FRATIO_4</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.var.amplitude;phot.flux;em.X-ray.medium" precision="F5" name="fratio_5">
+    <DESCRIPTION>Maximum EPIC Band 5 Inter-Observation Flux Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;src.var.amplitude;phot.flux" precision="F5" name="fratio_5_error">
+    <DESCRIPTION>1-Sigma Uncertainty on FRATIO_5</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="sigma" datatype="double" ucd="stat.stdev;phot.flux;em.X-ray.soft" precision="F5" name="fluxvar">
+    <DESCRIPTION>Maximum EPIC Inter-Observation Flux Difference in Terms of Sigma</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="sigma" datatype="double" ucd="stat.stdev;phot.flux;em.X-ray.soft" precision="F5" name="fluxvar_1">
+    <DESCRIPTION>Maximum EPIC Inter-Observation Band 1 Flux Difference in Terms of Sigma</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="sigma" datatype="double" ucd="stat.stdev;phot.flux;em.X-ray.soft" precision="F5" name="fluxvar_2">
+    <DESCRIPTION>Maximum EPIC Inter-Observation Band 2 Flux Difference in Terms of Sigma</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="sigma" datatype="double" ucd="stat.stdev;phot.flux;em.X-ray.soft" precision="F5" name="fluxvar_3">
+    <DESCRIPTION>Maximum EPIC Inter-Observation Band 3 Flux Difference in Terms of Sigma</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="sigma" datatype="double" ucd="stat.stdev;phot.flux;em.X-ray.medium" precision="F5" name="fluxvar_4">
+    <DESCRIPTION>Maximum EPIC Inter-Observation Band 4 Flux Difference in Terms of Sigma</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="sigma" datatype="double" ucd="stat.stdev;phot.flux;em.X-ray.medium" precision="F5" name="fluxvar_5">
+    <DESCRIPTION>Maximum EPIC Inter-Observation Band 5 Flux Difference in Terms of Sigma</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="double" ucd="time.start;obs" precision="F4" name="time">
+    <DESCRIPTION>Date of Earliest Observation Containing a Detection of the Unique Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="double" ucd="time.end;obs" precision="F4" name="end_time">
+    <DESCRIPTION>Date of Latest Observation Containing a Detection of a Unique Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.id" name="xmm_revolution" width="04">
+    <DESCRIPTION>XMM-Newton Revolution (Orbit) Number</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr.setup" name="pn_submode">
+    <DESCRIPTION>PN Observing Mode</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr.setup" name="m1_submode">
+    <DESCRIPTION>MOS1 Observing Mode</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr.setup" name="m2_submode">
+    <DESCRIPTION>MOS2 Observing Mode</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr;instr.filter;em.X-ray" name="pn_filter">
+    <DESCRIPTION>Type of PN Filter Used</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr;instr.filter;em.X-ray.medium" name="m1_filter">
+    <DESCRIPTION>Type of MOS1 Filter Used</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr;instr.filter;em.X-ray.soft" name="m2_filter">
+    <DESCRIPTION>Type of MOS2 Filter Used</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="src.class;em.X-ray" name="classx_class">
+    <DESCRIPTION>Output Class Given by the X-Ray Source Classification</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.value;em.X-ray" precision="F5" name="classx_outlier">
+    <DESCRIPTION>X-Ray Classification Outlier Measure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.X-ray" precision="F5" name="classx_prob_agn">
+    <DESCRIPTION>X-Ray Classification Posterior Probability That the Source Is an AGN</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.X-ray" precision="F5" name="classx_prob_star">
+    <DESCRIPTION>X-Ray Classification Posterior Probability That the Source Is a Star</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.X-ray" precision="F5" name="classx_prob_gal_xrb">
+    <DESCRIPTION>X-Ray Classification Posterior Probability That the Source Is a Galaxy</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.X-ray" precision="F5" name="classx_prob_gal_cv">
+    <DESCRIPTION>X-Ray Classification Posterior Probability That the Source Is a CV</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.X-ray" precision="F5" name="classx_prob_bkg_agn">
+    <DESCRIPTION>X-Ray Classification Posterior Probability that the Source Is a Background AGN</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.X-ray" precision="F5" name="classx_prob_extragal_xrb">
+    <DESCRIPTION>X-Ray Classification Posterior Probability That the Source Is Extragalactic XRB</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.X-ray" precision="F5" name="classx_prob_extended">
+    <DESCRIPTION>X-Ray Classification Posterior Probability That the Source Is Extended</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;src" name="om_srcid">
+    <DESCRIPTION>Identification of the OM Source in SUSS v6.2</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F5" name="om_uvw2_ab_mag">
+    <DESCRIPTION>OM UVW2 Band Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.mag;em.UV.200-300nm" precision="F5" name="om_uvw2_ab_mag_error">
+    <DESCRIPTION>OM UVW2 Band Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F5" name="om_uvm2_ab_mag">
+    <DESCRIPTION>OM UVM2 Band Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.mag;em.UV.200-300nm" precision="F5" name="om_uvm2_ab_mag_error">
+    <DESCRIPTION>OM UVM2 Band Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F5" name="om_uvw1_ab_mag">
+    <DESCRIPTION>OM UVW1 Band Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.mag;em.UV.200-300nm" precision="F5" name="om_uvw1_ab_mag_error">
+    <DESCRIPTION>OM UVW1 Band Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.mag;em.opt.U" precision="F5" name="om_u_ab_mag">
+    <DESCRIPTION>OM U Band Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.mag;em.opt.U" precision="F5" name="om_u_ab_mag_error">
+    <DESCRIPTION>OM U Band Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.mag;em.opt.B" precision="F5" name="om_b_ab_mag">
+    <DESCRIPTION>OM B Band Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.mag;em.opt.B" precision="F5" name="om_b_ab_mag_error">
+    <DESCRIPTION>OM B Band Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.mag;em.opt.V" precision="F5" name="om_v_ab_mag">
+    <DESCRIPTION>OM V Band Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.mag;em.opt.V" precision="F5" name="om_v_ab_mag_error">
+    <DESCRIPTION>OM V Band Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src" precision="F5" name="om_match_prob">
+    <DESCRIPTION>Probability That the OM and X-Ray Sources Match</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.code.qual;em.UV.200-300nm" name="om_uvw2_quality_flag">
+    <DESCRIPTION>OM UVW2 Band Quality Flag</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.code.qual;em.UV.200-300nm" name="om_uvm2_quality_flag">
+    <DESCRIPTION>OM UVM2 Band Quality Flag</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.code.qual;em.UV.200-300nm" name="om_uvw1_quality_flag">
+    <DESCRIPTION>OM UVW1 Band Quality Flag</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.code.qual;em.opt.U" name="om_u_quality_flag">
+    <DESCRIPTION>OM U Band Quality Flag</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.code.qual;em.opt.B" name="om_b_quality_flag">
+    <DESCRIPTION>OM B Band Quality Flag</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.code.qual;em.opt.V" name="om_v_quality_flag">
+    <DESCRIPTION>OM V Band Quality Flag</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src;phys.angSize;em.UV.200-300nm" name="om_uvw2_extended_flag">
+    <DESCRIPTION>OM UVW2 Band Extent Flag: 1=Extended</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src;phys.angSize;em.UV.200-300nm" name="om_uvm2_extended_flag">
+    <DESCRIPTION>OM UVM2 Band Extent Flag: 1=Extended</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src;phys.angSize;em.UV.200-300nm" name="om_uvw1_extended_flag">
+    <DESCRIPTION>OM UVW1 Band Extent Flag: 1=Extended</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src;phys.angSize;em.opt.U" name="om_u_extended_flag">
+    <DESCRIPTION>OM U Band Extent Flag: 1=Extended</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src;phys.angSize;em.opt.B" name="om_b_extended_flag">
+    <DESCRIPTION>OM B Band Extent Flag: 1=Extended</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src;phys.angSize;em.opt.V" name="om_v_extended_flag">
+    <DESCRIPTION>OM V Band Extent Flag: 1=Extended</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var;em.UV.200-300nm" precision="F5" name="om_uvw2_chisq">
+    <DESCRIPTION>OM UVW2 Band Variability Measure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.dof;src.var;em.UV.200-300nm" precision="F5" name="om_uvw2_chisq_dof">
+    <DESCRIPTION>OM UVW2 Band Variability Measure Degrees of Freedom</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var;em.UV.200-300nm" precision="F5" name="om_uvm2_chisq">
+    <DESCRIPTION>OM UVM2 Band Variability Measure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.dof;src.var;em.UV.200-300nm" precision="F5" name="om_uvm2_chisq_dof">
+    <DESCRIPTION>OM UVM2 Band Variability Measure Degrees of Freedom</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var;em.UV.200-300nm" precision="F5" name="om_uvw1_chisq">
+    <DESCRIPTION>OM UVW1 Band Variability Measure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.dof;src.var;em.UV.200-300nm" precision="F5" name="om_uvw1_chisq_dof">
+    <DESCRIPTION>OM UVW1 Band Variability Measure Degrees of Freedom</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var;em.opt.U" precision="F5" name="om_u_chisq">
+    <DESCRIPTION>OM U Band Variability Measure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.dof;src.var;em.opt.U" precision="F5" name="om_u_chisq_dof">
+    <DESCRIPTION>OM U Band Variability Measure Degrees of Freedom</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var;em.opt.B" precision="F5" name="om_b_chisq">
+    <DESCRIPTION>OM B Band Variability Measure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.dof;src.var;em.opt.B" precision="F5" name="om_b_chisq_dof">
+    <DESCRIPTION>OM B Band Variability Measure Degrees of Freedom</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;src.var;em.opt.V" precision="F5" name="om_v_chisq">
+    <DESCRIPTION>OM V Band Variability Measure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.dof;src.var;em.opt.V" precision="F5" name="om_v_chisq_dof">
+    <DESCRIPTION>OM V Band Variability Measure Degrees of Freedom</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;src" name="wise_name">
+    <DESCRIPTION>WISE All-Sky Release Catalog Source Designation</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.IR.3-4um" precision="F5" name="wise_w1mag">
+    <DESCRIPTION>WISE W1 Band Source Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.IR.3-4um" precision="F5" name="wise_w1mag_error">
+    <DESCRIPTION>WISE W1 Band Source  Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.IR.4-8um" precision="F5" name="wise_w2mag">
+    <DESCRIPTION>WISE W2 Band Source Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.IR.4-8um" precision="F5" name="wise_w2mag_error">
+    <DESCRIPTION>WISE W2 Band Source  Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.IR.8-15um" precision="F5" name="wise_w3mag">
+    <DESCRIPTION>WISE W3 Band Source Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.IR.8-15um" precision="F5" name="wise_w3mag_error">
+    <DESCRIPTION>WISE W3 Band Source  Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.IR.15-30um" precision="F5" name="wise_w4mag">
+    <DESCRIPTION>WISE W4 Band Source Magnitude (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.IR.15-30um" precision="F5" name="wise_w4mag_error">
+    <DESCRIPTION>WISE W4 Band Source  Magnitude Uncertainty (AB System)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src" precision="F5" name="wise_match_prob">
+    <DESCRIPTION>Probability That the WISE and X-Ray Sources Match</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;src" name="gaiadr3_source_id">
+    <DESCRIPTION>Gaia DR3 Catalog Source Identifier</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mas" datatype="double" ucd="pos.parallax" precision="F5" name="gaiadr3_parallax">
+    <DESCRIPTION>Gaia DR3 Catalog Source Parallax</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mas" datatype="double" ucd="stat.error;pos.parallax" precision="F5" name="gaiadr3_parallax_error">
+    <DESCRIPTION>Gaia DR3 Catalog Source Parallax Uncertainty</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.snr;pos.parallax" precision="F5" name="gaiadr3_parallax_overerr">
+    <DESCRIPTION>Gaia DR3 Catalog Source Parallax Over Error</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mas/yr" datatype="double" ucd="pos.pm;pos.eq.ra" precision="F5" name="gaiadr3_pm_ra">
+    <DESCRIPTION>Gaia DR3 Catalog Source Right Ascension Proper Motion</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mas/yr" datatype="double" ucd="pos.pm;pos.eq.dec" precision="F5" name="gaiadr3_pm_dec">
+    <DESCRIPTION>Gaia DR3 Catalog Source Declination Proper Motion</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt" precision="F5" name="gaiadr3_gmag">
+    <DESCRIPTION>Gaia DR3 Catalog Source g Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.B" precision="F5" name="gaiadr3_bpmag">
+    <DESCRIPTION>Gaia DR3 Catalog Source Bp Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.R" precision="F5" name="gaiadr3_rpmag">
+    <DESCRIPTION>Gaia DR3 Catalog Source Rp Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src" precision="F5" name="gaia_match_prob">
+    <DESCRIPTION>Probability That the Gaia and X-Ray Sources Match</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.ref;src" name="info_counterparts">
+    <DESCRIPTION>Link to Further Information on Counterparts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pc" datatype="double" ucd="pos.distance;src" precision="F5" name="gaiadr3_dist">
+    <DESCRIPTION>Gaia DR3 Catalog Source Distance</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="src.class;em.opt" name="classopt_class">
+    <DESCRIPTION>Output Class Given by the Optical Source Classification</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.opt" precision="F5" name="classopt_prob_star">
+    <DESCRIPTION>Optical Classification Posterior Probability That the Source Is a Star</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.opt" precision="F5" name="classopt_prob_agn">
+    <DESCRIPTION>Optical Classification Posterior Probability That the Source Is an AGN</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.class;stat.probability;em.opt" precision="F5" name="classopt_prob_galaxy">
+    <DESCRIPTION>Optical classification Posterior Probability That the Source Is a Galaxy</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray;meta.modelled" precision="F5" name="spec_flux_pl">
+    <DESCRIPTION>EPIC Absorbed Flux from Absorbed Power Law Full Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;stat.min;phot.flux;em.X-ray;meta.modelled" precision="F5" name="spec_flux_pl_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Confidence Limit of EPIC Absorbed Flux</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;stat.max;phot.flux;em.X-ray;meta.modelled" precision="F5" name="spec_flux_pl_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Confidence Limit of EPIC Absorbed Flux</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_nh_pl">
+    <DESCRIPTION>EPIC-Equivalent Hydrogen Column Density NH from Absorbed Power Law Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;stat.min;stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_nh_pl_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Confidence Limit of EPIC NH</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;stat.max;stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_nh_pl_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Confidence Limit of EPIC NH</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_gamma_pl">
+    <DESCRIPTION>EPIC Photon Index from Absorbed Power Law Full Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;stat.min;stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_gamma_pl_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Confidence Limit of EPIC Photon Index</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;stat.max;stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_gamma_pl_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Confidence Limit of EPIC Photon Index</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_iin_pl">
+    <DESCRIPTION>EPIC Inter-Instrument Normalization from Absorbed Power Law Full Spectrum Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;stat.min;stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_iin_pl_neg_err">
+    <DESCRIPTION>Lower 1-Sigma Confidence Limit of EPIC Inter-Instrument Normalization</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;stat.max;stat.fit.param;em.X-ray;meta.modelled" precision="F5" name="spec_iin_pl_pos_err">
+    <DESCRIPTION>Upper 1-Sigma Confidence Limit of EPIC Inter-Instrument Normalization</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="int" ucd="stat.fit.dof" name="spec_dof_pl">
+    <DESCRIPTION>Degrees of Freedom of Absorbed Power Law Full Spectral Fit</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.goodness;stat.probability" precision="F5" name="spec_pvalue_pl">
+    <DESCRIPTION>Pvalue of Absorbed Power Law Full Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.code.qual" name="spec_flag_pl">
+    <DESCRIPTION>Flag That Indicates Possible Issues with Power Law Spectral Fit</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.ref.url;meta.modelled" name="spec_info">
+    <DESCRIPTION>Link to Further Spectral Information</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.var.index;em.X-ray" precision="F5" name="approx_source_var">
+    <DESCRIPTION>Long-Term Variability Factor Obtained from Multiple X-Ray Mission Data</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.redshift" precision="F5" name="redshift_zsp">
+    <DESCRIPTION>Spectral Redshift</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.redshift" precision="F5" name="redshift_tpz_z_best">
+    <DESCRIPTION>Redshift Determined Using the TPZ Method</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="meta.code.qual;src.redshift" precision="F5" name="redshift_tpz_flag_zconf">
+    <DESCRIPTION>Confidence Limit on Redshift Using the TPZ Method</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.redshift" precision="F5" name="redshift_lph_z_best">
+    <DESCRIPTION>Redshift determined using the LePhare Method</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="meta.code.qual;src.redshift" precision="F5" name="redshift_lph_flag_zconf">
+    <DESCRIPTION>Confidence limit on redshift using the LePhare Method</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.ref;src.redshift" name="redshift_info_distance">
+    <DESCRIPTION>Link to Complementary Information on Distance Determination</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" name="__x_ra_dec"/>
+   <FIELD datatype="double" name="__y_ra_dec"/>
+   <FIELD datatype="double" name="__z_ra_dec"/>
+   <DATA>
+    <BINARY>
+     <STREAM encoding="base64">
+
+     </STREAM>
+    </BINARY>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>

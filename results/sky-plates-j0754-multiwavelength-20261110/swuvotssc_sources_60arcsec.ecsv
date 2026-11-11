@@ -1,0 +1,729 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: __row
+#   datatype: string
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: entry_number
+#   datatype: int32
+#   description: Sequential Identification Number for Each Entry in Catalog
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {width: 8}
+#   - values: {'null': -2147483648}
+# - name: obs_sum_number
+#   datatype: int32
+#   description: Reference Number in the Observation Table (N_SUMMARY)
+#   meta: !!omap
+#   - {ucd: meta.code}
+#   - {width: 5}
+#   - values: {'null': -2147483648}
+# - name: obsid
+#   datatype: string
+#   description: Unique Swift Observation Identification
+#   meta: !!omap
+#   - {ucd: meta.id;obs}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: num_filters
+#   datatype: int16
+#   description: Number of Filters Included in this Observation (NFILT)
+#   meta: !!omap
+#   - {ucd: meta.number}
+#   - {width: 1}
+#   - values: {'null': -32768}
+# - name: source_number
+#   datatype: int32
+#   description: Unique Source Number (SRCNUM)
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {width: 7}
+#   - values: {'null': -2147483648}
+# - name: name
+#   datatype: string
+#   description: Source Designation (UVOTSSC1 JHHMMSS.s+DDMMSSa) (IAUNAME)
+#   meta: !!omap
+#   - {ucd: meta.id;meta.main}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ra
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Right Ascension
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;meta.main}
+#   - {precision: F6}
+# - name: ra_error
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:7.3f}'
+#   description: Right Ascension Error (RA_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;pos.eq.ra;meta.main}
+#   - {width: 7}
+#   - {precision: F3}
+# - name: dec
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Declination
+#   meta: !!omap
+#   - {ucd: pos.eq.dec;meta.main}
+#   - {precision: F6}
+# - name: dec_error
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:7.3f}'
+#   description: Declination Error (DEC_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;pos.eq.dec;meta.main}
+#   - {width: 7}
+#   - {precision: F3}
+# - name: lii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Galactic Longitude
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon}
+#   - {precision: F6}
+# - name: bii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Galactic Latitude
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: F6}
+# - name: uvw2_nn_offset
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Distance to Closest UVW2 Source (UVW2_SRCDIST)
+#   meta: !!omap
+#   - {ucd: pos.angDistance;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: uvm2_nn_offset
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Distance to Closest UVM2 Source (UVM2_SRCDIST)
+#   meta: !!omap
+#   - {ucd: pos.angDistance}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: uvw1_nn_offset
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Distance to Closest UVW1 Source (UVW1_SRCDIST)
+#   meta: !!omap
+#   - {ucd: pos.angDistance}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: u_nn_offset
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Distance to Closest U Source (U_SRCDIST)
+#   meta: !!omap
+#   - {ucd: pos.angDistance}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: b_nn_offset
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Distance to Closest B Source (B_SRCDIST)
+#   meta: !!omap
+#   - {ucd: pos.angDistance}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: v_nn_offset
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Distance to Closest V Source (V_SRCDIST)
+#   meta: !!omap
+#   - {ucd: pos.angDistance}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: num_individual_obs
+#   datatype: int16
+#   description: Number of Individual Observations (N_OBSID)
+#   meta: !!omap
+#   - {ucd: meta.number}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: uvw2_mag_significance
+#   datatype: float64
+#   format: '{:6.1f}'
+#   description: Significance (S/N) in UVW2 (UVW2_SIGNIF)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phot;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F1}
+# - name: uvm2_mag_significance
+#   datatype: float64
+#   format: '{:6.1f}'
+#   description: Significance (S/N) in UVM2 (UVM2_SIGNIF)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phot;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F1}
+# - name: uvw1_mag_significance
+#   datatype: float64
+#   format: '{:6.1f}'
+#   description: Significance (S/N) in UVW1 (UVW1_SIGNIF)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phot;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F1}
+# - name: umag_significance
+#   datatype: float64
+#   format: '{:6.1f}'
+#   description: Significance (S/N) in U (U_SIGNIF)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phot;em.opt.U}
+#   - {width: 6}
+#   - {precision: F1}
+# - name: bmag_significance
+#   datatype: float64
+#   format: '{:6.1f}'
+#   description: Significance (S/N) in B (B_SIGNIF)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phot;em.opt.B}
+#   - {width: 6}
+#   - {precision: F1}
+# - name: vmag_significance
+#   datatype: float64
+#   format: '{:6.1f}'
+#   description: Significance (S/N) in V (V_SIGNIF)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phot;em.opt.V}
+#   - {width: 6}
+#   - {precision: F1}
+# - name: uvw2_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/UVW2 Vega Magnitude (UVW2_VEGAMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: uvw2_mag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:6.4f}'
+#   description: Error in UVW2 Magnitude (UVW2_MAG_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F4}
+# - name: uvm2_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/UVM2 Vega Magnitude (UVM2_VEGAMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: uvm2_mag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:6.4f}'
+#   description: Error in UVM2 Magnitude (UVM2_MAG_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F4}
+# - name: uvw1_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/UVW1 Vega Magnitude (UVW1_VEGAMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: uvw1_mag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:6.4f}'
+#   description: Error in UVW2 Magnitude (UVW1_MAG_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F4}
+# - name: umag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/U Vega Magnitude (U_VEGAMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.U}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: umag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:6.4f}'
+#   description: Error in U Magnitude (U_MAG_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.opt.U}
+#   - {width: 6}
+#   - {precision: F4}
+# - name: bmag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/N Vega Magnitude (B_VEGAMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.B}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: bmag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:6.4f}'
+#   description: Error in B Magnitude (B_MAG_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.opt.B}
+#   - {width: 6}
+#   - {precision: F4}
+# - name: vmag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/V Vega Magnitude (V_VEGAMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.V}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: vmag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:6.4f}'
+#   description: Error in V Magnitude (V_MAG_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.opt.V}
+#   - {width: 6}
+#   - {precision: F4}
+# - name: uvw2_ab_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/UVW2 AB Magnitude (UVW2_ABMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: uvm2_ab_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/UVM2 AB Magnitude (UVM2_ABMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: uvw1_ab_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/UVW1 AB Magnitude (UVW1_ABMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: u_ab_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/U AB Magnitude (U_ABMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.U}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: b_ab_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/B AB Magnitude (B_ABMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.B}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: v_ab_mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:7.4f}'
+#   description: UVOT/V AB Magnitude (V_ABMAG)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.V}
+#   - {width: 7}
+#   - {precision: F4}
+# - name: uvw2_flux
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: UVOT/UVW2 Flux (UVW2_FLUX)
+#   meta: !!omap
+#   - {ucd: phot.flux.density;em.UV.200-300nm}
+#   - {precision: E5}
+# - name: uvw2_flux_error
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.3g}'
+#   description: Error in UVW2 Flux (UVW2_FLUX_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux.density;em.UV.200-300nm}
+#   - {precision: E3}
+# - name: uvm2_flux
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: UVOT/UVM2 Flux (UVM2_FLUX)
+#   meta: !!omap
+#   - {ucd: phot.flux.density;em.UV.200-300nm}
+#   - {precision: E5}
+# - name: uvm2_flux_error
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.3g}'
+#   description: Error in UVM2 Flux (UVM2_FLUX_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux.density;em.UV.200-300nm}
+#   - {precision: E3}
+# - name: uvw1_flux
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: UVOT/UVW1 Flux (UVW1_FLUX)
+#   meta: !!omap
+#   - {ucd: phot.flux.density;em.UV.200-300nm}
+#   - {precision: E5}
+# - name: uvw1_flux_error
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.3g}'
+#   description: Error in UVW1 Flux (UVW1_FLUX_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux.density;em.UV.200-300nm}
+#   - {precision: E3}
+# - name: u_flux
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: UVOT/U Flux (U_FLUX)
+#   meta: !!omap
+#   - {ucd: phot.flux.density;em.opt.U}
+#   - {precision: E5}
+# - name: u_flux_error
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.3g}'
+#   description: Error in U Flux (U_FLUX_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux.density;em.opt.U}
+#   - {precision: E3}
+# - name: b_flux
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: UVOT/B Flux (B_FLUX)
+#   meta: !!omap
+#   - {ucd: phot.flux.density;em.opt.B}
+#   - {precision: E5}
+# - name: b_flux_error
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.3g}'
+#   description: Error in B Flux (B_FLUX_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux.density;em.opt.B}
+#   - {precision: E3}
+# - name: v_flux
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: UVOT/V Flux (V_FLUX)
+#   meta: !!omap
+#   - {ucd: phot.flux.density;em.opt.V}
+#   - {precision: E5}
+# - name: v_flux_error
+#   unit: erg/cm^2/s/Angstrom
+#   datatype: float64
+#   format: '{:.3g}'
+#   description: Error in V Flux (V_FLUX_ERR)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux.density;em.opt.V}
+#   - {precision: E3}
+# - name: uvw2_major_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Major Axis in UVW2 (UVW2_MAJOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.smajAxis;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: uvm2_major_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Major Axis in UVM2 (UVM2_MAJOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.smajAxis;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: uvw1_major_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Major Axis in UVW1 (UVW1_MAJOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.smajAxis;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: u_major_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Major Axis in U (U_MAJOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.smajAxis;em.opt.U}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: b_major_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Major Axis in B (B_MAJOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.smajAxis;em.opt.B}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: v_major_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Major Axis in V (V_MAJOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.smajAxis;em.opt.V}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: uvw2_minor_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Minor Axis in UVW2 (UVW2_MINOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.sminAxis;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: uvm2_minor_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Minor Axis in UVM2 (UVM2_MINOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.sminAxis;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: uvw1_minor_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Minor Axis in UVW1 (UVW1_MINOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.sminAxis;em.UV.200-300nm}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: u_minor_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Minor Axis in U (U_MINOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.sminAxis;em.opt.U}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: b_minor_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Minor Axis in B (B_MINOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.sminAxis;em.opt.B}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: v_minor_axis
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:6.3f}'
+#   description: Minor Axis in V (V_MINOR)
+#   meta: !!omap
+#   - {ucd: phys.angSize.sminAxis;em.opt.V}
+#   - {width: 6}
+#   - {precision: F3}
+# - name: uvw2_position_angle
+#   unit: deg
+#   datatype: float64
+#   format: '{:5.2f}'
+#   description: Position Angle of Major Axis in UVW2 (UVW2_POSANG)
+#   meta: !!omap
+#   - {ucd: pos.posAng;em.UV.200-300nm}
+#   - {width: 5}
+#   - {precision: F2}
+# - name: uvm2_position_angle
+#   unit: deg
+#   datatype: float64
+#   format: '{:5.2f}'
+#   description: Position Angle of Major Axis in UVM2 (UVM2_POSANG)
+#   meta: !!omap
+#   - {ucd: pos.posAng;em.UV.200-300nm}
+#   - {width: 5}
+#   - {precision: F2}
+# - name: uvw1_position_angle
+#   unit: deg
+#   datatype: float64
+#   format: '{:5.2f}'
+#   description: Position Angle of Major Axis in UVW1 (UVW1_POSANG)
+#   meta: !!omap
+#   - {ucd: pos.posAng;em.UV.200-300nm}
+#   - {width: 5}
+#   - {precision: F2}
+# - name: u_position_angle
+#   unit: deg
+#   datatype: float64
+#   format: '{:5.2f}'
+#   description: Position Angle of Major Axis in U (U_POSANG)
+#   meta: !!omap
+#   - {ucd: pos.posAng;em.opt.U}
+#   - {width: 5}
+#   - {precision: F2}
+# - name: b_position_angle
+#   unit: deg
+#   datatype: float64
+#   format: '{:5.2f}'
+#   description: Position Angle of Major Axis in B (B_POSANG)
+#   meta: !!omap
+#   - {ucd: pos.posAng;em.opt.B}
+#   - {width: 5}
+#   - {precision: F2}
+# - name: v_position_angle
+#   unit: deg
+#   datatype: float64
+#   format: '{:5.2f}'
+#   description: Position Angle of Major Axis in V (V_POSANG)
+#   meta: !!omap
+#   - {ucd: pos.posAng;em.opt.V}
+#   - {width: 5}
+#   - {precision: F2}
+# - name: uvw2_extended_flag
+#   datatype: int16
+#   description: Extended Flag in UVW2 (UVW2_EXTENDED)
+#   meta: !!omap
+#   - {ucd: meta.code;phys.angSize;em.UV.200-300nm}
+#   - {width: 1}
+#   - values: {'null': -32768}
+# - name: uvm2_extended_flag
+#   datatype: int16
+#   description: Extended Flag in UVW2 (UVM2_EXTENDED)
+#   meta: !!omap
+#   - {ucd: meta.code;phys.angSize;em.UV.200-300nm}
+#   - {width: 1}
+#   - values: {'null': -32768}
+# - name: uvw1_extended_flag
+#   datatype: int16
+#   description: Extended Flag in UVW2 (UVW1_EXTENDED)
+#   meta: !!omap
+#   - {ucd: meta.code;phys.angSize;em.UV.200-300nm}
+#   - {width: 1}
+#   - values: {'null': -32768}
+# - name: u_extended_flag
+#   datatype: int16
+#   description: Extended Flag in UVW2 (U_EXTENDED)
+#   meta: !!omap
+#   - {ucd: meta.code;phys.angSize;em.opt.U}
+#   - {width: 1}
+#   - values: {'null': -32768}
+# - name: b_extended_flag
+#   datatype: int16
+#   description: Extended Flag in UVW2 (B_EXTENDED)
+#   meta: !!omap
+#   - {ucd: meta.code;phys.angSize;em.opt.B}
+#   - {width: 1}
+#   - values: {'null': -32768}
+# - name: v_extended_flag
+#   datatype: int16
+#   description: Extended Flag in UVW2 (V_EXTENDED)
+#   meta: !!omap
+#   - {ucd: meta.code;phys.angSize;em.opt.V}
+#   - {width: 1}
+#   - values: {'null': -32768}
+# - name: uvw2_quality_flags
+#   datatype: int16
+#   description: Quality Flags in UVW2 (UVW2_QUALITY_FLAG)
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.UV.200-300nm}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: uvm2_quality_flags
+#   datatype: int16
+#   description: Quality Flags in UVM2 (UVM2_QUALITY_FLAG)
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.UV.200-300nm}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: uvw1_quality_flags
+#   datatype: int16
+#   description: Quality Flags in UVW1 (UVW1_QUALITY_FLAG)
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.UV.200-300nm}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: u_quality_flags
+#   datatype: int16
+#   description: Quality Flags in U (U_QUALITY_FLAG)
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.opt.U}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: b_quality_flags
+#   datatype: int16
+#   description: Quality Flags in B (B_QUALITY_FLAG)
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.opt.B}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: v_quality_flags
+#   datatype: int16
+#   description: Quality Flags in V (V_QUALITY_FLAG)
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.opt.V}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - {name: __x_ra_dec, datatype: float64}
+# - {name: __y_ra_dec, datatype: float64}
+# - {name: __z_ra_dec, datatype: float64}
+# meta: !!omap
+# - {description: 'Query result for:
+# 
+#     SELECT TOP 300 * FROM swuvotssc WHERE CONTAINS(POINT(''ICRS'',ra,dec),CIRCLE(''ICRS'',118.69117410685,16.694621231895,0.016666666666666666))=1'}
+# schema: astropy-2.0
+__row entry_number obs_sum_number obsid num_filters source_number name ra ra_error dec dec_error lii bii uvw2_nn_offset uvm2_nn_offset uvw1_nn_offset u_nn_offset b_nn_offset v_nn_offset num_individual_obs uvw2_mag_significance uvm2_mag_significance uvw1_mag_significance umag_significance bmag_significance vmag_significance uvw2_mag uvw2_mag_error uvm2_mag uvm2_mag_error uvw1_mag uvw1_mag_error umag umag_error bmag bmag_error vmag vmag_error uvw2_ab_mag uvm2_ab_mag uvw1_ab_mag u_ab_mag b_ab_mag v_ab_mag uvw2_flux uvw2_flux_error uvm2_flux uvm2_flux_error uvw1_flux uvw1_flux_error u_flux u_flux_error b_flux b_flux_error v_flux v_flux_error uvw2_major_axis uvm2_major_axis uvw1_major_axis u_major_axis b_major_axis v_major_axis uvw2_minor_axis uvm2_minor_axis uvw1_minor_axis u_minor_axis b_minor_axis v_minor_axis uvw2_position_angle uvm2_position_angle uvw1_position_angle u_position_angle b_position_angle v_position_angle uvw2_extended_flag uvm2_extended_flag uvw1_extended_flag u_extended_flag b_extended_flag v_extended_flag uvw2_quality_flags uvm2_quality_flags uvw1_quality_flags u_quality_flags b_quality_flags v_quality_flags __x_ra_dec __y_ra_dec __z_ra_dec
+"""3542045""" 3542045 7074 """00031554001""" 1 1672645 """UVOTSSC1 J075447.7+164058""" 118.698961 0.324 16.682825 0.323 204.52023104 21.32097774 "" "" "" "" "" "" 1 "" "" 22.7 "" "" "" "" "" "" "" 19.5948 0.0493 "" "" "" "" "" "" "" "" 21.1148 "" "" "" "" "" "" "" 5.78462e-17 2.629e-18 "" "" "" "" "" "" "" "" 1.162 "" "" "" "" "" 1.059 "" "" "" "" "" "" "" "" "" 0 0 0 0 0 0 "" "" 0 "" "" "" 0.840234187525599 -0.459994977135607 0.287073389785972
+"""3541729""" 3541729 7074 """00031554001""" 1 1672421 """UVOTSSC1 J075444.8+164114""" 118.686948 0.333 16.687261 0.332 204.51098739 21.31214935 "" "" 14.629 "" "" "" 1 "" "" 9.4 "" "" "" "" "" "" "" 21.0843 0.1139 "" "" "" "" "" "" "" "" 22.6043 "" "" "" "" "" "" "" 1.46706e-17 1.539e-18 "" "" "" "" "" "" "" "" 1.01 "" "" "" "" "" 0.887 "" "" "" "" "" "" "" "" "" 0 0 0 0 0 0 "" "" 0 "" "" "" 0.840311114124791 -0.459808127749074 0.287147552896145
+"""3541750""" 3541750 7074 """00031554001""" 1 1672441 """UVOTSSC1 J075445.0+164128""" 118.687838 0.329 16.691234 0.328 204.50742827 21.31449831 "" "" 14.629 "" "" "" 1 "" "" 13.0 "" "" "" "" "" "" "" 20.3919 0.114 "" "" "" "" "" "" "" "" 21.9119 "" "" "" "" "" "" "" 2.77601e-17 2.915e-18 "" "" "" "" "" "" "" "" 1.258 "" "" "" "" "" 1.193 "" "" "" "" "" 30.04 "" "" "" 0 0 0 0 0 0 "" "" 0 "" "" "" 0.840286502398231 -0.459811621304033 0.287213973895952
+"""3541835""" 3541835 7074 """00031554001""" 1 1672504 """UVOTSSC1 J075445.8+164140""" 118.691176 0.32 16.69465 0.32 204.50541021 21.31878288 "" "" 16.844 "" "" "" 1 "" "" 188.4 "" "" "" "" "" "" "" 15.21 0.0058 "" "" "" "" "" "" "" "" 16.73 "" "" "" "" "" "" "" 3.28235e-15 1.748e-17 "" "" "" "" "" "" "" "" 1.123 "" "" "" "" "" 0.964 "" "" "" "" "" "" "" "" "" 0 0 0 0 0 0 "" "" 128 "" "" "" 0.840244689907834 -0.459852353083605 0.287271081811518

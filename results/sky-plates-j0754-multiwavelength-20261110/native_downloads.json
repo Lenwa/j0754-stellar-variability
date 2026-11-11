@@ -1,0 +1,201 @@
+[
+  {
+    "name": "AIS_199_0001_sg10-scst.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file",
+    "params": {
+      "uri": "mast:GALEX/url/data/GR6/pipe/02-vsn/50199-AIS_199/d/00-visits/0001-img/07-try/AIS_199_0001_sg10-scst.fits.gz"
+    },
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": null,
+        "date_obs": null,
+        "exposure": null
+      },
+      {
+        "name": "S/C State Data",
+        "shape": [
+          97
+        ],
+        "date_obs": null,
+        "exposure": null
+      }
+    ],
+    "state": "downloaded_or_cached",
+    "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0001_sg10-scst.fits.gz",
+    "bytes": 29448,
+    "sha256": "0accb82dc83b1f17ad1ae7a2a40633f283595633b532b550fc0dd065ed4d4b02"
+  },
+  {
+    "name": "AIS_199_0002_sg10-scst.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file",
+    "params": {
+      "uri": "mast:GALEX/url/data/GR6/pipe/02-vsn/50199-AIS_199/d/00-visits/0002-img/07-try/AIS_199_0002_sg10-scst.fits.gz"
+    },
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": null,
+        "date_obs": null,
+        "exposure": null
+      },
+      {
+        "name": "S/C State Data",
+        "shape": [
+          88
+        ],
+        "date_obs": null,
+        "exposure": null
+      }
+    ],
+    "state": "downloaded_or_cached",
+    "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0002_sg10-scst.fits.gz",
+    "bytes": 27162,
+    "sha256": "7f0636d7d2d6c861d6350caedbf46e994b6261c7de3037ab61243d21d0a00a10"
+  },
+  {
+    "name": "sw00031554001uw1_sk.img.gz",
+    "url": "https://heasarc.gsfc.nasa.gov/FTP/swift/data/obs/2009_12/00031554001/uvot/image/sw00031554001uw1_sk.img.gz",
+    "params": {},
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": null,
+        "date_obs": "2009-12-02T15:33:15",
+        "exposure": null
+      },
+      {
+        "name": "w1281460797I",
+        "shape": [
+          1345,
+          1362
+        ],
+        "date_obs": "2009-12-02T15:33:15",
+        "exposure": 2519.1797603442
+      },
+      {
+        "name": "w1281466579I",
+        "shape": [
+          1345,
+          1362
+        ],
+        "date_obs": "2009-12-02T17:09:37",
+        "exposure": 2390.32799830325
+      }
+    ],
+    "state": "downloaded_or_cached",
+    "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_sk.img.gz",
+    "bytes": 3970773,
+    "sha256": "9ff7fbcf1748d83b58324305934ab3b36ca9d1522b69c3609d27f95436adadfd"
+  },
+  {
+    "name": "sw00031554001uw1_ex.img.gz",
+    "url": "https://heasarc.gsfc.nasa.gov/FTP/swift/data/obs/2009_12/00031554001/uvot/image/sw00031554001uw1_ex.img.gz",
+    "params": {},
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": null,
+        "date_obs": "2009-12-02T15:33:15",
+        "exposure": null
+      },
+      {
+        "name": "w1281460797I",
+        "shape": [
+          1345,
+          1362
+        ],
+        "date_obs": "2009-12-02T15:33:15",
+        "exposure": 2519.1797603442
+      },
+      {
+        "name": "w1281466579I",
+        "shape": [
+          1345,
+          1362
+        ],
+        "date_obs": "2009-12-02T17:09:37",
+        "exposure": 2390.32799830325
+      }
+    ],
+    "state": "downloaded_or_cached",
+    "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_ex.img.gz",
+    "bytes": 209339,
+    "sha256": "cfb74cd3b5c0659a5f4d8c21cf5d848e8aac84dc5e44c874c7f057cdce35bd48"
+  },
+  {
+    "name": "VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync",
+    "params": {
+      "id": "nrao:VLASS/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim.fits",
+      "CIRCLE": "118.69117410685 16.694621231895 0.01"
+    },
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": [
+          1,
+          1,
+          73,
+          73
+        ],
+        "date_obs": "2021-11-20T07:30:55.799999",
+        "exposure": null
+      }
+    ],
+    "state": "downloaded_or_cached",
+    "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 43200,
+    "sha256": "b26fa56e249b5a057f9c62993ee851c7381695550b2e833986dccd8e63fe80b1"
+  },
+  {
+    "name": "VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync",
+    "params": {
+      "id": "nrao:VLASS/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim.fits",
+      "CIRCLE": "118.69117410685 16.694621231895 0.01"
+    },
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": [
+          1,
+          1,
+          73,
+          73
+        ],
+        "date_obs": "2024-06-01T01:30:24.299999",
+        "exposure": null
+      }
+    ],
+    "state": "downloaded_or_cached",
+    "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 97920,
+    "sha256": "9ae436623c1bb8123de49a7467dd9f81ee69ae0cfad868061f87f0e019b20667"
+  },
+  {
+    "name": "VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync",
+    "params": {
+      "id": "nrao:VLASS/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim.fits",
+      "CIRCLE": "118.69117410685 16.694621231895 0.01"
+    },
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": [
+          1,
+          1,
+          73,
+          73
+        ],
+        "date_obs": "2019-04-15T01:00:10.575000",
+        "exposure": null
+      }
+    ],
+    "state": "downloaded_or_cached",
+    "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 37440,
+    "sha256": "5cd5dcd1489bcb40afd23b7025fd4af7855e6ad60e063167ef2f73f41e02a4ff"
+  }
+]

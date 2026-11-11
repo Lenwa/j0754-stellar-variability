@@ -1,0 +1,335 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: __row
+#   datatype: string
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: DataLinkID
+#   datatype: string
+#   description: Unique Observation Identifier
+#   meta: !!omap
+#   - {ucd: meta.id;meta.main}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pno
+#   datatype: int32
+#   description: XMM-Newton Proposal Number
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - values: {'null': -2147483648}
+# - name: name
+#   datatype: string
+#   description: Target Designation
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ra
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Right Ascension of Target
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;meta.main}
+#   - {precision: F5}
+# - name: dec
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Declination of Target
+#   meta: !!omap
+#   - {ucd: pos.eq.dec;meta.main}
+#   - {precision: F5}
+# - name: lii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Galactic Longitude of Target
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon}
+#   - {precision: F5}
+# - name: bii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Galactic Latitude of Target
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: F5}
+# - name: time
+#   unit: d
+#   datatype: float64
+#   description: Observation Start Time
+#   meta: !!omap
+#   - {ucd: time.start;obs}
+# - name: end_time
+#   unit: d
+#   datatype: float64
+#   description: Observation End Time
+#   meta: !!omap
+#   - {ucd: time.end;obs}
+# - name: duration
+#   unit: s
+#   datatype: int32
+#   description: Observation On-Time or Duration As Determined by Processing (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs}
+#   - values: {'null': -2147483648}
+# - name: scheduled_duration
+#   unit: s
+#   datatype: int32
+#   description: Scheduled Duration of Observation (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs}
+#   - values: {'null': -2147483648}
+# - name: estimated_exposure
+#   unit: s
+#   datatype: int32
+#   description: Estimated Exposure of Observation (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - values: {'null': -2147483648}
+# - name: pi_title
+#   datatype: string
+#   description: Title of Principal Investigator
+#   meta: !!omap
+#   - {ucd: meta.id.PI}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pi_fname
+#   datatype: string
+#   description: First Name of Principal Investigator
+#   meta: !!omap
+#   - {ucd: meta.id.PI}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pi_lname
+#   datatype: string
+#   description: Family Name of Principal Investigator
+#   meta: !!omap
+#   - {ucd: meta.id.PI}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: sas_version
+#   datatype: string
+#   description: SAS Software Version Used to Generate PPS Products
+#   meta: !!omap
+#   - {ucd: meta.version;meta.software}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pps_flag
+#   datatype: string
+#   description: Flag Indicates PPS Products Available
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pps_version
+#   datatype: string
+#   description: Version of PPS Products
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - {name: odf_date, unit: d, datatype: float64, description: Date of Initial Data Processing}
+# - name: process_date
+#   unit: d
+#   datatype: float64
+#   description: Date of Last Data Processing
+#   meta: !!omap
+#   - {ucd: time.processing}
+# - name: distribution_date
+#   unit: d
+#   datatype: int32
+#   description: Data Products Creation Date
+#   meta: !!omap
+#   - values: {'null': -2147483648}
+# - name: public_date
+#   unit: d
+#   datatype: int32
+#   description: Date That Data Products Become Public
+#   meta: !!omap
+#   - {ucd: time.release}
+#   - values: {'null': -2147483648}
+# - name: xmm_revolution
+#   datatype: int16
+#   description: XMM-Newton Revolution (Orbit) Number
+#   meta: !!omap
+#   - {ucd: meta.code;time.start;obs}
+#   - {width: 4}
+#   - values: {'null': -32768}
+# - name: process_status
+#   datatype: string
+#   description: Pipeline Processing Status
+#   meta: !!omap
+#   - {ucd: meta.code.status}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: mos1_num
+#   datatype: int16
+#   description: Number of MOS-1 Exposures
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - name: mos1_time
+#   unit: s
+#   datatype: int32
+#   description: Total MOS-1 Exposure Time (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - values: {'null': -2147483648}
+# - name: mos1_mode
+#   datatype: string
+#   description: Flags Indicate MOS-1 Instrument Modes
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: mos2_num
+#   datatype: int16
+#   description: Number of MOS-2 Exposures
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - name: mos2_time
+#   unit: s
+#   datatype: int32
+#   description: Total MOS-2 Exposure Time (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - values: {'null': -2147483648}
+# - name: mos2_mode
+#   datatype: string
+#   description: Flags Indicate MOS-2 Instrument Modes
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pn_num
+#   datatype: int16
+#   description: Number of PN Exposures
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - name: pn_time
+#   unit: s
+#   datatype: int32
+#   description: Total PN Exposure Time (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - values: {'null': -2147483648}
+# - name: pn_mode
+#   datatype: string
+#   description: Flags Indicate PN Instrument Modes
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: rgs1_num
+#   datatype: int16
+#   description: Number of RGS-1 Exposures
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - name: rgs1_time
+#   unit: s
+#   datatype: int32
+#   description: Total RGS-1 Exposure Time (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - values: {'null': -2147483648}
+# - name: rgs1_mode
+#   datatype: string
+#   description: Flags Indicate RGS-1 Instrument Modes
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: rgs2_num
+#   datatype: int16
+#   description: Number of RGS-2 Exposures
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - name: rgs2_time
+#   unit: s
+#   datatype: int32
+#   description: Total RGS-2 Exposure Time (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - values: {'null': -2147483648}
+# - name: rgs2_mode
+#   datatype: string
+#   description: Flags Indicate RGS-2 Instrument Modes
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: om_num
+#   datatype: int16
+#   description: Number of OM Exposures
+#   meta: !!omap
+#   - values: {'null': -32768}
+# - name: om_time
+#   unit: s
+#   datatype: int32
+#   description: Total OM Exposure Time (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - values: {'null': -2147483648}
+# - name: om_mode
+#   datatype: string
+#   description: Flags Indicate OM Instrument Modes
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: data_in_heasarc
+#   datatype: string
+#   description: Flag Indicates Whether Dataset Is Available in HEASARC Archive [YN]
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: subject_category
+#   datatype: string
+#   description: Broad Classification of Target
+#   meta: !!omap
+#   - {ucd: src.class}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: status
+#   datatype: string
+#   description: 'Status of Observation: scheduled, observed, processed, archived'
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: class
+#   datatype: int16
+#   description: Browse Object Classification
+#   meta: !!omap
+#   - {ucd: src.class}
+#   - values: {'null': -32768}
+# - {name: __x_ra_dec, datatype: float64}
+# - {name: __y_ra_dec, datatype: float64}
+# - {name: __z_ra_dec, datatype: float64}
+# meta: !!omap
+# - {description: 'Query result for:
+# 
+#     SELECT TOP 300 * FROM xmmmaster WHERE CONTAINS(POINT(''ICRS'',ra,dec),CIRCLE(''ICRS'',118.69117410685,16.694621231895,1.0))=1'}
+# schema: astropy-2.0
+__row DataLinkID pno name ra dec lii bii time end_time duration scheduled_duration estimated_exposure pi_title pi_fname pi_lname sas_version pps_flag pps_version odf_date process_date distribution_date public_date xmm_revolution process_status mos1_num mos1_time mos1_mode mos2_num mos2_time mos2_mode pn_num pn_time pn_mode rgs1_num rgs1_time rgs1_mode rgs2_num rgs2_time rgs2_mode om_num om_time om_mode data_in_heasarc subject_category status class __x_ra_dec __y_ra_dec __z_ra_dec
+"""12785""" """0690720101""" 69072 """2M J0752239+161215""" 118.10025 16.2030833 204.74842921 20.60370857 56388.5982291667 56388.8690393519 22352 20539 16318 """Dr""" """Beate""" """Stelzer""" """21.51""" """Y""" """21.51_20241115_1113""" 56392.8979513889 60644.3799652778 56394 56759 2440 """delivered""" 1 17101 """FF-TN (1)""" 1 17160 """FF-TN (1)""" 1 16350 """FF-TN (1)""" 1 17466 """SES (1)""" 1 17503 """SES (1)""" 5 20577 """FA-V (5)""" """Y""" """Stars, White Dwarfs and Solar System""" """archived""" 2900 0.84708564076616 -0.452306359309277 0.279042782626914

@@ -1,0 +1,296 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: iauname
+#   datatype: string
+#   description: Official IAU name of source
+#   meta: !!omap
+#   - {ucd: ID_MAIN}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: detuid
+#   datatype: string
+#   description: Unique detection ID
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - {name: skytile, datatype: int32, description: Sky tile ID}
+# - {name: id_src, datatype: int32, description: Source ID in each sky tile}
+# - {name: uid, datatype: int64, description: Integer unique detection ID}
+# - {name: uid_hard, datatype: int64, description: Hard catalog UID}
+# - {name: id_cluster, datatype: int32, description: Group ID of simultaneously fitted sources}
+# - name: ra
+#   unit: deg
+#   datatype: float64
+#   description: Right ascension (ICRS), corrected
+#   meta: !!omap
+#   - {ucd: POS_EQ_RA_MAIN}
+# - name: dec
+#   unit: deg
+#   datatype: float64
+#   description: Declination (ICRS), corrected
+#   meta: !!omap
+#   - {ucd: POS_EQ_DEC_MAIN}
+# - {name: ra_raw, unit: deg, datatype: float64, description: 'Right ascension (ICRS), uncorrected'}
+# - {name: dec_raw, unit: deg, datatype: float64, description: 'Declination (ICRS), uncorrected'}
+# - {name: ra_lowerr, unit: arcsec, datatype: float32, description: 1-sigma RA lower bound}
+# - {name: ra_uperr, unit: arcsec, datatype: float32, description: 1-sigma RA upper bound}
+# - {name: dec_lowerr, unit: arcsec, datatype: float32, description: 1-sigma DEC lower bound}
+# - {name: dec_uperr, unit: arcsec, datatype: float32, description: 1-sigma DEC upper bound}
+# - {name: pos_err, datatype: float32, description: 'Combined position error, from PSF fitting'}
+# - {name: radec_err, datatype: float32, description: 1-sigma position uncertainty}
+# - {name: lii, unit: deg, datatype: float64, description: Galactic longitude}
+# - {name: bii, unit: deg, datatype: float64, description: Galactic latitude}
+# - {name: elon, unit: deg, datatype: float64, description: Ecliptic longitude}
+# - {name: elat, unit: deg, datatype: float64, description: Ecliptic latitude}
+# - {name: mjd, unit: d, datatype: float32, description: Epoch of the observation of the source nearest to the optical axis of the telescope}
+# - {name: mjd_min, unit: d, datatype: float32, description: Epoch of the first observation of a source}
+# - {name: mjd_max, unit: d, datatype: float32, description: Epoch of the last observation of a source}
+# - {name: ext, unit: arcsec, datatype: float32, description: Source extent parameter}
+# - {name: ext_err, unit: arcsec, datatype: float32, description: 1-sigma error on EXT}
+# - {name: ext_lowerr, unit: arcsec, datatype: float32, description: 1-sigma EXT lower bound}
+# - {name: ext_uperr, unit: arcsec, datatype: float32, description: 1-sigma EXT upper bound}
+# - {name: ext_like, datatype: float32, description: Extent likelihood}
+# - {name: det_like_0, datatype: float32, description: Detection likelihood (band 0)}
+# - {name: ml_cts_1, unit: count, datatype: float32, description: Source net counts (band 1)}
+# - {name: ml_cts_err_1, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_1}
+# - {name: ml_cts_lowerr_1, unit: count, datatype: float32, description: 1-sigma ML_CTS_1 lower bound}
+# - {name: ml_cts_uperr_1, unit: count, datatype: float32, description: 1-sigma ML_CTS_1 upper bound}
+# - {name: ml_rate_1, unit: count.s**-1, datatype: float32, description: Source count rate (band 1)}
+# - {name: ml_rate_err_1, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_1}
+# - {name: ml_rate_lowerr_1, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_1 lower bound}
+# - {name: ml_rate_uperr_1, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_1 upper bound}
+# - {name: ml_flux_1, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band 1)}
+# - {name: ml_flux_err_1, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_1}
+# - {name: ml_flux_lowerr_1, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_1 lower bound}
+# - {name: ml_flux_uperr_1, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_1 upper bound}
+# - {name: ml_bkg_1, unit: arcmin**-2, datatype: float32, description: Background at source position (band 1)}
+# - {name: ml_exp_1, unit: s, datatype: float32, description: Vignetted exposure at source position (band 1)}
+# - {name: ml_eef_1, datatype: float32, description: Encircled energy fraction (band 1)}
+# - {name: ape_cts_1, unit: count, datatype: int32, description: Total counts extracted within the aperture (band 1)}
+# - {name: ape_bkg_1, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band 1)'}
+# - {name: ape_exp_1, unit: s, datatype: float32, description: Exposure map value at the given position (band 1)}
+# - {name: ape_radius_1, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band 1)}
+# - {name: ape_pois_1, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_1) are a background fluctuation}
+# - {name: det_like_p1, datatype: float32, description: Detection likelihood (band P1)}
+# - {name: ml_cts_p1, unit: count, datatype: float32, description: Source net counts (band P1)}
+# - {name: ml_cts_err_p1, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P1}
+# - {name: ml_cts_lowerr_p1, unit: count, datatype: float32, description: 1-sigma ML_CTS_P1 lower bound}
+# - {name: ml_cts_uperr_p1, datatype: float32, description: 1-sigma ML_CTS_P1 upper bound}
+# - {name: ml_rate_p1, unit: count.s**-1, datatype: float32, description: Source count rate (band P1)}
+# - {name: ml_rate_err_p1, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P1}
+# - {name: ml_rate_lowerr_p1, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P1 lower bound}
+# - {name: ml_rate_uperr_p1, datatype: float32, description: 1-sigma ML_RATE_P1 upper bound}
+# - {name: ml_flux_p1, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P1)}
+# - {name: ml_flux_err_p1, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P1}
+# - {name: ml_flux_lowerr_p1, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P1 lower bound}
+# - {name: ml_flux_uperr_p1, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P1 upper bound}
+# - {name: ml_bkg_p1, unit: arcmin**-2, datatype: float32, description: Background at source position (band P1)}
+# - {name: ml_exp_p1, unit: s, datatype: float32, description: Vignetted exposure at source position (band P1)}
+# - {name: ml_eef_p1, datatype: float32, description: Encircled energy fraction (band P1)}
+# - {name: ape_cts_p1, unit: count, datatype: int32, description: Total counts extracted within the aperture (band P1)}
+# - {name: ape_bkg_p1, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P1)'}
+# - {name: ape_exp_p1, unit: s, datatype: float32, description: Exposure map value at the given position (band P1)}
+# - {name: ape_radius_p1, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P1)}
+# - {name: ape_pois_p1, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P1) are a background fluctuation}
+# - {name: det_like_p2, datatype: float32, description: Detection likelihood (band P2)}
+# - {name: ml_cts_p2, unit: count, datatype: float32, description: Source net counts (band P2)}
+# - {name: ml_cts_err_p2, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P2}
+# - {name: ml_cts_lowerr_p2, unit: count, datatype: float32, description: 1-sigma ML_CTS_P2 lower bound}
+# - {name: ml_cts_uperr_p2, datatype: float32, description: 1-sigma ML_CTS_P2 upper bound}
+# - {name: ml_rate_p2, unit: count.s**-1, datatype: float32, description: Source count rate (band P2)}
+# - {name: ml_rate_err_p2, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P2}
+# - {name: ml_rate_lowerr_p2, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P2 lower bound}
+# - {name: ml_rate_uperr_p2, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P2 upper bound}
+# - {name: ml_flux_p2, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P2)}
+# - {name: ml_flux_err_p2, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P2}
+# - {name: ml_flux_lowerr_p2, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P2 lower bound}
+# - {name: ml_flux_uperr_p2, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P2 upper bound}
+# - {name: ml_bkg_p2, unit: arcmin**-2, datatype: float32, description: Background at source position (band P2)}
+# - {name: ml_exp_p2, unit: s, datatype: float32, description: Vignetted exposure at source position (band P2)}
+# - {name: ml_eef_p2, datatype: float32, description: Encircled energy fraction (band P2)}
+# - {name: ape_cts_p2, datatype: int32, description: Total counts extracted within the aperture (band P2)}
+# - {name: ape_bkg_p2, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P2)'}
+# - {name: ape_exp_p2, unit: s, datatype: float32, description: Exposure map value at the given position (band P2)}
+# - {name: ape_radius_p2, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P2)}
+# - {name: ape_pois_p2, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P2) are a background fluctuation}
+# - {name: det_like_p3, datatype: float32, description: Detection likelihood (band P3)}
+# - {name: ml_cts_p3, unit: count, datatype: float32, description: Source net counts (band P3)}
+# - {name: ml_cts_err_p3, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P3}
+# - {name: ml_cts_lowerr_p3, unit: count, datatype: float32, description: 1-sigma ML_CTS_P3 lower bound}
+# - {name: ml_cts_uperr_p3, datatype: float32, description: 1-sigma ML_CTS_P3 upper bound}
+# - {name: ml_rate_p3, unit: count.s**-1, datatype: float32, description: Source count rate (band P3)}
+# - {name: ml_rate_err_p3, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P3}
+# - {name: ml_rate_lowerr_p3, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P3 lower bound}
+# - {name: ml_rate_uperr_p3, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P3 upper bound}
+# - {name: ml_flux_p3, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P3)}
+# - {name: ml_flux_err_p3, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P3}
+# - {name: ml_flux_lowerr_p3, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P3 lower bound}
+# - {name: ml_flux_uperr_p3, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P3 upper bound}
+# - {name: ml_bkg_p3, unit: cm**-2.erg.s**-1, datatype: float32, description: Background at source position (band P3)}
+# - {name: ml_exp_p3, unit: s, datatype: float32, description: Vignetted exposure at source position (band P3)}
+# - {name: ml_eef_p3, datatype: float32, description: Encircled energy fraction (band P3)}
+# - {name: ape_cts_p3, unit: count, datatype: int32, description: Total counts extracted within the aperture (band P3)}
+# - {name: ape_bkg_p3, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P3)'}
+# - {name: ape_exp_p3, unit: s, datatype: float32, description: Exposure map value at the given position (band P3)}
+# - {name: ape_radius_p3, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P3)}
+# - {name: ape_pois_p3, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P3) are a background fluctuation}
+# - {name: det_like_p4, datatype: float32, description: Detection likelihood (band P4)}
+# - {name: ml_cts_p4, unit: count, datatype: float32, description: Source net counts (band P4)}
+# - {name: ml_cts_err_p4, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P4}
+# - {name: ml_cts_lowerr_p4, unit: count, datatype: float32, description: 1-sigma ML_CTS_P4 lower bound}
+# - {name: ml_cts_uperr_p4, datatype: float32, description: 1-sigma ML_CTS_P4 upper bound}
+# - {name: ml_rate_p4, unit: count.s**-1, datatype: float32, description: Source count rate (band P4)}
+# - {name: ml_rate_err_p4, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P4}
+# - {name: ml_rate_lowerr_p4, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P4 lower bound}
+# - {name: ml_rate_uperr_p4, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P4 upper bound}
+# - {name: ml_flux_p4, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P4)}
+# - {name: ml_flux_err_p4, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P4}
+# - {name: ml_flux_lowerr_p4, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P4 lower bound}
+# - {name: ml_flux_uperr_p4, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P4 upper bound}
+# - {name: ml_bkg_p4, unit: arcmin**-2, datatype: float32, description: Background at source position (band P4)}
+# - {name: ml_exp_p4, unit: s, datatype: float32, description: Vignetted exposure at source position (band P4)}
+# - {name: ml_eef_p4, datatype: float32, description: Encircled energy fraction (band P4)}
+# - {name: ape_cts_p4, unit: count, datatype: int32, description: Total counts extracted within the aperture (band P4)}
+# - {name: ape_bkg_p4, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P4)'}
+# - {name: ape_exp_p4, unit: s, datatype: float32, description: Exposure map value at the given position (band P4)}
+# - {name: ape_radius_p4, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P4)}
+# - {name: ape_pois_p4, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P4) are a background fluctuation}
+# - {name: det_like_p5, datatype: float32, description: Detection likelihood (band P5)}
+# - {name: ml_cts_p5, unit: count, datatype: float32, description: Source net counts (band P5)}
+# - {name: ml_cts_err_p5, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P5}
+# - {name: ml_cts_lowerr_p5, unit: count, datatype: float32, description: 1-sigma ML_CTS_P5 lower bound}
+# - {name: ml_cts_uperr_p5, datatype: float32, description: 1-sigma ML_CTS_P5 upper bound}
+# - {name: ml_rate_p5, unit: count.s**-1, datatype: float32, description: Source count rate (band P5)}
+# - {name: ml_rate_err_p5, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P5}
+# - {name: ml_rate_lowerr_p5, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P5 lower bound}
+# - {name: ml_rate_uperr_p5, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P5 upper bound}
+# - {name: ml_flux_p5, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P5)}
+# - {name: ml_flux_err_p5, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P5}
+# - {name: ml_flux_lowerr_p5, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P5 lower bound}
+# - {name: ml_flux_uperr_p5, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P5 upper bound}
+# - {name: ml_bkg_p5, unit: arcmin**-2, datatype: float32, description: Background at source position (band P5)}
+# - {name: ml_exp_p5, unit: s, datatype: float32, description: Vignetted exposure at source position (band P5)}
+# - {name: ml_eef_p5, datatype: float32, description: Encircled energy fraction (band P5)}
+# - {name: ape_cts_p5, unit: count, datatype: int32, description: Total counts extracted within the aperture (band P5)}
+# - {name: ape_bkg_p5, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P5)'}
+# - {name: ape_exp_p5, unit: s, datatype: float32, description: Exposure map value at the given position (band P5)}
+# - {name: ape_radius_p5, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P5)}
+# - {name: ape_pois_p5, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P5) are a background fluctuation}
+# - {name: det_like_p6, datatype: float32, description: Detection likelihood (band P6)}
+# - {name: ml_cts_p6, unit: count, datatype: float32, description: Source net counts (band P6)}
+# - {name: ml_cts_err_p6, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P6}
+# - {name: ml_cts_lowerr_p6, unit: count, datatype: float32, description: 1-sigma ML_CTS_P6 lower bound}
+# - {name: ml_cts_uperr_p6, datatype: float32, description: 1-sigma ML_CTS_P6 upper bound}
+# - {name: ml_rate_p6, unit: count.s**-1, datatype: float32, description: Source count rate (band P6)}
+# - {name: ml_rate_err_p6, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P6}
+# - {name: ml_rate_lowerr_p6, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P6 lower bound}
+# - {name: ml_rate_uperr_p6, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P6 upper bound}
+# - {name: ml_flux_p6, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P6)}
+# - {name: ml_flux_err_p6, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P6}
+# - {name: ml_flux_lowerr_p6, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P6 lower bound}
+# - {name: ml_flux_uperr_p6, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P6 upper bound}
+# - {name: ml_bkg_p6, unit: arcmin**-2, datatype: float32, description: Background at source position (band P6)}
+# - {name: ml_exp_p6, unit: s, datatype: float32, description: Vignetted exposure at source position (band P6)}
+# - {name: ml_eef_p6, datatype: float32, description: Encircled energy fraction (band P6)}
+# - {name: ape_cts_p6, unit: count, datatype: int32, description: Total counts extracted within the aperture (band P6)}
+# - {name: ape_bkg_p6, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P6)'}
+# - {name: ape_exp_p6, unit: s, datatype: float32, description: Exposure map value at the given position (band P6)}
+# - {name: ape_radius_p6, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P6)}
+# - {name: ape_pois_p6, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P6) are a background fluctuation}
+# - {name: det_like_p7, datatype: float32, description: Detection likelihood (band P7)}
+# - {name: ml_cts_p7, unit: count, datatype: float32, description: Source net counts (band P7)}
+# - {name: ml_cts_err_p7, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P7}
+# - {name: ml_cts_lowerr_p7, unit: count, datatype: float32, description: 1-sigma ML_CTS_P7 lower bound}
+# - {name: ml_cts_uperr_p7, datatype: float32, description: 1-sigma ML_CTS_P7 upper bound}
+# - {name: ml_rate_p7, unit: count.s**-1, datatype: float32, description: Source count rate (band P7)}
+# - {name: ml_rate_err_p7, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P7}
+# - {name: ml_rate_lowerr_p7, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P7 lower bound}
+# - {name: ml_rate_uperr_p7, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P7 upper bound}
+# - {name: ml_flux_p7, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P7)}
+# - {name: ml_flux_err_p7, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P7}
+# - {name: ml_flux_lowerr_p7, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P7 lower bound}
+# - {name: ml_flux_uperr_p7, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P7 upper bound}
+# - {name: ml_bkg_p7, unit: arcmin**-2, datatype: float32, description: Background at source position (band P7)}
+# - {name: ml_exp_p7, unit: s, datatype: float32, description: Vignetted exposure at source position (band P7)}
+# - {name: ml_eef_p7, datatype: float32, description: Encircled energy fraction (band P7)}
+# - {name: ape_cts_p7, unit: count, datatype: int32, description: Total counts extracted within the aperture (band P7)}
+# - {name: ape_bkg_p7, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P7)'}
+# - {name: ape_exp_p7, unit: s, datatype: float32, description: Exposure map value at the given position (band P7)}
+# - {name: ape_radius_p7, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P7)}
+# - {name: ape_pois_p7, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P7) are a background fluctuation}
+# - {name: det_like_p8, datatype: float32, description: Detection likelihood (band P8)}
+# - {name: ml_cts_p8, unit: count, datatype: float32, description: Source net counts (band P8)}
+# - {name: ml_cts_err_p8, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P8}
+# - {name: ml_cts_lowerr_p8, unit: count, datatype: float32, description: 1-sigma ML_CTS_P8 lower bound}
+# - {name: ml_cts_uperr_p8, datatype: float32, description: 1-sigma ML_CTS_P8 upper bound}
+# - {name: ml_rate_p8, unit: count.s**-1, datatype: float32, description: Source count rate (band P8)}
+# - {name: ml_rate_err_p8, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P8}
+# - {name: ml_rate_lowerr_p8, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P8 lower bound}
+# - {name: ml_rate_uperr_p8, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P8 upper bound}
+# - {name: ml_flux_p8, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P8)}
+# - {name: ml_flux_err_p8, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P8}
+# - {name: ml_flux_lowerr_p8, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P8 lower bound}
+# - {name: ml_flux_uperr_p8, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P8 upper bound}
+# - {name: ml_bkg_p8, unit: arcmin**-2, datatype: float32, description: Background at source position (band P8)}
+# - {name: ml_exp_p8, unit: s, datatype: float32, description: Vignetted exposure at source position (band P8)}
+# - {name: ml_eef_p8, datatype: float32, description: Encircled energy fraction (band P8)}
+# - {name: ape_cts_p8, unit: count, datatype: int32, description: Total counts extracted within the aperture (band P8)}
+# - {name: ape_bkg_p8, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P8)'}
+# - {name: ape_exp_p8, unit: s, datatype: float32, description: Exposure map value at the given position (band P8)}
+# - {name: ape_radius_p8, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P8)}
+# - {name: ape_pois_p8, unit: pixel, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P8) are a
+#     background fluctuation}
+# - {name: det_like_p9, datatype: float32, description: Detection likelihood (band P9)}
+# - {name: ml_cts_p9, unit: count, datatype: float32, description: Source net counts (band P9)}
+# - {name: ml_cts_err_p9, unit: count, datatype: float32, description: 1-sigma error on ML_CTS_P9}
+# - {name: ml_cts_lowerr_p9, unit: count, datatype: float32, description: 1-sigma ML_CTS_P9 lower bound}
+# - {name: ml_cts_uperr_p9, datatype: float32, description: 1-sigma ML_CTS_P9 upper bound}
+# - {name: ml_rate_p9, unit: count.s**-1, datatype: float32, description: Source count rate (band P9)}
+# - {name: ml_rate_err_p9, unit: count.s**-1, datatype: float32, description: 1-sigma error on ML_RATE_P9}
+# - {name: ml_rate_lowerr_p9, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P9 lower bound}
+# - {name: ml_rate_uperr_p9, unit: count.s**-1, datatype: float32, description: 1-sigma ML_RATE_P9 upper bound}
+# - {name: ml_flux_p9, unit: cm**-2.erg.s**-1, datatype: float32, description: Source flux (band P9)}
+# - {name: ml_flux_err_p9, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma error on ML_FLUX_P9}
+# - {name: ml_flux_lowerr_p9, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P9 lower bound}
+# - {name: ml_flux_uperr_p9, unit: cm**-2.erg.s**-1, datatype: float32, description: 1-sigma ML_FLUX_P9 upper bound}
+# - {name: ml_bkg_p9, unit: arcmin**-2, datatype: float32, description: Background at source position (band P9)}
+# - {name: ml_exp_p9, unit: s, datatype: float32, description: Vignetted exposure at source position (band P9)}
+# - {name: ml_eef_p9, datatype: float32, description: Encircled energy fraction (band P9)}
+# - {name: ape_cts_p9, unit: count, datatype: int32, description: Total counts extracted within the aperture (band P9)}
+# - {name: ape_bkg_p9, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band P9)'}
+# - {name: ape_exp_p9, unit: s, datatype: float32, description: Exposure map value at the given position (band P9)}
+# - {name: ape_radius_p9, unit: pixel, datatype: float32, description: Extraction radius in pixels (4 arcsec; band P9)}
+# - {name: ape_pois_p9, datatype: float32, description: Poisson probability that the extracted counts (APE_CTS_P9) are a background fluctuation}
+# - {name: ape_cts_s, datatype: int32, description: Total counts extracted within the aperture (band S)}
+# - {name: ape_bkg_s, unit: count, datatype: float32, description: 'Background counts extracted within the aperture, excluding nearby
+#     sources using the source map (band S)'}
+# - {name: ape_exp_s, unit: s, datatype: float32, description: Exposure map value at the given position (band S)}
+# - {name: ape_pois_s, datatype: float64, description: Poisson probability that the extracted counts (APE_CTS_S) are a background fluctuation}
+# - {name: flag_sp_snr, datatype: int16, description: Source may lie within an overdense region near a supernova remnant}
+# - {name: flag_sp_bps, datatype: int16, description: Source may lie within an overdense region near a bright point source}
+# - {name: flag_sp_scl, datatype: int16, description: Source may lie within an overdense region near a stellar cluster}
+# - {name: flag_sp_lga, datatype: int16, description: Source may lie within an overdense region near a local large galaxy}
+# - {name: flag_sp_gc_cons, datatype: int16, description: Source may lie within an overdense region near a galaxy cluster}
+# - {name: flag_no_radec_err, datatype: int16, description: Source contained no RA_DEC_ERR in the pre-processed version of the catalogue}
+# - {name: flag_no_ext_err, datatype: int16, description: Source contained no ML_CTS_0_ERR in the pre-processed version of the catalogue}
+# - {name: flag_no_cts_err, datatype: int16, description: Source contained no EXT_ERR in the pre-processed version of the catalogue}
+# - {name: flag_opt, datatype: int16, description: Unknown}
+# meta: !!omap
+# - {ID: DR1_Main}
+# - {description: eROSITA DR1 eRASS1 Main Catalogue}
+# schema: astropy-2.0
+iauname detuid skytile id_src uid uid_hard id_cluster ra dec ra_raw dec_raw ra_lowerr ra_uperr dec_lowerr dec_uperr pos_err radec_err lii bii elon elat mjd mjd_min mjd_max ext ext_err ext_lowerr ext_uperr ext_like det_like_0 ml_cts_1 ml_cts_err_1 ml_cts_lowerr_1 ml_cts_uperr_1 ml_rate_1 ml_rate_err_1 ml_rate_lowerr_1 ml_rate_uperr_1 ml_flux_1 ml_flux_err_1 ml_flux_lowerr_1 ml_flux_uperr_1 ml_bkg_1 ml_exp_1 ml_eef_1 ape_cts_1 ape_bkg_1 ape_exp_1 ape_radius_1 ape_pois_1 det_like_p1 ml_cts_p1 ml_cts_err_p1 ml_cts_lowerr_p1 ml_cts_uperr_p1 ml_rate_p1 ml_rate_err_p1 ml_rate_lowerr_p1 ml_rate_uperr_p1 ml_flux_p1 ml_flux_err_p1 ml_flux_lowerr_p1 ml_flux_uperr_p1 ml_bkg_p1 ml_exp_p1 ml_eef_p1 ape_cts_p1 ape_bkg_p1 ape_exp_p1 ape_radius_p1 ape_pois_p1 det_like_p2 ml_cts_p2 ml_cts_err_p2 ml_cts_lowerr_p2 ml_cts_uperr_p2 ml_rate_p2 ml_rate_err_p2 ml_rate_lowerr_p2 ml_rate_uperr_p2 ml_flux_p2 ml_flux_err_p2 ml_flux_lowerr_p2 ml_flux_uperr_p2 ml_bkg_p2 ml_exp_p2 ml_eef_p2 ape_cts_p2 ape_bkg_p2 ape_exp_p2 ape_radius_p2 ape_pois_p2 det_like_p3 ml_cts_p3 ml_cts_err_p3 ml_cts_lowerr_p3 ml_cts_uperr_p3 ml_rate_p3 ml_rate_err_p3 ml_rate_lowerr_p3 ml_rate_uperr_p3 ml_flux_p3 ml_flux_err_p3 ml_flux_lowerr_p3 ml_flux_uperr_p3 ml_bkg_p3 ml_exp_p3 ml_eef_p3 ape_cts_p3 ape_bkg_p3 ape_exp_p3 ape_radius_p3 ape_pois_p3 det_like_p4 ml_cts_p4 ml_cts_err_p4 ml_cts_lowerr_p4 ml_cts_uperr_p4 ml_rate_p4 ml_rate_err_p4 ml_rate_lowerr_p4 ml_rate_uperr_p4 ml_flux_p4 ml_flux_err_p4 ml_flux_lowerr_p4 ml_flux_uperr_p4 ml_bkg_p4 ml_exp_p4 ml_eef_p4 ape_cts_p4 ape_bkg_p4 ape_exp_p4 ape_radius_p4 ape_pois_p4 det_like_p5 ml_cts_p5 ml_cts_err_p5 ml_cts_lowerr_p5 ml_cts_uperr_p5 ml_rate_p5 ml_rate_err_p5 ml_rate_lowerr_p5 ml_rate_uperr_p5 ml_flux_p5 ml_flux_err_p5 ml_flux_lowerr_p5 ml_flux_uperr_p5 ml_bkg_p5 ml_exp_p5 ml_eef_p5 ape_cts_p5 ape_bkg_p5 ape_exp_p5 ape_radius_p5 ape_pois_p5 det_like_p6 ml_cts_p6 ml_cts_err_p6 ml_cts_lowerr_p6 ml_cts_uperr_p6 ml_rate_p6 ml_rate_err_p6 ml_rate_lowerr_p6 ml_rate_uperr_p6 ml_flux_p6 ml_flux_err_p6 ml_flux_lowerr_p6 ml_flux_uperr_p6 ml_bkg_p6 ml_exp_p6 ml_eef_p6 ape_cts_p6 ape_bkg_p6 ape_exp_p6 ape_radius_p6 ape_pois_p6 det_like_p7 ml_cts_p7 ml_cts_err_p7 ml_cts_lowerr_p7 ml_cts_uperr_p7 ml_rate_p7 ml_rate_err_p7 ml_rate_lowerr_p7 ml_rate_uperr_p7 ml_flux_p7 ml_flux_err_p7 ml_flux_lowerr_p7 ml_flux_uperr_p7 ml_bkg_p7 ml_exp_p7 ml_eef_p7 ape_cts_p7 ape_bkg_p7 ape_exp_p7 ape_radius_p7 ape_pois_p7 det_like_p8 ml_cts_p8 ml_cts_err_p8 ml_cts_lowerr_p8 ml_cts_uperr_p8 ml_rate_p8 ml_rate_err_p8 ml_rate_lowerr_p8 ml_rate_uperr_p8 ml_flux_p8 ml_flux_err_p8 ml_flux_lowerr_p8 ml_flux_uperr_p8 ml_bkg_p8 ml_exp_p8 ml_eef_p8 ape_cts_p8 ape_bkg_p8 ape_exp_p8 ape_radius_p8 ape_pois_p8 det_like_p9 ml_cts_p9 ml_cts_err_p9 ml_cts_lowerr_p9 ml_cts_uperr_p9 ml_rate_p9 ml_rate_err_p9 ml_rate_lowerr_p9 ml_rate_uperr_p9 ml_flux_p9 ml_flux_err_p9 ml_flux_lowerr_p9 ml_flux_uperr_p9 ml_bkg_p9 ml_exp_p9 ml_eef_p9 ape_cts_p9 ape_bkg_p9 ape_exp_p9 ape_radius_p9 ape_pois_p9 ape_cts_s ape_bkg_s ape_exp_s ape_pois_s flag_sp_snr flag_sp_bps flag_sp_scl flag_sp_lga flag_sp_gc_cons flag_no_radec_err flag_no_ext_err flag_no_cts_err flag_opt
+"""1eRASS J075445.8+164152""" """em01_117072_020_ML00086_002_c010""" 117072 86 111707200086 0 80 118.69096743374998 16.697984758741633 118.69074972241371 16.697950708914675 11.0973 4.2635317 3.9801362 4.1831026 8.803147 10.861748 204.50285996405552 21.31980457248452 117.45060171447145 -4.048749622189798 58960.914 58960.582 58961.25 0.0 0.0 0.0 0.0 0.0 6.0605226 4.666834 2.425789 2.0520954 2.7994826 0.05985813 0.031113856 0.026320755 0.035906956 5.5733826e-14 2.8970072e-14 2.4507221e-14 3.343292e-14 0.52312016 77.96491 0.8836025 6 1.0145321 77.88408 7.6618905 0.0006400472 4.318868 2.089487 1.532064 1.2817535 1.7823743 0.026436528 0.01938392 0.016216952 0.022550886 2.8682355e-14 2.1030617e-14 1.759461e-14 2.4466623e-14 0.15391967 79.03788 0.8923024 2 0.108745515 78.9578 7.1192513 0.00550112 4.2872744 2.8008504 1.8277756 1.5276016 2.1279495 0.035327867 0.023054218 0.019268043 0.02684039 2.5995487e-14 1.6964105e-14 1.4178104e-14 1.9750105e-14 0.22334197 79.28162 0.8869417 4 0.16882576 79.308044 7.3572235 2.9583827e-05 0.0 0.0 0.5873394 0.0 0.5873394 0.0 0.0074884254 0.0 0.0074884254 0.0 7.385035e-15 0.0 7.385035e-15 0.15603182 78.43297 0.8836025 0 0.13243522 78.10276 7.815942 "" 1.0469236 1.629793 1.794297 1.2573583 2.3312356 0.026700998 0.029396076 0.020599376 0.038192775 1.6553625e-13 1.8224474e-13 1.2770847e-13 2.36781e-13 0.19965065 61.03866 0.85624605 2 0.2761827 60.889503 9.956207 0.031792976 0.0 0.0 0.6307062 0.0 0.6307062 0.0 0.016219262 0.0 0.016219262 0.0 5.8426734e-13 0.0 5.8426734e-13 0.15678938 38.886246 0.73298055 0 0.39169994 38.89097 13.348715 "" 0.0 0.0 0.6307029 0.0 0.6307029 0.0 0.015258587 0.0 0.015258587 0.0 4.582158e-13 0.0 4.582158e-13 0.29829508 41.334293 0.73298055 0 0.745178 41.339634 13.348715 "" 0.0 0.0 0.63069326 0.0 0.63069326 0.0 0.01474692 0.0 0.01474692 0.0 3.8473573e-13 0.0 3.8473573e-13 0.04972961 42.767796 0.73298055 0 0.102581516 42.7851 12.1395 "" 0.0 0.0 0.6307111 0.0 0.6307111 0.0 0.017576946 0.0 0.017576946 0.0 8.015023e-13 0.0 8.015023e-13 0.043063194 35.88286 0.73298055 0 0.10761354 35.886852 13.348715 "" 0.0 0.0 0.6307411 0.0 0.6307411 0.0 0.018819345 0.0 0.018819345 0.0 1.5238336e-12 0.0 1.5238336e-12 0.049293637 33.51557 0.70057523 0 0.12309819 33.518402 13.348715 "" 4 0.30126098 78.83927 0.00027003879621565017 0 0 0 0 0 0 0 0 0

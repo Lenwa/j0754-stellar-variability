@@ -1,0 +1,21 @@
+{
+  "name": "heasarc_slew_radio_tables",
+  "url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync",
+  "params": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "QUERY": "SELECT table_name,description FROM TAP_SCHEMA.tables WHERE table_name LIKE '%slew%' OR table_name LIKE '%vlass%'"
+  },
+  "retrieved_utc": "2026-11-11T03:44:16.463718+00:00",
+  "status_code": 200,
+  "url_resolved": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+table_name%2Cdescription+FROM+TAP_SCHEMA.tables+WHERE+table_name+LIKE+%27%25slew%25%27+OR+table_name+LIKE+%27%25vlass%25%27",
+  "bytes": 1277,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_slew_radio_tables.native",
+  "sha256": "89c3302e33f1bdad739b8256498da75300317e42e290c8f525430bca0e565f11",
+  "state": "table",
+  "rows": 6,
+  "columns": [
+    "table_name",
+    "description"
+  ]
+}

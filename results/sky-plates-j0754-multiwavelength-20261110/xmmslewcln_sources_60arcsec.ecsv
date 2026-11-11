@@ -1,0 +1,786 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: DataLinkID
+#   datatype: string
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: xmmslew_name
+#   datatype: string
+#   description: Catalog Designation of Source
+#   meta: !!omap
+#   - {ucd: meta.id;meta.main}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: obsid
+#   datatype: string
+#   description: XMM-Newton Observation Identifier
+#   meta: !!omap
+#   - {ucd: meta.id;obs}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: sourcenum
+#   datatype: int16
+#   description: Number Which Uniquely Identifies Each Detection in an Observation
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - values: {'null': -32768}
+# - name: ra
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Right Ascension of the Source
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;meta.main}
+#   - {precision: F6}
+# - name: dec
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Declination of the Source
+#   meta: !!omap
+#   - {ucd: pos.eq.dec;meta.main}
+#   - {precision: F6}
+# - name: radec_error
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Statistical 1-Sigma Error in Source Position
+#   meta: !!omap
+#   - {ucd: stat.error;pos}
+#   - {precision: F5}
+# - name: lii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Galactic Longitude of the Source
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon}
+#   - {precision: F5}
+# - name: bii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Galactic Latitude of the Source
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: F5}
+# - name: hr1
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Hardness Ratio
+#   meta: !!omap
+#   - {ucd: phot.count;arith.ratio;em.X-ray.medium;em.X-ray.soft}
+#   - {precision: F6}
+# - name: hr1_error
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Error in Hardness Ratio
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;arith.ratio;em.X-ray.medium;em.X-ray.soft}
+#   - {precision: F6}
+# - name: time
+#   unit: d
+#   datatype: float64
+#   description: Start Time of Observation
+#   meta: !!omap
+#   - {ucd: time.start;obs}
+# - name: end_time
+#   unit: d
+#   datatype: float64
+#   description: End Time of Observation
+#   meta: !!omap
+#   - {ucd: time.end;obs}
+# - name: scts_b8
+#   unit: ct
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Background-Subtracted, PSF-Corrected Counts for Total Energy Band (0.2-12 keV)
+#   meta: !!omap
+#   - {ucd: phot;em.X-ray}
+#   - {precision: E5}
+# - name: scts_b8_error
+#   unit: ct
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Statistical 1-Sigma Error for the Total-Band Source Counts
+#   meta: !!omap
+#   - {ucd: stat.error;phot;em.X-ray}
+#   - {precision: F5}
+# - name: scts_b7
+#   unit: ct
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Background-Subtracted, PSF-Corrected  Counts in the Hard Energy Band (2-12 keV)
+#   meta: !!omap
+#   - {ucd: phot;em.X-ray.medium}
+#   - {precision: E5}
+# - name: scts_b7_error
+#   unit: ct
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Statistical 1-Sigma Error for the Hard-Band Source Counts
+#   meta: !!omap
+#   - {ucd: stat.error;phot;em.X-ray.medium}
+#   - {precision: F5}
+# - name: scts_b6
+#   unit: ct
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Background-Subtracted, PSF-Corrected  Counts in the Soft Energy Band (0.2-2 keV)
+#   meta: !!omap
+#   - {ucd: phot;em.X-ray.soft}
+#   - {precision: E5}
+# - name: scts_b6_error
+#   unit: ct
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Statistical 1-Sigma Error for the Soft-Band Source Counts
+#   meta: !!omap
+#   - {ucd: stat.error;phot;em.X-ray.soft}
+#   - {precision: F5}
+# - name: x_ima_b8
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: X Position of the Source in the Total-Band Image in Image Pixels
+#   meta: !!omap
+#   - {ucd: pos.cartesian.x;instr.pixel}
+#   - {precision: E5}
+# - name: y_ima_b8
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Y Position of the Source in the Total-Band Image in Image Pixels
+#   meta: !!omap
+#   - {ucd: pos.cartesian.y;instr.pixel}
+#   - {precision: E5}
+# - name: x_ima_b7
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: X Position of the Source in the Hard-Band Image in Image Pixels
+#   meta: !!omap
+#   - {ucd: pos.cartesian.x;instr.pixel}
+#   - {precision: E5}
+# - name: y_ima_b7
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Y Position of the Source in the Hard-Band Image in Image Pixels
+#   meta: !!omap
+#   - {ucd: pos.cartesian.y;instr.pixel}
+#   - {precision: E5}
+# - name: x_ima_b6
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: X Position of the Source in the Soft-Band Image in Image Pixels
+#   meta: !!omap
+#   - {ucd: pos.cartesian.x;instr.pixel}
+#   - {precision: E5}
+# - name: y_ima_b6
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Y Position of the Source in the Soft-Band Image in Image Pixels
+#   meta: !!omap
+#   - {ucd: pos.cartesian.y;instr.pixel}
+#   - {precision: E5}
+# - name: ext_b8
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Spatial Extension of the Source in the Total Energy Band (pixels)
+#   meta: !!omap
+#   - {ucd: phys.angSize}
+#   - {precision: E5}
+# - name: ext_b8_error
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Statistical 1-Sigma Error for the Total-Band Spatial Extension (pixels)
+#   meta: !!omap
+#   - {ucd: stat.error;phys.angSize}
+#   - {precision: E5}
+# - name: ext_b7
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Spatial Extension of the Source in the Hard Energy Band (pixels)
+#   meta: !!omap
+#   - {ucd: phys.angSize;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ext_b7_error
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Statistical 1-Sigma Error for the Hard-Band Spatial Extension (pixels)
+#   meta: !!omap
+#   - {ucd: stat.error;phys.angSize;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ext_b6
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Spatial Extension of the Source in the Soft Energy Band (pixels)
+#   meta: !!omap
+#   - {ucd: phys.angSize;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ext_b6_error
+#   unit: pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Statistical 1-Sigma Error for the Soft-Band Spatial Extension (pixels)
+#   meta: !!omap
+#   - {ucd: stat.error;phys.angSize;em.X-ray.soft}
+#   - {precision: E5}
+# - name: det_ml_b8
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Detection Likelihood in the Total Energy Band (0.2-12 keV)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;em.X-ray}
+#   - {precision: E5}
+# - name: det_ml_b7
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Detection Likelihood in the Hard Energy Band (2-12 keV)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;em.X-ray.medium}
+#   - {precision: E5}
+# - name: det_ml_b6
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Detection Likelihood in the Soft Energy Band (0.2-2 keV)
+#   meta: !!omap
+#   - {ucd: stat.likelihood;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ext_ml_b8
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Likelihood of the Source Being Extended in the Total Band
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phys.angSize;em.X-ray}
+#   - {precision: E5}
+# - name: ext_ml_b7
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Likelihood of the Source Being Extended in the Hard Band
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phys.angSize;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ext_ml_b6
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Likelihood of the Source Being Extended in the Soft Band
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phys.angSize;em.X-ray.soft}
+#   - {precision: E5}
+# - name: bg_map_b8
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Background Counts Per Pixel for the Total Band
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: bg_map_b7
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Background Counts Per Pixel for the Hard Band
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: bg_map_b6
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Background Counts Per Pixel for the Soft Band
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: exp_map_b8
+#   unit: s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Effective On-Axis Exposure Time in the Total Energy Band (secs)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray}
+#   - {precision: E5}
+# - name: exp_map_b7
+#   unit: s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Effective On-Axis Exposure Time in the Hard Energy Band (secs)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray.medium}
+#   - {precision: E5}
+# - name: exp_map_b6
+#   unit: s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Effective On-Axis Exposure Time in the Soft Energy Band (secs)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure;em.X-ray.soft}
+#   - {precision: E5}
+# - name: flux_b8
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Source Flux in the Total Energy Band (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray}
+#   - {precision: E5}
+# - name: flux_b8_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Error in the Total-Band Source Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray}
+#   - {precision: E5}
+# - name: flux_b7
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Source Flux in the Hard Energy Band (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: flux_b7_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Error in the Hard-Band Source Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: flux_b6
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Source Flux in the Soft Energy Band (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: flux_b6_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Error in the Soft-Band Source Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: count_rate_b8
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Total-Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray}
+#   - {precision: E5}
+# - name: count_rate_b8_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Error in the Total-Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray}
+#   - {precision: E5}
+# - name: count_rate_b7
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Hard-Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: count_rate_b7_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Error in the Hard-Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: count_rate_b6
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Soft-Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: count_rate_b6_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Error in the Soft-Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ra_b8
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: J2000 Right Ascension of the Total-Band Source
+#   meta: !!omap
+#   - {ucd: pos.eq.ra}
+#   - {precision: E7}
+# - name: dec_b8
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: J2000 Declination of the Total-Band Source
+#   meta: !!omap
+#   - {ucd: pos.eq.dec}
+#   - {precision: E7}
+# - name: radec_b8_error
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Statistical 1-Sigma Error in Total-Band Source Position
+#   meta: !!omap
+#   - {ucd: stat.error;pos;em.X-ray}
+#   - {precision: E5}
+# - name: lii_b8
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: Galactic Longitude of the Total-Band Source
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon;em.X-ray}
+#   - {precision: E7}
+# - name: bii_b8
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: Galactic Latitude of the Total-Band Source
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: E7}
+# - name: ra_b7
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: J2000 Right Ascension of the Hard-Band Source
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;em.X-ray.medium}
+#   - {precision: E7}
+# - name: dec_b7
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: J2000 Declination of the Hard-Band Source
+#   meta: !!omap
+#   - {ucd: pos.eq.dec}
+#   - {precision: E7}
+# - name: radec_b7_error
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Statistical 1-Sigma Error in Hard-Band Source Position
+#   meta: !!omap
+#   - {ucd: stat.error;pos;em.X-ray.medium}
+#   - {precision: E5}
+# - name: lii_b7
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: Galactic Longitude of the Hard-Band Source
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon;em.X-ray.medium}
+#   - {precision: E7}
+# - name: bii_b7
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: Galactic Latitude of the Hard-Band Source
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: E7}
+# - name: ra_b6
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: J2000 Right Ascension of the Soft-Band Source
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;em.X-ray.soft}
+#   - {precision: E7}
+# - name: dec_b6
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: J2000 Declination of the Soft-Band Source
+#   meta: !!omap
+#   - {ucd: pos.eq.dec}
+#   - {precision: E7}
+# - name: radec_b6_error
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Statistical 1-Sigma Error in Soft-Band Source Position
+#   meta: !!omap
+#   - {ucd: stat.error;pos;em.X-ray.soft}
+#   - {precision: E5}
+# - name: lii_b6
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: Galactic Longitude of the Soft-Band Source
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon;em.X-ray.soft}
+#   - {precision: E7}
+# - name: bii_b6
+#   unit: deg
+#   datatype: float64
+#   format: '{:.7g}'
+#   description: Galactic Latitude of the Soft-Band Source
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: E7}
+# - name: val_flag
+#   datatype: string
+#   description: Flag Indicates Source Included in Clean Sample
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: srcname_b8
+#   datatype: string
+#   description: Source Designation Defined in the Total-Band List
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: srcname_b7
+#   datatype: string
+#   description: Source Designation Defined in the Hard-Band List
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: srcname_b6
+#   datatype: string
+#   description: Source Designation Defined in the Soft-Band List
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ximname_b8
+#   datatype: string
+#   description: Name of the Image Containing the Total-Band Detection
+#   meta: !!omap
+#   - {ucd: meta.id;obs.image}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ximname_b7
+#   datatype: string
+#   description: Name of the Image Containing the Hard-Band Detection
+#   meta: !!omap
+#   - {ucd: meta.id;obs.image}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ximname_b6
+#   datatype: string
+#   description: Name of the Image Containing the Soft-Band Detection
+#   meta: !!omap
+#   - {ucd: meta.id;obs.image}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ver_inext
+#   datatype: string
+#   description: Flag Indicates Detection within Extended Source and Is Probably Spurious
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ver_halo
+#   datatype: string
+#   description: Flag Indicates Detection within Halo of Very Bright Source, Probably Spurious
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ver_hibgnd
+#   datatype: string
+#   description: Flag Indicates Detection within High-Background Region and Is Probably Spurious
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ver_nredg
+#   datatype: string
+#   description: Flag Indicates Detection in Consecutive Images, Likely Inaccurate Position
+#   meta: !!omap
+#   - {ucd: meta.code.qual;pos}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ver_psusp
+#   datatype: string
+#   description: Flag Indicates Source Position Likely Inaccurate, Poor Attitude Reconstruction
+#   meta: !!omap
+#   - {ucd: meta.code.qual;pos}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ver_false
+#   datatype: string
+#   description: Flag Indicates Problems Not Included in the Other Flags, e.g. Zero Exposure
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: flag_comment
+#   datatype: string
+#   description: Comment Which Explains Why a Particular Source Flag Has Been Set to True
+#   meta: !!omap
+#   - {ucd: meta.note}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: name
+#   datatype: string
+#   description: Source Designation by Cross-Correlation of Position with Astronomical Catalogs
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: rass_name
+#   datatype: string
+#   description: Designation of the Closest ROSAT All-Sky Survey (RASS) Source
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: id_category
+#   datatype: string
+#   description: Source Type as Determined by Cross-Correlation Process
+#   meta: !!omap
+#   - {ucd: src.class}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: id_resource
+#   datatype: string
+#   description: Astronomical Database or Catalog from Which the Best Match Has Been Selected
+#   meta: !!omap
+#   - {ucd: meta.dataset;meta.table}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: id_offset
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Distance between the Best Match Candidate and Slew Survey Source
+#   meta: !!omap
+#   - {ucd: pos.angDistance}
+#   - {precision: E5}
+# - name: rass_offset
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Distance between the Best Match ROSAT Source and Slew Survey Source
+#   meta: !!omap
+#   - {ucd: pos.angDistance}
+#   - {precision: E5}
+# - name: mode_id
+#   datatype: string
+#   description: Observing Mode of the EPIC-pn Camera
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: image_bg_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.1f}'
+#   description: Peak Background Count Rate in the Source Extraction Image (ct/s)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: F1}
+# - name: subimage_time
+#   unit: d
+#   datatype: float64
+#   description: Start Time of Subimage in Which Source Detected
+#   meta: !!omap
+#   - {ucd: time.start;obs.image}
+# - name: subimage_end_time
+#   unit: d
+#   datatype: float64
+#   description: End Time of Subimage in Which Source Detected
+#   meta: !!omap
+#   - {ucd: time.end;obs.image}
+# - name: ver_optload
+#   datatype: string
+#   description: Flag Indicates Source May Suffer from Optical Loading
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: filtered_counts
+#   unit: ct
+#   datatype: int16
+#   description: Number of Counts Found within 1 Arcmin After Filtering
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray}
+#   - values: {'null': -32768}
+# - name: unfiltered_counts
+#   unit: ct
+#   datatype: int16
+#   description: Number of Counts Found within 1 Arcmin with No Filtering
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray}
+#   - values: {'null': -32768}
+# - name: xmmsl1_name
+#   datatype: string
+#   description: Designation of Source in XMMSL1, If Existing
+#   meta: !!omap
+#   - {ucd: meta.id.cross}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: extras_source_number
+#   datatype: int32
+#   description: Number of Corresponding Source in EXTRaS LTV Catalog
+#   meta: !!omap
+#   - {ucd: meta.id.cross}
+#   - values: {'null': -2147483648}
+# - name: class
+#   datatype: int16
+#   description: Browse Object Classification
+#   meta: !!omap
+#   - {ucd: src.class}
+#   - values: {'null': -32768}
+# - {name: __x_ra_dec, datatype: float64}
+# - {name: __y_ra_dec, datatype: float64}
+# - {name: __z_ra_dec, datatype: float64}
+# meta: !!omap
+# - {description: 'Query result for:
+# 
+#     SELECT TOP 300 * FROM xmmslewcln WHERE CONTAINS(POINT(''ICRS'',ra,dec),CIRCLE(''ICRS'',118.69117410685,16.694621231895,0.016666666666666666))=1'}
+# schema: astropy-2.0
+DataLinkID xmmslew_name obsid sourcenum ra dec radec_error lii bii hr1 hr1_error time end_time scts_b8 scts_b8_error scts_b7 scts_b7_error scts_b6 scts_b6_error x_ima_b8 y_ima_b8 x_ima_b7 y_ima_b7 x_ima_b6 y_ima_b6 ext_b8 ext_b8_error ext_b7 ext_b7_error ext_b6 ext_b6_error det_ml_b8 det_ml_b7 det_ml_b6 ext_ml_b8 ext_ml_b7 ext_ml_b6 bg_map_b8 bg_map_b7 bg_map_b6 exp_map_b8 exp_map_b7 exp_map_b6 flux_b8 flux_b8_error flux_b7 flux_b7_error flux_b6 flux_b6_error count_rate_b8 count_rate_b8_error count_rate_b7 count_rate_b7_error count_rate_b6 count_rate_b6_error ra_b8 dec_b8 radec_b8_error lii_b8 bii_b8 ra_b7 dec_b7 radec_b7_error lii_b7 bii_b7 ra_b6 dec_b6 radec_b6_error lii_b6 bii_b6 val_flag srcname_b8 srcname_b7 srcname_b6 ximname_b8 ximname_b7 ximname_b6 ver_inext ver_halo ver_hibgnd ver_nredg ver_psusp ver_false flag_comment name rass_name id_category id_resource id_offset rass_offset mode_id image_bg_rate subimage_time subimage_end_time ver_optload filtered_counts unfiltered_counts xmmsl1_name extras_source_number class __x_ra_dec __y_ra_dec __z_ra_dec

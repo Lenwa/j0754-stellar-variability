@@ -1,0 +1,27 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: table_name
+#   datatype: string
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: description
+#   datatype: string
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# meta: !!omap
+# - {description: 'Query result for:
+# 
+#     SELECT table_name,description FROM TAP_SCHEMA.tables WHERE table_name LIKE ''%slew%'' OR table_name LIKE ''%vlass%'''}
+# schema: astropy-2.0
+table_name description
+"""xteslew""" """XTE Archived Public Slew Data"""
+"""vlass821p4""" """VLA SDSS Stripe 82 Survey 1.4-GHz Source Catalog"""
+"""ipcslew""" """Einstein Catalog IPC Slew Survey"""
+"""xmmslewegs""" """XMM-Newton Slew Survey Extragalactic Sample"""
+"""xmmslewcln""" """XMM-Newton Slew Survey Clean Source Catalog, v3.1"""
+"""xmmslewful""" """XMM-Newton Slew Survey Full Source Catalog, v3.1"""

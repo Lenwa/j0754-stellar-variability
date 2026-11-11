@@ -1,0 +1,33 @@
+{
+  "name": "erosita_limit_DR1_eRASS1",
+  "url": "https://erosita.mpe.mpg.de/erodat/upperlimit/service",
+  "params": {
+    "ra": 118.69117410685,
+    "dec": 16.694621231895,
+    "band": "024",
+    "dr_survey": "DR1_eRASS1"
+  },
+  "retrieved_utc": "2026-11-11T03:40:47.573285+00:00",
+  "status_code": 200,
+  "url_resolved": "https://erosita.mpe.mpg.de/erodat/upperlimit/service?ra=118.69117410685&dec=16.694621231895&band=024&dr_survey=DR1_eRASS1",
+  "bytes": 336,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/erosita_limit_DR1_eRASS1.native",
+  "sha256": "db2f971eb0829c277865df3bc10b1ac6d299f2b221054a33bd97dc9fe6dc988c",
+  "state": "json_response",
+  "json_keys": [
+    "Count",
+    "Bkg_counts",
+    "Bkg_SourceMap",
+    "Exposure",
+    "UL_B",
+    "UL_S",
+    "Flag_pos",
+    "de_sky",
+    "field",
+    "healpix",
+    "ra",
+    "dec",
+    "band",
+    "dr_survey"
+  ]
+}

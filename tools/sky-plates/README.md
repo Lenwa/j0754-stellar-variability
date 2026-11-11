@@ -1,5 +1,18 @@
 # Historical sky plates
 
+## Public multiwavelength archive inventory
+
+`query_multiwavelength_archives.py` queries GALEX/gPhoton, Swift UVOT, XMM,
+Chandra, eROSITA DR1/DR2, APOGEE DR17/DR19 and VLASS at the fixed J0754 position.
+It preserves native responses, exact parameters, timestamps, error states and
+hashes. Responses and seven small FITS products are included under
+`results/sky-plates-j0754-multiwavelength-20261110`; its report gives the results
+and three-step reproduction commands. `--summarize-cached` reindexes saved
+metadata offline; adding `--assets` retrieves bounded files absent from cache.
+Native gzip bytes are preserved. Source catalogue nulls, off-axis pointing
+entries, coverage and plausible matches remain distinct. No detection or flux
+limit follows from a coverage query alone.
+
 ## Expanded TESS flare search
 
 The maintained source is now this standalone public repository. From its root:

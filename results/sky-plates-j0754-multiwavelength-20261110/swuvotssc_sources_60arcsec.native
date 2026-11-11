@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
+ <RESOURCE type="results">
+  <INFO name="QUERY_STATUS" value="OK">No errors detected in query preprocessing</INFO>
+  <TABLE>
+   <DESCRIPTION>Query result for:&#xA;SELECT TOP 300 * FROM swuvotssc WHERE CONTAINS(POINT(&apos;ICRS&apos;,ra,dec),CIRCLE(&apos;ICRS&apos;,118.69117410685,16.694621231895,0.016666666666666666))=1</DESCRIPTION>
+   <FIELD datatype="char" arraysize="*" name="__row"/>
+   <FIELD datatype="int" ucd="meta.id" name="entry_number" width="8">
+    <DESCRIPTION>Sequential Identification Number for Each Entry in Catalog</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.code" name="obs_sum_number" width="5">
+    <DESCRIPTION>Reference Number in the Observation Table (N_SUMMARY)</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;obs" name="obsid">
+    <DESCRIPTION>Unique Swift Observation Identification</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="num_filters" width="1">
+    <DESCRIPTION>Number of Filters Included in this Observation (NFILT)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.id;src" name="source_number" width="7">
+    <DESCRIPTION>Unique Source Number (SRCNUM)</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;meta.main" name="name">
+    <DESCRIPTION>Source Designation (UVOTSSC1 JHHMMSS.s+DDMMSSa) (IAUNAME)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra;meta.main" precision="F6" name="ra">
+    <DESCRIPTION>Right Ascension</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;pos.eq.ra;meta.main" precision="F3" name="ra_error" width="7">
+    <DESCRIPTION>Right Ascension Error (RA_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec;meta.main" precision="F6" name="dec">
+    <DESCRIPTION>Declination</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;pos.eq.dec;meta.main" precision="F3" name="dec_error" width="7">
+    <DESCRIPTION>Declination Error (DEC_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon" precision="F6" name="lii">
+    <DESCRIPTION>Galactic Longitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="F6" name="bii">
+    <DESCRIPTION>Galactic Latitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance;em.UV.200-300nm" precision="F3" name="uvw2_nn_offset" width="6">
+    <DESCRIPTION>Distance to Closest UVW2 Source (UVW2_SRCDIST)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance" precision="F3" name="uvm2_nn_offset" width="6">
+    <DESCRIPTION>Distance to Closest UVM2 Source (UVM2_SRCDIST)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance" precision="F3" name="uvw1_nn_offset" width="6">
+    <DESCRIPTION>Distance to Closest UVW1 Source (UVW1_SRCDIST)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance" precision="F3" name="u_nn_offset" width="6">
+    <DESCRIPTION>Distance to Closest U Source (U_SRCDIST)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance" precision="F3" name="b_nn_offset" width="6">
+    <DESCRIPTION>Distance to Closest B Source (B_SRCDIST)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance" precision="F3" name="v_nn_offset" width="6">
+    <DESCRIPTION>Distance to Closest V Source (V_SRCDIST)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="num_individual_obs" width="3">
+    <DESCRIPTION>Number of Individual Observations (N_OBSID)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phot;em.UV.200-300nm" precision="F1" name="uvw2_mag_significance" width="6">
+    <DESCRIPTION>Significance (S/N) in UVW2 (UVW2_SIGNIF)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phot;em.UV.200-300nm" precision="F1" name="uvm2_mag_significance" width="6">
+    <DESCRIPTION>Significance (S/N) in UVM2 (UVM2_SIGNIF)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phot;em.UV.200-300nm" precision="F1" name="uvw1_mag_significance" width="6">
+    <DESCRIPTION>Significance (S/N) in UVW1 (UVW1_SIGNIF)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phot;em.opt.U" precision="F1" name="umag_significance" width="6">
+    <DESCRIPTION>Significance (S/N) in U (U_SIGNIF)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phot;em.opt.B" precision="F1" name="bmag_significance" width="6">
+    <DESCRIPTION>Significance (S/N) in B (B_SIGNIF)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phot;em.opt.V" precision="F1" name="vmag_significance" width="6">
+    <DESCRIPTION>Significance (S/N) in V (V_SIGNIF)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F4" name="uvw2_mag" width="7">
+    <DESCRIPTION>UVOT/UVW2 Vega Magnitude (UVW2_VEGAMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.UV.200-300nm" precision="F4" name="uvw2_mag_error" width="6">
+    <DESCRIPTION>Error in UVW2 Magnitude (UVW2_MAG_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F4" name="uvm2_mag" width="7">
+    <DESCRIPTION>UVOT/UVM2 Vega Magnitude (UVM2_VEGAMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.UV.200-300nm" precision="F4" name="uvm2_mag_error" width="6">
+    <DESCRIPTION>Error in UVM2 Magnitude (UVM2_MAG_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F4" name="uvw1_mag" width="7">
+    <DESCRIPTION>UVOT/UVW1 Vega Magnitude (UVW1_VEGAMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.UV.200-300nm" precision="F4" name="uvw1_mag_error" width="6">
+    <DESCRIPTION>Error in UVW2 Magnitude (UVW1_MAG_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.U" precision="F4" name="umag" width="7">
+    <DESCRIPTION>UVOT/U Vega Magnitude (U_VEGAMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.opt.U" precision="F4" name="umag_error" width="6">
+    <DESCRIPTION>Error in U Magnitude (U_MAG_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.B" precision="F4" name="bmag" width="7">
+    <DESCRIPTION>UVOT/N Vega Magnitude (B_VEGAMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.opt.B" precision="F4" name="bmag_error" width="6">
+    <DESCRIPTION>Error in B Magnitude (B_MAG_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.V" precision="F4" name="vmag" width="7">
+    <DESCRIPTION>UVOT/V Vega Magnitude (V_VEGAMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.opt.V" precision="F4" name="vmag_error" width="6">
+    <DESCRIPTION>Error in V Magnitude (V_MAG_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F4" name="uvw2_ab_mag" width="7">
+    <DESCRIPTION>UVOT/UVW2 AB Magnitude (UVW2_ABMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F4" name="uvm2_ab_mag" width="7">
+    <DESCRIPTION>UVOT/UVM2 AB Magnitude (UVM2_ABMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.UV.200-300nm" precision="F4" name="uvw1_ab_mag" width="7">
+    <DESCRIPTION>UVOT/UVW1 AB Magnitude (UVW1_ABMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.U" precision="F4" name="u_ab_mag" width="7">
+    <DESCRIPTION>UVOT/U AB Magnitude (U_ABMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.B" precision="F4" name="b_ab_mag" width="7">
+    <DESCRIPTION>UVOT/B AB Magnitude (B_ABMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.V" precision="F4" name="v_ab_mag" width="7">
+    <DESCRIPTION>UVOT/V AB Magnitude (V_ABMAG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="phot.flux.density;em.UV.200-300nm" precision="E5" name="uvw2_flux">
+    <DESCRIPTION>UVOT/UVW2 Flux (UVW2_FLUX)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="stat.error;phot.flux.density;em.UV.200-300nm" precision="E3" name="uvw2_flux_error">
+    <DESCRIPTION>Error in UVW2 Flux (UVW2_FLUX_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="phot.flux.density;em.UV.200-300nm" precision="E5" name="uvm2_flux">
+    <DESCRIPTION>UVOT/UVM2 Flux (UVM2_FLUX)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="stat.error;phot.flux.density;em.UV.200-300nm" precision="E3" name="uvm2_flux_error">
+    <DESCRIPTION>Error in UVM2 Flux (UVM2_FLUX_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="phot.flux.density;em.UV.200-300nm" precision="E5" name="uvw1_flux">
+    <DESCRIPTION>UVOT/UVW1 Flux (UVW1_FLUX)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="stat.error;phot.flux.density;em.UV.200-300nm" precision="E3" name="uvw1_flux_error">
+    <DESCRIPTION>Error in UVW1 Flux (UVW1_FLUX_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="phot.flux.density;em.opt.U" precision="E5" name="u_flux">
+    <DESCRIPTION>UVOT/U Flux (U_FLUX)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="stat.error;phot.flux.density;em.opt.U" precision="E3" name="u_flux_error">
+    <DESCRIPTION>Error in U Flux (U_FLUX_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="phot.flux.density;em.opt.B" precision="E5" name="b_flux">
+    <DESCRIPTION>UVOT/B Flux (B_FLUX)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="stat.error;phot.flux.density;em.opt.B" precision="E3" name="b_flux_error">
+    <DESCRIPTION>Error in B Flux (B_FLUX_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="phot.flux.density;em.opt.V" precision="E5" name="v_flux">
+    <DESCRIPTION>UVOT/V Flux (V_FLUX)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s/Angstrom" datatype="double" ucd="stat.error;phot.flux.density;em.opt.V" precision="E3" name="v_flux_error">
+    <DESCRIPTION>Error in V Flux (V_FLUX_ERR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.smajAxis;em.UV.200-300nm" precision="F3" name="uvw2_major_axis" width="6">
+    <DESCRIPTION>Major Axis in UVW2 (UVW2_MAJOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.smajAxis;em.UV.200-300nm" precision="F3" name="uvm2_major_axis" width="6">
+    <DESCRIPTION>Major Axis in UVM2 (UVM2_MAJOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.smajAxis;em.UV.200-300nm" precision="F3" name="uvw1_major_axis" width="6">
+    <DESCRIPTION>Major Axis in UVW1 (UVW1_MAJOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.smajAxis;em.opt.U" precision="F3" name="u_major_axis" width="6">
+    <DESCRIPTION>Major Axis in U (U_MAJOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.smajAxis;em.opt.B" precision="F3" name="b_major_axis" width="6">
+    <DESCRIPTION>Major Axis in B (B_MAJOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.smajAxis;em.opt.V" precision="F3" name="v_major_axis" width="6">
+    <DESCRIPTION>Major Axis in V (V_MAJOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.sminAxis;em.UV.200-300nm" precision="F3" name="uvw2_minor_axis" width="6">
+    <DESCRIPTION>Minor Axis in UVW2 (UVW2_MINOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.sminAxis;em.UV.200-300nm" precision="F3" name="uvm2_minor_axis" width="6">
+    <DESCRIPTION>Minor Axis in UVM2 (UVM2_MINOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.sminAxis;em.UV.200-300nm" precision="F3" name="uvw1_minor_axis" width="6">
+    <DESCRIPTION>Minor Axis in UVW1 (UVW1_MINOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.sminAxis;em.opt.U" precision="F3" name="u_minor_axis" width="6">
+    <DESCRIPTION>Minor Axis in U (U_MINOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.sminAxis;em.opt.B" precision="F3" name="b_minor_axis" width="6">
+    <DESCRIPTION>Minor Axis in B (B_MINOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.sminAxis;em.opt.V" precision="F3" name="v_minor_axis" width="6">
+    <DESCRIPTION>Minor Axis in V (V_MINOR)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.posAng;em.UV.200-300nm" precision="F2" name="uvw2_position_angle" width="5">
+    <DESCRIPTION>Position Angle of Major Axis in UVW2 (UVW2_POSANG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.posAng;em.UV.200-300nm" precision="F2" name="uvm2_position_angle" width="5">
+    <DESCRIPTION>Position Angle of Major Axis in UVM2 (UVM2_POSANG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.posAng;em.UV.200-300nm" precision="F2" name="uvw1_position_angle" width="5">
+    <DESCRIPTION>Position Angle of Major Axis in UVW1 (UVW1_POSANG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.posAng;em.opt.U" precision="F2" name="u_position_angle" width="5">
+    <DESCRIPTION>Position Angle of Major Axis in U (U_POSANG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.posAng;em.opt.B" precision="F2" name="b_position_angle" width="5">
+    <DESCRIPTION>Position Angle of Major Axis in B (B_POSANG)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.posAng;em.opt.V" precision="F2" name="v_position_angle" width="5">
+    <DESCRIPTION>Position Angle of Major Axis in V (V_POSANG)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code;phys.angSize;em.UV.200-300nm" name="uvw2_extended_flag" width="1">
+    <DESCRIPTION>Extended Flag in UVW2 (UVW2_EXTENDED)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code;phys.angSize;em.UV.200-300nm" name="uvm2_extended_flag" width="1">
+    <DESCRIPTION>Extended Flag in UVW2 (UVM2_EXTENDED)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code;phys.angSize;em.UV.200-300nm" name="uvw1_extended_flag" width="1">
+    <DESCRIPTION>Extended Flag in UVW2 (UVW1_EXTENDED)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code;phys.angSize;em.opt.U" name="u_extended_flag" width="1">
+    <DESCRIPTION>Extended Flag in UVW2 (U_EXTENDED)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code;phys.angSize;em.opt.B" name="b_extended_flag" width="1">
+    <DESCRIPTION>Extended Flag in UVW2 (B_EXTENDED)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code;phys.angSize;em.opt.V" name="v_extended_flag" width="1">
+    <DESCRIPTION>Extended Flag in UVW2 (V_EXTENDED)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code.qual;em.UV.200-300nm" name="uvw2_quality_flags" width="3">
+    <DESCRIPTION>Quality Flags in UVW2 (UVW2_QUALITY_FLAG)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code.qual;em.UV.200-300nm" name="uvm2_quality_flags" width="3">
+    <DESCRIPTION>Quality Flags in UVM2 (UVM2_QUALITY_FLAG)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code.qual;em.UV.200-300nm" name="uvw1_quality_flags" width="3">
+    <DESCRIPTION>Quality Flags in UVW1 (UVW1_QUALITY_FLAG)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code.qual;em.opt.U" name="u_quality_flags" width="3">
+    <DESCRIPTION>Quality Flags in U (U_QUALITY_FLAG)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code.qual;em.opt.B" name="b_quality_flags" width="3">
+    <DESCRIPTION>Quality Flags in B (B_QUALITY_FLAG)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.code.qual;em.opt.V" name="v_quality_flags" width="3">
+    <DESCRIPTION>Quality Flags in V (V_QUALITY_FLAG)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="double" name="__x_ra_dec"/>
+   <FIELD datatype="double" name="__y_ra_dec"/>
+   <FIELD datatype="double" name="__z_ra_dec"/>
+   <DATA>
+    <BINARY>
+     <STREAM encoding="base64">
+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
+1PlWfr/dbjiQXuUFP9Jipj9d438=
+     </STREAM>
+    </BINARY>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>

@@ -1,0 +1,169 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: __row
+#   datatype: string
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: DataLinkID
+#   datatype: int32
+#   description: Observation Identifier
+#   meta: !!omap
+#   - {ucd: meta.id;obs}
+#   - {width: 5}
+#   - values: {'null': -2147483648}
+# - name: status
+#   datatype: string
+#   description: Status of Observation
+#   meta: !!omap
+#   - {ucd: meta.code.status;obs}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: name
+#   datatype: string
+#   description: Target Designation
+#   meta: !!omap
+#   - {ucd: meta.id;meta.main}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: ra
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Right Ascension
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;meta.main}
+#   - {precision: F5}
+# - name: dec
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Declination
+#   meta: !!omap
+#   - {ucd: pos.eq.dec;meta.main}
+#   - {precision: F5}
+# - name: lii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Galactic Longitude
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon}
+#   - {precision: F5}
+# - name: bii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Galactic Latitude
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: F5}
+# - name: time
+#   unit: d
+#   datatype: float64
+#   description: Start Time of Observation (UTC)
+#   meta: !!omap
+#   - {ucd: time.start;obs}
+# - name: detector
+#   datatype: string
+#   description: Detector
+#   meta: !!omap
+#   - {ucd: instr;instr.det}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: grating
+#   datatype: string
+#   description: Grating Setting
+#   meta: !!omap
+#   - {ucd: instr;instr.det}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: exposure
+#   unit: s
+#   datatype: float64
+#   format: '{:.0f}'
+#   description: Actual Exposure Time If Observed, Otherwise the Approved Exposure (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - {precision: F0}
+# - name: type
+#   datatype: string
+#   description: Type of Observation (GO,GTO,CAL,TOO,DDT)
+#   meta: !!omap
+#   - {ucd: meta.note;obs}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pi
+#   datatype: string
+#   description: PI of Observation
+#   meta: !!omap
+#   - {ucd: meta.id.PI}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: cycle
+#   datatype: int16
+#   description: AO Number (0=calibration phase)
+#   meta: !!omap
+#   - {width: 1}
+#   - values: {'null': -32768}
+# - name: proposal
+#   datatype: string
+#   description: Proposal Number
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: public_date
+#   unit: d
+#   datatype: int32
+#   description: Public Date
+#   meta: !!omap
+#   - {ucd: time.release}
+#   - values: {'null': -2147483648}
+# - name: sequence_number
+#   datatype: int32
+#   description: Sequence Number
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {width: 6}
+#   - values: {'null': -2147483648}
+# - name: data_mode
+#   datatype: string
+#   description: Operational Mode of the Detector
+#   meta: !!omap
+#   - {ucd: instr.setup;instr.det}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: category
+#   datatype: string
+#   description: Subject Category
+#   meta: !!omap
+#   - {ucd: src.class}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: class
+#   datatype: int16
+#   description: Browse Object Classification
+#   meta: !!omap
+#   - {ucd: src.class}
+#   - values: {'null': -32768}
+# - {name: __x_ra_dec, datatype: float64}
+# - {name: __y_ra_dec, datatype: float64}
+# - {name: __z_ra_dec, datatype: float64}
+# meta: !!omap
+# - {description: 'Query result for:
+# 
+#     SELECT TOP 300 * FROM chanmaster WHERE CONTAINS(POINT(''ICRS'',ra,dec),CIRCLE(''ICRS'',118.69117410685,16.694621231895,1.0))=1'}
+# schema: astropy-2.0
+__row DataLinkID status name ra dec lii bii time detector grating exposure type pi cycle proposal public_date sequence_number data_mode category class __x_ra_dec __y_ra_dec __z_ra_dec
+"""17659""" 29193 """archived""" """SDSSJ075255.22+170100.4""" 118.2301 17.01678 204.00157321 21.03991378 60326.6036574074 """ACIS-S""" """NONE""" 11880.0 """CCT""" """Chilingarian""" 20 """20701072""" 60327 705158 """TE_0057A""" """ACTIVE GALAXIES AND QUASARS""" 7000 0.842481684847952 -0.452304717140715 0.292651761566566

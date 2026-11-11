@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
+ <RESOURCE type="results">
+  <INFO name="QUERY_STATUS" value="OK">No errors detected in query preprocessing</INFO>
+  <TABLE>
+   <DESCRIPTION>Query result for:&#xA;SELECT TOP 300 * FROM chanmaster WHERE CONTAINS(POINT(&apos;ICRS&apos;,ra,dec),CIRCLE(&apos;ICRS&apos;,118.69117410685,16.694621231895,1.0))=1</DESCRIPTION>
+   <FIELD datatype="char" arraysize="*" name="__row"/>
+   <FIELD datatype="int" ucd="meta.id;obs" name="obsid" width="5" ID="DataLinkID">
+    <DESCRIPTION>Observation Identifier</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.status;obs" name="status">
+    <DESCRIPTION>Status of Observation</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;meta.main" name="name">
+    <DESCRIPTION>Target Designation</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra;meta.main" precision="F5" name="ra">
+    <DESCRIPTION>Right Ascension</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec;meta.main" precision="F5" name="dec">
+    <DESCRIPTION>Declination</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon" precision="F5" name="lii">
+    <DESCRIPTION>Galactic Longitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="F5" name="bii">
+    <DESCRIPTION>Galactic Latitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="double" ucd="time.start;obs" name="time">
+    <DESCRIPTION>Start Time of Observation (UTC)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr;instr.det" name="detector">
+    <DESCRIPTION>Detector</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr;instr.det" name="grating">
+    <DESCRIPTION>Grating Setting</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="F0" name="exposure">
+    <DESCRIPTION>Actual Exposure Time If Observed, Otherwise the Approved Exposure (s)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.note;obs" name="type">
+    <DESCRIPTION>Type of Observation (GO,GTO,CAL,TOO,DDT)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id.PI" name="pi">
+    <DESCRIPTION>PI of Observation</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" name="cycle" width="1">
+    <DESCRIPTION>AO Number (0=calibration phase)</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" name="proposal">
+    <DESCRIPTION>Proposal Number</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="int" ucd="time.release" name="public_date">
+    <DESCRIPTION>Public Date</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.id" name="sequence_number" width="6">
+    <DESCRIPTION>Sequence Number</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr.setup;instr.det" name="data_mode">
+    <DESCRIPTION>Operational Mode of the Detector</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="src.class" name="category">
+    <DESCRIPTION>Subject Category</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.class" name="class">
+    <DESCRIPTION>Browse Object Classification</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="double" name="__x_ra_dec"/>
+   <FIELD datatype="double" name="__y_ra_dec"/>
+   <FIELD datatype="double" name="__z_ra_dec"/>
+   <DATA>
+    <BINARY>
+     <STREAM encoding="base64">
+AAAABTE3NjU5AAByCQAAAAhhcmNoaXZlZAAAABdTRFNTSjA3NTI1NS4yMisxNzAx
+MDAuNEBdjrn1WbPQQDEES7GvOhVAaYAM40Kv/kA1CjfKG8J+QO1001EpVtkA
+AAAGQUNJUy1TAAAABE5PTkVAxzQAAAAAAAAAAANDQ1QAAAAMQ2hpbGluZ2Fy
+aWFuABQAAAAIMjA3MDEwNzIAAOunAArChgAAAAhURV8wMDU3QQAAABtBQ1RJ
+VkUgR0FMQVhJRVMgQU5EIFFVQVNBUlMbWD/q9ZwmfNRxv9zyj3v8iac/0rrO
+dELkaA==
+     </STREAM>
+    </BINARY>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+ <RESOURCE utype="adhoc:service" type="meta">
+  <PARAM datatype="char" arraysize="*" name="standardID" value="ivo://ivoa.net/std/DataLink#links-1.1"/>
+  <PARAM datatype="char" arraysize="*" name="accessURL" value="https://heasarc.gsfc.nasa.gov/xamin/vo/datalink/chanmaster?datalink_key&amp;"/>
+  <GROUP name="inputParams">
+   <PARAM ref="DataLinkID" datatype="char" arraysize="*" name="id" value=""/>
+  </GROUP>
+ </RESOURCE>
+</VOTABLE>

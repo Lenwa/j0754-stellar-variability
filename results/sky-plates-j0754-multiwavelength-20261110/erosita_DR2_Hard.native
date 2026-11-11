@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!DOCTYPE VOTABLE SYSTEM "http://us-vo.org/xml/VOTable.dtd">
+<VOTABLE version="1.0">
+  <DEFINITIONS>
+    <COOSYS system="ICRS" />
+  </DEFINITIONS>
+  <RESOURCE ID="TODO-12345">
+    <DESCRIPTION>
+      eROSITA catalogue search.
+      For problems visit https://erosita-forum.mpe.mpg.de/
+    </DESCRIPTION>
+
+    <TABLE ID="DR2_Hard">
+      <DESCRIPTION>eROSITA DR2 eRASS:3 Hard Catalogue</DESCRIPTION>
+      <FIELD name="iauname" datatype="char" arraysize="*" ucd="ID_MAIN"><DESCRIPTION>Official IAU name of source</DESCRIPTION></FIELD>
+<FIELD name="detuid" datatype="char" arraysize="*"><DESCRIPTION>Unique detection ID</DESCRIPTION></FIELD>
+<FIELD name="skytile" datatype="char" arraysize="*"><DESCRIPTION>Sky tile ID</DESCRIPTION></FIELD>
+<FIELD name="id_src" datatype="int"><DESCRIPTION>Source ID in each sky tile</DESCRIPTION></FIELD>
+<FIELD name="uid" datatype="long"><DESCRIPTION>Integer unique detection ID</DESCRIPTION></FIELD>
+<FIELD name="uid_5xmm" datatype="long"><DESCRIPTION>Unknown</DESCRIPTION></FIELD>
+<FIELD name="uid_2rxs" datatype="long"><DESCRIPTION>Unknown</DESCRIPTION></FIELD>
+<FIELD name="uid_csc" datatype="char" arraysize="*"><DESCRIPTION>Unknown</DESCRIPTION></FIELD>
+<FIELD name="flag_csc" datatype="long"><DESCRIPTION>Unknown</DESCRIPTION></FIELD>
+<FIELD name="uid_dr1hard" datatype="long"><DESCRIPTION>Unknown</DESCRIPTION></FIELD>
+<FIELD name="uid_main" datatype="long"><DESCRIPTION>Unknown</DESCRIPTION></FIELD>
+<FIELD name="id_cluster" datatype="int"><DESCRIPTION>Group ID of simultaneously fitted sources</DESCRIPTION></FIELD>
+<FIELD name="ra" datatype="double" unit="deg" ucd="POS_EQ_RA_MAIN"><DESCRIPTION>Right ascension (ICRS), corrected</DESCRIPTION></FIELD>
+<FIELD name="dec" datatype="double" unit="deg" ucd="POS_EQ_DEC_MAIN"><DESCRIPTION>Declination (ICRS), corrected</DESCRIPTION></FIELD>
+<FIELD name="ra_lowerr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma RA lower bound</DESCRIPTION></FIELD>
+<FIELD name="ra_uperr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma RA upper bound</DESCRIPTION></FIELD>
+<FIELD name="dec_lowerr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma DEC lower bound</DESCRIPTION></FIELD>
+<FIELD name="dec_uperr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma DEC upper bound</DESCRIPTION></FIELD>
+<FIELD name="pos_err" datatype="float"><DESCRIPTION>Combined position error, from PSF fitting</DESCRIPTION></FIELD>
+<FIELD name="radec_err" datatype="float"><DESCRIPTION>1-sigma position uncertainty</DESCRIPTION></FIELD>
+<FIELD name="ra_raw" datatype="double" unit="deg"><DESCRIPTION>Right ascension (ICRS), uncorrected</DESCRIPTION></FIELD>
+<FIELD name="dec_raw" datatype="double" unit="deg"><DESCRIPTION>Declination (ICRS), uncorrected</DESCRIPTION></FIELD>
+<FIELD name="lii" datatype="double" unit="deg"><DESCRIPTION>Galactic longitude</DESCRIPTION></FIELD>
+<FIELD name="bii" datatype="double" unit="deg"><DESCRIPTION>Galactic latitude</DESCRIPTION></FIELD>
+<FIELD name="elon" datatype="double" unit="deg"><DESCRIPTION>Ecliptic longitude</DESCRIPTION></FIELD>
+<FIELD name="elat" datatype="double" unit="deg"><DESCRIPTION>Ecliptic latitude</DESCRIPTION></FIELD>
+<FIELD name="ext" datatype="float" unit="arcsec"><DESCRIPTION>Source extent parameter</DESCRIPTION></FIELD>
+<FIELD name="ext_err" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma error on EXT</DESCRIPTION></FIELD>
+<FIELD name="ext_lowerr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma EXT lower bound</DESCRIPTION></FIELD>
+<FIELD name="ext_uperr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma EXT upper bound</DESCRIPTION></FIELD>
+<FIELD name="ext_like" datatype="float"><DESCRIPTION>Extent likelihood</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_0" datatype="float" unit="count"><DESCRIPTION>Source net counts (band 0)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_0" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_0</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_0" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band 0)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_0" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_0</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_0" datatype="float" unit="erg.s**-1.cm**-2"><DESCRIPTION>Source flux (band 0)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_0" datatype="float" unit="erg.s**-1.cm**-2"><DESCRIPTION>1-sigma error on ML_FLUX_0</DESCRIPTION></FIELD>
+<FIELD name="det_like_0" datatype="float"><DESCRIPTION>Detection likelihood (band 0)</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_0" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band 0)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_1" datatype="float" unit="count"><DESCRIPTION>Source net counts (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_CTS_1</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_CTS_1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_1" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_1" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_1</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_1" datatype="float" unit="erg.s**-1.cm**-2"><DESCRIPTION>Source flux (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_1" datatype="double" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_1</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_1" datatype="double" unit="count.s**-1"><DESCRIPTION>1-sigma ML_FLUX_1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_1" datatype="float" unit="erg.s**-1.cm**-2"><DESCRIPTION>1-sigma ML_FLUX_1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="det_like_1" datatype="float"><DESCRIPTION>Detection likelihood (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_1" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_1" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_1" datatype="float"><DESCRIPTION>Encircled energy fraction (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_1" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_1" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_1" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_1" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_1" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_1) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_2" datatype="float" unit="count"><DESCRIPTION>Source net counts (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_2" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_CTS_2</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_2" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_CTS_2 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_2" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_2 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_2" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_2" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_2</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_2" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_2 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_2" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_2 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_2" datatype="float" unit="erg.s**-1.cm**-2"><DESCRIPTION>Source flux (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_2" datatype="double" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_2</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_2" datatype="double" unit="count.s**-1"><DESCRIPTION>1-sigma ML_FLUX_2 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_2" datatype="float" unit="erg.s**-1.cm**-2"><DESCRIPTION>1-sigma ML_FLUX_2 upper bound</DESCRIPTION></FIELD>
+<FIELD name="det_like_2" datatype="float"><DESCRIPTION>Detection likelihood (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_2" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_2" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_2" datatype="float"><DESCRIPTION>Encircled energy fraction (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_2" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_2" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_2" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band 2)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_2" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band 2)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_2" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_2) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_3" datatype="float" unit="count"><DESCRIPTION>Source net counts (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_3" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_CTS_3</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_3" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_CTS_3 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_3" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_3 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_3" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_3" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_3</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_3" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_3 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_3" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_3 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_3" datatype="float" unit="erg.s**-1.cm**-2"><DESCRIPTION>Source flux (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_3" datatype="double" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_3</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_3" datatype="double" unit="count.s**-1"><DESCRIPTION>1-sigma ML_FLUX_3 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_3" datatype="float" unit="erg.s**-1.cm**-2"><DESCRIPTION>1-sigma ML_FLUX_3 upper bound</DESCRIPTION></FIELD>
+<FIELD name="det_like_3" datatype="float"><DESCRIPTION>Detection likelihood (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_3" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_3" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_3" datatype="float"><DESCRIPTION>Encircled energy fraction (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_3" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_3" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_3" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band 3)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_3" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band 3)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_3" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_3) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_snr" datatype="unsignedByte"><DESCRIPTION>Source may lie within an overdense region near a supernova remnant</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_bps" datatype="unsignedByte"><DESCRIPTION>Source may lie within an overdense region near a bright point source</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_scl" datatype="unsignedByte"><DESCRIPTION>Source may lie within an overdense region near a stellar cluster</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_lga" datatype="unsignedByte"><DESCRIPTION>Source may lie within an overdense region near a local large galaxy</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_gc_cons" datatype="unsignedByte"><DESCRIPTION>Source may lie within an overdense region near a galaxy cluster</DESCRIPTION></FIELD>
+<FIELD name="flag_no_radec_err" datatype="unsignedByte"><DESCRIPTION>Source contained no RA_DEC_ERR in the pre-processed version of the catalogue</DESCRIPTION></FIELD>
+<FIELD name="flag_no_ext_err" datatype="unsignedByte"><DESCRIPTION>Source contained no ML_CTS_0_ERR in the pre-processed version of the catalogue</DESCRIPTION></FIELD>
+<FIELD name="flag_no_cts_err" datatype="unsignedByte"><DESCRIPTION>Source contained no EXT_ERR in the pre-processed version of the catalogue</DESCRIPTION></FIELD>
+<FIELD name="flag_opt" datatype="unsignedByte"><DESCRIPTION>Unknown</DESCRIPTION></FIELD>
+      <DATA>
+        <TABLEDATA>
+        
+        </TABLEDATA>
+      </DATA>
+    </TABLE>
+
+  </RESOURCE>
+</VOTABLE>

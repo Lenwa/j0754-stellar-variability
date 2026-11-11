@@ -1,5 +1,14 @@
 # Public release audit
 
+## Seven-archive inventory follow-up, 10 November 2026
+
+The public query responses, 460 GALEX aperture photon events and seven small
+GALEX/Swift/VLASS FITS products were added with exact retrieval receipts. All
+154 tests pass. Gitleaks reports zero findings; private local-account path and
+personal-email pattern checks found no matches. Radio cutout WCS positions
+place the target inside all three finite image arrays. These checks verify
+data access and packaging, not a radio detection or eROSITA association.
+
 ## Expanded flare-search follow-up, 10 November 2026
 
 The new source, search products and five public MAST pixel cutouts were checked

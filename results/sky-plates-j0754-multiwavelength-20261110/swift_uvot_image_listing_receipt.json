@@ -1,0 +1,13 @@
+{
+  "name": "swift_uvot_image_listing",
+  "url": "https://heasarc.gsfc.nasa.gov/FTP/swift/data/obs/2009_12/00031554001/uvot/image/",
+  "params": {},
+  "retrieved_utc": "2026-11-11T03:42:53.993451+00:00",
+  "status_code": 200,
+  "url_resolved": "https://heasarc.gsfc.nasa.gov/FTP/swift/data/obs/2009_12/00031554001/uvot/image/",
+  "bytes": 1136,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/swift_uvot_image_listing.native",
+  "sha256": "47fe8f84adbd1cfed497d9a20046d3385acb2da4cab227ad82e0e24a53e46e6e",
+  "state": "html_response_not_query_result",
+  "preview": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<html>\n <head>\n  <title>Index of /FTP/swift/data/obs/2009_12/00031554001/uvot/image</title>\n </head>\n <body>\n<h1>Index of /FTP/swift/data/obs/2009_12/00031554001/uvot/image</h1>\n<pre><img src=\"/"
+}

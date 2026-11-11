@@ -1,0 +1,17 @@
+{
+  "name": "apogee_dr17",
+  "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch",
+  "params": {
+    "cmd": "SELECT TOP 20 * FROM apogeeStar WHERE ra BETWEEN 118.68817410685 AND 118.69417410685 AND dec BETWEEN 16.691621231895 AND 16.697621231895",
+    "format": "json"
+  },
+  "retrieved_utc": "2026-11-11T03:40:48.777295+00:00",
+  "status_code": 200,
+  "url_resolved": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+TOP+20+%2A+FROM+apogeeStar+WHERE+ra+BETWEEN+118.68817410685+AND+118.69417410685+AND+dec+BETWEEN+16.691621231895+AND+16.697621231895&format=json",
+  "bytes": 296,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/apogee_dr17.native",
+  "sha256": "bcbb75292c38cf64bf13380cbff37ddd960d6f4cbcf92cce3a553041b9e128bc",
+  "state": "json_response",
+  "json_keys": null,
+  "rows": 0
+}

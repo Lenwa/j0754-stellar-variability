@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<!DOCTYPE VOTABLE SYSTEM "http://us-vo.org/xml/VOTable.dtd">
+<VOTABLE version="1.0">
+  <DEFINITIONS>
+    <COOSYS system="ICRS" />
+  </DEFINITIONS>
+  <RESOURCE ID="TODO-12345">
+    <DESCRIPTION>
+      eROSITA catalogue search.
+      For problems visit https://erosita-forum.mpe.mpg.de/
+    </DESCRIPTION>
+
+    <TABLE ID="DR1_Main">
+      <DESCRIPTION>eROSITA DR1 eRASS1 Main Catalogue</DESCRIPTION>
+      <FIELD name="iauname" datatype="char" arraysize="*" ucd="ID_MAIN"><DESCRIPTION>Official IAU name of source</DESCRIPTION></FIELD>
+<FIELD name="detuid" datatype="char" arraysize="*"><DESCRIPTION>Unique detection ID</DESCRIPTION></FIELD>
+<FIELD name="skytile" datatype="int"><DESCRIPTION>Sky tile ID</DESCRIPTION></FIELD>
+<FIELD name="id_src" datatype="int"><DESCRIPTION>Source ID in each sky tile</DESCRIPTION></FIELD>
+<FIELD name="uid" datatype="long"><DESCRIPTION>Integer unique detection ID</DESCRIPTION></FIELD>
+<FIELD name="uid_hard" datatype="long"><DESCRIPTION>Hard catalog UID</DESCRIPTION></FIELD>
+<FIELD name="id_cluster" datatype="int"><DESCRIPTION>Group ID of simultaneously fitted sources</DESCRIPTION></FIELD>
+<FIELD name="ra" datatype="double" unit="deg" ucd="POS_EQ_RA_MAIN"><DESCRIPTION>Right ascension (ICRS), corrected</DESCRIPTION></FIELD>
+<FIELD name="dec" datatype="double" unit="deg" ucd="POS_EQ_DEC_MAIN"><DESCRIPTION>Declination (ICRS), corrected</DESCRIPTION></FIELD>
+<FIELD name="ra_raw" datatype="double" unit="deg"><DESCRIPTION>Right ascension (ICRS), uncorrected</DESCRIPTION></FIELD>
+<FIELD name="dec_raw" datatype="double" unit="deg"><DESCRIPTION>Declination (ICRS), uncorrected</DESCRIPTION></FIELD>
+<FIELD name="ra_lowerr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma RA lower bound</DESCRIPTION></FIELD>
+<FIELD name="ra_uperr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma RA upper bound</DESCRIPTION></FIELD>
+<FIELD name="dec_lowerr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma DEC lower bound</DESCRIPTION></FIELD>
+<FIELD name="dec_uperr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma DEC upper bound</DESCRIPTION></FIELD>
+<FIELD name="pos_err" datatype="float"><DESCRIPTION>Combined position error, from PSF fitting</DESCRIPTION></FIELD>
+<FIELD name="radec_err" datatype="float"><DESCRIPTION>1-sigma position uncertainty</DESCRIPTION></FIELD>
+<FIELD name="lii" datatype="double" unit="deg"><DESCRIPTION>Galactic longitude</DESCRIPTION></FIELD>
+<FIELD name="bii" datatype="double" unit="deg"><DESCRIPTION>Galactic latitude</DESCRIPTION></FIELD>
+<FIELD name="elon" datatype="double" unit="deg"><DESCRIPTION>Ecliptic longitude</DESCRIPTION></FIELD>
+<FIELD name="elat" datatype="double" unit="deg"><DESCRIPTION>Ecliptic latitude</DESCRIPTION></FIELD>
+<FIELD name="mjd" datatype="float" unit="d"><DESCRIPTION>Epoch of the observation of the source nearest to the optical axis of the telescope</DESCRIPTION></FIELD>
+<FIELD name="mjd_min" datatype="float" unit="d"><DESCRIPTION>Epoch of the first observation of a source</DESCRIPTION></FIELD>
+<FIELD name="mjd_max" datatype="float" unit="d"><DESCRIPTION>Epoch of the last observation of a source</DESCRIPTION></FIELD>
+<FIELD name="ext" datatype="float" unit="arcsec"><DESCRIPTION>Source extent parameter</DESCRIPTION></FIELD>
+<FIELD name="ext_err" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma error on EXT</DESCRIPTION></FIELD>
+<FIELD name="ext_lowerr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma EXT lower bound</DESCRIPTION></FIELD>
+<FIELD name="ext_uperr" datatype="float" unit="arcsec"><DESCRIPTION>1-sigma EXT upper bound</DESCRIPTION></FIELD>
+<FIELD name="ext_like" datatype="float"><DESCRIPTION>Extent likelihood</DESCRIPTION></FIELD>
+<FIELD name="det_like_0" datatype="float"><DESCRIPTION>Detection likelihood (band 0)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_1" datatype="float" unit="count"><DESCRIPTION>Source net counts (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_1" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_1</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_1" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_1" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_1" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_1</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_1" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_1" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_1</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_1" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_1" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_1" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_1" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_1" datatype="float"><DESCRIPTION>Encircled energy fraction (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_1" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_1" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_1" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_1" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band 1)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_1" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_1) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p1" datatype="float"><DESCRIPTION>Detection likelihood (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p1" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p1" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P1</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p1" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p1" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p1" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P1</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p1" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p1" datatype="float"><DESCRIPTION>1-sigma ML_RATE_P1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p1" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p1" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P1</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p1" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P1 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p1" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P1 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p1" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p1" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p1" datatype="float"><DESCRIPTION>Encircled energy fraction (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p1" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p1" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p1" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P1)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p1" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P1)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p1" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P1) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p2" datatype="float"><DESCRIPTION>Detection likelihood (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p2" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p2" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P2</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p2" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P2 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p2" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P2 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p2" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p2" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P2</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p2" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P2 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p2" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P2 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p2" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p2" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P2</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p2" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P2 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p2" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P2 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p2" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p2" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p2" datatype="float"><DESCRIPTION>Encircled energy fraction (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p2" datatype="int"><DESCRIPTION>Total counts extracted within the aperture (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p2" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p2" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P2)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p2" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P2)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p2" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P2) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p3" datatype="float"><DESCRIPTION>Detection likelihood (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p3" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p3" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P3</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p3" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P3 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p3" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P3 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p3" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p3" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P3</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p3" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P3 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p3" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P3 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p3" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p3" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P3</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p3" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P3 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p3" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P3 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p3" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Background at source position (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p3" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p3" datatype="float"><DESCRIPTION>Encircled energy fraction (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p3" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p3" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p3" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P3)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p3" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P3)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p3" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P3) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p4" datatype="float"><DESCRIPTION>Detection likelihood (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p4" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p4" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P4</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p4" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P4 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p4" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P4 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p4" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p4" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P4</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p4" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P4 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p4" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P4 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p4" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p4" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P4</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p4" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P4 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p4" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P4 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p4" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p4" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p4" datatype="float"><DESCRIPTION>Encircled energy fraction (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p4" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p4" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p4" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P4)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p4" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P4)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p4" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P4) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p5" datatype="float"><DESCRIPTION>Detection likelihood (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p5" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p5" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P5</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p5" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P5 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p5" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P5 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p5" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p5" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P5</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p5" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P5 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p5" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P5 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p5" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p5" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P5</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p5" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P5 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p5" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P5 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p5" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p5" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p5" datatype="float"><DESCRIPTION>Encircled energy fraction (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p5" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p5" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p5" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P5)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p5" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P5)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p5" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P5) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p6" datatype="float"><DESCRIPTION>Detection likelihood (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p6" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p6" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P6</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p6" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P6 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p6" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P6 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p6" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p6" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P6</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p6" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P6 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p6" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P6 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p6" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p6" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P6</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p6" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P6 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p6" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P6 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p6" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p6" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p6" datatype="float"><DESCRIPTION>Encircled energy fraction (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p6" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p6" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p6" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P6)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p6" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P6)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p6" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P6) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p7" datatype="float"><DESCRIPTION>Detection likelihood (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p7" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p7" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P7</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p7" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P7 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p7" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P7 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p7" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p7" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P7</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p7" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P7 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p7" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P7 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p7" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p7" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P7</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p7" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P7 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p7" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P7 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p7" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p7" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p7" datatype="float"><DESCRIPTION>Encircled energy fraction (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p7" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p7" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p7" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P7)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p7" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P7)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p7" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P7) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p8" datatype="float"><DESCRIPTION>Detection likelihood (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p8" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p8" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P8</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p8" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P8 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p8" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P8 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p8" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p8" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P8</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p8" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P8 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p8" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P8 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p8" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p8" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P8</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p8" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P8 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p8" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P8 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p8" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p8" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p8" datatype="float"><DESCRIPTION>Encircled energy fraction (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p8" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p8" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p8" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P8)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p8" datatype="float"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P8)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p8" datatype="float" unit="pixel"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P8) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="det_like_p9" datatype="float"><DESCRIPTION>Detection likelihood (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_p9" datatype="float" unit="count"><DESCRIPTION>Source net counts (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_err_p9" datatype="float" unit="count"><DESCRIPTION>1-sigma error on ML_CTS_P9</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_lowerr_p9" datatype="float" unit="count"><DESCRIPTION>1-sigma ML_CTS_P9 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_cts_uperr_p9" datatype="float"><DESCRIPTION>1-sigma ML_CTS_P9 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_p9" datatype="float" unit="count.s**-1"><DESCRIPTION>Source count rate (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_err_p9" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma error on ML_RATE_P9</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_lowerr_p9" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P9 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_rate_uperr_p9" datatype="float" unit="count.s**-1"><DESCRIPTION>1-sigma ML_RATE_P9 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_p9" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>Source flux (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_err_p9" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma error on ML_FLUX_P9</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_lowerr_p9" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P9 lower bound</DESCRIPTION></FIELD>
+<FIELD name="ml_flux_uperr_p9" datatype="float" unit="cm**-2.erg.s**-1"><DESCRIPTION>1-sigma ML_FLUX_P9 upper bound</DESCRIPTION></FIELD>
+<FIELD name="ml_bkg_p9" datatype="float" unit="arcmin**-2"><DESCRIPTION>Background at source position (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ml_exp_p9" datatype="float" unit="s"><DESCRIPTION>Vignetted exposure at source position (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ml_eef_p9" datatype="float"><DESCRIPTION>Encircled energy fraction (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_p9" datatype="int" unit="count"><DESCRIPTION>Total counts extracted within the aperture (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_p9" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_p9" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band P9)</DESCRIPTION></FIELD>
+<FIELD name="ape_radius_p9" datatype="float" unit="pixel"><DESCRIPTION>Extraction radius in pixels (4 arcsec; band P9)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_p9" datatype="float"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_P9) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="ape_cts_s" datatype="int"><DESCRIPTION>Total counts extracted within the aperture (band S)</DESCRIPTION></FIELD>
+<FIELD name="ape_bkg_s" datatype="float" unit="count"><DESCRIPTION>Background counts extracted within the aperture, excluding nearby sources using the source map (band S)</DESCRIPTION></FIELD>
+<FIELD name="ape_exp_s" datatype="float" unit="s"><DESCRIPTION>Exposure map value at the given position (band S)</DESCRIPTION></FIELD>
+<FIELD name="ape_pois_s" datatype="double"><DESCRIPTION>Poisson probability that the extracted counts (APE_CTS_S) are a background fluctuation</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_snr" datatype="short"><DESCRIPTION>Source may lie within an overdense region near a supernova remnant</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_bps" datatype="short"><DESCRIPTION>Source may lie within an overdense region near a bright point source</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_scl" datatype="short"><DESCRIPTION>Source may lie within an overdense region near a stellar cluster</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_lga" datatype="short"><DESCRIPTION>Source may lie within an overdense region near a local large galaxy</DESCRIPTION></FIELD>
+<FIELD name="flag_sp_gc_cons" datatype="short"><DESCRIPTION>Source may lie within an overdense region near a galaxy cluster</DESCRIPTION></FIELD>
+<FIELD name="flag_no_radec_err" datatype="short"><DESCRIPTION>Source contained no RA_DEC_ERR in the pre-processed version of the catalogue</DESCRIPTION></FIELD>
+<FIELD name="flag_no_ext_err" datatype="short"><DESCRIPTION>Source contained no ML_CTS_0_ERR in the pre-processed version of the catalogue</DESCRIPTION></FIELD>
+<FIELD name="flag_no_cts_err" datatype="short"><DESCRIPTION>Source contained no EXT_ERR in the pre-processed version of the catalogue</DESCRIPTION></FIELD>
+<FIELD name="flag_opt" datatype="short"><DESCRIPTION>Unknown</DESCRIPTION></FIELD>
+      <DATA>
+        <TABLEDATA>
+        <TR><TD>1eRASS J075445.8+164152</TD><TD>em01_117072_020_ML00086_002_c010</TD><TD>117072</TD><TD>86</TD><TD>111707200086</TD><TD>0</TD><TD>80</TD><TD>118.69096743374998</TD><TD>16.697984758741633</TD><TD>118.69074972241371</TD><TD>16.697950708914675</TD><TD>11.097299575805664</TD><TD>4.263531684875488</TD><TD>3.9801361560821533</TD><TD>4.183102607727051</TD><TD>8.803147315979004</TD><TD>10.861747741699219</TD><TD>204.50285996405552</TD><TD>21.31980457248452</TD><TD>117.45060171447145</TD><TD>-4.048749622189798</TD><TD>58960.9140625</TD><TD>58960.58203125</TD><TD>58961.25</TD><TD>0.0</TD><TD>0.0</TD><TD>0.0</TD><TD>0.0</TD><TD>0.0</TD><TD>6.060522556304932</TD><TD>4.666833877563477</TD><TD>2.4257891178131104</TD><TD>2.052095413208008</TD><TD>2.799482583999634</TD><TD>0.05985812842845917</TD><TD>0.03111385554075241</TD><TD>0.02632075548171997</TD><TD>0.03590695559978485</TD><TD>0.000000000000055733826028695616</TD><TD>0.000000000000028970071784192863</TD><TD>0.000000000000024507221203567617</TD><TD>0.00000000000003343291897668632</TD><TD>0.5231201648712158</TD><TD>77.96491241455078</TD><TD>0.883602499961853</TD><TD>6</TD><TD>1.0145320892333984</TD><TD>77.88407897949219</TD><TD>7.661890506744385</TD><TD>0.0006400471902452409</TD><TD>4.318868160247803</TD><TD>2.089487075805664</TD><TD>1.5320639610290527</TD><TD>1.2817535400390625</TD><TD>1.7823742628097534</TD><TD>0.02643652819097042</TD><TD>0.01938392035663128</TD><TD>0.016216952353715897</TD><TD>0.022550886496901512</TD><TD>0.00000000000002868235502080131</TD><TD>0.000000000000021030616823209704</TD><TD>0.00000000000001759461073201369</TD><TD>0.000000000000024466622914405718</TD><TD>0.15391966700553894</TD><TD>79.03787994384766</TD><TD>0.892302393913269</TD><TD>2</TD><TD>0.1087455153465271</TD><TD>78.95780181884766</TD><TD>7.119251251220703</TD><TD>0.005501119885593653</TD><TD>4.287274360656738</TD><TD>2.8008503913879395</TD><TD>1.8277755975723267</TD><TD>1.5276015996932983</TD><TD>2.1279494762420654</TD><TD>0.03532786667346954</TD><TD>0.0230542179197073</TD><TD>0.019268043339252472</TD><TD>0.026840390637516975</TD><TD>0.00000000000002599548689101363</TD><TD>0.000000000000016964104817066006</TD><TD>0.000000000000014178104186296416</TD><TD>0.000000000000019750104600802648</TD><TD>0.22334197163581848</TD><TD>79.2816162109375</TD><TD>0.88694167137146</TD><TD>4</TD><TD>0.16882576048374176</TD><TD>79.30804443359375</TD><TD>7.3572235107421875</TD><TD>0.000029583827199530788</TD><TD>0.0</TD><TD>0.0</TD><TD>0.5873394012451172</TD><TD>0.0</TD><TD>0.5873394012451172</TD><TD>0.0</TD><TD>0.007488425355404615</TD><TD>0.0</TD><TD>0.007488425355404615</TD><TD>0.0</TD><TD>0.000000000000007385034627555541</TD><TD>0.0</TD><TD>0.000000000000007385034627555541</TD><TD>0.15603181719779968</TD><TD>78.43296813964844</TD><TD>0.883602499961853</TD><TD>0</TD><TD>0.13243521749973297</TD><TD>78.1027603149414</TD><TD>7.81594181060791</TD><TD/><TD>1.0469236373901367</TD><TD>1.6297930479049683</TD><TD>1.7942969799041748</TD><TD>1.2573583126068115</TD><TD>2.331235647201538</TD><TD>0.026700997725129128</TD><TD>0.029396075755357742</TD><TD>0.020599376410245895</TD><TD>0.03819277510046959</TD><TD>0.00000000000016553624519310278</TD><TD>0.00000000000018224473579547817</TD><TD>0.000000000000127708472052665</TD><TD>0.00000000000023678099953829135</TD><TD>0.19965064525604248</TD><TD>61.038658142089844</TD><TD>0.8562460541725159</TD><TD>2</TD><TD>0.27618271112442017</TD><TD>60.889503479003906</TD><TD>9.956207275390625</TD><TD>0.03179297596216202</TD><TD>0.0</TD><TD>0.0</TD><TD>0.6307061910629272</TD><TD>0.0</TD><TD>0.6307061910629272</TD><TD>0.0</TD><TD>0.016219262033700943</TD><TD>0.0</TD><TD>0.016219262033700943</TD><TD>0.0</TD><TD>0.0000000000005842673350339722</TD><TD>0.0</TD><TD>0.0000000000005842673350339722</TD><TD>0.1567893773317337</TD><TD>38.88624572753906</TD><TD>0.7329805493354797</TD><TD>0</TD><TD>0.3916999399662018</TD><TD>38.890968322753906</TD><TD>13.348714828491211</TD><TD/><TD>0.0</TD><TD>0.0</TD><TD>0.6307029128074646</TD><TD>0.0</TD><TD>0.6307029128074646</TD><TD>0.0</TD><TD>0.015258586965501308</TD><TD>0.0</TD><TD>0.015258586965501308</TD><TD>0.0</TD><TD>0.0000000000004582158220564625</TD><TD>0.0</TD><TD>0.0000000000004582158220564625</TD><TD>0.2982950806617737</TD><TD>41.334293365478516</TD><TD>0.7329805493354797</TD><TD>0</TD><TD>0.7451779842376709</TD><TD>41.33963394165039</TD><TD>13.348714828491211</TD><TD/><TD>0.0</TD><TD>0.0</TD><TD>0.630693256855011</TD><TD>0.0</TD><TD>0.630693256855011</TD><TD>0.0</TD><TD>0.014746920205652714</TD><TD>0.0</TD><TD>0.014746920205652714</TD><TD>0.0</TD><TD>0.0000000000003847357274346791</TD><TD>0.0</TD><TD>0.0000000000003847357274346791</TD><TD>0.0497296117246151</TD><TD>42.76779556274414</TD><TD>0.7329805493354797</TD><TD>0</TD><TD>0.10258151590824127</TD><TD>42.785099029541016</TD><TD>12.13949966430664</TD><TD/><TD>0.0</TD><TD>0.0</TD><TD>0.6307110786437988</TD><TD>0.0</TD><TD>0.6307110786437988</TD><TD>0.0</TD><TD>0.017576945945620537</TD><TD>0.0</TD><TD>0.017576945945620537</TD><TD>0.0</TD><TD>0.0000000000008015023107016406</TD><TD>0.0</TD><TD>0.0000000000008015023107016406</TD><TD>0.043063193559646606</TD><TD>35.88285827636719</TD><TD>0.7329805493354797</TD><TD>0</TD><TD>0.10761354118585587</TD><TD>35.8868522644043</TD><TD>13.348714828491211</TD><TD/><TD>0.0</TD><TD>0.0</TD><TD>0.6307411193847656</TD><TD>0.0</TD><TD>0.6307411193847656</TD><TD>0.0</TD><TD>0.01881934516131878</TD><TD>0.0</TD><TD>0.01881934516131878</TD><TD>0.0</TD><TD>0.0000000000015238335766831757</TD><TD>0.0</TD><TD>0.0000000000015238335766831757</TD><TD>0.0492936372756958</TD><TD>33.51557159423828</TD><TD>0.7005752325057983</TD><TD>0</TD><TD>0.12309818714857101</TD><TD>33.518402099609375</TD><TD>13.348714828491211</TD><TD/><TD>4</TD><TD>0.30126097798347473</TD><TD>78.83927154541016</TD><TD>0.00027003879621565017</TD><TD>0</TD><TD>0</TD><TD>0</TD><TD>0</TD><TD>0</TD><TD>0</TD><TD>0</TD><TD>0</TD><TD>0</TD></TR>
+        </TABLEDATA>
+      </DATA>
+    </TABLE>
+
+  </RESOURCE>
+</VOTABLE>

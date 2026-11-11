@@ -1,0 +1,19 @@
+{
+  "name": "vlass_artifacts",
+  "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/argus/sync",
+  "params": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT planeID,uri,contentType,contentLength FROM caom2.Artifact WHERE planeID IN ('6d4256ab-56c0-4472-ae74-923b7f1328fc','f97e1fc5-acbe-4fde-8057-12322516de1a','7c639a1f-71e9-4d20-b9dd-bd7db178c062')"
+  },
+  "retrieved_utc": "2026-11-11T03:45:35.690000+00:00",
+  "status_code": 200,
+  "url_resolved": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/argus/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+planeID%2Curi%2CcontentType%2CcontentLength+FROM+caom2.Artifact+WHERE+planeID+IN+%28%276d4256ab-56c0-4472-ae74-923b7f1328fc%27%2C%27f97e1fc5-acbe-4fde-8057-12322516de1a%27%2C%277c639a1f-71e9-4d20-b9dd-bd7db178c062%27%29",
+  "bytes": 1885,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/vlass_artifacts.native",
+  "sha256": "36c9715fae759f01ff9124a47381c2dd603df3c1d246c8b0d2253f0c92cc44ea",
+  "state": "csv_or_text",
+  "rows": 12,
+  "preview": "planeID,uri,contentType,contentLength\n6d4256ab-56c0-4472-ae74-923b7f1328fc,cadc:VLASS/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim_prev.jpg,image/jpeg,1581895\n6d4256ab-56c0-4472-ae74-923b7f1328fc,cadc:VLASS/VLASS2.2.ql.T"
+}

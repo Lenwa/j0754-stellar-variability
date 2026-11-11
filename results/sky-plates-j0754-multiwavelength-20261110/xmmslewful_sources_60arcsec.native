@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
+ <RESOURCE type="results">
+  <INFO name="QUERY_STATUS" value="OK">No errors detected in query preprocessing</INFO>
+  <TABLE>
+   <DESCRIPTION>Query result for:&#xA;SELECT TOP 300 * FROM xmmslewful WHERE CONTAINS(POINT(&apos;ICRS&apos;,ra,dec),CIRCLE(&apos;ICRS&apos;,118.69117410685,16.694621231895,0.016666666666666666))=1</DESCRIPTION>
+   <FIELD datatype="char" arraysize="*" name="__row" ID="DataLinkID"/>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;meta.main" name="xmmslew_name">
+    <DESCRIPTION>Catalog Designation of Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;obs" name="obsid">
+    <DESCRIPTION>XMM-Newton Observation Identifier</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.id" name="sourcenum">
+    <DESCRIPTION>Number Which Uniquely Identifies Each Detection in an Observation</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra;meta.main" precision="F6" name="ra">
+    <DESCRIPTION>Right Ascension of the Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec;meta.main" precision="F6" name="dec">
+    <DESCRIPTION>Declination of the Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;pos" precision="F5" name="radec_error">
+    <DESCRIPTION>Statistical 1-Sigma Error in Source Position</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon" precision="F5" name="lii">
+    <DESCRIPTION>Galactic Longitude of the Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="F5" name="bii">
+    <DESCRIPTION>Galactic Latitude of the Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.count;arith.ratio;em.X-ray.medium;em.X-ray.soft" precision="F6" name="hr1">
+    <DESCRIPTION>Hardness Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.count;arith.ratio;em.X-ray.medium;em.X-ray.soft" precision="F6" name="hr1_error">
+    <DESCRIPTION>Error in Hardness Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="double" ucd="time.start;obs" name="time">
+    <DESCRIPTION>Start Time of Observation</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="double" ucd="time.end;obs" name="end_time">
+    <DESCRIPTION>End Time of Observation</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="phot;em.X-ray" precision="E5" name="scts_b8">
+    <DESCRIPTION>Background-Subtracted, PSF-Corrected Counts for Total Energy Band (0.2-12 keV)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="stat.error;phot;em.X-ray" precision="F5" name="scts_b8_error">
+    <DESCRIPTION>Statistical 1-Sigma Error for the Total-Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="phot;em.X-ray.medium" precision="E5" name="scts_b7">
+    <DESCRIPTION>Background-Subtracted, PSF-Corrected  Counts in the Hard Energy Band (2-12 keV)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="stat.error;phot;em.X-ray.medium" precision="F5" name="scts_b7_error">
+    <DESCRIPTION>Statistical 1-Sigma Error for the Hard-Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="phot;em.X-ray.soft" precision="E5" name="scts_b6">
+    <DESCRIPTION>Background-Subtracted, PSF-Corrected  Counts in the Soft Energy Band (0.2-2 keV)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="double" ucd="stat.error;phot;em.X-ray.soft" precision="F5" name="scts_b6_error">
+    <DESCRIPTION>Statistical 1-Sigma Error for the Soft-Band Source Counts</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="pos.cartesian.x;instr.pixel" precision="E5" name="x_ima_b8">
+    <DESCRIPTION>X Position of the Source in the Total-Band Image in Image Pixels</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="pos.cartesian.y;instr.pixel" precision="E5" name="y_ima_b8">
+    <DESCRIPTION>Y Position of the Source in the Total-Band Image in Image Pixels</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="pos.cartesian.x;instr.pixel" precision="E5" name="x_ima_b7">
+    <DESCRIPTION>X Position of the Source in the Hard-Band Image in Image Pixels</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="pos.cartesian.y;instr.pixel" precision="E5" name="y_ima_b7">
+    <DESCRIPTION>Y Position of the Source in the Hard-Band Image in Image Pixels</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="pos.cartesian.x;instr.pixel" precision="E5" name="x_ima_b6">
+    <DESCRIPTION>X Position of the Source in the Soft-Band Image in Image Pixels</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="pos.cartesian.y;instr.pixel" precision="E5" name="y_ima_b6">
+    <DESCRIPTION>Y Position of the Source in the Soft-Band Image in Image Pixels</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="phys.angSize" precision="E5" name="ext_b8">
+    <DESCRIPTION>Spatial Extension of the Source in the Total Energy Band (pixels)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;phys.angSize" precision="E5" name="ext_b8_error">
+    <DESCRIPTION>Statistical 1-Sigma Error for the Total-Band Spatial Extension (pixels)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="phys.angSize;em.X-ray.medium" precision="E5" name="ext_b7">
+    <DESCRIPTION>Spatial Extension of the Source in the Hard Energy Band (pixels)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;phys.angSize;em.X-ray.medium" precision="E5" name="ext_b7_error">
+    <DESCRIPTION>Statistical 1-Sigma Error for the Hard-Band Spatial Extension (pixels)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="phys.angSize;em.X-ray.soft" precision="E5" name="ext_b6">
+    <DESCRIPTION>Spatial Extension of the Source in the Soft Energy Band (pixels)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="pixel" datatype="double" ucd="stat.error;phys.angSize;em.X-ray.soft" precision="E5" name="ext_b6_error">
+    <DESCRIPTION>Statistical 1-Sigma Error for the Soft-Band Spatial Extension (pixels)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;em.X-ray" precision="E5" name="det_ml_b8">
+    <DESCRIPTION>Detection Likelihood in the Total Energy Band (0.2-12 keV)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;em.X-ray.medium" precision="E5" name="det_ml_b7">
+    <DESCRIPTION>Detection Likelihood in the Hard Energy Band (2-12 keV)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;em.X-ray.soft" precision="E5" name="det_ml_b6">
+    <DESCRIPTION>Detection Likelihood in the Soft Energy Band (0.2-2 keV)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phys.angSize;em.X-ray" precision="E5" name="ext_ml_b8">
+    <DESCRIPTION>Likelihood of the Source Being Extended in the Total Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phys.angSize;em.X-ray.medium" precision="E5" name="ext_ml_b7">
+    <DESCRIPTION>Likelihood of the Source Being Extended in the Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood;phys.angSize;em.X-ray.soft" precision="E5" name="ext_ml_b6">
+    <DESCRIPTION>Likelihood of the Source Being Extended in the Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="bg_map_b8">
+    <DESCRIPTION>Background Counts Per Pixel for the Total Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="bg_map_b7">
+    <DESCRIPTION>Background Counts Per Pixel for the Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/pixel" datatype="double" ucd="instr.background" precision="E5" name="bg_map_b6">
+    <DESCRIPTION>Background Counts Per Pixel for the Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure;em.X-ray" precision="E5" name="exp_map_b8">
+    <DESCRIPTION>Effective On-Axis Exposure Time in the Total Energy Band (secs)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure;em.X-ray.medium" precision="E5" name="exp_map_b7">
+    <DESCRIPTION>Effective On-Axis Exposure Time in the Hard Energy Band (secs)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure;em.X-ray.soft" precision="E5" name="exp_map_b6">
+    <DESCRIPTION>Effective On-Axis Exposure Time in the Soft Energy Band (secs)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray" precision="E5" name="flux_b8">
+    <DESCRIPTION>Source Flux in the Total Energy Band (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray" precision="E5" name="flux_b8_error">
+    <DESCRIPTION>Error in the Total-Band Source Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.medium" precision="E5" name="flux_b7">
+    <DESCRIPTION>Source Flux in the Hard Energy Band (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.medium" precision="E5" name="flux_b7_error">
+    <DESCRIPTION>Error in the Hard-Band Source Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="phot.flux;em.X-ray.soft" precision="E5" name="flux_b6">
+    <DESCRIPTION>Source Flux in the Soft Energy Band (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/cm^2/s" datatype="double" ucd="stat.error;phot.flux;em.X-ray.soft" precision="E5" name="flux_b6_error">
+    <DESCRIPTION>Error in the Soft-Band Source Flux (erg/cm^2/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray" precision="E5" name="count_rate_b8">
+    <DESCRIPTION>Total-Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray" precision="E5" name="count_rate_b8_error">
+    <DESCRIPTION>Error in the Total-Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.medium" precision="E5" name="count_rate_b7">
+    <DESCRIPTION>Hard-Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.medium" precision="E5" name="count_rate_b7_error">
+    <DESCRIPTION>Error in the Hard-Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="phot.count;em.X-ray.soft" precision="E5" name="count_rate_b6">
+    <DESCRIPTION>Soft-Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="stat.error;phot.count;em.X-ray.soft" precision="E5" name="count_rate_b6_error">
+    <DESCRIPTION>Error in the Soft-Band Count Rate (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra" precision="E7" name="ra_b8">
+    <DESCRIPTION>J2000 Right Ascension of the Total-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec" precision="E7" name="dec_b8">
+    <DESCRIPTION>J2000 Declination of the Total-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;pos;em.X-ray" precision="E5" name="radec_b8_error">
+    <DESCRIPTION>Statistical 1-Sigma Error in Total-Band Source Position</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon;em.X-ray" precision="E7" name="lii_b8">
+    <DESCRIPTION>Galactic Longitude of the Total-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="E7" name="bii_b8">
+    <DESCRIPTION>Galactic Latitude of the Total-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra;em.X-ray.medium" precision="E7" name="ra_b7">
+    <DESCRIPTION>J2000 Right Ascension of the Hard-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec" precision="E7" name="dec_b7">
+    <DESCRIPTION>J2000 Declination of the Hard-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;pos;em.X-ray.medium" precision="E5" name="radec_b7_error">
+    <DESCRIPTION>Statistical 1-Sigma Error in Hard-Band Source Position</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon;em.X-ray.medium" precision="E7" name="lii_b7">
+    <DESCRIPTION>Galactic Longitude of the Hard-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="E7" name="bii_b7">
+    <DESCRIPTION>Galactic Latitude of the Hard-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra;em.X-ray.soft" precision="E7" name="ra_b6">
+    <DESCRIPTION>J2000 Right Ascension of the Soft-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec" precision="E7" name="dec_b6">
+    <DESCRIPTION>J2000 Declination of the Soft-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="stat.error;pos;em.X-ray.soft" precision="E5" name="radec_b6_error">
+    <DESCRIPTION>Statistical 1-Sigma Error in Soft-Band Source Position</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon;em.X-ray.soft" precision="E7" name="lii_b6">
+    <DESCRIPTION>Galactic Longitude of the Soft-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="E7" name="bii_b6">
+    <DESCRIPTION>Galactic Latitude of the Soft-Band Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="val_flag">
+    <DESCRIPTION>Flag Indicates Source Included in Clean Sample</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id" name="srcname_b8">
+    <DESCRIPTION>Source Designation Defined in the Total-Band List</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id" name="srcname_b7">
+    <DESCRIPTION>Source Designation Defined in the Hard-Band List</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id" name="srcname_b6">
+    <DESCRIPTION>Source Designation Defined in the Soft-Band List</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;obs.image" name="ximname_b8">
+    <DESCRIPTION>Name of the Image Containing the Total-Band Detection</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;obs.image" name="ximname_b7">
+    <DESCRIPTION>Name of the Image Containing the Hard-Band Detection</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;obs.image" name="ximname_b6">
+    <DESCRIPTION>Name of the Image Containing the Soft-Band Detection</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="ver_inext">
+    <DESCRIPTION>Flag Indicates Detection within Extended Source and Is Probably Spurious</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="ver_halo">
+    <DESCRIPTION>Flag Indicates Detection within Halo of Very Bright Source, Probably Spurious</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="ver_hibgnd">
+    <DESCRIPTION>Flag Indicates Detection within High-Background Region and Is Probably Spurious</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual;pos" name="ver_nredg">
+    <DESCRIPTION>Flag Indicates Detection in Consecutive Images, Likely Inaccurate Position</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual;pos" name="ver_psusp">
+    <DESCRIPTION>Flag Indicates Source Position Likely Inaccurate, Poor Attitude Reconstruction</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="ver_false">
+    <DESCRIPTION>Flag Indicates Problems Not Included in the Other Flags, e.g. Zero Exposure</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.note" name="flag_comment">
+    <DESCRIPTION>Comment Which Explains Why a Particular Source Flag Has Been Set to True</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id" name="name">
+    <DESCRIPTION>Source Designation by Cross-Correlation of Position with Astronomical Catalogs</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id" name="rass_name">
+    <DESCRIPTION>Designation of the Closest ROSAT All-Sky Survey (RASS) Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="src.class" name="id_category">
+    <DESCRIPTION>Source Type as Determined by Cross-Correlation Process</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.dataset;meta.table" name="id_resource">
+    <DESCRIPTION>Astronomical Database or Catalog from Which the Best Match Has Been Selected</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance" precision="E5" name="id_offset">
+    <DESCRIPTION>Distance between the Best Match Candidate and Slew Survey Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="pos.angDistance" precision="E5" name="rass_offset">
+    <DESCRIPTION>Distance between the Best Match ROSAT Source and Slew Survey Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="instr.setup" name="mode_id">
+    <DESCRIPTION>Observing Mode of the EPIC-pn Camera</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct/s" datatype="double" ucd="instr.background" precision="F1" name="image_bg_rate">
+    <DESCRIPTION>Peak Background Count Rate in the Source Extraction Image (ct/s)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="double" ucd="time.start;obs.image" name="subimage_time">
+    <DESCRIPTION>Start Time of Subimage in Which Source Detected</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="double" ucd="time.end;obs.image" name="subimage_end_time">
+    <DESCRIPTION>End Time of Subimage in Which Source Detected</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="ver_optload">
+    <DESCRIPTION>Flag Indicates Source May Suffer from Optical Loading</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="ct" datatype="short" ucd="phot.count;em.X-ray" name="filtered_counts">
+    <DESCRIPTION>Number of Counts Found within 1 Arcmin After Filtering</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="ct" datatype="short" ucd="phot.count;em.X-ray" name="unfiltered_counts">
+    <DESCRIPTION>Number of Counts Found within 1 Arcmin with No Filtering</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id.cross" name="xmmsl1_name">
+    <DESCRIPTION>Designation of Source in XMMSL1, If Existing</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="int" ucd="meta.id.cross" name="extras_source_number">
+    <DESCRIPTION>Number of Corresponding Source in EXTRaS LTV Catalog</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.class" name="class">
+    <DESCRIPTION>Browse Object Classification</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="double" name="__x_ra_dec"/>
+   <FIELD datatype="double" name="__y_ra_dec"/>
+   <FIELD datatype="double" name="__z_ra_dec"/>
+   <DATA>
+    <BINARY>
+     <STREAM encoding="base64">
+
+     </STREAM>
+    </BINARY>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+ <RESOURCE utype="adhoc:service" type="meta">
+  <PARAM datatype="char" arraysize="*" name="standardID" value="ivo://ivoa.net/std/DataLink#links-1.1"/>
+  <PARAM datatype="char" arraysize="*" name="accessURL" value="https://heasarc.gsfc.nasa.gov/xamin/vo/datalink/xmmslewful?datalink_key&amp;"/>
+  <GROUP name="inputParams">
+   <PARAM ref="DataLinkID" datatype="char" arraysize="*" name="id" value=""/>
+  </GROUP>
+ </RESOURCE>
+</VOTABLE>

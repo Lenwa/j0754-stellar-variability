@@ -1,0 +1,13 @@
+planeID,uri,contentType,contentLength
+6d4256ab-56c0-4472-ae74-923b7f1328fc,cadc:VLASS/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim_prev.jpg,image/jpeg,1581895
+6d4256ab-56c0-4472-ae74-923b7f1328fc,cadc:VLASS/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim_prev_256.jpg,image/jpeg,82308
+6d4256ab-56c0-4472-ae74-923b7f1328fc,nrao:VLASS/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.rms.subim.fits,application/fits,55431360
+6d4256ab-56c0-4472-ae74-923b7f1328fc,nrao:VLASS/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim.fits,application/fits,55431360
+7c639a1f-71e9-4d20-b9dd-bd7db178c062,cadc:VLASS/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim_prev.jpg,image/jpeg,814727
+7c639a1f-71e9-4d20-b9dd-bd7db178c062,cadc:VLASS/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim_prev_256.jpg,image/jpeg,36571
+7c639a1f-71e9-4d20-b9dd-bd7db178c062,nrao:VLASS/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.rms.subim.fits,application/fits,55483200
+7c639a1f-71e9-4d20-b9dd-bd7db178c062,nrao:VLASS/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim.fits,application/fits,55480320
+f97e1fc5-acbe-4fde-8057-12322516de1a,cadc:VLASS/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim_prev.jpg,image/jpeg,1640750
+f97e1fc5-acbe-4fde-8057-12322516de1a,cadc:VLASS/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim_prev_256.jpg,image/jpeg,81343
+f97e1fc5-acbe-4fde-8057-12322516de1a,nrao:VLASS/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.rms.subim.fits,application/fits,55428480
+f97e1fc5-acbe-4fde-8057-12322516de1a,nrao:VLASS/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.subim.fits,application/fits,55425600

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
+ <RESOURCE type="results">
+  <INFO name="QUERY_STATUS" value="OK">No errors detected in query preprocessing</INFO>
+  <TABLE>
+   <DESCRIPTION>Query result for:&#xA;SELECT table_name,description FROM TAP_SCHEMA.tables WHERE table_name LIKE &apos;%slew%&apos; OR table_name LIKE &apos;%vlass%&apos;</DESCRIPTION>
+   <FIELD datatype="char" arraysize="*" name="table_name"/>
+   <FIELD datatype="char" arraysize="*" name="description"/>
+   <DATA>
+    <BINARY>
+     <STREAM encoding="base64">
+AAAAB3h0ZXNsZXcAAAAdWFRFIEFyY2hpdmVkIFB1YmxpYyBTbGV3IERhdGEAAAAK
+dmxhc3M4MjFwNAAAADBWTEEgU0RTUyBTdHJpcGUgODIgU3VydmV5IDEuNC1H
+SHogU291cmNlIENhdGFsb2cAAAAHaXBjc2xldwAAACBFaW5zdGVpbiBDYXRh
+bG9nIElQQyBTbGV3IFN1cnZleQAAAAp4bW1zbGV3ZWdzAAAAK1hNTS1OZXd0
+b24gU2xldyBTdXJ2ZXkgRXh0cmFnYWxhY3RpYyBTYW1wbGUAAAAKeG1tc2xl
+d2NsbgAAADFYTU0tTmV3dG9uIFNsZXcgU3VydmV5IENsZWFuIFNvdXJjZSBD
+YXRhbG9nLCB2My4xAAAACnhtbXNsZXdmdWwAAAAwWE1NLU5ld3RvbiBTbGV3
+IFN1cnZleSBGdWxsIFNvdXJjZSBDYXRhbG9nLCB2My4x
+     </STREAM>
+    </BINARY>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>

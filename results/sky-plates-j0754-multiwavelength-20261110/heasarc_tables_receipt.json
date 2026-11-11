@@ -1,0 +1,21 @@
+{
+  "name": "heasarc_tables",
+  "url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync",
+  "params": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "QUERY": "SELECT table_name,description FROM TAP_SCHEMA.tables WHERE table_name LIKE '%uvot%' OR table_name LIKE '%xmm%' OR table_name LIKE '%chan%' OR table_name LIKE '%csc%' OR table_name LIKE '%eros%'"
+  },
+  "retrieved_utc": "2026-11-11T03:42:53.600602+00:00",
+  "status_code": 200,
+  "url_resolved": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+table_name%2Cdescription+FROM+TAP_SCHEMA.tables+WHERE+table_name+LIKE+%27%25uvot%25%27+OR+table_name+LIKE+%27%25xmm%25%27+OR+table_name+LIKE+%27%25chan%25%27+OR+table_name+LIKE+%27%25csc%25%27+OR+table_name+LIKE+%27%25eros%25%27",
+  "bytes": 12250,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/heasarc_tables.native",
+  "sha256": "969a69ad864d47853af3596bd66223ace962c2aabe55360b0aa9b0e6da9302c2",
+  "state": "table",
+  "rows": 123,
+  "columns": [
+    "table_name",
+    "description"
+  ]
+}

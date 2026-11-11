@@ -1,0 +1,43 @@
+{
+  "name": "chanmaster_pointings_1deg",
+  "url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync",
+  "params": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "QUERY": "SELECT TOP 300 * FROM chanmaster WHERE CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',118.69117410685,16.694621231895,1.0))=1"
+  },
+  "retrieved_utc": "2026-11-11T03:42:53.601260+00:00",
+  "status_code": 200,
+  "url_resolved": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+300+%2A+FROM+chanmaster+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C118.69117410685%2C16.694621231895%2C1.0%29%29%3D1",
+  "bytes": 4662,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/chanmaster_pointings_1deg.native",
+  "sha256": "05cb234f70dc1e4d669661ff6696b6aeb11be2fea1b5404a8a2bd5b9963558f8",
+  "state": "table",
+  "rows": 1,
+  "columns": [
+    "__row",
+    "DataLinkID",
+    "status",
+    "name",
+    "ra",
+    "dec",
+    "lii",
+    "bii",
+    "time",
+    "detector",
+    "grating",
+    "exposure",
+    "type",
+    "pi",
+    "cycle",
+    "proposal",
+    "public_date",
+    "sequence_number",
+    "data_mode",
+    "category",
+    "class",
+    "__x_ra_dec",
+    "__y_ra_dec",
+    "__z_ra_dec"
+  ]
+}

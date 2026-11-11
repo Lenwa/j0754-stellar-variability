@@ -1,0 +1,3155 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: __row
+#   datatype: string
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: srcid
+#   datatype: string
+#   description: Unique Source Identifier
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: name
+#   datatype: string
+#   description: Source Designation (IAU)
+#   meta: !!omap
+#   - {ucd: meta.id;meta.main}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: obsid
+#   datatype: string
+#   description: Unique Observation Identifier
+#   meta: !!omap
+#   - {ucd: meta.id;obs}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pps_srcnum
+#   datatype: int32
+#   description: Source Number Attributed to a Detection by the Automatic Pipeline Processing
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - values: {'null': -2147483648}
+# - name: n_obs
+#   datatype: int32
+#   description: Total Number of Observations per Stack
+#   meta: !!omap
+#   - {ucd: meta.number;obs}
+#   - {width: 8}
+#   - values: {'null': -2147483648}
+# - name: n_contrib
+#   datatype: int32
+#   description: Number of Observations with Which the Source Was Fitted
+#   meta: !!omap
+#   - {ucd: meta.number}
+#   - {width: 8}
+#   - values: {'null': -2147483648}
+# - name: n_exp
+#   datatype: int16
+#   description: Number of Exposures Covering the Source
+#   meta: !!omap
+#   - {ucd: meta.number}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: ra
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Corrected Right Ascension of the Source
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;meta.main}
+#   - {precision: F6}
+# - name: dec
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Corrected Declination of the Source
+#   meta: !!omap
+#   - {ucd: pos.eq.dec;meta.main}
+#   - {precision: F6}
+# - name: error_radius
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Positional Uncertainty (arcsec)
+#   meta: !!omap
+#   - {ucd: stat.error;pos;stat.mean}
+#   - {precision: F5}
+# - name: error_ell_major
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Semi-Major Axis of the Positional Error Ellipse
+#   meta: !!omap
+#   - {ucd: phys.angSize.smajAxis;pos.errorEllipse}
+#   - {precision: E6}
+# - name: error_ell_minor
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Semi-Minor Axis of the Positional Error Ellipse
+#   meta: !!omap
+#   - {ucd: phys.angSize.sminAxis;pos.errorEllipse}
+#   - {precision: E6}
+# - name: error_ell_pa
+#   unit: deg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Rotation Angle of the Positional Error Ellipse
+#   meta: !!omap
+#   - {ucd: stat.error;pos.posAng}
+#   - {precision: E6}
+# - name: lii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.8f}'
+#   description: Corrected Galactic Longitude of the Source (degrees)
+#   meta: !!omap
+#   - {ucd: pos.galactic.lon}
+#   - {precision: F8}
+# - name: bii
+#   unit: deg
+#   datatype: float64
+#   format: '{:.8f}'
+#   description: Corrected Galactic Latitude of the Source (degrees)
+#   meta: !!omap
+#   - {ucd: pos.galactic.lat}
+#   - {precision: F8}
+# - name: x_pixel
+#   unit: pix
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: X Coordinate of Combined Observation of a Stack
+#   meta: !!omap
+#   - {ucd: pos.cartesian.x;instr.pixel}
+#   - {precision: E6}
+# - name: x_pixel_error
+#   unit: pix
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Symmetrical Uncertainty in X Coordinate of Combined Observation of a Stack
+#   meta: !!omap
+#   - {ucd: stat.error;pos.cartesian.x;instr.pixel}
+#   - {precision: E6}
+# - name: x_pixel_neg_err
+#   unit: pix
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Lower 1-Sigma Asymmetrical Uncertainty in X Coordinate of Stacked Observation
+#   meta: !!omap
+#   - {ucd: stat.error;pos.cartesian.x;instr.pixel}
+#   - {precision: E6}
+# - name: x_pixel_pos_err
+#   unit: pix
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Upper 1-Sigma Asymmetrical Uncertainty in X Coordinate of Stacked Observation
+#   meta: !!omap
+#   - {ucd: stat.error;pos.cartesian.x;instr.pixel}
+#   - {precision: E6}
+# - name: y_pixel
+#   unit: pix
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Y Coordinate of Combined Observation of a Stack
+#   meta: !!omap
+#   - {ucd: pos.cartesian.y;instr.pixel}
+#   - {precision: E6}
+# - name: y_pixel_error
+#   unit: pix
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Symmetrical Uncertainty in Y Coordinate of Combined Observation of a Stack
+#   meta: !!omap
+#   - {ucd: stat.error;pos.cartesian.y;instr.pixel}
+#   - {precision: E6}
+# - name: y_pixel_neg_err
+#   unit: pix
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Lower 1-Sigma Asymmetrical Uncertainty in Y Coordinate of Stacked Observation
+#   meta: !!omap
+#   - {ucd: stat.error;pos.cartesian.y;instr.pixel}
+#   - {precision: E6}
+# - name: y_pixel_pos_err
+#   unit: pix
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Upper 1-Sigma Asymmetrical Uncertainty in Y Coordinate of Stacked Observation
+#   meta: !!omap
+#   - {ucd: stat.error;pos.cartesian.y;instr.pixel}
+#   - {precision: E6}
+# - name: ccdpn
+#   datatype: int16
+#   description: PN CCD Number in Which the Detection Lies
+#   meta: !!omap
+#   - {ucd: meta.id;instr}
+#   - values: {'null': -32768}
+# - name: pn_rawx
+#   datatype: int16
+#   description: X Raw Pixel Position of Detection in PN Image
+#   meta: !!omap
+#   - {ucd: pos.cartesian.x;instr.pixel}
+#   - values: {'null': -32768}
+# - name: pn_rawy
+#   datatype: int16
+#   description: Y Raw Pixel Position of Detection in PN Image
+#   meta: !!omap
+#   - {ucd: pos.cartesian.y;instr.pixel}
+#   - values: {'null': -32768}
+# - name: ccdm1
+#   datatype: int16
+#   description: M1 CCD Number in Which Detection Lies
+#   meta: !!omap
+#   - {ucd: meta.id;instr}
+#   - values: {'null': -32768}
+# - name: m1_rawx
+#   datatype: int16
+#   description: X Raw Pixel Position of Detection in M1 Image
+#   meta: !!omap
+#   - {ucd: pos.cartesian.x;instr.pixel}
+#   - values: {'null': -32768}
+# - name: m1_rawy
+#   datatype: int16
+#   description: Y Raw Pixel Position of Detection in M1 Image
+#   meta: !!omap
+#   - {ucd: pos.cartesian.y;instr.pixel}
+#   - values: {'null': -32768}
+# - name: ccdm2
+#   datatype: int16
+#   description: M2 CCD Number in Which Detection Lies
+#   meta: !!omap
+#   - {ucd: meta.id;instr}
+#   - values: {'null': -32768}
+# - name: m2_rawx
+#   datatype: int16
+#   description: X Raw Pixel Position of Detection in M2 Image
+#   meta: !!omap
+#   - {ucd: pos.cartesian.x;instr.pixel}
+#   - values: {'null': -32768}
+# - name: m2_rawy
+#   datatype: int16
+#   description: Y Raw Pixel Position of Detection in M2 Image
+#   meta: !!omap
+#   - {ucd: pos.cartesian.y;instr.pixel}
+#   - values: {'null': -32768}
+# - name: dist_nn
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Distance to the Nearest Neighbor
+#   meta: !!omap
+#   - {ucd: pos.angDistance}
+#   - {precision: E6}
+# - name: n_blend
+#   datatype: int16
+#   description: Number of Simultaneously Fit Sources Taking into Account Blended Sources
+#   meta: !!omap
+#   - {ucd: meta.number}
+#   - values: {'null': -32768}
+# - name: ep_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: EPIC Total Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E6}
+# - name: ep_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Uncertainty in EPIC Total Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E6}
+# - name: ep_1_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Band 1 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_1_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Band 1 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_2_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Band 2 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_2_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Band 2 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_3_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Band 3 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_3_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Band 3 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_4_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Band 4 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ep_4_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Band 4 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ep_5_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Band 5 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ep_5_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Band 5 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Total Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Total Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_1_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_1_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 1 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_2_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 2 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_2_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 2 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_3_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 3 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_3_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 3 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_4_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 4 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_4_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 4 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_5_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 5 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_5_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 5 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Total Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Total Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_1_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 1 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_1_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 1 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_2_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 2 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_2_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 2 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_3_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 3 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_3_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 3 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_4_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 4 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_4_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 4 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_5_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 5 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_5_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 5 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Total Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Total Band Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_1_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 1 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_1_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 1 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_2_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 2 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_2_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 2 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_3_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 3 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_3_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 3 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_4_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 4 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_4_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 4 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_5_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 5 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_5_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 5 Flux (erg/cm^2/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ep_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Total Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray}
+#   - {precision: E5}
+# - name: ep_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Total Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray}
+#   - {precision: E5}
+# - name: pn_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Total Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Total Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_1_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 1 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_1_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 1 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_2_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 2 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_2_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 2 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_3_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 3 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_3_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 3 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_4_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 4 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_4_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 4 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_5_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 5 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_5_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Band 5 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Total Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Total Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_1_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 1 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_1_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 1 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_2_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 2 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_2_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 2 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_3_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 3 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_3_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 3 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_4_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 4 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_4_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 4 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_5_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 5 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_5_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Band 5 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Total Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Total Band Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_1_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 1 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_1_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 1 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_2_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 2 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_2_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 2 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_3_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 3 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_3_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 3 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_4_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 4 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_4_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 4 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_5_rate
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 5 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_5_rate_error
+#   unit: ct / s
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Band 5 Count Rate (ct/s)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ep_cts
+#   unit: ct
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: EPIC Total Band Source Counts
+#   meta: !!omap
+#   - {ucd: phot;em.X-ray}
+#   - {precision: F6}
+# - name: ep_cts_error
+#   unit: ct
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Uncertainty in EPIC Total Band Source Counts
+#   meta: !!omap
+#   - {ucd: stat.error;phot;em.X-ray}
+#   - {precision: F6}
+# - name: pn_cts
+#   unit: ct
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: PN Total Band Source Counts
+#   meta: !!omap
+#   - {ucd: phot;em.X-ray}
+#   - {precision: F6}
+# - name: pn_cts_error
+#   unit: ct
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Uncertainty in PN Total Band Source Counts
+#   meta: !!omap
+#   - {ucd: stat.error;phot;em.X-ray}
+#   - {precision: F6}
+# - name: m1_cts
+#   unit: ct
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: M1 Total Band Source Counts
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray}
+#   - {precision: F6}
+# - name: m1_cts_error
+#   unit: ct
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Uncertainty in M1 Total Band Source Counts
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray}
+#   - {precision: F6}
+# - name: m2_cts
+#   unit: ct
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: M2 Total Band Source Counts
+#   meta: !!omap
+#   - {ucd: phot.count;em.X-ray}
+#   - {precision: F6}
+# - name: m2_cts_error
+#   unit: ct
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Uncertainty in M2 Total Band Source Counts
+#   meta: !!omap
+#   - {ucd: stat.error;phot;em.X-ray}
+#   - {precision: F6}
+# - name: ep_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Total Band Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: pn_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Total Band Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: pn_1_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 1 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: pn_2_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 2 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: pn_3_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 3 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: pn_4_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 4 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: pn_5_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 5 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m1_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Total Band Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m1_1_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 1 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m1_2_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 2 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m1_3_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 3 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m1_4_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 4 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m1_5_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 5 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m2_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Total Band Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m2_1_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 1 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m2_2_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 2 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m2_3_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 3 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m2_4_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 4 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: m2_5_det_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 5 Detection Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;instr.bandpass}
+#   - {precision: E5}
+# - name: extent
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Extent Radius (arcsec)
+#   meta: !!omap
+#   - {ucd: phys.angSize}
+#   - {precision: E5}
+# - name: extent_error
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in Extent Radius (arcsec)
+#   meta: !!omap
+#   - {ucd: stat.error;phys.angSize}
+#   - {precision: E5}
+# - name: extent_neg_err
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in Extent Radius (arcsec)
+#   meta: !!omap
+#   - {ucd: stat.error;stat.min;phys.angSize}
+#   - {precision: E5}
+# - name: extent_pos_err
+#   unit: arcsec
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in Extent Radius (arcsec)
+#   meta: !!omap
+#   - {ucd: stat.error;stat.max;phys.angSize}
+#   - {precision: E5}
+# - name: extent_ml
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Extent Likelihood
+#   meta: !!omap
+#   - {ucd: stat.likelihood;phys.angSize}
+#   - {precision: E5}
+# - name: stack_det_ml
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Detection Maximum Likelihood Using Fitting of the 5-Band Spectrum
+#   meta: !!omap
+#   - {ucd: stat.likelihood}
+#   - {precision: E6}
+# - name: stack_flux
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Mean Flux of Spectral Detection Using Fitting of the 5-Band Spectrum
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray}
+#   - {precision: E6}
+# - name: stack_flux_error
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: 1-Sigma Symmetric Error on Mean Flux of Spectral Detection Using Fitting
+#   meta: !!omap
+#   - {ucd: stat.error;phot.count;em.X-ray}
+#   - {precision: E6}
+# - name: stack_flux_neg_err
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Lower 1-Sigma Asymmetric Error on Mean Flux of Spectral Detection Using Fitting
+#   meta: !!omap
+#   - {ucd: stat.error;stat.min;phot.count;em.X-ray}
+#   - {precision: E6}
+# - name: stack_flux_pos_err
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Upper 1-Sigma Asymmetric Error on Mean Flux of Spectral Detection Using Fitting
+#   meta: !!omap
+#   - {ucd: stat.error;stat.max;phot.count;em.X-ray}
+#   - {precision: E6}
+# - name: stack_nh
+#   unit: 1 / cm2
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Hydrogen column density from fitting of the 5 band spectrum
+#   meta: !!omap
+#   - {ucd: phys.columnDensity}
+#   - {precision: E6}
+# - name: stack_nh_error
+#   unit: 1 / cm2
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: 1-Sigma Uncertainty on STACK_NH
+#   meta: !!omap
+#   - {ucd: stat.error;phys.columnDensity}
+#   - {precision: E6}
+# - name: stack_nh_neg_err
+#   unit: 1 / cm2
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Lower 1-Sigma Uncertainty on STACK_NH
+#   meta: !!omap
+#   - {ucd: stat.error;stat.min;phys.columnDensity}
+#   - {precision: E6}
+# - name: stack_nh_pos_err
+#   unit: 1 / cm2
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Upper 1-Sigma Uncertainty on STACK_NH
+#   meta: !!omap
+#   - {ucd: stat.error;stat.max;phys.columnDensity}
+#   - {precision: E6}
+# - name: stack_gamma
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Power-law index from fitting of the 5 band spectrum
+#   meta: !!omap
+#   - {ucd: stat.fit.param;spect.index}
+#   - {precision: E6}
+# - name: stack_gamma_error
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: 1-Sigma Uncertainty on STACK_GAMMA
+#   meta: !!omap
+#   - {ucd: stat.error;stat.fit.param;spect.index}
+#   - {precision: E6}
+# - name: stack_gamma_neg_err
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Lower 1-Sigma Uncertainty on STACK_GAMMA
+#   meta: !!omap
+#   - {ucd: stat.error;stat.min;stat.fit.param;spect.index}
+#   - {precision: E6}
+# - name: stack_gamma_pos_err
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Upper 1-Sigma Uncertainty on STACK_GAMMA
+#   meta: !!omap
+#   - {ucd: stat.error;stat.max;stat.fit.param;spect.index}
+#   - {precision: E6}
+# - name: pn_1_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for PN in the 0.2-0.5 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: pn_2_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for PN in the 0.5-1.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: pn_3_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for PN in the 1.0-2.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: pn_4_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for PN in the 2.0-4.5 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: pn_5_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for PN in the 4.5-12.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m1_1_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS1 in the 0.2-0.5 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m1_2_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS1 in the 0.5-1.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m1_3_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS1 in the 1.0-2.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m1_4_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS1 in the 2.0-4.5 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m1_5_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS1 in the 4.5-12.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m2_1_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS2 in the 0.2-0.5 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m2_2_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS2 in the 0.5-1.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m2_3_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS2 in the 1.0-2.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m2_4_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS2 in the 2.0-4.5 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: m2_5_ecf
+#   unit: cm2 ct / erg
+#   datatype: float64
+#   format: '{:.6g}'
+#   description: Energy Conversion Factor for MOS2 in the 4.5-12.0 keV Band
+#   meta: !!omap
+#   - {ucd: arith.factor;phot.flux;phys.energy}
+#   - {precision: E6}
+# - name: ep_hr1
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Hardness Ratio for Bands 1 and 2
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_hr1_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Hardness Ratio for Bands 1 and 2
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_hr2
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Hardness Ratio for Bands 2 and 3
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_hr2_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Hardness Ratio for Bands 2 and 3
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: ep_hr3
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Hardness Ratio for Bands 3 and 4
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio}
+#   - {precision: E5}
+# - name: ep_hr3_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Hardness Ratio for Bands 3 and 4
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio}
+#   - {precision: E5}
+# - name: ep_hr4
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: EPIC Hardness Ratio for Bands 4 and 5
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.medium}
+#   - {precision: E5}
+# - name: ep_hr4_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in EPIC Hardness Ratio for Bands 4 and 5
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_hr1
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Hardness Ratio for Bands 1 and 2
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_hr1_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Hardness Ratio for Bands 1 and 2
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_hr2
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Hardness Ratio for Bands 2 and 3
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_hr2_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Hardness Ratio for Bands 2 and 3
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_hr3
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Hardness Ratio for Bands 3 and 4
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_hr3_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Hardness Ratio for Bands 3 and 4
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft}
+#   - {precision: E5}
+# - name: pn_hr4
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Hardness Ratio for Bands 4 and 5
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_hr4_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in PN Hardness Ratio for Bands 4 and 5
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_hr1
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Hardness Ratio for Bands 1 and 2
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_hr1_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Hardness Ratio for Bands 1 and 2
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_hr2
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Hardness Ratio for Bands 2 and 3
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_hr2_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Hardness Ratio for Bands 2 and 3
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_hr3
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Hardness Ratio for Bands 3 and 4
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_hr3_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Hardness Ratio for Bands 3 and 4
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m1_hr4
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Hardness Ratio for Bands 4 and 5
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m1_hr4_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M1 Hardness Ratio for Bands 4 and 5
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_hr1
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Hardness Ratio for Bands 1 and 2
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_hr1_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Hardness Ratio for Bands 1 and 2
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_hr2
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Hardness Ratio for Bands 2 and 3
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_hr2_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Hardness Ratio for Bands 2 and 3
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_hr3
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Hardness Ratio for Bands 3 and 4
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_hr3_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Hardness Ratio for Bands 3 and 4
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.medium;em.X-ray.soft}
+#   - {precision: E5}
+# - name: m2_hr4
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Hardness Ratio for Bands 4 and 5
+#   meta: !!omap
+#   - {ucd: phot.flux;arith.ratio;em.X-ray.medium}
+#   - {precision: E5}
+# - name: m2_hr4_error
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Uncertainty in M2 Hardness Ratio for Bands 4 and 5
+#   meta: !!omap
+#   - {ucd: stat.error;phot.flux;arith.ratio;em.X-ray.medium}
+#   - {precision: E5}
+# - name: pn_1_exposure
+#   unit: s
+#   datatype: float64
+#   description: PN Band 1 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: pn_2_exposure
+#   unit: s
+#   datatype: float64
+#   description: PN Band 2 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: pn_3_exposure
+#   unit: s
+#   datatype: float64
+#   description: PN Band 3 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: pn_4_exposure
+#   unit: s
+#   datatype: float64
+#   description: PN Band 4 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: pn_5_exposure
+#   unit: s
+#   datatype: float64
+#   description: PN Band 5 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m1_1_exposure
+#   unit: s
+#   datatype: float64
+#   description: M1 Band 1 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m1_2_exposure
+#   unit: s
+#   datatype: float64
+#   description: M1 Band 2 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m1_3_exposure
+#   unit: s
+#   datatype: float64
+#   description: M1 Band 3 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m1_4_exposure
+#   unit: s
+#   datatype: float64
+#   description: M1 Band 4 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m1_5_exposure
+#   unit: s
+#   datatype: float64
+#   description: M1 Band 5 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m2_1_exposure
+#   unit: s
+#   datatype: float64
+#   description: M2 Band 1 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m2_2_exposure
+#   unit: s
+#   datatype: float64
+#   description: M2 Band 2 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m2_3_exposure
+#   unit: s
+#   datatype: float64
+#   description: M2 Band 3 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m2_4_exposure
+#   unit: s
+#   datatype: float64
+#   description: M2 Band 4 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: m2_5_exposure
+#   unit: s
+#   datatype: float64
+#   description: M2 Band 5 Exposure Map (s)
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+# - name: pn_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Total Band Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: pn_1_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 1 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: pn_2_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 2 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: pn_3_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 3 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: pn_4_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 4 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: pn_5_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 5 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m1_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Total Band Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m1_1_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 1 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m1_2_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 2 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m1_3_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 3 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m1_4_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 4 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m1_5_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 5 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m2_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Total Band Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m2_1_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 1 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m2_2_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 2 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m2_3_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 3 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m2_4_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 4 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: m2_5_bg
+#   unit: ct / pix
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 5 Background Map Value (ct/pixel)
+#   meta: !!omap
+#   - {ucd: instr.background}
+#   - {precision: E5}
+# - name: ep_ontime
+#   unit: s
+#   datatype: float64
+#   format: '{:.2f}'
+#   description: EPIC Total Good Exposure Time (After GTI Filtering) of the CCD
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - {precision: F2}
+# - name: pn_ontime
+#   unit: s
+#   datatype: float64
+#   format: '{:.2f}'
+#   description: PN Total Good Exposure Time (After GTI Filtering) of the CCD
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - {precision: F2}
+# - name: m1_ontime
+#   unit: s
+#   datatype: float64
+#   format: '{:.2f}'
+#   description: M1 Total Good Exposure Time (After GTI Filtering) of the CCD
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - {precision: F2}
+# - name: m2_ontime
+#   unit: s
+#   datatype: float64
+#   format: '{:.2f}'
+#   description: M2 Total Good Exposure Time (After GTI Filtering) of the CCD
+#   meta: !!omap
+#   - {ucd: time.duration;obs.exposure}
+#   - {precision: F2}
+# - name: pn_pileup
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Estimate of the Pile-Up Level in EPIC/pn
+#   meta: !!omap
+#   - {ucd: stat.value}
+#   - {precision: E5}
+# - name: m1_pileup
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Estimate of the Pile-Up Level in EPIC/MOS1
+#   meta: !!omap
+#   - {ucd: stat.value}
+#   - {precision: E5}
+# - name: m2_pileup
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Estimate of the Pile-Up Level in EPIC/MOS2
+#   meta: !!omap
+#   - {ucd: stat.value}
+#   - {precision: E5}
+# - name: pn_maskfrac
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: PSF Weighted Mean of PN Detector Coverage of a Detection
+#   meta: !!omap
+#   - {ucd: meta.code;instr.det}
+#   - {precision: F6}
+# - name: m1_maskfrac
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: PSF Weighted Mean of M1 Detector Coverage of a Detection
+#   meta: !!omap
+#   - {ucd: meta.code;instr.det}
+#   - {precision: F6}
+# - name: m2_maskfrac
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: PSF Weighted Mean of M2 Detector Coverage of a Detection
+#   meta: !!omap
+#   - {ucd: meta.code;instr.det}
+#   - {precision: F6}
+# - name: dist_ref
+#   unit: arcmin
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Distance to the Reference Coordinates of the Field
+#   meta: !!omap
+#   - {ucd: pos.distance}
+#   - {precision: E5}
+# - name: ep_offax
+#   unit: arcmin
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Distance between Detection Position and On-Axis Position of EPIC (arcmin)
+#   meta: !!omap
+#   - {ucd: instr.offset}
+#   - {precision: E5}
+# - name: pn_offax
+#   unit: arcmin
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Distance between Detection Position and On-Axis Position of PN Detector (arcmin)
+#   meta: !!omap
+#   - {ucd: instr.offset}
+#   - {precision: E5}
+# - name: m1_offax
+#   unit: arcmin
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Distance between Detection Position and On-Axis Position of M1 Detector (arcmin)
+#   meta: !!omap
+#   - {ucd: instr.offset}
+#   - {precision: E5}
+# - name: m2_offax
+#   unit: arcmin
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: Distance between Detection Position and On-Axis Position of M2 Detector (arcmin)
+#   meta: !!omap
+#   - {ucd: instr.offset}
+#   - {precision: E5}
+# - name: tseries_flag
+#   datatype: string
+#   description: Boolean Flag [T/F] Indicates Source Has Time Series in at Least One Exposure
+#   meta: !!omap
+#   - {ucd: meta.code;phot}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: spectra_flag
+#   datatype: string
+#   description: Boolean Flag [T/F] Indicates Source Has a Spectrum in at Least One Exposure
+#   meta: !!omap
+#   - {ucd: meta.code;spect}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: chi2prob
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Chi^2 Probability That Source Is Constant
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2}
+#   - {precision: F6}
+# - name: fvar
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Fractional Excess Variance of Timeseries for the Detection
+#   meta: !!omap
+#   - {ucd: stat.variance;src.var}
+#   - {precision: F6}
+# - name: fvar_error
+#   datatype: float64
+#   format: '{:.6f}'
+#   description: Error in Fractional Excess Variance of Timeseries for the Detection
+#   meta: !!omap
+#   - {ucd: stat.error;src.var}
+#   - {precision: F6}
+# - name: var_flag
+#   datatype: string
+#   description: Flag [T/F] Indicates Source Was Detected as Variable in at Least One Exposure
+#   meta: !!omap
+#   - {ucd: meta.code;src.var}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pn_1_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 1 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: pn_2_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 2 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: pn_3_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 3 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: pn_4_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 4 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: pn_5_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: PN Band 5 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m1_1_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 1 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m1_2_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 2 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m1_3_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 3 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m1_4_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 4 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m1_5_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M1 Band 5 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m2_1_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 1 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m2_2_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 2 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m2_3_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 3 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m2_4_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 4 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: m2_5_vig
+#   datatype: float64
+#   format: '{:.5g}'
+#   description: M2 Band 5 Vignetting Value
+#   meta: !!omap
+#   - {ucd: instr.bandpass}
+#   - {precision: E5}
+# - name: sum_flag
+#   datatype: int16
+#   description: 'Summary Flag of the Source: 0=Good, 1=Warning, 2=Possibly Spurious'
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - values: {'null': -32768}
+# - name: ep_flag
+#   datatype: string
+#   description: EPIC Detection Quality Flags Combining PN, MOS1, and MOS2 Flags
+#   meta: !!omap
+#   - {ucd: meta.code}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pn_flag
+#   datatype: string
+#   description: EPIC/PN Detection Quality Flags
+#   meta: !!omap
+#   - {ucd: meta.code}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: m1_flag
+#   datatype: string
+#   description: EPIC/MOS1 Detection Quality Flags
+#   meta: !!omap
+#   - {ucd: meta.code}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: m2_flag
+#   datatype: string
+#   description: EPIC/MOS2 Detection Quality Flags
+#   meta: !!omap
+#   - {ucd: meta.code}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: var_chi2
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Reduced Chi Squared of EPIC Band 0.2-12.0 keV Inter-Observation Variability
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var}
+#   - {precision: F5}
+# - name: var_chi2_1
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Reduced Chi Squared of EPIC Band 1 Inter-Observation Variability
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var}
+#   - {precision: F5}
+# - name: var_chi2_2
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Reduced Chi Squared of EPIC Band 2 Inter-Observation Variability
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var}
+#   - {precision: F5}
+# - name: var_chi2_3
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Reduced Chi Squared of EPIC Band 3 Inter-Observation Variability
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var}
+#   - {precision: F5}
+# - name: var_chi2_4
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Reduced Chi Squared of EPIC Band 4 Inter-Observation Variability
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var}
+#   - {precision: F5}
+# - name: var_chi2_5
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Reduced Chi Squared of EPIC Band 5 Inter-Observation Variability
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var}
+#   - {precision: F5}
+# - name: var_prob
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That EPIC Band 0.2-12.0 keV Flux Variability Is Consistent
+#   meta: !!omap
+#   - {ucd: stat.probability;src.var}
+#   - {precision: F5}
+# - name: var_prob_1
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That EPIC Band 1 Flux Variability Is Consistent
+#   meta: !!omap
+#   - {ucd: stat.probability;src.var}
+#   - {precision: F5}
+# - name: var_prob_2
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That EPIC Band 2 Flux Variability Is Consistent
+#   meta: !!omap
+#   - {ucd: stat.probability;src.var}
+#   - {precision: F5}
+# - name: var_prob_3
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That EPIC Band 3 Flux Variability Is Consistent
+#   meta: !!omap
+#   - {ucd: stat.probability;src.var}
+#   - {precision: F5}
+# - name: var_prob_4
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That EPIC Band 4 Flux Variability Is Consistent
+#   meta: !!omap
+#   - {ucd: stat.probability;src.var}
+#   - {precision: F5}
+# - name: var_prob_5
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That EPIC Band 5 Flux Variability Is Consistent
+#   meta: !!omap
+#   - {ucd: stat.probability;src.var}
+#   - {precision: F5}
+# - name: fratio
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Inter-Observation Flux Ratio Band 0.2-12.0 keV
+#   meta: !!omap
+#   - {ucd: src.var.amplitude;phot.flux;em.X-ray}
+#   - {precision: F5}
+# - name: fratio_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: 1-Sigma Uncertainty on FRATIO
+#   meta: !!omap
+#   - {ucd: stat.error;src.var.amplitude;phot.flux}
+#   - {precision: F5}
+# - name: fratio_1
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Band 1 Inter-Observation Flux Ratio
+#   meta: !!omap
+#   - {ucd: src.var.amplitude;phot.flux;em.X-ray.soft}
+#   - {precision: F5}
+# - name: fratio_1_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: 1-Sigma Uncertainty on FRATIO_1
+#   meta: !!omap
+#   - {ucd: stat.error;src.var.amplitude;phot.flux}
+#   - {precision: F5}
+# - name: fratio_2
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Band 2 Inter-Observation Flux Ratio
+#   meta: !!omap
+#   - {ucd: src.var.amplitude;phot.flux;em.X-ray.soft}
+#   - {precision: F5}
+# - name: fratio_2_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: 1-Sigma Uncertainty on FRATIO_2
+#   meta: !!omap
+#   - {ucd: stat.error;src.var.amplitude;phot.flux}
+#   - {precision: F5}
+# - name: fratio_3
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Band 3 Inter-Observation Flux Ratio
+#   meta: !!omap
+#   - {ucd: src.var.amplitude;phot.flux;em.X-ray.soft}
+#   - {precision: F5}
+# - name: fratio_3_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: 1-Sigma Uncertainty on FRATIO_3
+#   meta: !!omap
+#   - {ucd: stat.error;src.var.amplitude;phot.flux}
+#   - {precision: F5}
+# - name: fratio_4
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Band 4 Inter-Observation Flux Ratio
+#   meta: !!omap
+#   - {ucd: src.var.amplitude;phot.flux;em.X-ray.medium}
+#   - {precision: F5}
+# - name: fratio_4_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: 1-Sigma Uncertainty on FRATIO_4
+#   meta: !!omap
+#   - {ucd: stat.error;src.var.amplitude;phot.flux}
+#   - {precision: F5}
+# - name: fratio_5
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Band 5 Inter-Observation Flux Ratio
+#   meta: !!omap
+#   - {ucd: src.var.amplitude;phot.flux;em.X-ray.medium}
+#   - {precision: F5}
+# - name: fratio_5_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: 1-Sigma Uncertainty on FRATIO_5
+#   meta: !!omap
+#   - {ucd: stat.error;src.var.amplitude;phot.flux}
+#   - {precision: F5}
+# - name: fluxvar
+#   unit: sigma
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Inter-Observation Flux Difference in Terms of Sigma
+#   meta: !!omap
+#   - {ucd: stat.stdev;phot.flux;em.X-ray.soft}
+#   - {precision: F5}
+# - name: fluxvar_1
+#   unit: sigma
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Inter-Observation Band 1 Flux Difference in Terms of Sigma
+#   meta: !!omap
+#   - {ucd: stat.stdev;phot.flux;em.X-ray.soft}
+#   - {precision: F5}
+# - name: fluxvar_2
+#   unit: sigma
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Inter-Observation Band 2 Flux Difference in Terms of Sigma
+#   meta: !!omap
+#   - {ucd: stat.stdev;phot.flux;em.X-ray.soft}
+#   - {precision: F5}
+# - name: fluxvar_3
+#   unit: sigma
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Inter-Observation Band 3 Flux Difference in Terms of Sigma
+#   meta: !!omap
+#   - {ucd: stat.stdev;phot.flux;em.X-ray.soft}
+#   - {precision: F5}
+# - name: fluxvar_4
+#   unit: sigma
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Inter-Observation Band 4 Flux Difference in Terms of Sigma
+#   meta: !!omap
+#   - {ucd: stat.stdev;phot.flux;em.X-ray.medium}
+#   - {precision: F5}
+# - name: fluxvar_5
+#   unit: sigma
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Maximum EPIC Inter-Observation Band 5 Flux Difference in Terms of Sigma
+#   meta: !!omap
+#   - {ucd: stat.stdev;phot.flux;em.X-ray.medium}
+#   - {precision: F5}
+# - name: time
+#   unit: d
+#   datatype: float64
+#   format: '{:.4f}'
+#   description: Date of Earliest Observation Containing a Detection of the Unique Source
+#   meta: !!omap
+#   - {ucd: time.start;obs}
+#   - {precision: F4}
+# - name: end_time
+#   unit: d
+#   datatype: float64
+#   format: '{:.4f}'
+#   description: Date of Latest Observation Containing a Detection of a Unique Source
+#   meta: !!omap
+#   - {ucd: time.end;obs}
+#   - {precision: F4}
+# - name: xmm_revolution
+#   datatype: int32
+#   description: XMM-Newton Revolution (Orbit) Number
+#   meta: !!omap
+#   - {ucd: meta.id}
+#   - {width: 4}
+#   - values: {'null': -2147483648}
+# - name: pn_submode
+#   datatype: string
+#   description: PN Observing Mode
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: m1_submode
+#   datatype: string
+#   description: MOS1 Observing Mode
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: m2_submode
+#   datatype: string
+#   description: MOS2 Observing Mode
+#   meta: !!omap
+#   - {ucd: instr.setup}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: pn_filter
+#   datatype: string
+#   description: Type of PN Filter Used
+#   meta: !!omap
+#   - {ucd: instr;instr.filter;em.X-ray}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: m1_filter
+#   datatype: string
+#   description: Type of MOS1 Filter Used
+#   meta: !!omap
+#   - {ucd: instr;instr.filter;em.X-ray.medium}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: m2_filter
+#   datatype: string
+#   description: Type of MOS2 Filter Used
+#   meta: !!omap
+#   - {ucd: instr;instr.filter;em.X-ray.soft}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: classx_class
+#   datatype: string
+#   description: Output Class Given by the X-Ray Source Classification
+#   meta: !!omap
+#   - {ucd: src.class;em.X-ray}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: classx_outlier
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: X-Ray Classification Outlier Measure
+#   meta: !!omap
+#   - {ucd: src.class;stat.value;em.X-ray}
+#   - {precision: F5}
+# - name: classx_prob_agn
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: X-Ray Classification Posterior Probability That the Source Is an AGN
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.X-ray}
+#   - {precision: F5}
+# - name: classx_prob_star
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: X-Ray Classification Posterior Probability That the Source Is a Star
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.X-ray}
+#   - {precision: F5}
+# - name: classx_prob_gal_xrb
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: X-Ray Classification Posterior Probability That the Source Is a Galaxy
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.X-ray}
+#   - {precision: F5}
+# - name: classx_prob_gal_cv
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: X-Ray Classification Posterior Probability That the Source Is a CV
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.X-ray}
+#   - {precision: F5}
+# - name: classx_prob_bkg_agn
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: X-Ray Classification Posterior Probability that the Source Is a Background AGN
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.X-ray}
+#   - {precision: F5}
+# - name: classx_prob_extragal_xrb
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: X-Ray Classification Posterior Probability That the Source Is Extragalactic XRB
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.X-ray}
+#   - {precision: F5}
+# - name: classx_prob_extended
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: X-Ray Classification Posterior Probability That the Source Is Extended
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.X-ray}
+#   - {precision: F5}
+# - name: om_srcid
+#   datatype: string
+#   description: Identification of the OM Source in SUSS v6.2
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: om_uvw2_ab_mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVW2 Band Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvw2_ab_mag_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVW2 Band Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvm2_ab_mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVM2 Band Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvm2_ab_mag_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVM2 Band Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvw1_ab_mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVW1 Band Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvw1_ab_mag_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVW1 Band Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_u_ab_mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM U Band Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.U}
+#   - {precision: F5}
+# - name: om_u_ab_mag_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM U Band Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.opt.U}
+#   - {precision: F5}
+# - name: om_b_ab_mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM B Band Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.B}
+#   - {precision: F5}
+# - name: om_b_ab_mag_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM B Band Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.opt.B}
+#   - {precision: F5}
+# - name: om_v_ab_mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM V Band Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.V}
+#   - {precision: F5}
+# - name: om_v_ab_mag_error
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM V Band Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.opt.V}
+#   - {precision: F5}
+# - name: om_match_prob
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That the OM and X-Ray Sources Match
+#   meta: !!omap
+#   - {ucd: stat.probability;src}
+#   - {precision: F5}
+# - name: om_uvw2_quality_flag
+#   datatype: int32
+#   description: OM UVW2 Band Quality Flag
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.UV.200-300nm}
+#   - values: {'null': -2147483648}
+# - name: om_uvm2_quality_flag
+#   datatype: int32
+#   description: OM UVM2 Band Quality Flag
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.UV.200-300nm}
+#   - values: {'null': -2147483648}
+# - name: om_uvw1_quality_flag
+#   datatype: int32
+#   description: OM UVW1 Band Quality Flag
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.UV.200-300nm}
+#   - values: {'null': -2147483648}
+# - name: om_u_quality_flag
+#   datatype: int32
+#   description: OM U Band Quality Flag
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.opt.U}
+#   - values: {'null': -2147483648}
+# - name: om_b_quality_flag
+#   datatype: int32
+#   description: OM B Band Quality Flag
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.opt.B}
+#   - values: {'null': -2147483648}
+# - name: om_v_quality_flag
+#   datatype: int32
+#   description: OM V Band Quality Flag
+#   meta: !!omap
+#   - {ucd: meta.code.qual;em.opt.V}
+#   - values: {'null': -2147483648}
+# - name: om_uvw2_extended_flag
+#   datatype: string
+#   description: 'OM UVW2 Band Extent Flag: 1=Extended'
+#   meta: !!omap
+#   - {ucd: meta.code;src;phys.angSize;em.UV.200-300nm}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: om_uvm2_extended_flag
+#   datatype: string
+#   description: 'OM UVM2 Band Extent Flag: 1=Extended'
+#   meta: !!omap
+#   - {ucd: meta.code;src;phys.angSize;em.UV.200-300nm}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: om_uvw1_extended_flag
+#   datatype: string
+#   description: 'OM UVW1 Band Extent Flag: 1=Extended'
+#   meta: !!omap
+#   - {ucd: meta.code;src;phys.angSize;em.UV.200-300nm}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: om_u_extended_flag
+#   datatype: string
+#   description: 'OM U Band Extent Flag: 1=Extended'
+#   meta: !!omap
+#   - {ucd: meta.code;src;phys.angSize;em.opt.U}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: om_b_extended_flag
+#   datatype: string
+#   description: 'OM B Band Extent Flag: 1=Extended'
+#   meta: !!omap
+#   - {ucd: meta.code;src;phys.angSize;em.opt.B}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: om_v_extended_flag
+#   datatype: string
+#   description: 'OM V Band Extent Flag: 1=Extended'
+#   meta: !!omap
+#   - {ucd: meta.code;src;phys.angSize;em.opt.V}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: om_uvw2_chisq
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVW2 Band Variability Measure
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvw2_chisq_dof
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVW2 Band Variability Measure Degrees of Freedom
+#   meta: !!omap
+#   - {ucd: stat.fit.dof;src.var;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvm2_chisq
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVM2 Band Variability Measure
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvm2_chisq_dof
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVM2 Band Variability Measure Degrees of Freedom
+#   meta: !!omap
+#   - {ucd: stat.fit.dof;src.var;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvw1_chisq
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVW1 Band Variability Measure
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_uvw1_chisq_dof
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM UVW1 Band Variability Measure Degrees of Freedom
+#   meta: !!omap
+#   - {ucd: stat.fit.dof;src.var;em.UV.200-300nm}
+#   - {precision: F5}
+# - name: om_u_chisq
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM U Band Variability Measure
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var;em.opt.U}
+#   - {precision: F5}
+# - name: om_u_chisq_dof
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM U Band Variability Measure Degrees of Freedom
+#   meta: !!omap
+#   - {ucd: stat.fit.dof;src.var;em.opt.U}
+#   - {precision: F5}
+# - name: om_b_chisq
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM B Band Variability Measure
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var;em.opt.B}
+#   - {precision: F5}
+# - name: om_b_chisq_dof
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM B Band Variability Measure Degrees of Freedom
+#   meta: !!omap
+#   - {ucd: stat.fit.dof;src.var;em.opt.B}
+#   - {precision: F5}
+# - name: om_v_chisq
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM V Band Variability Measure
+#   meta: !!omap
+#   - {ucd: stat.fit.chi2;src.var;em.opt.V}
+#   - {precision: F5}
+# - name: om_v_chisq_dof
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: OM V Band Variability Measure Degrees of Freedom
+#   meta: !!omap
+#   - {ucd: stat.fit.dof;src.var;em.opt.V}
+#   - {precision: F5}
+# - name: wise_name
+#   datatype: string
+#   description: WISE All-Sky Release Catalog Source Designation
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: wise_w1mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: WISE W1 Band Source Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.IR.3-4um}
+#   - {precision: F5}
+# - name: wise_w1mag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: WISE W1 Band Source  Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.IR.3-4um}
+#   - {precision: F5}
+# - name: wise_w2mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: WISE W2 Band Source Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.IR.4-8um}
+#   - {precision: F5}
+# - name: wise_w2mag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: WISE W2 Band Source  Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.IR.4-8um}
+#   - {precision: F5}
+# - name: wise_w3mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: WISE W3 Band Source Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.IR.8-15um}
+#   - {precision: F5}
+# - name: wise_w3mag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: WISE W3 Band Source  Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.IR.8-15um}
+#   - {precision: F5}
+# - name: wise_w4mag
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: WISE W4 Band Source Magnitude (AB System)
+#   meta: !!omap
+#   - {ucd: phot.mag;em.IR.15-30um}
+#   - {precision: F5}
+# - name: wise_w4mag_error
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: WISE W4 Band Source  Magnitude Uncertainty (AB System)
+#   meta: !!omap
+#   - {ucd: stat.error;phot.mag;em.IR.15-30um}
+#   - {precision: F5}
+# - name: wise_match_prob
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That the WISE and X-Ray Sources Match
+#   meta: !!omap
+#   - {ucd: stat.probability;src}
+#   - {precision: F5}
+# - name: gaiadr3_source_id
+#   datatype: string
+#   description: Gaia DR3 Catalog Source Identifier
+#   meta: !!omap
+#   - {ucd: meta.id;src}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: gaiadr3_parallax
+#   unit: mas
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source Parallax
+#   meta: !!omap
+#   - {ucd: pos.parallax}
+#   - {precision: F5}
+# - name: gaiadr3_parallax_error
+#   unit: mas
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source Parallax Uncertainty
+#   meta: !!omap
+#   - {ucd: stat.error;pos.parallax}
+#   - {precision: F5}
+# - name: gaiadr3_parallax_overerr
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source Parallax Over Error
+#   meta: !!omap
+#   - {ucd: stat.snr;pos.parallax}
+#   - {precision: F5}
+# - name: gaiadr3_pm_ra
+#   unit: mas / yr
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source Right Ascension Proper Motion
+#   meta: !!omap
+#   - {ucd: pos.pm;pos.eq.ra}
+#   - {precision: F5}
+# - name: gaiadr3_pm_dec
+#   unit: mas / yr
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source Declination Proper Motion
+#   meta: !!omap
+#   - {ucd: pos.pm;pos.eq.dec}
+#   - {precision: F5}
+# - name: gaiadr3_gmag
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source g Magnitude
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt}
+#   - {precision: F5}
+# - name: gaiadr3_bpmag
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source Bp Magnitude
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.B}
+#   - {precision: F5}
+# - name: gaiadr3_rpmag
+#   unit: mag
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source Rp Magnitude
+#   meta: !!omap
+#   - {ucd: phot.mag;em.opt.R}
+#   - {precision: F5}
+# - name: gaia_match_prob
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Probability That the Gaia and X-Ray Sources Match
+#   meta: !!omap
+#   - {ucd: stat.probability;src}
+#   - {precision: F5}
+# - name: info_counterparts
+#   datatype: string
+#   description: Link to Further Information on Counterparts
+#   meta: !!omap
+#   - {ucd: meta.ref;src}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: gaiadr3_dist
+#   unit: pc
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Gaia DR3 Catalog Source Distance
+#   meta: !!omap
+#   - {ucd: pos.distance;src}
+#   - {precision: F5}
+# - name: classopt_class
+#   datatype: string
+#   description: Output Class Given by the Optical Source Classification
+#   meta: !!omap
+#   - {ucd: src.class;em.opt}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: classopt_prob_star
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Optical Classification Posterior Probability That the Source Is a Star
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.opt}
+#   - {precision: F5}
+# - name: classopt_prob_agn
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Optical Classification Posterior Probability That the Source Is an AGN
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.opt}
+#   - {precision: F5}
+# - name: classopt_prob_galaxy
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Optical classification Posterior Probability That the Source Is a Galaxy
+#   meta: !!omap
+#   - {ucd: src.class;stat.probability;em.opt}
+#   - {precision: F5}
+# - name: spec_flux_pl
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: EPIC Absorbed Flux from Absorbed Power Law Full Spectral Fit
+#   meta: !!omap
+#   - {ucd: phot.flux;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_flux_pl_neg_err
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Lower 1-Sigma Confidence Limit of EPIC Absorbed Flux
+#   meta: !!omap
+#   - {ucd: stat.error;stat.min;phot.flux;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_flux_pl_pos_err
+#   unit: erg/cm^2/s
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Upper 1-Sigma Confidence Limit of EPIC Absorbed Flux
+#   meta: !!omap
+#   - {ucd: stat.error;stat.max;phot.flux;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_nh_pl
+#   unit: 1 / cm2
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: EPIC-Equivalent Hydrogen Column Density NH from Absorbed Power Law Fit
+#   meta: !!omap
+#   - {ucd: stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_nh_pl_neg_err
+#   unit: 1 / cm2
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Lower 1-Sigma Confidence Limit of EPIC NH
+#   meta: !!omap
+#   - {ucd: stat.error;stat.min;stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_nh_pl_pos_err
+#   unit: 1 / cm2
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Upper 1-Sigma Confidence Limit of EPIC NH
+#   meta: !!omap
+#   - {ucd: stat.error;stat.max;stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_gamma_pl
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: EPIC Photon Index from Absorbed Power Law Full Spectral Fit
+#   meta: !!omap
+#   - {ucd: stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_gamma_pl_neg_err
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Lower 1-Sigma Confidence Limit of EPIC Photon Index
+#   meta: !!omap
+#   - {ucd: stat.error;stat.min;stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_gamma_pl_pos_err
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Upper 1-Sigma Confidence Limit of EPIC Photon Index
+#   meta: !!omap
+#   - {ucd: stat.error;stat.max;stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_iin_pl
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: EPIC Inter-Instrument Normalization from Absorbed Power Law Full Spectrum Fit
+#   meta: !!omap
+#   - {ucd: stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_iin_pl_neg_err
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Lower 1-Sigma Confidence Limit of EPIC Inter-Instrument Normalization
+#   meta: !!omap
+#   - {ucd: stat.error;stat.min;stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_iin_pl_pos_err
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Upper 1-Sigma Confidence Limit of EPIC Inter-Instrument Normalization
+#   meta: !!omap
+#   - {ucd: stat.error;stat.max;stat.fit.param;em.X-ray;meta.modelled}
+#   - {precision: F5}
+# - name: spec_dof_pl
+#   datatype: int32
+#   description: Degrees of Freedom of Absorbed Power Law Full Spectral Fit
+#   meta: !!omap
+#   - {ucd: stat.fit.dof}
+#   - values: {'null': -2147483648}
+# - name: spec_pvalue_pl
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Pvalue of Absorbed Power Law Full Spectral Fit
+#   meta: !!omap
+#   - {ucd: stat.fit.goodness;stat.probability}
+#   - {precision: F5}
+# - name: spec_flag_pl
+#   datatype: int32
+#   description: Flag That Indicates Possible Issues with Power Law Spectral Fit
+#   meta: !!omap
+#   - {ucd: meta.code.qual}
+#   - values: {'null': -2147483648}
+# - name: spec_info
+#   datatype: string
+#   description: Link to Further Spectral Information
+#   meta: !!omap
+#   - {ucd: meta.ref.url;meta.modelled}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: approx_source_var
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Long-Term Variability Factor Obtained from Multiple X-Ray Mission Data
+#   meta: !!omap
+#   - {ucd: src.var.index;em.X-ray}
+#   - {precision: F5}
+# - name: redshift_zsp
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Spectral Redshift
+#   meta: !!omap
+#   - {ucd: src.redshift}
+#   - {precision: F5}
+# - name: redshift_tpz_z_best
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Redshift Determined Using the TPZ Method
+#   meta: !!omap
+#   - {ucd: src.redshift}
+#   - {precision: F5}
+# - name: redshift_tpz_flag_zconf
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Confidence Limit on Redshift Using the TPZ Method
+#   meta: !!omap
+#   - {ucd: meta.code.qual;src.redshift}
+#   - {precision: F5}
+# - name: redshift_lph_z_best
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Redshift determined using the LePhare Method
+#   meta: !!omap
+#   - {ucd: src.redshift}
+#   - {precision: F5}
+# - name: redshift_lph_flag_zconf
+#   datatype: float64
+#   format: '{:.5f}'
+#   description: Confidence limit on redshift using the LePhare Method
+#   meta: !!omap
+#   - {ucd: meta.code.qual;src.redshift}
+#   - {precision: F5}
+# - name: redshift_info_distance
+#   datatype: string
+#   description: Link to Complementary Information on Distance Determination
+#   meta: !!omap
+#   - {ucd: meta.ref;src.redshift}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - {name: __x_ra_dec, datatype: float64}
+# - {name: __y_ra_dec, datatype: float64}
+# - {name: __z_ra_dec, datatype: float64}
+# meta: !!omap
+# - {description: 'Query result for:
+# 
+#     SELECT TOP 300 * FROM xmmssc WHERE CONTAINS(POINT(''ICRS'',ra,dec),CIRCLE(''ICRS'',118.69117410685,16.694621231895,0.016666666666666666))=1'}
+# schema: astropy-2.0
+__row srcid name obsid pps_srcnum n_obs n_contrib n_exp ra dec error_radius error_ell_major error_ell_minor error_ell_pa lii bii x_pixel x_pixel_error x_pixel_neg_err x_pixel_pos_err y_pixel y_pixel_error y_pixel_neg_err y_pixel_pos_err ccdpn pn_rawx pn_rawy ccdm1 m1_rawx m1_rawy ccdm2 m2_rawx m2_rawy dist_nn n_blend ep_flux ep_flux_error ep_1_flux ep_1_flux_error ep_2_flux ep_2_flux_error ep_3_flux ep_3_flux_error ep_4_flux ep_4_flux_error ep_5_flux ep_5_flux_error pn_flux pn_flux_error pn_1_flux pn_1_flux_error pn_2_flux pn_2_flux_error pn_3_flux pn_3_flux_error pn_4_flux pn_4_flux_error pn_5_flux pn_5_flux_error m1_flux m1_flux_error m1_1_flux m1_1_flux_error m1_2_flux m1_2_flux_error m1_3_flux m1_3_flux_error m1_4_flux m1_4_flux_error m1_5_flux m1_5_flux_error m2_flux m2_flux_error m2_1_flux m2_1_flux_error m2_2_flux m2_2_flux_error m2_3_flux m2_3_flux_error m2_4_flux m2_4_flux_error m2_5_flux m2_5_flux_error ep_rate ep_rate_error pn_rate pn_rate_error pn_1_rate pn_1_rate_error pn_2_rate pn_2_rate_error pn_3_rate pn_3_rate_error pn_4_rate pn_4_rate_error pn_5_rate pn_5_rate_error m1_rate m1_rate_error m1_1_rate m1_1_rate_error m1_2_rate m1_2_rate_error m1_3_rate m1_3_rate_error m1_4_rate m1_4_rate_error m1_5_rate m1_5_rate_error m2_rate m2_rate_error m2_1_rate m2_1_rate_error m2_2_rate m2_2_rate_error m2_3_rate m2_3_rate_error m2_4_rate m2_4_rate_error m2_5_rate m2_5_rate_error ep_cts ep_cts_error pn_cts pn_cts_error m1_cts m1_cts_error m2_cts m2_cts_error ep_det_ml pn_det_ml pn_1_det_ml pn_2_det_ml pn_3_det_ml pn_4_det_ml pn_5_det_ml m1_det_ml m1_1_det_ml m1_2_det_ml m1_3_det_ml m1_4_det_ml m1_5_det_ml m2_det_ml m2_1_det_ml m2_2_det_ml m2_3_det_ml m2_4_det_ml m2_5_det_ml extent extent_error extent_neg_err extent_pos_err extent_ml stack_det_ml stack_flux stack_flux_error stack_flux_neg_err stack_flux_pos_err stack_nh stack_nh_error stack_nh_neg_err stack_nh_pos_err stack_gamma stack_gamma_error stack_gamma_neg_err stack_gamma_pos_err pn_1_ecf pn_2_ecf pn_3_ecf pn_4_ecf pn_5_ecf m1_1_ecf m1_2_ecf m1_3_ecf m1_4_ecf m1_5_ecf m2_1_ecf m2_2_ecf m2_3_ecf m2_4_ecf m2_5_ecf ep_hr1 ep_hr1_error ep_hr2 ep_hr2_error ep_hr3 ep_hr3_error ep_hr4 ep_hr4_error pn_hr1 pn_hr1_error pn_hr2 pn_hr2_error pn_hr3 pn_hr3_error pn_hr4 pn_hr4_error m1_hr1 m1_hr1_error m1_hr2 m1_hr2_error m1_hr3 m1_hr3_error m1_hr4 m1_hr4_error m2_hr1 m2_hr1_error m2_hr2 m2_hr2_error m2_hr3 m2_hr3_error m2_hr4 m2_hr4_error pn_1_exposure pn_2_exposure pn_3_exposure pn_4_exposure pn_5_exposure m1_1_exposure m1_2_exposure m1_3_exposure m1_4_exposure m1_5_exposure m2_1_exposure m2_2_exposure m2_3_exposure m2_4_exposure m2_5_exposure pn_bg pn_1_bg pn_2_bg pn_3_bg pn_4_bg pn_5_bg m1_bg m1_1_bg m1_2_bg m1_3_bg m1_4_bg m1_5_bg m2_bg m2_1_bg m2_2_bg m2_3_bg m2_4_bg m2_5_bg ep_ontime pn_ontime m1_ontime m2_ontime pn_pileup m1_pileup m2_pileup pn_maskfrac m1_maskfrac m2_maskfrac dist_ref ep_offax pn_offax m1_offax m2_offax tseries_flag spectra_flag chi2prob fvar fvar_error var_flag pn_1_vig pn_2_vig pn_3_vig pn_4_vig pn_5_vig m1_1_vig m1_2_vig m1_3_vig m1_4_vig m1_5_vig m2_1_vig m2_2_vig m2_3_vig m2_4_vig m2_5_vig sum_flag ep_flag pn_flag m1_flag m2_flag var_chi2 var_chi2_1 var_chi2_2 var_chi2_3 var_chi2_4 var_chi2_5 var_prob var_prob_1 var_prob_2 var_prob_3 var_prob_4 var_prob_5 fratio fratio_error fratio_1 fratio_1_error fratio_2 fratio_2_error fratio_3 fratio_3_error fratio_4 fratio_4_error fratio_5 fratio_5_error fluxvar fluxvar_1 fluxvar_2 fluxvar_3 fluxvar_4 fluxvar_5 time end_time xmm_revolution pn_submode m1_submode m2_submode pn_filter m1_filter m2_filter classx_class classx_outlier classx_prob_agn classx_prob_star classx_prob_gal_xrb classx_prob_gal_cv classx_prob_bkg_agn classx_prob_extragal_xrb classx_prob_extended om_srcid om_uvw2_ab_mag om_uvw2_ab_mag_error om_uvm2_ab_mag om_uvm2_ab_mag_error om_uvw1_ab_mag om_uvw1_ab_mag_error om_u_ab_mag om_u_ab_mag_error om_b_ab_mag om_b_ab_mag_error om_v_ab_mag om_v_ab_mag_error om_match_prob om_uvw2_quality_flag om_uvm2_quality_flag om_uvw1_quality_flag om_u_quality_flag om_b_quality_flag om_v_quality_flag om_uvw2_extended_flag om_uvm2_extended_flag om_uvw1_extended_flag om_u_extended_flag om_b_extended_flag om_v_extended_flag om_uvw2_chisq om_uvw2_chisq_dof om_uvm2_chisq om_uvm2_chisq_dof om_uvw1_chisq om_uvw1_chisq_dof om_u_chisq om_u_chisq_dof om_b_chisq om_b_chisq_dof om_v_chisq om_v_chisq_dof wise_name wise_w1mag wise_w1mag_error wise_w2mag wise_w2mag_error wise_w3mag wise_w3mag_error wise_w4mag wise_w4mag_error wise_match_prob gaiadr3_source_id gaiadr3_parallax gaiadr3_parallax_error gaiadr3_parallax_overerr gaiadr3_pm_ra gaiadr3_pm_dec gaiadr3_gmag gaiadr3_bpmag gaiadr3_rpmag gaia_match_prob info_counterparts gaiadr3_dist classopt_class classopt_prob_star classopt_prob_agn classopt_prob_galaxy spec_flux_pl spec_flux_pl_neg_err spec_flux_pl_pos_err spec_nh_pl spec_nh_pl_neg_err spec_nh_pl_pos_err spec_gamma_pl spec_gamma_pl_neg_err spec_gamma_pl_pos_err spec_iin_pl spec_iin_pl_neg_err spec_iin_pl_pos_err spec_dof_pl spec_pvalue_pl spec_flag_pl spec_info approx_source_var redshift_zsp redshift_tpz_z_best redshift_tpz_flag_zconf redshift_lph_z_best redshift_lph_flag_zconf redshift_info_distance __x_ra_dec __y_ra_dec __z_ra_dec

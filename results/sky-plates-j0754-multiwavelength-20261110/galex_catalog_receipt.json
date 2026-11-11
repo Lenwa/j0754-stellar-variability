@@ -1,0 +1,22 @@
+{
+  "name": "galex_catalog",
+  "url": "https://mast.stsci.edu/api/v0/invoke",
+  "params": {
+    "request": "{\"service\": \"Mast.Galex.Catalog\", \"params\": {\"ra\": 118.69117410685, \"dec\": 16.694621231895, \"radius\": 0.008333333333333333}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1}"
+  },
+  "retrieved_utc": "2026-11-11T03:40:51.441280+00:00",
+  "status_code": 200,
+  "url_resolved": "https://mast.stsci.edu/api/v0/invoke?request=%7B%22service%22%3A+%22Mast.Galex.Catalog%22%2C+%22params%22%3A+%7B%22ra%22%3A+118.69117410685%2C+%22dec%22%3A+16.694621231895%2C+%22radius%22%3A+0.008333333333333333%7D%2C+%22format%22%3A+%22json%22%2C+%22pagesize%22%3A+1000%2C+%22page%22%3A+1%7D",
+  "bytes": 2534,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/galex_catalog.native",
+  "sha256": "2377b85b5f643779d4a0754ae7f07a80640134b622fee7071b698e8309d58772",
+  "state": "json_response",
+  "json_keys": [
+    "status",
+    "msg",
+    "data",
+    "fields",
+    "paging"
+  ],
+  "rows": 2
+}

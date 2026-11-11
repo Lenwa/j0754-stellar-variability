@@ -2086,5 +2086,47 @@
     "bytes": 11226240,
     "sha256": "4d3567b4afd85d2455edd0ede188bd1331c71d5cf6b9f9538df87d561149eb78",
     "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0001_sg10-scst.fits.gz",
+    "bytes": 29448,
+    "sha256": "0accb82dc83b1f17ad1ae7a2a40633f283595633b532b550fc0dd065ed4d4b02",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0002_sg10-scst.fits.gz",
+    "bytes": 27162,
+    "sha256": "7f0636d7d2d6c861d6350caedbf46e994b6261c7de3037ab61243d21d0a00a10",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_sk.img.gz",
+    "bytes": 3970773,
+    "sha256": "9ff7fbcf1748d83b58324305934ab3b36ca9d1522b69c3609d27f95436adadfd",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_ex.img.gz",
+    "bytes": 209339,
+    "sha256": "cfb74cd3b5c0659a5f4d8c21cf5d848e8aac84dc5e44c874c7f057cdce35bd48",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 43200,
+    "sha256": "b26fa56e249b5a057f9c62993ee851c7381695550b2e833986dccd8e63fe80b1",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 97920,
+    "sha256": "9ae436623c1bb8123de49a7467dd9f81ee69ae0cfad868061f87f0e019b20667",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 37440,
+    "sha256": "5cd5dcd1489bcb40afd23b7025fd4af7855e6ad60e063167ef2f73f41e02a4ff",
+    "included": true
   }
 ]

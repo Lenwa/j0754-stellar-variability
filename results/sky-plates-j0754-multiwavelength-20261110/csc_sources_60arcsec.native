@@ -1,0 +1,1584 @@
+<?xml version="1.0"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
+ <RESOURCE type="results">
+  <INFO name="QUERY_STATUS" value="OK">No errors detected in query preprocessing</INFO>
+  <TABLE>
+   <DESCRIPTION>Query result for:&#xA;SELECT TOP 300 * FROM csc WHERE CONTAINS(POINT(&apos;ICRS&apos;,ra,dec),CIRCLE(&apos;ICRS&apos;,118.69117410685,16.694621231895,0.016666666666666666))=1</DESCRIPTION>
+   <FIELD datatype="char" arraysize="*" name="__row"/>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;meta.main" name="name">
+    <DESCRIPTION>Source Designation (2CXO JHHMMSS.SsDDMMSS[X])</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra;meta.main" precision="F6" name="ra">
+    <DESCRIPTION>Right Ascension</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec;meta.main" precision="F6" name="dec">
+    <DESCRIPTION>Declination</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon" precision="F6" name="lii">
+    <DESCRIPTION>Galactic Longitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="F6" name="bii">
+    <DESCRIPTION>Galactic Latitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.smajAxis;pos.errorEllipse" precision="F5" name="error_ellipse_r0" width="7">
+    <DESCRIPTION>Major Radius of the 95% Confidence Level Position Error Ellipse</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="double" ucd="phys.angSize.sminAxis;pos.errorEllipse" precision="F5" name="error_ellipse_r1" width="7">
+    <DESCRIPTION>Minor Radius of the 95% Confidence Level Position Error Ellipse</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.posAng;pos.errorEllipse" precision="F3" name="error_ellipse_angle" width="7">
+    <DESCRIPTION>Position Angle of the Major Axis of the 95% Confidence Level Error Ellipse</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;phys.angSize" name="extent_flag">
+    <DESCRIPTION>Flag Indicates Source Extent Inconsistent with Point Source (90% Confidence)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="conf_flag">
+    <DESCRIPTION>Flag Indicates Source Regions Overlap (Confused Source)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="pileup_flag">
+    <DESCRIPTION>Flag Indicates ACIS Pile-Up Fraction Exceeds ~10% in All Observations</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src.var" name="var_flag">
+    <DESCRIPTION>Flag Indicates Source Displays Flux Variability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="streak_src_flag">
+    <DESCRIPTION>Flag Indicates Source Located on ACIS Readout Streak in All Observations</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual;instr.saturation" name="sat_src_flag">
+    <DESCRIPTION>Flag Indicates Source Saturated in All Observations</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="man_add_flag">
+    <DESCRIPTION>Flag Indicates Source Was Manually Added in the Catalog via Human Review</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="man_inc_flag">
+    <DESCRIPTION>Flag Indicates Source Was Manually Included in the Catalog via Human Review</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="man_reg_flag">
+    <DESCRIPTION>Flag Indicates Source Region Parameters Were Manually Modified via Human Review</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="man_match_flag">
+    <DESCRIPTION>Flag Indicates Source Detections Were Manually Matched via Human Review</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code.qual" name="man_pos_flag">
+    <DESCRIPTION>Flag Indicates Best-Fit Source Position Was Manually Modified via Human Review</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;src.var" name="var_inter_hard_flag">
+    <DESCRIPTION>Flag Indicates Hardness Ratios Are Inconsistent Between Observations</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.smajAxis;em.X-ray" precision="E2" name="b_major_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse of Source Extent; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.smajAxis;em.X-ray.medium" precision="E2" name="h_major_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse of Source Extent; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.smajAxis;em.X-ray.medium" precision="E2" name="m_major_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse of Source Extent; ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.smajAxis;em.X-ray.soft" precision="E2" name="s_major_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse of Source Extent; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.smajAxis;em.X-ray.soft" precision="E2" name="u_major_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse of Source Extent; ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.smajAxis;em.X-ray" precision="E2" name="w_major_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse of Source Extent; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.min;em.X-ray" precision="E2" name="b_major_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Lower Limit); ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.min;em.X-ray.medium" precision="E2" name="h_major_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Lower Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.min;em.X-ray.medium" precision="E2" name="m_major_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Lower Limit); ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.min;em.X-ray.soft" precision="E2" name="s_major_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Lower Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.min;em.X-ray.soft" precision="E2" name="u_major_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Lower Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.min;em.X-ray" precision="E2" name="w_major_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Lower Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.max;em.X-ray" precision="E2" name="b_major_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Upper Limit); ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.max;em.X-ray.medium" precision="E2" name="h_major_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Upper Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.max;em.X-ray.medium" precision="E2" name="m_major_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Upper Limit); ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.max;em.X-ray.soft" precision="E2" name="s_major_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Upper Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.max;em.X-ray.soft" precision="E2" name="u_major_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Upper Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.smajAxis;stat.max;em.X-ray" precision="E2" name="w_major_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Major Axis of Ellipse (68% Upper Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.sminAxis;em.X-ray" precision="E2" name="b_minor_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse of Extent; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.sminAxis;em.X-ray.medium" precision="E2" name="h_minor_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse of Source Extent; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.sminAxis;em.X-ray.medium" precision="E2" name="m_minor_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse of Source Extent; ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.sminAxis;em.X-ray.soft" precision="E2" name="s_minor_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse of Source Extent; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.sminAxis;em.X-ray.soft" precision="E2" name="u_minor_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse of Source Extent; ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="phys.angSize.sminAxis;em.X-ray" precision="E2" name="w_minor_axis">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse of Source Extent; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.min;em.X-ray" precision="E2" name="b_minor_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Lower Limit); ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.min;em.X-ray.medium" precision="E2" name="h_minor_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Lower Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.min;em.X-ray.medium" precision="E2" name="m_minor_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Lower Limit); ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.min;em.X-ray.soft" precision="E2" name="s_minor_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Lower Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.min;em.X-ray.soft" precision="E2" name="u_minor_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Lower Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.min;em.X-ray" precision="E2" name="w_minor_axis_lo">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Lower Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.max;em.X-ray" precision="E2" name="b_minor_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Upper Limit); ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.max;em.X-ray.medium" precision="E2" name="h_minor_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Upper Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.max;em.X-ray.medium" precision="E2" name="m_minor_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Upper Limit); ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.max;em.X-ray.soft" precision="E2" name="s_minor_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Upper Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.max;em.X-ray.soft" precision="E2" name="u_minor_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Upper Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec" datatype="float" ucd="stat.error;phys.angSize.sminAxis;stat.max;em.X-ray" precision="E2" name="w_minor_axis_hi">
+    <DESCRIPTION>1-Sigma Radius Along the Minor Axis of Ellipse (68% Upper Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="pos.posAng;em.X-ray" precision="E2" name="b_position_angle">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse of Source Extent; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="pos.posAng;em.X-ray.medium" precision="E2" name="h_position_angle">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse of Source Extent; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="pos.posAng;em.X-ray.medium" precision="E2" name="m_position_angle">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse of Source Extent; ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="pos.posAng;em.X-ray.soft" precision="E2" name="s_position_angle">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse of Source Extent; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="pos.posAng;em.X-ray.soft" precision="E2" name="u_position_angle">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse of Source Extent; ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="pos.posAng;em.X-ray" precision="E2" name="w_position_angle">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse of Source Extent; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.min;em.X-ray" precision="E2" name="b_position_angle_lo">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Lower Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.min;em.X-ray.medium" precision="E2" name="h_position_angle_lo">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Lower Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.min;em.X-ray.medium" precision="E2" name="m_position_angle_lo">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Lower Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.min;em.X-ray.soft" precision="E2" name="s_position_angle_lo">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Lower Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.min;em.X-ray.soft" precision="E2" name="u_position_angle_lo">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Lower Limit); ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.min;em.X-ray" precision="E2" name="w_position_angle_lo">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Lower Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.max;em.X-ray" precision="E2" name="b_position_angle_hi">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Upper Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.max;em.X-ray.medium" precision="E2" name="h_position_angle_hi">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Upper Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.max;em.X-ray.medium" precision="E2" name="m_position_angle_hi">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Upper Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.max;em.X-ray.soft" precision="E2" name="s_position_angle_hi">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Upper Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.max;em.X-ray.soft" precision="E2" name="u_position_angle_hi">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Upper Limit); ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="float" ucd="stat.error;pos.posAng;stat.max;em.X-ray" precision="E2" name="w_position_angle_hi">
+    <DESCRIPTION>Position Angle of Major Axis of Ellipse (68% Upper Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec^2" datatype="float" ucd="phys.angArea;em.X-ray" precision="E5" name="b_src_area">
+    <DESCRIPTION>Area of the Source Extent Ellipse/Polygon; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec^2" datatype="float" ucd="phys.angArea;em.X-ray.medium" precision="E5" name="h_src_area">
+    <DESCRIPTION>Area of the Source Extent Ellipse/Polygon; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec^2" datatype="float" ucd="phys.angArea;em.X-ray.medium" precision="E5" name="m_src_area">
+    <DESCRIPTION>Area of the Source Extent Ellipse/Polygon; ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec^2" datatype="float" ucd="phys.angArea;em.X-ray.soft" precision="E5" name="s_src_area">
+    <DESCRIPTION>Area of the Source Extent Ellipse/Polygon; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec^2" datatype="float" ucd="phys.angArea;em.X-ray.soft" precision="E5" name="u_src_area">
+    <DESCRIPTION>Area of the Source Extent Ellipse/Polygon; ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="arcsec^2" datatype="float" ucd="phys.angArea;em.X-ray" precision="E5" name="w_src_area">
+    <DESCRIPTION>Area of the Source Extent Ellipse/Polygon; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number;src" name="phot_nsrcs" width="2">
+    <DESCRIPTION>Number of Sources Fit Simultaneously to Compute Aperture Photometry Quantities</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="b_photflux_ap">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture, Bayesian Analysis; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="h_photflux_ap">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture, Bayesian Analysis; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="m_photflux_ap">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture, Bayesian Analysis; ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="s_photflux_ap">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture, Bayesian Analysis; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="u_photflux_ap">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture, Bayesian Analysis; ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="w_photflux_ap">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture, Bayesian Analysis; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="b_photflux_ap_lo">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Lower Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="h_photflux_ap_lo">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Lower Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="m_photflux_ap_lo">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Lower Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="s_photflux_ap_lo">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Lower Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="u_photflux_ap_lo">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Lower Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="w_photflux_ap_lo">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Lower Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="b_photflux_ap_hi">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Upper Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="h_photflux_ap_hi">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Upper Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="m_photflux_ap_hi">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Upper Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="s_photflux_ap_hi">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Upper Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="u_photflux_ap_hi">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Upper Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="w_photflux_ap_hi">
+    <DESCRIPTION>Net Photon Flux from Source Region Aperture (68% Upper Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="b_photflux_ap90">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="h_photflux_ap90">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="m_photflux_ap90">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="s_photflux_ap90">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="u_photflux_ap90">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="w_photflux_ap90">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture, Bayesian Analysis; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="b_photflux_ap90_lo">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="h_photflux_ap90_lo">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="m_photflux_ap90_lo">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="s_photflux_ap90_lo">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="u_photflux_ap90_lo">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="w_photflux_ap90_lo">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Lower Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="b_photflux_ap90_hi">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="h_photflux_ap90_hi">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="m_photflux_ap90_hi">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="s_photflux_ap90_hi">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="u_photflux_ap90_hi">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="w_photflux_ap90_hi">
+    <DESCRIPTION>Net Photon Flux from PSF 90% ECF Aperture (68% Upper Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="b_flux_ap">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture, Bayesian Analysis; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="h_flux_ap">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture, Bayesian Analysis; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="m_flux_ap">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture, Bayesian Analysis; ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="s_flux_ap">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture, Bayesian Analysis; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="u_flux_ap">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture, Bayesian Analysis; ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="w_flux_ap">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture, Bayesian Analysis; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="b_flux_ap_lo">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Lower Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="h_flux_ap_lo">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Lower Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="m_flux_ap_lo">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Lower Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="s_flux_ap_lo">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Lower Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="u_flux_ap_lo">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Lower Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="w_flux_ap_lo">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Lower Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="b_flux_ap_hi">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Upper Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="h_flux_ap_hi">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Upper Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="m_flux_ap_hi">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Upper Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="s_flux_ap_hi">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Upper Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="u_flux_ap_hi">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Upper Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="float" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="w_flux_ap_hi">
+    <DESCRIPTION>Net Energy Flux from Source Region Aperture (68% Upper Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="b_flux_ap90">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="h_flux_ap90">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="m_flux_ap90">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="s_flux_ap90">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="u_flux_ap90">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture, Bayesian Analysis; ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="w_flux_ap90">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture, Bayesian Analysis; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="b_flux_ap90_lo">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="h_flux_ap90_lo">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="m_flux_ap90_lo">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="s_flux_ap90_lo">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="u_flux_ap90_lo">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Lower Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="w_flux_ap90_lo">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Lower Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="b_flux_ap90_hi">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="h_flux_ap90_hi">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="m_flux_ap90_hi">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="s_flux_ap90_hi">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="u_flux_ap90_hi">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Upper Limit); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="w_flux_ap90_hi">
+    <DESCRIPTION>Net Energy Flux from PSF 90% ECF Aperture (68% Upper Limit); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="b_photflux_ap_avg">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="h_photflux_ap_avg">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="m_photflux_ap_avg">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture; ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="s_photflux_ap_avg">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net" precision="E2" name="u_photflux_ap_avg">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture; ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="w_photflux_ap_avg">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="b_photflux_ap_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Lower); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="h_photflux_ap_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Lower); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="m_photflux_ap_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Lower); ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="s_photflux_ap_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Lower); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min" precision="E2" name="u_photflux_ap_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Lower); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="w_photflux_ap_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Lower); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="b_photflux_ap_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Upper); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="h_photflux_ap_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Upper); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="m_photflux_ap_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Upper); ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="s_photflux_ap_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Upper); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max" precision="E2" name="u_photflux_ap_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Upper); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="w_photflux_ap_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from Source Region Aperture (68% Upper); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="b_photflux_ap90_avg">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="h_photflux_ap90_avg">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="m_photflux_ap90_avg">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture; ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="s_photflux_ap90_avg">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net" precision="E2" name="u_photflux_ap90_avg">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture; ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="w_photflux_ap90_avg">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="b_photflux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Lower); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="h_photflux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Lower); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="m_photflux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Lower); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="s_photflux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Lower); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min" precision="E2" name="u_photflux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Lower); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="w_photflux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Lower); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="b_photflux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Upper); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="h_photflux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Upper); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="m_photflux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Upper); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="s_photflux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Upper); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max" precision="E2" name="u_photflux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Upper); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="w_photflux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Photon Flux from PSF 90% ECF Aperture (68% Upper); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="b_flux_ap_avg">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture; ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="h_flux_ap_avg">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture; ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="m_flux_ap_avg">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture; ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="s_flux_ap_avg">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture; ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_ap_avg">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture; ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="w_flux_ap_avg">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture; HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="b_flux_ap_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Lower); ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="h_flux_ap_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Lower); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="m_flux_ap_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Lower); ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="s_flux_ap_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Lower); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="u_flux_ap_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Lower) ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="w_flux_ap_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Lower); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="b_flux_ap_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Upper); ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="h_flux_ap_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Upper); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="m_flux_ap_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Upper); ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="s_flux_ap_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Upper); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="u_flux_ap_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Upper); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="w_flux_ap_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from Source Region Aperture (68% Upper); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="b_flux_ap90_avg">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture in ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="h_flux_ap90_avg">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture in ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.medium" precision="E2" name="m_flux_ap90_avg">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture in ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray.soft" precision="E2" name="s_flux_ap90_avg">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture in ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_ap90_avg">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture in ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray" precision="E2" name="w_flux_ap90_avg">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture in HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="b_flux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Lower); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="h_flux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Lower); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.medium" precision="E2" name="m_flux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Lower); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="s_flux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Lower); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray.soft" precision="E2" name="u_flux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Lower); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.min;em.X-ray" precision="E2" name="w_flux_ap90_avg_lo">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Lower); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="b_flux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Upper); ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="h_flux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Upper); ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.medium" precision="E2" name="m_flux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Upper); ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="s_flux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Upper); ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray.soft" precision="E2" name="u_flux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Upper); ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;src.net;stat.max;em.X-ray" precision="E2" name="w_flux_ap90_avg_hi">
+    <DESCRIPTION>Average Net Energy Flux from PSF 90% ECF Aperture (68% Upper); HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="b_flux_plaw_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model, ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_plaw_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_plaw_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model, ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_plaw_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_plaw_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="w_flux_plaw_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="b_flux_plaw_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_plaw_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model, ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_plaw_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_plaw_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_plaw_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="w_flux_plaw_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="b_flux_plaw_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model, ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_plaw_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_plaw_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model, ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_plaw_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_plaw_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="w_flux_plaw_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Power Law Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="b_flux_plaw_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_plaw_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_plaw_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_plaw_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_plaw_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="w_flux_plaw_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="b_flux_plaw_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_plaw_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_plaw_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_plaw_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_plaw_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model, ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="w_flux_plaw_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="b_flux_plaw_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_plaw_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_plaw_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_plaw_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_plaw_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="w_flux_plaw_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Power Law Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="b_flux_bb_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_bb_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Hard</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_bb_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_bb_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Soft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_bb_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="w_flux_bb_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="b_flux_bb_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_bb_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Hard</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_bb_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_bb_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Soft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_bb_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="w_flux_bb_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="b_flux_bb_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_bb_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Hard</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_bb_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_bb_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for ACIS Soft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_bb_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="w_flux_bb_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Black Body Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="b_flux_bb_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_bb_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_bb_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_bb_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_bb_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="w_flux_bb_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="b_flux_bb_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_bb_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_bb_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_bb_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_bb_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="w_flux_bb_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="b_flux_bb_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_bb_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_bb_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_bb_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_bb_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="w_flux_bb_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Black Body Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="b_flux_brems_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_brems_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_brems_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_brems_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_brems_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="w_flux_brems_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="b_flux_brems_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_brems_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_brems_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_brems_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_brems_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="w_flux_brems_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="b_flux_brems_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_brems_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_brems_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_brems_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_brems_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="w_flux_brems_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from Bremsstrahlung Model, HRC Wide</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="b_flux_brems_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung Model, ACIS Broad</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_brems_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung Model, ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_brems_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung Model, ACIS Medium</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_brems_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung Model, ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_brems_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung Model, ACIS Ultrasoft</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="w_flux_brems_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="b_flux_brems_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_brems_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_brems_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_brems_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_brems_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung, ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="w_flux_brems_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="b_flux_brems_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_brems_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_brems_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_brems_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_brems_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung, ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="w_flux_brems_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from Bremsstrahlung for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="b_flux_apec_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_apec_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_apec_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_apec_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_apec_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="w_flux_apec_ap">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="b_flux_apec_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_apec_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_apec_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_apec_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_apec_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="w_flux_apec_ap_lo">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="b_flux_apec_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_apec_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_apec_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_apec_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_apec_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="w_flux_apec_ap_hi">
+    <DESCRIPTION>Source Region Aperture Model Energy Flux from APEC Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="b_flux_apec_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_apec_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_apec_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_apec_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_apec_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;meta.modelled;em.X-ray" precision="E2" name="w_flux_apec_ap90">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="b_flux_apec_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_apec_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_apec_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_apec_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_apec_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.min;meta.modelled;em.X-ray" precision="E2" name="w_flux_apec_ap90_lo">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="b_flux_apec_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="h_flux_apec_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.medium" precision="E2" name="m_flux_apec_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="s_flux_apec_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray.soft" precision="E2" name="u_flux_apec_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="stat.error;phot.flux;stat.max;meta.modelled;em.X-ray" precision="E2" name="w_flux_apec_ap90_hi">
+    <DESCRIPTION>PSF 90% ECF Aperture Model Energy Flux from APEC Model for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.likelihood" precision="E4" name="likelihood">
+    <DESCRIPTION>Highest Detection Log Likelihood Across All Stacked Observations &amp; Energy Bands</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="stat.likelihood" name="likelihood_class">
+    <DESCRIPTION>Highest Detection Likelihood Classification Across All Stacked Obs. and Bands</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.snr" precision="E3" name="significance">
+    <DESCRIPTION>Highest Source Signal-to-Noise Ratio Across All Stacked Obs. and Energy Bands</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;meta.modelled" precision="E2" name="flux_plaw">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Power-Law Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;stat.min;meta.modelled" precision="E2" name="flux_plaw_lo">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Power-Law Fit (68% Lower Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;stat.max;meta.modelled" precision="E2" name="flux_plaw_hi">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Power-Law Fit (68% Upper Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="powlaw_gamma">
+    <DESCRIPTION>Photon Index of Best Power-Law Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.min;meta.modelled" precision="E2" name="powlaw_gamma_lo">
+    <DESCRIPTION>Photon Index of Best Power-Law Model Spectral Fit (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.max;meta.modelled" precision="E2" name="powlaw_gamma_hi">
+    <DESCRIPTION>Photon Index of Best Power-Law Model Spectral Fit (68% Upper Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="powlaw_gamma_rhat">
+    <DESCRIPTION>Photon Index Convergence Criterion of Best Power-Law Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="powlaw_nh">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Power-Law Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity;stat.fit.param;stat.min;meta.modelled" precision="E2" name="powlaw_nh_lo">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Power-Law Model Fit (68% Lower Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity;stat.fit.param;stat.max;meta.modelled" precision="E2" name="powlaw_nh_hi">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Power-Law Model Fit (68% Upper Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="powlaw_nh_rhat">
+    <DESCRIPTION>Neutral Hydrogen Column Density Convergence Criterion of Best Power-Law Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="powlaw_ampl">
+    <DESCRIPTION>Amplitude of Best Power-Law Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.min;meta.modelled" precision="E2" name="powlaw_ampl_lo">
+    <DESCRIPTION>Amplitude of Best Power-Law Model Spectral Fit (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.max;meta.modelled" precision="E2" name="powlaw_ampl_hi">
+    <DESCRIPTION>Amplitude of Best Power-Law Model Spectral Fit (68% upperer Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="powlaw_ampl_rhat">
+    <DESCRIPTION>Amplitude Convergence Criterion of Best Power-Law Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2;phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="powlaw_stat">
+    <DESCRIPTION>Chi^2 Statistic per Degree of Freedom of Best Power-Law Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;meta.modelled" precision="E2" name="flux_bb">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Black Body Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;stat.min;meta.modelled" precision="E2" name="flux_bb_lo">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Black Body Fit (68% Lower Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;meta.modelled;stat.max" precision="E2" name="flux_bb_hi">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Black Body Fit (68% Upper Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="phys.temperature;stat.fit.param" precision="E2" name="bb_kt">
+    <DESCRIPTION>Temperature (kT) of Best Black Body Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="stat.error;phys.temperature;stat.fit.param;stat.min;meta.modelled" precision="E2" name="bb_kt_lo">
+    <DESCRIPTION>Temperature (kT) of Best Black Body Model Spectral Fit (68% Lower Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="stat.error;phys.temperature;stat.fit.param;stat.max;meta.modelled" precision="E2" name="bb_kt_hi">
+    <DESCRIPTION>Temperature (kT) of Best Black Body Model Spectral Fit (68% Upper Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.temperature;stat.fit.param;meta.modelled" precision="E2" name="bb_kt_rhat">
+    <DESCRIPTION>Temperature (kT) Convergence Criterion of Best Black Body Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="bb_nh">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Black Body Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity;stat.fit.param;stat.min;meta.modelled" precision="E2" name="bb_nh_lo">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Black Body Fit (68% Lower Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity;stat.fit.param;stat.max;meta.modelled" precision="E2" name="bb_nh_hi">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Black Body Fit (68% Upper Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="bb_nh_rhat">
+    <DESCRIPTION>Neutral Hydrogen Column Density Convergence Criterion of Best Black Body Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="bb_ampl">
+    <DESCRIPTION>Amplitude of Best Black Body Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.min;meta.modelled" precision="E2" name="bb_ampl_lo">
+    <DESCRIPTION>Amplitude of Best Black Body Model Spectral Fit (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.max;meta.modelled" precision="E2" name="bb_ampl_hi">
+    <DESCRIPTION>Amplitude of Best Black Body Model Spectral Fit (68% upperer Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="bb_ampl_rhat">
+    <DESCRIPTION>Amplitude Convergence Criterion of Best Black Body Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="bb_stat">
+    <DESCRIPTION>Chi^2 Statistic per Degree of Freedom of Best Black Body Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;meta.modelled" precision="E2" name="flux_brems">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Bremsstrahlung Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;stat.min;meta.modelled" precision="E2" name="flux_brems_lo">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Bremsstrahlung Fit (68% Lower)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;stat.max;meta.modelled" precision="E2" name="flux_brems_hi">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best Bremsstrahlung Fit (68% Upper)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="phys.temperature;stat.fit.param" precision="E2" name="brems_kt">
+    <DESCRIPTION>Temperature (kT) of Best Bremsstrahlung Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="stat.error;phys.temperature;stat.fit.param;stat.min;meta.modelled" precision="E2" name="brems_kt_lo">
+    <DESCRIPTION>Temperature (kT) of Best Bremsstrahlung Model Spectral Fit (68% Lower Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="stat.error;phys.temperature;stat.fit.param;stat.max;meta.modelled" precision="E2" name="brems_kt_hi">
+    <DESCRIPTION>Temperature (kT) of Best Bremsstrahlung Model Spectral Fit (68% Upper Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.temperature;stat.fit.param;meta.modelled" precision="E2" name="brems_kt_rhat">
+    <DESCRIPTION>Temperature (kT) Convergence Criterion of Best Bremsstrahlung Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="brems_nh">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Bremsstrahlung Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity;stat.fit.param;stat.min;meta.modelled" precision="E2" name="brems_nh_lo">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Bremsstrahlung Fit (68% Lower Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity;stat.fit.param;stat.max;meta.modelled" precision="E2" name="brems_nh_hi">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best Bremsstrahlung Fit (68% Upper Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="brems_nh_rhat">
+    <DESCRIPTION>Neutral Hydrogen Column Density Convergence Criterion of Best Bremsstrahlung Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="brems_norm">
+    <DESCRIPTION>Amplitude of Best Bremsstrahlung Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.min;meta.modelled" precision="E2" name="brems_norm_lo">
+    <DESCRIPTION>Amplitude of Best Bremsstrahlung Model Spectral Fit (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.max;meta.modelled" precision="E2" name="brems_norm_hi">
+    <DESCRIPTION>Amplitude of Best Bremsstrahlung Model Spectral Fit (68% upperer Conf. Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="brems_norm_rhat">
+    <DESCRIPTION>Amplitude Convergence Criterion of Best Bremsstrahlung Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="brems_stat">
+    <DESCRIPTION>Chi^2 Statistic per Degree of Freedom of Best Bremsstrahlung Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;meta.modelled" precision="E2" name="flux_apec">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;stat.min;meta.modelled" precision="E2" name="flux_apec_lo">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best APEC Fit (68% Lower Conf. Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="erg/s/cm^2" datatype="double" ucd="phot.flux;src.net;em.X-ray;meta.modelled;stat.max" precision="E2" name="flux_apec_hi">
+    <DESCRIPTION>Net Integrated 0.5-7.0 keV Energy Flux of Best APEC Fit (68% Upper Conf. Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="phys.temperature;stat.fit.param;meta.modelled" precision="E2" name="apec_kt">
+    <DESCRIPTION>Temperature (kT) of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="phys.temperature;stat.fit.param;stat.min;meta.modelled" precision="E2" name="apec_kt_lo">
+    <DESCRIPTION>Temperature (kT) of Best APEC Model Spectral Fit (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="keV" datatype="double" ucd="phys.temperature;stat.fit.param;stat.max;meta.modelled" precision="E2" name="apec_kt_hi">
+    <DESCRIPTION>Temperature (kT) of Best APEC Model Spectral Fit (68% Upper Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.temperature;stat.fit.param;meta.modelled" precision="E2" name="apec_kt_rhat">
+    <DESCRIPTION>Temperature (kT) Convergence Criterion of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.abund;stat.fit.param;meta.modelled" precision="E2" name="apec_abund">
+    <DESCRIPTION>Abundance of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.abund;stat.fit.param;stat.min;meta.modelled" precision="E2" name="apec_abund_lo">
+    <DESCRIPTION>Abundance of Best APEC Model Spectral Fit (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.abund;stat.fit.param;stat.max;meta.modelled" precision="E2" name="apec_abund_hi">
+    <DESCRIPTION>Abundance of Best APEC Model Spectral Fit (68% Upper Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.abund;stat.fit.param;meta.modelled" precision="E2" name="apec_abund_rhat">
+    <DESCRIPTION>Abundance Convergence Criterion of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.redshift;stat.fit.param;meta.modelled" precision="E2" name="apec_z">
+    <DESCRIPTION>Redshift of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.redshift;stat.fit.param;stat.min;meta.modelled" precision="E2" name="apec_z_lo">
+    <DESCRIPTION>Redshift of Best APEC Model Spectral Fit (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.redshift;stat.fit.param;stat.max;meta.modelled" precision="E2" name="apec_z_hi">
+    <DESCRIPTION>Redshift of Best APEC Model Spectral Fit (68% Upper Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="src.redshift;stat.fit.param;meta.modelled" precision="E2" name="apec_z_rhat">
+    <DESCRIPTION>Redshift Convergence Criterion Redshift of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="apec_nh">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity;stat.fit.param;stat.min;meta.modelled" precision="E2" name="apec_nh_lo">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best APEC Model Fit (68% Lower Conf. Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="stat.error;phys.columnDensity;stat.fit.param;stat.max;meta.modelled" precision="E2" name="apec_nh_hi">
+    <DESCRIPTION>Neutral Hydrogen Column Density of Best APEC Model Fit (68% Upper Conf. Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="apec_nh_rhat">
+    <DESCRIPTION>Neutral Hydrogen Column Density Convergence Criterion of Best APEC Model Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="apec_norm">
+    <DESCRIPTION>Amplitude of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.min;meta.modelled" precision="E2" name="apec_norm_lo">
+    <DESCRIPTION>Amplitude of Best APEC Model Spectral Fit (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;stat.max;meta.modelled" precision="E2" name="apec_norm_hi">
+    <DESCRIPTION>Amplitude of Best APEC Model Spectral Fit (68% upperer Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phys.columnDensity;stat.fit.param;meta.modelled" precision="E2" name="apec_norm_rhat">
+    <DESCRIPTION>Amplitude Convergence Criterion of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.param;meta.modelled" precision="E2" name="apec_stat">
+    <DESCRIPTION>Chi^2 Statistic per Degree of Freedom of Best APEC Model Spectral Fit</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="cm^-2" datatype="double" ucd="phys.columnDensity" precision="E2" name="nh_gal">
+    <DESCRIPTION>Galactic Neutral Hydrogen Column Density in Direction of Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.color;em.X-ray" precision="E2" name="hardness_ratio_hm">
+    <DESCRIPTION>ACIS Hard - Medium Band Hardness Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.color;stat.min;em.X-ray" precision="E2" name="hardness_ratio_hm_lo">
+    <DESCRIPTION>ACIS Hard - Medium Hardness Ratio (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.color;stat.max;em.X-ray" precision="E2" name="hardness_ratio_hm_hi">
+    <DESCRIPTION>ACIS Hard - Medium Hardness Ratio (68% Upper Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="E2" name="var_inter_hard_prob_hm">
+    <DESCRIPTION>Inter-Obs. ACIS Hard - Medium Hardness Ratio Variability Probability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.stdev;arith;phot.flux" precision="E2" name="var_inter_hard_sigma_hm">
+    <DESCRIPTION>Inter-Obs. ACIS Hard - Medium Band Hardness Ratio Variability Standard Deviation</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.color;em.X-ray" precision="E2" name="hardness_ratio_hs">
+    <DESCRIPTION>ACIS Hard - Soft Hardness Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.color;stat.min;em.X-ray" precision="E2" name="hardness_ratio_hs_lo">
+    <DESCRIPTION>ACIS Hard - Soft Hardness Ratio (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.color;stat.max;em.X-ray" precision="E2" name="hardness_ratio_hs_hi">
+    <DESCRIPTION>ACIS Hard - Soft Hardness Ratio (68% Upper Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="E2" name="var_inter_hard_prob_hs">
+    <DESCRIPTION>Inter-Observation ACIS Hard - Soft Hardness Ratio Variability Probability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.stdev;arith;phot.flux" precision="E2" name="var_inter_hard_sigma_hs">
+    <DESCRIPTION>Inter-Observation ACIS Hard - Soft Hardness Ratio Variability Standard Deviation</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="phot.color;em.X-ray" precision="E2" name="hardness_ratio_ms">
+    <DESCRIPTION>ACIS Medium - Soft Band Hardness Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.color;stat.min;em.X-ray" precision="E2" name="hardness_ratio_ms_lo">
+    <DESCRIPTION>ACIS Medium - Soft Band Hardness Ratio (68% Lower Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.error;phot.color;stat.max;em.X-ray" precision="E2" name="hardness_ratio_ms_hi">
+    <DESCRIPTION>ACIS Medium - Soft Band Hardness Ratio (68% Upper Confidence Limit)</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var" precision="E2" name="var_inter_hard_prob_ms">
+    <DESCRIPTION>Inter-Observation ACIS Medium - Soft Hardness Ratio Variability Probability</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.stdev;arith;phot.flux" precision="E2" name="var_inter_hard_sigma_ms">
+    <DESCRIPTION>Inter-Observation ACIS Medium - Soft Hardness Ratio Variability Std. Deviation</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray" precision="E2" name="b_ks_intra_prob">
+    <DESCRIPTION>Intra-Obs. Kolmogorov-Smirnov Test Variability Probability for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.medium" precision="E2" name="h_ks_intra_prob">
+    <DESCRIPTION>Intra-Obs. Kolmogorov-Smirnov Test Variability Probability for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.medium" precision="E2" name="m_ks_intra_prob">
+    <DESCRIPTION>Intra-Obs. Kolmogorov-Smirnov Test Variability Probability for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.soft" precision="E2" name="s_ks_intra_prob">
+    <DESCRIPTION>Intra-Obs. Kolmogorov-Smirnov Test Variability Probability for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.soft" precision="E2" name="u_ks_intra_prob">
+    <DESCRIPTION>Intra-Obs. Kolmogorov-Smirnov Test Variability Prob. for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray" precision="E2" name="w_ks_intra_prob">
+    <DESCRIPTION>Intra-Obs. Kolmogorov-Smirnov Test Variability Probability for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray" precision="E2" name="b_kp_intra_prob">
+    <DESCRIPTION>Intra-Observation Kuiper Test Variability Probability for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.medium" precision="E2" name="h_kp_intra_prob">
+    <DESCRIPTION>Intra-Observation Kuiper Test Variability Probability for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.medium" precision="E2" name="m_kp_intra_prob">
+    <DESCRIPTION>Intra-Observation Kuiper Test Variability Probability for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.soft" precision="E2" name="s_kp_intra_prob">
+    <DESCRIPTION>Intra-Observation Kuiper Test Variability Probability for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.soft" precision="E2" name="u_kp_intra_prob">
+    <DESCRIPTION>Intra-Observation Kuiper Test Variability Probability for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray" precision="E2" name="w_kp_intra_prob">
+    <DESCRIPTION>Intra-Observation Kuiper Test Variability Probability for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray" precision="E2" name="b_var_intra_prob">
+    <DESCRIPTION>Intra-Observation Gregory-Loredo Variability Probability for ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.medium" precision="E2" name="h_var_intra_prob">
+    <DESCRIPTION>Intra-Observation Gregory-Loredo Variability Probability for ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.medium" precision="E2" name="m_var_intra_prob">
+    <DESCRIPTION>Intra-Observation Gregory-Loredo Variability Probability for ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.soft" precision="E2" name="s_var_intra_prob">
+    <DESCRIPTION>Intra-Observation Gregory-Loredo Variability Probability for ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.soft" precision="E2" name="u_var_intra_prob">
+    <DESCRIPTION>Intra-Observation Gregory-Loredo Variability Probability for ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray" precision="E2" name="w_var_intra_prob">
+    <DESCRIPTION>Intra-Observation Gregory-Loredo Variability Probability for HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray" name="b_var_intra_index">
+    <DESCRIPTION>Gregory-Loredo Variability Index for ACIS Broad Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray.medium" name="h_var_intra_index">
+    <DESCRIPTION>Gregory-Loredo Variability Index for ACIS Hard Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray.medium" name="m_var_intra_index">
+    <DESCRIPTION>Gregory-Loredo Variability Index for ACIS Medium Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray.soft" name="s_var_intra_index">
+    <DESCRIPTION>Gregory-Loredo Variability Index for ACIS Soft Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray.soft" name="u_var_intra_index">
+    <DESCRIPTION>Gregory-Loredo Variability Index for ACIS Ultrasoft Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray" name="w_var_intra_index">
+    <DESCRIPTION>Gregory-Loredo Variability Index for HRC Wide Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray" precision="E2" name="b_var_inter_prob">
+    <DESCRIPTION>Variability Probability, Calculated from Chi^2, in ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.medium" precision="E2" name="h_var_inter_prob">
+    <DESCRIPTION>Variability Probability, Calculated from Chi^2, in ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.medium" precision="E2" name="m_var_inter_prob">
+    <DESCRIPTION>Variability Probability, Calculated from Chi^2, in ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.soft" precision="E2" name="s_var_inter_prob">
+    <DESCRIPTION>Variability Probability, Calculated from Chi^2, in ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray.soft" precision="E2" name="u_var_inter_prob">
+    <DESCRIPTION>Variability Probability, Calculated from Chi^2, in ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.probability;src.var;em.X-ray" precision="E2" name="w_var_inter_prob">
+    <DESCRIPTION>Variability Probability, Calculated from Chi^2, in HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray" name="b_var_inter_index">
+    <DESCRIPTION>Variability Index Indicates Constant Source Photon Flux in ACIS Broad Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray.medium" name="h_var_inter_index">
+    <DESCRIPTION>Variability Index Indicates Constant Source Region Photon Flux in ACIS Hard Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray.medium" name="m_var_inter_index">
+    <DESCRIPTION>Variability Index Indicates Constant Source Photon Flux in ACIS Medium Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray.soft" name="s_var_inter_index">
+    <DESCRIPTION>Variability Index Indicates Constant Source Region Photon Flux in ACIS Soft Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray.soft" name="u_var_inter_index">
+    <DESCRIPTION>Variability Index Indicates Constant Source Photon Flux in ACIS Ultrasoft Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.var.index;em.X-ray" name="w_var_inter_index">
+    <DESCRIPTION>Variability Index Indicates Constant Source Region Photon Flux in HRC Wide Band</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.stdev;arith;phot.flux;em.X-ray" precision="E2" name="b_var_inter_sigma">
+    <DESCRIPTION>Flux Variability Standard Deviation (Weighted Mean) in ACIS Broad Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.stdev;arith;phot.flux;em.X-ray.medium" precision="E2" name="h_var_inter_sigma">
+    <DESCRIPTION>Flux Variability Standard Deviation (Weighted Mean) in ACIS Hard Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.stdev;arith;phot.flux;em.X-ray.medium" precision="E2" name="m_var_inter_sigma">
+    <DESCRIPTION>Flux Variability Standard Deviation (Weighted Mean) in ACIS Medium Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.stdev;arith;phot.flux;em.X-ray.soft" precision="E2" name="s_var_inter_sigma">
+    <DESCRIPTION>Flux Variability Standard Deviation (Weighted Mean) in ACIS Soft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.stdev;arith;phot.flux;em.X-ray.soft" precision="E2" name="u_var_inter_sigma">
+    <DESCRIPTION>Flux Variability Standard Deviation (Weighted Mean) in ACIS Ultrasoft Band</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="photon/s/cm^2" datatype="double" ucd="stat.stdev;arith;phot.flux;em.X-ray" precision="E2" name="w_var_inter_sigma">
+    <DESCRIPTION>Flux Variability Standard Deviation (Weighted Mean) in HRC Wide Band</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="dither_warning_flag">
+    <DESCRIPTION>Highest Peak in Source Region Count Rate Occurs at Dither (or a Beat) Frequency</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="acis_num">
+    <DESCRIPTION>Total Number of ACIS Imaging Observations Contributing to Master Source Record</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="acis_hetg_num">
+    <DESCRIPTION>Total Number of ACIS/HETG Observations Contributing to Master Source Record</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="acis_letg_num">
+    <DESCRIPTION>Total Number of ACIS/LETG Observations Contributing to Master Source Record</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="E2" name="acis_time">
+    <DESCRIPTION>Total Livetime for All ACIS Imaging Observations Contributing to Master Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="E2" name="acis_hetg_time">
+    <DESCRIPTION>Total Livetime for All ACIS/HETG Observations Contributing to Master Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="E2" name="acis_letg_time">
+    <DESCRIPTION>Total Livetime for All ACIS/LETG Observations Contributing to Master Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="hrc_num">
+    <DESCRIPTION>Total Number of HRC Imaging Observations Contributing to Master Source Record</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="hrc_hetg_num">
+    <DESCRIPTION>Total Number of HRC/HETG Observations Contributing to Master Source Record</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.number" name="hrc_letg_num">
+    <DESCRIPTION>Total Number of HRC/LETG Observations Contributing to Master Source Record</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="E2" name="hrc_time">
+    <DESCRIPTION>Total Livetime for All HRC Imaging Observations Contributing to Master Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="E2" name="hrc_hetg_time">
+    <DESCRIPTION>Total Livetime for All HRC/HETG Observations Contributing to Master Source</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="s" datatype="double" ucd="time.duration;obs.exposure" precision="E2" name="hrc_letg_time">
+    <DESCRIPTION>Total Livetime for All HRC/LETG Observations Contributing to Master Source</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" name="__x_ra_dec"/>
+   <FIELD datatype="double" name="__y_ra_dec"/>
+   <FIELD datatype="double" name="__z_ra_dec"/>
+   <DATA>
+    <BINARY>
+     <STREAM encoding="base64">
+
+     </STREAM>
+    </BINARY>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>

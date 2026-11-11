@@ -1,0 +1,16 @@
+{
+  "name": "gphoton_nuv_ranges",
+  "url": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest",
+  "params": {
+    "query": "select startTimeRange,endTimeRange from GPFCore.dbo.fGetTimeRanges(1,10000000000000,118.69117410685,16.694621231895) where band='NUV'",
+    "format": "extjs"
+  },
+  "retrieved_utc": "2026-11-11T03:45:35.689387+00:00",
+  "status_code": 200,
+  "url_resolved": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest?query=select+startTimeRange%2CendTimeRange+from+GPFCore.dbo.fGetTimeRanges%281%2C10000000000000%2C118.69117410685%2C16.694621231895%29+where+band%3D%27NUV%27&format=extjs",
+  "bytes": 101,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_ranges.native",
+  "sha256": "0f2688cf04f2c30eae2f8a8b7381a0f8ad81152b6ecaf5bd900ee0f599464dd9",
+  "state": "failed",
+  "error": "Archive JSON error: Invalid object name 'GPFCore.dbo.fGetTimeRanges'."
+}

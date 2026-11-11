@@ -1,0 +1,21 @@
+{
+  "name": "gphoton_nuv_aperture_photons",
+  "url": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest",
+  "params": {
+    "query": "select time,ra,dec,xi,eta,x,y,flag,q from GPFCore.dbo.fGetNearbyObjEqNUVAllColumns(118.69117410685,16.694621231895,0.0016666666666666668,822929964995,822935977995,0)",
+    "format": "extjs"
+  },
+  "retrieved_utc": "2026-11-11T03:45:35.689689+00:00",
+  "status_code": 200,
+  "url_resolved": "https://mastcomp.stsci.edu/portal/Mashup/MashupQuery.asmx/GalexPhotonListQueryTest?query=select+time%2Cra%2Cdec%2Cxi%2Ceta%2Cx%2Cy%2Cflag%2Cq+from+GPFCore.dbo.fGetNearbyObjEqNUVAllColumns%28118.69117410685%2C16.694621231895%2C0.0016666666666666668%2C822929964995%2C822935977995%2C0%29&format=extjs",
+  "bytes": 41212,
+  "file": "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aperture_photons.native",
+  "sha256": "b1e1dd41dc655dc17e69120d18e4832c042fedc895f409327a6c371203618baa",
+  "state": "json_response",
+  "json_keys": [
+    "status",
+    "msg",
+    "data"
+  ],
+  "rows": 460
+}

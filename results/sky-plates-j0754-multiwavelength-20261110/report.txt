@@ -1,0 +1,143 @@
+J0754 MULTIWAVELENGTH ARCHIVE INVENTORY
+10 November 2026, America/New_York
+
+All seven requested instrument/archive groups were queried at ICRS
+RA118.69117410685,Dec16.694621231895. New useful holdings include GALEX
+individual photons, calibrated Swift UVW1 images, three radio-image epochs,
+and a plausible eROSITA DR2 counterpart. Coverage is distinguished from a
+source detection. No new flare or companion is claimed from these queries.
+
+1. GALEX / gPhoton: AVAILABLE
+The prior near-UV catalogue source is 0.142arcsec from J0754, NUV AB18.614
+with formal error0.053mag. The current MAST catalogue reconfirms it. The
+covering AIS observation has FUV and NUV image entries; a FUV catalogue
+measurement remains absent rather than an established numerical upper limit.
+
+MAST's product query returns414 product records, including duplicated preview
+entries and both combined/visit-level products, not414 epochs. Two unique small
+spacecraft timing files were downloaded and verified as FITS. The working
+gPhoton aspect query returns179 one-second timestamps in two short runs,
+97 and82 samples, separated by about1.65h, on2February2006. These are raw
+aspect coverage samples, not a calibrated live-time total. The prior catalogue
+effective exposure is176s.
+
+The photon query recovered460 nominal-flag0 NUV events within6arcsec of the
+target across those runs. Full photon columns including time, sky/detector
+position and flags are retained. No dead-time, aperture-throughput, sensitivity,
+background or aspect-quality photometric calibration has yet been applied.
+This is a usable photon-data lead, not a newly measured UV flare lightcurve.
+The older fGetTimeRanges endpoint returns an invalid-database-object error;
+the documented fGetNearbyAspectEq alternative succeeds. The failed endpoint
+does not imply no observations.
+
+2. Swift UVOT: AVAILABLE, ONE RECOVERED UVW1 EPOCH
+The current Swift UVOT source catalogue recovers the known star0.104arcsec
+away in observation00031554001,2December2009. UVW1 Vega15.210/AB16.730 and
+quality flag128 were already retained in the earlier audit. That flag denotes
+multiple exposure values in the source aperture; the filter's optical red tail
+also matters for a cool star. Repeating the catalogue lookup does not remove
+those limitations.
+
+The public observation directory is accessible. Calibrated sky-image and
+exposure-map FITS files have now been downloaded (3.97MB and0.21MB compressed).
+These allow exposure/edge/aperture checks and examination of individual
+extensions. The pointing log's roughly4988s UVOT field exposure is not a new
+target-effective exposure measurement. Of18 pointings within1degree, only this
+one is near enough to be the established relevant observation; most others
+have no exposure or are far off axis. It is8.53arcmin from the pointing center,
+so detector-edge/exposure checks remain especially relevant.
+
+3. XMM-Newton: NO SOURCE MATCH RECOVERED
+The current5XMM-DR15 serendipitous source catalogue is empty within60arcsec.
+Both clean and full XMM slew catalogues v3.1 are also empty within60arcsec.
+The one pointed observation center within1degree is45.01arcmin away, outside
+the normal EPIC field at this position. No useful pointed image was identified.
+This is not an X-ray flux upper limit; no local sensitivity analysis was made,
+and an empty slew source catalogue is not proof of no slew coverage.
+
+4. Chandra: NO SOURCE MATCH RECOVERED
+CSC2.2 returns no source within60arcsec. The nearest listed pointing within
+1degree is32.78arcmin away: SDSSJ075255.22+170100.4,ACIS-S,no grating,
+11880s. This is not a close target pointing; no useful target exposure has been
+established. An exact chip/attitude footprint was not reduced, so retain this as
+an unhelpful nearby pointing plus a catalogue null, not a measured upper limit.
+
+5. eROSITA: NEW PLAUSIBLE DR2 X-RAY COUNTERPART
+The official DR2 Main cone returns3eRASS J075445.3+164136 at8.346arcsec from
+J0754. Catalogue positional error fields are pos_err5.825arcsec and
+radec_err7.208arcsec; no confidence conversion was inferred. It has detection
+likelihood24.09, approximately23.60+/-5.89 net counts, nominal exposure242.99s,
+and catalogue0.2-2.3keV flux(9.04+/-2.26)e-14erg/s/cm2. The DR2 Hard cone is
+empty. These are model-dependent catalogue quantities from stacked survey
+data, not an independently fitted X-ray spectrum or a resolved flare.
+
+The current official DR1 Main query also returns a weak source at12.13arcsec:
+1eRASS J075445.8+164152, likelihood6.06,4.67+/-2.43counts. The earlier saved
+mirror result had recovered only a supplementary source28.74arcsec away,
+which was rejected as a target association. The wider/current official query
+therefore adds information; the older supplementary-source rejection must not
+be silently reused as a DR2 null. The supplementary row remains distinct.
+
+The DR2 counterpart is positionally plausible and worth checking with source
+images, counterpart catalogues and competing sources. Its association with
+J0754 is not established here. It also is not automatically the same episode
+as any optical flare. A position-specific upper-limit service returned
+Flag_pos=1; its numerical values are retained but are not used as an ordinary
+nondetection limit at a nearby detected source. Swift's broader0.3-10keV flux
+must not be directly equated with this0.2-2.3keV flux.
+
+6. APOGEE / SDSS: NO TARGET SPECTRUM RECOVERED
+Live DR17 apogeeStar and DR19 apogee_drp_allstar SQL queries return valid empty
+tables in a21.6arcsec-by21.6arcsec coordinate box centered on J0754. The query
+echo rows are not source records. The newer MWM table was selected using the
+official DR19 schema. No visits, radial velocities or companion confirmation
+were recovered from those two public releases. This is bounded to those
+tables/releases, not every unpublished SDSS observation.
+
+7. VLA SKY SURVEY (VLASS): THREE IMAGE EPOCHS AVAILABLE
+CADC's footprint intersection query returns three covering Quick Look planes:
+VLASS1.2:15April2019; VLASS2.2:20November2021; VLASS3.2:1June2024.
+Nominal resolutions are2.32,2.68 and2.88arcsec respectively. Product-level
+time ranges span about32-34minutes; these are not continuous integrations on
+the individual target. The2021 radio epoch lies between the two November2021
+optical candidate dates, but is not simultaneous with either flare.
+
+The archive identifies both intensity and RMS images. Small position-centered
+intensity FITS cutouts from all three epochs were successfully downloaded via
+CADC (37-98kB each), despite the separately reported NRAO image-webcache
+outage. Their WCS/data arrays are readable. No source flux, local noise,
+radio detection, upper limit or radio variability has yet been measured here.
+
+WHAT TO EXAMINE NEXT
+The most useful next measurement is the three radio cutouts: determine whether
+there is a source at the star, using local noise and nearby confusing sources,
+and compare the epochs. The eROSITA positional association is the next X-ray
+lead. The GALEX photons can test short-timescale UV behavior but only during
+two brief visits. Swift images can improve the older flagged UV measurement.
+
+PROVENANCE / REPRODUCING
+Native responses, exact public query parameters, UTC retrieval dates, hashes,
+error states, parsed ECSV/JSON, photon events, product inventory and seven small
+native FITS downloads are saved in this directory. Initial unsupported HEASARC
+CSV requests were corrected to default VOTable; the original error XML is
+retained. Gzip payload validation was corrected locally before the compressed
+files were saved. Neither technical failure is an astronomical nondetection.
+
+From the repository root:
+python -B tools/sky-plates/query_multiwavelength_archives.py
+python -B tools/sky-plates/query_multiwavelength_archives.py --only gphoton_nuv_aperture_photons,vlass_artifacts
+python -B tools/sky-plates/query_multiwavelength_archives.py --summarize-cached --assets
+
+The first two commands contact public archives; the last reuses metadata and
+downloads bounded products when absent. It never requests accounts or paid
+observations. Three response-parsing safeguards pass, alongside the previous
+151 numerical checks. This inventory is a saved reconnaissance result, not a
+new astrophysical classification.
+
+Official interface documentation:
+https://erosita.mpe.mpg.de/erodat/apis/
+https://heasarc.gsfc.nasa.gov/docs/archive/vo/instructions.html
+https://www.sdss.org/dr19/data_access/allspec/
+https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/doc/tap/
+https://www2.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/doc/data/
+https://raw.githubusercontent.com/cmillion/gPhoton/master/gPhoton/gQuery.py
