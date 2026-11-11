@@ -1,0 +1,2042 @@
+{
+  "question": "Is the five-week signal spatially associated with J0830?",
+  "records": [
+    {
+      "sector": 44,
+      "file": "results/j0830-pixel-check-20261111/pixels/tess-s0044-4-3_127.660337_14.120309_21x21_astrocut.fits",
+      "native_sha256": "dc55630ca8a8cc7a893ce592f495eea8c8026aa14f993d0b828404a6743b788f",
+      "camera": 4,
+      "ccd": 3,
+      "quality_zero_finite": 3261,
+      "common_accepted": 3261,
+      "bins": 116,
+      "first_bjd": 2459500.1888880143,
+      "last_bjd": 2459524.4342981656,
+      "target_wcs_xy": [
+        10.47876681242085,
+        10.13295335266346
+      ],
+      "control_wcs_xy": [
+        [
+          10.798761804566942,
+          3.0816973561054555
+        ],
+        [
+          14.068113999151759,
+          5.816337070402116
+        ]
+      ],
+      "target_median_flux_e_per_s": {
+        "1.0": 13824.667818530037,
+        "1.5": 18430.786767910562,
+        "2.0": 21194.580899105655
+      },
+      "control_median_flux_e_per_s": [
+        15216.42568538976,
+        647.1362356988421
+      ],
+      "registration_max_abs_offset_pixels": [
+        0.044575643466892245,
+        0.13510796959613103
+      ],
+      "registration_source_id": 651460712473032320
+    },
+    {
+      "sector": 45,
+      "file": "results/j0830-pixel-check-20261111/pixels/tess-s0045-2-1_127.660337_14.120309_21x21_astrocut.fits",
+      "native_sha256": "67d667ee6a11356c4bc1743f08b3152e38acafc492397919c5f109fc4887b433",
+      "camera": 2,
+      "ccd": 1,
+      "quality_zero_finite": 3121,
+      "common_accepted": 3121,
+      "bins": 112,
+      "first_bjd": 2459525.7965214457,
+      "last_bjd": 2459550.625119595,
+      "target_wcs_xy": [
+        10.675115220736094,
+        10.807897197280877
+      ],
+      "control_wcs_xy": [
+        [
+          10.776526926164971,
+          3.281942035455013
+        ],
+        [
+          14.22827110032068,
+          6.2150584570705
+        ]
+      ],
+      "target_median_flux_e_per_s": {
+        "1.0": 10206.143349213755,
+        "1.5": 15532.921355887138,
+        "2.0": 19025.54035272597
+      },
+      "control_median_flux_e_per_s": [
+        13903.537703761242,
+        577.0272393666793
+      ],
+      "registration_max_abs_offset_pixels": [
+        0.017584353693671062,
+        0.07751559631653926
+      ],
+      "registration_source_id": 651460712473032320
+    },
+    {
+      "sector": 46,
+      "file": "results/j0830-pixel-check-20261111/pixels/tess-s0046-1-1_127.660337_14.120309_21x21_astrocut.fits",
+      "native_sha256": "550fc3afc89b8e34ad0e18a2a44559629897ad87ea2ff8d1b9ba5321f7708c4d",
+      "camera": 1,
+      "ccd": 1,
+      "quality_zero_finite": 3320,
+      "common_accepted": 3320,
+      "bins": 120,
+      "first_bjd": 2459552.0762807815,
+      "last_bjd": 2459578.7030028463,
+      "target_wcs_xy": [
+        10.884308528943821,
+        10.547390516742077
+      ],
+      "control_wcs_xy": [
+        [
+          10.996445755038115,
+          3.320951668939723
+        ],
+        [
+          14.379085504147465,
+          6.088188934496388
+        ]
+      ],
+      "target_median_flux_e_per_s": {
+        "1.0": 12480.187917255967,
+        "1.5": 18619.98115424681,
+        "2.0": 22001.691404047844
+      },
+      "control_median_flux_e_per_s": [
+        15192.79163748235,
+        839.7432999629154
+      ],
+      "registration_max_abs_offset_pixels": [
+        0.051639521595761906,
+        0.08723689539525736
+      ],
+      "registration_source_id": 651460712473032320
+    }
+  ],
+  "control_source_ids": [
+    651460712473032320,
+    651460952991125632
+  ],
+  "models": {
+    "aperture_r1.0": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.0037817753332208643,
+            -0.025000131318012837
+          ],
+          "harmonic_semiamplitudes": [
+            0.02528454845530851
+          ],
+          "power": 0.9057972524455836,
+          "null_sse": 0.1115215398969382,
+          "residual_sse": 0.010505635469791046,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 39.31203931203931,
+          "power": 0.9092801649342679,
+          "span_cycles": 1.9958778700031108,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.002365233332111986,
+            -0.02002926425906868
+          ],
+          "harmonic_semiamplitudes": [
+            0.020168434631248396
+          ],
+          "power": 0.6401089886257767,
+          "null_sse": 0.025392959922656635,
+          "residual_sse": 0.009138698028350016,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 40.060090135202806,
+          "power": 0.6566730937743381,
+          "span_cycles": 1.9586084060915046,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.006590686255652086,
+            -0.025544553850513487
+          ],
+          "harmonic_semiamplitudes": [
+            0.02638107990098633
+          ],
+          "power": 0.7170483183569605,
+          "null_sse": 0.0421886954006162,
+          "residual_sse": 0.011937362309930323,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 40.44489383215369,
+          "power": 0.7442171592227625,
+          "span_cycles": 1.9399736741357019,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "differential_r1.0": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.005236777233492654,
+            -0.02270718042465823
+          ],
+          "harmonic_semiamplitudes": [
+            0.023303216057686305
+          ],
+          "power": 0.6786998168115889,
+          "null_sse": 0.1276650438743132,
+          "residual_sse": 0.04101880198357338,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 38.06804663335713,
+          "power": 0.6791649782009339,
+          "span_cycles": 2.061099431848421,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.00012517631660320062,
+            -0.01792273518534312
+          ],
+          "harmonic_semiamplitudes": [
+            0.017923172309448312
+          ],
+          "power": 0.25528038726445446,
+          "null_sse": 0.05192447700301847,
+          "residual_sse": 0.03866917640518366,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 39.129371484470525,
+          "power": 0.25629411471753205,
+          "span_cycles": 2.0051952359810126,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.002826216808739421,
+            -0.019224136337516594
+          ],
+          "harmonic_semiamplitudes": [
+            0.01943077248524688
+          ],
+          "power": 0.2963684749244716,
+          "null_sse": 0.05714744883928472,
+          "residual_sse": 0.040210746580961645,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 41.0361631187484,
+          "power": 0.3087231523274044,
+          "span_cycles": 1.9120215762019972,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "registered_r1.0": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.0046949075791504905,
+            -0.029964080973252573
+          ],
+          "harmonic_semiamplitudes": [
+            0.030329660495106135
+          ],
+          "power": 0.8387824890615234,
+          "null_sse": 0.1734113989154503,
+          "residual_sse": 0.02795695410150814,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 39.31203931203931,
+          "power": 0.8418968648529981,
+          "span_cycles": 1.9958778700031108,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0022689023960388867,
+            -0.018931586084935167
+          ],
+          "harmonic_semiamplitudes": [
+            0.01906706243169256
+          ],
+          "power": 0.40584116543288995,
+          "null_sse": 0.03577856205228226,
+          "residual_sse": 0.02125814873147106,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 60.491493383742906,
+          "power": 0.5823065180269628,
+          "span_cycles": 1.2970754216604983,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.008647553205321833,
+            -0.03352094542733654
+          ],
+          "harmonic_semiamplitudes": [
+            0.034618404913879935
+          ],
+          "power": 0.6384713197391616,
+          "null_sse": 0.08158980375350677,
+          "residual_sse": 0.0294970540737461,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 40.44489383215369,
+          "power": 0.6571156860365295,
+          "span_cycles": 1.9399736741357019,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "registered_differential_r1.0": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.005646481203333854,
+            -0.02933064289264583
+          ],
+          "harmonic_semiamplitudes": [
+            0.029869204249117817
+          ],
+          "power": 0.8506833998299175,
+          "null_sse": 0.1665922204757844,
+          "residual_sse": 0.024874983976228945,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 39.31203931203931,
+          "power": 0.8535029556787649,
+          "span_cycles": 1.9958778700031108,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0030786864648363714,
+            -0.019000115747960875
+          ],
+          "harmonic_semiamplitudes": [
+            0.019247927389323703
+          ],
+          "power": 0.43507626186469794,
+          "null_sse": 0.03362493187125929,
+          "residual_sse": 0.018995522207256657,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 60.06006006006007,
+          "power": 0.5819619061490322,
+          "span_cycles": 1.3063927876383996,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.008593571848815186,
+            -0.03181521619110055
+          ],
+          "harmonic_semiamplitudes": [
+            0.032955385878596775
+          ],
+          "power": 0.6403235417614785,
+          "null_sse": 0.0734898144342094,
+          "residual_sse": 0.026432556172302613,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 41.0361631187484,
+          "power": 0.6653027338425228,
+          "span_cycles": 1.9120215762019972,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "aperture_r1.5": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.0023598827917142287,
+            -0.026414461253501494
+          ],
+          "harmonic_semiamplitudes": [
+            0.026519668363374393
+          ],
+          "power": 0.960916315439191,
+          "null_sse": 0.11463864857502722,
+          "residual_sse": 0.004480500779383799,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 38.59141341051616,
+          "power": 0.9611832998262272,
+          "span_cycles": 2.033147333914717,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.002538552050296645,
+            -0.022417583179613104
+          ],
+          "harmonic_semiamplitudes": [
+            0.02256085730035403
+          ],
+          "power": 0.8523628905797997,
+          "null_sse": 0.02389431529724219,
+          "residual_sse": 0.0035276876420597095,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 38.24091778202677,
+          "power": 0.8527635384822027,
+          "span_cycles": 2.0517820658705195,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0029434296369851803,
+            -0.027169670112489854
+          ],
+          "harmonic_semiamplitudes": [
+            0.027328643435952087
+          ],
+          "power": 0.8869468649940203,
+          "null_sse": 0.038218350030018035,
+          "residual_sse": 0.004320704285649418,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 39.31203931203931,
+          "power": 0.8924465673178543,
+          "span_cycles": 1.9958778700031108,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "differential_r1.5": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.003854052245677055,
+            -0.024079164071128117
+          ],
+          "harmonic_semiamplitudes": [
+            0.024385648670410955
+          ],
+          "power": 0.7211737323089846,
+          "null_sse": 0.1304408643801148,
+          "residual_sse": 0.03637033936949731,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 37.3919139985978,
+          "power": 0.7247875870533022,
+          "span_cycles": 2.0983688957600273,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0003148637859091198,
+            -0.020264754735202624
+          ],
+          "harmonic_semiamplitudes": [
+            0.020267200686863347
+          ],
+          "power": 0.32516028249603135,
+          "null_sse": 0.05199343408516051,
+          "residual_sse": 0.03508723437009093,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 37.2266170311773,
+          "power": 0.3298046323327972,
+          "span_cycles": 2.1076862617379284,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            0.0007678723577310717,
+            -0.020851105808753496
+          ],
+          "harmonic_semiamplitudes": [
+            0.0208652400275099
+          ],
+          "power": 0.37606916937035173,
+          "null_sse": 0.054959422409197795,
+          "residual_sse": 0.03429087807469648,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 39.129371484470525,
+          "power": 0.37721529328639153,
+          "span_cycles": 2.0051952359810126,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "registered_r1.5": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.0025773604761018284,
+            -0.02433363801975203
+          ],
+          "harmonic_semiamplitudes": [
+            0.024469751251291735
+          ],
+          "power": 0.9809302648633342,
+          "null_sse": 0.09584227562492265,
+          "residual_sse": 0.0018276868110625958,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 37.558685446009385,
+          "power": 0.9840626678843855,
+          "span_cycles": 2.089051529782126,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0023628384340312523,
+            -0.02467023212791406
+          ],
+          "harmonic_semiamplitudes": [
+            0.02478312649183913
+          ],
+          "power": 0.9315074332975994,
+          "null_sse": 0.02651321975886292,
+          "residual_sse": 0.0018159584728293238,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 37.3919139985978,
+          "power": 0.9443894901008832,
+          "span_cycles": 2.0983688957600273,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0002616051429130817,
+            -0.022816562890838155
+          ],
+          "harmonic_semiamplitudes": [
+            0.022818062568990632
+          ],
+          "power": 0.9518043466393703,
+          "null_sse": 0.02558486095613874,
+          "residual_sse": 0.0012330790899219702,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 38.06804663335713,
+          "power": 0.9530880137991847,
+          "span_cycles": 2.061099431848421,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "registered_differential_r1.5": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.0035279456948529636,
+            -0.023705806691483776
+          ],
+          "harmonic_semiamplitudes": [
+            0.02396688698433379
+          ],
+          "power": 0.9729227513723824,
+          "null_sse": 0.09325708706070764,
+          "residual_sse": 0.0025251453326301677,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 37.3919139985978,
+          "power": 0.9766842409419212,
+          "span_cycles": 2.0983688957600273,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.00314379413841947,
+            -0.024708451188500416
+          ],
+          "harmonic_semiamplitudes": [
+            0.024907649461947793
+          ],
+          "power": 0.9099979141357244,
+          "null_sse": 0.027173914164072967,
+          "residual_sse": 0.0024457089558633516,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 37.3919139985978,
+          "power": 0.9216877170133886,
+          "span_cycles": 2.0983688957600273,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0002211665146401062,
+            -0.02112839589598571
+          ],
+          "harmonic_semiamplitudes": [
+            0.02112955342085355
+          ],
+          "power": 0.9416587783676588,
+          "null_sse": 0.022181713026309825,
+          "residual_sse": 0.0012941082358529316,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 38.24091778202677,
+          "power": 0.9419787483614412,
+          "span_cycles": 2.0517820658705195,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "ensemble": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            0.0012782968100632313,
+            -0.002301593235958641
+          ],
+          "harmonic_semiamplitudes": [
+            0.002632750303091503
+          ],
+          "power": 0.02447402811240451,
+          "null_sse": 0.04004675353069711,
+          "residual_sse": 0.03906664815897629,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 12.891789541535736,
+          "power": 0.14319456655524018,
+          "span_cycles": 6.0862015343018685,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0021789583007101867,
+            -0.0018002114196228724
+          ],
+          "harmonic_semiamplitudes": [
+            0.002826414766373545
+          ],
+          "power": 0.007710355149436299,
+          "null_sse": 0.03850917851704558,
+          "residual_sse": 0.038212259074166116,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 12.872083668543846,
+          "power": 0.1628418612069121,
+          "span_cycles": 6.09551890027977,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.003797021377823599,
+            -0.006071392127716639
+          ],
+          "harmonic_semiamplitudes": [
+            0.007160947822191487
+          ],
+          "power": 0.053075824165817576,
+          "null_sse": 0.03925786987904684,
+          "residual_sse": 0.03717422608022201,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 12.872083668543846,
+          "power": 0.1554654025496547,
+          "span_cycles": 6.09551890027977,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "only_control_1": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.0005749777460571116,
+            -0.02495767113321844
+          ],
+          "harmonic_semiamplitudes": [
+            0.024964293456902518
+          ],
+          "power": 0.9426074316208576,
+          "null_sse": 0.10249819052480996,
+          "residual_sse": 0.005882634408433518,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 39.129371484470525,
+          "power": 0.9449681736623463,
+          "span_cycles": 2.0051952359810126,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.004511475116811086,
+            -0.02382124131618677
+          ],
+          "harmonic_semiamplitudes": [
+            0.0242446890178779
+          ],
+          "power": 0.8319867149018152,
+          "null_sse": 0.027701484958134275,
+          "residual_sse": 0.004654217489914093,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 37.89673140691615,
+          "power": 0.8338886147458547,
+          "span_cycles": 2.0704167978263226,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            0.00015090804278040468,
+            -0.025839510565416147
+          ],
+          "harmonic_semiamplitudes": [
+            0.02583995122862326
+          ],
+          "power": 0.8116411701031482,
+          "null_sse": 0.03868363515232331,
+          "residual_sse": 0.007286404253448343,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 38.59141341051616,
+          "power": 0.8119749958653913,
+          "span_cycles": 2.033147333914717,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "only_control_2": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.007568657701276945,
+            -0.023139184326539327
+          ],
+          "harmonic_semiamplitudes": [
+            0.02434556285438195
+          ],
+          "power": 0.3475677459865705,
+          "null_sse": 0.27468325598381493,
+          "residual_sse": 0.17921221584126823,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 36.10923042202663,
+          "power": 0.35792193397399075,
+          "span_cycles": 2.1729078235832393,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            0.004103052221931777,
+            -0.015731216280197496
+          ],
+          "harmonic_semiamplitudes": [
+            0.016257496830393358
+          ],
+          "power": 0.06494636680348576,
+          "null_sse": 0.1813000043316086,
+          "residual_sse": 0.16952522774881437,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 12.81332585889325,
+          "power": 0.12350421141297944,
+          "span_cycles": 6.123470998213475,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            0.0013541380525972431,
+            -0.015058512448826961
+          ],
+          "harmonic_semiamplitudes": [
+            0.015119275347614
+          ],
+          "power": 0.060982027846626985,
+          "null_sse": 0.18084664517889276,
+          "residual_sse": 0.16981825002662446,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 20.989111898202808,
+          "power": 0.1604386491209903,
+          "span_cycles": 3.738225307870691,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "aperture_r2.0": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.003856016840588441,
+            -0.023817559239953243
+          ],
+          "harmonic_semiamplitudes": [
+            0.024127681074309314
+          ],
+          "power": 0.9701711543494959,
+          "null_sse": 0.0949450971484757,
+          "residual_sse": 0.0028321026481140034,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 37.72695119075689,
+          "power": 0.9719772673031117,
+          "span_cycles": 2.0797341638042246,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.002176270903818015,
+            -0.023833519953884833
+          ],
+          "harmonic_semiamplitudes": [
+            0.023932672822713125
+          ],
+          "power": 0.8971058696151469,
+          "null_sse": 0.025705430262349543,
+          "residual_sse": 0.0026449378930129414,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 37.89673140691615,
+          "power": 0.8994506569599536,
+          "span_cycles": 2.0704167978263226,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.002578710739994791,
+            -0.022171285654348956
+          ],
+          "harmonic_semiamplitudes": [
+            0.02232074498414657
+          ],
+          "power": 0.9007499000090078,
+          "null_sse": 0.025043166947548448,
+          "residual_sse": 0.002485536823635293,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 38.769081657378244,
+          "power": 0.9020783152875067,
+          "span_cycles": 2.0238299679368152,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "differential_r2.0": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.005296610115319011,
+            -0.021457599211950926
+          ],
+          "harmonic_semiamplitudes": [
+            0.02210164343786264
+          ],
+          "power": 0.6483239497786476,
+          "null_sse": 0.12043367060341059,
+          "residual_sse": 0.04235363759146683,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 36.421579786023216,
+          "power": 0.6601217525518224,
+          "span_cycles": 2.154273091627436,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            5.1084761618970555e-05,
+            -0.02167954825635097
+          ],
+          "harmonic_semiamplitudes": [
+            0.0216796084432427
+          ],
+          "power": 0.32480452422691464,
+          "null_sse": 0.05987507691006484,
+          "residual_sse": 0.04042738104124131,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 37.06277507528377,
+          "power": 0.3308617975217957,
+          "span_cycles": 2.11700362771583,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            0.0012023639542838986,
+            -0.01582494090576988
+          ],
+          "harmonic_semiamplitudes": [
+            0.015870552408459825
+          ],
+          "power": 0.24328013837164797,
+          "null_sse": 0.049740897028647583,
+          "residual_sse": 0.03763992471678831,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 21.041557075223565,
+          "power": 0.2763834778825092,
+          "span_cycles": 3.72890794189279,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "registered_r2.0": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.0028959295603781994,
+            -0.023101175225384206
+          ],
+          "harmonic_semiamplitudes": [
+            0.023281982407273166
+          ],
+          "power": 0.9785280457525919,
+          "null_sse": 0.0872178688946277,
+          "residual_sse": 0.0018727380904618816,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 37.89673140691615,
+          "power": 0.9793834546959472,
+          "span_cycles": 2.0704167978263226,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0034558787192579534,
+            -0.024783838436539297
+          ],
+          "harmonic_semiamplitudes": [
+            0.025023623745786754
+          ],
+          "power": 0.9355220181907119,
+          "null_sse": 0.02659058037250039,
+          "residual_sse": 0.0017145069575564944,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 37.89673140691615,
+          "power": 0.9387433675352895,
+          "span_cycles": 2.0704167978263226,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0011361525558538678,
+            -0.02163178106714024
+          ],
+          "harmonic_semiamplitudes": [
+            0.021661597234896142
+          ],
+          "power": 0.93386375149675,
+          "null_sse": 0.023201695372682487,
+          "residual_sse": 0.001534473090864433,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 38.24091778202677,
+          "power": 0.9339270527064938,
+          "span_cycles": 2.0517820658705195,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "registered_differential_r2.0": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.0038534443709297215,
+            -0.02244692590537785
+          ],
+          "harmonic_semiamplitudes": [
+            0.0227752830085901
+          ],
+          "power": 0.9661884935312495,
+          "null_sse": 0.08505606359240936,
+          "residual_sse": 0.002875873644361201,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 37.89673140691615,
+          "power": 0.9672824808980888,
+          "span_cycles": 2.0704167978263226,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.004253145405652847,
+            -0.02481418322082495
+          ],
+          "harmonic_semiamplitudes": [
+            0.025176038901270716
+          ],
+          "power": 0.9067864216250113,
+          "null_sse": 0.027533634561484225,
+          "residual_sse": 0.0025665086031452056,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 37.89673140691615,
+          "power": 0.9095803172227424,
+          "span_cycles": 2.0704167978263226,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0011009157854673646,
+            -0.019912064057095703
+          ],
+          "harmonic_semiamplitudes": [
+            0.019942475036478644
+          ],
+          "power": 0.9015042399564933,
+          "null_sse": 0.02035349503399858,
+          "residual_sse": 0.00200473296291543,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 38.59141341051616,
+          "power": 0.9016157425420536,
+          "span_cycles": 2.033147333914717,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "control_1": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            -0.001800734227905676,
+            -0.0015403833460891064
+          ],
+          "harmonic_semiamplitudes": [
+            0.0023696887163633376
+          ],
+          "power": 0.12674403554677027,
+          "null_sse": 0.007160884738249855,
+          "residual_sse": 0.00625328530843879,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 13.133054255930395,
+          "power": 0.40952181076408556,
+          "span_cycles": 5.974393142567052,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            0.0018007571439595344,
+            0.001316746103960588
+          ],
+          "harmonic_semiamplitudes": [
+            0.0022308174720977706
+          ],
+          "power": 0.03454266271606066,
+          "null_sse": 0.005406298867543384,
+          "residual_sse": 0.005219550909219612,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 13.320013320013322,
+          "power": 0.5201066552030449,
+          "span_cycles": 5.890536848765937,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0032373815827020903,
+            -0.0014595719269612881
+          ],
+          "harmonic_semiamplitudes": [
+            0.003551195534181718
+          ],
+          "power": 0.06124930595956135,
+          "null_sse": 0.008690783343614769,
+          "residual_sse": 0.008158478895573449,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 13.194788058716808,
+          "power": 0.5423690759508591,
+          "span_cycles": 5.946441044633346,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    },
+    "control_2": {
+      "global_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "global_linear",
+          "nuisance_rank": 4,
+          "beta": [
+            0.0043996484339805155,
+            -0.002999776664856734
+          ],
+          "harmonic_semiamplitudes": [
+            0.005324994495926375
+          ],
+          "power": 0.026159365156406045,
+          "null_sse": 0.14759066462482134,
+          "residual_sse": 0.14372978653522397,
+          "phase_energy_retention": [
+            0.8217756833305485,
+            0.896302732878958
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.095298317443592
+        },
+        "free_peak": {
+          "best_period_days": 13.21549516808458,
+          "power": 0.13620421474148187,
+          "span_cycles": 5.937123678655444,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "sector_linear": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "sector_linear",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.00607924112972775,
+            -0.004930262397679548
+          ],
+          "harmonic_semiamplitudes": [
+            0.00782717445974896
+          ],
+          "power": 0.016388933498384106,
+          "null_sse": 0.1391261746247993,
+          "residual_sse": 0.13684604500098888,
+          "phase_energy_retention": [
+            0.19992164986025152,
+            0.29835154214225423
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1605457872582867
+        },
+        "free_peak": {
+          "best_period_days": 13.071895424836601,
+          "power": 0.16061881700907693,
+          "span_cycles": 6.002345240500755,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      },
+      "arc_offset": {
+        "at_gaia": {
+          "period_days": 38.38919173490344,
+          "harmonics": 1,
+          "nuisance": "arc_offset",
+          "nuisance_rank": 6,
+          "beta": [
+            -0.0042439922771795435,
+            -0.010652569467138606
+          ],
+          "harmonic_semiamplitudes": [
+            0.011466852519369615
+          ],
+          "power": 0.03906897081631766,
+          "null_sse": 0.14151223728466775,
+          "residual_sse": 0.13598349981604124,
+          "phase_energy_retention": [
+            0.21899560695015238,
+            0.3314049461147803
+          ],
+          "span_cycles": 2.0438572874732843,
+          "signal_condition": 1.1680422738159735
+        },
+        "free_peak": {
+          "best_period_days": 13.153567905294311,
+          "power": 0.1429750362277091,
+          "span_cycles": 5.965075776589149,
+          "at_search_edge": false,
+          "flat_null": false
+        }
+      }
+    }
+  },
+  "spatial": [
+    {
+      "sector": 44,
+      "gaussian_periodic_center": {
+        "xy": [
+          10.453859119816212,
+          11.289816085736371
+        ],
+        "offset_from_wcs_pixels": 1.1571308380316432,
+        "rms": 164.24612168278082,
+        "success": true,
+        "width_xy_pixels": [
+          0.7583707576036237,
+          0.3500000000000005
+        ]
+      },
+      "gaussian_reference_center": {
+        "xy": [
+          10.458617142176154,
+          10.180855190089867
+        ],
+        "offset_from_wcs_pixels": 0.051967251609027224,
+        "rms": 96.94098263481435,
+        "success": true,
+        "width_xy_pixels": [
+          0.6956560334325624,
+          0.5764047727787742
+        ]
+      },
+      "periodic_minus_reference_pixels": 1.1089711028019957,
+      "spatial_components": {
+        "stationary_fraction": -0.04413184005554458,
+        "motion_coefficients": [
+          0.05319701395145637,
+          -0.28504523541678684
+        ],
+        "plane_coefficients": [
+          237.67377002573164,
+          5.990257752251074,
+          -24.17637845029979
+        ],
+        "residual_rms": 160.5338255877917,
+        "condition": 18867.08324792184,
+        "pixels": 28
+      },
+      "signal_condition": 2.632782759738537
+    },
+    {
+      "sector": 45,
+      "gaussian_periodic_center": {
+        "xy": [
+          10.76612149558526,
+          9.704914178142225
+        ],
+        "offset_from_wcs_pixels": 1.1067310796079313,
+        "rms": 28.00054852349529,
+        "success": true,
+        "width_xy_pixels": [
+          0.7838322030668751,
+          0.35000000000000064
+        ]
+      },
+      "gaussian_reference_center": {
+        "xy": [
+          10.648979765018428,
+          10.84588139860063
+        ],
+        "offset_from_wcs_pixels": 0.04610706665436073,
+        "rms": 136.36644065461252,
+        "success": true,
+        "width_xy_pixels": [
+          0.8300811037871381,
+          0.8058541899289012
+        ]
+      },
+      "periodic_minus_reference_pixels": 1.1469648570033744,
+      "spatial_components": {
+        "stationary_fraction": 0.011213532437479653,
+        "motion_coefficients": [
+          0.004382300888862378,
+          0.11397873994108385
+        ],
+        "plane_coefficients": [
+          -123.03073453493656,
+          1.6004948953521256,
+          10.212542936486397
+        ],
+        "residual_rms": 35.39890005482918,
+        "condition": 15966.449509718388,
+        "pixels": 29
+      },
+      "signal_condition": 2.4815929923864877
+    },
+    {
+      "sector": 46,
+      "gaussian_periodic_center": {
+        "xy": [
+          11.082253017166595,
+          10.090644719990268
+        ],
+        "offset_from_wcs_pixels": 0.49779387628638105,
+        "rms": 9.370304011994232,
+        "success": true,
+        "width_xy_pixels": [
+          0.6281547858389842,
+          0.583696258310824
+        ]
+      },
+      "gaussian_reference_center": {
+        "xy": [
+          10.88618049488649,
+          10.58171024807728
+        ],
+        "offset_from_wcs_pixels": 0.03437074650645652,
+        "rms": 91.37138572061275,
+        "success": true,
+        "width_xy_pixels": [
+          0.7014397306428474,
+          0.7205127216019299
+        ]
+      },
+      "periodic_minus_reference_pixels": 0.5287625051652766,
+      "spatial_components": {
+        "stationary_fraction": 0.0307152375946671,
+        "motion_coefficients": [
+          -0.014027963797455578,
+          0.03183954330874964
+        ],
+        "plane_coefficients": [
+          -29.53268994403147,
+          -1.2260561243110228,
+          4.1830549696251165
+        ],
+        "residual_rms": 18.98286912631775,
+        "condition": 19039.58561369733,
+        "pixels": 28
+      },
+      "signal_condition": 2.3070829861612725
+    }
+  ],
+  "post_initial_motion_check": {
+    "status": "Added after unregistered maps showed shared dipoles; one bounded check, not an optimized family",
+    "method": "Independent bright-control positive-moment centroid within fixed 2.5px radius; cubic image translation; crop two edge pixels for maps",
+    "registered_spatial": [
+      {
+        "sector": 44,
+        "gaussian_periodic_center": {
+          "xy": [
+            8.54922073535353,
+            9.30951924457848
+          ],
+          "offset_from_wcs_pixels": 1.1786734294427743,
+          "rms": 114.00656226769618,
+          "success": true,
+          "width_xy_pixels": [
+            0.7916696618632051,
+            0.35000000000084275
+          ]
+        },
+        "gaussian_reference_center": {
+          "xy": [
+            8.459128842609163,
+            8.183191175621452
+          ],
+          "offset_from_wcs_pixels": 0.05393967662012237,
+          "rms": 95.37284580550329,
+          "success": true,
+          "width_xy_pixels": [
+            0.6951885861056483,
+            0.5776484494429801
+          ]
+        },
+        "periodic_minus_reference_pixels": 1.1299254258838187,
+        "spatial_components": {
+          "stationary_fraction": -0.03995270253999259,
+          "motion_coefficients": [
+            0.02560089163247392,
+            -0.013920720660531072
+          ],
+          "plane_coefficients": [
+            -41.971657930812924,
+            3.720082323136366,
+            7.079709911727525
+          ],
+          "residual_rms": 139.84765452266993,
+          "condition": 15299.30389963688,
+          "pixels": 28
+        },
+        "signal_condition": 2.632782759738537
+      },
+      {
+        "sector": 45,
+        "gaussian_periodic_center": {
+          "xy": [
+            8.886698271176165,
+            7.992322605881132
+          ],
+          "offset_from_wcs_pixels": 0.8425730243547953,
+          "rms": 12.957471868799956,
+          "success": true,
+          "width_xy_pixels": [
+            0.661319770049769,
+            0.35000000000000003
+          ]
+        },
+        "gaussian_reference_center": {
+          "xy": [
+            8.647436302410073,
+            8.845159850211354
+          ],
+          "offset_from_wcs_pixels": 0.04641796875258337,
+          "rms": 135.13256055281946,
+          "success": true,
+          "width_xy_pixels": [
+            0.8313641456470479,
+            0.8084144592817539
+          ]
+        },
+        "periodic_minus_reference_pixels": 0.8857638822025848,
+        "spatial_components": {
+          "stationary_fraction": 0.013491827560912337,
+          "motion_coefficients": [
+            0.004524974934173087,
+            0.029925233724391723
+          ],
+          "plane_coefficients": [
+            -41.41937568807078,
+            1.071765101412258,
+            3.952094275236614
+          ],
+          "residual_rms": 31.070631554120308,
+          "condition": 13033.287316087875,
+          "pixels": 29
+        },
+        "signal_condition": 2.4815929923864877
+      },
+      {
+        "sector": 46,
+        "gaussian_periodic_center": {
+          "xy": [
+            8.923487121387245,
+            8.356654450046173
+          ],
+          "offset_from_wcs_pixels": 0.1947182817417819,
+          "rms": 9.881899759802955,
+          "success": true,
+          "width_xy_pixels": [
+            0.6426310829938761,
+            0.5940240027425824
+          ]
+        },
+        "gaussian_reference_center": {
+          "xy": [
+            8.880951959835373,
+            8.582543870383848
+          ],
+          "offset_from_wcs_pixels": 0.035313238713593126,
+          "rms": 91.54838937069044,
+          "success": true,
+          "width_xy_pixels": [
+            0.7008649856665027,
+            0.7200512230554358
+          ]
+        },
+        "periodic_minus_reference_pixels": 0.22985923994639496,
+        "spatial_components": {
+          "stationary_fraction": 0.030391815427176797,
+          "motion_coefficients": [
+            -0.0020102064084119853,
+            0.00605186393772853
+          ],
+          "plane_coefficients": [
+            -11.265843967393366,
+            -0.03961193721117985,
+            1.5225416136453496
+          ],
+          "residual_rms": 15.82055803053626,
+          "condition": 15481.438032377862,
+          "pixels": 28
+        },
+        "signal_condition": 2.3070829861612725
+      }
+    ]
+  },
+  "reference_phase_beta": [
+    -0.002538552050296645,
+    -0.022417583179613104
+  ],
+  "limitations": [
+    "Calibrated TESSCut full-frame pixels are another reduction of the same TESS exposures, not an independent instrument.",
+    "Only about two proposed cycles; free scans do not supply formal period precision.",
+    "Spatial centers are descriptive fits, not calibrated position intervals; unresolved blends remain possible.",
+    "Controls were selected from catalogue geometry before light-curve inspection; both retained even if variable.",
+    "Signed spatial maps are conditional on the fixed period and primary aperture phase.",
+    "Interpolation can change undersampled peak pixels; aperture and spatial results are model-dependent."
+  ]
+}

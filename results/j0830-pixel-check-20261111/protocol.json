@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-11-11T16:48:01.605967+00:00",
+  "question": "Does the 38\u201339-day signal originate at J0830 rather than nearby stars or shared field effects?",
+  "prediction": "Signed periodic image concentrates at target; fixed apertures and comparison-corrected target retain the wave; controls do not explain it.",
+  "weakening_outcome": "Displaced source, a shared field wave, or no direct-pixel reproduction.",
+  "sectors": [
+    44,
+    45,
+    46
+  ],
+  "size_pixels": 21,
+  "primary_period_days": 38.38919173490344,
+  "aperture_radii_pixels": [
+    1.0,
+    1.5,
+    2.0
+  ],
+  "background": "Per-frame plane excluding catalogue sources, robust residual clipping",
+  "control_selection": "G<=14.5; >=4 pixels from target, >=3 pixels from other G<=16.5 sources, >=2.5 pixels from cutout edge; choose up to five by G proximity before time-series inspection.",
+  "quality": "QUALITY=0, finite positive aperture flux; common target/control cadences",
+  "native_size_bound_bytes": 60000000,
+  "scope": "Three sectors only; no broad new archive search, orbit refit or significance calibration.",
+  "post_initial_amendment": {
+    "recorded_utc": "2026-11-11T17:00:10.766730+00:00",
+    "reason": "Shared dipoles in initial signed maps motivated one comparison-only image alignment.",
+    "method": "Bright control1 centroid, 2.5px fixed window; cubic translation, two-edge-pixel crop; no additional correction family.",
+    "outcome": "Primary and large-aperture waves survive; narrow registered sector-linear aperture fails; S46 spatially consistent, S44/45 unresolved. Stop here."
+  }
+}

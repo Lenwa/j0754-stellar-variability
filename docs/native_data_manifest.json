@@ -114,6 +114,24 @@
     "included": true
   },
   {
+    "path": "results/j0830-pixel-check-20261111/pixels/tess-s0044-4-3_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 29160000,
+    "sha256": "dc55630ca8a8cc7a893ce592f495eea8c8026aa14f993d0b828404a6743b788f",
+    "included": true
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/pixels/tess-s0045-2-1_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 30689280,
+    "sha256": "67d667ee6a11356c4bc1743f08b3152e38acafc492397919c5f109fc4887b433",
+    "included": true
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/pixels/tess-s0046-1-1_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 32973120,
+    "sha256": "550fc3afc89b8e34ad0e18a2a44559629897ad87ea2ff8d1b9ba5321f7708c4d",
+    "included": true
+  },
+  {
     "path": "results/sky-plates-j0754-checks-20261108/catalogue_union.fits",
     "bytes": 1175040,
     "sha256": "c8356f831cb352b6f36513181d4a39c06e82814b7bafbb45e7014cb835f5aa81",

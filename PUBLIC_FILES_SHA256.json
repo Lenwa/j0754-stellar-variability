@@ -1,8 +1,8 @@
 [
   {
     "path": ".gitattributes",
-    "bytes": 395,
-    "sha256": "99a2864506a79d62f4d6182a0e5738b2f6629fc04968df9ecfae4ccdcb61c496"
+    "bytes": 560,
+    "sha256": "fca1899e9d6377fc88eb0e0e1d20f687ebccf473bff0de26e7ada0bc19e5a986"
   },
   {
     "path": ".github/workflows/tests.yml",
@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 9860,
-    "sha256": "33b90b2f0534ee36a2e08a548145c1bdc1c95b0d108c308b5af5a272980da6f5"
+    "bytes": 10636,
+    "sha256": "c6dd2522f100f03891736b9fde3c9435a40bf72aebc123df63c3ead4a2e4166e"
   },
   {
     "path": "docs/J0754_dataset_inventory_2026-11-11.json",
@@ -66,8 +66,8 @@
   },
   {
     "path": "docs/PUBLICATION_AUDIT.md",
-    "bytes": 8956,
-    "sha256": "726a28b90aa81e0d7fcc2d4a92048d04828d8c6e5dcf2dd785fcd230eb0dc89b"
+    "bytes": 10325,
+    "sha256": "caf581921f0ee44033cf59cdcd3390cc6a10d4f02b1b99472ec40d656c20f271"
   },
   {
     "path": "docs/j0754_evidence_records.json",
@@ -76,13 +76,13 @@
   },
   {
     "path": "docs/native_data_manifest.json",
-    "bytes": 85123,
-    "sha256": "586fd4bd487461822930f8d02c4dc333062a035b26c79278a324260bb3634a15"
+    "bytes": 85867,
+    "sha256": "6787abcbe698193d8618c0597e72807e90e26be9268b7044630fd2ee775f8062"
   },
   {
     "path": "docs/public_archive_requests.json",
-    "bytes": 130232,
-    "sha256": "c3d3887ce50acc0c6f79ea455749cdec011e8dd5bd7c4cde5e25ab42a5ce938c"
+    "bytes": 131210,
+    "sha256": "bf40fd39775d0baa61e284afde0c5ef8b4e4e247322707ab73df9ff7fcabac3b"
   },
   {
     "path": "docs/superpowers/plans/2026-11-11-flare-comparison-evidence.md",
@@ -93,6 +93,11 @@
     "path": "docs/superpowers/plans/2026-11-11-giant-screening.md",
     "bytes": 4677,
     "sha256": "0730109c74b62c64f1b5f8cc459e77781807db185033e7d2384517caa62180ab"
+  },
+  {
+    "path": "docs/superpowers/plans/2026-11-11-j0830-pixel-check.md",
+    "bytes": 4242,
+    "sha256": "e97c9b08276ea765bf2e13641e549675b98fd157a77938db3ce50da699025a50"
   },
   {
     "path": "docs/superpowers/plans/2026-11-11-tang-siblings.md",
@@ -723,6 +728,401 @@
     "path": "results/giant-screening-20261111/verification.json",
     "bytes": 1113,
     "sha256": "88fc4db1c173368c21d46b480ae04ed19774961688d674eed5ab2bb572141e65"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r1.0_arc_offset_periodogram.csv",
+    "bytes": 61656,
+    "sha256": "9917750f5d98998d86d8a65ce4620fa9fbf837853c7ec25729ba375e1724820f"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r1.0_global_linear_periodogram.csv",
+    "bytes": 62340,
+    "sha256": "62b6e3c0ad4eff59a57bde8f6c233266e461c3083fc050959109b0f832d0af7d"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r1.0_sector_linear_periodogram.csv",
+    "bytes": 61548,
+    "sha256": "ffd866100f383e3ab096b90567c1f641aca0b860f78c273893fd8f3c1051eb9c"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r1.5_arc_offset_periodogram.csv",
+    "bytes": 61805,
+    "sha256": "e1425f58acd7a7a0cb3bda0c3afb12e67e33987de630491c92ce7d33665b61d8"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r1.5_global_linear_periodogram.csv",
+    "bytes": 62573,
+    "sha256": "dd21c5b6b18d94298aaf55b9fcbb41171978cb00ea943f3b8f49e62f0c2aad79"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r1.5_sector_linear_periodogram.csv",
+    "bytes": 61462,
+    "sha256": "16aec9955f0b7dc9c0ebb0848ac362fb7906a084948221aba41a617a01be55e0"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r2.0_arc_offset_periodogram.csv",
+    "bytes": 61724,
+    "sha256": "a080aeaf3dfa1e5d7eb4199918a09ccf73a0b83498c7f69f8558543e2274436a"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r2.0_global_linear_periodogram.csv",
+    "bytes": 62549,
+    "sha256": "6f5e31835691e9f20315c057259a0528b917f93582af23b2fe5648f072870b43"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/aperture_r2.0_sector_linear_periodogram.csv",
+    "bytes": 61471,
+    "sha256": "05fbb55ce402abdd979d953c6a83e3522534c00391af0707b411cc892190b6c0"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/control_1_arc_offset_periodogram.csv",
+    "bytes": 62003,
+    "sha256": "7e0b9d69861f7e7685c0d72457317323b8eebbfafc9f864e064c14f29eb9bed3"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/control_1_global_linear_periodogram.csv",
+    "bytes": 61991,
+    "sha256": "c3f36ed2f307bed3d95cc0cb97af8e0af033b9b7e76c80ee54f0c37ff5de9c38"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/control_1_sector_linear_periodogram.csv",
+    "bytes": 62172,
+    "sha256": "8151146db12c4dce5f3cacba99c060eb05d6b07daf50d0b714ca06e280841514"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/control_2_arc_offset_periodogram.csv",
+    "bytes": 62156,
+    "sha256": "ecb0667015f23956ed94acaed3b99a98770ae3e8cb09a0d106bc81b50cc1334f"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/control_2_global_linear_periodogram.csv",
+    "bytes": 62240,
+    "sha256": "ee0140a0a3e23436d6b4177f09d0552f70f1e694bb8380da36a98a7480b5f638"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/control_2_sector_linear_periodogram.csv",
+    "bytes": 62341,
+    "sha256": "304514d24c2df3f8efaaa0802f7b70ad3c970492600b460a4fd3da2185073eef"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r1.0_arc_offset_periodogram.csv",
+    "bytes": 62090,
+    "sha256": "6e735619f43535ceec63826822e1f77f944a4099556078f4d1274c1693ba6553"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r1.0_global_linear_periodogram.csv",
+    "bytes": 62465,
+    "sha256": "a708e9ff0bfa3b7cb3e542e5aa06d6c83a23a0368ed9ccef8f3f5d6354b17a11"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r1.0_sector_linear_periodogram.csv",
+    "bytes": 61911,
+    "sha256": "1b3deb5d36dc265adf1ac3049b7473d83f7a3c30e0ffc064e528a35abe7dd53d"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r1.5_arc_offset_periodogram.csv",
+    "bytes": 62086,
+    "sha256": "a26f4a3cc1890ea31313d5691d94786724b23f9e1c1cf8401dddd1380d747a5a"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r1.5_global_linear_periodogram.csv",
+    "bytes": 62422,
+    "sha256": "01cb6ec09e6e0151a2d28b5980475d19009869572025c81464430ac900dc0bdf"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r1.5_sector_linear_periodogram.csv",
+    "bytes": 61881,
+    "sha256": "e1f77580ae35bc14acebfaca3918370cf35047c74c0881e85265bea32f7d1029"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r2.0_arc_offset_periodogram.csv",
+    "bytes": 62066,
+    "sha256": "a80a33beead329b2e8a30dd8a327ab8640cb07a78b7be0f823fdf514b3e6778f"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r2.0_global_linear_periodogram.csv",
+    "bytes": 62330,
+    "sha256": "7ff221ad19d691c698cdeee57370a6422d4903100ba5a796b3c350a84513d16c"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/differential_r2.0_sector_linear_periodogram.csv",
+    "bytes": 61909,
+    "sha256": "55971475f904f798a2981897697659c7bce57ae0fd8b1e5b15279e02e55605f7"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/direct_and_comparison_lightcurves.png",
+    "bytes": 221097,
+    "sha256": "937289b4f01d848c612f08559d0bd0a49367708de8e7f5ad9602062270769b47"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/ensemble_arc_offset_periodogram.csv",
+    "bytes": 62143,
+    "sha256": "fa28b312d76cc6ce67a0d0127104bb54d1f8305a62169ee454cceb52fc059aac"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/ensemble_global_linear_periodogram.csv",
+    "bytes": 62197,
+    "sha256": "2d91013f554fe25c39ba7d5ea6ec0a8dea005b117495817dd3221df2d23bed41"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/ensemble_sector_linear_periodogram.csv",
+    "bytes": 62257,
+    "sha256": "662f4f9e1511b32cbf975ab65d6096fc819f552e06f058d839b9ff32f43a4e60"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/field_selection.json",
+    "bytes": 16230,
+    "sha256": "83605de2d73a99d54506efd93d19efa3797bb01802fd79673e322854625bd0cd"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/gaia_field.json",
+    "bytes": 8138,
+    "sha256": "c933fe86f47d361d48b9a0f4fcd5b96b0fa384fd9bd87c4edba6276778a835e8"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/gaia_field.json.receipt.json",
+    "bytes": 724,
+    "sha256": "e17c744981808fac1d71d847f6979d0bf0d394d00c211dd2f194037b74c2ac44"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/input_source_hashes.json",
+    "bytes": 1092,
+    "sha256": "0a1874f44ed30ebef99ed581b8519552af5d7837ccdba8220ab2d8e8eb57cdd8"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/only_control_1_arc_offset_periodogram.csv",
+    "bytes": 61831,
+    "sha256": "5765b73a2a4fc5ba127e4141f192012d4433c1ae435a9d8320217efcd45339bf"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/only_control_1_global_linear_periodogram.csv",
+    "bytes": 62576,
+    "sha256": "eb3610c41aca9ef3802a5b4ce8bb1f8e830808d4f4ae8b6ce55125e5ff0acce3"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/only_control_1_sector_linear_periodogram.csv",
+    "bytes": 61588,
+    "sha256": "8805be275b3b524d8b29ba669a378612e50c6947bcfe8eaa6b383c3189105f2c"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/only_control_2_arc_offset_periodogram.csv",
+    "bytes": 62249,
+    "sha256": "5f8b026daae047820ab5cbbef59befb4374d200e286077349463226f38518e96"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/only_control_2_global_linear_periodogram.csv",
+    "bytes": 62346,
+    "sha256": "3397381e20f29c093ac51ce4f60f64eb7d1888b7bc566ab47b6d6ea0104ea486"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/only_control_2_sector_linear_periodogram.csv",
+    "bytes": 62274,
+    "sha256": "30858c1f0e3e876f5c7b359e925b0b21415773dc3079ec3376786e07b20d668e"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/pixel_products.json",
+    "bytes": 2118,
+    "sha256": "d141198ede792c5eed6dd20c85c1816169098e225ee614ef8e65dfc24f851271"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/pixels/tess-s0044-4-3_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 29160000,
+    "sha256": "dc55630ca8a8cc7a893ce592f495eea8c8026aa14f993d0b828404a6743b788f"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/pixels/tess-s0045-2-1_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 30689280,
+    "sha256": "67d667ee6a11356c4bc1743f08b3152e38acafc492397919c5f109fc4887b433"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/pixels/tess-s0046-1-1_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 32973120,
+    "sha256": "550fc3afc89b8e34ad0e18a2a44559629897ad87ea2ff8d1b9ba5321f7708c4d"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/protocol.json",
+    "bytes": 1603,
+    "sha256": "e156e3ae7e7d15b785cd744cdb036ef1d07efee031d64f9c2801987c4f30103b"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r1.0_arc_offset_periodogram.csv",
+    "bytes": 61708,
+    "sha256": "c09aec3f6e5646465a76274924333bc3d3f60e1243867bae0c74cc8429800eee"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r1.0_global_linear_periodogram.csv",
+    "bytes": 62256,
+    "sha256": "be268c499a274c38b2ddd4c19cdf0efb6b9ced1dbb79f8077764a137a2e0b30c"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r1.0_sector_linear_periodogram.csv",
+    "bytes": 61668,
+    "sha256": "aed4db1d1ddf3be36aa0f05eec7bbe28086c70b8bc31352798a83378fd2d51f0"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r1.5_arc_offset_periodogram.csv",
+    "bytes": 61761,
+    "sha256": "acc468f7c30b8d9fd9bf3f5ba19fb34ae5b5f19495c82de856ea57e1fa332250"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r1.5_global_linear_periodogram.csv",
+    "bytes": 62675,
+    "sha256": "913560495e333f5f6ab625e87ec245014aaa0aae6a8f877db838f24f338fac84"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r1.5_sector_linear_periodogram.csv",
+    "bytes": 61599,
+    "sha256": "9c5ad728bf2da5ed936a213f87acbb59ec86dce19813b0b2f3832d098b5089c7"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r2.0_arc_offset_periodogram.csv",
+    "bytes": 61727,
+    "sha256": "4849971df6099984b535fafb698050d6812b546cebb5c83ceec3dfe41fbc0349"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r2.0_global_linear_periodogram.csv",
+    "bytes": 62677,
+    "sha256": "db3296d8a307eb565a1a2e09760cef99ff15053b9301695a6d0eea20ee0851df"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_differential_r2.0_sector_linear_periodogram.csv",
+    "bytes": 61594,
+    "sha256": "6ca4d59f432a45e05336dcd71c54ee8259f66b2da187a6ac351349f271e15ab6"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_lightcurves.png",
+    "bytes": 164364,
+    "sha256": "ee0ee4f0c4034f3f20dffd4cfee13b554cb120a7285cd5c3f3ccb4e380db7735"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r1.0_arc_offset_periodogram.csv",
+    "bytes": 61692,
+    "sha256": "90fa701b5c4a2ef50611039666aa21e3605e0a1fc9049fffd4ef41e7178a0776"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r1.0_global_linear_periodogram.csv",
+    "bytes": 62225,
+    "sha256": "1782f1c19495bec2f818adc4e1db5f452c4369e9c22251ca844543f9f0803403"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r1.0_sector_linear_periodogram.csv",
+    "bytes": 61645,
+    "sha256": "055b76dd2903cd9c4b6a63f2efb5cac9ca536ebdf20e124e6f0e2497c2d4255c"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r1.5_arc_offset_periodogram.csv",
+    "bytes": 61717,
+    "sha256": "1134a74dd352508bfe9bc54cc4fa7c2476cb0f8523fef8a16820babcf99ba1aa"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r1.5_global_linear_periodogram.csv",
+    "bytes": 62655,
+    "sha256": "c16b19b70d28033891446159d474d6db776b4f1f633e798a268f9cd89465b225"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r1.5_sector_linear_periodogram.csv",
+    "bytes": 61541,
+    "sha256": "a3e5503973e53b52f098caae277bcb2ccdcaccce3c7c1c31cac30e20724c877d"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r2.0_arc_offset_periodogram.csv",
+    "bytes": 61679,
+    "sha256": "e43a817078a75d176cc4b065dde8adebc13954f45edb84429c85bbba38261f6f"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r2.0_global_linear_periodogram.csv",
+    "bytes": 62675,
+    "sha256": "9621d7f0545a720b2a14a9506f1a4e96f09a4350e9d5fe35120a2fc3346a2661"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_r2.0_sector_linear_periodogram.csv",
+    "bytes": 61563,
+    "sha256": "1fd3df5b4642d528995728f378f3c6fb9caa6dd0a8d03f7a23f658b2a291935e"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/registered_spatial_attribution.png",
+    "bytes": 154144,
+    "sha256": "6cb81c642461a10d5f8c97e3c46e0e75d86b552d0cc692c0c42a0dde8c462aa4"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/report.txt",
+    "bytes": 10686,
+    "sha256": "ca1db8e463b97e7b8e7dda7e47c6353d6c36dba6c8347d5d6e6066a38bd73814"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/results.json",
+    "bytes": 61936,
+    "sha256": "9493337e6056b4bb9630062e23f35bf0667d34a3d223b09e20c6159be13b2db0"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector44_binned_photometry.csv",
+    "bytes": 47137,
+    "sha256": "2c41adac64069ba3e351591403ff1ebc760fb34492688c671afc8ec9bee32b48"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector44_maps.npz",
+    "bytes": 18187,
+    "sha256": "907ff22cc1c373844f55b05ac9d34616822ea6b663633db7ab676823bdeb6891"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector44_pixels.receipt.json",
+    "bytes": 662,
+    "sha256": "d57be6a4ac2aa185e0272b58c8630c3083c3eddb50768a891c736450b17c4f0b"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector44_registered_maps.npz",
+    "bytes": 12406,
+    "sha256": "00c0ed95c46110f07f1aab67122d314e7b674883b2f7ae1eb9610d66675b6c29"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector45_binned_photometry.csv",
+    "bytes": 45919,
+    "sha256": "5285f716f442f70b576efe0e017442ce5f350a157e508f935e78620bce8eb107"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector45_maps.npz",
+    "bytes": 18207,
+    "sha256": "af8004f078a2eaacc55ec8c10495efe7b3d4d81c47298bbabf0a1cf896e569ae"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector45_pixels.receipt.json",
+    "bytes": 662,
+    "sha256": "c69ce7e5b66ca689b48f752d83b584c21baf60937f42883b29a88969eaec14e8"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector45_registered_maps.npz",
+    "bytes": 12384,
+    "sha256": "b4493fec3a0cc43a61e20fe4c6d5e7b3fd41860b46de3dd9f087da7f74fdf3ef"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector46_binned_photometry.csv",
+    "bytes": 49095,
+    "sha256": "fdbf656e0fa448c528d7b836cb7456662eab18a24af0ec3861876ac7bcb5daa1"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector46_maps.npz",
+    "bytes": 18087,
+    "sha256": "6dac28bfcc7fcca8eb7aa0df79968c8a5ff9ea813588194a283b7260f0c10de7"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector46_pixels.receipt.json",
+    "bytes": 662,
+    "sha256": "e06a15df6432c6524de336e34c0b09b7b0779daadbabdfe24dc965bc72c142fd"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/sector46_registered_maps.npz",
+    "bytes": 12337,
+    "sha256": "3d31a5226405c7caaf291646060132acbdf69c73106bcfbadfa3a1982d0f9328"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/spatial_attribution.png",
+    "bytes": 248933,
+    "sha256": "acfa1ec3f2a052275d550713fb3e6e68c19cc7715e290d0e1dcb1a5f2fee2914"
+  },
+  {
+    "path": "results/j0830-pixel-check-20261111/verification.json",
+    "bytes": 1640,
+    "sha256": "c8d35ee3d9c0cd1482cd2a6af7145333c06c64cc46ae884a62f491336ab2fb92"
   },
   {
     "path": "results/sky-plates-j0754-20261107/applause_diagnostic.json",
@@ -6521,8 +6921,8 @@
   },
   {
     "path": "tools/sky-plates/README.md",
-    "bytes": 38117,
-    "sha256": "d02b03c4eeeae2862269a3ae60576df733692a3fd2a609d4227cd95654f1e6b4"
+    "bytes": 39700,
+    "sha256": "a4b6a7492ad873ff20f87fae2ced32bd41962f286d70ef0006adcdbf233af84c"
   },
   {
     "path": "tools/sky-plates/analysis_core.py",
@@ -6548,6 +6948,11 @@
     "path": "tools/sky-plates/analyze_j0754_period.py",
     "bytes": 12799,
     "sha256": "0ddbf93dad3a2a308897577c44b8ecc138272153686935927810e8590275d3e9"
+  },
+  {
+    "path": "tools/sky-plates/analyze_j0830_pixels.py",
+    "bytes": 16170,
+    "sha256": "e79959a58c6b426df32400c36482911b7740cc9d029c6d6d470fbbf034fcf1d3"
   },
   {
     "path": "tools/sky-plates/analyze_radio_uv.py",
@@ -6765,6 +7170,11 @@
     "sha256": "d2b171336eb6e287c6f00ac695e3cfb5ff5ead89c2bb5f90f3efe5a6d054bf58"
   },
   {
+    "path": "tools/sky-plates/fetch_j0830_pixels.py",
+    "bytes": 4415,
+    "sha256": "e1b5bd14dbb4238bd3957f1a1a3d21efa4fea9946266aa0da2998dbe7fb18be4"
+  },
+  {
     "path": "tools/sky-plates/fetch_modern.py",
     "bytes": 3280,
     "sha256": "12b0a1025926104e73878d51c31956838c60dcbe63b201ce6c40f3387c5da018"
@@ -6813,6 +7223,11 @@
     "path": "tools/sky-plates/j0754_report_content.json",
     "bytes": 16494,
     "sha256": "f4a233c827dc73b6c7162f92c5065b5586f6b31ae8a538acfc5936e7e64db769"
+  },
+  {
+    "path": "tools/sky-plates/j0830_pixel_core.py",
+    "bytes": 4227,
+    "sha256": "2f882d9805c6607797b2b8f599a4dc895703f275fbd7687d143646ace9b1c3a7"
   },
   {
     "path": "tools/sky-plates/modern_differential.py",
@@ -7028,6 +7443,11 @@
     "path": "tools/sky-plates/test_historical_extension_controls.py",
     "bytes": 2371,
     "sha256": "592fc29351e1cae799e248d31c8f408461ac3b9b11342b2cabb2cd32b50e3012"
+  },
+  {
+    "path": "tools/sky-plates/test_j0830_pixels.py",
+    "bytes": 4002,
+    "sha256": "c781f7601fe3542d686ea3072288b0d53512d9851010f239d6bc7f7f5f4fe8ea"
   },
   {
     "path": "tools/sky-plates/test_modern.py",

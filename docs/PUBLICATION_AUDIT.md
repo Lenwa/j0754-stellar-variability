@@ -152,3 +152,25 @@ findings, and targeted private path/contact/key checks were clean. Public
 request receipts contain archive URLs and catalogue identifiers, with no
 account pages or credentials. The publication manifest hashes canonical Git
 blobs; native FITS retain their exact archive bytes.
+
+## 11 November J0830 direct-pixel check
+
+Three public 21x21 TESSCut calibrated FITS and a Gaia field response are included
+with original byte hashes and request receipts. The geometry-selected control
+file is preserved byte-for-byte using a scoped Git attribute. Previous manifest
+and public-request records remain unchanged. No private account records or
+credentials are present in the new source, figures or public archive products.
+
+The pixel result is explicitly partial: primary/large aperture modulation
+survives a bright-control correction; S46 is spatially consistent, while S44–45
+remain mixed with image changes. The narrow registered aperture and unstable
+faint control are retained. One motion-aware check is labelled as later work,
+and no further correction family was added. The report connects this boundary
+to the main fading question instead of claiming orbital or causal confirmation.
+
+Fresh read-only review verified native hashes/time headers, both controls'
+eligibility, common cadences and independent least-squares results. All 212
+component tests pass, including seven new numerical safeguards. Four figures
+were visually inspected; eight input/source hashes match. Full-repository
+Gitleaks scanned 295.32 MB without findings; targeted private path/contact/key
+checks were clean. The canonical Git-blob manifest is updated with this release.

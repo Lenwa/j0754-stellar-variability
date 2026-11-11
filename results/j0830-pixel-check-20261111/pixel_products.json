@@ -1,0 +1,65 @@
+[
+  {
+    "sector": 44,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut",
+    "params": {
+      "ra": 127.66033651549,
+      "dec": 14.12030855354,
+      "x": 21,
+      "y": 21,
+      "units": "px",
+      "sector": 44
+    },
+    "method": "GET",
+    "retrieved_utc": "2026-11-11T16:48:02.669259+00:00",
+    "http_status": 200,
+    "response_bytes": 29160260,
+    "response_sha256": "253a58077119832eb9fad19e9be6741fbfa69bc63186cf2dd0931fce42a6c213",
+    "state": "saved",
+    "file": "results/j0830-pixel-check-20261111/pixels/tess-s0044-4-3_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 29160000,
+    "sha256": "dc55630ca8a8cc7a893ce592f495eea8c8026aa14f993d0b828404a6743b788f"
+  },
+  {
+    "sector": 45,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut",
+    "params": {
+      "ra": 127.66033651549,
+      "dec": 14.12030855354,
+      "x": 21,
+      "y": 21,
+      "units": "px",
+      "sector": 45
+    },
+    "method": "GET",
+    "retrieved_utc": "2026-11-11T16:48:06.776497+00:00",
+    "http_status": 200,
+    "response_bytes": 30689540,
+    "response_sha256": "b4110161db0cf28794a86c9866caa3d8e947e0524c5549d606fa8b0a183d3c23",
+    "state": "saved",
+    "file": "results/j0830-pixel-check-20261111/pixels/tess-s0045-2-1_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 30689280,
+    "sha256": "67d667ee6a11356c4bc1743f08b3152e38acafc492397919c5f109fc4887b433"
+  },
+  {
+    "sector": 46,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut",
+    "params": {
+      "ra": 127.66033651549,
+      "dec": 14.12030855354,
+      "x": 21,
+      "y": 21,
+      "units": "px",
+      "sector": 46
+    },
+    "method": "GET",
+    "retrieved_utc": "2026-11-11T16:48:11.032561+00:00",
+    "http_status": 200,
+    "response_bytes": 32973380,
+    "response_sha256": "0e3adb903f5b82219e1818ae239ff84bd3edfdb4070bf3235066a962ca5b9bf2",
+    "state": "saved",
+    "file": "results/j0830-pixel-check-20261111/pixels/tess-s0046-1-1_127.660337_14.120309_21x21_astrocut.fits",
+    "bytes": 32973120,
+    "sha256": "550fc3afc89b8e34ad0e18a2a44559629897ad87ea2ff8d1b9ba5321f7708c4d"
+  }
+]

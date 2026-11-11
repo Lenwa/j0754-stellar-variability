@@ -1,0 +1,191 @@
+J0830: DIRECT TESS PIXELS, COMPARISON STARS AND THE BIGGER QUESTION
+11 November 2026 | Kyle Hicks and Ari
+
+RESULT
+
+A roughly five-week modulation survives direct extraction from calibrated
+TESS images and correction against a bright comparison star. Its fitted
+minimum-to-maximum amplitude is about 5%. The spatial attribution test is
+partial: sector 46 is consistent with J0830's position; sectors 44 and 45
+remain mixed with image-shape changes. The complete three-sector host
+assignment remains unresolved.
+
+This strengthens the evidence for a real signal in the target aperture,
+without confirming a companion, exact synchronization or a fading mechanism.
+The primary motion-corrected free peak is 37.39 days, compared with Gaia's
+38.389-day candidate period. About two cycles are observed. These are nearby
+timescales; the photometry does not supply a precision orbital-period test.
+
+WHAT WAS DONE
+
+Retrieve 21x21-pixel TESSCut images for sectors 44, 45 and 46, covering the
+same 2021 observations used in the QLP analysis. These are calibrated FFI
+pixels from a different reduction, not raw detector counts, a new telescope
+or another independent observing epoch. Native file sizes are 29.16, 30.69
+and 32.97 MB. The files, SHA-256s and public retrieval receipts are retained.
+
+A public Gaia query returns 57 sources within six arcminutes, brighter than
+G=17.5. Propagate positions approximately from Gaia's 2016 epoch to 2021.8.
+Before pixel light-curve fitting, select controls by catalogue brightness,
+isolation and coverage in all three sector orientations. Exactly two meet
+the stated criteria:
+
+Control | Gaia DR3 source ID  | G magnitude
+1       | 651460712473032320 | 9.878
+2       | 651460952991125632 | 13.921
+
+The target is Gaia 651437519650162304, G=10.415. Controls are at least four
+pixels from it, three pixels from other G<=16.5 stars, and 2.5 pixels from
+each cutout edge. The original selection file is frozen and included.
+
+Fit a robust per-frame background plane after excluding all catalogue source
+positions within 2.8 pixels. Extract fixed target radii of 1, 1.5 and 2 pixels,
+and controls at 1.5 pixels. Apply QUALITY=0, finite-time/image and positive
+aperture cuts. All 9,702 quality-zero finite frames survive the common target/
+control selection: 3,261/3,121/3,320 in S44/S45/S46, giving 348 matched 0.2-day
+bins. No brightness clipping or outcome-based control removal is applied.
+
+Fit periodic and nuisance terms jointly, with the existing 5–100-day frequency
+grid. Compare sector offsets plus a global slope, individual sector slopes,
+and separate arc offsets. For spatial maps, fit each pixel's signed sine/cosine
+coefficients at the fixed Gaia candidate period, using the target aperture's
+phase. A signed map avoids treating every noisy positive pixel as a source.
+
+PERIOD AND COMPARISON RESULTS
+
+For the unregistered 1.5-pixel aperture, the global-slope free peak is 38.59 d,
+with 2.65% semiamplitude at Gaia's period. Correcting only against bright
+control 1 gives 39.13 d and 2.50%. All three direct aperture sizes have free
+peaks between 37.73 and 40.44 d across the three declared nuisance models.
+Their fixed-Gaia semiamplitudes span 2.02–2.73%.
+
+The two controls more strongly favor about 13 days, not the target's five-week
+wave. Fainter control 2 has substantial excursions and yields unstable
+corrections. It remains in all original ensemble and single-control results.
+The two-control ensemble is not represented as a clean confirmation.
+
+Unregistered spatial maps show shared positive/negative dipoles around bright
+stars, exposing image motion. One bounded follow-up aligns frames using only
+the bright comparison star's measured position. The target does not define
+the alignment. Use a fixed 2.5-pixel centroid window, cubic translation and a
+two-pixel crop for maps. Maximum measured absolute shifts are <=0.136 pixels.
+This follow-up is recorded as post-initial analysis, not part of the initial
+prediction. Interpolation changes undersampled peak pixels; no calibrated
+positional error or interpolation-completeness claim is made.
+
+After alignment, the sector-linear results are:
+
+Extraction                       | Free peak | Gaia semiamplitude | Power
+Primary target radius 1.5         | 37.39 d   | 2.48%              | 0.932
+Primary / bright-control flux    | 37.39 d   | 2.49%              | 0.910
+Target radius 2.0                | 37.90 d   | 2.50%              | 0.935
+Radius 2.0 / bright-control flux | 37.90 d   | 2.52%              | 0.907
+
+Power is fractional residual sum-of-squares improvement over the same
+nuisance-only model, not confidence or a false-alarm probability. The small
+registered radius 1.0 aperture fails this agreement: the sector-linear scan
+instead peaks at about 60 days. Its failure remains visible, and prevents
+a claim that every aperture/correction recovers the same period.
+
+SPATIAL RESULT AND STOPPING POINT
+
+For S46, the registered modulation center is about 0.23 pixels from the
+reference source's fitted center, and 0.19 pixels from the propagated Gaia
+position. Its morphology is consistent with light from the target vicinity.
+
+For S44 and S45, the descriptive modulation-reference offsets are 1.13 and
+0.89 pixels. Both modulation Gaussian fits hit their lower width bound,
+while the maps retain mixed signs and image-shape structure. These fits do
+not identify a displaced star and do not cleanly localize the signal. A
+stationary-plus-motion template fit is also inconsistent across sectors
+(-4.00%, +1.35%, +3.04%); it is not used as a stellar-amplitude measurement.
+
+A G=17.331 Gaia neighbour lies about 1.9 TESS pixels from J0830. Catalogue
+G magnitudes alone do not set a TESS variability/contamination limit. Fainter
+or unresolved blends remain possible. The spatial test therefore supports
+the target vicinity in S46 but leaves the full host assignment open.
+
+The predeclared weakening outcomes mattered: aperture sensitivity, a poor
+faint control and incomplete localization are retained. Stop after this one
+motion-aware follow-up. Further tuning of the same two-cycle record would
+yield less independent information than a separate epoch, ground photometry,
+radial velocities or specialist review.
+
+PULLING BACK ACROSS THE RECENT WORK
+
+The main scientific question remains: what causes the long fading episodes?
+The archive search, comparison-giant screen and sibling analysis add context;
+they have not independently solved that question.
+
+J0754: our strongest case. Historical and modern fading/recovery are replicated;
+optical fading is larger than infrared fading. Roughly 36-day variability,
+chromospheric evidence and X-rays support an active giant. Evolving spots
+are a leading working explanation, with a Gaia companion candidate supplying
+a possible way to maintain activity. Activity is not an orbit confirmation,
+and the measured spot-wave amplitude does not directly measure total dark
+surface coverage. The existing amplitude/brightness tests did not establish
+a simple magnetic-cycle law for the long fade. Nonuniform obscuration remains
+among the surviving alternatives.
+
+J0830: a useful comparison candidate. QLP and direct-image reductions of one
+2021 epoch recover a roughly five-week signal near its Gaia candidate
+timescale. Its 2015 K2 epoch does not repeat the same dominant period, and
+this source-attribution test remains partial. The published historical fading
+has only screening-level re-examination, not J0754's differential replication.
+
+J0736: a weaker comparison clue. Its strongest photometric periods are roughly
+19–21 days, near half a 39.42-day Gaia candidate orbit, with an inconsistent
+waveform. That does not establish rotation, ellipsoidal modulation or a
+shared mechanism with the other two stars.
+
+The useful synthesis is a testable active-giant/binary connection across the
+historically selected stars. The decisive missing link is a measurement that
+distinguishes surface-temperature/spot changes from intervening material as
+the long fade evolves. Calibrated RV/activity spectra and simultaneous colors
+would address that directly. We should now package the bounded archival
+results for astronomer review rather than turn the same data into increasingly
+precise-looking period claims. No prevalence or coincidence probability is
+assigned to three retrospectively noticed Gaia candidate periods.
+
+VERIFICATION, REPRODUCTION AND FILES
+
+Seven synthetic tests cover masked backgrounds, signed aperture flux, shared
+throughput correction, signed source maps, motion/stationary decomposition,
+and independent-comparison registration with known injected target changes.
+A fresh read-only reviewer independently checked native hashes/time headers,
+both controls' geometry, all common cadences, and least-squares period fits.
+It found no material code defect affecting this bounded conclusion. The
+review supports a partial, not a completed, host attribution.
+All 212 component tests pass. Four figures were visually inspected; native
+and source hashes match. Full-repository and targeted privacy checks are clean.
+
+Retain this directory including field_selection.json: that frozen pre-fit
+selection is an explicit input, not regenerated by the download command.
+From repository root:
+
+python -B tools/sky-plates/fetch_j0830_pixels.py
+python -B tools/sky-plates/analyze_j0830_pixels.py
+python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
+
+registered_lightcurves.png             Primary motion-aware temporal result.
+registered_spatial_attribution.png     Spatial success and failures together.
+direct_and_comparison_lightcurves.png  Original controls, including bad excursions.
+spatial_attribution.png                Unregistered dipoles and failed centroids.
+results.json / *_periodogram.csv       Complete fits and scans, without peak selection.
+sector*_binned_photometry.csv          All extraction variants on matched times.
+sector*_maps.npz                       Signed, quadrature and reference images.
+protocol.json / field_selection.json   Initial prediction and frozen selection.
+pixel_products.json / *.receipt.json   Public retrieval routes and byte hashes.
+input_source_hashes.json               Exact native/source/selection input hashes.
+
+Return routes for the synthesis:
+../../docs/J0754_evidence_summary_2026-11-11.txt
+../giant-screening-20261111/report.txt
+../tang-sibling-analysis-20261111/report.txt
+
+TESSCut API and original method attribution (Brasseur et al. 2019):
+https://mast.stsci.edu/tesscut/
+Gaia DR3 archive: https://gea.esac.esa.int/archive/
+Original Tang et al. historical study: https://arxiv.org/abs/1001.1395
+
+No email, new observing request or manuscript submission has been made.

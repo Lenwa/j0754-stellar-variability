@@ -1,0 +1,18 @@
+{
+  "file": "gaia_field.json",
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "params": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "json",
+    "QUERY": "SELECT TOP 5000 source_id,ra,dec,pmra,pmdec,phot_g_mean_mag,bp_rp FROM gaiadr3.gaia_source WHERE phot_g_mean_mag<17.5 AND CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',127.66033651549,14.12030855354,0.1))=1"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T16:48:01.606547+00:00",
+  "http_status": 200,
+  "response_sha256": "c933fe86f47d361d48b9a0f4fcd5b96b0fa384fd9bd87c4edba6276778a835e8",
+  "response_bytes": 8138,
+  "sha256": "c933fe86f47d361d48b9a0f4fcd5b96b0fa384fd9bd87c4edba6276778a835e8",
+  "bytes": 8138,
+  "state": "saved"
+}

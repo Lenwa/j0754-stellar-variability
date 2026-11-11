@@ -1,0 +1,21 @@
+{
+  "sector": 44,
+  "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut",
+  "params": {
+    "ra": 127.66033651549,
+    "dec": 14.12030855354,
+    "x": 21,
+    "y": 21,
+    "units": "px",
+    "sector": 44
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T16:48:02.669259+00:00",
+  "http_status": 200,
+  "response_bytes": 29160260,
+  "response_sha256": "253a58077119832eb9fad19e9be6741fbfa69bc63186cf2dd0931fce42a6c213",
+  "state": "saved",
+  "file": "results/j0830-pixel-check-20261111/pixels/tess-s0044-4-3_127.660337_14.120309_21x21_astrocut.fits",
+  "bytes": 29160000,
+  "sha256": "dc55630ca8a8cc7a893ce592f495eea8c8026aa14f993d0b828404a6743b788f"
+}

@@ -1143,5 +1143,9 @@
     "state": "saved"
   },
   "results/tang-sibling-analysis-20261111/hlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits.receipt.json": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHLSP%2Feverest%2Fv2%2Fc05%2F211500000%2F69759%2Fhlsp_everest_k2_llc_211569759-c05_kepler_v2.0_lc.fits",
-  "results/tang-sibling-analysis-20261111/hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits.receipt.json": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHLSP%2Fk2sc%2Fv2%2Fc05%2F211500000%2Fhlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits"
+  "results/tang-sibling-analysis-20261111/hlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits.receipt.json": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHLSP%2Fk2sc%2Fv2%2Fc05%2F211500000%2Fhlsp_k2sc_k2_llc_211569759-c05_kepler_v2_lc.fits",
+  "results/j0830-pixel-check-20261111/gaia_field.json.receipt.json": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+TOP+5000+source_id%2Cra%2Cdec%2Cpmra%2Cpmdec%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+phot_g_mean_mag%3C17.5+AND+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C127.66033651549%2C14.12030855354%2C0.1%29%29%3D1",
+  "results/j0830-pixel-check-20261111/sector44_pixels.receipt.json": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=127.66033651549&dec=14.12030855354&x=21&y=21&units=px&sector=44",
+  "results/j0830-pixel-check-20261111/sector45_pixels.receipt.json": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=127.66033651549&dec=14.12030855354&x=21&y=21&units=px&sector=45",
+  "results/j0830-pixel-check-20261111/sector46_pixels.receipt.json": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=127.66033651549&dec=14.12030855354&x=21&y=21&units=px&sector=46"
 }

@@ -1,0 +1,10 @@
+{
+  "tools/sky-plates/analyze_j0830_pixels.py": "e79959a58c6b426df32400c36482911b7740cc9d029c6d6d470fbbf034fcf1d3",
+  "tools/sky-plates/j0830_pixel_core.py": "2f882d9805c6607797b2b8f599a4dc895703f275fbd7687d143646ace9b1c3a7",
+  "tools/sky-plates/fetch_j0830_pixels.py": "e1b5bd14dbb4238bd3957f1a1a3d21efa4fea9946266aa0da2998dbe7fb18be4",
+  "tools/sky-plates/tang_sibling_core.py": "c777fbba42128df5790878d5a9cc6d548e84a7b6fabecca5e079ea8c844832ea",
+  "results/j0830-pixel-check-20261111/field_selection.json": "83605de2d73a99d54506efd93d19efa3797bb01802fd79673e322854625bd0cd",
+  "results/j0830-pixel-check-20261111/pixels/tess-s0044-4-3_127.660337_14.120309_21x21_astrocut.fits": "dc55630ca8a8cc7a893ce592f495eea8c8026aa14f993d0b828404a6743b788f",
+  "results/j0830-pixel-check-20261111/pixels/tess-s0045-2-1_127.660337_14.120309_21x21_astrocut.fits": "67d667ee6a11356c4bc1743f08b3152e38acafc492397919c5f109fc4887b433",
+  "results/j0830-pixel-check-20261111/pixels/tess-s0046-1-1_127.660337_14.120309_21x21_astrocut.fits": "550fc3afc89b8e34ad0e18a2a44559629897ad87ea2ff8d1b9ba5321f7708c4d"
+}

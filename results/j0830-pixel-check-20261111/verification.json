@@ -1,0 +1,41 @@
+{
+  "verified_utc": "2026-11-11T17:01:30.260148+00:00",
+  "scientific_result": "Five-week aperture modulation reproduced; full three-sector host attribution unresolved.",
+  "component_tests": {
+    "passed": 212,
+    "new_pixel_tests": 7,
+    "command": "python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'",
+    "exit_code": 0
+  },
+  "independent_readonly_review": {
+    "verified": [
+      "Three native hashes and time conversions",
+      "Both catalogue controls eligibility",
+      "9702 common cadences / 348 bins",
+      "Independent full-design period fits",
+      "Seven synthetic tests"
+    ],
+    "material_code_findings": 0,
+    "important_scientific_limits": [
+      "S44/S45 maps and lower-bound Gaussian widths do not locate a displaced star.",
+      "Small registered sector-linear aperture favors about 60 days.",
+      "Faint comparison has substantial excursions.",
+      "Calibrated same-exposure reductions are not independent instruments.",
+      "No companion/orbital/fading-mechanism confirmation."
+    ]
+  },
+  "visual_figures": [
+    "registered_lightcurves.png",
+    "registered_spatial_attribution.png",
+    "direct_and_comparison_lightcurves.png",
+    "spatial_attribution.png"
+  ],
+  "input_source_hashes_verified": 8,
+  "privacy": {
+    "gitleaks_exit": 0,
+    "scanned_bytes_approx": 295315433,
+    "targeted_private_strings": "No matches"
+  },
+  "publication_state": "Prepared in registered astronomy repository; actual commit/remote state verified separately after execution",
+  "stopping_rule": "One motion-aware correction completed; further tuning of the same two-cycle record stopped."
+}

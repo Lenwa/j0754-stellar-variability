@@ -1,5 +1,15 @@
 # J0754 stellar variability laboratory
 
+**J0830 direct-pixel check, 11 November:** [report and wider synthesis](results/j0830-pixel-check-20261111/report.txt),
+[motion-aware light curves](results/j0830-pixel-check-20261111/registered_lightcurves.png)
+and [spatial test](results/j0830-pixel-check-20261111/registered_spatial_attribution.png).
+A roughly five-week, approximately 5% peak-to-peak aperture signal survives
+direct calibrated-image extraction and bright-comparison correction. Sector 46
+is spatially consistent with the target; sectors 44–45 remain mixed with image
+changes, so the complete host assignment is unresolved. The narrowest registered
+aperture also fails the period agreement. This is a bounded follow-up to the
+sibling result below, not orbital confirmation or a solution to the long fade.
+
 **Tang's other two stars, 11 November:** [full analysis](results/tang-sibling-analysis-20261111/report.txt)
 and [main figure](results/tang-sibling-analysis-20261111/downlink_offset_models.png).
 J0830 has a strong 38–39-day TESS modulation, close to its 38.389-day Gaia
@@ -97,7 +107,7 @@ python -m pip install -r requirements.txt
 python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
 ```
 
-The current snapshot passes **205 tests** (147 in the initial release). Tests cover model
+The current snapshot passes **212 tests** (147 in the initial release). Tests cover model
 integration, injections, nuisance projection, period/alias behavior, covariance,
 pixel reductions and failure cases; they do not substitute for independent
 scientific review. No credentials are required for these offline tests.

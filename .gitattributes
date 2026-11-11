@@ -13,3 +13,5 @@
 *.docx binary
 # Preserve native archive table bytes and their documented fixed-width whitespace.
 results/giant-screening-20261111/*.tsv -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+# Retain exact bytes of the frozen pre-fit field selection used by the pixel run.
+results/j0830-pixel-check-20261111/field_selection.json -text whitespace=cr-at-eol
