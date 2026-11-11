@@ -1,0 +1,31 @@
+# Giant comparison screening plan
+
+> For agentic workers: use superpowers:executing-plans for the already authorized research continuation. Complete a bounded catalogue and archive screen, with one independent final review.
+
+Goal: identify useful comparison giants for J0754, beginning with Tang's J0736/J0830 and published active-giant samples.
+
+Spec: Kyle's approved comparison-star stage, activated by “Ready for the giant screening?” on 11 November. This is an exploratory selection exercise; a useful benchmark, an archive gap and a rejected analogue are valid results.
+
+Architecture: reuse the dedicated astronomy checkout and existing Python environment. Preserve public catalogue responses with request/time/hash receipts, rank independently of newly retrieved light-curve behavior, then inspect a small follow-up set. Separate historical-fading siblings, flare benchmarks, rotation-selected populations and literature exemplars.
+
+Tech stack: existing requests, NumPy, SciPy, Astropy, Matplotlib. No new packages or services.
+
+Prediction before the screen: some published flaring giants will overlap J0754 in temperature, radius and tens-of-days rotation. This supports a comparison class, not a common explanation for decade-long fading. Weakening outcomes: dwarf reclassifications, materially different stellar dimensions, no usable time series, periods or morphology inconsistent with the proposed comparison. No new-discovery claim follows from catalogue selection.
+
+Selection: keep all retrieved rows and classification changes. Rank published giants with finite positive radius/luminosity by squared scaled distance from the adopted J0754 values (5205.776 K, radius derived from 54.640694 Lsun, temperature and 5772 K solar temperature; 500 K, 0.25 dex radius, 0.35 dex luminosity scales). Do not use flare count or archive outcomes in that rank. Follow up the first five. Rotation, multiplicity, crowding and literature attention are additional reported properties, not silently inferred from UV excess or a class label. Catalogue periods, photometric periods and P/sin(i) remain distinct.
+
+Constraints: Tang sibling historical curves already exist; use the same retained DASCH quality gate, report raw and accepted counts, annual bins and coverage, without claiming new control-corrected replication. ZTF object/filter/detector streams stay separate; annual medians require ten distinct nights. No extrapolation through gaps. Relative Kepler quarters cannot establish absolute multi-year dimming. Catalogue energy units and passbands remain as supplied; no numerical bolometric comparison without common conversion. No email. Existing authorization permits public code/supporting-document publication after privacy review.
+
+Review focus: missing values must not rank as zero distance; mixed giant/dwarf samples cannot be called all giants; metadata coverage is not downloaded photometry; duplicate observations cannot inflate yearly coverage; a missing Dixon machine-readable table must not be reported as a screened 7,286-star sample.
+
+## Tasks and checks
+
+- [x] Add numerical guards for TSV error/missing handling, physical rank, distinct-night seasonal summaries and duplicate detections; observe failures before implementing.
+- [x] Fetch the Olah 2022 stellar/flare tables (carrying the earlier sample), original 2021 classification/rotation information if available, and available Dixon sample data or record the exact gap. Preserve retrieval receipts and source identities.
+- [x] Screen all accessible rows, then query Gaia/MAST and public light-curve coverage for the first five and Tang's siblings. Retrieve bounded light curves where available, preserve all failures, and inspect plots.
+- [x] Write a shortlist, full screened table, archive inventory, scientific report and figures. Update the astronomy README with source location, commands and limitations.
+- [x] Run meaningful new safeguards and the full component suite; obtain independent final review, privacy/hash/link checks, commit scoped files and verify any authorized public push.
+
+Execution ruling: this is a bounded continuation in the clean, registered astronomy checkout, following the previous stage's source/result organization. New files remain in this owning repository; existing native data and previous published results are not overwritten. No parallel implementation is planned.
+
+Verification: 188 tests pass. Final read-only review reproduced ranking and numerical diagnostics; three review findings were fixed with regression coverage. No critical or important finding remains unresolved. Final commit and remote state are recorded in the completion receipt after commit.

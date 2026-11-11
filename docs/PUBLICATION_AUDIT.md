@@ -110,3 +110,21 @@ overclaim; catalogue/decade/thousands formatting was corrected. All 176 tests
 passed. Scientific figures were visually inspected. Built-in browser security
 blocked a local-file HTML preview; the HTML structure and source/image links
 were checked offline. No claim of browser-rendered visual QA is made.
+
+## 11 November giant comparison screening
+
+The full 86-row Olah catalogue and its original classification/rotation tables,
+five-star physical shortlist, Gaia/MAST responses, 12 reduced Kepler FITS and
+seven explicitly unreduced sibling TESS/K2 FITS are retained with public request
+receipts. The unavailable Dixon sample and timed-out ZTF queries remain failures,
+not screened stars or nondetections. No account pages, cookies or credentials
+were retained. The protected journal response was not saved.
+
+A fresh read-only review independently reproduced the physical ranking, all
+24 SAP/PDC period maxima and powers, and the historical annual summaries.
+Review findings were corrected: cached catalogue reads no longer overwrite
+enriched results; published period pairs and their original text are preserved;
+plot lines stop at missing annual bins. The source hash manifest was regenerated
+after those edits. All 188 component tests passed, including 12 new safeguards.
+Scientific plots were inspected. Full-repository Gitleaks and targeted private
+path/contact checks were clean. Native survey files remain unchanged.

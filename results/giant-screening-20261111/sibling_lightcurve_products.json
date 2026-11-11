@@ -1,0 +1,65 @@
+[
+  {
+    "target": "J0736",
+    "file": "hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits",
+    "uri": "mast:HLSP/qlp/s0044/0000/0000/7033/0439/hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits",
+    "collection": "HLSP",
+    "sequence": 44,
+    "state": "saved",
+    "analysis_status": "Downloaded, not reduced in this screening"
+  },
+  {
+    "target": "J0736",
+    "file": "hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits",
+    "uri": "mast:HLSP/qlp/s0045/0000/0000/7033/0439/hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits",
+    "collection": "HLSP",
+    "sequence": 45,
+    "state": "saved",
+    "analysis_status": "Downloaded, not reduced in this screening"
+  },
+  {
+    "target": "J0736",
+    "file": "hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits",
+    "uri": "mast:HLSP/qlp/s0046/0000/0000/7033/0439/hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits",
+    "collection": "HLSP",
+    "sequence": 46,
+    "state": "saved",
+    "analysis_status": "Downloaded, not reduced in this screening"
+  },
+  {
+    "target": "J0830",
+    "file": "ktwo211569759-c05_llc.fits",
+    "uri": "mast:K2/url/missions/k2/lightcurves/c5/211500000/69000/ktwo211569759-c05_llc.fits",
+    "collection": "K2",
+    "sequence": 5,
+    "state": "saved",
+    "analysis_status": "Downloaded, not reduced in this screening"
+  },
+  {
+    "target": "J0830",
+    "file": "hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits",
+    "uri": "mast:HLSP/qlp/s0044/0000/0000/2044/5282/hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits",
+    "collection": "HLSP",
+    "sequence": 44,
+    "state": "saved",
+    "analysis_status": "Downloaded, not reduced in this screening"
+  },
+  {
+    "target": "J0830",
+    "file": "hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits",
+    "uri": "mast:HLSP/qlp/s0045/0000/0000/2044/5282/hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits",
+    "collection": "HLSP",
+    "sequence": 45,
+    "state": "saved",
+    "analysis_status": "Downloaded, not reduced in this screening"
+  },
+  {
+    "target": "J0830",
+    "file": "hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits",
+    "uri": "mast:HLSP/qlp/s0046/0000/0000/2044/5282/hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits",
+    "collection": "HLSP",
+    "sequence": 46,
+    "state": "saved",
+    "analysis_status": "Downloaded, not reduced in this screening"
+  }
+]

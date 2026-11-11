@@ -1,5 +1,38 @@
 # Historical sky plates
 
+## Comparison giants
+
+The [screening report](../../results/giant-screening-20261111/report.txt) and
+complete 86-row table retain 61 giant labels, 17 dwarf labels and eight
+unclassified objects from Olah et al. (2022), joined to the original 2021
+rotation and multiplicity notes. Physical similarity selects five follow-ups
+without using the newly retrieved light curves. Twelve Kepler FITS are reduced;
+seven sibling TESS/K2 FITS are downloaded and explicitly not yet analyzed.
+
+```bash
+python -B tools/sky-plates/fetch_giant_screening.py catalogues
+python -B tools/sky-plates/fetch_giant_screening.py archives
+python -B tools/sky-plates/fetch_giant_screening.py retry-mast
+python -B tools/sky-plates/fetch_giant_screening.py products
+python -B tools/sky-plates/fetch_giant_screening.py coverage
+python -B tools/sky-plates/fetch_giant_screening.py siblings
+python -B tools/sky-plates/screen_giant_analogs.py
+python -B tools/sky-plates/report_giant_screening.py
+```
+
+The first six commands need public archive access; valid retained products are
+reused. The last two run offline in the existing astronomy environment, without
+new dependencies. Catalogues, request/error receipts, fits, extracted CSVs,
+figures and source hashes live in `results/giant-screening-20261111`. New source
+and twelve safeguards stay in this component. The source manifest includes
+new FITS and reused historical inputs. No source files are altered by reductions.
+
+This is an exploratory comparison screen. Catalogue labels, orbital candidates,
+photometric maxima and confirmed literature benchmarks are kept distinct.
+Quarter normalization cannot establish absolute long-term fading. ZTF requests
+failed; empty retained sibling queries are not constant-light measurements.
+The Dixon 7,286-star sample remains a documented retrieval gap.
+
 ## Common TESS event comparison and complete evidence ledger
 
 ```bash

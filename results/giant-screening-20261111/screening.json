@@ -1,0 +1,2935 @@
+{
+  "reference": {
+    "teff": 5205.7764,
+    "luminosity": 54.640694,
+    "radius": 9.08740173554945
+  },
+  "classification_counts": {
+    "giant": 61,
+    "dwarf": 17,
+    "": 8
+  },
+  "rankable_giants": 61,
+  "logg_label_tensions": [
+    "4068539",
+    "7740188",
+    "7848068",
+    "9237305",
+    "10666510",
+    "11551404"
+  ],
+  "selected": [
+    {
+      "recno": "22",
+      "KIC": "5080290",
+      "Teff": "5064",
+      "logg": "2.86",
+      "[Fe/H]": "-0.21",
+      "Mass": "2.11",
+      "Rad": "8.99",
+      "Lbol": "47.86",
+      "LumClass": "giant",
+      "taumedian": "729.9",
+      "Nflares": "5",
+      "Simbad": "Simbad",
+      "_RA": "284.82958",
+      "_DE": "+40.21519",
+      "physical_score": 0.10778329400055651,
+      "physical_rank": 1,
+      "published_rotation_days": null,
+      "published_rotation_raw": "",
+      "published_rotation_components_days": [],
+      "published_binary": "",
+      "oscillation_note": "γ Dor / δ Sct hybrid",
+      "Kp": 9.507,
+      "logg_label_tension": false
+    },
+    {
+      "recno": "6",
+      "KIC": "2852961",
+      "Teff": "5012",
+      "logg": "2.77",
+      "[Fe/H]": "-0.21",
+      "Mass": "2.02",
+      "Rad": "9.61",
+      "Lbol": "52.72",
+      "LumClass": "giant",
+      "taumedian": "1563.4",
+      "Nflares": "41",
+      "Simbad": "Simbad",
+      "_RA": "291.54741",
+      "_DE": "+38.05298",
+      "physical_score": 0.16160387529743472,
+      "physical_rank": 2,
+      "published_rotation_days": 35.715,
+      "published_rotation_raw": "35.715",
+      "published_rotation_components_days": [
+        35.715
+      ],
+      "published_binary": "SB1",
+      "oscillation_note": "",
+      "Kp": 10.146,
+      "logg_label_tension": false
+    },
+    {
+      "recno": "52",
+      "KIC": "8515227",
+      "Teff": "5051",
+      "logg": "2.44",
+      "[Fe/H]": "-0.68",
+      "Mass": "1.16",
+      "Rad": "10.60",
+      "Lbol": "66.22",
+      "LumClass": "giant",
+      "taumedian": "904.6",
+      "Nflares": "17",
+      "Simbad": "Simbad",
+      "_RA": "298.22807",
+      "_DE": "+44.53919",
+      "physical_score": 0.2242397044979741,
+      "physical_rank": 3,
+      "published_rotation_days": 28.157,
+      "published_rotation_raw": "28.157",
+      "published_rotation_components_days": [
+        28.157
+      ],
+      "published_binary": "SB3",
+      "oscillation_note": "triple-lined sp. binary",
+      "Kp": 11.176,
+      "logg_label_tension": false
+    },
+    {
+      "recno": "8",
+      "KIC": "3122450",
+      "Teff": "4927",
+      "logg": "2.65",
+      "[Fe/H]": "-0.06",
+      "Mass": "2.24",
+      "Rad": "11.30",
+      "Lbol": "67.30",
+      "LumClass": "giant",
+      "taumedian": "512.5",
+      "Nflares": "18",
+      "Simbad": "Simbad",
+      "_RA": "292.78796",
+      "_DE": "+38.24517",
+      "physical_score": 0.521026404573022,
+      "physical_rank": 4,
+      "published_rotation_days": 44.901,
+      "published_rotation_raw": "44.901",
+      "published_rotation_components_days": [
+        44.901
+      ],
+      "published_binary": "",
+      "oscillation_note": "",
+      "Kp": 13.891,
+      "logg_label_tension": false
+    },
+    {
+      "recno": "18",
+      "KIC": "4680688",
+      "Teff": "4901",
+      "logg": "2.88",
+      "[Fe/H]": "-0.07",
+      "Mass": "1.92",
+      "Rad": "8.26",
+      "Lbol": "35.32",
+      "LumClass": "giant",
+      "taumedian": "205.0",
+      "Nflares": "16",
+      "Simbad": "Simbad",
+      "_RA": "297.76196",
+      "_DE": "+39.79383",
+      "physical_score": 0.6921881099346308,
+      "physical_rank": 5,
+      "published_rotation_days": 9.19,
+      "published_rotation_raw": "9.190",
+      "published_rotation_components_days": [
+        9.19
+      ],
+      "published_binary": "",
+      "oscillation_note": "single?",
+      "Kp": 13.476,
+      "logg_label_tension": false
+    }
+  ],
+  "archives": [
+    {
+      "target": {
+        "name": "KIC5080290",
+        "ra": 284.82958,
+        "dec": 40.21519,
+        "rank": 1
+      },
+      "gaia_nearest": {
+        "source_id": 2103380179325157504,
+        "ra": 284.8295934175904,
+        "dec": 40.21521091225303,
+        "pmra": 1.4473744045127508,
+        "pmdec": 3.55724001859304,
+        "parallax": 1.6817605281018915,
+        "parallax_error": 0.02248346,
+        "phot_g_mean_mag": 9.523464,
+        "bp_rp": 0.98973846,
+        "ruwe": 2.0876765,
+        "separation_arcsec": 0.08383463470853297
+      },
+      "gaia_neighbors_21arcsec": 3,
+      "gaia_field_rows": 29,
+      "identity_note": "Catalogue position match; J2000 input versus Gaia epoch 2016, no resolved component attribution",
+      "mast_status": "COMPLETE",
+      "mast_counts": {
+        "TESS / image": 9,
+        "SDSS / spectrum": 1,
+        "SDSS / image": 1,
+        "ROMAN / image": 3,
+        "PS1 / image": 10,
+        "KeplerFFI / image": 42,
+        "Kepler / timeseries": 2,
+        "HLSP / timeseries": 18,
+        "HLSP / image": 7
+      },
+      "mast_paging": {
+        "page": 1,
+        "pageSize": 1000,
+        "pagesFiltered": 1,
+        "rows": 93,
+        "rowsFiltered": 93,
+        "rowsTotal": 93
+      }
+    },
+    {
+      "target": {
+        "name": "KIC2852961",
+        "ra": 291.54741,
+        "dec": 38.05298,
+        "rank": 2
+      },
+      "gaia_nearest": {
+        "source_id": 2052579443590731648,
+        "ra": 291.547406910033,
+        "dec": 38.052966200782464,
+        "pmra": 0.04572772504970957,
+        "pmdec": -3.2487833945990587,
+        "parallax": 1.2887305676494814,
+        "parallax_error": 0.010571759,
+        "phot_g_mean_mag": 10.0323715,
+        "bp_rp": 1.2375536,
+        "ruwe": 0.90515876,
+        "separation_arcsec": 0.05044352937483496
+      },
+      "gaia_neighbors_21arcsec": 9,
+      "gaia_field_rows": 82,
+      "identity_note": "Catalogue position match; J2000 input versus Gaia epoch 2016, no resolved component attribution",
+      "mast_status": "COMPLETE",
+      "mast_counts": {
+        "TESS / image": 7,
+        "SDSS / spectrum": 1,
+        "SDSS / image": 2,
+        "ROMAN / image": 4,
+        "PS1 / image": 10,
+        "KeplerFFI / image": 51,
+        "Kepler / timeseries": 2,
+        "HLSP / timeseries": 13,
+        "HLSP / image": 6,
+        "GALEX / image": 1
+      },
+      "mast_paging": {
+        "page": 1,
+        "pageSize": 1000,
+        "pagesFiltered": 1,
+        "rows": 97,
+        "rowsFiltered": 97,
+        "rowsTotal": 97
+      }
+    },
+    {
+      "target": {
+        "name": "KIC8515227",
+        "ra": 298.22807,
+        "dec": 44.53919,
+        "rank": 3
+      },
+      "gaia_nearest": {
+        "source_id": 2079266824180801536,
+        "ra": 298.22807340443813,
+        "dec": 44.53919323924563,
+        "pmra": 0.22611339572976027,
+        "pmdec": 0.1054885658158322,
+        "parallax": 0.7747752180388933,
+        "parallax_error": 0.02766052,
+        "phot_g_mean_mag": 11.18253,
+        "bp_rp": 1.3278189,
+        "ruwe": 2.0990336,
+        "separation_arcsec": 0.014570451633886913
+      },
+      "gaia_neighbors_21arcsec": 8,
+      "gaia_field_rows": 80,
+      "identity_note": "Catalogue position match; J2000 input versus Gaia epoch 2016, no resolved component attribution",
+      "mast_status": "COMPLETE",
+      "mast_counts": {
+        "TESS / image": 9,
+        "SWIFT / cube": 7,
+        "SDSS / spectrum": 1,
+        "PS1 / image": 5,
+        "KeplerFFI / image": 51,
+        "Kepler / timeseries": 1,
+        "HLSP / timeseries": 18,
+        "HLSP / image": 7
+      },
+      "mast_paging": {
+        "page": 1,
+        "pageSize": 1000,
+        "pagesFiltered": 1,
+        "rows": 99,
+        "rowsFiltered": 99,
+        "rowsTotal": 99
+      }
+    },
+    {
+      "target": {
+        "name": "KIC3122450",
+        "ra": 292.78796,
+        "dec": 38.24517,
+        "rank": 4
+      },
+      "gaia_nearest": {
+        "source_id": 2051928532709910272,
+        "ra": 292.78793933741866,
+        "dec": 38.24514328571777,
+        "pmra": -3.761252301341593,
+        "pmdec": -6.024707819907815,
+        "parallax": 0.22889393054193818,
+        "parallax_error": 0.012671328,
+        "phot_g_mean_mag": 13.865997,
+        "bp_rp": 1.2788744,
+        "ruwe": 1.0427195,
+        "separation_arcsec": 0.11252479104206843
+      },
+      "gaia_neighbors_21arcsec": 11,
+      "gaia_field_rows": 84,
+      "identity_note": "Catalogue position match; J2000 input versus Gaia epoch 2016, no resolved component attribution",
+      "mast_status": "COMPLETE",
+      "mast_counts": {
+        "TESS / image": 9,
+        "SWIFT / cube": 1,
+        "ROMAN / image": 3,
+        "PS1 / image": 5,
+        "KeplerFFI / image": 51,
+        "Kepler / timeseries": 1,
+        "HLSP / timeseries": 14,
+        "HLSP / image": 8
+      },
+      "mast_paging": {
+        "page": 1,
+        "pageSize": 1000,
+        "pagesFiltered": 1,
+        "rows": 92,
+        "rowsFiltered": 92,
+        "rowsTotal": 92
+      }
+    },
+    {
+      "target": {
+        "name": "KIC4680688",
+        "ra": 297.76196,
+        "dec": 39.79383,
+        "rank": 5
+      },
+      "gaia_nearest": {
+        "source_id": 2073449995368432896,
+        "ra": 297.7619453225699,
+        "dec": 39.79380027071198,
+        "pmra": -3.1414271371272986,
+        "pmdec": -6.034944598457829,
+        "parallax": 0.4183191173821997,
+        "parallax_error": 0.01127415,
+        "phot_g_mean_mag": 13.455646,
+        "bp_rp": 1.4144964,
+        "ruwe": 1.0485026,
+        "separation_arcsec": 0.11446705174834995
+      },
+      "gaia_neighbors_21arcsec": 20,
+      "gaia_field_rows": 129,
+      "identity_note": "Catalogue position match; J2000 input versus Gaia epoch 2016, no resolved component attribution",
+      "mast_status": "COMPLETE",
+      "mast_counts": {
+        "TESS / image": 7,
+        "SWIFT / cube": 1,
+        "ROMAN / image": 4,
+        "PS1 / image": 5,
+        "KeplerFFI / image": 51,
+        "Kepler / timeseries": 1,
+        "HLSP / timeseries": 13,
+        "HLSP / image": 5
+      },
+      "mast_paging": {
+        "page": 1,
+        "pageSize": 1000,
+        "pagesFiltered": 1,
+        "rows": 87,
+        "rowsFiltered": 87,
+        "rowsTotal": 87
+      }
+    },
+    {
+      "target": {
+        "name": "J0736",
+        "ra": 114.02711824252,
+        "dec": 21.23634538304
+      },
+      "gaia_nearest": {
+        "source_id": 865283696503303936,
+        "ra": 114.02710776735303,
+        "dec": 21.236347092963197,
+        "pmra": -2.196864096496415,
+        "pmdec": 0.3847320907915493,
+        "parallax": 0.7944452238992022,
+        "parallax_error": 0.019162735,
+        "phot_g_mean_mag": 10.886421,
+        "bp_rp": 1.2245493,
+        "ruwe": 0.98568,
+        "separation_arcsec": 0.035684782399966274
+      },
+      "gaia_neighbors_21arcsec": 2,
+      "gaia_field_rows": 10,
+      "identity_note": "Catalogue position match; J2000 input versus Gaia epoch 2016, no resolved component attribution",
+      "mast_status": "COMPLETE",
+      "mast_counts": {
+        "TESS / image": 6,
+        "SDSS / spectrum": 2,
+        "SDSS / image": 4,
+        "PS1 / image": 5,
+        "HLSP / timeseries": 3,
+        "HLSP / image": 5,
+        "GALEX / image": 5
+      },
+      "mast_paging": {
+        "page": 1,
+        "pageSize": 1000,
+        "pagesFiltered": 1,
+        "rows": 30,
+        "rowsFiltered": 30,
+        "rowsTotal": 30
+      }
+    },
+    {
+      "target": {
+        "name": "J0830",
+        "ra": 127.66033651549,
+        "dec": 14.12030855354
+      },
+      "gaia_nearest": {
+        "source_id": 651437519650162304,
+        "ra": 127.66036640027176,
+        "dec": 14.120268602635333,
+        "pmra": 6.5209111229201975,
+        "pmdec": -8.988954597958331,
+        "parallax": 1.5065152797255201,
+        "parallax_error": 0.026324067,
+        "phot_g_mean_mag": 10.4147215,
+        "bp_rp": 1.4386082,
+        "ruwe": 1.3345424,
+        "separation_arcsec": 0.17768184549296664
+      },
+      "gaia_neighbors_21arcsec": 0,
+      "gaia_field_rows": 2,
+      "identity_note": "Catalogue position match; J2000 input versus Gaia epoch 2016, no resolved component attribution",
+      "mast_status": "COMPLETE",
+      "mast_counts": {
+        "TESS / image": 5,
+        "SDSS / image": 2,
+        "PS1 / image": 10,
+        "K2 / image": 2,
+        "K2 / timeseries": 2,
+        "HLSP / timeseries": 9,
+        "HLSP / image": 5,
+        "GALEX / image": 3
+      },
+      "mast_paging": {
+        "page": 1,
+        "pageSize": 1000,
+        "pagesFiltered": 1,
+        "rows": 38,
+        "rowsFiltered": 38,
+        "rowsTotal": 38
+      }
+    }
+  ],
+  "tang_gaia_candidate_orbits": [
+    {
+      "source_id": 651437519650162304,
+      "nss_solution_type": "SB1",
+      "period": 38.38919173490344,
+      "period_error": 0.050756417,
+      "eccentricity": 0.12338474204640558,
+      "eccentricity_error": 0.080836274,
+      "semi_amplitude_primary": 8.823196384034633,
+      "rv_n_good_obs_primary": 12,
+      "significance": 19.58429,
+      "goodness_of_fit": 0.32676905
+    },
+    {
+      "source_id": 667401913089980544,
+      "nss_solution_type": "SB1",
+      "period": 35.92045663260072,
+      "period_error": 0.030613065,
+      "eccentricity": 0.022974981578527707,
+      "eccentricity_error": 0.05554752,
+      "semi_amplitude_primary": 10.724471639893267,
+      "rv_n_good_obs_primary": 21,
+      "significance": 13.311264,
+      "goodness_of_fit": 0.25652844
+    },
+    {
+      "source_id": 865283696503303936,
+      "nss_solution_type": "SB1",
+      "period": 39.42091782293346,
+      "period_error": 0.022500465,
+      "eccentricity": 0.014846355375993953,
+      "eccentricity_error": 0.028657867,
+      "semi_amplitude_primary": 17.348952502276106,
+      "rv_n_good_obs_primary": 12,
+      "significance": 59.9401,
+      "goodness_of_fit": 1.7570087
+    }
+  ],
+  "tang": {
+    "J0736": {
+      "historical_raw": 3017,
+      "historical_standard": {
+        "points": 800,
+        "annual": [
+          {
+            "year": 1891,
+            "nights": 4,
+            "median_mag": 12.696827500000001,
+            "p16": 12.640895800000001,
+            "p84": 12.752188760000001
+          },
+          {
+            "year": 1899,
+            "nights": 4,
+            "median_mag": 12.2653105,
+            "p16": 12.1700194,
+            "p84": 12.418780759999999
+          },
+          {
+            "year": 1900,
+            "nights": 5,
+            "median_mag": 12.339799,
+            "p16": 12.336025,
+            "p84": 12.42353712
+          },
+          {
+            "year": 1901,
+            "nights": 5,
+            "median_mag": 12.390995,
+            "p16": 12.112733200000001,
+            "p84": 12.54738336
+          },
+          {
+            "year": 1902,
+            "nights": 12,
+            "median_mag": 12.416169,
+            "p16": 12.201603319999998,
+            "p84": 12.50400984
+          },
+          {
+            "year": 1903,
+            "nights": 11,
+            "median_mag": 12.279463,
+            "p16": 12.1741552,
+            "p84": 12.3352278
+          },
+          {
+            "year": 1904,
+            "nights": 15,
+            "median_mag": 12.310153,
+            "p16": 12.1236214,
+            "p84": 12.44318312
+          },
+          {
+            "year": 1905,
+            "nights": 7,
+            "median_mag": 12.308395,
+            "p16": 12.20146344,
+            "p84": 12.64198268
+          },
+          {
+            "year": 1906,
+            "nights": 9,
+            "median_mag": 12.538304,
+            "p16": 12.344710280000001,
+            "p84": 12.71631444
+          },
+          {
+            "year": 1908,
+            "nights": 9,
+            "median_mag": 12.505743,
+            "p16": 12.33055376,
+            "p84": 12.59329368
+          },
+          {
+            "year": 1909,
+            "nights": 7,
+            "median_mag": 12.534722,
+            "p16": 12.43864456,
+            "p84": 12.76952392
+          },
+          {
+            "year": 1910,
+            "nights": 13,
+            "median_mag": 12.6059995,
+            "p16": 12.432317560000001,
+            "p84": 12.8138842
+          },
+          {
+            "year": 1911,
+            "nights": 5,
+            "median_mag": 12.629532,
+            "p16": 12.47789588,
+            "p84": 12.709619
+          },
+          {
+            "year": 1912,
+            "nights": 10,
+            "median_mag": 12.5547745,
+            "p16": 12.36211172,
+            "p84": 12.760509240000001
+          },
+          {
+            "year": 1913,
+            "nights": 8,
+            "median_mag": 12.423059,
+            "p16": 12.308558399999999,
+            "p84": 12.60271396
+          },
+          {
+            "year": 1914,
+            "nights": 7,
+            "median_mag": 12.576105,
+            "p16": 12.45766952,
+            "p84": 12.6853264
+          },
+          {
+            "year": 1915,
+            "nights": 7,
+            "median_mag": 12.777296,
+            "p16": 12.610001,
+            "p84": 12.8612816
+          },
+          {
+            "year": 1917,
+            "nights": 3,
+            "median_mag": 12.6603485,
+            "p16": 12.60574688,
+            "p84": 12.79881316
+          },
+          {
+            "year": 1922,
+            "nights": 3,
+            "median_mag": 12.922416,
+            "p16": 12.82959056,
+            "p84": 13.07478972
+          },
+          {
+            "year": 1926,
+            "nights": 3,
+            "median_mag": 13.032028,
+            "p16": 12.84734952,
+            "p84": 13.25992252
+          },
+          {
+            "year": 1928,
+            "nights": 14,
+            "median_mag": 13.098572,
+            "p16": 12.980676639999999,
+            "p84": 13.198554719999999
+          },
+          {
+            "year": 1929,
+            "nights": 8,
+            "median_mag": 13.0713615,
+            "p16": 12.967082920000001,
+            "p84": 13.15949176
+          },
+          {
+            "year": 1930,
+            "nights": 5,
+            "median_mag": 12.995342,
+            "p16": 12.8936494,
+            "p84": 13.11306696
+          },
+          {
+            "year": 1931,
+            "nights": 5,
+            "median_mag": 13.109156,
+            "p16": 12.99807176,
+            "p84": 13.52847744
+          },
+          {
+            "year": 1932,
+            "nights": 6,
+            "median_mag": 12.99035,
+            "p16": 12.715998599999999,
+            "p84": 13.1053636
+          },
+          {
+            "year": 1933,
+            "nights": 11,
+            "median_mag": 13.28202,
+            "p16": 13.1335192,
+            "p84": 13.426731199999999
+          },
+          {
+            "year": 1934,
+            "nights": 15,
+            "median_mag": 13.244298,
+            "p16": 12.94143988,
+            "p84": 13.53672072
+          },
+          {
+            "year": 1935,
+            "nights": 20,
+            "median_mag": 13.3988795,
+            "p16": 13.3248466,
+            "p84": 13.61031964
+          },
+          {
+            "year": 1936,
+            "nights": 16,
+            "median_mag": 13.428711,
+            "p16": 13.2893734,
+            "p84": 13.527447899999999
+          },
+          {
+            "year": 1937,
+            "nights": 27,
+            "median_mag": 13.454603,
+            "p16": 13.19574942,
+            "p84": 13.64169606
+          },
+          {
+            "year": 1938,
+            "nights": 19,
+            "median_mag": 13.39637,
+            "p16": 13.24874776,
+            "p84": 13.55304044
+          },
+          {
+            "year": 1939,
+            "nights": 24,
+            "median_mag": 13.28143975,
+            "p16": 13.1576166,
+            "p84": 13.42475076
+          },
+          {
+            "year": 1940,
+            "nights": 20,
+            "median_mag": 13.259299,
+            "p16": 13.070546479999999,
+            "p84": 13.33044672
+          },
+          {
+            "year": 1941,
+            "nights": 19,
+            "median_mag": 13.14033,
+            "p16": 13.011170199999999,
+            "p84": 13.29967944
+          },
+          {
+            "year": 1942,
+            "nights": 12,
+            "median_mag": 13.1065145,
+            "p16": 12.919314499999999,
+            "p84": 13.18612408
+          },
+          {
+            "year": 1943,
+            "nights": 12,
+            "median_mag": 13.093277749999999,
+            "p16": 12.94995528,
+            "p84": 13.24311552
+          },
+          {
+            "year": 1944,
+            "nights": 5,
+            "median_mag": 13.159506,
+            "p16": 13.058948840000001,
+            "p84": 13.26846532
+          },
+          {
+            "year": 1945,
+            "nights": 13,
+            "median_mag": 13.146379,
+            "p16": 13.0670936,
+            "p84": 13.31857636
+          },
+          {
+            "year": 1946,
+            "nights": 10,
+            "median_mag": 13.079254500000001,
+            "p16": 13.01039192,
+            "p84": 13.2184448
+          },
+          {
+            "year": 1947,
+            "nights": 12,
+            "median_mag": 12.960837999999999,
+            "p16": 12.76593166,
+            "p84": 13.10811644
+          },
+          {
+            "year": 1948,
+            "nights": 12,
+            "median_mag": 12.979217,
+            "p16": 12.732709360000001,
+            "p84": 13.040736879999999
+          },
+          {
+            "year": 1949,
+            "nights": 14,
+            "median_mag": 12.967509,
+            "p16": 12.74161432,
+            "p84": 13.084619479999999
+          },
+          {
+            "year": 1950,
+            "nights": 4,
+            "median_mag": 13.076751250000001,
+            "p16": 13.03016184,
+            "p84": 13.216218119999999
+          },
+          {
+            "year": 1951,
+            "nights": 4,
+            "median_mag": 12.916238,
+            "p16": 12.82822768,
+            "p84": 13.16673376
+          },
+          {
+            "year": 1969,
+            "nights": 6,
+            "median_mag": 12.109139250000002,
+            "p16": 12.0492572,
+            "p84": 12.1844578
+          },
+          {
+            "year": 1972,
+            "nights": 4,
+            "median_mag": 12.056066000000001,
+            "p16": 12.03167872,
+            "p84": 12.1082972
+          },
+          {
+            "year": 1974,
+            "nights": 7,
+            "median_mag": 12.171537,
+            "p16": 12.0430334,
+            "p84": 12.203030239999999
+          },
+          {
+            "year": 1975,
+            "nights": 11,
+            "median_mag": 12.038528,
+            "p16": 11.948776,
+            "p84": 12.1054984
+          },
+          {
+            "year": 1976,
+            "nights": 11,
+            "median_mag": 12.128955,
+            "p16": 12.0349828,
+            "p84": 12.210554
+          },
+          {
+            "year": 1977,
+            "nights": 11,
+            "median_mag": 12.090519,
+            "p16": 11.9775238,
+            "p84": 12.284556400000001
+          },
+          {
+            "year": 1978,
+            "nights": 11,
+            "median_mag": 12.136421,
+            "p16": 12.0048712,
+            "p84": 12.229527
+          },
+          {
+            "year": 1979,
+            "nights": 6,
+            "median_mag": 12.149145,
+            "p16": 12.0730794,
+            "p84": 12.3319318
+          },
+          {
+            "year": 1980,
+            "nights": 7,
+            "median_mag": 12.151829,
+            "p16": 11.97596552,
+            "p84": 12.292900040000001
+          },
+          {
+            "year": 1981,
+            "nights": 9,
+            "median_mag": 12.185329,
+            "p16": 12.12819876,
+            "p84": 12.29721576
+          },
+          {
+            "year": 1982,
+            "nights": 14,
+            "median_mag": 12.26915675,
+            "p16": 12.07863352,
+            "p84": 12.373484640000001
+          },
+          {
+            "year": 1983,
+            "nights": 16,
+            "median_mag": 12.3157115,
+            "p16": 12.1879928,
+            "p84": 12.3919737
+          },
+          {
+            "year": 1984,
+            "nights": 18,
+            "median_mag": 12.23452725,
+            "p16": 12.06640588,
+            "p84": 12.33464628
+          },
+          {
+            "year": 1985,
+            "nights": 16,
+            "median_mag": 12.29917,
+            "p16": 12.227659599999999,
+            "p84": 12.3357316
+          },
+          {
+            "year": 1986,
+            "nights": 18,
+            "median_mag": 12.37027325,
+            "p16": 12.25122852,
+            "p84": 12.47773652
+          },
+          {
+            "year": 1987,
+            "nights": 17,
+            "median_mag": 12.263187,
+            "p16": 12.139338239999999,
+            "p84": 12.345879960000001
+          },
+          {
+            "year": 1988,
+            "nights": 15,
+            "median_mag": 12.244579,
+            "p16": 12.15792896,
+            "p84": 12.378126120000001
+          },
+          {
+            "year": 1989,
+            "nights": 7,
+            "median_mag": 12.157166,
+            "p16": 12.050850520000001,
+            "p84": 12.193212720000002
+          }
+        ]
+      },
+      "historical_strict": {
+        "points": 654,
+        "annual": [
+          {
+            "year": 1891,
+            "nights": 3,
+            "median_mag": 12.718356,
+            "p16": 12.64408844,
+            "p84": 12.76259884
+          },
+          {
+            "year": 1900,
+            "nights": 3,
+            "median_mag": 12.338626,
+            "p16": 12.333713,
+            "p84": 12.4022808
+          },
+          {
+            "year": 1901,
+            "nights": 4,
+            "median_mag": 12.4550815,
+            "p16": 12.22531416,
+            "p84": 12.55992352
+          },
+          {
+            "year": 1902,
+            "nights": 9,
+            "median_mag": 12.399897,
+            "p16": 12.178529959999999,
+            "p84": 12.49743444
+          },
+          {
+            "year": 1903,
+            "nights": 8,
+            "median_mag": 12.291264,
+            "p16": 12.15172624,
+            "p84": 12.3310482
+          },
+          {
+            "year": 1904,
+            "nights": 13,
+            "median_mag": 12.320558,
+            "p16": 12.15382756,
+            "p84": 12.44822224
+          },
+          {
+            "year": 1905,
+            "nights": 5,
+            "median_mag": 12.557821,
+            "p16": 12.271703440000001,
+            "p84": 12.69200412
+          },
+          {
+            "year": 1906,
+            "nights": 7,
+            "median_mag": 12.538304,
+            "p16": 12.292408,
+            "p84": 12.64367208
+          },
+          {
+            "year": 1908,
+            "nights": 7,
+            "median_mag": 12.538193,
+            "p16": 12.410169880000002,
+            "p84": 12.60205504
+          },
+          {
+            "year": 1909,
+            "nights": 5,
+            "median_mag": 12.459153,
+            "p16": 12.39502504,
+            "p84": 12.72735368
+          },
+          {
+            "year": 1910,
+            "nights": 11,
+            "median_mag": 12.57559,
+            "p16": 12.4534038,
+            "p84": 12.786614
+          },
+          {
+            "year": 1911,
+            "nights": 5,
+            "median_mag": 12.629532,
+            "p16": 12.47789588,
+            "p84": 12.709619
+          },
+          {
+            "year": 1912,
+            "nights": 7,
+            "median_mag": 12.570539,
+            "p16": 12.326297760000001,
+            "p84": 12.68697916
+          },
+          {
+            "year": 1913,
+            "nights": 7,
+            "median_mag": 12.398327,
+            "p16": 12.298832639999999,
+            "p84": 12.62093256
+          },
+          {
+            "year": 1914,
+            "nights": 5,
+            "median_mag": 12.664326,
+            "p16": 12.53401956,
+            "p84": 12.707769599999999
+          },
+          {
+            "year": 1915,
+            "nights": 7,
+            "median_mag": 12.777296,
+            "p16": 12.610001,
+            "p84": 12.8612816
+          },
+          {
+            "year": 1917,
+            "nights": 3,
+            "median_mag": 12.690256,
+            "p16": 12.61531728,
+            "p84": 12.80838356
+          },
+          {
+            "year": 1926,
+            "nights": 3,
+            "median_mag": 13.032028,
+            "p16": 12.84734952,
+            "p84": 13.25992252
+          },
+          {
+            "year": 1928,
+            "nights": 14,
+            "median_mag": 13.098572,
+            "p16": 12.980676639999999,
+            "p84": 13.198554719999999
+          },
+          {
+            "year": 1929,
+            "nights": 7,
+            "median_mag": 13.095125,
+            "p16": 13.01461936,
+            "p84": 13.162273319999999
+          },
+          {
+            "year": 1930,
+            "nights": 5,
+            "median_mag": 12.995342,
+            "p16": 12.8936494,
+            "p84": 13.11306696
+          },
+          {
+            "year": 1931,
+            "nights": 5,
+            "median_mag": 13.109156,
+            "p16": 12.99807176,
+            "p84": 13.52847744
+          },
+          {
+            "year": 1932,
+            "nights": 5,
+            "median_mag": 13.047686,
+            "p16": 12.8568524,
+            "p84": 13.11790328
+          },
+          {
+            "year": 1933,
+            "nights": 10,
+            "median_mag": 13.321743,
+            "p16": 13.18290432,
+            "p84": 13.42893808
+          },
+          {
+            "year": 1934,
+            "nights": 12,
+            "median_mag": 13.262951000000001,
+            "p16": 12.98445012,
+            "p84": 13.53911688
+          },
+          {
+            "year": 1935,
+            "nights": 17,
+            "median_mag": 13.399484,
+            "p16": 13.3282734,
+            "p84": 13.61195532
+          },
+          {
+            "year": 1936,
+            "nights": 11,
+            "median_mag": 13.44186,
+            "p16": 13.3367686,
+            "p84": 13.4903712
+          },
+          {
+            "year": 1937,
+            "nights": 24,
+            "median_mag": 13.476698500000001,
+            "p16": 13.36721228,
+            "p84": 13.721879000000001
+          },
+          {
+            "year": 1938,
+            "nights": 19,
+            "median_mag": 13.401503,
+            "p16": 13.24874776,
+            "p84": 13.602103959999999
+          },
+          {
+            "year": 1939,
+            "nights": 24,
+            "median_mag": 13.28143975,
+            "p16": 13.1576166,
+            "p84": 13.42475076
+          },
+          {
+            "year": 1940,
+            "nights": 19,
+            "median_mag": 13.235272,
+            "p16": 13.06161944,
+            "p84": 13.3307198
+          },
+          {
+            "year": 1941,
+            "nights": 19,
+            "median_mag": 13.14033,
+            "p16": 13.011170199999999,
+            "p84": 13.29967944
+          },
+          {
+            "year": 1942,
+            "nights": 10,
+            "median_mag": 13.133574,
+            "p16": 13.04783116,
+            "p84": 13.19416952
+          },
+          {
+            "year": 1943,
+            "nights": 12,
+            "median_mag": 13.093277749999999,
+            "p16": 12.94995528,
+            "p84": 13.24311552
+          },
+          {
+            "year": 1944,
+            "nights": 5,
+            "median_mag": 13.159506,
+            "p16": 13.058948840000001,
+            "p84": 13.26846532
+          },
+          {
+            "year": 1945,
+            "nights": 12,
+            "median_mag": 13.1711605,
+            "p16": 13.09438928,
+            "p84": 13.321271079999999
+          },
+          {
+            "year": 1946,
+            "nights": 8,
+            "median_mag": 13.0510025,
+            "p16": 13.00914616,
+            "p84": 13.111347760000001
+          },
+          {
+            "year": 1947,
+            "nights": 10,
+            "median_mag": 13.023723,
+            "p16": 12.84864048,
+            "p84": 13.11299836
+          },
+          {
+            "year": 1948,
+            "nights": 9,
+            "median_mag": 12.991554,
+            "p16": 12.80588202,
+            "p84": 13.047749360000001
+          },
+          {
+            "year": 1949,
+            "nights": 13,
+            "median_mag": 12.997274,
+            "p16": 12.73523288,
+            "p84": 13.08678516
+          },
+          {
+            "year": 1950,
+            "nights": 4,
+            "median_mag": 13.076751250000001,
+            "p16": 13.03016184,
+            "p84": 13.216218119999999
+          },
+          {
+            "year": 1951,
+            "nights": 3,
+            "median_mag": 12.924602,
+            "p16": 12.91322696,
+            "p84": 13.24123584
+          },
+          {
+            "year": 1969,
+            "nights": 5,
+            "median_mag": 12.277444,
+            "p16": 12.20741592,
+            "p84": 12.34326944
+          },
+          {
+            "year": 1972,
+            "nights": 4,
+            "median_mag": 12.2073335,
+            "p16": 12.130507759999999,
+            "p84": 12.23522672
+          },
+          {
+            "year": 1974,
+            "nights": 7,
+            "median_mag": 12.187679,
+            "p16": 12.09031328,
+            "p84": 12.229957
+          },
+          {
+            "year": 1975,
+            "nights": 10,
+            "median_mag": 12.102572,
+            "p16": 12.01738748,
+            "p84": 12.12291312
+          },
+          {
+            "year": 1976,
+            "nights": 10,
+            "median_mag": 12.180467,
+            "p16": 12.0565532,
+            "p84": 12.2272938
+          },
+          {
+            "year": 1977,
+            "nights": 9,
+            "median_mag": 12.127212,
+            "p16": 12.01565768,
+            "p84": 12.31719032
+          },
+          {
+            "year": 1978,
+            "nights": 9,
+            "median_mag": 12.136421,
+            "p16": 12.11463346,
+            "p84": 12.235623
+          },
+          {
+            "year": 1979,
+            "nights": 6,
+            "median_mag": 12.149145,
+            "p16": 12.0730794,
+            "p84": 12.3319318
+          },
+          {
+            "year": 1980,
+            "nights": 5,
+            "median_mag": 12.257561,
+            "p16": 12.088741879999999,
+            "p84": 12.293540360000001
+          },
+          {
+            "year": 1981,
+            "nights": 9,
+            "median_mag": 12.185329,
+            "p16": 12.12819876,
+            "p84": 12.28945168
+          },
+          {
+            "year": 1982,
+            "nights": 11,
+            "median_mag": 12.2706265,
+            "p16": 12.1523098,
+            "p84": 12.3793508
+          },
+          {
+            "year": 1983,
+            "nights": 16,
+            "median_mag": 12.334565000000001,
+            "p16": 12.1879928,
+            "p84": 12.3937528
+          },
+          {
+            "year": 1984,
+            "nights": 16,
+            "median_mag": 12.23452725,
+            "p16": 12.12175,
+            "p84": 12.3408804
+          },
+          {
+            "year": 1985,
+            "nights": 14,
+            "median_mag": 12.280288500000001,
+            "p16": 12.22418632,
+            "p84": 12.32502992
+          },
+          {
+            "year": 1986,
+            "nights": 15,
+            "median_mag": 12.358278,
+            "p16": 12.254023,
+            "p84": 12.48250484
+          },
+          {
+            "year": 1987,
+            "nights": 17,
+            "median_mag": 12.263187,
+            "p16": 12.139338239999999,
+            "p84": 12.345879960000001
+          },
+          {
+            "year": 1988,
+            "nights": 15,
+            "median_mag": 12.244579,
+            "p16": 12.15792896,
+            "p84": 12.378126120000001
+          },
+          {
+            "year": 1989,
+            "nights": 7,
+            "median_mag": 12.157166,
+            "p16": 12.050850520000001,
+            "p84": 12.193212720000002
+          }
+        ]
+      },
+      "modern": {
+        "snapshot": "Retained 7 November 2026 ZTF query; fresh 11 November requests timed out.",
+        "raw_points": 0,
+        "quality_points": 0,
+        "streams": [],
+        "seasonal_peaks": []
+      }
+    },
+    "J0830": {
+      "historical_raw": 3569,
+      "historical_standard": {
+        "points": 1379,
+        "annual": [
+          {
+            "year": 1894,
+            "nights": 3,
+            "median_mag": 11.893331,
+            "p16": 11.84461376,
+            "p84": 11.9043232
+          },
+          {
+            "year": 1896,
+            "nights": 3,
+            "median_mag": 11.808148,
+            "p16": 11.73383896,
+            "p84": 11.89270532
+          },
+          {
+            "year": 1897,
+            "nights": 3,
+            "median_mag": 11.759994,
+            "p16": 11.70597616,
+            "p84": 11.85510832
+          },
+          {
+            "year": 1898,
+            "nights": 5,
+            "median_mag": 11.77743,
+            "p16": 11.6925166,
+            "p84": 11.8392248
+          },
+          {
+            "year": 1899,
+            "nights": 10,
+            "median_mag": 11.664449,
+            "p16": 11.56024552,
+            "p84": 11.76855172
+          },
+          {
+            "year": 1900,
+            "nights": 9,
+            "median_mag": 11.646991,
+            "p16": 11.604835640000001,
+            "p84": 11.77058096
+          },
+          {
+            "year": 1901,
+            "nights": 11,
+            "median_mag": 11.787617000000001,
+            "p16": 11.5021844,
+            "p84": 11.8881582
+          },
+          {
+            "year": 1902,
+            "nights": 19,
+            "median_mag": 11.8634,
+            "p16": 11.7201304,
+            "p84": 11.90037644
+          },
+          {
+            "year": 1903,
+            "nights": 15,
+            "median_mag": 11.773176,
+            "p16": 11.587634600000001,
+            "p84": 11.83114684
+          },
+          {
+            "year": 1904,
+            "nights": 12,
+            "median_mag": 11.66189675,
+            "p16": 11.55728824,
+            "p84": 11.76940336
+          },
+          {
+            "year": 1905,
+            "nights": 16,
+            "median_mag": 11.739452,
+            "p16": 11.5961326,
+            "p84": 11.9329214
+          },
+          {
+            "year": 1906,
+            "nights": 16,
+            "median_mag": 11.755483,
+            "p16": 11.6512762,
+            "p84": 11.7981376
+          },
+          {
+            "year": 1907,
+            "nights": 8,
+            "median_mag": 11.74843575,
+            "p16": 11.630891199999999,
+            "p84": 11.98772484
+          },
+          {
+            "year": 1908,
+            "nights": 18,
+            "median_mag": 11.7766745,
+            "p16": 11.71619244,
+            "p84": 11.83352452
+          },
+          {
+            "year": 1909,
+            "nights": 17,
+            "median_mag": 11.850677,
+            "p16": 11.76437656,
+            "p84": 11.93828812
+          },
+          {
+            "year": 1910,
+            "nights": 20,
+            "median_mag": 11.807089,
+            "p16": 11.75302496,
+            "p84": 11.906495679999999
+          },
+          {
+            "year": 1911,
+            "nights": 9,
+            "median_mag": 11.922137,
+            "p16": 11.81306992,
+            "p84": 12.00206856
+          },
+          {
+            "year": 1912,
+            "nights": 13,
+            "median_mag": 11.845819,
+            "p16": 11.79956144,
+            "p84": 11.91882356
+          },
+          {
+            "year": 1913,
+            "nights": 13,
+            "median_mag": 11.907524,
+            "p16": 11.76219676,
+            "p84": 11.9522489
+          },
+          {
+            "year": 1914,
+            "nights": 14,
+            "median_mag": 11.9517135,
+            "p16": 11.79315664,
+            "p84": 12.13623518
+          },
+          {
+            "year": 1915,
+            "nights": 17,
+            "median_mag": 11.884101,
+            "p16": 11.72641308,
+            "p84": 11.99090928
+          },
+          {
+            "year": 1916,
+            "nights": 13,
+            "median_mag": 11.910081,
+            "p16": 11.80816808,
+            "p84": 11.9852876
+          },
+          {
+            "year": 1917,
+            "nights": 12,
+            "median_mag": 11.9024785,
+            "p16": 11.819604879999998,
+            "p84": 12.02592044
+          },
+          {
+            "year": 1918,
+            "nights": 6,
+            "median_mag": 11.830428999999999,
+            "p16": 11.644638200000001,
+            "p84": 11.8998942
+          },
+          {
+            "year": 1919,
+            "nights": 11,
+            "median_mag": 11.908147,
+            "p16": 11.772109200000001,
+            "p84": 12.080347999999999
+          },
+          {
+            "year": 1920,
+            "nights": 8,
+            "median_mag": 11.9562615,
+            "p16": 11.79549656,
+            "p84": 12.06686576
+          },
+          {
+            "year": 1921,
+            "nights": 13,
+            "median_mag": 11.875054,
+            "p16": 11.82901652,
+            "p84": 11.98307672
+          },
+          {
+            "year": 1922,
+            "nights": 6,
+            "median_mag": 12.0618975,
+            "p16": 11.9163358,
+            "p84": 12.208552000000001
+          },
+          {
+            "year": 1923,
+            "nights": 6,
+            "median_mag": 12.103214999999999,
+            "p16": 12.0621544,
+            "p84": 12.209069000000001
+          },
+          {
+            "year": 1924,
+            "nights": 3,
+            "median_mag": 12.213466,
+            "p16": 12.18938856,
+            "p84": 12.24840168
+          },
+          {
+            "year": 1925,
+            "nights": 6,
+            "median_mag": 12.019178,
+            "p16": 11.9518892,
+            "p84": 12.161365
+          },
+          {
+            "year": 1926,
+            "nights": 9,
+            "median_mag": 12.225146,
+            "p16": 12.07238664,
+            "p84": 12.293083079999999
+          },
+          {
+            "year": 1927,
+            "nights": 6,
+            "median_mag": 11.986087,
+            "p16": 11.872856800000001,
+            "p84": 12.129485
+          },
+          {
+            "year": 1928,
+            "nights": 11,
+            "median_mag": 11.967005,
+            "p16": 11.9593108,
+            "p84": 12.0944884
+          },
+          {
+            "year": 1929,
+            "nights": 20,
+            "median_mag": 12.0229705,
+            "p16": 11.84490416,
+            "p84": 12.22377668
+          },
+          {
+            "year": 1930,
+            "nights": 13,
+            "median_mag": 12.04788,
+            "p16": 11.87785848,
+            "p84": 12.19633108
+          },
+          {
+            "year": 1931,
+            "nights": 18,
+            "median_mag": 12.006734000000002,
+            "p16": 11.921432880000001,
+            "p84": 12.16098248
+          },
+          {
+            "year": 1932,
+            "nights": 26,
+            "median_mag": 12.021635,
+            "p16": 11.898585,
+            "p84": 12.10516
+          },
+          {
+            "year": 1933,
+            "nights": 27,
+            "median_mag": 11.953143,
+            "p16": 11.76151448,
+            "p84": 12.14342124
+          },
+          {
+            "year": 1934,
+            "nights": 26,
+            "median_mag": 12.131321499999999,
+            "p16": 12.044449,
+            "p84": 12.24374
+          },
+          {
+            "year": 1935,
+            "nights": 25,
+            "median_mag": 12.187087,
+            "p16": 12.091736319999999,
+            "p84": 12.32136388
+          },
+          {
+            "year": 1936,
+            "nights": 19,
+            "median_mag": 12.184371,
+            "p16": 11.96013872,
+            "p84": 12.226919239999999
+          },
+          {
+            "year": 1937,
+            "nights": 29,
+            "median_mag": 12.044436000000001,
+            "p16": 11.91862548,
+            "p84": 12.22009096
+          },
+          {
+            "year": 1938,
+            "nights": 35,
+            "median_mag": 12.068575,
+            "p16": 11.91027088,
+            "p84": 12.232571400000001
+          },
+          {
+            "year": 1939,
+            "nights": 29,
+            "median_mag": 12.005256,
+            "p16": 11.837988979999999,
+            "p84": 12.08228224
+          },
+          {
+            "year": 1940,
+            "nights": 24,
+            "median_mag": 12.025377500000001,
+            "p16": 11.94446172,
+            "p84": 12.1707632
+          },
+          {
+            "year": 1941,
+            "nights": 38,
+            "median_mag": 12.187664,
+            "p16": 11.99525252,
+            "p84": 12.35999706
+          },
+          {
+            "year": 1942,
+            "nights": 16,
+            "median_mag": 12.159991,
+            "p16": 12.027187399999999,
+            "p84": 12.317954
+          },
+          {
+            "year": 1943,
+            "nights": 17,
+            "median_mag": 12.193223,
+            "p16": 12.03192208,
+            "p84": 12.39113804
+          },
+          {
+            "year": 1944,
+            "nights": 18,
+            "median_mag": 12.274109,
+            "p16": 11.993308800000001,
+            "p84": 12.37207008
+          },
+          {
+            "year": 1945,
+            "nights": 20,
+            "median_mag": 12.307831499999999,
+            "p16": 12.15416256,
+            "p84": 12.41274764
+          },
+          {
+            "year": 1946,
+            "nights": 19,
+            "median_mag": 12.242961,
+            "p16": 12.12054092,
+            "p84": 12.43259896
+          },
+          {
+            "year": 1947,
+            "nights": 17,
+            "median_mag": 12.260286,
+            "p16": 12.03846444,
+            "p84": 12.35281938
+          },
+          {
+            "year": 1948,
+            "nights": 12,
+            "median_mag": 12.4051975,
+            "p16": 12.34124048,
+            "p84": 12.487267280000001
+          },
+          {
+            "year": 1949,
+            "nights": 19,
+            "median_mag": 12.286633,
+            "p16": 12.09369764,
+            "p84": 12.363183280000001
+          },
+          {
+            "year": 1950,
+            "nights": 15,
+            "median_mag": 12.357599,
+            "p16": 12.06801268,
+            "p84": 12.41045488
+          },
+          {
+            "year": 1951,
+            "nights": 5,
+            "median_mag": 12.199418,
+            "p16": 12.1361436,
+            "p84": 12.29565924
+          },
+          {
+            "year": 1952,
+            "nights": 8,
+            "median_mag": 12.30089075,
+            "p16": 12.26766624,
+            "p84": 12.4198874
+          },
+          {
+            "year": 1969,
+            "nights": 7,
+            "median_mag": 12.537078,
+            "p16": 12.3804436,
+            "p84": 12.67168182
+          },
+          {
+            "year": 1970,
+            "nights": 3,
+            "median_mag": 12.37985,
+            "p16": 12.37696204,
+            "p84": 12.50196848
+          },
+          {
+            "year": 1971,
+            "nights": 3,
+            "median_mag": 12.603774999999999,
+            "p16": 12.4509076,
+            "p84": 12.60665004
+          },
+          {
+            "year": 1972,
+            "nights": 11,
+            "median_mag": 12.482515,
+            "p16": 12.399776600000001,
+            "p84": 12.5920102
+          },
+          {
+            "year": 1973,
+            "nights": 4,
+            "median_mag": 12.550755,
+            "p16": 12.5286364,
+            "p84": 12.57610592
+          },
+          {
+            "year": 1974,
+            "nights": 16,
+            "median_mag": 12.54873325,
+            "p16": 12.4443524,
+            "p84": 12.6569308
+          },
+          {
+            "year": 1975,
+            "nights": 13,
+            "median_mag": 12.60688,
+            "p16": 12.49519832,
+            "p84": 12.6241206
+          },
+          {
+            "year": 1976,
+            "nights": 15,
+            "median_mag": 12.504668,
+            "p16": 12.42276704,
+            "p84": 12.58069232
+          },
+          {
+            "year": 1977,
+            "nights": 11,
+            "median_mag": 12.462309,
+            "p16": 12.2771076,
+            "p84": 12.5927977
+          },
+          {
+            "year": 1978,
+            "nights": 13,
+            "median_mag": 12.413575,
+            "p16": 12.3308601,
+            "p84": 12.55469212
+          },
+          {
+            "year": 1979,
+            "nights": 9,
+            "median_mag": 12.350416500000001,
+            "p16": 12.26460008,
+            "p84": 12.57304948
+          },
+          {
+            "year": 1980,
+            "nights": 7,
+            "median_mag": 12.599006,
+            "p16": 12.50250988,
+            "p84": 12.6931245
+          },
+          {
+            "year": 1981,
+            "nights": 13,
+            "median_mag": 12.819484,
+            "p16": 12.76475104,
+            "p84": 12.9979112
+          },
+          {
+            "year": 1982,
+            "nights": 12,
+            "median_mag": 12.9007805,
+            "p16": 12.72510348,
+            "p84": 13.02235164
+          },
+          {
+            "year": 1983,
+            "nights": 19,
+            "median_mag": 12.926866,
+            "p16": 12.829077159999999,
+            "p84": 13.02819488
+          },
+          {
+            "year": 1984,
+            "nights": 21,
+            "median_mag": 12.948089,
+            "p16": 12.8362604,
+            "p84": 13.058303800000001
+          },
+          {
+            "year": 1985,
+            "nights": 17,
+            "median_mag": 12.853522,
+            "p16": 12.7288478,
+            "p84": 13.02871852
+          },
+          {
+            "year": 1986,
+            "nights": 21,
+            "median_mag": 12.666809,
+            "p16": 12.536638,
+            "p84": 12.862305600000001
+          },
+          {
+            "year": 1987,
+            "nights": 13,
+            "median_mag": 12.921446,
+            "p16": 12.808829719999999,
+            "p84": 13.04970044
+          },
+          {
+            "year": 1988,
+            "nights": 12,
+            "median_mag": 12.745403,
+            "p16": 12.60006328,
+            "p84": 12.96374284
+          },
+          {
+            "year": 1989,
+            "nights": 9,
+            "median_mag": 12.631884,
+            "p16": 12.41973596,
+            "p84": 12.79127792
+          }
+        ]
+      },
+      "historical_strict": {
+        "points": 1057,
+        "annual": [
+          {
+            "year": 1899,
+            "nights": 5,
+            "median_mag": 11.70778,
+            "p16": 11.55037652,
+            "p84": 11.74445472
+          },
+          {
+            "year": 1900,
+            "nights": 5,
+            "median_mag": 11.612549,
+            "p16": 11.60012996,
+            "p84": 11.67625152
+          },
+          {
+            "year": 1901,
+            "nights": 9,
+            "median_mag": 11.791518,
+            "p16": 11.59807444,
+            "p84": 11.91765356
+          },
+          {
+            "year": 1902,
+            "nights": 16,
+            "median_mag": 11.8576155,
+            "p16": 11.723202,
+            "p84": 11.8913674
+          },
+          {
+            "year": 1903,
+            "nights": 14,
+            "median_mag": 11.775945499999999,
+            "p16": 11.64167196,
+            "p84": 11.83164828
+          },
+          {
+            "year": 1904,
+            "nights": 10,
+            "median_mag": 11.682785249999998,
+            "p16": 11.57728868,
+            "p84": 11.76981584
+          },
+          {
+            "year": 1905,
+            "nights": 11,
+            "median_mag": 11.73627,
+            "p16": 11.552059400000001,
+            "p84": 11.8969862
+          },
+          {
+            "year": 1906,
+            "nights": 14,
+            "median_mag": 11.755483,
+            "p16": 11.68153276,
+            "p84": 11.775217719999999
+          },
+          {
+            "year": 1907,
+            "nights": 6,
+            "median_mag": 11.74332,
+            "p16": 11.638972,
+            "p84": 11.8960826
+          },
+          {
+            "year": 1908,
+            "nights": 16,
+            "median_mag": 11.788508,
+            "p16": 11.7140398,
+            "p84": 11.8400714
+          },
+          {
+            "year": 1909,
+            "nights": 14,
+            "median_mag": 11.8228605,
+            "p16": 11.72882008,
+            "p84": 11.905041959999998
+          },
+          {
+            "year": 1910,
+            "nights": 20,
+            "median_mag": 11.807089,
+            "p16": 11.75302496,
+            "p84": 11.906495679999999
+          },
+          {
+            "year": 1911,
+            "nights": 4,
+            "median_mag": 11.951040500000001,
+            "p16": 11.820203280000001,
+            "p84": 12.03049704
+          },
+          {
+            "year": 1912,
+            "nights": 11,
+            "median_mag": 11.8398305,
+            "p16": 11.7767192,
+            "p84": 11.8902524
+          },
+          {
+            "year": 1913,
+            "nights": 8,
+            "median_mag": 11.92564825,
+            "p16": 11.785667759999999,
+            "p84": 11.9727429
+          },
+          {
+            "year": 1914,
+            "nights": 14,
+            "median_mag": 11.9517135,
+            "p16": 11.79315664,
+            "p84": 12.170039200000002
+          },
+          {
+            "year": 1915,
+            "nights": 10,
+            "median_mag": 11.975017000000001,
+            "p16": 11.79701652,
+            "p84": 12.057326399999999
+          },
+          {
+            "year": 1916,
+            "nights": 10,
+            "median_mag": 11.883545,
+            "p16": 11.79697256,
+            "p84": 12.05070856
+          },
+          {
+            "year": 1917,
+            "nights": 10,
+            "median_mag": 11.9024785,
+            "p16": 11.83095416,
+            "p84": 11.98719328
+          },
+          {
+            "year": 1918,
+            "nights": 5,
+            "median_mag": 11.785812,
+            "p16": 11.63179116,
+            "p84": 11.89073228
+          },
+          {
+            "year": 1919,
+            "nights": 10,
+            "median_mag": 11.933941,
+            "p16": 11.8303822,
+            "p84": 12.0836392
+          },
+          {
+            "year": 1920,
+            "nights": 8,
+            "median_mag": 11.9562615,
+            "p16": 11.79549656,
+            "p84": 12.06686576
+          },
+          {
+            "year": 1921,
+            "nights": 9,
+            "median_mag": 11.875054,
+            "p16": 11.84820476,
+            "p84": 11.960322439999999
+          },
+          {
+            "year": 1922,
+            "nights": 3,
+            "median_mag": 12.084302,
+            "p16": 11.83608636,
+            "p84": 12.15257196
+          },
+          {
+            "year": 1923,
+            "nights": 5,
+            "median_mag": 12.092846,
+            "p16": 12.05080032,
+            "p84": 12.14115208
+          },
+          {
+            "year": 1925,
+            "nights": 5,
+            "median_mag": 11.987272,
+            "p16": 11.93666456,
+            "p84": 12.08588556
+          },
+          {
+            "year": 1926,
+            "nights": 7,
+            "median_mag": 12.248905,
+            "p16": 12.21012024,
+            "p84": 12.299486439999999
+          },
+          {
+            "year": 1927,
+            "nights": 6,
+            "median_mag": 11.986087,
+            "p16": 11.872856800000001,
+            "p84": 12.129485
+          },
+          {
+            "year": 1928,
+            "nights": 11,
+            "median_mag": 11.967005,
+            "p16": 11.9593108,
+            "p84": 12.0944884
+          },
+          {
+            "year": 1929,
+            "nights": 18,
+            "median_mag": 12.0650235,
+            "p16": 11.9295776,
+            "p84": 12.2367314
+          },
+          {
+            "year": 1930,
+            "nights": 12,
+            "median_mag": 12.0610355,
+            "p16": 11.85937544,
+            "p84": 12.19901924
+          },
+          {
+            "year": 1931,
+            "nights": 16,
+            "median_mag": 12.025339500000001,
+            "p16": 11.913045200000001,
+            "p84": 12.1747954
+          },
+          {
+            "year": 1932,
+            "nights": 26,
+            "median_mag": 12.021635,
+            "p16": 11.898585,
+            "p84": 12.10516
+          },
+          {
+            "year": 1933,
+            "nights": 25,
+            "median_mag": 11.953143,
+            "p16": 11.76625952,
+            "p84": 12.13139476
+          },
+          {
+            "year": 1934,
+            "nights": 24,
+            "median_mag": 12.121220999999998,
+            "p16": 12.02947476,
+            "p84": 12.202691119999999
+          },
+          {
+            "year": 1935,
+            "nights": 24,
+            "median_mag": 12.1917385,
+            "p16": 12.08475864,
+            "p84": 12.32817476
+          },
+          {
+            "year": 1936,
+            "nights": 17,
+            "median_mag": 12.160165,
+            "p16": 12.02933796,
+            "p84": 12.244747879999998
+          },
+          {
+            "year": 1937,
+            "nights": 28,
+            "median_mag": 12.0296855,
+            "p16": 11.91738532,
+            "p84": 12.180131959999999
+          },
+          {
+            "year": 1938,
+            "nights": 30,
+            "median_mag": 12.068694,
+            "p16": 11.91250628,
+            "p84": 12.1965362
+          },
+          {
+            "year": 1939,
+            "nights": 27,
+            "median_mag": 12.005256,
+            "p16": 11.85624404,
+            "p84": 12.080908520000001
+          },
+          {
+            "year": 1940,
+            "nights": 20,
+            "median_mag": 12.02873275,
+            "p16": 11.93247516,
+            "p84": 12.23473312
+          },
+          {
+            "year": 1941,
+            "nights": 31,
+            "median_mag": 12.186287,
+            "p16": 12.0323218,
+            "p84": 12.3718678
+          },
+          {
+            "year": 1942,
+            "nights": 14,
+            "median_mag": 12.159991,
+            "p16": 11.992406599999999,
+            "p84": 12.3250052
+          },
+          {
+            "year": 1943,
+            "nights": 15,
+            "median_mag": 12.193223,
+            "p16": 12.04684488,
+            "p84": 12.3667716
+          },
+          {
+            "year": 1944,
+            "nights": 14,
+            "median_mag": 12.2995465,
+            "p16": 12.00460572,
+            "p84": 12.38558112
+          },
+          {
+            "year": 1945,
+            "nights": 18,
+            "median_mag": 12.317508499999999,
+            "p16": 12.19952712,
+            "p84": 12.42103032
+          },
+          {
+            "year": 1946,
+            "nights": 16,
+            "median_mag": 12.2974015,
+            "p16": 12.137807,
+            "p84": 12.4439668
+          },
+          {
+            "year": 1947,
+            "nights": 15,
+            "median_mag": 12.306082,
+            "p16": 12.06303392,
+            "p84": 12.36805602
+          },
+          {
+            "year": 1948,
+            "nights": 10,
+            "median_mag": 12.4051975,
+            "p16": 12.32838356,
+            "p84": 12.46135164
+          },
+          {
+            "year": 1949,
+            "nights": 17,
+            "median_mag": 12.279966,
+            "p16": 12.11988328,
+            "p84": 12.37749336
+          },
+          {
+            "year": 1950,
+            "nights": 12,
+            "median_mag": 12.377823,
+            "p16": 12.16304632,
+            "p84": 12.439069120000001
+          },
+          {
+            "year": 1951,
+            "nights": 5,
+            "median_mag": 12.199418,
+            "p16": 12.1361436,
+            "p84": 12.29565924
+          },
+          {
+            "year": 1952,
+            "nights": 8,
+            "median_mag": 12.30089075,
+            "p16": 12.26766624,
+            "p84": 12.4198874
+          },
+          {
+            "year": 1969,
+            "nights": 6,
+            "median_mag": 12.698364999999999,
+            "p16": 12.5686708,
+            "p84": 12.7706404
+          },
+          {
+            "year": 1972,
+            "nights": 6,
+            "median_mag": 12.636671,
+            "p16": 12.606661,
+            "p84": 12.6553026
+          },
+          {
+            "year": 1973,
+            "nights": 4,
+            "median_mag": 12.550755,
+            "p16": 12.5286364,
+            "p84": 12.57610592
+          },
+          {
+            "year": 1974,
+            "nights": 12,
+            "median_mag": 12.5748225,
+            "p16": 12.47717728,
+            "p84": 12.656578
+          },
+          {
+            "year": 1975,
+            "nights": 10,
+            "median_mag": 12.6135535,
+            "p16": 12.498006,
+            "p84": 12.680744
+          },
+          {
+            "year": 1976,
+            "nights": 11,
+            "median_mag": 12.4948605,
+            "p16": 12.4308026,
+            "p84": 12.5882589
+          },
+          {
+            "year": 1977,
+            "nights": 7,
+            "median_mag": 12.420997,
+            "p16": 12.2801984,
+            "p84": 12.50001592
+          },
+          {
+            "year": 1978,
+            "nights": 9,
+            "median_mag": 12.417888,
+            "p16": 12.37226872,
+            "p84": 12.51613844
+          },
+          {
+            "year": 1979,
+            "nights": 5,
+            "median_mag": 12.46693,
+            "p16": 12.36391272,
+            "p84": 12.565189239999999
+          },
+          {
+            "year": 1980,
+            "nights": 3,
+            "median_mag": 12.6867,
+            "p16": 12.627068079999999,
+            "p84": 12.7959165
+          },
+          {
+            "year": 1981,
+            "nights": 10,
+            "median_mag": 12.817409999999999,
+            "p16": 12.77762212,
+            "p84": 12.90335676
+          },
+          {
+            "year": 1982,
+            "nights": 7,
+            "median_mag": 12.940766,
+            "p16": 12.85905156,
+            "p84": 12.99451448
+          },
+          {
+            "year": 1983,
+            "nights": 16,
+            "median_mag": 12.9270465,
+            "p16": 12.8401878,
+            "p84": 13.0504904
+          },
+          {
+            "year": 1984,
+            "nights": 18,
+            "median_mag": 12.9586405,
+            "p16": 12.793061,
+            "p84": 13.05794764
+          },
+          {
+            "year": 1985,
+            "nights": 12,
+            "median_mag": 12.820558,
+            "p16": 12.703369720000001,
+            "p84": 13.00881196
+          },
+          {
+            "year": 1986,
+            "nights": 18,
+            "median_mag": 12.6865885,
+            "p16": 12.5548042,
+            "p84": 12.88600884
+          },
+          {
+            "year": 1987,
+            "nights": 13,
+            "median_mag": 12.921446,
+            "p16": 12.808829719999999,
+            "p84": 13.04970044
+          },
+          {
+            "year": 1988,
+            "nights": 10,
+            "median_mag": 12.710842,
+            "p16": 12.57247832,
+            "p84": 12.99239596
+          },
+          {
+            "year": 1989,
+            "nights": 7,
+            "median_mag": 12.631884,
+            "p16": 12.46684772,
+            "p84": 12.71941588
+          }
+        ]
+      },
+      "modern": {
+        "snapshot": "Retained 7 November 2026 ZTF query; fresh 11 November requests timed out.",
+        "raw_points": 0,
+        "quality_points": 0,
+        "streams": [],
+        "seasonal_peaks": []
+      }
+    }
+  },
+  "kepler": [
+    {
+      "kic": "5080290",
+      "file": "kplr005080290-2010078095331_llc.fits",
+      "quarter": 4,
+      "raw_points": 4397,
+      "accepted_points": 3339,
+      "span_days": 89.7452374397908,
+      "crowdsap": 0.9462,
+      "pdc_p05_p95_percent": [
+        -1.2818657594611982,
+        1.2208062811764897
+      ],
+      "sap_rotation": {
+        "best_period_days": 44.841969089633494,
+        "power": 0.2688368027206262,
+        "period_range_days": [
+          5.0,
+          44.841969089633494
+        ],
+        "points": 426,
+        "span_days": 89.68393817926699,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 44.841969089633494,
+        "power": 0.26788386946562803,
+        "period_range_days": [
+          5.0,
+          44.841969089633494
+        ],
+        "points": 426,
+        "span_days": 89.68393817926699,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "5080290",
+      "file": "kplr005080290-2013098041711_llc.fits",
+      "quarter": 16,
+      "raw_points": 4203,
+      "accepted_points": 3014,
+      "span_days": 85.80164144893206,
+      "crowdsap": 0.9459,
+      "pdc_p05_p95_percent": [
+        -0.18318641063128638,
+        0.18286112876959582
+      ],
+      "sap_rotation": {
+        "best_period_days": 24.714965054641937,
+        "power": 0.09377945462138916,
+        "period_range_days": [
+          5.0,
+          42.854843909335614
+        ],
+        "points": 369,
+        "span_days": 85.70968781867123,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 31.666642888390466,
+        "power": 0.8036860329023563,
+        "period_range_days": [
+          5.0,
+          42.854843909335614
+        ],
+        "points": 369,
+        "span_days": 85.70968781867123,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "2852961",
+      "file": "kplr002852961-2010078095331_llc.fits",
+      "quarter": 4,
+      "raw_points": 4397,
+      "accepted_points": 3507,
+      "span_days": 89.80595485572121,
+      "crowdsap": 0.999,
+      "pdc_p05_p95_percent": [
+        -2.189674226564675,
+        2.4956139756900253
+      ],
+      "sap_rotation": {
+        "best_period_days": 34.85746761435768,
+        "power": 0.8069375420064389,
+        "period_range_days": [
+          5.0,
+          44.902977427860606
+        ],
+        "points": 426,
+        "span_days": 89.80595485572121,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 34.619164311243196,
+        "power": 0.8040647777983138,
+        "period_range_days": [
+          5.0,
+          44.902977427860606
+        ],
+        "points": 426,
+        "span_days": 89.80595485572121,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "2852961",
+      "file": "kplr002852961-2013098041711_llc.fits",
+      "quarter": 16,
+      "raw_points": 4203,
+      "accepted_points": 3258,
+      "span_days": 85.84196092520142,
+      "crowdsap": 0.9989,
+      "pdc_p05_p95_percent": [
+        -4.261409100472258,
+        1.1800746944868878
+      ],
+      "sap_rotation": {
+        "best_period_days": 35.600530076170074,
+        "power": 0.6243297770884373,
+        "period_range_days": [
+          5.0,
+          42.8647873263908
+        ],
+        "points": 369,
+        "span_days": 85.7295746527816,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 35.78810673099009,
+        "power": 0.6516711948447503,
+        "period_range_days": [
+          5.0,
+          42.8647873263908
+        ],
+        "points": 369,
+        "span_days": 85.7295746527816,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "8515227",
+      "file": "kplr008515227-2010174085026_llc.fits",
+      "quarter": 5,
+      "raw_points": 4634,
+      "accepted_points": 3876,
+      "span_days": 93.67126831455971,
+      "crowdsap": 0.9949,
+      "pdc_p05_p95_percent": [
+        -1.4814024533568504,
+        1.9163182460316897
+      ],
+      "sap_rotation": {
+        "best_period_days": 28.411882661630827,
+        "power": 0.8388076501019615,
+        "period_range_days": [
+          5.0,
+          46.835634157279856
+        ],
+        "points": 459,
+        "span_days": 93.67126831455971,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 28.411882661630827,
+        "power": 0.8384000837197189,
+        "period_range_days": [
+          5.0,
+          46.835634157279856
+        ],
+        "points": 459,
+        "span_days": 93.67126831455971,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "8515227",
+      "file": "kplr008515227-2013011073258_llc.fits",
+      "quarter": 15,
+      "raw_points": 4780,
+      "accepted_points": 4084,
+      "span_days": 97.62788357644604,
+      "crowdsap": 0.9958,
+      "pdc_p05_p95_percent": [
+        -3.718029727264871,
+        1.3439827728248366
+      ],
+      "sap_rotation": {
+        "best_period_days": 27.055619458634567,
+        "power": 0.8519893792083783,
+        "period_range_days": [
+          5.0,
+          48.76285942979666
+        ],
+        "points": 453,
+        "span_days": 97.52571885959333,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 27.09216591133491,
+        "power": 0.8545690439693033,
+        "period_range_days": [
+          5.0,
+          48.76285942979666
+        ],
+        "points": 453,
+        "span_days": 97.52571885959333,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "8515227",
+      "file": "kplr008515227-2013131215648_llc.fits",
+      "quarter": 17,
+      "raw_points": 1556,
+      "accepted_points": 1172,
+      "span_days": 31.75488237780519,
+      "crowdsap": 0.9951,
+      "pdc_p05_p95_percent": [
+        -2.3361459485399694,
+        2.430705744406958
+      ],
+      "sap_rotation": {
+        "best_period_days": 15.333715943068123,
+        "power": 0.8526772272005461,
+        "period_range_days": [
+          5.0,
+          15.841681472073105
+        ],
+        "points": 133,
+        "span_days": 31.68336294414621,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 15.360581706917984,
+        "power": 0.8435304507501648,
+        "period_range_days": [
+          5.0,
+          15.841681472073105
+        ],
+        "points": 133,
+        "span_days": 31.68336294414621,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "3122450",
+      "file": "kplr003122450-2010174085026_llc.fits",
+      "quarter": 5,
+      "raw_points": 4634,
+      "accepted_points": 3963,
+      "span_days": 93.71274794169585,
+      "crowdsap": 1.0,
+      "pdc_p05_p95_percent": [
+        -0.529810678371001,
+        1.0108589982011251
+      ],
+      "sap_rotation": {
+        "best_period_days": 42.58039483375013,
+        "power": 0.8475988110150044,
+        "period_range_days": [
+          5.0,
+          46.83593958411075
+        ],
+        "points": 459,
+        "span_days": 93.6718791682215,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 45.055710917570046,
+        "power": 0.9475910158912767,
+        "period_range_days": [
+          5.0,
+          46.83593958411075
+        ],
+        "points": 459,
+        "span_days": 93.6718791682215,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "3122450",
+      "file": "kplr003122450-2013011073258_llc.fits",
+      "quarter": 15,
+      "raw_points": 4780,
+      "accepted_points": 4028,
+      "span_days": 97.62721882091864,
+      "crowdsap": 0.9955,
+      "pdc_p05_p95_percent": [
+        -0.12619606330163124,
+        0.13815881040482036
+      ],
+      "sap_rotation": {
+        "best_period_days": 27.84430560309698,
+        "power": 0.14671617610709517,
+        "period_range_days": [
+          5.0,
+          48.762527230206615
+        ],
+        "points": 454,
+        "span_days": 97.52505446041323,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 19.67658346064078,
+        "power": 0.39605973502679304,
+        "period_range_days": [
+          5.0,
+          48.762527230206615
+        ],
+        "points": 454,
+        "span_days": 97.52505446041323,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "3122450",
+      "file": "kplr003122450-2013131215648_llc.fits",
+      "quarter": 17,
+      "raw_points": 1556,
+      "accepted_points": 1213,
+      "span_days": 31.734801847298513,
+      "crowdsap": 1.0,
+      "pdc_p05_p95_percent": [
+        -0.31306791311204174,
+        0.5029252597069434
+      ],
+      "sap_rotation": {
+        "best_period_days": 9.30818707205981,
+        "power": 0.09506331153536941,
+        "period_range_days": [
+          5.0,
+          15.836749361649709
+        ],
+        "points": 134,
+        "span_days": 31.673498723299417,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 9.534227380441518,
+        "power": 0.1441995124109308,
+        "period_range_days": [
+          5.0,
+          15.836749361649709
+        ],
+        "points": 134,
+        "span_days": 31.673498723299417,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "4680688",
+      "file": "kplr004680688-2010078095331_llc.fits",
+      "quarter": 4,
+      "raw_points": 4397,
+      "accepted_points": 3739,
+      "span_days": 89.80522017224575,
+      "crowdsap": 0.9888,
+      "pdc_p05_p95_percent": [
+        -0.7441413473041392,
+        0.8232194105878055
+      ],
+      "sap_rotation": {
+        "best_period_days": 8.966184188531095,
+        "power": 0.507113945476125,
+        "period_range_days": [
+          5.0,
+          44.90261008612288
+        ],
+        "points": 426,
+        "span_days": 89.80522017224575,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 9.06246112610485,
+        "power": 0.871982079508029,
+        "period_range_days": [
+          5.0,
+          44.90261008612288
+        ],
+        "points": 426,
+        "span_days": 89.80522017224575,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    },
+    {
+      "kic": "4680688",
+      "file": "kplr004680688-2013011073258_llc.fits",
+      "quarter": 15,
+      "raw_points": 4780,
+      "accepted_points": 4156,
+      "span_days": 97.62727527687821,
+      "crowdsap": 0.9838,
+      "pdc_p05_p95_percent": [
+        -0.3684868222738724,
+        0.2948229378638034
+      ],
+      "sap_rotation": {
+        "best_period_days": 48.76255549701091,
+        "power": 0.08971763069191019,
+        "period_range_days": [
+          5.0,
+          48.76255549701091
+        ],
+        "points": 454,
+        "span_days": 97.52511099402182,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      },
+      "pdc_rotation": {
+        "best_period_days": 9.1863032603136,
+        "power": 0.5630580230204787,
+        "period_range_days": [
+          5.0,
+          48.76255549701091
+        ],
+        "points": 454,
+        "span_days": 97.52511099402182,
+        "status": "Descriptive peak; no red-noise/alias validation or orbital identification"
+      }
+    }
+  ],
+  "retrieval_states": {
+    "benchmark2026_tables.json": "saved",
+    "dixon2025_journal_tables.json": "failed",
+    "dixon2025_vizier.tsv": "catalogue_not_found",
+    "hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits": "saved",
+    "hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits": "saved",
+    "hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits": "saved",
+    "hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits": "saved",
+    "hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits": "saved",
+    "hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits": "saved",
+    "J0736_gaia.json": "saved",
+    "J0736_mast.json": "saved",
+    "J0736_ztf.csv": "failed",
+    "J0830_gaia.json": "saved",
+    "J0830_mast.json": "saved",
+    "J0830_ztf.csv": "failed",
+    "KIC2852961_gaia.json": "saved",
+    "KIC2852961_kepler_products.json": "saved",
+    "KIC2852961_mast.json": "saved",
+    "KIC2852961_ztf.csv": "failed",
+    "KIC3122450_gaia.json": "saved",
+    "KIC3122450_kepler_products.json": "saved",
+    "KIC3122450_mast.json": "saved",
+    "KIC3122450_ztf.csv": "failed",
+    "KIC4680688_gaia.json": "saved",
+    "KIC4680688_kepler_products.json": "saved",
+    "KIC4680688_mast.json": "saved",
+    "KIC4680688_ztf.csv": "failed",
+    "KIC5080290_gaia.json": "saved",
+    "KIC5080290_kepler_products.json": "saved",
+    "KIC5080290_mast.json": "saved",
+    "KIC5080290_ztf.csv": "failed",
+    "KIC8515227_gaia.json": "saved",
+    "KIC8515227_kepler_products.json": "saved",
+    "KIC8515227_mast.json": "saved",
+    "KIC8515227_ztf.csv": "failed",
+    "kplr002852961-2010078095331_llc.fits": "saved",
+    "kplr002852961-2013098041711_llc.fits": "saved",
+    "kplr003122450-2010174085026_llc.fits": "saved",
+    "kplr003122450-2013011073258_llc.fits": "saved",
+    "kplr003122450-2013131215648_llc.fits": "saved",
+    "kplr004680688-2010078095331_llc.fits": "saved",
+    "kplr004680688-2013011073258_llc.fits": "saved",
+    "kplr005080290-2010078095331_llc.fits": "saved",
+    "kplr005080290-2013098041711_llc.fits": "saved",
+    "kplr008515227-2010174085026_llc.fits": "saved",
+    "kplr008515227-2013011073258_llc.fits": "saved",
+    "kplr008515227-2013131215648_llc.fits": "saved",
+    "ktwo211569759-c05_llc.fits": "saved",
+    "olah2021_tables.json": "saved",
+    "olah2022_flares.tsv": "saved",
+    "olah2022_stars.tsv": "saved",
+    "tang_gaia_orbits.json": "saved"
+  },
+  "limitations": [
+    "Exploratory comparison shortlist; no incidence or novelty claim.",
+    "Dixon 7286 rows were not retrieved and are not screened.",
+    "Published luminosity labels retained alongside changed stellar parameters.",
+    "Kepler period maxima are descriptive, with no red-noise or alias significance.",
+    "No new flare search or resolved host assignment on the comparison stars.",
+    "DASCH and ZTF curves lack the matched controls used for J0754.",
+    "Quarter normalization prevents measurement of absolute multi-year fading."
+  ]
+}

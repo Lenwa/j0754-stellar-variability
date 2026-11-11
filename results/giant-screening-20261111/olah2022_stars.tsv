@@ -1,0 +1,135 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-11T15:09:18 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-11T15:09:18	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F668%2FA101%2Ftable1&-out.max=10000&-out.all=1	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+
+#RESOURCE=yCat_36680101
+#Name: J/A+A/668/A101
+#Title: Flaring giants (Olah+, 2022)
+#INFO	ivoid=ivo://cds.vizier/j/a+a/668/a101	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/a+a/668/a101	    IVOID of underlying data collection
+#INFO	creator=Olah K.	    First author or institution
+#INFO	cites=bibcode:2022A&A...668A.101O	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/668/A101	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.36680101	    Dataset identifier that can be used for citation
+#INFO	publication_date=2024-11-28	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	J2000_2000.000:	eq_FK5 J2000
+#Table	J_A_A_668_A101_table1:
+#Name: J/A+A/668/A101/table1
+#Title: Stellar parameters
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	KIC	(I8)	Kepler Input Catalog ID	[ucd=meta.id;meta.main]
+#Column	Teff	(I4)	? Effective temperature	[ucd=phys.temperature.effective]
+#Column	logg	(F5.2)	? Surface gravity	[ucd=phys.gravity]
+#Column	[Fe/H]	(F5.2)	? Metallicity	[ucd=phys.abund.Z]
+#Column	Mass	(F5.2)	? Mass	[ucd=phys.mass]
+#Column	Rad	(F5.2)	? Radius	[ucd=phys.size.radius]
+#Column	Lbol	(F6.2)	? Bolometric luminosity	[ucd=phys.luminosity]
+#Column	LumClass	(A5)	Luminosity class (dwarf or giant)	[ucd=src.class.luminosity]
+#Column	taumedian	(F6.1)	Median flare duration	[ucd=time.duration;stat.median]
+#Column	Nflares	(I3)	Number of Kepler flares	[ucd=meta.number]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+recno	KIC	Teff	logg	[Fe/H]	Mass	Rad	Lbol	LumClass	taumedian	Nflares	Simbad	_RA	_DE
+ 	 	K	[cm/s2]	 	Msun	Rsun	Lsun	 	min	 	 	deg	deg
+--------	--------	----	-----	-----	-----	-----	------	-----	------	---	------	---------	---------
+       1	 1573138	    	     	     	     	     	      	     	 144.4	 85	Simbad	291.36457	+37.10317
+       2	 1872340	4835	 3.25	 0.20	 1.50	 4.79	 11.43	giant	 247.5	 77	Simbad	292.32198	+37.36502
+       3	 2142183	4892	 4.00	 0.35	 0.90	 1.57	  1.27	     	 119.5	 81	Simbad	286.51042	+37.59563
+       4	 2441154	4529	 2.56	 0.04	 1.06	 8.91	 30.27	giant	 986.3	 12	Simbad	290.93765	+37.74181
+       5	 2585397	4921	 2.57	-0.06	 2.40	11.37	 70.31	     	1075.7	  9	Simbad	293.52487	+37.87950
+       6	 2852961	5012	 2.77	-0.21	 2.02	 9.61	 52.72	giant	1563.4	 41	Simbad	291.54741	+38.05298
+       7	 2968811	4809	 3.35	-0.10	 0.86	 3.25	  5.13	giant	 290.2	105	Simbad	285.45084	+38.11723
+       8	 3122450	4927	 2.65	-0.06	 2.24	11.30	 67.30	giant	 512.5	 18	Simbad	292.78796	+38.24517
+       9	 3324644	4666	 3.26	 0.20	 0.96	 3.82	  6.30	giant	 121.1	 22	Simbad	285.88863	+38.48685
+      10	 3560427	4542	 2.76	 0.13	 0.96	 6.80	 17.95	giant	 708.0	 10	Simbad	295.29474	+38.62765
+      11	 3561372	4699	 2.85	-0.14	 0.90	 5.96	 15.70	giant	 488.6	 25	Simbad	295.48028	+38.66456
+      12	 4068539	4914	 3.54	-0.01	 1.08	 2.92	  4.53	giant	 261.6	 78	Simbad	294.43513	+39.10743
+      13	 4157933	5252	 3.48	 0.02	 1.72	 3.95	 10.76	giant	 288.4	112	Simbad	291.70659	+39.29562
+      14	 4180534	4845	 4.46	 0.36	 0.81	 0.88	  0.38	dwarf	 123.6	121	Simbad	296.57225	+39.23707
+      15	 4263801	4801	 3.72	 0.16	 0.95	 2.23	  2.40	dwarf	 141.7	130	Simbad	291.94589	+39.37137
+      16	 4273689	5052	 3.46	-0.13	 1.34	 3.57	  7.53	giant	 303.6	115	Simbad	294.32512	+39.32860
+      17	 4562996	5809	 4.05	 0.37	 1.33	 1.79	  3.30	dwarf	 195.4	 23	Simbad	292.06819	+39.61437
+      18	 4680688	4901	 2.88	-0.07	 1.92	 8.26	 35.32	giant	 205.0	 16	Simbad	297.76196	+39.79383
+      19	 4750889	4964	 3.11	-0.17	 1.47	 5.57	 17.14	giant	 486.4	 25	Simbad	293.03313	+39.87491
+      20	 4920178	4543	 2.91	 0.20	 0.94	 5.61	 12.19	giant	 460.7	 15	Simbad	290.66348	+40.06091
+      21	 4937206	4809	 4.55	 0.08	 0.77	 0.77	  0.29	dwarf	 121.8	 14	Simbad	295.35272	+40.04378
+      22	 5080290	5064	 2.86	-0.21	 2.11	 8.99	 47.86	giant	 729.9	  5	Simbad	284.82958	+40.21519
+      23	 5181824	4756	 2.64	 0.03	 1.62	 9.89	 46.13	giant	 186.8	 59	Simbad	290.23417	+40.33407
+      24	 5281818	5838	 3.31	 0.06	 1.99	 5.11	 27.29	giant	 123.3	 32	Simbad	293.77845	+40.47515
+      25	 5286780	4935	 4.60	-0.22	 0.73	 0.70	  0.27	     	 136.9	  8	Simbad	295.07930	+40.48410
+      26	 5296446	5936	 3.43	-0.32	 1.65	 4.09	 18.62	giant	  70.5	  2	Simbad	297.17397	+40.42868
+      27	 5428626	4875	 4.45	 0.38	 0.82	 0.89	  0.40	     	 120.0	 84	Simbad	284.42422	+40.67097
+      28	 5480528	4886	 3.33	-0.02	 1.17	 3.87	  7.73	giant	 175.5	 85	Simbad	299.48099	+40.60925
+      29	 5482181	4958	 3.37	-0.07	 1.26	 3.79	  7.91	giant	 307.6	 12	Simbad	299.78339	+40.61844
+      30	 5808398	4630	 2.96	 0.26	 1.31	 6.27	 16.37	giant	 151.8	  3	Simbad	296.52233	+41.03555
+      31	 5821762	5072	 2.65	-0.16	 2.59	12.45	 93.76	giant	 410.0	  8	Simbad	299.28079	+41.05369
+      32	 6192231	    	     	     	     	     	      	     	 302.0	 63	Simbad	287.44181	+41.54296
+      33	 6206885	4728	 3.19	 0.08	 0.98	 4.16	  7.87	giant	 262.1	 29	Simbad	292.44405	+41.53608
+      34	 6219880	5729	 4.16	-0.04	 0.98	 1.36	  1.79	dwarf	 149.5	 17	Simbad	296.02812	+41.52169
+      35	 6233558	5033	 3.04	-0.48	 1.25	 5.55	 17.91	giant	 437.5	 34	Simbad	299.06236	+41.52924
+      36	 6445442	4867	 2.59	 0.03	 2.56	13.08	 86.90	giant	 241.9	  1	Simbad	292.68158	+41.89780
+      37	 6619942	4618	 2.16	-0.27	 1.92	19.35	154.88	giant	 408.2	  1	Simbad	295.60700	+42.05567
+      38	 6707805	5145	 3.07	-0.23	 1.97	 6.75	 29.04	giant	 498.5	 92	Simbad	296.02464	+42.15140
+      39	 6861498	4661	 3.07	 0.29	 1.25	 5.37	 12.36	giant	 332.4	 10	Simbad	291.34335	+42.32995
+      40	 7363468	4965	 2.92	-0.21	 1.71	 7.37	 29.92	giant	 412.0	 29	Simbad	291.99883	+42.97944
+      41	 7433177	4783	 3.01	-0.02	 1.18	 5.59	 14.83	giant	 210.5	 16	Simbad	287.99197	+43.00339
+      42	 7676676	4656	 3.50	 0.37	 0.98	 2.91	  3.62	giant	 306.3	 78	Simbad	289.79859	+43.32160
+      43	 7696356	5013	 3.16	-0.18	 1.50	 5.30	 16.14	giant	 411.5	 54	Simbad	296.15867	+43.30082
+      44	 7740188	4818	 3.55	-0.02	 0.89	 2.62	  3.36	giant	 285.3	106	Simbad	286.59076	+43.45761
+      45	 7838958	5423	 3.25	-0.04	 2.05	 5.62	 24.83	giant	 284.3	 93	Simbad	297.00109	+43.59949
+      46	 7848068	5010	 3.70	 0.13	 1.25	 2.61	  3.90	giant	 346.2	 47	Simbad	299.16626	+43.50720
+      47	 7869590	4473	 2.72	 0.27	 1.04	 7.32	 19.54	giant	 435.5	 36	Simbad	281.77619	+43.67627
+      48	 7969754	4623	 2.79	 0.03	 1.01	 6.67	 18.54	giant	 484.1	 14	Simbad	295.12935	+43.75481
+      49	 8022670	4772	 3.26	-0.04	 0.88	 3.65	  6.27	giant	 136.9	 49	Simbad	289.72693	+43.82386
+      50	 8231401	4878	 3.08	-0.16	 1.17	 5.11	 13.40	giant	 345.5	 11	Simbad	291.10807	+44.12601
+      51	 8259835	4912	 4.49	 0.21	 0.81	 0.84	  0.37	dwarf	 136.2	 94	Simbad	299.69536	+44.15900
+      52	 8515227	5051	 2.44	-0.68	 1.16	10.60	 66.22	giant	 904.6	 17	Simbad	298.22807	+44.53919
+      53	 8517303	4666	 2.68	-0.12	 1.07	 7.86	 26.61	giant	 485.1	  8	Simbad	298.75001	+44.57254
+      54	 8713822	5380	 4.01	 0.02	 0.95	 1.58	  1.90	dwarf	 121.4	 32	Simbad	299.50636	+44.87268
+      55	 8749284	4506	 2.61	 0.04	 0.94	 7.88	 23.33	giant	 131.5	 64	Simbad	290.19799	+44.92499
+      56	 8774912	4734	 4.49	 0.41	 0.79	 0.84	  0.32	dwarf	 118.2	 72	Simbad	298.69762	+44.90006
+      57	 8776850	5415	 4.29	-0.15	 0.82	 1.06	  0.88	dwarf	 132.5	133	Simbad	299.20328	+44.96829
+      58	 8780458	    	     	     	     	     	      	dwarf	 107.9	 54	Simbad	300.20370	+44.95620
+      59	 8894773	5120	 4.39	 0.14	 0.83	 0.95	  0.56	dwarf	 109.9	 60	Simbad	295.03837	+45.14475
+      60	 8915957	5908	 2.94	-0.10	 2.57	 8.89	 88.72	giant	 450.7	  9	Simbad	301.11754	+45.19756
+      61	 8951096	4801	 2.68	-0.47	 0.89	 7.07	 24.15	giant	 277.0	  4	Simbad	291.16072	+45.20572
+      62	 9093349	    	     	     	     	     	      	     	 201.3	195	Simbad	293.49628	+45.47237
+      63	 9116222	5461	 3.66	-0.25	 1.27	 2.75	  6.12	dwarf	 250.8	221	Simbad	300.00835	+45.46686
+      64	 9237305	5236	 3.89	 0.21	 1.12	 1.99	  2.69	giant	 296.3	 84	Simbad	298.24846	+45.66745
+      65	 9419002	5414	 3.38	-0.02	 1.86	 4.58	 16.56	giant	 312.3	 89	Simbad	297.28765	+45.98849
+      66	 9474208	3969	 4.61	 0.36	 0.62	 0.65	  0.09	dwarf	 158.5	 43	Simbad	295.36882	+46.02595
+      67	 9716554	5101	 3.09	-0.48	 1.47	 5.70	 19.82	giant	 447.1	  1	Simbad	294.40667	+46.40966
+      68	 9752982	5007	 4.49	 0.11	 0.81	 0.84	  0.40	     	 148.0	  9	Simbad	282.19845	+46.52032
+      69	 9770992	4834	 2.55	 0.04	 2.65	13.91	 95.72	giant	 498.5	 21	Simbad	291.99690	+46.51983
+      70	 9992402	4953	 4.45	 0.26	 0.82	 0.89	  0.43	dwarf	 157.7	 11	Simbad	281.74443	+46.91169
+      71	10603977	4729	 3.40	 0.18	 0.97	 3.25	  4.79	giant	 274.0	103	Simbad	293.47029	+47.89563
+      72	10646009	4647	 3.10	 0.15	 0.95	 4.52	  8.65	giant	 222.2	 66	Simbad	282.01739	+47.96088
+      73	10666510	4864	 3.70	-0.10	 0.85	 2.15	  2.36	giant	 286.6	144	Simbad	292.21019	+47.94572
+      74	10875937	4726	 3.37	 0.13	 0.94	 3.29	  4.90	giant	 207.5	 43	Simbad	297.23101	+48.22391
+      75	11087027	4637	 2.18	-0.54	 1.06	13.79	 79.80	giant	1365.7	  4	Simbad	293.30920	+48.69743
+      76	11135986	4789	 3.36	 0.07	 0.99	 3.44	  5.66	giant	 182.2	149	Simbad	291.04620	+48.78892
+      77	11146520	4760	 2.69	-0.28	 1.09	 7.82	 28.51	giant	 390.0	  2	Simbad	295.86848	+48.78132
+      78	11407895	5856	 3.20	-0.02	 2.13	 6.01	 38.82	giant	 397.3	  4	Simbad	294.32079	+49.23643
+      79	11515713	5204	 3.62	 0.07	 1.50	 3.14	  6.52	dwarf	 246.5	164	Simbad	295.73920	+49.49169
+      80	11551404	4909	 3.55	-0.14	 0.93	 2.68	  3.78	giant	 297.1	137	Simbad	287.39882	+49.51009
+      81	11554998	4542	 2.57	-0.04	 0.94	 8.39	 27.23	giant	 608.9	 14	Simbad	289.52720	+49.58682
+      82	11568624	    	     	     	     	     	      	dwarf	  92.0	  9	Simbad	296.26514	+49.58257
+      83	11668891	4524	 2.60	 0.04	 0.98	 8.09	 25.00	giant	 595.7	  6	Simbad	295.41139	+49.74812
+      84	11753121	5149	 4.49	 0.18	 0.86	 0.88	  0.49	dwarf	 248.3	  6	Simbad	285.73647	+49.94599
+      85	11962994	4696	 2.83	-0.01	 1.22	 7.00	 21.68	giant	 716.0	  2	Simbad	291.42020	+50.37664
+      86	11970692	4753	 3.27	 0.08	 0.98	 3.78	  6.61	giant	 474.0	 82	Simbad	295.40523	+50.33889
+

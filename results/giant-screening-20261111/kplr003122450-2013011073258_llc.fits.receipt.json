@@ -1,0 +1,15 @@
+{
+  "file": "kplr003122450-2013011073258_llc.fits",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file",
+  "params": {
+    "uri": "mast:KEPLER/url/missions/kepler/lightcurves/0031/003122450/kplr003122450-2013011073258_llc.fits"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:19:40.272212+00:00",
+  "http_status": 200,
+  "response_sha256": "c37db7d370033a2253432e3649d5dc5535bf3d0510a64197dd636efdd746d32f",
+  "response_bytes": 506880,
+  "sha256": "c37db7d370033a2253432e3649d5dc5535bf3d0510a64197dd636efdd746d32f",
+  "bytes": 506880,
+  "state": "saved"
+}

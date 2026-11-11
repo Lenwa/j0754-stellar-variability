@@ -1,0 +1,16 @@
+{
+  "file": "dixon2025_vizier.tsv",
+  "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv",
+  "params": {
+    "-source": "J/AJ/169/309",
+    "-out.max": "10000"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:09:17.091533+00:00",
+  "http_status": 200,
+  "response_sha256": "b061db136021f9d94b2e7c7eb4f6619444f571c478845679a2a37c4990e5bcf1",
+  "response_bytes": 708,
+  "sha256": "b061db136021f9d94b2e7c7eb4f6619444f571c478845679a2a37c4990e5bcf1",
+  "bytes": 708,
+  "state": "catalogue_not_found"
+}

@@ -1,0 +1,15 @@
+{
+  "file": "hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file",
+  "params": {
+    "uri": "mast:HLSP/qlp/s0044/0000/0000/2044/5282/hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:23:15.630059+00:00",
+  "http_status": 200,
+  "response_sha256": "774d8ad8f2db27a9ccac437df7da67d5ef4f391c629d0e5591fc3abc1839155a",
+  "response_bytes": 192960,
+  "sha256": "774d8ad8f2db27a9ccac437df7da67d5ef4f391c629d0e5591fc3abc1839155a",
+  "bytes": 192960,
+  "state": "saved"
+}

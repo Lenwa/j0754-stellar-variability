@@ -1,0 +1,13 @@
+{
+  "file": "olah2021_tables.json",
+  "url": "https://arxiv.org/html/2010.07623v2",
+  "params": null,
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:09:17.427532+00:00",
+  "http_status": 200,
+  "response_sha256": "8a198880077ba3bc332ac37516e9601d71a7ac6800f9bb708ebc79c371baac44",
+  "response_bytes": 379951,
+  "sha256": "0029cbdd43ab1c6337c504834437bcf447fcf0ad680eefe7ec69f2489e132fd6",
+  "bytes": 30552,
+  "state": "saved"
+}

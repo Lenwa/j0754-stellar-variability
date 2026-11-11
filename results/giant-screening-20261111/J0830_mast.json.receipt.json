@@ -1,0 +1,15 @@
+{
+  "file": "J0830_mast.json",
+  "url": "https://mast.stsci.edu/api/v0/invoke",
+  "params": {
+    "request": "{\"service\": \"Mast.Caom.Cone\", \"params\": {\"ra\": 127.66033651549, \"dec\": 14.12030855354, \"radius\": 0.001388888888888889}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1}"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:11:46.645589+00:00",
+  "http_status": 200,
+  "response_sha256": "e5be137b5ce626fc5c0dc7425a8f60831c6c21aef14e0aa7d3133524f2655506",
+  "response_bytes": 71982,
+  "sha256": "e5be137b5ce626fc5c0dc7425a8f60831c6c21aef14e0aa7d3133524f2655506",
+  "bytes": 71982,
+  "state": "saved"
+}

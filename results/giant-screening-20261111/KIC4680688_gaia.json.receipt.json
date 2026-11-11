@@ -1,0 +1,18 @@
+{
+  "file": "KIC4680688_gaia.json",
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "params": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "json",
+    "QUERY": "SELECT TOP 200 source_id,ra,dec,pmra,pmdec,parallax,parallax_error,phot_g_mean_mag,bp_rp,ruwe FROM gaiadr3.gaia_source WHERE CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',297.76196,39.79383,0.016666666666666666))=1"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:10:54.811470+00:00",
+  "http_status": 200,
+  "response_sha256": "56e47a4a9767a64a1d778088bf4dab0e442f54db39e00d5bc91b81aae7fc0a69",
+  "response_bytes": 21707,
+  "sha256": "56e47a4a9767a64a1d778088bf4dab0e442f54db39e00d5bc91b81aae7fc0a69",
+  "bytes": 21707,
+  "state": "saved"
+}

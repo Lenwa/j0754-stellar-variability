@@ -1,0 +1,15 @@
+{
+  "file": "KIC3122450_kepler_products.json",
+  "url": "https://mast.stsci.edu/api/v0/invoke",
+  "params": {
+    "request": "{\"service\": \"Mast.Caom.Products\", \"params\": {\"obsid\": \"529460\"}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1}"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:14:20.876163+00:00",
+  "http_status": 200,
+  "response_sha256": "54cee00d8ea11d9f331ee7c452a4d9aa18864f2bf75e0e6f8a37815a51eb056b",
+  "response_bytes": 28561,
+  "sha256": "54cee00d8ea11d9f331ee7c452a4d9aa18864f2bf75e0e6f8a37815a51eb056b",
+  "bytes": 28561,
+  "state": "saved"
+}

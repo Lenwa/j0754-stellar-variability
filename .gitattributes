@@ -11,3 +11,5 @@
 *.png binary
 *.jpg binary
 *.docx binary
+# Preserve native archive table bytes and their documented fixed-width whitespace.
+results/giant-screening-20261111/*.tsv -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab

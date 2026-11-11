@@ -1,0 +1,15 @@
+{
+  "file": "ktwo211569759-c05_llc.fits",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file",
+  "params": {
+    "uri": "mast:K2/url/missions/k2/lightcurves/c5/211500000/69000/ktwo211569759-c05_llc.fits"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:23:15.193839+00:00",
+  "http_status": 200,
+  "response_sha256": "5d99524851efd08b5b71af7f99ff4db73685dbd8c9806d2fc37e04805c1fc95e",
+  "response_bytes": 397440,
+  "sha256": "5d99524851efd08b5b71af7f99ff4db73685dbd8c9806d2fc37e04805c1fc95e",
+  "bytes": 397440,
+  "state": "saved"
+}

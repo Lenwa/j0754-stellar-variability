@@ -1,0 +1,15 @@
+{
+  "file": "KIC3122450_mast.json",
+  "url": "https://mast.stsci.edu/api/v0/invoke",
+  "params": {
+    "request": "{\"service\": \"Mast.Caom.Cone\", \"params\": {\"ra\": 292.78796, \"dec\": 38.24517, \"radius\": 0.001388888888888889}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1}"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:10:48.616535+00:00",
+  "http_status": 200,
+  "response_sha256": "256d43667295859bf70c54a6c847c9f370b4a0efb286b5b39de010374f3a8f17",
+  "response_bytes": 97563,
+  "sha256": "256d43667295859bf70c54a6c847c9f370b4a0efb286b5b39de010374f3a8f17",
+  "bytes": 97563,
+  "state": "saved"
+}

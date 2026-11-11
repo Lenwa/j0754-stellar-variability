@@ -1,5 +1,119 @@
 [
   {
+    "path": "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0044-0000000020445282_tess_v01_llc.fits",
+    "bytes": 192960,
+    "sha256": "774d8ad8f2db27a9ccac437df7da67d5ef4f391c629d0e5591fc3abc1839155a",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0044-0000000070330439_tess_v01_llc.fits",
+    "bytes": 192960,
+    "sha256": "3e23efbf23b9ede66261cc1844721001493cf2d09ac63956b40ff4804a879314",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0045-0000000020445282_tess_v01_llc.fits",
+    "bytes": 204480,
+    "sha256": "46ff2926baaf298d0c74490ab67d26a521ed909d6f66879c9bf382e7911e14e2",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0045-0000000070330439_tess_v01_llc.fits",
+    "bytes": 204480,
+    "sha256": "bbc4166fb566fe5d4a9e962f025589ef3e3b051a49d2db442a372ec93386cd5d",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0046-0000000020445282_tess_v01_llc.fits",
+    "bytes": 218880,
+    "sha256": "e05da70d586c50008e1af1f7fa1ea0062e43af52e43ee82f8bc1f1652e3a8ef8",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/hlsp_qlp_tess_ffi_s0046-0000000070330439_tess_v01_llc.fits",
+    "bytes": 218880,
+    "sha256": "b9fedbab00d96505c809e2eefe09e25354b9b7c17a8991a723167763d372741c",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr002852961-2010078095331_llc.fits",
+    "bytes": 469440,
+    "sha256": "fee6b787f6b6b5d16f372807d97b7e8babb1f91a1a958629f4cb2c59551f750b",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr002852961-2013098041711_llc.fits",
+    "bytes": 449280,
+    "sha256": "98e5b6a9e2ac5c70696dbec18959139077350caf24fff2e5e5f81c54b30693b2",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr003122450-2010174085026_llc.fits",
+    "bytes": 492480,
+    "sha256": "a1017b175f25580ea8791e92031199a3a8da8d6ba37900e3b4d055d815b3f02c",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr003122450-2013011073258_llc.fits",
+    "bytes": 506880,
+    "sha256": "c37db7d370033a2253432e3649d5dc5535bf3d0510a64197dd636efdd746d32f",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr003122450-2013131215648_llc.fits",
+    "bytes": 187200,
+    "sha256": "9af4c54bb2dc84a5a5c0489694ffe909b1440420e8721f2ad4ce6594737d2e66",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr004680688-2010078095331_llc.fits",
+    "bytes": 469440,
+    "sha256": "ac1a8d774fa8a3cda95ef9dd195d1a18791907df4267ee577093949c5d6d1238",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr004680688-2013011073258_llc.fits",
+    "bytes": 506880,
+    "sha256": "093c5e8b6c329868dbb59d73793142020a75be62f4eb3cd95b5fdd64ab34a732",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr005080290-2010078095331_llc.fits",
+    "bytes": 469440,
+    "sha256": "21841d041ddf7e70ff9ae058b67559933a0c16afc9601283d6d8e6511ae6631a",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr005080290-2013098041711_llc.fits",
+    "bytes": 449280,
+    "sha256": "c45d87a61e50054c6456db43f2fcebe75e0150add19a33ed27c881ea03f2a842",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr008515227-2010174085026_llc.fits",
+    "bytes": 492480,
+    "sha256": "d5d50fec3fd02b18c5e91f9f9c01f56eec0a8f2620584e8089f0fc4fe4be5200",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr008515227-2013011073258_llc.fits",
+    "bytes": 506880,
+    "sha256": "c3e4d15663af961ebdab00bc5fa882241d2d1e2a0ae24edea43f12c5b31a14c8",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/kplr008515227-2013131215648_llc.fits",
+    "bytes": 187200,
+    "sha256": "0f5d5214935acc959d278de78d6708d63b1e4efc3bcb551d4bb303dcfa1d8fa8",
+    "included": true
+  },
+  {
+    "path": "results/giant-screening-20261111/ktwo211569759-c05_llc.fits",
+    "bytes": 397440,
+    "sha256": "5d99524851efd08b5b71af7f99ff4db73685dbd8c9806d2fc37e04805c1fc95e",
+    "included": true
+  },
+  {
     "path": "results/sky-plates-j0754-checks-20261108/catalogue_union.fits",
     "bytes": 1175040,
     "sha256": "c8356f831cb352b6f36513181d4a39c06e82814b7bafbb45e7014cb835f5aa81",
@@ -114,6 +228,36 @@
     "included": false
   },
   {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0044-4-2_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 3461760,
+    "sha256": "8bbfcfc06a863921610f68ab82d351661da7a8d70ad6ea95df6dc0885a847253",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0045-2-1_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 3643200,
+    "sha256": "17e2cfccc9ef2069e869da9a535c0154ab1a05a47fc6c1afb2d46b8361c5691d",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0071-4-3_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 11468160,
+    "sha256": "c2817ab9568092d3a6ff21e23d32672a5f39bf03ad578ff20f8a4007848fd3f1",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0072-2-4_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 11226240,
+    "sha256": "4d3567b4afd85d2455edd0ede188bd1331c71d5cf6b9f9538df87d561149eb78",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s1751-2-2_118.691174_16.694621_7x7_astrocut.fits",
+    "bytes": 1952640,
+    "sha256": "3891333493cfd678c641c101e5319a7dd84a827eccb95829f96b9bc6a2390668",
+    "included": true
+  },
+  {
     "path": "results/sky-plates-j0754-followup-20261108/catalogue_union.fits",
     "bytes": 1175040,
     "sha256": "c8356f831cb352b6f36513181d4a39c06e82814b7bafbb45e7014cb835f5aa81",
@@ -148,6 +292,12 @@
     "bytes": 6776640,
     "sha256": "01d9a105b3ae05c08ed4f77419500384dc584021818d473391dbc3018dd7a60a",
     "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-galex-erosita-20261111/NUV_flat.fits",
+    "bytes": 2563200,
+    "sha256": "df6bb14936fda626f3d94efd18e20eddc24f208eb984a06276c840ec54b77b3e",
+    "included": true
   },
   {
     "path": "results/sky-plates-j0754-independent-20261108/asassn_index.parquet",
@@ -424,6 +574,48 @@
     "bytes": 5063040,
     "sha256": "9f5a79abe479272d903964e6f1da3301be0aba68dac3f72326506b8eaebabff2",
     "included": false
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0001_sg10-scst.fits.gz",
+    "bytes": 29448,
+    "sha256": "0accb82dc83b1f17ad1ae7a2a40633f283595633b532b550fc0dd065ed4d4b02",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0002_sg10-scst.fits.gz",
+    "bytes": 27162,
+    "sha256": "7f0636d7d2d6c861d6350caedbf46e994b6261c7de3037ab61243d21d0a00a10",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 37440,
+    "sha256": "5cd5dcd1489bcb40afd23b7025fd4af7855e6ad60e063167ef2f73f41e02a4ff",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 43200,
+    "sha256": "b26fa56e249b5a057f9c62993ee851c7381695550b2e833986dccd8e63fe80b1",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+    "bytes": 97920,
+    "sha256": "9ae436623c1bb8123de49a7467dd9f81ee69ae0cfad868061f87f0e019b20667",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_ex.img.gz",
+    "bytes": 209339,
+    "sha256": "cfb74cd3b5c0659a5f4d8c21cf5d848e8aac84dc5e44c874c7f057cdce35bd48",
+    "included": true
+  },
+  {
+    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_sk.img.gz",
+    "bytes": 3970773,
+    "sha256": "9ff7fbcf1748d83b58324305934ab3b36ca9d1522b69c3609d27f95436adadfd",
+    "included": true
   },
   {
     "path": "results/sky-plates-j0754-oscillation-check-20261109/power_spectra.npz",
@@ -2055,84 +2247,6 @@
     "path": "results/sky-plates-recon-20261107/J0830_asassn_catalog.parquet",
     "bytes": 4870,
     "sha256": "d39d74684f5c40c49f92700012d12b59abf2ee638404f4254226e3b612f41d0a",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0044-4-2_118.691174_16.694621_7x7_astrocut.fits",
-    "bytes": 3461760,
-    "sha256": "8bbfcfc06a863921610f68ab82d351661da7a8d70ad6ea95df6dc0885a847253",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0071-4-3_118.691174_16.694621_7x7_astrocut.fits",
-    "bytes": 11468160,
-    "sha256": "c2817ab9568092d3a6ff21e23d32672a5f39bf03ad578ff20f8a4007848fd3f1",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s1751-2-2_118.691174_16.694621_7x7_astrocut.fits",
-    "bytes": 1952640,
-    "sha256": "3891333493cfd678c641c101e5319a7dd84a827eccb95829f96b9bc6a2390668",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0045-2-1_118.691174_16.694621_7x7_astrocut.fits",
-    "bytes": 3643200,
-    "sha256": "17e2cfccc9ef2069e869da9a535c0154ab1a05a47fc6c1afb2d46b8361c5691d",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-flare-search-20261110/pixels/tess-s0072-2-4_118.691174_16.694621_7x7_astrocut.fits",
-    "bytes": 11226240,
-    "sha256": "4d3567b4afd85d2455edd0ede188bd1331c71d5cf6b9f9538df87d561149eb78",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0001_sg10-scst.fits.gz",
-    "bytes": 29448,
-    "sha256": "0accb82dc83b1f17ad1ae7a2a40633f283595633b532b550fc0dd065ed4d4b02",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0002_sg10-scst.fits.gz",
-    "bytes": 27162,
-    "sha256": "7f0636d7d2d6c861d6350caedbf46e994b6261c7de3037ab61243d21d0a00a10",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_sk.img.gz",
-    "bytes": 3970773,
-    "sha256": "9ff7fbcf1748d83b58324305934ab3b36ca9d1522b69c3609d27f95436adadfd",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_ex.img.gz",
-    "bytes": 209339,
-    "sha256": "cfb74cd3b5c0659a5f4d8c21cf5d848e8aac84dc5e44c874c7f057cdce35bd48",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
-    "bytes": 43200,
-    "sha256": "b26fa56e249b5a057f9c62993ee851c7381695550b2e833986dccd8e63fe80b1",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
-    "bytes": 97920,
-    "sha256": "9ae436623c1bb8123de49a7467dd9f81ee69ae0cfad868061f87f0e019b20667",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
-    "bytes": 37440,
-    "sha256": "5cd5dcd1489bcb40afd23b7025fd4af7855e6ad60e063167ef2f73f41e02a4ff",
-    "included": true
-  },
-  {
-    "path": "results/sky-plates-j0754-galex-erosita-20261111/NUV_flat.fits",
-    "bytes": 2563200,
-    "sha256": "df6bb14936fda626f3d94efd18e20eddc24f208eb984a06276c840ec54b77b3e",
     "included": true
   }
 ]

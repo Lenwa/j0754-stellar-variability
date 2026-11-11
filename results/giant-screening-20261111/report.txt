@@ -1,0 +1,127 @@
+GIANT COMPARISON SCREEN — 11 November 2026
+
+Kyle Hicks and Ari; exploratory archival comparison
+
+
+
+FINDING
+
+J0754 has a useful comparison class among spotted, flaring giants. KIC 2852961 is the strongest benchmark in this pass: two independently normalized Kepler quarters show approximately 35-day modulation in both SAP and PDC flux. Tang’s two other historical fading giants also have Gaia candidate SB1 fits near five weeks. These are useful connections to the activity/binary interpretation; the cause of the decade-long fading remains a separate test.
+
+
+
+SAMPLE AND SELECTION
+
+The complete Olah et al. (2022) CDS stellar table contains 86 entries: 61 retain the published giant label, 17 are labelled dwarfs, and eight are unclassified. All 61 giant-labelled entries have the finite positive parameters needed for the physical comparison. Six have updated log g above 3.5 despite the retained older giant label; the conflicts are flagged, not erased. The accompanying flare table contains 4,368 records across all 86 objects; these are literature measurements, not newly detected flares.
+
+The first five were selected by a declared temperature/radius/luminosity distance, before their downloaded light curves were examined. The adopted J0754 reference is 5205.776 K, 54.640694 Lsun and the corresponding Stefan–Boltzmann radius of 9.0874 Rsun. Rank scales are 500 K, 0.25 dex in radius and 0.35 dex in luminosity. This ranks physical resemblance rather than probability of a common mechanism. Published parameters are heterogeneous, so the rank is a retrieval priority rather than a precision stellar fit.
+
+Published 2021 periods and multiplicity notes were joined by exact KIC ID. Of the 61 giant-labelled stars, 59 have a single-valued listed rotation period, one has two listed periods, and one has none. Twenty-four have at least one listed period between 20 and 60 days. Original period text and all comma-separated components are preserved. This is a flare-selected sample and cannot establish the occurrence of these properties among all giants.
+
+
+
+FIVE PHYSICAL MATCHES
+
+KIC | rank | Teff K | radius Rsun | luminosity Lsun | published rotation d | published multiplicity
+
+5080290 | 1 | 5064 | 8.99 | 47.86 | unreported | unreported
+
+2852961 | 2 | 5012 | 9.61 | 52.72 | 35.715 | SB1
+
+8515227 | 3 | 5051 | 10.60 | 66.22 | 28.157 | SB3
+
+3122450 | 4 | 4927 | 11.30 | 67.30 | 44.901 | unreported
+
+4680688 | 5 | 4901 | 8.26 | 35.32 | 9.19 | unreported
+
+
+
+KIC 2852961: best activity benchmark. Q4 gives PDC/SAP peaks of about 34.6/34.9 days; Q16 gives 35.8/35.6 days. Both reductions show repeated modulation and sharp excursions. This screen did not independently vet or count its flares. The October 2026 Kovari et al. preprint reports a 34.182-day spectroscopic orbit and 35.515-day rotation, with a 4760 K, 12.10 Rsun, 67.7 Lsun giant. Those newer parameters differ from the homogeneous catalogue values used in our selection. The paper reports activity, spot and coronal evidence and is submitted/revised, not identified here as an accepted publication.
+
+KIC 3122450: useful additional comparison, with mixed temporal behavior. Its published rotation is 44.901 days. Q5 gives roughly 45.1 days in PDC and 42.6 days in SAP; Q15 instead gives about 19.7/27.8 days. A single stationary rotation fit is inadequate across these quarters, and correction sensitivity remains important. Its clean-looking catalogue crowding estimate does not settle that disagreement.
+
+KIC 8515227: a strong roughly 28-day modulation comparison. Q5 gives about 28.4 days in both reductions; Q15 gives about 27.1 days. The literature identifies an SB3 system, making assignment of variability to an individual stellar component more complicated. The short Q17 cannot cover two cycles at the published 28.157-day period; its shorter scan maximum is not a replacement period.
+
+KIC 5080290: closest numerical match but a complicated astrophysical comparison. It has a published pulsation/hybrid classification and no rotation period in the joined table. Q16’s PDC/SAP long-period peaks disagree (about 31.7/24.7 days), and Q4’s maximum lies at the scan boundary. Keep it as a contrasting pulsating case, not a clean 36-day spot analogue. A further primary paper, Hidden Companions Detected by Asteroseismology I (2022), specifically studies this star; it is not an overlooked object.
+
+KIC 4680688: a faster-rotation comparison. Q4’s PDC peak is about 9.06 days and Q15’s is 9.19 days, close to its published 9.190 days. SAP retains stronger long-term trends, especially in Q15. It is useful for contrast rather than as a near-36-day match.
+
+
+
+TANG’S HISTORICAL COMPARISON STARS
+
+The retained J0736 file has 3,017 total detection/limit rows, including 1,301 numerical detections; 800 pass the same standard DASCH quality rule used in the J0754 project and 654 pass its stricter variant. J0830 has 3,569 total rows, 2,056 numerical detections, 1,379 standard accepted detections and 1,057 strict accepted detections. Annual summaries require three distinct observing dates. J0736 retains a broad historical trough and recovery; J0830 retains a sustained historical fading trend. These are uncorrected screening curves of previously published behavior, not new same-exposure comparison-star replications.
+
+Gaia candidate orbital fits (Gaia DR3 NSS; periods are not independently confirmed here):
+
+Star | source_id | period days | formal error days | RV semi-amplitude km/s | accepted RV observations
+
+J0754 | 667401913089980544 | 35.92046 | 0.03061 | 10.72 | 21
+
+J0830 | 651437519650162304 | 38.38919 | 0.05076 | 8.82 | 12
+
+J0736 | 865283696503303936 | 39.42092 | 0.02250 | 17.35 | 12
+
+The three candidate periods cluster at 35.9–39.4 days. No coincidence probability is assigned to this retrospectively noticed pattern. J0736 and J0830 each have 12 accepted Gaia RV observations; J0754 has 21. Their formal errors do not include all orbit-validation risks.
+
+
+
+ARCHIVES AND ACTUAL DATA
+
+Gaia and MAST metadata were recovered for all five selected Kepler stars and both Tang siblings. The two initial MAST timeouts succeeded on one retry. Ten metadata-selected Kepler long-cadence files were downloaded, then Q15 was added for KIC 8515227 and KIC 3122450 because their initially selected final Q17 was too short for two published rotation cycles. All 12 files were inspected and reduced. The two plotted quarters per star are the early and later full-quarter examples; both short Q17 products remain in the measurement table.
+
+The 2026 ZTF queries timed out for every target. The retained 7 November queries for J0736/J0830 contain zero catalogue rows. These are archive gaps, not measurements of constant brightness. MAST identifies TESS QLP sectors 44–46 for both siblings and K2 campaign 5 for J0830. Seven corresponding small light-curve FITS files have been downloaded and retained for the next analysis; they have not been reduced or vetted in this screen. Pipeline alternatives derived from the same exposures are not independent observing instruments.
+
+Dixon’s 7,286-star 2025 rotation/NUV sample was not obtained: the attempted VizieR identifier returns catalogue-not-found, and the journal request requires human verification. The accessible paper provides useful context but not the sample rows here. We did not screen 7,286 stars or reconstruct that sample under the same name.
+
+
+
+MEASUREMENT AND INTERPRETATION LIMITS
+
+Kepler primary quality selection is SAP_QUALITY=0 with finite positive SAP/PDC flux. The period diagnostic uses 0.2-day medians, jointly projects an offset and linear trend, and searches 5 days to min(100 days, half the retained span). It reports the strongest sinusoidal peak, not a calibrated significance or unique physical period. Strong spot evolution, harmonics, pipeline filtering and instrumental trends can all change that peak. The lower bound was expanded from an initial 10-day diagnostic to include the already published 9.19-day contrast star; no significance claim is made for either range.
+
+Each quarter is normalized independently, so these curves cannot measure absolute multi-year dimming. Likewise, source-centred catalogue matches and CROWDSAP do not resolve binary components or localize individual flares. No new flare-energy comparison is performed: the retained published energy column and passbands are left as supplied. The CDS ASU header labels EKepler with a power unit despite describing energy; that inconsistency is preserved and is not used in any calculation here.
+
+Historical annual points and Kepler line plots leave missing intervals open. The older photographic records are summarized descriptively without cross-plate or matched-star calibration. Their prior published fading is the reason for selecting the Tang siblings.
+
+
+
+NEXT TEST
+
+First compare the sibling QLP light curves with their separate 39.42/38.39-day Gaia candidate periods, allowing sector offsets and evolving spot patterns. J0830’s independent 2015 K2 campaign provides another epoch, although its approximately 75-day coverage is only about two proposed cycles. Use KIC 2852961 as a positive activity benchmark and KIC 3122450 as a changing-waveform comparison. This directly tests the shared binary/activity idea while retaining the original long-fading question.
+
+
+
+FILES AND REPRODUCTION
+
+screened_catalog.csv: all 86 rows, class flags, physical rank, published periods and binarity.
+
+physical_shortlist.csv: five metadata-selected physical matches.
+
+screening.json: archive counts, Gaia identities/orbit candidates, plate summaries and all Kepler diagnostics.
+
+kepler_screening_lightcurves.png; tang_comparison_lightcurves.png; physical_analogues.png.
+
+Native response receipts and input_source_hashes.json preserve URLs, retrieval times and hashes. source_manifest.json includes all newly retained FITS plus reused historical inputs.
+
+From the repository root: python -B tools/sky-plates/screen_giant_analogs.py; python -B tools/sky-plates/report_giant_screening.py.
+
+Network retrieval stages: python -B tools/sky-plates/fetch_giant_screening.py catalogues (then archives, retry-mast, products, coverage, siblings). Existing valid cached responses are reused.
+
+
+
+PRIMARY SOURCES AND ATTRIBUTION
+
+Tang et al. 2010, ApJL 710 L77: https://arxiv.org/abs/1001.1395
+
+Olah et al. 2021, A&A 647 A62, especially Tables 1 and B.1: https://arxiv.org/abs/2010.07623
+
+Olah et al. 2022, A&A 668 A101: https://arxiv.org/abs/2210.09710 ; CDS catalogue https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/668/A101
+
+Kovari et al. 2026, revised submitted preprint: https://arxiv.org/abs/2610.11799
+
+Dixon et al. 2025, AJ 169 309: https://arxiv.org/abs/2504.05561
+
+Hidden Companions Detected by Asteroseismology I, 2022: https://www.mdpi.com/2218-1997/8/12/614
+
+NASA MAST Kepler/K2/TESS archives; Gaia DR3 archive; Harvard DASCH DR7; IRSA ZTF query service. Survey observations and published tables retain their original attribution and data terms.

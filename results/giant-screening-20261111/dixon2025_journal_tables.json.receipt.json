@@ -1,0 +1,12 @@
+{
+  "file": "dixon2025_journal_tables.json",
+  "url": "https://iopscience.iop.org/article/10.3847/1538-3881/adc92a",
+  "params": null,
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:09:17.562843+00:00",
+  "http_status": 200,
+  "response_sha256": "f165c78b1ce65c07c4e112ef7ce25cde22d12daedd27498879126dd970f70125",
+  "response_bytes": 14371,
+  "state": "failed",
+  "error": "Public article protected by human verification; no bypass attempted"
+}

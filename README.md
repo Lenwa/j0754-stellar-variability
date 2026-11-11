@@ -1,5 +1,15 @@
 # J0754 stellar variability laboratory
 
+**Comparison-giant screening, 11 November:** [report](results/giant-screening-20261111/report.txt),
+[full catalogue screen](results/giant-screening-20261111/screened_catalog.csv),
+[five physical matches](results/giant-screening-20261111/physical_shortlist.csv) and
+[Kepler curves](results/giant-screening-20261111/kepler_screening_lightcurves.png).
+The 61 published giant-labelled entries were screened; twelve Kepler light curves
+were reduced for five selected stars. KIC 2852961 is the strongest activity
+benchmark. Tang's other two historical fading stars have Gaia candidate SB1
+periods near 38–39 days. Seven sibling TESS/K2 products are retained for follow-up,
+explicitly unreduced. The Dixon 7,286-star rows were not retrieved or screened.
+
 **Current evidence checkpoint, 11 November:** [source-linked evidence table](docs/J0754_evidence_2026-11-11.csv)
 ([readable HTML](docs/J0754_evidence_2026-11-11.html), [text summary](docs/J0754_evidence_summary_2026-11-11.txt))
 consolidates 36 entries across 37 retained result families. The
@@ -76,7 +86,7 @@ python -m pip install -r requirements.txt
 python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
 ```
 
-The current snapshot passes **166 tests** (147 in the initial release). Tests cover model
+The current snapshot passes **188 tests** (147 in the initial release). Tests cover model
 integration, injections, nuisance projection, period/alias behavior, covariance,
 pixel reductions and failure cases; they do not substitute for independent
 scientific review. No credentials are required for these offline tests.

@@ -1,0 +1,8 @@
+{
+  "reason": "After initial inspection, append Q15 when final Q17 cannot cover two cycles at the already published rotation period. Retain Q17. This is an explicit metadata/coverage follow-up, not a blinded selection.",
+  "targets": [
+    "KIC8515227",
+    "KIC3122450"
+  ],
+  "selection": "Q15 long-cadence products from previously downloaded product tables"
+}

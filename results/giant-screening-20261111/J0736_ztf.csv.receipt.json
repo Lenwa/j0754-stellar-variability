@@ -1,0 +1,12 @@
+{
+  "file": "J0736_ztf.csv",
+  "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+  "params": {
+    "CIRCLE": "114.02711824252 21.23634538304 0.0005555555555555556",
+    "FORMAT": "csv"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:11:33.946378+00:00",
+  "state": "failed",
+  "error": "HTTPSConnectionPool(host='irsa.ipac.caltech.edu', port=443): Read timed out. (read timeout=40)"
+}

@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-11-11T15:31:51.282263+00:00",
+  "component_tests_passed": 188,
+  "new_tests": 12,
+  "catalog_rows": 86,
+  "giant_labels": 61,
+  "reduced_kepler_files": 12,
+  "unreduced_sibling_files": 7,
+  "native_fits": 19,
+  "receipt_hashes_verified": 44,
+  "source_hashes_verified": 24,
+  "original_protocol_snapshot_hash_verified": true,
+  "source_manifest_verified": 21,
+  "test_log_sha256": "a36fffe4b6da803eac92184a5f735483067eab52d42dc249cacf57a2175440fd",
+  "figures_visually_inspected": [
+    "kepler_screening_lightcurves.png",
+    "tang_comparison_lightcurves.png",
+    "physical_analogues.png"
+  ],
+  "independent_review": "Ranking, all 24 SAP/PDC period maxima/powers, and all historical annual summaries reproduced independently; three findings corrected; no new orbit/flare-host confirmation.",
+  "limitations": "Dixon sample unavailable; ZTF requests failed; sibling light curves downloaded but unreduced; comparison screen only.",
+  "source_manifest_verification": "19 FITS raw hashes and 2 reused CSV canonical-LF hashes verified; original CSV download byte hashes also preserved."
+}

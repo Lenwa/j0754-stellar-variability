@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-11T15:09:17.089124+00:00",
+  "status": "Exploratory catalogue selection; J0754 properties and published benchmark already known.",
+  "plan": "docs/superpowers/plans/2026-11-11-giant-screening.md",
+  "plan_sha256": "cab9c127606bc81fa457686c31c51d9865cbe0898a9abcf54541532fb85f0e0a",
+  "selection": "Five nearest published giant-labelled rows in Teff/radius/luminosity; archive outcomes excluded from rank.",
+  "limitations": [
+    "Not a prevalence study or a claim of neglected/unpublished stars.",
+    "Dixon 7286 sample is screened only if actual rows are retrieved.",
+    "2022 catalogue carries later physical parameters alongside earlier luminosity classifications; retain conflicts."
+  ],
+  "plan_original_snapshot": "results/giant-screening-20261111/protocol_plan_snapshot.txt",
+  "later_rulings": [
+    "Q15 appended for two initially short Q17 cases based on coverage; original Q17 retained.",
+    "Rotation diagnostic expanded from initial 10-day minimum to 5 days to include the already published 9.19-day contrast case.",
+    "Catalogue reads made pure after review; period pairs preserved; line gaps at missing annual bins."
+  ]
+}

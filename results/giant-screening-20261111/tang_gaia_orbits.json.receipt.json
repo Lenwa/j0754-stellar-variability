@@ -1,0 +1,18 @@
+{
+  "file": "tang_gaia_orbits.json",
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "params": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "json",
+    "QUERY": "SELECT * FROM gaiadr3.nss_two_body_orbit WHERE source_id IN (865283696503303936,651437519650162304,667401913089980544)"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:12:02.792099+00:00",
+  "http_status": 200,
+  "response_sha256": "8b7bac72c1793ef45869af022675e25849209fd0ef6d07470dbe297415c5f84c",
+  "response_bytes": 18353,
+  "sha256": "8b7bac72c1793ef45869af022675e25849209fd0ef6d07470dbe297415c5f84c",
+  "bytes": 18353,
+  "state": "saved"
+}

@@ -1,0 +1,28 @@
+{
+  "file": "KIC5080290_mast.json",
+  "url": "https://mast.stsci.edu/api/v0/invoke",
+  "params": {
+    "request": "{\"service\": \"Mast.Caom.Cone\", \"params\": {\"ra\": 284.82958, \"dec\": 40.21519, \"radius\": 0.001388888888888889}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1}"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:13:32.026393+00:00",
+  "previous_attempts": [
+    {
+      "file": "KIC5080290_mast.json",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "params": {
+        "request": "{\"service\": \"Mast.Caom.Cone\", \"params\": {\"ra\": 284.82958, \"dec\": 40.21519, \"radius\": 0.001388888888888889}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1}"
+      },
+      "method": "GET",
+      "retrieved_utc": "2026-11-11T15:09:33.410785+00:00",
+      "state": "failed",
+      "error": "HTTPSConnectionPool(host='mast.stsci.edu', port=443): Read timed out. (read timeout=40)"
+    }
+  ],
+  "http_status": 200,
+  "response_sha256": "b7b1c489ba0cb61370883a22a1663d1f6278dabc39f8b2b017ba79488862caf3",
+  "response_bytes": 98416,
+  "sha256": "b7b1c489ba0cb61370883a22a1663d1f6278dabc39f8b2b017ba79488862caf3",
+  "bytes": 98416,
+  "state": "saved"
+}

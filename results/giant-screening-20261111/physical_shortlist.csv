@@ -1,0 +1,6 @@
+recno,KIC,Teff,logg,[Fe/H],Mass,Rad,Lbol,LumClass,taumedian,Nflares,Simbad,_RA,_DE,physical_score,physical_rank,published_rotation_days,published_rotation_raw,published_rotation_components_days,published_binary,oscillation_note,Kp,logg_label_tension
+22,5080290,5064,2.86,-0.21,2.11,8.99,47.86,giant,729.9,5,Simbad,284.82958,+40.21519,0.10778329400055651,1,,,[],,γ Dor / δ Sct hybrid,9.507,False
+6,2852961,5012,2.77,-0.21,2.02,9.61,52.72,giant,1563.4,41,Simbad,291.54741,+38.05298,0.16160387529743472,2,35.715,35.715,[35.715],SB1,,10.146,False
+52,8515227,5051,2.44,-0.68,1.16,10.60,66.22,giant,904.6,17,Simbad,298.22807,+44.53919,0.2242397044979741,3,28.157,28.157,[28.157],SB3,triple-lined sp. binary,11.176,False
+8,3122450,4927,2.65,-0.06,2.24,11.30,67.30,giant,512.5,18,Simbad,292.78796,+38.24517,0.521026404573022,4,44.901,44.901,[44.901],,,13.891,False
+18,4680688,4901,2.88,-0.07,1.92,8.26,35.32,giant,205.0,16,Simbad,297.76196,+39.79383,0.6921881099346308,5,9.19,9.190,[9.19],,single?,13.476,False

@@ -1,0 +1,17 @@
+{
+  "file": "olah2022_stars.tsv",
+  "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv",
+  "params": {
+    "-source": "J/A+A/668/A101/table1",
+    "-out.max": "10000",
+    "-out.all": "1"
+  },
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:09:17.090749+00:00",
+  "http_status": 200,
+  "response_sha256": "41502ec18c4132e69232591e9c71468ebc1135e9f4b0e59ba1450f10c27f3800",
+  "response_bytes": 11365,
+  "sha256": "41502ec18c4132e69232591e9c71468ebc1135e9f4b0e59ba1450f10c27f3800",
+  "bytes": 11365,
+  "state": "saved"
+}

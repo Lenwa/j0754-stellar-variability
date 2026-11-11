@@ -1,0 +1,13 @@
+{
+  "file": "benchmark2026_tables.json",
+  "url": "https://arxiv.org/html/2610.11799v1",
+  "params": null,
+  "method": "GET",
+  "retrieved_utc": "2026-11-11T15:09:17.451865+00:00",
+  "http_status": 200,
+  "response_sha256": "dd6de50224711d79ef003a21e7bd51d9bdf6e96becf6e1f13f98f66c8f65d52b",
+  "response_bytes": 455960,
+  "sha256": "83ba9fb5289de498b25bb3f69229624775c4a67923f2ef83d364395978e09b06",
+  "bytes": 17288,
+  "state": "saved"
+}
