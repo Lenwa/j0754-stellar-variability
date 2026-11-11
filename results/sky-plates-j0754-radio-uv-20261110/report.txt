@@ -1,0 +1,122 @@
+J0754 RADIO AND RECOVERED-UV CHECK
+10 November 2026, America/New_York
+
+RADIO RESULT: NO DETECTION, NO SIGNIFICANT CHANGE
+J0754 is not detected in any of the three recovered VLASS Quick Look images.
+They are all nominally3GHz. A fixed-position restoring-beam fit gives:
+
+UTC date       Forced flux density     Empirical1sigma     Approx3sigma bound
+2019-04-15       -0.241mJy                0.144mJy              <0.432mJy
+2021-11-20       +0.108mJy                0.146mJy              <0.545mJy
+2024-06-01       -0.127mJy                0.127mJy              <0.382mJy
+
+Negative fitted values are ordinary noise fluctuations around zero. They are
+retained to avoid upward bias. The most positive epoch is only0.74sigma. No
+nearby pixel within5arcsec provides a5sigma detection either. Allowing a
+1arcsec position shift does not reveal a convincing source.
+
+The three forced fluxes are consistent with a constant: chi-square3.03 for
+2degrees of freedom, nominalp0.219. They are also consistent with zero flux
+(nominalp0.226). These are descriptive noise-model checks, not calibrated
+false-alarm probabilities. The images cannot establish whether the star is
+faint and steady or has radio bursts outside these sparse observing epochs.
+Radio nondetection does not negate the optical flare/activity evidence.
+
+RADIO METHOD AND LIMITS
+The actual FITS units are Jy/beam. Each image is fitted at the fixed Gaia
+position using its own elliptical Gaussian restoring beam plus a local plane
+within8arcsec. Pixel positions are converted to ICRS before fitting; an extra
+equinox attribute in the WCS coordinate wrapper was explicitly removed after
+the physical frame conversion. This avoids a strict-frame mismatch without
+changing the sky coordinates.
+
+Noise is measured with identical fits at an annulus of blank positions10-24
+arcsec away, spaced3arcsec apart. Their robust scatter is the quoted error;
+the median blank offset is subtracted. This includes correlated image pixels
+instead of treating every pixel as an independent measurement. Blank placements
+overlap and share a finite field, so the noise estimate has uncertainty. Pixel
+RMS values are also retained as a cross-check.
+
+The approximate bounds are max(0,forced flux)+3times the blank-fit scatter for
+an unresolved source. They are image-level limits, not exact confidence bounds
+on true physical flux. NRAO describes Quick Look flux-density uncertainty of
+about15% for typical high-S/N detections and position accuracy about0.5arcsec.
+No precise faint-source flux-bias correction is inferred. The restored beams
+differ between epochs; the common point-source model accounts for their shapes.
+No radio variability detection survives these basic noise checks.
+
+SWIFT UVW1: A REAL EXPOSURE-EDGE PROBLEM
+The two sky-image extensions begin at15:33:15 and17:09:37UTC on2December2009.
+The first has2519s in the field-exposure header, but only8.44s at the star's
+central pixel. Across a5arcsec aperture the exposure ranges from0 to2370s,
+with median9.35s: the source straddles a sharp detector-coverage edge. A single
+aperture exposure cannot calibrate that footprint without PSF/exposure modelling.
+The counts are therefore not converted to a rate for epoch comparison.
+
+The second extension has a uniform2390.33s across that aperture and a clear
+source. It contains about17905 recorded aperture counts, an estimated459
+background counts, and an uncorrected net rate about7.30counts/s. This is a
+recorded count rate, not a new calibrated UV magnitude: coincidence loss,
+aperture correction, large-scale sensitivity and the UVW1 optical red tail
+still matter. Image resampling also correlates count errors.
+
+The exposure map explains why direct first/second counts would suggest a
+spectacular apparent brightening. There is no defensible two-image UV-flare
+claim here. The target's existing UVOT catalogue flag128 (multiple exposure
+values in the source aperture) now has a concrete pixel-level explanation.
+
+GALEX: SIMILAR VISIT MEANS, MODEST RAW FLUCTUATIONS
+The460 retrieved near-UV photons split into260 over97 nominal aspect seconds
+and200 over82s: raw6arcsec-aperture rates2.68 and2.44counts/s. The exact
+conditional between-visit binomial check givesp0.326, consistent with the same
+raw average rate. The visits are only about1.65h apart on2February2006.
+
+The predeclared20s bins are not perfectly flat. A raw Poisson deviance20.97
+for9degrees of freedom gives nominalp0.0128. That is a possible fluctuation
+to retain, not a calibrated physical variability claim. The second run ends
+with a2s partial bin. Different binning, endpoint exposure, aperture losses,
+detector response, background and photon quality can matter in such a short
+series. There is no established flare morphology in these ten noisy bins.
+
+Both spacecraft files have status_flag0, nominal NUV high voltage and no filter
+wheel motion. The t_dead_nuv telemetry column is stable near0.164, ranging
+roughly0.161-0.166; its calibration was not applied as a live-time correction.
+Detector positions and all bin counts are retained. No bolometric UV energy or
+strong upper limit follows from three minutes of uncalibrated aperture photons.
+
+eROSITA: POSITIONALLY PLAUSIBLE, NOT A UNIQUE IDENTIFICATION
+The DR2 source remains8.35arcsec from J0754, compared with the documented
+catalogue1sigma positional-error field5.82arcsec (ratio1.43). Its source-quality
+flags for spurious detections, optical contamination and missing errors are
+not raised. This supports keeping the association as a plausible candidate.
+
+However, UVOTSSC1 J075445.0+164128 lies9.38arcsec from the X-ray centroid,
+nearly as close as the bright star. It has UVW1 Vega20.39 and quality flag0.
+That catalogue object has not been independently identified or verified as an
+X-ray emitter. Its presence means proximity alone does not uniquely identify
+the eROSITA source. The brighter J0754 is still a viable counterpart, and the
+previous Swift association is separate evidence. No claim of a newly confirmed
+X-ray flare or exact source association is made from this comparison.
+
+WHAT CHANGED
+The radio images give useful nondetections and approximate sensitivity bounds.
+Swift's misleading exposure comparison is now resolved at the pixel level.
+GALEX supplies a short raw count series with consistent visit means and a weak
+within-visit variability lead. eROSITA remains a candidate association requiring
+counterpart work. None of these nulls or limitations erases the TESS events.
+
+REPRODUCE
+python -B tools/sky-plates/analyze_radio_uv.py
+python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
+
+The analysis is offline and uses the previously downloaded products. Files:
+results.json,radio_measurements.csv,radio_three_epochs.png,
+uvot_exposure_diagnostic.png,galex_raw_counts.png andprotocol.json.
+Source/protocol/input hashes are retained; original telescope files are unchanged.
+
+References:
+https://science.nrao.edu/vlass/users-guide-to-quick-look-images
+https://www.swift.ac.uk/analysis/uvot/mag.php
+https://swift.gsfc.nasa.gov/analysis/uvot_digest/redleak.html
+https://erosita.mpe.mpg.de/dr2/AllSkySurveyData_dr2/Catalogues_dr2/RamosM_DR2/eRASS3_Main_v1.3.html
+https://raw.githubusercontent.com/cmillion/gPhoton/master/gPhoton/gQuery.py

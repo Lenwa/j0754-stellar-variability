@@ -25,6 +25,13 @@ cutouts were recovered. A plausible eROSITA DR2 counterpart remains to be
 validated. Current XMM/Chandra source searches and APOGEE DR17/DR19 target
 queries are empty. See the [instrument inventory](results/sky-plates-j0754-multiwavelength-20261110/report.txt).
 
+**Radio/UV measurements:** no radio detection or significant epoch change is
+found in the three 3-GHz images. Approximate image-level 3-sigma bounds are
+0.43/0.54/0.38 mJy (2019/2021/2024). UVOT exposure maps explain the first image's
+low target counts; the two GALEX visit means are consistent. See the
+[measurement report](results/sky-plates-j0754-radio-uv-20261110/report.txt) and
+[radio comparison](results/sky-plates-j0754-radio-uv-20261110/radio_three_epochs.png).
+
 ## What is here
 
 | Area | Tools and methods |
@@ -55,7 +62,7 @@ python -m pip install -r requirements.txt
 python -B -m unittest discover -s tools/sky-plates -p 'test_*.py'
 ```
 
-The current snapshot passes **154 tests** (147 in the initial release). Tests cover model
+The current snapshot passes **159 tests** (147 in the initial release). Tests cover model
 integration, injections, nuisance projection, period/alias behavior, covariance,
 pixel reductions and failure cases; they do not substitute for independent
 scientific review. No credentials are required for these offline tests.

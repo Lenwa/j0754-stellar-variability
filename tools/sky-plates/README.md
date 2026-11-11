@@ -1,5 +1,17 @@
 # Historical sky plates
 
+## Recovered radio/UV measurements
+
+`python -B tools/sky-plates/analyze_radio_uv.py` runs offline on the recovered
+VLASS, Swift UVOT, GALEX and eROSITA products. Results, the exploratory protocol
+and three diagnostic plots are in `results/sky-plates-j0754-radio-uv-20261110`.
+Fixed-position beam amplitudes use empirical blank fits for correlated noise.
+UVOT exposure maps determine whether an aperture can support a comparison;
+GALEX raw-count diagnostics remain separate from calibrated UV photometry.
+The report distinguishes radio nondetections from physical silence, exposure
+artifacts from variability, and an eROSITA positional candidate from a unique
+counterpart identification. Five safeguards extend the existing test suite.
+
 ## Public multiwavelength archive inventory
 
 `query_multiwavelength_archives.py` queries GALEX/gPhoton, Swift UVOT, XMM,

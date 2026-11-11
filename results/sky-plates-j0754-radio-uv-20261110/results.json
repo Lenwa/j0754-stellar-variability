@@ -1,0 +1,336 @@
+{
+  "radio": {
+    "epochs": [
+      {
+        "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+        "sha256": "5cd5dcd1489bcb40afd23b7025fd4af7855e6ad60e063167ef2f73f41e02a4ff",
+        "date": "2019-04-15T01:00:10.575000",
+        "frequency_Hz": 3000000000.0,
+        "beam_major_minor_pa_arcsec_deg": [
+          2.9191384315490403,
+          1.8404029607774401,
+          39.42577362061
+        ],
+        "flux_mJy": -0.24128122842946242,
+        "empirical_sigma_mJy": 0.1438928034760184,
+        "snr": -1.6768123394696044,
+        "pixel_rms_mJy_per_beam": 0.13133814693355814,
+        "blank_fits": 160,
+        "blank_offset_mJy": -0.015655630505242057,
+        "blank_std_mJy": 0.13849500395731684,
+        "source_detected_5sigma": false,
+        "conservative_3sigma_image_bound_mJy": 0.43167841042805516,
+        "nominal_5sigma_image_sensitivity_mJy": 0.719464017380092,
+        "max_pixel_within5arcsec_mJy_per_beam": 0.31988500040824874,
+        "max_pixel_offset_arcsec": 2.6391276537308324,
+        "position_shift_1arcsec_flux_range_mJy": [
+          -0.29008558454542005,
+          -0.1210324869409684
+        ]
+      },
+      {
+        "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+        "sha256": "b26fa56e249b5a057f9c62993ee851c7381695550b2e833986dccd8e63fe80b1",
+        "date": "2021-11-20T07:30:55.799999",
+        "frequency_Hz": 3000000000.0,
+        "beam_major_minor_pa_arcsec_deg": [
+          3.1934194564820397,
+          2.24947619438184,
+          -59.67404174805
+        ],
+        "flux_mJy": 0.10792170947536833,
+        "empirical_sigma_mJy": 0.14567503523010245,
+        "snr": 0.7408387394923195,
+        "pixel_rms_mJy_per_beam": 0.13083185416398918,
+        "blank_fits": 160,
+        "blank_offset_mJy": 0.005166006504118368,
+        "blank_std_mJy": 0.14668618809038714,
+        "source_detected_5sigma": false,
+        "conservative_3sigma_image_bound_mJy": 0.5449468151656757,
+        "nominal_5sigma_image_sensitivity_mJy": 0.7283751761505122,
+        "max_pixel_within5arcsec_mJy_per_beam": 0.19757547897825134,
+        "max_pixel_offset_arcsec": 1.3543750970438997,
+        "position_shift_1arcsec_flux_range_mJy": [
+          -0.04400336985652298,
+          0.23911283461345215
+        ]
+      },
+      {
+        "file": "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits",
+        "sha256": "9ae436623c1bb8123de49a7467dd9f81ee69ae0cfad868061f87f0e019b20667",
+        "date": "2024-06-01T01:30:24.299999",
+        "frequency_Hz": 3000000000.0,
+        "beam_major_minor_pa_arcsec_deg": [
+          3.626547813414,
+          2.290677547455,
+          52.20412445068
+        ],
+        "flux_mJy": -0.12679034118159993,
+        "empirical_sigma_mJy": 0.1273353831291923,
+        "snr": -0.9957196347613815,
+        "pixel_rms_mJy_per_beam": 0.1200818813391379,
+        "blank_fits": 160,
+        "blank_offset_mJy": 0.005879831255802967,
+        "blank_std_mJy": 0.133673142345627,
+        "source_detected_5sigma": false,
+        "conservative_3sigma_image_bound_mJy": 0.3820061493875769,
+        "nominal_5sigma_image_sensitivity_mJy": 0.6366769156459615,
+        "max_pixel_within5arcsec_mJy_per_beam": 0.27602878253674135,
+        "max_pixel_offset_arcsec": 4.972998442278323,
+        "position_shift_1arcsec_flux_range_mJy": [
+          -0.2464868761741092,
+          -0.01330646835261387
+        ]
+      }
+    ],
+    "constant_flux_mJy": -0.09158419867077218,
+    "constant_flux_sigma_mJy": 0.07978485887348319,
+    "constant_flux_chi2": 3.034349035456316,
+    "degrees_of_freedom": 2,
+    "constant_flux_p": 0.21933072736103995,
+    "zero_flux_chi2": 4.351999250779435,
+    "zero_flux_p": 0.22587765449178585,
+    "caveat": "Empirical blank-fit noise includes correlated image pixels. Blanks overlap; scatter estimation is finite-field. QL calibration/flux biases and astrometric errors are not fully modelled. Limits are approximate image-level bounds, not precise physical-flux exclusions."
+  },
+  "uvot": [
+    {
+      "extension": "w1281460797I",
+      "date": "2009-12-02T15:33:15",
+      "header_field_exposure_s": 2519.1797603442,
+      "target_center_exposure_s": 8.4399995803833,
+      "aperture_exposure_min_median_max_s": [
+        0.0,
+        9.350000381469727,
+        2370.39990234375
+      ],
+      "uniform_exposure_aperture": false,
+      "aperture_recorded_counts": 265.46000292897224,
+      "estimated_background_recorded_counts": 43.986371378119856,
+      "uncorrected_rate_per_s": null,
+      "use_for_epoch_comparison": false,
+      "note": "Recorded sky-image counts; resampled pixels and approximate background. No coincidence-loss/aperture/large-scale-sensitivity correction. Nonuniform exposure cannot be summarized by a single aperture exposure without PSF modelling."
+    },
+    {
+      "extension": "w1281466579I",
+      "date": "2009-12-02T17:09:37",
+      "header_field_exposure_s": 2390.32799830325,
+      "target_center_exposure_s": 2390.330078125,
+      "aperture_exposure_min_median_max_s": [
+        2390.330078125,
+        2390.330078125,
+        2390.330078125
+      ],
+      "uniform_exposure_aperture": true,
+      "aperture_recorded_counts": 17904.730018615723,
+      "estimated_background_recorded_counts": 459.3076010548172,
+      "uncorrected_rate_per_s": 7.298331965619274,
+      "use_for_epoch_comparison": true,
+      "note": "Recorded sky-image counts; resampled pixels and approximate background. No coincidence-loss/aperture/large-scale-sensitivity correction. Nonuniform exposure cannot be summarized by a single aperture exposure without PSF modelling."
+    }
+  ],
+  "galex": {
+    "visits": [
+      {
+        "start_galex_s": 822929965.495,
+        "stop_galex_s": 822930062.495,
+        "nominal_aspect_duration_s": 97.0,
+        "aperture_photons": 260,
+        "raw_rate_per_s": 2.6804123711340204,
+        "photon_detector_xy_mean": [
+          8605.952223076923,
+          4522.374115384616
+        ],
+        "spacecraft_diagnostics": [
+          {
+            "column": "t_dead_nuv",
+            "unit": null,
+            "minimum": 0.16163112223148346,
+            "median": 0.1637011170387268,
+            "maximum": 0.16606919467449188
+          },
+          {
+            "column": "status_flag",
+            "unit": null,
+            "minimum": 0.0,
+            "median": 0.0,
+            "maximum": 0.0
+          },
+          {
+            "column": "hvnom_nuv",
+            "unit": null,
+            "minimum": 1.0,
+            "median": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "column": "owmoving",
+            "unit": null,
+            "minimum": 0.0,
+            "median": 0.0,
+            "maximum": 0.0
+          }
+        ],
+        "bins": [
+          {
+            "seconds_from_start": 10.0,
+            "counts": 48,
+            "duration_s": 20.0
+          },
+          {
+            "seconds_from_start": 30.0,
+            "counts": 68,
+            "duration_s": 20.0
+          },
+          {
+            "seconds_from_start": 50.0,
+            "counts": 52,
+            "duration_s": 20.0
+          },
+          {
+            "seconds_from_start": 70.0,
+            "counts": 64,
+            "duration_s": 20.0
+          },
+          {
+            "seconds_from_start": 88.5,
+            "counts": 28,
+            "duration_s": 17.0
+          }
+        ]
+      },
+      {
+        "start_galex_s": 822935895.495,
+        "stop_galex_s": 822935977.495,
+        "nominal_aspect_duration_s": 82.0,
+        "aperture_photons": 200,
+        "raw_rate_per_s": 2.4390243902439024,
+        "photon_detector_xy_mean": [
+          7514.8760299999985,
+          4840.38495
+        ],
+        "spacecraft_diagnostics": [
+          {
+            "column": "t_dead_nuv",
+            "unit": null,
+            "minimum": 0.1611950397491455,
+            "median": 0.16367627680301666,
+            "maximum": 0.1660471260547638
+          },
+          {
+            "column": "status_flag",
+            "unit": null,
+            "minimum": 0.0,
+            "median": 0.0,
+            "maximum": 0.0
+          },
+          {
+            "column": "hvnom_nuv",
+            "unit": null,
+            "minimum": 1.0,
+            "median": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "column": "owmoving",
+            "unit": null,
+            "minimum": 0.0,
+            "median": 0.0,
+            "maximum": 0.0
+          }
+        ],
+        "bins": [
+          {
+            "seconds_from_start": 10.0,
+            "counts": 42,
+            "duration_s": 20.0
+          },
+          {
+            "seconds_from_start": 30.0,
+            "counts": 60,
+            "duration_s": 20.0
+          },
+          {
+            "seconds_from_start": 50.0,
+            "counts": 51,
+            "duration_s": 20.0
+          },
+          {
+            "seconds_from_start": 70.0,
+            "counts": 45,
+            "duration_s": 20.0
+          },
+          {
+            "seconds_from_start": 81.0,
+            "counts": 2,
+            "duration_s": 2.0
+          }
+        ]
+      }
+    ],
+    "between_visit_exact_binomial_p": 0.32600495788450806,
+    "binned_constant_rate_deviance": 20.96648146851571,
+    "binned_degrees_of_freedom": 9,
+    "binned_chi2_approx_p": 0.012800082467880617,
+    "caveat": "Raw source+background photon arrival diagnostics. Assumes constant throughput for statistical reference; deadtime, flat response, aperture losses, spacecraft flags and background not calibrated. This is not a physical UV-variability significance."
+  },
+  "erosita": {
+    "erosita_name": "3eRASS J075445.3+164136",
+    "offset_arcsec": 8.346442301828828,
+    "catalogue_1sigma_pos_err_arcsec": 5.824657800337195,
+    "offset_in_catalogue_pos_err_units": 1.432949812321274,
+    "catalogued_uvot_objects": [
+      {
+        "name": "UVOTSSC1 J075447.7+164058",
+        "offset_from_xray_arcsec": 51.76171571341392,
+        "uvw1_vega_mag": 19.5948,
+        "uvw1_quality_flags": 0
+      },
+      {
+        "name": "UVOTSSC1 J075444.8+164114",
+        "offset_from_xray_arcsec": 23.857135546987518,
+        "uvw1_vega_mag": 21.0843,
+        "uvw1_quality_flags": 0
+      },
+      {
+        "name": "UVOTSSC1 J075445.0+164128",
+        "offset_from_xray_arcsec": 9.383575249472724,
+        "uvw1_vega_mag": 20.3919,
+        "uvw1_quality_flags": 0
+      },
+      {
+        "name": "UVOTSSC1 J075445.8+164140",
+        "offset_from_xray_arcsec": 8.398939997119507,
+        "uvw1_vega_mag": 15.21,
+        "uvw1_quality_flags": 128
+      }
+    ],
+    "flags": {
+      "flag_csc": "-1",
+      "flag_sp_snr": "0",
+      "flag_sp_bps": "0",
+      "flag_sp_scl": "0",
+      "flag_sp_lga": "0",
+      "flag_sp_gc_cons": "0",
+      "flag_no_radec_err": "0",
+      "flag_no_ext_err": "0",
+      "flag_no_cts_err": "0",
+      "flag_opt": "0"
+    },
+    "assessment": "Consistent candidate, not uniquely identified: a faint UVOT catalogue object is also nearby. No posterior association probability or Xray flare timing inferred."
+  },
+  "source_sha256": "72bb7b090478d9ad2e5e9eef40147baaae9f35695e5069a5e57c92a83a69ae6c",
+  "protocol_sha256": "fbb777003e31c229a0444b47db3effea366e33a65da44a70c814bc962dd66263",
+  "input_sha256": {
+    "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0001_sg10-scst.fits.gz": "0accb82dc83b1f17ad1ae7a2a40633f283595633b532b550fc0dd065ed4d4b02",
+    "results/sky-plates-j0754-multiwavelength-20261110/native_files/AIS_199_0002_sg10-scst.fits.gz": "7f0636d7d2d6c861d6350caedbf46e994b6261c7de3037ab61243d21d0a00a10",
+    "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_ex.img.gz": "cfb74cd3b5c0659a5f4d8c21cf5d848e8aac84dc5e44c874c7f057cdce35bd48",
+    "results/sky-plates-j0754-multiwavelength-20261110/native_files/sw00031554001uw1_sk.img.gz": "9ff7fbcf1748d83b58324305934ab3b36ca9d1522b69c3609d27f95436adadfd",
+    "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS1.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits": "5cd5dcd1489bcb40afd23b7025fd4af7855e6ad60e063167ef2f73f41e02a4ff",
+    "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS2.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits": "b26fa56e249b5a057f9c62993ee851c7381695550b2e833986dccd8e63fe80b1",
+    "results/sky-plates-j0754-multiwavelength-20261110/native_files/VLASS3.2.ql.T15t11.J075253+163000.10.2048.v1.I.iter1.image.pbcor.tt0.j0754-cutout.fits": "9ae436623c1bb8123de49a7467dd9f81ee69ae0cfad868061f87f0e019b20667",
+    "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aperture_photons.json": "00ff33109e48a8192f3ba26c685923ee7561e2ebca4e6c8ab1dae554df6c175a",
+    "results/sky-plates-j0754-multiwavelength-20261110/gphoton_nuv_aspect.json": "23b9c6babbcf649340245413c20946bf2f4c8d23853c0a47c8402dd25e116ca4",
+    "results/sky-plates-j0754-multiwavelength-20261110/erosita_DR2_Main.ecsv": "b7ca4d2fda8f9acd57a5f0729a6d8640f9cc7cd95466aa8b13fec5cf1c2d3bc2",
+    "results/sky-plates-j0754-multiwavelength-20261110/swuvotssc_sources_60arcsec.ecsv": "b5827d5a52c194e99ae8fa3eae2cedfd6ab642bd891bee8a0aef90e330519c84"
+  }
+}

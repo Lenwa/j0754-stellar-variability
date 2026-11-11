@@ -1,5 +1,13 @@
 # Public release audit
 
+## Radio/UV analysis follow-up, 10 November 2026
+
+Only source, tests and derived scientific results/plots were added; no new
+archive files or account state were required. All 159 tests pass. Gitleaks and
+private account-path/email checks found no issues. Radio, UVOT exposure-map
+and GALEX count plots were visually reviewed. Source, protocol and input hashes
+are retained. Scientific nulls and the UVOT coverage failure are explicit.
+
 ## Seven-archive inventory follow-up, 10 November 2026
 
 The public query responses, 460 GALEX aperture photon events and seven small

@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 6849,
-    "sha256": "26c55518ca64a1f69608ecdb190c2786a3161453948e5449eb379d56ecc64b21"
+    "bytes": 7321,
+    "sha256": "843733cecf6ee41129e10252d7f3d6e25afca4c770c858ca41207c7c5cfe54b7"
   },
   {
     "path": "docs/J0754_findings_2026-11-10.docx",
@@ -41,8 +41,8 @@
   },
   {
     "path": "docs/PUBLICATION_AUDIT.md",
-    "bytes": 4347,
-    "sha256": "dbcae1a3170d45c61be49dc39a68a496e908670ddcd5ec3229e70e0efafffcba"
+    "bytes": 4783,
+    "sha256": "da7f2cd86942ecb75176b49647500a42d648d6fd34e1686ae9b2fccccda63d8f"
   },
   {
     "path": "docs/native_data_manifest.json",
@@ -3775,6 +3775,41 @@
     "sha256": "0ac6a50b763fea8610193505f03e2eeba37c9833d312c8b62614470e768b4147"
   },
   {
+    "path": "results/sky-plates-j0754-radio-uv-20261110/galex_raw_counts.png",
+    "bytes": 71663,
+    "sha256": "d4b0b597b9021887c5109ef17046590149b76475e142b879bf69ff76a8c511cc"
+  },
+  {
+    "path": "results/sky-plates-j0754-radio-uv-20261110/protocol.json",
+    "bytes": 2255,
+    "sha256": "fbb777003e31c229a0444b47db3effea366e33a65da44a70c814bc962dd66263"
+  },
+  {
+    "path": "results/sky-plates-j0754-radio-uv-20261110/radio_measurements.csv",
+    "bytes": 515,
+    "sha256": "c656468776b9ffba4a7d3ac2f62d8de1badb8460f85e282188c520f5dd1c8774"
+  },
+  {
+    "path": "results/sky-plates-j0754-radio-uv-20261110/radio_three_epochs.png",
+    "bytes": 110275,
+    "sha256": "319e83638ee31e916de0643cb3392afe38ff95d3f8b4b9f426b34e748a8cbbc3"
+  },
+  {
+    "path": "results/sky-plates-j0754-radio-uv-20261110/report.txt",
+    "bytes": 7244,
+    "sha256": "b46ea457c2fe16d1d3741783bea14655bbc6f6bb660d0ab4e283f36ab2d1e1d5"
+  },
+  {
+    "path": "results/sky-plates-j0754-radio-uv-20261110/results.json",
+    "bytes": 13480,
+    "sha256": "174bee6e931b6afd8a885092f9b163c68da24959d9d96cf31caa2bb02e8e0eb2"
+  },
+  {
+    "path": "results/sky-plates-j0754-radio-uv-20261110/uvot_exposure_diagnostic.png",
+    "bytes": 145897,
+    "sha256": "ec6cfaa573772db1327ac9fd1a47dc2461fd7802a419f61ff878f616c4976044"
+  },
+  {
     "path": "results/sky-plates-j0754-seasonal-rotation-20261108/ASASSN_powers.csv",
     "bytes": 495372,
     "sha256": "bd52cb53993e97c033b929536b9fa33d2bba482ae55cd5586d4d60d94a8ed427"
@@ -4996,8 +5031,8 @@
   },
   {
     "path": "tools/sky-plates/README.md",
-    "bytes": 31836,
-    "sha256": "6f793e615b73bdc50e2c34e2d6ce69faabc508cf028d652bb130eeb12df35390"
+    "bytes": 32572,
+    "sha256": "20eeaa5b6289a6311c10e7c342b9320fd3abdbccbad83fc26ba904b918d3ba95"
   },
   {
     "path": "tools/sky-plates/analysis_core.py",
@@ -5018,6 +5053,11 @@
     "path": "tools/sky-plates/analyze_j0754_period.py",
     "bytes": 12799,
     "sha256": "0ddbf93dad3a2a308897577c44b8ecc138272153686935927810e8590275d3e9"
+  },
+  {
+    "path": "tools/sky-plates/analyze_radio_uv.py",
+    "bytes": 13355,
+    "sha256": "72bb7b090478d9ad2e5e9eef40147baaae9f35695e5069a5e57c92a83a69ae6c"
   },
   {
     "path": "tools/sky-plates/analyze_spherex_co.py",
@@ -5468,6 +5508,11 @@
     "path": "tools/sky-plates/test_pixels.py",
     "bytes": 3709,
     "sha256": "21e4ad1ace1e5700294bd9f9bc42668f89bf28404f3302290a5de94e2e791c96"
+  },
+  {
+    "path": "tools/sky-plates/test_radio_uv_followup.py",
+    "bytes": 1570,
+    "sha256": "b3a91fe60139140c4a934e7d5a0866d6c61f66089127facc1c9a2041bff47443"
   },
   {
     "path": "tools/sky-plates/test_rotation_aliases.py",
