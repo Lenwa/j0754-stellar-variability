@@ -1,0 +1,594 @@
+[
+  {
+    "directory": "results/sky-plates-j0754-20261107",
+    "files": 47,
+    "bytes": 30292504,
+    "file_types": {
+      ".csv": 29,
+      ".json": 8,
+      ".png": 2,
+      ".txt": 4,
+      ".xml": 4
+    },
+    "protocols": [
+      "results/sky-plates-j0754-20261107/protocol.json"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-activity-rhythm-20261108",
+    "files": 2,
+    "bytes": 6221,
+    "file_types": {
+      ".json": 1,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-activity-rhythm-20261108/protocol.txt"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-alias-check-20261109",
+    "files": 3,
+    "bytes": 22157,
+    "file_types": {
+      ".json": 1,
+      ".txt": 2
+    },
+    "protocols": [
+      "results/sky-plates-j0754-alias-check-20261109/protocol.txt"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-alias-check-20261109/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-amplitude-brightness-20261108",
+    "files": 3,
+    "bytes": 179549,
+    "file_types": {
+      ".json": 1,
+      ".png": 1,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-amplitude-brightness-20261108/protocol.txt"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-broader-dust-20261109",
+    "files": 4,
+    "bytes": 11561296,
+    "file_types": {
+      ".json": 2,
+      ".md": 2
+    },
+    "protocols": [
+      "results/sky-plates-j0754-broader-dust-20261109/protocol.md"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-broader-dust-20261109/report.md"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-checks-20261108",
+    "files": 57,
+    "bytes": 14037733,
+    "file_types": {
+      ".csv": 18,
+      ".fits": 9,
+      ".jpg": 1,
+      ".json": 12,
+      ".png": 7,
+      ".txt": 10
+    },
+    "protocols": [
+      "results/sky-plates-j0754-checks-20261108/protocol.json"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-chromaticity-20261109",
+    "files": 3,
+    "bytes": 16813,
+    "file_types": {
+      ".json": 1,
+      ".md": 1,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-chromaticity-20261109/protocol.txt"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-chromaticity-20261109/report.md"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-cloud-budget-20261108",
+    "files": 1,
+    "bytes": 3124,
+    "file_types": {
+      ".json": 1
+    },
+    "protocols": [],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-companion-light-20261109",
+    "files": 11,
+    "bytes": 745704,
+    "file_types": {
+      ".json": 6,
+      ".md": 1,
+      ".png": 2,
+      ".txt": 2
+    },
+    "protocols": [
+      "results/sky-plates-j0754-companion-light-20261109/protocol.txt"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-companion-light-20261109/report.md"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-decadal-patterns-20261109",
+    "files": 5,
+    "bytes": 455426,
+    "file_types": {
+      ".json": 2,
+      ".md": 2,
+      ".png": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-decadal-patterns-20261109/protocol.md"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-decadal-patterns-20261109/report.md"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-dust-20261108",
+    "files": 68,
+    "bytes": 5141686,
+    "file_types": {
+      ".csv": 22,
+      ".json": 16,
+      ".png": 2,
+      ".tbl": 21,
+      ".txt": 7
+    },
+    "protocols": [
+      "results/sky-plates-j0754-dust-20261108/analysis_specification.json",
+      "results/sky-plates-j0754-dust-20261108/protocol.json"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-fast-bluewing-20261108",
+    "files": 4,
+    "bytes": 749549,
+    "file_types": {
+      ".json": 1,
+      ".png": 2,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-fast-bluewing-20261108/protocol.txt"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-fast-rv-20261109",
+    "files": 3,
+    "bytes": 44301,
+    "file_types": {
+      ".json": 1,
+      ".md": 1,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-fast-rv-20261109/protocol.txt"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-fast-rv-20261109/report.md"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-flare-comparison-20261111",
+    "files": 8,
+    "bytes": 1049392,
+    "file_types": {
+      ".csv": 1,
+      ".json": 4,
+      ".png": 2,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-flare-comparison-20261111/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-flare-comparison-20261111/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-flare-energy-20261108",
+    "files": 2,
+    "bytes": 60092,
+    "file_types": {
+      ".json": 1,
+      ".xml": 1
+    },
+    "protocols": [],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-flare-search-20261110",
+    "files": 35,
+    "bytes": 35856630,
+    "file_types": {
+      ".csv": 12,
+      ".fits": 5,
+      ".json": 12,
+      ".png": 5,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-flare-search-20261110/direct_pixel_specification.json",
+      "results/sky-plates-j0754-flare-search-20261110/pixel_followup_specification.json",
+      "results/sky-plates-j0754-flare-search-20261110/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-flare-search-20261110/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-followup-20261108",
+    "files": 25,
+    "bytes": 39626008,
+    "file_types": {
+      ".csv": 2,
+      ".fits": 1,
+      ".json": 9,
+      ".png": 3,
+      ".txt": 6,
+      ".xml": 4
+    },
+    "protocols": [
+      "results/sky-plates-j0754-followup-20261108/measurement_specification.json",
+      "results/sky-plates-j0754-followup-20261108/protocol.json",
+      "results/sky-plates-j0754-followup-20261108/secondary_calibration_protocol.json"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-galex-erosita-20261111",
+    "files": 51,
+    "bytes": 3110446,
+    "file_types": {
+      ".ecsv": 1,
+      ".fits": 1,
+      ".json": 46,
+      ".png": 1,
+      ".txt": 2
+    },
+    "protocols": [
+      "results/sky-plates-j0754-galex-erosita-20261111/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-galex-erosita-20261111/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-gemini-archives-20261108",
+    "files": 62,
+    "bytes": 2563228,
+    "file_types": {
+      ".csv": 11,
+      ".ecsv": 6,
+      ".json": 19,
+      ".native": 8,
+      ".tsv": 1,
+      ".txt": 6,
+      ".vot": 9,
+      ".xml": 2
+    },
+    "protocols": [],
+    "reports": [
+      "results/sky-plates-j0754-gemini-archives-20261108/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-independent-20261108",
+    "files": 30,
+    "bytes": 2551587,
+    "file_types": {
+      ".csv": 2,
+      ".json": 14,
+      ".parquet": 6,
+      ".png": 3,
+      ".txt": 5
+    },
+    "protocols": [
+      "results/sky-plates-j0754-independent-20261108/protocol.json",
+      "results/sky-plates-j0754-independent-20261108/replication_analysis_specification.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-independent-20261108/report.txt",
+      "results/sky-plates-j0754-independent-20261108/report_precomputation.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-models-20261108",
+    "files": 170,
+    "bytes": 20977666,
+    "file_types": {
+      ".csv": 31,
+      ".fits": 39,
+      ".json": 20,
+      ".md": 1,
+      ".png": 8,
+      ".txt": 43,
+      ".xml": 28
+    },
+    "protocols": [
+      "results/sky-plates-j0754-models-20261108/protocol.json",
+      "results/sky-plates-j0754-models-20261108/short_period/protocol.json",
+      "results/sky-plates-j0754-models-20261108/history/controls/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-models-20261108/report.txt",
+      "results/sky-plates-j0754-models-20261108/short_period/report.md"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-multiband-retrieval-20261109",
+    "files": 9,
+    "bytes": 1107557,
+    "file_types": {
+      ".csv": 4,
+      ".json": 1,
+      ".md": 1,
+      ".txt": 3
+    },
+    "protocols": [],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-multiday-eclipses-20261109",
+    "files": 7,
+    "bytes": 2788101,
+    "file_types": {
+      ".json": 4,
+      ".md": 1,
+      ".png": 1,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-multiday-eclipses-20261109/protocol.txt"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-multiday-eclipses-20261109/report.md"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-multiwavelength-20261110",
+    "files": 95,
+    "bytes": 6410318,
+    "file_types": {
+      ".csv": 1,
+      ".ecsv": 14,
+      ".fits": 3,
+      ".gz": 4,
+      ".json": 41,
+      ".native": 31,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-multiwavelength-20261110/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-multiwavelength-20261110/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-optical-overlay-20261108",
+    "files": 4,
+    "bytes": 290630,
+    "file_types": {
+      ".csv": 1,
+      ".jpg": 1,
+      ".json": 1,
+      ".png": 1
+    },
+    "protocols": [],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-oscillation-check-20261109",
+    "files": 6,
+    "bytes": 873197,
+    "file_types": {
+      ".json": 2,
+      ".md": 1,
+      ".npz": 1,
+      ".png": 1,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-oscillation-check-20261109/protocol.txt"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-oscillation-check-20261109/report.md"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-period-20261108",
+    "files": 9,
+    "bytes": 1254012,
+    "file_types": {
+      ".csv": 2,
+      ".json": 4,
+      ".png": 1,
+      ".txt": 2
+    },
+    "protocols": [
+      "results/sky-plates-j0754-period-20261108/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-period-20261108/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-physical-tests-20261108",
+    "files": 77,
+    "bytes": 14204211,
+    "file_types": {
+      ".csv": 17,
+      ".fits": 2,
+      ".json": 22,
+      ".npz": 10,
+      ".png": 7,
+      ".txt": 18,
+      ".xml": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-physical-tests-20261108/protocol.json",
+      "results/sky-plates-j0754-physical-tests-20261108/fast/protocol.txt",
+      "results/sky-plates-j0754-physical-tests-20261108/models/protocol.json",
+      "results/sky-plates-j0754-physical-tests-20261108/tess/pixel_protocol_amendment.json",
+      "results/sky-plates-j0754-physical-tests-20261108/tess/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-physical-tests-20261108/report.txt",
+      "results/sky-plates-j0754-physical-tests-20261108/fast/report.txt",
+      "results/sky-plates-j0754-physical-tests-20261108/tess/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-radio-uv-20261110",
+    "files": 7,
+    "bytes": 351668,
+    "file_types": {
+      ".csv": 1,
+      ".json": 2,
+      ".png": 3,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-radio-uv-20261110/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-radio-uv-20261110/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-seasonal-rotation-20261108",
+    "files": 5,
+    "bytes": 1063497,
+    "file_types": {
+      ".csv": 2,
+      ".json": 1,
+      ".png": 1,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-seasonal-rotation-20261108/protocol.txt"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-short-rotation-20261108",
+    "files": 2,
+    "bytes": 19996,
+    "file_types": {
+      ".json": 1,
+      ".txt": 1
+    },
+    "protocols": [
+      "results/sky-plates-j0754-short-rotation-20261108/protocol.txt"
+    ],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-solar-profile-20261108",
+    "files": 1,
+    "bytes": 398,
+    "file_types": {
+      ".json": 1
+    },
+    "protocols": [],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-spherex-20261108",
+    "files": 193,
+    "bytes": 6824925,
+    "file_types": {
+      ".csv": 24,
+      ".fits": 13,
+      ".jpg": 1,
+      ".json": 48,
+      ".png": 8,
+      ".tbl": 1,
+      ".tsv": 17,
+      ".txt": 77,
+      ".xml": 4
+    },
+    "protocols": [
+      "results/sky-plates-j0754-spherex-20261108/analysis_specification.json",
+      "results/sky-plates-j0754-spherex-20261108/protocol.json"
+    ],
+    "reports": [
+      "results/sky-plates-j0754-spherex-20261108/report.txt"
+    ]
+  },
+  {
+    "directory": "results/sky-plates-j0754-spots-check-20261108",
+    "files": 1,
+    "bytes": 3516,
+    "file_types": {
+      ".json": 1
+    },
+    "protocols": [],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-swift-catalog-check-20261108",
+    "files": 3,
+    "bytes": 1067,
+    "file_types": {
+      ".json": 1,
+      ".txt": 2
+    },
+    "protocols": [],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-j0754-tidal-assessment-20261109",
+    "files": 6,
+    "bytes": 534218,
+    "file_types": {
+      ".json": 3,
+      ".md": 2,
+      ".txt": 1
+    },
+    "protocols": [],
+    "reports": []
+  },
+  {
+    "directory": "results/sky-plates-recon-20261107",
+    "files": 33,
+    "bytes": 3747698,
+    "file_types": {
+      ".csv": 11,
+      ".json": 9,
+      ".parquet": 3,
+      ".txt": 2,
+      ".xml": 8
+    },
+    "protocols": [],
+    "reports": []
+  }
+]

@@ -26,8 +26,33 @@
   },
   {
     "path": "README.md",
-    "bytes": 7717,
-    "sha256": "39bd7136a8b1dd6e78819428432e8cedc624689e153b741b81d848f78486360c"
+    "bytes": 8412,
+    "sha256": "5f42fb5051370dc9dc9b10110b594631e14184adc1919f1925cc93a413ee519b"
+  },
+  {
+    "path": "docs/J0754_dataset_inventory_2026-11-11.json",
+    "bytes": 13943,
+    "sha256": "ae55e1dd488b02323f64448cd0b909a466df08f08126680f7e09d5c38fd2ac83"
+  },
+  {
+    "path": "docs/J0754_evidence_2026-11-11.csv",
+    "bytes": 22625,
+    "sha256": "28843e24f7601c339beaa09018b154890f835a81e1a329b965b3b5c209f569dd"
+  },
+  {
+    "path": "docs/J0754_evidence_2026-11-11.html",
+    "bytes": 34479,
+    "sha256": "1316f6c7fc334d193c7d044e17b25d2cb2da2246cd1887d490939b386fb9ccf2"
+  },
+  {
+    "path": "docs/J0754_evidence_summary_2026-11-11.txt",
+    "bytes": 22480,
+    "sha256": "64367edbad03c0177088aea9828e569b092f1b1a1b2c1392554091ed7d319d68"
+  },
+  {
+    "path": "docs/J0754_evidence_verification_2026-11-11.json",
+    "bytes": 6604,
+    "sha256": "85784ee2ea0db45735f279820078553b2641e10b175db46b82bfc72cdf50f628"
   },
   {
     "path": "docs/J0754_findings_2026-11-10.docx",
@@ -41,8 +66,13 @@
   },
   {
     "path": "docs/PUBLICATION_AUDIT.md",
-    "bytes": 5221,
-    "sha256": "eb6d0c278080cfa2776d0f9eec4fb63be1f7cb0b48a2622de14647bce021e708"
+    "bytes": 6377,
+    "sha256": "b983ec3345f414c12976256d7f50fe8c08bb1296467a85364dcf41edeaf33d2e"
+  },
+  {
+    "path": "docs/j0754_evidence_records.json",
+    "bytes": 27638,
+    "sha256": "a09e35c5cbbc0d8cf0601e52873d328e5a23887acb845de3a8fc05dd903f4370"
   },
   {
     "path": "docs/native_data_manifest.json",
@@ -53,6 +83,11 @@
     "path": "docs/public_archive_requests.json",
     "bytes": 92886,
     "sha256": "102f48f46a66734bdf28a42192514ab8286b9bf59970c02f02e71f5ee93aefbd"
+  },
+  {
+    "path": "docs/superpowers/plans/2026-11-11-flare-comparison-evidence.md",
+    "bytes": 4729,
+    "sha256": "b0058556ebda566375784402b96b4d18a24f0f5517f5e7613def57e864b1615f"
   },
   {
     "path": "requirements-report.txt",
@@ -1118,6 +1153,46 @@
     "path": "results/sky-plates-j0754-fast-rv-20261109/results.json",
     "bytes": 35663,
     "sha256": "cbfd346ac8d2e553d5f1b3350ec088df9ede89b9b8a0ab144ddbea0ca870d068"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-comparison-20261111/comparison.json",
+    "bytes": 454683,
+    "sha256": "2b84879c3e02006eeee24f0621a34ac2dbe48249a8adc3f7f56ca3bf8802d0eb"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-comparison-20261111/conditional_rate.json",
+    "bytes": 579,
+    "sha256": "162dd2ebd8b0452a663eeb2160454056755434697164ce6dd4be9303e0b111fa"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-comparison-20261111/event_measurements.csv",
+    "bytes": 1022,
+    "sha256": "5d79abba5db1b839bbfa022cfff18c64ff4d3ef9fe24f5a349f34a38dc6336de"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-comparison-20261111/four_event_localization.png",
+    "bytes": 130319,
+    "sha256": "07c0ce387ffa4e444f37cb56fcd605c2f8669d7c903cf050ad9fbc1401e0334d"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-comparison-20261111/four_event_measurements.png",
+    "bytes": 450320,
+    "sha256": "74926868653b1c763b2db92f6ef4a2aa2dcf63ca10d586db4082424ed96789d0"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-comparison-20261111/protocol.json",
+    "bytes": 3347,
+    "sha256": "2311d228d125a3327d5bdb7f40c335e938fc3a1300d11a8f5ab8f6630fe04f3d"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-comparison-20261111/report.txt",
+    "bytes": 8775,
+    "sha256": "0d4555ddc5828dd5e6aa712ea8a5b3ce1e87d9351a947540cbbbd41fb0fafce2"
+  },
+  {
+    "path": "results/sky-plates-j0754-flare-comparison-20261111/verification.json",
+    "bytes": 342,
+    "sha256": "1ce83288e30f8d8ace1c93939e695307a30c7d94bb8717ecfae006b65471da1f"
   },
   {
     "path": "results/sky-plates-j0754-flare-energy-20261108/TESS_Red.xml",
@@ -5286,8 +5361,8 @@
   },
   {
     "path": "tools/sky-plates/README.md",
-    "bytes": 33152,
-    "sha256": "867d4c247b82f7031de19ba7cc23f0c443be18efb23e55328b1c6b82de536105"
+    "bytes": 34538,
+    "sha256": "0c4ac244ac5e1f1d7edb08308e4ab29fb602688084fdf84f32290efeb0e144f6"
   },
   {
     "path": "tools/sky-plates/analysis_core.py",
@@ -5350,6 +5425,11 @@
     "sha256": "1b72f2d8be28e177e89110b84ca2e180ff72d7455797b9a08febefa214176f1f"
   },
   {
+    "path": "tools/sky-plates/build_j0754_evidence_table.py",
+    "bytes": 12255,
+    "sha256": "d933f6363053db5d27f897fd574c269e74ae96659be055d0515f8c3a5da1dcec"
+  },
+  {
     "path": "tools/sky-plates/build_review_report.py",
     "bytes": 16988,
     "sha256": "a2d254a736009304609f1906fa1e73f88a9cf69b3e1df1b563b50021953663f5"
@@ -5408,6 +5488,11 @@
     "path": "tools/sky-plates/compare_j0754_events.py",
     "bytes": 7283,
     "sha256": "4432daa222f8e35eeeee716dd77a326dabbe652f9aec528a777eba1a7bad2247"
+  },
+  {
+    "path": "tools/sky-plates/compare_j0754_tess_events.py",
+    "bytes": 24564,
+    "sha256": "c1297ce9a6fe3b2751e4c436060b4d6e043de483d87b5cce54a6b2c3442547bb"
   },
   {
     "path": "tools/sky-plates/compare_optical_flare_shapes.py",
@@ -5670,6 +5755,11 @@
     "sha256": "df7230c17572e14451cdd0ac72be2c2d9e3cf9d24483f1b64c3b8246ec9825aa"
   },
   {
+    "path": "tools/sky-plates/summarize_j0754_event_comparison.py",
+    "bytes": 12417,
+    "sha256": "8279810b14ed6d66e8773cad03746298ccb8bf82f827d4eac2a86b17564b6f56"
+  },
+  {
     "path": "tools/sky-plates/summarize_modern.py",
     "bytes": 6192,
     "sha256": "d10c41558275fda5eaecdc378da5ef7e8fc0ca2c1a6fedd880c6741ed19f8117"
@@ -5813,6 +5903,11 @@
     "path": "tools/sky-plates/test_stellar_models.py",
     "bytes": 4686,
     "sha256": "16f1842396c21800bcf1ec4b062a2f2452930734ff0770bfd8dfa2e1f81731ae"
+  },
+  {
+    "path": "tools/sky-plates/test_tess_event_comparison.py",
+    "bytes": 3676,
+    "sha256": "4b53b9b8323ccad2a4e535112dd4eb5fb94b68fdaccc7971ee8bbb37e64f64d4"
   },
   {
     "path": "tools/sky-plates/test_tess_oscillation_information.py",

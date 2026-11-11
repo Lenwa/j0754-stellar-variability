@@ -1,5 +1,30 @@
 # Historical sky plates
 
+## Common TESS event comparison and complete evidence ledger
+
+```bash
+python -B tools/sky-plates/compare_j0754_tess_events.py --sensitivity
+python -B tools/sky-plates/summarize_j0754_event_comparison.py
+python -B tools/sky-plates/build_j0754_evidence_table.py
+```
+
+The offline comparison uses all six retained calibrated pixel intervals and
+the four previously selected excursions. It measures finite-cadence asymmetric
+profiles, signed observed area, baseline/aperture envelopes and conditional
+energies; matched-timestamp image injections calibrate the empirical template
+positions. Apparent hourly drift and pointing-amplitude sensitivity remain
+separate findings. New direct-aperture recovery tests preserve the earlier
+extracted-product injection experiment. Results and a protocol are in
+`results/sky-plates-j0754-flare-comparison-20261111`.
+
+Only after this comparison, the builder renders the curated
+`docs/j0754_evidence_records.json` into a readable HTML document, CSV and text
+summary. It verifies every local source link and inventories all 37 retained
+result families. The current table has 36 entries with observation/model status,
+interpretation, practical limits and instrument/data lineage. Ten new numerical
+safeguards extend the component suite to 176 tests. Earlier reports remain
+historical snapshots; current entry point is `docs/J0754_evidence_2026-11-11.html`.
+
 ## GALEX calibration and eROSITA identity
 
 `fetch_galex_erosita_followup.py galex` retrieves background photons, the NUV

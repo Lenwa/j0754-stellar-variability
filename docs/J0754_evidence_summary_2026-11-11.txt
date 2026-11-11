@@ -1,0 +1,228 @@
+J 0754 — CONSOLIDATED EVIDENCE
+11 November 2026
+
+J 0754 is a giant with reproducible multiyear fading, a recurring roughly 36-day photometric signal and evidence of magnetic activity. A near-synchronized active binary with evolving spots is the leading working explanation. The Gaia orbit remains a candidate; the data do not uniquely assign the flares/X-rays to a component or prove that spots cause the entire long fading.
+
+Read the formatted table: J 0754_evidence_2026-11-11.html
+Machine-readable table: J 0754_evidence_2026-11-11.csv
+
+The strongest measured results are repeat fading/recovery, independent optical replication, wavelength-dependent dimming, a recurring roughly 36-day signal, published chromospheric emission and archival X-rays.
+The four TESS excursions remain positive under common measurements. Their conditional face-on energies are about 2.0, 2.5, 7.1,2.1e37 erg. November 16/November 28 have broad baseline envelopes. Apparent hourly position drift in November 22/December 23 remains an open attribution diagnostic; the tested pointing terms do not remove the brightness excess.
+Gaia gives the companion candidate. Activity detections are not independent orbit confirmations. Spots fit the color changes, but nonuniform obscuration survives. Radio images add limits; UVOT exposure edges prevent a flare inference; GALEX timing supplies only a weak variability hint.
+Next decisive measurements: calibrated high-resolution RV/activity spectra, simultaneous multicolor/temperature measurements, and the remaining TESS astrometry checks. Other-star screening is the next separately scheduled stage.
+
+E01 [measured] DASCH, 1892-1989
+552 retained differential detections; the 1930s event survives quality/control checks, with a photographic event/baseline contrast near +0.68 mag.
+Supports: A real historical multiyear fade is supported.
+Limit: Only three points sample 1892-1893; photographic and modern passbands differ. A nondetection is not zero flux.
+Sources: results/sky-plates-j0754-20261107/pilot_results.json | docs/J0754_findings_2026-11-10.txt
+
+E02 [inconclusive] APPLAUSE/Hamburg plates and orthogonal scans
+Catalogue photometry, native pixels, calibration controls and scanner orientations were checked without a dependable independent reproduction of the dimming.
+Supports: The checks expose real calibration/scanner limitations.
+Limit: Two scans of the same glass share one exposure. Natural photographic response and calibration controls remain material.
+Sources: results/sky-plates-j0754-checks-20261108/scan_comparison_summary.json | results/sky-plates-j0754-followup-20261108/followup_summary.json
+
+E03 [measured] Legacy ASAS, 2004-2009
+Same-frame ensemble correction gives about +0.147 mag fading 2004-2007 and -0.114 mag recovery by 2009; leaving out individual controls retains the fading.
+Supports: An intermediate fading/recovery episode fills part of the historical gap.
+Limit: Another episode does not establish a fixed period or identical eclipse geometry.
+Sources: results/sky-plates-j0754-models-20261108/history/historical_extension_summary.json | docs/J0754_findings_2026-11-10.txt
+
+E04 [measured] ZTF g, 2018-2025
+470 accepted target points and 364 same-exposure differential measurements; +0.3089 mag fading to 2022 and -0.1393 mag recovery to 2025.
+Supports: Comparison-corrected modern optical fading and recovery.
+Limit: The saved target data contain g only; no validated ZTF g-r curve was obtained.
+Sources: results/sky-plates-j0754-checks-20261108/modern_summary.json | results/sky-plates-j0754-chromaticity-20261109/report.md
+
+E05 [measured] ASAS-SN V/g, 2012-2026
+5,249 rows retrieved;5,180 accepted V/g exposures. Separate g cameras give +0.285 to +0.313 mag fading 2018-2022 and support recovery continuing into 2026.
+Supports: Independent optical replication of the modern fade.
+Limit: Cameras/passbands retain separate zero points; no V at the 2022 minimum. Camera-days can share an observing night.
+Sources: results/sky-plates-j0754-independent-20261108/report.txt | results/sky-plates-j0754-multiband-retrieval-20261109/retrieval_summary.json
+
+E06 [measured] NEOWISE W1/W2, through March 2024
+Comparison-corrected visit medians fade about +0.1163 mag in W1 and +0.0894 mag in W2, then partly recover. Matched 2018/2022 contrasts are +0.1175/+0.08875 mag.
+Supports: The infrared dims less than optical g.
+Limit: W1/W2 are bands of one instrument. Calibration, molecular absorption and visit matching matter.
+Sources: results/sky-plates-j0754-dust-20261108/review.txt | docs/J0754_findings_2026-11-10.txt
+
+E07 [measured] Optical/IR trajectory and V/g overlap
+g-W1 reddens roughly 0.19-0.22 mag. The 2017/18 V/g rotation amplitudes agree within uncertainty; half-day cross-band matches cover only 30 distinct V dates.
+Supports: Wavelength-dependent fading and a second-band rotation check.
+Limit: No reliable temperature-specific V-g variation or hysteresis. Several mechanisms fit the same endpoint colors.
+Sources: results/sky-plates-j0754-chromaticity-20261109/report.md
+
+E08 [measured] Seasonal ASAS-SN/ZTF searches
+Allowing seasonal phase/amplitude evolution gives peaks near 35.78 days (ASAS-SN) and 36.30 days (ZTF). Annual aliases fit worse across most seasons.
+Supports: A recurring roughly 36-day photometric clock compatible with rotation.
+Limit: Peak widths are not formal period errors. A 71.84-day rotation with two active longitudes remains possible. Photometry is not an orbital RV measurement.
+Sources: results/sky-plates-j0754-seasonal-rotation-20261108/results.json | results/sky-plates-j0754-alias-check-20261109/report.txt
+
+E09 [inconclusive] Amplitude/brightness and short-window tests
+No simple seasonal amplitude-versus-brightness trend. Stronger early 2024/25 modulation is hidden by the weak season-long fit; later amplitude/phase changes differ.
+Supports: Evolving surface patterns remain compatible with the clock.
+Limit: Rotation amplitude measures asymmetry, not total spot area. No spot lifetime, differential rotation or simple activity-cycle law is measured.
+Sources: results/sky-plates-j0754-amplitude-brightness-20261108/results.json | results/sky-plates-j0754-short-rotation-20261108/results.json
+
+E10 [model-rejected] 912.3-day catalogue period and fixed waveforms
+The 912.3-day waveform fails modern replay/forward tests. Holding one exact 35.92-day waveform fixed across years also worsens later predictions.
+Supports: Neither stable waveform describes the modern observations.
+Limit: This does not reject a recurring rotation timescale with evolving spots or establish a replacement long period.
+Sources: results/sky-plates-j0754-period-20261108/report.txt | results/sky-plates-j0754-models-20261108/short_period/report.md
+
+E11 [inconclusive] Decadal recurrence tests
+Episodes have unequal depths and incomplete coverage. Tested equal-depth repeats fail; a post-hoc approximately 15-year schedule has covered misses and large gaps.
+Supports: Repeated multiyear fading, without an established regular cycle.
+Limit: The 1930 s-to-2020s gap is not a measured 88-year orbit. An approximately 7.96-year historical gap remains unfilled.
+Sources: results/sky-plates-j0754-decadal-patterns-20261109/report.md
+
+E12 [candidate] Gaia DR3 SB1 solution
+P=35.9205+/-0.0306 days, K1=10.72+/-0.81 km/s, 21 good velocities and eccentricity consistent with zero. The period approximately matches the optical clock.
+Supports: A concrete close-companion candidate and plausible tidal-activity connection.
+Limit: Efficiency/significance fall below recommended gold-sample thresholds. Epoch RVs were unavailable for refitting; binary classification/synchronization remain unconfirmed.
+Sources: docs/J0754_findings_2026-11-10.txt | results/sky-plates-j0754-tidal-assessment-20261109/tidal_literature_report.md
+
+E13 [model-compatible] Conditional orbit/tidal calculations
+Reported SB1 parameters imply f (M)=0.0045872 solar masses. For a 1.5-solar-mass primary, example companions are 0.240/0.282/0.533 solar masses at inclinations 90/60/30 degrees.
+Supports: A low-mass dynamically relevant companion and tidal maintenance of activity are physically compatible.
+Limit: Mass, inclination, envelope properties and tidal prescription are assumptions, not an observed companion mass or proof of locking.
+Sources: docs/J0754_findings_2026-11-10.txt | results/sky-plates-j0754-tidal-assessment-20261109/tidal_literature_report.md
+
+E14 [inconclusive] Gaia parameters and literature atmosphere
+Gaia-based luminosity 54.64 solar luminosities and temperature~5206 K contrast with a literature~4500 K atmosphere/low poster gravity. Conditional radii near 9-12 solar radii contrast with a substantially larger low-gravity solution.
+Supports: The object is treated as a giant; a consistent atmosphere/radius solution needs improvement.
+Limit: No seismic radius or measured flare temperature. Tidal and energy calculations inherit the stellar-parameter uncertainty.
+Sources: docs/J0754_findings_2026-11-10.txt | results/sky-plates-j0754-models-20261108/spectra/gaia_xp_summary.txt
+
+E15 [measured] Published Ca II H/K and FAST, 2008-2012
+Tang et al. reported chromospheric Ca II H/K emission. Ten FAST spectra show weaker H-alpha absorption on 12 November 2009 than October 2008: 0.480+/-0.085 Angstrom formal-noise contrast.
+Supports: Chromospheric activity; H-alpha variability compatible with core fill-in.
+Limit: About 1.675% differential continuum bias can reproduce the H-alpha contrast. This is not a flare precursor or proof of a shared episode with Swift 20 days later.
+Sources: results/sky-plates-j0754-physical-tests-20261108/fast/report.txt | https://arxiv.org/abs/1001.1395
+
+E16 [not-recovered] FAST blueshift and temperature indices
+No convincing detached blueshifted H-alpha absorption. Broad Mg/Na indices supply no precise temperature change.
+Supports: No spectroscopic identification of erupting gas or measured cooling.
+Limit: Sparse spectra/resolution do not exclude all mass loss or spots. Lack of blueshift is not a detection of obstruction.
+Sources: results/sky-plates-j0754-fast-bluewing-20261108/bluewing_results.json | results/sky-plates-j0754-physical-tests-20261108/fast/report.txt
+
+E17 [inconclusive] FAST relative RV tests
+Synthetic 10 km/s shifts are recovered numerically, but same-night repeat shifts differ by 20-24 km/s and separate line windows disagree. Sky/telluric checks do not solve this.
+Supports: Existing extracted spectra cannot independently test the candidate 10.72 km/s semi-amplitude.
+Limit: Numerical shift recovery is not calibrated RV precision. The cleaner 2010 pair does not establish an orbit.
+Sources: results/sky-plates-j0754-fast-rv-20261109/report.md
+
+E18 [candidate] Six calibrated pixel intervals; four excursions
+Four positive compact excursions: 16/22 November 2021, 23 December 2021, 28 November 2023. Common model FWHM~6.34/6.24/5.38/4.80 hours; December 23 remains largest.
+Supports: Repeated hour-scale brightening strengthens activity; November 22/December 23 have the clearest fast-rise/slow-decay shapes.
+Limit: November 16 is nearly symmetric and less flare-specific. November 16/November 28 have large baseline envelopes. Selection was exploratory, not a blind false-alarm experiment.
+Sources: results/sky-plates-j0754-flare-comparison-20261111/report.txt | results/sky-plates-j0754-flare-comparison-20261111/event_measurements.csv | results/sky-plates-j0754-flare-search-20261110/report.txt
+
+E19 [model-compatible] Common conditional energy estimates
+Model ED 231/286/809/243 seconds; baseline/aperture envelopes 219-452/268-302/809-961/237-483 seconds. Nominal face-on patch energies 2.04e37/2.52e37/7.13e37/2.14e37 erg.
+Supports: If stellar flares associated with this system, all are superflare-scale under the common assumptions.
+Limit: Isotropic energies are four times face-on values. Luminosity, flare spectrum, geometry, dilution and component attribution are assumed. Radiation is not kinetic/magnetic energy; conditional bootstrap errors omit baseline systematics.
+Sources: results/sky-plates-j0754-flare-comparison-20261111/comparison.json | results/sky-plates-j0754-flare-comparison-20261111/report.txt
+
+E20 [inconclusive] Matched image injections/hourly positions
+80 matched controls/event calibrate template offsets. Apparent hourly drift is unusual for November 22/December 23. Pointing-gradient terms change mean flux amplitudes by<0.3% relative; hourly changes<0.9%.
+Supports: The tested pointing terms do not remove the excess; pixel positions add information beyond an aperture curve.
+Limit: Stationary astrometry is not established. December 23 is marginally outside its noise-only radius; November 28 is less precise. No official PRF/attitude or full moving-object exclusion; close components remain unresolved.
+Sources: results/sky-plates-j0754-flare-comparison-20261111/report.txt | results/sky-plates-j0754-flare-comparison-20261111/verification.json
+
+E21 [measured] Coverage/injection recovery
+Direct pixels retain 114.51 nominal cadence-days versus 104.18 days for the earlier light-curve union. New 1152 profile injections give effective search times 93.33/108.47/113.90/111.25 days. Earlier 1296 injections remain separate.
+Supports: Sensitivity to representative shapes and gaps is quantified; original-sized sampled events are usually recoverable.
+Limit: Quality rules explain the coverage difference; neither is live-time. Effective exposure is profile-specific. Four candidates do not establish a flare-frequency distribution or magnetic-cycle dependence.
+Sources: results/sky-plates-j0754-flare-comparison-20261111/conditional_rate.json | results/sky-plates-j0754-flare-comparison-20261111/report.txt | results/sky-plates-j0754-flare-search-20261110/injections.json
+
+E22 [not-recovered] Multiday eclipse search at 35.92 days
+No stable repeating eclipse. Tested 3%-deep 1-6 day profiles are recovered across selected injection phases; weaker limits depend on baseline/reduction.
+Supports: Persistent deep eclipses of the tested shapes are disfavored.
+Limit: Noneclipsing companions, dilution, grazing geometry and upstream attenuation remain possible. No universal depth upper limit.
+Sources: results/sky-plates-j0754-multiday-eclipses-20261109/report.md
+
+E23 [not-recovered] Oscillation/power-spectrum checks
+No reproducible localized oscillation envelope at 10-200 microHz. Retaining the December flare raises sector 46 power at 30-100 microHz by 1.88 (SAP)/3.04 (corrected).
+Supports: Transient contamination matters; no usable seismic mass/radius.
+Limit: The lower-gravity prediction near 6 microHz was outside the search. No intrinsically nonoscillating-star or binary classification follows.
+Sources: results/sky-plates-j0754-oscillation-check-20261109/report.md
+
+E24 [measured] Swift XRT/2SXPS, 2 December 2009
+2SXPS J075445.6+164139: 18 counts/4183s, offset 3.88 arcsec inside 5.6 arcsec 90%radius. Conditional thermal-plasma conversion gives Lx~4.2e31 erg/s at 1668 pc.
+Supports: An archival X-ray source associated with the position supports an active corona in the system.
+Limit: Two useful snapshot bins do not resolve a flare (constancy p~.141). This is 12 years before the 2021 TESS event; a FAST visit 20 days earlier does not identify a shared episode.
+Sources: results/sky-plates-j0754-swift-catalog-check-20261108/lightcurve_check.json | docs/J0754_findings_2026-11-10.txt
+
+E25 [candidate] eROSITA DR2/official Gaia-NWAY counterpart
+3eRASS J075445.3+164136: 23.60+/-5.89 net counts; 0.2-2.3 keV catalogue flux~9.04e-14 erg/s/cm2. Exact Gaia 667401913089980544 selected: p_any=.918834, p_i=.99999994, match_flag 1.
+Supports: Independent X-ray survey strongly favors association with J 0754 among Gaia candidates.
+Limit: p_i is conditional within Gaia. A faint nearby UVOT object is outside that comparison. Catalogue-only DR2 cannot resolve a flare; DR1/DR2 overlap. Different Swift/eROSITA bands cannot directly establish flux variability.
+Sources: results/sky-plates-j0754-galex-erosita-20261111/report.txt | results/sky-plates-j0754-galex-erosita-20261111/erosita_gaia_counterparts.ecsv
+
+E26 [measured] GALEX NUV photons/catalogue, 2 February 2006
+NUV AB 18.614+/-0.053 match at 0.142 arcsec. Two short runs span 97/82 nominal seconds. Corrected background/flat/sensitivity/deadtime fluctuations remain weak and strongly bin dependent.
+Supports: NUV emission is measured; no convincing new UV flare.
+Limit: Coverage cannot characterize hours-long flares. No reliable FUV numerical limit or temperature/rotation-specific NUV excess is established by these timing tests.
+Sources: results/sky-plates-j0754-galex-erosita-20261111/report.txt | results/sky-plates-j0754-multiwavelength-20261110/report.txt
+
+E27 [inconclusive] Swift UVOT UVW 1, 2 December 2009
+First image crosses an exposure edge (central pixel~8.44 s); second has uniform 2390 scoverage. Their apparent count difference cannot be treated as variability.
+Supports: A real exposure problem explains a misleading comparison.
+Limit: No UVOT flare or calibrated two-snapshot variability. Coincidence loss, aperture correction and the cool-star optical red leak matter for absolute UV inference.
+Sources: results/sky-plates-j0754-radio-uv-20261110/report.txt
+
+E28 [not-recovered] VLASS 3 GHz, 2019/2021/2024
+No significant detection: forced flux-0.241+/-0.144,+0.108+/-0.146,-0.127+/-0.127 mJy. Approximate 3 sigma image bounds 0.432/0.545/0.382 mJy; no epoch change (p~.219).
+Supports: Three radio visits supply image-level limits.
+Limit: No radio flare or brightness-change detection. Sparse nondetections do not exclude fainter emission or bursts between visits.
+Sources: results/sky-plates-j0754-radio-uv-20261110/report.txt | results/sky-plates-j0754-radio-uv-20261110/radio_measurements.csv
+
+E29 [measured] SPHEREx 2025/2026 and Gaia XP mean spectrum
+223 SPHERExoverlaps yield 182 retained local measurements. Official/native extraction broadly agrees. A giant photosphere explains most flux; a~9%long-wave residual depends on model/calibration.
+Supports: No dominant warm infrared emitter is required in the recovery-era spectra.
+Limit: No SPHEREx spectrum of the 2022 minimum. Native/local reductions share pixels; XP averages epochs. Cold dust or a small excess remains possible.
+Sources: results/sky-plates-j0754-spherex-20261108/report.txt | results/sky-plates-j0754-companion-light-20261109/report.md
+
+E30 [inconclusive] CO-window/composite-spectrum tests
+Atmosphere-nuisance CO/reference ranges include unity. Giant-only spectra pass the exploratory 5%shape allowance; adding a second spectrum improves residuals but is not required.
+Supports: No robust CO emission, dust emission feature or luminous secondary is identified.
+Limit: Tolerance is not a confidence threshold. Similar-color components are normalization-degenerate; there is no useful general companion-light upper bound.
+Sources: results/sky-plates-j0754-physical-tests-20261108/co/co_report.txt | results/sky-plates-j0754-companion-light-20261109/report.md
+
+E31 [model-compatible] Two-temperature spot model
+An illustrative 5000 Kphotosphere/~3650 Kspots changes projected coverage 30%to 49.6%; g/W1 fit predicts W2~0.0995 mag versus 0.08875 observed, inside the adopted 0.02 mag allowance.
+Supports: Cool spots can reproduce the wavelength dependence and fit the activity picture.
+Limit: Spot temperature/coverage are example solutions, not measured surface properties. Compatibility does not prove that spots cause the whole fade.
+Sources: results/sky-plates-j0754-spots-check-20261108/spots_only_check.json | results/sky-plates-j0754-broader-dust-20261109/report.md
+
+E32 [model-compatible] Dust screens/partial covering/mixtures
+Tested ordinary uniform screens fail the optical/IR changes. Partial-covering/flatter-extinction families and some mixtures survive; the full trajectory does not decisively rank them.
+Supports: Simple uniform attenuation is disfavored; nonuniform obscuration remains a comparison to spots.
+Limit: Rejection of one screen is not rejection of all dust. Passing a tolerance is not a posterior probability or detection of a disk.
+Sources: results/sky-plates-j0754-broader-dust-20261109/report.md | results/sky-plates-j0754-chromaticity-20261109/report.md
+
+E33 [inconclusive] Flare-ejected cloud budget
+Conditional opacity/geometry calculations explore material covering a giant for years. No cloud is measured, and no unique orbit/confinement mechanism is fitted.
+Supports: A physical possibility was explored, not detected.
+Limit: Opacity, mass, expansion and confinement are assumptions. The H-alpha check supplies no detached blueshifted cloud detection.
+Sources: results/sky-plates-j0754-cloud-budget-20261108/conditional_budget.json | results/sky-plates-j0754-fast-bluewing-20261108/bluewing_results.json
+
+E34 [not-recovered] LAMOST/APOGEE/high-resolution CfA routes
+LAMOST repeats a failed/SNR-zero 2018 visit. Public APOGEE DR17/DR19 target queries are empty. Tested Hectochelle/old-Echelle routes add no suitable spectrum; the high-resolution poster spectrum remains unrecovered.
+Supports: No new calibrated high-resolution RV/activity spectrum through these routes.
+Limit: Empty catalogues/restricted releases are bounded access results, not proof observations never existed. New high-resolution spectroscopy remains valuable.
+Sources: results/sky-plates-j0754-gemini-archives-20261108/report.txt | results/sky-plates-j0754-multiwavelength-20261110/report.txt
+
+E35 [not-recovered] XMM-Newton/Chandra
+Tested 5 XMM/slew/CSCsource cones are empty. Nearby pointings do not establish useful target exposure.
+Supports: No further source detection or useful target light curve recovered.
+Limit: Catalogue/pointing results are not measured X-ray flux upper limits and cannot establish fading between missions.
+Sources: results/sky-plates-j0754-multiwavelength-20261110/report.txt
+
+E36 [inconclusive] Pan-STARRS/PTF/other optical-history leads
+Pan-STARRS data are dominated by saturation/other flags; reported mean colors are not validated. Other optical/history routes retain sparse/flagged/unrecovered products rather than a new trustworthy color curve.
+Supports: No extra validated optical color history or newly filled historical gap claimed.
+Limit: Sentinel/synthetic values cannot enter physical fits. Diagnostic candidates remain leads, not completed detections.
+Sources: results/sky-plates-j0754-gemini-archives-20261108/report.txt | results/sky-plates-j0754-models-20261108/history/historical_extension_summary.json

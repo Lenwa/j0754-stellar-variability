@@ -1,0 +1,9 @@
+{
+  "comparison_source_matches": true,
+  "exact_control_counts": true,
+  "original_input_hashes_match": true,
+  "bandpass_sha256": "be517b2135733f16b01aea75c01f61b50752d634f3ae33d6c09965979ad49038",
+  "summary_source_sha256": "8279810b14ed6d66e8773cad03746298ccb8bf82f827d4eac2a86b17564b6f56",
+  "event_count": 4,
+  "fit_variant_count": 48
+}

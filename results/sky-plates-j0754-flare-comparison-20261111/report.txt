@@ -1,0 +1,149 @@
+J0754: COMMON MEASUREMENTS OF FOUR TESS EXCURSIONS
+11 November 2026 | Existing calibrated pixels | Exploratory follow-up
+
+RESULT
+All four selected excursions retain positive, compact excesses. November22
+and December23 have the clearest fast-rise/slow-decay profiles. November16
+is broader and nearly symmetric; November28 has a moderate rise/decay
+asymmetry. The largest event remains December23. If these are stellar flares
+associated with the J0754 system, their conditional radiated energies are
+in the superflare regime. The observations do not resolve which component
+of a possible close binary emits. No new star or companion is identified.
+
+COMMON MODEL MEASUREMENTS
+Date         Peak     FWHM     Rise tau  Decay tau   Model ED   Observed ED
+             percent  hours    hours     hours       seconds    seconds
+2021-11-16    0.70    6.34      4.43      4.72        231.2       212.2
+2021-11-22    0.88    6.24      0.29      8.70        286.0       252.3
+2021-12-23    2.89    5.38      0.81      6.96        808.6       693.7
+2023-11-28    0.97    4.80      2.41      4.51        242.5       206.0
+
+Model ED integrates the fitted two-sided exponential to its full tails.
+Observed ED is a signed integral over -12..+18 hours relative to the selected
+peak, excluding gaps longer than2.5native cadences. It is neither clipped
+positive nor filled through missing intervals. November22 lacks much of the
+earlier context; December23 contains a50-minute retained-sample gap.
+Reported FWHM is the intrinsic model width, not a separately measured
+physical flare duration. The model is a shape description, not a proof of
+magnetic reconnection. Native frame integration is included in the fit.
+
+UNCERTAINTY: BASELINE/APERTURE SENSITIVITY IS MATERIAL
+Date         Conditional bootstrap ED16..84%    All tested model ED range
+2021-11-16              209..253s                        219..452s
+2021-11-22              257..319s                        268..302s
+2021-12-23              780..840s                        809..961s
+2023-11-28              223..270s                        237..483s
+
+The bootstrap resamples one-hour residual blocks at a fixed model/baseline.
+It is not the total uncertainty. The variant envelope uses three aperture
+radii(1,1.5,2pixels), linear/quadratic baselines and two context windows.
+All48models converge without boundary solutions and retain positive areas.
+The broad November16 and November28 areas can roughly double under these
+choices; November22 and December23 are more stable. These are sensitivity
+ranges, not confidence intervals. No selection-adjusted false-alarm
+probability is assigned.
+
+CONDITIONAL BOLOMETRIC RADIATED ENERGY
+Date         Face-on surface patch     Isotropic equivalent
+             erg                       erg
+2021-11-16       2.039e+37                 8.156e+37
+2021-11-22       2.522e+37                 1.009e+38
+2021-12-23       7.130e+37                 2.852e+38
+2023-11-28       2.138e+37                 8.553e+37
+
+Nominal assumptions shared by every event: Lstar54.640694Lsun,
+Tstar5205.7764K,Tflare9000K and the retained SVO TESS energy response.
+E_iso=ED*Lstar*(Tflare/Tstar)^4*band(Tstar)/band(Tflare).
+The face-on optically thick surface-patch convention is E_iso/4; this is
+a geometry convention, not four independently measured energies. Varying
+L30..60Lsun,Tstar4500..5250K,Tflare8000..12000K and baseline/aperture gives
+the event-specific envelopes in comparison.json. Unknown dilution,
+epoch-dependent stellar luminosity, flare spectrum and geometry remain
+systematic assumptions. This measures radiation, not total magnetic or
+kinetic energy. The smallest tested face-on energy is about9e36erg.
+The older December23 ED~601s/patch energy~5.3e37erg used a finite window
+and different local baseline. Its nominal value remains inside the new
+systematic envelope. The new full-model ED~809s/patch energy~7.1e37erg
+must not be described as an additional event or an independent energy test.
+
+POSITION AND POINTING CHECK
+Date         Bias-corrected template offset   Matched-injection95% radius
+2021-11-16              0.0489pixels                     0.1765pixels
+2021-11-22              0.0838pixels                     0.1503pixels
+2021-12-23              0.0399pixels                     0.0392pixels
+2023-11-28              0.1027pixels                     0.4354pixels
+
+Offsets are relative to the observed target-image template. Each event has
+80blank-time injected source-shaped controls with exactly the same retained
+before/event/after counts and time pattern. All finite native frames must
+match within0.3cadence; flagged, missing and duplicated matches are rejected.
+This is empirical-template calibration, not an official TESS PRF posterior.
+The December23 offset is marginally outside its noise-only radius, by
+about0.0006pixel; template/color/astrometric systematics are not included.
+The November28 localization is appreciably less precise. None of these
+positions resolves a close stellar companion.
+
+HOURLY DISPLACEMENT IS NOT FULLY SETTLED
+Date         Speed(pixels/hour)    Conditional stationary-reference p
+2021-11-16             0.0296                       0.1026
+2021-11-22             0.1006                       0.0127
+2021-12-23             0.0277                       0.0125
+2023-11-28             0.0181                       0.3544
+
+November22 and December23 show apparent hourly shifts unusual relative to
+the matched stationary controls. These discrete empirical reference values
+are not calibrated significance levels or proof of a moving celestial
+object. The hourly positions also have non-linear scatter. Image-gradient
+terms representing small pointing/scene changes alter event-mean source
+amplitudes by less than0.3% relative; all selected hourly changes are below
+0.9%. Thus the tested pointing terms do not remove the flux excess, while
+stationary-source astrometry is not established by this check. A formal
+PRF/attitude analysis or moving-object ephemeris exclusion remains open.
+The new result strengthens photometric comparison, not a claim that every
+possible contaminant has been excluded.
+
+DETECTION SENSITIVITY AND EXPOSURE
+The direct-pixel QUALITY=0 series contains114.51nominal accepted-cadence
+days across six disjoint intervals. This differs from104.18days in the
+earlier union of extracted light curves because their quality selections
+are different. Neither number is detector live-time. QLP/SPOC alternatives
+are reductions of the same exposures, not extra observing nights.
+Four measured profiles were injected at48uniform peak times in each of
+six native direct-aperture series:1152trials before median removal.
+
+Injected profile    Recovery(all times)   Recovery(>=80% area sampled)   Effective days
+2021-11-16                 189/288                  175/219                        93.33
+2021-11-22                 221/288                  198/216                        108.47
+2021-12-23                 234/288                  210/218                        113.90
+2023-11-28                 227/288                  213/225                        111.25
+
+These direct-pixel trials are separate from the1296earlier extracted-
+light-curve injections. Recovery is specific to these shapes and this
+screen. The broad/baseline-sensitive event models can be easier to recover
+than other real flares with the same energy. No upstream FFI calibration
+transfer or complete flare-frequency distribution is inferred.
+
+For repeated copies of the December23 profile, one accepted event over
+113.90effective search days gives an illustrative rate 0.00878/day.
+The conditional Poisson95% interval is 0.00022..0.04892/day.
+This assumes a constant rate and correct attribution; it is too sparse to
+measure a magnetic-cycle correlation. Four candidate dates divided by
+coverage alone would ignore differences in profile and detection sensitivity.
+
+REPRODUCTION
+python -B tools/sky-plates/compare_j0754_tess_events.py --sensitivity
+python -B tools/sky-plates/summarize_j0754_event_comparison.py
+python -B -m unittest discover -s tools/sky-plates -p test_*.py
+
+All native pixels remain unchanged. comparison.json records exact inputs,
+parameters, variants, bootstrap draws, injections and source/protocol hashes.
+Recovery trials were reused unchanged while correcting the position fitter;
+the reuse chain is retained. --reuse-sensitivity is for deliberate unchanged-
+profile reruns; a fresh reproduction should use --sensitivity.
+Figures: four_event_measurements.png; four_event_localization.png.
+
+PRIMARY METHOD REFERENCES
+https://heasarc.gsfc.nasa.gov/docs/tess/UnderstandingCrowdingv2.html
+https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=TESS/TESS.Red
+https://doi.org/10.1051/0004-6361/202449405
+https://doi.org/10.1051/0004-6361/202040098

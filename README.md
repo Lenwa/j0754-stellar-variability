@@ -1,5 +1,13 @@
 # J0754 stellar variability laboratory
 
+**Current evidence checkpoint, 11 November:** [source-linked evidence table](docs/J0754_evidence_2026-11-11.csv)
+([readable HTML](docs/J0754_evidence_2026-11-11.html), [text summary](docs/J0754_evidence_summary_2026-11-11.txt))
+consolidates 36 entries across 37 retained result families. The
+[common four-event TESS report](results/sky-plates-j0754-flare-comparison-20261111/report.txt)
+adds durations, conditional energies, matched image injections and recovery
+tests. All four excesses stay positive; baseline uncertainty and unresolved
+hourly position diagnostics are retained explicitly.
+
 **11 November follow-up:** the official eROSITA Gaia/NWAY catalogue selects
 J0754 with p_any=0.919. Corrected GALEX fluctuations remain a weak, bin-dependent
 UV variability hint. See the [report](results/sky-plates-j0754-galex-erosita-20261111/report.txt)
@@ -11,9 +19,10 @@ This repository unifies the plate photometry, modern optical/infrared analysis,
 TESS flare and rotation work, spectroscopy, physical models and unsuccessful
 tests into one research codebase.
 
-**Start with the [findings report](docs/J0754_findings_2026-11-10.txt)**
+**Earlier narrative: [10 November findings report](docs/J0754_findings_2026-11-10.txt)**
 ([illustrated Word version](docs/J0754_findings_2026-11-10.docx)). It distinguishes
-measured results, model-dependent quantities and open hypotheses. This work has
+measured results, model-dependent quantities and open hypotheses. Read the newer
+evidence checkpoint above for subsequent measurements and limitations. This work has
 not been peer reviewed. The star and its historical variability were reported
 by [Tang et al. (2010)](https://arxiv.org/abs/1001.1395).
 
@@ -27,7 +36,7 @@ and [four-event comparison](results/sky-plates-j0754-flare-search-20261110/four_
 **Multiwavelength inventory:** all seven follow-up archive groups were queried.
 GALEX individual photons, two Swift UVW1 image extensions and three VLASS radio
 cutouts were recovered. The official eROSITA DR2 Gaia counterpart catalogue selects J0754
-(see the 11 November follow-up below). Current XMM/Chandra source searches and APOGEE DR17/DR19 target
+(see the 11 November follow-up above). Current XMM/Chandra source searches and APOGEE DR17/DR19 target
 queries are empty. See the [instrument inventory](results/sky-plates-j0754-multiwavelength-20261110/report.txt).
 
 **Radio/UV measurements:** no radio detection or significant epoch change is

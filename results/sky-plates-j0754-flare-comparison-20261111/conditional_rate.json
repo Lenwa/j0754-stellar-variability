@@ -1,0 +1,11 @@
+{
+  "scope": "Illustration assuming one accepted December23-like event and a constant Poisson occurrence rate for copies of that exact measured profile.",
+  "count": 1,
+  "effective_search_days": 113.8961525727109,
+  "rate_per_day": 0.00877992783260702,
+  "conditional_poisson95_per_day": [
+    0.0002222885269818669,
+    0.04891862688146538
+  ],
+  "qualification": "Finite-grid recovery exposure, candidate attribution and fixed-profile assumptions are not included in these Poisson intervals. Not a fitted flare-frequency distribution or measured magnetic-cycle dependence."
+}

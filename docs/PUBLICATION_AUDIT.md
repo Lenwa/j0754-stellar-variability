@@ -92,3 +92,21 @@ the official Gaia counterpart catalogue are included with request receipts.
 The full 855 MB counterpart catalogue was streamed, not copied into the repo.
 The original duplicate-column header and unused shutter API errors are retained.
 The corrected analysis, figure, protocol and 166-test suite were checked locally.
+
+## 11 November common flare comparison and evidence ledger
+
+Existing public native pixels and response curves were reused without changes.
+The four-event comparison, matched image controls, recovery trials, protocol,
+two figures and conditional rate illustration are included. A read-only review
+caught unmatched image-control sampling; the corrected controls match exact
+retained before/event/after timestamp patterns. A numerical boundary artifact
+in the new offset fitter was corrected and pinned by a real-template regression.
+Apparent hourly drift and substantial baseline uncertainty remain in the result.
+
+The curated 36-row evidence ledger links 44 local source files and inventories
+37 retained result families, distinguishing instruments from reused reductions
+and physical hypotheses. A second read-only review found no important scientific
+overclaim; catalogue/decade/thousands formatting was corrected. All 176 tests
+passed. Scientific figures were visually inspected. Built-in browser security
+blocked a local-file HTML preview; the HTML structure and source/image links
+were checked offline. No claim of browser-rendered visual QA is made.
